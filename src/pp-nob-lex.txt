@@ -8,6 +8,11 @@ over p ;
 på p ;
 til p ;
 ved p ;
+ut p ;
+etter p ;
+mot p ;
+under p ;
+uten p ;
 
 
 LEXICON p

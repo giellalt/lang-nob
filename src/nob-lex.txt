@@ -1,6 +1,6 @@
 Multichar_Symbols
  +N +A +Adv +V
- +CS +CC +Interj +Pcle +Pr
+ +CS +CC +Interj +Pcle +Pr +IM
  +Pers +Dem +Interr +Refl +Recipr +Rel
  +Indef +Def
  +Sg +Pl
@@ -34,6 +34,7 @@ LEXICON Root
  Preposition ;
  Interjection ;
  Pronoun ;
+ Determiner ;
  Numeral ;
  Punctuation ;
 
@@ -49,6 +50,9 @@ LEXICON Root
 
 ! Msculines
 ! ----------
+
+LEXICON nounx 
+m1 ;
 
 LEXICON mX
  +N+Msc: K ;
@@ -272,6 +276,9 @@ LEXICON a-grade
 ! ----------
 ! Weak verbs
 ! ----------
+
+LEXICON vx 
+v1 ;
 
 LEXICON v1 ! kaste
  +V: inf-prsptc ;
