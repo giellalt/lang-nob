@@ -1,13 +1,28 @@
 LEXICON VerbRoot
-kaste v1 ;
+irregular-verb ;
+regular-verb ;
+
+
+LEXICON irregular-verb
+være+V+Inf:være # ;
+være+V+Prs:er # ;
+være+V+Prt:var # ;
+være+V+PrfPtc:vært # ;
+være+V+PrsPtc:værende # ;
+
+
+LEXICON regular-verb
+
+
+bie v4 ;
 blåse v2 ;
-studere v2 ;
+føles v2-s ;
+kaste v1 ;
 kneppe v2 ;
 leve v3 ;
-ro v4 ;
-bie v4 ;
-undres v1-s ;
-føles v2-s ;
-synes v2-s ;
 møtes v2-s ;
+ro v4 ;
+studere v2 ;
+synes v2-s ;
 trives v3-s ;
+undres v1-s ;

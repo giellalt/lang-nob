@@ -2,4 +2,5 @@ LEXICON AdjectiveRoot
 fin a1 ;
 vennlig a2 ;
 strålende a3 ;
-
+samisk a2 ;
+statistisk a2 ;

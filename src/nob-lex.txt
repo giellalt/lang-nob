@@ -101,18 +101,22 @@ LEXICON RADIUS
 
 LEXICON f1 ! myr, krone
  +N+Fem+Sg: 0-a ;
+ +N+Masc+Sg: en ; ! myren !^C^
  +N+Fem+Pl: er-ene ;
 
 LEXICON f1X ! bok
  +N+Fem+Sg: 0-a ;
+ +N+Masc+Sg: en ; ! boken !^C^
  +N+Fem+Pl:Z1 er-ene ;
 
 LEXICON f1V ! mus
  +N+Fem+Sg: 0-a ;
+ +N+Masc+Sg: en ; ! musen !^C^
  +N+Fem+Pl: 0-ene ;
  
 LEXICON f3 ! lever
  +N+Fem+Sg:X1 0-a ;
+ +N+Masc+Sg: en ; ! levren !^C^
  +N+Fem+Pl:X1 er-ene ;
  
 
@@ -212,7 +216,8 @@ LEXICON 0-ene-a
  +Def:%>ene K ;
  +Def:%>a K ;
 
-
+LEXICON en
+ +Def:%>en K ;
 
 
 
