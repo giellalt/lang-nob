@@ -1,0 +1,57 @@
+LEXICON NounRoot
+
+januar mX ;
+dag m1 ; ! Msc. -er
+hane m1 ;
+hare m1 ;
+gutt m1 ;
+nese m1 ;
+cognaq m1 ;
+kam m1b ;
+dam m1b ;
+sko m1V ;
+gendarm m1 ;
+lærer m2 ;
+finger m3 ; ! -e- deletion
+baker m2 ; ! Msc, -e
+ilder m2 ;
+onkel m3 ;
+vinter m3 ;
+meter m3V ; ! Msc, -0
+ting m1V ;
+fot+N+Msc+Sg:fot 0-en ;
+fot+N+Msc+Pl:føtt er-ene ; ! Umlaut
+rot+N+Fem+Sg:rot 0-a ;
+rot+N+Fem+Pl:røtt er-ene ; ! Umlaut
+bonde m1X ;
+forstad m1X ;
+kollega KOLLEGA ;
+konto KONTO ;
+radius:radi RADIUS ;
+pil f1 ; ! Fem. -er
+jente f1 ; 
+myr f1 ;
+krone f1 ;
+mus f1V ;
+lever f3 ;
+bok f1X ;
+strand f1X ;
+styrbord nX ;
+hus n1 ; ! Neut -Ø
+kast n1 ;
+knepp n1 ;
+rom n1b ;
+eple n2 ;
+salt n2 ;
+program n2b ;
+kontor n2c ;
+album n2c ;
+problem n2c ;
+middel n3 ;
+fengsel n3 ;
+lager n3b ;
+pulver n3c ;
+kriterium n4 ;
+museum n4 ;
+faktum n4b ;
+	   

@@ -1,0 +1,5 @@
+LEXICON Preposition
+ på p ;
+
+LEXICON p
+ +Pr: # ;

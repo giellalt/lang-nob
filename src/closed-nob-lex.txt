@@ -1,0 +1,29 @@
+LEXICON Particle
+ # ;
+
+LEXICON Subjunction
+ fordi subj ;
+
+LEXICON subj
+ +CS: # ;
+
+LEXICON Conjunction
+ og conj ;
+
+LEXICON conj
+ +CC: # ;
+
+LEXICON Interjection
+ uff ij ;
+
+LEXICON ij
+ +Interj: # ;
+
+LEXICON Pronoun
+ # ;
+
+LEXICON Numeral 
+ # ;
+
+LEXICON Punctuation
+ # ;

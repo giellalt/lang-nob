@@ -1,0 +1,13 @@
+LEXICON VerbRoot
+kaste v1 ;
+blåse v2 ;
+studere v2 ;
+kneppe v2 ;
+leve v3 ;
+ro v4 ;
+bie v4 ;
+undres v1-s ;
+føles v2-s ;
+synes v2-s ;
+møtes v2-s ;
+trives v3-s ;
