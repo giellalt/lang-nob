@@ -2,7 +2,10 @@ LEXICON Particle
  # ;
 
 LEXICON Subjunction
- fordi subj ;
+fordi subj ;
+for subj ;
+som subj ;
+at subj ;
 
 LEXICON subj
  +CS: # ;
@@ -23,7 +26,20 @@ LEXICON Pronoun
  # ;
 
 LEXICON Numeral 
- # ;
++Num: basicnumber ;
+
+LEXICON basicnumber
+en # ;
+to # ;
+tre # ;
+fire # ;
+fem # ;
+seks # ;
+sju # ;
+syv # ;
+åtte # ;
+ni # ;
+
 
 LEXICON Punctuation
  # ;

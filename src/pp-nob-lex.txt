@@ -1,5 +1,14 @@
 LEXICON Preposition
- på p ;
+av p ;
+fra p ;
+i p ;
+med p ;
+om p ;
+over p ;
+på p ;
+til p ;
+ved p ;
+
 
 LEXICON p
  +Pr: # ;

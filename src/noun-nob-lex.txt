@@ -1,57 +1,59 @@
 LEXICON NounRoot
 
-januar mX ;
+	   
+album n2c ;
+baker m2 ; ! Msc, -e
+bok f1X ;
+bonde m1X ;
+cognaq m1 ;
 dag m1 ; ! Msc. -er
+dam m1b ;
+eple n2 ;
+faktum n4b ;
+fengsel n3 ;
+finger m3 ; ! -e- deletion
+forstad m1X ;
+fot+N+Msc+Pl:føtt er-ene ; ! Umlaut
+fot+N+Msc+Sg:fot 0-en ;
+gendarm m1 ;
+gutt m1 ;
 hane m1 ;
 hare m1 ;
-gutt m1 ;
-nese m1 ;
-cognaq m1 ;
-kam m1b ;
-dam m1b ;
-sko m1V ;
-gendarm m1 ;
-lærer m2 ;
-finger m3 ; ! -e- deletion
-baker m2 ; ! Msc, -e
-ilder m2 ;
-onkel m3 ;
-vinter m3 ;
-meter m3V ; ! Msc, -0
-ting m1V ;
-fot+N+Msc+Sg:fot 0-en ;
-fot+N+Msc+Pl:føtt er-ene ; ! Umlaut
-rot+N+Fem+Sg:rot 0-a ;
-rot+N+Fem+Pl:røtt er-ene ; ! Umlaut
-bonde m1X ;
-forstad m1X ;
-kollega KOLLEGA ;
-konto KONTO ;
-radius:radi RADIUS ;
-pil f1 ; ! Fem. -er
-jente f1 ; 
-myr f1 ;
-krone f1 ;
-mus f1V ;
-lever f3 ;
-bok f1X ;
-strand f1X ;
-styrbord nX ;
+historie m1 ;
 hus n1 ; ! Neut -Ø
+ilder m2 ;
+januar mX ;
+jente f1 ; 
+jord f1 ;
+kam m1b ;
 kast n1 ;
 knepp n1 ;
-rom n1b ;
-eple n2 ;
-salt n2 ;
-program n2b ;
+kollega KOLLEGA ;
+konto KONTO ;
 kontor n2c ;
-album n2c ;
-problem n2c ;
-middel n3 ;
-fengsel n3 ;
-lager n3b ;
-pulver n3c ;
 kriterium n4 ;
+krone f1 ;
+lager n3b ;
+lever f3 ;
+lærer m2 ;
+meter m3V ; ! Msc, -0
+middel n3 ;
+mus f1V ;
 museum n4 ;
-faktum n4b ;
-	   
+myr f1 ;
+nese m1 ;
+onkel m3 ;
+pil f1 ; ! Fem. -er
+problem n2c ;
+program n2b ;
+pulver n3c ;
+radius:radi RADIUS ;
+rom n1b ;
+rot+N+Fem+Pl:røtt er-ene ; ! Umlaut
+rot+N+Fem+Sg:rot 0-a ;
+salt n2 ;
+sko m1V ;
+strand f1X ;
+styrbord nX ;
+ting m1V ;
+vinter m3 ;
