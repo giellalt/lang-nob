@@ -7,6 +7,10 @@ for subj ;
 som subj ;
 at subj ;
 men subj ;
+ifall subj ;
+hvis subj ;
+viss subj ;
+om  subj ;
 å+IM:å # ;
 
 LEXICON subj
