@@ -4,7 +4,7 @@ Multichar_Symbols
  +Pers +Dem +Interr +Refl +Recipr +Rel
  +Indef +Def
  +Sg +Pl
- +Pron +Nom +Acc
+ +Pron +Nom +Acc +Dat
  +Msc +Fem +Neu
  +Pos +Comp +Superl +Clt
  +Pass +Ind +Prs +Prt +Imp

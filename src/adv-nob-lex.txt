@@ -2,6 +2,8 @@
 LEXICON adv
  +Adv: # ;
 
+LEXICON dat
+ +N+Dat: # ;
 
 LEXICON Adverb
 da adv ;
@@ -23,3 +25,77 @@ også adv ;
 sammen adv ;
 svært adv ;
 så adv ;
+ovatil adv ;
+oventil adv ;
+dertil adv ;
+hertil adv ;
+hittil adv ;
+attpåtil adv ;
+iallfall n1 ;
+pladask adv ;
+lell adv ;
+hjemad adv ;
+fremad adv ;
+innad m1 ;
+oppad adv ;
+avec adv ;
+nedad adv ;
+likevel adv ;
+allikevel adv ;
+bevaremegvel adv ;
+jamvel adv ;
+nåvel adv ;
+allerede adv ;
+ingenlunde adv ;
+noenlunde adv ;
+ekstempore adv ;
+dessverre adv ;
+venstre adv ;
+høyre adv ;
+gjære dat ;
+ymse dat ;
+ofte adv ;
+fote dat ;
+prompte dat ;
+borte adv ;
+forte adv ;
+mezzoforte adv ;
+ute adv ;
+
+ste dat ;
+vånde dat ;
+ånde dat ;
+dage dat ;
+ulage dat ;
+bidige adv ;
+ifølge p ;
+gjenge dat ;
+ugreie dat ;
+svie dat ;
+tilbake adv ;
+tillike adv ;
+desslike adv ;
+godtykke adv ;
+samtykke n2 ;
+vidvanke dat ;
+tverke dat ;
+årle adv ;
+heime adv ;
+hjemme adv ;
+omme adv ;
+ne dat ;
+vegne dat ;
+folkemunne dat ;
+syne dat ;
+stampe dat ;
+lempe dat ;
+oppe dat ;
+bare dat ;
+ivare dat ;
+
+tide dat ;
+utide dat ;
+hånde dat ;
+allehånde dat ;
+ferde dat ;
+gårde dat ;

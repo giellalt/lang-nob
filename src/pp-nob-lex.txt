@@ -1,5 +1,9 @@
 LEXICON Preposition
 av p ;
+endatil p ;
+inntil p ;
+opptil p ;
+
 fra p ;
 i p ;
 med p ;
