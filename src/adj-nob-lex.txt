@@ -1,0 +1,5 @@
+LEXICON AdjectiveRoot
+fin a1 ;
+vennlig a2 ;
+strålende a3 ;
+

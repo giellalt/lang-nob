@@ -1,0 +1,5 @@
+LEXICON Adverb
+ kanskje adv ;
+
+LEXICON adv
+ +Adv: # ;

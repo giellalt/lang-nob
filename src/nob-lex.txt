@@ -1,0 +1,351 @@
+Multichar_Symbols
+ +N +A +Adv +V
+ +CS +CC +Interj +Pcle +Pr
+ +Pers +Dem +Interr +Refl +Recipr +Rel
+ +Indef +Def
+ +Sg +Pl
+ +Pron +Nom +Acc
+ +Msc +Fem +Neu
+ +Pos +Comp +Superl +Clt
+ +Pass +Ind +Prs +Prt +Imp
+ +Inf +PrsPtc +PrfPtc
+ +Interj 
+ +CLB +PUNCT +HYPH +PAR
+ 
+ X1 X2 X3 X4 X5 X6 X7 X8 X9
+ Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9
+ Y1 Y2 Y3 Y4 Y5 Y6 Y7 Y8 Y9
+ Z1 Z2 Z3 Z4 Z5 Z6 Z7 Z8 Z9
+
+
+! =================================================
+! Basic lexica, pointing to the other lexicon files
+! =================================================
+  
+LEXICON Root
+ NounRoot ;
+ ProperNoun ;
+ AdjectiveRoot ;
+ VerbRoot ;
+ Adverb ;
+ Particle ;
+ Subjunction ;
+ Conjunction ;
+ Preposition ;
+ Interjection ;
+ Pronoun ;
+ Numeral ;
+ Punctuation ;
+
+
+
+! ======================
+! Sublexica for NounRoot
+! ======================
+
+
+! Basic paradigms
+! ===============
+
+! Msculines
+! ----------
+
+LEXICON mX
+ +N+Msc: K ;
+
+LEXICON m1 ! dag, hane
+ +N+Msc+Sg: 0-en ;
+ +N+Msc+Pl: er-ene ;
+
+LEXICON m1X
+ +N+Msc+Sg: 0-en ;
+ +N+Msc+Pl:Z1 er-ene ;
+
+LEXICON m1b ! dam
+ +N+Msc+Sg:mX4 0-en ;
+ +N+Msc+Pl:m er-ene ;
+
+LEXICON m1V ! sko
+ +N+Msc+Sg: 0-en ;
+ +N+Msc+Pl: 0-ene ;
+
+LEXICON m2 ! lærer
+ +N+Msc+Sg: 0-en ;
+ +N+Msc+Pl: e-ne ;
+
+LEXICON m3 ! onkel
+ +N+Msc+Sg: 0-en ;
+ +N+Msc+Pl:X1 er-ene ; ! X1 deletes the vowel -e-
+
+LEXICON m3V ! meter
+ +N+Msc+Sg: 0-en ;
+ +N+Msc+Pl:X1 0-ene ;
+
+LEXICON KOLLEGA
+ +N+Msc+Sg: 0-en ;
+ +N+Msc+Pl:X2 er-ene ; ! delete a
+
+LEXICON KONTO
+ +N+Msc+Sg: 0-en K ;
+ +N+Msc+Pl:X2i 0-ene ; ! delete o
+ +N+Msc+Pl: er-ene ; ! Regular pl
+
+LEXICON RADIUS
+ +N+Msc+Sg:%>us 0-en ;
+ +N+Msc+Sg+Def:%>en K ; ! short def
+ +N+Msc+Pl: er-ene ; ! Regular pl
+ 
+
+! Feminines
+! ---------
+
+LEXICON f1 ! myr, krone
+ +N+Fem+Sg: 0-a ;
+ +N+Fem+Pl: er-ene ;
+
+LEXICON f1X ! bok
+ +N+Fem+Sg: 0-a ;
+ +N+Fem+Pl:Z1 er-ene ;
+
+LEXICON f1V ! mus
+ +N+Fem+Sg: 0-a ;
+ +N+Fem+Pl: 0-ene ;
+ 
+LEXICON f3 ! lever
+ +N+Fem+Sg:X1 0-a ;
+ +N+Fem+Pl:X1 er-ene ;
+ 
+
+! Neuters
+! -------
+
+LEXICON nX ! styrbord
+ +N+Neu: K ;
+
+LEXICON n1 ! hus
+ +N+Neu+Sg: 0-et ;
+ +N+Neu+Pl: 0-ene-a ;
+
+LEXICON n1b ! rom
+ +N+Neu+Sg:mX4 0-et ;
+ +N+Neu+Pl:m 0-ene-a ;
+
+LEXICON n2 ! eple, salt
+ +N+Neu+Sg: 0-et ;
+ +N+Neu+Pl: er-ene ;
+
+LEXICON n2b ! program
+ +N+Neu+Sg:mX4 0-et ;
+ +N+Neu+Pl:m 0-er-ene ;
+
+LEXICON n2c ! album, kontor
+ +N+Neu+Sg: 0-et ;
+ +N+Neu+Pl: 0-er-ene ;
+
+LEXICON n3 ! middel
+ +N+Neu+Sg:X1 0-et ;
+ +N+Neu+Pl:X1 er-ene ;
+
+LEXICON n3b ! lager
+ +N+Neu+Sg: 0-et ;
+ +N+Neu+Pl:X1 e-ene ;
+
+LEXICON n3c
+ +N+Neu+Sg: 0-et ;
+ +N+Neu+Pl: 0-ne ;
+
+LEXICON n4 ! kriterium
+ +N+Neu+Sg:X5 0-et ;
+ +N+Neu+Pl:X5 er-ene ;
+
+LEXICON n4b ! faktum
+ +N+Neu+Sg: 0-et ;
+ +N+Neu+Pl:X5 a-aene ;
+
+
+! Lexica for definiteness declension
+! ==================================
+
+LEXICON a-aene
+ +Indef:%>a K ;
+ +Def:%>aene K ;
+
+LEXICON e-ne
+ +Indef:%>e K ;
+ +Def:%>ne K ;
+
+LEXICON e-ene
+ +Indef:%>e K ;
+ +Def:%>ene K ;
+ 
+LEXICON er-ene
+ +Indef:%>er K ;
+ +Def:%>ene K ;
+
+LEXICON 0-a
+ +Indef: K ;
+ +Def:%>a K ;
+
+LEXICON 0-en
+ +Indef: K ;
+ +Def:%>en K ;
+
+LEXICON 0-ene
+ +Indef: K ;
+ +Def:%>ene K ;
+
+LEXICON 0-er-ene
+ +Indef: K ;
+ +Indef:%>er K ;
+ +Def:%>ene K ;
+
+LEXICON 0-ne
+ +Indef: K ;
+ +Def:%>ne K ;
+
+LEXICON 0-et
+ +Indef: K ;
+ +Def:%>et K ;
+
+LEXICON 0-ene-a
+ +Indef: K ;
+ +Def:%>ene K ;
+ +Def:%>a K ;
+
+
+
+
+
+! =============================
+! Sublexica for adjective roots
+! =============================
+
+
+! Basic paradigms
+! ===============
+
+LEXICON a1
+ +A: positive ;
+ +A: a-neuter ;
+ +A: a-grade ;
+
+LEXICON a2
+ +A: positive ;
+ +A: a-no-neuter ;
+ +A: a-grade ;
+
+LEXICON a3
+ +A: positive ;
+ +A: a-no-neuter ;
+
+! Sublexica
+! =========
+
+LEXICON positive
+ +Pos+Msc+Sg+Indef: # ;
+ +Pos+Fem+Sg+Indef: # ;
+ +Pos+Sg+Def:%>e # ;
+ +Pos+Sg+Def:%>e # ;
+ +Pos+Sg+Def:%>e # ;
+ +Pos+Pl+Def:%>e # ;
+
+LEXICON a-neuter ! fint
+ +Pos+Neu+Sg+Indef:%>t # ;
+
+LEXICON a-no-neuter ! vennlig
+ +Pos+Neu+Sg+Indef: # ;
+
+LEXICON a-grade
+ +Comp:%>ere # ;
+ +Superl+Indef:%>est # ;
+ +Superl+Def:%>este # ;
+
+! ========================
+! Sublexica for verb roots
+! ========================
+
+! ----------
+! Weak verbs
+! ----------
+
+LEXICON v1 ! kaste
+ +V: inf-prsptc ;
+ +V: regpres ;
+ +V: a-et-pret ;
+
+ 
+LEXICON v2 ! blåse, studere
+ +V: inf-prsptc ;
+ +V: regpres ;
+ +V: te-pret ;
+
+LEXICON v3 ! leve
+ +V: inf-prsptc ;
+ +V: regpres ;
+ +V: de-pret ;
+
+LEXICON v4 ! ro, bie
+ +V: inf-prsptc ;
+ +V: r-pres ;
+ +V: dde-pret ;
+
+LEXICON v1-s ! undres
+ +Inf: # ;
+ +Ind+Prs: # ;
+ +Ind+Prt: # ;
+ +PrfPtc: # ;
+
+LEXICON v2-s ! føles, synes
+ +Inf: # ;
+ +Ind+Prs: # ;
+ +Ind+Prt:Q1 # ;
+ +PrfPtc:Q1 # ;
+
+LEXICON v3-s ! trives
+ +Inf: # ;
+ +Ind+Prs: # ;
+ +Ind+Prt:Q2 # ;
+ +PrfPtc:Q2 # ;
+
+
+! ---------------------
+! Conjugation sublexica
+! ---------------------
+
+LEXICON inf-prsptc
+ +Inf: # ;
+ +PrsPtc:%>ende # ;
+ 
+LEXICON regpres
+ +Ind+Prs:%>er # ;
+
+LEXICON r-pres
+ +Ind+Prs:%>r # ;
+
+LEXICON a-et-pret
+ +Ind+Prt:%>a # ;
+ +Ind+Prt:%>et # ;
+ +PrfPtc:%>a # ;
+ +PrfPtc:%>et # ;
+
+LEXICON te-pret
+ +Ind+Prt:%>te # ;
+ +PrfPtc:%>t # ;
+
+LEXICON de-pret
+ +Ind+Prt:%>de # ;
+ +PrfPtc:%>d # ;
+
+LEXICON dde-pret
+ +Ind+Prt:%>dde # ;
+ +PrfPtc:%>dd # ;
+
+
+! =======
+! Clitics
+! =======
+
+LEXICON K
+ +Clt:%>s # ;
+ # ;
+
