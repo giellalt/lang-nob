@@ -1,5 +1,25 @@
-LEXICON Adverb
- kanskje adv ;
 
 LEXICON adv
  +Adv: # ;
+
+
+LEXICON Adverb
+da adv ;
+der adv ;
+selv adv ;
+litt adv ;
+her adv ;
+igjen adv ;
+ikke adv ;
+kanskje adv ;
+mens adv ;
+mer adv ;
+mer adv ;
+mest adv ;
+mye adv ;
+nå adv ;
+når adv ;
+også adv ;
+sammen adv ;
+svært adv ;
+så adv ;
