@@ -1,7 +1,8 @@
-LEXICON Particle
- # ;
+!LEXICON Particle
+! # ;
 
 LEXICON Subjunction
+derfor subj ;
 fordi subj ;
 for subj ;
 som subj ;
@@ -11,12 +12,14 @@ ifall subj ;
 hvis subj ;
 viss subj ;
 om  subj ;
-å+IM:å # ;
+hvorfor subj ;
+Ã¥+IM:Ã¥ # ;
 
 LEXICON subj
  +CS: # ;
 
 LEXICON Conjunction
+bÃ¥de conj ;
 og conj ;
 eller conj ;
 
@@ -26,6 +29,9 @@ LEXICON conj
 
 LEXICON Interjection
  uff ij ;
+ptro ij ;
+ja ij ;
+nei ij ;
 
 LEXICON ij
  +Interj: # ;
@@ -45,6 +51,9 @@ du+Pron+Pers+Nom:du # ;
 du+Pron+Pers+Acc:deg # ;
 han+Pron+Pers+Nom:han # ;
 hun+Pron+Pers+Nom:hun # ;
+han+Pron+Pers+Acc:han # ;
+han+Pron+Pers+Acc:ham # ;
+hun+Pron+Pers+Acc:henne # ;
 det+Pron+Pers+Nom:det # ;
 vi+Pron+Pers+Nom:vi # ;
 vi+Pron+Pers+Acc:oss # ;
@@ -69,49 +78,68 @@ Demonstrative ;
 Possessive ;
 
 LEXICON Demonstrative 
-det+Det+Dem+Neu:det # ;
-den+Det+Dem+Masc:den # ;
-den+Det+Dem+Fem:den # ;
-et+Det+Dem+Neu:et # ;
-en+Det+Dem+Masc:en # ;
-ei+Det+Dem+Fem:ei # ;
-hver+Det+Dem+Masc:hver # ;
-hver+Det+Dem+Fem:hver # ;
-hver+Det+Dem+Neu:hvert # ;
+det+Det+Dem+Sg+Neu:det # ;
+den+Det+Dem+Sg+Msc:den # ;
+den+Det+Dem+Sg+Fem:den # ;
+et+Det+Dem+Sg+Neu:et # ;
+ett+Det+Dem+Sg+Neu:ett # ;
+en+Det+Dem+Sg+Msc:en # ;
+ei+Det+Dem+Sg+Fem:ei # ;
+hver+Det+Dem+Sg+Msc:hver # ;
+hver+Det+Dem+Sg+Fem:hver # ;
+hver+Det+Dem+Sg+Neu:hvert # ;
+denne+Det+Dem+Sg+Msc:denne K ;
+denne+Det+Dem+Sg+Fem:denne K ;
+dette+Det+Dem+Sg+Neu:dette K ;
+disse+Det+Dem+Pl:disse K ;
+all+Det+Dem+Sg+Msc:all # ;
+all+Det+Dem+Sg+Fem:all # ;
+all+Det+Dem+Sg+Neu:alt # ;
+all+Det+Dem+Pl:alle K ;
+slik+Det+Dem+Sg+Msc:slik # ;
+slik+Det+Dem+Sg+Fem:slik # ;
+slik+Det+Dem+Sg+Neu:slikt # ;
+slik+Det+Dem+Pl:slike # ;
 
 LEXICON Possessive 
-min+Det+Poss+Masc:min # ;
-din+Det+Poss+Masc:din # ;
-mi+Det+Poss+Fem:mi # ;
-di+Det+Poss+Fem:di # ;
-mitt+Det+Poss+Neu:mitt # ;
-ditt+Det+Poss+Neu:ditt # ;
-sit+Det+Poss+Masc:sin # ;
-si+Det+Poss+Fem:si # ;
-sitt+Det+Poss+Neu:xitt # ;
-vår+Det+Poss+Masc:vår # ;
-vår+Det+Poss+Fem:vår # ;
-vårt+Det+Poss+Neu:vårt # ;
+di+Det+Poss+Sg+Fem:di # ;
+din+Det+Poss+Sg+Msc:din # ;
+dine+Det+Poss+Pl:dine # ;
+ditt+Det+Poss+Sg+Neu:ditt # ;
+mi+Det+Poss+Sg+Fem:mi # ;
+min+Det+Poss+Sg+Msc:min # ;
+mine+Det+Poss+Pl:mine # ;
+mitt+Det+Poss+Sg+Neu:mitt # ;
+si+Det+Poss+Sg+Fem:si # ;
+sin+Det+Poss+Sg+Msc:sin # ;
+sine+Det+Poss+Pl:sine # ;
+sitt+Det+Poss+Sg+Neu:sitt # ;
+vÃ¥r+Det+Poss+Sg+Fem:vÃ¥r # ;
+vÃ¥r+Det+Poss+Sg+Msc:vÃ¥r # ;
+vÃ¥re+Det+Poss+Pl:vÃ¥re # ;
+vÃ¥rt+Det+Poss+Sg+Neu:vÃ¥rt # ;
 
-hans+Det+Poss+Masc:hans # ;
+hans+Det+Poss+Msc:hans # ;
 hennes+Det+Poss+Fem:hennes # ;
-
+deres+Det+Poss+Pl:deres # ;
 
 
 LEXICON Numeral 
-+Num: basicnumber ;
+Ã©n numtag ;
+!en numtag ; ! Dem.
+to numtag ;
+tre numtag ;
+fire numtag ;
+fem numtag ;
+seks numtag ;
+sju numtag ;
+syv numtag ;
+Ã¥tte numtag ;
+ni numtag ;
 
-LEXICON basicnumber
-en # ;
-to # ;
-tre # ;
-fire # ;
-fem # ;
-seks # ;
-sju # ;
-syv # ;
-åtte # ;
-ni # ;
+LEXICON numtag
++Num: # ;
+
 
 
 LEXICON Punctuation
@@ -125,8 +153,8 @@ LEXICON Punctuation
 +PUNCT:%-  # ;
 +PUNCT:%-%-  # ;
 +Hyph:%" # ;
-+HYPH:%« # ;
-+HYPH:%» # ;
++HYPH:%Â« # ;
++HYPH:%Â» # ;
 +PAR:%[ # ;
 +PAR:%] # ;
 +PAR:%( # ;

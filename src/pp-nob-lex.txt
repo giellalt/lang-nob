@@ -1,15 +1,46 @@
 LEXICON Preposition
+imot p ;
+nedafor p ;
+nordafor p ;
+bakafor p ;
+semafor p ;
+innafor p ;
+sønnafor p ;
+metafor p ;
+hitafor p ;
+bortafor p ;
+vestafor p ;
+austafor p ;
+østafor p ;
+utafor p ;
+ovafor p ;
+nedfor p ;
+framfor p ;
+fremfor p ;
+nedenfor p ;
+istedenfor p ;
+bakenfor p ;
+innenfor p ;
+hitenfor p ;
+aktenfor p ;
+bortenfor p ;
+utenfor p ;
+ovenfor p ;
+oppfor p ;
+overfor p ;
+botfor p ;
+for p ;
 av p ;
 endatil p ;
 inntil p ;
 opptil p ;
-
+ifølge p ;
 fra p ;
 i p ;
 med p ;
 om p ;
 over p ;
-p� p ;
+på p ;
 til p ;
 ved p ;
 ut p ;
@@ -17,7 +48,16 @@ etter p ;
 mot p ;
 under p ;
 uten p ;
-
+mellom p ;
+imellom p ;
+stundimellom p ;
+innimellom p ;
+derimellom p ;
+gjennom p ;
+igjennom p ;
+oppigjennom p ;
+langs p ;
+før p ;
 
 LEXICON p
  +Pr: # ;
