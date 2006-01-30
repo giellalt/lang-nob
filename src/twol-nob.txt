@@ -1,12 +1,12 @@
 Alphabet
- a b c d e f g h i j k l m n o p q r s t u v w x y z æ ø å
+ a b c d e f g h i j k l m n o p q r s t u v w x y z Ã¦ Ã¸ Ã¥
 
- á é ó ú í à è ò ù ì ä ë ö ü ï â ê ô û î ã ý þ ñ ð ß ç
+ Ã¡ Ã© Ã³ Ãº Ã­ Ã  Ã¨ Ã² Ã¹ Ã¬ Ã¤ Ã« Ã¶ Ã¼ Ã¯ Ã¢ Ãª Ã´ Ã» Ã® Ã£ Ã½ Ã¾ Ã± Ã° ÃŸ Ã§
 
- A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Ø Å
- Á É Ó Ú Í À È Ò Ù Ì Ä Ë Ö Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð
+ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Ã† Ã˜ Ã…
+ Ã Ã‰ Ã“ Ãš Ã Ã€ Ãˆ Ã’ Ã™ ÃŒ Ã„ Ã‹ Ã– Ãœ Ã Ã‚ ÃŠ Ã” Ã› ÃŽ Ãƒ Ã Ã¾ Ã‘ Ã
 
- o:ø u:y a:e
+ o:Ã¸ u:y a:e
 
  %#:0 %>:0 
 
@@ -16,13 +16,14 @@ Alphabet
  Z1:0 Z2:0 Z3:0 Z4:0 Z5:0 Z6:0 Z7:0 Z8:0 Z9:0 ;
 
 Sets
- Vow = a e i o u y æ ø å ;
+ Vow = a e i o u y Ã¦ Ã¸ Ã¥ ;
  Cns = b c d f g h j k l m n p q r s t v w x z ;
  LNR = l n r ;
  Dummy = X1 X2 X3 X4 X5 X6 X7 X8 X9
  Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9
  Y1 Y2 Y3 Y4 Y5 Y6 Y7 Y8 Y9 
  Z1 Z2 Z3 Z4 Z5 Z6 Z7 Z8 Z9 ;  ! %+ 
+
 
 Rules
 
@@ -49,9 +50,22 @@ Rules
 "Umlaut"
  Vx:Vy <=> _ Cns:* ( e:0 ) Z1: ;
  where Vx in ( u o a )
-       Vy in ( y ø e )
+       Vy in ( y Ã¸ e )
        matched ;
-! bok : bøker
+! bok : bÃ¸ker
+
+"bror Umlaut"
+ Vx:Vy <=> _ r:d %>:0 r X3: ;
+ where Vx in ( o a )
+       Vy in ( Ã¸ e )
+       matched ;
+
+!â‚¬ bror%>rX3e
+!â‚¬ brÃ¸d0r0e
+
+"bror r to d" ! Admittedly a hack.
+ r:d <=> _ %>:0 X3: ;
+ 
 
 !"m deletion"
 ! m:0 <=> Vow: _ m #: ;
@@ -63,6 +77,33 @@ Rules
 "um Deletion 2"
  m:0 <=> u: _ X5: %>:0 ;
 
+! Verb rules
+
+"Geminate deletion in front of -t and -d"
+ Cx:0 <=> Cx _ (e:0) %>:0 Q3:0 ;
+      where Cx in ( l n g ) ;
+
+!â‚¬ kalle%>Q3te
+!â‚¬ kal000te
+
+!â‚¬ all%>Q3t
+!â‚¬ al000t
+
+!â‚¬ bygge%>Q3te
+!â‚¬ byg000de
+
+
+"Double t deleteion"
+ t:0 <=> t %>:0 _ ;
+
+!â‚¬ svart%>t
+!â‚¬ svart00
+
+"Deleting inf-e"
+ e:0 <=> _ %>:0 Q3: ;
+
+!â‚¬ presentere%>t
+!â‚¬ presenter00t
 
 ! Insertion rules
 ! ---------------
