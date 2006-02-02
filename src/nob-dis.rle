@@ -23,6 +23,7 @@ DELIMITERS = "<.>" "<!>" "<?>" "<¶>";
    SETS
 # ========
 
+LIST BOS = (>>>) (<s>); LIST EOS = (<<<) (</s>); # vislcg and CG-2 together.
 
 LIST N = N ;
 LIST A = A ;
@@ -183,9 +184,9 @@ REMOVE (N Sg Indef) IF (-1 Ind OR IM)(0 Inf);
 
 # så
 
-SELECT V IF (*-1 N OR Pron OR Det BARRIER NON-ADV)(1 NON-V);
+SELECT V IF (*-1 N OR Pron OR Det BARRIER NON-ADV)(0 ("se"))(1 NON-V);
 	## Gud så at det var godt.
-
+	# or a general rule with more specific target, grammatically speaking.
 # var
 SELECT Prt IF (-1 ("det"))(0 ("være" Prt));
 
@@ -218,7 +219,8 @@ REMOVE Pl IF (*-1 COP BARRIER NPNH LINK *-1 ("det") BARRIER NON-ADV);
 SELECT Det IF (0 ("det" Det)) (*1 (N Neu) BARRIER NON-ADJ);
 	## Det stadige jaget.
 
-# Dette
+SELECT Pron IF (0 ("det"))(1 V);
+	## Det var fint.
 
 SELECT Det IF (0 ("dette"))(1 Ind OR A);
 	## Dette går bra.
@@ -236,6 +238,15 @@ REMOVE Acc IF (-1 CLB OR CC OR CS)(1 Ind);
 REMOVE Acc IF (-1 Ind)(-2 (N Neu)); # What we want is inanimates
 	## Mørket kalte han natt.
 
+# vi
+
+
+
+SELECT V IF (-1 BOS OR CLB)(0 ("vie" Imp))(1 Pron)(2 ("til"));
+	## Vi deg til strid.
+
+REMOVE V IF (0 ("vi"));
+	## Vi kommer.
 
 # Pr 
 

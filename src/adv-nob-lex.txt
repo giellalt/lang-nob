@@ -6,6 +6,7 @@ LEXICON dat
  +N+Dat: # ;
 
 LEXICON Adverb
+slik adv ;
 bort adv ;
 fram adv ;
 enda adv ;
