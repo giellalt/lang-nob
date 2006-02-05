@@ -5,7 +5,7 @@ Alphabet
 
  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Ø Å
  Á É Ó Ú Í À È Ò Ù Ì Ä Ë Ö Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð
-
+ '
  o:ø u:y a:e
 
  %#:0 %>:0 
