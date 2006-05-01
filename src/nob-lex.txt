@@ -236,6 +236,7 @@ LEXICON 0-ene-a
  +Def:%>a K ;
 
 LEXICON en
+ +Indef: K ; ! en dør, sukk.
  +Def:%>en K ;
 
 
