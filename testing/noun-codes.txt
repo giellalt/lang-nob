@@ -1,0 +1,12 @@
++N+Msc+Sg+Indef
++N+Msc+Pl+Indef
++N+Msc+Sg+Def
++N+Msc+Pl+Def
++N+Fem+Sg+Indef
++N+Fem+Pl+Indef
++N+Fem+Sg+Def
++N+Fem+Pl+Def
++N+Neu+Sg+Indef
++N+Neu+Pl+Indef
++N+Neu+Sg+Def
++N+Neu+Pl+Def
