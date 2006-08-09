@@ -6,6 +6,17 @@ LEXICON dat
  +N+Dat: # ;
 
 LEXICON Adverb
+midt adv ;
+dermed adv ;
+hermed adv ;
+ned adv ;
+derved adv ;
+herved adv ;
+hvorved adv ;
+utfor adv ;
+småningom adv ;
+kringom adv ;
+lugom adv ;
 slik adv ;
 bort adv ;
 fram adv ;

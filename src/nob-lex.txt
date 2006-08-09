@@ -53,7 +53,7 @@ LEXICON Root
 ! Msculines
 ! ----------
 
-LEXICON nox 
+LEXICON x 
 +X: m1 ;
 
 LEXICON mX
