@@ -1,4 +1,10 @@
 LEXICON Preposition
+tillikemed p ;
+tilmed p ;
+attmed p ;
+utmed p ;
+innved p ;
+attved p ;
 imot p ;
 nedafor p ;
 nordafor p ;

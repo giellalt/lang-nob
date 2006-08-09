@@ -80,7 +80,7 @@ Rules
 ! Verb rules
 
 "Geminate deletion in front of -t and -d"
- Cx:0 <=> Cx _ (e:0) %>:0 Q3:0 ;
+ Cx:0 <=> Cx _ (e:0) %>:0 Q3:0 [d|t] ;
       where Cx in ( l n g ) ;
 
 !€ kalle%>Q3te

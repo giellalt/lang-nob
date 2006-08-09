@@ -26164,3 +26164,4 @@ Ruusu PROP-fem ; !Also sur
 Klingan PROP-sur ; !I don't know where this belongs
 Niga PROP-mal ; !Not sure of the sex
 Kosmoli PROP-plc ; !Place in 8100 Misvaer, Norway
+
