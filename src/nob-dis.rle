@@ -36,6 +36,7 @@ LIST Pcle = Pcle  ;
 LIST Pr = Pr  ;
 LIST IM = IM ;
 LIST Pron = Pron  ;
+LIST Num = Num ;
 
 LIST Prop = Prop ;
 LIST Pers = Pers  ;
@@ -73,7 +74,8 @@ LIST CLB = CLB  ;
 LIST PUNCT = PUNCT  ;
 LIST HYPH = HYPH  ;
 LIST PAR = PAR ;
-
+LIST LEFT = LEFT ;
+LIST RIGHT = RIGHT ;
 
 LIST WORD = N A Adv V CS CC Interj Pcle Pr IM Pron ;
 
@@ -82,11 +84,13 @@ SET NON-ADV = WORD - Adv ;
 SET NON-V   = WORD - V ;
 SET PNH     = A | Det ;    # pre-NP-head
 SET NPNH    = WORD - PNH ; # not pre-NP-head
+SET SUBST   = N - Prop ;
 
 LIST COP = "være" "bli" "hete" "kalles" ;
 
 LIST JEGDUVIDERE = ("jeg" Nom) ("du" Nom) ("vi" Nom) ("dere" Nom) ;
 
+SET VFIN = Ind | Imp ;
 
 
 
@@ -113,7 +117,11 @@ SELECT Pr IF (-1 N)(0 ("for"))(*1 N OR Pron BARRIER NPNH);
 
 REMOVE N IF (-1 V OR A)(0 ("for"))(1 ("at") OR ("å")) ;
 
+SELECT CS IF (-1 BOS OR HYPH)(0 ("for"))(1 Nom)(1 Ind);
+	## For jeg har funnet at bare du er rettferdig for meg.
 
+SELECT Pr IF (0 ("for"))(1 Acc)(NOT 2 Ind);
+	## For jeg har funnet at bare du er rettferdig for meg.
 
 # =================== #
 # NP-internal concord #
@@ -132,11 +140,37 @@ SELECT Fem IF (0 Dem OR A)(*1 Fem BARRIER NON-ADJ);
 SELECT Sg IF (0 A)(*1 (N Sg) BARRIER NON-ADJ);
 SELECT Pl IF (0 A)(*1 (N Pl) BARRIER NON-ADJ);
 
+SELECT Pl IF (*-1 Num BARRIER NON-ADJ)(0 SUBST);
+	# De fem første årene.
 
 # Possessors
 
 SELECT Poss IF (-1 V OR Pr OR Det)(0 ("sitt"))(*1 (N Neu) BARRIER NPNH);
 	## Hvert etter sitt slag.
+
+# Determiners
+
+SELECT Dem IF (-1 Det)(0 ("disse"))(*1 SUBST BARRIER NON-ADJ);
+	## Alle disse kontorene.
+
+#
+# Key words
+#
+
+
+# men
+
+REMOVE ("mene" V Imp) IF (0 ("men" CS))(*1 Ind);
+	## Men Guds Ånd svevet over vannet.
+
+# om
+SELECT Pr IF (0 ("om"))(1 ("lag"));
+	## om lag 200.
+
+# slik
+
+REMOVE Dem IF (0 ("slik"))(NOT *1 SUBST BARRIER NPNH );
+	## Og det ble slik.
 
 # ============ #
 # Predicatives #
@@ -167,16 +201,25 @@ SELECT Prt IF (1 Inf) ;
 SELECT Neu IF (-1 Inf)(0 (N Neu Sg Def));
     ## Dere skal formere dere og fylle vannet.
 
+SELECT Ind IF (-1 N)(1 Adv);
+	## De som jobber i regionene får nå forskjellige arbeidgivere
 
 # Infinitive or not
 
-REMOVE Imp IF (-1 Ind);
+REMOVE Imp IF (*-1 Ind OR Inf BARRIER Imp OR HYPH);
 	## Jorden skal la grønne vekster gro.
+	## Jorden skal kunne la grønne vekster gro.
 
 REMOVE (N Sg Indef) IF (-1 Ind OR IM)(0 Inf);
 	## Den skal skille vann fra vann.
 
+# Imperative or noun
 
+REMOVE Imp IF (-1 NPNH)(0 N);
+	## Guds Ånd.
+
+REMOVE Inf IF (-1 BOS OR HYPH OR LEFT)(0 Imp)(NOT *1 Ind BARRIER CLB);
+	## «Gå inn i arken, du og hele din husstand!»
 
 # Certain verbs
 
@@ -190,6 +233,7 @@ SELECT V IF (*-1 N OR Pron OR Det BARRIER NON-ADV)(0 ("se"))(1 NON-V);
 # var
 SELECT Prt IF (-1 ("det"))(0 ("være" Prt));
 
+SELECT Prt IF (-1 N)(0 ("være" Prt))(1 A);
 
 # ===== #
 # Nouns #
@@ -214,12 +258,28 @@ REMOVE Pl IF (*-1 (Dem Sg) BARRIER NON-ADJ)(0 Sg);
 REMOVE Pl IF (*-1 COP BARRIER NPNH LINK *-1 ("det") BARRIER NON-ADV);
 	## Det ble lys.
 
+REMOVE (N Sg) IF (*-1 CC BARRIER NPNH LINK -1C (N Pl))(0 (N Pl));
+	## Dager og år.
+
+SELECT (N Sg) IF (-1C (A Sg Def));
+	## Han så det faste land.
+
+REMOVE (N Sg) IF (*-1C (Det Dem Pl) BARRIER NON-ADJ)(0 (N Pl));
+	## Jorden skal la alle slags levende skapninger gå.
+
+REMOVE Fem IF (*-1 (Det Dem Sg Msc) BARRIER NON-ADJ)(0 (Msc Sg Indef)) ;
+REMOVE Neu IF (*-1 (Det Dem Sg Msc) BARRIER NON-ADJ)(0 (Msc Sg Indef)) ;
+REMOVE Msc IF (*-1 (Det Dem Sg Fem) BARRIER NON-ADJ)(0 (Fem Sg Indef)) ;
+REMOVE Neu IF (*-1 (Det Dem Sg Fem) BARRIER NON-ADJ)(0 (Msc Sg Indef)) ;
+REMOVE Msc IF (*-1 (Det Dem Sg Neu) BARRIER NON-ADJ)(0 (Msc Sg Indef)) ;
+REMOVE Fem IF (*-1 (Det Dem Sg Neu) BARRIER NON-ADJ)(0 (Msc Sg Indef)) ;
+
 # Det
 
 SELECT Det IF (0 ("det" Det)) (*1 (N Neu) BARRIER NON-ADJ);
 	## Det stadige jaget.
 
-SELECT Pron IF (0 ("det"))(1 V);
+SELECT Pron IF (0 ("det"))(1C V);
 	## Det var fint.
 
 SELECT Det IF (0 ("dette"))(1 Ind OR A);
@@ -251,6 +311,21 @@ REMOVE V IF (0 ("vi"));
 # Pr 
 
 SELECT Pr IF (*1 N BARRIER NPNH LINK *1 N BARRIER NPNH LINK 1 NON-V);
+
+# Late cycle
+
+# Fem if in doubt.
+
+
+SELECT (N Fem Sg Indef) IF (NOT *-1 (Det Dem Sg Msc) BARRIER NON-ADJ)
+	(0 (N Msc Sg Indef));
+	## Det er natt.
+SELECT (N Fem Pl Indef) IF (0 (N Msc Pl Indef));
+	## Det tok mange netter.
+
+SELECT (N Fem Pl Def) IF (0 (N Msc Pl Def));
+	## Nettene er lange.
+
 
 #=====#
   END #
