@@ -6,6 +6,12 @@ LEXICON dat
  +N+Dat: # ;
 
 LEXICON Adverb
+dann adv ;
+kun adv ;
+sogar adv ;
+sågar adv ;
+nærmere adv ;
+nærmest adv ;
 midt adv ;
 dermed adv ;
 hermed adv ;

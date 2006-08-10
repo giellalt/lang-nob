@@ -88,6 +88,10 @@ ei+Det+Dem+Sg+Fem:ei # ;
 hver+Det+Dem+Sg+Msc:hver # ;
 hver+Det+Dem+Sg+Fem:hver # ;
 hver+Det+Dem+Sg+Neu:hvert # ;
+hvilken+Det+Dem+Sg+Msc:hvilken # ;
+hvilken+Det+Dem+Sg+Fem:hvilken # ;
+hvilken+Det+Dem+Sg+Neu:hvilket # ;
+hvilken+Det+Dem+Pl:hvilke K ;
 denne+Det+Dem+Sg+Msc:denne K ;
 denne+Det+Dem+Sg+Fem:denne K ;
 dette+Det+Dem+Sg+Neu:dette K ;
@@ -100,6 +104,8 @@ slik+Det+Dem+Sg+Msc:slik # ;
 slik+Det+Dem+Sg+Fem:slik # ;
 slik+Det+Dem+Sg+Neu:slikt # ;
 slik+Det+Dem+Pl:slike # ;
+
+
 
 LEXICON Possessive 
 di+Det+Poss+Sg+Fem:di # ;

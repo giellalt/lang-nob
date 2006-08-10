@@ -34,6 +34,24 @@ stor+A+Sg+Indef:størst # ;
 
 
 LEXICON regadj
+
+splendid a3 ;
+velpleid a3 ;
+utleid a3 ;
+breid a3 ;
+greid a3 ;
+oppreid a3 ;
+veloverveid a3 ;
+hard a1 ;
+beinhard a1 ;
+steinhard a1 ;
+treg a1 ;
+kravstor a1 ;
+
+første a3 ;
+neste a3 ;
+siste a3 ;
+forrige a3 ;
 splendid a1 ;
 velpleid a1 ;
 utleid a1 ;
@@ -49,7 +67,7 @@ lang a1 ;
 redd a2 ;
 rett a1 ;
 svart a1 ;
-naturtro a1 ;
+naturtro a3 ;
 hardfør a1 ;
 tevlefør a1 ;
 vitnefør a1 ;
