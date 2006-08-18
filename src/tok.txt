@@ -35,8 +35,8 @@ define WORD [ Char ]+ ;
 # =============================================================
 #echo >>> list of abbreviations
 #define ABBR [
-#Mr. | Mrs. | Ms.
-#| etc. | e.g. | i.e.
+#Hr. | Fr. | Ms.
+#| osb. | f.eks. | i.e.
 #| ltd. | Ltd. | inc. | Inc.
 #];
 
