@@ -7,7 +7,6 @@ fordi subj ;
 for subj ;
 som subj ;
 at subj ;
-men subj ;
 ifall subj ;
 hvis subj ;
 viss subj ;
@@ -22,6 +21,7 @@ LEXICON Conjunction
 både conj ;
 og conj ;
 eller conj ;
+men subj ;
 
 
 LEXICON conj
@@ -54,7 +54,6 @@ hun+Pron+Pers+Nom:hun # ;
 han+Pron+Pers+Acc:han # ;
 han+Pron+Pers+Acc:ham # ;
 hun+Pron+Pers+Acc:henne # ;
-det+Pron+Pers+Nom:det # ;
 vi+Pron+Pers+Nom:vi # ;
 vi+Pron+Pers+Acc:oss # ;
 dere+Pron+Pers+Nom:dere # ;

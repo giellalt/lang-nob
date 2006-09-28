@@ -48,6 +48,7 @@ steinhard a1 ;
 treg a1 ;
 kravstor a1 ;
 
+bar a1 ;
 første a3 ;
 neste a3 ;
 siste a3 ;
