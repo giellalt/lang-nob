@@ -116,7 +116,7 @@ syne dat ;
 stampe dat ;
 lempe dat ;
 oppe dat ;
-bare dat ;
+bare adv ;
 ivare dat ;
 
 tide dat ;
