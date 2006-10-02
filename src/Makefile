@@ -5,7 +5,7 @@
 # This goal depends on nob.save being up to date.
 
 inob.fst: ../bin/inob.fst
-../bin/inob.fst: ../bin/nob.fst ../bin/nob.save ../bin/tok.fst \
+../bin/inob.fst: ../bin/nob.fst ../bin/nob.save ../bin/tok.fst ../bin/abbr.txt \
 	../bin/allcaps.fst
 	@echo
 	@echo "*** Building the inverse inob.fst ***"
@@ -33,6 +33,25 @@ nob.fst: ../bin/nob.fst
 	quit \n" > /tmp/nob-fst-script
 	@xfst -utf8 < /tmp/nob-fst-script
 	@rm -f /tmp/nob-fst-script
+
+
+
+# Here we make the abbrevation file for our current preprocessor, 
+# the perl-based preprocess (located in the script catalogue)
+
+abbr: ../bin/abbr.txt
+../bin/abbr.txt: ../../../gt/script/abbr-extract propernoun-nob-lex.txt closed-nob-lex.txt adv-nob-lex.txt \
+	abbr-nob-lex.txt noun-nob-lex.txt
+	@echo
+	@echo "*** Extracting abbreviations from abbr-nob-lex.txt to abbr.txt ***" ;
+	@echo
+	@perl ../../../gt/script/abbr-extract \
+		--abbr_lex=abbr-nob-lex.txt \
+		--lex=propernoun-nob-lex.txt,closed-nob-lex.txt,adv-nob-lex.txt,noun-nob-lex.txt,abbr-nob-lex.txt \
+		--output=$@
+
+
+
 
 # The second goal is to build the caseconv.fst file
 # This goal depends on case.regex
@@ -68,13 +87,13 @@ allcaps.fst: ../bin/allcaps.fst
 
 nob.save: ../bin/nob.save
 ../bin/nob.save: ../bin/twol-nob.bin nob-lex.txt adj-nob-lex.txt \
-	adv-nob-lex.txt noun-nob-lex.txt verb-nob-lex.txt \
+	adv-nob-lex.txt noun-nob-lex.txt verb-nob-lex.txt abbr-nob-lex.txt \
 	closed-nob-lex.txt pp-nob-lex.txt propernoun-nob-lex.txt
 	@echo
 	@echo "*** Building nob.save ***" ;
 	@echo
 	printf "compile-source nob-lex.txt adj-nob-lex.txt adv-nob-lex.txt \
-	noun-nob-lex.txt verb-nob-lex.txt closed-nob-lex.txt \
+	noun-nob-lex.txt verb-nob-lex.txt abbr-nob-lex.txt closed-nob-lex.txt \
 	pp-nob-lex.txt propernoun-nob-lex.txt \n\
 	read-rules ../bin/twol-nob.bin \n\
 	compose-result \n\
