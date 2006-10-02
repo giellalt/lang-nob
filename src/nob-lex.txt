@@ -39,6 +39,7 @@ LEXICON Root
  Determiner ;
  Numeral ;
  Punctuation ;
+ Abbreviation ;
 
 
 
