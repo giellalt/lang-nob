@@ -88,13 +88,13 @@ allcaps.fst: ../bin/allcaps.fst
 nob.save: ../bin/nob.save
 ../bin/nob.save: ../bin/twol-nob.bin nob-lex.txt adj-nob-lex.txt \
 	adv-nob-lex.txt noun-nob-lex.txt verb-nob-lex.txt abbr-nob-lex.txt \
-	closed-nob-lex.txt pp-nob-lex.txt propernoun-nob-lex.txt
+	closed-nob-lex.txt pp-nob-lex.txt propernoun-nob-lex.txt punct-nob-lex.txt
 	@echo
 	@echo "*** Building nob.save ***" ;
 	@echo
 	printf "compile-source nob-lex.txt adj-nob-lex.txt adv-nob-lex.txt \
 	noun-nob-lex.txt verb-nob-lex.txt abbr-nob-lex.txt closed-nob-lex.txt \
-	pp-nob-lex.txt propernoun-nob-lex.txt \n\
+	pp-nob-lex.txt propernoun-nob-lex.txt punct-nob-lex.txt \n\
 	read-rules ../bin/twol-nob.bin \n\
 	compose-result \n\
 	save-result ../bin/nob.save \n\
