@@ -147,21 +147,3 @@ LEXICON numtag
 
 
 
-LEXICON Punctuation
-
-+CLB:%,   # ;
-+CLB:%.   # ;
-+CLB:%:   # ;
-+CLB:%;	  # ;
-+CLB:%!	  # ;
-+CLB:%?	  # ;
-+PUNCT:%-  # ;
-+PUNCT:%-%-  # ;
-+Hyph:%" # ;
-+HYPH:%« # ;
-+HYPH:%» # ;
-+PAR:%[ # ;
-+PAR:%] # ;
-+PAR:%( # ;
-+PAR:%) # ;
-
