@@ -1,5 +1,6 @@
-# This is a makefile that builds the Northern Sami morphological parser
-# *****************************************************************
+# ************************************************************************ #
+# This is a makefile that builds the Norwegian Bokmål morphological parser #
+# ************************************************************************ #
 
 # The ultimate goal is to build inob.fst, the generator
 # This goal depends on nob.save being up to date.
