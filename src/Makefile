@@ -2,6 +2,12 @@
 # This is a makefile that builds the Norwegian Bokmål morphological parser #
 # ************************************************************************ #
 
+LEX=nob-lex.txt adj-nob-lex.txt \
+	adv-nob-lex.txt noun-nob-lex.txt verb-nob-lex.txt abbr-nob-lex.txt \
+	closed-nob-lex.txt pp-nob-lex.txt propernoun-nob-lex.txt punct-nob-lex.txt \
+	abbr-nob-lex.txt
+
+
 # The ultimate goal is to build inob.fst, the generator
 # This goal depends on nob.save being up to date.
 
@@ -40,18 +46,22 @@ nob.fst: ../bin/nob.fst
 # Here we make the abbrevation file for our current preprocessor, 
 # the perl-based preprocess (located in the script catalogue)
 
+empty:=
+comma:=,
+space:=$(empty) $(empty)
+ABBRSRCS=$(subst $(space),$(comma),$(LEX))
+
+scripts=$(HOME)/gt/script
+
 abbr: ../bin/abbr.txt
-../bin/abbr.txt: ../../../gt/script/abbr-extract propernoun-nob-lex.txt closed-nob-lex.txt adv-nob-lex.txt \
-	abbr-nob-lex.txt noun-nob-lex.txt
+../bin/abbr.txt: $(scripts)/abbr-extract $(scripts)/langTools/Util.pm $(LEX)
 	@echo
 	@echo "*** Extracting abbreviations from abbr-nob-lex.txt to abbr.txt ***" ;
 	@echo
-	@perl ../../../gt/script/abbr-extract \
+	@perl -I $(scripts) $(scripts)/abbr-extract \
+		--output=$@ \
 		--abbr_lex=abbr-nob-lex.txt \
-		--lex=propernoun-nob-lex.txt,closed-nob-lex.txt,adv-nob-lex.txt,noun-nob-lex.txt,abbr-nob-lex.txt \
-		--output=$@
-
-
+		--lex=$(ABBRSRCS)
 
 
 # The second goal is to build the caseconv.fst file
