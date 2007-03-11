@@ -56,7 +56,7 @@ LEXICON Root
 ! Basic paradigms
 ! ===============
 
-! Msculines
+! Masculines
 ! ----------
 
 LEXICON x 
