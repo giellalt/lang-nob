@@ -91,7 +91,7 @@ LIST COP = "være" "bli" "hete" "kalles" ;
 LIST JEGDUVIDERE = ("jeg" Nom) ("du" Nom) ("vi" Nom) ("dere" Nom) ;
 
 SET VFIN = Ind | Imp ;
-
+SET VINFIN = PrsPtc | PrfPtc | Inf ;
 
 
 CONSTRAINTS
@@ -206,6 +206,8 @@ SELECT Ind IF (-1 N)(1 Adv);
 
 # Infinitive or not
 
+REMOVE Prt IF (-1 Ind)(0 Inf);
+
 REMOVE Imp IF (*-1 Ind OR Inf BARRIER Imp OR HYPH);
 	## Jorden skal la grønne vekster gro.
 	## Jorden skal kunne la grønne vekster gro.
@@ -274,6 +276,7 @@ REMOVE Neu IF (*-1 (Det Dem Sg Fem) BARRIER NON-ADJ)(0 (Msc Sg Indef)) ;
 REMOVE Msc IF (*-1 (Det Dem Sg Neu) BARRIER NON-ADJ)(0 (Msc Sg Indef)) ;
 REMOVE Fem IF (*-1 (Det Dem Sg Neu) BARRIER NON-ADJ)(0 (Msc Sg Indef)) ;
 
+
 # Det
 
 SELECT Det IF (0 ("det" Det)) (*1 (N Neu) BARRIER NON-ADJ);
@@ -285,8 +288,18 @@ SELECT Pron IF (0 ("det"))(1C V);
 SELECT Det IF (0 ("dette"))(1 Ind OR A);
 	## Dette går bra.
 
-# Pronouns
 
+# Pronouns
+# ========
+
+# Pron or not
+
+# Case
+
+REMOVE Acc IF (0 (Pron Nom))(1 VFIN LINK *1 Nom OR VINFIN);
+	## Han så vi.
+
+REMOVE Nom IF (0 (Pron Acc))(1 VFIN LINK Nom);
 # Initial subjects.
 
 REMOVE Acc IF (-1 CLB OR CC OR CS)(1 Ind);
@@ -309,8 +322,18 @@ REMOVE V IF (0 ("vi"));
 	## Vi kommer.
 
 # Pr 
+# ==
 
 SELECT Pr IF (*1 N BARRIER NPNH LINK *1 N BARRIER NPNH LINK 1 NON-V);
+
+
+# Certain prepositions
+# ====================
+
+SELECT Pr IF (0 ("om"))(*1 N BARRIER NPNH LINK NOT 1 V);
+	## Han spurte meg om Per.
+
+
 
 # Late cycle
 
