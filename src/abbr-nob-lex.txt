@@ -118,6 +118,13 @@ LEXICON ab-dot-noun ! This is the lexicon for abbrs that must have a period.
 !            Intransitive abbreviations           !
 ! =============================================== !
 
+! These give clause boundaries before capital letters
+! and numbers, but not elsewhere.
+! Vi bor i Sth. CLB 10 av oss er innflyttere. 
+! Vi bor i Sth. CLB Saara er også innflytter. 
+! Vi vet at Sth. er en fin by.
+
+
 LEXICON ITRAB
 
 !eng ab ;
@@ -285,6 +292,18 @@ sp ab ;
 sst ab ;
 årh ab ;
 
+
+! =============================================== !
+!    Transitive number-related abbreviations      !
+! =============================================== !
+
+! These ones are transitive when followed by numbers or 
+! singleton letters, and intransitive elsewhere.
+! Gården har Gnr. 10. 
+! Gården har Gnr. 5. a. 
+! Alle gårder har ikke Gnr. CLB Det er et problem. 
+! Alle gårder har ikke Gnr. og det er et problem. 
+
 LEXICON TRNUMAB
 
 Apd		ab-dot ;                                      !
@@ -333,11 +352,21 @@ tlf		ab-dot-noun ;                                 !
 tlf ab ;
 vnr		ab-dot-noun ;                                 !
 
+
+! =============================================== !
+!              Transitive abbreviations           !
+! =============================================== !
+
 LEXICON TRAB
 
 ! dot% noStb.db
 ! Abbreviations that never induce sentence boundaries
 ! The file is too large and should be shrinked
+! fenr. 10. 
+! fenr. 5. a. 
+! fenr. Ståhl. 
+! fenr. stål.
+! They simply do never give CLB.
 
 !att ab ;
 !best ab ;
@@ -521,6 +550,7 @@ gt ab ;
 gty ab ;
 h ab ;
 hebr ab ;
+hht ab ;
 hhv ab ;
 hist ab ;
 holl ab ;
