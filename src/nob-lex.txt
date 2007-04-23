@@ -17,7 +17,7 @@ Multichar_Symbols
  +Interj 
  +Prop +Fem +Mal +Plc +Org +Ani
  +CLB +PUNCT +HYPH +LEFT +RIGHT
- +X ! denoting not-checked.
+! +X ! denoting not-checked.
 
  X1 X2 X3 X4 X5 X6 X7 X8 X9
  Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9
@@ -60,7 +60,9 @@ LEXICON Root
 ! ----------
 
 LEXICON x 
-+X: m1 ;
+!+X: m1 ; !Temporarily excluding the xX
+ m1 ;     ! change line back if needed.
+
 
 LEXICON mX
  +N+Msc: K ;
@@ -300,7 +302,8 @@ LEXICON a-grade
 ! ----------
 
 LEXICON vx 
- +X: v1 ;
+! +X: v1 ; ! ditto
+     v1 ;
 
 LEXICON v13 ! sveve -> svevet, svevde.
  v1 ;
