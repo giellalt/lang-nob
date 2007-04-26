@@ -3371,6 +3371,7 @@ vettlaus a1 ;
 løs a1 ;
 skandaløs a1 ;
 fredløs a1 ;
+hjemløs a1 ;
 tidløs a1 ;
 åndløs a1 ;
 rådløs a1 ;
