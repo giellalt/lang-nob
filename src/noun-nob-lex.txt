@@ -1,6 +1,6 @@
 LEXICON NounRoot
 
-  
+eple n2 ;  
 meter m3V ; ! Msc, -0
 drosje m1  ;
 blår+N+Fem+Pl+Indef:blår # ;
@@ -11737,7 +11737,6 @@ banko x ;
 blanko x ;
 manko x ;
 franko x ;
-sko x ;
 fiasko x ;
 kasko x ;
 fresko x ;
@@ -11756,7 +11755,7 @@ springflo x ;
 marflo x ;
 glo x ;
 beglo x ;
-iglo x ;
+iglo m1 ;
 ilo x ;
 geilo x ;
 heilo x ;
