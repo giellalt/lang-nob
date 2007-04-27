@@ -6,6 +6,7 @@ LEXICON dat
  +N+Dat: # ;
 
 LEXICON Adverb
+hvor adv ;
 dann adv ;
 kun adv ;
 sogar adv ;
@@ -16,6 +17,7 @@ midt adv ;
 dermed adv ;
 hermed adv ;
 ned adv ;
+neppe adv ;
 derved adv ;
 herved adv ;
 hvorved adv ;

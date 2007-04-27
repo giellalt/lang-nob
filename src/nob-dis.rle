@@ -37,6 +37,7 @@ LIST Pr = Pr  ;
 LIST IM = IM ;
 LIST Pron = Pron  ;
 LIST Num = Num ;
+LIST ABBR = ABBR ;
 
 LIST Prop = Prop ;
 LIST Pers = Pers  ;
@@ -333,7 +334,8 @@ SELECT Pr IF (*1 N BARRIER NPNH LINK *1 N BARRIER NPNH LINK 1 NON-V);
 SELECT Pr IF (0 ("om"))(*1 N BARRIER NPNH LINK NOT 1 V);
 	## Han spurte meg om Per.
 
-
+REMOVE ABBR IF (0 ("i"))(1 N OR NPNH);
+	## I begynnelsen.
 
 # Late cycle
 

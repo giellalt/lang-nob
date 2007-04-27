@@ -28,7 +28,7 @@ LEXICON conj
  +CC: # ;
 
 LEXICON Interjection
- uff ij ;
+uff ij ;
 ptro ij ;
 ja ij ;
 nei ij ;
@@ -103,7 +103,7 @@ slik+Det+Dem+Sg+Msc:slik # ;
 slik+Det+Dem+Sg+Fem:slik # ;
 slik+Det+Dem+Sg+Neu:slikt # ;
 slik+Det+Dem+Pl:slike # ;
-
+samme+Det+Dem:samme # ;
 
 
 LEXICON Possessive 
@@ -141,6 +141,63 @@ sju numtag ;
 syv numtag ;
 åtte numtag ;
 ni numtag ;
+ti numtag ;
+elleve numtag ;
+tolv numtag ;
+tretten numtag ;
+fjorten numtag ;
+femten numtag ;
+seksten numtag ;
+søtten numtag ;
+sytten numtag ;
+atten numtag ;
+nitten numtag ;
+tjue numtag ;
+tyve numtag ;
+tredve a3 ;
+tretti numtag ;
+førti numtag ;
+femti numtag ;
+seksti numtag ;
+sytti numtag ;
+søtti numtag ;
+åtti numtag ;
+nitti numtag ;
+hundre numtag ;
+
+første a3 ;
+andre a3 ;
+tredje a3 ;
+fjerde a3 ;
+femte a3 ;
+sjette a3 ;
+sjuende a3 ;
+syvende a3 ;
+åttende a3 ;
+niende a3 ;
+tiende a3 ;
+ellevte a3 ;
+tolvte a3 ;
+trettende a3 ;
+fjortende a3 ;
+femtende a3 ;
+sekstende a3 ;
+søttende a3 ;
+syttende a3 ;
+attende a3 ;
+nittende a3 ;
+tjuende a3 ;
+tyvende a3 ;
+tredevte a3 ;
+trettiende a3 ;
+førtiende a3 ;
+femtiende a3 ;
+sekstiende a3 ;
+syttiende a3 ;
+søttiende a3 ;
+åttiende a3 ;
+nittiende a3 ;
+hundrede a3 ;
 
 LEXICON numtag
 +Num: # ;
