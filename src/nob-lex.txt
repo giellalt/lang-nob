@@ -111,7 +111,13 @@ LEXICON RADIUS
 
 LEXICON BROR
  +N+Msc+Sg: 0-en ;
- +N+Msc+Pl:r%>X3 e-ne ; 
+ +N+Msc+Pl:r%>X3 e-ene ; 
+
+LEXICON DATTER
+ +N+Fem+Sg+Indef:datter # ;
+ +N+Fem+Sg+Def:datra # ;
+ +N+Fem+Sg+Indef:døtre # ;
+ +N+Fem+Sg+Def:døtrene # ;
 
 LEXICON MANN
  +N+Msc+Sg: 0-en ;
@@ -181,7 +187,7 @@ LEXICON n3b ! lager
  +N+Neu+Sg: 0-et ;
  +N+Neu+Pl:X1 e-ene ;
 
-LEXICON n3c
+LEXICON n3c ! fe
  +N+Neu+Sg: 0-et ;
  +N+Neu+Pl: 0-ne ;
 
