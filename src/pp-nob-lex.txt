@@ -53,6 +53,7 @@ ut p ;
 etter p ;
 mot p ;
 under p ;
+herunder p ;
 uten p ;
 mellom p ;
 imellom p ;

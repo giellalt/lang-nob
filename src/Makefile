@@ -2,8 +2,8 @@
 # This is a makefile that builds the Norwegian Bokmål morphological parser #
 # ************************************************************************ #
 
-LEX=nob-lex.txt adj-nob-lex.txt \
-	adv-nob-lex.txt noun-nob-lex.txt verb-nob-lex.txt abbr-nob-lex.txt \
+LEX=nob-lex.txt adj-nob-lex.txt adj-nob-morph.txt adv-nob-lex.txt \
+	noun-nob-lex.txt noun-nob-morph.txt verb-nob-lex.txt verb-nob-morph.txt \
 	closed-nob-lex.txt pp-nob-lex.txt propernoun-nob-lex.txt punct-nob-lex.txt \
 	abbr-nob-lex.txt
 
@@ -97,15 +97,11 @@ allcaps.fst: ../bin/allcaps.fst
 # This goal depends on twol-nob.bin and a bunch of lexicon files
 
 nob.save: ../bin/nob.save
-../bin/nob.save: ../bin/twol-nob.bin nob-lex.txt adj-nob-lex.txt \
-	adv-nob-lex.txt noun-nob-lex.txt verb-nob-lex.txt abbr-nob-lex.txt \
-	closed-nob-lex.txt pp-nob-lex.txt propernoun-nob-lex.txt punct-nob-lex.txt
+../bin/nob.save: ../bin/twol-nob.bin $(LEX)
 	@echo
 	@echo "*** Building nob.save ***" ;
 	@echo
-	printf "compile-source nob-lex.txt adj-nob-lex.txt adv-nob-lex.txt \
-	noun-nob-lex.txt verb-nob-lex.txt abbr-nob-lex.txt closed-nob-lex.txt \
-	pp-nob-lex.txt propernoun-nob-lex.txt punct-nob-lex.txt \n\
+	printf "compile-source $(LEX) \n\
 	read-rules ../bin/twol-nob.bin \n\
 	compose-result \n\
 	save-result ../bin/nob.save \n\
