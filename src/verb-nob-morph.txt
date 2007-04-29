@@ -1,0 +1,472 @@
+! ========================
+! Sublexica for verb roots
+! ========================
+
+! Main types, from Bokmålsordboka
+! v1  kaste       kaster      kasta       kasta
+!                             kastet      kastet
+! v2  lyse        lyser       lyste       lyst
+! v3  leve        lever       levde       levd
+! v4  nå          når         nådde       nådd
+! v4  bie         bier        bidde       bidd
+
+! Subtypes
+! v13 v1 or v3
+! v1-s passive v1 verbs
+! v2-s passive v2 verbs
+! v3-s passive v3 verbs
+
+! =========================== !
+! Sublexica for regular verbs !
+! =========================== !
+
+
+LEXICON vx 
+! +X: v1 ; ! ditto
+     v1 ;
+
+LEXICON v13 ! sveve -> svevet, svevde.
+ v1 ;
+ v3 ;
+
+LEXICON v1 ! kaste
+ +V: inf-prsptc ;
+ +V: regpres ;
+ +V: a-et-pret ;
+
+ 
+LEXICON v2 ! blåse, studere
+ +V: inf-prsptc ;
+ +V: regpres ;
+ +V: te-pret ;
+
+LEXICON v3 ! leve
+ +V: inf-prsptc ;
+ +V: regpres ;
+ +V: de-pret ;
+
+LEXICON v4 ! ro, bie
+ +V: inf-prsptc ;
+ +V: r-pres ;
+ +V: dde-pret ;
+
+LEXICON v1-s ! undres
+ +Inf: # ;
+ +Ind+Prs: # ;
+ +Ind+Prt: # ;
+ +PrfPtc: # ;
+
+LEXICON v2-s ! føles, synes
+ +Inf: # ;
+ +Ind+Prs: # ;
+ +Ind+Prt:Q1 # ;
+ +PrfPtc:Q1 # ;
+
+LEXICON v3-s ! trives
+ +Inf: # ;
+ +Ind+Prs: # ;
+ +Ind+Prt:Q2 # ;
+ +PrfPtc:Q2 # ;
+
+
+! ========== !
+! Inflection !
+! ========== !
+
+
+LEXICON vs3
+ +Inf: # ;
+ +Ind+Prs:%>r # ;
+ +Ind+Prt:%>Q3 # ; ! bar, æ>a and e deletion
+ +PrsPtc:%>nde K ;
+ +PrfPtc:%>Q3t # ; ! båret, æ>å, no e deletion
+
+
+
+! ---------------------
+! Conjugation sublexica
+! ---------------------
+
+LEXICON inf-prsptc
+ +Inf: # ;
+ +Imp:%>Q3 # ;
+ +PrsPtc:%>ende # ;
+ 
+LEXICON regpres
+ +Ind+Prs:%>er # ;
+
+LEXICON r-pres
+ +Ind+Prs:%>r # ;
+
+LEXICON a-et-pret
+ +Ind+Prt:%>a # ;
+ +Ind+Prt:%>et # ;
+ +PrfPtc:%>a # ;
+ +PrfPtc:%>et # ;
+
+LEXICON te-pret
+ +Ind+Prt:%>Q3te # ;
+ +PrfPtc:%>Q3t # ;
+
+LEXICON de-pret
+ +Ind+Prt:%>Q3de # ;
+ +PrfPtc:%>Q3d # ;
+
+LEXICON dde-pret
+ +Ind+Prt:%>dde # ;
+ +PrfPtc:%>dd # ;
+
+
+
+
+
+
+! ============================= !
+! Sublexica for irregular verbs !
+! ============================= !
+
+
+LEXICON irregular-verb
+
+burde+V+Inf:burde # ;
+burde+V+Ind+Prs:bør # ;
+burde+V+Ind+Prt:burde # ;
+
+kunne+V+Inf:kunne # ;
+kunne+V+Ind+Prs:kan # ;
+kunne+V+Ind+Prt:kunne # ;
+kunne+V+PrfPtc:kunnet # ;
+
+få+V+Inf:få # ;
+få+V+Imp:få # ;
+få+V+Ind+Prs:får # ;
+få+V+Ind+Prt:fikk # ;
+få+V+PrfPtc:fått # ;
+få+V+PrsPtc:fående # ;
+
+la+V+Inf:la # ;
+la+V+Imp:la # ;
+la+V+Ind+Prs:lar # ;
+la+V+Ind+Prt:lot # ;
+la+V+PrfPtc:latt # ;
+
+måtte+V+Inf:måtte # ;
+måtte+V+Ind+Prs:må # ;
+måtte+V+Ind+Prt:måtte # ;
+måtte+V+PrfPtc:mått # ;
+
+skulle+V+Inf:skulle # ;
+skulle+V+Ind+Prs:skal # ;
+skulle+V+Ind+Prt:skulle # ;
+skulle+V+PrfPtc:skullet # ;
+
+ville+V+Inf:ville # ;
+ville+V+Ind+Prs:vil # ;
+ville+V+Ind+Prt:ville # ;
+ville+V+PrfPtc:villet # ;
+
+vite+V+Inf:vite # ;
+vite+V+Imp:vit # ;
+vite+V+Ind+Prs:vet # ;
+vite+V+Ind+Prt:visste # ;
+vite+V+PrfPtc:visst # ;
+vite+V+PrsPtc:vitende # ;
+
+
+
+! ============================= !
+! Irregular verbs with prefixes !
+! ============================= !
+
+
+
+LEXICON BE
+be+V+Inf:be # ;
+be+V+Imp:be # ;
+be+V+Ind+Prs:ber # ;
+be+V+Ind+Prs+Pass:bes # ;
+be+V+Ind+Prt:ba # ;
+be+V+PrfPtc:bedt # ;
+be+V+PrsPtc:beende # ;
+
+LEXICON BINDE
+binde+V+Inf:binde # ;
+binde+V+Imp:bind # ;
+binde+V+Ind+Prs:binder # ;
+binde+V+Ind+Prs+Pass:bindes # ;
+binde+V+Ind+Prt:bandt # ;
+binde+V+PrfPtc:bundet # ;
+binde+V+PrsPtc:bindende # ;
+
+LEXICON BLI
+bli+V+Inf:bli # ;
+bli+V+Imp:bli # ;
+bli+V+Ind+Prs:blir # ;
+bli+V+Ind+Prt:ble # ;
+bli+V+Ind+Prt:blei # ;
+bli+V+PrfPtc:blitt # ;
+bli+V+PrsPtc:blivende # ;
+
+LEXICON BRINGE
+bringe+V+Inf:bringe # ;
+bringe+V+Imp:bring # ;
+bringe+V+Ind+Prs:bringer # ;
+bringe+V+Ind+Prt:brakte # ;
+bringe+V+PrfPtc:brakt # ;
+bringe+V+PrsPtc:bringende # ;
+
+LEXICON BRYTE
+bryte+V+Inf:bryte # ;
+bryte+V+Imp:bryt # ;
+bryte+V+Ind+Prs:bryter # ;
+bryte+V+Ind+Prt:brøt # ;
+bryte+V+Ind+Prt:braøt # ;
+bryte+V+Ind+Prt:brøyt # ; !SUB
+bryte+V+PrfPtc:brytt # ;
+bryte+V+PrsPtc:brytende # ;
+
+LEXICON DRA
+dra+V+Inf:dra # ;
+dra+V+Imp:dra # ;
+dra+V+Ind+Prs:drar # ;
+dra+V+Ind+Prt:dro # ;
+dra+V+Ind+Prt:drog # ;
+dra+V+PrfPtc:dratt # ;
+dra+V+PrsPtc:draende # ;
+
+LEXICON DØ
+dø+V+Inf:dø # ;
+dø+V+Imp:dø # ;
+dø+V+Ind+Prs:dør # ;
+dø+V+Ind+Prs+Pass:døes # ;
+dø+V+Ind+Prt:døde # ;
+dø+V+PrfPtc:dødd # ;
+dø+V+Prdtc:døende # ;
+
+LEXICON FINNE
+finne+V+Inf:finne # ;
+finne+V+Imp:finn # ;
+finne+V+Ind+Prs:finner # ;
+finne+V+Ind+Prs+Pass:finnes # ;
+finne+V+Ind+Prt:fant # ;
+finne+V+PrfPtc:funnet # ;
+finne+V+PrsPtc:finnende # ;
+
+LEXICON GJØRE
+gjøre+V+Inf:gjøre # ;
+gjøre+V+Imp:gjør # ;
+gjøre+V+Ind+Prs:gjør # ;
+gjøre+V+Ind+Prs+Pass:gjøres # ;
+gjøre+V+Ind+Prt:gjorde # ;
+gjøre+V+PrfPtc:gjort # ;
+gjøre+V+PrsPtc:gjørende # ;
+
+LEXICON GÅ
+gå+V+Inf:gå # ;
+gå+V+Imp:gå # ;
+gå+V+Ind+Prs:går # ;
+gå+V+Ind+Prs+Pass:gås # ;
+gå+V+Ind+Prt:gikk # ;
+gå+V+PrfPtc:gått # ;
+gå+V+PrsPtc:gående # ;
+
+LEXICON GI
+gi+V+Inf:gi # ;
+gi+V+Imp:gi # ;
+gi+V+Ind+Prs:gir # ;
+gi+V+Ind+Prs+Pass:gis # ;
+gi+V+Ind+Prt:ga # ;
+gi+V+Ind+Prt:gav # ;
+gi+V+PrfPtc:gitt # ;
+gi+V+PrsPtc:giende # ;
+gi+V+PrsPtc:givende # ;
+
+LEXICON HA
+ha+V+Inf:ha # ;
+ha+V+Imp:ha # ;
+ha+V+Ind+Prs:har # ;
+ha+V+Ind+Prt:hadde # ;
+ha+V+PrfPtc:hatt # ;
+ha+V+PrsPtc:haende # ;
+
+LEXICON HENGE
+henge+V+Inf:henge # ;
+henge+V+Imp:heng # ;
+henge+V+Ind+Prs:henger # ;
+henge+V+Ind+Prs+Pass:henges # ;
+henge+V+Ind+Prt:hang # ;
+henge+V+PrfPtc:hunget # ;
+henge+V+PrfPtc:hengt # ;
+henge+V+PrsPtc:hengende # ;
+
+LEXICON HETE
+hete+V+Inf:hete # ;
+hete+V+Imp:het # ;
+hete+V+Ind+Prs:heter # ;
+hete+V+Ind+Prs+Pass:hetes # ;
+hete+V+Ind+Prt:het # ;
+hete+V+Ind+Prt:hette # ;
+hete+V+PrfPtc:hett # ;
+hete+V+PrfPtc:hetet # ;
+hete+V+PrsPtc:hetende # ;
+
+LEXICON HJELPE
+hjelpe+V+Inf:hjelpe # ;
+hjelpe+V+Imp:hjelp # ;
+hjelpe+V+Ind+Prs:hjelper # ;
+hjelpe+V+Ind+Prs+Pass:hjelpes # ;
+hjelpe+V+Ind+Prt:hjalp # ;
+hjelpe+V+PrfPtc:hjulpet # ;
+hjelpe+V+PrsPtc:hjelpende # ;
+
+LEXICON KOMME
+komme+V+Inf:komme # ;
+komme+V+Ind+Prs:kommer # ;
+komme+V+Ind+Prt:kom # ;
+komme+V+PrfPtc:kommet # ;
+komme+V+PrsPtc:kommende # ;
+komme+V+Imp:kom # ;
+
+LEXICON LIGGE
+ligge+V+Inf:ligge # ;
+ligge+V+Imp:ligg # ;
+ligge+V+Ind+Prs:ligger # ;
+ligge+V+Ind+Prs+Pass:ligges # ;
+ligge+V+Ind+Prt:lå # ;
+ligge+V+PrfPtc:ligget # ;
+ligge+V+PrsPtc:liggende # ;
+
+LEXICON LEGGE
+legge+V+Inf:legge # ;
+legge+V+Imp:legg # ;
+legge+V+Ind+Prs:legger # ;
+legge+V+Ind+Prs+Pass:legges # ;
+legge+V+Ind+Prt:la # ;
+legge+V+PrfPtc:lagt # ;
+legge+V+PrsPtc:leggende # ;
+
+LEXICON SE
+se+V+Inf:se # ;
+se+V+Imp:se # ;
+se+V+Ind+Prs:ser # ;
+se+V+Ind+Prs+Pass:ses # ;
+se+V+Ind+Prs+Pass:sees # ;
+se+V+Ind+Prt:så # ;
+se+V+PrfPtc:sett # ;
+se+V+PrsPtc:seende # ;
+
+LEXICON SETTE
+sette+V+Inf:sette # ;
+sette+V+Imp:sett # ;
+sette+V+Ind+Prs:setter # ;
+sette+V+Ind+Prs+Pass:settes # ;
+sette+V+Ind+Prt:satte # ;
+sette+V+PrfPtc:satt # ;
+sette+V+PrsPtc:settende # ;
+
+LEXICON SI
+si+V+Inf:si # ;
+si+V+Imp:si # ;
+si+V+Ind+Prs:sier # ;
+si+V+Ind+Prs+Pass:sies # ;
+si+V+Ind+Prt:sa # ;
+si+V+PrfPtc:sagt # ;
+si+V+PrsPtc:siende # ;
+
+LEXICON SITTE
+sitte+V+Inf:sitte # ;
+sitte+V+Imp:sitt # ;
+sitte+V+Ind+Prs:sitter # ;
+sitte+V+Ind+Prs+Pass:sittes # ;
+sitte+V+Ind+Prt:satt # ;
+sitte+V+PrfPtc:sittet # ;
+sitte+V+PrsPtc:sittende # ;
+
+LEXICON SKRIVE
+skrive+V+Inf:skrive # ;
+skrive+V+Imp:skriv # ;
+skrive+V+Ind+Prs:skriver # ;
+skrive+V+Ind+Prt:skrev # ;
+skrive+V+Ind+Prt:skreiv # ;
+skrive+V+PrfPtc:skrevet # ;
+skrive+V+PrsPtc:skrivende # ;
+
+LEXICON SLÅ
+slå+V+Inf:slå # ;
+slå+V+Imp:slå # ;
+slå+V+Ind+Prs:slår # ;
+slå+V+Ind+Prs+Pass:slås # ;
+slå+V+Ind+Prt:slo # ;
+slå+V+PrfPtc:slått # ;
+slå+V+PrsPtc:slående # ;
+
+LEXICON SLÅSS
+slåss+V+Inf:slåss # ;
+slåss+V+Imp:slåss # ;
+slåss+V+Ind+Prs:slåss # ;
+slåss+V+Ind+Prt:sloss # ;
+slåss+V+PrsPtc:slåssende # ;
+
+LEXICON SOVE
+sove+V+Inf:sove # ;
+sove+V+Imp:sov # ;
+sove+V+Ind+Prs:sover # ;
+sove+V+Ind+Prt:sov # ;
+sove+V+Ind+PrfPtc:sovet # ;
+sove+V+PrsPtc:sovende # ;
+
+LEXICON SPRINGE
+springe+V+Inf:springe # ;
+springe+V+Imp:spring # ;
+springe+V+Ind+Prs:springer # ;
+springe+V+Ind+Prt:sprang # ;
+springe+V+PrfPtc:sprunget # ;
+springe+V+PrsPtc:springende # ;
+
+LEXICON SPØRRE
+spørre+V+Inf:spørre # ;
+spørre+V+Imp:spør # ;
+spørre+V+Ind+Prs:spør # ;
+spørre+V+Ind+Prs+Pass:spørres # ;
+spørre+V+Ind+Prt:spurte # ;
+spørre+V+PrfPtc:spurt # ;
+spørre+V+PrsPtc:spørrende # ;
+
+LEXICON STÅ
+stå+V+Inf:stå # ;
+stå+V+Imp:stå # ;
+stå+V+Ind+Prs:står # ;
+stå+V+Ind+Prs+Pass:stås # ;
+stå+V+Ind+Prt:stod # ;
+stå+V+PrfPtc:stått # ;
+stå+V+PrsPtc:stående # ;
+
+LEXICON TA
+ta+V+Inf:ta # ;
+ta+V+Imp:ta # ;
+ta+V+Ind+Prs:tar # ;
+ta+V+Ind+Prs+Pass:tas # ;
+ta+V+Ind+Prt:tok # ;
+ta+V+PrfPtc:tatt # ;
+ta+V+PrsPtc:taende # ;
+
+LEXICON TELLE
+telle+V+Inf:telle # ;
+telle+V+Imp:tell # ;
+telle+V+Ind+Prs:teller # ;
+telle+V+Ind+Prs+Pass:telles # ;
+telle+V+Ind+Prt:talte # ;
+telle+V+PrfPtc:talt # ;
+telle+V+PrsPtc:tellende # ;
+
+LEXICON VÆRE
+være+V+Inf:være # ;
+være+V+Ind+Prs:er # ;
+være+V+Ind+Prt:var # ;
+være+V+PrfPtc:vært # ;
+være+V+PrsPtc:værende # ;
+være+V+Imp:vær # ;
+
+
+
+
