@@ -1,0 +1,412 @@
+# =================================================================== #
+# =================================================================== #
+#    N O R W E G I A N   B O K M Å L   D I S A M B I G U A T O R      #
+# =================================================================== #
+# =================================================================== #
+
+
+# ========== #
+# Delimiters #
+# ========== #
+
+
+DELIMITERS = "<.>" "<!>" "<?>" "<¶>";
+
+
+
+# ============= #
+# Tags and sets #
+# ============= #
+
+
+# ========
+   SETS
+# ========
+
+LIST BOS = (>>>) (<s>); LIST EOS = (<<<) (</s>); # vislcg and CG-2 together.
+
+LIST N = N ;
+LIST A = A ;
+LIST Adv = Adv ;
+LIST V = V ;
+LIST CS = CS  ;
+LIST CC = CC  ;
+LIST Interj = Interj  ;
+LIST Pcle = Pcle  ;
+LIST Pr = Pr  ;
+LIST IM = IM ;
+LIST Pron = Pron  ;
+LIST Num = Num ;
+LIST ABBR = ABBR ;
+
+LIST Prop = Prop ;
+LIST Pers = Pers  ;
+LIST Dem = Dem  ;
+LIST Det = Det  ;
+LIST Poss = Poss ;
+LIST Interr = Interr  ;
+LIST Refl = Refl  ;
+LIST Recipr = Recipr  ;
+LIST Rel = Rel ;
+LIST Qnt = Qnt ;
+LIST Indef = Indef  ;
+LIST Def = Def ;
+LIST Sg = Sg  ;
+LIST Pl = Pl ;
+LIST Nom = Nom  ;
+LIST Acc = Acc  ;
+LIST Dat = Dat ;
+
+LIST Msc = Msc  ;
+LIST Fem = Fem  ;
+LIST Neu = Neu ;
+LIST MF = MF ;
+LIST Pos = Pos  ;
+LIST Comp = Comp  ;
+LIST Superl = Superl  ;
+LIST Clt = Clt ;
+LIST Pass = Pass  ;
+LIST Ind = Ind  ;
+LIST Prs = Prs  ;
+LIST Prt = Prt  ;
+LIST Imp = Imp ;
+LIST Inf = Inf  ;
+LIST PrsPtc = PrsPtc  ;
+LIST PrfPtc = PrfPtc ;
+LIST CLB = CLB  ;
+LIST PUNCT = PUNCT  ;
+LIST HYPH = HYPH  ;
+LIST PAR = PAR ;
+LIST LEFT = LEFT ;
+LIST RIGHT = RIGHT ;
+
+LIST WORD = N A Adv V CS CC Interj Pcle Pr IM Pron ;
+
+SET NON-ADJ = WORD - A ;
+SET NON-ADV = WORD - Adv ;
+SET NON-V   = WORD - V ;
+SET NON-D   = WORD - Det ;
+SET PNH     = A | Det ;    # pre-NP-head
+SET NPNH    = WORD - PNH ; # not pre-NP-head
+SET SUBST   = N - Prop ;
+
+LIST COP = "være" "bli" "hete" "kalles" ;
+
+LIST JEGDUVIDERE = ("jeg" Nom) ("du" Nom) ("vi" Nom) ("dere" Nom) ;
+
+SET VFIN = Ind | Imp ;
+SET VINFIN = PrsPtc | PrfPtc | Inf ;
+
+LIST AUX = "være" "ha" ; # PrfPtc complements.
+
+
+
+
+CONSTRAINTS
+
+
+
+
+# Cohort 0 #
+
+REMOVE Msc IF (0 Prop);
+	## Jorden
+REMOVE Fem IF (0 Prop);
+	## Jorda
+REMOVE Neu IF (0 Prop);
+	## 
+
+REMOVE ("ete") IF (0 ("ett" Det Dem Sg Neu));
+	# ett.
+
+# for rules
+SELECT Pr IF (0 ("for"))(1 ("at") OR ("å")) ;
+	## Jeg er redd for å gå.
+
+SELECT Pr IF (-1 N)(0 ("for"))(*1 N OR Pron BARRIER NPNH);
+	## Gud kalte det faste land for jord.
+
+REMOVE N IF (-1 V OR A)(0 ("for"))(1 ("at") OR ("å")) ;
+
+SELECT CS IF (-1 BOS OR HYPH)(0 ("for"))(1 Nom)(1 Ind);
+	## For jeg har funnet at bare du er rettferdig for meg.
+
+SELECT Pr IF (0 ("for"))(1 Acc)(NOT 2 Ind);
+	## For jeg har funnet at bare du er rettferdig for meg.
+
+# =================== #
+# NP-internal concord #
+# =================== #
+
+# Gender
+
+SELECT Msc IF (0 Dem OR A)(*1 (N Msc) BARRIER NON-ADJ);
+	## Den fine stolen.
+
+SELECT Fem IF (0 Dem OR A)(*1 (N Fem) BARRIER NON-ADJ);
+	## Den fine bygda.
+
+# Number
+
+SELECT Sg IF (0 A)(*1 (N Sg) BARRIER NON-ADJ);
+SELECT Pl IF (0 A)(*1 (N Pl) BARRIER NON-ADJ);
+
+SELECT Pl IF (*-1 Num BARRIER NON-ADJ)(0 SUBST);
+	# De fem første årene.
+
+# Possessors
+
+SELECT Poss IF (-1 V OR Pr OR Det)(0 ("sitt"))(*1 (N Neu) BARRIER NPNH);
+	## Hvert etter sitt slag.
+
+# Determiners
+
+SELECT Dem IF (-1 Det)(0 ("disse"))(*1 SUBST BARRIER NON-ADJ);
+	## Alle disse kontorene.
+
+SELECT Dem IF (-1 V OR Pr)(1 NPNH);
+
+#
+# Key words
+#
+
+
+# men
+
+REMOVE ("mene" V Imp) IF (0 ("men" CS))(*1 Ind);
+	## Men Guds Ånd svevet over vannet.
+
+# om
+SELECT Pr IF (0 ("om"))(1 ("lag"));
+	## om lag 200.
+
+# slik
+
+REMOVE Dem IF (0 ("slik"))(NOT *1 SUBST BARRIER NPNH );
+	## Og det ble slik.
+
+
+# Adjectives #
+
+
+SELECT Def IF (0 A)(1C (N Def));
+	## Gud skapte de to store lysene.
+
+
+
+
+# ============ #
+# Predicatives #
+# ============ #
+
+SELECT Msc IF (*-1 COP BARRIER NON-ADV LINK -1 JEGDUVIDERE);
+SELECT Msc IF (*-1 COP BARRIER NON-ADV LINK -1 Msc OR Prop);
+SELECT Fem IF (*-1 COP BARRIER NON-ADV LINK -1 Fem);
+SELECT Neu IF (*-1 COP BARRIER NON-ADV LINK -1 Neu);
+
+# ===== #
+# Verbs #
+# ===== #
+
+# Special verbs
+
+# var vs. var
+SELECT A IF (-1 Det)(1 N)(2 Ind);
+SELECT A IF (-2 Ind)(-1 Det)(1 N);
+REMOVE A IF (0 ("var"));
+
+
+# Past or participle #
+
+REMOVE Prt IF (*-1 Ind BARRIER CLB)(0 PrfPtc) ;
+	## Jeg har jaget.
+
+SELECT Prt IF (NOT *-1 Ind LINK *1 Nom OR N OR Dem)(0 PrfPtc);
+	##  I dag har jeg hoppet.
+
+SELECT Prt IF (NOT *-1 Ind LINK *-1 Nom OR N OR Dem)(0 PrfPtc);
+	## Jeg har hoppet.
+
+SELECT Prt IF (1 Inf) ;
+	## Per skulle gå.
+
+
+# Noun or verb
+
+REMOVE N IF (*-1 (Pron Pers Nom) BARRIER NON-ADV)(1 NPNH OR N);
+	## Jeg gir dere alle planter som setter frø.
+
+REMOVE V IF (-1 (A Pl))(0 (N Pl));
+	## Dere gir jeg alle grønne planter til føde.
+	
+# Definite neuter noun or verb #
+
+SELECT Neu IF (-1 Inf)(0 (N Neu Sg Def));
+    ## Dere skal formere dere og fylle vannet.
+
+REMOVE Prt IF (*-1 Pr BARRIER NON-D)(0 (N Neu Sg Def));
+    ## I vannet skal det myldre av liv
+
+SELECT Ind IF (-1 N)(1 Adv);
+	## De som jobber i regionene får nå forskjellige arbeidgivere
+
+SELECT Neu IF (-1 Ind)(NOT -1 (AUX Ind));
+	## Han skilte vannet som er under hvelvingen.
+
+REMOVE Prt IF (*-1 Prt BARRIER NPNH);
+REMOVE PrfPtc IF (*-1 Prt BARRIER NPNH);
+
+
+
+# Infinitive or not
+
+REMOVE Prt IF (-1 Ind)(0 Inf);
+
+REMOVE Imp IF (*-1 Ind OR Inf BARRIER Imp OR HYPH OR (PUNCT LEFT"))(0 Inf);
+	## Jorden skal la grønne vekster gro.
+	## Jorden skal kunne la grønne vekster gro.
+
+REMOVE (N Sg Indef) IF (-1 Ind OR IM)(0 Inf);
+	## Den skal skille vann fra vann.
+
+# Imperative or noun
+
+REMOVE Imp IF (-1 NPNH)(0 N);
+	## Guds Ånd.
+
+REMOVE Inf IF (-1 BOS OR HYPH OR LEFT)(0 Imp)(NOT *1 Ind BARRIER CLB);
+	## «Gå inn i arken, du og hele din husstand!»
+
+# Certain verbs
+
+# for
+
+# så
+
+SELECT V IF (*-1 N OR Pron OR Det BARRIER NON-ADV)(0 ("se"))(1 NON-V);
+	## Gud så at det var godt.
+	# or a general rule with more specific target, grammatically speaking.
+# var
+SELECT Prt IF (-1 ("det"))(0 ("være" Prt));
+
+SELECT Prt IF (-1 N)(0 ("være" Prt))(1 A);
+
+# ===== #
+# Nouns #
+# ===== #
+
+# Noun or PrfPtc
+
+REMOVE PrfPtc IF (*-1 (Det Dem Sg Neu) BARRIER NON-ADJ);
+	## Det stadige jaget.
+
+REMOVE PrfPtc IF (*-1 Pr BARRIER NPNH)(0 (N Neu Sg Def));
+	## Mørke lå over vannet.
+
+# Sg or Pl
+
+SELECT Sg IF (*-1 (Det Sg Neu) BARRIER NON-ADJ)(0 (N Neu));
+	## Et bedre sted. 
+
+REMOVE Pl IF (*-1 (Dem Sg) BARRIER NON-ADJ)(0 Sg);
+	## En stor ting
+
+REMOVE Pl IF (*-1 COP BARRIER NPNH LINK *-1 ("det") BARRIER NON-ADV);
+	## Det ble lys.
+
+REMOVE (N Sg) IF (*-1 CC BARRIER NPNH LINK -1C (N Pl))(0 (N Pl));
+	## Dager og år.
+
+SELECT (N Sg) IF (-1C (A Sg Def));
+	## Han så det faste land.
+
+REMOVE (N Sg) IF (*-1C (Det Dem Pl) BARRIER NON-ADJ)(0 (N Pl));
+	## Jorden skal la alle slags levende skapninger gå.
+
+REMOVE Fem IF (*-1 (Det Dem Sg Msc) BARRIER NON-ADJ)(0 (Msc Sg Indef)) ;
+REMOVE Neu IF (*-1 (Det Dem Sg Msc) BARRIER NON-ADJ)(0 (Msc Sg Indef)) ;
+REMOVE Msc IF (*-1 (Det Dem Sg Fem) BARRIER NON-ADJ)(0 (Fem Sg Indef)) ;
+REMOVE Neu IF (*-1 (Det Dem Sg Fem) BARRIER NON-ADJ)(0 (Msc Sg Indef)) ;
+REMOVE Msc IF (*-1 (Det Dem Sg Neu) BARRIER NON-ADJ)(0 (Msc Sg Indef)) ;
+REMOVE Fem IF (*-1 (Det Dem Sg Neu) BARRIER NON-ADJ)(0 (Msc Sg Indef)) ;
+
+
+# Det
+
+SELECT Det IF (0 ("det" Det)) (*1 (N Neu) BARRIER NON-ADJ);
+	## Det stadige jaget.
+
+SELECT Pron IF (0 ("det"))(1C V);
+	## Det var fint.
+
+SELECT Det IF (0 ("dette"))(1 Ind OR A);
+	## Dette går bra.
+
+
+# Pronouns
+# ========
+
+# Pron or not
+
+# Case
+
+REMOVE Acc IF (0 (Pron Nom))(1 VFIN LINK *1 Nom OR VINFIN);
+	## Han så vi.
+
+REMOVE Nom IF (0 (Pron Acc))(1 VFIN LINK Nom);
+# Initial subjects.
+
+REMOVE Acc IF (-1 CLB OR CC OR CS)(1 Ind);
+	## Og han skilte lyset fra mørket.
+
+# Inverted subjects
+
+
+REMOVE Acc IF (-1 Ind)(-2 (N Neu)); # What we want is inanimates
+	## Mørket kalte han natt.
+
+# vi
+
+
+
+SELECT V IF (-1 BOS OR CLB)(0 ("vie" Imp))(1 Pron)(2 ("til"));
+	## Vi deg til strid.
+
+REMOVE V IF (0 ("vi"));
+	## Vi kommer.
+
+# Pr 
+# ==
+
+SELECT Pr IF (*1 N BARRIER NPNH LINK *1 N BARRIER NPNH LINK 1 NON-V);
+
+
+# Certain prepositions
+# ====================
+
+SELECT Pr IF (0 ("om"))(*1 N BARRIER NPNH LINK NOT 1 V);
+	## Han spurte meg om Per.
+
+SELECT Pr IF (0 ("i"))(1 N OR NPNH);
+	## I begynnelsen.
+
+# Late cycle
+
+# Fem if in doubt.
+
+
+SELECT (N Fem Sg Indef) IF (NOT *-1 (Det Dem Sg Msc) BARRIER NON-ADJ)
+	(0 (N Msc Sg Indef));
+	## Det er natt.
+SELECT (N Fem Pl Indef) IF (0 (N Msc Pl Indef));
+	## Det tok mange netter.
+
+SELECT (N Fem Pl Def) IF (0 (N Msc Pl Def));
+	## Nettene er lange.
+
+
+#=====#
+  END #
+#=====#
+
+
