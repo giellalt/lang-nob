@@ -38,6 +38,13 @@ LEXICON Punctuation
 +/-+PUNCT:+/-       # ;
 %~+PUNCT:%~	        # ;
 
+§+N+ABBR:§   # ;
+§§+N+ABBR:§§ # ;
+$+N+ABBR:$   # ;
+€+N+ABBR:€   # ;
+£+N+ABBR:£   # ;
+®+N+ABBR:®   # ;
+©+N+ABBR:©   # ;
 
 ! Paired punctuation marks
 

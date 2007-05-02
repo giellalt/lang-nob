@@ -6,11 +6,11 @@
 Multichar_Symbols
  +N +A +Adv +V
  +CS +CC +Interj +Pcle +Pr +IM
- +Pers +Dem +Interr +Refl +Recipr +Rel
+ +Pers +Dem +Interr +Refl +Recipr +Rel +Qnt
  +Indef +Def +Poss +Indcl
  +Sg +Pl
  +Pron +Nom +Acc +Dat +Det
- +Msc +Fem +Neu
+ +Msc +Fem +Neu +MF
  +Pos +Comp +Superl +Clt
  +Pass +Ind +Prs +Prt +Imp
  +Inf +PrsPtc +PrfPtc

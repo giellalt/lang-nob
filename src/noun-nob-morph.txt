@@ -40,6 +40,7 @@
 ! f1X bok pl. bøker
 ! f1V mus, pl. mus
 ! n1b rom pl. rom
+! n1s sg only
 ! n2b program pl. programmer
 ! n2c kontor pl. kontor, kontorer
 ! n2s mørke, not pl.
@@ -183,6 +184,9 @@ LEXICON n1b ! rom
  +N+Neu+Sg:mX4 0-et ;
  +N+Neu+Pl:m 0-ene-a ;
 
+LEXICON n1sg ! yr
+ +N+Neu+Sg: 0-et ;
+
 LEXICON n2 ! eple, salt
  +N+Neu+Sg: 0-et ;
  +N+Neu+Pl: er-ene ;
@@ -221,6 +225,9 @@ LEXICON n4b ! faktum
 LEXICON LEKSIKON ! leksikon
  +N+Neu+Sg: 0-et ;
  +N+Neu+Pl:leksik a-aene ;
+
+LEXICON KLÆR
+ +N+Neu:klær 0-ne ;
 
 
 ! Lexica for definiteness declension

@@ -80,21 +80,20 @@ Possessive ;
 
 LEXICON Demonstrative 
 det+Det+Dem+Sg+Neu:det # ;
-den+Det+Dem+Sg+Msc:den # ;
-den+Det+Dem+Sg+Fem:den # ;
+den+Det+Dem+Sg+MF:den # ;
 et+Det+Dem+Sg+Neu:et # ;
 ett+Det+Dem+Sg+Neu:ett # ;
-en+Det+Dem+Sg+Msc:en # ;
+en+Det+Dem+Sg+MF:en # ;
 ei+Det+Dem+Sg+Fem:ei # ;
-hver+Det+Dem+Sg+Msc:hver # ;
-hver+Det+Dem+Sg+Fem:hver # ;
+hver+Det+Dem+Sg+MF:hver # ;
+!hver+Det+Dem+Sg+Fem:hver # ;
 hver+Det+Dem+Sg+Neu:hvert # ;
-hvilken+Det+Dem+Sg+Msc:hvilken # ;
-hvilken+Det+Dem+Sg+Fem:hvilken # ;
+hvilken+Det+Dem+Sg+MF:hvilken # ;
+!hvilken+Det+Dem+Sg+Fem:hvilken # ;
 hvilken+Det+Dem+Sg+Neu:hvilket # ;
 hvilken+Det+Dem+Pl:hvilke K ;
-denne+Det+Dem+Sg+Msc:denne K ;
-denne+Det+Dem+Sg+Fem:denne K ;
+denne+Det+Dem+Sg+MF:denne K ;
+!denne+Det+Dem+Sg+Fem:denne K ;
 dette+Det+Dem+Sg+Neu:dette K ;
 disse+Det+Dem+Pl:disse K ;
 all+Det+Dem+Sg+Msc:all # ;
@@ -144,8 +143,7 @@ ROMAN ;
 ISOLATED-NUMEXP ;
 
 LEXICON Textual
-én numtag ;
-!en numtag ; ! Dem.
+én numtagsg ;
 to numtag ;
 tre numtag ;
 fire numtag ;
@@ -214,7 +212,7 @@ nittiende a3 ;
 hundrede a3 ;
 
 LEXICON numtag
-+Num: # ;
++Det+Pl+Qnt: # ;
 
 
 
@@ -237,7 +235,7 @@ LEXICON ARABICLOOP      !^C^
 %-%     ARABIC ;          ! 1- 2   multipart numbers                                !^C^
 % %-    ARABIC ;          ! 1 -2   multipart numbers                                !^C^
 % %-%   ARABIC ;          ! 1 - 2  multipart numbers                                !^C^
-% %-%-%  ARABIC ;          ! 1 -- 2 multipart numbers                                !^C^
+% %-%-%  ARABIC ;         ! 1 -- 2 multipart numbers                                !^C^
 % %-    ARABICDELIMITER ; ! 1 -    multipart numbers   - "1 - :s" - do we find it?  !^C^
 % %-%-  ARABICDELIMITER ; ! 1 --   multipart numbers                                !^C^
 %.      ARABIC ;                                                                    !^C^
@@ -247,11 +245,11 @@ LEXICON ARABICLOOP      !^C^
         ARABIC ;    ! Allowing for "23 500" w/nbsp (init char is alt-space)         !^C^
 %/      ARABIC ;    ! 24/12                                                         !^C^
 +A+Ord:%.   # ;                                                                     !^C^
-,%-+Num:,%- # ;     ! 10,-                                                          !^C^
-.%-+Num:,%- # ;     ! 10.- It is wrong, but written.                          !SUB  !^C^
-%%+Num+Nom:%%     ARABICDELIMITER ; ! 50%. It is wrong, but 75 % of us write "75%". !^C^
-% %%+Num+Nom:% %% ARABICDELIMITER ; ! the correct ones as well... 50 % etc.         !^C^
-+Num:             ARABICDELIMITER ; ! list of number-case delimiters                !^C^
+,%-+Det+Qnt+Pl:,%-   # ;               ! 10,-                                                          !^C^
+.%-+Det+Qnt+Pl:,%-   # ;               ! 10.- It is wrong, but written.                          !SUB  !^C^
+%%+Det+Qnt+Pl:%%     ARABICDELIMITER ; ! 50%. It is wrong, but 75 % of us write "75%". !^C^
+% %%+Det+Qnt+Pl:% %% ARABICDELIMITER ; ! the correct ones as well... 50 % etc.         !^C^
+    +Det+Qnt+Pl:     ARABICDELIMITER ; ! list of number-case delimiters                !^C^
 
 
 LEXICON ARABICDELIMITER ! blank + 3 delim, what does the lg counc prefer? !^C^
@@ -346,7 +344,7 @@ LEXICON ROM-ONE-TAG                            !^C^
  ROM-SPLIT ;                             !^C^
 
 ! Here, we split the Roman numerals, in order to account for cases like "Kapihtal II-IV".
-! We may send this first part directly to ROM-TAG below (and get the +Num tag), or we may
+! We may send this first part directly to ROM-TAG below (and get the +Det+Qnt+Pl tag), or we may
 ! send them through a second loop, identical to the first one, but marked wit "2" (the lexica
 ! are called 2ROMAN, etc. We do this instead of making a loop, since we do not want cases
 ! like "II-IV-VI-VII-IX". If that should turn out to be a good idea, a loop would do the
@@ -420,14 +418,14 @@ LEXICON 2ROM-ONE-TAG                           !^C^
   ROMNUMTAG ;                               !^C^
 
 LEXICON ROMNUMTAG                              !^C^
- +Num: # ;                              !^C^
+ +Det+Qnt+Pl: # ;                              !^C^
  +A+Ord:%. # ;                              !^C^ !III. as ordinal.
  +A+Ord: # ;                                !^C^ !Looking for trouble...
- +Num:%: # ;                     !^C^
- +Num:%' # ;                     !^C^
- +Num:%- # ;                     !^C^
- +Num:%´ # ;                     !^C^
- +Num:   # ;                     !^C^
+ +Det+Qnt+Pl:%: # ;                     !^C^
+ +Det+Qnt+Pl:%' # ;                     !^C^
+ +Det+Qnt+Pl:%- # ;                     !^C^
+ +Det+Qnt+Pl:%´ # ;                     !^C^
+ +Det+Qnt+Pl:   # ;                     !^C^
 
 
 
@@ -438,9 +436,9 @@ LEXICON ROMNUMTAG                              !^C^
 
 
 LEXICON ISOLATED-NUMEXP                        !^C^
-½+Num:½ # ;                                 !^C^
-¹+Num:¹ # ;                                 !^C^
-²+Num:² # ;                                 !^C^
-³+Num:³ # ;                                 !^C^
-¼+Num:¼ # ;                                 !^C^
+½+Det+Qnt+Sg:½ # ;                                 !^C^
+¹+Det+Qnt+Sg:¹ # ;                                 !^C^
+²+Det+Qnt+Pl:² # ;                                 !^C^
+³+Det+Qnt+Pl:³ # ;                                 !^C^
+¼+Det+Qnt+Sg:¼ # ;                                 !^C^
 

@@ -36,6 +36,7 @@ Sets
 ! X5 = um deletion, faktum:fakta
 ! Z  = Common rules
 ! Z1 = o:ø, a:e Umlaut
+! Z2 = protects vowel
 
 Rules
 
@@ -59,7 +60,7 @@ Rules
 !€ sik00r00e
 
 "Delete schwaa" ! h a r e:0 %> e r
- e:0 <=> Vow ( Cns:* ) _ ( Dummy:* ) %>:0 [ Vow | Cns Cns ] ;
+ e:0 <=> Vow ( Cns:* ) _ ( Dummy:* - Z2: ) %>:0 [ Vow | Cns Cns ] ;
 
 "Delete foreign vowel"
  Vx:0 <=> _ X2:  ;

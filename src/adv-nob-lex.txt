@@ -6,6 +6,12 @@ LEXICON dt
  +Adv: # ; ! perhaps unify, perhaps not.
 
 LEXICON Adverb
+i% en% fei adv ;
+tilstede adv ;
+særskilt adv ;
+aller adv ;
+an adv ;
+først adv ;
 innad m1 ;
 iallfall n1 ;
 samtykke n2 ;
@@ -30,6 +36,7 @@ i% svime dt ;
 på% vegne dt ;
 på% folkemunne dt ;
 av% syne dt ;
+til% syne dt ;
 i% stampe dt ;
 med% lempe dt ;
 oppe adv ;
