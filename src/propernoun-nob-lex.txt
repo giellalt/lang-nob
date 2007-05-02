@@ -46,6 +46,12 @@ LEXICON PROP-obj
 
 
 LEXICON ProperNoun
+Arbeiderpartiet PROP-org ;
+Finnmarksloven PROP-obj ;
+Sven-Roald PROP-mal ;
+Tysfjord PROP-plc ;
+Miljøverndepartementet PROP-org ;
+
 Gud PROP-mal ;
 Mowinkel PROP-sur ; 
 !Eir PROP-sur ; ! XXX Marginal, and id. with Eira.

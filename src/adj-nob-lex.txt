@@ -154,10 +154,10 @@ syttiførste a3 ;
 åttiførste a3 ;
 
 
+sen a1 ;
 fin a1 ;
 vennlig a2 ;
 strålende a3 ;
-samisk a2 ;
 statistisk a2 ;
 hel a1 ;
 kommunal a1 ;
@@ -2480,6 +2480,16 @@ dynamisk a2 ;
 aerodynamisk a2 ;
 keramisk a2 ;
 samisk a2 ;
+sørsamisk a2 ;
+umesamisk a2 ;
+pitesamisk a2 ;
+lulesamisk a2 ;
+nordsamisk a2 ;
+enaresamisk a2 ;
+skoltesamisk a2 ;
+kildinsamisk a2 ;
+tersamisk a2 ;
+akkalasamisk a2 ;
 akademisk a2 ;
 epidemisk a2 ;
 blasfemisk a2 ;
