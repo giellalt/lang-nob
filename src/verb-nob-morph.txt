@@ -6,6 +6,7 @@
 ! v1  kaste       kaster      kasta       kasta
 !                             kastet      kastet
 ! v2  lyse        lyser       lyste       lyst
+!     reparere    reparerer   reparerte   reparert
 ! v3  leve        lever       levde       levd
 ! v4  nå          når         nådde       nådd
 ! v4  bie         bier        bidde       bidd
@@ -802,6 +803,15 @@ sette+V+Ind+Prs+Pass:settes  # ;
 sette+V+Ind+Prt:satte  # ;
 sette+V+PrfPtc:satt  # ;
 sette+V+PrsPtc:settende  # ;
+
+LEXICON SELGE
+selge+V+Inf:selge  # ;
+selge+V+Imp:selg  # ;
+selge+V+Ind+Prs:selger  # ;
+selge+V+Ind+Prs+Pass:selges  # ;
+selge+V+Ind+Prt:solgte  # ;
+selge+V+PrfPtc:solgt  # ;
+selge+V+PrsPtc:selgende  # ;
 
 LEXICON SE
 se+V+Inf:se  # ;

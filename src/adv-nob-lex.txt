@@ -6,6 +6,14 @@ LEXICON dt
  +Adv: # ; ! perhaps unify, perhaps not.
 
 LEXICON Adverb
+selv adv ;
+sjøl adv ;
+ganske adv ;
+sjelden adv ;
+absolutt adv ;
+sist adv ;
+helst adv ;
+overilt adv ;
 i% en% fei adv ;
 tilstede adv ;
 særskilt adv ;
@@ -74,6 +82,12 @@ ingenlunde adv ;
 noenlunde adv ;
 bidige adv ;
 kanskje adv ;
+ellers adv ;
+altså adv ;
+gjerne adv ;
+nesten adv ;
+således adv ;
+inne adv ;
 tilbake adv ;
 tillike adv ;
 desslike adv ;
@@ -81,6 +95,7 @@ ikke adv ;
 godtykke adv ;
 årle adv ;
 heime adv ;
+fremover adv ;
 hjemme adv ;
 omme adv ;
 noe adv ;

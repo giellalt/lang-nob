@@ -2,14 +2,14 @@
 DELIMITERS = "<.>" "<:>" "<!>" "<?>" "<|>";
 
 SETS
-LIST ikke-Poss-det = "hei";
-LIST replikk = "hei";
-LIST int-setn-gr = "hei";
-LIST s-gr/Interj = "hei";
-LIST s-gr = "hei";
-LIST @Adv = "hei";
-LIST spoersmaal-t = "hei";
-LIST s^periode-beg/CLB-CC = "hei";
+LIST ikke-Poss-det = "hei" ;
+LIST replikk = "$--" "$-" ;
+LIST int-setn-gr = "$;" "$:" "$..." "$--" "$-" "$," "$\""  ;
+LIST s-gr/Interj = "$;" "$:" "$..." "$--" "$-" "$," "$\"" konj >>> <<< Interj ;
+LIST s-gr = "$;" "$:" "$..." "$--" "$-" "$," "$\"" konj >>> <<< ;
+LIST @Adv = Adv;
+LIST spoersmaal-t = "$\?";
+LIST s^periode-beg/CLB-CC = "$;" "$:" "$..." "$--" "$-" "$," "$\"" konj >>> <<< ;
 
 LIST %aar% = "år" ;
 LIST %aldri% = "aldri" ;
@@ -307,7 +307,7 @@ LIST Det-Msc-Pl = (Det Pl Msc) ;
 LIST Det-Msc/Fem = (Det Msc) (Det Fem) ;
 LIST Det-Neu-Sg = (Det Sg Neu) ;
 LIST Det-Neu-Sg/Poss/gen = (Det Sg Neu) Poss Clt ;
-LIST Det-Pr-Infmerke-Abe = "siden" det Pr IM (A Def) (A <PrsPtc>) ;
+LIST Det-Pr-IM-Abe = "siden" det Pr IM (A Def) (A <PrsPtc>) ;
 LIST Det-N = det N ;
 LIST Det/A = det A ;
 LIST Det/A/gen/prop = det A Clt Prop ;
@@ -563,7 +563,7 @@ LIST setn-gr = "hvorledes" "hvorfor" "hvordan" "hvor" "hva" "$--" "$-" CS >>> <<
 LIST setn-gr-u-komma = "hvorledes" "hvorfor" "hvordan" "hvor" "hva" "$--" "$-" CS >>> <<< (":" CLB) ("$\;" CLB) (CLB CC) ;
 LIST setn-gr-u-CS = "hvorledes" "hvorfor" "hvordan" "hvor" "hva" "$--" "$-" >>> <<< (":" CLB) ("$\;" CLB) (CLB CC) (CLB <komma>) ;
 LIST setn-gr-u-strek = "hvorledes" "hvorfor" "hvordan" "hvor" "hva" CS @CS >>> <<< (":" CLB) ("$\;" CLB) (CLB CC) (CLB <komma>) ;
-LIST setn-gr/Infmerke = "hvorledes" "hvorfor" "hvordan" "hvor" "hva" "$--" "$-" IM CS @CS >>> <<< (":" CLB) ("$\;" CLB) (CLB CC) (CLB <komma>) ;
+LIST setn-gr/IM = "hvorledes" "hvorfor" "hvordan" "hvor" "hva" "$--" "$-" IM CS @CS >>> <<< (":" CLB) ("$\;" CLB) (CLB CC) (CLB <komma>) ;
 LIST setn-gr/parentes-beg = "hvorledes" "hvorfor" "hvordan" "hvor" "hva" "$--" "$-" <parentes-beg> CS @CS >>> <<< (":" CLB) ("$\;" CLB) (CLB CC) (CLB <komma>) ;
 LIST setn-gr/V = "hvorledes" "hvorfor" "hvordan" "hvor" "hva" "$--" "$-" V CS @CS >>> <<< (":" CLB) ("$\;" CLB) (CLB CC) (CLB <komma>) ;
 
@@ -1779,7 +1779,7 @@ CONSTRAINTS
 
 # 3374
 "<grått>" SELECT (V PrfPtc) IF
-	(NOT -1 Det-Pr-Infmerke-Abe)
+	(NOT -1 Det-Pr-IM-Abe)
 	(NOT -2 Def-Neu-det)
 	(*-1 %ha% BARRIER fv)
 	(*-1 %ha% BARRIER PrfPtc)
@@ -2228,7 +2228,7 @@ CONSTRAINTS
 # 3305
 "<klart>" SELECT (V PrfPtc) IF
 	(NOT 1 %for%)
-	(NOT -1 Det-Pr-Infmerke-Abe)
+	(NOT -1 Det-Pr-IM-Abe)
 	(NOT -2 Def-Neu-det)
 	(*-1 %ha% BARRIER fv)
 	(*-1 %ha% BARRIER PrfPtc)
@@ -2501,7 +2501,7 @@ CONSTRAINTS
 "<lite>" REMOVE (V Inf) IF
 	(*-1 setn-gr BARRIER m-hj-V)
 	(*1 setn-gr BARRIER m-hj-V)
-	(*-1 setn-gr/Infmerke LINK NOT 0 infmerke)
+	(*-1 setn-gr/IM LINK NOT 0 infmerke)
 ;
 
 
@@ -2515,7 +2515,7 @@ CONSTRAINTS
 # 3265
 "<livet>" SELECT (V PrfPtc) IF
 	(1 %opp%)
-	(NOT -1 Det-Pr-Infmerke-Abe)
+	(NOT -1 Det-Pr-IM-Abe)
 	(NOT -2 Def-Neu-det)
 	(*-1 %ha% BARRIER fv)
 	(*-1 %ha% BARRIER PrfPtc)
@@ -3072,7 +3072,7 @@ CONSTRAINTS
 
 # 3190
 "<omvendt>" SELECT (A Neu Indef) IF
-	(NOT -1 Det-Pr-Infmerke-Abe)
+	(NOT -1 Det-Pr-IM-Abe)
 	(NOT -2 Def-Neu-det)
 	(*-1 p-hj-V BARRIER fv)
 	(*-1 p-hj-V BARRIER PrfPtc)
@@ -3084,7 +3084,7 @@ CONSTRAINTS
 
 # 3188
 "<omvendt>" SELECT (PrfPtc) IF
-	(NOT -1 Det-Pr-Infmerke-Abe OR CC)
+	(NOT -1 Det-Pr-IM-Abe OR CC)
 	(NOT -2 Def-Neu-det)
 	(*-1 p-hj-V BARRIER fv)
 	(*-1 p-hj-V BARRIER PrfPtc)
@@ -3097,7 +3097,7 @@ CONSTRAINTS
 # 3187
 "<opptatt>" SELECT (V PrfPtc) IF
 	(1 %ved%)
-	(NOT -1 Det-Pr-Infmerke-Abe)
+	(NOT -1 Det-Pr-IM-Abe)
 	(NOT -2 Def-Neu-det)
 	(*-1 p-hj-V BARRIER fv)
 	(*-1 p-hj-V BARRIER PrfPtc)
@@ -3206,7 +3206,7 @@ CONSTRAINTS
 # 3171
 "<rent>" SELECT (V PrfPtc) IF
 	(NOT 1 %for%)
-	(NOT -1 Det-Pr-Infmerke-Abe)
+	(NOT -1 Det-Pr-IM-Abe)
 	(NOT -2 Def-Neu-det)
 	(*-1 %ha% BARRIER fv)
 	(*-1 %ha% BARRIER PrfPtc)
@@ -3863,7 +3863,7 @@ CONSTRAINTS
 # 3077
 "<spent>" SELECT (PrfPtc) IF
 	(1 %fra/for/ut%)
-	(NOT -1 Det-Pr-Infmerke-Abe)
+	(NOT -1 Det-Pr-IM-Abe)
 	(NOT -2 Def-Neu-det)
 	(*-1 p-hj-V BARRIER fv)
 	(*-1 p-hj-V BARRIER PrfPtc)
@@ -3898,7 +3898,7 @@ CONSTRAINTS
 
 # 3072
 "<svart>" SELECT (V PrfPtc) IF
-	(NOT -1 Det-Pr-Infmerke-Abe)
+	(NOT -1 Det-Pr-IM-Abe)
 	(NOT -2 Def-Neu-det)
 	(*-1 %ha/faa% BARRIER fv)
 	(*-1 %ha/faa% BARRIER PrfPtc)
@@ -8921,7 +8921,7 @@ SELECT (Det) IF
 
 
 # 2514
-SELECT (imp) IF
+SELECT (Imp) IF
 	(-1 CLB-komma)
 	(NOT 1 setn-gr)
 	(*-1 replikk LINK 1C Imp)
@@ -8930,7 +8930,7 @@ SELECT (imp) IF
 
 
 # 2515
-SELECT (imp) IF
+SELECT (Imp) IF
 	(0 Prt)
 	(NOT 0 farlige-Imp)
 	(-1 replikk)
@@ -8942,7 +8942,7 @@ SELECT (imp) IF
 
 
 # 2516
-SELECT (imp) IF
+SELECT (Imp) IF
 	(0 Prs)
 	(NOT 0 farlige-Imp)
 	(-1 replikk)
@@ -8954,7 +8954,7 @@ SELECT (imp) IF
 
 
 # 2517
-SELECT (imp) IF
+SELECT (Imp) IF
 	(NOT 0 farlige-Imp OR Prs/Prt)
 	(-1 replikk)
 	(*2 CLB-komma BARRIER Prs/Prt)
@@ -8964,7 +8964,7 @@ SELECT (imp) IF
 
 
 # 2518
-SELECT (imp) IF
+SELECT (Imp) IF
 	(NOT 0 Prs/Prt OR farlige-Imp)
 	(1 %at%)
 	(-1 replikk)
@@ -8972,7 +8972,7 @@ SELECT (imp) IF
 
 
 # 2519
-SELECT (imp) IF
+SELECT (Imp) IF
 	(NOT 0 farlige-Imp OR Pr)
 	(1 Pron-pers OR Acc)
 	(-1 replikk)
@@ -8980,7 +8980,7 @@ SELECT (imp) IF
 
 
 # 2520
-SELECT (imp) IF
+SELECT (Imp) IF
 	(NOT 0 Prs/Prt OR Pr)
 	(1 Pron-pers)
 	(1C Acc)
@@ -8989,7 +8989,7 @@ SELECT (imp) IF
 
 
 # 2521
-SELECT (imp) IF
+SELECT (Imp) IF
 	(NOT 0 samset OR Pr)
 	(-1 replikk)
 	(NOT 1 Prs/Prt)
@@ -8999,7 +8999,7 @@ SELECT (imp) IF
 
 
 # 2522
-SELECT (imp) IF
+SELECT (Imp) IF
 	(-1 Adv)
 	(NOT *1 komma OR CS)
 	(-2 replikk)
@@ -9008,7 +9008,7 @@ SELECT (imp) IF
 
 
 # 2523
-SELECT (imp) IF
+SELECT (Imp) IF
 	(NOT 0 farlige-Imp OR Adv)
 	(NOT 0 A OR Interj)
 	(1 Pr/Advu-A)
@@ -9018,7 +9018,7 @@ SELECT (imp) IF
 
 
 # 2524
-SELECT (imp) IF
+SELECT (Imp) IF
 	(NOT 0 farlige-Imp OR Adv)
 	(NOT 0 A OR Interj)
 	(1 CLB-komma)
@@ -11277,7 +11277,7 @@ SELECT (V PrfPtc) IF
 # 2267
 SELECT (V PrfPtc) IF
 	(NOT 0 farlige-part OR Inf)
-	(NOT -1 Det-Pr-Infmerke-Abe)
+	(NOT -1 Det-Pr-IM-Abe)
 	(*-1 m-hj-V-Prt BARRIER fv)
 	(*-1 m-hj-V-Prt BARRIER PrfPtc)
 	(*-1 m-hj-V-Prt BARRIER Inf)
@@ -11289,7 +11289,7 @@ SELECT (V PrfPtc) IF
 # 2268
 SELECT (V PrfPtc) IF
 	(NOT 0 farlige-part)
-	(NOT -1 Det-Pr-Infmerke-Abe)
+	(NOT -1 Det-Pr-IM-Abe)
 	(*-1 p-hj-V BARRIER fv)
 	(*-1 p-hj-V BARRIER PrfPtc)
 	(*-1 p-hj-V BARRIER setn-gr)
@@ -11300,7 +11300,7 @@ SELECT (V PrfPtc) IF
 # 2269
 SELECT (V PrfPtc) IF
 	(NOT 0 farlige-part)
-	(NOT -1 Det-Pr-Infmerke-Abe)
+	(NOT -1 Det-Pr-IM-Abe)
 	(*-1 p-hj-V BARRIER fv)
 	(*-1 p-hj-V BARRIER PrfPtc)
 	(*-1 p-hj-V BARRIER setn-gr)
@@ -11333,7 +11333,7 @@ SELECT (V PrfPtc) IF
 # 2272
 SELECT (V PrfPtc) IF
 	(NOT 0 farlige-part)
-	(NOT -1 Det-Pr-Infmerke-Abe)
+	(NOT -1 Det-Pr-IM-Abe)
 	(-2 Def-Neu-det LINK NOT 1 Def-Sg-Neu-A)
 	(*-1 p-hj-V BARRIER fv)
 	(*-1 p-hj-V BARRIER PrfPtc)
@@ -11345,7 +11345,7 @@ SELECT (V PrfPtc) IF
 # 2273
 SELECT (V PrfPtc) IF
 	(NOT 0 farlige-part)
-	(NOT -1 Det-Pr-Infmerke-Abe)
+	(NOT -1 Det-Pr-IM-Abe)
 	(NOT -2 Def-Neu-det)
 	(*-1 p-hj-V BARRIER fv)
 	(*-1 p-hj-V BARRIER PrfPtc)
@@ -13821,7 +13821,7 @@ REMOVE (hoeflig) IF
 
 
 # 1982
-REMOVE (imp) IF
+REMOVE (Imp) IF
 	(NOT 0 Prt)
 	(1 fv)
 	(-1 setn-gr)
@@ -13830,27 +13830,27 @@ REMOVE (imp) IF
 
 
 # 1983
-REMOVE (imp) IF
+REMOVE (Imp) IF
 	(-1 %som%)
 ;
 
 
 # 1984
-REMOVE (imp) IF
+REMOVE (Imp) IF
 	(-1 Pr OR CS)
 	(NOT -1 ikke-Pr-CS)
 ;
 
 
 # 1985
-REMOVE (imp) IF
+REMOVE (Imp) IF
 	(-1C CS)
 	(NOT -1 %at%)
 ;
 
 
 # 1986
-REMOVE (imp) IF
+REMOVE (Imp) IF
 	(0 hj-V)
 	(-1 setn-gr)
 	(*1 ikke-AdvA-det LINK 0 N/Pron/%all%/%mang%/%mange% LINK *1 ikke-Poss-det LINK 0 PrfPtc)
@@ -13858,53 +13858,53 @@ REMOVE (imp) IF
 
 
 # 1987
-REMOVE (imp) IF
+REMOVE (Imp) IF
 	(-1 setn-gr)
 	(1C Nominativ)
 ;
 
 
 # 1988
-REMOVE (imp) IF
+REMOVE (Imp) IF
 	(*1C setn-gr LINK *-1C fv LINK NOT 0 Imp)
 ;
 
 
 # 1989
-REMOVE (imp) IF
+REMOVE (Imp) IF
 	(NOT -1 parentes)
 	(*-1C setn-gr LINK *1C fv LINK NOT 0 Imp)
 ;
 
 
 # 1990
-REMOVE (imp) IF
+REMOVE (Imp) IF
 	(NOT -1 %ikke% OR CC)
 	(-2 >>>)
 ;
 
 
 # 1991
-REMOVE (imp) IF
+REMOVE (Imp) IF
 	(NOT -1 parentes OR komma)
 	(NOT -2 >>>)
 ;
 
 
 # 1992
-REMOVE (imp) IF
+REMOVE (Imp) IF
 	(1C fv)
 ;
 
 
 # 1993
-REMOVE (imp) IF
+REMOVE (Imp) IF
 	(0 samset)
 ;
 
 
 # 1994
-REMOVE (imp) IF
+REMOVE (Imp) IF
 	(*-1 setn-gr LINK *-1 setn-gr LINK *1 fv LINK NOT 0 Imp LINK *1 setn-gr LINK 0 CLB-CC LINK NOT *1 setn-gr)
 ;
 
@@ -16735,7 +16735,7 @@ SELECT (CLB) IF
 
 
 # 1665
-SELECT (imp) IF
+SELECT (Imp) IF
 	(NOT 0 Pr OR N)
 	(-1 replikk)
 	(NOT *1 overskrift BARRIER setn-gr)
@@ -16744,7 +16744,7 @@ SELECT (imp) IF
 
 
 # 1666
-SELECT (imp) IF
+SELECT (Imp) IF
 	(-1 CLB-CC)
 	(*-2 setn-gr LINK 1C Imp LINK NOT *1 Prs/Prt)
 ;
@@ -17682,7 +17682,7 @@ REMOVE (Det Msc) IF
 
 
 # 1578
-REMOVE (imp) IF
+REMOVE (Imp) IF
 	(0 A)
 	(1 infmerke)
 ;
