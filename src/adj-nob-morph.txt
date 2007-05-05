@@ -33,9 +33,20 @@ LEXICON a5 ! overlegen
  +A: a-neuter ;
  +A:X1 grade-e ;
 
+LEXICON aV ! ny, fri
++A+Sg+Indef+MF: # ;
++A+Sg+Indef+Neu:tt # ;
++A+Sg+Def:e # ;
++A+Pl+Indef:e # ;
++A+Pl+Def:e # ;
++A+Comp:ere # ;
++A+Superl:est # ;
++A+Superl+Def:este # ;
+
+
 LEXICON EGEN ! legen
  +A:nX1 positive ;
- +A: a-neuter ;
+ +A+Pos+Neu+Sg+Indef:t # ;
  +A:nX1 grade-e ;
 
 
@@ -43,9 +54,9 @@ LEXICON EGEN ! legen
 ! =========
 
 LEXICON positive
-! +Pos+Msc+Sg+Indef: # ;
-! +Pos+Fem+Sg+Indef: # ;
-! +Pos+MF+Sg+Indef: # ;
+ +Pos+Msc+Sg+Indef: # ;
++Pos+Fem+Sg+Indef: # ;
+ +Pos+MF+Sg+Indef: # ;
  +Pos+Sg+Def:%>e # ;
  +Pos+Sg+Def:%>e # ;
  +Pos+Sg+Def:%>e # ;
@@ -114,16 +125,8 @@ liten+A+Superl:minst # ;
 liten+A+Superl+Def:minste # ;
 
 LEXICON NY
-!ny+A+Sg+Indef+Msc:ny # ;
-!ny+A+Sg+Indef+Fem:ny # ;
-ny+A+Sg+Indef+MF:ny # ;
-ny+A+Sg+Indef+Neu:nytt # ;
-ny+A+Sg+Def:nye # ;
-ny+A+Pl+Indef:nye # ;
-ny+A+Pl+Def:nye # ;
-ny+A+Comp:nyere # ;
-ny+A+Superl:nyest # ;
-ny+A+Superl+Def:nyeste # ;
+ny aV ;
+
 
 LEXICON STOR
 !stor+A+Sg+Msc+Indef:stor # ;

@@ -2,18 +2,21 @@
 ! # ;
 
 LEXICON Subjunction
-derfor subj ;
+derfor adv ;
 fordi subj ;
-for subj ;
+for conj ;
 som subj ;
+som p ;
 at subj ;
 ifall subj ;
 hvis subj ;
 viss subj ;
 om  subj ;
-hvorfor subj ;
+om p ;
+hvorfor adv ;
 å+IM:å # ;
-men subj ;
+dersom subj ;
+
 
 LEXICON subj
  +CS: # ;
@@ -21,19 +24,23 @@ LEXICON subj
 LEXICON Conjunction
 både conj ;
 og conj ;
+og adv ;
 eller conj ;
 samt conj ;
-
+men conj ;
 
 LEXICON conj
  +CC: # ;
 
 LEXICON Interjection
 gid ij ;
+gid adv ;
 uff ij ;
 ptro ij ;
 ja ij ;
 nei ij ;
+å ij ;
+å f1 ;
 
 LEXICON ij
  +Interj: # ;
@@ -47,22 +54,23 @@ Interrogative ;
 
 
 LEXICON Personal 
-jeg+Pron+Pers+Nom:jeg # ;
-jeg+Pron+Pers+Acc:meg # ;
-du+Pron+Pers+Nom:du # ;
-du+Pron+Pers+Acc:deg # ;
-han+Pron+Pers+Nom:han # ;
-hun+Pron+Pers+Nom:hun # ;
-han+Pron+Pers+Acc:han # ;
-han+Pron+Pers+Acc:ham # ;
-hun+Pron+Pers+Acc:henne # ;
-vi+Pron+Pers+Nom:vi # ;
-vi+Pron+Pers+Acc:oss # ;
-dere+Pron+Pers+Nom:dere # ;
-dere+Pron+Pers+Acc:dere # ;
-de+Pron+Pers+Nom:de # ;
-de+Pron+Pers+Acc:dem # ;
-
+jeg+Pron+Sg+Pers+Hum+Nom+1:jeg # ;
+jeg+Pron+Sg+Pers+Hum+Acc+1:meg # ;
+ du+Pron+Sg+Pers+Hum+Nom+2:du # ;
+ du+Pron+Sg+Pers+Hum+Acc+2:deg # ;
+han+Pron+Sg+Pers+Hum+Nom+3:han # ;
+hun+Pron+Sg+Pers+Hum+Nom+3:hun # ;
+han+Pron+Sg+Pers+Hum+Acc+3:han # ;
+han+Pron+Sg+Pers+Hum+Acc+3:ham # ;
+hun+Pron+Sg+Pers+Hum+Acc+3:henne # ;
+  vi+Pron+Pl+Pers+Hum+Nom+1:vi # ;
+  vi+Pron+Pl+Pers+Hum+Acc+1:oss # ;
+dere+Pron+Pl+Pers+Hum+Nom+2:dere # ;
+dere+Pron+Pl+Pers+Hum+Acc+2:dere # ;
+  de+Pron+Pl+Pers+Hum+Nom+3:de # ;
+  de+Pron+Pl+Pers+Hum+Acc+3:dem # ;
+begge+Pron+Pl+Pers+Hum:begge # ;
+!X hit.
 LEXICON Reflexive 
 seg+Pron+Refl+Acc:seg # ;
 
@@ -84,6 +92,7 @@ den+Det+Dem+Sg+MF:den # ;
 et+Det+Dem+Sg+Neu:et # ;
 ett+Det+Dem+Sg+Neu:ett # ;
 en+Det+Dem+Sg+MF:en # ;
+én+Det+Dem+Sg+MF:én # ;
 ei+Det+Dem+Sg+Fem:ei # ;
 hver+Det+Dem+Sg+MF:hver # ;
 !hver+Det+Dem+Sg+Fem:hver # ;
@@ -91,7 +100,8 @@ hver+Det+Dem+Sg+Neu:hvert # ;
 hvilken+Det+Dem+Sg+MF:hvilken # ;
 !hvilken+Det+Dem+Sg+Fem:hvilken # ;
 hvilken+Det+Dem+Sg+Neu:hvilket # ;
-hvilken+Det+Dem+Pl:hvilke K ;
+hvilken+Det+Dem+Pl:hvilke # ;
+hvis+Det+Poss+Qst:hvis # ;
 denne+Det+Dem+Sg+MF:denne K ;
 !denne+Det+Dem+Sg+Fem:denne K ;
 dette+Det+Dem+Sg+Neu:dette K ;
@@ -112,7 +122,8 @@ annen+Det+Dem+Sg+Fem:anna # ;
 annen+Det+Dem+Sg+Fem:annen # ;
 annen+Det+Dem+Sg+Neu:annet # ;
 annen+Det+Dem+Pl:andre # ;
-
+selv+Det+Intens:selv # ;
+sjøl+Det+Intens:sjøl # ;
 LEXICON Possessive 
 di+Det+Poss+Sg+Fem:di # ;
 din+Det+Poss+Sg+Msc:din # ;
@@ -143,7 +154,7 @@ ROMAN ;
 ISOLATED-NUMEXP ;
 
 LEXICON Textual
-én numtagsg ;
+!én numtagsg ;
 to numtag ;
 tre numtag ;
 fire numtag ;
@@ -261,17 +272,13 @@ LEXICON ARABICDELIMITER ! blank + 3 delim, what does the lg counc prefer? !^C^
 
 
 LEXICON ARABICCASE                                    !^C^
-+Nom:f # ;     ! s. 123f.                             !^C^
-+Nom:ff # ;     ! s. 123ff.                           !^C^
-+Sg+Nom:b # ;     ! § 123b                            !^C^
-+Sg+Nom:c # ;     ! § 123c                            !^C^
-+Sg+Nom:d # ;     ! § 123d                            !^C^
-+Sg+Nom:e # ;     ! § 123e                            !^C^
-+Sg+Nom: # ;                                          !^C^
-+Sg+Gen: # ;                                          !^C^
-+Sg+Acc: # ;                                          !^C^
-+Sg+Gen:' # ;                                         !^C^       E00 = '
-+Sg+Gen:’ # ;                                         !^C^ optio-B07 = ’
+f # ;     ! s. 123f.                             !^C^
+ff # ;     ! s. 123ff.                           !^C^
+b # ;     ! § 123b                            !^C^
+c # ;     ! § 123c                            !^C^
+d # ;     ! § 123d                            !^C^
+e # ;     ! § 123e                            !^C^
+  # ;                                          !^C^
 
 
 ! The Roman numerals !
@@ -281,7 +288,8 @@ LEXICON ROMAN                                !^C^
  ROM-THOUSAND ;                             !^C^
  ROM-HUNDRED ;                             !^C^
  ROM-TEN ;                                 !^C^
- ROM-ONE ;                                 !^C^
+ ROM-TWO-NINE ;                                 !^C^
+ ROM-ONE-BARE ; ! singleton I              !^C^
 
 LEXICON ROM-THOUSAND                          !^C^
  M ROM-THOUSAND-TAG ;                     !^C^
@@ -323,12 +331,15 @@ LEXICON ROM-TEN                                !^C^
  XC ROM-TEN-TAG ;                         !^C^
 
 LEXICON ROM-TEN-TAG                            !^C^
-  ROMNUMTAG ;                             !^C^
+ ROMNUMTAG ;                             !^C^
  ROM-ONE ;                                 !^C^
  ROM-SPLIT ;                             !^C^
 
 LEXICON ROM-ONE                                !^C^
- I ROM-ONE-TAG ;                         !^C^
+ ROM-ONE-ONLY ;
+ ROM-TWO-NINE ;
+
+LEXICON ROM-TWO-NINE
  II ROM-ONE-TAG ;                         !^C^
  III ROM-ONE-TAG ;                         !^C^
  IV  ROM-ONE-TAG ;                         !^C^
@@ -337,6 +348,12 @@ LEXICON ROM-ONE                                !^C^
  VII ROM-ONE-TAG ;                         !^C^
  VIII ROM-ONE-TAG ;                         !^C^
  IX ROM-ONE-TAG ;                         !^C^
+
+LEXICON ROM-ONE-ONLY
+ I ROM-ONE-TAG ;                         !^C^
+
+LEXICON ROM-ONE-BARE
+ I NON-ONE-TAG ; ! to avoid I Det Pl
 
 LEXICON ROM-ONE-TAG                            !^C^
   ROMNUMTAG ;                             !^C^
@@ -419,8 +436,11 @@ LEXICON 2ROM-ONE-TAG                           !^C^
 
 LEXICON ROMNUMTAG                              !^C^
  +Det+Qnt+Pl: # ;                              !^C^
+ NON-ONE-TAG ;
+
+LEXICON NON-ONE-TAG
  +A+Ord:%. # ;                              !^C^ !III. as ordinal.
- +A+Ord: # ;                                !^C^ !Looking for trouble...
+! +A+Ord: # ;                                !^C^ ! No trouble.
  +Det+Qnt+Pl:%: # ;                     !^C^
  +Det+Qnt+Pl:%' # ;                     !^C^
  +Det+Qnt+Pl:%- # ;                     !^C^
