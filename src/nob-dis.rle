@@ -223,7 +223,6 @@ LIST <PrfPtc> = <PrfPtc> ;
 LIST <PrsPtc> = i1 i3 i4 ;
 LIST >>> = >>> ;
 
-SETS
 
 SETS
 
@@ -547,7 +546,6 @@ LIST rel-Pron = "som" ;
 LIST retning = "øst" "vest" "syd" "nord" "aust" ;
 LIST romertall = <romertall> ;
 
-SETS
 
 SETS
 
@@ -652,6 +650,12 @@ LIST veldig-farlige-part = "nære" "nyte" "mige" "make" "lite" "hele" "gale" "fo
 LIST veldig-farlige-V = ("stede" Prs) ("dy" Prs) ("grade" Prs) ;
 LIST V = V ;
 LIST V-u-Imp = (V Prs) (V Prt) (V PrfPtc) (V Inf) ;
+
+
+
+
+
+
 CONSTRAINTS
 
 # 3532
