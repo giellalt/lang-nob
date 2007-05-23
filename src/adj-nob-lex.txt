@@ -21,6 +21,8 @@ full GOD ;
 jam GOD ;
 jevn GOD ;
 
+blå aV ;
+grå aV ;
 flott a2 ;
 vakker a5 ;
 sist a2 ;

@@ -154,6 +154,15 @@ bli+V+Ind+Prt:blei # ;
 bli+V+PrfPtc:blitt # ;
 bli+V+PrsPtc:blivende # ;
 
+LEXICON BLIVE
+blive+V+Inf:blive  # ;
+blive+V+Imp:bliv  # ;
+blive+V+Ind+Prs:bliver  # ;
+blive+V+Ind+Prt:blev  # ;
+blive+V+Ind+Prt:bleiv  # ;
+blive+V+PrfPtc:blevet  # ;
+blive+V+PrsPtc:blivende  # ;
+
 LEXICON BREKKE
 brekke+V+Inf:brekke # ;
 brekke+V+Imp:brekk # ;
@@ -794,6 +803,15 @@ måtte+V+Inf:måtte  # ;
 måtte+V+Ind+Prs:må  # ;
 måtte+V+Ind+Prt:måtte  # ;
 måtte+V+PrfPtc:mått  # ;
+
+LEXICON RIVE
+rive+V+Inf:rive  # ;
+rive+V+Imp:riv  # ;
+rive+V+Ind+Prs:river  # ;
+rive+V+Ind+Prt:rev  # ;
+rive+V+Ind+Prt:reiv  # ;
+rive+V+PrfPtc:revet  # ;
+rive+V+PrsPtc:rivende  # ;
 
 LEXICON SETTE
 sette+V+Inf:sette  # ;

@@ -1,15 +1,26 @@
+# ============================================ #
+# The OBT-based Bokmål Norwegian disambiguator #
+# ============================================ #
+
+# This disambiguator is based upon the OBT disambiguator. It contains
+# the morphological rules only.
+
+# The original OBT disambiguator was written in CG-1 by Kristin Hagen and
+# Anders Nøklestad at UiO. It was translated to CG-2 by Lars Nygård.
+# The conversion to the Tromsø format was done by Trond Trosterud.
+
 
 DELIMITERS = "<.>" "<:>" "<!>" "<?>" "<|>";
 
 SETS
 LIST ikke-Poss-det = "hei" ;
 LIST replikk = "$--" "$-" ;
-LIST int-setn-gr = "$;" "$:" "$..." "$--" "$-" "$," "$\""  ;
-LIST s-gr/Interj = "$;" "$:" "$..." "$--" "$-" "$," "$\"" konj >>> <<< Interj ;
-LIST s-gr = "$;" "$:" "$..." "$--" "$-" "$," "$\"" konj >>> <<< ;
+LIST int-setn-gr = "$\;" "$:" "$..." "$--" "$-" "$," "$\""  ;
+LIST s-gr/Interj = "$\;" "$:" "$..." "$--" "$-" "$," "$\"" konj >>> <<< Interj ;
+LIST s-gr = "$\;" "$:" "$..." "$--" "$-" "$," "$\"" konj >>> <<< ;
 LIST @Adv = Adv;
 LIST spoersmaal-t = "$\?";
-LIST s^periode-beg/CLB-CC = "$;" "$:" "$..." "$--" "$-" "$," "$\"" konj >>> <<< ;
+LIST s^periode-beg/CLB-CC = "$\;" "$:" "$..." "$--" "$-" "$," "$\"" konj >>> <<< ;
 
 LIST %aar% = "år" ;
 LIST %aldri% = "aldri" ;
@@ -358,10 +369,10 @@ LIST ikke-A = "siden" Adv V Pr Pron CS IM N Interj det (CLB CC) <anf> <ellipse> 
 LIST ikke-A-N = "siden" Adv V Pr Pron CS CC IM Interj det <<< <ellipse> ;
 LIST ikke-A-V = "siden" N Adv Pr Pron CS CC IM Interj det <<< <ellipse> ;
 LIST ikke-Adv = "siden" "$," V Pr Pron CS CC IM Interj N det <ellipse> (A Msc) (A Fem) (A MF) (A Pl) (A Comp) (A Superl) (A <PrsPtc>) (A Def) ;
-LIST ikke-AdvA = "siden" ":" V Pr Pron CS IM N Interj det <ellipse> (CLB CC) (CC <adv>) ;
-LIST ikke-AdvA-det = "siden" ":" V Pr Pron CS IM N Interj <ellipse> (CLB CC) (CC <adv>) ;
+LIST ikke-AdvA =          "siden" ":" V Pr Pron CS IM N Interj det <ellipse> (CLB CC) (CC <adv>) ;
+LIST ikke-AdvA-det =      "siden" ":" V Pr Pron CS IM N Interj <ellipse> (CLB CC) (CC <adv>) ;
 LIST ikke-AdvA-Det-Pron = "siden" ":" V Pr CS IM N Interj <ellipse> (CLB CC) (CC <adv>) ;
-LIST ikke-AdvA-Det-N = "siden" "<$-->" ":" "$-" "$," <parentes-beg> <parentes-slutt> V Pr Pron CS CC IM Interj <<< <ellipse> ;
+LIST ikke-AdvA-Det-N =    "siden" "<$-->" ":" "$-" "$," <parentes-beg> <parentes-slutt> V Pr Pron CS CC IM Interj <<< <ellipse> ;
 LIST ikke-AdvA-Det/%all%/%mang%/%mange% = "siden" "mange" "mang" "all" ":" V Pr Pron CS IM N Interj <ellipse> (CLB CC) (CC <adv>) ;
 LIST ikke-AdvA-det2 = "siden" ":" V Pr Pron CS IM N Interj <ellipse> ;
 LIST ikke-AdvA-komma = "siden" "$-" <parentes-slutt> V Pr Pron CS IM N Interj det <ellipse> ("$," CLB) (CLB CC) (CC <adv>) ;
@@ -573,7 +584,7 @@ LIST sp = sp ;
 LIST spoerreAdv = "hvorledes" "hvorfor" "hvordan" "hvor" "hva" ;
 
 SETS
-LIST spraak = "tysk" "svensk" "spansk" "portugisisk" "nynorsk" "norsk" "keltisk" "italiensk" "fransk" "finsk" "engelsk" "dansk" "bosnisk" "amerikansk" ;
+LIST spraak = "tysk" "svensk" "spansk" "portugisisk" "nynorsk" "norsk" "keltisk" "italiensk" "fransk" "finsk" "engelsk" "dansk" "bosnisk" "amerikansk" "samisk" "nordsamisk" "sørsamisk" "lulesamisk" "enaresamisk" "kildinsamisk" "umesamisk" "pitesamisk" "sjøsamisk" "finsk" "estisk" ;
 LIST strek = <strek> ;
 LIST strek/parentes = <strek> <parentes-beg> <parentes-slutt> ;
 LIST N = N ;

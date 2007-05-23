@@ -262,7 +262,7 @@ REMOVE PrfPtc IF (*-1 Prt BARRIER NPNH);
 
 REMOVE Prt IF (-1 Ind)(0 Inf);
 
-REMOVE Imp IF (*-1 Ind OR Inf BARRIER Imp OR HYPH OR (PUNCT LEFT"))(0 Inf);
+REMOVE Imp IF (*-1 Ind OR Inf BARRIER Imp OR HYPH OR (PUNCT LEFT))(0 Inf);
 	## Jorden skal la grønne vekster gro.
 	## Jorden skal kunne la grønne vekster gro.
 
@@ -353,7 +353,7 @@ SELECT Det IF (0 ("dette"))(1 Ind OR A);
 REMOVE Acc IF (0 (Pron Nom))(1 VFIN LINK *1 Nom OR VINFIN);
 	## Han så vi.
 
-REMOVE Nom IF (0 (Pron Acc))(1 VFIN LINK Nom);
+REMOVE Nom IF (0 (Pron Acc))(1 VFIN LINK *1 Nom OR N);
 # Initial subjects.
 
 REMOVE Acc IF (-1 CLB OR CC OR CS)(1 Ind);
