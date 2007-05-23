@@ -372,7 +372,7 @@ berøre v2 ;
 berøve v1 ;
 be SITTE ;
 be SKJÆRE ;
-be SKYTE ; ;
+be SKYTE ;
 beslag LEGGE ;
 besnære v3 ;
 be SOVE ;

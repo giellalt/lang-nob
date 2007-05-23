@@ -28,6 +28,14 @@ LEXICON a3 !
  +A: positive ;
  +A: a-no-neuter ;
 
+LEXICON a4 ! oppskjørtet
+ +A:   positive-indef ;
+ +A:   positive-def ;
+ +A:X6 positive-def ;
+ +A:   a-no-neuter ;
+ +A:   grade-e ;   !oppskjørtete
+ +A:X6 grade-e ;   !oppskjørtede
+
 LEXICON a5 ! overlegen
  +A:X1 positive ;
  +A: a-neuter ;
@@ -54,9 +62,15 @@ LEXICON EGEN ! legen
 ! =========
 
 LEXICON positive
+ positive-indef ;
+ positive-def ;
+
+LEXICON positive-indef
  +Pos+Msc+Sg+Indef: # ;
-+Pos+Fem+Sg+Indef: # ;
+ +Pos+Fem+Sg+Indef: # ;
  +Pos+MF+Sg+Indef: # ;
+
+LEXICON positive-def
  +Pos+Sg+Def:%>e # ;
  +Pos+Sg+Def:%>e # ;
  +Pos+Sg+Def:%>e # ;

@@ -16062,6 +16062,9 @@ pil f1 ; ! Fem. -er
 fot+N+Msc+Pl:føtt er-ene ; ! Umlaut
 rot+N+Fem+Pl:røtt er-ene ; ! Umlaut
 hus n1 ; ! Neut -Ø
+tøy n1 ;
+fottøy n1 ;
+dekketøy n1 ;
 araber m2 ;
 serber m2 ;
 nedgradere v2;
@@ -16660,7 +16663,7 @@ kroater m2 ;
 het a1;
 gjeter m2 ;
 ofte a3 ;
-feita1;
+feit a1;
 sliter m2 ;
 halvliter m2 ;
 nedprioritere v2;
@@ -16684,8 +16687,8 @@ børsnotere v2;
 scooter m2 ;
 snøscooter m2 ;
 helikopter m2 ;
-smart a2;
-forta2;
+smart a2 ;
+fort a2 ;
 supporter m2 ;
 fotballsupporter m2 ;
 kildesortere v2;
