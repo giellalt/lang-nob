@@ -34,6 +34,7 @@ Sets
 ! X3 = Plural r deletion -er, -ene
 ! X4 = dumm:dum Delete m
 ! X5 = um deletion, faktum:fakta
+! X6 = t:d weakening, oppskjørtet:oppskjørtede
 ! Z  = Common rules
 ! Z1 = o:ø, a:e Umlaut
 ! Z2 = protects vowel
@@ -98,6 +99,12 @@ Rules
  m:0 <=> u: _ X5: %>:0 ;
 
 
+"t weakening"
+ t:d <=> _ X6:%%>:0 e ;
+
+!€ oppskjørtetX6%>e
+!€ oppskjørted00e
+ 
 
 ! Verb rules
 
