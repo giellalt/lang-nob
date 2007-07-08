@@ -100,7 +100,7 @@ Rules
 
 
 "t weakening"
- t:d <=> _ X6:%%>:0 e ;
+ t:d <=> _ X6:0 %>:0 e ;
 
 !€ oppskjørtetX6%>e
 !€ oppskjørted00e
