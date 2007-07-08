@@ -100,7 +100,7 @@ Rules
 
 
 "t weakening"
- t:d <=> _ X6:0 %>:0 e ;
+ t:d <=> [Cns:|Vow:] _ X6:0 %>:0 e ;
 
 !€ oppskjørtetX6%>e
 !€ oppskjørted00e
@@ -123,7 +123,7 @@ Rules
 
 
 "Double t deleteion"
- t:0 <=> t %>:0 _ ;
+ t:0 <=> t: %>:0 _ ;
 
 !€ svart%>t
 !€ svart00
