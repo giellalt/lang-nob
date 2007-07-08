@@ -88,11 +88,11 @@ LEXICON Root
 ! =========
 
 LEXICON R
-! # ;
-+Cmp: NounRoot ;
-+Cmp:s NounRoot ; 
-+Cmp: VerbRoot ;
-+Cmp: AdjectiveRoot ; 
+ # ;
+!+Cmp: NounRoot ;
+!+Cmp:s NounRoot ; 
+!+Cmp: VerbRoot ;
+!+Cmp: AdjectiveRoot ; 
  
 ! =======
 ! Clitics
