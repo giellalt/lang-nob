@@ -34,7 +34,7 @@ LEXICON Root
  ProperNoun ;
  AdjectiveRoot ;
  VerbRoot ;
- Adverb ;
+! Adverb ;
 ! Particle ;
  Subjunction ;
  Conjunction ;
