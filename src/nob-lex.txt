@@ -17,6 +17,7 @@ Multichar_Symbols
  +Interj +Intens
  +Prop +Fem +Mal +Plc +Org +Ani
  +CLB +PUNCT +HYPH +LEFT +RIGHT
+ +Cmp
 ! +X ! denoting not-checked.
  +1 +2 +3
  X1 X2 X3 X4 X5 X6 X7 X8 X9
@@ -82,9 +83,17 @@ LEXICON Root
 ! v4  bie         bier        bidde       bidd
 
 
+! =========
+! Compounds
+! =========
 
-
-
+LEXICON R
+! # ;
++Cmp: NounRoot ;
++Cmp:s NounRoot ; 
++Cmp: VerbRoot ;
++Cmp: AdjectiveRoot ; 
+ 
 ! =======
 ! Clitics
 ! =======
