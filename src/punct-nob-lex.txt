@@ -12,8 +12,8 @@ LEXICON Punctuation
 %.+CLB:%.           # ;
 %.%.+CLB:%.%.       # ;
 %.%.%.+CLB:%.%.%.   # ;
-%:+CLB:%:           # ;
-%;+CLB:%;	        # ;
+!%:+CLB:%:           # ; !retyurn rthese ones
+!%;+CLB:%;	        # ;
 ^excl+CLB:%!	    # ;	!^C^
 %?+CLB:%?	        # ;
 …+CLB:…		        # ;

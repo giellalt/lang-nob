@@ -10,6 +10,8 @@
 
 LEXICON AdjectiveRoot
 
+ regular-adj ;
+
  FLER ;
  GAMMEL ;
  GOD ;
@@ -21,6 +23,7 @@ full GOD ;
 jam GOD ;
 jevn GOD ;
 
+LEXICON regular-adj
 blå aV ;
 grå aV ;
 flott a2 ;

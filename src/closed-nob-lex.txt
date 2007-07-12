@@ -258,10 +258,10 @@ LEXICON ARABICLOOP      !^C^
 +A+Ord:%.   # ;                                                                     !^C^
 ,%-+Det+Qnt+Pl:,%-   # ;               ! 10,-                                                          !^C^
 .%-+Det+Qnt+Pl:,%-   # ;               ! 10.- It is wrong, but written.                          !SUB  !^C^
-%%+Det+Qnt+Pl:%%     ARABICDELIMITER ; ! 50%. It is wrong, but 75 % of us write "75%". !^C^
-% %%+Det+Qnt+Pl:% %% ARABICDELIMITER ; ! the correct ones as well... 50 % etc.         !^C^
-    +Det+Qnt+Pl:     ARABICDELIMITER ; ! list of number-case delimiters                !^C^
-
+!%%+Det+Qnt+Pl:%%     ARABICDELIMITER ; ! 50%. It is wrong, but 75 % of us write "75%". !^C^
+!% %%+Det+Qnt+Pl:% %% ARABICDELIMITER ; ! the correct ones as well... 50 % etc.         !^C^
+!    +Det+Qnt+Pl:     ARABICDELIMITER ; ! list of number-case delimiters                !^C^
+! These three removed due to %% problems.
 
 LEXICON ARABICDELIMITER ! blank + 3 delim, what does the lg counc prefer? !^C^
      ARABICCASE ; ! This is the 1984s case.                     !^C^
