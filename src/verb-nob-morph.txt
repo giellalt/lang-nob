@@ -260,14 +260,14 @@ dra+V+Ind+Prt:drog # ;
 dra+V+PrfPtc:dratt # ;
 dra+V+PrsPtc:draende # ;
 
-LEXICON DRIKKE 
-drikke+V+Inf:drikke # ;
-drikke+V+Imp:drikk # ;
-drikke+V+Ind+Prs:drikker # ;
-drikke+V+Ind+Prs+Pass:drikkes # ;
-drikke+V+Ind+Prt:drakk # ;
-drikke+V+PrfPtc:drukket # ;
-drikke+V+PrsPtc:drikkende # ;
+LEXICON XIKKE 
+ikke+V+Inf:ikke # ;
+ikke+V+Imp:ikk # ;
+ikke+V+Ind+Prs:ikker # ;
+ikke+V+Ind+Prs+Pass:ikkes # ;
+ikke+V+Ind+Prt:akk # ;
+ikke+V+PrfPtc:ukket # ;
+ikke+V+PrsPtc:ikkende # ;
 
 LEXICON DRIVE 
 drive+V+Inf:drive # ;

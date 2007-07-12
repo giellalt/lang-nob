@@ -13,7 +13,21 @@
 
 LEXICON VerbRoot
 
+copula-aux ;
+main-verb ;
+
+LEXICON copula-aux
+ KUNNE ;
+ VÆRE ;
+ SKULLE ;
+
+LEXICON main-verb
+irregular-verb ;
 regular-verb ;
+
+
+
+LEXICON irregular-verb
 
  BE ;
  BINDE ;
@@ -30,7 +44,7 @@ regular-verb ;
  BÆRE ;
  DETTE ;
  DRA ;
- DRIKKE ;
+ XIKKE ;
  DRIVE ;
  DØ ;
  DØLGE ;
@@ -82,7 +96,6 @@ regular-verb ;
  KNETTE ;
  KNIPE ;
  KOMME ;
- KUNNE ;
  LA ;
  LEGGE ;
  LIGGE ;
@@ -100,7 +113,6 @@ regular-verb ;
  SKRIKE ;
  SKRIVE ;
  SKRYTE ;
- SKULLE ;
  SKVETTE ;
  SKYTE ;
  SKYVE ;
@@ -161,7 +173,6 @@ regular-verb ;
  VINNE ;
  VITE ;
  VRI ;
- VÆRE ;
 
  
 
@@ -2338,25 +2349,25 @@ vekke vx ;
 kvekke vx ;
 svekke vx ;
 avsvekke vx ;
-bikke vx ;
-hikke vx ;
-kikke vx ;
-skikke vx ;
-beskikke vx ;
-flikke vx ;
-klikke vx ;
-slikke vx ;
-gnikke vx ;
-pikke vx ;
-spikke vx ;
-rikke vx ;
-prikke vx ;
-trikke vx ;
-strikke vx ;
-vrikke vx ;
-tikke vx ;
-stikke vx ;
-vikke vx ;
+bikke v1 ;
+hikke v1 ;
+kikke v1 ;
+skikke v1 ;
+beskikke v1 ;
+flikke v1 ;
+klikke v1 ;
+slikke v1 ;
+gnikke v1 ;
+pikke v1 ;
+spikke v1 ;
+rikke v1 ;
+prikke v1 ;
+trikke v1 ;
+strikke v1 ;
+vrikke v1 ;
+tikke v1 ;
+stikke XIKKE ;
+vikke v1 ;
 kokke vx ;
 lokke vx ;
 blokke vx ;

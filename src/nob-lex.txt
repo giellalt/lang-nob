@@ -17,7 +17,7 @@ Multichar_Symbols
  +Interj +Intens
  +Prop +Fem +Mal +Plc +Org +Ani
  +CLB +PUNCT +HYPH +LEFT +RIGHT
- +Cmp
+ +Cmp+
 ! +X ! denoting not-checked.
  +1 +2 +3
  X1 X2 X3 X4 X5 X6 X7 X8 X9
@@ -35,7 +35,7 @@ LEXICON Root
  ProperNoun ;
  AdjectiveRoot ;
  VerbRoot ;
-! Adverb ;
+ Adverb ;
 ! Particle ;
  Subjunction ;
  Conjunction ;
@@ -88,11 +88,18 @@ LEXICON Root
 ! =========
 
 LEXICON R
- # ;
-!+Cmp: NounRoot ;
-!+Cmp:s NounRoot ; 
-!+Cmp: VerbRoot ;
-!+Cmp: AdjectiveRoot ; 
+
+ #+Cmp+:#  NounRoot ;
+ #+Cmp+:#  main-verb ;
+ #+Cmp+:#  regular-adj ; 
+
+
+! compare smj:
+!   LEXICON R
+!    # NounRoot ;                      ! This is the normal case.		     
+!    #:%- NounRoot ;                        ! These 3 cases add a hyphen, so 
+!    #:%- ProperNoun ;  ! pounds. Thus: London-Hull, LondonHull, Hull-viessu 
+
  
 ! =======
 ! Clitics

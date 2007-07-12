@@ -64,69 +64,69 @@ LEXICON x
 
 LEXICON mX
  +N+Msc: K ;
- R ;
+ +N:  R ;
 
 LEXICON m1 ! dag, hane
  +N+Msc+Sg: 0-en ;
  +N+Msc+Pl: er-ene ;
- R ;
+ +N:  R ;
 
 LEXICON m1sg ! bruk
   +N+Msc+Sg: 0-en ;
- R ;
+ +N:  R ;
 
 LEXICON m1X
  +N+Msc+Sg: 0-en ;
  +N+Msc+Pl:Z1 er-ene ;
- R ;
+ +N:  R ;
 
 LEXICON m1b ! dam
  +N+Msc+Sg:mX4 0-en ;
  +N+Msc+Pl:m er-ene ;
- R ;
+ +N:  R ;
 
 LEXICON m1c ! fe, komite
  +N+Msc+Sg: 0-en ;
  +N+Msc+Pl: er-ene ;
- R ;
+ +N:  R ;
 
 LEXICON m1V ! sko
  +N+Msc+Sg: 0-en ;
  +N+Msc+Pl: 0-ene ;
- R ;
+ +N:  R ;
 
 LEXICON m2 ! lærer
  +N+Msc+Sg: 0-en ;
  +N+Msc+Pl: e-ne ;
- R ;
+ +N:  R ;
 
 LEXICON m3 ! onkel
  +N+Msc+Sg: 0-en ;
  +N+Msc+Pl:X1 er-ene ; ! X1 deletes the vowel -e-
- R ;
+ +N:  R ;
 
 LEXICON m3V ! meter
  +N+Msc+Sg: 0-en ;
  +N+Msc+Pl:X1 0-ene ;
- R ;
+ +N:  R ;
 
 LEXICON KOLLEGA
  +N+Msc+Sg: 0-en ;
  +N+Msc+Pl:X2 er-ene ; ! delete a, kolleger
  +N+Msc+Pl: er-ene ;   ! keep a, kollegaer 
- R ;
+ +N:  R ;
  
 LEXICON KONTO
  +N+Msc+Sg: 0-en K ;
  +N+Msc+Pl:X2i 0-ene ; ! delete o
  +N+Msc+Pl: er-ene ; ! Regular pl
- R ;
+ +N:  R ;
  
 LEXICON RADIUS
  +N+Msc+Sg:%>us 0-en ;
  +N+Msc+Sg+Def:%>en K ; ! short def
  +N+Msc+Pl: er-ene ; ! Regular pl
- R ;
+ +N:  R ;
  
 LEXICON BROR
  bror+N+Msc+Sg:bror 0-en ;
@@ -135,129 +135,130 @@ LEXICON BROR
 LEXICON FAR
  far+N+Msc+Sg:far 0-en ;
  far+N+Msc+Pl:fedr e-ene ; 
- R ;
+! +N:  R ;
  
 LEXICON DATTER
  +N+Fem+Sg+Indef:datter # ;
  +N+Fem+Sg+Def:datra # ;
  +N+Fem+Sg+Indef:døtre # ;
  +N+Fem+Sg+Def:døtrene # ;
- R ;
+! +N:  R ;
 
 LEXICON MANN
  +N+Msc+Sg: 0-en ;
  +N+Msc+Pl:Z1 0-ene ;
- R ;
+! +N:  R ;
 
 LEXICON indeclm !mX, eigentleg.
  +N+Msc+Indcl: # ;
- R ;
+! +N:  R ;
 
 ! Feminines
 ! ---------
 
 LEXICON fx ! Former vx, awaiting classification.
  f1 ;
- R ;
+
 
 LEXICON f1 ! myr, krone
  +N+Fem+Sg: 0-a ;
  +N+Msc+Sg: en ; ! myren !^C^
  +N+Fem+Pl: er-ene ;
- R ;
+ +N:  R ;
 
 LEXICON f1b ! skam
  +N+Fem+Sg:mX4 0-a ;
  +N+Msc+Sg:m en ; ! myren !^C^
  +N+Fem+Pl:m er-ene ;
- R ;
+ +N:  R ;
 
 LEXICON f1X ! bok
  +N+Fem+Sg: 0-a ;
  +N+Msc+Sg: en ; ! boken !^C^
  +N+Fem+Pl:Z1 er-ene ;
- R ;
+ +N:  R ;
 
 LEXICON f1V ! mus
  +N+Fem+Sg: 0-a ;
  +N+Msc+Sg: en ; ! musen !^C^
  +N+Fem+Pl: 0-ene ;
- R ;
+ +N:  R ;
  
 LEXICON f3 ! lever
  +N+Fem+Sg:X1 0-a ;
  +N+Msc+Sg: en ; ! levren !^C^
  +N+Fem+Pl:X1 er-ene ;
- R ;
+ +N:  R ;
 
 ! Neuters
 ! -------
 
 LEXICON nX ! styrbord
  +N+Neu: K ;
- R ;
+ +N:  R ;
 
 LEXICON n1 ! hus
  +N+Neu+Sg: 0-et ;
  +N+Neu+Pl: 0-ene-a ;
- R ;
+ +N:  R ;
 
 LEXICON n1b ! rom
  +N+Neu+Sg:mX4 0-et ;
  +N+Neu+Pl:m 0-ene-a ;
- R ;
+ +N:  R ;
 
 LEXICON n1sg ! yr
  +N+Neu+Sg: 0-et ;
- R ;
+ +N:  R ;
 
 LEXICON n2 ! eple, salt
  +N+Neu+Sg: 0-et ;
  +N+Neu+Pl: er-ene ;
- R ;
+ +N:  R ;
 
 LEXICON n2b ! program
  +N+Neu+Sg:mX4 0-et ;
  +N+Neu+Pl:m 0-er-ene ;
- R ;
+ +N:  R ;
 
 LEXICON n2c ! album, kontor
  +N+Neu+Sg: 0-et ;
  +N+Neu+Pl: 0-er-ene ;
- R ;
+ +N:  R ;
 
 LEXICON n2s ! mørke
  +N+Neu+Sg: 0-et ;
- R ;
+ +N:  R ;
 
 LEXICON n3 ! middel
  +N+Neu+Sg:X1 0-et ;
  +N+Neu+Pl:X1 er-ene ;
- R ;
+ +N:  R ;
 
 LEXICON n3b ! lager
  +N+Neu+Sg: 0-et ;
  +N+Neu+Pl:X1 e-ene ;
- R ;
+ +N:  R ;
 
 LEXICON n3c ! fe
  +N+Neu+Sg: 0-et ;
  +N+Neu+Pl: 0-ne ;
- R ;
+ +N:  R ;
 
 LEXICON n4 ! kriterium
  +N+Neu+Sg:X5 0-et ;
  +N+Neu+Pl:X5 er-ene ;
- R ;
+ +N:  R ;
 
 LEXICON n4b ! faktum
  +N+Neu+Sg: 0-et ;
  +N+Neu+Pl:X5 a-aene ;
- R ;
+ +N:  R ;
 
 LEXICON LEKSIKON ! leksikon
  +N+Neu+Sg: 0-et ;
  +N+Neu+Pl:leksik a-aene ;
+ +N:  R ;
 
 LEXICON KLÆR
  +N+Neu:klær 0-ne ;
