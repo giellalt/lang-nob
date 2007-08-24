@@ -184,7 +184,7 @@ uå ab ;
 A.L ab ;
 A.S ab ;
 a.% s ab ;
-A. S ab ;
+A.% S ab ;
 Ap ab ;
 Eftf ab ;
 Fr.% P ab ;
