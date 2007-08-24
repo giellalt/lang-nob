@@ -9567,7 +9567,7 @@ laud mX ;
 død mX ;
 styrbord nX ;
 rot+N+Fem+Sg:rot 0-a ;
-streif na ;
+streif n1 ;
 skam f1b ;
 dam m1b ;
 kam m1b ;
