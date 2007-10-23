@@ -7,7 +7,7 @@ Alphabet
  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Ø Å
  Á É Ó Ú Í À È Ò Ù Ì Ä Ë Ö Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð
  '
- o:ø u:y a:e
+ o:ø u:y a:e g
 
  %#:0 %>:0 
 
@@ -44,8 +44,10 @@ Rules
 ! Epenthetic deletions
 ! --------------------
 
-"Contraction"
+"e Deletion"
  e:0 <=> Cns: _ LNR X1: %>: ( e | a ) ;
+		 Vow ( Cns:* ) _ ( Dummy:* - Z2: ) %>:0 [ Vow | Cns Cns ] ;
+		 _ %>:0 Q3: ;
 
 !€ modenX1%>e
 !€ mod0n00e
@@ -55,13 +57,30 @@ Rules
 
 "Consonant shortening before deletion"
  Cx:0 <=> Cx _ e: LNR X1: %>: ( e | a ) ;
-      where Cx in ( b d f g k l m n p r s t v ) ;
+      where Cx in ( b d f k p s v ) ;
 
 !€ sikkerX1%>e
 !€ sik00r00e
 
-"Delete schwaa" ! h a r e:0 %> e r
- e:0 <=> Vow ( Cns:* ) _ ( Dummy:* - Z2: ) %>:0 [ Vow | Cns Cns ] ;
+
+"Geminate deletion in front of -t and -d"
+ Cx:0 <=> Cx _ (e:0)         %>: Q3:0 [d|t] ; ! kaller:kalte
+          Cx _  e:   LNR X1: %>: ( e | a ) ;  ! sikker:sikre
+      where Cx in ( l n g ) ;
+
+!€ kalle%>Q3te
+!€ kal0000te
+
+!€ all%>Q3t
+!€ al000t
+
+!€ bygge%>Q3te
+!€ byg0000de
+
+
+
+!"Delete schwaa" ! h a r e:0 %> e r
+! e:0 <=> Vow ( Cns:* ) _ ( Dummy:* - Z2: ) %>:0 [ Vow | Cns Cns ] ;
 
 "Delete foreign vowel"
  Vx:0 <=> _ X2:  ;
@@ -77,13 +96,15 @@ Rules
 !€ knusselX1e
 !€ knus00l0e
 
-"Delete Plural Consonant"
- r:0 <=> _ %>:0 X3: ;
+"Delete r"
+ r:0 <=>   _ %>:0 X3: ;
+         r _ e: LNR X1: %>: ( e | a ) ;
 ! sparepengar : sparepengane
 
 "Delete m"
- m:0 <=> _ X4: [ #: | %>:0 s ] ;
-
+ m:0 <=>    _ X4: [ #: | %>:0 s ] ;      ! kammX4:kam
+          m _ e: LNR X1: %>: ( e | a ) ; ! gammel:gamle
+         u: _ X5: %>:0 ;
 "Umlaut"
  Vx:Vy <=> _ Cns:* ( e:0 ) Z1: ;
  where Vx in ( u o a )
@@ -98,8 +119,11 @@ Rules
 "um Deletion 1"
  u:0 <=> _ m: X5: %>:0 ;
 
-"um Deletion 2"
- m:0 <=> u: _ X5: %>:0 ;
+!€ museumX5%>er
+!€ muse0000er
+
+!"um Deletion 2" ! now m rule
+! m:0 <=> u: _ X5: %>:0 ;
 
 
 "t weakening"
@@ -109,30 +133,17 @@ Rules
 !€ oppskjørted00e
  
 
-! Verb rules
-
-"Geminate deletion in front of -t and -d"
- Cx:0 <=> Cx _ (e:0) %>:0 Q3:0 [d|t] ;
-      where Cx in ( l n g ) ;
-
-!€ kalle%>Q3te
-!€ kal0000te
-
-!€ all%>Q3t
-!€ al000t
-
-!€ bygge%>Q3te
-!€ byg0000de
 
 
 "Double t deleteion"
  t:0 <=> t: %>:0 _ ;
+              t _ e: LNR X1: %>: ( e | a ) ;
 
 !€ svart%>t
 !€ svart00
 
-"Deleting inf-e"
- e:0 <=> _ %>:0 Q3: ;
+!" inf-e"
+! e:0 <=> _ %>:0 Q3: ;
 
 !€ presentere%>Q3t
 !€ presenter000t
