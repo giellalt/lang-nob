@@ -20,9 +20,9 @@ inob.fst: ../bin/inob.fst
 	@printf "load ../bin/nob.save \n\
 	invert net \n\
 	save stack ../bin/inob.fst \n\
-	quit \n" > /tmp/inob-fst-script
-	@xfst -utf8 < /tmp/inob-fst-script
-	@rm -f /tmp/inob-fst-script
+	quit \n" > ../tmp/inob-fst-script
+	@xfst -utf8 < ../tmp/inob-fst-script
+	@rm -f ../tmp/inob-fst-script
 
  
 # The first goal is to build nob.fst, the analyzer.
@@ -37,9 +37,9 @@ nob.fst: ../bin/nob.fst
 	@printf "read regex @\"../bin/nob.save\" .o. \
 	@\"../bin/caseconv.fst\" ; \n\
 	save stack ../bin/nob.fst \n\
-	quit \n" > /tmp/nob-fst-script
-	@xfst -utf8 < /tmp/nob-fst-script
-	@rm -f /tmp/nob-fst-script
+	quit \n" > ../tmp/nob-fst-script
+	@xfst -utf8 < ../tmp/nob-fst-script
+	@rm -f ../tmp/nob-fst-script
 
 
 
@@ -74,9 +74,9 @@ caseconv.fst: ../bin/caseconv.fst
 	@echo
 	@printf "read regex < case.regex \n\
 	save stack ../bin/caseconv.fst \n\
-	quit \n" > /tmp/caseconv-script
-	@xfst -utf8 < /tmp/caseconv-script
-	@rm -f /tmp/caseconv-script
+	quit \n" > ../tmp/caseconv-script
+	@xfst -utf8 < ../tmp/caseconv-script
+	@rm -f ../tmp/caseconv-script
 
 
 # This goal depends on allcaps.regex
@@ -88,9 +88,9 @@ allcaps.fst: ../bin/allcaps.fst
 	@echo
 	@printf "source allcaps.regex \n\
 	save stack ../bin/allcaps.fst \n\
-	quit \n" > /tmp/tok-script
-	@xfst -utf8 < /tmp/tok-script
-	@rm -f /tmp/tok-script
+	quit \n" > ../tmp/tok-script
+	@xfst -utf8 < ../tmp/tok-script
+	@rm -f ../tmp/tok-script
 
 
 # The third goal is to build nob.save
@@ -105,9 +105,9 @@ nob.save: ../bin/nob.save
 	read-rules ../bin/twol-nob.bin \n\
 	compose-result \n\
 	save-result ../bin/nob.save \n\
-	quit \n" > /tmp/nob-save-script
-	@lexc -utf8 < /tmp/nob-save-script
-	rm -f /tmp/nob-save-script
+	quit \n" > ../tmp/nob-save-script
+	@lexc -utf8 < ../tmp/nob-save-script
+	rm -f ../tmp/nob-save-script
 
 
 # The fourth goal is to build twol-nob.bin
@@ -121,9 +121,9 @@ twol-nob.bin: ../bin/twol.nob.bin
 	@printf "read-grammar twol-nob.txt \n\
 	compile \n\
 	save-binary ../bin/twol-nob.bin \n\
-	quit \n" > /tmp/twol-nob-script
-	@twolc -utf8 < /tmp/twol-nob-script
-	@rm -f /tmp/twol-nob-script
+	quit \n" > ../tmp/twol-nob-script
+	@twolc -utf8 < ../tmp/twol-nob-script
+	@rm -f ../tmp/twol-nob-script
 
 # Here we include a preprocessor.
 # This goal depends on tok.txt
@@ -135,9 +135,9 @@ tok.fst: ../bin/tok.fst
 	@echo
 	@printf "source tok.txt \n\
 	save stack ../bin/tok.fst \n\
-	quit \n" > /tmp/tok-script
-	@xfst -utf8 < /tmp/tok-script
-	@rm -f /tmp/tok-script
+	quit \n" > ../tmp/tok-script
+	@xfst -utf8 < ../tmp/tok-script
+	@rm -f ../tmp/tok-script
 
 
 # "make clean" is there to remove the binary files at will.
