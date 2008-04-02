@@ -99,7 +99,7 @@ SET VINFIN = PrsPtc | PrfPtc | Inf ;
 
 LIST AUX = "være" "ha" ; # PrfPtc complements.
 
-
+LIST MOD = "burde" "kunne" "måtte" "skulle" "ville" ;
 
 
 CONSTRAINTS
@@ -165,6 +165,8 @@ SELECT Dem IF (-1 Det)(0 ("disse"))(*1 SUBST BARRIER NON-ADJ);
 	## Alle disse kontorene.
 
 SELECT Dem IF (-1 V OR Pr)(1 NPNH);
+
+REMOVE (Dem Pl) IF (0 Pron)(NOT 1 Pl);
 
 #
 # Key words
@@ -238,6 +240,8 @@ REMOVE N IF (*-1 (Pron Pers Nom) BARRIER NON-ADV)(1 NPNH OR N);
 
 REMOVE V IF (-1 (A Pl))(0 (N Pl));
 	## Dere gir jeg alle grønne planter til føde.
+
+REMOVE V IF (0 N)(*-1 V BARRIER NPNH LINK NOT 0 MOD);
 	
 # Definite neuter noun or verb #
 
@@ -330,6 +334,10 @@ REMOVE Neu IF (*-1 (Det Dem Sg Fem) BARRIER NON-ADJ)(0 (Msc Sg Indef)) ;
 REMOVE Msc IF (*-1 (Det Dem Sg Neu) BARRIER NON-ADJ)(0 (Msc Sg Indef)) ;
 REMOVE Fem IF (*-1 (Det Dem Sg Neu) BARRIER NON-ADJ)(0 (Msc Sg Indef)) ;
 
+
+# Noun or Adj
+
+REMOVE A IF (-1 V)(NOT 0 AUX)(1 EOS);
 
 # Det
 
