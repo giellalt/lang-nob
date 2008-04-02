@@ -89,6 +89,7 @@ Possessive ;
 LEXICON Demonstrative 
 det+Det+Dem+Sg+Neu:det # ;
 den+Det+Dem+Sg+MF:den # ;
+den+Det+Dem+Pl:de # ;
 et+Det+Dem+Sg+Neu:et # ;
 ett+Det+Dem+Sg+Neu:ett # ;
 en+Det+Dem+Sg+MF:en # ;
