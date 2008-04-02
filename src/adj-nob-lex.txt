@@ -26,6 +26,7 @@ jevn GOD ;
 LEXICON regular-adj
 blå aV ;
 grå aV ;
+stein a2 ;
 flott a2 ;
 vakker a5 ;
 sist a2 ;
