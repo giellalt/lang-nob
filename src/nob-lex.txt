@@ -90,8 +90,8 @@ LEXICON Root
 LEXICON R
 
  #+Cmp+:#  NounRoot ;
- #+Cmp+:#  main-verb ;
- #+Cmp+:#  regular-adj ; 
+! #+Cmp+:#  main-verb ;
+! #+Cmp+:#  regular-adj ; 
 
 
 ! compare smj:
