@@ -143,6 +143,8 @@ SELECT Pr IF (0 ("for"))(1 Acc)(NOT 2 Ind);
 SELECT Msc IF (0 Dem OR A)(*1 (N Msc) BARRIER NON-ADJ);
 	## Den fine stolen.
 
+SELECT MF IF (0 Dem OR A)(*1 (N Msc) BARRIER NON-ADJ);
+
 SELECT Fem IF (0 Dem OR A)(*1 (N Fem) BARRIER NON-ADJ);
 	## Den fine bygda.
 
@@ -280,6 +282,9 @@ REMOVE Imp IF (-1 NPNH)(0 N);
 
 REMOVE Inf IF (-1 BOS OR HYPH OR LEFT)(0 Imp)(NOT *1 Ind BARRIER CLB);
 	## «Gå inn i arken, du og hele din husstand!»
+
+REMOVE ("toe" Imp) IF (*1 (N Pl) BARRIER NPNH);
+
 
 # Certain verbs
 
