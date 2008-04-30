@@ -55,6 +55,9 @@ Rules
 !$ modenX1%>e
 !$ moden00e
 
+!€ hare%>er
+!€ har00er
+
 "Consonant shortening before deletion"
  Cx:0 <=> Cx _ e: LNR X1: %>: ( e | a ) ;
       where Cx in ( b d f k p s v ) ;
