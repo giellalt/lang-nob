@@ -2660,6 +2660,7 @@ frukt f1 ;
 elv f1 ;
 lov f1 ;
 forvaltningslov f1 ;
+hest m1 ;
 stab m1 ;
 lærerstab m1 ;
 adjutantstab m1 ;
