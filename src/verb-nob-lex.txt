@@ -2063,6 +2063,7 @@ flagge vx ;
 slagge vx ;
 stagge vx ;
 vagge vx ;
+egne v1 ;
 egge vx ;
 degge vx ;
 knegge vx ;

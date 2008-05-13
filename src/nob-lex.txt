@@ -90,6 +90,7 @@ LEXICON Root
 LEXICON R
 
  #+Cmp+:#  NounRoot ;
+ #+Cmp%-:%-  NounRoot ;
 ! #+Cmp+:#  main-verb ;
 ! #+Cmp+:#  regular-adj ; 
 
