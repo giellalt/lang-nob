@@ -8,6 +8,17 @@ LEX=nob-lex.txt adj-nob-lex.txt adj-nob-morph.txt adv-nob-lex.txt \
 	abbr-nob-lex.txt
 
 
+XFST = xfst -utf8
+LEXC = lexc -utf8
+TWOLC = twolc -utf8
+
+ifeq (victorio.uit.no, $(shell hostname))
+XFST = /opt/sami/xerox/c-fsm/ix86-linux2.6-gcc3.4/bin/fst -utf8
+LEXC = /opt/sami/xerox/bin/lexc -utf8
+TWOLC = /opt/sami/xerox/bin/twolc -utf8
+endif
+
+
 # The ultimate goal is to build inob.fst, the generator
 # This goal depends on nob.save being up to date.
 
@@ -21,7 +32,7 @@ inob.fst: ../bin/inob.fst
 	invert net \n\
 	save stack ../bin/inob.fst \n\
 	quit \n" > ../tmp/inob-fst-script
-	@xfst -utf8 < ../tmp/inob-fst-script
+	$(XFST) < ../tmp/inob-fst-script
 	@rm -f ../tmp/inob-fst-script
 
  
@@ -38,7 +49,7 @@ nob.fst: ../bin/nob.fst
 	@\"../bin/caseconv.fst\" ; \n\
 	save stack ../bin/nob.fst \n\
 	quit \n" > ../tmp/nob-fst-script
-	@xfst -utf8 < ../tmp/nob-fst-script
+	$(XFST) < ../tmp/nob-fst-script
 	@rm -f ../tmp/nob-fst-script
 
 
@@ -75,7 +86,7 @@ caseconv.fst: ../bin/caseconv.fst
 	@printf "read regex < case.regex \n\
 	save stack ../bin/caseconv.fst \n\
 	quit \n" > ../tmp/caseconv-script
-	@xfst -utf8 < ../tmp/caseconv-script
+	$(XFST) < ../tmp/caseconv-script
 	@rm -f ../tmp/caseconv-script
 
 
@@ -89,7 +100,7 @@ allcaps.fst: ../bin/allcaps.fst
 	@printf "source allcaps.regex \n\
 	save stack ../bin/allcaps.fst \n\
 	quit \n" > ../tmp/tok-script
-	@xfst -utf8 < ../tmp/tok-script
+	$(XFST) < ../tmp/tok-script
 	@rm -f ../tmp/tok-script
 
 
@@ -106,7 +117,7 @@ nob.save: ../bin/nob.save
 	compose-result \n\
 	save-result ../bin/nob.save \n\
 	quit \n" > ../tmp/nob-save-script
-	@lexc -utf8 < ../tmp/nob-save-script
+	$(LEXC) < ../tmp/nob-save-script
 	rm -f ../tmp/nob-save-script
 
 
@@ -122,7 +133,7 @@ twol-nob.bin: ../bin/twol.nob.bin
 	compile \n\
 	save-binary ../bin/twol-nob.bin \n\
 	quit \n" > ../tmp/twol-nob-script
-	@twolc -utf8 < ../tmp/twol-nob-script
+	$(TWOLC) < ../tmp/twol-nob-script
 	@rm -f ../tmp/twol-nob-script
 
 # Here we include a preprocessor.
@@ -136,7 +147,7 @@ tok.fst: ../bin/tok.fst
 	@printf "source tok.txt \n\
 	save stack ../bin/tok.fst \n\
 	quit \n" > ../tmp/tok-script
-	@xfst -utf8 < ../tmp/tok-script
+	$(XFST) < ../tmp/tok-script
 	@rm -f ../tmp/tok-script
 
 
