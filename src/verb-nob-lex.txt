@@ -44,7 +44,6 @@ LEXICON irregular-verb
  BÆRE ;
  DETTE ;
  DRA ;
- XIKKE ;
  DRIVE ;
  DØ ;
  DØLGE ;
