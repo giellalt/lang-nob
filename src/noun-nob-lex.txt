@@ -13873,7 +13873,7 @@ gebiss x ;
 ciss x ;
 fiss x ;
 giss x ;
-kliss x ;
+kliss n1 ;
 stilliss x ;
 sliss x ;
 miss x ;
