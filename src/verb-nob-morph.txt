@@ -81,7 +81,8 @@ LEXICON inf-prsptc
  +Inf: # ;
  +Imp:%>Q3 # ;
  +PrsPtc:%>ende # ;
- 
+ +ING:%>ing # ;
+
 LEXICON regpres
  +Ind+Prs:%>er # ;
  +Ind+Prs+Pass:%>es # ;
