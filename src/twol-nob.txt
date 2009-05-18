@@ -7,7 +7,14 @@ Alphabet
  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Ø Å
  Á É Ó Ú Í À È Ò Ù Ì Ä Ë Ö Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð
  '
- o:ø u:y a:e g
+ o:ø u:y a:e g:0 e:0 m:0 r:0 t:0 u:0
+
+
+ t:d
+ 0:t
+ 0:d
+ s:'
+
 
  %#:0 %>:0 
 
@@ -15,6 +22,18 @@ Alphabet
  Q1:0 Q2:0 Q3:0 Q4:0 Q5:0 Q6:0 Q7:0 Q8:0 Q9:0
  Y1:0 Y2:0 Y3:0 Y4:0 Y5:0 Y6:0 Y7:0 Y8:0 Y9:0 
  Z1:0 Z2:0 Z3:0 Z4:0 Z5:0 Z6:0 Z7:0 Z8:0 Z9:0 ;
+
+! the chapter "Rule-variables" must under the M4 regime:
+! To be removed when compiling on Xerox twolc:
+
+!htwolc Rule-variables
+
+        ! All rule-variables, that are used, should be declared.
+        ! If this isn't done, annoying warning-messages will be
+        ! issued (otherwise the grammar is constructed as it
+        ! should be)
+
+!htwolc        Cx Cy Cz Vx Vy ;
 
 Sets
  Vow = a e i o u y æ ø å ;
@@ -157,8 +176,8 @@ Rules
 "Insert t in passives"
  0:t <=> _ e s Q1: ;
 
-"Insert d in passives"
- 0:d <=> _ e s Q1: ;
+!"Insert d in passives"
+! 0:d <=> _ e s Q1: ;
 
 ! Clitics
 ! -------
