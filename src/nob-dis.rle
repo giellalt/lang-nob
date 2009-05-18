@@ -10347,6 +10347,7 @@ SELECT (N) IF
 	(0 samset OR Prs/Prt)
 	(NOT 0 A)
 	(NOT -1 %som/enn%)
+	(NOT 0 Imp LINK -1 s-gr)
 ;
 
 
@@ -11991,6 +11992,7 @@ SELECT (V Pass) IF
 	(NOT *1 overskrift BARRIER setn-gr)
 	(*-1C setn-gr BARRIER fv)
 	(*1C setn-gr BARRIER fv)
+	(NOT 0 Imp)
 ;
 
 
@@ -13901,7 +13903,7 @@ REMOVE (Imp) IF
 
 # 1991
 REMOVE (Imp) IF
-	(NOT -1 parentes OR komma)
+	(NOT -1 parentes OR komma OR s-gr)
 	(NOT -2 >>>)
 ;
 
