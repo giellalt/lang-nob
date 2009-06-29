@@ -66,6 +66,7 @@ LEXICON positive
  positive-def ;
 
 LEXICON positive-indef
+ R ;
  +Pos+Msc+Sg+Indef: # ;
  +Pos+Fem+Sg+Indef: # ;
  +Pos+MF+Sg+Indef: # ;
@@ -80,6 +81,7 @@ LEXICON a-neuter ! fint
  +Pos+Neu+Sg+Indef:%>Q3t # ;
  
 LEXICON a-no-neuter ! vennlig
+ R ;
  +Pos+Neu+Sg+Indef: # ;
 
 LEXICON grade-e
@@ -105,6 +107,7 @@ flere+A+Superl+Pl+Indef:flest # ;
 LEXICON GAMMEL
 !gammel+A+Sg+Indef+Msc:gammel # ;
 !gammel+A+Sg+Indef+Fem:gammel # ;
+gammel+A:gammel R ;
 gammel+A+Sg+Indef+MF:gammel # ;
 gammel+A+Sg+Indef+Neu:gammelt # ;
 gammel+A+Sg+Def:gamle # ;
@@ -117,6 +120,7 @@ gammel+A+Superl+Def:eldste # ;
 LEXICON GOD
 !god+A+Sg+Indef+Msc:god # ;
 !god+A+Sg+Indef+Fem:god # ;
+god+A:god R ;
 god+A+Sg+Indef+MF:god # ;
 god+A+Sg+Indef+Neu:godt # ;
 god+A+Sg+Def:gode # ;
@@ -145,6 +149,7 @@ ny aV ;
 LEXICON STOR
 !stor+A+Sg+Msc+Indef:stor # ;
 !stor+A+Sg+Fem+Indef:stor # ;
+stor+A:stor R ;
 stor+A+Sg+MF+Indef:stor # ;
 stor+A+Sg+Neu+Indef:stort # ;
 stor+A+Sg+Def:store # ;
@@ -155,6 +160,7 @@ stor+A+Superl+Indef:størst # ;
 stor+A+Superl+Def:største # ;
 
 LEXICON UNG
+ung+A:ung R ;
 ung+A+Sg+Indef+Msc:ung # ;
 ung+A+Sg+Indef+Fem:ung # ;
 ung+A+Sg+Indef+Neu:ungt # ;
