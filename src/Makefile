@@ -52,18 +52,18 @@ inob.fst: ../bin/inob.fst
 
  
 # The first goal is to build nob.fst, the analyzer.
-# This goal depends on nob.save and caseconv.fst being up to date
+# This goal depends on nob.save and inituppercase.fst being up to date
 
 nob.fst: ../bin/nob.fst
 ../bin/nob.fst: ../bin/nob.save \
-				../bin/caseconv.fst \
+				../bin/inituppercase.fst \
 				../bin/allcaps.fst \
             	../bin/tok.fst
 	@echo
 	@echo "*** Building nob.fst ***" ;
 	@echo
 	@printf "read regex @\"../bin/nob.save\" .o. \
-	@\"../bin/caseconv.fst\" ; \n\
+	@\"../bin/inituppercase.fst\" ; \n\
 	save stack ../bin/nob.fst \n\
 	quit \n" > ../tmp/nob-fst-script
 	$(XFST) < ../tmp/nob-fst-script
@@ -92,19 +92,19 @@ abbr: ../bin/abbr.txt
 		--lex=$(ABBRSRCS)
 
 
-# The second goal is to build the caseconv.fst file
-# This goal depends on case.regex
+# The second goal is to build the inituppercase.fst file
+# This goal depends on inituppercase.regex
 
-caseconv.fst: ../bin/caseconv.fst
-../bin/caseconv.fst: case.regex
+inituppercase.fst: ../bin/inituppercase.fst
+../bin/inituppercase.fst: inituppercase.regex
 	@echo
-	@echo "*** Building caseconv.fst ***" ;
+	@echo "*** Building inituppercase.fst ***" ;
 	@echo
-	@printf "read regex < case.regex \n\
-	save stack ../bin/caseconv.fst \n\
-	quit \n" > ../tmp/caseconv-script
-	$(XFST) < ../tmp/caseconv-script
-	@rm -f ../tmp/caseconv-script
+	@printf "read regex < inituppercase.regex \n\
+	save stack ../bin/inituppercase.fst \n\
+	quit \n" > ../tmp/inituppercase-script
+	$(XFST) < ../tmp/inituppercase-script
+	@rm -f ../tmp/inituppercase-script
 
 
 # This goal depends on allcaps.regex
