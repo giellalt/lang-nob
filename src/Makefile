@@ -107,14 +107,14 @@ inituppercase.fst: ../bin/inituppercase.fst
 	@rm -f ../tmp/inituppercase-script
 
 
-# This goal depends on allcaps.regex
+# This goal depends on allcaps.xfst
 
 allcaps.fst: ../bin/allcaps.fst
-../bin/allcaps.fst: allcaps.regex
+../bin/allcaps.fst: allcaps.xfst
 	@echo
 	@echo "*** Building allcaps.fst ***" ;
 	@echo
-	@printf "source allcaps.regex \n\
+	@printf "source allcaps.xfst \n\
 	save stack ../bin/allcaps.fst \n\
 	quit \n" > ../tmp/tok-script
 	$(XFST) < ../tmp/tok-script
