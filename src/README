@@ -8,9 +8,16 @@ Documentation is scattered around on giellateknos pages, e.g.
 * http://giellatekno.uit.no/faodoc/index.html
 * http://giellatekno.uit.no/doc/tools/docu-sme-manual.html
 
+
+
+
 The folder contains two different dis files, 
 tt-nob-dis.rle 
 nob-dis.rle
-The former is obsolete and should not be used.
 
+The former is obsolete and should not be used.
+The latter is taken from the Oslo-Bergen tagger, released under GPL.
+
+
+The nob.fst is based on a wordform list, and contains lots of errors.
 
