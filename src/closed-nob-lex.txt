@@ -8,6 +8,7 @@ for conj ;
 som subj ;
 som p ;
 at subj ;
+dersom subj ; 
 ifall subj ;
 hvis subj ;
 viss subj ;
