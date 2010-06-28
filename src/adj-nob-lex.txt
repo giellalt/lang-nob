@@ -2487,7 +2487,6 @@ pytagoreisk a2 ;
 epikureisk a2 ;
 fariseisk a2 ;
 elyseisk a2 ;
-fisk a2 ;
 grafisk a2 ;
 telegrafisk a2 ;
 kalligrafisk a2 ;
