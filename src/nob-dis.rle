@@ -669,6 +669,8 @@ LIST V-u-Imp = (V Prs) (V Prt) (V PrfPtc) (V Inf) ;
 
 CONSTRAINTS
 
+SELECT Prop IF (NOT -1 CLB); # XXX
+
 # 3532
 "<bak>" REMOVE (N) IF
 	(-1 A-Msc/Neu OR A-ub)
