@@ -183,6 +183,9 @@ LEXICON f1V ! mus
  +N+Msc+Sg: en ; ! musen !^C^
  +N+Fem+Pl: 0-ene ;
  +N:  R ;
+
+LEXICON f2
+ f1 ;
  
 LEXICON f3 ! lever
  +N+Fem+Sg:X1 0-a ;
