@@ -78,16 +78,16 @@ Rules
 !€ har00er
 
 "Consonant shortening before deletion"
- Cx:0 <=> Cx _ e: LNR X1: %>: ( e | a ) ;
-      where Cx in ( b d f k p s v ) ;
+ Cx:0 <=> Vow Cx _ e: LNR X1: %>: ( e | a ) ;
+          where Cx in ( b d f k p s v ) ;
 
 !€ sikkerX1%>e
 !€ sik00r00e
 
 
 "Geminate deletion in front of -t and -d"
- Cx:0 <=> Cx _ (e:0)         %>: Q3:0 [d|t] ; ! kaller:kalte
-          Cx _  e:   LNR X1: %>: ( e | a ) ;  ! sikker:sikre
+ Cx:0 <=> Vow Cx _ (e:0)         %>: Q3:0 [d|t] ; ! kaller:kalte
+          Vow Cx _  e:   LNR X1: %>: ( e | a ) ;  ! sikker:sikre
       where Cx in ( l n g ) ;
 
 !€ kalle%>Q3te
