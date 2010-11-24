@@ -24,6 +24,12 @@ jam GOD ;
 jevn GOD ;
 
 LEXICON regular-adj
+militær a1 ;
+normal a1 ;
+relativ a1 ;
+rød a1 ;
+såkalt a4 ;
+moderne a3 ;
 blå aV ;
 grå aV ;
 stein a2 ;

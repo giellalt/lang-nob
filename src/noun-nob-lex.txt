@@ -20566,3 +20566,8 @@ fullmaktskomité m1 ;
 arrangementkomité m1 ;
 budsjettkomité m1 ;
 lovkomité m1 ;
+vest m1 ;
+øst m1 ;
+øy f1 ;
+band n1 ;
+provins m1 ;

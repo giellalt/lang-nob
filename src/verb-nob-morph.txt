@@ -376,6 +376,13 @@ flyte+V+Ind+Prt:flaut  # ;
 flyte+V+PrfPtc:flytt  # ;
 flyte+V+PrsPtc:flytende  # ;
 
+LEXICON FORLATE ! stem prep + late
++V+Inf:late  # ;
++V+Imp:lat  # ;
++V+Ind+Prs:later  # ;
++V+Ind+Prt:lot  # ;
++V+PrfPtc:latt  # ;
+
 LEXICON FRYSE 
 fryse+V+Inf:fryse  # ;
 fryse+V+Imp:frys  # ;
@@ -781,6 +788,12 @@ la+V+Ind+Prs:lar  # ;
 la+V+Ind+Prt:lot  # ;
 la+V+PrfPtc:latt  # ;
 
+LEXICON LA la+V+Inf:la  # ;
+la+V+Imp:la  # ;
+la+V+Ind+Prs:lar  # ;
+la+V+Ind+Prt:lot  # ;
+la+V+PrfPtc:latt  # ;
+
 LEXICON LEGGE
 legge+V+Inf:legge  # ;
 legge+V+Imp:legg  # ;
@@ -804,6 +817,9 @@ måtte+V+Inf:måtte  # ;
 måtte+V+Ind+Prs:må  # ;
 måtte+V+Ind+Prt:måtte  # ;
 måtte+V+PrfPtc:mått  # ;
+
+!LEXICON MØTE
+!+V
 
 LEXICON RIVE
 rive+V+Inf:rive  # ;

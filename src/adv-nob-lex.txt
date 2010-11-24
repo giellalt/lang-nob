@@ -6,6 +6,10 @@ LEXICON dt
  +Adv: # ; ! perhaps unify, perhaps not.
 
 LEXICON Adverb
+dessuten adv ;
+etterhvert adv ;
+fremdeles adv ;
+hvorav adv ;
 absolutt adv ;
 allehånde a3 ;
 allehånde nX ;
@@ -99,6 +103,7 @@ mens adv ;
 mer adv ;
 mer adv ;
 mest adv ;
+meste adv ;
 mezzoforte adv ;
 midt adv ;
 mye adv ;
