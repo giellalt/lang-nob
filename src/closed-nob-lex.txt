@@ -26,6 +26,7 @@ LEXICON Conjunction
 både conj ;
 og conj ;
 og adv ;
+enten conj ;
 eller conj ;
 samt conj ;
 men conj ;
@@ -77,6 +78,7 @@ seg+Pron+Refl+Acc:seg # ;
 
 LEXICON Indefinite
 noen+Pron+Indef:noen # ;
+ingen+Pron+Indef:ingen # ;
 
 
 LEXICON Interrogative 
