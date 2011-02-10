@@ -420,7 +420,7 @@ savefile:
 # make twol      (when the rules themselves are changed, will recompile the binary)
 
 
-TWOLC = twolc -utf8
+TWOLC = twolc
 TYPE = pos
 FILE =
 FILEPOS = twol-pos.in
