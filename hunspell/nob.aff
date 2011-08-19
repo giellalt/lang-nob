@@ -1,13 +1,14 @@
 SET ISO8859-1
 
 # This is generated from 
-# perl -ne 'print join "\n", split //' words.nb|  sort | uniq -c | \
-# sort -rn | awk '{print $2}' | tr -d "\n"
-TRY ensrtialkogdmpuvfbjøhyåæcSéBHzAMwKTNFGLREVODCxèJPIUWØôÅqYQZçXò
+# make words.nb; perl -ne 'print join "\n", split //' words.nb | \
+# sort | uniq -c | sort -rn | awk '{print $2}' | tr -d "\n"
+TRY ensrtialkogdmpuvfbjhøyåæcézSwBHAMKTFxGLNRVEODôèCPJIqUWØÅYüZçäQêöòXëÄ
 
 COMPOUNDFLAG z
 
 COMPOUNDMIN 4
+
 
 PFX a Y 1
 PFX a   0     u           .
