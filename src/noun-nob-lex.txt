@@ -18,13 +18,48 @@
 
 
 
+! x  unclassified, to m1 by default
+! mX indecl
+! m1sg sg only
+! m1b dam
+! m1b fe, komite
+! miV sko pl. sko
+! m3V meter pl. meter
+! KOLLEGA kollegaer, kolleger
+! KONTO kontoer, konti
+! RADIUS radiuser, radii
+! BROR brødre
+! FAR fedre
+! DATTER døtre
+! MANN menn
+! f1b skam
+! f1X bok pl. bøker
+! f1V mus, pl. mus
+! n1b rom pl. rom
+! n1s sg only
+! n2b program pl. programmer
+! n2c kontor pl. kontor, kontorer
+! n2s mørke, not pl.
+! n3b lager def. lageret
+! n3c fe, feet
+! n4b faktum pl fakta
+! LEKSIKON leksikon, pl. leksika
+
 
 
 
 LEXICON NounRoot
 
-
-
+kyst m1 ;
+vestkyst m1 ;
+østkyst m1 ;
+sørkyst m1 ;
+nordkyst m1 ;
+krets m1 ;
+utbrudd n1 ;
+hjerte n1 ;
+nummer n3 ;
+nummer+N+Neu+Pl:numre 0-ne ;
 fører m2 ; 
 eple n2 ; 
 oktober indeclm ; 
@@ -579,6 +614,8 @@ kunstnerinne f1 ;
 bestyrerinne f1 ;
 lærerinne f1 ;
 keiserinne f1 ;
+keiser m1 ;
+pinyin m1 ;
 danserinne f1 ;
 bergenserinne f1 ;
 heltinne f1 ;
@@ -1135,6 +1172,9 @@ referansesamling f1 ;
 skiftesamling f1 ;
 malerisamling f1 ;
 artikkelsamling f1 ;
+art m1 ;
+sølv n1 ;
+folkerepublikk m1 ;
 ansamling f1 ;
 innsamling f1 ;
 forsamling f1 ;
@@ -6231,6 +6271,7 @@ rotasjon m1 ;
 adaptasjon m1 ;
 deportasjon m1 ;
 stasjon m1 ;
+undergrunnsstasjon m1 ;
 servicestasjon m1 ;
 manifestasjon m1 ;
 bakkestasjon m1 ;
@@ -7750,7 +7791,6 @@ appelsinskall n1 ;
 avkall n1 ;
 knall n1 ;
 skrall n1 ;
-tall n1 ;
 tall n1 ;
 oddetall n1 ;
 sidetall n1 ;
@@ -10267,6 +10307,7 @@ sei x ;
 timotei x ;
 postei x ;
 leverpostei x ;
+fylkesvei x ;
 vei x ;
 fevei x ;
 melkevei x ;
@@ -20571,3 +20612,20 @@ vest m1 ;
 øy f1 ;
 band n1 ;
 provins m1 ;
+alder m3 ;
+middelalder m3 ;
+levevis n1 ;
+start m1 ;
+län n1 ;
+våpen n3 ;
+riksvåpen n3 ;
+part m1 ;
+senter n3 ;
+kor n3 ;
+pattedyr n1 ;
+magasin n1 ;
+grunnlegger m2 ;
+flukt m1sg ;
+oksygen n2 ;
+kallenavn n1 ;
+debutalbum n1 ;
