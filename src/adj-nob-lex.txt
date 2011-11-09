@@ -24,6 +24,7 @@ jam GOD ;
 jevn GOD ;
 
 LEXICON regular-adj
+indre a3 ;
 militær a1 ;
 normal a1 ;
 relativ a1 ;
@@ -3670,3 +3671,12 @@ grønn a1 ;
 egen:ege EGEN ;
 overlegen a5 ;
 moden a5 ;
+voksen a5 ;
+ytre a3 ;
+sjelden a5 ;
+fiktiv a2 ;
+fremmed a2 ;
+sørøstlig a2 ;
+uklar a1 ;
+skjult a2 ;
+negativ a2 ;

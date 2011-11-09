@@ -12,7 +12,7 @@ Alphabet
 
  t:d
  0:t
- 0:d
+! 0:d
  s:'
 
 
@@ -126,7 +126,10 @@ Rules
 "Delete m"
  m:0 <=>    _ X4: [ #: | %>:0 s ] ;      ! kammX4:kam
           m _ e: LNR X1: %>: ( e | a ) ; ! gammel:gamle
+          m _ e: %>:0 Q3: t ;
          u: _ X5: %>:0 ;
+         
+
 "Umlaut"
  Vx:Vy <=> _ Cns:* ( e:0 ) Z1: ;
  where Vx in ( u o a )
@@ -159,7 +162,7 @@ Rules
 
 "Double t deleteion"
  t:0 <=> t: %>:0 _ ;
-              t _ e: LNR X1: %>: ( e | a ) ;
+               t _ e: LNR X1: %>: ( e | a ) ;
 
 !€ svart%>t
 !€ svart00

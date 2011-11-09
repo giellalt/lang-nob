@@ -818,8 +818,12 @@ måtte+V+Ind+Prs:må  # ;
 måtte+V+Ind+Prt:måtte  # ;
 måtte+V+PrfPtc:mått  # ;
 
-!LEXICON MØTE
-!+V
+LEXICON MØTE
+måtte+V+Inf:øte  # ;
+måtte+V+Ind+Prsøter  # ;
+måtte+V+Ind+Prt:øtte  # ;
+måtte+V+PrfPtc:øtt  # ;
+
 
 LEXICON RIVE
 rive+V+Inf:rive  # ;

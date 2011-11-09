@@ -6,6 +6,11 @@ LEXICON dt
  +Adv: # ; ! perhaps unify, perhaps not.
 
 LEXICON Adverb
+nest adv ;
+fremst adv ;
+fremste adv ;
+innerst adv ;
+
 dessuten adv ;
 etterhvert adv ;
 fremdeles adv ;
@@ -119,6 +124,8 @@ nåvel adv ;
 nærmere adv ;
 nærmest adv ;
 ofte adv ;
+oftere adv ;
+oftest adv ;
 også adv ;
 omme adv ;
 oppad adv ;
