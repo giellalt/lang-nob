@@ -369,6 +369,7 @@ Postnr		ab-dot-noun ;
 Rt		ab-dot ;                                      !
 Rv ab ;
 S.nr		ab-noun ;                                 !
+St.meld.% nr ab-noun ;
 avd		ab-noun ;                                 ! added-sh
 a.% D ab ;
 a.D ab ;
@@ -395,6 +396,7 @@ op ab ;
 oppg ab ;
 p.b ab ;
 pb ab ;
+pbl ab ;
 pgf ab ;
 pkt ab ;
 rv ab ;
