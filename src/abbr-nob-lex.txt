@@ -13,12 +13,12 @@ ITRAB ;
 TRNUMAB ;
 TRAB ;
 
-! Now splitting according to POS, and according to dot or not
-! - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+! Now splitting according to POS, and dot or not
+! - - - - - - - - - - - - - - - - - - - - - - -
 
 ! First collecting POS info, *-noun, *-adv, etc.
-! Also splitting when in doubt: -noun-adj => -noun and -adj
-! Then pointing to two contlexes, a dot-one and a non-dot-one.
+! Splitting when in doubt: -noun-adj => -noun and -adj
+! Then pointing to two contlexes, dot and non-dot.
 
 LEXICON ab ! No POS, don't know what pos
 ab-nodot ;
@@ -28,86 +28,17 @@ LEXICON ab-noun
 ab-nodot-noun ;
 ab-dot-noun ;
 
-!LEXICON ab-adj
-!ab-nodot-adj ;
-!ab-dot-adj ;
-
-!LEXICON ab-adv
-!ab-nodot-adv ;
-!ab-dot-adv ;
-
-!LEXICON ab-num
-!ab-nodot-num ;
-!ab-dot-num;
-
-! Here come POS and Case tags, and no period.
-
 LEXICON ab-nodot-noun ! The bulk
 +ABBR+N: # ;  ! no period, that is.
-! +ABBR+N:%- R ; !^C^ TRY OUT THIS ONE
-
-!LEXICON ab-nodot-adj
-!!+ABBR: # ;  ! no period, that is.
-!! +ABBR+A+Attr: # ;  ! no period, that is.
-! +ABBR+A: # ;  ! no period, that is.
-!! +ABBR+A:%- R ; !^C^ TRY OUT THIS ONE
-
-!LEXICON ab-nodot-adv
-!! +ABBR: # ;  ! no period, that is.
-!  +ABBR+Adv: # ;      ! Adv without case, consider this.
-!! +ABBR+Adv+Attr: # ; ! no period, that is.
-!! +ABBR+Adv: # ;  ! no period, that is.
-!! +ABBR+Adv:%- R ; !^C^ TRY OUT THIS ONE
-
-!  LEXICON ab-nodot-num
-!!+ABBR: # ;  ! no period, that is.
-! +ABBR+Num: # ;  ! no period, that is.
-!! +ABBR+Num:%- R ; !^C^ TRY OUT THIS ONE
 
 LEXICON ab-nodot ! default
-!+ABBR: # ;  ! no period, that is.
-! +ABBR+Attr: # ;  ! no period, that is.
 +ABBR: # ;  ! no period, that is.
-! +ABBR:%- R ; !^C^ TRY OUT THIS ONE
-
-! Here come POS and Case tags, with the period added.
 
 LEXICON ab-dot ! Default
-! +ABBR+Attr:%. # ;
 +ABBR:%. # ;
 
-LEXICON ab-dot-noun ! This is the lexicon for abbrs that must have a period.
-! +ABBR+N+Attr:%. # ;
+LEXICON ab-dot-noun ! abbrs that must have a period.
 +ABBR+N:%. # ;
-! +ABBR+N:%- R ; !^C^ TRY OUT THIS ONE
-
-! The idea is that the nominal ones may have case, like e.g. P.E.N.
-
-!LEXICON ab-dot-adj ! This is the lexicon for abbrs that must have a period.
-!! +ABBR:%. # ;
-!! +ABBR+A+Attr:%. # ;
-! +ABBR+A:%. # ;
-
-!LEXICON ab-dot-adv ! This is the lexicon for abbrs that must have a period.
-!  +ABBR+Adv:%. # ;        ! Adv without case.
-
-!LEXICON ab-dot-num ! This is the lexicon for abbrs that must have a period.
-!! +ABBR:%. # ;
-! +ABBR+Num:%. # ;
-
-!LEXICON ab-dot-cc
-! +ABBR+CC:%. # ;
-
-!LEXICON ab-verb
-! ab-dot-verb ;
-! ab-nodot-verb ;
-
-!LEXICON ab-dot-verb
-! +ABBR+V+TV+Imprt:%.   # ; ! Period.
-
-!LEXICON ab-nodot-verb
-! +ABBR+V+TV+Imprt:    # ; ! No period.
-! # ;
 
 
 
@@ -133,63 +64,21 @@ LEXICON ITRAB
 !ru ab ;
 !ung ab ;
 
-bill.mrk ab ;
-bot ab ;
-da ab ;
-d.å ab ;
-f.% å ab ;
-f.å ab ;
-f.% h ab ;
-f.% v ab ;
-g ab ;
-Grl ab ;
-hå ab ;
-H.m ab ;
-H.% m ab ;
-H.M ab ;
-H.% M ab ;
-km/t ab ;
-k.% s ab ;
-lør ab ;
-lat ab ;
-man ab ;
-mat ab ;
-min ab ;
-mo.h ab ;
-mo.% h ab ;
-m/sek ab ;
-mu.h ab ;
-mu.% h ab ;
-mus ab ;
-no ab ;
-o.k ab ;
-o.% k ab ;
-o.% m.% a ab ;
-p.% b ab ;
-P.% b ab ;
-p.% t ab ;
-res.kap ab ;
-s.% å ab ;
-søn ab ;
-St ab ;
-St.prp ab ;
-t.forskj.fra ab ;
-tlf ab ;
-Tlf ab ;
-u.% å ab ;
-u.å ab ;
-uå ab ;
 
-A.L ab ;
-A.S ab ;
-a.% s ab ;
-A.% S ab ;
+A.% S ab-dot-noun ;
+A.L ab-dot-noun ;
+A.S ab-dot-noun ;
 Ap ab ;
 Eftf ab ;
 Fr.% P ab ;
 Fr.% p ab ;
 Fr.P ab ;
 Fr.p ab ;
+Grl ab ;
+H.% M ab ;
+H.% m ab ;
+H.M ab ;
+H.m ab ;
 I.% N.% D ab ;
 I.N.D ab ;
 IL ab ;
@@ -201,16 +90,25 @@ Kr.f ab ;
 Krf ab ;
 Lt ab ;
 Ltd ab ;
+P.% b ab ;
+St ab ;
+St.prp ab ;
 Sth ab ;
+Tlf ab ;
+a.% s ab ;
 a.l ab ;
 a.s ab ;
 adj ab ;
 adv ab ;
 alb ab ;
+bill.mrk ab ;
+bot ab ;
 d.% y ab ;
 d.% å ab ;
 d.d ab ;
 d.y ab ;
+d.å ab ;
+da ab ;
 daa ab ; !dekar
 dy ab ;
 e.% Kr ab ;
@@ -234,14 +132,22 @@ ell.% likn ab ;
 ell.lign ab ;
 ell.likn ab ;
 etc ab ;
+f.o.m ab-dot ;
+f.% o.% m ab-dot ;
 f.% Kr ab ;
+f.% h ab ;
+f.% v ab ;
+f.% å ab ;
 f.Kr ab ;
+f.å ab ;
 feb ab ;
 fem ab ;
 fr.% p ab ;
 fr.p ab ;
+g ab ;
 gg ab ;
 gml ab ;
+hå ab ;
 ib ab ;
 ibid ab ;
 it ab ;
@@ -249,15 +155,19 @@ jan ab ;
 jap ab ;
 jr ab ;
 jun ab ;
+k.% s ab ;
 km ab ;
+km/t ab ;
 km/t ab ;
 kr ab ;
 kr.% f ab ;
 kr.f ab ;
 kvm ab ;
+lat ab ;
 lign ab ;
 likn ab ;
 ltd ab ;
+lør ab ;
 m ab ;
 m% o.h ab ;
 m% u.h ab ;
@@ -268,35 +178,48 @@ m.% u.% h ab ;
 m.% v ab ;
 m.fl ab ;
 m.m ab ;
-m.o.h ab ;
-m.p.p ab ;
-m.u.h ab ;
-m.v ab ;
+m.o.h ab-dot ;
+m.p.p ab-dot ;
+m.u.h ab-dot ;
+m.v ab-dot ;
 m/sek ab ;
+m/sek ab ;
+man ab ;
+mat ab ;
 md ab ;
 mfl ab ;
+min ab ;
 mnd ab ;
 mno ab ;
+mo.% h ab ;
+mo.h ab ;
 moh ab ;
 mots ab ;
 motsv ab ;
 mrd ab ;
+mu.% h ab ;
+mu.h ab ;
 muh ab ;
+mus ab ;
 mv ab ;
 mva ab ;
+no ab ;
 nov ab ;
 o.% a ab ;
 o.% fl ab ;
 o.% h ab ;
+o.% k ab ;
 o.% l ab ;
 o.% lign ab ;
 o.% likn ab ;
 o.% m ab ;
+o.% m.% a ab ;
 o.% s.% fr ab ;
 o.% s.% v ab ;
 o.a ab ;
 o.fl ab ;
 o.h ab ;
+o.k ab ;
 o.l ab ;
 o.lign ab ;
 o.likn ab ;
@@ -309,11 +232,13 @@ osfr ab ;
 osv ab ;
 ovfr ab ;
 p.% a ab ;
+p.% b ab ;
 p.% g.% a ab ;
 p.% m ab ;
 p.% p ab ;
 p.% p.% m ab ;
 p.% r ab ;
+p.% t ab ;
 p.a ab ;
 p.m ab ;
 p.p ab ;
@@ -329,7 +254,9 @@ red ab ;
 red.% anm ab ;
 red.anm ab ;
 rek ab ;
+res.kap ab ;
 s.% u ab ;
+s.% å ab ;
 s.u ab ;
 s.å ab ;
 sd ab ;
@@ -340,6 +267,12 @@ sign ab ;
 smst ab ;
 sp ab ;
 sst ab ;
+søn ab ;
+t.forskj.fra ab ;
+tlf ab ;
+u.% å ab ;
+u.å ab ;
+uå ab ;
 årg ab ;
 årh ab ;
 
