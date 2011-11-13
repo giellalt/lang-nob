@@ -253,6 +253,7 @@ p.p ab ;
 p.p.m ab ;
 p.r ab ;
 p.t ab ;
+pers ab-dot ; ! pers. vara må til pers. :-( 
 ppm ab ;
 q.% e.% d ab ;
 q.% s ab ;
