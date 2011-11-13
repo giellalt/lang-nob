@@ -90,17 +90,27 @@ Kr.f ab ;
 Krf ab ;
 Lt ab ;
 Ltd ab ;
+Mhz ab ;
 P.% b ab ;
+P.S ab-dot ;
+Spd ab ;
 St ab ;
-St.prp ab ;
 Sth ab ;
-Tlf ab ;
 a.% s ab ;
 a.l ab ;
 a.s ab ;
+abess ab ;
+abl ab ;
 adj ab ;
 adv ab ;
+adbl ab ;
+akk ab ;
+akt ab ;
 alb ab ;
+anat ab ;
+am ab ;
+anestesiavd ab ;
+avd ab ;
 bill.mrk ab ;
 bot ab ;
 d.% y ab ;
@@ -111,6 +121,8 @@ d.å ab ;
 da ab ;
 daa ab ; !dekar
 dy ab ;
+dem ab ;
+dept ab ;
 e.% Kr ab ;
 e.% f ab ;
 e.% l ab ;
@@ -132,8 +144,6 @@ ell.% likn ab ;
 ell.lign ab ;
 ell.likn ab ;
 etc ab ;
-f.o.m ab-dot ;
-f.% o.% m ab-dot ;
 f.% Kr ab ;
 f.% h ab ;
 f.% v ab ;
@@ -159,7 +169,6 @@ k.% s ab ;
 km ab ;
 km/t ab ;
 km/t ab ;
-kr ab ;
 kr.% f ab ;
 kr.f ab ;
 kvm ab ;
@@ -196,7 +205,6 @@ mo.h ab ;
 moh ab ;
 mots ab ;
 motsv ab ;
-mrd ab ;
 mu.% h ab ;
 mu.h ab ;
 muh ab ;
@@ -290,32 +298,31 @@ uå ab ;
 
 LEXICON TRNUMAB
 
-Apd		ab-dot ;                                      !
-Bnr		ab-dot-noun ;                                 !
-Gnr		ab-noun ;                                 !
+Apd		ab-dot ;                        
+Bnr		ab-dot-noun ;                   
+Gnr		ab-noun ;                       
 Kommunenr	ab-dot-noun ;
-O.nr		ab-noun ;                                 !
+O.nr		ab-noun ;                   
 P.b ab ;
 Pb              ab-noun ; ! Postbox
 Pb ab ;
 Postnr		ab-dot-noun ;
-Rt		ab-dot ;                                      !
+Rt		ab-dot ;                        
 Rv ab ;
-S.nr		ab-noun ;                                 !
-St.meld.% nr ab-noun ;
-avd		ab-noun ;                                 ! added-sh
+S.nr		ab-noun ;                   
+avd		ab-noun ;                       
 a.% D ab ;
 a.D ab ;
-alm		ab-dot ;                                      !
+alm		ab-dot ;                        
 b.c		ab-dot ;  !b.c. 18-22
-bnr		ab-noun ;                                 !
+bnr		ab-noun ;                       
 fnr		ab-noun ;
-gnr		ab-dot-noun ;                                 !
+gnr		ab-dot-noun ;                   
 gnr ab ;
-j		ab-dot ;                                      !
-jnr		ab-dot ;                                      !
-kap		ab-dot-noun ;                                 !
-kr		ab ;                                          !
+j		ab-dot ;                        
+jnr		ab-dot ;                        
+kap		ab-dot-noun ;                   
+kr		ab ;                            
 kr ab ;
 lnr ab ;
 maks ab ;
@@ -323,7 +330,7 @@ mill ab ;
 mob		ab-noun ;
 mobiltlf ab ;
 nkr ab ;
-nr		ab-noun ; ! Nr nicht                          !
+nr		ab-noun ; ! Nr nicht            
 nr ab ;
 op ab ;
 oppg ab ;
@@ -333,12 +340,17 @@ pbl ab ;
 pgf ab ;
 pkt ab ;
 rv ab ;
-s		ab-noun ;                                     !
-tab	ab ; ! or: Add capital Tab.               !
-tlf		ab-dot-noun ;                                 !
+s		ab-noun ;                       
+tab	ab ; ! or: Add capital Tab.         
+tlf		ab-dot-noun ;                   
 tlf ab ;
-vnr		ab-dot-noun ;                                 !
-
+vnr		ab-dot-noun ;                   
+Jak ab-dot-noun ;
+a.D ab-dot ;
+Tlf ab ;
+St.% meld.% nr ab-dot ;
+St.meld.% nr ab-dot ;
+St.meld.nr ab-dot ;
 
 ! =============================================== !
 !              Transitive abbreviations           !
@@ -355,9 +367,15 @@ LEXICON TRAB
 ! fenr. stål.
 ! They simply do never give CLB.
 
+
+f.o.m ab-dot ;
+f.% o.% m ab-dot ;
+kl ab ;
+mrd ab ;
 att ab ;   ! added-sh
 avd ab ;   ! added-sh
-bl.% a ab ;   ! added-sh
+bl.% a ab-dot ;   ! added-sh
+Bl.% a ab-dot ;
 !best ab ;
 !bot ab ;
 !jul ab ; !jul
@@ -366,6 +384,8 @@ bl.% a ab ;   ! added-sh
 !mat ab ;
 !pass ab ;
 !pol ab ;
+Hedm ab ;
+
 1.aman ab ;
 A ab ;
 B ab ;
@@ -386,6 +406,7 @@ J ab ;
 Joh ab ;
 Johs ab ;
 K ab ;
+Kl ab ;
 L ab ;
 Lim ab ;
 M ab ;
@@ -407,9 +428,8 @@ S.u ab ;
 STI ab ;
 Seb ab ;
 Sp ab ;
-St.% meld ab ;
 St.% prp ab ;
-St.meld ab ;
+St.prp ab ;
 Su ab ;
 Sv ab ;
 T ab ;
@@ -880,9 +900,9 @@ sovj ab ;
 sr ab ;
 ss ab ;
 st ab ;
-st.% meld ab ;
+!st.% meld ab ;
 st.% prp ab ;
-st.meld ab ;
+!st.meld ab ;
 st.prp ab ;
 stk ab ;
 strl ab ;
@@ -901,6 +921,7 @@ t.% v ab ;
 t.d ab ;
 t.h ab ;
 t.o.m ab ;
+t.% o.% m ab ;
 t.v ab ;
 tekn ab ;
 th ab ;
