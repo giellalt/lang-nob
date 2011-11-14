@@ -185,7 +185,8 @@ m.% o.% h ab ;
 m.% p.% p ab ;
 m.% u.% h ab ;
 m.% v ab ;
-m.fl ab ;
+m.% fl ab-dot ;
+m.fl ab-dot ;
 m.m ab ;
 m.o.h ab-dot ;
 m.p.p ab-dot ;
@@ -253,7 +254,7 @@ p.p ab ;
 p.p.m ab ;
 p.r ab ;
 p.t ab ;
-pers ab-dot ; ! pers. vara må til pers. :-( 
+pers ab-dot ; ! pers. vara må til pers. :-( a.
 ppm ab ;
 q.% e.% d ab ;
 q.% s ab ;
@@ -339,7 +340,6 @@ p.b ab ;
 pb ab ;
 pbl ab ;
 pgf ab ;
-pkt ab ;
 rv ab ;
 s		ab-noun ;                       
 tab	ab ; ! or: Add capital Tab.         
@@ -368,7 +368,9 @@ LEXICON TRAB
 ! fenr. stål.
 ! They simply do never give CLB.
 
-
+Samekom ab ;
+inst ab ;
+pkt ab ;
 f.o.m ab-dot ;
 f.% o.% m ab-dot ;
 kl ab ;
