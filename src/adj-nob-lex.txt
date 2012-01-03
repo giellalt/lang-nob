@@ -3445,7 +3445,7 @@ bagatell m1 ;
 tarantell m1 ;
 eksperimentell a1 ;
 hotell n1 ;
-storhotell  1 ;
+storhotell n1 ;
 høgfjellshotell n1 ;
 høyfjellshotell n1 ;
 motell n1 ;
