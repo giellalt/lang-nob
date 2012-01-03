@@ -782,13 +782,8 @@ kunne+V+Ind+Prs:kan  # ;
 kunne+V+Ind+Prt:kunne  # ;
 kunne+V+PrfPtc:kunnet  # ;
 
-LEXICON LA la+V+Inf:la  # ;
-la+V+Imp:la  # ;
-la+V+Ind+Prs:lar  # ;
-la+V+Ind+Prt:lot  # ;
-la+V+PrfPtc:latt  # ;
-
-LEXICON LA la+V+Inf:la  # ;
+LEXICON LA 
+la+V+Inf:la  # ;
 la+V+Imp:la  # ;
 la+V+Ind+Prs:lar  # ;
 la+V+Ind+Prt:lot  # ;
