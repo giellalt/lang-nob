@@ -315,6 +315,7 @@ Rt		ab-dot ;
 Rv ab ;
 S.nr		ab-noun ;                   
 St.% meld.% nr ab-dot ;
+St.% meld ab-dot ;
 St.meld ab-dot ;
 St.meld.% nr ab-dot ;
 St.meld.nr ab-dot ;
