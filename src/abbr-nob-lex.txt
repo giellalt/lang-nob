@@ -65,7 +65,6 @@ LEXICON ITRAB
 !ung ab ;
 
 
-A.% S ab-dot-noun ;
 A.L ab-dot-noun ;
 A.S ab-dot-noun ;
 Ap ab ;
