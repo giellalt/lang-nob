@@ -123,6 +123,7 @@ da ab ;
 daa ab ; !dekar
 dem ab ;
 dept ab ;
+dok ab ;
 dy ab ;
 e.% Kr ab ;
 e.% f ab ;
@@ -303,6 +304,8 @@ uå ab ;
 
 LEXICON TRNUMAB
 
+Arkivsaksnr ab-dot-noun ;
+arkivsaksnr ab-dot-noun ;
 Apd		ab-dot ;                        
 Bnr		ab-dot-noun ;                   
 Gnr		ab-noun ;                       
