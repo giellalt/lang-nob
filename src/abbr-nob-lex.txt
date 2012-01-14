@@ -304,6 +304,7 @@ uå ab ;
 
 LEXICON TRNUMAB
 
+distr ab-dot-noun ;
 Arkivsaksnr ab-dot-noun ;
 arkivsaksnr ab-dot-noun ;
 Apd		ab-dot ;                        
