@@ -386,6 +386,7 @@ Bj ab ;
 Bl.% a ab-dot ;
 Budsjettinnst.% S ab ;
 Budsjett-innst.% S ab ;
+Budsjett-innst.% S.% nr ab ;
 C ab ;
 Cand.% Med.% Vet ab-dot ;
 Cand.% Odont ab-dot ;
