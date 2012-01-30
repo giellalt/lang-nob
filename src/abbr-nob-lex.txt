@@ -121,7 +121,7 @@ d.y ab ;
 d.å ab ;
 da ab ;
 daa ab ; !dekar
-dem ab ;
+!dem ab ; ! Jeg liker dem. Pronomenet er vanligere enn "demonstrativ"
 dept ab ;
 dok ab ;
 dy ab ;
