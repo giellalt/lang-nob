@@ -963,6 +963,7 @@ vha ab ;
 viseadm.% dir ab ;
 viseadm.dir ab ;
 viseadm.direktør ab-nodot ;
+vit.ass ab ;
 vsa ab ;
 Á ab ;
 Ä ab ;
