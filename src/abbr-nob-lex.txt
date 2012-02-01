@@ -12,6 +12,7 @@ LEXICON Abbreviation
 ITRAB ;
 TRNUMAB ;
 TRAB ;
+NOAB ;
 
 ! Now splitting according to POS, and dot or not
 ! - - - - - - - - - - - - - - - - - - - - - - -
@@ -197,11 +198,8 @@ m.u.h ab-dot ;
 m.v ab-dot ;
 m/sek ab ;
 m/sek ab ;
-man ab ;
-mat ab ;
 md ab ;
 mfl ab ;
-min ab ;
 mnd ab ;
 mno ab ;
 mo.% h ab ;
@@ -974,3 +972,24 @@ vsa ab ;
 årg ab ;
 Č ab ;
 Š ab ;
+
+
+
+
+! ============================================================ !
+! Abbreviations that are not treated as abbreviations !
+! at the end of the sentence !
+! ============================================================ !
+
+LEXICON NOAB
+! This class contains homonyms, which are both intransitive 
+! abbreviations and normal words. The abbreviation usage
+! is less common and thus only the occurences in the middle of
+! the sentnece can be considered as true cases.
+
+du ab-dot ; !dualis
+gen ab-dot ; ! genitiivi
+jur ab-dot ; !juridihkalaš !
+min ab-dot ; !
+
+
