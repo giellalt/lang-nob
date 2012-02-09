@@ -833,6 +833,7 @@ pkt ab ;
 pkt ab ;
 pl ab ;
 pluskv ab ;
+polit ab ; !
 pop ab ;
 pr ab ;
 pr.% pr ab ;
