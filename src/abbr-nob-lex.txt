@@ -542,6 +542,7 @@ arab ab ;
 arb ab-dot ;
 arkeol ab ;
 art ab ;
+ass ab ;
 ass.% gen.% sekr ab ;
 ass.gen.sekr ab ;
 att ab ;   ! added-sh
@@ -966,6 +967,7 @@ vha ab ;
 viseadm.% dir ab ;
 viseadm.dir ab ;
 viseadm.direktør ab-nodot ;
+vit ab ;
 vit.ass ab ;
 vsa ab ;
 Á ab ;
