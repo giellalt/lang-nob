@@ -668,6 +668,7 @@ eur ab ;
 ev ab ;
 evt ab ;
 ex ab-noun ;
+ex.fac ab-noun ;
 f ab ; !født
 f.% eks ab ;
 f.% m ab ;
