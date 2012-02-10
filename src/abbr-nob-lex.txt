@@ -119,7 +119,7 @@ d.% å ab ;
 d.d ab ;
 d.y ab ;
 d.å ab ;
-da ab ;
+!da ab ; ! Vel , det var da. Vanlig å bruke det som adverb
 daa ab ; !dekar
 !dem ab ; ! Jeg liker dem. Pronomenet er vanligere enn "demonstrativ"
 dept ab ;
