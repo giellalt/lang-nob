@@ -25,9 +25,16 @@ vislcg3 -g $GTHOME/st/nob/obt/src/nob_morf-prestat.cg3
 Usage on victorio:
 
 The same as above, but with
-$GTHOME/st/nob/obt/bin/mtag-linux
+$GTHOME/st/nob/obt/bin/mtag-linux64
 
-instead. Remember to make the binary files executable!
+instead, thus:
+
+cat text | preprocess --abbr=$GTHOME/st/nob/bin/abbr.txt | \
+$GTHOME/st/nob/obt/bin/mtag-linux64 | \
+vislcg3 -g $GTHOME/st/nob/obt/src/nob_morf.cg3 | \
+vislcg3 -g $GTHOME/st/nob/obt/src/nob_morf-prestat.cg3
+
+Remember to make the binary files executable!
 
 (or you may use the binary cg3 files).
 
