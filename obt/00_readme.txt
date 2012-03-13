@@ -11,7 +11,7 @@ and check in eventual changes to github.com/noklesta/
 
 Usage:
 
-cat text | preprocess $GTHOME/st/nob/bin/abbr.txt | \
+cat text | preprocess --abbr=$GTHOME/st/nob/bin/abbr.txt | \
 $GTHOME/st/nob/obt/bin/mtag-osx64 | \
 vislcg3 -g $GTHOME/st/nob/obt/src/nob_morf.cg3 | \
 vislcg3 -g $GTHOME/st/nob/obt/src/nob_morf-prestat.cg3 
