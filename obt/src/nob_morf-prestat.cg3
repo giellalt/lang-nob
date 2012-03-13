@@ -5361,7 +5361,7 @@ CONSTRAINTS
 
 #:4009
 "<bare>"  REMOVE:4009 (adj fl) IF
-	(NOT **-1C fl-det BARRIER ikke-adv-adj)
+	(NEGATE **-1C fl-det BARRIER ikke-adv-adj)
 	(NOT *1 fl-subst BARRIER ikke-adv-adj)
 ;
 #  "bare adj i kontekster som: de bare trærne
@@ -5370,7 +5370,7 @@ CONSTRAINTS
 
 #:4012
 "<bare>"  REMOVE:4012 (adj be ent) IF
-	(NOT **-1C det-ent BARRIER ikke-adv-adj)
+	(NEGATE **-1C det-ent BARRIER ikke-adv-adj)
 ;
 #  "bare adj i kontekster som: det bare treet"))
 
@@ -13487,7 +13487,7 @@ SELECT:2963 (adj nøyt ub ent) IF
 	(*1 utrop-t BARRIER setn-gr)
 ;
 #  "<$.> Kom!"))
-#300908 Tatt bort 	(NOT **1C fv BARRIER setn-gr)
+#300908 Tatt bort 	(NEGATE **1C fv BARRIER setn-gr)
 
 
 #:2672
@@ -18816,8 +18816,8 @@ REMOVE:4090 (verb)
 	(-1C subst)
 	(NOT 1 adj-adv-subst-konj)
 	(NOT *1 overskrift)
-	(*-1 setn-gr LINK NOT **1C pres/pret)
-	(*1 setn-gr LINK NOT **-1C pres/pret)
+	(*-1 setn-gr LINK NEGATE **1C pres/pret)
+	(*1 setn-gr LINK NEGATE **-1C pres/pret)
 ;
 #  "Martin, som Evelyns sønn het (ikke adj)
 # "))
@@ -23914,7 +23914,7 @@ CONSTRAINTS
 
 #:4013
 "<bare>"  REMOVE:4013 (adj fl) IF
-	(NOT **-1C fl-det BARRIER ikke-adv-adj)
+	(NEGATE **-1C fl-det BARRIER ikke-adv-adj)
 	(NOT 1 %arm/ben/kropp/legg/tre%-fl)
 ;
 #  de fleste "bare" er ikke adj
