@@ -1,7 +1,10 @@
 
-The Oslo-Bergen-Tagger
+The Oslo-Bergen-Tagger (obt)
 
-The files here are taken from 
+The obt is available from 
+http://tekstlab.uio.no/obt-ny/
+
+The files here were taken from an older site: 
 https://github.com/noklesta/The-Oslo-Bergen-Tagger
 
 They are available under GPL. 
@@ -14,6 +17,8 @@ Before use:
 Make the files executable:
 chmod a+x bin/*
 
+The morphology is in the mtag-* file, and the cg disambiguation
+ruleset is in the nob_morf file.
 
 Basic usage
 ===========
