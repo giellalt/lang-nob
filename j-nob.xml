@@ -1,0 +1,28 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE document PUBLIC "-//APACHE//DTD Documentation V2.0//EN" "http://forrest.apache.org/dtd/document-v20.dtd">
+<document xml:lang="en">
+  <header>
+    <title>Documentation on the Norwegian analyser Oslo-Bergen-taggeren</title>
+    <authors>
+      <person email="trond.trosterud@hum.uit.no" name="Trond Trosterud" />
+    </authors>
+  </header>
+  <body>
+    <section>
+      <title>Documentation on the Norwegian analyser Oslo-Bergen-taggeren</title>
+      <p>The Oslo-Bergen tagger is available for Bokmål and Nynorsk. It has <a href="http://tekstlab.uio.no/obt-ny/">an official webpage</a>, where it is available under GPL, this documentation is for the Giellatekno in-house use of it.</p>
+        <ul>
+          <li>
+            <a href="docu-nob-background.html" >Background information on the Norwegian analysers</a>
+          </li>
+          <li>
+            <a href="docu-nob-use.html" >Compiling and using the Norwegian analysers</a>
+          </li>
+          <li>
+            <a href="docu-nob-tags.html" >The tagset of the Norwegian analysers</a>
+          </li>
+        </ul>
+      <p class="last_modified">Last modified: $Date: 2008-11-05 18:52:54 +0100 (ons, 05 nov 2008) $, by $Author: boerre $</p>
+    </section>
+  </body>
+</document>
