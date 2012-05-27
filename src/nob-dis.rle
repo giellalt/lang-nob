@@ -14912,6 +14912,7 @@ REMOVE (N) IF
 	(-1 Neu OR %det%)
 	(NOT 1 CS OR CC)
 	(NOT -2 fv)
+	(NOT 0 ("fylke"))
 ;
 
 
