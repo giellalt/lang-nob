@@ -162,7 +162,7 @@ LEXICON fx ! Former vx, awaiting classification.
 
 LEXICON f1 ! myr, krone
  +N+Fem+Sg: 0-a ;
- +N+Msc+Sg: en ; ! myren !^C^
+ +N+Fem+Sg: en ; ! myren !^C^
  +N+Fem+Pl: er-ene ;
  +N:  R ;
 
@@ -317,7 +317,7 @@ LEXICON 0-ene-a
  +Def:%>a K ;
 
 LEXICON en
- +Indef: K ; ! en dør, sukk.
+ +Msc+Indef: K ; ! en dør, sukk.
  +Def:%>en K ;
 
 
