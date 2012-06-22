@@ -94,6 +94,7 @@ Ltd ab ;
 Mhz ab ;
 P.% b ab ;
 P.S ab-dot ;
+Prt ab-dot-noun ; ! Prioritering
 Spd ab ;
 St ab ;
 Sth ab ;
