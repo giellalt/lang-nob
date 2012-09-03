@@ -172,4 +172,4 @@ tok.fst: ../bin/tok.fst
 # "make clean" is there to remove the binary files at will.
 
 clean:
-	@rm -f ../bin/*.fst ../bin/*.save ../bin/*.bin
+	@rm -f ../bin/*.fst ../bin/*.save ../bin/*.bin ../bin/*.txt
