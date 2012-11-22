@@ -8,7 +8,7 @@
     </authors>
   </header>
   <body>
-  <p>Giellatekno's main focus is on the Sami langauges and other circumpolar minority languages. As part of our work we need to build bilingual resources. This is where Norwegian comes in. For analysing Norwegian we either use the Oslo-Bergen tagger, or we use our own resources.</p>
+  <p>Giellatekno's main focus is on the Saami langauges and other circumpolar minority languages. As part of our work we need to build bilingual resources. This is where Norwegian comes in. For analysing Norwegian we either use the Oslo-Bergen tagger, or we use our own resources.</p>
     <section>
       <title>Documentation on the Norwegian analyser Oslo-Bergen-taggeren</title>
       <p>The Oslo-Bergen tagger is available for Bokmål and Nynorsk. It has <a href="http://tekstlab.uio.no/obt-ny/">an official webpage</a>, where it is available under GPL, this documentation is for the Giellatekno in-house use of it.</p>
