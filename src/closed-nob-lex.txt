@@ -43,6 +43,11 @@ ja ij ;
 nei ij ;
 å ij ;
 å f1 ;
+oi ij ;
+javel ij ;
+dæven ij ;
+joddu ij ;
+jasså ij ;
 
 LEXICON ij
  +Interj: # ;
