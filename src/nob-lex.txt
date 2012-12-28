@@ -44,7 +44,7 @@ LEXICON Root
  Interjection ;
  Pronoun ;
  Determiner ;
- Numeral ;
+! Numeral ;
  Punctuation ;
  Abbreviation ;
 
@@ -89,9 +89,11 @@ LEXICON Root
 ! =========
 
 LEXICON R
-
+!#;
  #+Cmp+:#  NounRoot ;
  #+Cmp%-:%-  NounRoot ;
+
+! Commented out
 ! #+Cmp+:#  main-verb ;
 ! #+Cmp+:#  regular-adj ; 
 
