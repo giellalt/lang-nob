@@ -265,6 +265,10 @@ LEXICON LEKSIKON ! leksikon
 
 LEXICON KLÆR
  +N+Neu:klær 0-ne ;
+ 
+ LEXICON TRE
+ +N+Neu+Sg:tre 0-et ;
+ +N+Neu+Pl:træ r-ne ;
 
 
 ! Lexica for definiteness declension
@@ -285,6 +289,10 @@ LEXICON e-ene
 LEXICON er-ene
  +Indef:%>er K ;
  +Def:%>ene K ;
+
+LEXICON r-ne  ! trær
+ +Indef:%>r K ;
+ +Def:%>ne K ;
 
 LEXICON 0-a
  +Indef: K ;
