@@ -163,17 +163,73 @@ ROMAN ;
 ISOLATED-NUMEXP ;
 
 LEXICON Textual
-!én numtagsg ;
-to numtag ;
-tre numtag ;
-fire numtag ;
-fem numtag ;
-seks numtag ;
-sju numtag ;
-syv numtag ;
-åtte numtag ;
-ni numtag ;
-ti numtag ;
+2-9 ;
+TEXTTENS ;
+TEXTTEENS ;
+TEXTHUNDREDS ;
+TEXTTHOUSANDS ;
+ORDTEXT ;
+
+
+LEXICON TEXTTHOUSANDS 
+1000CONT ;
+et 1000CONT ; ! ettusen
+to 1000CONT ;
+tre 1000CONT ;
+fire 1000CONT ;
+fem 1000CONT ;
+seks 1000CONT ;
+sju 1000CONT ;
+syv 1000CONT ;
+åtte 1000CONT ;
+ni  1000CONT ;
+
+LEXICON 1000CONT
+tusen numtag ;
+tusenog TEXTHUNDREDS ;
+tusenog TEXTTENS ;
+tusenog TEXTTEENS ;
+tusenog TEXTONES ;
+
+LEXICON TEXTHUNDREDS
+100CONT ;
+ett 100CONT ;
+to 100CONT ;
+tre 100CONT ;
+fire 100CONT ;
+fem 100CONT ;
+seks 100CONT ;
+sju 100CONT ;
+syv 100CONT ;
+åtte 100CONT ;
+ni  100CONT ;
+
+LEXICON 100CONT
+hundreog TEXTTENS ;
+hundreog TEXTTEENS ;
+hundreog TEXTONES ;
+hundre numtag ;
+
+LEXICON TEXTTENS
+
+tjue TEXTTENSCONT ;
+tyve TEXTTENSCONT ;
+tredve numtag ;
+tretti TEXTTENSCONT ;
+førti TEXTTENSCONT ;
+femti TEXTTENSCONT ;
+seksti TEXTTENSCONT ;
+sytti TEXTTENSCONT ;
+søtti TEXTTENSCONT ;
+åtti TEXTTENSCONT ;
+nitti TEXTTENSCONT ;
+hundre TEXTTENSCONT ;
+
+LEXICON TEXTTENSCONT
+TEXTONES ; 
+numtag ;
+
+LEXICON TEXTTEENS
 elleve numtag ;
 tolv numtag ;
 tretten numtag ;
@@ -184,19 +240,24 @@ søtten numtag ;
 sytten numtag ;
 atten numtag ;
 nitten numtag ;
-tjue numtag ;
-tyve numtag ;
-tredve a3 ;
-tretti numtag ;
-førti numtag ;
-femti numtag ;
-seksti numtag ;
-sytti numtag ;
-søtti numtag ;
-åtti numtag ;
-nitti numtag ;
-hundre numtag ;
 
+LEXICON TEXTONES
+en numtagsg ;
+2-9 ;
+
+LEXICON 2-9
+to numtag ;
+tre numtag ;
+fire numtag ;
+fem numtag ;
+seks numtag ;
+sju numtag ;
+syv numtag ;
+åtte numtag ;
+ni numtag ;
+ti numtag ;
+
+LEXICON ORDTEXT
 første a3 ;
 andre a3 ;
 tredje a3 ;
@@ -233,6 +294,9 @@ hundrede a3 ;
 
 LEXICON numtag
 +Det+Pl+Qnt: # ;
+
+LEXICON numtagsg
++Det+Sg+Qnt: # ;
 
 
 

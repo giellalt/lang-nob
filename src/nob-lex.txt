@@ -25,6 +25,7 @@ Multichar_Symbols
  Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9
  Y1 Y2 Y3 Y4 Y5 Y6 Y7 Y8 Y9
  Z1 Z2 Z3 Z4 Z5 Z6 Z7 Z8 Z9
+ l7 ! always l
 
 
 ! =================================================
@@ -44,7 +45,7 @@ LEXICON Root
  Interjection ;
  Pronoun ;
  Determiner ;
-! Numeral ;
+ Numeral ;
  Punctuation ;
  Abbreviation ;
 

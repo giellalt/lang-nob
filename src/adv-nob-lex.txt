@@ -28,6 +28,7 @@ vestfra adv ;
 østfra adv ;
 utfra adv ;
 avsted adv ;
+muligens adv ;
 
 dessuten adv ;
 etterhvert adv ;
