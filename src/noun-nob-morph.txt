@@ -166,6 +166,10 @@ LEXICON f1 ! myr, krone
  +N+Fem+Pl: er-ene ;
  +N:  R ;
 
+LEXICON f1sg ! grisetang
+ +N+Fem+Sg: 0-a ;
+ +N+Fem+Sg: en ; ! myren !^C^
+
 LEXICON f1b ! skam
  +N+Fem+Sg:mX4 0-a ;
  +N+Msc+Sg:m en ; ! myren !^C^
