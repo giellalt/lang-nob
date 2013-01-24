@@ -51,6 +51,10 @@ LEXICON aV ! ny, fri
 +A+Superl:est # ;
 +A+Superl+Def:este # ;
 
++A+Comp+Nynorsk:are # ;
++A+Superl+Nynorsk:ast # ;
++A+Superl+Def+Nynorsk:aste # ;
+
 
 LEXICON EGEN ! legen
  +A:nX1 positive ;
