@@ -23,6 +23,8 @@ Alphabet
  Y1:0 Y2:0 Y3:0 Y4:0 Y5:0 Y6:0 Y7:0 Y8:0 Y9:0 
  Z1:0 Z2:0 Z3:0 Z4:0 Z5:0 Z6:0 Z7:0 Z8:0 Z9:0 ;
 
+%^NYNAG:0
+
 ! the chapter "Rule-variables" must under the M4 regime:
 ! To be removed when compiling on Xerox twolc:
 
@@ -39,7 +41,7 @@ Sets
  Vow = a e i o u y æ ø å ;
  Cns = b c d f g h j k l m n p q r s t v w x z ;
  LNR = l n r ;
- Dummy = X1 X2 X3 X4 X5 X6 X7 X8 X9
+ Dummy = X1 X2 X3 X4 X5 X6 X7 X8 X9 %^NYNAG
  Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9
  Y1 Y2 Y3 Y4 Y5 Y6 Y7 Y8 Y9 
  Z1 Z2 Z3 Z4 Z5 Z6 Z7 Z8 Z9 ;  ! %+ 
@@ -59,6 +61,15 @@ Sets
 ! Z2 = protects vowel
 
 Rules
+
+
+
+"Change -er stem to -ar in Nynorsk"
+ e:a <=> _ r %^NYNAG ;
+!! This rule is for dictionary use only.
+
+!€ lærer%^NYNAG
+!€ lærar0
 
 ! Epenthetic deletions
 ! --------------------

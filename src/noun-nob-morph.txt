@@ -69,6 +69,7 @@ LEXICON mX
 LEXICON m1 ! dag, hane
  +N+Msc+Sg: 0-en ;
  +N+Msc+Pl: er-ene ;
+ +N+Msc+Pl+Nynorsk: ar-ane ;
  +N:  R ;
 
 LEXICON m1sg ! bruk
@@ -78,36 +79,44 @@ LEXICON m1sg ! bruk
 LEXICON m1X
  +N+Msc+Sg: 0-en ;
  +N+Msc+Pl:Z1 er-ene ;
+ +N+Msc+Pl+Nynorsk:Z1 ar-ane ;
  +N:  R ;
 
 LEXICON m1b ! dam
  +N+Msc+Sg:mX4 0-en ;
  +N+Msc+Pl:m er-ene ;
+ +N+Msc+Pl+Nynorsk:m ar-ane ;
  +N:  R ;
 
 LEXICON m1c ! fe, komite
  +N+Msc+Sg: 0-en ;
  +N+Msc+Pl: er-ene ;
+ +N+Msc+Pl+Nynorsk: ar-ane ;
  +N:  R ;
 
 LEXICON m1V ! sko
  +N+Msc+Sg: 0-en ;
  +N+Msc+Pl: 0-ene ;
+ +N+Msc+Pl+Nynorsk: 0-a ;
  +N:  R ;
 
 LEXICON m2 ! lærer
  +N+Msc+Sg: 0-en ;
  +N+Msc+Pl: e-ne ;
+ +N+Msc+Sg:%^NYNAG 0-en ;
+ +N+Msc+Pl:%^NYNAG ar-ane ;
  +N:  R ;
 
 LEXICON m3 ! onkel
  +N+Msc+Sg: 0-en ;
  +N+Msc+Pl:X1 er-ene ; ! X1 deletes the vowel -e-
+ +N+Msc+Pl+Nynorsk:X1 ar-ane ; ! X1 deletes the vowel -e-
  +N:  R ;
 
 LEXICON m3V ! meter
  +N+Msc+Sg: 0-en ;
  +N+Msc+Pl:X1 0-ene ;
+ +N+Msc+Pl:X1 0-ane ;
  +N:  R ;
 
 LEXICON KOLLEGA
@@ -120,17 +129,20 @@ LEXICON KONTO
  +N+Msc+Sg: 0-en K ;
  +N+Msc+Pl:X2i 0-ene ; ! delete o
  +N+Msc+Pl: er-ene ; ! Regular pl
+ +N+Msc+Pl+Nynorsk: ar-ane ; ! Regular pl
  +N:  R ;
  
 LEXICON RADIUS
  +N+Msc+Sg:%>us 0-en ;
  +N+Msc+Sg+Def:%>en K ; ! short def
  +N+Msc+Pl: er-ene ; ! Regular pl
+ +N+Msc+Pl+Nynorsk: ar-ane ; ! Regular pl
  +N:  R ;
  
 LEXICON BROR
  bror+N+Msc+Sg:bror 0-en ;
  bror+N+Msc+Pl:brødr e-ene ; 
+ bror+N+Msc+Pl+Nynorsk:brør 0-ne ; 
 
 LEXICON FAR
  far+N+Msc+Sg:far 0-en ;
@@ -142,6 +154,8 @@ LEXICON DATTER
  +N+Fem+Sg+Def:datra # ;
  +N+Fem+Sg+Indef:døtre # ;
  +N+Fem+Sg+Def:døtrene # ;
+ +N+Fem+Sg+Nynorsk+Indef:dotter # ;
+ +N+Fem+Sg+Nynorsk+Def:dotra # ;
 ! +N:  R ;
 
 LEXICON MANN
@@ -293,6 +307,14 @@ LEXICON e-ene
 LEXICON er-ene
  +Indef:%>er K ;
  +Def:%>ene K ;
+
+LEXICON ar-ane	 !! @CODE@ for nynorsk only.
+ +Indef:%>ar K ; !! 
+ +Def:%>ane K ;	 !! 
+
+LEXICON 0-ane !! @CODE@ for nynorsk only.
+ +Indef: K ;
+ +Def:%>ane K ;
 
 LEXICON r-ne  ! trær
  +Indef:%>r K ;

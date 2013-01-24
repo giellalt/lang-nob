@@ -19,6 +19,9 @@ Multichar_Symbols
  +Prop +Fem +Mal +Plc +Org +Ani
  +CLB +PUNCT +HYPH +LEFT +RIGHT
  +Cmp+
+ 
+ +Nynorsk ! For dictionary use.
+ 
 ! +X ! denoting not-checked.
  +1 +2 +3
  X1 X2 X3 X4 X5 X6 X7 X8 X9
