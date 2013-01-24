@@ -1,0 +1,42 @@
+
+LEXICON Prnyn
++Pr: # ;
+
+LEXICON Advnyn
++Adv: # ;
+
+LEXICON Anyn
++A: # ;
+
+LEXICON Pronnyn
++Pron: # ;
+
+LEXICON Nynorsk
+
+fra:frå Prnyn ;
+uten:utan Prnyn ;
+hos:hjå Prnyn ;
+
+ikke:ikkje Advnyn ;
+også:òg Advnyn ;
+da:då Advnyn ;
+mer:meir Advnyn ;
+mye:mykje Advnyn ;
+bare:berre Advnyn ;
+noe:noko Advnyn ;
+sammen:saman Advnyn ;
+selv:sjølv Advnyn ;
+selv:sjølve Advnyn ;
+hvor:kor Advnyn ;
+hvor:kvar Advnyn ;
+ellers:elles Advnyn ;
+enda:enno Advnyn ;
+nå:no Advnyn ;
+
+flere:fleire Anyn ;
+egen:eigen Anyn ;
+god:betre Anyn ;
+gammel:gammal Anyn ;
+
+jeg:eg Pronnyn ;
+dere:dykk Pronnyn ;
