@@ -14,6 +14,7 @@ LEX=nob-lex.txt \
 	pp-nob-lex.txt \
 	propernoun-nob-lex.txt \
 	punct-nob-lex.txt \
+	nynorsk-nob-lex.txt \
 	abbr-nob-lex.txt
 
 
