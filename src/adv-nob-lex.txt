@@ -255,3 +255,9 @@ vestpå adv ;
 østpå adv ;
 likeså adv ;
 nokså adv ;
+hit adv ;
+dit adv ;
+her adv ;
+der adv ;
+
+
