@@ -92,9 +92,9 @@ LEXICON r-pres
  +Ind+Prs+Pass:%>s # ;
 
 LEXICON a-et-pret
- +Ind+Prt:%>a # ;
+ +Ind+Prt+Radical:%>a # ;
  +Ind+Prt:%>et # ;
- +PrfPtc:%>a # ;
+ +PrfPtc+Radical:%>a # ;
  +PrfPtc:%>et # ;
 
 LEXICON te-pret
@@ -151,7 +151,7 @@ bli+V+Inf:bli # ;
 bli+V+Imp:bli # ;
 bli+V+Ind+Prs:blir # ;
 bli+V+Ind+Prt:ble # ;
-bli+V+Ind+Prt:blei # ;
+bli+V+Ind+Prt+Radical:blei # ;
 bli+V+PrfPtc:blitt # ;
 bli+V+PrsPtc:blivende # ;
 
@@ -160,7 +160,7 @@ blive+V+Inf:blive  # ;
 blive+V+Imp:bliv  # ;
 blive+V+Ind+Prs:bliver  # ;
 blive+V+Ind+Prt:blev  # ;
-blive+V+Ind+Prt:bleiv  # ;
+blive+V+Ind+Prt+Radical:bleiv  # ;
 blive+V+PrfPtc:blevet  # ;
 blive+V+PrsPtc:blivende  # ;
 
@@ -216,7 +216,7 @@ bryte+V+Imp:bryt # ;
 bryte+V+Ind+Prs:bryter # ;
 bryte+V+Ind+Prt:brøt # ;
 bryte+V+Ind+Prt:braøt # ;
-bryte+V+Ind+Prt:brøyt # ; !SUB 
+bryte+V+Ind+Prt+Radical:brøyt # ; !SUB 
 bryte+V+PrfPtc:brytt # ;
 bryte+V+PrsPtc:brytende # ;
 
@@ -401,7 +401,7 @@ fyke+V+Imp:fyk  # ;
 fyke+V+Ind+Prs:fyker  # ;
 fyke+V+Ind+Prs+Pass:fykes  # ;
 fyke+V+Ind+Prt:føk  # ;
-fyke+V+Ind+Prt:fauk  # ;
+fyke+V+Ind+Prt+Radical:fauk  # ;
 fyke+V+Ind+Prt:føyk  # ;
 fyke+V+PrfPtc:føket  # ;
 fyke+V+PrsPtc:fykende  # ;
@@ -634,7 +634,7 @@ hive+V+Imp:hiv  # ;
 hive+V+Ind+Prs:hiver  # ;
 hive+V+Ind+Prs+Pass:hives  # ;
 hive+V+Ind+Prt:hev  # ;
-hive+V+Ind+Prt:heiv  # ;
+hive+V+Ind+Prt+Radical:heiv  # ;
 hive+V+PrfPtc:hivd  # ;
 hive+V+PrfPtc:hevet  # ;
 hive+V+PrsPtc:hivende  # ;
@@ -825,7 +825,7 @@ rive+V+Inf:rive  # ;
 rive+V+Imp:riv  # ;
 rive+V+Ind+Prs:river  # ;
 rive+V+Ind+Prt:rev  # ;
-rive+V+Ind+Prt:reiv  # ;
+rive+V+Ind+Prt+Radical:reiv  # ;
 rive+V+PrfPtc:revet  # ;
 rive+V+PrsPtc:rivende  # ;
 
@@ -911,7 +911,7 @@ skli+V+Ind+Prs:sklir  # ;
 skli+V+Ind+Prs+Pass:sklis  # ;
 skli+V+Ind+Prt:sklidde  # ;
 skli+V+Ind+Prt:skled  # ;
-skli+V+Ind+Prt:sklei  # ;
+skli+V+Ind+Prt+Radical:sklei  # ;
 skli+V+PrfPtc:sklidd  # ;
 skli+V+PrsPtc:skliende  # ;
 
@@ -931,7 +931,7 @@ skrike+V+Inf:skrike  # ;
 skrike+V+Imp:skrik  # ;
 skrike+V+Ind+Prs:skriker  # ;
 skrike+V+Ind+Prs+Pass:skrikes  # ;
-skrike+V+Ind+Prt:skreik  # ;
+skrike+V+Ind+Prt+Radical:skreik  # ;
 skrike+V+Ind+Prt:skrek  # ;
 skrike+V+PrfPtc:skreket  # ;
 skrike+V+PrsPtc:skrikende  # ;
@@ -941,7 +941,7 @@ skrive+V+Inf:skrive  # ;
 skrive+V+Imp:skriv  # ;
 skrive+V+Ind+Prs:skriver  # ;
 skrive+V+Ind+Prt:skrev  # ;
-skrive+V+Ind+Prt:skreiv  # ;
+skrive+V+Ind+Prt+Radical:skreiv  # ;
 skrive+V+PrfPtc:skrevet  # ;
 skrive+V+PrsPtc:skrivende  # ;
 
@@ -951,8 +951,8 @@ skryte+V+Imp:skryt  # ;
 skryte+V+Ind+Prs:skryter  # ;
 skryte+V+Ind+Prs+Pass:skrytes  # ;
 skryte+V+Ind+Prt:skrøt  # ;
-skryte+V+Ind+Prt:skraut  # ;
-skryte+V+Ind+Prt:skrøyt  # ;
+skryte+V+Ind+Prt+Radical:skraut  # ;
+skryte+V+Ind+Prt+Radical:skrøyt  # ;
 skryte+V+PrfPtc:skrytt  # ;
 skryte+V+PrsPtc:skrytende  # ;
 
@@ -1015,7 +1015,7 @@ slite+V+Inf:slite  # ;
 slite+V+Imp:slit  # ;
 slite+V+Ind+Prs:sliter  # ;
 slite+V+Ind+Prs+Pass:slites  # ;
-slite+V+Ind+Prt:sleit  # ;
+slite+V+Ind+Prt+Radical:sleit  # ;
 slite+V+Ind+Prt:slet  # ;
 slite+V+PrfPtc:slitt  # ;
 slite+V+PrsPtc:slitende  # ;
@@ -1060,8 +1060,8 @@ smyge+V+Imp:smyg  # ;
 smyge+V+Ind+Prs:smyger  # ;
 smyge+V+Ind+Prs+Pass:smyges  # ;
 smyge+V+Ind+Prt:smøg  # ;
-smyge+V+Ind+Prt:smøyg  # ;
-smyge+V+Ind+Prt:smaug  # ;
+smyge+V+Ind+Prt+Radical:smøyg  # ;
+smyge+V+Ind+Prt+Radical:smaug  # ;
 smyge+V+PrfPtc:smøget  # ;
 smyge+V+PrsPtc:smygende  # ;
 
@@ -1114,7 +1114,7 @@ spinne+V+PrsPtc:spinnende  # ;
 LEXICON SPREKKE 
 sprekke+V+Inf:sprekke  # ;
 sprekke+V+Imp:sprekk  # ;
-sprekke+V+Ind+Prs:sprekerk  # ;
+sprekke+V+Ind+Prs:sprekker  # ;
 sprekke+V+Ind+Prs+Pass:sprekkes  # ;
 sprekke+V+Ind+Prt:sprakk  # ;
 sprekke+V+PrfPtc:sprukket  # ;
@@ -1147,13 +1147,14 @@ spørre+V+PrfPtc:spurt  # ;
 spørre+V+PrsPtc:spørrende  # ;
 
 LEXICON STELE 
-stele+V+Inf:stele  # ;
-stele+V+Imp:stel  # ;
-stele+V+Ind+Prs:steler  # ;
-stele+V+Ind+Prs+Pass:steles  # ;
-stele+V+Ind+Prt:stal  # ;
-stele+V+PrfPtc:stelt  # ;
-stele+V+PrsPtc:stelende  # ;
+stele+V+Inf+Radical:stele  # ;
+stele+V+Imp+Radical:stel  # ;
+stele+V+Ind+Prs+Radical:steler  # ;
+stele+V+Ind+Prs+Pass+Radical:steles  # ;
+stele+V+Ind+Prt+Radical:stal  # ;
+stele+V+PrfPtc+Radical:stelt  # ;
+stele+V+PrsPtc+Radical:stelende  # ;
+
 
 LEXICON STIGE 
 stige+V+Inf:stige  # ;
@@ -1263,7 +1264,7 @@ svike+V+Imp:svik  # ;
 svike+V+Ind+Prs:sviker  # ;
 svike+V+Ind+Prs+Pass:svikes  # ;
 svike+V+Ind+Prt:svek  # ;
-svike+V+Ind+Prt:sveik  # ;
+svike+V+Ind+Prt+Radical:sveik  # ;
 svike+V+PrfPtc:sveket  # ;
 svike+V+PrsPtc:svikende  # ;
 
@@ -1420,7 +1421,7 @@ tyte+V+Imp:tyt  # ;
 tyte+V+Ind+Prs:tyter  # ;
 tyte+V+Ind+Prs+Pass:tytes  # ;
 tyte+V+Ind+Prt:tøt  # ;
-tyte+V+Ind+Prt:tøyt  # ;
+tyte+V+Ind+Prt+Radical:tøyt  # ;
 tyte+V+PrfPtc:tytt  # ;
 tyte+V+PrsPtc:tytende  # ;
 
@@ -1439,7 +1440,7 @@ veie+V+Imp:vei  # ;
 veie+V+Ind+Prs:veier  # ;
 veie+V+Ind+Prs+Pass:veies  # ;
 veie+V+Ind+Prt:veide  # ;
-veie+V+Ind+Prt:vog  # ;
+veie+V+Ind+Prt+Radical:vog  # ;
 veie+V+PrfPtc:veid  # ;
 veie+V+PrsPtc:veiende  # ;
 

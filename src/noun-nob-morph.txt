@@ -59,8 +59,8 @@
 ! ----------
 
 LEXICON x 
-!+X: m1 ; !Temporarily excluding the xX
- m1 ;     ! change line back if needed.
++X: m1 ; !Temporarily excluding the xX
+! m1 ;     ! change line back if needed.
 
 LEXICON mX
  +N+Msc: K ;
@@ -151,7 +151,7 @@ LEXICON FAR
  
 LEXICON DATTER
  +N+Fem+Sg+Indef:datter # ;
- +N+Fem+Sg+Def:datra # ;
+ +N+Fem+Sg+Def+Radical:datra # ;
  +N+Fem+Sg+Indef:døtre # ;
  +N+Fem+Sg+Def:døtrene # ;
  +N+Fem+Sg+Nynorsk+Indef:dotter # ;
@@ -322,7 +322,7 @@ LEXICON r-ne  ! trær
 
 LEXICON 0-a
  +Indef: K ;
- +Def:%>a K ;
+ +Def+Radical:%>a K ;
 
 LEXICON 0-en
  +Indef: K ;
@@ -348,7 +348,7 @@ LEXICON 0-et
 LEXICON 0-ene-a
  +Indef: K ;
  +Def:%>ene K ;
- +Def:%>a K ;
+ +Def+Radical:%>a K ;
 
 LEXICON en
  +Msc+Indef: K ; ! en dør, sukk.
