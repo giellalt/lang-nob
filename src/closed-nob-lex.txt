@@ -61,21 +61,21 @@ Interrogative ;
 
 
 LEXICON Personal 
-jeg+Pron+Sg+Pers+Hum+Nom+1:jeg # ;
-jeg+Pron+Sg+Pers+Hum+Acc+1:meg # ;
- du+Pron+Sg+Pers+Hum+Nom+2:du # ;
- du+Pron+Sg+Pers+Hum+Acc+2:deg # ;
-han+Pron+Sg+Pers+Hum+Nom+3:han # ;
-hun+Pron+Sg+Pers+Hum+Nom+3:hun # ;
-han+Pron+Sg+Pers+Hum+Acc+3:han # ;
-han+Pron+Sg+Pers+Hum+Acc+3:ham # ;
-hun+Pron+Sg+Pers+Hum+Acc+3:henne # ;
-  vi+Pron+Pl+Pers+Hum+Nom+1:vi # ;
-  vi+Pron+Pl+Pers+Hum+Acc+1:oss # ;
-dere+Pron+Pl+Pers+Hum+Nom+2:dere # ;
-dere+Pron+Pl+Pers+Hum+Acc+2:dere # ;
-  de+Pron+Pl+Pers+Hum+Nom+3:de # ;
-  de+Pron+Pl+Pers+Hum+Acc+3:dem # ;
+ jeg+Pron+Pers+Sg1+Nom:jeg # ;
+ jeg+Pron+Pers+Sg1+Acc:meg # ;
+  du+Pron+Pers+Sg2+Nom:du # ;
+  du+Pron+Pers+Sg2+Acc:deg # ;
+ han+Pron+Pers+Sg3+Nom:han # ;
+ hun+Pron+Pers+Sg3+Nom:hun # ;
+ han+Pron+Pers+Sg3+Acc:han # ;
+ han+Pron+Pers+Sg3+Acc:ham # ;
+ hun+Pron+Pers+Sg3+Acc:henne # ;
+  vi+Pron+Pers+Pl1+Nom:vi # ;
+  vi+Pron+Pers+Pl1+Acc:oss # ;
+dere+Pron+Pers+Pl2+Nom:dere # ;
+dere+Pron+Pers+Pl2+Acc:dere # ;
+  de+Pron+Pers+Pl3+Nom:de # ;
+  de+Pron+Pers+Pl3+Acc:dem # ;
 begge+Pron+Pl+Pers+Hum:begge # ;
 !X hit.
 LEXICON Reflexive 
