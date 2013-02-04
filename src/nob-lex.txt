@@ -10,6 +10,7 @@ Multichar_Symbols
  +ING
  +Indef +Def +Poss +Indcl
  +Sg +Pl
+ +Sg1 +Sg2 +Sg3 +Pl1 +Pl2 +Pl3
  +Pron +Nom +Acc +Dat +Det
  +Msc +Fem +Neu +MF
  +Pos +Comp +Superl +Clt
@@ -20,9 +21,10 @@ Multichar_Symbols
  +CLB +PUNCT +HYPH +LEFT +RIGHT
  +Cmp+
  
- +Nynorsk ! For dictionary use.
+ +Nynorsk ! For dictionary use., Nynorsk only
+ +Radical ! For dictionary testing, Radical Bokmål
  
-! +X ! denoting not-checked.
+ +X ! denoting not-checked.
  +1 +2 +3
  X1 X2 X3 X4 X5 X6 X7 X8 X9
  Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9
