@@ -133,6 +133,9 @@ annen+Det+Dem+Sg+Neu:annet # ;
 annen+Det+Dem+Pl:andre # ;
 selv+Det+Intens:selv # ;
 sjøl+Det+Intens:sjøl # ;
+eneste+Det+Dem:eneste # ;
+
+
 LEXICON Possessive 
 di+Det+Poss+Sg+Fem:di # ;
 din+Det+Poss+Sg+Msc:din # ;
