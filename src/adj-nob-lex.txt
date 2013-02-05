@@ -42,7 +42,6 @@ vakker a5 ;
 sist a2 ;
 ekstra a3 ;
 kort a2 ;
-eneste a3 ;
 rund a1 ;
 daud a1 ;
 steindaud a1 ;
