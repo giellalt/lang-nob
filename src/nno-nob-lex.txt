@@ -18,7 +18,7 @@ LEXICON Pronnyn
 +Pron+Nynorsk: # ;
 
 LEXICON nnnb 
-+Nynorsk+Nynorsk: # ;
++Nynorsk: # ;
 
 LEXICON Nynorsk
 
@@ -28,6 +28,7 @@ hos:hjå Prnyn ;
 om:um Prnyn ;
 noen:nokon Prnyn ;
 
+korleis:hvordan Advnyn ;
 ikke:ikkje Advnyn ;
 også:òg Advnyn ;
 da:då Advnyn ;
