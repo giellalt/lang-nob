@@ -40,7 +40,7 @@
 ! f1X bok pl. bøker
 ! f1V mus, pl. mus
 ! n1b rom pl. rom
-! n1s sg only
+! n1sg sg only
 ! n2b program pl. programmer
 ! n2c kontor pl. kontor, kontorer
 ! n2s mørke, not pl.
@@ -151,7 +151,8 @@ LEXICON FAR
  
 LEXICON DATTER
  +N+Fem+Sg+Indef:datter # ;
- +N+Fem+Sg+Def+Radical:datra # ;
+ +N+Fem+Sg+Def:datra # ;
+! +N+Fem+Sg+Def+Radical:datra # ;
  +N+Fem+Sg+Indef:døtre # ;
  +N+Fem+Sg+Def:døtrene # ;
  +N+Fem+Sg+Nynorsk+Indef:dotter # ;
@@ -176,13 +177,13 @@ LEXICON fx ! Former vx, awaiting classification.
 
 LEXICON f1 ! myr, krone
  +N+Fem+Sg: 0-a ;
- +N+Fem+Sg: en ; ! myren !^C^
+ +N+Msc+Sg: en ; ! myren !^C^
  +N+Fem+Pl: er-ene ;
  +N:  R ;
 
 LEXICON f1sg ! grisetang
  +N+Fem+Sg: 0-a ;
- +N+Fem+Sg: en ; ! myren !^C^
+ +N+Msc+Sg: en ; ! myren !^C^
 
 LEXICON f1b ! skam
  +N+Fem+Sg:mX4 0-a ;
@@ -322,7 +323,8 @@ LEXICON r-ne  ! trær
 
 LEXICON 0-a
  +Indef: K ;
- +Def+Radical:%>a K ;
+ +Def:%>a K ;
+! +Def+Radical:%>a K ; ! If needed
 
 LEXICON 0-en
  +Indef: K ;
@@ -348,11 +350,13 @@ LEXICON 0-et
 LEXICON 0-ene-a
  +Indef: K ;
  +Def:%>ene K ;
- +Def+Radical:%>a K ;
+ +Def:%>a K ;
+! +Def+Radical:%>a K ; ! If needed
 
-LEXICON en
- +Msc+Indef: K ; ! en dør, sukk.
- +Def:%>en K ;
+LEXICON en ! Use 0-en instead
+! +Indef: K ;  ! commented out for dict, comment 
+               ! in again for eventual syntax ("en dør")
+ +Def:%>en K ; ! døren = dør+N+Msc :-/
 
 
 
