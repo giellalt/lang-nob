@@ -25,6 +25,8 @@ jam GOD ;
 jevn GOD ;
 
 LEXICON regular-adj
+særdeles a3 ;
+
 indre a3 ;
 militær a1 ;
 normal a1 ;
