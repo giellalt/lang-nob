@@ -19,6 +19,10 @@ LEXICON a1 !
  +A: a-neuter ;
  +A: grade-e ;
 
+LEXICON a2lig
+ ig:ig a2 ; ! herlig
+ ig+Nynorsk:eg a2 ; ! herleg
+   
 LEXICON a2 ! 
  +A: positive ;
  +A: a-no-neuter ;
@@ -95,6 +99,8 @@ LEXICON grade-e
 
 LEXICON grade-C
  +Comp:%>ere # ;
+ +Comp:%>are # ; ! +Nynorsk
+ +Comp+Nynorsk:%>are # ;
  +Superl+Indef:%>st # ;
  +Superl+Def:%>ste # ;
 
