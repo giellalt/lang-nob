@@ -6,6 +6,9 @@ LEXICON dt
  +Adv: # ; ! perhaps unify, perhaps not.
 
 LEXICON Adverb
+
+nemlig adv ;
+selvfølgelig adv ;
 nest adv ;
 fremst adv ;
 fremste adv ;

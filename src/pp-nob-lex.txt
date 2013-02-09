@@ -67,8 +67,6 @@ oppigjennom p ;
 langs p ;
 før p ;
 
-LEXICON p
- +Pr: # ;
 framom p ;
 hjemom p ;
 fremom p ;
@@ -81,3 +79,6 @@ vestenom p ;
 utenom p ;
 innom p ;
 oppom p ;
+
+LEXICON p
+ +Pr: # ;
