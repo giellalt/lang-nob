@@ -74,11 +74,6 @@ Rules
 !€ lærer%^NYNAG
 !€ lærar0
 
-"Adjectived in -leg as -lig"
- i:e <=> l _ g [ %>: | #:0 ] ;
- 
-!€ herlig%>
-!€ herleg0
  
 
 ! Epenthetic deletions

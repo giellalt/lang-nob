@@ -69,3 +69,15 @@ før p ;
 
 LEXICON p
  +Pr: # ;
+framom p ;
+hjemom p ;
+fremom p ;
+heimom p ;
+nedenom p ;
+sønnenom p ;
+hitenom p ;
+vestenom p ;
+østenom p ;
+utenom p ;
+innom p ;
+oppom p ;
