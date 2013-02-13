@@ -430,6 +430,7 @@ my:my nnnb ;
 motstykke:motstykke nnnb ;
 morgen:morgon nnnb ;
 medlyd:medlyd nnnb ;
+marked:marknad nnnb ;
 markedsplass:marknadsplass nnnb ;
 løyndom:løyndom nnnb ;
 løynd:løynd nnnb ;

@@ -25,4 +25,4 @@ echo "Done, hopefully."
 echo "Compile the result with the command:"
 echo 'xfst -e "read lexc < ob.lexc"'
 echo "save ob.save"
-echo "xfst -e "read regex  [@\"ob.save\" .o. @\"../../bin/inituppercase.fst\" ] ; "
+echo 'xfst -e "read regex  [@\"ob.save\" .o. @\"../../bin/inituppercase.fst\" ] ; " '

@@ -1351,7 +1351,7 @@ tie+V+Ind+Prt:tidde  # ;
 tie+V+PrfPtc:tidd  # ;
 tie+V+PrsPtc:tiende  # ;
 
-LEXICON TRE 
+LEXICON TRE_V 
 tre+V+Inf:tre  # ;
 tre+V+Imp:tre  # ;
 tre+V+Ind+Prs:trer  # ;

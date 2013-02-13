@@ -984,6 +984,18 @@ vsa ab ;
 Š ab ;
 
 
+jf ab ; 
+kg ab ; 
+mg ab ; 
+cm ab ; 
+dm ab ; 
+km ab ; 
+jr ab ; 
+kr ab ; 
+mr ab ; 
+nr ab ; 
+
+
 
 
 ! ============================================================ !
