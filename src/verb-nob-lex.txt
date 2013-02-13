@@ -1,4 +1,4 @@
-
+o
 ! Verbs
 
 
@@ -155,7 +155,7 @@ LEXICON irregular-verb
  TA ;
  TELLE ;
  TIE ;
- TRE ;
+ TRE_V ;
  TREFFE ;
  TREKKE ;
  TRIVE ;
@@ -5081,11 +5081,6 @@ fargelegge:farge LEGGE ;
 halshugge:hals HUGGE ;
 nedkomme:ned KOMME ;
 fremkomme:frem KOMME ;
-bjørketre:bjørke TRE ;
-rognetre TRE ;
-slektstre TRE ;
-furutre TRE ;
-løvtre TRE ;
 mangfoldiggjøre:mangfoldig GJØRE ;
 synliggjøre:synlig GJØRE ;
 sannsynliggjøre:sannsynlig GJØRE ;
@@ -5104,3 +5099,77 @@ unngå:unn GÅ ;
 forestå:fore STÅ ;
 forstå:for STÅ ;
 bestå:be STÅ ;
+
+an SLÅ ; 
+av SLÅ ; 
+rå aV; 
+ri v4 ; 
+be GI ; 
+om GI ; 
+an GI ; 
+
+skli v4 ; 
+smi v4 ; 
+gni v4 ; 
+vri v4 ; 
+svi v4 ; 
+gjen VINNE ; 
+over VINNE ; 
+med GI ; 
+tilkjenne GI ; 
+til GI ; 
+hen GI ; 
+gjen GI ; 
+grunn GI ; 
+navn GI ; 
+
+nedgradere v2; 
+oppgradere v2; 
+suspendere v2; 
+filosofere v2; 
+refinansiere v2; 
+delfinansiere v2; 
+fullfinansiere v2; 
+revansjere v2; 
+annullere v2; 
+rullere v2; 
+omregulere v2; 
+resirkulere v2; 
+minimere v2; 
+summere v2; 
+oppsummere v2; 
+feilinformere v2; 
+omdefinere v2; 
+abonnere v2; 
+resonnere v2; 
+misjonere v2; 
+posisjonere v2; 
+pensjonere v2; 
+fusjonere v2; 
+omdisponere v2; 
+utkonkurrere v2; 
+strukturere v2; 
+avmystifisere v2; 
+minimalisere v2; 
+liberalisere v2; 
+sentralisere v2; 
+vitalisere v2; 
+dramatisere v2; 
+overdramatisere v2; 
+avdramatisere v2; 
+problematisere v2; 
+stigmatisere v2; 
+privatisere v2; 
+nedprioritere v2; 
+omprioritere v2; 
+asfaltere v2; 
+konstantere v2; 
+konsentere v2; 
+promotere v2; 
+børsnotere v2; 
+kildesortere v2; 
+kompostere v2; 
+portrettere v2; 
+overlevere v2; 
+avlevere v2; 
+renovere v2; 

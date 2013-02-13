@@ -1,5 +1,5 @@
 # ************************************************************************ #
-# This is a makefile that builds the Norwegian Bokmål morphological parser #
+# This is a makefile that builds the Norwegian Bokm책l morphological parser #
 # ************************************************************************ #
 
 LEX=nob-lex.txt \
@@ -60,16 +60,31 @@ nob.fst: ../bin/nob.fst
 ../bin/nob.fst: ../bin/nob.save \
 				../bin/inituppercase.fst \
 				../bin/allcaps.fst \
-				../bin/tok.fst
+				../bin/spellrelax.fst
 	@echo
 	@echo "*** Building nob.fst ***" ;
 	@echo
 	@printf "read regex @\"../bin/nob.save\" .o. \
-	@\"../bin/inituppercase.fst\" ; \n\
+	@\"../bin/inituppercase.fst\" .o. @\"../bin/spellrelax.fst\" ; \n\
 	save stack ../bin/nob.fst \n\
 	quit \n" > ../tmp/nob-fst-script
 	$(XFST) < ../tmp/nob-fst-script
 	@rm -f ../tmp/nob-fst-script
+
+
+# This goal is to allow for i instead of ï, for e instead of é, etc.
+
+spellrelax.fst: ../bin/spellrelax.fst
+../bin/spellrelax.fst: spellrelax.regex
+	@echo
+	@echo "*** Building spellrelax.fst ***" ;
+	@echo
+	@printf "read regex < spellrelax.regex \n\
+	save stack ../bin/spellrelax.fst \n\
+	quit \n" > ../../tmp/spellrelax-nob-script
+	$(XFST) < ../../tmp/spellrelax-nob-script
+	@rm -f ../../tmp/spellrelax-nob-script
+
 
 
 
