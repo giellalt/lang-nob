@@ -70,6 +70,8 @@ LEXICON Personal
  han+Pron+Pers+Sg3+Acc:han # ;
  han+Pron+Pers+Sg3+Acc:ham # ;
  hun+Pron+Pers+Sg3+Acc:henne # ;
+ den+Pron+Pers+Sg3:den # ; ! Gender? -- no, only as Det Dem (?)
+ det+Pron+Pers+Sg3:det # ; ! Gender? -- no, only as Det Dem (?)
   vi+Pron+Pers+Pl1+Nom:vi # ;
   vi+Pron+Pers+Pl1+Acc:oss # ;
 dere+Pron+Pers+Pl2+Nom:dere # ;
@@ -77,7 +79,8 @@ dere+Pron+Pers+Pl2+Acc:dere # ;
   de+Pron+Pers+Pl3+Nom:de # ;
   de+Pron+Pers+Pl3+Acc:dem # ;
 begge+Pron+Pl+Pers+Hum:begge # ;
-!X hit.
+
+
 LEXICON Reflexive 
 seg+Pron+Refl+Acc:seg # ;
 
