@@ -78,7 +78,7 @@ dere+Pron+Pers+Pl2+Nom:dere # ;
 dere+Pron+Pers+Pl2+Acc:dere # ;
   de+Pron+Pers+Pl3+Nom:de # ;
   de+Pron+Pers+Pl3+Acc:dem # ;
-begge+Pron+Pl+Pers+Hum:begge # ;
+
 
 
 LEXICON Reflexive 
@@ -98,6 +98,9 @@ Demonstrative ;
 Possessive ;
 
 LEXICON Demonstrative 
+noen+Det+Qnt+Pl:noen # ;
+noe+Det+Qnt+Sg+Neu:noe # ;
+begge+Det+Qnt+Pl:begge # ;
 det+Det+Dem+Sg+Neu:det # ;
 den+Det+Dem+Sg+MF:den # ;
 den+Det+Dem+Pl:de # ;

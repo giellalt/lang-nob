@@ -20,7 +20,8 @@ Multichar_Symbols
  +Prop +Fem +Mal +Plc +Org +Ani
  +CLB +PUNCT +HYPH +LEFT +RIGHT
  +Cmp+
- 
+ +Qnt ! quantifier noen, begge
+
  +Nynorsk ! For dictionary use., Nynorsk only
  +Radical ! For dictionary testing, Radical Bokmål
  
