@@ -137,6 +137,10 @@ annen+Det+Dem+Pl:andre # ;
 selv+Det+Intens:selv # ;
 sjøl+Det+Intens:sjøl # ;
 eneste+Det+Dem:eneste # ;
+sånn+Det+Dem+Sg+Msc:sånn # ;
+sånn+Det+Dem+Sg+Fem:sånn # ;
+sånn+Det+Dem+Sg+Neu:sånt # ;
+sånn+Det+Dem+Sg+Pl:sånne # ;
 
 
 LEXICON Possessive 

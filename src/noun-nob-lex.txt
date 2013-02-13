@@ -19837,7 +19837,6 @@ kjernesunn x ;
 usunn x ; 
 dynn x ; 
 tynn x ; 
-sånn x ; 
 bønn x ; 
 forbønn x ; 
 dønn x ; 
