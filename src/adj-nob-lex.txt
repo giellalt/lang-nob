@@ -1980,6 +1980,7 @@ uhandterl a2lig ;
 uhåndterl a2lig ;
 vinterl a2lig ;
 intern a1 ;
+ekstern a1 ;
 mesterl a2lig ;
 veksterl a2lig ;
 voksterl a2lig ;

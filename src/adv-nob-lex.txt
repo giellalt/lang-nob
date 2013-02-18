@@ -362,4 +362,5 @@ innenat adv ;
 utenat adv ; 
 dit adv ; 
 ålreit adv ; 
-mere adv; 
+mere adv ;
+tvers adv ;
