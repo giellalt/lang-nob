@@ -2,21 +2,21 @@
 ! # ;
 
 LEXICON Subjunction
-derfor adv ;
-fordi subj ;
-for conj ;
-som subj ;
-som p ;
-at subj ;
 dersom subj ; 
+å+IM:å # ;
+om  subj ;
+fordi subj ;
 ifall subj ;
+som subj ;
+dersom subj ;
 hvis subj ;
 viss subj ;
-om  subj ;
+at subj ;
+for conj ;
 om p ;
+som p ;
+derfor adv ;
 hvorfor adv ;
-å+IM:å # ;
-dersom subj ;
 
 
 LEXICON subj
