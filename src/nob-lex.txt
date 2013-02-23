@@ -39,7 +39,7 @@ Multichar_Symbols
 ! =================================================
   
 LEXICON Root
- ShorNounRoot
+ ShortNounRoot ;
  NounRoot ;
  ProperNoun ;
  AdjectiveRoot ;
@@ -55,7 +55,7 @@ LEXICON Root
  Numeral ;
  Punctuation ;
  Abbreviation ;
- Nynorsk ; ! For use in dictionaries only
+! Nynorsk ; ! For use in dictionaries only
 
 
 
