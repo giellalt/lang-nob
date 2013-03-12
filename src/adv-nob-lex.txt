@@ -7,6 +7,7 @@ LEXICON dt
 
 LEXICON Adverb
 
+av adv ;
 nemlig adv ;
 selvfølgelig adv ;
 nest adv ;
