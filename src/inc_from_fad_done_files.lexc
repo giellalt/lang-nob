@@ -1,21 +1,4 @@
-departementskollega m1
-ungdomsdrama n2
-hjelpeskjema n2
-reiseregningsskjema n2
-vurderingsskjema n2
-registreringsskjema n2
-reintallsskjema n2
-utredningstema n2
-forskningstema n2
-undervisningstema n2
-samfunnstema n2
-menneskerettighetstema n2
-forhandlingsklima n2
-fritidsarena m1
-salgsarena m1
-samfunnsarena m1
-identitetsarena m1
-idrettsarena m1
+rettsvitenskapsmann mX 
 kamera 
 data 
 kulturminnedata 
@@ -35,24 +18,6 @@ medlemsblad
 ungdomsblad 
 informasjonsblad 
 reindriftsblad 
-flertallsmerknad m1
-fondssøknad m1
-forskningssøknad m1
-ekspropriasjonssøknad m1
-dispensasjonssøknad m1
-konsesjonssøknad m1
-permisjonssøknad m1
-reiselivssøknad m1
-levekostnad m1
-vedlikeholdskostnad m1
-utviklingskostnad m1
-framstillingskostnad m1
-investeringskostnad m1
-lønnskostnad m1
-revisjonskostnad m1
-produksjonskostnad m1
-overgangsstønad m1
-fylkeshovedstad m1
 forvaltningsledd 
 uredd 
 rammetilskudd 
@@ -77,8 +42,6 @@ tusenårssted
 koststed 
 poststed 
 verdensarvsted 
-bjørkeved m1
-skattefogd m1
 innlandsbygd 
 pensjonstrygd 
 byggearbeid 
@@ -141,7 +104,6 @@ feltarbeid
 verdensarvarbeid 
 identitetsstrid 
 vald 
-statsgjeld m1
 nyttårskveld 
 mangfold 
 naturmangfold 
@@ -191,18 +153,12 @@ museumsforbund
 verdensforbund 
 vennskapsbånd 
 slektsbånd 
-vedlikeholdsstandard m1
-forvaltningsstandard m1
-revisjonsstandard m1
-menneskerettighetsstandard m1
-rettsstandard m1
 merd 
 likeverd 
 forhandlingsbord 
 leiejord 
 oppdrettsfjord 
 folkemord 
-forsøksgård m1
 ungdomshjemtilbud 
 diskrimineringsombud 
 yrkesforbud 
@@ -215,9 +171,6 @@ forsøksråd
 tilsynsråd 
 samfunnsservice 
 hede 
-idrettsglede m1
-folkemengde m1
-noaide m1
 overskride 
 dataside 
 høyreside 
@@ -232,44 +185,12 @@ rettighetsbilde
 sannhetsbilde 
 rettsbilde 
 næringskilde 
-omsorgsbonde mX
-søknadsrunde m1
-konsesjonsrunde m1
 velferdsgode 
 fellesgode 
 utmarksgode 
 samfunnsgode 
 miljøgode 
 statsoverhode 
-virkeperiode m1
-fylkesplanperiode m1
-søknadsperiode m1
-stønadsperiode m1
-arbeidsperiode m1
-strukturfondsperiode m1
-fellesperiode m1
-undersøkelsesperiode m1
-utdanningsperiode m1
-regjeringsperiode m1
-stortingsperiode m1
-barmarksperiode m1
-forsøksperiode m1
-eksamensperiode m1
-konsesjonsperiode m1
-funksjonsperiode m1
-formannskapsperiode m1
-tiårsperiode m1
-stillingskode m1
-straffemetode m1
-læremetode m1
-vedlikeholdsmetode m1
-familieplanleggingsmetode m1
-behandlingsmetode m1
-treningsmetode m1
-undervisningsmetode m1
-opplæringsmetode m1
-fritaksmetode m1
-produksjonsmetode m1
 rammeområde 
 verneområde 
 tilskuddsområde 
@@ -304,24 +225,16 @@ idrettsområde
 oppvekstområde 
 verdensarvområde 
 surfe 
-næringshage m1
-fylkestannlege m1
 vektlegge 
 skattlegge 
 teknologibygge 
 kapasitetsbygge 
 skoleinternatbygge 
 betrygge 
-krigsfange m1
-opplæringspenge m1
 næringsklynge 
 Helse-Norge 
-kostholdsstudie m1
 jordleie 
 stolpeleie 
-reindriftsfamilie m1
-produksjonspremie m1
-pensjonspremie m1
 bygningshistorie 
 forskningshistorie 
 solskinnshistorie 
@@ -340,12 +253,6 @@ naturbrukslinje
 kommunikasjonslinje 
 reindriftslinje 
 reiselivslinje 
-databransje m1
-forlagsbransje m1
-eiendomsbransje m1
-oppdrettsbransje m1
-ungdomsleke m1
-skiflygingsbakke m1
 sysselsettingspakke 
 tiltakspakke 
 motivasjonspakke 
@@ -361,7 +268,6 @@ folkekirke
 læreryrke 
 omsorgsyrke 
 profesjonsyrke 
-sikkerhetsstyrke m1
 rundvaske 
 smøreske 
 innlandfiske 
@@ -369,9 +275,6 @@ yrkesfiske
 fellesfiske 
 næringsfiske 
 saltvannsfiske 
-lesevanske m1
-skrivevanske m1
-adferdsvanske m1
 datamateriale 
 læremateriale 
 gjenstandsmateriale 
@@ -389,22 +292,7 @@ administrasjonslokale
 departementslokale 
 undervisningspersonale 
 fengselspersonale 
-utviklingssamtale m1
-nyttårstale m1
-leieavtale m1
-forlagsavtale m1
-tilleggsavtale m1
-forvaltningsavtale m1
-næringsavtale m1
-jordbruksavtale m1
-næringskombinasjonsavtale m1
-konsultasjonsavtale m1
-innkjøpsavtale m1
-kunstnersavtale m1
-sikkerhetsavtale m1
-hogstavtale m1
 gjenspeile 
-våpenhvile m1
 nedfelle 
 informasjonsskille 
 sidestille 
@@ -416,24 +304,7 @@ konsultasjonsrolle
 departementsrolle 
 nulle 
 ole 
-heimeyrkeskole m1
-husflidsskole m1
-fellesskole m1
-utmarksskole m1
-landbruksskole m1
-vinterlandbruksskole m1
-hagebruksskole m1
-småbarnsskole m1
-distriktsskole m1
-lærerhøyskole m1
-yrkeshøyskole m1
-småskole m1
 forvaltningsregime 
-lærertime m1
-behandlingstime m1
-undervisningstime m1
-religionstime m1
-fellesgamme m1
 avtaleramme 
 referanseramme 
 garantiramme 
@@ -444,52 +315,17 @@ ressursramme
 driftsramme 
 budsjettramme 
 nedstemme 
-tilleggsstemme m1
-sametingsstemme m1
-valgtingsstemme m1
 overkomme 
-utviklingsmekanisme m1
-konfliktløsningsmekanisme m1
-sikringsmekanisme m1
-sikkerhetsmekanisme m1
-gårdsturisme m1
-opplevelsesturisme m1
-reindriftsturisme m1
-nordlandsbane m1
-kostvane m1
-riksscene m1
 opptjene 
 marine 
-samarbeidsrutine m1
-meldingsrutine m1
 diskusjonsemne 
-skogfinne m1
 folkeminne 
 gravminne 
-strikkepinne m1
 oljekrone 
 helsekrone 
 strandsone 
 tiltakssone 
 tettstedskjerne 
-skattekommune m1
-bostedskommune m1
-innlandskommune m1
-utviklingskommune m1
-forvaltningskommune m1
-næringskommune m1
-jordbrukskommune m1
-vennskapskommune m1
-samarbeidsevne m1
-stridsevne m1
-betalingsevne m1
-fremstillingsevne m1
-vurderingsevne m1
-omsorgsevne m1
-kommunikasjonsevne m1
-utlånsevne m1
-inntektsevne m1
-partsevne m1
 utlåne 
 trope 
 barnegruppe 
@@ -511,10 +347,6 @@ skogstype
 barmarksløype 
 frikjøpe 
 befare 
-infeksjonsfare m1
-skattevare m1
-jordbruksvare m1
-kvalitetsvare m1
 oldeforeldre 
 initiere 
 ressurssentre 
@@ -524,7 +356,6 @@ opplevelsesture
 utredningsprosedyre 
 konsultasjonsprosedyre 
 informasjonsbrosjyre 
-stemmestyre m1
 fylkesvalgstyre 
 riksvalgstyre 
 fondsstyre 
@@ -556,142 +387,9 @@ yrkeslære
 setningslære 
 overkjøre 
 påkjøre 
-gjenstandsdatabase m1
-registreringsdatabase m1
-tradisjonsdatabase m1
-operasjonsbase m1
-begynnerfase m1
-meldingsfase m1
-planleggingsfase m1
-forhandlingsfase m1
-utredningsfase m1
-etableringsfase m1
-vedtaksfase m1
-produksjonsfase m1
 bankkrise 
-folkerettsekspertise m1
 bortvise 
-utdanningsledelse m1
-endringsledelse m1
-utenriksledelse m1
-plenumsledelse m1
-informasjonsledelse m1
-redaksjonsledelse m1
-etatsledelse m1
-timetallsutvidelse m1
-fastlandsforbindelse m1
-datakommunikasjonsforbindelse m1
-utstyrsanskaffelse m1
-virksomhetsoverdragelse m1
-idrettsbevegelse m1
-innsigelse m1
 folkehelse 
-yrkesdeltakelse m1
-samfunnsdeltakelse m1
-omdømmeundersøkelse m1
-finnmarkundersøkelse m1
-markedsundersøkelse m1
-innholdsundersøkelse m1
-kostholdsundersøkelse m1
-holdningsundersøkelse m1
-befolkningsundersøkelse m1
-finnmarksundersøkelse m1
-språkbruksundersøkelse m1
-mørketallsundersøkelse m1
-ungdomsundersøkelse m1
-tolkningsuttalelse m1
-høringsuttalelse m1
-realitetsuttalelse m1
-fellesskapsfølelse m1
-identitetsfølelse m1
-forbudsbestemmelse m1
-fellesbestemmelse m1
-tilleggsbestemmelse m1
-medvirkningsbestemmelse m1
-erstatningsbestemmelse m1
-unntaksbestemmelse m1
-sanksjonsbestemmelse m1
-konvensjonsbestemmelse m1
-innkjøpsbestemmelse m1
-rettighetsbestemmelse m1
-menneskerettighetsbestemmelse m1
-sikkerhetsbestemmelse m1
-avgiftsbestemmelse m1
-reglementsbestemmelse m1
-grunnlovsbestemmelse m1
-stedsbetegnelse m1
-fellesbetegnelse m1
-direktoratsbetegnelse m1
-lønnsdannelse m1
-statsdannelse m1
-universitetsutdannelse m1
-slektskapsbenevnelse m1
-tilskuddsstørrelse m1
-bruksstørrelse m1
-manntallsstørrelse m1
-rettsavgjørelse m1
-rammetillatelse m1
-utvinningstillatelse m1
-utførselstillatelse m1
-ekspropriasjonstillatelse m1
-oppdrettstillatelse m1
-næringsstiftelse m1
-konsultasjonsforpliktelse m1
-pensjonsforpliktelse m1
-konvensjonsforpliktelse m1
-rettsforpliktelse m1
-folkerettsforpliktelse m1
-pensjonsytelse m1
-smaksopplevelse m1
-reiselivsopplevelse m1
-oppdragsbeskrivelse m1
-farvannsbeskrivelse m1
-kulturutøvelse m1
-yrkesutøvelse m1
-næringsutøvelse m1
-bruksutøvelse m1
-reindriftsutøvelse m1
-ekteskapsinngåelse m1
-verdensforståelse m1
-profesjonsforståelse m1
-virkelighetsforståelse m1
-identitetsforståelse m1
-tekstforståelse m1
-kjønnsbalanse m1
-arbeidskonferanse m1
-samarbeidskonferanse m1
-likestillingskonferanse m1
-erfaringskonferanse m1
-regjeringskonferanse m1
-opplæringskonferanse m1
-næringskonferanse m1
-finnmarkskonferanse m1
-landbrukskonferanse m1
-ungdomskonferanse m1
-museumskonferanse m1
-verdenskonferanse m1
-barnevernskonferanse m1
-rettssikkerhetskonferanse m1
-reiselivskonferanse m1
-næringslivskonferanse m1
-lærerkompetanse m1
-markedskompetanse m1
-samarbeidskompetanse m1
-yrkeskompetanse m1
-ledelseskompetanse m1
-utviklingskompetanse m1
-utredningskompetanse m1
-forskningskompetanse m1
-valgforskningskompetanse m1
-undervisningskompetanse m1
-næringskompetanse m1
-vedtakskompetanse m1
-tiltakskompetanse m1
-søksmålskompetanse m1
-informasjonskompetanse m1
-sikkerhetskompetanse m1
-reindriftskompetanse m1
-tekstkompetanse m1
 landegrense 
 sperregrense 
 fylkesgrense 
@@ -707,10 +405,6 @@ synse
 lånekasse 
 misjonskasse 
 postkasse 
-skatteklasse m1
-yrkesklasse m1
-reindriftsklasse m1
-søknadsmasse m1
 bostedsadresse 
 besøksadresse 
 postadresse 
@@ -724,10 +418,6 @@ arealbruksinteresse
 havbruksinteresse 
 handelsinteresse 
 reindriftsinteresse 
-pollenanalyse m1
-kostmønsteranalyse m1
-innholdsanalyse m1
-næringsanalyse m1
 fylkesmannsembete 
 undervisningshefte 
 informasjonshefte 
@@ -735,44 +425,11 @@ månedsskifte
 tusenårsskifte 
 uskifte 
 skatteløfte 
-barnekomite m1
-forskningskomite m1
-utdanningskomite m1
-forvaltningskomite m1
-rasediskrimineringskomite m1
-konstitusjonskomite m1
 100-metersbelte 
 reiselivspote 
-fellingskvote m1
 t-skjorte 
 tomtefeste 
 ankerfeste 
-navnetjeneste m1
-redningshelikoptertjeneste m1
-arbeidsfortjeneste m1
-velferdstjeneste m1
-fellestjeneste m1
-saksbehandlingstjeneste m1
-utviklingstjeneste m1
-veiledningstjeneste m1
-sammenligningstjeneste m1
-språkundervisningstjeneste m1
-forvaltningstjeneste m1
-omsorgstjeneste m1
-ungdomstjeneste m1
-museumstjeneste m1
-samfunnstjeneste m1
-lønnstjeneste m1
-kommunikasjonstjeneste m1
-barnevernstjeneste m1
-stedsnavnstjeneste m1
-utlånstjeneste m1
-sivilforsvarstjeneste m1
-statstjeneste m1
-sikkerhetstjeneste m1
-reindriftstjeneste m1
-navnekonsulenttjeneste m1
-posttjeneste m1
 navneliste 
 fellesliste 
 regjeringsliste 
@@ -802,16 +459,6 @@ sekretariatsstøtte
 aktivitetsstøtte 
 bedriftsstøtte 
 idrettsstøtte 
-tenkemåte m1
-læremåte m1
-væremåte m1
-stavemåte m1
-fortellermåte m1
-avstemningsmåte m1
-undervisningsmåte m1
-bruksmåte m1
-kommunikasjonsmåte m1
-driftsmåte m1
 ha møte 
 septembermøte 
 arbeidsmøte 
@@ -838,29 +485,10 @@ yrkesprøve
 opptaksprøve 
 årsprøve 
 redskapssløye 
-grunnlovsparagraf m1
-fylkeskultursjef m1
-markedssjef m1
-forlagssjef m1
-likningssjef m1
-fylkesutdanningssjef m1
-opplæringssjef m1
-landbrukssjef m1
-jordbrukssjef m1
-skogbrukssjef m1
-kommunikasjonssjef m1
-administrasjonssjef m1
-forsvarssjef m1
-reindriftssjef m1
-oppvekstsjef m1
 samfunnsstraff 
 informasjonstreff 
 arvestoff 
 bakgrunnsstoff 
-ventedag m1
-eksamensdag m1
-farsdag m1
-grunnlovsdag m1
 undervisningsfag 
 eksamensfag 
 naturbarnehag 
@@ -898,7 +526,6 @@ flertallsforslag
 proposisjonsforslag 
 resolusjonsforslag 
 tekstforslag 
-komag m1
 feltoppdrag 
 fritidspreg 
 fylkesflagg 
@@ -928,13 +555,8 @@ museumsbygg
 vitenskapsbygg 
 forsvarsbygg 
 ryddig 
-utmarksteig m1
 voldelig 
 uvirkelig 
-omsorgsbolig m1
-representasjonsbolig m1
-samfunnsmessig m1
-lensmannsfullmektig m1
 tidsriktig 
 tomtevalg 
 forholdsvalg 
@@ -957,18 +579,6 @@ reindriftsutvalg
 tillitsutvalg 
 samerettsutvalg 
 produksjonsomfang 
-innsigelsesadgang m1
-instruksjonsadgang m1
-kalvetilgang m1
-generasjonsovergang m1
-fritidssammenheng m1
-forvaltningssammenheng m1
-opplæringssammenheng m1
-næringssammenheng m1
-museumssammenheng m1
-samfunnssammenheng m1
-argumentasjonssammenheng m1
-landskapssammenheng m1
 tilleggspoeng 
 seng 
 fylkesplanmelding 
@@ -1242,73 +852,12 @@ tvangsslakting
 rettighetsfesting 
 grunnlovsfesting 
 tvangssammenslåing 
-rikskonge m1
-befaringssesong m1
 reindriftssameung 
 reindriftsung 
-statsskog m1
-lauvskog m1
-styringsdialog m1
-menneskerettighetsdialog m1
-akuttomsorg m1
-nytteverdi m1
-fellesverdi m1
-opplevelsesverdi m1
-omsetningsverdi m1
-overføringsverdi m1
-bruksverdi m1
-informasjonsverdi m1
-produksjonsverdi m1
-tilknytningsvei m1
-skogsvei m1
-samfunnsgeografi m1
-opplæringsfilosofi m1
-utbyggingsstrategi m1
-utviklingsstrategi m1
-investeringsstrategi m1
-museumsstrategi m1
-kommunikasjonsstrategi m1
-informasjonsstrategi m1
-kunnskapsstrategi m1
-reiselivsstrategi m1
 frigi 
-barnepsykologi m1
-skrivebordsterminologi m1
-forvaltningsterminologi m1
-reindriftsterminologi m1
-rettsterminologi m1
 oppgi 
-skatteøkonomi m1
-fastlandsøkonomi m1
-husholdningsøkonomi m1
-verdensøkonomi m1
-samfunnsøkonomi m1
-driftsøkonomi m1
-reindriftsøkonomi m1
-uttrykksterapi m1
-godteri m1
-slakteri m1
-maori m1
-yrkesteori m1
-innvandringsteori m1
-organisasjonsteori m1
-rettsteori m1
-størrelseskategori m1
-arealbrukskategori m1
-alderskategori m1
-barnepsykiatri m1
-ungdomspsykiatri m1
-dataindustri m1
-opplevelsesindustri m1
-underholdningsindustri m1
-landbruksindustri m1
-verftsindustri m1
-oppdrettsindustri m1
 flertallsdemokrati 
 rettsdemokrati 
-statsgaranti m1
-verdighetsgaranti m1
-rettsgaranti m1
 venstreparti 
 samlingsparti 
 embetsmannsparti 
@@ -1368,76 +917,11 @@ universitetsbibliotek
 registreringskartotek 
 rik 
 premieavvik 
-arbeidsmetodikk m1
-forskningsmetodikk m1
-tilsynsmetodikk m1
-småskolepedagogikk m1
-byggeskikk m1
-forvaltningsskikk m1
-handelsskikk m1
-bryllupsskikk m1
-reindriftsskikk m1
-høyreklikk m1
-universitetstannklinikk m1
-finnmarksklinikk m1
-universitetsklinikk m1
-pilotklinikk m1
-forsvarsmusikk m1
-minoritetsmusikk m1
-spredningsproblematikk m1
-rettighetsproblematikk m1
-reindriftsproblematikk m1
-verdensarvproblematikk m1
-yrkesetikk m1
-arbeidsmarkedspolitikk m1
-bistandspolitikk m1
-velferdspolitikk m1
-fylkespolitikk m1
-undertrykkelsespolitikk m1
-hverdagspolitikk m1
-utviklingspolitikk m1
-forvaltningspolitikk m1
-ressursforvaltningspolitikk m1
-innvandringspolitikk m1
-opplæringspolitikk m1
-språkopplæringspolitikk m1
-overføringspolitikk m1
-sysselsettingspolitikk m1
-bosettingspolitikk m1
-omsorgspolitikk m1
-utmarkspolitikk m1
-jordbrukspolitikk m1
-handelspolitikk m1
-motorferdselspolitikk m1
-eiendomspolitikk m1
-kommunikasjonspolitikk m1
-assimilasjonspolitikk m1
-institusjonspolitikk m1
-menneskerettighetspolitikk m1
-nøytralitetspolitikk m1
-skipsfartspolitikk m1
-idrettspolitikk m1
-reiselivspolitikk m1
-oppvekstpolitikk m1
-næringsstatistikk m1
-finnmarksstatistikk m1
-jordbruksstatistikk m1
-datalingvistikk m1
-produksjonsflokk m1
-spaserstokk m1
 kjønnsuttrykk 
 mayafolk 
 stammefolk 
 forretningsfolk 
 minoritetsfolk 
-rettstolk m1
-termdatabank m1
-investeringsbank m1
-verdensbank m1
-kunnskapsbank m1
-distriktsbank m1
-skammekrok m1
-rammeverk n2
 kvalifikasjonsrammeverk 
 sanksjonsregelverk 
 årsverk 
@@ -1449,11 +933,7 @@ utdanningsnettverk
 ungdomsnettverk 
 museumsnettverk 
 skrukork 
-purk m1
 demografisk 
-innlandsfisk m1
-villmarksfisk m1
-oppdrettsfisk m1
 reindriftssamisk 
 sosioøkonomisk 
 karismatisk 
@@ -1462,23 +942,8 @@ genetisk
 liberalistisk 
 humanistisk 
 handelsjordbruk 
-stemmebruk m1
 gårdssagbruk 
-legemiddelbruk m1
-prosjektmidelbruk m1
-overforbruk m1
-fritidsbruk m1
-allmenningsbruk m1
-undervisningsbruk m1
-tobakksbruk m1
-utmarksbruk m1
-virkemiddelsbruk m1
-melkeproduksjonsbruk m1
-kjøttproduksjonsbruk m1
-redskapsbruk m1
-begrepsbruk m1
 myk 
-tobakksrøyk m1
 lekespråk 
 hjelpespråk 
 arbeidsspråk 
@@ -1499,34 +964,19 @@ rettsspråk
 publikumsbesøk 
 statsbesøk 
 fastlandsareal 
-undervisningsareal-
 produksjonsareal 
 oppdrettsareal 
 skadepotensial 
 produksjonspotensial 
 vekstpotensial 
-kommunikasjonskanal m1
-informasjonskanal m1
-styringssignal m1
-passasjerterminal m1
-forskningsjournal m1
-postjournal m1
 fylkeskommunal 
-voldsspiral m1
-utdanningssentral m1
-registreringssentral m1
-informasjonssentral m1
-fondskapital m1
-stiftelseskapital m1
-utviklingskapital m1
-regjeringskvartal m1
 elevtal 
-barneteaterfestival m1
-ungdomsfestival m1
 stipendmiddel 
 legemiddel 
+jordskiftevirkemiddel 
 investeringsvirkemiddel 
 opplæringsvirkemiddel 
+prisvirkemiddel 
 avtalemiddel 
 sovemiddel 
 forskningmiddel 
@@ -1536,6 +986,8 @@ kulturmiddel
 tilskuddsmiddel 
 utviklingsmiddel 
 språkutviklingsmiddel 
+næringsutviklingsmiddel 
+likestillingsmiddel 
 utredningsmiddel 
 forskningsmiddel 
 språkopplæringsmiddel 
@@ -1544,88 +996,24 @@ opposisjonsmiddel
 statsmiddel 
 trafikksikkerhetsmiddel 
 idrettsmiddel 
-jordskiftevirkemiddel 
-prisvirkemiddel 
-næringsutviklingsmiddel 
-likestillingsmiddel 
-tilskuddsandel m1
-manntallsandel m1
-produksjonsandel m1
-statsandel m1
-reinkjøttsandel m1
-skatteregel m1
-sakskostnadsregel m1
-forbudsregel m1
-rettergangsregel m1
-saksbehandlingsregel m1
-avstemningsregel m1
-forvaltningsregel m1
-høringsregel m1
-unntaksregel m1
-bruksregel m1
-reintallsregel m1
-minimumsregel m1
-ordensregel m1
-permisjonsregel m1
-sanksjonsregel m1
-presumsjonsregel m1
-lærermangel m1
-kostmangel m1
-salgsartikkel m1
-kostnadsnøkkel m1
-fordelingsnøkkel m1
-onkel m1
-rettighetsregel m1
 villmarkspanel 
 barnevernspanel 
 fengsel 
 innledningskapittel 
-arbeidstittel m1
-yrkestittel m1
-hederstittel m1
-skatteprofil m1
-ungdomsprofil m1
-distriktsprofil m1
-missil m1
-sikkerhetsventil m1
 slakteavfall 
-idrettsgalla
 finnmarkshall 
 søknadsantall 
 mannsflertall 
-tilskuddsmodell m1
-betalingsmodell m1
-forvaltningsmodell m1
-styringsmodell m1
-opplæringsmodell m1
-finnmarksmodell m1
-organisasjonsmodell m1
-reduksjonsmodell m1
-refusjonsmodell m1
-virksomhetsmodell m1
-likevektsmodell m1
 tilleggsmateriell 
 veiledningsmateriell 
 undervisningsmateriell 
 informasjonsmateriell 
 instruksjonsmateriell 
-lønnsforskjell m1
-inntektsforskjell m1
 datapersonell 
 sikkerhetspersonell 
 slottskapell 
-bruddprotokoll m1
-utviklerrolle
-skriverrolle
-forvaltningskontroll m1
-legalitetskontroll m1
 skattehull 
 ol 
-bispestol m1
-straffedomstol m1
-utmarksdomstol m1
-menneskerettighetsdomstol m1
-sikkerhetsklausul m1
 bygdemål 
 eiendomsskatteformål 
 fritidsformål 
@@ -1747,34 +1135,9 @@ forsvarssystem
 driftsenhetssystem 
 reindriftssystem 
 inntektssystem 
-undervisningsfilm m1
-animasjonsfilm m1
-finnmarkseiendom m1
-fengselseiendom m1
-reindriftsungdom m1
-idrettsungdom m1
-folkesykdom m1
-folkehelsesykdom m1
-hjerte-_og_karsykdom m1
-livsstilssykdom m1
-næringseiendom m1
-finnmarkseiendom m1
-landbrukseiendom m1
-jordbrukseiendom m1
-landbruksøkonom m1
 barnerom 
 fellesrom 
-forvaltningsterm m1
 navneform 
-skattereform m1
-velferdsreform m1
-forvaltningsreform m1
-styringsreform m1
-museumsreform m1
-organisasjonsreform m1
-pensjonsreform m1
-kvalitetsreform m1
-oppdragelsesform m1
 omgangsform 
 meldingsform 
 behandlingsform 
@@ -1794,9 +1157,11 @@ tekstform
 opplæringsplattform 
 kommunikasjonsplattform 
 museum 
+nordområdemuseum 
 folkemuseum 
 kvenmuseum 
 forvaltningsmuseum 
+universitetsmuseum 
 minoritetsmedium 
 doktorgradsstudium 
 sammenlikningsstudium 
@@ -1827,7 +1192,6 @@ trafikksikkerhetsforum
 bygdesentrum 
 utdanningssentrum 
 arbeidslivssentrum 
-betalingsstrøm m1
 hjelpeorgan 
 embetsmannorgan 
 tilskuddsorgan 
@@ -1845,303 +1209,14 @@ statsorgan
 myndighetsorgan 
 reindriftsorgan 
 rettsorgan 
-rusmiddelplan m1
-bygningsvernplan m1
-kostnadsplan m1
-tettstedsplan m1
-samarbeidsplan m1
-langtidsplan m1
-landsplan m1
-fylkesplan m1
-utvidelsesplan m1
-språkutviklingsplan m1
-næringsutviklingsplan m1
-likestillingsplan m1
-forskningsplan m1
-forvaltningsplan m1
-etableringsplan m1
-investeringsplan m1
-næringsplan m1
-sametingsplan m1
-omsorgsplan m1
-tiltaksplan m1
-bruksplan m1
-jordbruksplan m1
-skjøtselsplan m1
-ungdomsplan m1
-museumsplan m1
-kommunikasjonsplan m1
-disposisjonsplan m1
-reduksjonsplan m1
-reindriftsplan m1
-reiselivsplan m1
-oppvekstplan m1
-debutroman m1
-krigsveteran m1
-dataverden m1
-forskningsverden m1
-universitetsverden m1
-porsangerfjorden m1
-dagsorden m1
-rettsorden m1
-olderbakken m1
 dunderlandsulykken 
-lærereksamen m1
-skolesanglærereksamen m1
-embetseksamen m1
-universitetseksamen m1
-nordlandsbanen m1
-Den norsk-svenske reinbeitekonvensjonen m1
-strandsone m1
-finnmarksvinteren m1
-våpengren 
-forsvarsgren 
-idrettsgren 
-vinteridrettsgren 
-opplysningsvesen 
-fengselsvesen 
-rettsvesen 
-hilsen m1
-samehilsen m1
-åpningshilsen m1
-navnekonsulenttjenesten m1
-finnmarksposten m1
 det fjerne østen 
-uskreven 
-omsorgsdøgn 
-byggestein m1
-gravstein m1
-magasin 
-kvinnemagasin 
-sikringsmagasin 
-ungdomsmagasin 
-folkemedisin m1
-sovemedisin m1
-samfunnsmedisin m1
-gjerningsmann mX
-rettsvitenskapsmann mX 
-pelsskinn 
-småskoletrinn 
-barnetrinn 
-ungdomstrinn 
-maorisamfunn 
-utdanningssamfunn 
-rikssamfunn 
-jordbrukssamfunn 
-verdenssamfunn 
-informasjonssamfunn 
-vitenskapssamfunn 
-statssamfunn 
-majoritetssamfunn 
-reindriftssamfunn 
-erfaringsbakgrunn 
-minoritetsbakgrunn 
-reindriftsbakgrunn 
 velferdsgrunn 
 statsgrunn 
 forvaltningsskjønn 
-fondsregio m1
-utdanningsregion  m1
-læreutdanningsregion  m1
-lærerutdanningsregion  m1
-forvaltningsregion  m1
-museumsregion  m1
-fylkesdelegasjon  m1
-regjeringsdelegasjon  m1
-statsobligasjon  m1
-tilleggskvalifikasjon  m1
-ungdomspublikasjon  m1
-samarbeidsrelasjon  m1
-styringsinformasjon  m1
-ungdomsinformasjon  m1
-samfunnsinformasjon  m1
-rettighetsinformasjon  m1
-kunnskapsnasjon  m1
-skipsfartsnasjon  m1
-fredsoperasjon  m1
-fellesadministrasjon  m1
-utdanningsadministrasjon  m1
-landbruksadministrasjon  m1
-museumsadministrasjon  m1
-katekisasjon  m1
-lærerorganisasjon  m1
-samarbeidsorganisasjon  m1
-landsorganisasjon  m1
-fylkesorganisasjon  m1
-salgsorganisasjon  m1
-utviklingsorganisasjon  m1
-likestillingsorganisasjon  m1
-forvaltningsorganisasjon  m1
-opplæringsorganisasjon  m1
-næringsorganisasjon  m1
-jordbruksorganisasjon  m1
-idrettsorganisasjon  m1
-reiselivsorganisasjon  m1
-arbeidslivsorganisasjon  m1
-statsautorisasjon  m1
-momskompensasjon  m1
-grunnlagsdokumentasjon  m1
-tilleggsrepresentasjon  m1
-handelsrepresentasjon  m1
-forsøksstasjon  m1
-luftforsvarsstasjon  m1
-folkehelsesituasjon  m1
-slakterisituasjon  m1
-lærersituasjon  m1
-markedssituasjon  m1
-stressituasjon  m1
-forlagssituasjon  m1
-forhandlingssituasjon  m1
-undervisningssituasjon  m1
-opplæringssituasjon 
-ernæringssituasjon 
-mindretallssituasjon 
-reintallssituasjon 
-sikkerhetssituasjon 
-minoritetssituasjon 
-driftssituasjon 
-stemmereservasjon 
-oppdrettskonsesjon 
-åpningssesjon 
-navnetradisjon 
-forskningstradisjon 
-brukstradisjon 
-kunnskapstradisjon 
-finnmarkkommisjon 
-finnmarkskommisjon 
-utmarkskommisjon 
-verdenskommisjon 
-lønnskommisjon 
-rettighetskommisjon 
-menneskerettighetskommisjon 
-reindriftskommisjon 
-folkerettskommisjon 
-velferdspermisjon 
-utdanningspermisjon 
-omsorgspermisjon 
-rammedefinisjon 
-tettstedsdefinisjon 
-friluftslivsdefinisjon 
-odelstingsproposisjon 
-selvbestemmelsesposisjon 
-formannsposisjon 
-forvaltningsrevisjon 
-grunnlovsrevisjon 
-utredningsseksjon 
-etatsstyringsseksjon 
-fylkesmannsseksjon 
-kommunikasjonsseksjon 
-organisasjonsseksjon 
-luftfartsseksjon 
-politikkutviklerfunksjon 
-fellesfunksjon 
-innsigelsesfunksjon 
-styringsfunksjon 
-opplæringsfunksjon 
-sekretariatsfunksjon 
-driftsfunksjon 
-parlamentsfunksjon 
-arbeidstidsreduksjon 
-kalveproduksjon 
-doktorgradsproduksjon 
-samarbeidsproduksjon 
-innholdsproduksjon 
-jordbruksproduksjon 
-nyhetsproduksjon 
-tekstproduksjon 
-sauekjøttproduksjon 
-setningskonstruksjon 
-forskingsdimensjon 
-styringsdimensjon 
-næringsdimensjon 
-rammekonvensjon 
-kvinnediskrimineringskonvensjon 
-rasediskrimineringskonvensjon 
-landskapskonvensjon 
-stebarnsadopsjon 
-testversjon 
-betalingsinstitusjon 
-utredningsinstitusjon 
-lærerutdanningsinstitusjon 
-undervisningsinstitusjon 
-næringsinstitusjon 
-biblioteksinstitusjon 
-medlemsinstitusjon 
-museumsinstitusjon 
-samfunnsinstitusjon 
-barnevernsinstitusjon 
-kunnskapsinstitusjon 
-statsinstitusjon 
-oppvekstinstitusjon 
-departementskonstitusjon 
-omsorgsperson 
-soknebarn 
-bygningsvern 
-diskrimineringsvern 
-skogsvern 
-ungdomsvern 
-rettsvern 
-gårdsnavn 
-departementsnavn 
-barnetilsyn 
-forskingshensyn 
-utbyggingslån 
-transformasjonskommando 
 vernesko 
-godkjenningsdato 
-åpningsdato 
-fødselsdato 
-oppgjørskonto 
-jordbruksredskap 
-statsaksjeselskap 
-fylkesselskap 
-driftsselskap 
-oppdrettsselskap 
-reiselivsselskap 
-flyselskap 
-museumsvitenskap 
-religionsvitenskap 
-rettsvitenskap 
-markedskunnskap 
-forvaltningskunnskap 
-kristendomskunnskap 
-samfunnskunnskap 
-bakgrunnskunnskap 
-tradisjonskunnskap 
 meningsfellesskap 
-universitetsfellesskap 
-produksjonstap 
-selvbestemmelsesbegrep 
-likestillingsbegrep 
-landbruksbegrep 
-driftsenhetsbegrep 
-kvalitetsbegrep 
-friluftslivsbegrep 
-skattegrep 
-dataangrep 
-folkehjelp 
-selvhjelp 
-rettighetskamp 
-lønnsslipp 
-deltakelsesprinsipp 
-betalingsprinsipp 
-forvaltningsprinsipp 
-styringsprinsipp 
-rettskrivingsprinsipp 
-flertallsprinsipp 
-sektoransvarsprinsipp 
-rettighetsprinsipp 
-nærhetsprinsipp 
-rettsprinsipp 
-folkerettsprinsipp 
-menneskerettsprinsipp 
-vokse opp 
 verdenstopp 
-utstyrskjøp 
-søknadsbeløp 
-tilskuddsbeløp 
-erstatningsbeløp 
-refusjonsbeløp 
 fellesseminar 
 planleggingsseminar 
 utdanningsseminar 
@@ -2153,25 +1228,10 @@ innovasjonsseminar
 oppstartsseminar 
 næringslivsseminar 
 oppstartseminar 
-dataprogramvar 
-veiledningsansvar 
-forskningsansvar 
-forvaltningsansvar 
-styringsansvar 
-museumsansvar 
-samfunnsansvar 
-revisjonsansvar 
-redaksjonsansvar 
-tilsynsansvar 
-myndighetsansvar 
-sikkerhetsansvar 
-driftsansvar 
-missilforsvar 
 feltleder 
 oppvekstleder 
 forlagsarbeider 
 utviklingsarbeider 
-omslagssider 
 minimumsalder 
 konfirmasjonsalder 
 pensjonsalder 
@@ -2187,9 +1247,6 @@ samfunnsplanlegger
 systembygger 
 samfunnsbygger 
 omsorgspenger 
-sykdomsforklaringer 
-forsøksnæringer 
-næringsstrategier 
 stemmemottaker 
 sametingspolitiker 
 etableringspakker 
@@ -2321,67 +1378,6 @@ treningsleir
 statspapir 
 storebror 
 produksjonsindikator 
-kvalitetsindikator 
-koordinator 
-grensesamarbeidskoordinator 
-familievoldskoordinator 
-prosjektkoordinator 
-fylkeskonservator 
-påvirkningsfaktor 
-minimumsfaktor 
-identitetsfaktor 
-folkebiblioteksektor 
-opplæringssektor 
-omsorgssektor 
-petroleumssektor 
-museumssektor 
-barnevernssektor 
-forsvarssektor 
-sikkerhetssektor 
-universitetssektor 
-skattekontor 
-regionskattekontor 
-fylkesarbeidskontor 
-felleskontor 
-utdanningskontor 
-forvaltningskontor 
-opplæringskontor 
-finnmarkskontor 
-landbrukskontor 
-museumskontor 
-informasjonskontor 
-tilsynskontor 
-statskontor 
-rettskontor 
-vassdragsnatur 
-sjøvannstemperatur 
-nedgangskonjunktur 
-forskningsinfrastruktur 
-slakteristruktur 
-markedsstruktur 
-samarbeidsstruktur 
-tilbudsstruktur 
-avdelingsstruktur 
-befolkningsstruktur 
-forvaltningsstruktur 
-styringsstruktur 
-opplæringsstruktur 
-sysselsettingsstruktur 
-museumsstruktur 
-organisasjonsstruktur 
-institusjonsstruktur 
-forsvarsstruktur 
-aldersstruktur 
-departementsstruktur 
-trafikkultur 
-felleskultur 
-nyskapningskultur 
-forvaltningskultur 
-enhetskultur 
-bedriftskultur 
-reindriftskultur 
-rettskultur 
-flytur 
 tinglysningsgebyr 
 tinglysingsgebyr 
 rettsgebyr 
@@ -2454,66 +1450,6 @@ dansekurs
 begynnerkurs 
 feltkurs 
 vevkurs 
-læreressurs 
-lærerressurs 
-tilskuddsressurs 
-undersøkelsesressurs 
-tilleggsressurs 
-utviklingsressurs 
-stillingsressurs 
-skogsressurs 
-utmarksressurs 
-petroleumsressurs 
-samfunnsressurs 
-undergrunnsressurs 
-sekretariatsressurs 
-knapphetsressurs 
-driftsressurs 
-kass 
-strandfiskeplass 
-læreplass 
-markedsplass 
-produksjonsarbeidsplass 
-omsorgsplass 
-tiltaksplass 
-sykehjemsplass 
-hedersplass 
-gravplass 
-forskningsinteress 
-urfolksinteress 
-sennagress 
-straffeprosess 
-navneprosess 
-verdenskonferanseprosess 
-fylkesplanprosess 
-søknadsprosess 
-fredsprosess 
-planleggingsprosess 
-saksbehandlingsprosess 
-forhandlingsprosess 
-utviklingsprosess 
-omstillingsprosess 
-utredningsprosess 
-konsekvensutredningsprosess 
-bevilgningsprosess 
-godkjenningsprosess 
-verdiskapningsprosess 
-endringsprosess 
-organiseringsprosess 
-overføringsprosess 
-ekspropriasjonsprosess 
-nominasjonsprosess 
-konsultasjonsprosess 
-seleksjonsprosess 
-produksjonsprosess 
-myndighetsprosess 
-rettighetsprosess 
-rettsprosess 
-leiesats 
-tilskuddssats 
-refusjonssats 
-hets 
-sikkerhetsmyndighets 
 småskolekrets 
 stemmekrets 
 odelskrets 
@@ -2567,91 +1503,6 @@ revisjonsresultat
 høringsnotat 
 venstrestat 
 utadvendt 
-nordområdemuseet 
-vitenskapsmuseet 
-universitetsmuseet 
-skattemyndighet 
-tilskuddsmyndighet 
-innsigelsesmyndighet 
-jordsalgsmyndighet 
-planleggingsmyndighet 
-bygningsmyndighet 
-utdanningsmyndighet 
-forvaltningsmyndighet 
-opplæringsmyndighet 
-vedtaksmyndighet 
-landbruksmyndighet 
-konsultasjonsmyndighet 
-konsesjonsmyndighet 
-sanksjonsmyndighet 
-tilsynsmyndighet 
-forsvarsmyndighet 
-statsmyndighet 
-sikkerhetsmyndighet 
-likeverdighet 
-samarbeidsmulighet 
-fritidsmulighet 
-yrkesmulighet 
-utdannelsesmulighet 
-utdanningsmulighet 
-styringsmulighet 
-kommunikasjonsmulighet 
-kombinasjonsmulighet 
-sanksjonsmulighet 
-inntektsmulighet 
-utdanningsrettighet 
-allmenningsrettighet 
-opplæringsrettighet 
-næringsrettighet 
-produksjonsrettighet 
-pensjonsrettighet 
-minoritetsrettighet 
-opphavsrettighet 
-folkebibliotekvirksomhet 
-anskaffelsesvirksomhet 
-forlagsvirksomhet 
-tilleggsvirksomhet 
-planleggingsvirksomhet 
-utstillingsvirksomhet 
-veiledningsvirksomhet 
-utredningsvirksomhet 
-utvinningsvirksomhet 
-utmarksvirksomhet 
-handelsvirksomhet 
-eiendomsvirksomhet 
-museumsvirksomhet 
-kommunikasjonsvirksomhet 
-informasjonsvirksomhet 
-næringskombinasjonsvirksomhet 
-misjonsvirksomhet 
-prostitusjonsvirksomhet 
-tilsynsvirksomhet 
-oppdrettsvirksomhet 
-reiselivsvirksomhet 
-slakterienhet 
-skattekontorenhet 
-forskningsenhet 
-helseforskningsenhet 
-sosialforskningsenhet 
-utdanningsenhet 
-forsøksenhet 
-museumsenhet 
-kommunikasjonsenhet 
-informasjonsenhet 
-administrasjonsenhet 
-organisasjonsenhet 
-dokumentasjonsenhet 
-produksjonsenhet 
-sikkerhetsenhet 
-sportsbegivenhet 
-idrettsbegivenhet 
-ressursknapphet 
-betalingssikkerhet 
-samfunnssikkerhet 
-informasjonssikkerhet 
-kvalitetsbevissthet 
-befolkningstetthet 
-næringstetthet 
 uønsket 
 trafikksikkerhetsforumet 
 fylkesvåpenet 
@@ -2667,29 +1518,6 @@ bostedskvalitet
 abnormitet 
 humanitet 
 sanitet 
-slakterikapasitet 
-overkapasitet 
-utgivelseskapasitet 
-saksbehandlingskapasitet 
-utredningskapasitet 
-utdanningskapasitet 
-opptakskapasitet 
-utlånskapasitet 
-folkeuniversitet 
-landsdelsuniversitet 
-fritidsaktivitet 
-yrkesaktivitet 
-veiledningsaktivitet 
-forskningsaktivitet 
-forsøksaktivitet 
-petroleumsaktivitet 
-samfunnsaktivitet 
-innovasjonsaktivitet 
-tilsynsaktivitet 
-idrettsaktivitet 
-oppdrettsaktivitet 
-friluftslivsaktivitet 
-kostnadseffektivitet 
 uventet 
 majestet 
 familiedrevet 
@@ -2732,40 +1560,6 @@ opplæringskontrakt
 samfunnskontrakt 
 funksjonskontrakt 
 markedskontakt 
-navneobjekt 
-rettssubjekt 
-museumprosjekt 
-fylkesplanprosjekt 
-bygningsvernprosjekt 
-velferdsprosjekt 
-fellesprosjekt 
-anskaffelsesprosjekt 
-overgangsprosjekt 
-utbyggingsprosjekt 
-næringsutviklingsprosjekt 
-likestillingsprosjekt 
-utvekslingsprosjekt 
-utredningsprosjekt 
-restaureringsprosjekt 
-investeringsprosjekt 
-opplæringsprosjekt 
-begynneropplæringsprosjekt 
-næringsprosjekt 
-barmarkskjøringsprosjekt 
-satsingsprosjekt 
-omsorgsprosjekt 
-tiltaksprosjekt 
-skjøtselsprosjekt 
-museumsprosjekt 
-kommunikasjonsprosjekt 
-informasjonsprosjekt 
-generasjonsprosjekt 
-dokumentasjonsprosjekt 
-reiselivsprosjekt 
-næringslivsprosjekt 
-næringsaspekt 
-rettighetsaspekt 
-sikkerhetsaspekt 
 leieinntekt 
 gjennomsnittsvekt 
 næringskonflikt 
@@ -2796,92 +1590,7 @@ utløpsdistrikt
 doktorgradsoversikt 
 tilstandsoversikt 
 framtidsutsikt 
-kokepunkt 
-tilbudstidspunkt 
-overdragelsestidspunkt 
-tegningstidspunkt 
-undervisningstidspunkt 
-fødselstidspunkt 
-tilleggspunkt 
-samlingspunkt 
-tiltakspunkt 
-opplevelsesprodukt 
-utmarksprodukt 
-landbruksprodukt 
-jordbruksprodukt 
-tradisjonsprodukt 
-pensjonsprodukt 
-kvalitetsprodukt 
-reiselivsprodukt 
-næringssalt 
-oljefelt 
-fiskefelt 
-skytefelt 
-bibliotekfelt 
-kulturfelt 
-arbeidsfelt 
-utredningsfelt 
-forskningsfelt 
-spenningsfelt 
-diskrimineringsfelt 
-satsingsfelt 
-praksisfelt 
-profesjonsfelt 
-reindriftsfelt 
-jaktfelt 
-kunstfelt 
-scenekunstfelt 
-storvilt 
 ytterkant 
-ungdomsrepresentant 
-reindriftsrepresentant 
-distriktsrepresentant 
-partsrepresentant 
-idrettspresident 
-lærerstudent 
-doktorgradsstudent 
-mellomfagsstudent 
-fagforeningskontingent 
-oljeekvivalent 
-navnekonsulent 
-bygningsvernkonsulent 
-markedskonsulent 
-informasjonskonsulent 
-stedsnavnskonsulent 
-medikament 
-bygdelagsarrangement 
-ungdomsarrangement 
-sikkerhetsarrangement 
-idrettsarrangement 
-innholdselement 
-godtgjørelsesreglement 
-adgangsreglement 
-bevilgningsreglement 
-opptaksreglement 
-permisjonsreglement 
-likestillingsdepartement 
-undervisningsdepartement 
-handelsdepartement 
-forsvarsdepartement 
-sjøfartsdepartement 
-tolkningsmoment 
-flertallsargument 
-FN-dokument 
-rammedokument 
-søknadsdokument 
-arbeidsdokument 
-stiftelsesdokument 
-grunnlagsdokument 
-lovforslagsdokument 
-oppdragsdokument 
-tilleggsdokument 
-styringsdokument 
-høringsdokument 
-sametingsdokument 
-konsesjonsdokument 
-utgiftsdokument 
-strykeinstrument 
-folkerettsinstrument 
 kalveprosent 
 tilskuddsprosent 
 tilslagsprosent 
@@ -2917,37 +1626,6 @@ meldekort
 adgangskort 
 ungdomskort 
 postkort 
-arbeidsrapport 
-tilstandsrapport 
-fellesrapport 
-tilleggsrapport 
-forskningsrapport 
-kvartalsrapport 
-statsrapport 
-aktivitetsrapport 
-syketransport 
-næringstransport 
-forhandlingsinnspurt 
-trofast 
-vindkraftentusiast 
-utviklingsprogramutkast 
-meldingsutkast 
-forhandlingsutkast 
-erklæringsutkast 
-høringsutkast 
-konvensjonsutkast 
-resolusjonsutkast 
-trelast 
-tast 
-folkefest 
-juletrefest 
-gest 
-sogneprest 
-finnmarksprest 
-skoleungdomsprest 
-menighetsprest 
-hogst 
-vedhogst 
 talelist 
 avslagslist 
 merkefrist 
@@ -2986,14 +1664,6 @@ salderingspost
 investeringspost 
 ishavskyst 
 lærelyst 
-likestillingsdebatt 
-forskningsdebatt 
-sametingsdebatt 
-stortingsdebatt 
-samfunnsdebatt 
-rettighetsdebatt 
-formuesskatt 
-selskapsskatt 
 bistandsbudsjett 
 avdelingsbudsjett 
 investeringsbudsjett 
@@ -3009,32 +1679,6 @@ postnett
 ungdomsidrett 
 oppdrett 
 matfiskoppdrett 
-trygderett 
-råderett 
-leierett 
-foreldrerett 
-nytterett 
-arverett 
-innsigelsesrett 
-deltakelsesrett 
-undersøkelsesrett 
-uttalelsesrett 
-selvbestemmelsesrett 
-forhandlingsrett 
-medvirkningsrett 
-utvinningsrett 
-styringsrett 
-opplæringsrett 
-høringsrett 
-tingsrett 
-riksrett 
-ekspropriasjonsrett 
-organisasjonsrett 
-konsultasjonsrett 
-minoritetsrett 
-reindriftsrett 
-slektsrett 
-distriktsrett 
 tannsett 
 landsgjennomsnitt 
 tilleggsavsnitt 
@@ -3046,21 +1690,14 @@ framtidsgutt
 akutt 
 tollkutt 
 budsjettkutt 
-omslagskonvolutt 
-forskerrekrutt 
 folkehelseinstitutt 
 samarbeidsinstitutt 
 forhandlingsinstitutt 
 forskningsinstitutt 
 sauekjøtt 
-tastaturlayout 
-kapitalflyt 
-informasjonsflyt 
-nordlandsbåt 
-undervannsbåt 
-postbåt 
 telefonintervju 
 radiointervju 
+vitenskapsmusemu 
 skorpelav 
 arbeidskrav 
 gjeldskrav 
@@ -3203,18 +1840,6 @@ departementsnivå
 toppidrettsnivå 
 postnivå 
 musé 
-barnekomité 
-utdanningskomité 
-forvaltningskomité 
-kvinnediskrimineringskomité 
-rasediskrimineringskomité 
-stortingskomité 
-fylkestingskomité 
-organisasjonskomité 
-konstitusjonskomité 
-innkjøpskomité 
-forsvarskomité 
-menneskerettighetskomité 
 bygdemiljø 
 utviklingsmiljø 
 næringsutviklingsmiljø 
@@ -3237,3 +1862,1378 @@ reindriftsmiljø
 reiselivsmiljø 
 testmiljø 
 oppvekstmiljø 
+undervisningsareal-
+transformasjonskommando b1
+omslagsside f1
+sykdomsforklaring f1
+forsøksnæring f1
+våpengren f1
+forsvarsgren f1
+idrettsgren f1
+vinteridrettsgren f1
+folkehjelp f1
+selvhjelp f1
+trelast f1
+utdanningsregion  m1
+læreutdanningsregion  m1
+lærerutdanningsregion  m1
+forvaltningsregion  m1
+museumsregion  m1
+fylkesdelegasjon  m1
+regjeringsdelegasjon  m1
+statsobligasjon  m1
+tilleggskvalifikasjon  m1
+ungdomspublikasjon  m1
+samarbeidsrelasjon  m1
+styringsinformasjon  m1
+ungdomsinformasjon  m1
+samfunnsinformasjon  m1
+rettighetsinformasjon  m1
+kunnskapsnasjon  m1
+skipsfartsnasjon  m1
+fredsoperasjon  m1
+fellesadministrasjon  m1
+utdanningsadministrasjon  m1
+landbruksadministrasjon  m1
+museumsadministrasjon  m1
+katekisasjon  m1
+lærerorganisasjon  m1
+samarbeidsorganisasjon  m1
+landsorganisasjon  m1
+fylkesorganisasjon  m1
+salgsorganisasjon  m1
+utviklingsorganisasjon  m1
+likestillingsorganisasjon  m1
+forvaltningsorganisasjon  m1
+opplæringsorganisasjon  m1
+næringsorganisasjon  m1
+jordbruksorganisasjon  m1
+idrettsorganisasjon  m1
+reiselivsorganisasjon  m1
+arbeidslivsorganisasjon  m1
+statsautorisasjon  m1
+momskompensasjon  m1
+grunnlagsdokumentasjon  m1
+tilleggsrepresentasjon  m1
+handelsrepresentasjon  m1
+forsøksstasjon  m1
+luftforsvarsstasjon  m1
+folkehelsesituasjon  m1
+slakterisituasjon  m1
+lærersituasjon  m1
+markedssituasjon  m1
+stressituasjon  m1
+forlagssituasjon  m1
+forhandlingssituasjon  m1
+undervisningssituasjon  m1
+departementskollega m1
+fritidsarena m1
+salgsarena m1
+samfunnsarena m1
+identitetsarena m1
+idrettsarena m1
+flertallsmerknad m1
+fondssøknad m1
+forskningssøknad m1
+ekspropriasjonssøknad m1
+dispensasjonssøknad m1
+konsesjonssøknad m1
+permisjonssøknad m1
+reiselivssøknad m1
+levekostnad m1
+vedlikeholdskostnad m1
+utviklingskostnad m1
+framstillingskostnad m1
+investeringskostnad m1
+lønnskostnad m1
+revisjonskostnad m1
+produksjonskostnad m1
+overgangsstønad m1
+fylkeshovedstad m1
+bjørkeved m1
+skattefogd m1
+statsgjeld m1
+vedlikeholdsstandard m1
+forvaltningsstandard m1
+revisjonsstandard m1
+menneskerettighetsstandard m1
+rettsstandard m1
+forsøksgård m1
+idrettsglede m1
+folkemengde m1
+noaide m1
+søknadsrunde m1
+konsesjonsrunde m1
+virkeperiode m1
+fylkesplanperiode m1
+søknadsperiode m1
+stønadsperiode m1
+arbeidsperiode m1
+strukturfondsperiode m1
+fellesperiode m1
+undersøkelsesperiode m1
+utdanningsperiode m1
+regjeringsperiode m1
+stortingsperiode m1
+barmarksperiode m1
+forsøksperiode m1
+eksamensperiode m1
+konsesjonsperiode m1
+funksjonsperiode m1
+formannskapsperiode m1
+tiårsperiode m1
+stillingskode m1
+straffemetode m1
+læremetode m1
+vedlikeholdsmetode m1
+familieplanleggingsmetode m1
+behandlingsmetode m1
+treningsmetode m1
+undervisningsmetode m1
+opplæringsmetode m1
+fritaksmetode m1
+produksjonsmetode m1
+næringshage m1
+fylkestannlege m1
+krigsfange m1
+opplæringspenge m1
+rikskonge m1
+kostholdsstudie m1
+reindriftsfamilie m1
+produksjonspremie m1
+pensjonspremie m1
+databransje m1
+forlagsbransje m1
+eiendomsbransje m1
+oppdrettsbransje m1
+ungdomsleke m1
+skiflygingsbakke m1
+sikkerhetsstyrke m1
+lesevanske m1
+skrivevanske m1
+adferdsvanske m1
+utviklingssamtale m1
+nyttårstale m1
+leieavtale m1
+forlagsavtale m1
+tilleggsavtale m1
+forvaltningsavtale m1
+næringsavtale m1
+jordbruksavtale m1
+næringskombinasjonsavtale m1
+konsultasjonsavtale m1
+innkjøpsavtale m1
+kunstnersavtale m1
+sikkerhetsavtale m1
+hogstavtale m1
+våpenhvile m1
+heimeyrkeskole m1
+husflidsskole m1
+fellesskole m1
+utmarksskole m1
+landbruksskole m1
+vinterlandbruksskole m1
+hagebruksskole m1
+småbarnsskole m1
+distriktsskole m1
+lærerhøyskole m1
+yrkeshøyskole m1
+småskole m1
+lærertime m1
+behandlingstime m1
+undervisningstime m1
+religionstime m1
+fellesgamme m1
+tilleggsstemme m1
+sametingsstemme m1
+valgtingsstemme m1
+utviklingsmekanisme m1
+konfliktløsningsmekanisme m1
+sikringsmekanisme m1
+sikkerhetsmekanisme m1
+gårdsturisme m1
+opplevelsesturisme m1
+reindriftsturisme m1
+nordlandsbane m1
+kostvane m1
+riksscene m1
+samarbeidsrutine m1
+meldingsrutine m1
+skogfinne m1
+strikkepinne m1
+strandsone m1
+skattekommune m1
+bostedskommune m1
+innlandskommune m1
+utviklingskommune m1
+forvaltningskommune m1
+næringskommune m1
+jordbrukskommune m1
+vennskapskommune m1
+samarbeidsevne m1
+stridsevne m1
+betalingsevne m1
+fremstillingsevne m1
+vurderingsevne m1
+omsorgsevne m1
+kommunikasjonsevne m1
+utlånsevne m1
+inntektsevne m1
+partsevne m1
+infeksjonsfare m1
+skattevare m1
+dataprogramvare m1
+jordbruksvare m1
+kvalitetsvare m1
+stemmestyre m1
+gjenstandsdatabase m1
+registreringsdatabase m1
+tradisjonsdatabase m1
+operasjonsbase m1
+begynnerfase m1
+meldingsfase m1
+planleggingsfase m1
+forhandlingsfase m1
+utredningsfase m1
+etableringsfase m1
+vedtaksfase m1
+produksjonsfase m1
+folkerettsekspertise m1
+utdanningsledelse m1
+endringsledelse m1
+utenriksledelse m1
+plenumsledelse m1
+informasjonsledelse m1
+redaksjonsledelse m1
+etatsledelse m1
+timetallsutvidelse m1
+fastlandsforbindelse m1
+datakommunikasjonsforbindelse m1
+utstyrsanskaffelse m1
+virksomhetsoverdragelse m1
+idrettsbevegelse m1
+innsigelse m1
+yrkesdeltakelse m1
+samfunnsdeltakelse m1
+omdømmeundersøkelse m1
+finnmarkundersøkelse m1
+markedsundersøkelse m1
+innholdsundersøkelse m1
+kostholdsundersøkelse m1
+holdningsundersøkelse m1
+befolkningsundersøkelse m1
+finnmarksundersøkelse m1
+språkbruksundersøkelse m1
+mørketallsundersøkelse m1
+ungdomsundersøkelse m1
+tolkningsuttalelse m1
+høringsuttalelse m1
+realitetsuttalelse m1
+fellesskapsfølelse m1
+identitetsfølelse m1
+forbudsbestemmelse m1
+fellesbestemmelse m1
+tilleggsbestemmelse m1
+medvirkningsbestemmelse m1
+erstatningsbestemmelse m1
+unntaksbestemmelse m1
+sanksjonsbestemmelse m1
+konvensjonsbestemmelse m1
+innkjøpsbestemmelse m1
+rettighetsbestemmelse m1
+menneskerettighetsbestemmelse m1
+sikkerhetsbestemmelse m1
+avgiftsbestemmelse m1
+reglementsbestemmelse m1
+grunnlovsbestemmelse m1
+stedsbetegnelse m1
+fellesbetegnelse m1
+direktoratsbetegnelse m1
+lønnsdannelse m1
+statsdannelse m1
+universitetsutdannelse m1
+slektskapsbenevnelse m1
+tilskuddsstørrelse m1
+bruksstørrelse m1
+manntallsstørrelse m1
+rettsavgjørelse m1
+rammetillatelse m1
+utvinningstillatelse m1
+utførselstillatelse m1
+ekspropriasjonstillatelse m1
+oppdrettstillatelse m1
+næringsstiftelse m1
+konsultasjonsforpliktelse m1
+pensjonsforpliktelse m1
+konvensjonsforpliktelse m1
+rettsforpliktelse m1
+folkerettsforpliktelse m1
+pensjonsytelse m1
+smaksopplevelse m1
+reiselivsopplevelse m1
+oppdragsbeskrivelse m1
+farvannsbeskrivelse m1
+kulturutøvelse m1
+yrkesutøvelse m1
+næringsutøvelse m1
+bruksutøvelse m1
+reindriftsutøvelse m1
+ekteskapsinngåelse m1
+verdensforståelse m1
+profesjonsforståelse m1
+virkelighetsforståelse m1
+identitetsforståelse m1
+tekstforståelse m1
+kjønnsbalanse m1
+arbeidskonferanse m1
+samarbeidskonferanse m1
+likestillingskonferanse m1
+erfaringskonferanse m1
+regjeringskonferanse m1
+opplæringskonferanse m1
+næringskonferanse m1
+finnmarkskonferanse m1
+landbrukskonferanse m1
+ungdomskonferanse m1
+museumskonferanse m1
+verdenskonferanse m1
+barnevernskonferanse m1
+rettssikkerhetskonferanse m1
+reiselivskonferanse m1
+næringslivskonferanse m1
+lærerkompetanse m1
+markedskompetanse m1
+samarbeidskompetanse m1
+yrkeskompetanse m1
+ledelseskompetanse m1
+utviklingskompetanse m1
+utredningskompetanse m1
+forskningskompetanse m1
+valgforskningskompetanse m1
+undervisningskompetanse m1
+næringskompetanse m1
+vedtakskompetanse m1
+tiltakskompetanse m1
+søksmålskompetanse m1
+informasjonskompetanse m1
+sikkerhetskompetanse m1
+reindriftskompetanse m1
+tekstkompetanse m1
+skatteklasse m1
+yrkesklasse m1
+reindriftsklasse m1
+søknadsmasse m1
+forskningsinteresse m1
+urfolksinteresse m1
+pollenanalyse m1
+kostmønsteranalyse m1
+innholdsanalyse m1
+næringsanalyse m1
+barnekomite m1
+forskningskomite m1
+utdanningskomite m1
+forvaltningskomite m1
+rasediskrimineringskomite m1
+konstitusjonskomite m1
+fellingskvote m1
+navnetjeneste m1
+redningshelikoptertjeneste m1
+arbeidsfortjeneste m1
+velferdstjeneste m1
+fellestjeneste m1
+saksbehandlingstjeneste m1
+utviklingstjeneste m1
+veiledningstjeneste m1
+sammenligningstjeneste m1
+språkundervisningstjeneste m1
+forvaltningstjeneste m1
+omsorgstjeneste m1
+ungdomstjeneste m1
+museumstjeneste m1
+samfunnstjeneste m1
+lønnstjeneste m1
+kommunikasjonstjeneste m1
+barnevernstjeneste m1
+stedsnavnstjeneste m1
+utlånstjeneste m1
+sivilforsvarstjeneste m1
+statstjeneste m1
+sikkerhetstjeneste m1
+reindriftstjeneste m1
+navnekonsulenttjeneste m1
+posttjeneste m1
+tenkemåte m1
+læremåte m1
+væremåte m1
+stavemåte m1
+fortellermåte m1
+avstemningsmåte m1
+undervisningsmåte m1
+bruksmåte m1
+kommunikasjonsmåte m1
+driftsmåte m1
+grunnlovsparagraf m1
+fylkeskultursjef m1
+markedssjef m1
+forlagssjef m1
+likningssjef m1
+fylkesutdanningssjef m1
+opplæringssjef m1
+landbrukssjef m1
+jordbrukssjef m1
+skogbrukssjef m1
+kommunikasjonssjef m1
+administrasjonssjef m1
+forsvarssjef m1
+reindriftssjef m1
+oppvekstsjef m1
+ventedag m1
+eksamensdag m1
+farsdag m1
+grunnlovsdag m1
+komag m1
+utmarksteig m1
+omsorgsbolig m1
+representasjonsbolig m1
+samfunnsmessig m1
+lensmannsfullmektig m1
+innsigelsesadgang m1
+instruksjonsadgang m1
+kalvetilgang m1
+generasjonsovergang m1
+fritidssammenheng m1
+forvaltningssammenheng m1
+opplæringssammenheng m1
+næringssammenheng m1
+museumssammenheng m1
+samfunnssammenheng m1
+argumentasjonssammenheng m1
+landskapssammenheng m1
+befaringssesong m1
+statsskog m1
+lauvskog m1
+styringsdialog m1
+menneskerettighetsdialog m1
+akuttomsorg m1
+nytteverdi m1
+fellesverdi m1
+opplevelsesverdi m1
+omsetningsverdi m1
+overføringsverdi m1
+bruksverdi m1
+informasjonsverdi m1
+produksjonsverdi m1
+tilknytningsvei m1
+skogsvei m1
+samfunnsgeografi m1
+opplæringsfilosofi m1
+utbyggingsstrategi m1
+utviklingsstrategi m1
+investeringsstrategi m1
+næringsstrategi m1
+museumsstrategi m1
+kommunikasjonsstrategi m1
+informasjonsstrategi m1
+kunnskapsstrategi m1
+reiselivsstrategi m1
+barnepsykologi m1
+skrivebordsterminologi m1
+forvaltningsterminologi m1
+reindriftsterminologi m1
+rettsterminologi m1
+skatteøkonomi m1
+fastlandsøkonomi m1
+husholdningsøkonomi m1
+verdensøkonomi m1
+samfunnsøkonomi m1
+driftsøkonomi m1
+reindriftsøkonomi m1
+uttrykksterapi m1
+godteri m1
+slakteri m1
+maori m1
+yrkesteori m1
+innvandringsteori m1
+organisasjonsteori m1
+rettsteori m1
+størrelseskategori m1
+arealbrukskategori m1
+alderskategori m1
+barnepsykiatri m1
+ungdomspsykiatri m1
+dataindustri m1
+opplevelsesindustri m1
+underholdningsindustri m1
+landbruksindustri m1
+verftsindustri m1
+oppdrettsindustri m1
+statsgaranti m1
+verdighetsgaranti m1
+rettsgaranti m1
+arbeidsmetodikk m1
+forskningsmetodikk m1
+tilsynsmetodikk m1
+småskolepedagogikk m1
+byggeskikk m1
+forvaltningsskikk m1
+handelsskikk m1
+bryllupsskikk m1
+reindriftsskikk m1
+høyreklikk m1
+universitetstannklinikk m1
+finnmarksklinikk m1
+universitetsklinikk m1
+pilotklinikk m1
+forsvarsmusikk m1
+minoritetsmusikk m1
+spredningsproblematikk m1
+rettighetsproblematikk m1
+reindriftsproblematikk m1
+verdensarvproblematikk m1
+yrkesetikk m1
+arbeidsmarkedspolitikk m1
+bistandspolitikk m1
+velferdspolitikk m1
+fylkespolitikk m1
+undertrykkelsespolitikk m1
+hverdagspolitikk m1
+utviklingspolitikk m1
+forvaltningspolitikk m1
+ressursforvaltningspolitikk m1
+innvandringspolitikk m1
+opplæringspolitikk m1
+språkopplæringspolitikk m1
+overføringspolitikk m1
+sysselsettingspolitikk m1
+bosettingspolitikk m1
+omsorgspolitikk m1
+utmarkspolitikk m1
+jordbrukspolitikk m1
+handelspolitikk m1
+motorferdselspolitikk m1
+eiendomspolitikk m1
+kommunikasjonspolitikk m1
+assimilasjonspolitikk m1
+institusjonspolitikk m1
+menneskerettighetspolitikk m1
+nøytralitetspolitikk m1
+skipsfartspolitikk m1
+idrettspolitikk m1
+reiselivspolitikk m1
+oppvekstpolitikk m1
+næringsstatistikk m1
+finnmarksstatistikk m1
+jordbruksstatistikk m1
+datalingvistikk m1
+produksjonsflokk m1
+spaserstokk m1
+rettstolk m1
+termdatabank m1
+investeringsbank m1
+verdensbank m1
+kunnskapsbank m1
+distriktsbank m1
+skammekrok m1
+purk m1
+innlandsfisk m1
+villmarksfisk m1
+oppdrettsfisk m1
+stemmebruk m1
+legemiddelbruk m1
+prosjektmidelbruk m1
+overforbruk m1
+fritidsbruk m1
+allmenningsbruk m1
+undervisningsbruk m1
+tobakksbruk m1
+utmarksbruk m1
+virkemiddelsbruk m1
+melkeproduksjonsbruk m1
+kjøttproduksjonsbruk m1
+redskapsbruk m1
+begrepsbruk m1
+tobakksrøyk m1
+kommunikasjonskanal m1
+informasjonskanal m1
+styringssignal m1
+passasjerterminal m1
+forskningsjournal m1
+postjournal m1
+voldsspiral m1
+utdanningssentral m1
+registreringssentral m1
+informasjonssentral m1
+fondskapital m1
+stiftelseskapital m1
+utviklingskapital m1
+regjeringskvartal m1
+barneteaterfestival m1
+ungdomsfestival m1
+tilskuddsandel m1
+manntallsandel m1
+produksjonsandel m1
+statsandel m1
+reinkjøttsandel m1
+skatteregel m1
+sakskostnadsregel m1
+forbudsregel m1
+rettergangsregel m1
+saksbehandlingsregel m1
+avstemningsregel m1
+forvaltningsregel m1
+høringsregel m1
+unntaksregel m1
+bruksregel m1
+reintallsregel m1
+minimumsregel m1
+ordensregel m1
+permisjonsregel m1
+sanksjonsregel m1
+presumsjonsregel m1
+rettighetsregel m1
+lærermangel m1
+kostmangel m1
+salgsartikkel m1
+kostnadsnøkkel m1
+fordelingsnøkkel m1
+onkel m1
+arbeidstittel m1
+yrkestittel m1
+hederstittel m1
+skatteprofil m1
+ungdomsprofil m1
+distriktsprofil m1
+missil m1
+sikkerhetsventil m1
+tilskuddsmodell m1
+betalingsmodell m1
+forvaltningsmodell m1
+styringsmodell m1
+opplæringsmodell m1
+finnmarksmodell m1
+organisasjonsmodell m1
+reduksjonsmodell m1
+refusjonsmodell m1
+virksomhetsmodell m1
+likevektsmodell m1
+lønnsforskjell m1
+inntektsforskjell m1
+bruddprotokoll m1
+forvaltningskontroll m1
+legalitetskontroll m1
+bispestol m1
+straffedomstol m1
+utmarksdomstol m1
+menneskerettighetsdomstol m1
+sikkerhetsklausul m1
+undervisningsfilm m1
+animasjonsfilm m1
+reindriftsungdom m1
+idrettsungdom m1
+folkesykdom m1
+folkehelsesykdom m1
+hjerte-_og_karsykdom m1
+livsstilssykdom m1
+næringseiendom m1
+finnmarkseiendom m1
+finnmarkseiendom m1
+landbrukseiendom m1
+jordbrukseiendom m1
+fengselseiendom m1
+landbruksøkonom m1
+forvaltningsterm m1
+skattereform m1
+velferdsreform m1
+forvaltningsreform m1
+styringsreform m1
+museumsreform m1
+organisasjonsreform m1
+pensjonsreform m1
+kvalitetsreform m1
+oppdragelsesform m1
+betalingsstrøm m1
+rusmiddelplan m1
+bygningsvernplan m1
+kostnadsplan m1
+tettstedsplan m1
+samarbeidsplan m1
+langtidsplan m1
+landsplan m1
+fylkesplan m1
+utvidelsesplan m1
+språkutviklingsplan m1
+næringsutviklingsplan m1
+likestillingsplan m1
+forskningsplan m1
+forvaltningsplan m1
+etableringsplan m1
+investeringsplan m1
+næringsplan m1
+sametingsplan m1
+omsorgsplan m1
+tiltaksplan m1
+bruksplan m1
+jordbruksplan m1
+skjøtselsplan m1
+ungdomsplan m1
+museumsplan m1
+kommunikasjonsplan m1
+disposisjonsplan m1
+reduksjonsplan m1
+reindriftsplan m1
+reiselivsplan m1
+oppvekstplan m1
+debutroman m1
+krigsveteran m1
+dataverden m1
+forskningsverden m1
+universitetsverden m1
+porsangerfjorden m1
+dagsorden m1
+rettsorden m1
+olderbakken m1
+lærereksamen m1
+skolesanglærereksamen m1
+embetseksamen m1
+universitetseksamen m1
+nordlandsbanen m1
+Den norsk-svenske reinbeitekonvensjonen m1
+finnmarksvinteren m1
+rettsvesen m1
+hilsen m1
+samehilsen m1
+åpningshilsen m1
+navnekonsulenttjenesten m1
+finnmarksposten m1
+byggestein m1
+gravstein m1
+folkemedisin m1
+sovemedisin m1
+samfunnsmedisin m1
+opplæringssituasjon m1
+ernæringssituasjon m1
+mindretallssituasjon m1
+reintallssituasjon m1
+sikkerhetssituasjon m1
+minoritetssituasjon m1
+driftssituasjon m1
+stemmereservasjon m1
+oppdrettskonsesjon m1
+åpningssesjon m1
+navnetradisjon m1
+forskningstradisjon m1
+brukstradisjon m1
+kunnskapstradisjon m1
+finnmarkkommisjon m1
+finnmarkskommisjon m1
+utmarkskommisjon m1
+verdenskommisjon m1
+lønnskommisjon m1
+rettighetskommisjon m1
+menneskerettighetskommisjon m1
+reindriftskommisjon m1
+folkerettskommisjon m1
+velferdspermisjon m1
+utdanningspermisjon m1
+omsorgspermisjon m1
+rammedefinisjon m1
+tettstedsdefinisjon m1
+friluftslivsdefinisjon m1
+odelstingsproposisjon m1
+selvbestemmelsesposisjon m1
+formannsposisjon m1
+forvaltningsrevisjon m1
+grunnlovsrevisjon m1
+utredningsseksjon m1
+etatsstyringsseksjon m1
+fylkesmannsseksjon m1
+kommunikasjonsseksjon m1
+organisasjonsseksjon m1
+luftfartsseksjon m1
+politikkutviklerfunksjon m1
+fellesfunksjon m1
+innsigelsesfunksjon m1
+styringsfunksjon m1
+opplæringsfunksjon m1
+sekretariatsfunksjon m1
+driftsfunksjon m1
+parlamentsfunksjon m1
+arbeidstidsreduksjon m1
+kalveproduksjon m1
+doktorgradsproduksjon m1
+samarbeidsproduksjon m1
+innholdsproduksjon m1
+jordbruksproduksjon m1
+nyhetsproduksjon m1
+tekstproduksjon m1
+sauekjøttproduksjon m1
+setningskonstruksjon m1
+forskingsdimensjon m1
+styringsdimensjon m1
+næringsdimensjon m1
+rammekonvensjon m1
+kvinnediskrimineringskonvensjon m1
+rasediskrimineringskonvensjon m1
+landskapskonvensjon m1
+stebarnsadopsjon m1
+testversjon m1
+betalingsinstitusjon m1
+utredningsinstitusjon m1
+lærerutdanningsinstitusjon m1
+undervisningsinstitusjon m1
+næringsinstitusjon m1
+biblioteksinstitusjon m1
+medlemsinstitusjon m1
+museumsinstitusjon m1
+samfunnsinstitusjon m1
+barnevernsinstitusjon m1
+kunnskapsinstitusjon m1
+statsinstitusjon m1
+oppvekstinstitusjon m1
+departementskonstitusjon m1
+omsorgsperson m1
+fondsregio m1
+godkjenningsdato m1
+åpningsdato m1
+fødselsdato m1
+oppgjørskonto m1
+jordbruksredskap m1
+museumsvitenskap m1
+religionsvitenskap m1
+rettsvitenskap m1
+markedskunnskap m1
+forvaltningskunnskap m1
+kristendomskunnskap m1
+samfunnskunnskap m1
+bakgrunnskunnskap m1
+tradisjonskunnskap m1
+rettighetskamp m1
+lønnsslipp m1
+kvalitetsindikator m1
+koordinator m1
+grensesamarbeidskoordinator m1
+familievoldskoordinator m1
+prosjektkoordinator m1
+fylkeskonservator m1
+påvirkningsfaktor m1
+minimumsfaktor m1
+identitetsfaktor m1
+folkebiblioteksektor m1
+opplæringssektor m1
+omsorgssektor m1
+petroleumssektor m1
+museumssektor m1
+barnevernssektor m1
+forsvarssektor m1
+sikkerhetssektor m1
+universitetssektor m1
+vassdragsnatur m1
+sjøvannstemperatur m1
+nedgangskonjunktur m1
+forskningsinfrastruktur m1
+slakteristruktur m1
+markedsstruktur m1
+samarbeidsstruktur m1
+tilbudsstruktur m1
+avdelingsstruktur m1
+befolkningsstruktur m1
+forvaltningsstruktur m1
+styringsstruktur m1
+opplæringsstruktur m1
+sysselsettingsstruktur m1
+museumsstruktur m1
+organisasjonsstruktur m1
+institusjonsstruktur m1
+forsvarsstruktur m1
+aldersstruktur m1
+departementsstruktur m1
+trafikkultur m1
+felleskultur m1
+nyskapningskultur m1
+forvaltningskultur m1
+enhetskultur m1
+bedriftskultur m1
+reindriftskultur m1
+rettskultur m1
+flytur m1
+læreressurs m1
+lærerressurs m1
+tilskuddsressurs m1
+undersøkelsesressurs m1
+tilleggsressurs m1
+utviklingsressurs m1
+stillingsressurs m1
+skogsressurs m1
+utmarksressurs m1
+petroleumsressurs m1
+samfunnsressurs m1
+undergrunnsressurs m1
+sekretariatsressurs m1
+knapphetsressurs m1
+driftsressurs m1
+strandfiskeplass m1
+læreplass m1
+markedsplass m1
+produksjonsarbeidsplass m1
+omsorgsplass m1
+tiltaksplass m1
+sykehjemsplass m1
+hedersplass m1
+gravplass m1
+straffeprosess m1
+navneprosess m1
+verdenskonferanseprosess m1
+fylkesplanprosess m1
+søknadsprosess m1
+fredsprosess m1
+planleggingsprosess m1
+saksbehandlingsprosess m1
+forhandlingsprosess m1
+utviklingsprosess m1
+omstillingsprosess m1
+utredningsprosess m1
+konsekvensutredningsprosess m1
+bevilgningsprosess m1
+godkjenningsprosess m1
+verdiskapningsprosess m1
+endringsprosess m1
+organiseringsprosess m1
+overføringsprosess m1
+ekspropriasjonsprosess m1
+nominasjonsprosess m1
+konsultasjonsprosess m1
+seleksjonsprosess m1
+produksjonsprosess m1
+myndighetsprosess m1
+rettighetsprosess m1
+rettsprosess m1
+leiesats m1
+tilskuddssats m1
+refusjonssats m1
+hets m1
+skattemyndighet m1
+tilskuddsmyndighet m1
+innsigelsesmyndighet m1
+jordsalgsmyndighet m1
+planleggingsmyndighet m1
+bygningsmyndighet m1
+utdanningsmyndighet m1
+forvaltningsmyndighet m1
+opplæringsmyndighet m1
+vedtaksmyndighet m1
+landbruksmyndighet m1
+konsultasjonsmyndighet m1
+konsesjonsmyndighet m1
+sanksjonsmyndighet m1
+tilsynsmyndighet m1
+forsvarsmyndighet m1
+statsmyndighet m1
+sikkerhetsmyndighet m1
+sikkerhetsmyndighet m1
+likeverdighet m1
+samarbeidsmulighet m1
+fritidsmulighet m1
+yrkesmulighet m1
+utdannelsesmulighet m1
+utdanningsmulighet m1
+styringsmulighet m1
+kommunikasjonsmulighet m1
+kombinasjonsmulighet m1
+sanksjonsmulighet m1
+inntektsmulighet m1
+utdanningsrettighet m1
+allmenningsrettighet m1
+opplæringsrettighet m1
+næringsrettighet m1
+produksjonsrettighet m1
+pensjonsrettighet m1
+minoritetsrettighet m1
+opphavsrettighet m1
+folkebibliotekvirksomhet m1
+anskaffelsesvirksomhet m1
+forlagsvirksomhet m1
+tilleggsvirksomhet m1
+planleggingsvirksomhet m1
+utstillingsvirksomhet m1
+veiledningsvirksomhet m1
+utredningsvirksomhet m1
+utvinningsvirksomhet m1
+utmarksvirksomhet m1
+handelsvirksomhet m1
+eiendomsvirksomhet m1
+museumsvirksomhet m1
+kommunikasjonsvirksomhet m1
+informasjonsvirksomhet m1
+næringskombinasjonsvirksomhet m1
+misjonsvirksomhet m1
+prostitusjonsvirksomhet m1
+tilsynsvirksomhet m1
+oppdrettsvirksomhet m1
+reiselivsvirksomhet m1
+slakterienhet m1
+skattekontorenhet m1
+forskningsenhet m1
+helseforskningsenhet m1
+sosialforskningsenhet m1
+utdanningsenhet m1
+forsøksenhet m1
+museumsenhet m1
+kommunikasjonsenhet m1
+informasjonsenhet m1
+administrasjonsenhet m1
+organisasjonsenhet m1
+dokumentasjonsenhet m1
+produksjonsenhet m1
+sikkerhetsenhet m1
+sportsbegivenhet m1
+idrettsbegivenhet m1
+ressursknapphet m1
+betalingssikkerhet m1
+samfunnssikkerhet m1
+informasjonssikkerhet m1
+kvalitetsbevissthet m1
+befolkningstetthet m1
+næringstetthet m1
+slakterikapasitet m1
+overkapasitet m1
+utgivelseskapasitet m1
+saksbehandlingskapasitet m1
+utredningskapasitet m1
+utdanningskapasitet m1
+opptakskapasitet m1
+utlånskapasitet m1
+folkeuniversitet m1
+landsdelsuniversitet m1
+fritidsaktivitet m1
+yrkesaktivitet m1
+veiledningsaktivitet m1
+forskningsaktivitet m1
+forsøksaktivitet m1
+petroleumsaktivitet m1
+samfunnsaktivitet m1
+innovasjonsaktivitet m1
+tilsynsaktivitet m1
+idrettsaktivitet m1
+oppdrettsaktivitet m1
+friluftslivsaktivitet m1
+kostnadseffektivitet m1
+ungdomsrepresentant m1
+reindriftsrepresentant m1
+distriktsrepresentant m1
+partsrepresentant m1
+idrettspresident m1
+lærerstudent m1
+doktorgradsstudent m1
+mellomfagsstudent m1
+fagforeningskontingent m1
+oljeekvivalent m1
+navnekonsulent m1
+bygningsvernkonsulent m1
+markedskonsulent m1
+informasjonskonsulent m1
+stedsnavnskonsulent m1
+arbeidsrapport m1
+tilstandsrapport m1
+fellesrapport m1
+tilleggsrapport m1
+forskningsrapport m1
+kvartalsrapport m1
+statsrapport m1
+aktivitetsrapport m1
+syketransport m1
+næringstransport m1
+forhandlingsinnspurt m1
+vindkraftentusiast m1
+tast m1
+folkefest m1
+juletrefest m1
+gest m1
+sogneprest m1
+finnmarksprest m1
+skoleungdomsprest m1
+menighetsprest m1
+hogst m1
+vedhogst m1
+likestillingsdebatt m1
+forskningsdebatt m1
+sametingsdebatt m1
+stortingsdebatt m1
+samfunnsdebatt m1
+rettighetsdebatt m1
+formuesskatt m1
+selskapsskatt m1
+trygderett m1
+råderett m1
+leierett m1
+foreldrerett m1
+nytterett m1
+arverett m1
+innsigelsesrett m1
+deltakelsesrett m1
+undersøkelsesrett m1
+uttalelsesrett m1
+selvbestemmelsesrett m1
+forhandlingsrett m1
+medvirkningsrett m1
+utvinningsrett m1
+styringsrett m1
+opplæringsrett m1
+høringsrett m1
+tingsrett m1
+riksrett m1
+ekspropriasjonsrett m1
+organisasjonsrett m1
+konsultasjonsrett m1
+minoritetsrett m1
+reindriftsrett m1
+slektsrett m1
+distriktsrett m1
+omslagskonvolutt m1
+forskerrekrutt m1
+tastaturlayout m1
+kapitalflyt m1
+informasjonsflyt m1
+nordlandsbåt m1
+undervannsbåt m1
+postbåt m1
+barnekomité m1
+utdanningskomité m1
+forvaltningskomité m1
+kvinnediskrimineringskomité m1
+rasediskrimineringskomité m1
+stortingskomité m1
+fylkestingskomité m1
+organisasjonskomité m1
+konstitusjonskomité m1
+innkjøpskomité m1
+forsvarskomité m1
+menneskerettighetskomité m1
+opplysningsvesen n1
+fengselsvesen n1
+omsorgsdøgn n1
+pelsskinn n1
+småskoletrinn n1
+barnetrinn n1
+ungdomstrinn n1
+maorisamfunn n1
+utdanningssamfunn n1
+rikssamfunn n1
+jordbrukssamfunn n1
+verdenssamfunn n1
+informasjonssamfunn n1
+vitenskapssamfunn n1
+statssamfunn n1
+majoritetssamfunn n1
+reindriftssamfunn n1
+erfaringsbakgrunn n1
+minoritetsbakgrunn n1
+reindriftsbakgrunn n1
+soknebarn n1
+bygningsvern n1
+diskrimineringsvern n1
+skogsvern n1
+ungdomsvern n1
+rettsvern n1
+gårdsnavn n1
+departementsnavn n1
+barnetilsyn n1
+forskingshensyn n1
+utbyggingslån n1
+statsaksjeselskap n1
+fylkesselskap n1
+driftsselskap n1
+oppdrettsselskap n1
+reiselivsselskap n1
+flyselskap n1
+universitetsfellesskap n1
+produksjonstap n1
+selvbestemmelsesbegrep n1
+likestillingsbegrep n1
+landbruksbegrep n1
+driftsenhetsbegrep n1
+kvalitetsbegrep n1
+friluftslivsbegrep n1
+skattegrep n1
+dataangrep n1
+deltakelsesprinsipp n1
+betalingsprinsipp n1
+forvaltningsprinsipp n1
+styringsprinsipp n1
+rettskrivingsprinsipp n1
+flertallsprinsipp n1
+sektoransvarsprinsipp n1
+rettighetsprinsipp n1
+nærhetsprinsipp n1
+rettsprinsipp n1
+folkerettsprinsipp n1
+menneskerettsprinsipp n1
+utstyrskjøp n1
+søknadsbeløp n1
+tilskuddsbeløp n1
+erstatningsbeløp n1
+refusjonsbeløp n1
+veiledningsansvar n1
+forskningsansvar n1
+forvaltningsansvar n1
+styringsansvar n1
+museumsansvar n1
+samfunnsansvar n1
+revisjonsansvar n1
+redaksjonsansvar n1
+tilsynsansvar n1
+myndighetsansvar n1
+sikkerhetsansvar n1
+driftsansvar n1
+missilforsvar n1
+sennagress n1
+kokepunkt n1
+tilbudstidspunkt n1
+overdragelsestidspunkt n1
+tegningstidspunkt n1
+undervisningstidspunkt n1
+fødselstidspunkt n1
+tilleggspunkt n1
+samlingspunkt n1
+tiltakspunkt n1
+oljefelt n1
+fiskefelt n1
+skytefelt n1
+bibliotekfelt n1
+kulturfelt n1
+arbeidsfelt n1
+utredningsfelt n1
+forskningsfelt n1
+spenningsfelt n1
+diskrimineringsfelt n1
+satsingsfelt n1
+praksisfelt n1
+profesjonsfelt n1
+reindriftsfelt n1
+jaktfelt n1
+kunstfelt n1
+scenekunstfelt n1
+storvilt n1
+utviklingsprogramutkast n1
+meldingsutkast n1
+forhandlingsutkast n1
+erklæringsutkast n1
+høringsutkast n1
+konvensjonsutkast n1
+resolusjonsutkast n1
+trofast a2
+dikter m2
+ungdomsdrama n2
+hjelpeskjema n2
+reiseregningsskjema n2
+vurderingsskjema n2
+registreringsskjema n2
+reintallsskjema n2
+utredningstema n2
+forskningstema n2
+undervisningstema n2
+samfunnstema n2
+menneskerettighetstema n2
+forhandlingsklima n2
+rammeverk n2
+magasin n2
+kvinnemagasin n2
+sikringsmagasin n2
+ungdomsmagasin n2
+skattekontor n2
+regionskattekontor n2
+fylkesarbeidskontor n2
+felleskontor n2
+utdanningskontor n2
+forvaltningskontor n2
+opplæringskontor n2
+finnmarkskontor n2
+landbrukskontor n2
+museumskontor n2
+informasjonskontor n2
+tilsynskontor n2
+statskontor n2
+rettskontor n2
+navneobjekt n2
+rettssubjekt n2
+museumprosjekt n2
+fylkesplanprosjekt n2
+bygningsvernprosjekt n2
+velferdsprosjekt n2
+fellesprosjekt n2
+anskaffelsesprosjekt n2
+overgangsprosjekt n2
+utbyggingsprosjekt n2
+næringsutviklingsprosjekt n2
+likestillingsprosjekt n2
+utvekslingsprosjekt n2
+utredningsprosjekt n2
+restaureringsprosjekt n2
+investeringsprosjekt n2
+opplæringsprosjekt n2
+begynneropplæringsprosjekt n2
+næringsprosjekt n2
+barmarkskjøringsprosjekt n2
+satsingsprosjekt n2
+omsorgsprosjekt n2
+tiltaksprosjekt n2
+skjøtselsprosjekt n2
+museumsprosjekt n2
+kommunikasjonsprosjekt n2
+informasjonsprosjekt n2
+generasjonsprosjekt n2
+dokumentasjonsprosjekt n2
+reiselivsprosjekt n2
+næringslivsprosjekt n2
+næringsaspekt n2
+rettighetsaspekt n2
+sikkerhetsaspekt n2
+opplevelsesprodukt n2
+utmarksprodukt n2
+landbruksprodukt n2
+jordbruksprodukt n2
+tradisjonsprodukt n2
+pensjonsprodukt n2
+kvalitetsprodukt n2
+reiselivsprodukt n2
+næringssalt n2
+medikament n2
+bygdelagsarrangement n2
+ungdomsarrangement n2
+sikkerhetsarrangement n2
+idrettsarrangement n2
+innholdselement n2
+godtgjørelsesreglement n2
+adgangsreglement n2
+bevilgningsreglement n2
+opptaksreglement n2
+permisjonsreglement n2
+likestillingsdepartement n2
+undervisningsdepartement n2
+handelsdepartement n2
+forsvarsdepartement n2
+sjøfartsdepartement n2
+tolkningsmoment n2
+flertallsargument n2
+FN-dokument n2
+rammedokument n2
+søknadsdokument n2
+arbeidsdokument n2
+stiftelsesdokument n2
+grunnlagsdokument n2
+lovforslagsdokument n2
+oppdragsdokument n2
+tilleggsdokument n2
+styringsdokument n2
+høringsdokument n2
+sametingsdokument n2
+konsesjonsdokument n2
+utgiftsdokument n2
+strykeinstrument n2
+folkerettsinstrument n2
+uskreven a4
+kobber n1 ;
+omsorgsbonde mX
+gjerningsmann mX
+idrettsgalla
+utviklerrolle
+skriverrolle
