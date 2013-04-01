@@ -20,6 +20,7 @@ Multichar_Symbols
  +Prop +Fem +Mal +Plc +Org +Ani
  +CLB +PUNCT +HYPH +LEFT +RIGHT
  +Cmp+
+ +CmpS+
  +Qnt ! quantifier noen, begge
 
  +Nynorsk ! For dictionary use., Nynorsk only
@@ -99,6 +100,7 @@ LEXICON Root
 
 LEXICON R
 !#;
+ #+CmpS+:s##  NounRoot ;
  #+Cmp+:##  NounRoot ;
  #+Cmp%-:%-  NounRoot ;
 
