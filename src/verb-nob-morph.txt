@@ -225,6 +225,15 @@ burde+V+Inf:burde # ;
 burde+V+Ind+Prs:bør # ;
 burde+V+Ind+Prt:burde # ;
 
+LEXICON BY 
+by+V+Inf:by # ;
+by+V+Imp:by # ;
+by+V+Ind+Prs:byr # ;
+by+V+Ind+Prs+Pass:bys # ;
+by+V+Ind+Prt:bød # ;
+by+V+PrfPtc:bydd # ;
+by+V+PrsPtc:byende # ;
+
 LEXICON BYDE 
 byde+V+Inf:byde # ;
 byde+V+Imp:byd # ;

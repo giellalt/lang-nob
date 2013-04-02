@@ -4257,36 +4257,36 @@ sjeldem a5;
 mager a5; 
 dyster a5; 
 snever a5; 
-rik a1 
-myk a1 
-fylkeskommunal a1 
-konsekvent a1 
-operativ a1 
-representativ a1 
-attraktiv a1 
-yrkesaktiv a1 
-produktiv a1 
-uredd a2 
-demografisk a2 
-reindriftssamisk a2 
-sosioøkonomisk a2 
-karismatisk a2 
-traumatisk a2 
-genetisk a2 
-liberalistisk a2 
-humanistisk a2 
-tilfreds a2 
-utadvendt a2 
-ubesvart a2 
-trofast a2 
-trist a2 
-akutt a2 
-ryddig a3 
-voldelig a3 
-uvirkelig a3 
-tidsriktig a3 
-uønsket a3 
-uendret a3 
-uskreven a4 
-uventet a4 
-familiedrevet a4 
+rik a1 ;
+myk a1 ;
+fylkeskommunal a1 ;
+konsekvent a1 ;
+operativ a1 ;
+representativ a1 ;
+attraktiv a1 ;
+yrkesaktiv a1 ;
+produktiv a1 ;
+uredd a2 ;
+demografisk a2 ;
+reindriftssamisk a2 ;
+sosioøkonomisk a2 ;
+karismatisk a2 ;
+traumatisk a2 ;
+genetisk a2 ;
+liberalistisk a2 ;
+humanistisk a2 ;
+tilfreds a2 ;
+utadvendt a2 ;
+ubesvart a2 ;
+trofast a2 ;
+trist a2 ;
+akutt a2 ;
+ryddig a3 ;
+voldelig a3 ;
+uvirkelig a3 ;
+tidsriktig a3 ;
+uønsket a3 ;
+uendret a3 ;
+uskreven a4 ;
+uventet a4 ;
+familiedrevet a4 ;
