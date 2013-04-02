@@ -1,5 +1,5 @@
 rik a1 
-transformasjonskommando b1 
+transformasjonskommando m1 
 innlandsbygd f1 
 pensjonstrygd f1 
 omslagsside f1 
@@ -253,7 +253,6 @@ minoritetsbefolkning f1
 presedensvirkning f1 
 rettskraftsvirkning f1 
 rettsvirkning f1 
-bruker av forskning f1 
 skatteforskning f1 
 nordlandsforskning f1 
 landbruksforskning f1 
@@ -287,7 +286,6 @@ tilleggssetning f1
 rettssetning f1 
 tilleggsforutsetning f1 
 strandsoneforvaltning f1 
-Direktoratet for naturforvaltning f1 
 tilskuddsforvaltning f1 
 overskuddsforvaltning f1 
 velferdsforvaltning f1 
@@ -1127,7 +1125,6 @@ skolesanglærereksamen m1
 embetseksamen m1 
 universitetseksamen m1 
 nordlandsbanen m1 
-Den norsk-svenske reinbeitekonvensjonen m1 
 finnmarksvinteren m1 
 rettsvesen m1 
 hilsen m1 
@@ -2670,47 +2667,47 @@ kunnskapssenter n3b
 identitetssenter n3b 
 reindriftssenter n3b 
 oppvekstsenter n3b 
-identitetsstrid 
-vald 
-nyttårskveld 
-mangfold 
-sandstrand 
-næringsbistand 
-merd 
-likeverd 
-forhandlingsbord 
-leiejord 
+identitetsstrid m1
+vald n1
+nyttårskveld m1
+mangfold n1
+sandstrand f1X
+næringsbistand m1
+merd f1
+likeverd n1
+forhandlingsbord n1
+leiejord f1 
 oppdrettsfjord 
 samfunnsservice 
-dataside 
-høyreside 
-oppløpsside 
-aktivitetsside 
-utgiftsside 
-manntallskampanje 
-ungdomskampanje 
-pasientsikkerhetskampanje 
+dataside f1 
+høyreside f1 
+oppløpsside f1 
+aktivitetsside f1 
+utgiftsside f1 
+manntallskampanje f1 
+ungdomskampanje f1 
+pasientsikkerhetskampanje f1 
 sidestille 
 likestille 
-utviklerrolle 
-skriverrolle 
-veiledningsrolle 
-mannsrolle 
-samfunnsrolle 
-konsultasjonsrolle 
-departementsrolle 
+utviklerrolle f1 
+skriverrolle f1 
+veiledningsrolle f1 
+mannsrolle f1 
+samfunnsrolle f1 
+konsultasjonsrolle f1 
+departementsrolle f1 
 nulle 
 ole 
 forvaltningsregime 
-avtaleramme 
-referanseramme 
-garantiramme 
-planramme 
-kostnadsramme 
-investeringsramme 
-ressursramme 
-driftsramme 
-budsjettramme 
+avtaleramme f1 
+referanseramme f1 
+garantiramme f1 
+planramme f1 
+kostnadsramme f1 
+investeringsramme f1 
+ressursramme f1 
+driftsramme f1 
+budsjettramme f1 
 nedstemme 
 overkomme 
 opptjene 
@@ -2718,339 +2715,337 @@ marine
 diskusjonsemne 
 folkeminne 
 gravminne 
-oljekrone 
-helsekrone 
+oljekrone f1 
+helsekrone f1 
 strandsone 
 tiltakssone 
-tettstedskjerne 
+tettstedskjerne f1 
 utlåne 
 trope 
 skogstype 
-barmarksløype 
-frikjøpe 
-befare 
-oldeforeldre 
-initiere 
-ressurssentre 
-fangskulture 
-minoritetskulture 
-opplevelsesture 
-utredningsprosedyre 
-konsultasjonsprosedyre 
-informasjonsbrosjyre 
-fylkesvalgstyre 
-riksvalgstyre 
-fondsstyre 
-fylkesstyre 
-fellesstyre 
-forskningsstyre 
-allmenningsstyre 
-forvaltningsstyre 
-grunnforvaltningsstyre 
-utmarksstyre 
-fylkeslandbruksstyre 
-flertallsstyre 
-tremannsstyre 
-divisjonsstyre 
-universitetsstyre 
-driftsstyre 
-fylkesreindriftsstyre 
-idrettsstyre 
-fiskeutstyre 
-konferanseutstyre 
-undervisningsutstyre 
-lensmannsaffære 
-datalære 
-smedlære 
-fargelære 
-plantelære 
+barmarksløype f1 
+frikjøpe v2
+befare v2
+oldeforelder m3 
+initiere v2
+ressurssenter n3b
+fangstkultur m1
+minoritetskultur m1
+opplevelsestur m1
+utredningsprosedyre f1
+konsultasjonsprosedyre f1
+informasjonsbrosjyre f1
+fylkesvalgstyre n2 
+riksvalgstyre n2 
+fondsstyre n2 
+fylkesstyre n2 
+fellesstyre n2 
+forskningsstyre n2 
+allmenningsstyre n2 
+forvaltningsstyre n2 
+grunnforvaltningsstyre n2 
+utmarksstyre n2 
+fylkeslandbruksstyre n2 
+flertallsstyre n2 
+tremannsstyre n2 
+divisjonsstyre n2 
+universitetsstyre n2 
+driftsstyre n2 
+fylkesreindriftsstyre n2 
+idrettsstyre n2 
+fiskeutstyr n2 
+konferanseutstyr n2 
+undervisningsutstyr n2 
+lensmannsaffære f1 
+datalære f1 
+smedlære f1 
+fargelære f1 
+plantelære f1 
 opplære 
-yrkeslære 
-setningslære 
+yrkeslære f1 
+setningslære f1 
 overkjøre 
 påkjøre 
-bankkrise 
+bankkrise f1 
 bortvise 
-folkehelse 
-t-skjorte 
+folkehelse f1 
+t-skjorte f1 
 tomtefeste 
 ankerfeste 
-navneliste 
-fellesliste 
-regjeringsliste 
-medlemsliste 
-mannsliste 
-underskriftsliste 
-postliste 
-verdensarvliste 
-tyste 
-skrukork 
-demografisk 
-reindriftssamisk 
-sosioøkonomisk 
-karismatisk 
-traumatisk 
-genetisk 
-liberalistisk 
-humanistisk 
-handelsjordbruk 
-gårdssagbruk 
-myk 
-fastlandsareal 
-produksjonsareal 
-oppdrettsareal 
-skadepotensial 
-produksjonspotensial 
-vekstpotensial 
-fylkeskommunal 
-elevtal 
-stipendmiddel 
-legemiddel 
-jordskiftevirkemiddel 
-investeringsvirkemiddel 
-opplæringsvirkemiddel 
-prisvirkemiddel 
-avtalemiddel 
-sovemiddel 
-forskningmiddel 
-språkmiddel 
-risikomiddel 
-kulturmiddel 
-tilskuddsmiddel 
-utviklingsmiddel 
-språkutviklingsmiddel 
-næringsutviklingsmiddel 
-likestillingsmiddel 
-utredningsmiddel 
-forskningsmiddel 
-språkopplæringsmiddel 
-tiltaksmiddel 
-opposisjonsmiddel 
-statsmiddel 
-trafikksikkerhetsmiddel 
-idrettsmiddel 
-villmarkspanel 
-barnevernspanel 
-fengsel 
-innledningskapittel 
-slakteavfall 
-finnmarkshall 
-søknadsantall 
-mannsflertall 
-tilleggsmateriell 
-veiledningsmateriell 
-undervisningsmateriell 
-informasjonsmateriell 
-instruksjonsmateriell 
-datapersonell 
-sikkerhetspersonell 
-slottskapell 
-skattehull 
-ol 
-undervisningssykehjem 
-ungdomshjem 
-museum 
-nordområdemuseum 
-folkemuseum 
-kvenmuseum 
-forvaltningsmuseum 
-universitetsmuseum 
-minoritetsmedium 
-doktorgradsstudium 
-sammenlikningsstudium 
-befolkningsstudium 
-profesjonsstudium 
-universitetsstudium 
-misjonskollegium 
-juleevangelium 
-ulykkesscenarium 
-språkkriterium 
-søknadskriterium 
-vurderingskriterium 
-bosettingskriterium 
-definisjonskriterium 
-kvalitetskriterium 
-skogbruksministerium 
-minoritetspublikum 
-salgsvolum 
-utbyggingsvolum 
-produksjonsvolum 
-ruteproduksjonsvolum 
-skatteforum 
-samarbeidsforum 
-utviklingsforum 
-museumsforum 
-diskusjonsforum 
-trafikksikkerhetsforum 
-bygdesentrum 
-utdanningssentrum 
-arbeidslivssentrum 
-dunderlandsulykken 
-velferdsgrunn 
-statsgrunn 
-forvaltningsskjønn 
-vernesko 
-meningsfellesskap 
+navneliste f1 
+fellesliste f1 
+regjeringsliste f1 
+medlemsliste f1 
+mannsliste f1 
+underskriftsliste f1 
+postliste f1 
+verdensarvliste f1 
+tyste v1
+skrukork f1
+demografisk a2
+reindriftssamisk a2
+sosioøkonomisk a2
+karismatisk a2
+traumatisk a2
+genetisk a2
+liberalistisk a2
+humanistisk a2
+handelsjordbruk n1
+gårdssagbruk n1
+myk a1
+fastlandsareal n2b 
+produksjonsareal n2b 
+oppdrettsareal n2b 
+skadepotensial n2b 
+produksjonspotensial n2b 
+vekstpotensial n2b 
+fylkeskommunal a1 
+elevtall n1 
+stipendmiddel n3b
+legemiddel n3b 
+jordskiftevirkemiddel n3b 
+investeringsvirkemiddel n3b 
+opplæringsvirkemiddel n3b 
+prisvirkemiddel n3b 
+avtalemiddel n3b 
+sovemiddel n3b 
+forskningmiddel n3b 
+språkmiddel n3b 
+risikomiddel n3b 
+kulturmiddel n3b 
+tilskuddsmiddel n3b 
+utviklingsmiddel n3b 
+språkutviklingsmiddel n3b 
+næringsutviklingsmiddel n3b 
+likestillingsmiddel n3b 
+utredningsmiddel n3b 
+forskningsmiddel n3b 
+språkopplæringsmiddel n3b 
+tiltaksmiddel n3b 
+opposisjonsmiddel n3b 
+statsmiddel n3b 
+trafikksikkerhetsmiddel n3b 
+idrettsmiddel n3b  
+villmarkspanel n2 
+barnevernspanel n2 
+fengsel n3b 
+innledningskapittel n3b 
+slakteavfall n1
+finnmarkshall m1
+søknadsantall n1
+mannsflertall n1
+tilleggsmateriell n1
+veiledningsmateriell n1
+undervisningsmateriell n1
+informasjonsmateriell n1
+instruksjonsmateriell n1
+datapersonell n1
+sikkerhetspersonell n1
+slottskapell n2
+skattehull n2b
+undervisningssykehjem n1
+ungdomshjem n1
+museum n4 
+nordområdemuseum n4 
+folkemuseum n4 
+kvenmuseum n4 
+forvaltningsmuseum n4 
+universitetsmuseum n4 
+minoritetsmedium n4 
+doktorgradsstudium n4 
+sammenlikningsstudium n4 
+befolkningsstudium n4 
+profesjonsstudium n4 
+universitetsstudium n4 
+misjonskollegium n4 
+juleevangelium n4 
+ulykkesscenarium n4 
+språkkriterium n4 
+søknadskriterium n4 
+vurderingskriterium n4 
+bosettingskriterium n4 
+definisjonskriterium n4 
+kvalitetskriterium n4 
+skogbruksministerium n4 
+minoritetspublikum n1 
+salgsvolum n2
+utbyggingsvolum n2
+produksjonsvolum n2
+ruteproduksjonsvolum n2
+skatteforum n4b
+samarbeidsforum n4b
+utviklingsforum n4b
+museumsforum n4b
+diskusjonsforum n4b
+trafikksikkerhetsforum n4b
+bygdesentrum n1b
+utdanningssentrum n1b
+arbeidslivssentrum n1b
+dunderlandsulykke f1 
+velferdsgrunn m1
+statsgrunn m1
+forvaltningsskjønn n1
+vernesko miV
+meningsfellesskap m1 
 Helse-Norge prop 
-verdenstopp 
-fødselsnummer 
-organisasjonsnummer 
-barneteater 
-riksteater 
-redningshelikopter 
+verdenstopp m1
+fødselsnummer n3 
+organisasjonsnummer n3 
+barneteater n3 
+riksteater n3 
+redningshelikopter n3 
 hovedkvarter 
 utredningsrapporter 
-orkester 
+orkester n3 
 læremester 
-momsregister 
-tjenestemannsregister 
-stedsnavnsregister 
-kvalitetsregister 
-bosettingsmønster 
-bruksmønster 
-driftsmønster 
-kostmønster 
+momsregister n3 
+tjenestemannsregister n3 
+stedsnavnsregister n3 
+kvalitetsregister n3 
+bosettingsmønster n3 
+bruksmønster n3 
+driftsmønster n3 
+kostmønster n3 
 sykesøster 
-tinglysingsgebyr 
-rettsgebyr 
-slaktedyr 
-folkeeventyr 
+tinglysingsgebyr n2n
+rettsgebyr n2
+slaktedyr n1
+folkeeventyr n1
 klær 
-distriktsveterinær 
-utdanningssekretær 
+distriktsveterinær m1 
+utdanningssekretær m1 
 fôr 
 vinterfôr 
-identitetsmarkør 
-illustratør 
-markedsaktør 
-samarbeidsaktør 
-utviklingsaktør 
-næringsaktør 
-samfunnsaktør 
-reiselivsaktør 
-næringslivsaktør 
-skattedirektør 
-velferdsdirektør 
-fylkesdirektør 
-forskningsdirektør 
-utdanningsdirektør 
-kommunikasjonsdirektør 
-informasjonsdirektør 
-nyhetsdirektør 
+identitetsmarkør m1 
+illustratør m1 
+markedsaktør m1 
+samarbeidsaktør m1 
+utviklingsaktør m1 
+næringsaktør m1 
+samfunnsaktør m1 
+reiselivsaktør m1 
+næringslivsaktør m1 
+skattedirektør m1 
+velferdsdirektør m1 
+fylkesdirektør m1 
+forskningsdirektør m1 
+utdanningsdirektør m1 
+kommunikasjonsdirektør m1 
+informasjonsdirektør m1 
+nyhetsdirektør m1 
 glas 
 tilfreds 
 kulturgods 
 forvaltningsmuseenes 
 forvaltningskommunenes 
 diabetes 
-parentes 
+parentes m1 
 mistrives 
-slaktegris 
-utdanningskvalitetspris 
-yrkespraksis 
-konsultasjonspraksis 
+slaktegris m1 
+utdanningskvalitetspris m1 
+yrkespraksis m1 
+konsultasjonspraksis m1 
 høyreavis 
 hovedstadsavis 
 nyhetsavis 
 distriktsavis 
 grunnfondsbevis 
 riks 
-hjelpeinstans 
-godkjenningsinstans 
-høringsinstans 
-nedgangstendens 
-sameksistens 
+hjelpeinstans m1 
+godkjenningsinstans m1 
+høringsinstans m1 
+nedgangstendens m1 
+sameksistens m1 
 øreklips 
 sikkerhetstips 
 sektordepartementers 
-kronekurs 
+kronekurs m1 
 dansekurs 
 begynnerkurs 
 feltkurs 
 vevkurs 
-småskolekrets 
-stemmekrets 
-odelskrets 
-grendehus 
-universitetssykehus 
-ungdomshus 
-behandlingstypus 
-konsultasjonsstatus 
-observasjonsstatus 
-omgås 
-lærekandidat 
-doktorgradskandidat 
-naturforvaltningskandidat 
-tilleggsmandat 
-samfunnsmandat 
-distriktsmandat 
-statsrådssekretariat 
-plenumssekretariat 
-eksamenssekretariat 
-statssekretariat 
+småskolekrets m1 
+stemmekrets m1 
+odelskrets m1 
+grendehus n1
+universitetssykehus n1
+ungdomshus n1
+behandlingstypus m1 
+konsultasjonsstatus m1 
+observasjonsstatus m1 
+omgås v
+lærekandidat m1 
+doktorgradskandidat m1 
+naturforvaltningskandidat m1 
+tilleggsmandat n2 
+samfunnsmandat n2 
+distriktsmandat n2 
+statsrådssekretariat n2 
+plenumssekretariat n2 
+eksamenssekretariat n2 
+statssekretariat n2 
 radiosendeflat 
 julemat 
-statsinternat 
-hjelpeapparat 
-behandlingsapparat 
-forvaltningsapparat 
-regjeringsapparat 
-instruksjonsapparat 
-rettsapparat 
-velferdsdirektorat 
-utlendingsdirektorat 
-utdanningsdirektorat 
-forurensningsdirektorat 
-avgiftsdirektorat 
-skatteetat 
-fylkeskulturetat 
-velferdsetat 
-fellesetat 
-utviklingsetat 
-utdanningsetat 
-næringsetat 
-rådmannsetat 
-lensmannsetat 
-administrasjonsetat 
-statsetat 
-avgiftsetat 
-tolkningsresultat 
-forskningsresultat 
-eksamensresultat 
-revisjonsresultat 
-høringsnotat 
-venstrestat 
-utadvendt 
-uønsket 
-trafikksikkerhetsforumet 
-fylkesvåpenet 
-uendret 
-kompetansesenteret 
-opplæringskontoret 
-notfiske etter set 
-husstellkurset 
-spesialitet 
-kulturminnelokalitet 
-profesjonalitet 
-bostedskvalitet 
-abnormitet 
-humanitet 
-sanitet 
+statsinternat n2 
+hjelpeapparat n2 
+behandlingsapparat n2 
+forvaltningsapparat n2 
+regjeringsapparat n2 
+instruksjonsapparat n2 
+rettsapparat n2 
+velferdsdirektorat n2 
+utlendingsdirektorat n2 
+utdanningsdirektorat n2 
+forurensningsdirektorat n2 
+avgiftsdirektorat n2 
+skatteetat m1 
+fylkeskulturetat m1 
+velferdsetat m1 
+fellesetat m1 
+utviklingsetat m1 
+utdanningsetat m1 
+næringsetat m1 
+rådmannsetat m1 
+lensmannsetat m1 
+administrasjonsetat m1 
+statsetat m1 
+avgiftsetat m1 
+tolkningsresultat n2 
+forskningsresultat n2 
+eksamensresultat n2 
+revisjonsresultat n2 
+høringsnotat n2 
+venstrestat m1
+utadvendt a2
+uønsket a3
+trafikksikkerhetsforum n1
+fylkesvåpen n3
+uendret a3
+kompetansesenter n3
+opplæringskontor n3
+husstellkurs n1
+spesialitet m1
+kulturminnelokalitet m1 
+profesjonalitet m1 
+bostedskvalitet m1 
+abnormitet m1 
+humanitet m1 
+sanitet m1 
 uventet 
-majestet 
+majestet m1 
 familiedrevet 
-registreringsverktøyet 
+registreringsverktøy 
 lærekraft 
 kunnskapsløft 
 kalveslakt 
 feltslakt 
 minoritetsspråkpakt 
 minoritetsspråkspakt 
-lærekontrakt 
-opplæringskontrakt 
-samfunnskontrakt 
-funksjonskontrakt 
-markedskontakt 
+lærekontrakt m1 
+opplæringskontrakt m1 
+samfunnskontrakt m1 
+funksjonskontrakt m1 
+markedskontakt m1 
 lærerdistrikt 
 overgangsdistrikt 
 språkblandingsdistrikt 
@@ -3060,38 +3055,38 @@ utløpsdistrikt
 doktorgradsoversikt 
 tilstandsoversikt 
 framtidsutsikt 
-ytterkant 
-kalveprosent 
-tilskuddsprosent 
-tilslagsprosent 
-stillingsprosent 
-erstatningsprosent 
-interessent 
-velferdsprodusent 
-reiselivsprodusent 
-feltassistent 
+ytterkant m1 
+kalveprosent m1 
+tilskuddsprosent m1 
+tilslagsprosent m1 
+stillingsprosent m1 
+erstatningsprosent m1 
+interessent m1 
+velferdsprodusent m1 
+reiselivsprodusent m1 
+feltassistent m1 
 konsekvent 
-jubileumsmynt 
+jubileumsmynt m1 
 pågangsmot 
-resept 
+resept m1 
 utstillingskonsept 
-dyreart 
-skipsfart 
-luftfart 
-sjøfart 
+dyreart m1 
+skipsfart m1 
+luftfart m1 
+sjøfart m1 
 arealbrukskart 
 verdenskart 
 organisasjonskart 
 situasjonskart 
 reindriftskart 
-samarbeidspart 
-oppstart 
-planoppstart 
+samarbeidspart m1 
+oppstart m1 
+planoppstart m1 
 ubesvart 
-regjeringsekspert 
-rikskonsert 
-jubileumskonsert 
-institusjonskonsert 
+regjeringsekspert m1 
+rikskonsert m1 
+jubileumskonsert m1 
+institusjonskonsert m1 
 meldekort 
 adgangskort 
 ungdomskort 
@@ -3103,37 +3098,37 @@ uttalelsesfrist
 saksbehandlingsfrist 
 høringsfrist 
 trist 
-rettighetstvist 
-avtaletekst 
-salmetekst 
-originaltekst 
-bibeltekst 
-tilleggstekst 
-meldingstekst 
-forhandlingstekst 
-innledningstekst 
-vedtakstekst 
-proposisjonstekst 
-konvensjonstekst 
-resolusjonstekst 
-oppvekst 
-befolkningsvekst 
-manntallsvekst 
-lønnsvekst 
-produktivitetsvekst 
-utgiftsvekst 
-overenskomst 
-helsekost 
-pakkepost 
-rammepost 
-virkemiddelpost 
-papirpost 
-kostnadspost 
-tilskuddspost 
-salderingspost 
-investeringspost 
-ishavskyst 
-lærelyst 
+rettighetstvist m1 
+avtaletekst m1 
+salmetekst m1 
+originaltekst m1 
+bibeltekst m1 
+tilleggstekst m1 
+meldingstekst m1 
+forhandlingstekst m1 
+innledningstekst m1 
+vedtakstekst m1 
+proposisjonstekst m1 
+konvensjonstekst m1 
+resolusjonstekst m1 
+oppvekst m1 
+befolkningsvekst m1 
+manntallsvekst m1 
+lønnsvekst m1 
+produktivitetsvekst m1 
+utgiftsvekst m1 
+overenskomst m1 
+helsekost m1 
+pakkepost m1 
+rammepost m1 
+virkemiddelpost m1 
+papirpost m1 
+kostnadspost m1 
+tilskuddspost m1 
+salderingspost m1 
+investeringspost m1 
+ishavskyst m1 
+lærelyst m1 
 bistandsbudsjett 
 avdelingsbudsjett 
 investeringsbudsjett 
@@ -3146,18 +3141,18 @@ riksnett
 kommunikasjonsnett 
 sikkerhetsnett 
 postnett 
-ungdomsidrett 
-oppdrett 
-matfiskoppdrett 
+ungdomsidrett m1 
+oppdrett m1 
+matfiskoppdrett m1 
 tannsett 
 landsgjennomsnitt 
 tilleggsavsnitt 
 framskritt 
-inuitt 
+inuitt m1 
 mørkekott 
-innsatspott 
-reiselivspott 
-framtidsgutt 
+innsatspott m1 
+reiselivspott m1 
+framtidsgutt m1 
 akutt 
 tollkutt 
 budsjettkutt 
@@ -3169,7 +3164,7 @@ sauekjøtt
 telefonintervju 
 radiointervju 
 vitenskapsmusemu 
-skorpelav 
+skorpelav m1 
 arbeidskrav 
 gjeldskrav 
 utredningskrav 
@@ -3189,9 +3184,9 @@ likhetskrav
 kvalitetskrav 
 aktivitetskrav 
 rettskrav 
-småskoleelev 
-utvekslingselev 
-reindriftselev 
+småskoleelev m1 
+utvekslingselev m1 
+reindriftselev m1 
 tilskuddsbrev 
 oppdragsbrev 
 høringsbrev 
@@ -3225,12 +3220,12 @@ rettighetsperspektiv
 helhetsperspektiv 
 minoritetsperspektiv 
 rammedirektiv 
-produktiv 
-tilby 
-forby 
-hyttelandsby 
-kystby 
-småby 
-foregå 
-gjennomgå 
-tilrå 
+produktiv a1
+tilby:til BY 
+forby:for BY 
+hyttelandsby m1 
+kystby m1 
+småby m1 
+foregå:fore GÅ  
+gjennomgå:gjennom GÅ 
+tilrå:til RÅ  
