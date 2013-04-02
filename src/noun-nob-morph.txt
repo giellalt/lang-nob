@@ -27,7 +27,7 @@
 ! m1sg sg only
 ! m1b dam
 ! m1b fe, komite
-! miV sko pl. sko
+! m1V sko pl. sko
 ! m3V meter pl. meter
 ! KOLLEGA kollegaer, kolleger
 ! KONTO kontoer, konti
@@ -48,7 +48,7 @@
 ! n3c fe, feet
 ! n4b faktum pl fakta
 ! LEKSIKON leksikon, pl. leksika
-
+! MUSEUM museum, museet, museer
 
 
 
@@ -143,6 +143,11 @@ LEXICON BROR
  bror+N+Msc+Sg:bror 0-en ;
  bror+N+Msc+Pl:brødr e-ene ; 
  bror+N+Msc+Pl+Nynorsk:brør 0-ne ; 
+
+LEXICON BRODER
+ broder+N+Msc+Sg:broder 0-en ;
+ broder+N+Msc+Pl:brødr e-ene ; 
+ broder+N+Msc+Pl+Nynorsk:brør 0-ne ; 
 
 LEXICON FAR
  far+N+Msc+Sg:far 0-en ;
@@ -280,8 +285,13 @@ LEXICON n4b ! faktum
  +N:  R ;
 
 LEXICON LEKSIKON ! leksikon
- +N+Neu+Sg: 0-et ;
- +N+Neu+Pl:leksik a-aene ;
+ +N+Neu+Sg:on 0-et ;
+ +N+Neu+Pl: a-aene ;
+ +N:  R ;
+
+LEXICON MUSEUM
+ +N+Neu+Sg:um 0-et ;
+ +N+Neu+Pl: er-ene ;
  +N:  R ;
 
 LEXICON KLÆR

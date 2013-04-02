@@ -1,6 +1,11 @@
 rik a1 
 myk a1 
 fylkeskommunal a1 
+konsekvent a1 
+operativ a1 
+representativ a1 
+attraktiv a1 
+yrkesaktiv a1 
 produktiv a1 
 innlandsbygd f1 
 pensjonstrygd f1 
@@ -118,9 +123,12 @@ arealbruksinteresse f1
 havbruksinteresse f1 
 handelsinteresse f1 
 reindriftsinteresse f1 
+radiosendeflate f1 
 t-skjorte f1 
+taleliste f1 
 navneliste f1 
 fellesliste f1 
+avslagsliste f1 
 regjeringsliste f1 
 medlemsliste f1 
 mannsliste f1 
@@ -473,6 +481,10 @@ idrettsgren f1
 vinteridrettsgren f1 
 folkehjelp f1 
 selvhjelp f1 
+høyreavis f1 
+hovedstadsavis f1 
+nyhetsavis f1 
+distriktsavis f1 
 tidevannskraft f1 
 oppholdsutgift f1 
 fellesutgift f1 
@@ -500,6 +512,8 @@ eiendomsdrift f1
 byggeforskrift f1 
 verneforskrift f1 
 opplysningsskrift f1 
+minoritetsspråkpakt f1 
+minoritetsspråkspakt f1 
 leieinntekt f1 
 gjennomsnittsvekt f1 
 næringskonflikt f1 
@@ -521,6 +535,7 @@ konsultasjonsplikt f1
 konsesjonsplikt f1 
 revisjonsplikt f1 
 aktivitetsplikt f1 
+framtidsutsikt f1 
 trelast f1 
 departementskollega m1 
 idrettsgalla m1 
@@ -562,7 +577,9 @@ forvaltningsstandard m1
 revisjonsstandard m1 
 menneskerettighetsstandard m1 
 rettsstandard m1 
+oppdrettsfjord m1 
 forsøksgård m1 
+samfunnsservice m1 
 hede m1 
 idrettsglede m1 
 folkemengde m1 
@@ -664,15 +681,19 @@ reindriftsturisme m1
 nordlandsbane m1 
 kostvane m1 
 riksscene m1 
+marine m1 
 samarbeidsrutine m1 
 meldingsrutine m1 
 skogfinne m1 
 strikkepinne m1 
 strandsone m1 
+strandsone m1 
+tiltakssone m1 
 skattekommune m1 
 bostedskommune m1 
 innlandskommune m1 
 utviklingskommune m1 
+forvaltningskommune m1 
 forvaltningskommune m1 
 næringskommune m1 
 jordbrukskommune m1 
@@ -687,6 +708,8 @@ kommunikasjonsevne m1
 utlånsevne m1 
 inntektsevne m1 
 partsevne m1 
+trope m1 
+skogstype m1 
 infeksjonsfare m1 
 skattevare m1 
 dataprogramvare m1 
@@ -1424,6 +1447,7 @@ utdanningsdirektør m1
 kommunikasjonsdirektør m1 
 informasjonsdirektør m1 
 nyhetsdirektør m1 
+diabetes m1 
 parentes m1 
 slaktegris m1 
 utdanningskvalitetspris m1 
@@ -1675,6 +1699,7 @@ arbeidsrapport m1
 tilstandsrapport m1 
 fellesrapport m1 
 tilleggsrapport m1 
+utredningsrapport m1 
 forskningsrapport m1 
 kvartalsrapport m1 
 statsrapport m1 
@@ -1693,6 +1718,10 @@ skoleungdomsprest m1
 menighetsprest m1 
 hogst m1 
 vedhogst m1 
+merkefrist m1 
+uttalelsesfrist m1 
+saksbehandlingsfrist m1 
+høringsfrist m1 
 rettighetstvist m1 
 avtaletekst m1 
 salmetekst m1 
@@ -2226,15 +2255,29 @@ eksistensvilkår n1
 lønnsvilkår n1 
 oppvekstvilkår n1 
 toppår n1 
+fôr n1 
+vinterfôr n1 
 skatteoppgjør n1 
 jordbruksoppgjør n1 
 lønnsoppgjør n1 
 reindriftsoppgjør n1 
+glas n1 
+kulturgods n1 
+grunnfondsbevis n1 
+øreklips n1 
+sikkerhetstips n1 
+dansekurs n1 
 husstellkurs n1 
+begynnerkurs n1 
+feltkurs n1 
+vevkurs n1 
 sennagress n1 
 grendehus n1 
 universitetssykehus n1 
 ungdomshus n1 
+kunnskapsløft n1 
+kalveslakt n1 
+feltslakt n1 
 kokepunkt n1 
 tilbudstidspunkt n1 
 overdragelsestidspunkt n1 
@@ -2262,6 +2305,16 @@ jaktfelt n1
 kunstfelt n1 
 scenekunstfelt n1 
 storvilt n1 
+pågangsmot n1 
+arealbrukskart n1 
+verdenskart n1 
+organisasjonskart n1 
+situasjonskart n1 
+reindriftskart n1 
+meldekort n1 
+adgangskort n1 
+ungdomskort n1 
+postkort n1 
 utviklingsprogramutkast n1 
 meldingsutkast n1 
 forhandlingsutkast n1 
@@ -2271,6 +2324,53 @@ konvensjonsutkast n1
 resolusjonsutkast n1 
 riksvegnett n1 
 regionnett n1 
+overføringsnett n1 
+riksnett n1 
+kommunikasjonsnett n1 
+sikkerhetsnett n1 
+postnett n1 
+tannsett n1 
+landsgjennomsnitt n1 
+tilleggsavsnitt n1 
+framskritt n1 
+mørkekott n1 
+tollkutt n1 
+budsjettkutt n1 
+sauekjøtt n1 
+arbeidskrav n1 
+gjeldskrav n1 
+utredningskrav n1 
+medvirkningskrav n1 
+utdanningskrav n1 
+tilknytningskrav n1 
+opptakskrav n1 
+eksamenskrav n1 
+samfunnskrav n1 
+konsultasjonskrav n1 
+dokumentasjonskrav n1 
+funksjonskrav n1 
+reduksjonskrav n1 
+produksjonskrav n1 
+rettighetskrav n1 
+likhetskrav n1 
+kvalitetskrav n1 
+aktivitetskrav n1 
+rettskrav n1 
+tilskuddsbrev n1 
+oppdragsbrev n1 
+høringsbrev n1 
+revisjonsbrev n1 
+riksarkiv n1 
+statsarkiv n1 
+arbeidsliv n1 
+åndsliv n1 
+yrkesliv n1 
+friluftsliv n1 
+rammeskriv n1 
+svarskriv n1 
+eksplosiv n1 
+fellesskapsinitiativ n1 
+utviklingsalternativ n1 
 gulv n1 
 folkehelsebehov n1 
 samarbeidsbehov n1 
@@ -2294,6 +2394,7 @@ styreverv n1
 lederverv n1 
 tillitsverv n1 
 presidentverv n1 
+registreringsverktøy n1 
 surfe v1 
 utsmykke v1 
 gjenspeile v1 
@@ -2309,8 +2410,12 @@ traumatisk a2
 genetisk a2 
 liberalistisk a2 
 humanistisk a2 
+tilfreds a2 
 utadvendt a2 
+ubesvart a2 
 trofast a2 
+trist a2 
+akutt a2 
 feltleder m2 
 oppvekstleder m2 
 forlagsarbeider m2 
@@ -2527,6 +2632,10 @@ idrettsområde n2
 oppvekstområde n2 
 verdensarvområde n2 
 sportsdekke n2 
+forvaltningsregime n2 
+diskusjonsemne n2 
+folkeminne n2 
+gravminne n2 
 kostmønstergruppe n2 
 fylkesvalgstyre n2 
 riksvalgstyre n2 
@@ -2554,6 +2663,8 @@ tusenårsskifte n2
 uskifte n2 
 skatteløfte n2 
 100-metersbelte n2 
+tomtefeste n2 
+ankerfeste n2 
 flertallsdemokrati n2 
 rettsdemokrati n2 
 venstreparti n2 
@@ -2647,6 +2758,7 @@ innovasjonsseminar n2
 oppstartsseminar n2 
 næringslivsseminar n2 
 oppstartseminar n2 
+hovedkvarter n2 
 statspapir n2 
 skattekontor n2 
 regionskattekontor n2 
@@ -2724,6 +2836,12 @@ næringslivsprosjekt n2
 næringsaspekt n2 
 rettighetsaspekt n2 
 sikkerhetsaspekt n2 
+lærerdistrikt n2 
+overgangsdistrikt n2 
+språkblandingsdistrikt n2 
+tiltaksdistrikt n2 
+misjonsdistrikt n2 
+utløpsdistrikt n2 
 opplevelsesprodukt n2 
 utmarksprodukt n2 
 landbruksprodukt n2 
@@ -2744,6 +2862,7 @@ adgangsreglement n2
 bevilgningsreglement n2 
 opptaksreglement n2 
 permisjonsreglement n2 
+sektordepartement n2 
 likestillingsdepartement n2 
 undervisningsdepartement n2 
 handelsdepartement n2 
@@ -2768,12 +2887,36 @@ konsesjonsdokument n2
 utgiftsdokument n2 
 strykeinstrument n2 
 folkerettsinstrument n2 
+utstillingskonsept n2 
+bistandsbudsjett n2 
+avdelingsbudsjett n2 
+investeringsbudsjett n2 
+materiellinvesteringsbudsjett n2 
+sametingsbudsjett n2 
+forsvarsbudsjett n2 
+søknadsblankett n2 
+folkehelseinstitutt n2 
+samarbeidsinstitutt n2 
+forhandlingsinstitutt n2 
+forskningsinstitutt n2 
+telefonintervju n2 
+radiointervju n2 
 barmarkskjøretøy n2 
 politianmelde:politianmeld v2 
 nedfelle v2 
+sidestille v2 
+likestille v2 
+nulle v2 
+nedstemme v2 
+opptjene v2 
+utlåne v2 
 frikjøpe v2 
 befare v2 
 initiere v2 
+opplære v2 
+overkjøre v2 
+påkjøre v2 
+bortvise v2 
 betrygge:betrygg v2 
 ryddig a3 
 voldelig a3 
@@ -2781,6 +2924,7 @@ uvirkelig a3
 tidsriktig a3 
 uønsket a3 
 uendret a3 
+sykesøster f3 
 skatteregel m3 
 sakskostnadsregel m3 
 forbudsregel m3 
@@ -2811,6 +2955,7 @@ oldeforelder m3
 olderforelder m3 
 småbarnsforelder m3 
 statskalender m3 
+læremester m3 
 fylkesvåpen n3 
 fødselsnummer n3 
 organisasjonsnummer n3 
@@ -2829,6 +2974,8 @@ driftsmønster n3
 kostmønster n3 
 opplæringskontor n3 
 uskreven a4 
+uventet a4 
+familiedrevet a4 
 museum n4 
 nordområdemuseum n4 
 folkemuseum n4 
@@ -2854,6 +3001,7 @@ skogbruksministerium n4
 overskride:over SKRIDE 
 vektlegge:vekt LEGGE 
 skattlegge:skatt LEGGE 
+overkomme:over KOMME 
 frigi:fri GI 
 oppgi:opp GI 
 datum+N+Neu+Pl+Indef:data K 
@@ -2871,6 +3019,7 @@ urfolksbroder BRODER
 storebror:store BROR 
 vernesko miV 
 sandstrand f1X 
+lærekraft f1X 
 omsorgsbonde mX 
 gjerningsmann mX 
 rettsvitenskapsmann mX 
@@ -2919,6 +3068,20 @@ bygningsvernprosjekt n2b
 metodeutviklingsprosjekt n2b 
 eiendomsutviklingsprosjekt n2b 
 overgangsdistrikt n2b 
+tidsperspektiv n2b 
+deltakelsesperspektiv n2b 
+selvbestemmelsesperspektiv n2b 
+nasjonsbyggingsperspektiv n2b 
+utviklingsperspektiv n2b 
+arealforvaltningsperspektiv n2b 
+landbruksperspektiv n2b 
+landsdelsperspektiv n2b 
+mannsperspektiv n2b 
+generasjonsperspektiv n2b 
+rettighetsperspektiv n2b 
+helhetsperspektiv n2b 
+minoritetsperspektiv n2b 
+rammedirektiv n2b 
 næringskjøretøy n2b 
 driftskjøretøy n2b 
 valgdataverktøy n2b 
@@ -3051,181 +3214,17 @@ utviklingsforum n4b
 museumsforum n4b 
 diskusjonsforum n4b 
 trafikksikkerhetsforum n4b 
-oppdrettsfjord 
-samfunnsservice 
-sidestille 
-likestille 
-nulle 
-ole 
-forvaltningsregime 
-nedstemme 
-overkomme 
-opptjene 
-marine 
-diskusjonsemne 
-folkeminne 
-gravminne 
-strandsone 
-tiltakssone 
-utlåne 
-trope 
-skogstype 
-opplære 
-overkjøre 
-påkjøre 
-bortvise 
-tomtefeste 
-ankerfeste 
+julemat m1sg 
+forvaltningsmuseum 
+vitenskapsmuseum 
 tinglysingsgebyr n2n 
 Helse-Norge prop 
-hovedkvarter 
-utredningsrapporter 
-læremester 
-sykesøster 
-klær 
-fôr 
-vinterfôr 
-glas 
-tilfreds 
-kulturgods 
-forvaltningsmuseenes 
-forvaltningskommunenes 
-diabetes 
-mistrives 
-høyreavis 
-hovedstadsavis 
-nyhetsavis 
-distriktsavis 
-grunnfondsbevis 
-riks 
-øreklips 
-sikkerhetstips 
-sektordepartementers 
-dansekurs 
-begynnerkurs 
-feltkurs 
-vevkurs 
-radiosendeflat 
-julemat 
-uventet 
-familiedrevet 
-lærekraft 
-kunnskapsløft 
-kalveslakt 
-feltslakt 
-minoritetsspråkpakt 
-minoritetsspråkspakt 
-lærerdistrikt 
-overgangsdistrikt 
-språkblandingsdistrikt 
-tiltaksdistrikt 
-misjonsdistrikt 
-utløpsdistrikt 
-doktorgradsoversikt 
-tilstandsoversikt 
-framtidsutsikt 
-konsekvent 
-pågangsmot 
-utstillingskonsept 
-arealbrukskart 
-verdenskart 
-organisasjonskart 
-situasjonskart 
-reindriftskart 
-ubesvart 
-meldekort 
-adgangskort 
-ungdomskort 
-postkort 
-talelist 
-avslagslist 
-merkefrist 
-uttalelsesfrist 
-saksbehandlingsfrist 
-høringsfrist 
-trist 
-bistandsbudsjett 
-avdelingsbudsjett 
-investeringsbudsjett 
-materiellinvesteringsbudsjett 
-sametingsbudsjett 
-forsvarsbudsjett 
-søknadsblankett 
-overføringsnett 
-riksnett 
-kommunikasjonsnett 
-sikkerhetsnett 
-postnett 
-tannsett 
-landsgjennomsnitt 
-tilleggsavsnitt 
-framskritt 
-mørkekott 
-akutt 
-tollkutt 
-budsjettkutt 
-folkehelseinstitutt 
-samarbeidsinstitutt 
-forhandlingsinstitutt 
-forskningsinstitutt 
-sauekjøtt 
-telefonintervju 
-radiointervju 
-vitenskapsmusemu 
+klær+N+Neu+Pl+Indef:klær K 
+klær+N+Neu+Pl+Def:klærne K 
+mistrives vs 
+doktorgradsoversikt f1
+tilstandsoversikt f1
 omgås v 
-arbeidskrav 
-gjeldskrav 
-utredningskrav 
-medvirkningskrav 
-utdanningskrav 
-tilknytningskrav 
-opptakskrav 
-eksamenskrav 
-samfunnskrav 
-konsultasjonskrav 
-dokumentasjonskrav 
-funksjonskrav 
-reduksjonskrav 
-produksjonskrav 
-rettighetskrav 
-likhetskrav 
-kvalitetskrav 
-aktivitetskrav 
-rettskrav 
-tilskuddsbrev 
-oppdragsbrev 
-høringsbrev 
-revisjonsbrev 
-riksarkiv 
-statsarkiv 
-arbeidsliv 
-åndsliv 
-yrkesliv 
-friluftsliv 
-rammeskriv 
-svarskriv 
-eksplosiv 
-fellesskapsinitiativ 
-utviklingsalternativ 
-operativ 
-representativ 
-attraktiv 
-yrkesaktiv 
-tidsperspektiv 
-deltakelsesperspektiv 
-selvbestemmelsesperspektiv 
-nasjonsbyggingsperspektiv 
-utviklingsperspektiv 
-arealforvaltningsperspektiv 
-landbruksperspektiv 
-landsdelsperspektiv 
-mannsperspektiv 
-generasjonsperspektiv 
-rettighetsperspektiv 
-helhetsperspektiv 
-minoritetsperspektiv 
-rammedirektiv 
-registreringsverktøy 
 foregå:fore GÅ 
 gjennomgå:gjennom GÅ 
 tilrå:til RÅ 
