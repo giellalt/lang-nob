@@ -1,7 +1,7 @@
 NRL 
-pdf-skjema 
-dilemma 
-Astma 
+pdf-skjema n2
+dilemma n2
+astma n2
 humaniora 
 Resepta 
 målretta 
@@ -11,18 +11,18 @@ innløsningstilskudd
 Punktlighed 
 Samvittighed 
 bygdearbeidsmarked 
-ståsted 
-havnesamarbeid 
-kapabilitetssamarbeid 
-Verneplanarbeid 
-verneplanarbeid 
-merarbeid 
-dokumetasjonsarbeid 
+ståsted n2
+havnesamarbeid n2
+kapabilitetssamarbeid n2
+Verneplanarbeid n2
+verneplanarbeid n2
+merarbeid n2
+dokumetasjonsarbeid n2
 husdyrhald 
 mediemangfold 
 geitehold 
 selvhushold 
-Rehabilieringsstipend 
+Rehabilieringsstipend n2
 vevgrind 
 duodjiord 
 TV2-tilbud 
@@ -45,7 +45,7 @@ velfungerende
 uengasjerende 
 oppegående 
 framskynde 
-kulturgode 
+kulturgode n2
 ferde 
 kvoteråde 
 utelekeområde 
@@ -60,7 +60,7 @@ egenevalueringe
 duodjinæringe 
 mapuche 
 embetsstudie 
-Feltstudie 
+Feltstudie n2
 TV-serie 
 rekkjefølgje 
 kilovolt-linje 
@@ -80,15 +80,15 @@ omsorgssake
 medlemskapssake 
 overgrepssake 
 konfliktsake 
-skrivestykke 
+skrivestykke n2
 bærebjelke 
-heimeyrke 
-eneyrke 
+heimeyrke n2
+eneyrke n2
 hjemmefiske 
 Elvefiske 
-foreldreønske 
+foreldreønske n2
 hovedbruke 
-genmateriale 
+genmateriale n2
 klageregle 
 permitteringsregle 
 kubjelle 
@@ -97,11 +97,11 @@ sammenstille
 blottstille 
 oppdragerrolle 
 forveksle 
-verneregime 
+verneregime n2
 tidsramme 
 inntektsramme 
-melkegjemme 
-kjøttgjemme 
+melkegjemme n2
+kjøttgjemme n2
 foreldrestemme 
 forhåndsstemme 
 hovedutkomme 
@@ -129,7 +129,7 @@ kunnskapssektore
 framtre 
 mediestrukture 
 majoritetskulture 
-siidastyre 
+siidastyre n2
 overstyre 
 maskinlære 
 bøyningslære 
@@ -137,7 +137,7 @@ ernæringslære
 livnære 
 rengjøre 
 oppkjøre 
-handsnøre 
+handsnøre n2
 opprøre 
 finanskrise 
 hjemmelekse 
@@ -217,7 +217,7 @@ driftsmessig
 livskraftig 
 medievalg 
 bispevalg 
-havnebasseng 
+havnebasseng n2
 konsekvensutreding 
 ABM-melding 
 rovviltmelding 
@@ -332,7 +332,7 @@ framskriving
 maktforskyving 
 myndighetsutøving 
 koftesying 
-neverkorg 
+neverkorg n2
 eldreomsorg 
 flytekai 
 Hofteleddsdysplasi 
@@ -453,27 +453,27 @@ personalspørsmål
 polarspørsmål 
 kulturrsørsmål 
 lettøl 
-eID-program 
-EU-program 
-Bachelors-program 
-leseprogram 
-dokumentarprogram 
-masterprogram 
-bachelorprogram 
-digitaliseringsprogram 
-e-læringsprogram 
-oversettingsprogram 
-kompetansehevingsprogram 
-demensprogram 
-Mastersprogram 
-aktualitetsprogram 
-kampflyprogram 
-rovvilt-problem 
-avgresningsproblem 
-EU-system 
-flyttesystem 
-orddatabanksystem 
-innrapporteringssystem 
+eID-program n2
+EU-program n2
+Bachelors-program n2
+leseprogram n2
+dokumentarprogram n2
+masterprogram n2
+bachelorprogram n2
+digitaliseringsprogram n2
+e-læringsprogram n2
+oversettingsprogram n2
+kompetansehevingsprogram n2
+demensprogram n2
+Mastersprogram n2
+aktualitetsprogram n2
+kampflyprogram n2
+rovvilt-problem n2
+avgresningsproblem n2
+EU-system n2
+flyttesystem n2
+orddatabanksystem n2
+innrapporteringssystem n2
 handlernom 
 meddelsom 
 drifts-form 
