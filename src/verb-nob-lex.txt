@@ -1374,7 +1374,6 @@ påberope v2 ;
 påføre v2 ;
 på GRIPE ;
 påhvile v2 ;
-påhøre v2 ;
 påkalle v2 ;
 påkjære v2 ;
 påløpe v2 ;
