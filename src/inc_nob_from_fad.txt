@@ -1,164 +1,8 @@
-NRL 
-humaniora 
-Resepta 
-målretta a3
-ubebodd a2
-Punktlighed 
-Samvittighed 
-urfolksmedarbeide 
-læremiddelsamarbeide 
-sjølbilde n2
-motbilde n2
-naturresursutnyttjande 
-villaksebestande 
-utdanningsskadelidende a3
-Kostnadssenkende a3
-velfungerende a3
-uengasjerende a3
-oppegående a3
-framskynde v1
-ferde mX
-kvoteråde 
-utelekeområde n2
-personalområde n2
-cyberområde n2
-mellage 
-kunnskapsgrunnlage 
-ervervsgrunnlage 
-jernlage 
-hovedendringe 
-egenevalueringe 
-duodjinæringe 
-mapuche 
-embetsstudie 
-TV-serie m1
-TS-sake 
-EU-sake 
-krabbesake 
-lotterisake 
-kulturvernsake 
-bistandssake 
-innsigelsessake 
-opplæringssake 
-omsorgssake 
-medlemskapssake 
-overgrepssake 
-konfliktsake 
-bærebjelke m1
-hjemmefiske n1sg
-Elvefiske n1sg
-hovedbruke 
-klageregle 
-permitteringsregle 
-kubjelle f1
-ferdigstille v2
-sammenstille v2
-blottstille v2
-oppdragerrolle f1
-forveksle v1
-andrespråksplane 
-Kostdataene 
-Kompetansehevingstiltakene 
-Tromsøundersøkelsene 
-Språkmotiveringsstipend-Anne 
-umoderne a3
-handleevne f1
-tåleevne f1
-dømmeevne f1
-overlevelsesevne f1
-kalvetape 
-kuppe v1
-heimeyrke-vare m1
-kjønnsrelatere v2
-høgskolesektore 
-matvaresektore 
-biblioteksektore 
-læremiddelsektore 
-opplysningssektore 
-petroleumssektore 
-kunnskapssektore 
 fram TRE 
+mapuche 
+Språkmotiveringsstipend-Anne 
 mediestrukture 
 majoritetskulture 
-overstyre v2
-livnære v2
-ren GJØRE
-oppkjøre v2
-opprøre v2
-framvokse v2
-ostemasse m1
-skillsmisse f1
-forpaktingsavgifte 
-oppløfte v1
-hovedpredikante 
-taste v1
-kveste v1
-innspillsmøte n2
-Bacheloroppgave f1
-bacheloroppgave f1
-fra SKRIVE
-offentleglove 
-innlandsfisklove 
-tolkeprøve f1
-rekneprøve f1
-gjenstridig a2
-ligegyldig a2
-ukristelig a2
-yrkesfaglig a2
-reindriftsfaglig a2
-firespråklig a2
-trespråklig a2
-enspråklig a2
-flerspråklig a2
-minoritetsspråklig a2
-uttallig a2
-uforsonlig a2
-ikke-statlig a2
-mellomstatlig a2
-mindreårig a2
-treårig a2
-helårig a2
-toårig a2
-flerårig a2
-halvårig a2
-driftsmessig a2
-livskraftig a2
-eldreomsorg m1sg
-hofteleddsdysplasi m1
-abc-bok f1X
-Matmerk 
-innenlandsk a2
-spesialpedagogisk a2
-epidemiologisk a2
-morfofonologisk a2
-landbruksøkonomisk a2
-fleretnisk a2
-kymrisk a2
-kontradiktorisk a2
-krigshistorisk a2
-distriktspsykiatrisk a2
-frisisk a2
-vepsisk a2
-norsk-russisk a2
-konkurransepolitisk a2
-personalpolitisk a2
-kulturpolitisk a2
-likestillingspolitisk a2
-landbrukspolitisk a2
-jordbrukspolitisk a2
-didaktisk a2
-subarktisk a2
-diagnostisk a2
-klokkerdansk a2
-læstadiansk a2
-trygdebruk m1sg
-mediebruk m1sg
-psykososial a1
-minimal a1
-interkommunal a1
-føderal a1
-interdepartemental a1
-mangedobbel a1
 middel 
 TS-middel 
 EU-middel 
@@ -179,189 +23,66 @@ strukturvirkemidel
 stimuleringsmidel 
 grasrotmidel 
 pomorhandel 
-grasrotandel 
 verneregel 
 kjøreregel 
 froskeyngel 
 polarsirkel 
 innevarsel 
 genressurskapittel 
-ikke-kommersiell 
-uformell 
-urasjonell 
-utradisjonell 
-multifunksjonell 
 tunell 
-trekulturell 
-sosiokulturell 
-samvittighetsfull 
-helgefyll 
-lettøl 
 handlernom 
-meddelsom 
-drifts-form 
-verneform 
-ervervsform 
-multimedium 
-underholdingsmedium 
-masterstudium 
-helårsstudium 
-satellittstudium 
-kriterium 
-målekriterium 
-tildelingskriterium 
-oppfølgningskriterium 
 TS-forum 
-flyttestrøm 
-uopdragen 
-Strukturmeldningen 
-Rovviltforvaltningen 
-homogen 
-heterogen 
 IT-bransjen 
-Flystrømmen 
-NAV-reformen 
-Røyketelefonen 
-Rovviltsituasjonen 
-TV-dokumentaren 
-Siidastrukturen 
-Foreldrekonferansen 
-Skriftligheten 
-EU-rapporten 
-Søketjenesten 
-Hjemmetjenesten 
 doven 
-Tvisteloven 
-Tolkeprøven 
 folkesagn 
-Tidligpensjonsordningn 
 heimehamn 
-rødgrønn 
-kystson 
 Ovttas.no 
-forutsigbar 
-uidentifiserbar 
-ikke-fornybar 
-cirkumpolar 
 føre-var 
 levealder 
 mannsalder 
-delelager 
-Navneforviklinger 
-Akkrediteringskriterier 
-polarsaker 
-treffsikker 
-funksjonssikker 
-sparemidler 
-Stimuleringsmidler 
-investeringsmidler 
-Rekrutteringsmidler 
-dokumentasjonsmidler 
 læremiddelutvikler 
-duodjiorganisasjoner 
-Laksekonsesjoner 
-bølgedemper 
-herredskasserer 
-Verneprosesser 
-elsertifikater 
-lærerkrefter 
-Renteutifter 
-Lærlingekontrakter 
-Språkprosjekter 
-Termprosjekter 
-Litteraturprosjekter 
-Metodeutviklingsprosjekter 
-kalvevekter 
-kumelkekvoter 
-medietjenester 
-venteregister 
-duodjiregister 
-stadnamnregister 
-kjøremønster 
-Kjøreruter 
-Produksjonsmiljøer 
-konsulær 
-kystnær 
-humanitær 
-læremiddeldatabas 
-kjønnsbalans 
-Duodjinæringens 
-demens 
-nådeløs 
-grenseløs 
-kompromissløs 
-innmat 
-kondensat 
-utdanningsskadelidt 
-Spillemiddeltilskuddet 
-Klatrebildet 
-Tv-tilbudet 
-Tekstilduodjifaget 
-tveegget 
-Småtinget 
-Rovviltforliket 
-Embetsspråket 
-hørselshemmet 
-langermet 
-velordnet 
-ugrunnet 
-kalvetapet 
-rampet 
-multihandikappet 
-Flyttmønsteret 
-Prestekurset 
-Hovedfokuset 
-Søkeresultatet 
-Bidjovaggeprojektet 
-Økonomiaspektet 
-målrettet 
-yrkesrettet 
-selvvalgt 
-fåfengt 
-avlingssvikt 
-kommunikasjonssvikt 
-oppmerksomhetssvikt 
-Næringsfordelt 
-antioksidant 
-signifikant 
-intelligent 
-cand.scient 
-kompetent 
-framsynt 
 likeart 
-uavklart 
-uspesifisert 
-ubalansert 
-unyansert 
-russekort 
-løvtrehugst 
-leselist 
-klasselist 
-høringslist 
-robust 
-sammensatt 
-lesebrett 
-eksplisitt 
-nedslått 
-høyslått 
-Markomeannu 
-ekspansiv 
-suksessiv 
-eksklusiv 
-kumulativ 
-normativ 
-korporativ 
-primitiv 
-interaktiv 
-ineffektiv 
-objektiv 
-subjektiv 
-konstruktiv 
-djerv 
-fax 
-mørkeblå 
-skamslå 
-frarå 
+psykososial a1
+minimal a1
+interkommunal a1
+føderal a1
+interdepartemental a1
+mangedobbel a1
+ikke-kommersiell a1
+uformell a1
+urasjonell a1
+utradisjonell a1
+multifunksjonell a1
+trekulturell a1
+sosiokulturell a1
+samvittighetsfull a1
+meddelsom a1
+homogen a1
+heterogen a1
+rødgrønn a1
+forutsigbar a1
+uidentifiserbar a1
+ikke-fornybar a1
+cirkumpolar a1
+konsulær a1
+kystnær a1
+humanitær a1
+nådeløs a1
+grenseløs a1
+kompromissløs a1
+ekspansiv a1
+suksessiv a1
+eksklusiv a1
+kumulativ a1
+normativ a1
+korporativ a1
+primitiv a1
+interaktiv a1
+ineffektiv a1
+objektiv a1
+subjektiv a1
+konstruktiv a1
+djerv a1
 vevgrind f1
 web-side f1
 webside f1
@@ -371,11 +92,17 @@ husstellinje f1
 tollinje f1
 tømrerlinje f1
 vevlinje f1
+kubjelle f1
+oppdragerrolle f1
 tidsramme f1
 inntektsramme f1
 foreldrestemme f1
 forhåndsstemme f1
 hovedutkomme f1
+handleevne f1
+tåleevne f1
+dømmeevne f1
+overlevelsesevne f1
 maskinlære f1
 bøyningslære f1
 ernæringslære f1
@@ -388,6 +115,7 @@ siidakasse f1
 e-mail-adresse f1
 verneinteresse f1
 høstingsinteresse f1
+skillsmisse f1
 lånerente f1
 krabbekvote f1
 fedrekvote f1
@@ -404,6 +132,10 @@ venteliste f1
 foreldrestøtte f1
 eksportstøtte f1
 kjørerute f1
+Bacheloroppgave f1
+bacheloroppgave f1
+tolkeprøve f1
+rekneprøve f1
 konsekvensutreding f1
 ABM-melding f1
 rovviltmelding f1
@@ -524,6 +256,9 @@ personalsak f1
 verneplansak f1
 flytteårsak f1
 utenrikssak f1
+drifts-form f1
+verneform f1
+ervervsform f1
 ventelønn f1
 etterlønn f1
 permitteringslønn f1
@@ -626,8 +361,10 @@ høstingsmetode m1
 foreldrepenge m1
 dyretragedie m1
 eksportsubsidie m1
+TV-serie m1
 mediehistorie m1
 polarhistorie m1
+bærebjelke m1
 kvænsktale m1
 duodjiavtale m1
 frihandelsavtale m1
@@ -642,6 +379,7 @@ lesevane m1
 levevane m1
 skrivevane m1
 prototype m1
+heimeyrke-vare m1
 geodatabase m1
 fripolise m1
 løsrivelsesbevegelse m1
@@ -666,6 +404,7 @@ IKT-kompetanse m1
 skrivekompetanse m1
 duodjikompetanse m1
 dobbeltkompetanse m1
+ostemasse m1
 regnemåte m1
 høstingsmåte m1
 fristdag m1
@@ -685,6 +424,7 @@ tsunami m1
 diakoni m1
 genterapi m1
 vernekategori m1
+hofteleddsdysplasi m1
 lesemetodikk m1
 kjøreteknikk m1
 mobbeproblematikk m1
@@ -703,6 +443,7 @@ bygdeorginal m1
 sovesal m1
 gymsal m1
 fiberkabel m1
+grasrotandel m1
 personalprofil m1
 datahall m1
 tvisteløsningsmodell m1
@@ -760,6 +501,7 @@ fiberinfrastruktur m1
 logistikkstruktur m1
 motkultur m1
 finansingspraksis m1
+demens m1
 eksistens m1
 logistikkressurs m1
 personalressurs m1
@@ -791,6 +533,7 @@ effektivitet m1
 prostatakreft m1
 gulrotbit m1
 sosiolekt m1
+antioksidant m1
 neirespondent m1
 horisont m1
 mynt m1
@@ -820,6 +563,8 @@ kvartsitt m1
 læremiddelpott m1
 smågutt m1
 stemmeseddelkonvoutt m1
+høyslått m1
+fax m1
 bindeledd n1
 innløsningstilskudd n1
 bygdearbeidsmarked n1
@@ -888,6 +633,7 @@ vernespørsmål n1
 personalspørsmål n1
 polarspørsmål n1
 kulturrsørsmål n1
+lettøl n1
 mediakonsern n1
 Samlenavn n1
 domenenavn n1
@@ -916,6 +662,9 @@ sykurs n1
 nålehus n1
 mediefokus n1
 pdf-format n1
+kondensat n1
+russekort n1
+lesebrett n1
 Reindriftsnytt n1
 vernekrav n1
 minstekrav n1
@@ -926,6 +675,76 @@ jordskjelv n1
 vernebehov n1
 kompetansehevingsbehov n1
 husstøv n1
+framskynde v1
+forveksle v1
+kuppe v1
+oppløfte v1
+taste v1
+kveste v1
+ubebodd a2
+gjenstridig a2
+ligegyldig a2
+ukristelig a2
+yrkesfaglig a2
+reindriftsfaglig a2
+firespråklig a2
+trespråklig a2
+enspråklig a2
+flerspråklig a2
+minoritetsspråklig a2
+uttallig a2
+uforsonlig a2
+ikke-statlig a2
+mellomstatlig a2
+mindreårig a2
+treårig a2
+helårig a2
+toårig a2
+flerårig a2
+halvårig a2
+driftsmessig a2
+livskraftig a2
+innenlandsk a2
+spesialpedagogisk a2
+epidemiologisk a2
+morfofonologisk a2
+landbruksøkonomisk a2
+fleretnisk a2
+kymrisk a2
+kontradiktorisk a2
+krigshistorisk a2
+distriktspsykiatrisk a2
+frisisk a2
+vepsisk a2
+norsk-russisk a2
+konkurransepolitisk a2
+personalpolitisk a2
+kulturpolitisk a2
+likestillingspolitisk a2
+landbrukspolitisk a2
+jordbrukspolitisk a2
+didaktisk a2
+subarktisk a2
+diagnostisk a2
+klokkerdansk a2
+læstadiansk a2
+selvvalgt a2
+fåfengt a2
+Næringsfordelt a2
+signifikant a2
+intelligent a2
+kompetent a2
+framsynt a2
+uavklart a2
+uspesifisert a2
+ubalansert a2
+unyansert a2
+robust a2
+sammensatt a2
+eksplisitt a2
+nedslått a2
+bølgedemper m2
+herredskasserer m2
 pdf-skjema n2
 dilemma n2
 astma n2
@@ -937,7 +756,12 @@ verneplanarbeid n2
 merarbeid n2
 dokumetasjonsarbeid n2
 Rehabilieringsstipend n2
+sjølbilde n2
+motbilde n2
 kulturgode n2
+utelekeområde n2
+personalområde n2
+cyberområde n2
 Feltstudie n2
 skrivestykke n2
 heimeyrke n2
@@ -949,6 +773,7 @@ melkegjemme n2
 kjøttgjemme n2
 siidastyre n2
 handsnøre n2
+innspillsmøte n2
 havnebasseng n2
 neverkorg n2
 eID-program n2
@@ -1016,3 +841,66 @@ høstingsnivå n2
 embetsnivå n2
 hjemmemiljø n2
 duodjimiljø n2
+ferdigstille v2
+sammenstille v2
+blottstille v2
+kjønnsrelatere v2
+overstyre v2
+livnære v2
+oppkjøre v2
+opprøre v2
+framvokse v2
+målretta a3
+utdanningsskadelidende a3
+Kostnadssenkende a3
+velfungerende a3
+uengasjerende a3
+oppegående a3
+umoderne a3
+tveegget a4
+hørselshemmet a4
+velordnet a4
+ugrunnet a4
+rampet a4
+multihandikappet a4
+målrettet a4
+yrkesrettet a4
+treffsikker a5
+funksjonssikker a5
+ren GJØRE
+fra SKRIVE
+multimedium MUSEUM
+underholdingsmedium MUSEUM
+masterstudium MUSEUM
+helårsstudium MUSEUM
+satellittstudium MUSEUM
+kriterium MUSEUM
+målekriterium MUSEUM
+tildelingskriterium MUSEUM
+oppfølgningskriterium MUSEUM
+abc-bok f1X
+NRL mX
+humaniora mX
+ferde mX
+cand.scient mX
+flyttestrøm m1b
+delelager n3b
+venteregister n3b
+duodjiregister n3b
+stadnamnregister n3b
+kjøremønster n3b
+helgefyll f1sg
+eldreomsorg m1sg
+trygdebruk m1sg
+mediebruk m1sg
+innmat m1sg
+avlingssvikt m1sg
+kommunikasjonssvikt m1sg
+oppmerksomhetssvikt m1sg
+løvtrehugst m1sg
+hjemmefiske n1sg
+Elvefiske n1sg
+Markomeannu prop
+mørkeblå av
+skam SLÅ
+fra RÅ
