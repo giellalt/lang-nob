@@ -1,40 +1,12 @@
 NRL 
-pdf-skjema n2
-dilemma n2
-astma n2
 humaniora 
 Resepta 
 målretta 
-bindeledd 
 ubebodd 
-innløsningstilskudd 
 Punktlighed 
 Samvittighed 
-bygdearbeidsmarked 
-ståsted n2
-havnesamarbeid n2
-kapabilitetssamarbeid n2
-Verneplanarbeid n2
-verneplanarbeid n2
-merarbeid n2
-dokumetasjonsarbeid n2
-husdyrhald 
-mediemangfold 
-geitehold 
-selvhushold 
-Rehabilieringsstipend n2
-vevgrind 
-duodjiord 
-TV2-tilbud 
-Tv-tilbud 
-hjelpetilbud 
-mentortilbud 
-spesialisttilbud 
-Norgesombud 
 urfolksmedarbeide 
 læremiddelsamarbeide 
-web-side 
-webside 
 sjølbilde 
 motbilde 
 naturresursutnyttjande 
@@ -45,7 +17,6 @@ velfungerende
 uengasjerende 
 oppegående 
 framskynde 
-kulturgode n2
 ferde 
 kvoteråde 
 utelekeområde 
@@ -60,14 +31,7 @@ egenevalueringe
 duodjinæringe 
 mapuche 
 embetsstudie 
-Feltstudie n2
 TV-serie 
-rekkjefølgje 
-kilovolt-linje 
-husstellinje 
-tollinje 
-tømrerlinje 
-vevlinje 
 TS-sake 
 EU-sake 
 krabbesake 
@@ -80,15 +44,10 @@ omsorgssake
 medlemskapssake 
 overgrepssake 
 konfliktsake 
-skrivestykke n2
 bærebjelke 
-heimeyrke n2
-eneyrke n2
 hjemmefiske 
 Elvefiske 
-foreldreønske n2
 hovedbruke 
-genmateriale n2
 klageregle 
 permitteringsregle 
 kubjelle 
@@ -97,14 +56,6 @@ sammenstille
 blottstille 
 oppdragerrolle 
 forveksle 
-verneregime n2
-tidsramme 
-inntektsramme 
-melkegjemme n2
-kjøttgjemme n2
-foreldrestemme 
-forhåndsstemme 
-hovedutkomme 
 andrespråksplane 
 Kostdataene 
 Kompetansehevingstiltakene 
@@ -129,49 +80,19 @@ kunnskapssektore
 framtre 
 mediestrukture 
 majoritetskulture 
-siidastyre n2
 overstyre 
-maskinlære 
-bøyningslære 
-ernæringslære 
 livnære 
 rengjøre 
 oppkjøre 
-handsnøre n2
 opprøre 
-finanskrise 
-hjemmelekse 
 framvokse 
-mødrehelse 
-dyrehelse 
-Siidakasse 
-siidakasse 
 ostemasse 
-e-mail-adresse 
-verneinteresse 
-høstingsinteresse 
 skillsmisse 
 forpaktingsavgifte 
 oppløfte 
 hovedpredikante 
-lånerente 
-krabbekvote 
-fedrekvote 
-kumelkkvote 
 taste 
-nødmeldetjeneste 
-hundetjeneste 
-dykketjeneste 
-tolketjeneste 
-hjelpetjeneste 
-brøytetjeneste 
-oversettingstjeneste 
 kveste 
-duodji-ordliste 
-venteliste 
-foreldrestøtte 
-eksportstøtte 
-kjørerute 
 innspillsmøte 
 Bacheloroppgave 
 bacheloroppgave 
@@ -180,19 +101,6 @@ offentleglove
 innlandsfisklove 
 tolkeprøve 
 rekneprøve 
-lærefag 
-duodjifag 
-håndstrikkeduodjifag 
-pelsduodjifag 
-faktagrunnlag 
-rektrutteringsgrunnlag 
-tv-innslag 
-medieoppslag 
-Samleforslag 
-skattefradrag 
-finnefondstillegg 
-havneanlegg 
-vannrensenanlegg 
 gjenstridig 
 ligegyldig 
 ukristelig 
@@ -215,154 +123,11 @@ flerårig
 halvårig 
 driftsmessig 
 livskraftig 
-medievalg 
-bispevalg 
-havnebasseng n2
-konsekvensutreding 
-ABM-melding 
-rovviltmelding 
-TV-sending 
-innbinding 
-pålogging 
-kalvemerking 
-polarforsking 
-manndaling 
-gråmaling 
-Rammefordeling 
-innseiling 
-ABM-utvikling 
-skriveutvikling 
-lisensfelling 
-post-doc-stilling 
-allroundstilling 
-motforestilling 
-prestestilling 
-duodjeveilederstilling 
-styrerstilling 
-stipendiatstillling 
-faktasamling 
-firhjuling 
-satellittfjernmåling 
-Bunnfisketråling 
-synshemming 
-motutredning 
-TT-ordning 
-grunnforvaltnings-ordning 
-siidaordning 
-trygdeordning 
-lærlingeordning 
-duodjilærlingordning 
-avløserordning 
-innfrysningsordning 
-konverteringsordning 
-permitteringsordning 
-frikjøpsordning 
-nyrydning 
-hjerte-karscreening 
-skrivetrening 
-staffeforfølgning 
-gjeldsforfølgning 
-legemsbygning 
-reindriftslovgining 
-langtidsettervirkning 
-helårsvirkning 
-innstramning 
-Tolkeutdanning 
-gartnerutdanning 
-bachelorutdanning 
-førskolelærerudanning 
-nedbrenning 
-lærlingelønning 
-EU-tilpasning 
-eneyrketilpasning 
-skriveundervisning 
-duodjiundervisning 
-eID-løsning 
-IT-løsning 
-innløsning 
-Saueerstatning 
-krabbeforvaltning 
-personalforvaltning 
-rovviltforvaltning 
-majoritetsbeslutning 
-nettilknytning 
-trygdelovgivning 
-resurslovgivning 
-utskrivning 
-Kroppsøvning 
-leseerfaring 
-gytevandring 
-logistikkutfordring 
-lærlingevurdering 
-ferrolegering 
-samfinansiering 
-ikke-diskriminering 
-personalstyring 
-kandidatkåring 
-regneopplæring 
-leseopplæring 
-skriveopplæring 
-bygdenæring 
-geitenæring 
-gartnernæring 
-reskontroføring 
-postkjøring 
-støyforurensing 
-demenstilpassing 
-TV-satsing 
-havnesatsing 
-oppgaveløsing 
-lafting 
-havbruksforvalting 
-is-smelting 
-Kunnskapsinnhenting 
-lassokasting 
-høsting 
-istandsetting 
-kjønnssammensetting 
-alderssammensetting 
-grøftegraving 
-kompetanseheving 
-kvalitetsheving 
-Kartleggingslovgiving 
-kartleggingslovgiving 
-forvaltningslovgiving 
-driving 
-framskriving 
-maktforskyving 
-myndighetsutøving 
-koftesying 
-neverkorg n2
 eldreomsorg 
-flytekai 
 Hofteleddsdysplasi 
 hofteleddsdysplasi 
-vernesak 
-personalsak 
-verneplansak 
-flytteårsak 
-utenrikssak 
-hastevedtak 
-plenarvedtak 
-nektningsvedtak 
-e-pengeforetak 
-momsfritak 
-hastetiltak 
-skattetiltak 
-duodjitiltak 
-Oppfølgningstiltak 
-kompetansehevingstiltak 
-Budsjettiltak 
-trygdemottak 
-torskeuttak 
-rovviltforlik 
-initiativrik 
 abc-bok 
-Faktaark 
 Matmerk 
-læreverk 
-EU-regelverk 
-permitteringsregelverk 
 innenlandsk 
 spesialpedagogisk 
 epidemiologisk 
@@ -389,12 +154,6 @@ klokkerdansk
 læstadiansk 
 trygdebruk 
 mediebruk 
-eneyrkebruk 
-enebruk 
-drivstofforbruk 
-hjemmespråk 
-lærespråk 
-verdiskapingspotensial 
 psykososial 
 minimal 
 interkommunal 
@@ -428,9 +187,6 @@ froskeyngel
 polarsirkel 
 innevarsel 
 genressurskapittel 
-stemmetall 
-læremateriell 
-immateriell 
 ikke-kommersiell 
 uformell 
 urasjonell 
@@ -439,41 +195,9 @@ multifunksjonell
 tunell 
 trekulturell 
 sosiokulturell 
-puslespill 
-julespill 
-regnespill 
-innspill 
-kodisill 
 samvittighetsfull 
 helgefyll 
-medieformål 
-mediespørsmål 
-vernespørsmål 
-personalspørsmål 
-polarspørsmål 
-kulturrsørsmål 
 lettøl 
-eID-program n2
-EU-program n2
-Bachelors-program n2
-leseprogram n2
-dokumentarprogram n2
-masterprogram n2
-bachelorprogram n2
-digitaliseringsprogram n2
-e-læringsprogram n2
-oversettingsprogram n2
-kompetansehevingsprogram n2
-demensprogram n2
-Mastersprogram n2
-aktualitetsprogram n2
-kampflyprogram n2
-rovvilt-problem n2
-avgresningsproblem n2
-EU-system n2
-flyttesystem n2
-orddatabanksystem n2
-innrapporteringssystem n2
 handlernom 
 meddelsom 
 drifts-form 
@@ -491,14 +215,12 @@ oppfølgningskriterium
 TS-forum 
 flyttestrøm 
 uopdragen 
-reindriftsundervisnmgen 
 Strukturmeldningen 
 Rovviltforvaltningen 
 homogen 
 heterogen 
 IT-bransjen 
 Flystrømmen 
-pronomen 
 NAV-reformen 
 Røyketelefonen 
 Rovviltsituasjonen 
@@ -515,41 +237,14 @@ Tolkeprøven
 folkesagn 
 Tidligpensjonsordningn 
 heimehamn 
-ventelønn 
-etterlønn 
-permitteringslønn 
 rødgrønn 
 kystson 
-mediakonsern 
-hjemmehavn 
-Samlenavn 
-domenenavn 
-feltnavn 
-Dyrehelsetilsyn 
-dyrehelsetilsyn 
-konkursbo 
-Regjeringen.no 
 Ovttas.no 
-foreldreskap 
-EU-medlemskap 
-formynderskap 
-medmorskap 
-kalvetap 
-rovvilttap 
-cyberangrep 
-tolkehjelp 
-Søkehjelp 
-foreldrehjelp 
-lesehjelp 
-skrivehjelp 
-konsensusprinsipp 
 forutsigbar 
 uidentifiserbar 
 ikke-fornybar 
 cirkumpolar 
 føre-var 
-eneansvar 
-koorderingsansvar 
 levealder 
 mannsalder 
 delelager 
@@ -586,28 +281,17 @@ stadnamnregister
 kjøremønster 
 Kjøreruter 
 Produksjonsmiljøer 
-feltutstyr 
 konsulær 
 kystnær 
 humanitær 
-sykefravær 
 læremiddeldatabas 
-grenseboerbevis 
 kjønnsbalans 
 Duodjinæringens 
 demens 
-feltstudiekurs 
-vevekurs 
-skrivekurs 
-duodjikurs 
-sykurs 
-nålehus 
-mediefokus 
 nådeløs 
 grenseløs 
 kompromissløs 
 innmat 
-pdf-format 
 kondensat 
 utdanningsskadelidt 
 Spillemiddeltilskuddet 
@@ -616,44 +300,6 @@ Tv-tilbudet
 Tekstilduodjifaget 
 tveegget 
 Småtinget 
-stahet 
-uryddighet 
-regneferdighet 
-leseferdighet 
-skriveferdighet 
-millimeterrettferdighet 
-enspråklighet 
-Flerspråklighet 
-flerspråklighet 
-urolighet 
-Meroffentlighet 
-kokemulighet 
-hensiktsmessighet 
-lesehastighet 
-trygderettighet 
-resursrettighet 
-handlefrihet 
-ulikhet 
-ydmykhet 
-FoU-virksomhet 
-medievirksomhet 
-duodjivirksomhet 
-kampflyvirksomhet 
-revyvirksomhet 
-knapphet 
-forutsigbarhet 
-lesbarhet 
-el-sikkerhet 
-tapperhet 
-Annerledeshet 
-håpløshet 
-maktesløshet 
-selvbevissthet 
-skjevhet 
-stivhet 
-TV-nyhet 
-høyhet 
-overhøyhet 
 Rovviltforliket 
 Embetsspråket 
 hørselshemmet 
@@ -671,56 +317,16 @@ Bidjovaggeprojektet
 Økonomiaspektet 
 målrettet 
 yrkesrettet 
-fossekraft 
-flytteutgift 
-personalutgift 
-trygdeavgift 
-engangsavgift 
-samdrift 
-rovviltforskrift 
 selvvalgt 
 fåfengt 
-EU-prosjekt 
-Verdde-prosjekt 
-Divvun-prosjekt 
-oppfølgings-prosjekt 
-tolkeprosjekt 
-duodjiprosjekt 
-e-valgsprosjekt 
-kulturminneregistreingsprosjekt 
-lesestimuleringsprosjekt 
-Alfabeiseringsprosjekt 
-kompetansehevingsprosjekt 
-demensprosjekt 
-merinntekt 
-eksportinntekt 
-kjøreplikt 
-leseplikt 
-henteplikt 
-lensmannsdistrikt 
 avlingssvikt 
 kommunikasjonssvikt 
 oppmerksomhetssvikt 
-iverksettelsestidspunkt 
-duodjiprodukt 
-lavkostprodukt 
-gudsfrykt 
 Næringsfordelt 
-ABM-felt 
-rusbehandlingsfelt 
-kringkastingsfelt 
-saksfelt 
-arealsaksfelt 
-suohkan-skilt 
 antioksidant 
 signifikant 
 intelligent 
 cand.scient 
-personalreglement 
-EU-dokument 
-Samledokument 
-iverksettingsdokument 
-patent 
 kompetent 
 framsynt 
 likeart 
@@ -735,23 +341,14 @@ klasselist
 høringslist 
 robust 
 sammensatt 
-hjemmestyrebudsjett 
-utenriksbudsjett 
 lesebrett 
 eksplisitt 
-Reindriftsnytt 
 nedslått 
 høyslått 
 Markomeannu 
-urgrav 
-vernekrav 
-minstekrav 
-innsynskrav 
-disponeringsskriv 
 ekspansiv 
 suksessiv 
 eksklusiv 
-mødrehelseinitiativ 
 kumulativ 
 normativ 
 korporativ 
@@ -760,36 +357,243 @@ interaktiv
 ineffektiv 
 objektiv 
 subjektiv 
-foreldreperspektiv 
-inkluderingsperspektiv 
 konstruktiv 
-jordskjelv 
-vernebehov 
-kompetansehevingsbehov 
-hundelov 
-gymnasielov 
-tvistelov 
-arvelov 
-dyrevelferdslov 
-resursforvaltningslov 
-eigedomsregistreringslov 
-resurslov 
 djerv 
-husstøv 
 fax 
 mørkeblå 
 skamslå 
 frarå 
-siidanivå 
-vannivå 
-masternivå 
-Bachelornivå 
-bachelornivå 
-detaljeringsnivå 
-høstingsnivå 
-embetsnivå 
-hjemmemiljø 
-duodjimiljø 
+vevgrind f1
+web-side f1
+webside f1
+rekkjefølgje f1
+kilovolt-linje f1
+husstellinje f1
+tollinje f1
+tømrerlinje f1
+vevlinje f1
+tidsramme f1
+inntektsramme f1
+foreldrestemme f1
+forhåndsstemme f1
+hovedutkomme f1
+maskinlære f1
+bøyningslære f1
+ernæringslære f1
+finanskrise f1
+hjemmelekse f1
+mødrehelse f1
+dyrehelse f1
+Siidakasse f1
+siidakasse f1
+e-mail-adresse f1
+verneinteresse f1
+høstingsinteresse f1
+lånerente f1
+krabbekvote f1
+fedrekvote f1
+kumelkkvote f1
+nødmeldetjeneste f1
+hundetjeneste f1
+dykketjeneste f1
+tolketjeneste f1
+hjelpetjeneste f1
+brøytetjeneste f1
+oversettingstjeneste f1
+duodji-ordliste f1
+venteliste f1
+foreldrestøtte f1
+eksportstøtte f1
+kjørerute f1
+konsekvensutreding f1
+ABM-melding f1
+rovviltmelding f1
+TV-sending f1
+innbinding f1
+pålogging f1
+kalvemerking f1
+polarforsking f1
+manndaling f1
+gråmaling f1
+Rammefordeling f1
+innseiling f1
+ABM-utvikling f1
+skriveutvikling f1
+lisensfelling f1
+post-doc-stilling f1
+allroundstilling f1
+motforestilling f1
+prestestilling f1
+duodjeveilederstilling f1
+styrerstilling f1
+stipendiatstillling f1
+faktasamling f1
+firhjuling f1
+satellittfjernmåling f1
+Bunnfisketråling f1
+synshemming f1
+motutredning f1
+TT-ordning f1
+grunnforvaltnings-ordning f1
+siidaordning f1
+trygdeordning f1
+lærlingeordning f1
+duodjilærlingordning f1
+avløserordning f1
+innfrysningsordning f1
+konverteringsordning f1
+permitteringsordning f1
+frikjøpsordning f1
+nyrydning f1
+hjerte-karscreening f1
+skrivetrening f1
+staffeforfølgning f1
+gjeldsforfølgning f1
+legemsbygning f1
+reindriftslovgining f1
+langtidsettervirkning f1
+helårsvirkning f1
+innstramning f1
+Tolkeutdanning f1
+gartnerutdanning f1
+bachelorutdanning f1
+førskolelærerudanning f1
+nedbrenning f1
+lærlingelønning f1
+EU-tilpasning f1
+eneyrketilpasning f1
+skriveundervisning f1
+duodjiundervisning f1
+eID-løsning f1
+IT-løsning f1
+innløsning f1
+Saueerstatning f1
+krabbeforvaltning f1
+personalforvaltning f1
+rovviltforvaltning f1
+majoritetsbeslutning f1
+nettilknytning f1
+trygdelovgivning f1
+resurslovgivning f1
+utskrivning f1
+Kroppsøvning f1
+leseerfaring f1
+gytevandring f1
+logistikkutfordring f1
+lærlingevurdering f1
+ferrolegering f1
+samfinansiering f1
+ikke-diskriminering f1
+personalstyring f1
+kandidatkåring f1
+regneopplæring f1
+leseopplæring f1
+skriveopplæring f1
+bygdenæring f1
+geitenæring f1
+gartnernæring f1
+reskontroføring f1
+postkjøring f1
+støyforurensing f1
+demenstilpassing f1
+TV-satsing f1
+havnesatsing f1
+oppgaveløsing f1
+lafting f1
+havbruksforvalting f1
+is-smelting f1
+Kunnskapsinnhenting f1
+lassokasting f1
+høsting f1
+istandsetting f1
+kjønnssammensetting f1
+alderssammensetting f1
+grøftegraving f1
+kompetanseheving f1
+kvalitetsheving f1
+Kartleggingslovgiving f1
+kartleggingslovgiving f1
+forvaltningslovgiving f1
+driving f1
+framskriving f1
+maktforskyving f1
+myndighetsutøving f1
+koftesying f1
+flytekai f1
+vernesak f1
+personalsak f1
+verneplansak f1
+flytteårsak f1
+utenrikssak f1
+ventelønn f1
+etterlønn f1
+permitteringslønn f1
+hjemmehavn f1
+tolkehjelp f1
+Søkehjelp f1
+foreldrehjelp f1
+lesehjelp f1
+skrivehjelp f1
+stahet f1
+uryddighet f1
+regneferdighet f1
+leseferdighet f1
+skriveferdighet f1
+millimeterrettferdighet f1
+enspråklighet f1
+Flerspråklighet f1
+flerspråklighet f1
+urolighet f1
+Meroffentlighet f1
+kokemulighet f1
+hensiktsmessighet f1
+lesehastighet f1
+trygderettighet f1
+resursrettighet f1
+handlefrihet f1
+ulikhet f1
+ydmykhet f1
+FoU-virksomhet f1
+medievirksomhet f1
+duodjivirksomhet f1
+kampflyvirksomhet f1
+revyvirksomhet f1
+knapphet f1
+forutsigbarhet f1
+lesbarhet f1
+el-sikkerhet f1
+tapperhet f1
+Annerledeshet f1
+håpløshet f1
+maktesløshet f1
+selvbevissthet f1
+skjevhet f1
+stivhet f1
+TV-nyhet f1
+høyhet f1
+overhøyhet f1
+fossekraft f1
+flytteutgift f1
+personalutgift f1
+trygdeavgift f1
+engangsavgift f1
+samdrift f1
+rovviltforskrift f1
+merinntekt f1
+eksportinntekt f1
+kjøreplikt f1
+leseplikt f1
+henteplikt f1
+gudsfrykt f1
+urgrav f1
+hundelov f1
+gymnasielov f1
+tvistelov f1
+arvelov f1
+dyrevelferdslov f1
+resursforvaltningslov f1
+eigedomsregistreringslov f1
+resurslov f1
 Nett-TV m1
 småskala m1
 astma m1
@@ -1017,3 +821,199 @@ kvartsitt m1
 læremiddelpott m1
 smågutt m1
 stemmeseddelkonvoutt m1
+bindeledd n1
+innløsningstilskudd n1
+bygdearbeidsmarked n1
+husdyrhald n1
+mediemangfold n1
+geitehold n1
+selvhushold n1
+duodjiord n1
+TV2-tilbud n1
+Tv-tilbud n1
+hjelpetilbud n1
+mentortilbud n1
+spesialisttilbud n1
+Norgesombud n1
+lærefag n1
+duodjifag n1
+håndstrikkeduodjifag n1
+pelsduodjifag n1
+faktagrunnlag n1
+rektrutteringsgrunnlag n1
+tv-innslag n1
+medieoppslag n1
+Samleforslag n1
+skattefradrag n1
+finnefondstillegg n1
+havneanlegg n1
+vannrensenanlegg n1
+medievalg n1
+bispevalg n1
+hastevedtak n1
+plenarvedtak n1
+nektningsvedtak n1
+e-pengeforetak n1
+momsfritak n1
+hastetiltak n1
+skattetiltak n1
+duodjitiltak n1
+Oppfølgningstiltak n1
+kompetansehevingstiltak n1
+Budsjettiltak n1
+trygdemottak n1
+torskeuttak n1
+rovviltforlik n1
+initiativrik n1
+Faktaark n1
+læreverk n1
+EU-regelverk n1
+permitteringsregelverk n1
+eneyrkebruk n1
+enebruk n1
+drivstofforbruk n1
+hjemmespråk n1
+lærespråk n1
+verdiskapingspotensial n1
+stemmetall n1
+læremateriell n1
+immateriell n1
+puslespill n1
+julespill n1
+regnespill n1
+innspill n1
+kodisill n1
+medieformål n1
+mediespørsmål n1
+vernespørsmål n1
+personalspørsmål n1
+polarspørsmål n1
+kulturrsørsmål n1
+mediakonsern n1
+Samlenavn n1
+domenenavn n1
+feltnavn n1
+Dyrehelsetilsyn n1
+dyrehelsetilsyn n1
+konkursbo n1
+Regjeringen.no n1
+foreldreskap n1
+EU-medlemskap n1
+formynderskap n1
+medmorskap n1
+kalvetap n1
+rovvilttap n1
+cyberangrep n1
+eneansvar n1
+koorderingsansvar n1
+feltutstyr n1
+sykefravær n1
+grenseboerbevis n1
+feltstudiekurs n1
+vevekurs n1
+skrivekurs n1
+duodjikurs n1
+sykurs n1
+nålehus n1
+mediefokus n1
+pdf-format n1
+Reindriftsnytt n1
+vernekrav n1
+minstekrav n1
+innsynskrav n1
+disponeringsskriv n1
+mødrehelseinitiativ n1
+jordskjelv n1
+vernebehov n1
+kompetansehevingsbehov n1
+husstøv n1
+pdf-skjema n2
+dilemma n2
+astma n2
+ståsted n2
+havnesamarbeid n2
+kapabilitetssamarbeid n2
+Verneplanarbeid n2
+verneplanarbeid n2
+merarbeid n2
+dokumetasjonsarbeid n2
+Rehabilieringsstipend n2
+kulturgode n2
+Feltstudie n2
+skrivestykke n2
+heimeyrke n2
+eneyrke n2
+foreldreønske n2
+genmateriale n2
+verneregime n2
+melkegjemme n2
+kjøttgjemme n2
+siidastyre n2
+handsnøre n2
+havnebasseng n2
+neverkorg n2
+eID-program n2
+EU-program n2
+Bachelors-program n2
+leseprogram n2
+dokumentarprogram n2
+masterprogram n2
+bachelorprogram n2
+digitaliseringsprogram n2
+e-læringsprogram n2
+oversettingsprogram n2
+kompetansehevingsprogram n2
+demensprogram n2
+Mastersprogram n2
+aktualitetsprogram n2
+kampflyprogram n2
+rovvilt-problem n2
+avgresningsproblem n2
+EU-system n2
+flyttesystem n2
+orddatabanksystem n2
+innrapporteringssystem n2
+reindriftsundervisnmgen n2
+pronomen n2
+konsensusprinsipp n2
+EU-prosjekt n2
+Verdde-prosjekt n2
+Divvun-prosjekt n2
+oppfølgings-prosjekt n2
+tolkeprosjekt n2
+duodjiprosjekt n2
+e-valgsprosjekt n2
+kulturminneregistreingsprosjekt n2
+lesestimuleringsprosjekt n2
+Alfabeiseringsprosjekt n2
+kompetansehevingsprosjekt n2
+demensprosjekt n2
+lensmannsdistrikt n2
+iverksettelsestidspunkt n2
+duodjiprodukt n2
+lavkostprodukt n2
+ABM-felt n2
+rusbehandlingsfelt n2
+kringkastingsfelt n2
+saksfelt n2
+arealsaksfelt n2
+suohkan-skilt n2
+personalreglement n2
+EU-dokument n2
+Samledokument n2
+iverksettingsdokument n2
+patent n2
+hjemmestyrebudsjett n2
+utenriksbudsjett n2
+foreldreperspektiv n2
+inkluderingsperspektiv n2
+siidanivå n2
+vannivå n2
+masternivå n2
+Bachelornivå n2
+bachelornivå n2
+detaljeringsnivå n2
+høstingsnivå n2
+embetsnivå n2
+hjemmemiljø n2
+duodjimiljø n2
