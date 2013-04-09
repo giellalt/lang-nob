@@ -1,27 +1,27 @@
 NRL 
 humaniora 
 Resepta 
-målretta 
-ubebodd 
+målretta a3
+ubebodd a2
 Punktlighed 
 Samvittighed 
 urfolksmedarbeide 
 læremiddelsamarbeide 
-sjølbilde 
-motbilde 
+sjølbilde n2
+motbilde n2
 naturresursutnyttjande 
 villaksebestande 
-utdanningsskadelidende 
-Kostnadssenkende 
-velfungerende 
-uengasjerende 
-oppegående 
-framskynde 
-ferde 
+utdanningsskadelidende a3
+Kostnadssenkende a3
+velfungerende a3
+uengasjerende a3
+oppegående a3
+framskynde v1
+ferde mX
 kvoteråde 
-utelekeområde 
-personalområde 
-cyberområde 
+utelekeområde n2
+personalområde n2
+cyberområde n2
 mellage 
 kunnskapsgrunnlage 
 ervervsgrunnlage 
@@ -31,7 +31,7 @@ egenevalueringe
 duodjinæringe 
 mapuche 
 embetsstudie 
-TV-serie 
+TV-serie m1
 TS-sake 
 EU-sake 
 krabbesake 
@@ -44,32 +44,32 @@ omsorgssake
 medlemskapssake 
 overgrepssake 
 konfliktsake 
-bærebjelke 
-hjemmefiske 
-Elvefiske 
+bærebjelke m1
+hjemmefiske n1sg
+Elvefiske n1sg
 hovedbruke 
 klageregle 
 permitteringsregle 
-kubjelle 
-ferdigstille 
-sammenstille 
-blottstille 
-oppdragerrolle 
-forveksle 
+kubjelle f1
+ferdigstille v2
+sammenstille v2
+blottstille v2
+oppdragerrolle f1
+forveksle v1
 andrespråksplane 
 Kostdataene 
 Kompetansehevingstiltakene 
 Tromsøundersøkelsene 
 Språkmotiveringsstipend-Anne 
-umoderne 
-handleevne 
-tåleevne 
-dømmeevne 
-overlevelsesevne 
+umoderne a3
+handleevne f1
+tåleevne f1
+dømmeevne f1
+overlevelsesevne f1
 kalvetape 
-kuppe 
-heimeyrke-vare 
-kjønnsrelatere 
+kuppe v1
+heimeyrke-vare m1
+kjønnsrelatere v2
 høgskolesektore 
 matvaresektore 
 biblioteksektore 
@@ -77,89 +77,88 @@ læremiddelsektore
 opplysningssektore 
 petroleumssektore 
 kunnskapssektore 
-framtre 
+fram TRE 
 mediestrukture 
 majoritetskulture 
-overstyre 
-livnære 
-rengjøre 
-oppkjøre 
-opprøre 
-framvokse 
-ostemasse 
-skillsmisse 
+overstyre v2
+livnære v2
+ren GJØRE
+oppkjøre v2
+opprøre v2
+framvokse v2
+ostemasse m1
+skillsmisse f1
 forpaktingsavgifte 
-oppløfte 
+oppløfte v1
 hovedpredikante 
-taste 
-kveste 
-innspillsmøte 
-Bacheloroppgave 
-bacheloroppgave 
-fraskrive 
+taste v1
+kveste v1
+innspillsmøte n2
+Bacheloroppgave f1
+bacheloroppgave f1
+fra SKRIVE
 offentleglove 
 innlandsfisklove 
-tolkeprøve 
-rekneprøve 
-gjenstridig 
-ligegyldig 
-ukristelig 
-yrkesfaglig 
-reindriftsfaglig 
-firespråklig 
-trespråklig 
-enspråklig 
-flerspråklig 
-minoritetsspråklig 
-uttallig 
-uforsonlig 
-ikke-statlig 
-mellomstatlig 
-mindreårig 
-treårig 
-helårig 
-toårig 
-flerårig 
-halvårig 
-driftsmessig 
-livskraftig 
-eldreomsorg 
-Hofteleddsdysplasi 
-hofteleddsdysplasi 
-abc-bok 
+tolkeprøve f1
+rekneprøve f1
+gjenstridig a2
+ligegyldig a2
+ukristelig a2
+yrkesfaglig a2
+reindriftsfaglig a2
+firespråklig a2
+trespråklig a2
+enspråklig a2
+flerspråklig a2
+minoritetsspråklig a2
+uttallig a2
+uforsonlig a2
+ikke-statlig a2
+mellomstatlig a2
+mindreårig a2
+treårig a2
+helårig a2
+toårig a2
+flerårig a2
+halvårig a2
+driftsmessig a2
+livskraftig a2
+eldreomsorg m1sg
+hofteleddsdysplasi m1
+abc-bok f1X
 Matmerk 
-innenlandsk 
-spesialpedagogisk 
-epidemiologisk 
-morfofonologisk 
-landbruksøkonomisk 
-fleretnisk 
-kymrisk 
-kontradiktorisk 
-krigshistorisk 
-distriktspsykiatrisk 
-frisisk 
-vepsisk 
-norsk-russisk 
-konkurransepolitisk 
-personalpolitisk 
-kulturpolitisk 
-likestillingspolitisk 
-landbrukspolitisk 
-jordbrukspolitisk 
-didaktisk 
-subarktisk 
-diagnostisk 
-klokkerdansk 
-læstadiansk 
-trygdebruk 
-mediebruk 
-psykososial 
-minimal 
-interkommunal 
-føderal 
-interdepartemental 
-mangedobbel 
+innenlandsk a2
+spesialpedagogisk a2
+epidemiologisk a2
+morfofonologisk a2
+landbruksøkonomisk a2
+fleretnisk a2
+kymrisk a2
+kontradiktorisk a2
+krigshistorisk a2
+distriktspsykiatrisk a2
+frisisk a2
+vepsisk a2
+norsk-russisk a2
+konkurransepolitisk a2
+personalpolitisk a2
+kulturpolitisk a2
+likestillingspolitisk a2
+landbrukspolitisk a2
+jordbrukspolitisk a2
+didaktisk a2
+subarktisk a2
+diagnostisk a2
+klokkerdansk a2
+læstadiansk a2
+trygdebruk m1sg
+mediebruk m1sg
+psykososial a1
+minimal a1
+interkommunal a1
+føderal a1
+interdepartemental a1
+mangedobbel a1
 middel 
 TS-middel 
 EU-middel 
