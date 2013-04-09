@@ -823,10 +823,10 @@ måtte+V+Ind+Prt:måtte  # ;
 måtte+V+PrfPtc:mått  # ;
 
 LEXICON MØTE
-måtte+V+Inf:øte  # ;
-måtte+V+Ind+Prsøter  # ;
-måtte+V+Ind+Prt:øtte  # ;
-måtte+V+PrfPtc:øtt  # ;
++V+Inf:øte  # ;
++V+Ind+Prsøter  # ;
++V+Ind+Prt:øtte  # ;
++V+PrfPtc:øtt  # ;
 
 
 LEXICON RIVE
