@@ -5198,3 +5198,26 @@ omgå:om GÅ ;
 foregå:fore GÅ ;
 gjennomgå:gjennom GÅ ;
 tilrå aV ;
+framskynde v1 ; 
+forveksle v1 ; 
+kuppe v1 ; 
+oppløfte v1 ; 
+taste v1 ; 
+kveste v1 ; 
+ferdigstille v2 ; 
+sammenstille v2 ; 
+blottstille v2 ; 
+kjønnsrelatere v2 ; 
+overstyre v2 ; 
+livnære v2 ; 
+oppkjøre v2 ; 
+opprøre v2 ; 
+framvokse v2 ; 
+
+fram TRE  ; 
+ren GJØRE ; 
+fra SKRIVE ; 
+skam SLÅ ; 
+fra RÅ ; 
+
+

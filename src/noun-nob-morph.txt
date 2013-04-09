@@ -19,6 +19,8 @@
 ! n3  kontor      kontoret    kontor      kontora
 !                             kontorer    kontorene
 !     høve        høvet       høve/høver  høva/høvene
+! n4  salt        saltet      salter      salta/saltene ??
+! n5  middel      midlet      midler      midla/midlene ??
 
 ! Subtypes, mainly from Finsk-norsk ordbok, also system-specific
 
