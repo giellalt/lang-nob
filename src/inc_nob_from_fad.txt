@@ -1,906 +1,894 @@
-fram TRE 
-mapuche 
-Språkmotiveringsstipend-Anne 
-mediestrukture 
-majoritetskulture 
-middel 
-TS-middel 
-EU-middel 
-hjælpemiddel 
-gruppemiddel 
-IKT-læremiddel 
-kompetansemiddel 
-rentemiddel 
-sprøytemiddel 
-duodjimiddel 
-kontrollmiddel 
-bygdeutviklingsmiddel 
-omstillingsmiddel 
-flokkuleringsmiddel 
-tospråklighetsmiddel 
-boligvirkemidel 
-strukturvirkemidel 
-stimuleringsmidel 
-grasrotmidel 
-pomorhandel 
-verneregel 
-kjøreregel 
-froskeyngel 
-polarsirkel 
-innevarsel 
-genressurskapittel 
-tunell 
-handlernom 
-TS-forum 
-IT-bransjen 
-doven 
-folkesagn 
-heimehamn 
-Ovttas.no 
-føre-var 
-levealder 
-mannsalder 
-læremiddelutvikler 
-likeart 
-psykososial a1
-minimal a1
-interkommunal a1
-føderal a1
-interdepartemental a1
-mangedobbel a1
-ikke-kommersiell a1
-uformell a1
-urasjonell a1
-utradisjonell a1
-multifunksjonell a1
-trekulturell a1
-sosiokulturell a1
-samvittighetsfull a1
-meddelsom a1
-homogen a1
-heterogen a1
-rødgrønn a1
-forutsigbar a1
-uidentifiserbar a1
-ikke-fornybar a1
-cirkumpolar a1
-konsulær a1
-kystnær a1
-humanitær a1
-nådeløs a1
-grenseløs a1
-kompromissløs a1
-ekspansiv a1
-suksessiv a1
-eksklusiv a1
-kumulativ a1
-normativ a1
-korporativ a1
-primitiv a1
-interaktiv a1
-ineffektiv a1
-objektiv a1
-subjektiv a1
-konstruktiv a1
-djerv a1
-vevgrind f1
-web-side f1
-webside f1
-rekkjefølgje f1
-kilovolt-linje f1
-husstellinje f1
-tollinje f1
-tømrerlinje f1
-vevlinje f1
-kubjelle f1
-oppdragerrolle f1
-tidsramme f1
-inntektsramme f1
-foreldrestemme f1
-forhåndsstemme f1
-hovedutkomme f1
-handleevne f1
-tåleevne f1
-dømmeevne f1
-overlevelsesevne f1
-maskinlære f1
-bøyningslære f1
-ernæringslære f1
-finanskrise f1
-hjemmelekse f1
-mødrehelse f1
-dyrehelse f1
-Siidakasse f1
-siidakasse f1
-e-mail-adresse f1
-verneinteresse f1
-høstingsinteresse f1
-skillsmisse f1
-lånerente f1
-krabbekvote f1
-fedrekvote f1
-kumelkkvote f1
-nødmeldetjeneste f1
-hundetjeneste f1
-dykketjeneste f1
-tolketjeneste f1
-hjelpetjeneste f1
-brøytetjeneste f1
-oversettingstjeneste f1
-duodji-ordliste f1
-venteliste f1
-foreldrestøtte f1
-eksportstøtte f1
-kjørerute f1
-Bacheloroppgave f1
-bacheloroppgave f1
-tolkeprøve f1
-rekneprøve f1
-konsekvensutreding f1
-ABM-melding f1
-rovviltmelding f1
-TV-sending f1
-innbinding f1
-pålogging f1
-kalvemerking f1
-polarforsking f1
-manndaling f1
-gråmaling f1
-Rammefordeling f1
-innseiling f1
-ABM-utvikling f1
-skriveutvikling f1
-lisensfelling f1
-post-doc-stilling f1
-allroundstilling f1
-motforestilling f1
-prestestilling f1
-duodjeveilederstilling f1
-styrerstilling f1
-stipendiatstillling f1
-faktasamling f1
-firhjuling f1
-satellittfjernmåling f1
-Bunnfisketråling f1
-synshemming f1
-motutredning f1
-TT-ordning f1
-grunnforvaltnings-ordning f1
-siidaordning f1
-trygdeordning f1
-lærlingeordning f1
-duodjilærlingordning f1
-avløserordning f1
-innfrysningsordning f1
-konverteringsordning f1
-permitteringsordning f1
-frikjøpsordning f1
-nyrydning f1
-hjerte-karscreening f1
-skrivetrening f1
-staffeforfølgning f1
-gjeldsforfølgning f1
-legemsbygning f1
-reindriftslovgining f1
-langtidsettervirkning f1
-helårsvirkning f1
-innstramning f1
-Tolkeutdanning f1
-gartnerutdanning f1
-bachelorutdanning f1
-førskolelærerudanning f1
-nedbrenning f1
-lærlingelønning f1
-EU-tilpasning f1
-eneyrketilpasning f1
-skriveundervisning f1
-duodjiundervisning f1
-eID-løsning f1
-IT-løsning f1
-innløsning f1
-Saueerstatning f1
-krabbeforvaltning f1
-personalforvaltning f1
-rovviltforvaltning f1
-majoritetsbeslutning f1
-nettilknytning f1
-trygdelovgivning f1
-resurslovgivning f1
-utskrivning f1
-Kroppsøvning f1
-leseerfaring f1
-gytevandring f1
-logistikkutfordring f1
-lærlingevurdering f1
-ferrolegering f1
-samfinansiering f1
-ikke-diskriminering f1
-personalstyring f1
-kandidatkåring f1
-regneopplæring f1
-leseopplæring f1
-skriveopplæring f1
-bygdenæring f1
-geitenæring f1
-gartnernæring f1
-reskontroføring f1
-postkjøring f1
-støyforurensing f1
-demenstilpassing f1
-TV-satsing f1
-havnesatsing f1
-oppgaveløsing f1
-lafting f1
-havbruksforvalting f1
-is-smelting f1
-Kunnskapsinnhenting f1
-lassokasting f1
-høsting f1
-istandsetting f1
-kjønnssammensetting f1
-alderssammensetting f1
-grøftegraving f1
-kompetanseheving f1
-kvalitetsheving f1
-Kartleggingslovgiving f1
-kartleggingslovgiving f1
-forvaltningslovgiving f1
-driving f1
-framskriving f1
-maktforskyving f1
-myndighetsutøving f1
-koftesying f1
-flytekai f1
-vernesak f1
-personalsak f1
-verneplansak f1
-flytteårsak f1
-utenrikssak f1
-drifts-form f1
-verneform f1
-ervervsform f1
-ventelønn f1
-etterlønn f1
-permitteringslønn f1
-hjemmehavn f1
-tolkehjelp f1
-Søkehjelp f1
-foreldrehjelp f1
-lesehjelp f1
-skrivehjelp f1
-stahet f1
-uryddighet f1
-regneferdighet f1
-leseferdighet f1
-skriveferdighet f1
-millimeterrettferdighet f1
-enspråklighet f1
-Flerspråklighet f1
-flerspråklighet f1
-urolighet f1
-Meroffentlighet f1
-kokemulighet f1
-hensiktsmessighet f1
-lesehastighet f1
-trygderettighet f1
-resursrettighet f1
-handlefrihet f1
-ulikhet f1
-ydmykhet f1
-FoU-virksomhet f1
-medievirksomhet f1
-duodjivirksomhet f1
-kampflyvirksomhet f1
-revyvirksomhet f1
-knapphet f1
-forutsigbarhet f1
-lesbarhet f1
-el-sikkerhet f1
-tapperhet f1
-Annerledeshet f1
-håpløshet f1
-maktesløshet f1
-selvbevissthet f1
-skjevhet f1
-stivhet f1
-TV-nyhet f1
-høyhet f1
-overhøyhet f1
-fossekraft f1
-flytteutgift f1
-personalutgift f1
-trygdeavgift f1
-engangsavgift f1
-samdrift f1
-rovviltforskrift f1
-merinntekt f1
-eksportinntekt f1
-kjøreplikt f1
-leseplikt f1
-henteplikt f1
-gudsfrykt f1
-urgrav f1
-hundelov f1
-gymnasielov f1
-tvistelov f1
-arvelov f1
-dyrevelferdslov f1
-resursforvaltningslov f1
-eigedomsregistreringslov f1
-resurslov f1
-Nett-TV m1
-småskala m1
-astma m1
-duodji-opplæringsarena m1
-flora m1
-prostata m1
-drømmejobb m1
-småjobb m1
-svømmeklubb m1
-finnefondssøknad m1
-inndrivelseskostnad m1
-magistergrad m1
-bachelorgrad m1
-detaljeringsgrad m1
-cd m1
-torskebestand m1
-jervebestand m1
-rovviltbestand m1
-medietrend m1
-dyrevelferd m1
-torskefjord m1
-fuktskade m1
-leseglede m1
-flyttelengde m1
-flyttemengde m1
-begynnerperiode m1
-regnemetode m1
-lesemetode m1
-letemetode m1
-høstingsmetode m1
-foreldrepenge m1
-dyretragedie m1
-eksportsubsidie m1
-TV-serie m1
-mediehistorie m1
-polarhistorie m1
-bærebjelke m1
-kvænsktale m1
-duodjiavtale m1
-frihandelsavtale m1
-hjemmeskole m1
-regnetime m1
-fiskestamme m1
-tvisteløsningsmekanisme m1
-bygdeturisme m1
-vandreturisme m1
-røykevane m1
-lesevane m1
-levevane m1
-skrivevane m1
-prototype m1
-heimeyrke-vare m1
-geodatabase m1
-fripolise m1
-løsrivelsesbevegelse m1
-ivaretakelse m1
-spørreundersøkelse m1
-feltundersøkelse m1
-arbeidstilltalelse m1
-flyttegodtgjørelse m1
-trygdeytelse m1
-leseopplevelse m1
-løsrivelse m1
-maktforskyvelse m1
-måloppnåelse m1
-Leseforståelse m1
-leseforståelse m1
-resursbalanse m1
-NHO-konferanse m1
-innspillskonferanse m1
-SPR-ungdomskonferanse m1
-rovviltkonferanse m1
-IKT-kompetanse m1
-skrivekompetanse m1
-duodjikompetanse m1
-dobbeltkompetanse m1
-ostemasse m1
-regnemåte m1
-høstingsmåte m1
-fristdag m1
-utforskertrang m1
-kulkturminneverdi m1
-eksportverdi m1
-ISAF-strategi m1
-cyber-strategi m1
-utviklings-strategi m1
-mediestrategi m1
-vernestrategi m1
-lesestrategi m1
-lyttestrategi m1
-skrivestrategi m1
-bioenergi m1
-tsunami m1
-diakoni m1
-genterapi m1
-vernekategori m1
-hofteleddsdysplasi m1
-lesemetodikk m1
-kjøreteknikk m1
-mobbeproblematikk m1
-overbeiteproblematikk m1
-eldrepolitikk m1
-duodjipolitikk m1
-assimileringspolitikk m1
-kanaliseringspolitikk m1
-leverandøkjøpspolitikk m1
-rovviltpolitikk m1
-logistikk m1
-Nordområdelogistikk m1
-sykefraværsstatistikk m1
-TV-kanal m1
-bygdeorginal m1
-sovesal m1
-gymsal m1
-fiberkabel m1
-grasrotandel m1
-personalprofil m1
-datahall m1
-tvisteløsningsmodell m1
-bygdebruksmodell m1
-lappekodisill m1
-stavekontroll m1
-eksportkontroll m1
-tegnefilm m1
-koftearm m1
-verneplan m1
-personalplan m1
-flerbruksplan m1
-demensplan m1
-omverden m1
-hjemmeeksamen m1
-juksamaskin m1
-grobunn m1
-iPhone-applikasjon m1
-faktainformasjon m1
-tastekombinasjon m1
-faktadokumentasjon m1
-foreldrerepresentasjon m1
-utenriksstasjon m1
-mediesituasjon m1
-tolkesituasjon m1
-PF-sesjon m1
-sendekonsesjon m1
-torskekonsesjon m1
-opprettskonsesjon m1
-juletradisjon m1
-duodjitradisjon m1
-høstingstradisjon m1
-finnemisjon m1
-Tana-aksjon m1
-strykeaksjon m1
-saksutrederfunksjon m1
-dobbeltfunksjon m1
-duodjiproduksjon m1
-dokumentarproduksjon m1
-ILO-konvensjon m1
-betaversjon m1
-judo m1
-logo m1
-hovedlogo m1
-demo m1
-gammegetto m1
-nomadkunnskap m1
-skrivekunnskap m1
-heimedåp m1
-dokumentar m1
-måleindikator m1
-motkonjunktur m1
-IKT-infrastruktur m1
-fiberinfrastruktur m1
-logistikkstruktur m1
-motkultur m1
-finansingspraksis m1
-demens m1
-eksistens m1
-logistikkressurs m1
-personalressurs m1
-genressurs m1
-konverteringsressurs m1
-urfolksinteress m1
-reindriftsinteress m1
-tolkeprosess m1
-verneprosess m1
-skriveprosess m1
-katekismus m1
-kulturminnetypus m1
-konsensus m1
-vernestatus m1
-lokalitet m1
-nationalitet m1
-funksjonalitet m1
-pluralitet m1
-kravmentalitet m1
-aktualitet m1
-parallellitet m1
-anonymitet m1
-lastekapasitet m1
-naivitet m1
-inaktivitet m1
-interaktivitet m1
-jagerflyaktivitet m1
-effektivitet m1
-prostatakreft m1
-gulrotbit m1
-sosiolekt m1
-antioksidant m1
-neirespondent m1
-horisont m1
-mynt m1
-minnemynt m1
-pilot m1
-fugleart m1
-rovviltart m1
-eksport m1
-reguleringseksport m1
-bifangst m1
-kvalitetsbrist m1
-Rapporteringsfrist m1
-rapporteringsfrist m1
-refusjonstakst m1
-hovedpost m1
-epost m1
-leselyst m1
-skrivelyst m1
-mediadebatt m1
-fregatt m1
-støvlett m1
-lånerett m1
-humanitærrett m1
-eksportkreditt m1
-satellitt m1
-kvartsitt m1
-læremiddelpott m1
-smågutt m1
-stemmeseddelkonvoutt m1
-høyslått m1
-fax m1
-bindeledd n1
-innløsningstilskudd n1
-bygdearbeidsmarked n1
-husdyrhald n1
-mediemangfold n1
-geitehold n1
-selvhushold n1
-duodjiord n1
-TV2-tilbud n1
-Tv-tilbud n1
-hjelpetilbud n1
-mentortilbud n1
-spesialisttilbud n1
-Norgesombud n1
-lærefag n1
-duodjifag n1
-håndstrikkeduodjifag n1
-pelsduodjifag n1
-faktagrunnlag n1
-rektrutteringsgrunnlag n1
-tv-innslag n1
-medieoppslag n1
-Samleforslag n1
-skattefradrag n1
-finnefondstillegg n1
-havneanlegg n1
-vannrensenanlegg n1
-medievalg n1
-bispevalg n1
-hastevedtak n1
-plenarvedtak n1
-nektningsvedtak n1
-e-pengeforetak n1
-momsfritak n1
-hastetiltak n1
-skattetiltak n1
-duodjitiltak n1
-Oppfølgningstiltak n1
-kompetansehevingstiltak n1
-Budsjettiltak n1
-trygdemottak n1
-torskeuttak n1
-rovviltforlik n1
-initiativrik n1
-Faktaark n1
-læreverk n1
-EU-regelverk n1
-permitteringsregelverk n1
-eneyrkebruk n1
-enebruk n1
-drivstofforbruk n1
-hjemmespråk n1
-lærespråk n1
-verdiskapingspotensial n1
-stemmetall n1
-læremateriell n1
-immateriell n1
-puslespill n1
-julespill n1
-regnespill n1
-innspill n1
-kodisill n1
-medieformål n1
-mediespørsmål n1
-vernespørsmål n1
-personalspørsmål n1
-polarspørsmål n1
-kulturrsørsmål n1
-lettøl n1
-mediakonsern n1
-Samlenavn n1
-domenenavn n1
-feltnavn n1
-Dyrehelsetilsyn n1
-dyrehelsetilsyn n1
-konkursbo n1
-Regjeringen.no n1
-foreldreskap n1
-EU-medlemskap n1
-formynderskap n1
-medmorskap n1
-kalvetap n1
-rovvilttap n1
-cyberangrep n1
-eneansvar n1
-koorderingsansvar n1
-feltutstyr n1
-sykefravær n1
-grenseboerbevis n1
-feltstudiekurs n1
-vevekurs n1
-skrivekurs n1
-duodjikurs n1
-sykurs n1
-nålehus n1
-mediefokus n1
-pdf-format n1
-kondensat n1
-russekort n1
-lesebrett n1
-Reindriftsnytt n1
-vernekrav n1
-minstekrav n1
-innsynskrav n1
-disponeringsskriv n1
-mødrehelseinitiativ n1
-jordskjelv n1
-vernebehov n1
-kompetansehevingsbehov n1
-husstøv n1
-framskynde v1
-forveksle v1
-kuppe v1
-oppløfte v1
-taste v1
-kveste v1
-ubebodd a2
-gjenstridig a2
-ligegyldig a2
-ukristelig a2
-yrkesfaglig a2
-reindriftsfaglig a2
-firespråklig a2
-trespråklig a2
-enspråklig a2
-flerspråklig a2
-minoritetsspråklig a2
-uttallig a2
-uforsonlig a2
-ikke-statlig a2
-mellomstatlig a2
-mindreårig a2
-treårig a2
-helårig a2
-toårig a2
-flerårig a2
-halvårig a2
-driftsmessig a2
-livskraftig a2
-innenlandsk a2
-spesialpedagogisk a2
-epidemiologisk a2
-morfofonologisk a2
-landbruksøkonomisk a2
-fleretnisk a2
-kymrisk a2
-kontradiktorisk a2
-krigshistorisk a2
-distriktspsykiatrisk a2
-frisisk a2
-vepsisk a2
-norsk-russisk a2
-konkurransepolitisk a2
-personalpolitisk a2
-kulturpolitisk a2
-likestillingspolitisk a2
-landbrukspolitisk a2
-jordbrukspolitisk a2
-didaktisk a2
-subarktisk a2
-diagnostisk a2
-klokkerdansk a2
-læstadiansk a2
-selvvalgt a2
-fåfengt a2
-Næringsfordelt a2
-signifikant a2
-intelligent a2
-kompetent a2
-framsynt a2
-uavklart a2
-uspesifisert a2
-ubalansert a2
-unyansert a2
-robust a2
-sammensatt a2
-eksplisitt a2
-nedslått a2
-bølgedemper m2
-herredskasserer m2
-pdf-skjema n2
-dilemma n2
-astma n2
-ståsted n2
-havnesamarbeid n2
-kapabilitetssamarbeid n2
-Verneplanarbeid n2
-verneplanarbeid n2
-merarbeid n2
-dokumetasjonsarbeid n2
-Rehabilieringsstipend n2
-sjølbilde n2
-motbilde n2
-kulturgode n2
-utelekeområde n2
-personalområde n2
-cyberområde n2
-Feltstudie n2
-skrivestykke n2
-heimeyrke n2
-eneyrke n2
-foreldreønske n2
-genmateriale n2
-verneregime n2
-melkegjemme n2
-kjøttgjemme n2
-siidastyre n2
-handsnøre n2
-innspillsmøte n2
-havnebasseng n2
-neverkorg n2
-eID-program n2
-EU-program n2
-Bachelors-program n2
-leseprogram n2
-dokumentarprogram n2
-masterprogram n2
-bachelorprogram n2
-digitaliseringsprogram n2
-e-læringsprogram n2
-oversettingsprogram n2
-kompetansehevingsprogram n2
-demensprogram n2
-Mastersprogram n2
-aktualitetsprogram n2
-kampflyprogram n2
-rovvilt-problem n2
-avgresningsproblem n2
-EU-system n2
-flyttesystem n2
-orddatabanksystem n2
-innrapporteringssystem n2
-reindriftsundervisnmgen n2
-pronomen n2
-konsensusprinsipp n2
-EU-prosjekt n2
-Verdde-prosjekt n2
-Divvun-prosjekt n2
-oppfølgings-prosjekt n2
-tolkeprosjekt n2
-duodjiprosjekt n2
-e-valgsprosjekt n2
-kulturminneregistreingsprosjekt n2
-lesestimuleringsprosjekt n2
-Alfabeiseringsprosjekt n2
-kompetansehevingsprosjekt n2
-demensprosjekt n2
-lensmannsdistrikt n2
-iverksettelsestidspunkt n2
-duodjiprodukt n2
-lavkostprodukt n2
-ABM-felt n2
-rusbehandlingsfelt n2
-kringkastingsfelt n2
-saksfelt n2
-arealsaksfelt n2
-suohkan-skilt n2
-personalreglement n2
-EU-dokument n2
-Samledokument n2
-iverksettingsdokument n2
-patent n2
-hjemmestyrebudsjett n2
-utenriksbudsjett n2
-foreldreperspektiv n2
-inkluderingsperspektiv n2
-siidanivå n2
-vannivå n2
-masternivå n2
-Bachelornivå n2
-bachelornivå n2
-detaljeringsnivå n2
-høstingsnivå n2
-embetsnivå n2
-hjemmemiljø n2
-duodjimiljø n2
-ferdigstille v2
-sammenstille v2
-blottstille v2
-kjønnsrelatere v2
-overstyre v2
-livnære v2
-oppkjøre v2
-opprøre v2
-framvokse v2
-målretta a3
-utdanningsskadelidende a3
-Kostnadssenkende a3
-velfungerende a3
-uengasjerende a3
-oppegående a3
-umoderne a3
-tveegget a4
-hørselshemmet a4
-velordnet a4
-ugrunnet a4
-rampet a4
-multihandikappet a4
-målrettet a4
-yrkesrettet a4
-treffsikker a5
-funksjonssikker a5
-ren GJØRE
-fra SKRIVE
-multimedium MUSEUM
-underholdingsmedium MUSEUM
-masterstudium MUSEUM
-helårsstudium MUSEUM
-satellittstudium MUSEUM
-kriterium MUSEUM
-målekriterium MUSEUM
-tildelingskriterium MUSEUM
-oppfølgningskriterium MUSEUM
-abc-bok f1X
-NRL mX
-humaniora mX
-ferde mX
-cand.scient mX
-flyttestrøm m1b
-delelager n3b
-venteregister n3b
-duodjiregister n3b
-stadnamnregister n3b
-kjøremønster n3b
-helgefyll f1sg
-eldreomsorg m1sg
-trygdebruk m1sg
-mediebruk m1sg
-innmat m1sg
-avlingssvikt m1sg
-kommunikasjonssvikt m1sg
-oppmerksomhetssvikt m1sg
-løvtrehugst m1sg
-hjemmefiske n1sg
-Elvefiske n1sg
-Markomeannu prop
-mørkeblå av
-skam SLÅ
-fra RÅ
+fram TRE  ; 
+føre-var adv ; 
+levealder m2 ; 
+mannsalder m2 ; 
+psykososial a1 ; 
+minimal a1 ; 
+interkommunal a1 ; 
+føderal a1 ; 
+interdepartemental a1 ; 
+mangedobbel a1 ; 
+ikke-kommersiell a1 ; 
+uformell a1 ; 
+urasjonell a1 ; 
+utradisjonell a1 ; 
+multifunksjonell a1 ; 
+trekulturell a1 ; 
+sosiokulturell a1 ; 
+samvittighetsfull a1 ; 
+meddelsom a1 ; 
+homogen a1 ; 
+heterogen a1 ; 
+doven a1 ; 
+rødgrønn a1 ; 
+forutsigbar a1 ; 
+uidentifiserbar a1 ; 
+ikke-fornybar a1 ; 
+cirkumpolar a1 ; 
+konsulær a1 ; 
+kystnær a1 ; 
+humanitær a1 ; 
+nådeløs a1 ; 
+grenseløs a1 ; 
+kompromissløs a1 ; 
+ekspansiv a1 ; 
+suksessiv a1 ; 
+eksklusiv a1 ; 
+kumulativ a1 ; 
+normativ a1 ; 
+korporativ a1 ; 
+primitiv a1 ; 
+interaktiv a1 ; 
+ineffektiv a1 ; 
+objektiv a1 ; 
+subjektiv a1 ; 
+konstruktiv a1 ; 
+djerv a1 ; 
+vevgrind f1 ; 
+web-side f1 ; 
+webside f1 ; 
+rekkjefølgje f1 ; 
+kilovolt-linje f1 ; 
+husstellinje f1 ; 
+tollinje f1 ; 
+tømrerlinje f1 ; 
+vevlinje f1 ; 
+kubjelle f1 ; 
+oppdragerrolle f1 ; 
+tidsramme f1 ; 
+inntektsramme f1 ; 
+foreldrestemme f1 ; 
+forhåndsstemme f1 ; 
+hovedutkomme f1 ; 
+handleevne f1 ; 
+tåleevne f1 ; 
+dømmeevne f1 ; 
+overlevelsesevne f1 ; 
+maskinlære f1 ; 
+bøyningslære f1 ; 
+ernæringslære f1 ; 
+finanskrise f1 ; 
+hjemmelekse f1 ; 
+mødrehelse f1 ; 
+dyrehelse f1 ; 
+Siidakasse f1 ; 
+siidakasse f1 ; 
+e-mail-adresse f1 ; 
+verneinteresse f1 ; 
+høstingsinteresse f1 ; 
+skillsmisse f1 ; 
+lånerente f1 ; 
+krabbekvote f1 ; 
+fedrekvote f1 ; 
+kumelkkvote f1 ; 
+nødmeldetjeneste f1 ; 
+hundetjeneste f1 ; 
+dykketjeneste f1 ; 
+tolketjeneste f1 ; 
+hjelpetjeneste f1 ; 
+brøytetjeneste f1 ; 
+oversettingstjeneste f1 ; 
+duodji-ordliste f1 ; 
+venteliste f1 ; 
+foreldrestøtte f1 ; 
+eksportstøtte f1 ; 
+kjørerute f1 ; 
+Bacheloroppgave f1 ; 
+bacheloroppgave f1 ; 
+tolkeprøve f1 ; 
+rekneprøve f1 ; 
+konsekvensutreding f1 ; 
+ABM-melding f1 ; 
+rovviltmelding f1 ; 
+TV-sending f1 ; 
+innbinding f1 ; 
+pålogging f1 ; 
+kalvemerking f1 ; 
+polarforsking f1 ; 
+manndaling f1 ; 
+gråmaling f1 ; 
+Rammefordeling f1 ; 
+innseiling f1 ; 
+ABM-utvikling f1 ; 
+skriveutvikling f1 ; 
+lisensfelling f1 ; 
+post-doc-stilling f1 ; 
+allroundstilling f1 ; 
+motforestilling f1 ; 
+prestestilling f1 ; 
+duodjeveilederstilling f1 ; 
+styrerstilling f1 ; 
+stipendiatstillling f1 ; 
+faktasamling f1 ; 
+firhjuling f1 ; 
+satellittfjernmåling f1 ; 
+Bunnfisketråling f1 ; 
+synshemming f1 ; 
+motutredning f1 ; 
+TT-ordning f1 ; 
+grunnforvaltnings-ordning f1 ; 
+siidaordning f1 ; 
+trygdeordning f1 ; 
+lærlingeordning f1 ; 
+duodjilærlingordning f1 ; 
+avløserordning f1 ; 
+innfrysningsordning f1 ; 
+konverteringsordning f1 ; 
+permitteringsordning f1 ; 
+frikjøpsordning f1 ; 
+nyrydning f1 ; 
+hjerte-karscreening f1 ; 
+skrivetrening f1 ; 
+staffeforfølgning f1 ; 
+gjeldsforfølgning f1 ; 
+legemsbygning f1 ; 
+reindriftslovgining f1 ; 
+langtidsettervirkning f1 ; 
+helårsvirkning f1 ; 
+innstramning f1 ; 
+Tolkeutdanning f1 ; 
+gartnerutdanning f1 ; 
+bachelorutdanning f1 ; 
+førskolelærerudanning f1 ; 
+nedbrenning f1 ; 
+lærlingelønning f1 ; 
+EU-tilpasning f1 ; 
+eneyrketilpasning f1 ; 
+skriveundervisning f1 ; 
+duodjiundervisning f1 ; 
+eID-løsning f1 ; 
+IT-løsning f1 ; 
+innløsning f1 ; 
+Saueerstatning f1 ; 
+krabbeforvaltning f1 ; 
+personalforvaltning f1 ; 
+rovviltforvaltning f1 ; 
+majoritetsbeslutning f1 ; 
+nettilknytning f1 ; 
+trygdelovgivning f1 ; 
+resurslovgivning f1 ; 
+utskrivning f1 ; 
+Kroppsøvning f1 ; 
+leseerfaring f1 ; 
+gytevandring f1 ; 
+logistikkutfordring f1 ; 
+lærlingevurdering f1 ; 
+ferrolegering f1 ; 
+samfinansiering f1 ; 
+ikke-diskriminering f1 ; 
+personalstyring f1 ; 
+kandidatkåring f1 ; 
+regneopplæring f1 ; 
+leseopplæring f1 ; 
+skriveopplæring f1 ; 
+bygdenæring f1 ; 
+geitenæring f1 ; 
+gartnernæring f1 ; 
+reskontroføring f1 ; 
+postkjøring f1 ; 
+støyforurensing f1 ; 
+demenstilpassing f1 ; 
+TV-satsing f1 ; 
+havnesatsing f1 ; 
+oppgaveløsing f1 ; 
+lafting f1 ; 
+havbruksforvalting f1 ; 
+is-smelting f1 ; 
+Kunnskapsinnhenting f1 ; 
+lassokasting f1 ; 
+høsting f1 ; 
+istandsetting f1 ; 
+kjønnssammensetting f1 ; 
+alderssammensetting f1 ; 
+grøftegraving f1 ; 
+kompetanseheving f1 ; 
+kvalitetsheving f1 ; 
+Kartleggingslovgiving f1 ; 
+kartleggingslovgiving f1 ; 
+forvaltningslovgiving f1 ; 
+driving f1 ; 
+framskriving f1 ; 
+maktforskyving f1 ; 
+myndighetsutøving f1 ; 
+koftesying f1 ; 
+flytekai f1 ; 
+vernesak f1 ; 
+personalsak f1 ; 
+verneplansak f1 ; 
+flytteårsak f1 ; 
+utenrikssak f1 ; 
+drifts-form f1 ; 
+verneform f1 ; 
+ervervsform f1 ; 
+heimehamn f1 ; 
+ventelønn f1 ; 
+etterlønn f1 ; 
+permitteringslønn f1 ; 
+hjemmehavn f1 ; 
+tolkehjelp f1 ; 
+Søkehjelp f1 ; 
+foreldrehjelp f1 ; 
+lesehjelp f1 ; 
+skrivehjelp f1 ; 
+stahet f1 ; 
+uryddighet f1 ; 
+regneferdighet f1 ; 
+leseferdighet f1 ; 
+skriveferdighet f1 ; 
+millimeterrettferdighet f1 ; 
+enspråklighet f1 ; 
+Flerspråklighet f1 ; 
+flerspråklighet f1 ; 
+urolighet f1 ; 
+Meroffentlighet f1 ; 
+kokemulighet f1 ; 
+hensiktsmessighet f1 ; 
+lesehastighet f1 ; 
+trygderettighet f1 ; 
+resursrettighet f1 ; 
+handlefrihet f1 ; 
+ulikhet f1 ; 
+ydmykhet f1 ; 
+FoU-virksomhet f1 ; 
+medievirksomhet f1 ; 
+duodjivirksomhet f1 ; 
+kampflyvirksomhet f1 ; 
+revyvirksomhet f1 ; 
+knapphet f1 ; 
+forutsigbarhet f1 ; 
+lesbarhet f1 ; 
+el-sikkerhet f1 ; 
+tapperhet f1 ; 
+Annerledeshet f1 ; 
+håpløshet f1 ; 
+maktesløshet f1 ; 
+selvbevissthet f1 ; 
+skjevhet f1 ; 
+stivhet f1 ; 
+TV-nyhet f1 ; 
+høyhet f1 ; 
+overhøyhet f1 ; 
+fossekraft f1 ; 
+flytteutgift f1 ; 
+personalutgift f1 ; 
+trygdeavgift f1 ; 
+engangsavgift f1 ; 
+samdrift f1 ; 
+rovviltforskrift f1 ; 
+merinntekt f1 ; 
+eksportinntekt f1 ; 
+kjøreplikt f1 ; 
+leseplikt f1 ; 
+henteplikt f1 ; 
+gudsfrykt f1 ; 
+urgrav f1 ; 
+hundelov f1 ; 
+gymnasielov f1 ; 
+tvistelov f1 ; 
+arvelov f1 ; 
+dyrevelferdslov f1 ; 
+resursforvaltningslov f1 ; 
+eigedomsregistreringslov f1 ; 
+resurslov f1 ; 
+Nett-TV m1 ; 
+småskala m1 ; 
+astma m1 ; 
+duodji-opplæringsarena m1 ; 
+flora m1 ; 
+prostata m1 ; 
+drømmejobb m1 ; 
+småjobb m1 ; 
+svømmeklubb m1 ; 
+finnefondssøknad m1 ; 
+inndrivelseskostnad m1 ; 
+magistergrad m1 ; 
+bachelorgrad m1 ; 
+detaljeringsgrad m1 ; 
+cd m1 ; 
+torskebestand m1 ; 
+jervebestand m1 ; 
+rovviltbestand m1 ; 
+medietrend m1 ; 
+dyrevelferd m1 ; 
+torskefjord m1 ; 
+fuktskade m1 ; 
+leseglede m1 ; 
+flyttelengde m1 ; 
+flyttemengde m1 ; 
+begynnerperiode m1 ; 
+regnemetode m1 ; 
+lesemetode m1 ; 
+letemetode m1 ; 
+høstingsmetode m1 ; 
+foreldrepenge m1 ; 
+dyretragedie m1 ; 
+eksportsubsidie m1 ; 
+TV-serie m1 ; 
+mediehistorie m1 ; 
+polarhistorie m1 ; 
+bærebjelke m1 ; 
+kvænsktale m1 ; 
+duodjiavtale m1 ; 
+frihandelsavtale m1 ; 
+hjemmeskole m1 ; 
+regnetime m1 ; 
+fiskestamme m1 ; 
+tvisteløsningsmekanisme m1 ; 
+bygdeturisme m1 ; 
+vandreturisme m1 ; 
+røykevane m1 ; 
+lesevane m1 ; 
+levevane m1 ; 
+skrivevane m1 ; 
+prototype m1 ; 
+heimeyrke-vare m1 ; 
+geodatabase m1 ; 
+fripolise m1 ; 
+løsrivelsesbevegelse m1 ; 
+ivaretakelse m1 ; 
+spørreundersøkelse m1 ; 
+feltundersøkelse m1 ; 
+arbeidstilltalelse m1 ; 
+flyttegodtgjørelse m1 ; 
+trygdeytelse m1 ; 
+leseopplevelse m1 ; 
+løsrivelse m1 ; 
+maktforskyvelse m1 ; 
+måloppnåelse m1 ; 
+Leseforståelse m1 ; 
+leseforståelse m1 ; 
+resursbalanse m1 ; 
+NHO-konferanse m1 ; 
+innspillskonferanse m1 ; 
+SPR-ungdomskonferanse m1 ; 
+rovviltkonferanse m1 ; 
+IKT-kompetanse m1 ; 
+skrivekompetanse m1 ; 
+duodjikompetanse m1 ; 
+dobbeltkompetanse m1 ; 
+ostemasse m1 ; 
+regnemåte m1 ; 
+høstingsmåte m1 ; 
+fristdag m1 ; 
+utforskertrang m1 ; 
+kulkturminneverdi m1 ; 
+eksportverdi m1 ; 
+ISAF-strategi m1 ; 
+cyber-strategi m1 ; 
+utviklings-strategi m1 ; 
+mediestrategi m1 ; 
+vernestrategi m1 ; 
+lesestrategi m1 ; 
+lyttestrategi m1 ; 
+skrivestrategi m1 ; 
+bioenergi m1 ; 
+tsunami m1 ; 
+diakoni m1 ; 
+genterapi m1 ; 
+vernekategori m1 ; 
+hofteleddsdysplasi m1 ; 
+lesemetodikk m1 ; 
+kjøreteknikk m1 ; 
+mobbeproblematikk m1 ; 
+overbeiteproblematikk m1 ; 
+eldrepolitikk m1 ; 
+duodjipolitikk m1 ; 
+assimileringspolitikk m1 ; 
+kanaliseringspolitikk m1 ; 
+leverandøkjøpspolitikk m1 ; 
+rovviltpolitikk m1 ; 
+logistikk m1 ; 
+Nordområdelogistikk m1 ; 
+sykefraværsstatistikk m1 ; 
+TV-kanal m1 ; 
+bygdeorginal m1 ; 
+sovesal m1 ; 
+gymsal m1 ; 
+fiberkabel m1 ; 
+grasrotandel m1 ; 
+personalprofil m1 ; 
+datahall m1 ; 
+tvisteløsningsmodell m1 ; 
+bygdebruksmodell m1 ; 
+tunell m1 ; 
+lappekodisill m1 ; 
+stavekontroll m1 ; 
+eksportkontroll m1 ; 
+tegnefilm m1 ; 
+koftearm m1 ; 
+verneplan m1 ; 
+personalplan m1 ; 
+flerbruksplan m1 ; 
+demensplan m1 ; 
+omverden m1 ; 
+hjemmeeksamen m1 ; 
+juksamaskin m1 ; 
+grobunn m1 ; 
+iPhone-applikasjon m1 ; 
+faktainformasjon m1 ; 
+tastekombinasjon m1 ; 
+faktadokumentasjon m1 ; 
+foreldrerepresentasjon m1 ; 
+utenriksstasjon m1 ; 
+mediesituasjon m1 ; 
+tolkesituasjon m1 ; 
+PF-sesjon m1 ; 
+sendekonsesjon m1 ; 
+torskekonsesjon m1 ; 
+opprettskonsesjon m1 ; 
+juletradisjon m1 ; 
+duodjitradisjon m1 ; 
+høstingstradisjon m1 ; 
+finnemisjon m1 ; 
+Tana-aksjon m1 ; 
+strykeaksjon m1 ; 
+saksutrederfunksjon m1 ; 
+dobbeltfunksjon m1 ; 
+duodjiproduksjon m1 ; 
+dokumentarproduksjon m1 ; 
+ILO-konvensjon m1 ; 
+betaversjon m1 ; 
+judo m1 ; 
+logo m1 ; 
+hovedlogo m1 ; 
+demo m1 ; 
+gammegetto m1 ; 
+nomadkunnskap m1 ; 
+skrivekunnskap m1 ; 
+heimedåp m1 ; 
+dokumentar m1 ; 
+måleindikator m1 ; 
+motkonjunktur m1 ; 
+IKT-infrastruktur m1 ; 
+fiberinfrastruktur m1 ; 
+logistikkstruktur m1 ; 
+motkultur m1 ; 
+finansingspraksis m1 ; 
+demens m1 ; 
+eksistens m1 ; 
+logistikkressurs m1 ; 
+personalressurs m1 ; 
+genressurs m1 ; 
+konverteringsressurs m1 ; 
+urfolksinteress m1 ; 
+reindriftsinteress m1 ; 
+tolkeprosess m1 ; 
+verneprosess m1 ; 
+skriveprosess m1 ; 
+katekismus m1 ; 
+kulturminnetypus m1 ; 
+konsensus m1 ; 
+vernestatus m1 ; 
+lokalitet m1 ; 
+nationalitet m1 ; 
+funksjonalitet m1 ; 
+pluralitet m1 ; 
+kravmentalitet m1 ; 
+aktualitet m1 ; 
+parallellitet m1 ; 
+anonymitet m1 ; 
+lastekapasitet m1 ; 
+naivitet m1 ; 
+inaktivitet m1 ; 
+interaktivitet m1 ; 
+jagerflyaktivitet m1 ; 
+effektivitet m1 ; 
+prostatakreft m1 ; 
+gulrotbit m1 ; 
+sosiolekt m1 ; 
+antioksidant m1 ; 
+neirespondent m1 ; 
+horisont m1 ; 
+mynt m1 ; 
+minnemynt m1 ; 
+pilot m1 ; 
+fugleart m1 ; 
+rovviltart m1 ; 
+eksport m1 ; 
+reguleringseksport m1 ; 
+bifangst m1 ; 
+kvalitetsbrist m1 ; 
+Rapporteringsfrist m1 ; 
+rapporteringsfrist m1 ; 
+refusjonstakst m1 ; 
+hovedpost m1 ; 
+epost m1 ; 
+leselyst m1 ; 
+skrivelyst m1 ; 
+mediadebatt m1 ; 
+fregatt m1 ; 
+støvlett m1 ; 
+lånerett m1 ; 
+humanitærrett m1 ; 
+eksportkreditt m1 ; 
+satellitt m1 ; 
+kvartsitt m1 ; 
+læremiddelpott m1 ; 
+smågutt m1 ; 
+stemmeseddelkonvoutt m1 ; 
+høyslått m1 ; 
+fax m1 ; 
+bindeledd n1 ; 
+innløsningstilskudd n1 ; 
+bygdearbeidsmarked n1 ; 
+husdyrhald n1 ; 
+mediemangfold n1 ; 
+geitehold n1 ; 
+selvhushold n1 ; 
+duodjiord n1 ; 
+TV2-tilbud n1 ; 
+Tv-tilbud n1 ; 
+hjelpetilbud n1 ; 
+mentortilbud n1 ; 
+spesialisttilbud n1 ; 
+Norgesombud n1 ; 
+lærefag n1 ; 
+duodjifag n1 ; 
+håndstrikkeduodjifag n1 ; 
+pelsduodjifag n1 ; 
+faktagrunnlag n1 ; 
+rektrutteringsgrunnlag n1 ; 
+tv-innslag n1 ; 
+medieoppslag n1 ; 
+Samleforslag n1 ; 
+skattefradrag n1 ; 
+finnefondstillegg n1 ; 
+havneanlegg n1 ; 
+vannrensenanlegg n1 ; 
+medievalg n1 ; 
+bispevalg n1 ; 
+hastevedtak n1 ; 
+plenarvedtak n1 ; 
+nektningsvedtak n1 ; 
+e-pengeforetak n1 ; 
+momsfritak n1 ; 
+hastetiltak n1 ; 
+skattetiltak n1 ; 
+duodjitiltak n1 ; 
+Oppfølgningstiltak n1 ; 
+kompetansehevingstiltak n1 ; 
+Budsjettiltak n1 ; 
+trygdemottak n1 ; 
+torskeuttak n1 ; 
+rovviltforlik n1 ; 
+initiativrik n1 ; 
+Faktaark n1 ; 
+læreverk n1 ; 
+EU-regelverk n1 ; 
+permitteringsregelverk n1 ; 
+eneyrkebruk n1 ; 
+enebruk n1 ; 
+drivstofforbruk n1 ; 
+hjemmespråk n1 ; 
+lærespråk n1 ; 
+verdiskapingspotensial n1 ; 
+stemmetall n1 ; 
+læremateriell n1 ; 
+immateriell n1 ; 
+puslespill n1 ; 
+julespill n1 ; 
+regnespill n1 ; 
+innspill n1 ; 
+kodisill n1 ; 
+medieformål n1 ; 
+mediespørsmål n1 ; 
+vernespørsmål n1 ; 
+personalspørsmål n1 ; 
+polarspørsmål n1 ; 
+kulturrsørsmål n1 ; 
+lettøl n1 ; 
+folkesagn n1 ; 
+mediakonsern n1 ; 
+Samlenavn n1 ; 
+domenenavn n1 ; 
+feltnavn n1 ; 
+Dyrehelsetilsyn n1 ; 
+dyrehelsetilsyn n1 ; 
+konkursbo n1 ; 
+Regjeringen.no n1 ; 
+foreldreskap n1 ; 
+EU-medlemskap n1 ; 
+formynderskap n1 ; 
+medmorskap n1 ; 
+kalvetap n1 ; 
+rovvilttap n1 ; 
+cyberangrep n1 ; 
+eneansvar n1 ; 
+koorderingsansvar n1 ; 
+feltutstyr n1 ; 
+sykefravær n1 ; 
+grenseboerbevis n1 ; 
+feltstudiekurs n1 ; 
+vevekurs n1 ; 
+skrivekurs n1 ; 
+duodjikurs n1 ; 
+sykurs n1 ; 
+nålehus n1 ; 
+mediefokus n1 ; 
+pdf-format n1 ; 
+kondensat n1 ; 
+russekort n1 ; 
+lesebrett n1 ; 
+Reindriftsnytt n1 ; 
+vernekrav n1 ; 
+minstekrav n1 ; 
+innsynskrav n1 ; 
+disponeringsskriv n1 ; 
+mødrehelseinitiativ n1 ; 
+jordskjelv n1 ; 
+vernebehov n1 ; 
+kompetansehevingsbehov n1 ; 
+husstøv n1 ; 
+framskynde v1 ; 
+forveksle v1 ; 
+kuppe v1 ; 
+oppløfte v1 ; 
+taste v1 ; 
+kveste v1 ; 
+ubebodd a2 ; 
+gjenstridig a2 ; 
+ligegyldig a2 ; 
+ukristelig a2 ; 
+yrkesfaglig a2 ; 
+reindriftsfaglig a2 ; 
+firespråklig a2 ; 
+trespråklig a2 ; 
+enspråklig a2 ; 
+flerspråklig a2 ; 
+minoritetsspråklig a2 ; 
+uttallig a2 ; 
+uforsonlig a2 ; 
+ikke-statlig a2 ; 
+mellomstatlig a2 ; 
+mindreårig a2 ; 
+treårig a2 ; 
+helårig a2 ; 
+toårig a2 ; 
+flerårig a2 ; 
+halvårig a2 ; 
+driftsmessig a2 ; 
+livskraftig a2 ; 
+innenlandsk a2 ; 
+spesialpedagogisk a2 ; 
+epidemiologisk a2 ; 
+morfofonologisk a2 ; 
+landbruksøkonomisk a2 ; 
+fleretnisk a2 ; 
+kymrisk a2 ; 
+kontradiktorisk a2 ; 
+krigshistorisk a2 ; 
+distriktspsykiatrisk a2 ; 
+frisisk a2 ; 
+vepsisk a2 ; 
+norsk-russisk a2 ; 
+konkurransepolitisk a2 ; 
+personalpolitisk a2 ; 
+kulturpolitisk a2 ; 
+likestillingspolitisk a2 ; 
+landbrukspolitisk a2 ; 
+jordbrukspolitisk a2 ; 
+didaktisk a2 ; 
+subarktisk a2 ; 
+diagnostisk a2 ; 
+klokkerdansk a2 ; 
+læstadiansk a2 ; 
+selvvalgt a2 ; 
+fåfengt a2 ; 
+Næringsfordelt a2 ; 
+signifikant a2 ; 
+intelligent a2 ; 
+kompetent a2 ; 
+framsynt a2 ; 
+uavklart a2 ; 
+uspesifisert a2 ; 
+ubalansert a2 ; 
+unyansert a2 ; 
+robust a2 ; 
+sammensatt a2 ; 
+eksplisitt a2 ; 
+nedslått a2 ; 
+læremiddelutvikler m2 ; 
+bølgedemper m2 ; 
+herredskasserer m2 ; 
+pdf-skjema n2 ; 
+dilemma n2 ; 
+astma n2 ; 
+ståsted n2 ; 
+havnesamarbeid n2 ; 
+kapabilitetssamarbeid n2 ; 
+Verneplanarbeid n2 ; 
+verneplanarbeid n2 ; 
+merarbeid n2 ; 
+dokumetasjonsarbeid n2 ; 
+Rehabilieringsstipend n2 ; 
+sjølbilde n2 ; 
+motbilde n2 ; 
+kulturgode n2 ; 
+utelekeområde n2 ; 
+personalområde n2 ; 
+cyberområde n2 ; 
+Feltstudie n2 ; 
+skrivestykke n2 ; 
+heimeyrke n2 ; 
+eneyrke n2 ; 
+foreldreønske n2 ; 
+genmateriale n2 ; 
+verneregime n2 ; 
+melkegjemme n2 ; 
+kjøttgjemme n2 ; 
+siidastyre n2 ; 
+handsnøre n2 ; 
+innspillsmøte n2 ; 
+havnebasseng n2 ; 
+neverkorg n2 ; 
+eID-program n2 ; 
+EU-program n2 ; 
+Bachelors-program n2 ; 
+leseprogram n2 ; 
+dokumentarprogram n2 ; 
+masterprogram n2 ; 
+bachelorprogram n2 ; 
+digitaliseringsprogram n2 ; 
+e-læringsprogram n2 ; 
+oversettingsprogram n2 ; 
+kompetansehevingsprogram n2 ; 
+demensprogram n2 ; 
+Mastersprogram n2 ; 
+aktualitetsprogram n2 ; 
+kampflyprogram n2 ; 
+rovvilt-problem n2 ; 
+avgresningsproblem n2 ; 
+EU-system n2 ; 
+flyttesystem n2 ; 
+orddatabanksystem n2 ; 
+innrapporteringssystem n2 ; 
+reindriftsundervisnmgen n2 ; 
+pronomen n2 ; 
+konsensusprinsipp n2 ; 
+EU-prosjekt n2 ; 
+Verdde-prosjekt n2 ; 
+Divvun-prosjekt n2 ; 
+oppfølgings-prosjekt n2 ; 
+tolkeprosjekt n2 ; 
+duodjiprosjekt n2 ; 
+e-valgsprosjekt n2 ; 
+kulturminneregistreingsprosjekt n2 ; 
+lesestimuleringsprosjekt n2 ; 
+Alfabeiseringsprosjekt n2 ; 
+kompetansehevingsprosjekt n2 ; 
+demensprosjekt n2 ; 
+lensmannsdistrikt n2 ; 
+iverksettelsestidspunkt n2 ; 
+duodjiprodukt n2 ; 
+lavkostprodukt n2 ; 
+ABM-felt n2 ; 
+rusbehandlingsfelt n2 ; 
+kringkastingsfelt n2 ; 
+saksfelt n2 ; 
+arealsaksfelt n2 ; 
+suohkan-skilt n2 ; 
+personalreglement n2 ; 
+EU-dokument n2 ; 
+Samledokument n2 ; 
+iverksettingsdokument n2 ; 
+patent n2 ; 
+hjemmestyrebudsjett n2 ; 
+utenriksbudsjett n2 ; 
+foreldreperspektiv n2 ; 
+inkluderingsperspektiv n2 ; 
+siidanivå n2 ; 
+vannivå n2 ; 
+masternivå n2 ; 
+Bachelornivå n2 ; 
+bachelornivå n2 ; 
+detaljeringsnivå n2 ; 
+høstingsnivå n2 ; 
+embetsnivå n2 ; 
+hjemmemiljø n2 ; 
+duodjimiljø n2 ; 
+ferdigstille v2 ; 
+sammenstille v2 ; 
+blottstille v2 ; 
+kjønnsrelatere v2 ; 
+overstyre v2 ; 
+livnære v2 ; 
+oppkjøre v2 ; 
+opprøre v2 ; 
+framvokse v2 ; 
+målretta a3 ; 
+utdanningsskadelidende a3 ; 
+Kostnadssenkende a3 ; 
+velfungerende a3 ; 
+uengasjerende a3 ; 
+oppegående a3 ; 
+umoderne a3 ; 
+pomorhandel m3 ; 
+verneregel m3 ; 
+kjøreregel m3 ; 
+froskeyngel m3 ; 
+polarsirkel m3 ; 
+TS-middel n3 ; 
+EU-middel n3 ; 
+hjælpemiddel n3 ; 
+gruppemiddel n3 ; 
+IKT-læremiddel n3 ; 
+kompetansemiddel n3 ; 
+rentemiddel n3 ; 
+sprøytemiddel n3 ; 
+duodjimiddel n3 ; 
+kontrollmiddel n3 ; 
+bygdeutviklingsmiddel n3 ; 
+omstillingsmiddel n3 ; 
+flokkuleringsmiddel n3 ; 
+tospråklighetsmiddel n3 ; 
+innevarsel n3 ; 
+genressurskapittel n3 ; 
+tveegget a4 ; 
+hørselshemmet a4 ; 
+velordnet a4 ; 
+ugrunnet a4 ; 
+rampet a4 ; 
+multihandikappet a4 ; 
+målrettet a4 ; 
+yrkesrettet a4 ; 
+treffsikker a5 ; 
+funksjonssikker a5 ; 
+ren GJØRE ; 
+fra SKRIVE ; 
+multimedium MUSEUM ; 
+underholdingsmedium MUSEUM ; 
+masterstudium MUSEUM ; 
+helårsstudium MUSEUM ; 
+satellittstudium MUSEUM ; 
+kriterium MUSEUM ; 
+målekriterium MUSEUM ; 
+tildelingskriterium MUSEUM ; 
+oppfølgningskriterium MUSEUM ; 
+abc-bok f1X ; 
+NRL mX ; 
+humaniora mX ; 
+ferde mX ; 
+mapuche mX ; 
+cand.scient mX ; 
+flyttestrøm m1b ; 
+TS-forum n1b ; 
+delelager n3b ; 
+venteregister n3b ; 
+duodjiregister n3b ; 
+stadnamnregister n3b ; 
+kjøremønster n3b ; 
+helgefyll f1sg ; 
+eldreomsorg m1sg ; 
+trygdebruk m1sg ; 
+mediebruk m1sg ; 
+innmat m1sg ; 
+avlingssvikt m1sg ; 
+kommunikasjonssvikt m1sg ; 
+oppmerksomhetssvikt m1sg ; 
+løvtrehugst m1sg ; 
+hjemmefiske n1sg ; 
+Elvefiske n1sg ; 
+Markomeannu prop ; 
+mørkeblå av ; 
+skam SLÅ ; 
+fra RÅ ; 
