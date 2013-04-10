@@ -4671,35 +4671,35 @@ oversiden
 sørsiden 
 østsiden 
 tankeverden 
-skoleverden 
-nummerorden 
-fiken 
+skoleverden m1
+nummerorden m1
+fiken m1
 grovkjøkken 
-dyptallerken 
-middagstallerken 
+dyptallerken m1
+middagstallerken m1
 kaffekjelen 
-lærerskoleeksamen 
-studenteksamen 
-lemen 
+lærerskoleeksamen m1
+studenteksamen m1
+lemen m1
 norskholmen 
 vannmannen 
 halvannen 
 innen 
-vidåpen 
-kjernevåpen 
+vidåpen m3
+kjernevåpen n3
 treårsalderen 
-merkevesen 
-skolevesen 
-helsevesen 
-fattigvesen 
-militærvesen 
-konsulatvesen 
+merkevesen n3
+skolevesen n3
+helsevesen n3
+fattigvesen n3
+militærvesen n3
+konsulatvesen n3
 vranghalsen 
 vissen 
 hundretusen 
 sosialetaten 
 midten 
-nyttårsaften 
+nyttårsaften m3
 viten 
 vestkanten 
 størsteparten 
@@ -4716,763 +4716,763 @@ vegloven
 åndsverkloven 
 grunnloven 
 kjøpsloven 
-lineagn 
-vitneutsagn 
-hovedtegn 
-gangetegn 
-spesialtegn 
-grunntegn 
-værtegn 
-studiedesign 
-kostymedesign 
-reinsogn 
-sidevogn 
-skyssvogn 
-vindturbin 
-bordbein 
-buksebein 
-margbein 
-forbein 
-slakterein 
-nisterein 
-gaffelgrein 
-skogrein 
-villrein 
-hannrein 
-miniatyrrein 
+lineagn n1
+vitneutsagn n1
+hovedtegn n1
+gangetegn n1
+spesialtegn n1
+grunntegn n1
+værtegn n1
+studiedesign m1
+kostymedesign m1
+reinsogn n1
+sidevogn f1
+skyssvogn f1
+vindturbin m1
+bordbein n1
+buksebein n1
+margbein n1
+forbein n1
+slakterein m1
+nisterein m1
+gaffelgrein f1
+skogrein m1
+villrein m1
+hannrein m1
+miniatyrrein m1
 planteprotein 
-ildstedstein 
-sandstein 
-hjørnestein 
-gullstein 
-tannstein 
-jernstein 
-naturstein 
-hullemaskin 
-klippemaskin 
-kopimaskin 
-oppvaskmaskin 
-budsjettdisiplin 
-bilmagasin 
-enkeltbekkasin 
-telemedisin 
-skolemedisin 
-kirkevin 
-nattverdsvin 
-sjøpinnsvin 
-fiskerihamn 
-fylkesrådmann 
-skolemann 
-polititjenestemann 
-språkmann 
-målmann 
-vannmann 
-skolestyreformann 
-landsstyreformann 
-sivilombudsmann 
-fornorskningsmann 
-samelensmann 
-husmann 
-jaktmann 
-multespann 
+ildstedstein m1
+sandstein m1
+hjørnestein m1
+gullstein m1
+tannstein m1
+jernstein m1
+naturstein m1
+hullemaskin m1
+klippemaskin m1
+kopimaskin m1
+oppvaskmaskin m1
+budsjettdisiplin m1
+bilmagasin n2
+enkeltbekkasin m1
+telemedisin m1
+skolemedisin m1
+kirkevin m1
+nattverdsvin m1
+sjøpinnsvin n1
+fiskerihamn f1
+fylkesrådmann MANN
+skolemann MANN
+polititjenestemann MANN
+språkmann MANN
+målmann MANN
+vannmann MANN
+skolestyreformann MANN
+landsstyreformann MANN
+sivilombudsmann MANN
+fornorskningsmann MANN
+samelensmann MANN
+husmann MANN
+jaktmann MANN
+multespann n1
 halsbrann 
-kaffevann 
-innlandsfiskevann 
-overflatevann 
-fjellvann 
-grunnvann 
-prosessvann 
+kaffevann n1
+innlandsfiskevann n1
+overflatevann n1
+fjellvann n1
+grunnvann n1
+prosessvann n1
 enn 
-skirenn 
-pinsevenn 
-fredsvenn 
-inn 
-kobbeskinn 
-fiskeskinn 
-skalleskinn 
-leggskinn 
-elgskinn 
-reinskinn 
-høstskinn 
-mellomtrinn 
-konkurransefortrinn 
-årstrinn 
-snøfonn 
-jordbunn 
-hjertebunn 
-hårbunn 
-innsjøbunn 
-fjordsamfunn 
-skolesamfunn 
-kommunesamfunn 
-klassesamfunn 
-plantesamfunn 
-høvdingsamfunn 
-fiskerisamfunn 
-språksamfunn 
-lokalsamfunn 
-forbrukersamfunn 
-storsamfunn 
-urfolkssamfunn 
-kystsamfunn 
-hovedgrunn 
-festegrunn 
-berggrunn 
-familiebakgrunn 
-språkbakgrunn 
-kulturbakgrunn 
-urfolksbakgrunn 
-steingrunn 
-unnskyldningsgrunn 
-reallønn 
-omstillingslønn 
-vannbrønn 
-gudsønn 
-pleiesønn 
-svigersønn 
-nødtelefon 
-hodetelefon 
-øretelefon 
-pressetelefon 
-hustelefon 
-smarttelefon 
-hodemikrofon 
-grenseregion 
-energiregion 
-tollregion 
-kjøkkenregion 
-fondsregion 
-urfolksregion 
-turistregion 
-vekstregion 
-sesongvariasjon 
-prosjektspesifikasjon 
-produktspesifikasjon 
-kravspesifikasjon 
-kunderelasjon 
-familierelasjon 
-nettverksrelasjon 
-maktrelasjon 
-navigasjonsinstallasjon 
-referansepopulasjon 
-dverggåspopulasjon 
-studieinformasjon 
-uttaleinformasjon 
-kriseinformasjon 
-helseinformasjon 
-valginformasjon 
-trafikkinformasjon 
-nøkkelinformasjon 
-programinformasjon 
-kalenderinformasjon 
-halvårsinformasjon 
-kontaktinformasjon 
-miljøinformasjon 
-deltakernasjon 
-ministerdeklarasjon 
-urfolksdeklarasjon 
-skoleadministrasjon 
-domstoladministrasjon 
-planadministrasjon 
-bondeorganisasjon 
-bransjeorganisasjon 
-samvirkeorganisasjon 
-kystfiskeorganisasjon 
-sameorganisasjon 
-fiskeriorganisasjon 
-dyrevernorganisasjon 
-miljøvernorganisasjon 
-kunstnerorganisasjon 
-kulturorganisasjon 
-urfolksorganisasjon 
-reindriftsorganisasjon 
-prosjektorganisasjon 
-studentorganisasjon 
-produsentorganisasjon 
-turistorganisasjon 
-elevorganisasjon 
-rentekompensasjon 
-presseinvitasjon 
-urfolkskonsultasjon 
-urfolksskonsultasjon 
-budsjettkonsultasjon 
-kjønnsdokumentasjon 
-regnskapsdokumentasjon 
-styrerepresentasjon 
-urfolksrepresentasjon 
-kjønnsrepresentasjon 
-konnotasjon 
-legestasjon 
-elevprestasjon 
-nærradiostasjon 
-gjerdesituasjon 
-drikkesituasjon 
-talesituasjon 
-helsesituasjon 
-tannhelsesituasjon 
-kolonisituasjon 
-språksituasjon 
-arealsituasjon 
-sosialsituasjon 
-læremiddelsituasjon 
-forfattersituasjon 
-konjunktursituasjon 
-kultursituasjon 
-rovdyrsituasjon 
-bestandssituasjon 
-selvmordssituasjon 
-rehabiliteringssituasjon 
-rekrutteringssituasjon 
-læringssituasjon 
-omsorgssituasjon 
-beiteressurssituasjon 
-land-rettighetssituasjon 
-landrettighetssituasjon 
-menneskerettighetssituasjon 
-likviditetssituasjon 
-matsituasjon 
-internatsituasjon 
-piratsituasjon 
-kraftsituasjon 
-maktsituasjon 
-rovviltsituasjon 
-budsjettsituasjon 
-miljøsituasjon 
-områdekonsesjon 
-matfiskkonsesjon 
-ørretkonsesjon 
-vårsesjon 
-urfolkssesjon 
-høstsesjon 
-merketradisjon 
-fisketradisjon 
-salmetradisjon 
-gudstjenestetradisjon 
-flaggtradisjon 
-skriftspråktradisjon 
-teatertradisjon 
-urfolkstradisjon 
-håndverkstradisjon 
-mattradisjon 
-samemisjon 
-skolekommisjon 
-kvinnekommisjon 
-fiskerikommisjon 
-domstolkommisjon 
-kartleggingskommisjon 
-identifiseringskommisjon 
-domstolskommisjon 
-kommuneproposisjon 
-budsjettproposisjon 
-grunneierposisjon 
-grunneierdisposisjon 
-urfolksposisjon 
-kommunerevisjon 
-regnskapsrevisjon 
-foreldreaksjon 
-oljevernaksjon 
-handelstransaksjon 
-soldataksjon 
-valgrefleksjon 
-statsrådseksjon 
-økonomiseksjon 
-språkseksjon 
-læremiddelseksjon 
-planseksjon 
-brannseksjon 
-budsjettseksjon 
-hovedfunksjon 
-rollefunksjon 
-selvstyrefunksjon 
-kompetansefunksjon 
-støttefunksjon 
-nøkkelfunksjon 
-grunnfunksjon 
-eierfunksjon 
-saksbehandlerfunksjon 
-sekretærfunksjon 
-meklingsfunksjon 
-samordningsfunksjon 
-forvaltningsfunksjon 
-landsdelsfunksjon 
-støttepunktfunksjon 
-tollreduksjon 
-vedproduksjon 
-nisjeproduksjon 
-væskeproduksjon 
-råvareproduksjon 
-kompetanseproduksjon 
-planteproduksjon 
-ruteproduksjon 
-eggproduksjon 
-bokproduksjon 
-matfiskproduksjon 
-mineralproduksjon 
-læremiddelproduksjon 
-regelproduksjon 
-kornproduksjon 
-teaterproduksjon 
-kraftforproduksjon 
-kulturproduksjon 
-husdyrproduksjon 
-jordbærproduksjon 
-primærproduksjon 
-fôrproduksjon 
-grasproduksjon 
-basisproduksjon 
-avisproduksjon 
-saksproduksjon 
-petroleumsproduksjon 
-kunnskapsproduksjon 
-drivhusproduksjon 
-kandidatproduksjon 
-potetproduksjon 
-vindkraftproduksjon 
-enkeltproduksjon 
-teltproduksjon 
-svinekjøttproduksjon 
-reinkjøttproduksjon 
-villsauproduksjon 
-høyproduksjon 
-vegkonstruksjon 
-steinkonstruksjon 
-kulturdimensjon 
-urfolksdimensjon 
-kunnskapsdimensjon 
-miljødimensjon 
-grunnpensjon 
-hovedintensjon 
-klimakonvensjon 
-samekonvensjon 
-kvinnekonvensjon 
-reinbeitekonvensjon 
-urfolkskonvensjon 
-miljøkonvensjon 
-papirversjon 
-gruppediskusjon 
-prinsippdiskusjon 
-erklæringsresolusjon 
-randsoneinstitusjon 
-kompetanseinstitusjon 
-sosialinstitusjon 
-sentralinstitusjon 
-teaterinstitusjon 
-urfolksinstitusjon 
-nettverksinstitusjon 
-finansinstitusjon 
-kunstinstitusjon 
-scenekunstinstitusjon 
-mon 
-geværpatron 
-kompetanseperson 
-fagperson 
-nøkkelperson 
-sykebilperson 
-kulturperson 
-ressursperson 
-kontaktperson 
-enkeltperson 
+skirenn n1
+pinsevenn m1
+fredsvenn m1
+inn adv
+kobbeskinn n1
+fiskeskinn n1
+skalleskinn n1
+leggskinn n1
+elgskinn n1
+reinskinn n1
+høstskinn n1
+mellomtrinn n1
+konkurransefortrinn n1
+årstrinn n1
+snøfonn f1
+jordbunn m1
+hjertebunn m1
+hårbunn m1
+innsjøbunn m1
+fjordsamfunn n1
+skolesamfunn n1
+kommunesamfunn n1
+klassesamfunn n1
+plantesamfunn n1
+høvdingsamfunn n1
+fiskerisamfunn n1
+språksamfunn n1
+lokalsamfunn n1
+forbrukersamfunn n1
+storsamfunn n1
+urfolkssamfunn n1
+kystsamfunn n1
+hovedgrunn m1
+festegrunn m1
+berggrunn m1
+familiebakgrunn m1
+språkbakgrunn m1
+kulturbakgrunn m1
+urfolksbakgrunn m1
+steingrunn m1
+unnskyldningsgrunn m1
+reallønn f1
+omstillingslønn f1
+vannbrønn m1
+gudsønn m1
+pleiesønn m1
+svigersønn m1
+nødtelefon m1
+hodetelefon m1
+øretelefon m1
+pressetelefon m1
+hustelefon m1
+smarttelefon m1
+hodemikrofon m1
+grenseregion m1
+energiregion m1
+tollregion m1
+kjøkkenregion m1
+fondsregion m1
+urfolksregion m1
+turistregion m1
+vekstregion m1
+sesongvariasjon m1
+prosjektspesifikasjon m1
+produktspesifikasjon m1
+kravspesifikasjon m1
+kunderelasjon m1
+familierelasjon m1
+nettverksrelasjon m1
+maktrelasjon m1
+navigasjonsinstallasjon m1
+referansepopulasjon m1
+dverggåspopulasjon m1
+studieinformasjon m1
+uttaleinformasjon m1
+kriseinformasjon m1
+helseinformasjon m1
+valginformasjon m1
+trafikkinformasjon m1
+nøkkelinformasjon m1
+programinformasjon m1
+kalenderinformasjon m1
+halvårsinformasjon m1
+kontaktinformasjon m1
+miljøinformasjon m1
+deltakernasjon m1
+ministerdeklarasjon m1
+urfolksdeklarasjon m1
+skoleadministrasjon m1
+domstoladministrasjon m1
+planadministrasjon m1
+bondeorganisasjon m1
+bransjeorganisasjon m1
+samvirkeorganisasjon m1
+kystfiskeorganisasjon m1
+sameorganisasjon m1
+fiskeriorganisasjon m1
+dyrevernorganisasjon m1
+miljøvernorganisasjon m1
+kunstnerorganisasjon m1
+kulturorganisasjon m1
+urfolksorganisasjon m1
+reindriftsorganisasjon m1
+prosjektorganisasjon m1
+studentorganisasjon m1
+produsentorganisasjon m1
+turistorganisasjon m1
+elevorganisasjon m1
+rentekompensasjon m1
+presseinvitasjon m1
+urfolkskonsultasjon m1
+urfolksskonsultasjon m1
+budsjettkonsultasjon m1
+kjønnsdokumentasjon m1
+regnskapsdokumentasjon m1
+styrerepresentasjon m1
+urfolksrepresentasjon m1
+kjønnsrepresentasjon m1
+konnotasjon m1
+legestasjon m1
+elevprestasjon m1
+nærradiostasjon m1
+gjerdesituasjon m1
+drikkesituasjon m1
+talesituasjon m1
+helsesituasjon m1
+tannhelsesituasjon m1
+kolonisituasjon m1
+språksituasjon m1
+arealsituasjon m1
+sosialsituasjon m1
+læremiddelsituasjon m1
+forfattersituasjon m1
+konjunktursituasjon m1
+kultursituasjon m1
+rovdyrsituasjon m1
+bestandssituasjon m1
+selvmordssituasjon m1
+rehabiliteringssituasjon m1
+rekrutteringssituasjon m1
+læringssituasjon m1
+omsorgssituasjon m1
+beiteressurssituasjon m1
+land-rettighetssituasjon m1
+landrettighetssituasjon m1
+menneskerettighetssituasjon m1
+likviditetssituasjon m1
+matsituasjon m1
+internatsituasjon m1
+piratsituasjon m1
+kraftsituasjon m1
+maktsituasjon m1
+rovviltsituasjon m1
+budsjettsituasjon m1
+miljøsituasjon m1
+områdekonsesjon m1
+matfiskkonsesjon m1
+ørretkonsesjon m1
+vårsesjon m1
+urfolkssesjon m1
+høstsesjon m1
+merketradisjon m1
+fisketradisjon m1
+salmetradisjon m1
+gudstjenestetradisjon m1
+flaggtradisjon m1
+skriftspråktradisjon m1
+teatertradisjon m1
+urfolkstradisjon m1
+håndverkstradisjon m1
+mattradisjon m1
+samemisjon m1
+skolekommisjon m1
+kvinnekommisjon m1
+fiskerikommisjon m1
+domstolkommisjon m1
+kartleggingskommisjon m1
+identifiseringskommisjon m1
+domstolskommisjon m1
+kommuneproposisjon m1
+budsjettproposisjon m1
+grunneierposisjon m1
+grunneierdisposisjon m1
+urfolksposisjon m1
+kommunerevisjon m1
+regnskapsrevisjon m1
+foreldreaksjon m1
+oljevernaksjon m1
+handelstransaksjon m1
+soldataksjon m1
+valgrefleksjon m1
+statsrådseksjon m1
+økonomiseksjon m1
+språkseksjon m1
+læremiddelseksjon m1
+planseksjon m1
+brannseksjon m1
+budsjettseksjon m1
+hovedfunksjon m1
+rollefunksjon m1
+selvstyrefunksjon m1
+kompetansefunksjon m1
+støttefunksjon m1
+nøkkelfunksjon m1
+grunnfunksjon m1
+eierfunksjon m1
+saksbehandlerfunksjon m1
+sekretærfunksjon m1
+meklingsfunksjon m1
+samordningsfunksjon m1
+forvaltningsfunksjon m1
+landsdelsfunksjon m1
+støttepunktfunksjon m1
+tollreduksjon m1
+vedproduksjon m1
+nisjeproduksjon m1
+væskeproduksjon m1
+råvareproduksjon m1
+kompetanseproduksjon m1
+planteproduksjon m1
+ruteproduksjon m1
+eggproduksjon m1
+bokproduksjon m1
+matfiskproduksjon m1
+mineralproduksjon m1
+læremiddelproduksjon m1
+regelproduksjon m1
+kornproduksjon m1
+teaterproduksjon m1
+kraftforproduksjon m1
+kulturproduksjon m1
+husdyrproduksjon m1
+jordbærproduksjon m1
+primærproduksjon m1
+fôrproduksjon m1
+grasproduksjon m1
+basisproduksjon m1
+avisproduksjon m1
+saksproduksjon m1
+petroleumsproduksjon m1
+kunnskapsproduksjon m1
+drivhusproduksjon m1
+kandidatproduksjon m1
+potetproduksjon m1
+vindkraftproduksjon m1
+enkeltproduksjon m1
+teltproduksjon m1
+svinekjøttproduksjon m1
+reinkjøttproduksjon m1
+villsauproduksjon m1
+høyproduksjon m1
+vegkonstruksjon m1
+steinkonstruksjon m1
+kulturdimensjon m1
+urfolksdimensjon m1
+kunnskapsdimensjon m1
+miljødimensjon m1
+grunnpensjon m1
+hovedintensjon m1
+klimakonvensjon m1
+samekonvensjon m1
+kvinnekonvensjon m1
+reinbeitekonvensjon m1
+urfolkskonvensjon m1
+miljøkonvensjon m1
+papirversjon m1
+gruppediskusjon m1
+prinsippdiskusjon m1
+erklæringsresolusjon m1
+randsoneinstitusjon m1
+kompetanseinstitusjon m1
+sosialinstitusjon m1
+sentralinstitusjon m1
+teaterinstitusjon m1
+urfolksinstitusjon m1
+nettverksinstitusjon m1
+finansinstitusjon m1
+kunstinstitusjon m1
+scenekunstinstitusjon m1
+mon nX
+geværpatron m1
+kompetanseperson m1
+fagperson m1
+nøkkelperson m1
+sykebilperson m1
+kulturperson m1
+ressursperson m1
+kontaktperson m1
+enkeltperson m1
 kystson 
-barnehagebarn 
-samebarn 
-flyttsamebarn 
-tantebarn 
-jentebarn 
-minstebarn 
-onkelbarn 
-nabobarn 
-urfolksbarn 
-fiskegarn 
-posegarn 
-seigarn 
-krokgarn 
-småfiskgarn 
-håndjern 
-vaffeljern 
-vinkeljern 
-tørrtjern 
-råkostjern 
-fiskerikonsern 
-jordvern 
-områdevern 
-familievern 
-strålevern 
-kulturminnevern 
-krisevern 
-skogvern 
-arealvern 
-personvern 
-arbeidervern 
-kulturvern 
-forfatningsvern 
-landskapsvern 
-ressursvern 
-importvern 
-reinhorn 
-hvetekorn 
-helkorn 
-matkorn 
+barnehagebarn n1
+samebarn n1
+flyttsamebarn n1
+tantebarn n1
+jentebarn n1
+minstebarn n1
+onkelbarn n1
+nabobarn n1
+urfolksbarn n1
+fiskegarn n1
+posegarn n1
+seigarn n1
+krokgarn n1
+småfiskgarn n1
+håndjern n1
+vaffeljern n1
+vinkeljern n1
+tørrtjern n1
+råkostjern n1
+fiskerikonsern n1
+jordvern n1
+områdevern n1
+familievern n1
+strålevern n1
+kulturminnevern n1
+krisevern n1
+skogvern n1
+arealvern n1
+personvern n1
+arbeidervern n1
+kulturvern n1
+forfatningsvern n1
+landskapsvern n1
+ressursvern n1
+importvern n1
+reinhorn n1
+hvetekorn n1
+helkorn n1
+matkorn n1
 kongeørn 
 fiskeørn 
 havørn 
-sjøbotn 
-rødbrun 
-mørkebrun 
-gullbrun 
-gulbrun 
-sommerbrun 
-gatetun 
-fiskerihavn 
-båthavn 
-hovednavn 
-familienavn 
-merkenavn 
-kommunenavn 
-plantenavn 
-partinavn 
-parallellnavn 
-mellomnavn 
-personnavn 
-brukernavn 
-urfolksstedsnavn 
-urfolksnavn 
-prosjektnavn 
-produktnavn 
-forstavn 
-vedovn 
-steinovn 
-havregryn 
-menneskesyn 
-jernbanetilsyn 
-helsetilsyn 
-skogtilsyn 
-arbeidstilsyn 
-stiftelsestilsyn 
-forurensningstilsyn 
-pristilsyn 
-havbrukstilsyn 
-finanstilsyn 
-myndighetstilsyn 
-konkurransehensyn 
-kompetansehensyn 
-naturvernhensyn 
-ressurshensyn 
-sikkerhetshensyn 
-miljøhensyn 
-innsyn 
-internfjernsyn 
-fiskerioppsyn 
-reinoppsyn 
-grunneiersyn 
-lærersyn 
-bokettersyn 
-elevsyn 
-rentestøttelån 
-boliglån 
-banklån 
-startlån 
-sameradio 
-lokalradio 
-nærradio 
-fjelljo 
-valutarisiko 
-tapsrisiko 
+sjøbotn m1
+rødbrun a1
+mørkebrun a1
+gullbrun a1
+gulbrun a1
+sommerbrun a1
+gatetun n1
+fiskerihavn f1
+båthavn f1
+hovednavn n1
+familienavn n1
+merkenavn n1
+kommunenavn n1
+plantenavn n1
+partinavn n1
+parallellnavn n1
+mellomnavn n1
+personnavn n1
+brukernavn n1
+urfolksstedsnavn n1
+urfolksnavn n1
+prosjektnavn n1
+produktnavn n1
+forstavn m1
+vedovn m1
+steinovn m1
+havregryn n1
+menneskesyn n1
+jernbanetilsyn n1
+helsetilsyn n1
+skogtilsyn n1
+arbeidstilsyn n1
+stiftelsestilsyn n1
+forurensningstilsyn n1
+pristilsyn n1
+havbrukstilsyn n1
+finanstilsyn n1
+myndighetstilsyn n1
+konkurransehensyn n1
+kompetansehensyn n1
+naturvernhensyn n1
+ressurshensyn n1
+sikkerhetshensyn n1
+miljøhensyn n1
+innsyn n1
+internfjernsyn n1
+fiskerioppsyn n1
+reinoppsyn n1
+grunneiersyn n1
+lærersyn n1
+bokettersyn n1
+elevsyn n1
+rentestøttelån n1
+boliglån n1
+banklån n1
+startlån n1
+sameradio m1
+lokalradio m1
+nærradio m1
+fjelljo m1
+valutarisiko m1
+tapsrisiko m1
 skisko 
 vintersko 
-snøkino 
-kaldsno 
-hårsjampo 
-bankgiro 
+snøkino m1
+kaldsno m1
+hårsjampo m1
+bankgiro m1
 fremtidstro 
-møtedato 
-stoppdato 
-utbetalingsdato 
-sluttdato 
-gavekonto 
-postgirokonto 
-forsidefoto 
-pressefoto 
-lavvo 
-oljeberedskap 
-kriseberedskap 
-brannberedskap 
-oljevernberedskap 
-matberedskap 
-tankeredskap 
-styringsredskap 
-fangstredskap 
-naturlandskap 
-kulturlandskap 
-hovedbudskap 
-bokskap 
-svalskap 
-randsoneselskap 
-plateselskap 
-energiselskap 
-industriselskap 
-mineralselskap 
-bibelselskap 
-søkerselskap 
-konsulentselskap 
-særlovselskap 
-paraplyselskap 
-hovedegenskap 
-lederegenskap 
-elementæregenskap 
-miljøegenskap 
-musikkvitenskap 
-språkvitenskap 
-perioderegnskap 
-halvårsregnskap 
-aktivitetsregnskap 
-resultatregnskap 
-brannmannskap 
-distriktsformannskap 
-arenakunnskap 
-nordområdekunnskap 
-skolekunnskap 
-flyttsamekunnskap 
-fagkunnskap 
-samiskkunnskap 
-engelskkunnskap 
-språkkunnskap 
-materialkunnskap 
-lokalkunnskap 
-forbrukerkunnskap 
-forkunnskap 
-naturkunnskap 
-kulturkunnskap 
-forretningskunnskap 
-basiskunnskap 
-urfolkskunnskap 
-elevkunnskap 
-miljøkunnskap 
-farskap 
-medarbeiderskap 
-medborgerskap 
-eierskap 
-bileierskap 
-partnerskap 
-skolemesterskap 
-samemesterskap 
-skimesterskap 
-lassomesterskap 
-entreprenørskap 
-fiskefellesskap 
-interessefellesskap 
-kulturfellesskap 
-reintap 
-hukommelsestap 
-kulturminnebegrep 
-kompetansebegrep 
-trafikkbegrep 
-kulturbegrep 
-etnisitetsbegrep 
-terrorangrep 
-rovdyrangrep 
-terrenginngrep 
-naturinngrep 
-rettsinngrep 
-mageknip 
-ekstrahjelp 
-matvarehjelp 
-krisehjelp 
-leksehjelp 
-førstehjelp 
-sosialhjelp 
-gjeterhjelp 
-sekretærhjelp 
-linestamp 
-snøklump 
-halestump 
-nakkegrop 
-fiskegrop 
-fangstgrop 
-jubelrop 
-handlelapp 
-adresselapp 
-skjorteknapp 
-tinnknapp 
-hornknapp 
-fisketrapp 
-rulletrapp 
-branntrapp 
-busstrapp 
-internattrapp 
-øreflipp 
-klimagassutslipp 
-giftutslipp 
-hovedprinsipp 
-konkurranseprinsipp 
-grunnprinsipp 
-sektorprinsipp 
-likeverdsprinsipp 
-fredningsprinsipp 
-forholdstallsprinsipp 
-avhengighetsprinsipp 
-likevektsprinsipp 
-bærekraftprinsipp 
-kontantprinsipp 
-miljøprinsipp 
+møtedato m1
+stoppdato m1
+utbetalingsdato m1
+sluttdato m1
+gavekonto m1
+postgirokonto m1
+forsidefoto m1
+pressefoto m1
+lavvo m1
+oljeberedskap m1
+kriseberedskap m1
+brannberedskap m1
+oljevernberedskap m1
+matberedskap m1
+tankeredskap m1
+styringsredskap m1
+fangstredskap m1
+naturlandskap n1
+kulturlandskap n1
+hovedbudskap n1
+bokskap n1
+svalskap n1
+randsoneselskap n1
+plateselskap n1
+energiselskap n1
+industriselskap n1
+mineralselskap n1
+bibelselskap n1
+søkerselskap n1
+konsulentselskap n1
+særlovselskap n1
+paraplyselskap n1
+hovedegenskap m1
+lederegenskap m1
+elementæregenskap m1
+miljøegenskap m1
+musikkvitenskap m1
+språkvitenskap m1
+perioderegnskap n1
+halvårsregnskap n1
+aktivitetsregnskap n1
+resultatregnskap n1
+brannmannskap n1
+distriktsformannskap n1
+arenakunnskap m1
+nordområdekunnskap m1
+skolekunnskap m1
+flyttsamekunnskap m1
+fagkunnskap m1
+samiskkunnskap m1
+engelskkunnskap m1
+språkkunnskap m1
+materialkunnskap m1
+lokalkunnskap m1
+forbrukerkunnskap m1
+forkunnskap m1
+naturkunnskap m1
+kulturkunnskap m1
+forretningskunnskap m1
+basiskunnskap m1
+urfolkskunnskap m1
+elevkunnskap m1
+miljøkunnskap m1
+farskap n1
+medarbeiderskap n1
+medborgerskap n1
+eierskap n1
+bileierskap n1
+partnerskap n1
+skolemesterskap n1
+samemesterskap n1
+skimesterskap n1
+lassomesterskap n1
+entreprenørskap n1
+fiskefellesskap n1
+interessefellesskap n1
+kulturfellesskap n1
+reintap n1
+hukommelsestap n1
+kulturminnebegrep n1
+kompetansebegrep n1
+trafikkbegrep n1
+kulturbegrep n1
+etnisitetsbegrep n1
+terrorangrep n1
+rovdyrangrep n1
+terrenginngrep n1
+naturinngrep n1
+rettsinngrep n1
+mageknip n1
+ekstrahjelp f1
+matvarehjelp f1
+krisehjelp f1
+leksehjelp f1
+førstehjelp f1
+sosialhjelp f1
+gjeterhjelp f1
+sekretærhjelp f1
+linestamp m1
+snøklump m1
+halestump m1
+nakkegrop f1
+fiskegrop f1
+fangstgrop f1
+jubelrop n1
+handlelapp m1
+adresselapp m1
+skjorteknapp m1
+tinnknapp m1
+hornknapp m1
+fisketrapp f1
+rulletrapp f1
+branntrapp f1
+busstrapp f1
+internattrapp f1
+øreflipp m1
+klimagassutslipp n1
+giftutslipp n1
+hovedprinsipp n1
+konkurranseprinsipp n1
+grunnprinsipp n1
+sektorprinsipp n1
+likeverdsprinsipp n1
+fredningsprinsipp n1
+forholdstallsprinsipp n1
+avhengighetsprinsipp n1
+likevektsprinsipp n1
+bærekraftprinsipp n1
+kontantprinsipp n1
+miljøprinsipp n1
 opp 
-skihopp 
-tekopp 
-plastkopp 
-bakketopp 
-tretopp 
-tabelltopp 
-fjelltopp 
-garndupp 
+skihopp n1
+tekopp m1
+plastkopp m1
+bakketopp m1
+tretopp m1
+tabelltopp m1
+fjelltopp m1
+garndupp m1
 militærkupp 
-skitupp 
-samecup 
-samebryllup 
-reinkjøp 
-fartøykjøp 
-grunnbeløp 
-restbeløp 
-reinkappløp 
-opplæringsløp 
-progresjonsløp 
-skredfar 
-pleiefar 
-stamfar 
-vassfar 
-skolebibliotekar 
-gammelungkar 
-sommervikar 
-vannkar 
-høyfjellskar 
-hovedpilar 
-grunnpilar 
-valgmanntalleksemplar 
-klimaseminar 
-barnehageseminar 
-historieseminar 
-kommuneseminar 
-styreseminar 
-valgseminar 
-fiskeriseminar 
-språkseminar 
-sosialseminar 
-filmseminar 
-urfolksfilmseminar 
-prosjektlederseminar 
-forskerseminar 
-nettverksseminar 
-vindkraftseminar 
-reindriftseminar 
-startseminar 
-ekspertseminar 
-kongepar 
-havellepar 
-kjærestepar 
-tvillingpar 
-ærfuglpar 
-forfatterhonorar 
-oversetterhonorar 
-konsulenthonorar 
-artisthonorar 
-skoleinventar 
+skitupp m1
+samecup m1
+samebryllup n1
+reinkjøp n1
+fartøykjøp n1
+grunnbeløp n1
+restbeløp n1
+reinkappløp n1
+opplæringsløp n1
+progresjonsløp n1
+skredfar n1
+pleiefar FAR
+stamfar FAR
+vassfar FAR
+skolebibliotekar m1
+gammelungkar m1
+sommervikar m1
+vannkar n1
+høyfjellskar n1
+hovedpilar m1
+grunnpilar m1
+valgmanntalleksemplar n2
+klimaseminar n2
+barnehageseminar n2
+historieseminar n2
+kommuneseminar n2
+styreseminar n2
+valgseminar n2
+fiskeriseminar n2
+språkseminar n2
+sosialseminar n2
+filmseminar n2
+urfolksfilmseminar n2
+prosjektlederseminar n2
+forskerseminar n2
+nettverksseminar n2
+vindkraftseminar n2
+reindriftseminar n2
+startseminar n2
+ekspertseminar n2
+kongepar n2
+havellepar n2
+kjærestepar n2
+tvillingpar n2
+ærfuglpar n2
+forfatterhonorar n2
+oversetterhonorar n2
+konsulenthonorar n2
+artisthonorar n2
+skoleinventar n2
 jordbruksvekstar 
 hagebruksvekstar 
-hovedansvar 
-landansvar 
-straffansvar 
-vegansvar 
-planansvar 
-lederansvar 
-eieransvar 
-arbeidsgiveransvar 
-operatøransvar 
-oppfølgingsansvar 
-samordningsansvar 
-erstatningsansvar 
-koordineringsansvar 
-rapporteringsansvar 
-etatsstyringsansvar 
-gjennomføringsansvar 
-regnskapsansvar 
-prosjektansvar 
-budsjettansvar 
-landforsvar 
-førstelinjeforsvar 
-innsatsforsvar 
-luftforsvar 
-sjøforsvar 
-skolefadder 
-sædleder 
-studieleder 
-kantineleder 
-komiteleder 
-møteleder 
-eggleder 
-kildeveileder 
-sosialleder 
-panelleder 
-hovedinnleder 
-kontorleder 
-stabsleder 
-fritidsleder 
-foreldrerådsleder 
-byrådsleder 
-forhandlingsleder 
-utviklingsleder 
-forskningsleder 
-undervisningsleder 
-urfolksleder 
-forsøksleder 
-plenumsleder 
-delegasjonsleder 
-informasjonsleder 
-misjonsleder 
-opposisjonsleder 
-seksjonsleder 
-barnevernsleder 
-kursleder 
-virksomhetsleder 
-distriktsleder 
-jaktleder 
-komitéleder 
-stedfortreder 
-kontorsteder 
-språkmedarbeider 
-informasjonsmedarbeider 
-redaksjonsmedarbeider 
-driftsmedarbeider 
-prosjektmedarbeider 
-vegarbeider 
-fabrikkarbeider 
-språkarbeider 
-kontorarbeider 
-løsarbeider 
-reindriftarbeider 
-prosjektarbeider 
+hovedansvar n1
+landansvar n1
+straffansvar n1
+vegansvar n1
+planansvar n1
+lederansvar n1
+eieransvar n1
+arbeidsgiveransvar n1
+operatøransvar n1
+oppfølgingsansvar n1
+samordningsansvar n1
+erstatningsansvar n1
+koordineringsansvar n1
+rapporteringsansvar n1
+etatsstyringsansvar n1
+gjennomføringsansvar n1
+regnskapsansvar n1
+prosjektansvar n1
+budsjettansvar n1
+landforsvar n1
+førstelinjeforsvar n1
+innsatsforsvar n1
+luftforsvar n1
+sjøforsvar n1
+skolefadder m2
+sædleder m2
+studieleder m2
+kantineleder m2
+komiteleder m2
+møteleder m2
+eggleder m2
+kildeveileder m2
+sosialleder m2
+panelleder m2
+hovedinnleder m2
+kontorleder m2
+stabsleder m2
+fritidsleder m2
+foreldrerådsleder m2
+byrådsleder m2
+forhandlingsleder m2
+utviklingsleder m2
+forskningsleder m2
+undervisningsleder m2
+urfolksleder m2
+forsøksleder m2
+plenumsleder m2
+delegasjonsleder m2
+informasjonsleder m2
+misjonsleder m2
+opposisjonsleder m2
+seksjonsleder m2
+barnevernsleder m2
+kursleder m2
+virksomhetsleder m2
+distriktsleder m2
+jaktleder m2
+komitéleder m2
+stedfortreder m2
+kontorsteder m2
+språkmedarbeider m2
+informasjonsmedarbeider m2
+redaksjonsmedarbeider m2
+driftsmedarbeider m2
+prosjektmedarbeider m2
+vegarbeider m2
+fabrikkarbeider m2
+språkarbeider m2
+kontorarbeider m2
+løsarbeider m2
+reindriftarbeider m2
+prosjektarbeider m2
 omsider 
-skolealder 
-grunnskolealder 
-senmiddelalder 
-jernalder 
-forelder 
+skolealder m2
+grunnskolealder m2
+senmiddelalder m2
+jernalder m2
+forelder m2
 older 
-glassbeholder 
-vegholder 
-møtekalender 
-kulturkalender 
-avstandshinder 
-hovedlager 
-kistelager 
-boklager 
-kornlager 
-møteplager 
-reguleringslager 
-kjøttlager 
-lintøylager 
+glassbeholder m2
+vegholder m2
+møtekalender m2
+kulturkalender m2
+avstandshinder n3b
+hovedlager n3b
+kistelager n3b
+boklager n3b
+kornlager n3b
+møteplager n3b
+reguleringslager n3b
+kjøttlager n3b
+lintøylager n3b
 skinnmager 
-villreinjeger 
-dørselger 
-musikksjanger 
-partitilhenger 
+villreinjeger m2
+dørselger m2
+musikksjanger m2
+partitilhenger m2
 feriepenger 
 lommepenger 
 reisepenger 
@@ -5480,127 +5480,127 @@ dagpenger
 språkpenger 
 bompenger 
 kulturpenger 
-langfinger 
-ringfinger 
-tommelfinger 
+langfinger m3
+ringfinger m3
+tommelfinger m3
 moloutbygginger 
-barnehageeier 
-skoleeier 
-deleier 
-sjefsykepleier 
-tannpleier 
-oljegreier 
-brukseier 
-institusjonseier 
+barnehageeier m2
+skoleeier m2
+deleier m2
+sjefsykepleier m2
+tannpleier m2
+oljegreier m2
+brukseier m2
+institusjonseier m2
 transportveier 
 underkategorier 
-skomaker 
+skomaker m2
 polarsaker 
-møtedeltaker 
-tingdeltaker 
-paneldeltaker 
-forsikringstaker 
-tilskuddmottaker 
-stipendmottaker 
+møtedeltaker m2
+tingdeltaker m2
+paneldeltaker m2
+forsikringstaker m2
+tilskuddmottaker m2
+stipendmottaker m2
 sommerleker 
 sultestreiker 
-hvalfangsthistoriker 
-amatørmusiker 
-møbelsnekker 
-tannstikker 
-røykdykker 
-horndykker 
-tannpirker 
-stangfisker 
-sesongfisker 
-garnfisker 
-klimaforsker 
-språkforsker 
-språkbruker 
-arealbruker 
-nettbruker 
-sluttbruker 
-potetåker 
-gulrotåker 
-prosjektsøker 
+hvalfangsthistoriker m2
+amatørmusiker m2
+møbelsnekker m2
+tannstikker m2
+røykdykker m2
+horndykker m2
+tannpirker m2
+stangfisker m2
+sesongfisker m2
+garnfisker m2
+klimaforsker m2
+språkforsker m2
+språkbruker m2
+arealbruker m2
+nettbruker m2
+sluttbruker m2
+potetåker m2
+gulrotåker m2
+prosjektsøker m2
 materialer 
-hovedtaler 
+hovedtaler m2
 partnerskapsavtaler 
 sparemidler 
 multimedialæremidler 
 investeringsmidler 
 dokumentasjonsmidler 
-gjødselkjeller 
-platespiller 
-gitarspiller 
-forslagstiller 
-spørsmålstiller 
-havvindmøller 
+gjødselkjeller m2
+platespiller m2
+gitarspiller m2
+forslagstiller m2
+spørsmålstiller m2
+havvindmøller m2
 spiskammer 
-hoveddommer 
-lagdommer 
-høyesterettsdommer 
-tingrettsdommer 
+hoveddommer m2
+lagdommer m2
+høyesterettsdommer m2
+tingrettsdommer m2
 forsommer 
-ekstranummer 
-nødnummer 
-varenummer 
-referansenummer 
-vegnummer 
-journalnummer 
-telefonnummer 
-mobiltelefonnummer 
-personnummer 
-kontonummer 
-bankkontonummer 
-faksnummer 
-telefaksnummer 
-saksnummer 
-prosjektnummer 
-leggvarmer 
-budsjettvinner 
+ekstranummer m3
+nødnummer m3
+varenummer m3
+referansenummer m3
+vegnummer m3
+journalnummer m3
+telefonnummer m3
+mobiltelefonnummer m3
+personnummer m3
+kontonummer m3
+bankkontonummer m3
+faksnummer m3
+telefaksnummer m3
+saksnummer m3
+prosjektnummer m3
+leggvarmer m2
+budsjettvinner m2
 kaffebønner 
 duodjiorganisasjoner 
-dialogpartner 
-scenekunstner 
-filmkunstner 
-øyboer 
-leksehjelper 
+dialogpartner m2
+scenekunstner m2
+filmkunstner m2
+øyboer m2
+leksehjelper m2
 klistrelapper 
 sølvknapper 
-helpepper 
-grønnpepper 
-hvitpepper 
-svartpepper 
+helpepper m2
+grønnpepper m2
+hvitpepper m2
+svartpepper m2
 vannkopper 
-horekjøper 
-fjellmyrløper 
-midtforsvarer 
-ordstyrer 
-barnehagestyrer 
-familiebarnehagestyrer 
-klassestyrer 
-internatstyrer 
-språkbærer 
-kulturbærer 
-kjørelærer 
-matematikklærer 
-norsklærer 
-sosiallærer 
-kontaktlærer 
-regnskapsfører 
-reinkappkjører 
-skuterkjører 
-fritidskjører 
-bildeleser 
-skolegenser 
+horekjøper m2
+fjellmyrløper m2
+midtforsvarer m2
+ordstyrer m2
+barnehagestyrer m2
+familiebarnehagestyrer m2
+klassestyrer m2
+internatstyrer m2
+språkbærer m2
+kulturbærer m2
+kjørelærer m2
+matematikklærer m2
+norsklærer m2
+sosiallærer m2
+kontaktlærer m2
+regnskapsfører m2
+reinkappkjører m2
+skuterkjører m2
+fritidskjører m2
+bildeleser m2
+skolegenser m2
 beiteressurser 
 nasjonalteater 
 regionteater 
 amatørteater 
 prosjektteater 
 elsertifikater 
-reingjeter 
+reingjeter m2
 millimeter 
 kubikkmeter 
 kilometer 
@@ -5609,317 +5609,317 @@ konjunkturbarometer
 lærerkrefter 
 reiseutgifter 
 saksutgifter 
-terminkarakter 
-standpunktkarakter 
-kaffetrakter 
+terminkarakter m1
+standpunktkarakter m1
+kaffetrakter m2
 eiendomsutviklingsprosjekter 
-kalvevekter 
-reinvokter 
-servicesenter 
-legesenter 
-studiesenter 
-kommunesenter 
-helsesenter 
-konferansesenter 
-pressesenter 
-støttesenter 
-dagsenter 
-teknologisenter 
-urfolksenter 
-nasjonalparksenter 
-språksenter 
-læremiddelsenter 
-filmsenter 
-kunstnersenter 
-kultursenter 
-urfolkssenter 
-kurssenter 
-kraftsenter 
-turistsenter 
-miljøsenter 
-forvinter 
-vårvinter 
-finnmarksvinter 
+kalvevekter m2
+reinvokter m2
+servicesenter m3
+legesenter m3
+studiesenter m3
+kommunesenter m3
+helsesenter m3
+konferansesenter m3
+pressesenter m3
+støttesenter m3
+dagsenter m3
+teknologisenter m3
+urfolksenter m3
+nasjonalparksenter m3
+språksenter m3
+læremiddelsenter m3
+filmsenter m3
+kunstnersenter m3
+kultursenter m3
+urfolkssenter m3
+kurssenter m3
+kraftsenter m3
+turistsenter m3
+miljøsenter m3
+forvinter m3
+vårvinter m3
+finnmarksvinter m3
 kumelkekvoter 
-politihelikopter 
-spydkaster 
-skolemester 
-sameskolemester 
-vårsemester 
-høstsemester 
-vegmester 
-bergmester 
-kretsmester 
+politihelikopter m2
+spydkaster m2
+skolemester m2
+sameskolemester m2
+vårsemester m2
+høstsemester m2
+vegmester m2
+bergmester m2
+kretsmester m2
 medietjenester 
-sameregister 
-helseregister 
-adresseregister 
-partistøtteregister 
-planregister 
-stednavnregister 
-kunstnerregister 
-verdipapirregister 
-beredskapsregister 
-kontaktregister 
-pasientregister 
-kirkeminister 
-sameminister 
-helseminister 
-råstoffminister 
-energiminister 
-kommunalminister 
-kulturminister 
-undervisningsminister 
-justisminister 
-finansminister 
-kystminister 
-hovedmønster 
-drikkemønster 
-kjønnsrollemønster 
-beitemønster 
-bosetningsmønster 
-avismønster 
-dødelighetsmønster 
-fangstmønster 
+sameregister n3
+helseregister n3
+adresseregister n3
+partistøtteregister n3
+planregister n3
+stednavnregister n3
+kunstnerregister n3
+verdipapirregister n3
+beredskapsregister n3
+kontaktregister n3
+pasientregister n3
+kirkeminister m3
+sameminister m3
+helseminister m3
+råstoffminister m3
+energiminister m3
+kommunalminister m3
+kulturminister m3
+undervisningsminister m3
+justisminister m3
+finansminister m3
+kystminister m3
+hovedmønster n3
+drikkemønster n3
+kjønnsrollemønster n3
+beitemønster n3
+bosetningsmønster n3
+avismønster n3
+dødelighetsmønster n3
+fangstmønster n3
 gudsøster 
 helsesøster 
 guddatter 
 pleiedatter 
-ordbokforfatter 
-læremiddelforfatter 
-snøskuter 
-merkeinnehaver 
-hovedrolleinnehaver 
+ordbokforfatter m2
+læremiddelforfatter m2
+snøskuter m2
+merkeinnehaver m2
+hovedrolleinnehaver m2
 fiskelever 
 toppelever 
-klimarådgiver 
-fiskerirådgiver 
-formgiver 
-lovgiver 
-kontrolliver 
-fargepulver 
-buljongpulver 
+klimarådgiver m2
+fiskerirådgiver m2
+formgiver m2
+lovgiver m2
+kontrolliver m2
+fargepulver n1
+buljongpulver n1
 vestover 
 innsjøer 
-språkleir 
+språkleir m2
 språkreir 
-fargepapir 
-verdipapir 
-sakspapir 
-matpapir 
-skolekorridor 
-klossmajor 
-sangkor 
+fargepapir m1
+verdipapir m1
+sakspapir m1
+matpapir m1
+skolekorridor m1
+klossmajor m1
+sangkor b1
 pleiemor 
 stammor 
 fostermor 
 livmor 
-jernbanespor 
-bremsespor 
-kulturspor 
+jernbanespor n1
+bremsespor n1
+kulturspor n1
 gudbror 
-predikator 
-objektkonservator 
-risikofaktor 
-kulturfaktor 
-bosettingsfaktor 
-reduksjonsfaktor 
-suksessfaktor 
-innsatsfaktor 
-barnehagesektor 
-skolesektor 
-høyskolesektor 
-jernbanesektor 
-kommunesektor 
-helsesektor 
-tannhelsesektor 
-energisektor 
-meierisektor 
-fiskerisektor 
-industrisektor 
-banksektor 
-sosialsektor 
-mineralsektor 
-kultursektor 
-husdyrsektor 
-justissektor 
-kraftverkssektor 
-landbrukssektor 
-samferdselssektor 
-finanssektor 
-kraftsektor 
-transportsektor 
-servicekontor 
-områdekontor 
-legekontor 
-skolekontor 
-bispedømmekontor 
-kommunekontor 
-sosialkontor 
-lokalkontor 
-læremiddelkontor 
-protokollkontor 
-plankontor 
-regionkontor 
-familievernkontor 
-underkontor 
-forbrukerkontor 
-forkontor 
-kulturkontor 
-urfolkskontor 
-prosjektkontor 
-arkivkontor 
-industrimotor 
-båtmotor 
-øyekatarr 
+predikator m1
+objektkonservator m1
+risikofaktor m1
+kulturfaktor m1
+bosettingsfaktor m1
+reduksjonsfaktor m1
+suksessfaktor m1
+innsatsfaktor m1
+barnehagesektor m1
+skolesektor m1
+høyskolesektor m1
+jernbanesektor m1
+kommunesektor m1
+helsesektor m1
+tannhelsesektor m1
+energisektor m1
+meierisektor m1
+fiskerisektor m1
+industrisektor m1
+banksektor m1
+sosialsektor m1
+mineralsektor m1
+kultursektor m1
+husdyrsektor m1
+justissektor m1
+kraftverkssektor m1
+landbrukssektor m1
+samferdselssektor m1
+finanssektor m1
+kraftsektor m1
+transportsektor m1
+servicekontor n3
+områdekontor n3
+legekontor n3
+skolekontor n3
+bispedømmekontor n3
+kommunekontor n3
+sosialkontor n3
+lokalkontor n3
+læremiddelkontor n3
+protokollkontor n3
+plankontor n3
+regionkontor n3
+familievernkontor n3
+underkontor n3
+forbrukerkontor n3
+forkontor n3
+kulturkontor n3
+urfolkskontor n3
+prosjektkontor n3
+arkivkontor n3
+industrimotor n3
+båtmotor n3
+øyekatarr m1
 knusktørr 
-gjerdestaur 
-hesjestaur 
-eventyrfigur 
+gjerdestaur m1
+hesjestaur m1
+eventyrfigur m1
 leskur 
 steinur 
-stemplingsur 
-armmuskulatur 
-pensumlitteratur 
-urfolkslitteratur 
-mobiltelefontastatur 
-studietur 
-familietur 
-pakketur 
-påsketur 
-skoletur 
-mottaksretur 
-klassetur 
-høykonjunktur 
-kunnskapsinfrastruktur 
-transportinfrastruktur 
-familiestruktur 
-linjestruktur 
-bransjestruktur 
-skolestruktur 
-flåtestruktur 
-vegstruktur 
-bibliotekstruktur 
-klinikkstruktur 
-flokkstruktur 
-målstruktur 
-grunnstruktur 
-eierstruktur 
-senterstruktur 
-kostnadsstruktur 
-mottaksstruktur 
-landbruksstruktur 
-jordbruksstruktur 
-kretsstruktur 
-sykehusstruktur 
-budsjettstruktur 
-nettstruktur 
-menystruktur 
-fartøystruktur 
-veidekultur 
-samekultur 
-flaggkultur 
-skogkultur 
-urkultur 
-urfolkskultur 
-matkultur 
-jaktkultur 
-kystkultur 
-bykultur 
-monumentalskulptur 
-snartur 
-fangsttur 
+stemplingsur n1
+armmuskulatur m1
+pensumlitteratur m1
+urfolkslitteratur m1
+mobiltelefontastatur n1
+studietur m1
+familietur m1
+pakketur m1
+påsketur m1
+skoletur m1
+mottaksretur m1
+klassetur m1
+høykonjunktur m1
+kunnskapsinfrastruktur m1
+transportinfrastruktur m1
+familiestruktur m1
+linjestruktur m1
+bransjestruktur m1
+skolestruktur m1
+flåtestruktur m1
+vegstruktur m1
+bibliotekstruktur m1
+klinikkstruktur m1
+flokkstruktur m1
+målstruktur m1
+grunnstruktur m1
+eierstruktur m1
+senterstruktur m1
+kostnadsstruktur m1
+mottaksstruktur m1
+landbruksstruktur m1
+jordbruksstruktur m1
+kretsstruktur m1
+sykehusstruktur m1
+budsjettstruktur m1
+nettstruktur m1
+menystruktur m1
+fartøystruktur m1
+veidekultur m1
+samekultur m1
+flaggkultur m1
+skogkultur m1
+urkultur m1
+urfolkskultur m1
+matkultur m1
+jaktkultur m1
+kystkultur m1
+bykultur m1
+monumentalskulptur m1
+snartur m1
+fangsttur m1
 passgebyr 
-beitedyr 
-kattedyr 
-havpattedyr 
-fabeldyr 
-villdyr 
-krepsdyr 
-oljefyr 
-kjøkkenkomfyr 
+beitedyr n1
+kattedyr n1
+havpattedyr n1
+fabeldyr n1
+villdyr n1
+krepsdyr n1
+oljefyr n1
+kjøkkenkomfyr n1
 moltemyr 
-olje-eventyr 
-oljeeventyr 
-lydutstyr 
-brannutstyr 
-brukerutstyr 
-læringsutstyr 
-landbruksutstyr 
-ferieår 
-molteår 
-kattehår 
-dekkhår 
-ullhår 
-dunhår 
-urfolkstiår 
-konkurransevilkår 
-fiskerivilkår 
-programvilkår 
-utbetalingsvilkår 
-læringsvilkår 
-vekstvilkår 
-kyllinglår 
-opptjeningsår 
-fødselsår 
-inntektsår 
-transportår 
-sommerhalvår 
-høsthalvår 
-markjordbær 
+olje-eventyr n1
+oljeeventyr n1
+lydutstyr n1
+brannutstyr n1
+brukerutstyr n1
+læringsutstyr n1
+landbruksutstyr n1
+ferieår n1
+molteår n1
+kattehår n1
+dekkhår n1
+ullhår n1
+dunhår n1
+urfolkstiår n1
+konkurransevilkår n1
+fiskerivilkår n1
+programvilkår n1
+utbetalingsvilkår n1
+læringsvilkår n1
+vekstvilkår n1
+kyllinglår n1
+opptjeningsår n1
+fødselsår n1
+inntektsår n1
+transportår n1
+sommerhalvår n1
+høsthalvår n1
+markjordbær n1
 skoleklær 
-valgfunksjonær 
+valgfunksjonær m1
 faglitterær 
-hovedsekretær 
-statsrådsekretær 
-gruppesekretær 
-tannhelsesekretær 
-møtesekretær 
-partisekretær 
-sosialsekretær 
-statsministersekretær 
-haglegevær 
-finvær 
-vårvær 
-kraftfôr 
-språkambassadør 
-gammedør 
-gangdør 
-bildør 
-programvareleverandør 
-tjenesteleverandør 
-råstoffleverandør 
-systemleverandør 
-branndør 
-bussdør 
-teltdør 
-taksisjåfør 
-lastebilsjåfør 
-reisearrangør 
-konferansearrangør 
-møtearrangør 
-dommeravhør 
-fagskoleingeniør 
-vegingeniør 
-trafikkingeniør 
-bygningsingeniør 
-kommuneoppgjør 
-valgoppgjør 
-vannrør 
-radiokåsør 
-hovedredaktør 
-virkemiddelaktør 
-kulturaktør 
-studieinspektør 
-fiskeriinspektør 
-energidirektør 
-fiskeridirektør 
-politidirektør 
-materielldirektør 
-kontrolldirektør 
-programdirektør 
-skiinstruktør 
-garnflottør 
+hovedsekretær m1
+statsrådsekretær m1
+gruppesekretær m1
+tannhelsesekretær m1
+møtesekretær m1
+partisekretær m1
+sosialsekretær m1
+statsministersekretær m1
+haglegevær n1
+finvær n1
+vårvær n1
+kraftfôr n1
+språkambassadør m1
+gammedør f1
+gangdør f1
+bildør f1
+programvareleverandør m1
+tjenesteleverandør m1
+råstoffleverandør m1
+systemleverandør m1
+branndør f1
+bussdør f1
+teltdør f1
+taksisjåfør m1
+lastebilsjåfør m1
+reisearrangør m1
+konferansearrangør m1
+møtearrangør m1
+dommeravhør n1
+fagskoleingeniør m1
+vegingeniør m1
+trafikkingeniør m1
+bygningsingeniør m1
+kommuneoppgjør n1
+valgoppgjør n1
+vannrør n1
+radiokåsør m1
+hovedredaktør m1
+virkemiddelaktør m1
+kulturaktør m1
+studieinspektør m1
+fiskeriinspektør m1
+energidirektør m1
+fiskeridirektør m1
+politidirektør m1
+materielldirektør m1
+kontrolldirektør m1
+programdirektør m1
+skiinstruktør m1
+garnflottør m1
 læremiddeldatabas 
 sennegras 
 innbyrdes 
@@ -5927,542 +5927,542 @@ vantrives
 nifs 
 gammeldags 
 hundrings 
-granmeis 
-lappmeis 
-toppmeis 
-svartmeis 
+granmeis m1
+lappmeis m1
+toppmeis m1
+svartmeis m1
 klimakris 
-oljepris 
-råoljepris 
-fiskepris 
-timepris 
-matvarepris 
-ærepris 
-moltepris 
-boligpris 
-musikkpris 
-språkpris 
-materialpris 
-maksimalpris 
-konsumpris 
-reinpris 
-kilopris 
-bruttopris 
-litteraturpris 
-arkitekturpris 
-kulturpris 
-fredspris 
-førstehåndspris 
-ærespris 
-anskaffelsespris 
-formuespris 
-salgspris 
-likestillingspris 
-næringspris 
-eiendomspris 
-maksimumspris 
-illustrasjonspris 
-innkjøpspris 
-kurspris 
-gasspris 
-enhetspris 
-trafikksikkerhetspris 
-rettssikkerhetspris 
-sportspris 
-idrettspris 
-menneskerettspris 
-matpris 
-kraftpris 
-kontantpris 
-kortpris 
-komponistpris 
-servicepraksis 
-annonsepraksis 
-støttepraksis 
-tollpraksis 
-nødnummerpraksis 
-oppfølgingspraksis 
-fradelingspraksis 
-forretningspraksis 
-forpaktningspraksis 
-lokalavis 
-regionavis 
-kompetansebevis 
-telefaks 
-unglaks 
-pukkellaks 
-hannlaks 
-hunnlaks 
-saltlaks 
-hovedindeks 
-referanseindeks 
-konkurransekursindeks 
-dialogboks 
-smørboks 
-matboks 
-ørevoks 
-hovedinstruks 
-skoleinstruks 
-branninstruks 
-fornorskingsinstruks 
+oljepris m1
+råoljepris m1
+fiskepris m1
+timepris m1
+matvarepris m1
+ærepris m1
+moltepris m1
+boligpris m1
+musikkpris m1
+språkpris m1
+materialpris m1
+maksimalpris m1
+konsumpris m1
+reinpris m1
+kilopris m1
+bruttopris m1
+litteraturpris m1
+arkitekturpris m1
+kulturpris m1
+fredspris m1
+førstehåndspris m1
+ærespris m1
+anskaffelsespris m1
+formuespris m1
+salgspris m1
+likestillingspris m1
+næringspris m1
+eiendomspris m1
+maksimumspris m1
+illustrasjonspris m1
+innkjøpspris m1
+kurspris m1
+gasspris m1
+enhetspris m1
+trafikksikkerhetspris m1
+rettssikkerhetspris m1
+sportspris m1
+idrettspris m1
+menneskerettspris m1
+matpris m1
+kraftpris m1
+kontantpris m1
+kortpris m1
+komponistpris m1
+servicepraksis m1
+annonsepraksis m1
+støttepraksis m1
+tollpraksis m1
+nødnummerpraksis m1
+oppfølgingspraksis m1
+fradelingspraksis m1
+forretningspraksis m1
+forpaktningspraksis m1
+lokalavis f1
+regionavis f1
+kompetansebevis n1
+telefaks m1
+unglaks m1
+pukkellaks m1
+hannlaks m1
+hunnlaks m1
+saltlaks m1
+hovedindeks m1
+referanseindeks m1
+konkurransekursindeks m1
+dialogboks m1
+smørboks m1
+matboks m1
+ørevoks m1
+hovedinstruks m1
+skoleinstruks m1
+branninstruks m1
+fornorskingsinstruks m1
 øre-nese-hals 
-livmorhals 
-etterspørselsimpuls 
-geitrams 
-håndbrems 
+livmorhals m1
+etterspørselsimpuls m1
+geitrams m1
+håndbrems m1
 kjønnsbalans 
-klageinstans 
-kontrollinstans 
-underinstans 
-forslagsinstans 
+klageinstans m1
+kontrollinstans m1
+underinstans m1
+forslagsinstans m1
 urfolksrelevans 
 dens 
-presedens 
-hovedtendens 
+presedens m1
+hovedtendens m1
 morgendagens 
-pengelens 
+pengelens m1
 kronprinsregentens 
-etablererfrekvens 
-etableringsfrekvens 
-miljøkonsekvens 
+etablererfrekvens m1
+etableringsfrekvens m1
+miljøkonsekvens m1
 samelovens 
 petroleumslovens 
 foretakspensjonslovens 
 svigersønns 
-grenselos 
-snøslaps 
-villrips 
-observatørkorps 
+grenselos m1
+snøslaps m1
+villrips m1
+observatørkorps m1
 reindriftsamers 
 datters 
-bordvers 
-salmevers 
-bibelvers 
-trekors 
-temakurs 
-språktemakurs 
+bordvers n1
+salmevers n1
+bibelvers n1
+trekors n1
+temakurs n1
+språktemakurs n1
 valutakurs 
-bransjekurs 
-kokkekurs 
-bibliotekkurs 
-samiskkurs 
-språkkurs 
-sykkelkurs 
-fjellkurs 
-sømkurs 
-grunnkurs 
-gitarkurs 
-snekkerkurs 
-sommerkurs 
-nybegynnerkurs 
-etablererkurs 
-forkurs 
-kulturkurs 
-doktorgradskurs 
-yrkeskurs 
-dagskurs 
-oppfriskingskurs 
-utviklingskurs 
-veiledningskurs 
-etterutdanningskurs 
-oppdateringskurs 
-mørkekjøringskurs 
-glattkjøringskurs 
-nettverkskurs 
-førstehjelpskurs 
-årskurs 
-sikkerhetskurs 
-reindriftskurs 
-jaktkurs 
-høstkurs 
-vindressurs 
-jordressurs 
-fjordressurs 
-oljeressurs 
-fiskeressurs 
-innlandsfiskeressurs 
-timeressurs 
-kulturminneressurs 
-kompetanseressurs 
-beiteressurs 
-reinbeiteressurs 
-lavbeiteressurs 
-skogressurs 
-energiressurs 
-fiskeriressurs 
-bibliotekressurs 
-skolebibliotekressurs 
-språkressurs 
-arealressurs 
-mineralressurs 
-personellressurs 
-grunnressurs 
-naturressurs 
-bærressurs 
-tidsressurs 
-opplevelsesressurs 
-læringsressurs 
-timetallsressurs 
-kunnskapsressurs 
-gassressurs 
-vannkraftressurs 
-kystressurs 
-nettressurs 
-miljøressurs 
-sjøressurs 
+bransjekurs n1
+kokkekurs n1
+bibliotekkurs n1
+samiskkurs n1
+språkkurs n1
+sykkelkurs n1
+fjellkurs n1
+sømkurs n1
+grunnkurs n1
+gitarkurs n1
+snekkerkurs n1
+sommerkurs n1
+nybegynnerkurs n1
+etablererkurs n1
+forkurs n1
+kulturkurs n1
+doktorgradskurs n1
+yrkeskurs n1
+dagskurs n1
+oppfriskingskurs n1
+utviklingskurs n1
+veiledningskurs n1
+etterutdanningskurs n1
+oppdateringskurs n1
+mørkekjøringskurs n1
+glattkjøringskurs n1
+nettverkskurs n1
+førstehjelpskurs n1
+årskurs n1
+sikkerhetskurs n1
+reindriftskurs n1
+jaktkurs n1
+høstkurs n1
+vindressurs n1
+jordressurs n1
+fjordressurs m1
+oljeressurs m1
+fiskeressurs m1
+innlandsfiskeressurs m1
+timeressurs m1
+kulturminneressurs m1
+kompetanseressurs m1
+beiteressurs m1
+reinbeiteressurs m1
+lavbeiteressurs m1
+skogressurs m1
+energiressurs m1
+fiskeriressurs m1
+bibliotekressurs m1
+skolebibliotekressurs m1
+språkressurs m1
+arealressurs m1
+mineralressurs m1
+personellressurs m1
+grunnressurs m1
+naturressurs m1
+bærressurs m1
+tidsressurs m1
+opplevelsesressurs m1
+læringsressurs m1
+timetallsressurs m1
+kunnskapsressurs m1
+gassressurs m1
+vannkraftressurs m1
+kystressurs m1
+nettressurs m1
+miljøressurs m1
+sjøressurs m1
 fjorårs 
-klimagass 
-studieplass 
-fiskeplass 
-møteplass 
-kulturmøteplass 
-lærlingplass 
-campingplass 
-trafikkplass 
-bålplass 
-hjemplass 
-sommerboplass 
-vinterboplass 
-høstboplass 
-offerplass 
-leirplass 
-servicearbeidsplass 
-praksisplass 
-avfallsplass 
-mandatplass 
-internatplass 
-jaktplass 
-teltplass 
-representantplass 
-vararepresentantplass 
-båtplass 
-elevplass 
-kortbaneflyplass 
+klimagass m1
+studieplass m1
+fiskeplass m1
+møteplass m1
+kulturmøteplass m1
+lærlingplass m1
+campingplass m1
+trafikkplass m1
+bålplass m1
+hjemplass m1
+sommerboplass m1
+vinterboplass m1
+høstboplass m1
+offerplass m1
+leirplass m1
+servicearbeidsplass m1
+praksisplass m1
+avfallsplass m1
+mandatplass m1
+internatplass m1
+jaktplass m1
+teltplass m1
+representantplass m1
+vararepresentantplass m1
+båtplass m1
+elevplass m1
+kortbaneflyplass m1
 ukvass 
-bobledress 
-syregress 
-urfolkskongress 
-silogress 
-starrgress 
-jaktpress 
-insektstress 
-samtaleprosess 
-kystsoneprosess 
-strategiprosess 
-arealprosess 
-sivilprosess 
-planprosess 
-forberedelsesprosess 
-ansettelsesprosess 
-kartleggingsprosess 
-oppfølgingsprosess 
-fornorskningsprosess 
-forsoningsprosess 
-innsparingsprosess 
-reguleringsprosess 
-omorganiseringsprosess 
-rapporteringsprosess 
-nedskjæringsprosess 
-læringsprosess 
-saksprosess 
-konsesjonsprosess 
-årsoppgjørsprosess 
-finnmarkslovsprosess 
-enkeltprosess 
-budsjettprosess 
-planpremiss 
-spydspiss 
-tungespiss 
-kantspiss 
-knivspiss 
-bremsekloss 
-skolebuss 
-rutebuss 
-bokbuss 
-kulturbuss 
-skoleskyss 
-ruteskyss 
-felgkryss 
-lyskryss 
-støttesats 
-dagsats 
-virkemiddelinnsats 
-sykkelinnsats 
-markedsinnsats 
-forskingsinnsats 
-utviklingsinnsats 
-næringsutviklingsinnsats 
-omsorgsinnsats 
-urfolksinnsats 
-ressursinnsats 
-miljøinnsats 
-grunnsats 
-dagssats 
-prosentsats 
-samefolkets 
-skolekrets 
-flyttsamekrets 
-tjenestekrets 
-valgkrets 
-sykkelkrets 
-fotballkrets 
-strømkrets 
-fiskelapskaus 
-sentralsykehus 
-regionsykehus 
-skolehus 
-kommunehus 
-trehus 
-kulturhus 
-menighetshus 
-konserthus 
-hovedfokus 
-brukerfokus 
-innholdsfokus 
-urfolksfokus 
-årssyklus 
-dvergspissmus 
-lærebokmanus 
-originalmanus 
-eurobonus 
+bobledress m1
+syregress n1sg
+urfolkskongress n1sg
+silogress n1sg
+starrgress n1sg
+jaktpress n1
+insektstress n1
+samtaleprosess m1
+kystsoneprosess m1
+strategiprosess m1
+arealprosess m1
+sivilprosess m1
+planprosess m1
+forberedelsesprosess m1
+ansettelsesprosess m1
+kartleggingsprosess m1
+oppfølgingsprosess m1
+fornorskningsprosess m1
+forsoningsprosess m1
+innsparingsprosess m1
+reguleringsprosess m1
+omorganiseringsprosess m1
+rapporteringsprosess m1
+nedskjæringsprosess m1
+læringsprosess m1
+saksprosess m1
+konsesjonsprosess m1
+årsoppgjørsprosess m1
+finnmarkslovsprosess m1
+enkeltprosess m1
+budsjettprosess m1
+planpremiss m1
+spydspiss m1
+tungespiss m1
+kantspiss m1
+knivspiss m1
+bremsekloss m1
+skolebuss m1
+rutebuss m1
+bokbuss m1
+kulturbuss m1
+skoleskyss m1
+ruteskyss m1
+felgkryss n1
+lyskryss n1
+støttesats m1
+dagsats m1
+virkemiddelinnsats m1
+sykkelinnsats m1
+markedsinnsats m1
+forskingsinnsats m1
+utviklingsinnsats m1
+næringsutviklingsinnsats m1
+omsorgsinnsats m1
+urfolksinnsats m1
+ressursinnsats m1
+miljøinnsats m1
+grunnsats m1
+dagssats m1
+prosentsats m1
+samefolkets m1
+skolekrets m1
+flyttsamekrets m1
+tjenestekrets m1
+valgkrets m1
+sykkelkrets m1
+fotballkrets m1
+strømkrets m1
+fiskelapskaus m1
+sentralsykehus n1
+regionsykehus n1
+skolehus n1
+kommunehus n1
+trehus n1
+kulturhus n1
+menighetshus n1
+konserthus n1
+hovedfokus n1
+brukerfokus n1
+innholdsfokus n1
+urfolksfokus n1
+årssyklus m1
+dvergspissmus f1
+lærebokmanus n1
+originalmanus n1
+eurobonus m1
 husstellkursus 
-urfolkstatus 
-jernstatus 
-observatørstatus 
-urfolksstatus 
-kunnskapsstatus 
-knutepunktstatus 
-elevstatus 
-tåkelys 
-gatelys 
-baklys 
-trafikklys 
-blinklys 
-varsellys 
-fjernlys 
+urfolkstatus m1
+jernstatus m1
+observatørstatus m1
+urfolksstatus m1
+kunnskapsstatus m1
+knutepunktstatus m1
+elevstatus m1
+tåkelys n1
+gatelys n1
+baklys n1
+trafikklys n1
+blinklys n1
+varsellys n1
+fjernlys n1
 sædgås 
 dverggås 
-borrelås 
-trelås 
-vannlås 
+borrelås m1
+trelås m1
+vannlås m1
 sommerfjøs 
-fagskolekandidat 
-styrekandidat 
-listekandidat 
-toppkandidat 
-praksiskandidat 
-presidentkandidat 
-ekstramandat 
-oppnevningsmandat 
-kretsmandat 
-kakefat 
-tefat 
-matfat 
-urfolksdelegat 
+fagskolekandidat m1
+styrekandidat m1
+listekandidat m1
+toppkandidat m1
+praksiskandidat m1
+presidentkandidat m1
+ekstramandat n1
+oppnevningsmandat n1
+kretsmandat n1
+kakefat n1
+tefat n1
+matfat n1
+urfolksdelegat m1
 strømaggregat 
 kvinnesekretariat 
 urfolkssekretariat 
 budsjettsekretariat 
-festivalplakat 
-læringsplakat 
-brødmat 
-fiskemat 
-skolemat 
-telefonautomat 
-vegetarmat 
+festivalplakat m1
+læringsplakat m1
+brødmat m1
+fiskemat m1
+skolemat m1
+telefonautomat m1
+vegetarmat m1
 papirformat 
-gardsmat 
-formiddagsmat 
-skoleinternat 
-grunnskoleinternat 
-serviceapparat 
-analyseapparat 
-tjenesteapparat 
-støtteapparat 
-virkemiddelapparat 
-radioapparat 
-mottaksapparat 
-lydbåndreferat 
-skolekamerat 
-reisekamerat 
-klassekamerat 
-familiedirektorat 
-oljedirektorat 
-helsedirektorat 
-vegdirektorat 
-energidirektorat 
-fiskeridirektorat 
-politidirektorat 
-generaldirektorat 
-tullprat 
-studioprat 
-familieetat 
-politietat 
-sosialetat 
-sektoretat 
-kulturetat 
-transportetat 
-grensetraktat 
-fredstraktat 
-skoleresultat 
-valgresultat 
-delresultat 
-beregningsresultat 
-læringsresultat 
-arbeidsnotat 
-oppfølgingsnotat 
-drøftingsnotat 
-konsultasjonsnotat 
-disposisjonsnotat 
-diskusjonsnotat 
-oppstartsnotat 
-nasjonalstat 
-medlemstat 
-signaturstat 
-menneskerettsstat 
-tegnalfabet 
+gardsmat m1
+formiddagsmat m1
+skoleinternat n1
+grunnskoleinternat n1
+serviceapparat n1
+analyseapparat n1
+tjenesteapparat n1
+støtteapparat n1
+virkemiddelapparat n1
+radioapparat n1
+mottaksapparat n1
+lydbåndreferat n1
+skolekamerat m1
+reisekamerat m1
+klassekamerat m1
+familiedirektorat m1
+oljedirektorat m1
+helsedirektorat m1
+vegdirektorat m1
+energidirektorat m1
+fiskeridirektorat m1
+politidirektorat m1
+generaldirektorat m1
+tullprat m1
+studioprat m1
+familieetat m1
+politietat m1
+sosialetat m1
+sektoretat m1
+kulturetat m1
+transportetat m1
+grensetraktat m1
+fredstraktat m1
+skoleresultat n2
+valgresultat n2
+delresultat n2
+beregningsresultat n2
+læringsresultat n2
+arbeidsnotat n2
+oppfølgingsnotat n2
+drøftingsnotat n2
+konsultasjonsnotat n2
+disposisjonsnotat n2
+diskusjonsnotat n2
+oppstartsnotat n2
+nasjonalstat m1
+medlemstat m1
+signaturstat m1
+menneskerettsstat m1
+tegnalfabet n1
 nordvestlandet 
-sameprofet 
-ugildhet 
-mattrygghet 
-stygghet 
-sesongledighet 
-barnehagemyndighet 
-skolemyndighet 
-jernbanemyndighet 
-helsemyndighet 
-rutemyndighet 
-vegmyndighet 
-valgmyndighet 
-fiskerimyndighet 
-sentralmyndighet 
-planmyndighet 
-barnevernmyndighet 
-miljøvernmyndighet 
-folkeregistermyndighet 
-sektormyndighet 
-fordelingsmyndighet 
-oppnevningsmyndighet 
-forskriftsmyndighet 
-miljømyndighet 
-kommunikasjonsferdighet 
-troverdighet 
-grådighet 
-rusavhengighet 
-åndelighet 
-spedbarnsdødelighet 
-ubehagelighet 
-leddbevegelighet 
-tilgjengelighet 
-betenkelighet 
-eiendommelighet 
-upålitelighet 
-blokkleilighet 
-frivillighet 
-fortrolighet 
-underlighet 
-alvorlighet 
-forkjærlighet 
-jobbmulighet 
-karrieremulighet 
-valgmulighet 
-industrimulighet 
-inntjeningsmulighet 
-medvirkningsmulighet 
-etterutdanningsmulighet 
-tilpasningsmulighet 
-forbedringsmulighet 
-finansieringsmulighet 
-reguleringsmulighet 
-rekrutteringsmulighet 
-føringsmulighet 
-vekstmulighet 
-områdetilhørighet 
-kommunetilhørighet 
-kulturtilhørighet 
-etnisitetstilhørighet 
-slektstilhørighet 
-dataoverføringshastighet 
-landrettighet 
-jordrettighet 
-ferierettighet 
-menneskerettighet 
-fiskerettighet 
-kystfiskerettighet 
-sedvanerettighet 
-kjernerettighet 
-kvoterettighet 
-språkrettighet 
-arealrettighet 
-fallrettighet 
-vannrettighet 
-eierrettighet 
-særrettighet 
-urfolksrettighet 
-utmarksrettighet 
-ressursrettighet 
-partsrettighet 
-pasientrettighet 
-kartrettighet 
-valgfrihet 
-organisasjonsfrihet 
-samiskhet 
-oljevirksomhet 
-reklamevirksomhet 
-reisevirksomhet 
-konferansevirksomhet 
-møtevirksomhet 
-bibliotekvirksomhet 
-mineralvirksomhet 
-pengespillvirksomhet 
-kontrollvirksomhet 
-teatervirksomhet 
-amatørteatervirksomhet 
-kulturvirksomhet 
-akvakulturvirksomhet 
-overvåkingsvirksomhet 
-fortolkningsvirksomhet 
-petroleumsutvinningsvirksomhet 
-forretningsvirksomhet 
-primærnæringsvirksomhet 
-kringkastingsvirksomhet 
-øvingsvirksomhet 
-bergverksvirksomhet 
-havbruksvirksomhet 
-petroleumsvirksomhet 
-kombinasjonsvirksomhet 
-dokumentasjonsvirksomhet 
-innovasjonsvirksomhet 
-gassvirksomhet 
-bokbussvirksomhet 
-kulturhusvirksomhet 
-piratvirksomhet 
-turistvirksomhet 
-aktsomhet 
-hovedenhet 
-livsfornødenhet 
-pengeenhet 
-økonomienhet 
-partienhet 
-trafikkenhet 
-arealenhet 
-kontrollenhet 
-boenhet 
-reindriftsenhet 
-prosentenhet 
-fangstenhet 
-ujevnhet 
-matvaresikkerhet 
-personsikkerhet 
-matsikkerhet 
-objektsikkerhet 
-pasientsikkerhet 
-miljøsikkerhet 
-pasienttilfredshet 
-meningsløshet 
-motløshet 
-gruppebevissthet 
-prisbevissthet 
+sameprofet m1
+ugildhet m1
+mattrygghet m1
+stygghet m1
+sesongledighet m1
+barnehagemyndighet m1
+skolemyndighet m1
+jernbanemyndighet m1
+helsemyndighet m1
+rutemyndighet m1
+vegmyndighet m1
+valgmyndighet m1
+fiskerimyndighet m1
+sentralmyndighet m1
+planmyndighet m1
+barnevernmyndighet m1
+miljøvernmyndighet m1
+folkeregistermyndighet m1
+sektormyndighet m1
+fordelingsmyndighet m1
+oppnevningsmyndighet m1
+forskriftsmyndighet m1
+miljømyndighet m1
+kommunikasjonsferdighet m1
+troverdighet m1
+grådighet m1
+rusavhengighet m1
+åndelighet m1
+spedbarnsdødelighet m1
+ubehagelighet m1
+leddbevegelighet m1
+tilgjengelighet m1
+betenkelighet m1
+eiendommelighet m1
+upålitelighet m1
+blokkleilighet m1
+frivillighet m1
+fortrolighet m1
+underlighet m1
+alvorlighet m1
+forkjærlighet m1
+jobbmulighet m1
+karrieremulighet m1
+valgmulighet m1
+industrimulighet m1
+inntjeningsmulighet m1
+medvirkningsmulighet m1
+etterutdanningsmulighet m1
+tilpasningsmulighet m1
+forbedringsmulighet m1
+finansieringsmulighet m1
+reguleringsmulighet m1
+rekrutteringsmulighet m1
+føringsmulighet m1
+vekstmulighet m1
+områdetilhørighet m1
+kommunetilhørighet m1
+kulturtilhørighet m1
+etnisitetstilhørighet m1
+slektstilhørighet m1
+dataoverføringshastighet m1
+landrettighet m1
+jordrettighet m1
+ferierettighet m1
+menneskerettighet m1
+fiskerettighet m1
+kystfiskerettighet m1
+sedvanerettighet m1
+kjernerettighet m1
+kvoterettighet m1
+språkrettighet m1
+arealrettighet m1
+fallrettighet m1
+vannrettighet m1
+eierrettighet m1
+særrettighet m1
+urfolksrettighet m1
+utmarksrettighet m1
+ressursrettighet m1
+partsrettighet m1
+pasientrettighet m1
+kartrettighet m1
+valgfrihet m1
+organisasjonsfrihet m1
+samiskhet m1
+oljevirksomhet m1
+reklamevirksomhet m1
+reisevirksomhet m1
+konferansevirksomhet m1
+møtevirksomhet m1
+bibliotekvirksomhet m1
+mineralvirksomhet m1
+pengespillvirksomhet m1
+kontrollvirksomhet m1
+teatervirksomhet m1
+amatørteatervirksomhet m1
+kulturvirksomhet m1
+akvakulturvirksomhet m1
+overvåkingsvirksomhet m1
+fortolkningsvirksomhet m1
+petroleumsutvinningsvirksomhet m1
+forretningsvirksomhet m1
+primærnæringsvirksomhet m1
+kringkastingsvirksomhet m1
+øvingsvirksomhet m1
+bergverksvirksomhet m1
+havbruksvirksomhet m1
+petroleumsvirksomhet m1
+kombinasjonsvirksomhet m1
+dokumentasjonsvirksomhet m1
+innovasjonsvirksomhet m1
+gassvirksomhet m1
+bokbussvirksomhet m1
+kulturhusvirksomhet m1
+piratvirksomhet m1
+turistvirksomhet m1
+aktsomhet m1
+hovedenhet m1
+livsfornødenhet m1
+pengeenhet m1
+økonomienhet m1
+partienhet m1
+trafikkenhet m1
+arealenhet m1
+kontrollenhet m1
+boenhet m1
+reindriftsenhet m1
+prosentenhet m1
+fangstenhet m1
+ujevnhet m1
+matvaresikkerhet m1
+personsikkerhet m1
+matsikkerhet m1
+objektsikkerhet m1
+pasientsikkerhet m1
+miljøsikkerhet m1
+pasienttilfredshet m1
+meningsløshet m1
+motløshet m1
+gruppebevissthet m1
+prisbevissthet m1
 tettpakket 
 samefolket 
 fleinskallet 
@@ -6472,38 +6472,38 @@ svarthåret
 set 
 disposisjonsnotatet 
 hårskiftet 
-miljøkriminalitet 
-beitekvalitet 
-råstoffkvalitet 
-papirkvalitet 
-kjøttkvalitet 
-nøkkelprioritet 
-urfolksminoritet 
-saksbehandlerkapasitet 
-tilpasningskapasitet 
-overnattingskapasitet 
-fangstkapasitet 
-nettkapasitet 
+miljøkriminalitet m1
+beitekvalitet m1
+råstoffkvalitet m1
+papirkvalitet m1
+kjøttkvalitet m1
+nøkkelprioritet m1
+urfolksminoritet m1
+saksbehandlerkapasitet m1
+tilpasningskapasitet m1
+overnattingskapasitet m1
+fangstkapasitet m1
+nettkapasitet m1
 urfolksuniversitet 
-hovedaktivitet 
-kjerneaktivitet 
-gaupeaktivitet 
-programaktivitet 
-radioaktivitet 
-seilingsaktivitet 
-petroleumsutvinningsaktivitet 
-mestringsaktivitet 
-øvingsaktivitet 
-urfolksaktivitet 
-primærsamfunnsaktivitet 
-reindriftsaktivitet 
-friluftsaktivitet 
-prosjektaktivitet 
+hovedaktivitet m1
+kjerneaktivitet m1
+gaupeaktivitet m1
+programaktivitet m1
+radioaktivitet m1
+seilingsaktivitet m1
+petroleumsutvinningsaktivitet m1
+mestringsaktivitet m1
+øvingsaktivitet m1
+urfolksaktivitet m1
+primærsamfunnsaktivitet m1
+reindriftsaktivitet m1
+friluftsaktivitet m1
+prosjektaktivitet m1
 kommunikasjonskartet 
 godhjertet 
 hardhjertet 
 vettet 
-knivskaft 
+knivskaft n1
 vindkraft 
 fiskekraft 
 bremsekraft 
@@ -6513,189 +6513,189 @@ gjennomføringskraft
 matkraft 
 vekstkraft 
 lettlestheft 
-tykktarmskreft 
-reiseutgift 
-hjemreiseutgift 
-renteutgift 
-telefonutgift 
-litteraturutgift 
-renholdsutgift 
-finansutgift 
-tospråklighetsutgift 
-fisketrygdavgift 
-bompengeavgift 
-studieavgift 
-grunnpakkeavgift 
-konferanseavgift 
-vegavgift 
-arealavgift 
-dieselavgift 
-bilavgift 
-kontrollavgift 
-bensinavgift 
-grunneieravgift 
-deltakeravgift 
-semesteravgift 
-sektoravgift 
-særavgift 
-kringkastingsavgift 
-kursavgift 
-ressursavgift 
-årsavgift 
-vrakpantavgift 
-kortavgift 
-kystavgift 
+tykktarmskreft m1
+reiseutgift f1
+hjemreiseutgift f1
+renteutgift f1
+telefonutgift f1
+litteraturutgift f1
+renholdsutgift f1
+finansutgift f1
+tospråklighetsutgift f1
+fisketrygdavgift f1
+bompengeavgift f1
+studieavgift f1
+grunnpakkeavgift f1
+konferanseavgift f1
+vegavgift f1
+arealavgift f1
+dieselavgift f1
+bilavgift f1
+kontrollavgift f1
+bensinavgift f1
+grunneieravgift f1
+deltakeravgift f1
+semesteravgift f1
+sektoravgift f1
+særavgift f1
+kringkastingsavgift f1
+kursavgift f1
+ressursavgift f1
+årsavgift f1
+vrakpantavgift f1
+kortavgift f1
+kystavgift f1
 miljøgift 
-familiebedrift 
-samvirkebedrift 
-bioteknologibedrift 
-småindustribedrift 
-reinkjøttbedrift 
-kjededrift 
-barnehagedrift 
-skoledrift 
-fjellstuedrift 
-skogdrift 
-fellesdrift 
-forretningsdrift 
-bergverksdrift 
-jordbruksdrift 
-kombinasjonsdrift 
-bokbussdrift 
-sykehusdrift 
-kulturhusdrift 
-fjøsdrift 
-internatdrift 
-håndskrift 
-løkkeskrift 
-dagpengeforskrift 
-fiskeforskrift 
-skogvegforskrift 
-utlendingsforskrift 
-fredningsforskrift 
-personopplysningsforskrift 
-barnehagetidsskrift 
-protokollutskrift 
-kullstift 
-skolestueloft 
-internatloft 
-kaffeduft 
-trykkluft 
-vårluft 
-hustuft 
-barnehageløft 
-kulturskoleløft 
+familiebedrift m1
+samvirkebedrift m1
+bioteknologibedrift m1
+småindustribedrift m1
+reinkjøttbedrift m1
+kjededrift m1
+barnehagedrift m1
+skoledrift m1
+fjellstuedrift m1
+skogdrift m1
+fellesdrift m1
+forretningsdrift m1
+bergverksdrift m1
+jordbruksdrift m1
+kombinasjonsdrift m1
+bokbussdrift m1
+sykehusdrift m1
+kulturhusdrift m1
+fjøsdrift m1
+internatdrift m1
+håndskrift m1
+løkkeskrift m1
+dagpengeforskrift m1
+fiskeforskrift m1
+skogvegforskrift m1
+utlendingsforskrift m1
+fredningsforskrift m1
+personopplysningsforskrift m1
+barnehagetidsskrift n1
+protokollutskrift n1
+kullstift n1
+skolestueloft n1
+internatloft n1
+kaffeduft f1
+trykkluft f1
+vårluft f1
+hustuft f1
+barnehageløft n1
+kulturskoleløft n1
 fjellkløft 
-språkløft 
-filmløft 
-kulturløft 
-veggrøft 
-forvaltningsbit 
-kjøttbit 
-melkegeit 
-premiejakt 
-gaupejakt 
-rypejakt 
-kvotejakt 
-elgjakt 
-vårjakt 
-småviltjakt 
-stillingsfullmakt 
-reguleringsfullmakt 
-voteringsfullmakt 
-markedsmakt 
-trolldomsmakt 
-samfunnsmakt 
-okkupasjonsmakt 
-definisjonsmakt 
-statsmakt 
-ektepakt 
-sommerdrakt 
-vinterdrakt 
-nattdrakt 
-hjemtrakt 
-vindkontrakt 
-standardkontrakt 
-leveransekontrakt 
-lærlingkontrakt 
-pressekontakt 
-støttekontakt 
-utviklingstakt 
-møtevakt 
-målvakt 
-dørvakt 
-sikkerhetsvakt 
-helseeffekt 
-synergieffekt 
-signaleffekt 
-økosystemeffekt 
-nettoeffekt 
-motoreffekt 
-støtteobjekt 
-læremiddelportal-prosjekt 
-del-prosjekt 
-multimediaprosjekt 
-hovedprosjekt 
-sideprosjekt 
-metodeprosjekt 
-nordområdeprosjekt 
-kulturbyggeprosjekt 
-gymnaslinjeprosjekt 
-leirskoleprosjekt 
-ressursskoleprosjekt 
-sedvaneprosjekt 
-kulturminneprosjekt 
-kvinneprosjekt 
-helseprosjekt 
-grenseprosjekt 
-prøveprosjekt 
-strategiprosjekt 
-terminologiprosjekt 
-industriprosjekt 
-statistikkprosjekt 
-bokprosjekt 
-språkprosjekt 
-sosialprosjekt 
-mineralprosjekt 
-læremiddelportalprosjekt 
-delprosjekt 
-læremiddelprosjekt 
-filmprosjekt 
-termprosjekt 
-planprosjekt 
-veiplanprosjekt 
-reinprosjekt 
-stedsnavnprosjekt 
-moloprosjekt 
-fotoprosjekt 
-forprosjekt 
-litteraturprosjekt 
-ungdomslitteraturprosjekt 
-infrastrukturprosjekt 
-kulturprosjekt 
-formidlingsprosjekt 
-litteraturformidlingsprosjekt 
-samhandlingsprosjekt 
-språkutviklingsprosjekt 
-termutviklingsprosjekt 
-omstillingsprosjekt 
-fredningsprosjekt 
-nyskapingsprosjekt 
-saneringsprosjekt 
-kulturminneregistreringsprosjekt 
-revitaliseringsprosjekt 
-urfolksprosjekt 
-kulturhusprosjekt 
-kulturarvsprosjekt 
-kjefjøsprosjekt 
-vindkraftprosjekt 
-vannkraftprosjekt 
-kunstprosjekt 
-internettprosjekt 
-arkivprosjekt 
-fartøyprosjekt 
-miljøprosjekt 
-kulturmiljøprosjekt 
+språkløft n1
+filmløft n1
+kulturløft n1
+veggrøft n1
+forvaltningsbit m1
+kjøttbit m1
+melkegeit f1
+premiejakt f1
+gaupejakt f1
+rypejakt f1
+kvotejakt f1
+elgjakt f1
+vårjakt f1
+småviltjakt f1
+stillingsfullmakt f1
+reguleringsfullmakt f1
+voteringsfullmakt f1
+markedsmakt f1
+trolldomsmakt f1
+samfunnsmakt f1
+okkupasjonsmakt f1
+definisjonsmakt f1
+statsmakt f1
+ektepakt f1
+sommerdrakt f1
+vinterdrakt f1
+nattdrakt f1
+hjemtrakt m1
+vindkontrakt m1
+standardkontrakt m1
+leveransekontrakt m1
+lærlingkontrakt m1
+pressekontakt m1
+støttekontakt m1
+utviklingstakt m1
+møtevakt m1
+målvakt m1
+dørvakt m1
+sikkerhetsvakt m1
+helseeffekt m1
+synergieffekt m1
+signaleffekt m1
+økosystemeffekt m1
+nettoeffekt m1
+motoreffekt m1
+støtteobjekt n2
+læremiddelportal-prosjekt n2
+del-prosjekt n2
+multimediaprosjekt n2
+hovedprosjekt n2
+sideprosjekt n2
+metodeprosjekt n2
+nordområdeprosjekt n2
+kulturbyggeprosjekt n2
+gymnaslinjeprosjekt n2
+leirskoleprosjekt n2
+ressursskoleprosjekt n2
+sedvaneprosjekt n2
+kulturminneprosjekt n2
+kvinneprosjekt n2
+helseprosjekt n2
+grenseprosjekt n2
+prøveprosjekt n2
+strategiprosjekt n2
+terminologiprosjekt n2
+industriprosjekt n2
+statistikkprosjekt n2
+bokprosjekt n2
+språkprosjekt n2
+sosialprosjekt n2
+mineralprosjekt n2
+læremiddelportalprosjekt n2
+delprosjekt n2
+læremiddelprosjekt n2
+filmprosjekt n2
+termprosjekt n2
+planprosjekt n2
+veiplanprosjekt n2
+reinprosjekt n2
+stedsnavnprosjekt n2
+moloprosjekt n2
+fotoprosjekt n2
+forprosjekt n2
+litteraturprosjekt n2
+ungdomslitteraturprosjekt n2
+infrastrukturprosjekt n2
+kulturprosjekt n2
+formidlingsprosjekt n2
+litteraturformidlingsprosjekt n2
+samhandlingsprosjekt n2
+språkutviklingsprosjekt n2
+termutviklingsprosjekt n2
+omstillingsprosjekt n2
+fredningsprosjekt n2
+nyskapingsprosjekt n2
+saneringsprosjekt n2
+kulturminneregistreringsprosjekt n2
+revitaliseringsprosjekt n2
+urfolksprosjekt n2
+kulturhusprosjekt n2
+kulturarvsprosjekt n2
+kjefjøsprosjekt n2
+vindkraftprosjekt n2
+vannkraftprosjekt n2
+kunstprosjekt n2
+internettprosjekt n2
+arkivprosjekt n2
+fartøyprosjekt n2
+miljøprosjekt n2
+kulturmiljøprosjekt n2
 hoveddialekt 
 nabodialekt 
 flyttsameslekt 
