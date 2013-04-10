@@ -4346,321 +4346,321 @@ miljøprogram n2b
 arealram 
 virkemiddelram 
 reinstam 
-skolehjem 
-fosterhjem 
-beiteproblem 
-matematikkproblem 
-språkproblem 
-alkoholproblem 
-visumproblem 
-søvnproblem 
-forståelsesproblem 
-rekrutteringsproblem 
-pressproblem 
-rusproblem 
-miljøproblem 
-arbeidsmiljøproblem 
-familiemedlem 
-kirkemedlem 
-arbeidsgruppemedlem 
-landsstyremedlem 
-rådsmedlem 
-menighetsrådsmedlem 
-utvalgsmedlem 
-regjeringsmedlem 
-sametingsmedlem 
-minoritetsmedlem 
-vinduslem 
-skinnbrem 
-vaniljekrem 
-bukrem 
-løsbladsystem 
-fjordsystem 
-fastlegesystem 
-fargesystem 
-merkesystem 
-skolesystem 
-høgskolesystem 
-høyskolesystem 
-helsesystem 
-referansesystem 
-beitesystem 
-komitesystem 
-kvotesystem 
-støttesystem 
-valgsystem 
-energisystem 
-økonomisystem 
-biblioteksystem 
-sosialsystem 
-desimalsystem 
-journalsystem 
-virkemiddelsystem 
-stillingshjemmelsystem 
-kontrollsystem 
-internkontrollsystem 
-adgangskontrollsystem 
-tollsystem 
-plansystem 
-barnevernsystem 
-karaktersystem 
-nødvarslingssystem 
-rapporteringssystem 
-evalueringssystem 
-finanssystem 
-regnskapssystem 
-resultatsystem 
-kartsystem 
-transportsystem 
-valgnattsystem 
-budsjettsystem 
-arkivsystem 
-operativsystem 
-dragreim 
-jernmalm 
-sykkelhjelm 
-scooterhjelm 
-kinofilm 
-hudsykdomm 
-lungesykdomm 
-fengselseiendomm 
-søknadssumm 
-sameungdom 
-reinsameungdom 
-urfolksungdom 
-ordrikdom 
-oljerikdom 
-reinsjukdom 
-familiesykdom 
-fiskesykdom 
-arvesykdom 
-mangelsykdom 
-reinsykdom 
-tannsykdom 
-karsykdom 
-hjerte-karsykdom 
-halssykdom 
-enkeltsykdom 
-parasittsykdom 
-jordeiendom 
-grunneiendom 
-naboeiendom 
-plenumsdom 
-skadeflom 
+skolehjem n1b
+fosterhjem n1b
+beiteproblem n2b
+matematikkproblem n2b
+språkproblem n2b
+alkoholproblem n2b
+visumproblem n2b
+søvnproblem n2b
+forståelsesproblem n2b
+rekrutteringsproblem n2b
+pressproblem n2b
+rusproblem n2b
+miljøproblem n2b
+arbeidsmiljøproblem n2b
+familiemedlem n2b
+kirkemedlem n2b
+arbeidsgruppemedlem n2b
+landsstyremedlem n2b
+rådsmedlem n2b
+menighetsrådsmedlem n2b
+utvalgsmedlem n2b
+regjeringsmedlem n2b
+sametingsmedlem n2b
+minoritetsmedlem n2b
+vinduslem m1b
+skinnbrem m1b
+vaniljekrem m1
+bukrem m1b
+løsbladsystem n2
+fjordsystem n2
+fastlegesystem n2
+fargesystem n2
+merkesystem n2
+skolesystem n2
+høgskolesystem n2
+høyskolesystem n2
+helsesystem n2
+referansesystem n2
+beitesystem n2
+komitesystem n2
+kvotesystem n2
+støttesystem n2
+valgsystem n2
+energisystem n2
+økonomisystem n2
+biblioteksystem n2
+sosialsystem n2
+desimalsystem n2
+journalsystem n2
+virkemiddelsystem n2
+stillingshjemmelsystem n2
+kontrollsystem n2
+internkontrollsystem n2
+adgangskontrollsystem n2
+tollsystem n2
+plansystem n2
+barnevernsystem n2
+karaktersystem n2
+nødvarslingssystem n2
+rapporteringssystem n2
+evalueringssystem n2
+finanssystem n2
+regnskapssystem n2
+resultatsystem n2
+kartsystem n2
+transportsystem n2
+valgnattsystem n2
+budsjettsystem n2
+arkivsystem n2
+operativsystem n2
+dragreim f1
+jernmalm m1
+sykkelhjelm m1
+scooterhjelm m1
+kinofilm m1
+hudsykdom m1b
+lungesykdom m1b
+fengselseiendom m1b
+søknadssum m1b
+sameungdom m1b
+reinsameungdom m1b
+urfolksungdom m1b
+ordrikdom m1b
+oljerikdom m1b
+reinsjukdom m1b
+familiesykdom m1b
+fiskesykdom m1b
+arvesykdom m1b
+mangelsykdom m1b
+reinsykdom m1b
+tannsykdom m1b
+karsykdom m1b
+hjerte-karsykdom m1b
+halssykdom m1b
+enkeltsykdom m1b
+parasittsykdom m1b
+jordeiendom m1b
+grunneiendom m1b
+naboeiendom m1b
+plenumsdom m1b
+skadeflom m1b
 kunstdiplom 
 storlom 
 husøkonom 
 handlernom 
-melkerom 
-mørkerom 
-røykerom 
-grupperom 
-styrerom 
-pauserom 
-plenumsmøterom 
-batterirom 
-dusjrom 
-klinikkrom 
-musikkrom 
-materialrom 
-spesialrom 
-kontrollrom 
-maskinrom 
-seminarrom 
-snekkerrom 
-lærerrom 
-forrom 
-handlingsrom 
-kursrom 
-luftrom 
-vaktrom 
-enkeltrom 
-vekstrom 
-elevrom 
-dørkarm 
-brannalarm 
-komfyralarm 
-tykktarm 
-røykskjerm 
-fagterm 
-samfunnsfagterm 
-språkterm 
-kulturterm 
-skyggeform 
-kakeform 
-tiltaleform 
-skolereform 
-grunnskolereform 
-helsereform 
-kompetansereform 
-demokratireform 
-bibliotekreform 
-læremiddelreform 
-læreplanreform 
-regionreform 
-samhandlingsreform 
-styreform 
-osteform 
-terrengform 
-politiuniform 
-bokform 
-egenkapitalform 
-planform 
-grunnform 
-boform 
-hesteskoform 
-allegroform 
-eierform 
-kulturform 
-markedsform 
-ledelsesform 
-formidlingsform 
-samhandlingsform 
-tilpasningsform 
-finansieringsform 
-hovedfinansieringsform 
-reguleringsform 
-ytringsform 
-kombinasjonsnæringsform 
-omsorgsform 
-kommunikasjonsform 
-selskapsform 
-glassform 
-kreftform 
-draktform 
-kontaktform 
-rapportform 
-transportform 
-læringsplattform 
-substantivform 
-vektnorm 
-sandstorm 
-sjøorm 
-samemuseum 
-friluftsmuseum 
-barnehagestadium 
-planstadium 
-prosjektstadium 
-bildemedium 
-nettmedium 
-særstipendium 
-rekrutteringsstipendium 
-dybdestudium 
-legestudium 
-kulturfagstudium 
-medisinstudium 
-forstudium 
-gymnasstudium 
-deltidsstudium 
-halvtidsstudium 
-innføringsstudium 
-praksisstudium 
-urfolksstudium 
-nettstudium 
-byprivilegium 
-veterinærlaboratorium 
-møtepublikum 
-oppvaskkum 
-kvinneforum 
-kompetanseforum 
-dialogforum 
-språkforum 
-mineralforum 
-debattforum 
-regionsentrum 
-konsonantsentrum 
+melkerom n1b
+mørkerom n1b
+røykerom n1b
+grupperom n1b
+styrerom n1b
+pauserom n1b
+plenumsmøterom n1b
+batterirom n1b
+dusjrom n1b
+klinikkrom n1b
+musikkrom n1b
+materialrom n1b
+spesialrom n1b
+kontrollrom n1b
+maskinrom n1b
+seminarrom n1b
+snekkerrom n1b
+lærerrom n1b
+forrom n1b
+handlingsrom n1b
+kursrom n1b
+luftrom n1b
+vaktrom n1b
+enkeltrom n1b
+vekstrom n1b
+elevrom n1b
+dørkarm m1
+brannalarm m1
+komfyralarm m1
+tykktarm m1
+røykskjerm m1
+fagterm m1
+samfunnsfagterm m1
+språkterm m1
+kulturterm m1
+skyggeform f1
+kakeform f1
+tiltaleform f1
+skolereform f1
+grunnskolereform f1
+helsereform f1
+kompetansereform f1
+demokratireform f1
+bibliotekreform f1
+læremiddelreform f1
+læreplanreform f1
+regionreform f1
+samhandlingsreform f1
+styreform f1
+osteform f1
+terrengform f1
+politiuniform f1
+bokform f1
+egenkapitalform f1
+planform f1
+grunnform f1
+boform f1
+hesteskoform f1
+allegroform f1
+eierform f1
+kulturform f1
+markedsform f1
+ledelsesform f1
+formidlingsform f1
+samhandlingsform f1
+tilpasningsform f1
+finansieringsform f1
+hovedfinansieringsform f1
+reguleringsform f1
+ytringsform f1
+kombinasjonsnæringsform f1
+omsorgsform f1
+kommunikasjonsform f1
+selskapsform f1
+glassform f1
+kreftform f1
+draktform f1
+kontaktform f1
+rapportform f1
+transportform f1
+læringsplattform f1
+substantivform f1
+vektnorm f1
+sandstorm m1
+sjøorm m1
+samemuseum n4
+friluftsmuseum n4
+barnehagestadium n4
+planstadium n4
+prosjektstadium n4
+bildemedium n4
+nettmedium n4
+særstipendium n4
+rekrutteringsstipendium n4
+dybdestudium n4
+legestudium n4
+kulturfagstudium n4
+medisinstudium n4
+forstudium n4
+gymnasstudium n4
+deltidsstudium n4
+halvtidsstudium n4
+innføringsstudium n4
+praksisstudium n4
+urfolksstudium n4
+nettstudium n4
+byprivilegium n4
+veterinærlaboratorium n4
+møtepublikum n1
+oppvaskkum m1b
+kvinneforum n1
+kompetanseforum n1
+dialogforum n1
+språkforum n1
+mineralforum n1
+debattforum n1
+regionsentrum n1
+konsonantsentrum n1
 balansesum 
-varekonsum 
-sluttsum 
-trafikkstrøm 
-luftstrøm 
-kontantstrøm 
-havstrøm 
-serviceorgan 
-klageorgan 
-kompetanseorgan 
-valgorgan 
-språkorgan 
-eierorgan 
-grunneierorgan 
-grunnforvaltningsorgan 
-urfolksorgan 
-selskapsorgan 
-kontaktorgan 
-ekspertorgan 
-hovedplan 
-periodeplan 
-barnehageplan 
-ukeplan 
-fagskoleplan 
-kulturminneplan 
-innlandssoneplan 
-kystsoneplan 
-kommuneplan 
-helseplan 
-tannhelseplan 
-kompetanseplan 
-ruteplan 
-møteplan 
-gruveplan 
-prøveplan 
-vegplan 
-fylkesvegplan 
-veiplan 
-fylkesveiplan 
-strategiplan 
-økonomiplan 
-detaljplan 
-trafikkplan 
-nasjonalparkplan 
-samiskplan 
-språkplan 
-arealplan 
-sosialplan 
-normalplan 
-delplan 
-læremiddelplan 
-kommunedelplan 
-fylkesdelplan 
-sjøfuglplan 
-vannplan 
-kontoplan 
-sektorplan 
-kulturplan 
-myrplan 
-tidsplan 
-fornyelsesplan 
-oppbyggingsplan 
-tilbakebetalingsplan 
-utviklingsplan 
-bygdeutviklingsplan 
-fredningsplan 
-samordningsplan 
-etterutdanningsplan 
-opptrappingsplan 
-disponeringsplan 
-restaureringsplan 
-avfallhåndteringsplan 
-rekrutteringsplan 
-individuellopplæringsplan 
-voksenopplæringsplan 
-gjennomføringsplan 
-landbruksplan 
-beitebruksplan 
-landsdelsplan 
-samferdselsplan 
-beredskapsplan 
-ressursplan 
-årsplan 
-tospråklighetsplan 
-fremdriftsplan 
-oversiktsplan 
-kulturhusplan 
-vindkraftplan 
-prosjektplan 
-transportplan 
-arkivplan 
-vannkran 
+varekonsum n1
+sluttsum m1b
+trafikkstrøm m1b
+luftstrøm m1b
+kontantstrøm m1b
+havstrøm m1b
+serviceorgan n2
+klageorgan n2
+kompetanseorgan n2
+valgorgan n2
+språkorgan n2
+eierorgan n2
+grunneierorgan n2
+grunnforvaltningsorgan n2
+urfolksorgan n2
+selskapsorgan n2
+kontaktorgan n2
+ekspertorgan n2
+hovedplan m1
+periodeplan m1
+barnehageplan m1
+ukeplan m1
+fagskoleplan m1
+kulturminneplan m1
+innlandssoneplan m1
+kystsoneplan m1
+kommuneplan m1
+helseplan m1
+tannhelseplan m1
+kompetanseplan m1
+ruteplan m1
+møteplan m1
+gruveplan m1
+prøveplan m1
+vegplan m1
+fylkesvegplan m1
+veiplan m1
+fylkesveiplan m1
+strategiplan m1
+økonomiplan m1
+detaljplan m1
+trafikkplan m1
+nasjonalparkplan m1
+samiskplan m1
+språkplan m1
+arealplan m1
+sosialplan m1
+normalplan m1
+delplan m1
+læremiddelplan m1
+kommunedelplan m1
+fylkesdelplan m1
+sjøfuglplan m1
+vannplan m1
+kontoplan m1
+sektorplan m1
+kulturplan m1
+myrplan m1
+tidsplan m1
+fornyelsesplan m1
+oppbyggingsplan m1
+tilbakebetalingsplan m1
+utviklingsplan m1
+bygdeutviklingsplan m1
+fredningsplan m1
+samordningsplan m1
+etterutdanningsplan m1
+opptrappingsplan m1
+disponeringsplan m1
+restaureringsplan m1
+avfallhåndteringsplan m1
+rekrutteringsplan m1
+individuellopplæringsplan m1
+voksenopplæringsplan m1
+gjennomføringsplan m1
+landbruksplan m1
+beitebruksplan m1
+landsdelsplan m1
+samferdselsplan m1
+beredskapsplan m1
+ressursplan m1
+årsplan m1
+tospråklighetsplan m1
+fremdriftsplan m1
+oversiktsplan m1
+kulturhusplan m1
+vindkraftplan m1
+prosjektplan m1
+transportplan m1
+arkivplan m1
+vannkran f1
 kinnben 
 nordsiden 
 skyggesiden 
