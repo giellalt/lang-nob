@@ -161,12 +161,35 @@ LEXICON FAR
 LEXICON DATTER
  +N+Fem+Sg+Indef:datter # ;
  +N+Fem+Sg+Def:datra # ;
+ +N+Msc+Sg+Def:datteren # ;
 ! +N+Fem+Sg+Def+Radical:datra # ;
  +N+Fem+Sg+Indef:døtre # ;
  +N+Fem+Sg+Def:døtrene # ;
  +N+Fem+Sg+Nynorsk+Indef:dotter # ;
  +N+Fem+Sg+Nynorsk+Def:dotra # ;
 ! +N:  R ;
+
+LEXICON MOR
+ mor+N+Fem+Sg:mor 0-a ;
+ mor+N+Msc+Sg+Def:moren K ;
+ mor+N+Fem+Pl:mødr e-ene ; 
+
+LEXICON GÅS
+ gås+N+Fem+Sg:gås 0-a ;
+ gås+N+Msc+Sg+Def:gåsen K ;
+ gås+N+Fem+Pl:gjess 0-ene ; 
+
+LEXICON KU
+ ku+N+Fem+Sg:ku 0-a ;
+ ku+N+Msc+Sg+Def:kuen K ;
+ ku+N+Fem+Pl:kyr 0-a ; 
+ ku+N+Fem+Pl:ku er-ene ; 
+
+LEXICON KLE
+ kle+N+Neu+Sg+Indef:kle K ;
+ kle+N+Neu+Sg+Def:kledet K ;
+ kle+N+Neu+Pl:klæ r-rne ; 
+
 
 LEXICON MANN
  +N+Msc+Sg: 0-en ;
@@ -303,7 +326,7 @@ LEXICON KLÆR
  
  LEXICON TRE
  +N+Neu+Sg:tre 0-et ;
- +N+Neu+Pl:træ r-ne ;
+ +N+Neu+Pl:træ r-rne ;
 
 
 ! Lexica for definiteness declension
@@ -333,9 +356,9 @@ LEXICON 0-ane !! @CODE@ for nynorsk only.
  +Indef: K ;
  +Def:%>ane K ;
 
-LEXICON r-ne  ! trær
+LEXICON r-rne  ! trær
  +Indef:%>r K ;
- +Def:%>ne K ;
+ +Def:%>rne K ;
 
 LEXICON 0-a
  +Indef: K ;
