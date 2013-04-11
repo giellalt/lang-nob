@@ -29,20 +29,22 @@
 ! m1sg sg only
 ! m1b dam
 ! m1b fe, komite
-! m1V sko pl. sko
+! miV sko pl. sko
 ! m3V meter pl. meter
 ! KOLLEGA kollegaer, kolleger
 ! KONTO kontoer, konti
 ! RADIUS radiuser, radii
 ! BROR brødre
 ! FAR fedre
-! DATTER døtre
 ! MANN menn
+
+! DATTER døtre
 ! f1b skam
 ! f1X bok pl. bøker
 ! f1V mus, pl. mus
+
 ! n1b rom pl. rom
-! n1sg sg only
+! n1s sg only
 ! n2b program pl. programmer
 ! n2c kontor pl. kontor, kontorer
 ! n2s mørke, not pl.

@@ -1,20 +1,28 @@
-! f1  bru      brua        bruer       bruene
-! f2  pumpe    pumpa       pumper      pumpene
-! m1  stol     stolen      stoler      stolene
-!     bakke    bakken      bakker      bakkene 
-!     pumpe    pumpen      pumper      pumpene
-! m2  lærer    læreren     lærere      lærerne
-! m3  bever    beveren     bevere      beverne
-!                          bevre(r)    bevrene
-! n1  slott    slottet     slott       slotta/slottene
-! n2  eple     eplet       epler       epla/eplene
-!     salt     saltet      salter      salta/saltene
-! n3  kontor   kontoret    kontor      kontora
-!                          kontorer    kontorene
-!     høve     høvet       høve        høva
-!                          høver       høvene
-! n4  
-! 
+! =================== !
+! Bokmål noun lexicon !
+! =================== !
+
+
+
+! Declension classes
+! Main types, from Bokmålsordboka
+
+! f1  bru         brua        bruer       bruene
+! f2  pumpe       pumpa       pumper      pumpene
+! m1  stol        stolen      stoler      stolene
+!     bakke       bakken      bakker      bakkene
+!     pumpe       pumpen      pumper      pumpene
+! m2  lærer       læreren     lærere      lærerne
+! m3  bever       beveren     bevere      beverne
+!                             bevre(r)    bevrene
+! n1  slott       slottet     slott       slotta/slottene
+! n2  eple        eplet       epler       epla/eplene
+!     salt        saltet      salter      salta/saltene
+! n3  kontor      kontoret    kontor      kontora
+!                             kontorer    kontorene
+!     høve        høvet       høve/høver  høva/høvene
+! n4  salt        saltet      salter      salta/saltene ??
+! n5  middel      midlet      midler      midla/midlene ??
 
 ! x  unclassified, to m1 by default
 ! mX indecl
@@ -44,6 +52,7 @@
 ! n3c fe, feet
 ! n4b faktum pl fakta
 ! LEKSIKON leksikon, pl. leksika
+! MUSEUM museum, museet, museer
 
 
 LEXICON ShortNounRoot
