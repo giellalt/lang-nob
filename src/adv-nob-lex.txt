@@ -7,6 +7,8 @@ LEXICON dt
 
 LEXICON Adverb
 
+enn adv ;
+opp adv ;
 av adv ;
 nemlig adv ;
 selvfølgelig adv ;

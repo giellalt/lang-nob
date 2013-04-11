@@ -99,11 +99,12 @@ LEXICON Root
 ! =========
 
 LEXICON R
-!#;
- #+CmpS+:s##  NounRoot ;
- #+Cmp+:##  NounRoot ;
- #+Cmp%-:%-  NounRoot ;
+#; ! change this and next 3
+! #+CmpS+:s##  NounRoot ;
+! #+Cmp+:##  NounRoot ;
+! #+Cmp%-:%-  NounRoot ;
 
+! ---
 ! Commented out
 ! #+Cmp+:#  main-verb ;
 ! #+Cmp+:#  regular-adj ; 
