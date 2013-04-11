@@ -6696,201 +6696,201 @@ arkivprosjekt n2
 fartøyprosjekt n2
 miljøprosjekt n2
 kulturmiljøprosjekt n2
-hoveddialekt 
-nabodialekt 
-flyttsameslekt 
-økonomiaspekt 
-kulturaspekt 
-urfolksaspekt 
-skadeinsekt 
-hovedinntekt 
-husleieinntekt 
-oljeinntekt 
-utbytteinntekt 
-sesonginntekt 
-garantiinntekt 
-personinntekt 
-nettoinntekt 
-arbeidsinntekt 
-tilleggsinntekt 
-salgsinntekt 
-næringsinntekt 
-petroleumsinntekt 
-lønnsinntekt 
-produksjonsinntekt 
-pensjonsinntekt 
-gassinntekt 
-driftsinntekt 
-automatinntekt 
-simlevekt 
-slaktevekt 
-risikovekt 
-brevvekt 
-interessekonflikt 
-beitekonflikt 
-reinbeitekonflikt 
-arealkonflikt 
-merkeplikt 
-skoleplikt 
-møteplikt 
-oppgaveplikt 
-driveplikt 
-bankplikt 
-revisorplikt 
-varslingsplikt 
-tilpasningsplikt 
-avleveringsplikt 
-landdistrikt 
-tannhelsedistrikt 
-reinbeitedistrikt 
-vegdistrikt 
-valgdistrikt 
-politidistrikt 
-nabodistrikt 
-hovedhensikt 
-litteraturoversikt 
-bestandsoversikt 
-kunnskapsoversikt 
-statusoversikt 
-tvangsmulkt 
-hovedpunkt 
-kulepunkt 
-balansepunkt 
-referansepunkt 
-grensepunkt 
-nullpunkt 
-underpunkt 
-møtetidspunkt 
-gjennomføringstidspunkt 
-kjøpstidspunkt 
-innslagspunkt 
-hovedutgangspunkt 
-oppfølgingspunkt 
-makeskiftesynspunkt 
-urfolkssynspunkt 
-kontaktpunkt 
-hovedprodukt 
-standardprodukt 
-nisjeprodukt 
-melkeprodukt 
-fiskeprodukt 
-deigprodukt 
-meieriprodukt 
-spesialprodukt 
-reinprodukt 
-kornprodukt 
-kulturprodukt 
-primærprodukt 
-gårdsprodukt 
-håndverksprodukt 
-landbruksbruksprodukt 
-matprodukt 
-kartprodukt 
-turistprodukt 
-sluttprodukt 
-kjøttprodukt 
-kjernefrukt 
-belgfrukt 
-steinfrukt 
-sitrusfrukt 
+hoveddialekt m1
+nabodialekt m1
+flyttsameslekt f1
+økonomiaspekt n2
+kulturaspekt n2
+urfolksaspekt n2
+skadeinsekt n2
+hovedinntekt f1
+husleieinntekt f1
+oljeinntekt f1
+utbytteinntekt f1
+sesonginntekt f1
+garantiinntekt f1
+personinntekt f1
+nettoinntekt f1
+arbeidsinntekt f1
+tilleggsinntekt f1
+salgsinntekt f1
+næringsinntekt f1
+petroleumsinntekt f1
+lønnsinntekt f1
+produksjonsinntekt f1
+pensjonsinntekt f1
+gassinntekt f1
+driftsinntekt f1
+automatinntekt f1
+simlevekt f1
+slaktevekt f1
+risikovekt f1
+brevvekt f1
+interessekonflikt m1
+beitekonflikt m1
+reinbeitekonflikt m1
+arealkonflikt m1
+merkeplikt m1
+skoleplikt f1
+møteplikt f1
+oppgaveplikt f1
+driveplikt f1
+bankplikt f1
+revisorplikt f1
+varslingsplikt f1
+tilpasningsplikt f1
+avleveringsplikt f1
+landdistrikt n2
+tannhelsedistrikt n2
+reinbeitedistrikt n2
+vegdistrikt n2
+valgdistrikt n2
+politidistrikt n2
+nabodistrikt n2
+hovedhensikt m1
+litteraturoversikt f1
+bestandsoversikt f1
+kunnskapsoversikt f1
+statusoversikt f1
+tvangsmulkt f1
+hovedpunkt n2
+kulepunkt n2
+balansepunkt n2
+referansepunkt n2
+grensepunkt n2
+nullpunkt n2
+underpunkt n2
+møtetidspunkt n2
+gjennomføringstidspunkt n2
+kjøpstidspunkt n2
+innslagspunkt n2
+hovedutgangspunkt n2
+oppfølgingspunkt n2
+makeskiftesynspunkt n2
+urfolkssynspunkt n2
+kontaktpunkt n2
+hovedprodukt n2
+standardprodukt n2
+nisjeprodukt n2
+melkeprodukt n2
+fiskeprodukt n2
+deigprodukt n2
+meieriprodukt n2
+spesialprodukt n2
+reinprodukt n2
+kornprodukt n2
+kulturprodukt n2
+primærprodukt n2
+gårdsprodukt n2
+håndverksprodukt n2
+landbruksbruksprodukt n2
+matprodukt n2
+kartprodukt n2
+turistprodukt n2
+sluttprodukt n2
+kjøttprodukt n2
+kjernefrukt f1
+belgfrukt f1
+steinfrukt f1
+sitrusfrukt f1
 tykt 
-vegsalt 
-sommertelt 
-vintertelt 
-skolepult 
-hyttetomt 
-hustomt 
-eventyrvariant 
-bordkant 
-brødkant 
-kjolekant 
-varseltrekant 
-maistrekant 
-koftekant 
-grytekant 
-vegkant 
-svovelpredikant 
-stålkant 
-skinnkant 
-vrakpant 
-styrerepresentant 
-kommunestyrerepresentant 
-brukerrepresentant 
-urfolksrepresentant 
-studentrepresentant 
-fargeblyant 
+vegsalt n2
+sommertelt n1
+vintertelt n1
+skolepult m1
+hyttetomt f1
+hustomt f1
+eventyrvariant m1
+bordkant m1
+brødkant m1
+kjolekant m1
+varseltrekant m1
+maistrekant m1
+koftekant m1
+grytekant m1
+vegkant m1
+svovelpredikant m1
+stålkant m1
+skinnkant m1
+vrakpant m1
+styrerepresentant m1
+kommunestyrerepresentant m1
+brukerrepresentant m1
+urfolksrepresentant m1
+studentrepresentant m1
+fargeblyant m1
 kortbent 
-samepresident 
-visepresident 
-tannlegestudent 
-fagskolestudent 
-førskolelærerstudent 
-urfolksstudent 
-hjertepasient 
-dagpasient 
-skuespillertalent 
-barnehagekonsulent 
-studiekonsulent 
-samekonsulent 
-førstekonsulent 
-fagkonsulent 
-språkkonsulent 
-kulturkonsulent 
-prosjektkonsulent 
-sameparlament 
-urfolksparlament 
-sidearrangement 
-påskearrangement 
-kulturarrangement 
-velkomstarrangement 
-idrettarrangement 
-hovedelement 
-naturelement 
-kulturelement 
-flaggreglement 
-økonomireglement 
-ansettelsesreglement 
-familiedepartement 
-kirkedepartement 
-helsedepartement 
-energidepartement 
-politidepartement 
-kommunaldepartement 
-regiondepartement 
-miljøverndepartement 
-kulturdepartement 
-justisdepartement 
-beredskapsdepartement 
-konkurransedokument 
-strategidokument 
-plandokument 
-naturdokument 
-saksdokument 
-ratifikasjonsdokument 
-konseptdokument 
-budsjettdokument 
-sluttdokument 
-hovedinstrument 
-blåseinstrument 
-musikkinstrument 
-planinstrument 
+samepresident m1
+visepresident m1
+tannlegestudent m1
+fagskolestudent m1
+førskolelærerstudent m1
+urfolksstudent m1
+hjertepasient m1
+dagpasient m1
+skuespillertalent m1
+barnehagekonsulent m1
+studiekonsulent m1
+samekonsulent m1
+førstekonsulent m1
+fagkonsulent m1
+språkkonsulent m1
+kulturkonsulent m1
+prosjektkonsulent m1
+sameparlament n1
+urfolksparlament n1
+sidearrangement n1
+påskearrangement n1
+kulturarrangement n1
+velkomstarrangement n1
+idrettarrangement n1
+hovedelement n1
+naturelement n1
+kulturelement n1
+flaggreglement n1
+økonomireglement n1
+ansettelsesreglement n1
+familiedepartement n1
+kirkedepartement n1
+helsedepartement n1
+energidepartement n1
+politidepartement n1
+kommunaldepartement n1
+regiondepartement n1
+miljøverndepartement n1
+kulturdepartement n1
+justisdepartement n1
+beredskapsdepartement n1
+konkurransedokument n1
+strategidokument n1
+plandokument n1
+naturdokument n1
+saksdokument n1
+ratifikasjonsdokument n1
+konseptdokument n1
+budsjettdokument n1
+sluttdokument n1
+hovedinstrument n1
+blåseinstrument n1
+musikkinstrument n1
+planinstrument n1
 omtrent 
-blodprosent 
-støtteprosent 
-volumprosent 
-svarprosent 
-eierprosent 
-fellingsprosent 
-nisjeprodusent 
-melkeprodusent 
-fiskeprodusent 
-programvareprodusent 
-flaggprodusent 
-læremiddelprodusent 
-gassprodusent 
-kraftprodusent 
-kjøttprodusent 
-reinkjøttprodusent 
+blodprosent m1
+støtteprosent m1
+volumprosent m1
+svarprosent m1
+eierprosent m1
+fellingsprosent m1
+nisjeprodusent m1
+melkeprodusent m1
+fiskeprodusent m1
+programvareprodusent m1
+flaggprodusent m1
+læremiddelprodusent m1
+gassprodusent m1
+kraftprodusent m1
+kjøttprodusent m1
+reinkjøttprodusent m1
 talefot 
 gipsfot 
 håndrot 
@@ -6898,487 +6898,487 @@ trerot
 ørerot 
 gulrot 
 kålrot 
-jordart 
+jordart m1
 likeart 
-fiskeart 
-bergart 
-vindkart 
-emnekart 
-plankart 
-reguleringskart 
-basiskart 
-reservenettkart 
-programart 
-egenart 
-samtalepart 
-avtalepart 
-størstepart 
-manifestpart 
-halvpart 
-oppdrettsart 
-fiskestart 
-skolestart 
-møtestart 
-prosjektstart 
-lavart 
-urfolksekspert 
-ønskekonsert 
-skolekonsert 
-fiskekort 
-valgkort 
-bankkort 
-kontokort 
-førerkort 
-korttidskort 
-jaktkort 
-plastkort 
-kredittkort 
-kollektivkort 
-klimarapport 
-hovedrapport 
-landrapport 
-bokrapport 
-språkrapport 
-delrapport 
-seminarrapport 
-revisorrapport 
-evalueringsrapport 
-kringkastingsrapport 
-årsrapport 
-tospråklighetsrapport 
-statusrapport 
-resultatrapport 
-prosjektrapport 
-sluttrapport 
-transport 
-varetransport 
-vegtransport 
-persontransport 
-skolebarntransport 
-pasienttransport 
-sjøtransport 
-øyekast 
-avtaleutkast 
-læreplanutkast 
-forskriftsutkast 
-budsjettutkast 
-lovutkast 
-kjepphest 
-skiprest 
-studentprest 
-matrest 
-vandelsattest 
-rypefangst 
-selfangst 
-villreinfangst 
-karbonfangst 
+fiskeart m1
+bergart m1
+vindkart n1
+emnekart n1
+plankart n1
+reguleringskart n1
+basiskart n1
+reservenettkart n1
+programart m1
+egenart m1
+samtalepart m1
+avtalepart m1
+størstepart m1
+manifestpart m1
+halvpart m1
+oppdrettsart m1
+fiskestart m1
+skolestart m1
+møtestart m1
+prosjektstart m1
+lavart m1
+urfolksekspert m1
+ønskekonsert m1
+skolekonsert m1
+fiskekort n1
+valgkort n1
+bankkort n1
+kontokort n1
+førerkort n1
+korttidskort n1
+jaktkort n1
+plastkort n1
+kredittkort n1
+kollektivkort n1
+klimarapport m1
+hovedrapport m1
+landrapport m1
+bokrapport m1
+språkrapport m1
+delrapport m1
+seminarrapport m1
+revisorrapport m1
+evalueringsrapport m1
+kringkastingsrapport m1
+årsrapport m1
+tospråklighetsrapport m1
+statusrapport m1
+resultatrapport m1
+prosjektrapport m1
+sluttrapport m1
+transport m1
+varetransport m1
+vegtransport m1
+persontransport m1
+skolebarntransport m1
+pasienttransport m1
+sjøtransport m1
+øyekast n1
+avtaleutkast n1
+læreplanutkast n1
+forskriftsutkast n1
+budsjettutkast n1
+lovutkast n1
+kjepphest m1
+skiprest m1
+studentprest m1
+matrest m1
+vandelsattest m1
+rypefangst m1
+selfangst m1
+villreinfangst m1
+karbonfangst m1
 talelist 
 leselist 
 klasselist 
 høringslist 
-familieturist 
-urfolkskontekst 
-cellevekst 
-muggvekst 
-løkvekst 
-realvekst 
-totalvekst 
-soppvekst 
-prisvekst 
-årslønnsvekst 
-inntektsvekst 
-metallforekomst 
-vannforekomst 
-kreftforekomst 
-klimagevinst 
-kursgevinst 
-billedkunst 
-scenekunst 
-skiløperkunst 
-samtidskunst 
-importost 
+familieturist m1
+urfolkskontekst m1
+cellevekst m1
+muggvekst m1
+løkvekst m1
+realvekst m1
+totalvekst m1
+soppvekst m1
+prisvekst m1
+årslønnsvekst m1
+inntektsvekst m1
+metallforekomst m1
+vannforekomst m1
+kreftforekomst m1
+klimagevinst m1
+kursgevinst m1
+billedkunst m1
+scenekunst m1
+skiløperkunst m1
+samtidskunst m1
+importost m1
 spisst 
 nordøst 
-klimadebatt 
-skoledebatt 
-verdidebatt 
-språkdebatt 
-fornorskingsdebatt 
-marginalskatt 
-kulturskatt 
-valgnatt 
-sommernatt 
-rekordbudsjett 
-kirkebudsjett 
-reisebudsjett 
-konferansebudsjett 
-nasjonalbudsjett 
-grunnbudsjett 
-internbudsjett 
-kulturbudsjett 
-samferdselsbudsjett 
-årsbudsjett 
-telenett 
-jernbanenett 
-vegnett 
-riksvegvegnett 
-fylkesvegnett 
-kloakknett 
-sentralnett 
-stamnett 
-telefonnett 
-brukernett 
-kulturnett 
-statnett 
-transportnett 
-åndedrett 
-voksenidrett 
-toppidrett 
-fjordrett 
-klagerett 
-samtykkerett 
-menneskerett 
-sjøfiskerett 
-talerett 
-uttalerett 
-samerett 
-helserett 
-konkurranserett 
-skifterett 
-jordskifterett 
-beiterett 
-reinbeiterett 
-førsterett 
-møterett 
-vegrett 
-tingrett 
-vetorett 
-grunneierrett 
-særrett 
-fradragsrett 
-arealforvaltningsrett 
-prøvingsrett 
-urfolksrett 
-instruksjonsrett 
-forkjøpsrett 
-matrett 
-jaktrett 
-havrett 
-initiativrett 
-byrett 
-miljørett 
-vett 
-merkesnitt 
-tresnitt 
-brukergrensesnitt 
-karaktergjennomsnitt 
-innsnitt 
-samegutt 
-sjøsamegutt 
-nabogutt 
-papirkonvolutt 
-avtaleinstitutt 
-filminstitutt 
-arbeidsmiljøinstitutt 
+klimadebatt m1
+skoledebatt m1
+verdidebatt m1
+språkdebatt m1
+fornorskingsdebatt m1
+marginalskatt m1
+kulturskatt m1
+valgnatt f1
+sommernatt f1
+rekordbudsjett n2
+kirkebudsjett n2
+reisebudsjett n2
+konferansebudsjett n2
+nasjonalbudsjett n2
+grunnbudsjett n2
+internbudsjett n2
+kulturbudsjett n2
+samferdselsbudsjett n2
+årsbudsjett n2
+telenett n1
+jernbanenett n1
+vegnett n1
+riksvegvegnett n1
+fylkesvegnett n1
+kloakknett n1
+sentralnett n1
+stamnett n1
+telefonnett n1
+brukernett n1
+kulturnett n1
+statnett n1
+transportnett n1
+åndedrett n1
+voksenidrett m1
+toppidrett m1
+fjordrett m1
+klagerett m1
+samtykkerett m1
+menneskerett m1
+sjøfiskerett m1
+talerett m1
+uttalerett m1
+samerett m1
+helserett m1
+konkurranserett m1
+skifterett m1
+jordskifterett m1
+beiterett m1
+reinbeiterett m1
+førsterett m1
+møterett m1
+vegrett m1
+tingrett m1
+vetorett m1
+grunneierrett m1
+særrett m1
+fradragsrett m1
+arealforvaltningsrett m1
+prøvingsrett m1
+urfolksrett m1
+instruksjonsrett m1
+forkjøpsrett m1
+matrett m1
+jaktrett m1
+havrett m1
+initiativrett m1
+byrett m1
+miljørett m1
+vett n1
+merkesnitt n1
+tresnitt n1
+brukergrensesnitt n1
+karaktergjennomsnitt n1
+innsnitt n1
+samegutt m1
+sjøsamegutt m1
+nabogutt m1
+papirkonvolutt m1
+avtaleinstitutt n2
+filminstitutt n2
+arbeidsmiljøinstitutt n2
 bløytt 
 smått 
-storfekjøtt 
-røykekjøtt 
-selkjøtt 
-saltkjøtt 
-fiskebåt 
-fjordfiskebåt 
-rutebåt 
-hurtigbåt 
-lokalbåt 
-seilbåt 
-skyssbåt 
-fraktbåt 
-villsau 
-portal-vindu 
-terminalvindu 
+storfekjøtt n1
+røykekjøtt n1
+selkjøtt n1
+saltkjøtt n1
+fiskebåt m1
+fjordfiskebåt m1
+rutebåt m1
+hurtigbåt m1
+lokalbåt m1
+seilbåt m1
+skyssbåt m1
+fraktbåt m1
+villsau m1
+portal-vindu n2
+terminalvindu n2
 melkeku 
 i/av 
-ishav 
-hovedkrav 
-landkrav 
-hygienekrav 
-kompetansekrav 
-slaktekrav 
-kvotekrav 
-språkkrav 
-kapitalkrav 
-programkrav 
-plankrav 
-oppkrav 
-primærkrav 
-opparbeidelseskrav 
-fornorskningskrav 
-kvalifiseringskrav 
-rapporteringskrav 
-beviskrav 
-minimumskrav 
-konsesjonskrav 
-innkjøpskrav 
-forsvarlighetskrav 
-målbarhetskrav 
-resultatkrav 
-rapportkrav 
-budsjettkrav 
-miljøkrav 
-skoleelev 
-barneskoleelev 
-grunnskoleelev 
-allmennfagelev 
-samiskelev 
-snekkerelev 
-internatelev 
-standardbrev 
-klagebrev 
-fagbrev 
-verdibrev 
-svarbrev 
-leserbrev 
-tildelingsbrev 
-forventningsbrev 
-oppnevningsbrev 
-reguleringsbrev 
-praksisbrev 
-tilsagnsbrev 
-fraktbrev 
-kravbrev 
-skolearkiv 
-papirarkiv 
-redaksjonsarkiv 
-privatarkiv 
-dokumentarkiv 
-kirkeliv 
-reiseliv 
-dagligliv 
-underliv 
-kulturliv 
-foreningsliv 
-organisasjonsliv 
-bordkniv 
-slirekniv 
-krumkniv 
-hornkniv 
-storkniv 
-skoginitiativ 
-planinitiativ 
-hovedalternativ 
-språkalternativ 
-finansieringsalternativ 
-bokollektiv 
-klimaperspektiv 
-nordområdeperspektiv 
-livsfaseperspektiv 
-arealperspektiv 
-økosystemperspektiv 
-reformperspektiv 
-kulturminnevernperspektiv 
-kulturperspektiv 
-likeverdsperspektiv 
-integreringsperspektiv 
-partnerskapsperspektiv 
-kvalitetsperspektiv 
-etnisitetsperspektiv 
-friluftsperspektiv 
-fornybardirektiv 
-rådsdirektiv 
-hovedmotiv 
-sideelv 
-kråkesølv 
-servicebehov 
-barnehagebehov 
-timebehov 
-helsebehov 
-kompetansebehov 
-beitebehov 
-boligbehov 
-sesongbehov 
-energibehov 
-bibliotekbehov 
-trafikkbehov 
-arealbehov 
-kontrollbehov 
-planbehov 
-tilretteleggingsbehov 
-utbedringsbehov 
-koordineringsbehov 
-rekrutteringsbehov 
-kursbehov 
-ressursbehov 
-husbehov 
-kraftbehov 
-effektbehov 
-budsjettbehov 
-naturmangfoldlov 
-jordlov 
-barnehagelov 
-ferielov 
-aksjelov 
-kirkelov 
-innlandsfiskelov 
-videregåendeskolelov 
-privatskolelov 
-høyskolelov 
-samelov 
-kulturminnelov 
-kommunelov 
-inndelingsnavnelov 
-helselov 
-folkehelselov 
-konkurranselov 
-jordskiftelov 
-kommunehelsetjenestelov 
-veglov 
-valglov 
-fiskerilov 
-vegtrafikklov 
-språklov 
-minerallov 
-fjellov 
-matrikkellov 
-pengespillov 
-alkohollov 
-domstollov 
-planlov 
-vannlov 
-grunnlov 
-barnevernlov 
-dyrevernlov 
-naturvernlov 
-stedsnavnlov 
-revisorlov 
-sektorlov 
-naturlov 
-kulturlov 
-akvakulturlov 
-særlov 
-naturmangfoldslov 
-anerkjennelseslov 
-jordsalgslov 
-utlendingslov 
-kartleggingslov 
-bygningslov 
-grunnforvaltningslov 
-kringkastingslov 
-omsorgslov 
-pristiltakslov 
-bergverkslov 
-finanslov 
-konsesjonslov 
-vannressurslov 
-havressurslov 
-jaktlov 
-reinby 
-innby 
-vertsby 
-teltby 
-trafikkøy 
-seletøy 
-motorkjøretøy 
-syltetøy 
-moltesyltetøy 
-bringebærsyltetøy 
-blåbærsyltetøy 
-verktøy 
-språkverktøy 
-planverktøy 
-korrekturverktøy 
-oppfølgingsverktøy 
-publiseringsverktøy 
-styringsverktøy 
-kommunikasjonsverktøy 
-fiskefartøy 
-tjenestefartøy 
-luftfartøy 
-undertøy 
-vinterfottøy 
-sølvtøy 
-inkassobyrå 
-sommersiidanivå 
-lydnivå 
-servicenivå 
-barnehagenivå 
-bransjenivå 
-skolenivå 
-høgskolenivå 
-grunnskolenivå 
-høyskolenivå 
-kommunenivå 
-kompetansenivå 
-klassenivå 
-rentenivå 
-tjenestenivå 
-støttenivå 
-partinivå 
-detaljnivå 
-språknivå 
-symbolnivå 
-kolesterolnivå 
-programnivå 
-systemnivå 
-regionnivå 
-jernnivå 
-risikonivå 
-etatsledernivå 
-politikernivå 
-saksbehandlernivå 
-karakternivå 
-ministernivå 
-utenriksministernivå 
-husholdsnivå 
-ledelsesnivå 
-hovedfagsnivå 
-beslutningsnivå 
-øvingsnivå 
-prisnivå 
-landsdelsnivå 
-ambisjonsnivå 
-evolusjonsnivå 
-kretsnivå 
-valgkretsnivå 
-konfliktnivå 
-ekspertnivå 
-havnivå 
-forretningsidé 
-artistkafé 
-landsdelsmusé 
-sosialkomité 
-regionkomité 
-ekspertkomité 
-miljøkomité 
-sølvsmedmiljø 
-familiemiljø 
-høyskolemiljø 
-kompetansemiljø 
-høykompetansemiljø 
-klassemiljø 
-musikkmiljø 
-folkemusikkmiljø 
-språkmiljø 
-tegnspråkmiljø 
-lokalmiljø 
-filmmiljø 
-bomiljø 
-brukermiljø 
-naturmiljø 
-kulturmiljø 
-overvåkingsmiljø 
-verdiskapingsmiljø 
-urfolksmiljø 
-landbruksmiljø 
-landskapsmiljø 
-ressursmiljø 
-internatmiljø 
-produsentmiljø 
-fjæresjø 
-innsjø 
-skaresnø 
-kornsnø 
-djupsnø 
-vårsnø 
-sesamfrø 
-linfrø 
+ishav n1
+hovedkrav n1
+landkrav n1
+hygienekrav n1
+kompetansekrav n1
+slaktekrav n1
+kvotekrav n1
+språkkrav n1
+kapitalkrav n1
+programkrav n1
+plankrav n1
+oppkrav n1
+primærkrav n1
+opparbeidelseskrav n1
+fornorskningskrav n1
+kvalifiseringskrav n1
+rapporteringskrav n1
+beviskrav n1
+minimumskrav n1
+konsesjonskrav n1
+innkjøpskrav n1
+forsvarlighetskrav n1
+målbarhetskrav n1
+resultatkrav n1
+rapportkrav n1
+budsjettkrav n1
+miljøkrav n1
+skoleelev m1
+barneskoleelev m1
+grunnskoleelev m1
+allmennfagelev m1
+samiskelev m1
+snekkerelev m1
+internatelev m1
+standardbrev n1
+klagebrev n1
+fagbrev n1
+verdibrev n1
+svarbrev n1
+leserbrev n1
+tildelingsbrev n1
+forventningsbrev n1
+oppnevningsbrev n1
+reguleringsbrev n1
+praksisbrev n1
+tilsagnsbrev n1
+fraktbrev n1
+kravbrev n1
+skolearkiv n1
+papirarkiv n1
+redaksjonsarkiv n1
+privatarkiv n1
+dokumentarkiv n1
+kirkeliv n1
+reiseliv n1
+dagligliv n1
+underliv n1
+kulturliv n1
+foreningsliv n1
+organisasjonsliv n1
+bordkniv m1
+slirekniv m1
+krumkniv m1
+hornkniv m1
+storkniv m1
+skoginitiativ n1
+planinitiativ n1
+hovedalternativ n1
+språkalternativ n1
+finansieringsalternativ n1
+bokollektiv n1
+klimaperspektiv n1
+nordområdeperspektiv n1
+livsfaseperspektiv n1
+arealperspektiv n1
+økosystemperspektiv n1
+reformperspektiv n1
+kulturminnevernperspektiv n1
+kulturperspektiv n1
+likeverdsperspektiv n1
+integreringsperspektiv n1
+partnerskapsperspektiv n1
+kvalitetsperspektiv n1
+etnisitetsperspektiv n1
+friluftsperspektiv n1
+fornybardirektiv n1
+rådsdirektiv n1
+hovedmotiv n1
+sideelv f1
+kråkesølv n1
+servicebehov n1
+barnehagebehov n1
+timebehov n1
+helsebehov n1
+kompetansebehov n1
+beitebehov n1
+boligbehov n1
+sesongbehov n1
+energibehov n1
+bibliotekbehov n1
+trafikkbehov n1
+arealbehov n1
+kontrollbehov n1
+planbehov n1
+tilretteleggingsbehov n1
+utbedringsbehov n1
+koordineringsbehov n1
+rekrutteringsbehov n1
+kursbehov n1
+ressursbehov n1
+husbehov n1
+kraftbehov n1
+effektbehov n1
+budsjettbehov n1
+naturmangfoldlov f1
+jordlov f1
+barnehagelov f1
+ferielov f1
+aksjelov f1
+kirkelov f1
+innlandsfiskelov f1
+videregåendeskolelov f1
+privatskolelov f1
+høyskolelov f1
+samelov f1
+kulturminnelov f1
+kommunelov f1
+inndelingsnavnelov f1
+helselov f1
+folkehelselov f1
+konkurranselov f1
+jordskiftelov f1
+kommunehelsetjenestelov f1
+veglov f1
+valglov f1
+fiskerilov f1
+vegtrafikklov f1
+språklov f1
+minerallov f1
+fjellov f1
+matrikkellov f1
+pengespillov f1
+alkohollov f1
+domstollov f1
+planlov f1
+vannlov f1
+grunnlov f1
+barnevernlov f1
+dyrevernlov f1
+naturvernlov f1
+stedsnavnlov f1
+revisorlov f1
+sektorlov f1
+naturlov f1
+kulturlov f1
+akvakulturlov f1
+særlov f1
+naturmangfoldslov f1
+anerkjennelseslov f1
+jordsalgslov f1
+utlendingslov f1
+kartleggingslov f1
+bygningslov f1
+grunnforvaltningslov f1
+kringkastingslov f1
+omsorgslov f1
+pristiltakslov f1
+bergverkslov f1
+finanslov f1
+konsesjonslov f1
+vannressurslov f1
+havressurslov f1
+jaktlov f1
+reinby m1
+innby m1
+vertsby m1
+teltby m1
+trafikkøy f1
+seletøy n1
+motorkjøretøy n1
+syltetøy n1
+moltesyltetøy n1
+bringebærsyltetøy n1
+blåbærsyltetøy n1
+verktøy n1
+språkverktøy n1
+planverktøy n1
+korrekturverktøy n1
+oppfølgingsverktøy n1
+publiseringsverktøy n1
+styringsverktøy n1
+kommunikasjonsverktøy n1
+fiskefartøy n1
+tjenestefartøy n1
+luftfartøy n1
+undertøy n1
+vinterfottøy n1
+sølvtøy n1
+inkassobyrå n1
+sommersiidanivå n1
+lydnivå n1
+servicenivå n1
+barnehagenivå n1
+bransjenivå n1
+skolenivå n1
+høgskolenivå n1
+grunnskolenivå n1
+høyskolenivå n1
+kommunenivå n1
+kompetansenivå n1
+klassenivå n1
+rentenivå n1
+tjenestenivå n1
+støttenivå n1
+partinivå n1
+detaljnivå n1
+språknivå n1
+symbolnivå n1
+kolesterolnivå n1
+programnivå n1
+systemnivå n1
+regionnivå n1
+jernnivå n1
+risikonivå n1
+etatsledernivå n1
+politikernivå n1
+saksbehandlernivå n1
+karakternivå n1
+ministernivå n1
+utenriksministernivå n1
+husholdsnivå n1
+ledelsesnivå n1
+hovedfagsnivå n1
+beslutningsnivå n1
+øvingsnivå n1
+prisnivå n1
+landsdelsnivå n1
+ambisjonsnivå n1
+evolusjonsnivå n1
+kretsnivå n1
+valgkretsnivå n1
+konfliktnivå n1
+ekspertnivå n1
+havnivå n1
+forretningsidé m1b
+artistkafé m1b
+landsdelsmusé m1b
+sosialkomité m1b
+regionkomité m1b
+ekspertkomité m1b
+miljøkomité m1b
+sølvsmedmiljø n1
+familiemiljø n1
+høyskolemiljø n1
+kompetansemiljø n1
+høykompetansemiljø n1
+klassemiljø n1
+musikkmiljø n1
+folkemusikkmiljø n1
+språkmiljø n1
+tegnspråkmiljø n1
+lokalmiljø n1
+filmmiljø n1
+bomiljø n1
+brukermiljø n1
+naturmiljø n1
+kulturmiljø n1
+overvåkingsmiljø n1
+verdiskapingsmiljø n1
+urfolksmiljø n1
+landbruksmiljø n1
+landskapsmiljø n1
+ressursmiljø n1
+internatmiljø n1
+produsentmiljø n1
+fjæresjø m1
+innsjø m1
+skaresnø m1
+kornsnø m1
+djupsnø m1
+vårsnø m1
+sesamfrø n1
+linfrø n1
