@@ -5230,3 +5230,8 @@ frarå v4 ;
 
 
 
+forsinke v1  ;
+kostnadsføre v2  ;
+utgiftsføre v2  ;
+målprise v2  ;
+innkreve v2  ;
