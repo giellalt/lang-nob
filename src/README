@@ -1,14 +1,21 @@
 
-This folder contains source files for Norwegian Bokmål.
-
-Installation and compilation, and a short note on usage,
-is documented in the file INSTALL.
+This folder contains old source files for Norwegian Bokmål.
 
 Documentation is scattered around on giellateknos pages, e.g.
 * http://giellatekno.uit.no/faodoc/index.html
 * http://giellatekno.uit.no/doc/tools/docu-sme-manual.html
 
 
+
+Please do not use this, but use the $GTLANG/langs/nob instead.
+
+
+
+
+----
+
+Installation and compilation, and a short note on usage,
+is documented in the file INSTALL.
 
 
 The folder contains two different dis files, 
