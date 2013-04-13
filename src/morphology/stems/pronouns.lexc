@@ -1,0 +1,550 @@
+!LEXICON Particle
+! # ;
+
+LEXICON Subjunction
+dersom subj ; 
+å+IM:å # ;
+om  subj ;
+fordi subj ;
+ifall subj ;
+som subj ;
+dersom subj ;
+hvis subj ;
+viss subj ;
+at subj ;
+for conj ;
+om p ;
+som p ;
+derfor adv ;
+hvorfor adv ;
+
+
+LEXICON subj
+ +CS: # ;
+
+LEXICON Conjunction
+både conj ;
+og conj ;
+og adv ;
+enten conj ;
+eller conj ;
+samt conj ;
+men conj ;
+
+LEXICON conj
+ +CC: # ;
+
+LEXICON Interjection
+gid ij ;
+gid adv ;
+uff ij ;
+ptro ij ;
+ja ij ;
+nei ij ;
+å ij ;
+å f1 ;
+oi ij ;
+javel ij ;
+dæven ij ;
+joddu ij ;
+jasså ij ;
+
+LEXICON ij
+ +Interj: # ;
+
+LEXICON Pronoun
+
+Personal ;
+Reflexive ;
+Indefinite ;
+Interrogative ;
+
+
+LEXICON Personal 
+ jeg+Pron+Pers+Sg1+Nom:jeg # ;
+ jeg+Pron+Pers+Sg1+Acc:meg # ;
+  du+Pron+Pers+Sg2+Nom:du # ;
+  du+Pron+Pers+Sg2+Acc:deg # ;
+ han+Pron+Pers+Sg3+Nom:han # ;
+ hun+Pron+Pers+Sg3+Nom:hun # ;
+ han+Pron+Pers+Sg3+Acc:han # ;
+ han+Pron+Pers+Sg3+Acc:ham # ;
+ hun+Pron+Pers+Sg3+Acc:henne # ;
+ den+Pron+Pers+Sg3:den # ; ! Gender? -- no, only as Det Dem (?)
+ det+Pron+Pers+Sg3:det # ; ! Gender? -- no, only as Det Dem (?)
+  vi+Pron+Pers+Pl1+Nom:vi # ;
+  vi+Pron+Pers+Pl1+Acc:oss # ;
+dere+Pron+Pers+Pl2+Nom:dere # ;
+dere+Pron+Pers+Pl2+Acc:dere # ;
+  de+Pron+Pers+Pl3+Nom:de # ;
+  de+Pron+Pers+Pl3+Acc:dem # ;
+
+
+
+LEXICON Reflexive 
+seg+Pron+Refl+Acc:seg # ;
+
+LEXICON Indefinite
+noen+Pron+Indef:noen # ;
+ingen+Pron+Indef:ingen # ;
+
+
+LEXICON Interrogative 
+hva+Pron+Interr:hva # ;
+hvem+Pron+Interr:hvem # ;
+
+LEXICON Determiner
+Demonstrative ;
+Possessive ;
+
+LEXICON Demonstrative 
+noen+Det+Qnt+Pl:noen # ;
+noe+Det+Qnt+Sg+Neu:noe # ;
+begge+Det+Qnt+Pl:begge # ;
+det+Det+Dem+Sg+Neu:det # ;
+den+Det+Dem+Sg+MF:den # ;
+den+Det+Dem+Pl:de # ;
+et+Det+Dem+Sg+Neu:et # ;
+ett+Det+Dem+Sg+Neu:ett # ;
+en+Det+Dem+Sg+MF:en # ;
+én+Det+Dem+Sg+MF:én # ;
+ei+Det+Dem+Sg+Fem:ei # ;
+hver+Det+Dem+Sg+MF:hver # ;
+!hver+Det+Dem+Sg+Fem:hver # ;
+hver+Det+Dem+Sg+Neu:hvert # ;
+hvilken+Det+Dem+Sg+MF:hvilken # ;
+!hvilken+Det+Dem+Sg+Fem:hvilken # ;
+hvilken+Det+Dem+Sg+Neu:hvilket # ;
+hvilken+Det+Dem+Pl:hvilke # ;
+hvis+Det+Poss+Qst:hvis # ;
+denne+Det+Dem+Sg+MF:denne K ;
+!denne+Det+Dem+Sg+Fem:denne K ;
+dette+Det+Dem+Sg+Neu:dette K ;
+disse+Det+Dem+Pl:disse K ;
+all+Det+Dem+Sg+Msc:all # ;
+all+Det+Dem+Sg+Fem:all # ;
+all+Det+Dem+Sg+Neu:alt # ;
+all+Det+Dem+Pl:alle K ;
+slik+Det+Dem+Sg+Msc:slik # ;
+slik+Det+Dem+Sg+Fem:slik # ;
+slik+Det+Dem+Sg+Neu:slikt # ;
+slik+Det+Dem+Pl:slike # ;
+samme+Det+Dem:samme # ;
+flere+Det+Dem+Pl:flere # ;
+mange+Det+Dem+Pl:mange # ;
+annen+Det+Dem+Sg+Msc:annen # ;
+annen+Det+Dem+Sg+Fem:anna # ;
+annen+Det+Dem+Sg+Fem:annen # ;
+annen+Det+Dem+Sg+Neu:annet # ;
+annen+Det+Dem+Pl:andre # ;
+selv+Det+Intens:selv # ;
+sjøl+Det+Intens:sjøl # ;
+eneste+Det+Dem:eneste # ;
+sånn+Det+Dem+Sg+Msc:sånn # ;
+sånn+Det+Dem+Sg+Fem:sånn # ;
+sånn+Det+Dem+Sg+Neu:sånt # ;
+sånn+Det+Dem+Sg+Pl:sånne # ;
+
+
+LEXICON Possessive 
+di+Det+Poss+Sg+Fem:di # ;
+din+Det+Poss+Sg+Msc:din # ;
+dine+Det+Poss+Pl:dine # ;
+ditt+Det+Poss+Sg+Neu:ditt # ;
+mi+Det+Poss+Sg+Fem:mi # ;
+min+Det+Poss+Sg+Msc:min # ;
+mine+Det+Poss+Pl:mine # ;
+mitt+Det+Poss+Sg+Neu:mitt # ;
+si+Det+Poss+Sg+Fem:si # ;
+sin+Det+Poss+Sg+Msc:sin # ;
+sine+Det+Poss+Pl:sine # ;
+sitt+Det+Poss+Sg+Neu:sitt # ;
+vår+Det+Poss+Sg+Fem:vår # ;
+vår+Det+Poss+Sg+Msc:vår # ;
+våre+Det+Poss+Pl:våre # ;
+vårt+Det+Poss+Sg+Neu:vårt # ;
+
+hans+Det+Poss+Msc:hans # ;
+hennes+Det+Poss+Fem:hennes # ;
+deres+Det+Poss+Pl:deres # ;
+
+
+LEXICON Numeral 
+Textual ;
+ARABIC ;
+ROMAN ;
+ISOLATED-NUMEXP ;
+
+LEXICON Textual
+2-9 ;
+TEXTTENS ;
+TEXTTEENS ;
+TEXTHUNDREDS ;
+TEXTTHOUSANDS ;
+ORDTEXT ;
+
+
+LEXICON TEXTTHOUSANDS 
+1000CONT ;
+et 1000CONT ; ! ettusen
+to 1000CONT ;
+tre 1000CONT ;
+fire 1000CONT ;
+fem 1000CONT ;
+seks 1000CONT ;
+sju 1000CONT ;
+syv 1000CONT ;
+åtte 1000CONT ;
+ni  1000CONT ;
+
+LEXICON 1000CONT
+tusen numtag ;
+tusenog TEXTHUNDREDS ;
+tusenog TEXTTENS ;
+tusenog TEXTTEENS ;
+tusenog TEXTONES ;
+
+LEXICON TEXTHUNDREDS
+100CONT ;
+ett 100CONT ;
+to 100CONT ;
+tre 100CONT ;
+fire 100CONT ;
+fem 100CONT ;
+seks 100CONT ;
+sju 100CONT ;
+syv 100CONT ;
+åtte 100CONT ;
+ni  100CONT ;
+
+LEXICON 100CONT
+hundreog TEXTTENS ;
+hundreog TEXTTEENS ;
+hundreog TEXTONES ;
+hundre numtag ;
+
+LEXICON TEXTTENS
+
+tjue TEXTTENSCONT ;
+tyve TEXTTENSCONT ;
+tredve numtag ;
+tretti TEXTTENSCONT ;
+førti TEXTTENSCONT ;
+femti TEXTTENSCONT ;
+seksti TEXTTENSCONT ;
+sytti TEXTTENSCONT ;
+søtti TEXTTENSCONT ;
+åtti TEXTTENSCONT ;
+nitti TEXTTENSCONT ;
+hundre TEXTTENSCONT ;
+
+LEXICON TEXTTENSCONT
+TEXTONES ; 
+numtag ;
+
+LEXICON TEXTTEENS
+elleve numtag ;
+tolv numtag ;
+tretten numtag ;
+fjorten numtag ;
+femten numtag ;
+seksten numtag ;
+søtten numtag ;
+sytten numtag ;
+atten numtag ;
+nitten numtag ;
+
+LEXICON TEXTONES
+en numtagsg ;
+2-9 ;
+
+LEXICON 2-9
+to numtag ;
+tre numtag ;
+fire numtag ;
+fem numtag ;
+seks numtag ;
+sju numtag ;
+syv numtag ;
+åtte numtag ;
+ni numtag ;
+ti numtag ;
+
+LEXICON ORDTEXT
+første a3 ;
+andre a3 ;
+tredje a3 ;
+fjerde a3 ;
+femte a3 ;
+sjette a3 ;
+sjuende a3 ;
+syvende a3 ;
+åttende a3 ;
+niende a3 ;
+tiende a3 ;
+ellevte a3 ;
+tolvte a3 ;
+trettende a3 ;
+fjortende a3 ;
+femtende a3 ;
+sekstende a3 ;
+søttende a3 ;
+syttende a3 ;
+attende a3 ;
+nittende a3 ;
+tjuende a3 ;
+tyvende a3 ;
+tredevte a3 ;
+trettiende a3 ;
+førtiende a3 ;
+femtiende a3 ;
+sekstiende a3 ;
+syttiende a3 ;
+søttiende a3 ;
+åttiende a3 ;
+nittiende a3 ;
+hundrede a3 ;
+
+LEXICON numtag
++Det+Pl+Qnt: # ;
+
+LEXICON numtagsg
++Det+Sg+Qnt: # ;
+
+
+
+LEXICON ARABIC  !^C^
+1  ARABICLOOP ; !^C^
+2  ARABICLOOP ; !^C^
+3  ARABICLOOP ; !^C^
+4  ARABICLOOP ; !^C^
+5  ARABICLOOP ; !^C^
+6  ARABICLOOP ; !^C^
+7  ARABICLOOP ; !^C^
+8  ARABICLOOP ; !^C^
+9  ARABICLOOP ; !^C^
+%0 ARABICLOOP ; !^C^
+
+LEXICON ARABICLOOP      !^C^
+        ARABIC ;        !^C^
+%-      ARABIC ;          ! 1-2    multipart numbers                                !^C^
+%.%-    ARABIC ;          ! 1.-2   multipart numbers                                !^C^
+%-%     ARABIC ;          ! 1- 2   multipart numbers                                !^C^
+% %-    ARABIC ;          ! 1 -2   multipart numbers                                !^C^
+% %-%   ARABIC ;          ! 1 - 2  multipart numbers                                !^C^
+% %-%-%  ARABIC ;         ! 1 -- 2 multipart numbers                                !^C^
+% %-    ARABICDELIMITER ; ! 1 -    multipart numbers   - "1 - :s" - do we find it?  !^C^
+% %-%-  ARABICDELIMITER ; ! 1 --   multipart numbers                                !^C^
+%.      ARABIC ;                                                                    !^C^
+%,      ARABIC ;                                                                    !^C^
+%:      ARABIC ;                                                                    !^C^
+%       ARABIC ;    ! Allowing for "23 500".                                        !^C^
+        ARABIC ;    ! Allowing for "23 500" w/nbsp (init char is alt-space)         !^C^
+%/      ARABIC ;    ! 24/12                                                         !^C^
++A+Ord:%.   # ;                                                                     !^C^
+,%-+Det+Qnt+Pl:,%-   # ;               ! 10,-                                                          !^C^
+.%-+Det+Qnt+Pl:,%-   # ;               ! 10.- It is wrong, but written.                          !SUB  !^C^
+!%%+Det+Qnt+Pl:%%     ARABICDELIMITER ; ! 50%. It is wrong, but 75 % of us write "75%". !^C^
+!% %%+Det+Qnt+Pl:% %% ARABICDELIMITER ; ! the correct ones as well... 50 % etc.         !^C^
+!    +Det+Qnt+Pl:     ARABICDELIMITER ; ! list of number-case delimiters                !^C^
+! These three removed due to %% problems.
+
+LEXICON ARABICDELIMITER ! blank + 3 delim, what does the lg counc prefer? !^C^
+     ARABICCASE ; ! This is the 1984s case.                     !^C^
+ :%: ARABICCASE ; ! This is the 1984:s case.                    !^C^
+ :%' ARABICCASE ; ! This is the 1984's case.                    !^C^
+ :%- ARABICCASE ; ! This is the 1984-s case.                    !^C^
+
+
+
+LEXICON ARABICCASE                                    !^C^
+f # ;     ! s. 123f.                             !^C^
+ff # ;     ! s. 123ff.                           !^C^
+b # ;     ! § 123b                            !^C^
+c # ;     ! § 123c                            !^C^
+d # ;     ! § 123d                            !^C^
+e # ;     ! § 123e                            !^C^
+  # ;                                          !^C^
+ R ; ! 1800-tallet
+
+! The Roman numerals !
+! ------------------ !
+
+LEXICON ROMAN                                !^C^
+ ROM-THOUSAND ;                             !^C^
+ ROM-HUNDRED ;                             !^C^
+ ROM-TEN ;                                 !^C^
+ ROM-TWO-NINE ;                                 !^C^
+ ROM-ONE-BARE ; ! singleton I              !^C^
+
+LEXICON ROM-THOUSAND                          !^C^
+ M ROM-THOUSAND-TAG ;                     !^C^
+ MM ROM-THOUSAND-TAG ;                     !^C^
+ MMM ROM-THOUSAND-TAG ;                     !^C^
+ MMMM ROM-THOUSAND-TAG ;                 !^C^
+ MMMMM ROM-THOUSAND-TAG ;                 !^C^
+
+LEXICON ROM-THOUSAND-TAG                    !^C^
+  ROMNUMTAG ;                             !^C^
+ ROM-HUNDRED ;                             !^C^
+ ROM-SPLIT    ;                             !^C^
+
+LEXICON ROM-HUNDRED                            !^C^
+ C ROM-HUNDRED-TAG ;                     !^C^
+ CC ROM-HUNDRED-TAG ;                     !^C^
+ CCC ROM-HUNDRED-TAG ;                     !^C^
+ CD ROM-HUNDRED-TAG ;                     !^C^
+ D ROM-HUNDRED-TAG ;                     !^C^
+ DC ROM-HUNDRED-TAG ;                     !^C^
+ DCC ROM-HUNDRED-TAG ;                     !^C^
+ DCCC ROM-HUNDRED-TAG ;                     !^C^
+ CM ROM-HUNDRED-TAG ;                     !^C^
+
+LEXICON ROM-HUNDRED-TAG                        !^C^
+  ROMNUMTAG ;                             !^C^
+ ROM-TEN ;                                 !^C^
+ ROM-SPLIT ;                             !^C^
+
+LEXICON ROM-TEN                                !^C^
+ X ROM-TEN-TAG ;                         !^C^
+ XX ROM-TEN-TAG ;                         !^C^
+ XXX ROM-TEN-TAG ;                         !^C^
+ XL ROM-TEN-TAG ;                         !^C^
+ L ROM-TEN-TAG ;                         !^C^
+ LX ROM-TEN-TAG ;                         !^C^
+ LXX ROM-TEN-TAG ;                         !^C^
+ LXXX ROM-TEN-TAG ;                         !^C^
+ XC ROM-TEN-TAG ;                         !^C^
+
+LEXICON ROM-TEN-TAG                            !^C^
+ ROMNUMTAG ;                             !^C^
+ ROM-ONE ;                                 !^C^
+ ROM-SPLIT ;                             !^C^
+
+LEXICON ROM-ONE                                !^C^
+ ROM-ONE-ONLY ;
+ ROM-TWO-NINE ;
+
+LEXICON ROM-TWO-NINE
+ II ROM-ONE-TAG ;                         !^C^
+ III ROM-ONE-TAG ;                         !^C^
+ IV  ROM-ONE-TAG ;                         !^C^
+ V ROM-ONE-TAG ;                         !^C^
+ VI ROM-ONE-TAG ;                         !^C^
+ VII ROM-ONE-TAG ;                         !^C^
+ VIII ROM-ONE-TAG ;                         !^C^
+ IX ROM-ONE-TAG ;                         !^C^
+
+LEXICON ROM-ONE-ONLY
+ I ROM-ONE-TAG ;                         !^C^
+
+LEXICON ROM-ONE-BARE
+ I NON-ONE-TAG ; ! to avoid I Det Pl
+
+LEXICON ROM-ONE-TAG                            !^C^
+  ROMNUMTAG ;                             !^C^
+! +N: ROMNUMTAG ;                         !^C^ !The Olav viđeš fix (Roman V now gets A)
+ ROM-SPLIT ;                             !^C^
+
+! Here, we split the Roman numerals, in order to account for cases like "Kapihtal II-IV".
+! We may send this first part directly to ROM-TAG below (and get the +Det+Qnt+Pl tag), or we may
+! send them through a second loop, identical to the first one, but marked wit "2" (the lexica
+! are called 2ROMAN, etc. We do this instead of making a loop, since we do not want cases
+! like "II-IV-VI-VII-IX". If that should turn out to be a good idea, a loop would do the
+! trick.
+
+LEXICON ROM-SPLIT                            !^C^
+ :%- 2ROMAN ; ! II-VI, etc.                    !^C^
+
+
+! Here goes loop 2.
+
+LEXICON 2ROMAN                                !^C^
+ 2ROM-THOUSAND ;                         !^C^
+ 2ROM-HUNDRED ;                             !^C^
+ 2ROM-TEN ;                                  !^C^
+ 2ROM-ONE ;                                  !^C^
+
+LEXICON 2ROM-THOUSAND                       !^C^
+ M 2ROM-THOUSAND-TAG ;                     !^C^
+ MM 2ROM-THOUSAND-TAG ;                     !^C^
+ MMM 2ROM-THOUSAND-TAG ;                 !^C^
+ MMMM 2ROM-THOUSAND-TAG ;                 !^C^
+ MMMMM 2ROM-THOUSAND-TAG ;                 !^C^
+
+LEXICON 2ROM-THOUSAND-TAG                    !^C^
+  ROMNUMTAG ;                             !^C^
+ 2ROM-HUNDRED ;                             !^C^
+
+LEXICON 2ROM-HUNDRED                        !^C^
+ C 2ROM-HUNDRED-TAG ;                     !^C^
+ CC 2ROM-HUNDRED-TAG ;                     !^C^
+ CCC 2ROM-HUNDRED-TAG ;                     !^C^
+ CD 2ROM-HUNDRED-TAG ;                     !^C^
+ D 2ROM-HUNDRED-TAG ;                     !^C^
+ DC 2ROM-HUNDRED-TAG ;                     !^C^
+ DCC 2ROM-HUNDRED-TAG ;                     !^C^
+ DCCC 2ROM-HUNDRED-TAG ;                 !^C^
+ CM 2ROM-HUNDRED-TAG ;                     !^C^
+
+LEXICON 2ROM-HUNDRED-TAG                    !^C^
+  ROMNUMTAG ;                             !^C^
+ 2ROM-TEN ;                                 !^C^
+
+LEXICON 2ROM-TEN                               !^C^
+ X 2ROM-TEN-TAG ;                           !^C^
+ XX 2ROM-TEN-TAG ;                          !^C^
+ XXX 2ROM-TEN-TAG ;                         !^C^
+ XL 2ROM-TEN-TAG ;                          !^C^
+ L 2ROM-TEN-TAG ;                           !^C^
+ LX 2ROM-TEN-TAG ;                          !^C^
+ LXX 2ROM-TEN-TAG ;                         !^C^
+ LXXX 2ROM-TEN-TAG ;                        !^C^
+ XC 2ROM-TEN-TAG ;                          !^C^
+
+LEXICON 2ROM-TEN-TAG                           !^C^
+  ROMNUMTAG ;                               !^C^
+ 2ROM-ONE ;                                 !^C^
+
+LEXICON 2ROM-ONE                               !^C^
+ I 2ROM-ONE-TAG ;                           !^C^
+ II 2ROM-ONE-TAG ;                          !^C^
+ III 2ROM-ONE-TAG ;                         !^C^
+ IV  2ROM-ONE-TAG ;                         !^C^
+ V 2ROM-ONE-TAG ;                           !^C^
+ VI 2ROM-ONE-TAG ;                          !^C^
+ VII 2ROM-ONE-TAG ;                         !^C^
+ VIII 2ROM-ONE-TAG ;                        !^C^
+ IX 2ROM-ONE-TAG ;                          !^C^
+
+LEXICON 2ROM-ONE-TAG                           !^C^
+  ROMNUMTAG ;                               !^C^
+
+LEXICON ROMNUMTAG                              !^C^
+ +Det+Qnt+Pl: # ;                              !^C^
+ NON-ONE-TAG ;
+
+LEXICON NON-ONE-TAG
+ +A+Ord:%. # ;                              !^C^ !III. as ordinal.
+! +A+Ord: # ;                                !^C^ ! No trouble.
+ +Det+Qnt+Pl:%: # ;                     !^C^
+ +Det+Qnt+Pl:%' # ;                     !^C^
+ +Det+Qnt+Pl:%- # ;                     !^C^
+ +Det+Qnt+Pl:%´ # ;                     !^C^
+ +Det+Qnt+Pl:   # ;                     !^C^
+
+
+
+
+
+! A final section with some isolated numeral expresssions !
+! ------------------------------------------------------- !
+
+
+LEXICON ISOLATED-NUMEXP                        !^C^
+½+Det+Qnt+Sg:½ # ;                                 !^C^
+¹+Det+Qnt+Sg:¹ # ;                                 !^C^
+²+Det+Qnt+Pl:² # ;                                 !^C^
+³+Det+Qnt+Pl:³ # ;                                 !^C^
+¼+Det+Qnt+Sg:¼ # ;                                 !^C^
+
