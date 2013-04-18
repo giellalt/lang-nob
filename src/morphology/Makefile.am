@@ -22,6 +22,7 @@ GT_LEXC_ROOT=root.lexc
 GT_LEXC_SRCS=\
 			   affixes/adjectives.lexc \
 			   affixes/nouns.lexc       \
+			   stems/nynorsk-stems.lexc       \
 			   affixes/verbs.lexc       \
 			   stems/abbreviations.lexc \
 			   stems/adjectives.lexc    \
