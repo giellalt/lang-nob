@@ -10,7 +10,7 @@
 ! v3  leve        lever       levde       levd
 ! v4  nå          når         nådde       nådd
 ! v4  bie         bier        bidde       bidd
-
+!
 ! Subtypes
 ! v13 v1 or v3
 ! v1-s passive v1 verbs
@@ -50,6 +50,10 @@ LEXICON v4 ! ro, bie
  +V: inf-prsptc ;
  +V: r-pres ;
  +V: dde-pret ;
+
+LEXICON v-s ! fritas
+ +Inf: # ;
+ +Ind+Prs: # ;
 
 LEXICON v1-s ! undres
  +Inf: # ;
@@ -137,14 +141,15 @@ binde+V+Ind+Prt:bandt # ;
 binde+V+PrfPtc:bundet # ;
 binde+V+PrsPtc:bindende # ;
 
-LEXICON BITE
-bite+V+Inf:bite # ;
-bite+V+Imp:bit # ;
-bite+V+Ind+Prs:biter # ;
-bite+V+Ind+Prs+Pass:bites # ;
-bite+V+Ind+Prt:bet # ;
-bite+V+PrfPtc:bitt # ;
-bite+V+PrsPtc:bitende # ;
+LEXICON XITE
+ite+V+Inf:ite # ;
+ite+V+Imp:it # ;
+ite+V+Ind+Prs:iter # ;
+ite+V+Ind+Prs+Pass:ites # ;
+ite+V+Ind+Prt:et # ;
+ite+V+Ind+Prt:eit # ;
+ite+V+PrfPtc:itt # ;
+ite+V+PrsPtc:itende # ;
 
 LEXICON BLI
 bli+V+Inf:bli # ;
@@ -252,14 +257,23 @@ bære+V+Ind+Prt:bar # ;
 bære+V+PrfPtc:båret # ;
 bære+V+PrsPtc:bærende # ;
 
-LEXICON DETTE 
-dette+V+Inf:dette # ;
-dette+V+Imp:dett # ;
-dette+V+Ind+Prs:detter # ;
-dette+V+Ind+Prs+Pass:dettes # ;
-dette+V+Ind+Prt:datt # ;
-dette+V+PrfPtc:dettet # ;
-dette+V+PrsPtc:dettende # ;
+LEXICON XETTE 
+ette+V+Inf:ette # ;
+ette+V+Imp:ett # ;
+ette+V+Ind+Prs:etter # ;
+ette+V+Ind+Prs+Pass:ettes # ;
+ette+V+Ind+Prt:att # ;
+ette+V+PrfPtc:ettet # ;
+ette+V+PrsPtc:ettende # ;
+
+LEXICON SPRETTE 
+sprette+V+Inf:sprette # ;
+sprette+V+Imp:sprett # ;
+sprette+V+Ind+Prs:spretter # ;
+sprette+V+Ind+Prs+Pass:sprettes # ;
+sprette+V+Ind+Prt:datt # ;
+sprette+V+PrfPtc:sprettet # ;
+sprette+V+PrsPtc:sprettende # ;
 
 LEXICON DRA
 dra+V+Inf:dra # ;
@@ -1018,16 +1032,6 @@ slippe+V+Ind+Prs+Pass:slippes  # ;
 slippe+V+Ind+Prt:slapp  # ;
 slippe+V+PrfPtc:sluppet  # ;
 slippe+V+PrsPtc:slippende  # ;
-
-LEXICON SLITE 
-slite+V+Inf:slite  # ;
-slite+V+Imp:slit  # ;
-slite+V+Ind+Prs:sliter  # ;
-slite+V+Ind+Prs+Pass:slites  # ;
-slite+V+Ind+Prt+Radical:sleit  # ;
-slite+V+Ind+Prt:slet  # ;
-slite+V+PrfPtc:slitt  # ;
-slite+V+PrsPtc:slitende  # ;
 
 LEXICON SLÅSS
 slåss+V+Inf:slåss  # ;
