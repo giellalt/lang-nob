@@ -47,11 +47,12 @@ LEXICON a5 ! overlegen
  +A:X1 grade-e ;
 
 LEXICON aV ! ny, fri
-+A+Sg+Indef+MF: # ;
-+A+Sg+Indef+Neu:tt # ;
-+A+Sg+Def:e # ;
-+A+Pl+Indef:e # ;
-+A+Pl+Def:e # ;
++A+Pos+Msc+Sg+Indef: # ;
++A+Pos+Fem+Sg+Indef: # ;
++A+Pos+Neu+Sg+Indef:tt # ;
++A+Pos+Sg+Def:e # ;
++A+Pos+Pl+Indef:e # ;
++A+Pos+Pl+Def:e # ;
 +A+Comp:ere # ;
 +A+Superl:est # ;
 +A+Superl+Def:este # ;
