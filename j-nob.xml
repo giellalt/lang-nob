@@ -20,7 +20,7 @@
     </section>
     <section>
       <title>Documentation on our own resources for Norwegian</title>
-      <p>The Norwegian analysers at Giellatekno are found in $GTHOME/st/nob/src and $GTHOME/st/nno/src (and as all our source code, on the net as well). The analysers are modeled like all the other Giellatekno languages. In order to compile, go to the src/ catalogue and write <code>make</code>. The binaries will then be found in the neighbouring catalogue.</p>
+      <p>The Norwegian analysers at Giellatekno are found in $GTHOME/langs/nob and $GTHOME/st/nno/src (and as all our source code, on the net as well). The analysers are modeled like all the other Giellatekno languages. In order to compile, go to the src/ catalogue and write <code>make</code>. The binaries will then be found in the neighbouring catalogue.</p>
       <p>The nob.fst analyser was an auxiliary device made for analysing Norwegian at a time when the Oslo-Bergen tagger was not freely available. It is based upon a huge wordform list, most of which has been manually converted to lemma/stem-based lexc format. The key word is "most of", which means that for use when good results are critical one should use the Oslo-Bergen tagger instead. For less critical use, one might want to take advantage of the similarity between nob.fst and our other languages, and just use it.</p>
       <p>The nno.fst analyser contains lemma lists, and thus have fewer lemmatisation errors, but here the grammatical analyser is not that good. Again, the obt is probably better.</p>
     </section>
