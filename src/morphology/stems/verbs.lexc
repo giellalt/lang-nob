@@ -5258,7 +5258,7 @@ rikle v1 ;
 forene v2 ; 
 senne v1 ; 
 kjerne v1 ; 
-pipe PILE ; 
+pipe PIPE ; 
 forvare v2 ; 
 verdimakismere v2 ; 
 overtre:over TRE_V  ; 
