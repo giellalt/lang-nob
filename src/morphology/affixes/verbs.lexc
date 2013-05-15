@@ -788,6 +788,7 @@ knipe+V+Ind+Prs:kniper  # ;
 knipe+V+Ind+Prs+Pass:knipes  # ;
 knipe+V+Ind+Prt:knip  # ;
 knipe+V+Ind+Prt:kneip  # ;
+knipe+V+Ind+Prt:knep # ;
 knipe+V+PrfPtc:knepet  # ;
 knipe+V+PrsPtc:knipende  # ;
 
@@ -842,6 +843,15 @@ LEXICON MØTE
 +V+Ind+Prt:øtte  # ;
 +V+PrfPtc:øtt  # ;
 
+LEXICON PIPE 
+pipe+V+Inf:pipe  # ;
+pipe+V+Imp:pip  # ;
+pipe+V+Ind+Prs:piper  # ;
+pipe+V+Ind+Prs+Pass:pipes  # ;
+pipe+V+Ind+Prt:pep  # ;
+pipe+V+Ind+Prt:peip  # ;
+pipe+V+PrfPtc:pepet  # ;
+pipe+V+PrsPtc:pipende  # ;
 
 LEXICON RIVE
 rive+V+Inf:rive  # ;

@@ -312,6 +312,13 @@ LEXICON n4b ! faktum
  +N+Neu+Pl:X5 a-aene ;
  +N:  R ;
 
+LEXICON n5 ! middel
+ +N+Neu+Sg:X1 0-et ;
+ +N+Neu+Pl:X1 er-ene ;
+ +N:  R ;
+
+
+
 LEXICON FORUM ! forum
  +N+Neu+Sg:um 0-et ;
  +N+Neu+Pl: a-aene ;
