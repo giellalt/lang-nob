@@ -3152,7 +3152,6 @@ svinne vx ;
 forsvinne vx ;
 tvinne vx ;
 utvinne vx ;
-kolonne vx ;
 monne vx ;
 unne vx ;
 bunne vx ;
@@ -5343,4 +5342,5 @@ bry v4 ;
 rå v4 ; 
 så v4 ; 
 snø v4 ; 
+rustne v1 ;
 
