@@ -270,17 +270,17 @@ LEXICON n1sg ! yr
 
 LEXICON n2 ! eple, salt
  +N+Neu+Sg: 0-et ;
- +N+Neu+Pl: er-ene ;
+ +N+Neu+Pl: er-ene-a ;
  +N:  R ;
 
 LEXICON n2b ! program
  +N+Neu+Sg:mX4 0-et ;
- +N+Neu+Pl:m 0-er-ene ;
+ +N+Neu+Pl:m 0-er-ene-a ;
  +N:  R ;
 
 LEXICON n2c ! album, kontor
  +N+Neu+Sg: 0-et ;
- +N+Neu+Pl: 0-er-ene ;
+ +N+Neu+Pl: 0-er-ene-a ;
  +N:  R ;
 
 LEXICON n2s ! mørke
@@ -289,12 +289,12 @@ LEXICON n2s ! mørke
 
 LEXICON n3 ! middel
  +N+Neu+Sg:X1 0-et ;
- +N+Neu+Pl:X1 er-ene ;
+ +N+Neu+Pl:X1 er-ene-a ;
  +N:  R ;
 
 LEXICON n3b ! lager
  +N+Neu+Sg: 0-et ;
- +N+Neu+Pl:X1 e-ene ;
+ +N+Neu+Pl:X1 e-ene-a ;
  +N:  R ;
 
 LEXICON n3c ! fe
@@ -304,7 +304,7 @@ LEXICON n3c ! fe
 
 LEXICON n4 ! kriterium
  +N+Neu+Sg:X5 0-et ;
- +N+Neu+Pl:X5 er-ene ;
+ +N+Neu+Pl:X5 er-ene-a ;
  +N:  R ;
 
 LEXICON n4b ! faktum
@@ -314,7 +314,7 @@ LEXICON n4b ! faktum
 
 LEXICON n5 ! middel
  +N+Neu+Sg:X1 0-et ;
- +N+Neu+Pl:X1 er-ene ;
+ +N+Neu+Pl:X1 er-ene-a ;
  +N:  R ;
 
 
@@ -332,7 +332,7 @@ LEXICON LEKSIKON ! leksikon
 
 LEXICON MUSEUM
  +N+Neu+Sg:um 0-et ;
- +N+Neu+Pl: er-ene ;
+ +N+Neu+Pl: er-ene-a ;
  +N:  R ;
 
 LEXICON KLÆR
@@ -358,9 +358,19 @@ LEXICON e-ene
  +Indef:%>e K ;
  +Def:%>ene K ;
  
+LEXICON e-ene-a
+ +Indef:%>e K ;
+ +Def:%>ene K ;
+ +Def:%>a K ;
+ 
 LEXICON er-ene
  +Indef:%>er K ;
  +Def:%>ene K ;
+
+LEXICON er-ene-a
+ +Indef:%>er K ;
+ +Def:%>ene K ;
+ +Def:%>a K ;
 
 LEXICON ar-ane	 !! @CODE@ for nynorsk only.
  +Indef:%>ar K ; !! 
@@ -391,6 +401,12 @@ LEXICON 0-er-ene
  +Indef: K ;
  +Indef:%>er K ;
  +Def:%>ene K ;
+
+LEXICON 0-er-ene-a
+ +Indef: K ;
+ +Indef:%>er K ;
+ +Def:%>ene K ;
+ +Def:%>a K ;
 
 LEXICON 0-ne
  +Indef: K ;

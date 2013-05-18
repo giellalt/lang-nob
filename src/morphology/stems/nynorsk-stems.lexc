@@ -11,7 +11,7 @@ LEXICON Anyn
 LEXICON Vnyn
 +V+Nynorsk: # ;
 
-LEXICON Nnyn
+LEXICON Nnyn_m1
 +N+Nynorsk: # ;
 
 LEXICON Propnyn
@@ -31,7 +31,7 @@ hos:hjå Prnyn ;
 om:um Prnyn ;
 noen:nokon Prnyn ;
 
-korleis:hvordan Advnyn ;
+hvordan:korleis Advnyn ;
 ikke:ikkje Advnyn ;
 også:òg Advnyn ;
 da:då Advnyn ;
@@ -47,6 +47,7 @@ hvor:kvar Advnyn ;
 ellers:elles Advnyn ;
 enda:enno Advnyn ;
 nå:no Advnyn ;
+oftest:oftast Advnyn ;
 
 flere:fleire Anyn ;
 egen:eigen Anyn ;
@@ -67,13 +68,30 @@ si:seie Vnyn ;
 inneholde:inneheld Vnyn ;
 kalle:kalla Vnyn ;
 
-øy:øyane Nnyn ;
-måned:månad Nnyn ;
-månen:månaden Nnyn ;
-forskjell:skilnad Nnyn ;
+måned:månad m1 ;
+skuddår:skotår n1 ;
+dø+V+Ind+Prt+Nynorsk:døydde # ;
+dø+V+Inf+Nynorsk:døy # ;
 
+begynne:byrja Vnyn ;
+kjent:kjend Anyn ;
+født:fødd Anyn ;
+verdenskrig+Nynorsk:verdskrig m1 ;
+middelalder+Nynorsk:mellomalder m3 ;
+
+navn+Nynorsk:namn n1 ;
+kirke+Nynorsk:kyrkje f1 ;
+hovedsak+Nynorsk:hovudsak f1 ;
+innbygger+Nynorsk:innbyggjar m2 ;
+gang+Nynorsk:gong m1 ;
+tall+Nynorsk:tal n1 ;
+
+noen:nokre Pronnyn ;
 jeg:eg Pronnyn ;
 dere:dykk Pronnyn ;
+deres:deira Pronnyn ;
+dere:dokker Pronnyn ;
+dei:de Propnyn ;
 
 ! Probably good enough just to use prop here, not prop plc?
 Andesfjella:Andesfjella Propnyn ;

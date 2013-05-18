@@ -33,6 +33,7 @@ LEXICON v13 ! sveve -> svevet, svevde.
 LEXICON v1 ! kaste
  +V: inf-prsptc ;
  +V: regpres ;
+ +V+Ind+Prs+Nynorsk:%>ar # ;
  +V: a-et-pret ;
 
  
@@ -83,17 +84,21 @@ LEXICON v3-s ! trives
 
 LEXICON inf-prsptc
  +Inf: # ;
+ +Inf+Nynorsk:%>a # ;
  +Imp:%>Q3 # ;
- +PrsPtc:%>ende # ;
+ +PrsPtc:%> prfptcsuff ;
+ +PrsPtc+Nynorsk:%>ande # ;
  +ING:%>ing # ;
 
 LEXICON regpres
  +Ind+Prs:%>er # ;
  +Ind+Prs+Pass:%>es # ;
+ +Ind+Prs+Pass+Nynorsk:%>ast # ;
 
 LEXICON r-pres
  +Ind+Prs:%>r # ;
  +Ind+Prs+Pass:%>s # ;
+ +Ind+Prs+Pass+Nynorsk:%>st # ;
 
 LEXICON a-et-pret
  +Ind+Prt+Radical:%>a # ;
@@ -114,7 +119,9 @@ LEXICON dde-pret
  +PrfPtc:%>dd # ;
 
 
-
+LEXICON prfptcsuff
+        :ende # ;
++Nynorsk:ande # ;
 
 
 
@@ -130,7 +137,7 @@ be+V+Ind+Prs:ber # ;
 be+V+Ind+Prs+Pass:bes # ;
 be+V+Ind+Prt:ba # ;
 be+V+PrfPtc:bedt # ;
-be+V+PrsPtc:beende # ;
+be+V+PrsPtc:be prfptcsuff ;
 
 LEXICON BINDE
 binde+V+Inf:binde # ;
@@ -139,7 +146,7 @@ binde+V+Ind+Prs:binder # ;
 binde+V+Ind+Prs+Pass:bindes # ;
 binde+V+Ind+Prt:bandt # ;
 binde+V+PrfPtc:bundet # ;
-binde+V+PrsPtc:bindende # ;
+binde+V+PrsPtc:bind prfptcsuff ;
 
 LEXICON XITE
 ite+V+Inf:ite # ;
@@ -149,7 +156,7 @@ ite+V+Ind+Prs+Pass:ites # ;
 ite+V+Ind+Prt:et # ;
 ite+V+Ind+Prt:eit # ;
 ite+V+PrfPtc:itt # ;
-ite+V+PrsPtc:itende # ;
+ite+V+PrsPtc:it prfptcsuff ;
 
 LEXICON BLI
 bli+V+Inf:bli # ;
@@ -158,7 +165,7 @@ bli+V+Ind+Prs:blir # ;
 bli+V+Ind+Prt:ble # ;
 bli+V+Ind+Prt+Radical:blei # ;
 bli+V+PrfPtc:blitt # ;
-bli+V+PrsPtc:blivende # ;
+bli+V+PrsPtc:bliv prfptcsuff ;
 
 LEXICON BLIVE
 blive+V+Inf:blive  # ;
@@ -176,7 +183,7 @@ brekke+V+Ind+Prs:brekker # ;
 brekke+V+Ind+Prs+Pass:brekkes # ;
 brekke+V+Ind+Prt:brakk # ;
 brekke+V+PrfPtc:brukket # ;
-brekke+V+PrsPtc:brekkende # ;
+brekke+V+PrsPtc:brekk prfptcsuff ;
 
 LEXICON BRENNE
 brenne+V+Inf:brenne # ;
@@ -187,7 +194,7 @@ brenne+V+Ind+Prt:brant # ;
 brenne+V+Ind+Prt:brente # ;
 brenne+V+PrfPtc:brent # ;
 brenne+V+PrfPtc:brunnet # ;
-brenne+V+PrsPtc:brennende # ;
+brenne+V+PrsPtc:brenn prfptcsuff ;
 
 LEXICON BRESTE
 breste+V+Inf:breste # ;
@@ -196,7 +203,7 @@ breste+V+Ind+Prs:brester # ;
 breste+V+Ind+Prs+Pass:brestes # ;
 breste+V+Ind+Prt:brast # ;
 breste+V+PrfPtc:brustet # ;
-breste+V+PrsPtc:brestende # ;
+breste+V+PrsPtc:brest prfptcsuff ;
 
 LEXICON BRINGE
 bringe+V+Inf:bringe # ;
@@ -204,7 +211,7 @@ bringe+V+Imp:bring # ;
 bringe+V+Ind+Prs:bringer # ;
 bringe+V+Ind+Prt:brakte # ;
 bringe+V+PrfPtc:brakt # ;
-bringe+V+PrsPtc:bringende # ;
+bringe+V+PrsPtc:bring prfptcsuff ;
 
 LEXICON BRISTE
 briste+V+Inf:briste # ;
@@ -213,7 +220,7 @@ briste+V+Ind+Prs:brister # ;
 briste+V+Ind+Prs+Pass:bristes # ;
 briste+V+Ind+Prt:brast # ;
 briste+V+PrfPtc:brustet # ;
-briste+V+PrsPtc:bristende # ;
+briste+V+PrsPtc:brist prfptcsuff ;
 
 LEXICON BRYTE
 bryte+V+Inf:bryte # ;
@@ -223,7 +230,7 @@ bryte+V+Ind+Prt:brøt # ;
 bryte+V+Ind+Prt:braøt # ;
 bryte+V+Ind+Prt+Radical:brøyt # ; !SUB 
 bryte+V+PrfPtc:brytt # ;
-bryte+V+PrsPtc:brytende # ;
+bryte+V+PrsPtc:bryt prfptcsuff ;
 
 LEXICON BURDE 
 burde+V+Inf:burde # ;
@@ -237,7 +244,7 @@ by+V+Ind+Prs:byr # ;
 by+V+Ind+Prs+Pass:bys # ;
 by+V+Ind+Prt:bød # ;
 by+V+PrfPtc:bydd # ;
-by+V+PrsPtc:byende # ;
+by+V+PrsPtc:by prfptcsuff ;
 
 LEXICON BYDE 
 byde+V+Inf:byde # ;
@@ -246,7 +253,7 @@ byde+V+Ind+Prs:byder # ;
 byde+V+Ind+Prs+Pass:bydes # ;
 byde+V+Ind+Prt:bød # ;
 byde+V+PrfPtc:bydd # ;
-byde+V+PrsPtc:bydende # ;
+byde+V+PrsPtc:byd prfptcsuff ;
 
 LEXICON BÆRE 
 bære+V+Inf:bære # ;
@@ -255,7 +262,7 @@ bære+V+Ind+Prs:bærer # ;
 bære+V+Ind+Prs+Pass:bæres # ;
 bære+V+Ind+Prt:bar # ;
 bære+V+PrfPtc:båret # ;
-bære+V+PrsPtc:bærende # ;
+bære+V+PrsPtc:bær prfptcsuff ;
 
 LEXICON XETTE 
 ette+V+Inf:ette # ;
@@ -264,7 +271,7 @@ ette+V+Ind+Prs:etter # ;
 ette+V+Ind+Prs+Pass:ettes # ;
 ette+V+Ind+Prt:att # ;
 ette+V+PrfPtc:ettet # ;
-ette+V+PrsPtc:ettende # ;
+ette+V+PrsPtc:ett prfptcsuff ;
 
 LEXICON SPRETTE 
 sprette+V+Inf:sprette # ;
@@ -273,7 +280,7 @@ sprette+V+Ind+Prs:spretter # ;
 sprette+V+Ind+Prs+Pass:sprettes # ;
 sprette+V+Ind+Prt:datt # ;
 sprette+V+PrfPtc:sprettet # ;
-sprette+V+PrsPtc:sprettende # ;
+sprette+V+PrsPtc:sprett prfptcsuff ;
 
 LEXICON DRA
 dra+V+Inf:dra # ;
@@ -282,7 +289,7 @@ dra+V+Ind+Prs:drar # ;
 dra+V+Ind+Prt:dro # ;
 dra+V+Ind+Prt:drog # ;
 dra+V+PrfPtc:dratt # ;
-dra+V+PrsPtc:draende # ;
+dra+V+PrsPtc:dra prfptcsuff ;
 
 LEXICON XIKKE 
 ikke+V+Inf:ikke # ;
@@ -291,7 +298,7 @@ ikke+V+Ind+Prs:ikker # ;
 ikke+V+Ind+Prs+Pass:ikkes # ;
 ikke+V+Ind+Prt:akk # ;
 ikke+V+PrfPtc:ukket # ;
-ikke+V+PrsPtc:ikkende # ;
+ikke+V+PrsPtc:ikk prfptcsuff ;
 
 LEXICON DRIVE 
 drive+V+Inf:drive # ;
@@ -300,7 +307,7 @@ drive+V+Ind+Prs:driver # ;
 drive+V+Ind+Prs+Pass:drives # ;
 drive+V+Ind+Prt:drev # ;
 drive+V+PrfPtc:drevet # ;
-drive+V+PrsPtc:drivende # ;
+drive+V+PrsPtc:driv prfptcsuff ;
 
 LEXICON DØLGE 
 dølge+V+Inf:dølge # ;
@@ -309,7 +316,7 @@ dølge+V+Ind+Prs:dølger # ;
 dølge+V+Ind+Prs+Pass:dølges # ;
 dølge+V+Ind+Prt:dulgte # ;
 dølge+V+PrfPtc:dulgt # ;
-dølge+V+PrsPtc:dølgende # ;
+dølge+V+PrsPtc:dølg prfptcsuff ;
 
 LEXICON DØ
 dø+V+Inf:dø # ;
@@ -318,7 +325,7 @@ dø+V+Ind+Prs:dør # ;
 dø+V+Ind+Prs+Pass:døes # ;
 dø+V+Ind+Prt:døde # ;
 dø+V+PrfPtc:dødd # ;
-dø+V+Prdtc:døende # ;
+dø+V+Prdtc:dø prfptcsuff ;
 
 LEXICON EIE 
 eie+V+Inf:eie # ;
@@ -327,7 +334,7 @@ eie+V+Ind+Prs:eiwe # ;
 eie+V+Ind+Prs+Pass:eies # ;
 eie+V+Ind+Prt:eide # ;
 eie+V+PrfPtc:eid # ;
-eie+V+PrsPtc:eiende # ;
+eie+V+PrsPtc:ei prfptcsuff ;
 
 LEXICON ETE 
 ete+V+Inf:ete # ;
@@ -336,7 +343,7 @@ ete+V+Ind+Prs:eter # ;
 ete+V+Ind+Prs+Pass:etes # ;
 ete+V+Ind+Prt:åt # ;
 ete+V+PrfPtc:ett # ;
-ete+V+PrsPtc:etende # ;
+ete+V+PrsPtc:et prfptcsuff ;
 
 LEXICON FALLE 
 falle+V+Inf:falle # ;
@@ -345,7 +352,7 @@ falle+V+Ind+Prs:faller # ;
 falle+V+Ind+Prs+Pass:falles # ;
 falle+V+Ind+Prt:falt # ;
 falle+V+PrfPtc:falt # ;
-falle+V+PrsPtc:fallende # ;
+falle+V+PrsPtc:fall prfptcsuff ;
 
 LEXICON FARE 
 fare+V+Inf:fare # ;
@@ -354,7 +361,7 @@ fare+V+Ind+Prs:farer # ;
 fare+V+Ind+Prs+Pass:fares # ;
 fare+V+Ind+Prt:for # ;
 fare+V+PrfPtc:fart # ;
-fare+V+PrsPtc:farende # ;
+fare+V+PrsPtc:far prfptcsuff ;
 
 LEXICON FINNE
 finne+V+Inf:finne # ;
@@ -363,7 +370,7 @@ finne+V+Ind+Prs:finner # ;
 finne+V+Ind+Prs+Pass:finnes # ;
 finne+V+Ind+Prt:fant # ;
 finne+V+PrfPtc:funnet # ;
-finne+V+PrsPtc:finnende # ;
+finne+V+PrsPtc:finn prfptcsuff ;
 
 LEXICON FISE 
 fise+V+Inf:fise # ;
@@ -375,7 +382,7 @@ fise+V+Ind+Prt:feis # ;
 fise+V+Ind+Prt:fiste # ;
 fise+V+PrfPtc:fist # ;
 fise+V+PrfPtc:feset # ;
-fise+V+PrsPtc:fisende # ;
+fise+V+PrsPtc:fis prfptcsuff ;
 
 LEXICON FLY 
 fly+V+Inf:fly # ;
@@ -385,8 +392,8 @@ fly+V+Ind+Prs+Pass:flys # ;
 fly+V+Ind+Prt:fløy # ;
 fly+V+PrfPtc:flydd # ;
 fly+V+PrfPtc:fløyet # ;
-fly+V+PrsPtc:flyende # ;
-fly+V+PrsPtc:flyvende # ;
+fly+V+PrsPtc:fly prfptcsuff ;
+fly+V+PrsPtc:flyv prfptcsuff ;
 
 LEXICON FLYTE
 flyte+V+Inf:flyte  # ;
