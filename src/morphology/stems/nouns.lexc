@@ -96,6 +96,8 @@ ve fx ;
 
 LEXICON NounRoot
 
+stav m1 ;
+vier m2 ;
 silketør KLE   ;
 stam MOR   ;
 foster MOR   ;
@@ -29302,8 +29304,8 @@ handfull mX  ;
 håndfull mX  ;
 bram mX  ;
 mortem mX  ;
-gjerningsmann mX  ;
-rettsvitenskapsmann mX  ;
+gjerningsmann MANN  ;
+rettsvitenskapsmann MANN  ;
 flass mX  ;
 midt mX  ;
 cand.scient mX  ;

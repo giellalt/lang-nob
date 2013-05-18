@@ -100,12 +100,18 @@ LEXICON grade-e
  +Superl+Indef:%>est # ;
  +Superl+Def:%>este # ;
 
+ +Comp+Nynorsk:%>are # ;
+ +Superl+Indef+Nynorsk:%>ast # ;
+ +Superl+Def+Nynorsk:%>aste # ;
+
 LEXICON grade-C
  +Comp:%>ere # ;
- +Comp:%>are # ; ! +Nynorsk
+ +Superl+Indef:%>est # ;
+ +Superl+Def:%>este # ;
+
  +Comp+Nynorsk:%>are # ;
- +Superl+Indef:%>st # ;
- +Superl+Def:%>ste # ;
+ +Superl+Indef+Nynorsk:%>ast # ;
+ +Superl+Def+Nynorsk:%>aste # ;
 
 
 
@@ -142,6 +148,8 @@ god+A+Pl+Def:gode # ;
 god+A+Comp:bedre # ;
 god+A+Superl:best # ;
 god+A+Superl+Def:beste # ;
+
+god+A+Comp+Nynorsk:betre # ;
 
 LEXICON LITEN
 liten+A+Sg+Indef+Msc:liten # ;
