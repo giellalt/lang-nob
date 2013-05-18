@@ -231,7 +231,7 @@ visshet:visse nnnb ;
 tirsdag:tysdag nnnb ;
 tegn:teikn nnnb ;
 hovedsak:hovudsak nnnb ;
-stedsnavn:stadnamn nnnb ;
+stedsnavn+Nynorsk:stadnamn n1 ;
 norn:norn nnnb ;
 kjøtt:kjøt nnnb ;
 hovedstad:hovudstad nnnb ;
