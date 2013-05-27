@@ -20,6 +20,8 @@ LEXICON Personal
  hun+Pron+Pers+Sg3+Acc:henne # ;
  den+Pron+Pers+Sg3:den # ; ! Gender? -- no, only as Det Dem (?)
  det+Pron+Pers+Sg3:det # ; ! Gender? -- no, only as Det Dem (?)
+ den+Pron+Pers+Sg3+Clt:dens # ; ! Gender? -- no, only as Det Dem (?)
+ det+Pron+Pers+Sg3+Clt:dets # ; ! Gender? -- no, only as Det Dem (?)
   vi+Pron+Pers+Pl1+Nom:vi # ;
   vi+Pron+Pers+Pl1+Acc:oss # ;
 dere+Pron+Pers+Pl2+Nom:dere # ;
@@ -86,6 +88,7 @@ annen+Det+Dem+Sg+Fem:annen # ;
 annen+Det+Dem+Sg+Neu:annet # ;
 annen+Det+Dem+Pl:andre # ;
 selv+Det+Intens:selv # ;
+selv+Det+Intens:selve # ;
 sjøl+Det+Intens:sjøl # ;
 eneste+Det+Dem:eneste # ;
 sånn+Det+Dem+Sg+Msc:sånn # ;

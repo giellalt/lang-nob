@@ -114,7 +114,7 @@ LEXICON m2 ! lærer
 
 LEXICON m3 ! onkel
  +N+Msc+Sg: 0-en ;
- +N+Msc+Pl:X1 er-ene ; ! X1 deletes the vowel -e-
+ +N+Msc+Pl:X1 e-er-ene ; ! X1 deletes the vowel -e-
  +N+Msc+Pl+Nynorsk:X1 ar-ane ; ! X1 deletes the vowel -e-
  +N:  R ;
 
@@ -364,6 +364,11 @@ LEXICON e-ene-a
  +Def:%>a K ;
  
 LEXICON er-ene
+ +Indef:%>er K ;
+ +Def:%>ene K ;
+
+LEXICON e-er-ene
+ +Indef:%>e K ;
  +Indef:%>er K ;
  +Def:%>ene K ;
 

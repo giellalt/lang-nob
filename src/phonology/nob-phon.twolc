@@ -80,9 +80,10 @@ Rules
 ! --------------------
 
 "e Deletion"
- e:0 <=> Cns: _ LNR X1: %>: ( e | a ) ;
-		 Vow ( Cns:* ) _ ( Dummy:* - Z2: ) %>:0 [ Vow | Cns Cns ] ;
-		 _ %>:0 Q3: ;
+ e:0 <=>          Cns: _ LNR X1: %>: ( e | a ) ;
+         Vow ( Cns:* ) _ ( Dummy:* - Z2: ) %>:0 [ Vow | Cns Cns ] ;
+		       _ %>:0 Q3: ;
+             i g %>:0  _ s t ;
 
 !€ modenX1%>e
 !€ mod0n00e
@@ -92,6 +93,9 @@ Rules
 
 !€ hare%>er
 !€ har00er
+
+!€ viktig>est
+!€ viktig00st
 
 "Consonant shortening before deletion"
  Cx:0 <=> Vow Cx _ e: LNR X1: %>: ( e | a ) ;
