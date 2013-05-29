@@ -68,6 +68,12 @@ LEXICON EGEN ! legen
  +A+Pos+Neu+Sg+Indef:t # ;
  +A:nX1 grade-e ;
 
+LEXICON LIKEDAN ! 
+ +A: positive-indef ; ! likedan
+ +A:n positive-def ; ! likedanne
+ +A: a-neuter ; ! likedant
+
+
 
 ! Sublexica
 ! =========
