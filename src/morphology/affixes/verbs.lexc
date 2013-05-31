@@ -846,7 +846,7 @@ måtte+V+PrfPtc:mått  # ;
 
 LEXICON MØTE
 +V+Inf:øte  # ;
-+V+Ind+Prsøter  # ;
++V+Ind+Prs:øter  # ;
 +V+Ind+Prt:øtte  # ;
 +V+PrfPtc:øtt  # ;
 
