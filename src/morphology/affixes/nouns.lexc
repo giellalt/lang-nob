@@ -31,6 +31,7 @@
 ! m1b fe, komite
 ! miV sko pl. sko
 ! m3V meter pl. meter
+! ma alliert, alierte, allierte, allierte
 ! KOLLEGA kollegaer, kolleger
 ! KONTO kontoer, konti
 ! RADIUS radiuser, radii
@@ -122,6 +123,11 @@ LEXICON m3V ! meter
  +N+Msc+Sg: 0-en ;
  +N+Msc+Pl:X1 0-ene ;
  +N+Msc+Pl:X1 0-ane ;
+ +N:  R ;
+
+LEXICON ma ! alliert
+ +N+Msc+Sg: 0-e ;
+ +N+Msc+Pl: e-e ;
  +N:  R ;
 
 LEXICON KOLLEGA
@@ -432,5 +438,12 @@ LEXICON en ! Use 0-en instead
                ! in again for eventual syntax ("en dør")
  +Def:%>en K ; ! døren = dør+N+Msc :-/
 
+LEXICON 0-e
+ +Indef: K ;
+ +Def:%>e K ;
+
+LEXICON e-e
+ +Indef:%>e K ;
+ +Def:%>e K ;
 
 

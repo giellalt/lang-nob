@@ -31,6 +31,7 @@
 ! m1b fe, komite
 ! miV sko pl. sko
 ! m3V meter pl. meter
+! ma alliert, alierte, allierte, allierte
 ! KOLLEGA kollegaer, kolleger
 ! KONTO kontoer, konti
 ! RADIUS radiuser, radii
@@ -31406,7 +31407,7 @@ raison mX ;
 garnison m1 ; 
 unison n1 ; 
 person n1 ; 
-hovedperson m11 ; 
+hovedperson m1 ; 
 øvrighetsperson m1 ; 
 opphavsperson m1 ; 
 privatperson m1 ; 
@@ -34145,3 +34146,97 @@ kongsdatter fx ;
 unn SLÅ ; 
 under SLÅ ; 
 fast SLÅ ; 
+
+WC m1 ; 
+TV m1 ; 
+melkeringe m1sg ; 
+rogne TRE  ; 
+fitte f1 ; 
+kautokeinoværing m1 ; 
+ABC-bok fX ; 
+hudsykdom m1b ; 
+lungesykdom m1b ; 
+død m1 ; 
+treårsalder m3  ; 
+A-vitamin n2 ; 
+B-vitamin n2 ; 
+C-vitamin n2 ; 
+D-vitamin n2 ; 
+sultestreiker m2 ; 
+krabbing f1 ; 
+rettleding f1 ; 
+henging f1 ; 
+synging f1 ; 
+påpeking f1 ; 
+joiking f1 ; 
+sminking f1 ; 
+fyking f1 ; 
+stryking f1 ; 
+galing f1 ; 
+grubling f1 ; 
+smelling f1 ; 
+rasling f1 ; 
+dumming m1 ; 
+summing f1 ; 
+forgreining f1 ; 
+omfavning f1 ; 
+bryning f1 ; 
+sliping f1 ; 
+krymping f1 ; 
+garving f1 ; 
+
+alliert ma ;
+snei f1 ;
+håndfull m1 ;
+syden mX ;
+svartedauen mX ;
+flass n1sg ;
+felt n1 ;
+flint m1sg ;
+
+buskehale m1  ; 
+knappebelte n1  ; 
+hestetalg m1  ; 
+overdel m1  ; 
+foreldrepar n1  ; 
+brødrepar n1  ; 
+gamledager m1pl  ; 
+krefter m1pl  ; 
+kroat m1  ; 
+skjødesløshet m1  ; 
+fødende mX  ; 
+verden m1  ; 
+solside f1  ; 
+overside f1  ; 
+bedriftshelsetjeneste m1  ; 
+rettledningstjeneste m1  ; 
+tallerken m1  ; 
+vann MANN   ; 
+sosialetat m1   ; 
+kjøpslov m1 ; 
+folketrygdlov m1 ; 
+husleielov m1 ; 
+folkehøgskolelov m1 ; 
+grunnskolelov m1 ; 
+spesialisthelsetjenestelov m1 ; 
+sosialtjenestelov m1 ; 
+åndsverklov m1 ; 
+straffelov m1 ; 
+tronfølgelov m1 ; 
+ferskvannsfiskelov m1 ; 
+samelov m1 ; 
+kulturminnelov m1 ; 
+navnelov m1 ; 
+arbeidshelselov m1 ; 
+skattelov m1 ; 
+veglov m1 ; 
+grunnlov m1 ; 
+voksenopplæringslov m1 ; 
+finnmarkslov m1 ; 
+skogbrukslov m1 ; 
+motorferdselslov m1 ; 
+bilansvarslov m1 ; 
+offentlighetslov m1 ; 
+friluftslov m1 ; 
+arkivlov m1 ; 
+arbeidsmiljølov m1 ; 
