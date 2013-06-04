@@ -27,6 +27,7 @@
 ! x  unclassified, to m1 by default
 ! mX indecl
 ! m1sg sg only
+! m1pl pl only
 ! m1b dam
 ! m1b fe, komite
 ! miV sko pl. sko
@@ -81,6 +82,9 @@ LEXICON m1 ! dag, hane
 LEXICON m1sg ! bruk
   +N+Msc+Sg: 0-en ;
  +N:  R ;
+
+LEXICON m1sg ! gamledager
+  +N+Msc+Pl: r-ne ;
 
 LEXICON m1X
  +N+Msc+Sg: 0-en ;
@@ -394,6 +398,10 @@ LEXICON 0-ane !! @CODE@ for nynorsk only.
 LEXICON r-rne  ! trær
  +Indef:%>r K ;
  +Def:%>rne K ;
+
+LEXICON r-ne  ! gamledager
+ +Indef:%>r K ;
+ +Def:%>ne K ;
 
 LEXICON 0-a
  +Indef: K ;
