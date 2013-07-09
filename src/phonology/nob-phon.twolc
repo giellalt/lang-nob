@@ -1,4 +1,4 @@
-! Morphophonological rules for Bokmål
+!! !!!Morphophonological rules for Bokmål
 
 Alphabet
  a b c d e f g h i j k l m n o p q r s t u v w x y z æ ø å
@@ -60,6 +60,9 @@ Sets
 ! Z1 = o:ø, a:e Umlaut
 ! Z2 = protects vowel
 
+
+!! !!!Rule section
+
 Rules
 
 
@@ -67,6 +70,7 @@ Rules
 !! Nynorsk dictionary rules
 
 "Change -er stem to -ar in Nynorsk"
+!! __@RULENAME@__  
  e:a <=> _ r %^NYNAG: ;
 
 !! This rule is for dictionary use only.
@@ -80,6 +84,7 @@ Rules
 ! --------------------
 
 "e Deletion"
+!! __@RULENAME@__  
  e:0 <=>          Cns: _ LNR X1: %>: ( e | a ) ;
          Vow ( Cns:* ) _ ( Dummy:* - Z2: ) %>:0 [ Vow | Cns Cns ] ;
 		       _ %>:0 Q3: ;
@@ -98,6 +103,7 @@ Rules
 !€ viktig00st
 
 "Consonant shortening before deletion"
+!! __@RULENAME@__  
  Cx:0 <=> Vow Cx _ e: LNR X1: %>: ( e | a ) ;
           where Cx in ( b d f k p s v ) ;
 
@@ -106,6 +112,7 @@ Rules
 
 
 "Geminate deletion in front of -t and -d"
+!! __@RULENAME@__  
  Cx:0 <=> Vow Cx _ (e:0)         %>: Q3:0 [d|t] ; ! kaller:kalte
           Vow Cx _  e:   LNR X1: %>: ( e | a ) ;  ! sikker:sikre
       where Cx in ( f k p t s l n g ) ;
@@ -125,6 +132,7 @@ Rules
 ! e:0 <=> Vow ( Cns:* ) _ ( Dummy:* - Z2: ) %>:0 [ Vow | Cns Cns ] ;
 
 "Delete foreign vowel"
+!! __@RULENAME@__  
  Vx:0 <=> _ X2:  ;
 	where Vx in (a o) ;
 
@@ -139,11 +147,13 @@ Rules
 !€ knus00l0e
 
 "Delete r"
+!! __@RULENAME@__  
  r:0 <=>   _ %>:0 X3: ;
          r _ e: LNR X1: %>: ( e | a ) ;
 ! sparepengar : sparepengane
 
 "Delete m"
+!! __@RULENAME@__  
  m:0 <=>    _ X4: [ #: | %>:0 s ] ;      ! kammX4:kam
           m _ e: LNR X1: %>: ( e | a ) ; ! gammel:gamle
           m _ e: %>:0 Q3: t ;
@@ -151,6 +161,7 @@ Rules
          
 
 "Umlaut"
+!! __@RULENAME@__  
  Vx:Vy <=> _ Cns:* ( e:0 ) Z1: ;
  where Vx in ( u o a )
        Vy in ( y ø e )
@@ -162,6 +173,7 @@ Rules
 
 
 "um Deletion 1"
+!! __@RULENAME@__  
  u:0 <=> _ m: X5: %>:0 ;
 
 !€ museumX5%>er
@@ -172,6 +184,7 @@ Rules
 
 
 "t weakening"
+!! __@RULENAME@__  
  t:d <=> [Cns:|Vow:] _ X6:0 %>:0 e ;
 
 !€ oppskjørtetX6%>e
@@ -181,6 +194,7 @@ Rules
 
 
 "Double t deleteion"
+!! __@RULENAME@__  
  t:0 <=> t: %>:0 _ ;
                t _ e: LNR X1: %>: ( e | a ) ;
 
@@ -197,6 +211,7 @@ Rules
 ! ---------------
 
 "Insert t in passives"
+!! __@RULENAME@__  
  0:t <=> _ e s Q1: ;
 
 !"Insert d in passives"
@@ -206,5 +221,6 @@ Rules
 ! -------
 
 "Clitic after s-final"
+!! __@RULENAME@__  
  s:' <=> s %>:0 _ ;
 ! huss -> hus'
