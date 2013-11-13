@@ -74,10 +74,17 @@ LEXICON mX
  +N:  R ;
 
 LEXICON m1 ! dag, hane
+ +N:  R ;
+ m1morph ;
+
+LEXICON m1-e- ! stut, stuteplage
+ +N:  Re ;
+ m1morph ;
+
+LEXICON m1morph
  +N+Msc+Sg: 0-en ;
  +N+Msc+Pl: er-ene ;
  +N+Msc+Pl+Nynorsk: ar-ane ;
- +N:  R ;
 
 LEXICON m1sg ! bruk
   +N+Msc+Sg: 0-en ;
@@ -220,11 +227,18 @@ LEXICON fx ! Former vx, awaiting classification.
 LEXICON fX ! førehand
  +N+Fem+Sg+Indef: # ;
 
+LEXICON f1-e- ! helg
+ +N:  Re ;
+ f1morph ;
+
 LEXICON f1 ! myr, krone
+ +N:  R ;
+ f1morph ;
+
+LEXICON f1morph
  +N+Fem+Sg: 0-a ;
  +N+Msc+Sg: en ; ! myren !^C^
  +N+Fem+Pl: er-ene ;
- +N:  R ;
 
 LEXICON f1sg ! grisetang
  +N+Fem+Sg: 0-a ;
@@ -264,10 +278,15 @@ LEXICON nX ! styrbord
  +N+Neu: K ;
  +N:  R ;
 
+LEXICON n1-e- ! 
+ +N:  Re ;
+
 LEXICON n1 ! hus
+ +N:  R ;
+
+LEXICON n1morph
  +N+Neu+Sg: 0-et ;
  +N+Neu+Pl: 0-ene-a ;
- +N:  R ;
 
 LEXICON n1b ! rom
  +N+Neu+Sg:mX4 0-et ;

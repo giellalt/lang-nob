@@ -98,6 +98,9 @@ LEXICON Root !!= * @CODE@
 ! Compounds
 ! =========
 
+LEXICON Re
+ #+Cmp+:e##  NounRoot ;   ! dynamic compounding ON
+
 LEXICON R
 ! change this and next 3
  #+CmpS+:s##  NounRoot ; ! dynamic compounding ON
