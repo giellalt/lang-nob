@@ -90,7 +90,7 @@ LEXICON m1sg ! bruk
   +N+Msc+Sg: 0-en ;
  +N:  R ;
 
-LEXICON m1sg ! gamledager
+LEXICON m1pl ! gamledager
   +N+Msc+Pl: r-ne ;
 
 LEXICON m1X
