@@ -278,15 +278,6 @@ ette+V+Ind+Prt:att # ;
 ette+V+PrfPtc:ettet # ;
 ette+V+PrsPtc:ett prfptcsuff ;
 
-LEXICON SPRETTE 
-sprette+V+Inf:sprette # ;
-sprette+V+Imp:sprett # ;
-sprette+V+Ind+Prs:spretter # ;
-sprette+V+Ind+Prs+Pass:sprettes # ;
-sprette+V+Ind+Prt:datt # ;
-sprette+V+PrfPtc:sprettet # ;
-sprette+V+PrsPtc:sprett prfptcsuff ;
-
 LEXICON DRA
 dra+V+Inf:dra # ;
 dra+V+Imp:dra # ;
@@ -1165,6 +1156,18 @@ sprette+V+Ind+Prs+Pass:sprettes  # ;
 sprette+V+Ind+Prt:spratt  # ;
 sprette+V+PrfPtc:sprettet  # ;
 sprette+V+PrsPtc:sprettende  # ;
+
+! extra lexicon, but with one potential error. prevented compilation though, so
+! commenting out.
+
+! LEXICON SPRETTE 
+! sprette+V+Inf:sprette # ;
+! sprette+V+Imp:sprett # ;
+! sprette+V+Ind+Prs:spretter # ;
+! sprette+V+Ind+Prs+Pass:sprettes # ;
+! sprette+V+Ind+Prt:datt # ;
+! sprette+V+PrfPtc:sprettet # ;
+! sprette+V+PrsPtc:sprett prfptcsuff ;
 
 LEXICON SPRINGE
 springe+V+Inf:springe  # ;
