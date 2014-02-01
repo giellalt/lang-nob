@@ -37,7 +37,7 @@ seg+Pron+Refl+Acc:seg # ;
 LEXICON Indefinite
 noen+Pron+Indef:noen # ;
 ingen+Pron+Indef:ingen # ;
-
+man+Pron+Indef:man # ;
 
 LEXICON Interrogative 
 hva+Pron+Interr:hva # ;
