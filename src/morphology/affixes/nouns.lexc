@@ -283,7 +283,8 @@ LEXICON n1-e- !
 
 LEXICON n1 ! hus
  +N:  R ;
-
+ n1morph ;
+ 
 LEXICON n1morph
  +N+Neu+Sg: 0-et ;
  +N+Neu+Pl: 0-ene-a ;
