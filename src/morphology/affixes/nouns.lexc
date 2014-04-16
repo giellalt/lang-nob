@@ -44,6 +44,7 @@
 ! f1b skam
 ! f1X bok pl. bøker
 ! f1V mus, pl. mus
+! fGLO glo, pl glør
 
 ! n1b rom pl. rom
 ! n1s sg only
@@ -270,6 +271,14 @@ LEXICON f3 ! lever
  +N+Msc+Sg: en ; ! levren !^C^
  +N+Fem+Pl:X1 er-ene ;
  +N:  R ;
+
+LEXICON fGLO
+ +N+Fem+Sg: 0-a ;
+ +N+Msc+Sg: en ; ! levren !^C^
+ +N+Fem+Pl:Z1 r-rne ;
+ +N:  R ;
+
+
 
 ! Neuters
 ! -------
