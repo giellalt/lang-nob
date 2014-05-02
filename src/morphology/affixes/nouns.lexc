@@ -362,17 +362,17 @@ LEXICON FORUM ! forum
  +N+Neu+Sg:um 0-et ;
  +N+Neu+Pl: a-aene ;
  +N+Neu+Pl:um er-ene ;
- +N:  R ;
+ +N:um  R ;
 
 LEXICON LEKSIKON ! leksikon
  +N+Neu+Sg:on 0-et ;
  +N+Neu+Pl: a-aene ;
- +N:  R ;
+ +N:on  R ;
 
 LEXICON MUSEUM
  +N+Neu+Sg:um 0-et ;
  +N+Neu+Pl: er-ene-a ;
- +N:  R ;
+ +N:um  R ;
 
 LEXICON KLÆR
  +N+Neu:klær 0-ne ;
