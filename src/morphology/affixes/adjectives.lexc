@@ -131,21 +131,21 @@ flere+A+Superl+Pl+Indef:flest # ;
 
 LEXICON GAMMEL
 gammel+A:gammel R ;
-gammel+A+Pos+Sg+Indef+MF:gammel # ;
-gammel+A+Pos+Sg+Indef+Neu:gammelt # ;
+gammel+A+Pos+MF+Sg+Indef:gammel # ;
+gammel+A+Pos+Neu+Sg+Indef:gammelt # ;
 gammel+A+Pos+Sg+Def:gamle # ;
-gammel+A++PosPl+Indef:gamle # ;
+gammel+A++Pos+Pl+Indef:gamle # ;
 gammel+A+Pos+Pl+Def:gamle # ;
 gammel+A+Comp:eldre # ;
 gammel+A+Superl:eldst # ;
 gammel+A+Superl+Def:eldste # ;
 
 LEXICON GOD
-!god+A+Sg+Indef+Msc:god # ;
-!god+A+Sg+Indef+Fem:god # ;
+!god+A+Pos+Msc+Sg+Indef:god # ;
+!god+A+Pos+Fem+Sg+Indef:god # ;
 god+A:god R ;
-god+A+Pos+Sg+Indef+MF:god # ;
-god+A+Pos+Sg+Indef+Neu:godt # ;
+god+A+Pos+MF+Sg+Indef:god # ;
+god+A+Pos+Neu+Sg+Indef:godt # ;
 god+A+Pos+Sg+Def:gode # ;
 god+A+Pos+Pl+Indef:gode # ;
 god+A+Pos+Pl+Def:gode # ;
@@ -156,9 +156,9 @@ god+A+Superl+Def:beste # ;
 god+A+Comp+Nynorsk:betre # ;
 
 LEXICON LITEN
-liten+A+Pos+Sg+Indef+Msc:liten # ;
-liten+A+Pos+Sg+Indef+Fem:lita # ;
-liten+A+Pos+Sg+Indef+Neu:lite # ;
+liten+A+Pos+Msc+Sg+Indef:liten # ;
+liten+A+Pos+Fem+Sg+Indef:lita # ;
+liten+A+Pos+Neu+Sg+Indef:lite # ;
 liten+A+Pos+Sg+Def:lille # ;
 liten+A+Pos+Sg+Def:vesle # ;
 liten+A+Pos+Pl+Indef:små # ;
@@ -172,11 +172,11 @@ ny aV ;
 
 
 LEXICON STOR
-!stor+A+Sg+Msc+Indef:stor # ;
-!stor+A+Sg+Fem+Indef:stor # ;
+!stor+A+Msc+Sg+Indef:stor # ;
+!stor+A+Fem+Sg+Indef:stor # ;
 stor+A:stor R ;
-stor+A+Pos+Sg+MF+Indef:stor # ;
-stor+A+Pos+Sg+Neu+Indef:stort # ;
+stor+A+Pos+MF+Sg+Indef:stor # ;
+stor+A+Pos+Neu+Sg+Indef:stort # ;
 stor+A+Pos+Sg+Def:store # ;
 stor+A+Pos+Pl+Indef:store # ;
 stor+A+Pos+Pl+Def:store # ;
@@ -186,9 +186,9 @@ stor+A+Superl+Def:største # ;
 
 LEXICON UNG
 ung+A:ung R ;
-ung+A+Pos+Sg+Indef+Msc:ung # ;
-ung+A+Pos+Sg+Indef+Fem:ung # ;
-ung+A+Pos+Sg+Indef+Neu:ungt # ;
+ung+A+Pos+Msc+Sg+Indef:ung # ;
+ung+A+Pos+Fem+Sg+Indef:ung # ;
+ung+A+Pos+Neu+Sg+Indef:ungt # ;
 ung+A+Pos+Sg+Def:unge # ;
 ung+A+Pos+Pl+Indef:unge # ;
 ung+A+Pos+Pl+Def:unge # ;
