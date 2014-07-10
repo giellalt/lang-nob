@@ -1,5 +1,5 @@
 ! ============================= !
-!! !!!Basic file for Bokmål grammar 
+!! !!!Basic file for Bokmål grammar
 ! ============================= !
 
 
@@ -25,7 +25,7 @@ Multichar_Symbols !!= * @CODE@
 
  +Nynorsk ! For dictionary use., Nynorsk only
  +Radical ! For dictionary testing, Radical Bokmål
- 
+
  +X ! denoting not-checked.
  +1 +2 +3
  X1 X2 X3 X4 X5 X6 X7 X8 X9
@@ -38,7 +38,7 @@ Multichar_Symbols !!= * @CODE@
 ! =================================================
 !! Basic lexica, pointing to the other lexicon files
 ! =================================================
-  
+
 LEXICON Root !!= * @CODE@
  ShortNounRoot ;  !!= * @CODE@
  NounRoot ;		  !!= * @CODE@
@@ -67,7 +67,7 @@ LEXICON Root !!= * @CODE@
 ! f1  bru         brua        bruer       bruene
 ! f2  pumpe       pumpa       pumper      pumpene
 ! m1  stol        stolen      stoler      stolene
-!     bakke       bakken      bakker      bakkene 
+!     bakke       bakken      bakker      bakkene
 !     pumpe       pumpen      pumper      pumpene
 ! m2  lærer       læreren     lærere      lærerne
 ! m3  bever       beveren     bevere      beverne
@@ -78,14 +78,14 @@ LEXICON Root !!= * @CODE@
 ! n3  kontor      kontoret    kontor      kontora
 !                             kontorer    kontorene
 !     høve        høvet       høve/høver  høva/høvene
-! 			      		    
+!
 ! a1  god         god         godt        gode
 ! a2  norsk       norsk       norsk       norske
 ! a3  ekte        ekte        ekte        ekte
 ! a4  oppskjørtet oppskjørtet oppskjørtet oppskjørtede/oppskjørtete
 ! a5  makaber     makaber     makabert    makabre
 !     lunken      lunken      lunkent     lunkne
-!    
+!
 ! v1  kaste       kaster      kasta       kasta
 !                             kastet      kastet
 ! v2  lyse        lyser       lyste       lyst
@@ -111,16 +111,16 @@ LEXICON R
 ! ---
 ! Commented out
 ! #+Cmp+:#  main-verb ;
-! #+Cmp+:#  regular-adj ; 
+! #+Cmp+:#  regular-adj ;
 
 
 ! compare smj:
 !   LEXICON R
-!    # NounRoot ;                      ! This is the normal case.		     
-!    #:%- NounRoot ;                        ! These 3 cases add a hyphen, so 
-!    #:%- ProperNoun ;  ! pounds. Thus: London-Hull, LondonHull, Hull-viessu 
+!    # NounRoot ;                      ! This is the normal case.
+!    #:%- NounRoot ;                        ! These 3 cases add a hyphen, so
+!    #:%- ProperNoun ;  ! pounds. Thus: London-Hull, LondonHull, Hull-viessu
 
- 
+
 ! =======
 ! Clitics
 ! =======
