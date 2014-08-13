@@ -13,7 +13,9 @@ Multichar_Symbols !!= * @CODE@
  +Sg1 +Sg2 +Sg3 +Pl1 +Pl2 +Pl3
  +Pron +Nom +Acc +Dat +Det
  +Msc +Fem +Neu +MF
- +Pos +Comp +Superl +Clt
+ +Pos +Comp +Superl 
+ +Clt
+ +Dat
  +Pass +Ind +Prs +Prt +Imp
  +Inf +PrsPtc +PrfPtc
  +Interj +Intens
