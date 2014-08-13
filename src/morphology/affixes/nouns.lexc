@@ -40,6 +40,10 @@
 ! FAR fedre
 ! MANN menn
 
+! mD gårde, garde, dage  (av gårde)
+! fD tide (i tide)
+! nD live (i live)
+
 ! DATTER døtre
 ! f1b skam
 ! f1X bok pl. bøker
@@ -73,6 +77,9 @@ LEXICON x
 LEXICON mX
  +N+Msc: K ;
  +N:  R ;
+
+LEXICON mD ! av garde
+ +N+Msc+Dat: K ; 
 
 LEXICON m1 ! dag, hane
  +N:  R ;
@@ -228,6 +235,10 @@ LEXICON fx ! Former vx, awaiting classification.
 LEXICON fX ! førehand
  +N+Fem+Sg+Indef: # ;
 
+LEXICON fD ! i tide
+ +N+Fem+Dat: K ; 
+
+
 LEXICON f1-e- ! helg
  +N:  Re ;
  f1morph ;
@@ -286,6 +297,10 @@ LEXICON fGLO
 LEXICON nX ! styrbord
  +N+Neu: K ;
  +N:  R ;
+
+LEXICON nD ! i live
+ +N+Neu+Dat: K ; 
+
 
 LEXICON n1-e- ! 
  +N:  Re ;

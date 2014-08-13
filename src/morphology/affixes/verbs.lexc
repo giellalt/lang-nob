@@ -85,7 +85,7 @@ LEXICON v3-s ! trives
 LEXICON inf-prsptc
  +Inf: # ;
  +Inf+Nynorsk:%>a # ;
- +Imp:%>Q3 # ;
+ +Imp:Q3X4 # ;
  +PrsPtc:%> prfptcsuff ;
  +PrsPtc+Nynorsk:%>ande # ;
  +ING:%>ing # ;
@@ -817,6 +817,13 @@ la+V+Imp:la  # ;
 la+V+Ind+Prs:lar  # ;
 la+V+Ind+Prt:lot  # ;
 la+V+PrfPtc:latt  # ;
+
+LEXICON LE 
+la+V+Inf:le  # ;
+la+V+Imp:lo  # ;
+la+V+Ind+Prs:ler  # ;
+la+V+Ind+Prt:lo  # ;
+la+V+PrfPtc:ledd  # ;
 
 LEXICON LEGGE
 legge+V+Inf:legge  # ;

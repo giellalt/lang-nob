@@ -6,7 +6,7 @@ Personal ;
 Reflexive ;
 Indefinite ;
 Interrogative ;
-
+Reciprocal ;
 
 LEXICON Personal 
  jeg+Pron+Pers+Sg1+Nom:jeg # ;
@@ -34,6 +34,9 @@ dere+Pron+Pers+Pl2+Acc:dere # ;
 LEXICON Reflexive 
 seg+Pron+Refl+Acc:seg # ;
 
+LEXICON Reciprocal
+hverandre+Pron+Recipr+Acc:hverandre # ;
+
 LEXICON Indefinite
 noen+Pron+Indef:noen # ;
 ingen+Pron+Indef:ingen # ;
@@ -60,8 +63,10 @@ en+Det+Dem+Sg+MF:en # ;
 én+Det+Dem+Sg+MF:én # ;
 ei+Det+Dem+Sg+Fem:ei # ;
 hver+Det+Dem+Sg+MF:hver # ;
+annenhver+Det+Dem+Sg+MF:annenhver # ;
 !hver+Det+Dem+Sg+Fem:hver # ;
 hver+Det+Dem+Sg+Neu:hvert # ;
+annenhver+Det+Dem+Sg+Neu:annenhvert # ;
 hvilken+Det+Dem+Sg+MF:hvilken # ;
 !hvilken+Det+Dem+Sg+Fem:hvilken # ;
 hvilken+Det+Dem+Sg+Neu:hvilket # ;

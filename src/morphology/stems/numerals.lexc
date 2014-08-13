@@ -47,6 +47,16 @@ sju 100CONT ;
 syv 100CONT ;
 åtte 100CONT ;
 ni  100CONT ;
+elleve  100CONT ;
+tolv  100CONT ;
+tretten  100CONT ;
+fjorten  100CONT ;
+femten  100CONT ;
+seksten  100CONT ;
+sytten  100CONT ;
+søtten  100CONT ;
+atten  100CONT ;
+nitten  100CONT ;
 
 LEXICON 100CONT
 hundreog TEXTTENS ;
