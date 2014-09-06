@@ -9,47 +9,6 @@
 !!!GTSVN-sma
 
 This is free and open source South Sámi morphology.
-!!!Basic file for Bokmål grammar
-
-
- * Multichar_Symbols 
-
-
-
-Basic lexica, pointing to the other lexicon files
-
- * LEXICON Root 
- *  ShortNounRoot ;  
- *  NounRoot ;		  
- *  ProperNoun ;	  
- *  AdjectiveRoot ;  
- *  VerbRoot ;		  
- *  Adverb ;		  
- *  Subjunction ;	  
- *  Conjunction ;	  
- *  Preposition ;	  
- *  Interjection ;	  
- *  Pronoun ;		  
- *  Determiner ;	  
- *  Numeral ;		  
- *  Punctuation ;	  
- *  Abbreviation ;	  
- *  Nynorsk ;         Accepts nno forms
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 !!!Morphophonological rules for Bokmål
 
 
