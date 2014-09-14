@@ -16,7 +16,7 @@
 ## along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 # List any local additions here:
-GT_FILTER_SRCS=
+GT_FILTER_SRCS=remove-Nynorsk-strings.regex
 
 # DIALECT_TARGETS_HFST is constructed dynamically based on the dialects
 # specified in configure.ac.
@@ -115,13 +115,13 @@ GENERATED_REGEXES=remove-semantic-tags.regex \
 # Add the target of local additions here:
 # HFST targets here:
 if CAN_HFST
-GT_FILTER_TARGETS+=
+GT_FILTER_TARGETS+=remove-Nynorsk-strings.hfst
 
 endif
 
 # And Xerox targets here:
 if CAN_XFST
-GT_FILTER_TARGETS+=
+GT_FILTER_TARGETS+=remove-Nynorsk-strings.xfst
 
 endif
 

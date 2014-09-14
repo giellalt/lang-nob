@@ -1,0 +1,3 @@
+! Remove strings containing +Nynorsk from the normative NOB transducers.
+
+~$[ %+Nynorsk ] ;
