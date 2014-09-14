@@ -146,6 +146,50 @@ endif # CAN_HFST
 #################################################
 #### Add language-specific build rules here: ####
 
+# We need to add processing of language-specific tags in the analyser:
+# HFST:
+analyser-%-norm.hfst: analyser-%-norm.tmp.hfst \
+					 filters/remove-Nynorsk-strings.hfst
+	$(AM_V_RGX2FST)$(PRINTF) "\
+				@\"filters/remove-Nynorsk-strings.hfst\" \
+			.o. @\"$<\"                                       \
+			;" \
+		| $(HFST_REGEXP2FST) $(VERBOSITY) $(HFST_FLAGS) -S --harmonize-flags \
+		| $(HFST_INVERT) $(VERBOSITY) $(HFST_FLAGS) \
+		> $@
+
+# Xerox:
+analyser-%-norm.xfst: analyser-%-norm.tmp.xfst \
+					filters/remove-Nynorsk-strings.xfst
+	$(AM_V_XFST)$(PRINTF) "read regex                         \
+				@\"filters/remove-Nynorsk-strings.xfst\" \
+			.o. @\"$<\"                                       \
+			;\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST) $(VERBOSITY)
+
+# We need to add processing of language-specific tags in the generator:
+# HFST:
+generator-%-norm.hfst: generator-%-norm.tmp.hfst \
+					 filters/remove-Nynorsk-strings.hfst
+	$(AM_V_RGX2FST)$(PRINTF) "\
+				@\"filters/remove-Nynorsk-strings.hfst\" \
+			.o. @\"$<\"                                       \
+			;" \
+		| $(HFST_REGEXP2FST) $(VERBOSITY) $(HFST_FLAGS) -S --harmonize-flags \
+		> $@
+
+# Xerox:
+generator-%-norm.xfst: generator-%-norm.tmp.xfst \
+					 filters/remove-Nynorsk-strings.xfst
+	$(AM_V_XFST)$(PRINTF) "read regex                         \
+				@\"filters/remove-Nynorsk-strings.xfst\" \
+			.o. @\"$<\".i                                     \
+			;\n\
+		 invert net\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST) $(VERBOSITY)
+
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
 ##################################################################
