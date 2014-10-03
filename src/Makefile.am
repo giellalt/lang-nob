@@ -67,7 +67,7 @@ analyser-%-norm.hfst: analyser-%-norm.tmp.hfst \
 				@\"filters/remove-Nynorsk-strings.hfst\" \
 			.o. @\"$<\"                                       \
 			;" \
-		| $(HFST_REGEXP2FST) $(VERBOSITY) $(HFST_FLAGS) -S --harmonize-flags \
+		| $(HFST_REGEXP2FST) $(VERBOSITY) $(HFST_FLAGS) -S --xerox-composition=ON \
 		| $(HFST_INVERT) $(VERBOSITY) $(HFST_FLAGS) \
 		> $@
 
@@ -89,7 +89,7 @@ generator-%-norm.hfst: generator-%-norm.tmp.hfst \
 				@\"filters/remove-Nynorsk-strings.hfst\" \
 			.o. @\"$<\"                                       \
 			;" \
-		| $(HFST_REGEXP2FST) $(VERBOSITY) $(HFST_FLAGS) -S --harmonize-flags \
+		| $(HFST_REGEXP2FST) $(VERBOSITY) $(HFST_FLAGS) -S --xerox-composition=ON \
 		> $@
 
 # Xerox:
