@@ -97,7 +97,7 @@ generator-%-norm.xfst: generator-%-norm.tmp.xfst \
 					 filters/remove-Nynorsk-strings.xfst
 	$(AM_V_XFST)$(PRINTF) "read regex                         \
 				@\"filters/remove-Nynorsk-strings.xfst\" \
-			.o. @\"$<\".i                                     \
+			.o. @\"$<\"                                       \
 			;\n\
 		 invert net\n\
 		 save stack $@\n\
