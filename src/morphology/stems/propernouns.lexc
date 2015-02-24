@@ -19,7 +19,7 @@ LEXICON PROP-malfem
 
 LEXICON PROP-surplc
 +N+Prop+Sur: K ;
-+N+Prop+Plc: K ;
++N+Prop+Sem/Plc: K ;
 
 LEXICON PROP-fem
 +N+Prop+Fem: K ;
@@ -31,7 +31,7 @@ LEXICON PROP-sur
 +N+Prop+Sur: K ;
 
 LEXICON PROP-plc
-+N+Prop+Plc: K ;
++N+Prop+Sem/Plc: K ;
 
 LEXICON PROP-org
 +N+Prop+Org: K ;
