@@ -37,7 +37,7 @@ LEXICON PROP-org
 +N+Prop+Sem/Org: K ;
 
 LEXICON PROP-ani
-+N+Prop+Ani: K ;
++N+Prop+Sem/Ani: K ;
 
 LEXICON PROP-obj
 +N+Prop+Sem/Obj: K ;
