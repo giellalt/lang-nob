@@ -40,7 +40,7 @@ LEXICON PROP-ani
 +N+Prop+Ani: K ;
 
 LEXICON PROP-obj
-+N+Prop+Obj: K ;
++N+Prop+Sem/Obj: K ;
 
 
 
