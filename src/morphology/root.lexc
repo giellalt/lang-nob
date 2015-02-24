@@ -19,7 +19,7 @@ Multichar_Symbols !!= * @CODE@
  +Pass +Ind +Prs +Prt +Imp
  +Inf +PrsPtc +PrfPtc
  +Interj +Intens
- +Prop +Fem +Mal +Sem/Plc +Sem/Org +Sem/Ani
+ +Prop +Fem +Sem/Mal +Sem/Plc +Sem/Org +Sem/Ani
  +CLB +PUNCT +HYPH +LEFT +RIGHT
  +Cmp+
  +CmpS+

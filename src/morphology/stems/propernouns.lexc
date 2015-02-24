@@ -11,10 +11,10 @@ LEXICON PROP-surfem
 
 LEXICON PROP-surmal
 +N+Prop+Sem/Sur: K ;
-+N+Prop+Mal: K ;
++N+Prop+Sem/Mal: K ;
 
 LEXICON PROP-malfem
-+N+Prop+Mal: K ;
++N+Prop+Sem/Mal: K ;
 +N+Prop+Fem: K ;
 
 LEXICON PROP-surplc
@@ -25,7 +25,7 @@ LEXICON PROP-fem
 +N+Prop+Fem: K ;
 
 LEXICON PROP-mal
-+N+Prop+Mal: K ;
++N+Prop+Sem/Mal: K ;
 
 LEXICON PROP-sur
 +N+Prop+Sem/Sur: K ;
