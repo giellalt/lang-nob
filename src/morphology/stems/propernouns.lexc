@@ -34,7 +34,7 @@ LEXICON PROP-plc
 +N+Prop+Sem/Plc: K ;
 
 LEXICON PROP-org
-+N+Prop+Org: K ;
++N+Prop+Sem/Org: K ;
 
 LEXICON PROP-ani
 +N+Prop+Ani: K ;
