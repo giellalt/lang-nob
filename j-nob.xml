@@ -3,9 +3,6 @@
 <document xml:lang="en">
   <header>
     <title>Analysing Norwegian at Giellatekno</title>
-    <authors>
-      <person email="trond.trosterud@hum.uit.no" name="Trond Trosterud" />
-    </authors>
   </header>
   <body>
   <p>Giellatekno's main focus is on the Saami langauges and other circumpolar minority languages. As part of our work we need to build bilingual resources. This is where Norwegian comes in. For analysing Norwegian we either use the Oslo-Bergen tagger, or we use our own resources.</p>
