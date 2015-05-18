@@ -12,6 +12,7 @@
 ! v4  bie         bier        bidde       bidd
 !
 ! Subtypes
+! v12 v1 or v2
 ! v13 v1 or v3
 ! v1-s passive v1 verbs
 ! v2-s passive v2 verbs
@@ -23,12 +24,23 @@
 
 
 LEXICON vx 
-! +X: v1 ; ! ditto
-     v1 ;
+  +X: v1 ; ! ditto
+!      v1 ;
+
+LEXICON v12 ! score -> scoret, scorte
+ +V: inf-prsptc ;
+ +V: regpres ;
+ +V+Ind+Prs+Nynorsk:%>ar # ;
+ +V: a-et-pret ;
+ +V: te-pret ;
 
 LEXICON v13 ! sveve -> svevet, svevde.
- v1 ;
- v3 ;
+ +V: inf-prsptc ;
+ +V: regpres ;
+ +V+Ind+Prs+Nynorsk:%>ar # ;
+ +V: a-et-pret ;
+ +V: de-pret ;
+ 
 
 LEXICON v23
  v2 ;
@@ -182,16 +194,6 @@ blive+V+Ind+Prt:blev  # ;
 blive+V+Ind+Prt+Radical:bleiv  # ;
 blive+V+PrfPtc:blevet  # ;
 blive+V+PrsPtc:blivende  # ;
-
-LEXICON BREKKE
-brekke+V+Inf:brekke # ;
-brekke+V+Imp:brekk # ;
-brekke+V+Ind+Prs:brekker # ;
-brekke+V+Ind+Prs+Pass:brekkes # ;
-brekke+V+Inf+Pass:brekkes # ;
-brekke+V+Ind+Prt:brakk # ;
-brekke+V+PrfPtc:brukket # ;
-brekke+V+PrsPtc:brekk prfptcsuff ;
 
 LEXICON BRENNE
 brenne+V+Inf:brenne # ;
@@ -369,7 +371,8 @@ finne+V+Imp:finn # ;
 finne+V+Ind+Prs:finner # ;
 finne+V+Ind+Prs+Pass:finnes # ;
 finne+V+Ind+Prt:fant # ;
-finne+V+PrfPtc:funnet # ;
+finne+V+Ind+Prt+Pass:fantes # ;
+inne+V+PrfPtc:funnet # ;
 finne+V+PrsPtc:finn prfptcsuff ;
 
 LEXICON FISE 
@@ -886,6 +889,15 @@ rive+V+Ind+Prt:rev  # ;
 rive+V+Ind+Prt+Radical:reiv  # ;
 rive+V+PrfPtc:revet  # ;
 rive+V+PrsPtc:rivende  # ;
+
+LEXICON RYKE
+ryke+V+Inf:ryke  # ;
+ryke+V+Imp:ryk # ;
+ryke+V+Ind+Prs:ryker  # ;
+ryke+V+Ind+Prt:røk  # ;
+ryke+V+Ind+Prt+Radical:røyk  # ;
+ryke+V+PrfPtc:røket  # ;
+ryke+V+PrsPtc:røykende  # ;
 
 LEXICON SETTE
 sette+V+Inf:sette  # ;
@@ -1555,7 +1567,7 @@ vinne+V+Imp:vinn  # ;
 vinne+V+Ind+Prs:vinner  # ;
 vinne+V+Ind+Prs+Pass:vinnes  # ;
 vinne+V+Ind+Prt:vant  # ;
-vinne+V+PrfPtc:vunnry  # ;
+vinne+V+PrfPtc:vunnet  # ;
 vinne+V+PrsPtc:vinnende  # ;
 
 LEXICON VITE 
@@ -1586,4 +1598,16 @@ være+V+PrsPtc:værende  # ;
 være+V+Imp:vær  # ;
 tørre+V+PrfPtc:turt  # ;
 tørre+V+PrsPtc:tørrende  # ;
+
+
+LEXICON XREKKE
+rekke+V+Inf:rekke # ;
+rekke+V+Imp:rekk # ;
+rekke+V+Ind+Prs:rekker # ;
+rekke+V+Ind+Prs+Pass:rekkes # ;
+rekke+V+Inf+Pass:rekkes # ;
+rekke+V+Ind+Prt:rakk # ;
+rekke+V+PrfPtc:rukket # ;
+rekke+V+PrsPtc:rekk prfptcsuff ;
+
 
