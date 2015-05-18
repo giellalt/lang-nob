@@ -30,6 +30,10 @@ LEXICON v13 ! sveve -> svevet, svevde.
  v1 ;
  v3 ;
 
+LEXICON v23
+ v2 ;
+ v3 ;
+
 LEXICON v1 ! kaste
  +V: inf-prsptc ;
  +V: regpres ;
@@ -842,6 +846,15 @@ ligge+V+Ind+Prs+Pass:ligges  # ;
 ligge+V+Ind+Prt:lå  # ;
 ligge+V+PrfPtc:ligget  # ;
 ligge+V+PrsPtc:liggende  # ;
+
+LEXICON LYDE
+lyde+V+Inf:lyde  # ;
+lyde+V+Imp:lyd  # ;
+lyde+V+Ind+Prs:lyder  # ;
+lyde+V+Ind+Prs+Pass:lydes  # ;
+lyde+V+Ind+Prt:lød  # ;
+lyde+V+PrfPtc:lydt  # ;
+lyde+V+PrsPtc:lydende  # ;
 
 LEXICON MÅTTE 
 måtte+V+Inf:måtte  # ;
