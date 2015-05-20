@@ -16,6 +16,18 @@
 ! Basic paradigms
 ! ===============
 
+LEXICON a23
+a2 ;
+a3; 
+
+LEXICON a13
+a1 ;
+a3 ;
+
+LEXICON a12
+a1 ;
+a2 ;
+
 LEXICON a1 
  +A: positive ;
  +A: a-neuter ;
