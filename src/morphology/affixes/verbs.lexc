@@ -14,6 +14,7 @@
 ! Subtypes
 ! v12 v1 or v2
 ! v13 v1 or v3
+! v14 v1 or v4
 ! v1-s passive v1 verbs
 ! v2-s passive v2 verbs
 ! v3-s passive v3 verbs
@@ -45,6 +46,10 @@ LEXICON v13 ! sveve -> svevet, svevde.
 LEXICON v23
  v2 ;
  v3 ;
+
+LEXICON v14
+v1 ;
+v4 ;
 
 LEXICON v1 ! kaste
  +V: inf-prsptc ;
@@ -387,7 +392,7 @@ fise+V+PrfPtc:fist # ;
 fise+V+PrfPtc:feset # ;
 fise+V+PrsPtc:fis prfptcsuff ;
 
-LEXICON FLY 
+LEXICON FLY
 fly+V+Inf:fly # ;
 fly+V+Imp:fly # ;
 fly+V+Ind+Prs:flyr # ;
@@ -396,7 +401,38 @@ fly+V+Ind+Prt:fløy # ;
 fly+V+PrfPtc:flydd # ;
 fly+V+PrfPtc:fløyet # ;
 fly+V+PrsPtc:fly prfptcsuff ;
+LEXICON LYGE
+
+lyge+V+Inf:lyge # ;
+lyge+V+Imp:lyg # ;
+lyge+V+Ind+Prs:lyger # ;
+lyge+V+Ind+Prs+Pass:lyges # ; ! Fiks meg
+lyge+V+Ind+Prt: løy # ;
+lyge+V+PrfPtc:løyet # ;
+lyge+V+PrfPtc:løyet # ;
+lyge+V+PrsPtc:lygende prfptcsuff ;
+
+LEXICON LJUGE 
+ljuge+V+Inf:ljuge # ;
+ljuge+V+Imp:ljug # ;
+ljuge+V+Ind+Prs:ljuger # ;
+ljuge+V+Ind+Prs+Pass:ljuges # ; ! Fiks meg 
+ljuge+V+Ind+Prt: løy # ;
+ljuge+V+PrfPtc:løyet # ;
+ljuge+V+PrfPtc:løyet # ;
+ljuge+V+PrsPtc:ljugende prfptcsuff ;
+
+LEXICON FLYGE
+flyge+V+Inf:flyge # ;
+flyge+V+Imp:flyg # ;
+flyge+V+Ind+Prs:flyger # ;
+flyge+V+Ind+Prs+Pass:flyges # ; ! Fiks meg
+flyge+V+Ind+Prt:fløy # ;
+fly+V+PrfPtc:flydd # ;
+fly+V+PrfPtc:fløyet # ;
+fly+V+PrsPtc:fly prfptcsuff ;
 fly+V+PrsPtc:flyv prfptcsuff ;
+
 
 LEXICON FLYTE
 flyte+V+Inf:flyte  # ;
@@ -994,7 +1030,34 @@ skride+V+Ind+Prs+Pass:skrides  # ;
 skride+V+Ind+Prs+Pass:skris  # ;
 skride+V+Ind+Prt:skred  # ;
 skride+V+PrfPtc:skredet  # ;
-skride+V+PrsPtc:skridende  # ;
+skride+V+PrsPtc:skridende # ;
+
+LEXICON RIDE
+ride+V+Inf:ride  # ;
+ride+V+Imp:rid  # ;
+ride+V+Ind+Prs:rider  # ;
+ride+V+Ind+Prs+Pass:rides  # ; ! Fiks meg
+ride+V+Ind+Prt:red  # ; ! FIks meg
+ride+V+PrfPtc:ridd  # ;
+ride+V+PrsPtc:ridende # ;
+
+LEXICON LIDE
+lide+V+Inf:lide  # ;
+lide+V+Imp:lid  # ;
+lide+V+Ind+Prs:lider  # ;
+lide+V+Ind+Prs+Pass:rides  # ; ! Fiks meg
+lide+V+Ind+Prt:red  # ; ! FIks meg
+lide+V+PrfPtc:lidd  # ;
+lide+V+PrsPtc:lidende  # ;
+
+LEXICON KVEDE
+kvede+V+Inf:kvede  # ;
+kvede+V+Imp:kved  # ;
+kvede+V+Ind+Prs:kveder  # ; ! Fiks meg
+kvede+V+Ind+Prs+Pass:rides  # ; ! Fiks meg
+kvede+V+Ind+Prt:kvad # ; ! FIks meg
+kvede+V+PrfPtc:kvedet  # ;
+kvede+V+PrsPtc:kvedende  # ;
 
 LEXICON SKRIKE 
 skrike+V+Inf:skrike  # ;
