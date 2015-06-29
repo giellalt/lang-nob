@@ -661,13 +661,25 @@ LIST veldig-farlige-part = "nære" "nyte" "mige" "make" "lite" "hele" "gale" "fo
 LIST veldig-farlige-V = ("stede" Prs) ("dy" Prs) ("grade" Prs) ;
 LIST V = V ;
 LIST V-u-Imp = (V Prs) (V Prt) (V PrfPtc) (V Inf) ;
-
-
-
+LIST Nynorsk = Nynorsk ;
+LIST X = X ;
+LIST Pos = Pos ;
 
 
 
 CONSTRAINTS
+
+# Giellatekno
+REMOVE:Nynorsk (Nynorsk) ;
+
+REMOVE:NoX (X + V) IF (0 V) ; # Vi skriver, fjern X.
+REMOVE:gang ("gange") IF (0 ("gang"))(-1 Qnt) ; # fire ganger
+
+SELECT:ext (A + Pos + Neu) IF (*-1 ("være") LINK -1 ("det")) ; # Det er vanskelig.
+
+REMOVE ("én") IF (0 ("en")); # en gang
+
+# OBT
 
 SELECT Prop IF (NOT -1 CLB); # XXX
 
