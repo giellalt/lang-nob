@@ -672,10 +672,10 @@ CONSTRAINTS
 # Giellatekno
 REMOVE:Nynorsk (Nynorsk) ;
 
-REMOVE:NoX (X + V) IF (0 V) ; # Vi skriver, fjern X.
+REMOVE:NoX X + V IF (0 V) ; # Vi skriver, fjern X.
 REMOVE:gang ("gange") IF (0 ("gang"))(-1 Qnt) ; # fire ganger
 
-SELECT:ext (A + Pos + Neu) IF (*-1 ("være") LINK -1 ("det")) ; # Det er vanskelig.
+SELECT:ext A + Pos + Neu IF (*-1 ("være") LINK -1 ("det")) ; # Det er vanskelig.
 
 REMOVE ("én") IF (0 ("en")); # en gang
 
