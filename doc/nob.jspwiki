@@ -1,14 +1,14 @@
-!!!Free and Open source Finnish analyser gtsvn-fi
+!!!Free and Open source Norwegian Bokmål analyser giella-nob
 
-;Authors: Divvun and Giellatekno teams, Aajege, community members
+;Authors: Divvun and Giellatekno teams, community members
 ;Software version: 2012
 ;Documentation license: GNU GFDL
 ;SVN Revision: $Revision: 68217 $
 ;SVN Date: $Date: 2013-01-16 11:31:33 +0200 (Wed, 16 Jan 2013) $
 
-!!!GTSVN-sma
+!!!giella-nob
 
-This is free and open source South Sámi morphology.
+This is free and open source Norwegian Bokmål morphology.
 
            !!!Norwegian Bokmål morphological analyser                      !
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Bokmål LANGUAGE.
@@ -107,31 +107,53 @@ __Change -er stem to -ar in Nynorsk__
 
 This rule is for dictionary use only.
 
+* __lærer%^NYNAG__
+* __lærar0__
 
 
 
 
 __e Deletion__  
 
+* __modenX1%>e__
+* __mod0n00e__
 
+* __*modenX1%>e__ (is not standard language)
+* __*moden00e__ (is not standard language)
 
+* __hare%>er__
+* __har00er__
 
+* __viktig>est__
+* __viktig00st__
 
 __Consonant shortening before deletion__  
 
+* __sikkerX1%>e__
+* __sik00r00e__
 
 
 __Geminate deletion in front of -t and -d__  
 
+* __kalle%>Q3te__
+* __kal0000te__
 
+* __all%>Q3t__
+* __al000t__
 
+* __bygge%>Q3te__
+* __byg0000de__
 
 
 
 
 __Delete foreign vowel__  
 
+* __kollegaX2%>er__
+* __kolleg000er__
 
+* __knusselX1e__
+* __knus00l0e__
 
 __Delete r__  
 
@@ -144,19 +166,27 @@ __Umlaut__
 
 __um Deletion 1__  
 
+* __museumX5%>er__
+* __muse0000er__
 
 
 
 __t weakening__  
 
+* __oppskjørtetX6%>e__
+* __oppskjørted00e__
 
 
 
 
 __Double t deleteion__  
 
+* __svart%>t__
+* __svart00__
 
 
+* __presentere%>Q3t__
+* __presenter000t__
 
 
 __Insert t in passives__  
