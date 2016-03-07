@@ -103,22 +103,22 @@ sånn+Det+Dem+Sg+Pl:sånne # ;
 
 
 LEXICON Possessive 
-di+Det+Poss+Sg+Fem:di # ;
+din+Det+Poss+Sg+Fem:di # ;
 din+Det+Poss+Sg+Msc:din # ;
-dine+Det+Poss+Pl:dine # ;
-ditt+Det+Poss+Sg+Neu:ditt # ;
-mi+Det+Poss+Sg+Fem:mi # ;
+din+Det+Poss+Pl:dine # ;
+din+Det+Poss+Sg+Neu:ditt # ;
+min+Det+Poss+Sg+Fem:mi # ;
 min+Det+Poss+Sg+Msc:min # ;
-mine+Det+Poss+Pl:mine # ;
-mitt+Det+Poss+Sg+Neu:mitt # ;
-si+Det+Poss+Sg+Fem:si # ;
+min+Det+Poss+Pl:mine # ;
+min+Det+Poss+Sg+Neu:mitt # ;
+sin+Det+Poss+Sg+Fem:si # ;
 sin+Det+Poss+Sg+Msc:sin # ;
-sine+Det+Poss+Pl:sine # ;
-sitt+Det+Poss+Sg+Neu:sitt # ;
+sin+Det+Poss+Pl:sine # ;
+sin+Det+Poss+Sg+Neu:sitt # ;
 vår+Det+Poss+Sg+Fem:vår # ;
 vår+Det+Poss+Sg+Msc:vår # ;
-våre+Det+Poss+Pl:våre # ;
-vårt+Det+Poss+Sg+Neu:vårt # ;
+vår+Det+Poss+Pl:våre # ;
+vår+Det+Poss+Sg+Neu:vårt # ;
 
 hans+Det+Poss+Msc:hans # ;
 hennes+Det+Poss+Fem:hennes # ;
