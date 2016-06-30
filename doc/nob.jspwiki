@@ -107,53 +107,53 @@ __Change -er stem to -ar in Nynorsk__
 
 This rule is for dictionary use only.
 
-* __lærer%^NYNAG__
-* __lærar0__
+* __lærer%^NYNAG __
+* __lærar0 __
 
 
 
 
 __e Deletion__  
 
-* __modenX1%>e__
-* __mod0n00e__
+* __modenX1%>e __
+* __mod0n00e __
 
-* __*modenX1%>e__ (is not standard language)
-* __*moden00e__ (is not standard language)
+* __*modenX1%>e __ (is not standard language)
+* __*moden00e __ (is not standard language)
 
-* __hare%>er__
-* __har00er__
+* __hare%>er __
+* __har00er __
 
-* __viktig>est__
-* __viktig00st__
+* __viktig>est __
+* __viktig00st __
 
 __Consonant shortening before deletion__  
 
-* __sikkerX1%>e__
-* __sik00r00e__
+* __sikkerX1%>e __
+* __sik00r00e __
 
 
 __Geminate deletion in front of -t and -d__  
 
-* __kalle%>Q3te__
-* __kal0000te__
+* __kalle%>Q3te __
+* __kal0000te __
 
-* __all%>Q3t__
-* __al000t__
+* __all%>Q3t __
+* __al000t __
 
-* __bygge%>Q3te__
-* __byg0000de__
+* __bygge%>Q3te __
+* __byg0000de __
 
 
 
 
 __Delete foreign vowel__  
 
-* __kollegaX2%>er__
-* __kolleg000er__
+* __kollegaX2%>er __
+* __kolleg000er __
 
-* __knusselX1e__
-* __knus00l0e__
+* __knusselX1e __
+* __knus00l0e __
 
 __Delete r__  
 
@@ -166,27 +166,27 @@ __Umlaut__
 
 __um Deletion 1__  
 
-* __museumX5%>er__
-* __muse0000er__
+* __museumX5%>er __
+* __muse0000er __
 
 
 
 __t weakening__  
 
-* __oppskjørtetX6%>e__
-* __oppskjørted00e__
+* __oppskjørtetX6%>e __
+* __oppskjørted00e __
 
 
 
 
 __Double t deleteion__  
 
-* __svart%>t__
-* __svart00__
+* __svart%>t __
+* __svart00 __
 
 
-* __presentere%>Q3t__
-* __presenter000t__
+* __presentere%>Q3t __
+* __presenter000t __
 
 
 __Insert t in passives__  
