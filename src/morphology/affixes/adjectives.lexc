@@ -17,73 +17,73 @@
 ! ===============
 
 LEXICON a23
-a2 ;
-a3; 
+  a2 ;
+  a3 ;
 
 LEXICON a13
-a1 ;
-a3 ;
+  a1 ;
+  a3 ;
 
 LEXICON a12
-a1 ;
-a2 ;
+  a1 ;
+  a2 ;
 
-LEXICON a1 
+LEXICON a1
  +A: positive ;
  +A: a-neuter ;
- +A: grade-e ;
+ +A: grade-e  ;
 
 LEXICON a2lig
- ig:ig a2 ; ! herlig
+         ig:ig a2 ; ! herlig
  ig+Nynorsk:eg a2 ; ! herleg
-   
-LEXICON a2 ! 
- +A: positive ;
- +A: a-no-neuter ;
- +A: grade-C ;
 
-LEXICON a3 ! 
- +A: positive ;
+LEXICON a2 !
+ +A: positive    ;
+ +A: a-no-neuter ;
+ +A: grade-C     ;
+
+LEXICON a3 !
+ +A: positive    ;
  +A: a-no-neuter ;
 
 LEXICON a4 ! oppskjørtet
  +A:   positive-indef ;
- +A:   positive-def ;
- +A:X6 positive-def ;
- +A:   a-no-neuter ;
- +A:   grade-e ;   !oppskjørtete
- +A:X6 grade-e ;   !oppskjørtede
+ +A:   positive-def   ;
+ +A:X6 positive-def   ;
+ +A:   a-no-neuter    ;
+ +A:   grade-e        ; !oppskjørtete
+ +A:X6 grade-e        ; !oppskjørtede
 
 LEXICON a5 ! overlegen
  +A:X1 positive ;
- +A: a-neuter ;
- +A:X1 grade-e ;
+ +A:   a-neuter ;
+ +A:X1 grade-e  ;
 
 LEXICON aV ! ny, fri
-+A+Pos+Msc+Sg+Indef: # ;
-+A+Pos+Fem+Sg+Indef: # ;
-+A+Pos+Neu+Sg+Indef:tt # ;
-+A+Pos+Sg+Def:e # ;
-+A+Pos+Pl+Indef:e # ;
-+A+Pos+Pl+Def:e # ;
-+A+Comp:ere # ;
-+A+Superl:est # ;
-+A+Superl+Def:este # ;
+   +A+Pos+Msc+Sg+Indef:     # ;
+   +A+Pos+Fem+Sg+Indef:     # ;
+   +A+Pos+Neu+Sg+Indef:tt   # ;
+         +A+Pos+Sg+Def:e    # ;
+       +A+Pos+Pl+Indef:e    # ;
+         +A+Pos+Pl+Def:e    # ;
+               +A+Comp:ere  # ;
+             +A+Superl:est  # ;
+         +A+Superl+Def:este # ;
 
-+A+Comp+Nynorsk:are # ;
-+A+Superl+Nynorsk:ast # ;
-+A+Superl+Def+Nynorsk:aste # ;
+       +A+Comp+Nynorsk:are  # ;
+     +A+Superl+Nynorsk:ast  # ;
+ +A+Superl+Def+Nynorsk:aste # ;
 
 
 LEXICON EGEN ! legen
- +A:nX1 positive ;
- +A+Pos+Neu+Sg+Indef:t # ;
- +A:nX1 grade-e ;
+                  +A:nX1 positive ;
+ +A+Pos+Neu+Sg+Indef:t   #        ;
+                  +A:nX1 grade-e  ;
 
-LEXICON LIKEDAN ! 
- +A: positive-indef ; ! likedan
- +A:n positive-def ; ! likedanne
- +A: a-neuter ; ! likedant
+LEXICON LIKEDAN !
+ +A:  positive-indef ; ! likedan
+ +A:n positive-def   ; ! likedanne
+ +A:  a-neuter       ; ! likedant
 
 
 
@@ -91,14 +91,14 @@ LEXICON LIKEDAN !
 ! =========
 
 LEXICON positive
- positive-indef ;
- positive-def ;
+  positive-indef ;
+  positive-def   ;
 
 LEXICON positive-indef
- R ;
+                    R ;
  +Pos+Msc+Sg+Indef: # ;
  +Pos+Fem+Sg+Indef: # ;
- +Pos+MF+Sg+Indef: # ;
+  +Pos+MF+Sg+Indef: # ;
 
 LEXICON positive-def
  +Pos+Sg+Def:%>e # ;
@@ -108,105 +108,105 @@ LEXICON positive-def
 
 LEXICON a-neuter ! fint
  +Pos+Neu+Sg+Indef:%>Q3t # ;
- 
+
 LEXICON a-no-neuter ! vennlig
- R ;
+                    R ;
  +Pos+Neu+Sg+Indef: # ;
 
 LEXICON grade-e
- +Comp:%>ere # ;
- +Superl+Indef:%>est # ;
- +Superl+Def:%>este # ;
+                 +Comp:%>ere  # ;
+         +Superl+Indef:%>est  # ;
+           +Superl+Def:%>este # ;
 
- +Comp+Nynorsk:%>are # ;
- +Superl+Indef+Nynorsk:%>ast # ;
- +Superl+Def+Nynorsk:%>aste # ;
+         +Comp+Nynorsk:%>are  # ;
+ +Superl+Indef+Nynorsk:%>ast  # ;
+   +Superl+Def+Nynorsk:%>aste # ;
 
 LEXICON grade-C
- +Comp:%>ere # ;
- +Superl+Indef:%>est # ;
- +Superl+Def:%>este # ;
+                 +Comp:%>ere  # ;
+         +Superl+Indef:%>est  # ;
+           +Superl+Def:%>este # ;
 
- +Comp+Nynorsk:%>are # ;
- +Superl+Indef+Nynorsk:%>ast # ;
- +Superl+Def+Nynorsk:%>aste # ;
+         +Comp+Nynorsk:%>are  # ;
+ +Superl+Indef+Nynorsk:%>ast  # ;
+   +Superl+Def+Nynorsk:%>aste # ;
 
 
 
 ! Exceptional
 
 LEXICON FLER
-fler+A+Comp+Pl+Indef:fler # ;
-flere+A+Comp+Pl+Indef:flere # ;
-flere+A+Superl+Pl+Def:fleste # ;
-flere+A+Superl+Pl+Indef:flest # ;
+    fler+A+Comp+Pl+Indef:fler   # ;
+   flere+A+Comp+Pl+Indef:flere  # ;
+   flere+A+Superl+Pl+Def:fleste # ;
+ flere+A+Superl+Pl+Indef:flest  # ;
 
 LEXICON GAMMEL
-gammel+A:gammel R ;
-gammel+A+Pos+MF+Sg+Indef:gammel # ;
-gammel+A+Pos+Neu+Sg+Indef:gammelt # ;
-gammel+A+Pos+Sg+Def:gamle # ;
-gammel+A++Pos+Pl+Indef:gamle # ;
-gammel+A+Pos+Pl+Def:gamle # ;
-gammel+A+Comp:eldre # ;
-gammel+A+Superl:eldst # ;
-gammel+A+Superl+Def:eldste # ;
+                  gammel+A:gammel  R ;
+  gammel+A+Pos+MF+Sg+Indef:gammel  # ;
+ gammel+A+Pos+Neu+Sg+Indef:gammelt # ;
+       gammel+A+Pos+Sg+Def:gamle   # ;
+    gammel+A++Pos+Pl+Indef:gamle   # ;
+       gammel+A+Pos+Pl+Def:gamle   # ;
+             gammel+A+Comp:eldre   # ;
+           gammel+A+Superl:eldst   # ;
+       gammel+A+Superl+Def:eldste  # ;
 
 LEXICON GOD
-!god+A+Pos+Msc+Sg+Indef:god # ;
-!god+A+Pos+Fem+Sg+Indef:god # ;
-god+A:god R ;
-god+A+Pos+MF+Sg+Indef:god # ;
-god+A+Pos+Neu+Sg+Indef:godt # ;
-god+A+Pos+Sg+Def:gode # ;
-god+A+Pos+Pl+Indef:gode # ;
-god+A+Pos+Pl+Def:gode # ;
-god+A+Comp:bedre # ;
-god+A+Superl:best # ;
-god+A+Superl+Def:beste # ;
+! god+A+Pos+Msc+Sg+Indef:god   # ;
+! god+A+Pos+Fem+Sg+Indef:god   # ;
+                   god+A:god   R ;
+   god+A+Pos+MF+Sg+Indef:god   # ;
+  god+A+Pos+Neu+Sg+Indef:godt  # ;
+        god+A+Pos+Sg+Def:gode  # ;
+      god+A+Pos+Pl+Indef:gode  # ;
+        god+A+Pos+Pl+Def:gode  # ;
+              god+A+Comp:bedre # ;
+            god+A+Superl:best  # ;
+        god+A+Superl+Def:beste # ;
 
-god+A+Comp+Nynorsk:betre # ;
+      god+A+Comp+Nynorsk:betre # ;
 
 LEXICON LITEN
-liten+A+Pos+Msc+Sg+Indef:liten # ;
-liten+A+Pos+Fem+Sg+Indef:lita # ;
-liten+A+Pos+Neu+Sg+Indef:lite # ;
-liten+A+Pos+Sg+Def:lille # ;
-liten+A+Pos+Sg+Def:vesle # ;
-liten+A+Pos+Pl+Indef:små # ;
-liten+A+Pos+Pl+Def:små # ;
-liten+A+Comp:mindre # ;
-liten+A+Superl:minst # ;
-liten+A+Superl+Def:minste # ;
+ liten+A+Pos+Msc+Sg+Indef:liten  # ;
+ liten+A+Pos+Fem+Sg+Indef:lita   # ;
+ liten+A+Pos+Neu+Sg+Indef:lite   # ;
+       liten+A+Pos+Sg+Def:lille  # ;
+       liten+A+Pos+Sg+Def:vesle  # ;
+     liten+A+Pos+Pl+Indef:små    # ;
+       liten+A+Pos+Pl+Def:små    # ;
+             liten+A+Comp:mindre # ;
+           liten+A+Superl:minst  # ;
+       liten+A+Superl+Def:minste # ;
 
 LEXICON NY
-ny aV ;
+ ny aV ;
 
 
 LEXICON STOR
-!stor+A+Msc+Sg+Indef:stor # ;
-!stor+A+Fem+Sg+Indef:stor # ;
-stor+A:stor R ;
-stor+A+Pos+MF+Sg+Indef:stor # ;
-stor+A+Pos+Neu+Sg+Indef:stort # ;
-stor+A+Pos+Sg+Def:store # ;
-stor+A+Pos+Pl+Indef:store # ;
-stor+A+Pos+Pl+Def:store # ;
-stor+A+Comp+Indef:større # ;
-stor+A+Superl+Indef:størst # ;
-stor+A+Superl+Def:største # ;
+!     stor+A+Msc+Sg+Indef:stor    # ;
+!     stor+A+Fem+Sg+Indef:stor    # ;
+                   stor+A:stor    R ;
+   stor+A+Pos+MF+Sg+Indef:stor    # ;
+  stor+A+Pos+Neu+Sg+Indef:stort   # ;
+        stor+A+Pos+Sg+Def:store   # ;
+      stor+A+Pos+Pl+Indef:store   # ;
+        stor+A+Pos+Pl+Def:store   # ;
+        stor+A+Comp+Indef:større  # ;
+      stor+A+Superl+Indef:størst  # ;
+        stor+A+Superl+Def:største # ;
 
 LEXICON UNG
-ung+A:ung R ;
-ung+A+Pos+Msc+Sg+Indef:ung # ;
-ung+A+Pos+Fem+Sg+Indef:ung # ;
-ung+A+Pos+Neu+Sg+Indef:ungt # ;
-ung+A+Pos+Sg+Def:unge # ;
-ung+A+Pos+Pl+Indef:unge # ;
-ung+A+Pos+Pl+Def:unge # ;
-ung+A+Comp:yngre # ;
-ung+A+Superl:yngst # ;
-ung+A+Superl+Def:yngste # ;
+                  ung+A:ung    R ;
+ ung+A+Pos+Msc+Sg+Indef:ung    # ;
+ ung+A+Pos+Fem+Sg+Indef:ung    # ;
+ ung+A+Pos+Neu+Sg+Indef:ungt   # ;
+       ung+A+Pos+Sg+Def:unge   # ;
+     ung+A+Pos+Pl+Indef:unge   # ;
+       ung+A+Pos+Pl+Def:unge   # ;
+             ung+A+Comp:yngre  # ;
+           ung+A+Superl:yngst  # ;
+       ung+A+Superl+Def:yngste # ;
 
 
 
