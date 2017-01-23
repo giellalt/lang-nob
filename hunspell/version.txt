@@ -1,1 +1,0 @@
-2.0.10 (2008-03-10) from OOo 3.x dict-extension 1.0
