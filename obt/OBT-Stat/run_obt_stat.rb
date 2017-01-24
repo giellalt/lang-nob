@@ -1,1 +1,0 @@
-bin/run_obt_stat.rb
