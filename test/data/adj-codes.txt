@@ -1,0 +1,15 @@
++A+Msc+Sg+Indef
++A+Pl+Indef
++A+Sg+Def
++A+Pl+Def
++A+Fem+Sg+Indef
++A+Pl+Indef
++A+Sg+Def
++A+Pl+Def
++A+Neu+Sg+Indef
++A+Pl+Indef
++A+Sg+Def
++A+Pl+Def
++A+Comp
++A+Superl+Indef
++A+Superl+Def
