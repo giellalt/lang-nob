@@ -12,7 +12,7 @@
 # The conversion to the Tromsø format was done by Trond Trosterud.
 
 
-DELIMITERS = "<.>" "<:>" "<!>" "<?>" "<|>";
+DELIMITERS = "<.>" "<:>" "<!>" "<?>" "<|>" sent ;
 
 SETS
 LIST ikke-Poss-det = "hei" ;
@@ -5468,7 +5468,7 @@ SELECT (A Pl) IF
 	(1 Pl-N)
 	(1C N)
 	(NOT 1 Pron)
-	(NOT -1 Prop-Det-Sg OR N-gen)
+	(NOT -1 Prop-Det-Sg OR N-gen OR Dem + Sg + Neu)
 	(*-1C setn-gr BARRIER Det-gen)
 ;
 
@@ -5534,7 +5534,7 @@ SELECT (A Pl) IF
 	(NOT 0 det OR N)
 	(NOT 0 Pr OR A-Indef-Sg)
 	(NOT 1 Pron)
-	(NOT -1 Prop-Det-Sg OR N-gen)
+	(NOT -1 Prop-Det-Sg OR N-gen OR Dem + Sg)
 	(NOT 1C A)
 	(*-1C setn-gr BARRIER Det-gen)
 	(*1 Pl-N BARRIER ikke-AdvA)
@@ -12249,7 +12249,7 @@ REMOVE (A Sg Def) IF
 	(NOT 0 orden OR ikke-A)
 	(1 N/A)
 	(NOT 1 N-uboey OR Def)
-	(NOT -1 N-prop OR Pr)
+	(NOT -1 N-prop OR Pr OR Dem + Sg)
 	(*-1C setn-gr BARRIER Det-gen)
 ;
 
