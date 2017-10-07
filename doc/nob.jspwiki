@@ -52,7 +52,7 @@ Basic lexica, pointing to the other lexicon files
  *  ShortNounRoot ;  
  *  NounRoot ;		  
  *  ProperNoun ;	  
- *  AdjectiveRoot ;  
+ *  AdjectivePrefix ;  
  *  VerbRoot ;		  
  *  Adverb ;		  
  *  Subjunction ;	  
