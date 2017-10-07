@@ -243,8 +243,8 @@ LEXICON BRYTE
              bryte+V+Imp:bryt   #          ;
          bryte+V+Ind+Prs:bryter #          ;
          bryte+V+Ind+Prt:brøt   #          ;
-         bryte+V+Ind+Prt:braøt  #          ;
- bryte+V+Ind+Prt+Radical:brøyt  #          ; !SUB
+         bryte+V+Ind+Prt:braut  #          ;
+bryte+V+Ind+Prt+Err/Orth:brøyt  #          ; !SUB
           bryte+V+PrfPtc:brytt  #          ;
           bryte+V+PrsPtc:bryt   prfptcsuff ;
 
@@ -435,15 +435,15 @@ LEXICON FLYGE
 
 
 LEXICON FLYTE
-          flyte+V+Inf:flyte    # ;
-          flyte+V+Imp:flyt     # ;
-      flyte+V+Ind+Prs:flyter   # ;
- flyte+V+Ind+Prs+Pass:flytes   # ;
-      flyte+V+Ind+Prt:fløt     # ;
-      flyte+V+Ind+Prt:fløyt    # ;
-      flyte+V+Ind+Prt:flaut    # ;
-       flyte+V+PrfPtc:flytt    # ;
-       flyte+V+PrsPtc:flytende # ;
+             flyte+V+Inf:flyte    # ;
+             flyte+V+Imp:flyt     # ;
+         flyte+V+Ind+Prs:flyter   # ;
+    flyte+V+Ind+Prs+Pass:flytes   # ;
+         flyte+V+Ind+Prt:fløt     # ;
+flyte+V+Ind+Prt+Err/Orth:fløyt    # ;
+         flyte+V+Ind+Prt:flaut    # ;
+          flyte+V+PrfPtc:flytt    # ;
+          flyte+V+PrsPtc:flytende # ;
 
 LEXICON FORLATE ! stem prep + late
           +V+Inf:late  # ;

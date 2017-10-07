@@ -9,8 +9,12 @@
 ! a5 lunken lunken lunkent lunkne
 ! aV blå blå blått blå
 
-LEXICON AdjectiveRoot
+LEXICON AdjectivePrefix
+kjempe AdjectiveRoot ;
+super  AdjectiveRoot ;
+       AdjectiveRoot ;
 
+LEXICON AdjectiveRoot
 nordre a3 ;
 søndre a3 ;
 østre a3 ;
@@ -19,7 +23,12 @@ nordøstre a3 ;
 nordvestre a3 ;
 sørøstre a3 ;
 sørvestre a3 ;
-
+billig a2 ;
+veldedig a2 ;
+bedrede a3 ;
+kåt a2 ;
+dødskåt a2 ;
+krampeaktig a2 ;
 fræg a1 ; 
 kjepphøg a1 ; 
 rustikk a1 ; 
@@ -1009,6 +1018,7 @@ pretensiøs a1 ;
 minutiøs a1 ;
 løs a1 ;
 skandaløs a1 ;
+kjæresteløs a1 ;
 fredløs a1 ;
 tidløs a1 ;
 åndløs a1 ;
@@ -1102,6 +1112,8 @@ rett a1 ;
 tett a1 ;
 blaut a1 ;
 våt a1 ;
+plaskvåt a1 ;
+søkkvåt a1 ;
 tårevåt a1 ;
 gjennomvåt a1 ;
 bløt a1 ;
@@ -1473,6 +1485,7 @@ hovmodig a2 ;
 snodig a2 ;
 frodig a2 ;
 ferdig a2 ;
+spruteferdig a2 ;
 sprekkeferdig a2 ;
 søkkeferdig a2 ;
 synkeferdig a2 ;
@@ -2628,6 +2641,7 @@ koreansk a2 ;
 afghansk a2 ;
 colombiansk a2 ;
 læstadiansk a2 ;
+keynesiansk a2 ;
 gammellæstadiansk a2 ;
 indiansk a2 ;
 pompeiansk a2 ;
@@ -3644,6 +3658,7 @@ besettende a3 ;
 fortsettende a3 ;
 nittende a3 ;
 sittende a3 ;
+trangtsittende a3 ;
 tettsittende a3 ;
 besluttende a3 ;
 avsluttende a3 ;
