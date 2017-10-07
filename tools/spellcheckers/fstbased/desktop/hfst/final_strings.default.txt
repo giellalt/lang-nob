@@ -1,13 +1,4 @@
-\:esne:\:sne	-5
-'esne:\:sne	-5
--esne:\:sne	-5
-
-\:en:\:n	-5
-'n:\:n	-5
--n:\:n	-5
-
-esnie:esne	-5
-ese:asse	-5
-htasse:htse	-5
-htse:htese	-5
-htse:hts	-1
+llt:lt	3
+ppt:pt	3
+kkt:kt	3
+ligt:lig	3
