@@ -42,6 +42,7 @@ Multichar_Symbols !!= * @CODE@
 
  +Nynorsk ! For dictionary use., Nynorsk only
  +Radical ! For dictionary testing, Radical Bokmål
+ +Err/Orth ! For speller use
 
  +X ! denoting not-checked.
  +1 +2 +3
@@ -88,7 +89,7 @@ LEXICON Root !!= * @CODE@
  ShortNounRoot ;  !!= * @CODE@
  NounRoot ;		  !!= * @CODE@
  ProperNoun ;	  !!= * @CODE@
- AdjectiveRoot ;  !!= * @CODE@
+ AdjectivePrefix ;  !!= * @CODE@
  VerbRoot ;		  !!= * @CODE@
  Adverb ;		  !!= * @CODE@
  Subjunction ;	  !!= * @CODE@

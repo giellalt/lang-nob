@@ -46,6 +46,9 @@ LEXICON PROP-obj
 
 
 LEXICON ProperNoun
+
+
+
 Arbeiderpartiet PROP-org ;
 Finnmarksloven PROP-obj ;
 Sven-Roald PROP-mal ;
