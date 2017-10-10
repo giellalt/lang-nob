@@ -26,7 +26,6 @@
 
 LEXICON vx
   +X: v1 ; ! ditto
-!     v1 ;
 
 LEXICON v12 ! score -> scoret, scorte
                  +V:     inf-prsptc ;
