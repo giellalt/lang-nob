@@ -17,9 +17,9 @@ DELIMITERS = "<.>" "<:>" "<!>" "<?>" "<|>" sent ;
 SETS
 LIST ikke-Poss-det = "hei" ;
 LIST replikk = "$--" "$-" ;
-LIST int-setn-gr = "$\;" "$:" "$..." "$--" "$-" "$," "$\""  ;
-LIST s-gr/Interj = "$\;" "$:" "$..." "$--" "$-" "$," "$\"" konj >>> <<< Interj ;
-LIST s-gr = "$\;" "$:" "$..." "$--" "$-" "$," "$\"" konj >>> <<< ;
+LIST int-setn-gr = "$\;" "$:" "$..." "$--" "$-" "$," "$\"" CLB ;
+LIST s-gr/Interj = "$\;" "$:" "$..." "$--" "$-" "$," "$\"" konj >>> <<< Interj CLB ;
+LIST s-gr = "$\;" "$:" "$..." "$--" "$-" "$," "$\"" konj >>> <<< CLB ;
 LIST @Adv = Adv;
 LIST spoersmaal-t = "$\?";
 LIST s^periode-beg/CLB-CC = "$\;" "$:" "$..." "$--" "$-" "$," "$\"" konj >>> <<< ;
@@ -232,8 +232,8 @@ LIST %viss% = "viss" ;
 LIST %ytterligere% = "ytterligere" ;
 LIST <<< = <<< ;
 LIST <adv> = <adv> ;
-LIST <PrfPtc> = <PrfPtc> ;
-LIST <PrsPtc> = i1 i3 i4 ;
+LIST <PrfPtc> = <PrfPtc> PrfPtc ; # TT la til PrPtc for gt-kompatibilitet
+LIST <PrsPtc> = i1 i3 i4 PrsPtc ; # ditto
 LIST >>> = >>> ;
 
 
@@ -328,6 +328,8 @@ LIST Det/Adv = det Adv ;
 LIST ditrans = d1 d2 d3 d6 d7 rl6 rl7 rl8 ;
 LIST ellipse = ("$--" <strek>) <ellipse> ;
 LIST Sg = Sg ;
+LIST Sg3 = Sg3 ;
+LIST MF = MF ;
 LIST Sg-Fem-N/tall-N/maalN/tidsN = "år" "uke" "tusen" "trillion" "tonnkilometer" "time" "tiendelssekund" "tidelssekund" "snes" "sjømil" "sekundmeter" "sekund" "prosent" "nanosekund" "nanometer" "måned" "mrd." "minutt" "millisekund" "million" "millimeter" "milliliter" "milligram" "milliard" "mill." "mil" "mikrometer" "meter" "liter" "kvartmil" "kvartliter" "kvadrillion" "kvadratmillimeter" "kvadratmeter" "kvadratkilometer" "kvadratdesimeter" "kvadratcentimeter" "kubikkmillimeter" "kubikkmeter" "kubikkdesimeter" "kubikkcentimeter" "kilometer" "kilogram" "kilo" "hundredelssekund" "hundre" "hektoliter" "hektogram" "halvår" "halvmillion" "halvmil" "halvmeter" "halvliter" "halvkilo" "gram" "døgn" "dusin" "desimeter" "desiliter" "desigram" "dekaliter" "dag" "centimeter" "centiliter" "centigram" "billion" "billiard" (N Sg Fem) ("gang" Pl) ;
 
 
@@ -620,6 +622,7 @@ LIST N/Pron/%all% = N Pron ("all" det Qnt) ;
 LIST N/Pron/%all%/%mang%/%mange% = N Pron ("all" det Qnt) ("mang" det) ("mange" det) ;
 LIST N/Pron/Pl-A/%all%/%mang%/%mange% = N Pron (A Pl) (A <PrsPtc>) ("all" det Qnt) ("mang" det) ("mange" A) ;
 LIST N/Pron/Pr = N Pron Pr ;
+LIST PUNCT = PUNCT ;
 LIST Superl = Superl ;
 LIST tall = "1" (Det Qnt Pl) ("en" det Qnt) ("én" det Qnt) ;
 LIST tall-Pl = (Det Qnt Pl) ;
@@ -667,7 +670,11 @@ LIST Nynorsk = Nynorsk ;
 LIST X = X ;
 LIST Pos = Pos ;
 
+# Dollar sets
 
+LIST DEF = Def Indef ;
+LIST NUM = Sg Pl ;
+LIST GEN = Msc Fem Neu ;
 
 CONSTRAINTS
 
@@ -680,6 +687,10 @@ REMOVE:gang ("gange") IF (0 ("gang"))(-1 Qnt) ; # fire ganger
 SELECT:ext A + Pos + Neu IF (*-1 ("være") LINK -1 ("det")) ; # Det er vanskelig.
 
 REMOVE ("én") IF (0 ("en")); # en gang
+
+SELECT:QP Pl IF
+	(*-1 Qnt + Pl BARRIER ikke-AdvA-komma OR PUNCT)
+;
 
 # OBT
 
@@ -7214,6 +7225,49 @@ SELECT (A) IF
 
 
 #
+SELECT:DollarDef $$DEF IF
+	(0 A)
+	(1C N + $$DEF)
+;
+
+SELECT:DollarNum $$NUM IF
+	(0 A)
+	(1C N + $$NUM)
+;
+
+SELECT:DollarGen $$GEN IF
+	(0 A)
+	(1C N + $$GEN)
+;
+
+
+SELECT:DollarDefA $$DEF IF
+	(0 A)
+	(1 CC)
+	(2C A + $$DEF)
+;
+
+SELECT:DollarNumA $$NUM IF
+	(0 A)
+	(1 CC)
+	(2C A + $$NUM)
+;
+
+SELECT:DollarGenA $$GEN IF
+	(0 A)
+	(1 CC)
+	(2C A + $$GEN)
+;
+
+SELECT:DollarNumD $$NUM IF
+	(0 Dem)
+	(1C A OR N + $$NUM)
+;	
+
+REMOVE:DemMF Pron + Prs + Sg3 IF
+	(0 Dem + MF)
+	(1C A OR N + MF OR Msc OR Fem)
+;	
 
 
 
@@ -16268,7 +16322,7 @@ REMOVE (V) IF
 # 1714
 REMOVE (V) IF
 	(0 fv)
-	(-1C Pr)
+	(-1C Pr - ("som"))
 	(NOT -1 Pr-intrans)
 	(NOT -2 setn-gr OR A)
 	(NOT -2 CC OR Pr)
@@ -17838,6 +17892,16 @@ REMOVE (V) IF
 	(-1C tall)
 	(NOT -1 ikke-tall)
 ;
+
+
+# Late rules, Gt
+
+# Han arbeider som bud.
+REMOVE:SomPr Pl IF (-1 %som%-Pr)
+	(0 N + Sg)
+;
+
+
 
 
 END
