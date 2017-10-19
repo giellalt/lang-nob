@@ -53,6 +53,8 @@ Multichar_Symbols !!= * @CODE@
  l7 ! always l
  %^NYNAG ! Nynorsk agens lærar / lærer
 
++Use/Circ !!= @CODE@ circular string
+
 !! !!Flag diacritics
 !! We have manually optimised the structure of our lexicon using following
 !! flag diacritics to restrict morhpological combinatorics - only allow compounds
