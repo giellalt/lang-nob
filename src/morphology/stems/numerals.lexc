@@ -148,10 +148,10 @@ nittiende a3 ;
 hundrede a3 ;
 
 LEXICON numtag
-+Det+Pl+Qnt: # ;
++Det+Qnt+Pl: # ;
 
 LEXICON numtagsg
-+Det+Sg+Qnt: # ;
++Det+Qnt+Sg: # ;
 
 ! Arabic numerals
 ! ---------------
@@ -183,8 +183,29 @@ s%.+Use/Circ:s%. ARABIC ;   ! s.24
 LEXICON ARABIC
 < [1|2|3|4|5|6|7|8|9|%0] >   ARABICLOOP ;
 
+LEXICON ARABIC2
+< [1|2|3|4|5|6|7|8|9|%0] >   ARABICLOOP2 ;
+
+LEXICON ARABIC3
+< [1|2|3|4|5|6|7|8|9|%0] >   CHAPTERHEADING ;
+
+
+LEXICON ARABICLOOP2
++Use/Circ: ARABIC2 ;
++Use/Circ: ARABIC3 ;
+            CHAPTERHEADING ;        ! 1.-2   multipart numbers
+
+LEXICON CHAPTERHEADING
+    ARABIC3 ;
+!%.  ARABIC3 ;
++N:%. # ;
++N: # ; ! Temporær løysing, dette er "4.2. Hus", der "Hus" ikkje er Pl.
 
 LEXICON ARABICLOOP
+%.+Use/Circ:%.  ARABIC2 ;        ! 1.-2   multipart numbers
+%.+Use/Circ:%.  ARABIC3 ;        ! 1.-2   multipart numbers
+%.+Det+Ord:%. #  ;
+
 +Use/Circ: ARABIC ;
 %-+Use/Circ:%- ARABIC ;            ! 1-2    multipart numbers
 %–+Use/Circ:%– ARABIC ;            ! 1–2    multipart numbers
@@ -210,29 +231,29 @@ LEXICON ARABICLOOP
 % %-%- ARABICDELIMITER ;           ! 1 --   multipart numbers
 % %–%– ARABICDELIMITER ;           ! 1 ––   multipart numbers
 % %—%— ARABICDELIMITER ;           ! 1 ——   multipart numbers
-%.+Use/Circ:%. ARABIC ;
+!%.+Use/Circ:%. ARABIC ;
 %,+Use/Circ:%, ARABIC ;
 % +Use/Circ:%  ARABIC ; ! Allowing for "23 500".
  +Use/Circ:   ARABIC ; ! Allowing for "23 500" w/nbsp (initial char is alt-space)
 %/+Use/Circ:%/ ARABIC ; ! 24/12
 !%'             ARABIC ; ! Since ' denotes cons.grad. This is not optimal either.
 !+A+Ord:%. # ;
-,%-+Num:,%- # ;   ! 10,-
-,%–+Num:,%– # ;   ! 10,–
-,%—+Num:,%— # ;   ! 10,—
-%%+Num+Sg+Nom:%% # ;  ! 50%. It is wrong, but 75 % of us write "75%".
-% %%+Num+Sg+Nom:% %% # ; ! We must analyse the correct ones as well... 50 % etc.
+,%-+Det+Qnt+Pl:,%- # ;   ! 10,-
+,%–+Det+Qnt+Pl:,%– # ;   ! 10,–
+,%—+Det+Qnt+Pl:,%— # ;   ! 10,—
+%%+Det+Qnt+Pl:%% # ;  ! 50%. It is wrong, but 75 % of us write "75%".
+% %%+Det+Qnt+Pl:% %% # ; ! We must analyse the correct ones as well... 50 % etc.
 ARABICDELIMITER ; ! list of number-case delimiters
-+Num: R ; ! Perhaps we need: RHyph? Hyphen and +Use/Circ added appropriately in RHyph
++Det+Qnt+Pl: R ; ! Perhaps we need: RHyph? Hyphen and +Use/Circ added appropriately in RHyph
 
 
 
 
 LEXICON ARABICDELIMITER ! blank + 3 delim, what does the lg counc prefer? 
-     ARABICCASE ; ! This is the 1984s case. 
- :%: ARABICCASE ; ! This is the 1984:s case.  ! skip these for nob?
- :%' ARABICCASE ; ! This is the 1984's case.
- :%- ARABICCASE ; ! This is the 1984-s case.
++Det+Qnt+Pl:     ARABICCASE ; ! This is the 1984s case. 
++Det+Qnt+Pl:%: ARABICCASE ; ! This is the 1984:s case.  ! skip these for nob?
++Det+Qnt+Pl:%' ARABICCASE ; ! This is the 1984's case.
++Det+Qnt+Pl:%- ARABICCASE ; ! This is the 1984-s case.
 
 
 
