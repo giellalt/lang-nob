@@ -125,18 +125,22 @@ LEXICON a-et-pret
          +Ind+Prt:%>et # ;
   +PrfPtc+Radical:%>a  # ;
           +PrfPtc:%>et # ;
-
+       +PrfPtc+A:%et positive-indef ;
+       +PrfPtc+A:%ede positive-def ;
 LEXICON te-pret
  +Ind+Prt:%>Q3te # ;
   +PrfPtc:%>Q3t  # ;
-
+  +PrfPtc+A:%>Q3t  positive ; ! over til adj
+ 
 LEXICON de-pret
  +Ind+Prt:%>Q3de # ;
   +PrfPtc:%>Q3d  # ;
+  +PrfPtc+A:%>Q3d  positive ;
 
 LEXICON dde-pret
  +Ind+Prt:%>dde # ;
   +PrfPtc:%>dd  # ;
+  +PrfPtc+A:%>dd  positive ;
 
 
 LEXICON prfptcsuff
