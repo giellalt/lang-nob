@@ -103,17 +103,19 @@ LEXICON v3-s ! trives
 ! ---------------------
 
 LEXICON inf-prsptc
-            +Inf:       #          ;
-    +Inf+Nynorsk:%>a    #          ;
-            +Imp:Q3X4   #          ;
-         +PrsPtc:%>     prfptcsuff ;
- +PrsPtc+Nynorsk:%>ande #          ;
-            +ING:%>ing  #          ;
+             +Inf:       #          ;
+        +Inf+Pass:%>s  # ;
+     +Inf+Nynorsk:%>a    #          ;
++Inf+Pass+Nynorsk:%>ast # ;
+             +Imp:Q3X4   #          ;
+          +PrsPtc:%>     prfptcsuff ;
+  +PrsPtc+Nynorsk:%>ande #          ;
+             +ING:%>ing  #          ;
 
 LEXICON regpres
               +Ind+Prs:%>er  # ;
          +Ind+Prs+Pass:%>es  # ;
- +Ind+Prs+Pass+Nynorsk:%>ast # ;
+      +Ind+Prs+Nynorsk:%>ast # ;
 
 LEXICON r-pres
               +Ind+Prs:%>r  # ;
@@ -220,20 +222,24 @@ LEXICON BRESTE
           breste+V+Imp:brest   #          ;
       breste+V+Ind+Prs:brester #          ;
  breste+V+Ind+Prs+Pass:brestes #          ;
+     breste+V+Inf+Pass:brestes #          ;
       breste+V+Ind+Prt:brast   #          ;
        breste+V+PrfPtc:brustet #          ;
        breste+V+PrsPtc:brest   prfptcsuff ;
 
 LEXICON BRINGE
      bringe+V+Inf:bringe  #          ;
+     bringe+V+Inf+Pass:bringes  #          ;
      bringe+V+Imp:bring   #          ;
  bringe+V+Ind+Prs:bringer #          ;
+ bringe+V+Ind+Prs+Pass:bringes #          ;
  bringe+V+Ind+Prt:brakte  #          ;
   bringe+V+PrfPtc:brakt   #          ;
   bringe+V+PrsPtc:bring   prfptcsuff ;
 
 LEXICON BRISTE
           briste+V+Inf:briste  #          ;
+          briste+V+Inf+Pass:briste  #          ;
           briste+V+Imp:brist   #          ;
       briste+V+Ind+Prs:brister #          ;
  briste+V+Ind+Prs+Pass:bristes #          ;
@@ -243,8 +249,10 @@ LEXICON BRISTE
 
 LEXICON BRYTE
              bryte+V+Inf:bryte  #          ;
+             bryte+V+Inf+Pass:brytes  #          ;
              bryte+V+Imp:bryt   #          ;
          bryte+V+Ind+Prs:bryter #          ;
+         bryte+V+Ind+Prs+Pass:brytes #          ;
          bryte+V+Ind+Prt:brøt   #          ;
          bryte+V+Ind+Prt:braut  #          ;
 bryte+V+Ind+Prt+Err/Orth:brøyt  #          ; !SUB
@@ -258,6 +266,7 @@ LEXICON BURDE
 
 LEXICON BY
           by+V+Inf:by   #          ;
+          by+V+Inf+Pass:by   #          ;
           by+V+Imp:by   #          ;
       by+V+Ind+Prs:byr  #          ;
  by+V+Ind+Prs+Pass:bys  #          ;
@@ -267,6 +276,7 @@ LEXICON BY
 
 LEXICON BYDE
           byde+V+Inf:byde  #          ;
+          byde+V+Inf+Pass:byde  #          ;
           byde+V+Imp:byd   #          ;
       byde+V+Ind+Prs:byder #          ;
  byde+V+Ind+Prs+Pass:bydes #          ;
@@ -276,6 +286,7 @@ LEXICON BYDE
 
 LEXICON BÆRE
           bære+V+Inf:bære  #          ;
+          bære+V+Inf+Pass:bæres  #          ;
           bære+V+Imp:bær   #          ;
       bære+V+Ind+Prs:bærer #          ;
  bære+V+Ind+Prs+Pass:bæres #          ;
@@ -285,6 +296,7 @@ LEXICON BÆRE
 
 LEXICON XETTE
           ette+V+Inf:ette  #          ;
+          ette+V+Inf+Pass:ettes  #          ;
           ette+V+Imp:ett   #          ;
       ette+V+Ind+Prs:etter #          ;
  ette+V+Ind+Prs+Pass:ettes #          ;
@@ -294,8 +306,10 @@ LEXICON XETTE
 
 LEXICON DRA
      dra+V+Inf:dra   #          ;
+     dra+V+Inf+Pass:dras   #          ;
      dra+V+Imp:dra   #          ;
  dra+V+Ind+Prs:drar  #          ;
+ dra+V+Ind+Prs+Pass:dras  #          ;
  dra+V+Ind+Prt:dro   #          ;
  dra+V+Ind+Prt:drog  #          ;
   dra+V+PrfPtc:dratt #          ;
@@ -303,6 +317,7 @@ LEXICON DRA
 
 LEXICON XIKKE
           ikke+V+Inf:ikke  #          ;
+          ikke+V+Inf+Pass:ikkes  #          ;
           ikke+V+Imp:ikk   #          ;
       ikke+V+Ind+Prs:ikker #          ;
  ikke+V+Ind+Prs+Pass:ikkes #          ;
@@ -312,6 +327,7 @@ LEXICON XIKKE
 
 LEXICON DRIVE
           drive+V+Inf:drive  #          ;
+          drive+V+Inf+Pass:drives  #          ;
           drive+V+Imp:driv   #          ;
       drive+V+Ind+Prs:driver #          ;
  drive+V+Ind+Prs+Pass:drives #          ;
@@ -321,6 +337,7 @@ LEXICON DRIVE
 
 LEXICON DØLGE
           dølge+V+Inf:dølge  #          ;
+          dølge+V+Inf+Pass:dølges  #          ;
           dølge+V+Imp:dølg   #          ;
       dølge+V+Ind+Prs:dølger #          ;
  dølge+V+Ind+Prs+Pass:dølges #          ;
@@ -339,6 +356,7 @@ LEXICON DØ
 
 LEXICON EIE
           eie+V+Inf:eie  #          ;
+          eie+V+Inf+Pass:eies  #          ;
           eie+V+Imp:ei   #          ;
       eie+V+Ind+Prs:eiwe #          ;
  eie+V+Ind+Prs+Pass:eies #          ;
@@ -348,6 +366,7 @@ LEXICON EIE
 
 LEXICON ETE
           ete+V+Inf:ete  #          ;
+          ete+V+Inf+Pass:etes  #          ;
           ete+V+Imp:et   #          ;
       ete+V+Ind+Prs:eter #          ;
  ete+V+Ind+Prs+Pass:etes #          ;
@@ -873,6 +892,7 @@ LEXICON LE
 
 LEXICON LEGGE
           legge+V+Inf:legge    # ;
+          legge+V+Inf+Pass:legges    # ;
           legge+V+Imp:legg     # ;
       legge+V+Ind+Prs:legger   # ;
  legge+V+Ind+Prs+Pass:legges   # ;
