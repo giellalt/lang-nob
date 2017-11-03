@@ -30232,7 +30232,8 @@ skrunøkkel m3 ;
 arkivnøkkel m3 ; 
 ankel m3 ; 
 sprinkel m3 ; 
-vinkel m3 ; 
+vinkel m3 ;
+likevinkel m3 ;
 eggvinkel m3 ; 
 smygvinkel m3 ; 
 frivinkel m3 ; 
@@ -34571,3 +34572,59 @@ tide fD ; ! i tide
 gårde mD ; ! av gårde
 dage mD ; ! av dage
 garde m1 ; ! garden
+
+
+nordhaida mX ;
+måledata x ;
+vedhoggested n2 ;
+drømmestipend n1 ;
+selfie m1 ;
+ulikestavelsesstamme m1 ;
+storfyrstedømme n2 ;
+karantene m1 ;
+måneformørkelse m1 ;
+solformørkelse m1 ;
+etterlevelse m1 ;
+skriveoppgave f1 ;
+regneprøve f1 ;
+oppstigning f1 ;
+engangserstatning f1 ;
+komi mX ;
+gripetak n1 ;
+bydeform f1 ;
+helsepersonellov f2 ;
+bestevenn m1 ;
+lærlingelønn f1 ;
+subjunksjon m1 ;
+võro mX ;
+laptop m1 ;
+straffeansvar n1 ;
+hundeholder m2 ;
+treer m2 ;
+snustygger m2 ;
+kårmottaker m2 ;
+agrotekniker m2 ;
+klesdesigner m2 ;
+anleggsgartner m2 ;
+sjøis m1sg ;
+presens mX ;
+barnepass n1 ;
+gestus m1 ;
+uredelighet f1 ;
+tomhet f1 ;
+grettenhet f1 ;
+oppblåsthet f1 ;
+innsikt f1 ;
+kobolt n1 ;
+bygdemusikant m1 ;
+mestepart m1 ;
+tilbakeholdelsesfrist m1 ;
+leterett m1 ;
+visitt m1 ;
+pytt m1 ;
+verbgenitiv m1 ;
+ulikestavelsessubstantiv n1 ;
+alv m1 ;
+discjockey m1 ;
+kø m1 ;
+
