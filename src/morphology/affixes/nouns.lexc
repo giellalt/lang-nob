@@ -207,14 +207,14 @@ LEXICON FAR
 !           +N:     R     ;
 
 LEXICON DATTER
-          +N+Fem+Sg+Indef:datter   # ;
-            +N+Fem+Sg+Def:datra    # ;
-            +N+Msc+Sg+Def:datteren # ;
-!   +N+Fem+Sg+Def+Radical:datra    # ;
-          +N+Fem+Sg+Indef:døtre    # ;
-            +N+Fem+Sg+Def:døtrene  # ;
-  +N+Fem+Sg+Nynorsk+Indef:dotter   # ;
-    +N+Fem+Sg+Nynorsk+Def:dotra    # ;
+          +N+Fem+Sg+Indef:datter   K ;
+            +N+Fem+Sg+Def:datra    K ;
+            +N+Msc+Sg+Def:datteren K ;
+!   +N+Fem+Sg+Def+Radical:datra    K ;
+          +N+Fem+Sg+Indef:døtre    K ;
+            +N+Fem+Sg+Def:døtrene  K ;
+  +N+Fem+Sg+Nynorsk+Indef:dotter   K ;
+    +N+Fem+Sg+Nynorsk+Def:dotra    K ;
 !                      +N:         R ;
 
 LEXICON MOR
@@ -420,8 +420,8 @@ LEXICON KLÆR
 
 LEXICON TEMPUS ! tempus:temp TEMPUS ;
           :us     n1 ;
- +N+Neu+Sg:ora    #  ;
- +N+Neu+Pl:oraene #  ;
+ +N+Neu+Sg:ora    K  ;
+ +N+Neu+Pl:oraene K  ;
         +N:us     R  ;
 
 ! Lexica for definiteness declension
