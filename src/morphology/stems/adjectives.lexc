@@ -3887,6 +3887,7 @@ allslags a3 ;
 firehjuls a3 ;
 morgendagens a3 ;
 fjorårs a3 ;
+fjorårets a3 ;
 verdt a3 ;
 vannskadet a3 ;
 uønsket a3 ;
@@ -5100,3 +5101,25 @@ fakultativ a1 ;
 inaktiv a1 ;
 overaktiv a1 ;
 reproduktiv a1 ;
+
+modal a1 ;
+finskætta a3 ;
+enstava a3 ;
+ruglet a4 ;
+treverdig a2 ;
+nullverdig a2 ;
+enverdig a2 ;
+toverdig a2 ;
+løgnfri aV ;
+ordfinal a1 ;
+aspektuell a1 ;
+tostavelses a3 ;
+flerstavelses a3 ;
+skuls adv ;
+enstammet a4 ;
+tostammet a4 ;
+konsonantstammet a4 ;
+disjunktiv a1 ;
+sølvgrå aV ;
+
+
