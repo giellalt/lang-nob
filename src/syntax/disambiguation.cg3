@@ -5383,7 +5383,7 @@ SELECT (A Pl) IF
 
 #
 
-
+SELECT Dem IF (0 %den%);
 
 # 2884
 SELECT (A Pl) IF
