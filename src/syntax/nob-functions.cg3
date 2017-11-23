@@ -58,6 +58,10 @@ LIST Interj = Interj ;
 LIST ABBR = ABBR ;
 LIST ACR = ACR ;
 
+LIST Msc = Msc ;
+LIST Fem = Fem ;
+LIST Msc = Msc ;
+
 LIST CLB = CLB ;
 LIST LEFT = LEFT ;
 LIST RIGHT = RIGHT ;
@@ -318,19 +322,6 @@ SET NOT-PRFPRC = WORD - PrfPrc ;
 # Pronoun sets
 # ------------
 
-LIST MUN = (Pron Pers Sg1 Nom);
-LIST DON = (Pron Pers Sg2 Nom);
-LIST SON = ("son" Pron Pers Sg3 Nom);
-LIST MII-PERS = (Pron Pers Pl1 Nom);
-LIST DII = (Pron Pers Pl2 Nom);
-LIST SII = ("son" Pron Pers Pl3 Nom);
-
-
-
-
-
-SET PPRON-NOT-SII = MUN OR DON OR SON OR MII-PERS OR DII ;
-
 
 LIST DEM-SG = (Pron Dem Sg Nom);
 LIST DEM-PL = (Pron Dem Pl Nom);
@@ -389,26 +380,10 @@ SET CRD = @CNP OR COMMA OR ("/") OR ("-") ;
 LIST ADV-AFTER-NUM = "geardde" ;
 
 
-LIST GRADE-ADV =  "áibbas" "beare" ("eanet" Adv) "erenoamán" "erenoamáš" "hirbmat" "hui" "ila" "issoras" ("man" Adv) ("mealgat" Adv) "measta" "menddo" "muđui" "muhtun_muddui" "nu" "oalle" "oba" ("oppa" Adv) "sakka" "seammá" ("veaháš" Adv) ("uhccán" Adv) ("unnán" Adv) "vehá" "veháš" "veahá" "veaháš" "viehka" ;
-
-LIST BUOT = "buot" "gait" "gaitin" "gaitdivnnat" "visot" ;
-
-
-LIST EASKKA = "easkka" ("easka" Adv) ; 
-
-LIST ADV-NOT-ARG = "aiddo" "ain" "aivve" "albma" "aŋkke" "álggos" "bái#fáhkka" "beanta" "beare" ;
+LIST GRADE-ADV =  "helt" "svært" "litt" ;
 
 
 
-LIST ADV-NOT-VERB = "dušše" "viimmat" ;
-
-LIST ADV-NOT-NOUN = "easka" "várra" ;
-
-LIST ADV-NOT-NAMES = "Ain" "Anne" "Diego" "Dieppe" "Enge" "Galle" "Haga"
-           "Joba" "Johan" "Liikka" "Mai" "Mannes" "Mo" "Mot" "Naba"
-           "Nan" "Oktan" "Sierra" "Sokka" "Villa" ;
-
-SET ADV-NOT-OTHER-POS = ADV-NOT-VERB OR ADV-NOT-NOUN OR ADV-NOT-NAMES ;
 
 
 # Sets of elements with common syntactic behaviour
@@ -525,11 +500,8 @@ SET NAPP     = WORD - PRE-APP ;
 #!! * Miscellaneous sets
 # ------------------
 
-LIST GASKAL = "gaskal" "gaskkal" "gaskii" "gaskka" "gaskkas" ;
  
- # p-positions that like coordination
  
-LIST TIME-PP = "badjel" "čađa" "earret" "gaskkal" "guovddáš" "maŋŋel" "maŋŋil" "maŋŋá" "miehtá" "ovdal" ;
  
 
 #LIST OKTA = "1" "en" "et" "ei" ;
@@ -604,6 +576,8 @@ LIST ALLSYNTAG = (@+FAUXV) (@+FMAINV) (@-FAUXV) (@-FMAINV) (@-FSUBJ>)(@-FOBJ)(@-
 SET NON-APP = ALLSYNTAG - (@APP);
 
 #!! These were the set types.
+
+
 
 
          SECTION         #
