@@ -554,7 +554,7 @@ LIST Prop = Prop ;
 
 SETS
 LIST Prop-Det-Sg = ("Det" N Prop) ("Den" N Prop) ;
-o
+
 LIST Refl = rl1 rl2 rl3 rl4 rl5 rl6 rl7 rl8 rl9 rl10 rl11 rl12 rl13 rl14 rl15 rl16 rl17 rl18 rl19 rl20 ;
 LIST rel-Pron = "som" ;
 
