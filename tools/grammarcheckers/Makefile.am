@@ -11,8 +11,8 @@ GIELLA_GC_VALENCY=
 # specify here:
 LOCAL_GC_ZIP_FILES=
 
-disambiguator.cg3: $(top_srcdir)/src/syntax/disambiguation.cg3
-	cp $< $@
+#disambiguator.cg3: $(top_srcdir)/src/syntax/disambiguation.cg3
+#	cp $< $@
 
 # Do not edit below here:
 include $(top_srcdir)/am-shared/tools-grammarcheckers-dir-include.am
