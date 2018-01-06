@@ -32,10 +32,10 @@ VÆRE ;
 
 
 LEXICON irregular-verb
-                     BE      ;
-           fra       BE      ;
-           til       BE      ;
-            ut       BE      ;
+           be;          BE      ;
+           frabe:fra       BE      ;
+           tilbe:til       BE      ;
+            utbe:ut       BE      ;
                      BINDE   ;
            for       BINDE   ;
            inn       BINDE   ;
@@ -89,8 +89,6 @@ LEXICON irregular-verb
           sjøl       DØ      ;
                      DØLGE   ;
                      EIE     ;
-                     ETE     ;
-                     FALLE   ;
                      FALLE   ;
             an       FALLE   ;
             bi       FALLE   ;
