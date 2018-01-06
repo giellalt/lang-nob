@@ -157,14 +157,14 @@ LEXICON prfptcsuff
 
 
 LEXICON BE
-          be+V+Inf:be   #          ;
-          be+V+Imp:be   #          ;
-      be+V+Ind+Prs:ber  #          ;
- be+V+Ind+Prs+Pass:bes  #          ;
-     be+V+Inf+Pass:bes  #          ;
-      be+V+Ind+Prt:ba   #          ;
-       be+V+PrfPtc:bedt #          ;
-       be+V+PrsPtc:be   prfptcsuff ;
+          +V+Inf:be   #          ;
+          +V+Imp:be   #          ;
+      +V+Ind+Prs:ber  #          ;
+ +V+Ind+Prs+Pass:bes  #          ;
+     +V+Inf+Pass:bes  #          ;
+      +V+Ind+Prt:ba   #          ;
+       +V+PrfPtc:bedt #          ;
+       +V+PrsPtc:be   prfptcsuff ;
 
 LEXICON BINDE
           binde+V+Inf:binde  #          ;
