@@ -688,9 +688,9 @@ SELECT:ext A + Pos + Neu IF (*-1 ("være") LINK -1 ("det")) ; # Det er vanskelig
 
 REMOVE ("én") IF (0 ("en")); # en gang
 
-SELECT:QP Pl IF
-	(*-1 Qnt + Pl BARRIER ikke-AdvA-komma OR PUNCT)
-;
+SELECT:QP Pl IF	(*-1 Qnt + Pl BARRIER ikke-AdvA-komma OR PUNCT) ;
+
+SELECT:FinTing Msc IF (-1 ("fin"))(0 ("ting")); # fine ting
 
 # OBT
 
