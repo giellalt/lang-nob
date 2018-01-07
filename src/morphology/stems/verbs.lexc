@@ -32,7 +32,7 @@ VÆRE ;
 
 
 LEXICON irregular-verb
-           be;          BE      ;
+              be:          BE      ;
            frabe:fra       BE      ;
            tilbe:til       BE      ;
             utbe:ut       BE      ;
@@ -89,6 +89,7 @@ LEXICON irregular-verb
           sjøl       DØ      ;
                      DØLGE   ;
                      EIE     ;
+		     ETE     ;
                      FALLE   ;
             an       FALLE   ;
             bi       FALLE   ;
@@ -483,6 +484,7 @@ LEXICON irregular-verb
            små       SOVE    ;
          snork       SOVE    ;
                      SPINNE  ;
+                     SPREKKE ;
                      SPRETTE ;
                      SPRINGE ;
                      SPØRRE  ;
