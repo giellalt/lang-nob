@@ -71,14 +71,14 @@ LEXICON n1n3
   n1 ;
   n3 ;
 
-LEXICON m1n1
-  m1 ;
-  n1 ;
+!LEXICON m1n1
+!  m1 ;
+!  n1 ;
 
-LEXICON m1n1f1
-  m1 ;
-  f1 ;
-  n1 ;
+!LEXICON m1n1f1
+!  m1 ;
+!  f1 ;
+!  n1 ;
 
 LEXICON m1Vn1
   m1V ;
@@ -324,8 +324,8 @@ LEXICON nD ! i live
  +N+Neu+Dat: K ;
 
 
-LEXICON n1-e- !
- +N: Re ;
+!LEXICON n1-e- !
+! +N: Re ;
 
 LEXICON n1 ! hus
  +N: R       ;
@@ -487,10 +487,10 @@ LEXICON 0-ene
  +Indef:      K ;
    +Def:%>ene K ;
 
-LEXICON 0-er-ene
- +Indef:      K ;
- +Indef:%>er  K ;
-   +Def:%>ene K ;
+!LEXICON 0-er-ene
+! +Indef:      K ;
+! +Indef:%>er  K ;
+!   +Def:%>ene K ;
 
 LEXICON 0-er-ene-a
  +Indef:      K ;

@@ -11,8 +11,8 @@ LEXICON Anyn
 LEXICON Vnyn
 +V+Nynorsk: # ;
 
-LEXICON Nnyn_m1
-+N+Nynorsk: # ;
+!LEXICON Nnyn_m1
+!+N+Nynorsk: # ;
 
 LEXICON Propnyn
 +N+Prop+Nynorsk: # ;
