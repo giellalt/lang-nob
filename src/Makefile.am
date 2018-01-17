@@ -71,8 +71,9 @@ analyser-%-norm.hfst: analyser-%-norm.tmp.hfst \
 				@\"filters/remove-Nynorsk-strings.hfst\" \
 			.o. @\"$<\"                                       \
 			;" \
-		| $(HFST_REGEXP2FST) $(VERBOSITY) $(HFST_FLAGS) -S --xerox-composition=ON \
-		| $(HFST_INVERT) $(VERBOSITY) $(HFST_FLAGS) \
+		| $(HFST_REGEXP2FST) $(MORE_VERBOSITY) $(HFST_FLAGS) $(HFST_FORMAT) \
+		  -S --xerox-composition=ON \
+		| $(HFST_INVERT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
 		> $@
 
 # Xerox:
@@ -85,6 +86,16 @@ analyser-%-norm.xfst: analyser-%-norm.tmp.xfst \
 		 save stack $@\n\
 		 quit\n" | $(XFST) $(VERBOSITY)
 
+# F:
+analyser-%-norm.foma: analyser-%-norm.tmp.foma \
+					filters/remove-Nynorsk-strings.foma
+	$(AM_V_XFST)$(PRINTF) "read regex                         \
+				@\"filters/remove-Nynorsk-strings.foma\" \
+			.o. @\"$<\"                                       \
+			;\n\
+		 save stack $@\n\
+		 quit\n" | $(FOMA) $(VERBOSITY)
+
 # We need to add processing of language-specific tags in the generator:
 # HFST:
 generator-%-norm.hfst: generator-%-norm.tmp.hfst \
@@ -93,7 +104,8 @@ generator-%-norm.hfst: generator-%-norm.tmp.hfst \
 				@\"filters/remove-Nynorsk-strings.hfst\" \
 			.o. @\"$<\"                                       \
 			;" \
-		| $(HFST_REGEXP2FST) $(VERBOSITY) $(HFST_FLAGS) -S --xerox-composition=ON \
+		| $(HFST_REGEXP2FST) $(MORE_VERBOSITY) $(HFST_FLAGS) $(HFST_FORMAT) \
+		  -S --xerox-composition=ON \
 		> $@
 
 # Xerox:
@@ -106,6 +118,17 @@ generator-%-norm.xfst: generator-%-norm.tmp.xfst \
 		 invert net\n\
 		 save stack $@\n\
 		 quit\n" | $(XFST) $(VERBOSITY)
+
+# Foma:
+generator-%-norm.foma: generator-%-norm.tmp.foma \
+					 filters/remove-Nynorsk-strings.foma
+	$(AM_V_XFST)$(PRINTF) "read regex                         \
+				@\"filters/remove-Nynorsk-strings.foma\" \
+			.o. @\"$<\"                                       \
+			;\n\
+		 invert net\n\
+		 save stack $@\n\
+		 quit\n" | $(FOMA) $(VERBOSITY)
 
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
