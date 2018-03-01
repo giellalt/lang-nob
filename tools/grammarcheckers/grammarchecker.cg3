@@ -35,8 +35,8 @@
 #   Then edit/test as:   #
 # ---------------------- #
 #
-# emacs grammarchecker.cg3  # and C-c C-i / C-c C-c if you have cg-mode installed
-# echo "Sun ij puátá." | sh modes/nobgram.mode  # from the terminal
+## emacs grammarchecker.cg3  # and C-c C-i / C-c C-c if you have cg-mode installed
+## echo "Dette er et fin hus." | sh modes/nobgram.mode  
 #
 # ---------------------- #
 #   Other debug-pipes:   #
@@ -544,7 +544,7 @@ SET NOT-NPMOD-ACC-ADV     = NOT-NPMOD - Acc - Adv OR ABBR ;
 SET NOT-NPMODADV    = WORD - PRE-NP-HEAD - Adv ;                      
 # NOT-NPMODADV = "NOT-PRE-NP-HEAD-OR-ADV"
 SET NOT-NPMODADV-INDEF   = WORD - PRE-NP-HEAD - Adv - Indef ;              
-## NOT-NPMODADVI = "     ...-OR-INDEF"
+# NOT-NPMODADVI = "     ...-OR-INDEF"
 SET NOT-NPMODCC   = WORD - PRE-NP-HEAD - COMMA - @CNP ;
 SET NAPP     = WORD - PRE-APP ;
 
@@ -659,10 +659,12 @@ ADD:spell-conservatively (&typo &SUGGESTWF) (<spelled>) IF (NEGATE -1 QMARK LINK
 
 # A simple grammar checker rule without suggestions: Ensure preceding adjective agrees with noun
 
-ADD:err_agr_neu_a (&err_agr_neu_a) TARGET A IF (-1 Det + Neu)(0 A + MF)(1 N + Neu);
+ADD:err_agr_neu_a (&err_agr_neu_a) TARGET A IF (-1 Det + Neu)(0 A + MF OR Msc OR Fem)(1 N + Neu);
+## Dette er et fin hus.
 ADD:err_agr_msc_a (&err_agr_msc_a) TARGET A IF (-1 Det + MF)(0 A + Neu)(1 N + Msc);
-
+## Dette er en fint båt.
 ADD:err_pron_nom (&err_pron_nom) TARGET Pron + Pers IF (-1C Pr);
+## Vi snakker om du.
 
 # And one with a suggestion where we simply change the tag Sg into Attr:
 COPY:attr-not-pred (Attr &SUGGEST) EXCEPT (Sg) TARGET (&attr-not-pred) ;
