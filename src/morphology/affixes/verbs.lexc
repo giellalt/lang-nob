@@ -31,15 +31,15 @@ LEXICON v12 ! score -> scoret, scorte
                  +V:     inf-prsptc ;
                  +V:     regpres    ;
  +V+Ind+Prs+Nynorsk:%>ar #          ;
-                 +V:     a-et-pret  ;
-                 +V:     te-pret    ;
+                         a-et-pret  ;
+                        te-pret    ;
 
 LEXICON v13 ! sveve -> svevet, svevde.
                  +V:     inf-prsptc ;
                  +V:     regpres    ;
  +V+Ind+Prs+Nynorsk:%>ar #          ;
-                 +V:     a-et-pret  ;
-                 +V:     de-pret    ;
+                         a-et-pret  ;
+                         de-pret    ;
 
 
 LEXICON v23
@@ -54,23 +54,23 @@ LEXICON v1 ! kaste
                  +V:     inf-prsptc ;
                  +V:     regpres    ;
  +V+Ind+Prs+Nynorsk:%>ar #          ;
-                 +V:     a-et-pret  ;
+                         a-et-pret  ;
 
 
 LEXICON v2 ! blåse, studere
  +V: inf-prsptc ;
  +V: regpres    ;
- +V: te-pret    ;
+   te-pret    ;
 
 LEXICON v3 ! leve
  +V: inf-prsptc ;
  +V: regpres    ;
- +V: de-pret    ;
+     de-pret    ;
 
 LEXICON v4 ! ro, bie
  +V: inf-prsptc ;
  +V: r-pres     ;
- +V: dde-pret   ;
+     dde-pret   ;
 
 LEXICON v-s ! fritas
      +Inf: # ;
@@ -123,26 +123,26 @@ LEXICON r-pres
  +Ind+Prs+Pass+Nynorsk:%>st # ;
 
 LEXICON a-et-pret
- +Ind+Prt+Radical:%>a  # ;
-         +Ind+Prt:%>et # ;
-  +PrfPtc+Radical:%>a  # ;
-          +PrfPtc:%>et # ;
-       +PrfPtc+A:%et positive-indef ;
-       +PrfPtc+A:%ede positive-def ;
+ +V+Ind+Prt+Radical:%>a  # ;
+         +V+Ind+Prt:%>et # ;
+  +V+PrfPtc+Radical:%>a  # ;
+          +V+PrfPtc:%>et # ;
+       +Ex/V+PrfPtc+A:%et positive-indef ;
+       +Ex/V+PrfPtc+A:%ede positive-def ;
 LEXICON te-pret
- +Ind+Prt:%>Q3te # ;
-  +PrfPtc:%>Q3t  # ;
-  +PrfPtc+A:%>Q3t  positive ; ! over til adj
+ +V+Ind+Prt:%>Q3te # ;
+  +V+PrfPtc:%>Q3t  # ;
+  +Ex/V+PrfPtc+A:%>Q3t  positive ; ! over til adj
  
 LEXICON de-pret
- +Ind+Prt:%>Q3de # ;
-  +PrfPtc:%>Q3d  # ;
-  +PrfPtc+A:%>Q3d  positive ;
+ +V+Ind+Prt:%>Q3de # ;
+  +V+PrfPtc:%>Q3d  # ;
+  +Ex/V+PrfPtc+A:%>Q3d  positive ;
 
 LEXICON dde-pret
- +Ind+Prt:%>dde # ;
-  +PrfPtc:%>dd  # ;
-  +PrfPtc+A:%>dd  positive ;
+ +V+Ind+Prt:%>dde # ;
+  +V+PrfPtc:%>dd  # ;
+  +Ex/V+PrfPtc+A:%>dd  positive ;
 
 
 LEXICON prfptcsuff
