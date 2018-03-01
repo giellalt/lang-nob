@@ -8,6 +8,11 @@ Indefinite ;
 Interrogative ;
 Reciprocal ;
 
+LEXICON Determiner
+Demonstrative ;
+Possessive ;
+
+
 LEXICON Personal 
  jeg+Pron+Pers+Sg1+Nom:jeg # ;
  jeg+Pron+Pers+Sg1+Acc:meg # ;
@@ -30,6 +35,28 @@ dere+Pron+Pers+Pl2+Acc:dere # ;
   de+Pron+Pers+Pl3+Acc:dem # ;
 
 
+noe+Pron+Indef:noe # ;
+begge+Pron+Qnt+Pl:begge # ;
+det+Pron+Dem+Sg+Neu:det # ;
+denne+Pron+Dem+Sg+MF:denne K ;
+dette+Pron+Dem+Sg+Neu:dette K ;
+disse+Pron+Dem+Pl:disse K ;
+all+Pron+Dem+Sg+Neu:alt # ;
+all+Pron+Dem+Pl:alle K ;
+slik+Pron+Dem+Sg+Neu:slikt # ;
+slik+Pron+Dem+Pl:slike # ;
+samme+Pron+Dem:samme # ;
+flere+Pron+Dem+Pl:flere # ;
+mange+Pron+Dem+Pl:mange # ;
+annen+Pron+Dem+Sg+Neu:annet # ;
+annen+Pron+Dem+Pl:andre # ;
+selv+Pron+Intens:selv # ;
+selv+Pron+Intens:selve # ;
+sjøl+Pron+Intens:sjøl # ;
+eneste+Pron+Dem:eneste # ;
+sånn+Pron+Dem+Sg+Neu:sånt # ;
+sånn+Pron+Dem+Sg+Pl:sånne # ;
+
 
 LEXICON Reflexive 
 seg+Pron+Refl+Acc:seg # ;
@@ -45,10 +72,6 @@ man+Pron+Indef:man # ;
 LEXICON Interrogative 
 hva+Pron+Interr:hva # ;
 hvem+Pron+Interr:hvem # ;
-
-LEXICON Determiner
-Demonstrative ;
-Possessive ;
 
 LEXICON Demonstrative 
 noen+Det+Qnt+Pl:noen # ;
