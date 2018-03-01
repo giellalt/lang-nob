@@ -15,6 +15,8 @@
 DELIMITERS = "<.>" "<:>" "<!>" "<?>" "<|>" sent ;
 
 SETS
+LIST BOS = >>>	;
+LIST EOS = <<< ;
 LIST ikke-Poss-det = "hei" ;
 LIST replikk = "$--" "$-" ;
 LIST int-setn-gr = "$\;" "$:" "$..." "$--" "$-" "$," "$\"" CLB ;
@@ -304,6 +306,7 @@ LIST CLB-CC = (CLB CC) ;
 LIST CLB/CC-CC = ("og" CC) ("eller" CC) ("men" CC) ;
 LIST dato = <dato> ;
 LIST Dem = Dem ;
+LIST Det = Det ;
 LIST dem/Poss/gen = Dem Poss Clt ;
 LIST det = det ;
 LIST Det-Sg = (Det Sg) ;
@@ -676,6 +679,16 @@ LIST DEF = Def Indef ;
 LIST NUM = Sg Pl ;
 LIST GEN = Msc Fem Neu ;
 
+LIST NOT-Neu = Msc Fem MF ;
+LIST NOT-Fem = Msc Neu ;
+LIST NOT-Msc = Fem Neu ;
+
+# Complementary sets
+
+LIST WORD = N A Adv V CS CC Interj Pcle Pr IM Det Pron Interj ;
+LIST PRE-NP-HEAD = Clt A Det ;
+SET NOT-PRE-NP-HEAD = WORD - PRE-NP-HEAD ;
+	
 CONSTRAINTS
 
 # Giellatekno
@@ -1305,9 +1318,13 @@ SELECT Prop IF (NOT -1 CLB); # XXX
 	(1 %mye/lite% OR A-pos)
 ;
 
+"<for>" SELECT:ForSiden (Adv) IF
+	(*1 %siden% BARRIER V)
+;
+
 
 # 3447
-"<for>" SELECT (Adv) IF
+"<for>" SELECT:3447 (Adv) IF
 	(NOT 1 %fullt/mange% OR setn-gr)
 	(NOT 2 N/A/Pron/Det/CC)
 ;
@@ -2626,6 +2643,10 @@ CONSTRAINTS
 	(-1 komma)
 ;
 
+"<men>" SELECT (CC) IF
+	(1 CS)
+;
+
 
 # 3254
 "<men>" REMOVE (N Sg) IF
@@ -2752,6 +2773,10 @@ CONSTRAINTS
 	(1 A)
 	(-1C det)
 ;
+
+"<noe>" REMOVE (Det) IF (0 ("noe"))(NOT 1 N OR PRE-NP-HEAD);
+"<noe>" REMOVE (Adv) IF (0 ("noe"))(-1 CLB OR CS);
+
 
 
 
@@ -2898,6 +2923,7 @@ CONSTRAINTS
 	(1 A-komp)
 	(NOT 2 N/A OR komma/CC)
 ;
+
 
 
 # 3217
@@ -3088,6 +3114,8 @@ CONSTRAINTS
 	(*1C Prs/Prt BARRIER setn-gr)
 ;
 
+#SELECT (CS) IF (-1 BOS)(0 ("om"))(*1 komma LINK 1 Prs);
+SELECT (CS) IF (0 ("om"))(*1 (",") LINK 1 Prs);
 
 # 3192
 "<om>" REMOVE (Pr) IF
@@ -9189,7 +9217,7 @@ SELECT (Pr) IF
 	(NOT 0 %for% OR CS)
 	(NOT 0 CLB OR Pron)
 	(NOT 0 A OR fv)
-	(1 N)
+	(*1 N BARRIER NOT-PRE-NP-HEAD)
 	(NOT -1 Pr OR det)
 ;
 
@@ -9291,8 +9319,8 @@ SELECT (Pr) IF
 
 
 # 2503
-SELECT (Pr) IF
-	(0 CS)
+REMOVE (CS) IF
+	(0 Pr)
 	(NOT 0 A)
 	(NOT 1 PrfPtc)
 	(*1C setn-gr BARRIER Prs/Prt)
@@ -10418,6 +10446,7 @@ SELECT (N) IF
 	(NOT 0 A)
 	(NOT -1 %som/enn%)
 	(NOT 0 Imp LINK -1 s-gr)
+	(NOT 0 Prs LINK -1 komma)
 ;
 
 
@@ -11439,12 +11468,15 @@ SELECT (V PrfPtc) IF
 	(*-1 Nom BARRIER setn-gr)
 ;
 
+REMOVE (A) IF (0  V + PrfPtc)(NOT *1 N BARRIER NOT-PRE-NP-HEAD);
 
 # 2274
 SELECT (V PrfPtc) IF
 	(-1 %ikke/aldri%)
 	(*-2 N/Pron LINK *-1 ikke-AdvA-det LINK 0 %ha%-Prs/Prt LINK 0 N LINK -1 A-komp)
 ;
+
+REMOVE PrfPtc IF (0 Prt)(NOT *0 Prs OR Prt BARRIER CLB);
 
 
 # 2275
@@ -14676,7 +14708,10 @@ REMOVE (N Sg) IF
 
 
 #
-
+REMOVE ("åre") IF
+	(0 ("år"))
+	(NOT *0 ("ro") OR ("ta") OR (".*blod"r))
+;
 
 
 # 1905
@@ -14698,6 +14733,7 @@ REMOVE (N Indef) IF
 	(*1 ikke-AdvA-det BARRIER setn-gr)
 	(*1 ikke-AdvA-det BARRIER fork/ukjent-ord)
 	(*1 ikke-AdvA-det BARRIER parentes)
+	(0 Def)
 ;
 
 
@@ -17894,12 +17930,37 @@ REMOVE (V) IF
 ;
 
 
+REMOVE (A) IF
+	(0 PrfPtc)
+	(-1 ("ha"))
+	(1 Pr OR V OR det)
+;
+
+REMOVE (Pron) IF (0 Det + $$GEN)(*1 N + $$GEN BARRIER NOT-PRE-NP-HEAD);	
+
+REMOVE (Det) IF (0 Pron)(NOT *1 N BARRIER NOT-PRE-NP-HEAD);
+
+REMOVE (Det) IF (0 Pron)(0 Det + Neu)(*1C N + Msc OR N + Fem BARRIER NOT-PRE-NP-HEAD);
+
+
+REMOVE (Pl) IF (-1 Pr)(0 Sg);
+      ## i vater
+
+REMOVE (Pl) IF (-1 Det + Sg)(0 Sg);
+      ## i vater
+
+REMOVE (Acc) IF (-1 CS)(1 Prs OR Prt);
+
+#REMOVE Neu IF (0Det Dem Sg Msc
+
 # Late rules, Gt
 
 # Han arbeider som bud.
 REMOVE:SomPr Pl IF (-1 %som%-Pr)
 	(0 N + Sg)
-;
+	;
+
+REMOVE:SomCS Pr IF (0 %som%-CS)(*1 V);
 
 
 
