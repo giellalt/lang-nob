@@ -9221,6 +9221,15 @@ SELECT (Pr) IF
 	(NOT -1 Pr OR det)
 ;
 
+# 2492b
+SELECT (Pr) IF
+	(NOT 0 %for% OR CS)
+	(NOT 0 CLB OR Pron)
+	(NOT 0 A OR fv)
+	(1 Det OR Dem)(2 N)
+	(NOT -1 Pr OR det)
+;
+
 
 # 2493
 SELECT (Pr) IF
