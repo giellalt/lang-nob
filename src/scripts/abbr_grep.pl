@@ -1,5 +1,13 @@
 #!/usr/bin/perl
 use strict;
+use utf8;
+use feature 'unicode_strings';
+BEGIN {
+       $| = 1;
+       binmode(STDIN, ':encoding(UTF-8)');
+       binmode(STDOUT, ':encoding(UTF-8)');
+}
+use open qw( :encoding(UTF-8) :std );
 
 # abbr_grep.pl
 # Script for finding abbreviations that are followed
