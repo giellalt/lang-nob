@@ -336,7 +336,7 @@ LIST Sg = Sg ;
 LIST Sg3 = Sg3 ;
 LIST MF = MF ;
 LIST Sg-Fem-N/tall-N/maalN/tidsN = "år" "uke" "tusen" "trillion" "tonnkilometer" "time" "tiendelssekund" "tidelssekund" "snes" "sjømil" "sekundmeter" "sekund" "prosent" "nanosekund" "nanometer" "måned" "mrd." "minutt" "millisekund" "million" "millimeter" "milliliter" "milligram" "milliard" "mill." "mil" "mikrometer" "meter" "liter" "kvartmil" "kvartliter" "kvadrillion" "kvadratmillimeter" "kvadratmeter" "kvadratkilometer" "kvadratdesimeter" "kvadratcentimeter" "kubikkmillimeter" "kubikkmeter" "kubikkdesimeter" "kubikkcentimeter" "kilometer" "kilogram" "kilo" "hundredelssekund" "hundre" "hektoliter" "hektogram" "halvår" "halvmillion" "halvmil" "halvmeter" "halvliter" "halvkilo" "gram" "døgn" "dusin" "desimeter" "desiliter" "desigram" "dekaliter" "dag" "centimeter" "centiliter" "centigram" "billion" "billiard" (N Sg Fem) ("gang" Pl) ;
-
+LIST CmpS = CmpS ;
 
 LIST Sg-N = (N Sg) ;
 LIST f-subj = ("det" Pron) ;
@@ -372,6 +372,7 @@ LIST hj-V = "være" "ville" "skulle" "måtte" "kunne" "ha" "få" "burde" "bli" ;
 LIST hj-V-iv = ("bli" Inf) ("bli" PrfPtc) ("ha" Inf) ("ha" PrfPtc) ("være" Inf) ("være" PrfPtc) ("få" Inf) ("få" PrfPtc) ("skulle" Inf) ("skulle" PrfPtc) ("kunne" Inf) ("kunne" PrfPtc) ("ville" Inf) ("ville" PrfPtc) ("måtte" Inf) ("måtte" PrfPtc) ("burde" Inf) ("burde" PrfPtc) ;
 LIST hoeflig = hoeflig ;
 LIST høflig = "Deres" "Dem" "De" ;
+LIST Der/AAdv = Der/AAdv ;
 
 SETS
 LIST ikke-A = "siden" Adv V Pr Pron CS IM N Interj det (CLB CC) <anf> <ellipse> (CC <adv>) ;
@@ -699,8 +700,12 @@ SECTION
 # Giellatekno early rules
 REMOVE:Nynorsk (Nynorsk) ;
 
+REMOVE:Lexicalised CmpS ;
+#REMOVE:LexAdv Der/AAdv IF (0 Adv LINK NOT 0 A);
+
 REMOVE:NoX X + V IF (0 V) ; # Vi skriver, fjern X.
 REMOVE:gang ("gange") IF (0 ("gang"))(-1 Qnt) ; # fire ganger
+REMOVE:per ("per") IF (0 ("Per"));
 
 SELECT:ext A + Pos + Neu IF (*-1 ("være") LINK -1 ("det")) ; # Det er vanskelig.
 
@@ -709,6 +714,14 @@ REMOVE ("én") IF (0 ("en")); # en gang
 SELECT:QP Pl IF	(*-1 Qnt + Pl BARRIER ikke-AdvA-komma OR PUNCT) ;
 
 SELECT:FinTing Msc IF (-1 ("fin"))(0 ("ting")); # fine ting
+
+SELECT N IF (0 spraak)(NOT 1 N);
+
+SELECT N IF (-1 ("holde"))(1 ("stand"));
+
+# NP
+
+
 
 # V
 
@@ -7110,6 +7123,7 @@ SELECT (A MF Sg Indef) IF
 	(1 Indef-Sg-Msc-N)
 	(NOT 1 Indef-Sg-Neu-N OR Pl-N)
 	(NOT -1 A OR Clt)
+	(Not 0 Prt)
 ;
 
 
@@ -7317,6 +7331,7 @@ SELECT (A) IF
 SELECT:DollarDef $$DEF IF
 	(0 A)
 	(1C N + $$DEF)
+	(NOT 0 Prt)
 ;
 
 SELECT:DollarNum $$NUM IF
@@ -7327,6 +7342,7 @@ SELECT:DollarNum $$NUM IF
 SELECT:DollarGen $$GEN IF
 	(0 A)
 	(1C N + $$GEN)
+	(NOT 0 Prt)
 ;
 
 
@@ -7334,23 +7350,27 @@ SELECT:DollarDefA $$DEF IF
 	(0 A)
 	(1 CC)
 	(2C A + $$DEF)
+	(NOT 0 Prt)
 ;
 
 SELECT:DollarNumA $$NUM IF
 	(0 A)
 	(1 CC)
 	(2C A + $$NUM)
+	(NOT 0 Prt)
 ;
 
 SELECT:DollarGenA $$GEN IF
 	(0 A)
 	(1 CC)
 	(2C A + $$GEN)
+	(NOT 0 Prt)
 ;
 
 SELECT:DollarNumD $$NUM IF
 	(0 Dem)
 	(1C A OR N + $$NUM)
+	(NOT 0 Prt)
 ;	
 
 REMOVE:DemMF Pron + Prs + Sg3 IF
@@ -13046,6 +13066,7 @@ REMOVE (Adv) IF
 # 2098
 REMOVE (Adv) IF
 	(NOT 0 %bare% OR %siden%)
+	(0 Pr)
 	(-1 iv)
 	(*-2 ikke-Adv LINK 0 Prs/Prt)
 	(*1 ikke-Adv BARRIER setn-gr)
@@ -18058,6 +18079,7 @@ REMOVE CS IF (0 Pr)(*1 EOS OR CLB BARRIER Ind);
 REMOVE:SomPr Pl IF (-1 %som%-Pr)(0 N + Sg);
 REMOVE:SomCS Pr IF (0 %som%-CS)(*1 V);
 
+REMOVE:LexAdv A + Der/AAdv IF (0 Adv);
 
 
 

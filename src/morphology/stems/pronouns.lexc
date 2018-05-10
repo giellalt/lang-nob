@@ -15,6 +15,7 @@ LEXICON Personal
   du+Pron+Pers+Sg2+Acc:deg # ;
  han+Pron+Pers+Sg3+Nom:han # ;
  hun+Pron+Pers+Sg3+Nom:hun # ;
+ hun+Pron+Pers+Sg3+Nom+Use/NG:ho # ;
  han+Pron+Pers+Sg3+Acc:han # ;
  han+Pron+Pers+Sg3+Acc:ham # ;
  hun+Pron+Pers+Sg3+Acc:henne # ;
@@ -88,8 +89,10 @@ dette+Det+Dem+Sg+Neu:dette K ;
 disse+Det+Dem+Pl:disse K ;
 ei+Det+Dem+Sg+Fem:ei # ;
 en+Det+Dem+Sg+MF:en # ;
+en+Pron+Indef+Sg+MF:en # ;
 eneste+Det+Dem:eneste # ;
 et+Det+Dem+Sg+Neu:et # ;
+et+Pron+Indef+Sg+Neu:et # ;
 ett+Det+Dem+Sg+Neu:ett # ;
 flere+Det+Dem+Pl:flere # ;
 flere+Pron+Indef+Pl:flere # ;
