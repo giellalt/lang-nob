@@ -108,11 +108,13 @@ LEXICON positive-def
 
 LEXICON a-neuter ! fint
  +Pos+Neu+Sg+Indef:%>Q3t # ;
+ +Der/AAdv+Adv:%>Q3t # ;
 
 LEXICON a-no-neuter ! vennlig
-                    R ;
+ +Der/AAdv+Adv: # ;
  +Pos+Neu+Sg+Indef: # ;
-
+                    R ;
+ 
 LEXICON grade-e
                  +Comp:%>ere  # ;
          +Superl+Indef:%>est  # ;

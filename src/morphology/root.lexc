@@ -55,6 +55,8 @@ Multichar_Symbols !!= * @CODE@
 
 +Use/Circ !!= @CODE@ circular string
 
++Der/AAdv !!= @CODE@ Adjectives are also adverbs
+
 !! !!Flag diacritics
 !! We have manually optimised the structure of our lexicon using following
 !! flag diacritics to restrict morhpological combinatorics - only allow compounds

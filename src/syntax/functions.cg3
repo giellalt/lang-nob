@@ -372,6 +372,7 @@ LIST hj-V = "være" "ville" "skulle" "måtte" "kunne" "ha" "få" "burde" "bli" ;
 LIST hj-V-iv = ("bli" Inf) ("bli" PrfPtc) ("ha" Inf) ("ha" PrfPtc) ("være" Inf) ("være" PrfPtc) ("få" Inf) ("få" PrfPtc) ("skulle" Inf) ("skulle" PrfPtc) ("kunne" Inf) ("kunne" PrfPtc) ("ville" Inf) ("ville" PrfPtc) ("måtte" Inf) ("måtte" PrfPtc) ("burde" Inf) ("burde" PrfPtc) ;
 LIST hoeflig = hoeflig ;
 LIST høflig = "Deres" "Dem" "De" ;
+LIST Der/AAdv = Der/AAdv ;
 
 SETS
 LIST ikke-A = "siden" Adv V Pr Pron CS IM N Interj det (CLB CC) <anf> <ellipse> (CC <adv>) ;
@@ -559,6 +560,7 @@ LIST Pron-nom/%seg% = (Pron Pers Nom) ;
 LIST Pron-pers = (Pron Pers) ;
 LIST Pron-r = "seg" "hverandre" "hinannen" ;
 LIST Prop = Prop ;
+LIST CmpS = CmpS ;
 
 SETS
 
@@ -891,6 +893,7 @@ SET NOT-NPMODCC   = WORD - PRE-N - COMMA - @CNP ;
 
 SET S-BOUNDARY = CS | Interr | (";") | (":") | BOS | EOS ;
 SET S-BOUNDARY2 = CS | Interr | (";") | (":") | BOS | EOS | (@CVP) ;
+SET S-BOUNDARY3 = CS | Interr | (";") | (":") | BOS | EOS | (@CVP) | CLB ;
 SET SV-BOUNDARY = S-BOUNDARY OR Inf - ("være" Ind) OR ("ha" Ind) OR FMAINV ;
 
 
@@ -916,8 +919,6 @@ SET NON-APP = ALLSYNTAG - (@APP);
 MAP:interj (@INTERJ) TARGET Interj ;
 
 
-
-MAP:p< (@P<) N (*-1 Pr BARRIER NOT-NPMOD);
 
 
 
@@ -971,6 +972,9 @@ SET NON-APP = ALLSYNTAG - (@APP);
          SECTION         #
 
 
+
+MAP:IM (@IM) TARGET IM ;
+
 #!! !!Numeral outside the sentence
 
 
@@ -980,10 +984,16 @@ MAP:NumHNOUN (@HNOUN) TARGET (ord) (-1 BOS) ;
 
 
 
+# Adverbials
+
+MAP (@<ADVL) TARGET Adv (*-1 Ind);
+MAP (@ADVL>) TARGET Adv (*-1 S-BOUNDARY3 BARRIER Ind)(*1 Ind);
+
+
+
+
 
 MAP:-FMAINV (@-FMAINV) TARGET PrfPtc ;
-
-MAP:IM (@IM) TARGET IM ;
 
 
 
@@ -1049,19 +1059,38 @@ MAP:>adv (@>N) TARGET GRADE-ADV (1 CC LINK 1 GRADE-ADV LINK 1 N) ;
 
 # NPs
 
-MAP:AN (@A>) TARGET A IF (-1 Det OR Pr OR V)(1 N);
+MAP:PROP-N (@>N) TARGET Prop IF (1 ("kommune") OR ("skole") OR ("avis"));
+
+MAP:PN (@>N) TARGET N + Clt IF (*1 N BARRIER NOT-A);
+MAP:AN (@A>) TARGET A IF (1 N);
+#MAP:AN (@A>) TARGET A IF (-1 Det OR Pr OR V)(1 N);
 MAP:DN (@>N) TARGET Det IF (*1 N BARRIER NOT-A);
 
-# Adverbials
 
-MAP (@<ADVL) TARGET Adv (*-1 Ind);
+# APs
+
+MAP:PA (@>N) TARGET N + Clt IF (1 A)(2 EOS);
+MAP:AA (@A>) TARGET A IF (1 A)(2 EOS);
+MAP:DA (@>N) TARGET Det IF (1 A)(2 EOS);
+
+
+
+# PPs
+
+
+
+MAP:p< (@P<) N (*-1 Pr BARRIER NOT-NPMOD);
+
+
 
 # Subjects
 
+MAP (@SUBJ>) TARGET Pron + Nom (1 Ind);
+MAP (@<SUBJ) TARGET Pron + Nom (*-1 Ind BARRIER NOT-ADV);
 MAP (@SUBJ>) TARGET N (*-1 BOS BARRIER WORD)(1 (":")) ;
-MAP (SUBJ>) TARGET N IF (*-1 BOS BARRIER NOT-NPMOD)(1 Ind);
-MAP (SUBJ>) TARGET N IF (*-1 Adv LINK -1 BOS BARRIER NOT-NPMOD)(1 Ind);
-
+MAP (@SUBJ>) TARGET N IF (*-1 BOS BARRIER NOT-NPMOD)(1 Ind);
+MAP (@SUBJ>) TARGET N IF (*-1 Adv LINK *-1 BOS BARRIER NOT-NPMOD)(1 Ind);
+MAP (@<SUBJ) TARGET N IF (*-1 Ind BARRIER NOT-NPMOD LINK *-1 BOS OR S-BOUNDARY BARRIER N);
 
 	# Subject predicatives - SPRED
 MAP (@<SPRED) TARGET N IF (*-1 ("være") BARRIER V LINK *-1 (@SUBJ>));
@@ -1073,6 +1102,12 @@ MAP (@<OBJ) TARGET Acc IF (*-1 V);
 MAP (@OBJ>) TARGET Acc IF (*1 V);
 
 MAP (@<OBJ) TARGET N IF (*-1 Ind LINK *-1 (@SUBJ>));
+
+MAP (@<OBJ) TARGET N IF (*-1 Ind LINK *-1 (@SUBJ>));
+MAP (@<OBJ) TARGET A IF (*-1 Ind LINK *-1 (@SUBJ>))(1 EOS);
+
+MAP (@<OBJ) TARGET N IF (*-1 (@<SUBJ));
+MAP (@<OBJ) TARGET A IF (*-1 (@<SUBJ))(1 EOS);
 
 
 
@@ -1114,6 +1149,12 @@ MAP:comma<advlEOS (@<ADVL) TARGET Adv (*-1 COMMA BARRIER V LINK *-1 FMAINV BARRI
 	#$ Guovdageainnu guovllut gal leat vel mu mielas sestojuvvon oalle bures dássážii, movt šat guhká.
 	#$ De eai leat šat dušše tálat, muhto bustávat maid.
 
+
+
+# Coordination
+
+MAP:CNP (@CNP) TARGET CC IF (-1 N)(*2 N BARRIER NOT-NPMOD);
+MAP:CVP (@CVP) TARGET CC IF (*-1 Ind)(*1 Ind);
 
 
 #!! !!HNOUN MAPPING
