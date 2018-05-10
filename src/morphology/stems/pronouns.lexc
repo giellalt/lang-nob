@@ -1,17 +1,12 @@
 
-
 LEXICON Pronoun
 
 Personal ;
 Reflexive ;
-Indefinite ;
-Interrogative ;
 Reciprocal ;
-
-LEXICON Determiner
-Demonstrative ;
+Interrogative ;
 Possessive ;
-
+Other_Pronouns ;
 
 LEXICON Personal 
  jeg+Pron+Pers+Sg1+Nom:jeg # ;
@@ -34,96 +29,15 @@ dere+Pron+Pers+Pl2+Acc:dere # ;
   de+Pron+Pers+Pl3+Nom:de # ;
   de+Pron+Pers+Pl3+Acc:dem # ;
 
-
-noe+Pron+Indef:noe # ;
-begge+Pron+Qnt+Pl:begge # ;
-det+Pron+Dem+Sg+Neu:det # ;
-denne+Pron+Dem+Sg+MF:denne K ;
-dette+Pron+Dem+Sg+Neu:dette K ;
-disse+Pron+Dem+Pl:disse K ;
-all+Pron+Dem+Sg+Neu:alt # ;
-all+Pron+Dem+Pl:alle K ;
-slik+Pron+Dem+Sg+Neu:slikt # ;
-slik+Pron+Dem+Pl:slike # ;
-samme+Pron+Dem:samme # ;
-flere+Pron+Dem+Pl:flere # ;
-mange+Pron+Dem+Pl:mange # ;
-annen+Pron+Dem+Sg+Neu:annet # ;
-annen+Pron+Dem+Pl:andre # ;
-selv+Pron+Intens:selv # ;
-selv+Pron+Intens:selve # ;
-sjøl+Pron+Intens:sjøl # ;
-eneste+Pron+Dem:eneste # ;
-sånn+Pron+Dem+Sg+Neu:sånt # ;
-sånn+Pron+Dem+Sg+Pl:sånne # ;
-
-
 LEXICON Reflexive 
 seg+Pron+Refl+Acc:seg # ;
 
 LEXICON Reciprocal
 hverandre+Pron+Recipr+Acc:hverandre # ;
 
-LEXICON Indefinite
-noen+Pron+Indef:noen # ;
-ingen+Pron+Indef:ingen # ;
-man+Pron+Indef:man # ;
-
 LEXICON Interrogative 
 hva+Pron+Interr:hva # ;
 hvem+Pron+Interr:hvem # ;
-
-LEXICON Demonstrative 
-noen+Det+Qnt+Pl:noen # ;
-noe+Det+Qnt+Sg+Neu:noe # ;
-begge+Det+Qnt+Pl:begge # ;
-det+Det+Dem+Sg+Neu:det # ;
-den+Det+Dem+Sg+MF:den # ;
-den+Det+Dem+Pl:de # ;
-et+Det+Dem+Sg+Neu:et # ;
-ett+Det+Dem+Sg+Neu:ett # ;
-en+Det+Dem+Sg+MF:en # ;
-én+Det+Dem+Sg+MF:én # ;
-ei+Det+Dem+Sg+Fem:ei # ;
-hver+Det+Dem+Sg+MF:hver # ;
-annenhver+Det+Dem+Sg+MF:annenhver # ;
-!hver+Det+Dem+Sg+Fem:hver # ;
-hver+Det+Dem+Sg+Neu:hvert # ;
-annenhver+Det+Dem+Sg+Neu:annenhvert # ;
-hvilken+Det+Dem+Sg+MF:hvilken # ;
-!hvilken+Det+Dem+Sg+Fem:hvilken # ;
-hvilken+Det+Dem+Sg+Neu:hvilket # ;
-hvilken+Det+Dem+Pl:hvilke # ;
-hvis+Det+Poss+Qst:hvis # ;
-denne+Det+Dem+Sg+MF:denne K ;
-!denne+Det+Dem+Sg+Fem:denne K ;
-dette+Det+Dem+Sg+Neu:dette K ;
-disse+Det+Dem+Pl:disse K ;
-all+Det+Dem+Sg+Msc:all # ;
-all+Det+Dem+Sg+Fem:all # ;
-all+Det+Dem+Sg+Neu:alt # ;
-all+Det+Dem+Pl:alle K ;
-slik+Det+Dem+Sg+Msc:slik # ;
-slik+Det+Dem+Sg+Fem:slik # ;
-slik+Det+Dem+Sg+Neu:slikt # ;
-slik+Det+Dem+Pl:slike # ;
-samme+Det+Dem:samme # ;
-flere+Det+Dem+Pl:flere # ;
-mange+Det+Dem+Pl:mange # ;
-annen+Det+Dem+Sg+Msc:annen # ;
-annen+Det+Dem+Sg+Fem:anna # ;
-annen+Det+Dem+Sg+Fem:annen # ;
-annen+Det+Dem+Sg+Neu:annet # ;
-annen+Det+Dem+Pl:andre # ;
-selv+Det+Intens:selv # ;
-selv+Det+Intens:selve # ;
-sjøl+Det+Intens:sjøl # ;
-eneste+Det+Dem:eneste # ;
-sånn+Det+Dem+Sg+Msc:sånn # ;
-sånn+Det+Dem+Sg+Fem:sånn # ;
-sånn+Det+Dem+Sg+Neu:sånt # ;
-sånn+Det+Dem+Sg+Pl:sånne # ;
-
 
 LEXICON Possessive 
 din+Det+Poss+Sg+Fem:di # ;
@@ -142,9 +56,69 @@ vår+Det+Poss+Sg+Fem:vår # ;
 vår+Det+Poss+Sg+Msc:vår # ;
 vår+Det+Poss+Pl:våre # ;
 vår+Det+Poss+Sg+Neu:vårt # ;
-
 hans+Det+Poss+Msc:hans # ;
 hennes+Det+Poss+Fem:hennes # ;
 deres+Det+Poss+Pl:deres # ;
 
+LEXICON Other_Pronouns
 
+all+Det+Dem+Pl:alle K ;
+all+Det+Dem+Sg+Fem:all # ;
+all+Det+Dem+Sg+Msc:all # ;
+all+Det+Dem+Sg+Neu:alt # ;
+annen+Det+Dem+Pl:andre # ;
+annen+Det+Dem+Sg+Fem:anna # ;
+annen+Det+Dem+Sg+Fem:annen # ;
+annen+Det+Dem+Sg+Msc:annen # ;
+annen+Det+Dem+Sg+Neu:annet # ;
+annen+Pron+Dem+Pl:andre # ;
+annen+Pron+Dem+Sg+Fem:anna # ;
+annen+Pron+Dem+Sg+Fem:annen # ;
+annen+Pron+Dem+Sg+Msc:annen # ;
+annen+Pron+Dem+Sg+Neu:annet # ;
+annenhver+Det+Dem+Sg+MF:annenhver # ;
+annenhver+Det+Dem+Sg+Neu:annenhvert # ;
+begge+Det+Qnt+Pl:begge # ;
+begge+Pron+Qnt+Pl:begge # ;
+den+Det+Dem+Pl:de # ;
+den+Det+Dem+Sg+MF:den # ;
+denne+Det+Dem+Sg+MF:denne K ;
+det+Det+Dem+Sg+Neu:det # ;
+dette+Det+Dem+Sg+Neu:dette K ;
+disse+Det+Dem+Pl:disse K ;
+ei+Det+Dem+Sg+Fem:ei # ;
+en+Det+Dem+Sg+MF:en # ;
+eneste+Det+Dem:eneste # ;
+et+Det+Dem+Sg+Neu:et # ;
+ett+Det+Dem+Sg+Neu:ett # ;
+flere+Det+Dem+Pl:flere # ;
+flere+Pron+Indef+Pl:flere # ;
+hver+Det+Dem+Sg+MF:hver # ;
+hver+Det+Dem+Sg+Neu:hvert # ;
+hvilken+Det+Dem+Pl:hvilke # ;
+hvilken+Det+Dem+Sg+MF:hvilken # ;
+hvilken+Det+Dem+Sg+Neu:hvilket # ;
+hvis+Det+Poss+Qst:hvis # ;
+ingen+Pron+Indef:ingen # ;
+man+Pron+Indef:man # ;
+mange+Det+Dem+Pl:mange # ;
+noe+Det+Qnt+Sg+Neu:noe # ;
+noe+Pron+Indef:noe # ;
+noen+Det+Qnt+Pl:noen # ;
+noen+Pron+Indef:noen # ;
+samme+Det+Dem:samme # ;
+selv+Det+Intens:selv # ;
+selv+Det+Intens:selve # ;
+selv+Pron+Intens:selv # ;
+selv+Pron+Intens:selve # ;
+sjøl+Det+Intens:sjøl # ;
+sjøl+Pron+Intens:sjøl # ;
+slik+Det+Dem+Pl:slike # ;
+slik+Det+Dem+Sg+Fem:slik # ;
+slik+Det+Dem+Sg+Msc:slik # ;
+slik+Det+Dem+Sg+Neu:slikt # ;
+sånn+Det+Dem+Sg+Fem:sånn # ;
+sånn+Det+Dem+Sg+Msc:sånn # ;
+sånn+Det+Dem+Sg+Neu:sånt # ;
+sånn+Det+Dem+Sg+Pl:sånne # ;
+én+Det+Dem+Sg+MF:én # ;

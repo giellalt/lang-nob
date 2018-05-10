@@ -144,6 +144,7 @@ bom m1b ;
 bor n1 ; 
 bro m1 ; 
 bru f1 ; 
+tru f1 ; 
 bry n1 ; 
 bud n1 ; 
 bue fx ; 

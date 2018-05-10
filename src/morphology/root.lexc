@@ -99,7 +99,6 @@ LEXICON Root !!= * @CODE@
  Preposition ;	  !!= * @CODE@
  Interjection ;	  !!= * @CODE@
  Pronoun ;		  !!= * @CODE@
- Determiner ;	  !!= * @CODE@
  Numeral ;		  !!= * @CODE@
  Punctuation ;	  !!= * @CODE@
  Abbreviation ;	  !!= * @CODE@
