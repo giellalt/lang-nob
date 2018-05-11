@@ -227,7 +227,7 @@
 "<1953>"
 	"1953" Det Qnt Pl @X
 "<og>"
-	"og" CC @X
+	"og" CC @CVP
 "<vokste>"
 	"vokse" Ex/V PrfPtc A Pos Pl Def @-FMAINV
 "<opp>"
@@ -274,7 +274,7 @@
 "<arkeologi>"
 	"arkeologi" N Msc Sg Indef @<OBJ
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<samisk>"
 	"samisk" N Msc Sg Indef @<OBJ
 "<ved>"
@@ -396,7 +396,7 @@
 "<redigert>"
 	"redigere" V PrfPtc @-FMAINV
 "<og>"
-	"og" CC @X
+	"og" CC @CVP
 "<skrevet>"
 	"skrive" V PrfPtc @-FMAINV
 "<ei>"
@@ -406,7 +406,7 @@
 "<rapporter>"
 	"rapport" N Msc Pl Indef @X
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<artikler>"
 	"artikkel" N Msc Pl Indef @X
 "<i>"
@@ -418,7 +418,7 @@
 "<tidsskrifter>"
 	"tid+N#" CmpS skrift N Fem Pl Indef @X
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<bøker>"
 	"bok" N Fem Pl Indef @X
 	"bøk" N Msc Pl Indef @X
@@ -431,7 +431,7 @@
 "<landskap>"
 	"landskap" N Neu Sg Indef @X
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<landskapshistorie>"
 	"landskapshistorie" N Fem Sg Indef @X
 "<i>"
@@ -545,7 +545,7 @@
 "<Per>"
 	"Per" N Prop Sem/Mal @X
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<Gunhild>"
 	"Gunhild" N Prop Fem @X
 "<Pavelsen>"
@@ -671,7 +671,7 @@
 "<fedrift>"
 	"fedrift" N Fem Sg Indef @X
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<båtbygging>"
 	"båt+N#" Cmp bygging N Fem Sg Indef @X
 "<som>"
@@ -800,7 +800,7 @@
 "<menighet>"
 	"menighet" N Msc Sg Indef @X
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<etnopolitikk>"
 	"etnopolitikk" N Msc Sg Indef @X
 "<.>"
@@ -833,7 +833,7 @@
 "<språk>"
 	"språk" N Neu Sg Indef @X
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<kultur>"
 	"kultur" N Msc Sg Indef @X
 "<.>"
@@ -951,7 +951,7 @@
 "<Finnmark>"
 	"Finnmark" N Prop Sem/Plc @P<
 "<og>"
-	"og" CC @CNP
+	"og" CC @CVP
 "<om>"
 	"om" Pr @<ADVL
 "<lokal>"
@@ -1008,7 +1008,7 @@
 "<tid>"
 	"tid" N Fem Sg Indef @P<
 "<og>"
-	"og" CC @CVP
+	"og" CC @CNP
 "<rom>"
 	"rom" N Neu Sg Indef @<OBJ
 "<,>"
@@ -1069,7 +1069,7 @@
 "<ressurser>"
 	"ressurs" N Msc Pl Indef @<OBJ
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<befolkning>"
 	"befolkning" N Fem Sg Indef @<OBJ
 "<.>"
@@ -1086,7 +1086,7 @@
 "<regimer>"
 	"regime" N Neu Pl Indef @X
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<regelverk>"
 	"regelverk" N Neu Pl Indef @X
 	"regelverk" N Neu Sg Indef @X
@@ -1223,7 +1223,7 @@
 "<til>"
 	"til" Pr @ADVL>
 "<omlag>"
-	"omlag" ? @X
+	"omlag" Adv @<ADVL
 "<1870>"
 	"1870" Det Qnt Pl @>N
 "<blei>"
@@ -1234,7 +1234,6 @@
 	"gi" V PrfPtc @-FMAINV
 "<ut>"
 	"ut" Adv @<ADVL
-	"ut" Pr @<ADVL
 "<med>"
 	"med" Pr @<ADVL
 "<tekst>"
@@ -1244,7 +1243,7 @@
 "<norsk>"
 	"norsk" N Msc Sg Indef @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<samisk>"
 	"samisk" N Msc Sg Indef @X
 "<.>"
@@ -1366,7 +1365,7 @@
 "<til>"
 	"til" Pr @<ADVL
 "<omlag>"
-	"omlag" ? @X
+	"omlag" Adv @<ADVL
 "<1870>"
 	"1870" Det Qnt Pl @>N
 "<blei>"
@@ -1387,7 +1386,7 @@
 "<norsk>"
 	"norsk" N Msc Sg Indef @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<samisk>"
 	"samisk" N Msc Sg Indef @X
 "<.>"
@@ -1439,7 +1438,7 @@
 "<merkevesen>"
 	"merkevesen" N Neu Sg Indef @X
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<fyrvesen>"
 	"fyr+N#" Cmp vesen N Neu Sg Indef @X
 "<sørga>"
@@ -1477,7 +1476,7 @@
 "<telegraf>"
 	"telegraf" N Msc Sg Indef @X
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<rutebåter>"
 	"rutebåt" N Msc Pl Indef @X
 "<.>"
@@ -1631,7 +1630,7 @@
 "<lærere>"
 	"lærer" N Msc Pl Indef @<OBJ
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<Finnefondet>"
 	"Finnefondet" N Prop Sem/Org @<OBJ
 "<som>"
@@ -1641,7 +1640,7 @@
 "<internater>"
 	"internat" N Neu Pl Indef @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<lønnstillegg>"
 	"lønnstillegg" N Neu Pl Indef @<OBJ
 "<til>"
@@ -1711,7 +1710,7 @@
 "<sesongarbeid>"
 	"sesongarbeid" N Neu Sg Indef @P<
 "<og>"
-	"og" CC @CVP
+	"og" CC @CNP
 "<fiske>"
 	"fiske" N Neu Sg Indef @<SPRED
 "<,>"
@@ -1729,7 +1728,7 @@
 "<hus>"
 	"hus" N Neu Sg Indef @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<fjøs>"
 	"fjøs" N Neu Pl Indef @<OBJ
 	"fjøs" N Neu Sg Indef @<OBJ
@@ -1853,7 +1852,7 @@
 "<rodde>"
 	"ro" V Ind Prt @+FMAINV
 "<omlag>"
-	"omlag" ? @X
+	"omlag" Adv @<ADVL
 "<1000>"
 	"1000" Det Qnt Pl @>N
 "<fiskere>"
@@ -1897,7 +1896,7 @@
 "<tatt>"
 	"ta" V PrfPtc @-FMAINV
 "<omlag>"
-	"omlag" ? @X
+	"omlag" Adv @<ADVL
 "<1910>"
 	"1910" Det Qnt Pl @X
 "<.>"
@@ -1970,7 +1969,7 @@
 "<kommune>"
 	"kommune" N Msc Sg Indef @X
 "<og>"
-	"og" CC @CVP
+	"og" CC @CNP
 "<prestegjeld>"
 	"prestegjeld" N Neu Pl Indef @X
 	"prestegjeld" N Neu Sg Indef @X
@@ -2039,7 +2038,7 @@
 "<elva>"
 	"elv" N Fem Sg Def @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<dalen>"
 	"dal" N Msc Sg Def @X
 "<.>"
@@ -2061,7 +2060,7 @@
 "<fiske>"
 	"fiske" N Neu Sg Indef @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<båttrafikk>"
 	"båt+N#" Cmp trafikk N Msc Sg Indef @X
 "<var>"
@@ -2094,7 +2093,7 @@
 "<kysten>"
 	"kyst" N Msc Sg Def @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<innlandet>"
 	"innland" N Neu Sg Def @<SPRED
 "<.>"
@@ -2121,7 +2120,7 @@
 "<Tana>"
 	"Tana" N Prop Sem/Plc @P<
 "<og>"
-	"og" CC @CVP
+	"og" CC @CNP
 "<Utsjok>"
 	"Utsjok" N Prop Sem/Plc @<OBJ
 "<som>"
@@ -2616,7 +2615,7 @@
 "<post>"
 	"post" N Msc Sg Indef @<SPRED
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<telegraf>"
 	"telegraf" N Msc Sg Indef @<SPRED
 "<.>"
@@ -2686,7 +2685,7 @@
 "<Ifjordfjellet>"
 	"Ifjordfjellet" N Prop Sem/Plc @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<bureisere>"
 	"bureiser" N Msc Pl Indef @<OBJ
 "<i>"
@@ -2743,11 +2742,11 @@
 "<hadde>"
 	"ha" V Ind Prt @+FMAINV
 "<omlag>"
-	"omlag" ? @X
+	"omlag" Adv @<ADVL
 "<100>"
 	"100" Det Qnt Pl @>N
 "<deltakere>"
-	"deltaker" N Msc Pl Indef @<SUBJ
+	"deltaker" N Msc Pl Indef @<OBJ
 "<.>"
 	"." CLB
 
@@ -3640,7 +3639,7 @@
 "<sognet>"
 	"sogn" N Neu Sg Def @X
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<skolestyret>"
 	"skolestyre" N Neu Sg Def @X
 "<på>"
@@ -3703,7 +3702,7 @@
 "<fattigdom>"
 	"fattigdom" N Msc Sg Indef @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<avstander>"
 	"avstand" N Msc Pl Indef @X
 "<.>"
@@ -3758,7 +3757,7 @@
 "<presten>"
 	"prest" N Msc Sg Def @<OBJ
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<autoritetene>"
 	"autoritet" N Msc Pl Def @<OBJ
 "<i>"
@@ -3970,7 +3969,7 @@
 "<land>"
 	"land" N Neu Sg Indef @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<vann>"
 	"vann" N Neu Pl Indef @X
 	"vann" N Neu Sg Indef @X
@@ -4241,7 +4240,7 @@
 "<skole>"
 	"skole" N Msc Sg Indef @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<samfunn>"
 	"samfunn" N Neu Pl Indef @<OBJ
 	"samfunn" N Neu Sg Indef @<OBJ
@@ -4338,7 +4337,7 @@
 "<fiske>"
 	"fiske" N Neu Sg Indef @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<gårdsbruk>"
 	"gårdsbruk" N Neu Pl Indef @<SPRED
 	"gårdsbruk" N Neu Sg Indef @<SPRED
@@ -4467,7 +4466,7 @@
 "<Nils>"
 	"Nils" N Prop Sem/Mal @HNOUN
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<Anders>"
 	"Anders" N Prop Sem/Mal @HNOUN
 "<.>"
@@ -4827,10 +4826,7 @@
 "<hvor>"
 	"hvor" Adv @<ADVL
 "<vanskelig>"
-	"vanskelig" A Pos Neu Sg Indef @X
-	"vanskelig" A Pos Fem Sg Indef @X
-	"vanskelig" A Pos MF Sg Indef @X
-	"vanskelig" A Pos Msc Sg Indef @X
+	"vanskelig" A Der/AAdv Adv @<ADVL
 "<det>"
 	"det" Pron Pers Sg3 @SUBJ>
 "<kunne>"
@@ -5021,7 +5017,7 @@
 "<rutebåt>"
 	"rutebåt" N Msc Sg Indef @<OBJ
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<handel>"
 	"handel" N Msc Sg Indef @<OBJ
 "<.>"
@@ -5044,7 +5040,7 @@
 "<Repvåg>"
 	"Repvåg" N Prop Sem/Sur @P<
 "<og>"
-	"og" CC @CNP
+	"og" CC @CVP
 "<på>"
 	"på" Pr @<ADVL
 "<Grand>"
@@ -5057,7 +5053,7 @@
 "<Hammerfest>"
 	"Hammerfest" N Prop Sem/Plc @P<
 "<og>"
-	"og" CC @CNP
+	"og" CC @CVP
 "<vikarierte>"
 	"vikariere" V Ind Prt @+FMAINV
 "<flere>"
@@ -5146,7 +5142,7 @@
 "<trygdekassa>"
 	"trygdekasse" N Fem Sg Def @HNOUN
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<formann>"
 	"formann" N Msc Sg Indef @HNOUN
 "<i>"
@@ -5208,7 +5204,7 @@
 "<Hammerfest>"
 	"Hammerfest" N Prop Sem/Plc @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<Sørøysund>"
 	"Sørøysund" N Prop Sem/Plc @X
 "<brente>"
@@ -5657,7 +5653,7 @@
 "<skikker>"
 	"skikk" N Msc Pl Indef @<OBJ
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<seder>"
 	"sed" N Msc Pl Indef @<OBJ
 "<.>"
@@ -5943,7 +5939,7 @@
 "<øvrighet>"
 	"øvrighet" N Msc Sg Indef @<OBJ
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<kulturpersoner>"
 	"kulturperson" N Msc Pl Indef @<OBJ
 "<.>"
@@ -6112,7 +6108,7 @@
 "<skoler>"
 	"skole" N Msc Pl Indef @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<lærere>"
 	"lærer" N Msc Pl Indef @<OBJ
 "<i>"
@@ -6128,7 +6124,7 @@
 "<krig>"
 	"krig" N Msc Sg Indef @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<evakuering>"
 	"evakuering" N Fem Sg Indef @<OBJ
 "<.>"
@@ -6165,7 +6161,7 @@
 "<folk>"
 	"folk" N Neu Pl Indef @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<predikanter>"
 	"predikant" N Msc Pl Indef @X
 "<,>"
@@ -6179,7 +6175,7 @@
 "<fiske>"
 	"fiske" N Neu Sg Indef @X
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<fangst>"
 	"fangst" N Msc Sg Indef @X
 "<.>"
@@ -6196,7 +6192,7 @@
 "<språk>"
 	"språk" N Neu Sg Indef @<OBJ
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<grammatikk>"
 	"grammatikk" N Msc Sg Indef @<OBJ
 "<.>"
@@ -6229,7 +6225,7 @@
 "<ord>"
 	"ord" N Neu Pl Indef @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<stedsnavn>"
 	"stedsnavn" N Neu Pl Indef @<OBJ
 	"stedsnavn" N Neu Sg Indef @<OBJ
@@ -7101,7 +7097,7 @@
 	"tank" N Msc Pl Nynorsk Indef @<OBJ
 	"tanke" N Msc Pl Nynorsk Indef @<OBJ
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<krav>"
 	"krav" N Neu Pl Indef @<OBJ
 	"krav" N Neu Sg Indef @<OBJ
@@ -7315,7 +7311,7 @@
 "<Finnmark>"
 	"Finnmark" N Prop Sem/Plc @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<medlem>"
 	"medlem" N Neu Sg Indef @X
 "<i>"
@@ -7419,7 +7415,6 @@
 	"være" V Ind Prt @+FMAINV
 "<med>"
 	"med" Adv @<ADVL
-	"med" Pr @<ADVL
 "<på>"
 	"på" Pr @<ADVL
 "<stiftinga>"
@@ -8035,7 +8030,7 @@
 	"reis" N Msc Pl Def @X
 	"reise" N Fem Pl Def @X
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<bøkene>"
 	"bok" N Fem Pl Def @X
 	"bøk" N Msc Pl Def @X
@@ -8107,7 +8102,7 @@
 "<Alpelua>"
 	"alpelue" N Fem Sg Def @X
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<dokumentmappa>"
 	"dokument+N#" Cmp mappe N Fem Sg Def @X
 "<var>"
@@ -8261,7 +8256,6 @@
 	"teori" N Msc Pl Def @<OBJ
 "<ut>"
 	"ut" Adv @<ADVL
-	"ut" Pr @<ADVL
 "<i>"
 	"i" Pr @<ADVL
 "<livet>"
@@ -8421,7 +8415,7 @@
 "<Nesseby>"
 	"Nesseby" N Prop Sem/Plc @P<
 "<og>"
-	"og" CC @CNP
+	"og" CC @CVP
 "<på>"
 	"på" Pr @<ADVL
 "<internatet>"
@@ -8904,7 +8898,7 @@
 "<er>"
 	"være" V Ind Prs @+FMAINV
 "<verken>"
-	"verken" CC @X
+	"verken" CC @CVP
 "<prega>"
 	"prege" V PrfPtc Radical @-FMAINV
 "<av>"
@@ -9260,7 +9254,7 @@
 "<norsk>"
 	"norsk" N Msc Sg Indef @P<
 "<og>"
-	"og" CC @CNP
+	"og" CC @CVP
 "<snakka>"
 	"snakke" V Ind Prt Radical @+FMAINV
 "<samisk>"
@@ -10267,7 +10261,7 @@
 "<disiplin>"
 	"disiplin" N Msc Sg Indef @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<prestasjoner>"
 	"prestasjon" N Msc Pl Indef @<OBJ
 "<?>"
@@ -10418,7 +10412,7 @@
 "<besteforeldre>"
 	"besteforelder" N Msc Pl Indef @<OBJ
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<foreldre>"
 	"forelder" N Msc Pl Indef @<OBJ
 "<.>"
@@ -10587,7 +10581,7 @@
 "<ryper>"
 	"rype" N Fem Pl Indef @<OBJ
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<reinkjøtt>"
 	"reinkjøtt" N Neu Pl Indef @<OBJ
 	"reinkjøtt" N Neu Sg Indef @<OBJ
@@ -10980,7 +10974,7 @@
 "<pels>"
 	"pel" N Msc Sg Indef Clt @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<skinnlue>"
 	"skinnlue" N Fem Sg Indef @P<
 "<.>"
@@ -11046,7 +11040,7 @@
 "<generasjoner>"
 	"generasjon" N Msc Pl Indef @P<
 "<og>"
-	"og" CC @CNP
+	"og" CC @X
 "<besøkte>"
 	"besøke" V Ind Prt @+FMAINV
 "<ofte>"
@@ -11104,7 +11098,7 @@
 "<hendelser>"
 	"hendelse" N Msc Pl Indef @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<skikkelser>"
 	"skikkelse" N Msc Pl Indef @<OBJ
 "<.>"
@@ -11208,7 +11202,7 @@
 "<Indrefjorden>"
 	"indre+A#" Cmp fjord N Msc Sg Def @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<blei>"
 	"blei" N Fem Sg Indef @<OBJ
 "<stedt>"
@@ -12701,7 +12695,7 @@
 "<,>"
 	"," CLB
 "<og>"
-	"og" CC @X
+	"og" CC @CVP
 "<satt>"
 	"sette" V PrfPtc @-FMAINV
 "<i>"
@@ -12947,7 +12941,7 @@
 "<hilsen>"
 	"hilsen" N Msc Sg Indef @HNOUN
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<takk>"
 	"takk" N Neu Pl Indef @HNOUN
 	"takk" N Neu Sg Indef @HNOUN
@@ -13155,7 +13149,7 @@
 "<fiske>"
 	"fiske" N Neu Sg Indef @HNOUN
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<småbruk>"
 	"småbruk" N Neu Pl Indef @HNOUN
 	"småbruk" N Neu Sg Indef @HNOUN
@@ -13227,7 +13221,7 @@
 "<gjeter>"
 	"gjeter" N Msc Sg Indef @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<fisker>"
 	"fisk" N Msc Pl Indef @X
 	"fisker" N Msc Sg Indef @X
@@ -13518,7 +13512,7 @@
 "<skole>"
 	"skole" N Msc Sg Indef @X
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<innkvartering>"
 	"innkvartering" N Fem Sg Indef @X
 "<var>"
@@ -13719,7 +13713,7 @@
 	"språk" N Neu Pl Indef @<OBJ
 	"språk" N Neu Sg Indef @<OBJ
 "<og>"
-	"og" CC @CVP
+	"og" CC @CNP
 "<dialekter>"
 	"dialekt" N Fem Pl Indef @<OBJ
 "<i>"
@@ -13928,7 +13922,7 @@
 "<skolestyret>"
 	"skolestyre" N Neu Sg Def @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<forliksrådet>"
 	"forliksråd" N Neu Sg Def @<OBJ
 "<.>"
@@ -14074,7 +14068,7 @@
 "<norsk>"
 	"norsk" N Msc Sg Indef @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<historie>"
 	"historie" N Fem Sg Indef @<OBJ
 "<.>"
@@ -14165,11 +14159,11 @@
 "<var>"
 	"være" V Ind Prt @+FMAINV
 "<arbeidsomt>"
-	"arbeidsom" A Pos Neu Sg Indef @X
+	"arbeidsom" A Der/AAdv Adv @<ADVL
 "<,>"
 	"," CLB
 "<og>"
-	"og" CC @CVP
+	"og" CC @X
 "<han>"
 	"han" Pron Pers Sg3 Acc @<OBJ
 "<så>"
@@ -14178,7 +14172,6 @@
 	"seg" Pron Refl Acc @<OBJ
 "<om>"
 	"om" Adv @<ADVL
-	"om" Pr @<ADVL
 "<etter>"
 	"etter" Pr @<ADVL
 "<andre>"
@@ -14314,7 +14307,6 @@
 	"de" Pron Pers Pl3 Nom @<SUBJ
 "<over>"
 	"over" Adv @<ADVL
-	"over" Pr @<ADVL
 "<på>"
 	"på" Pr @<ADVL
 "<samisk>"
@@ -14473,7 +14465,7 @@
 "<fiske>"
 	"fiske" N Neu Sg Indef @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<fangst>"
 	"fangst" N Msc Sg Indef @<OBJ
 "<i>"
@@ -14487,7 +14479,7 @@
 "<Lofoten>"
 	"Lofoten" N Prop Sem/Plc @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<Vestlandet>"
 	"Vestlandet" N Prop Sem/Plc @<OBJ
 "<,>"
@@ -14497,7 +14489,7 @@
 "<sjøsamene>"
 	"sjøsame" N Msc Pl Def @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<skolehistoria>"
 	"skolehistorie" N Fem Sg Def @<OBJ
 "<i>"
@@ -14567,7 +14559,6 @@
 	"også" Adv @<ADVL
 "<ut>"
 	"ut" Adv @<ADVL
-	"ut" Pr @<ADVL
 "<fra>"
 	"fra" Pr @<ADVL
 "<egne>"
@@ -15004,7 +14995,7 @@
 "<varer>"
 	"vare" N Fem Pl Indef @<OBJ
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<tjenester>"
 	"tjeneste" N Fem Pl Indef @<OBJ
 "<fra>"
@@ -15057,7 +15048,7 @@
 "<oppvarming>"
 	"oppvarming" N Fem Sg Indef @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<belysning>"
 	"belysning" N Fem Sg Indef @<OBJ
 "<.>"
@@ -15072,7 +15063,7 @@
 "<tid>"
 	"tid" N Fem Sg Indef @<OBJ
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<krefter>"
 	"kraft" N Fem Pl Indef @<OBJ
 "<.>"
@@ -15161,7 +15152,6 @@
 	"allé" N Msc Sg Indef @<OBJ
 "<ut>"
 	"ut" Adv @<ADVL
-	"ut" Pr @<ADVL
 "<i>"
 	"i" Pr @<ADVL
 "<arbeidet>"
@@ -15231,7 +15221,7 @@
 "<ord>"
 	"ord" N Neu Pl Indef @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<vendinger>"
 	"vending" N Fem Pl Indef @X
 "<,>"
@@ -15285,7 +15275,7 @@
 "<Tana>"
 	"Tana" N Prop Sem/Plc @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<Finnmark>"
 	"Finnmark" N Prop Sem/Plc @<OBJ
 "<,>"
@@ -15301,7 +15291,7 @@
 "<språk>"
 	"språk" N Neu Sg Indef @<OBJ
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<naturbruk>"
 	"naturbruk" N Msc Sg Indef @<OBJ
 "<.>"
@@ -15381,7 +15371,7 @@
 "<språk>"
 	"språk" N Neu Sg Indef @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<identitet>"
 	"identitet" N Msc Sg Indef @<OBJ
 "<.>"
@@ -15553,7 +15543,7 @@
 "<skolen>"
 	"skole" N Msc Sg Def @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<heimen>"
 	"heim" N Msc Sg Def @X
 "<.>"
@@ -15620,7 +15610,7 @@
 "<kommunikasjoner>"
 	"kommunikasjon" N Msc Pl Indef @HNOUN
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<impulser>"
 	"impuls" N Msc Pl Indef @HNOUN
 "<fra>"
@@ -15647,7 +15637,7 @@
 "<rasering>"
 	"rasering" N Fem Sg Indef @X
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<flukt>"
 	"flukt" N Msc Sg Indef @X
 "<levna>"
@@ -15690,7 +15680,7 @@
 "<krig>"
 	"krig" N Msc Sg Indef @<OBJ
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<enhetsskolen>"
 	"enhetsskole" N Msc Sg Def @<OBJ
 "<.>"
@@ -15712,7 +15702,7 @@
 "<skoleleir>"
 	"skole+N#" Cmp leir N Msc Sg Indef @X
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<gjenreisning>"
 	"gjenreisning" N Fem Sg Indef @X
 "<en>"
@@ -15735,7 +15725,7 @@
 "<bygder>"
 	"bygd" N Fem Pl Indef @<OBJ
 "<og>"
-	"og" CC @CVP
+	"og" CC @CNP
 "<skoler>"
 	"skole" N Msc Pl Indef @<OBJ
 "<som>"
@@ -15838,7 +15828,7 @@
 "<heimen>"
 	"heim" N Msc Sg Def @P<
 "<og>"
-	"og" CC @CNP
+	"og" CC @CVP
 "<at>"
 	"at" CS @X
 "<den>"
@@ -15860,7 +15850,7 @@
 	"tank" N Msc Pl Indef @X
 	"tanke" N Msc Pl Indef @X
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<valg>"
 	"valg" N Neu Pl Indef @X
 	"valg" N Neu Sg Indef @X
@@ -15879,7 +15869,7 @@
 "<historie>"
 	"historie" N Fem Sg Indef @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<storsamfunnets>"
 	"storsamfunn" N Neu Sg Def Clt @X
 "<fornorskende>"
@@ -15925,7 +15915,7 @@
 "<hus>"
 	"hus" N Neu Sg Indef @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<heim>"
 	"heim" N Msc Sg Indef @X
 "<og>"
@@ -15949,7 +15939,7 @@
 "<inntrykk>"
 	"inntrykk" N Neu Pl Indef @<OBJ
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<impulser>"
 	"impuls" N Msc Pl Indef @<OBJ
 "<.>"
@@ -16059,7 +16049,7 @@
 "<kommuneadministrasjon>"
 	"kommuneadministrasjon" N Msc Sg Indef @<OBJ
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<helsevesen>"
 	"helsevesen" N Neu Sg Indef @<OBJ
 "<.>"
@@ -16344,7 +16334,7 @@
 "<språk>"
 	"språk" N Neu Sg Indef @X
 "<og>"
-	"og" CC @CVP
+	"og" CC @CNP
 "<tradisjon>"
 	"tradisjon" N Msc Sg Indef @X
 "<er>"
@@ -16445,7 +16435,7 @@
 "<kunst>"
 	"kunst" N Msc Sg Indef @X
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<turistindustri>"
 	"turistindustri" N Msc Sg Indef @X
 "<.>"
@@ -16463,7 +16453,7 @@
 "<land>"
 	"land" N Neu Sg Indef @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<vann>"
 	"vann" N Neu Pl Indef @<OBJ
 	"vann" N Neu Sg Indef @<OBJ
@@ -16497,7 +16487,7 @@
 "<Finnmarkseiendommen>"
 	"Finnmarkseiendommen" N Prop Sem/Org @<OBJ
 "<og>"
-	"og" CC @CVP
+	"og" CC @CNP
 "<Finnmarkskommisjonen>"
 	"finnmarkskommisjon" N Msc Sg Def @<OBJ
 "<er>"
@@ -16526,7 +16516,7 @@
 "<kultur>"
 	"kultur" N Msc Sg Indef @P<
 "<og>"
-	"og" CC @CVP
+	"og" CC @CNP
 "<næringer>"
 	"næring" N Fem Pl Indef @X
 "<i>"
@@ -16545,7 +16535,6 @@
 	"liten" A Pos Neu Sg Indef @X
 "<om>"
 	"om" Adv @<ADVL
-	"om" Pr @<ADVL
 "<i>"
 	"i" Pr @<ADVL
 "<dag>"
@@ -16574,7 +16563,7 @@
 "<Mortensnes>"
 	"Mortensnes" N Prop Sem/Plc @X
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<Bonakas>"
 	"Bonakas" N Prop Sem/Sur @X
 "<er>"
@@ -16595,7 +16584,7 @@
 "<Tanafjorden>"
 	"Tanafjorden" N Prop Sem/Plc @X
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<Varanger>"
 	"Varanger" N Prop Sem/Plc @X
 "<er>"
@@ -18458,7 +18447,7 @@
 "<sogneprest>"
 	"sogneprest" N Msc Sg Indef @X
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<skolestyreformann>"
 	"skolestyreformann" N Msc Sg Indef @X
 "<fra>"
@@ -18629,7 +18618,7 @@
 "<grenseavtale>"
 	"grenseavtale" N Msc Sg Indef @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<sikring>"
 	"sikring" N Fem Sg Indef @HNOUN
 "<av>"
@@ -18679,7 +18668,7 @@
 "<idé>"
 	"idé" N Msc Sg Indef @HNOUN
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<strategi>"
 	"strategi" N Msc Sg Indef @HNOUN
 "<1900–1940>"
@@ -18826,7 +18815,7 @@
 "<Finnmark>"
 	"Finnmark" N Prop Sem/Plc @X
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<skolestrukturen>"
 	"skolestruktur" N Msc Sg Def @X
 "<.>"
@@ -19024,7 +19013,7 @@
 "<småskolen>"
 	"småskole" N Msc Sg Def @<SUBJ
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<storskolen>"
 	"storskole" N Msc Sg Def @<OBJ
 "<gå>"
@@ -19087,7 +19076,7 @@
 	"lære" N Fem Pl Indef @X
 	"lærer" N Msc Sg Indef @X
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<kommunestyremedlem>"
 	"kommune+N#" Cmp styremedlem N Neu Sg Indef @X
 	"kommunestyre+N#" Cmp medlem N Neu Sg Indef @X
@@ -19388,7 +19377,7 @@
 "<Oslo>"
 	"Oslo" N Prop Sem/Plc @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<formann>"
 	"formann" N Msc Sg Indef @X
 "<i>"
@@ -19578,7 +19567,7 @@
 "<språkforsker>"
 	"språkforsker" N Msc Sg Indef @<OBJ
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<samisklektor>"
 	"samisk+A#" Cmp lektor N Msc Sg Indef @<OBJ
 	"samisk+N#" Cmp lektor N Msc Sg Indef @<OBJ
@@ -19603,7 +19592,7 @@
 "<stedsnavn>"
 	"stedsnavn" N Neu Pl Indef @<OBJ
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<forfatter>"
 	"forfatter" N Msc Sg Indef @<OBJ
 "<av>"
