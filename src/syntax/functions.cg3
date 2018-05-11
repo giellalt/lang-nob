@@ -1077,6 +1077,8 @@ MAP:DA (@>N) TARGET Det IF (1 A)(2 EOS);
 
 # PPs
 
+REMOVE:Adv_PP Pr IF (0 Adv)(1 Pr);
+## Da ble lærebøkene gitt ut på norsk.
 
 
 MAP:p< (@P<) N (*-1 Pr BARRIER NOT-NPMOD);
@@ -1153,8 +1155,14 @@ MAP:comma<advlEOS (@<ADVL) TARGET Adv (*-1 COMMA BARRIER V LINK *-1 FMAINV BARRI
 
 # Coordination
 
-MAP:CNP (@CNP) TARGET CC IF (-1 N)(*2 N BARRIER NOT-NPMOD);
+MAP:CNP (@CNP) TARGET CC IF (-1 N)(*1 N BARRIER NOT-NPMOD);
+#MAP:CVP (@CVP) TARGET CC IF (*-1 Ind)(1 Ind);
+#MAP:CVP (@CVP) TARGET CC IF (-1 Ind)(*1 Ind);
+#MAP:CVP (@CVP) TARGET CC IF (*-2 Ind)(-1 COMMA)(*1 Ind);
 MAP:CVP (@CVP) TARGET CC IF (*-1 Ind)(*1 Ind);
+MAP:CVP (@CVP) TARGET CC IF (-1 Imp)(1 Imp);
+MAP:CVP (@CVP) TARGET CC IF (*-1 PrfPtc)(1 PrfPtc);
+MAP:CVP (@CVP) TARGET CC IF (*-1 PrsPtc)(1 PrsPtc);
 
 
 #!! !!HNOUN MAPPING
