@@ -1,0 +1,69 @@
+!!python/object/apply:collections.defaultdict
+args:
+- !!python/name:__builtin__.set ''
+dictitems:
+  Err: !!set
+    !!python/unicode 'Err/Orth': null
+  Sem: !!set
+    !!python/unicode 'Sem/Ani': null
+    !!python/unicode 'Sem/Mal': null
+    !!python/unicode 'Sem/Obj': null
+    !!python/unicode 'Sem/Org': null
+    !!python/unicode 'Sem/Plc': null
+    !!python/unicode 'Sem/Sur': null
+  Use: !!set
+    !!python/unicode 'Use/Circ': null
+    !!python/unicode 'Use/NG': null
+  resten: !!set
+    ? !!python/unicode ''
+    : null
+    !!python/unicode '% ': null
+    !!python/unicode '/-': null
+    !!python/unicode 'A': null
+    !!python/unicode 'ABBR': null
+    !!python/unicode 'Acc': null
+    !!python/unicode 'Adv': null
+    !!python/unicode 'CC': null
+    !!python/unicode 'CLB': null
+    !!python/unicode 'CS': null
+    !!python/unicode 'Clt': null
+    !!python/unicode 'Def': null
+    !!python/unicode 'Dem': null
+    !!python/unicode 'Det': null
+    !!python/unicode 'Fem': null
+    !!python/unicode 'IM': null
+    !!python/unicode 'Ind': null
+    !!python/unicode 'Indef': null
+    !!python/unicode 'Inf': null
+    !!python/unicode 'Intens': null
+    !!python/unicode 'Interj': null
+    !!python/unicode 'Interr': null
+    !!python/unicode 'LEFT': null
+    !!python/unicode 'MF': null
+    !!python/unicode 'Msc': null
+    !!python/unicode 'N': null
+    !!python/unicode 'Neu': null
+    !!python/unicode 'Nom': null
+    !!python/unicode 'Nynorsk': null
+    !!python/unicode 'Ord': null
+    !!python/unicode 'PUNCT': null
+    !!python/unicode 'Pers': null
+    !!python/unicode 'Pl': null
+    !!python/unicode 'Pl1': null
+    !!python/unicode 'Pl2': null
+    !!python/unicode 'Pl3': null
+    !!python/unicode 'Poss': null
+    !!python/unicode 'Pr': null
+    !!python/unicode 'Pron': null
+    !!python/unicode 'Prop': null
+    !!python/unicode 'Prt': null
+    !!python/unicode 'Qnt': null
+    !!python/unicode 'Qst': null
+    !!python/unicode 'RIGHT': null
+    !!python/unicode 'Recipr': null
+    !!python/unicode 'Refl': null
+    !!python/unicode 'Sg': null
+    !!python/unicode 'Sg1': null
+    !!python/unicode 'Sg2': null
+    !!python/unicode 'Sg3': null
+    !!python/unicode 'V': null
