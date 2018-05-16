@@ -1,47 +1,43 @@
-!!python/object/apply:collections.defaultdict
-args:
-- !!python/name:__builtin__.set ''
-dictitems:
-  Err: !!set
-    !!python/unicode 'Err/Orth': null
-  Use: !!set
-    !!python/unicode 'Use/Circ': null
-    !!python/unicode 'Use/NG': null
-  resten: !!set
-    !!python/unicode 'A': null
-    !!python/unicode 'Acc': null
-    !!python/unicode 'CLB': null
-    !!python/unicode 'Clt': null
-    !!python/unicode 'Def': null
-    !!python/unicode 'Dem': null
-    !!python/unicode 'Det': null
-    !!python/unicode 'Fem': null
-    !!python/unicode 'IM': null
-    !!python/unicode 'Ind': null
-    !!python/unicode 'Indef': null
-    !!python/unicode 'Inf': null
-    !!python/unicode 'Intens': null
-    !!python/unicode 'Interr': null
-    !!python/unicode 'MF': null
-    !!python/unicode 'Msc': null
-    !!python/unicode 'N': null
-    !!python/unicode 'Neu': null
-    !!python/unicode 'Nom': null
-    !!python/unicode 'Nynorsk': null
-    !!python/unicode 'Pers': null
-    !!python/unicode 'Pl': null
-    !!python/unicode 'Pl1': null
-    !!python/unicode 'Pl2': null
-    !!python/unicode 'Pl3': null
-    !!python/unicode 'Poss': null
-    !!python/unicode 'Pron': null
-    !!python/unicode 'Prt': null
-    !!python/unicode 'Qnt': null
-    !!python/unicode 'Qst': null
-    !!python/unicode 'Recipr': null
-    !!python/unicode 'Refl': null
-    !!python/unicode 'Sg': null
-    !!python/unicode 'Sg1': null
-    !!python/unicode 'Sg2': null
-    !!python/unicode 'Sg3': null
-    !!python/unicode 'V': null
+Err
+	Err/Orth
+Use
+	Use/Circ
+	Use/NG
+resten
+	A
+	Acc
+	CLB
+	Clt
+	Def
+	Dem
+	Det
+	Fem
+	IM
+	Ind
+	Indef
+	Inf
+	Intens
+	Interr
+	MF
+	Msc
+	N
+	Neu
+	Nom
+	Nynorsk
+	Pers
+	Pl
+	Pl1
+	Pl2
+	Pl3
+	Poss
+	Pron
+	Prt
+	Qnt
+	Qst
+	Recipr
+	Refl
+	Sg
+	Sg1
+	Sg2
+	Sg3
+	V
