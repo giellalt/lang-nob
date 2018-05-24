@@ -672,6 +672,7 @@ LIST utrop-t = "!" ;
 LIST veldig-farlige-part = "nære" "nyte" "mige" "make" "lite" "hele" "gale" "fore" "ete" "brune" "bene" "bare" "ale" Clt ;
 LIST veldig-farlige-V = ("stede" Prs) ("dy" Prs) ("grade" Prs) ;
 LIST V = V ;
+LIST IM = IM ;
 LIST V-u-Imp = (V Prs) (V Prt) (V PrfPtc) (V Inf) ;
 LIST Nynorsk = Nynorsk ;
 LIST X = X ;
@@ -4236,7 +4237,7 @@ CONSTRAINTS
 	(NOT -1 %for%)
 	(NOT -2 %saa% OR >>>)
 	(NOT -3 %saa%)
-	(*2 setn-gr BARRIER Prs/Prt)
+	(*1 setn-gr BARRIER Prs/Prt)
 ;
 
 
@@ -15387,6 +15388,7 @@ REMOVE (V Prs) IF
 	(NOT 0 Pass)
 	(-1C Adv)
 	(NOT -2 N/Pron)
+	(NOT -2 CC)
 	(*-1 setn-gr LINK *1C fv LINK NOT 0 trans2)
 	(*-1 setn-gr LINK NOT 0 %som%)
 ;
@@ -18065,6 +18067,8 @@ REMOVE A + Pos + Def IF (-1 N OR Pron)(0 Prt);
 # V and not N
 
 REMOVE N + Neu + Sg + Def IF (-2 PrfPtc)(-1 CC);
+REMOVE N + Pl + Indef IF (0 Prs)(1 IM)(2 Inf);
+## han prøver å sykle
 
 # Prepositions
 
