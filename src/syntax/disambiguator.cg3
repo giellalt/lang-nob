@@ -745,7 +745,23 @@ REMOVE Prt IF (-1 Pr)(0  N + Fem + Sg + Def);
 REMOVE N + Fem + Sg + Def IF (-1 CLB OR CC)(*-2 Prt)(0 Prt);
 ## Jeg leste og dukka.
 
+REMOVE N IF (-1 Pron)(-2 ("som"));
+REMOVE N IF (-1 N LINK *-2 ("som") BARRIER NOT-PRE-NP-HEAD);
+
+REMOVE N IF (-1 Pron + Pers + Nom)(0 V + Ind);
+
+# Prop vs not
+REMOVE Prop ;
+
 # Singleton words
+
+# men
+REMOVE N IF (-1 CLB)(0 ("men"));
+## ... men misforstå meng rett
+
+# slettes
+REMOVE Adv IF (-1 Ind)(0 ("slettes"))(NOT 1 ("ikke")); #evt. krev VFIN til venstre
+## Det er slettes ikke bra.
 
 # under
 REMOVE N IF (NOT -1 Det)(0 ("under"));
@@ -765,6 +781,7 @@ SELECT Prop IF (0 ("Nordlys"));
 REMOVE Pl IF (-1 Pr)(0 ("tillegg"))(1 ("til"));
 
 
+# 
 
 
 
@@ -776,7 +793,11 @@ REMOVE Pl IF (-1 Pr)(0 ("tillegg"))(1 ("til"));
 
 
 
-
+# ############################################################
+# ############################################################
+# ############################################################
+# ############################################################
+# ############################################################
 
 # OBT
 
