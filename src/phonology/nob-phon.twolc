@@ -106,7 +106,7 @@ Rules
 "Consonant shortening before deletion"
 !! __@RULENAME@__  
  Cx:0 <=> Vow Cx _ e: LNR X1: %>: ( e | a ) ;
-          where Cx in ( b d f k p s v ) ;
+          where Cx in ( b d v ) ;
 
 !!€ sikkerX1%>e
 !!€ sik00r00e
@@ -116,7 +116,7 @@ Rules
 !! __@RULENAME@__  
  Cx:0 <=> Vow Cx _ (e:0)         %>: Q3:0 [d|t] ; ! kaller:kalte
           Vow Cx _  e:   LNR X1: %>: ( e | a ) ;  ! sikker:sikre
-      where Cx in ( f k p t s l n g ) ;
+      where Cx in ( f k p s l n g ) ;
 
 !!€ kalle%>Q3te
 !!€ kal0000te
@@ -124,7 +124,7 @@ Rules
 !!€ all%>Q3t
 !!€ al000t
 
-!!€ bygge%>Q3te
+!!€ bygge%>Q3de
 !!€ byg0000de
 
 
@@ -140,12 +140,6 @@ Rules
 !!€ kollegaX2%>er
 !!€ kolleg000er
 
-!"Delete Consonant before schwaa Deletion"
-! Cx:0 <=> Cx _ e: LNR X1: %>:0 e ;
-!      where Cx in ( d s ) ;
-! overlap with Consonant shortening before deletion?
-!!€ knusselX1e
-!!€ knus00l0e
 
 "Delete r"
 !! __@RULENAME@__  
@@ -196,8 +190,9 @@ Rules
 
 "Double t deleteion"
 !! __@RULENAME@__  
- t:0 <=> t: %>:0 _ ;
-               t _ e: LNR X1: %>: ( e | a ) ;
+ t:0 <=> t: %>:0 _ #: ;
+           Vow t _  e:   LNR X1: %>: ( e | a ) ;  ! sikker:sikre
+           Vow t _ (e:0)         %>: Q3:0 [d|t] ; ! kaller:kalte
 
 !!€ svart%>t
 !!€ svart00
@@ -225,3 +220,7 @@ Rules
 !! __@RULENAME@__  
  s:' <=> s %>:0 _ ;
 ! huss -> hus'
+
+! Test to have an error
+!!$ a
+!!$ b
