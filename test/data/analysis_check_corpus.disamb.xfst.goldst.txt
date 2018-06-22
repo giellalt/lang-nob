@@ -1,7 +1,3 @@
-"<Sámegillii>"
-	"Sámegillii" ?
-"<¶>"
-	"¶" CLB
 "<Artikkel>"
 	"artikkel" N Msc Sg Indef
 "<i>"
@@ -11,7 +7,7 @@
 "<Samisk>"
 	"samisk" A Pos Fem Sg Indef
 "<skolehistorie>"
-	"skolehistorie" N Msc Sg Indef
+	"skolehistorie" N Fem Sg Indef
 "<4>"
 	"4" Det Qnt Pl
 "<.>"
@@ -42,7 +38,8 @@
 "<Haavard>"
 	"Haavard" N Prop Sem/Mal
 "<Stangnes>"
-	"Stangnes" ?
+	"Stangnes" N Prop Sem/Plc
+	"Stangnes" N Prop Sem/Sur
 "<,>"
 	"," CLB
 "<Nordlys>"
@@ -82,10 +79,9 @@
 "<det>"
 	"det" Det Dem Sg Neu
 "<stor>"
-	"stor" A Pos Fem Sg Indef
-	"stor" A Pos Msc Sg Indef
+	"stor" A Pos MF Sg Indef
 "<harme>"
-	"harm" A Pos Pl Def
+	"harme" N Msc Sg Indef
 "<i>"
 	"i" Pr
 "<allmuen>"
@@ -185,9 +181,10 @@
 "<her>"
 	"her" Adv
 "<skriver>"
+	"skrive" V Ind Prs
 	"skriver" N Msc Sg Indef
 "<hans>"
-	"hans" N Msc Sg Indef
+	"hans" Det Poss Msc
 "<datterdatter>"
 	"datterdatter" N Fem Sg Indef
 "<om>"
@@ -256,7 +253,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<er>"
 	"være" V Ind Prs
 "<naturforvaltningskandidat>"
@@ -284,7 +281,7 @@
 "<ved>"
 	"ved" Pr
 "<Universitetet>"
-	"Universitetet" N Prop Sem/Org
+	"universitet" N Neu Sg Def
 "<i>"
 	"i" Pr
 "<Tromsø>"
@@ -293,7 +290,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<har>"
 	"ha" V Ind Prs
 "<arbeida>"
@@ -315,9 +312,9 @@
 "<,>"
 	"," CLB
 "<Statens>"
-	"Statens" N Prop Sem/Obj
+	"stat" N Msc Sg Def Clt
 "<Skoger>"
-	"Skoger" N Prop Sem/Sur
+	"skog" N Msc Pl Indef
 "<,>"
 	"," CLB
 "<Forskningsrådet>"
@@ -332,7 +329,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<har>"
 	"ha" V Ind Prs
 "<bodd>"
@@ -362,7 +359,8 @@
 "<Ishavskysten>"
 	"ishavskyst" N Msc Sg Def
 "<friluftsråd>"
-	"friluftsråd" ?
+	"friluftsråd" N Neu Pl Indef
+	"friluftsråd" N Neu Sg Indef
 "<.>"
 	"." CLB
 
@@ -377,7 +375,9 @@
 "<vært>"
 	"være" V PrfPtc
 "<samepolitisk>"
-	"samepolitisk" ?
+	"samepolitisk" A Pos Msc Sg Indef
+	"samepolitisk" A Pos Fem Sg Indef
+	"samepolitisk" A Pos MF Sg Indef
 "<engasjert>"
 	"engasjere" V PrfPtc
 "<,>"
@@ -420,7 +420,6 @@
 	"," CLB
 "<tidsskrifter>"
 	"tid+N#" CmpS skrift N Fem Pl Indef
-	"tid+N#" CmpS skrifte N Neu Pl Indef
 "<og>"
 	"og" CC
 "<bøker>"
@@ -456,11 +455,11 @@
 "<er>"
 	"være" V Ind Prs
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<og>"
 	"og" CC
 "<medforfatter>"
-	"medforfatter" ?
+	"medforfatter" N Msc Sg Indef
 "<av>"
 	"av" Pr
 "<artikkelen>"
@@ -470,13 +469,12 @@
 "<–>"
 	"–" PUNCT
 "<by>"
-	"bu" N Msc Pl Indef
 	"by" N Msc Sg Indef
 "<med>"
 	"med" Pr
 "<mange>"
-	"mange" A Pos Fem Sg Indef
 	"mange" Adv
+	"mange" A Pos Fem Sg Indef
 	"mange" A Pos Msc Sg Indef
 "<«>"
 	"«" ?
@@ -487,11 +485,11 @@
 "<i>"
 	"i" Pr
 "<skolehistoria>"
-	"skole+N#" Cmp historie N Fem Sg Def
+	"skolehistorie" N Fem Sg Def
 "<og>"
 	"og" CC
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<har>"
 	"ha" V Ind Prs
 "<bidratt>"
@@ -514,7 +512,7 @@
 "<tidligere>"
 	"tidlig" A Comp
 "<upubliserte>"
-	"upubliserte" ?
+	"upublisert" A Pos Pl Def
 "<artikler>"
 	"artikkel" N Msc Pl Indef
 "<.>"
@@ -535,10 +533,9 @@
 "<hans>"
 	"hans" Det Poss Msc
 "<søster>"
-	"søst" N Msc Pl Indef
 	"søster" N Fem Sg Indef
 "<Anna>"
-	"Anna" N Prop Fem
+	"annen" Pron Dem Sg Fem
 "<,>"
 	"," CLB
 "<og>"
@@ -549,7 +546,7 @@
 	"søskenbarn" N Neu Pl Indef
 	"søskenbarn" N Neu Sg Indef
 "<Per>"
-	"Per" N Prop Sem/Sur
+	"Per" N Prop Sem/Mal
 "<og>"
 	"og" CC
 "<Gunhild>"
@@ -624,7 +621,7 @@
 	"blei" N Fem Sg Indef
 	"bli" V Ind Prt Radical
 "<sterkt>"
-	"sterk" A Pos Neu Sg Indef
+	"sterk" A Der/AAdv Adv
 "<berørt>"
 	"berøre" V PrfPtc
 "<av>"
@@ -648,13 +645,13 @@
 "<Olsen>"
 	"Olsen" N Prop Sem/Sur
 "<Ravne>"
-	"Ravne" ?
+	"Ravne" N Prop Sem/Sur
 "<,>"
 	"," CLB
 "<og>"
 	"og" CC
 "<hans>"
-	"hans" N Msc Sg Indef
+	"hans" Det Poss Msc
 "<brødre>"
 	"broderbroder" N Msc Pl Indef
 	"bror" N Msc Pl Indef
@@ -728,7 +725,7 @@
 "<kjøpte>"
 	"kjøpe" V Ind Prt
 "<en>"
-	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<stor>"
 	"stor" A Pos MF Sg Indef
 "<eiendom>"
@@ -764,7 +761,7 @@
 "<Olsen>"
 	"Olsen" N Prop Sem/Sur
 "<Ravne>"
-	"Ravne" ?
+	"Ravne" N Prop Sem/Sur
 "<sine>"
 	"sin" Det Poss Pl
 "<etterkommere>"
@@ -780,7 +777,7 @@
 "<)>"
 	")" PUNCT RIGHT
 "<var>"
-	"var" A Pos Msc Sg Indef
+	"være" V Ind Prt
 "<politikere>"
 	"politiker" N Msc Pl Indef
 "<,>"
@@ -795,7 +792,7 @@
 "<personligheter>"
 	"personlighet" N Msc Pl Indef
 "<som>"
-	"som" Pr
+	"som" CS
 "<manøvrerte>"
 	"manøvrere" V Ind Prt
 "<mellom>"
@@ -822,7 +819,7 @@
 "<¶>"
 	"¶" CLB
 "<Per>"
-	"per" Pr
+	"Per" N Prop Sem/Mal
 "<Fokstad>"
 	"Fokstad" N Prop Sem/Sur
 "<er>"
@@ -876,7 +873,7 @@
 	"." CLB
 
 "<Tilsynelatende>"
-	"tilsynelatende" A Pos Neu Sg Indef
+	"tilsynelatende" A Der/AAdv Adv
 "<gjorde>"
 	"gjøre" V Ind Prt
 "<de>"
@@ -909,7 +906,7 @@
 "<Jeg>"
 	"jeg" Pron Pers Sg1 Nom
 "<kryssforhørte>"
-	"kryssforhørte" ?
+	"kryssforhøre" V Ind Prt
 "<mine>"
 	"min" Det Poss Pl
 "<foreldre>"
@@ -962,10 +959,9 @@
 "<om>"
 	"om" Pr
 "<lokal>"
-	"lokal" A Pos MF Sg Indef
+	"lokal" A Pos Fem Sg Indef
 "<historie>"
 	"historie" N Fem Sg Indef
-	"historie" N Msc Sg Indef
 "<,>"
 	"," CLB
 "<dukka>"
@@ -993,7 +989,7 @@
 "<på>"
 	"på" Pr
 "<Statsarkivet>"
-	"Statsarkivet" N Prop Sem/Obj
+	"statsarkiv" N Neu Sg Def
 "<.>"
 	"." CLB
 
@@ -1007,7 +1003,6 @@
 	"gjengrodde" ?
 "<stier>"
 	"sti" N Msc Pl Indef
-	"stie" N Msc Pl Indef
 "<og>"
 	"og" CC
 "<reiste>"
@@ -1050,7 +1045,7 @@
 "<landskapet>"
 	"landskap" N Neu Sg Def
 "<rundt>"
-	"rund" A Pos Neu Sg Indef
+	"rund" A Der/AAdv Adv
 "<.>"
 	"." CLB
 
@@ -1213,10 +1208,10 @@
 	"tråd" N Msc Sg Indef
 "<med>"
 	"med" Pr
-"<Stockfleth2>"
-	"Stockfleth2" ?
+"<Stockfleth>"
+	"Stockfleth" N Prop Sem/Sur
 "<var>"
-	"var" A Pos Msc Sg Indef
+	"være" V Ind Prt
 "<skolelærerne>"
 	"skole+N#" Cmp lærer N Msc Pl Def
 "<lesekyndige>"
@@ -1232,11 +1227,11 @@
 "<til>"
 	"til" Pr
 "<omlag>"
-	"omlag" ?
+	"omlag" Adv
 "<1870>"
 	"1870" Det Qnt Pl
 "<blei>"
-	"bli" V Ind Prt Radical
+	"blei" N Fem Sg Indef
 "<lærebøkene>"
 	"lærebok" N Fem Pl Def
 "<gitt>"
@@ -1359,7 +1354,7 @@
 "<]>"
 	"]" PUNCT RIGHT
 "<var>"
-	"var" A Pos Msc Sg Indef
+	"være" V Ind Prt
 "<skolelærerne>"
 	"skole+N#" Cmp lærer N Msc Pl Def
 "<lesekyndige>"
@@ -1375,11 +1370,11 @@
 "<til>"
 	"til" Pr
 "<omlag>"
-	"omlag" ?
+	"omlag" Adv
 "<1870>"
 	"1870" Det Qnt Pl
 "<blei>"
-	"bli" V Ind Prt Radical
+	"blei" N Fem Sg Indef
 "<lærebøkene>"
 	"lærebok" N Fem Pl Def
 "<gitt>"
@@ -1495,7 +1490,7 @@
 "<Her>"
 	"her" Adv
 "<var>"
-	"var" A Pos Msc Sg Indef
+	"være" V Ind Prt
 "<penger>"
 	"penge" N Msc Pl Indef
 "<å>"
@@ -1534,10 +1529,10 @@
 "<¶>"
 	"¶" CLB
 "<Samtidig>"
+	"samtidig" Adv
 	"samtidig" A Pos Fem Sg Indef
 	"samtidig" A Pos MF Sg Indef
 	"samtidig" A Pos Msc Sg Indef
-	"samtidig" Adv
 "<befesta>"
 	"befeste" V Ind Prt Radical
 "<staten>"
@@ -1579,7 +1574,7 @@
 "<">"
 	""" PUNCT
 "<Statens>"
-	"Staten" N Prop Sem/Obj Clt
+	"stat" N Msc Sg Def Clt
 "<grunn>"
 	"grunn" N Msc Sg Indef
 "<">"
@@ -1591,7 +1586,7 @@
 "<Landbruksselskapet>"
 	"landbruksselskap" N Neu Sg Def
 "<belærte>"
-	"belærte" ?
+	"belære" V Ind Prt
 "<folk>"
 	"folk" N Neu Pl Indef
 "<om>"
@@ -1635,7 +1630,7 @@
 "<utvida>"
 	"utvide" V Ind Prt Radical
 "<undervisningstid>"
-	"undervisningstid" ?
+	"undervisningstid" N Fem Sg Indef
 "<,>"
 	"," CLB
 "<flere>"
@@ -1647,16 +1642,15 @@
 "<Finnefondet>"
 	"Finnefondet" N Prop Sem/Org
 "<som>"
-	"som" CS
+	"som" Pr
 "<finansierte>"
-	"finansiere" V Ind Prt
+	"finansiere" Ex/V PrfPtc A Pos Pl Def
 "<internater>"
-	"internater" ?
+	"internat" N Neu Pl Indef
 "<og>"
 	"og" CC
 "<lønnstillegg>"
 	"lønnstillegg" N Neu Pl Indef
-	"lønnstillegg" N Neu Sg Indef
 "<til>"
 	"til" Pr
 "<lærerne>"
@@ -1691,9 +1685,9 @@
 "<likevel>"
 	"likevel" Adv
 "<holdt>"
-	"holde" V Ind Prt
+	"holde" Ex/V PrfPtc A Pos Msc Sg Indef
 "<samisk>"
-	"samisk" A Pos Fem Sg Indef
+	"samisk" N Msc Sg Indef
 "<stand>"
 	"stand" N Msc Sg Indef
 "<som>"
@@ -1746,7 +1740,6 @@
 "<fjøs>"
 	"fjøs" N Neu Pl Indef
 	"fjøs" N Neu Sg Indef
-	"fjøs" X N Msc Sg Indef
 "<.>"
 	"." CLB
 
@@ -1775,10 +1768,9 @@
 "<,>"
 	"," CLB
 "<nåværende>"
+	"nåværende" A Pos Msc Sg Indef
 	"nåværende" A Pos Fem Sg Indef
 	"nåværende" A Pos MF Sg Indef
-	"nåværende" A Pos Msc Sg Indef
-	"nåværende" A Pos Neu Sg Indef
 "<Gamvik>"
 	"Gamvik" N Prop Sem/Sur
 "<kommune>"
@@ -1787,7 +1779,7 @@
 	"." CLB
 
 "<Plassen>"
-	"Plassen" N Prop Sem/Sur
+	"plass" N Msc Sg Def
 "<hadde>"
 	"ha" V Ind Prt
 "<vært>"
@@ -1824,7 +1816,8 @@
 	"." CLB
 
 "<Midt>"
-	"Midt" N Prop Sem/Sur
+	"midt" N Msc
+	"midt" Adv
 "<på>"
 	"på" Pr
 "<1800-tallet>"
@@ -1868,7 +1861,7 @@
 "<rodde>"
 	"ro" V Ind Prt
 "<omlag>"
-	"omlag" ?
+	"omlag" Adv
 "<1000>"
 	"1000" Det Qnt Pl
 "<fiskere>"
@@ -1894,7 +1887,6 @@
 	"," CLB
 "<men>"
 	"men" CC
-	"men" N Neu Pl Indef
 "<ikke>"
 	"ikke" Adv
 "<bygd>"
@@ -1913,7 +1905,7 @@
 "<tatt>"
 	"ta" V PrfPtc
 "<omlag>"
-	"omlag" ?
+	"omlag" Adv
 "<1910>"
 	"1910" Det Qnt Pl
 "<.>"
@@ -1970,16 +1962,15 @@
 "<Samiske>"
 	"samisk" A Pos Sg Def
 "<Museum>"
-	"Museum" N Prop Sem/Org
+	"museum" N Neu Sg Indef
 "<)>"
 	")" PUNCT RIGHT
 "<¶>"
 	"¶" CLB
 "<Historisk>"
+	"historisk" A Pos Msc Sg Indef
 	"historisk" A Pos Fem Sg Indef
 	"historisk" A Pos MF Sg Indef
-	"historisk" A Pos Msc Sg Indef
-	"historisk" A Pos Neu Sg Indef
 "<bestod>"
 	"bestå" V Ind Prt
 "<Tana>"
@@ -2005,7 +1996,7 @@
 "<kalles>"
 	"kalle" V Ind Prs Pass
 "<Nedre>"
-	"Nedre" N Prop Sem/Plc
+	"nedre" A Der/AAdv Adv
 "<Tana>"
 	"Tana" N Prop Sem/Plc
 "<og>"
@@ -2379,6 +2370,7 @@
 	"med" Pr
 "<en>"
 	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<norsk>"
 	"norsk" N Msc Sg Indef
 "<seminarist>"
@@ -2441,9 +2433,9 @@
 "<emmisæren>"
 	"emmisæren" ?
 "<for>"
-	"for" Pr
+	"for" Adv
 "<Norsk>"
-	"Norsk" N Prop Sem/Sur
+	"norsk" A Pos MF Sg Indef
 "<Finnemisjon>"
 	"finnemisjon" N Msc Sg Indef
 "<.>"
@@ -2591,11 +2583,9 @@
 "<til>"
 	"til" Pr
 "<samisk>"
-	"samisk" A Pos Fem Sg Indef
-	"samisk" A Pos Neu Sg Indef
-	"samisk" A Pos Msc Sg Indef
+	"samisk" A Der/AAdv Adv
 "<snakka>"
-	"snakke" V Ind Prt Radical
+	"snakk" N Neu Pl Def
 "<finsk>"
 	"finsk" N Msc Sg Indef
 "</>"
@@ -2611,6 +2601,7 @@
 	"være" V Ind Prt
 "<en>"
 	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<norsk>"
 	"norsk" N Msc Sg Indef
 "<enklave>"
@@ -2763,7 +2754,7 @@
 "<hadde>"
 	"ha" V Ind Prt
 "<omlag>"
-	"omlag" ?
+	"omlag" Adv
 "<100>"
 	"100" Det Qnt Pl
 "<deltakere>"
@@ -2801,7 +2792,7 @@
 	"." CLB
 
 "<Hans>"
-	"Hans" N Prop Sem/Mal
+	"hans" Det Poss Msc
 "<Baukop>"
 	"Baukop" ?
 "<,>"
@@ -2890,7 +2881,7 @@
 	"." CLB
 
 "<Anna>"
-	"Anna" N Prop Fem
+	"annen" Det Dem Sg Fem
 "<Mathisen>"
 	"Mathisen" N Prop Sem/Sur
 "<,>"
@@ -2901,13 +2892,17 @@
 	"." CLB
 
 "<Agnes>"
-	"Agnes" N Prop Fem
+	"agne" V Inf Pass
+	"agne" V Ind Prs Pass
 "<Ravna>"
 	"Ravna" ?
 "<g>"
 	"g" ABBR
 "<Øvre>"
-	"Øvre" N Prop Sem/Sur
+	"øvre" A Pos Pl Def
+	"øvre" A Pos Msc Sg Indef
+	"øvre" A Pos Fem Sg Indef
+	"øvre" A Pos MF Sg Indef
 "<,>"
 	"," CLB
 "<11>"
@@ -2964,7 +2959,7 @@
 	"." CLB
 
 "<Per>"
-	"Per" N Prop Sem/Sur
+	"Per" N Prop Sem/Mal
 "<Pavelsen>"
 	"Pavelsen" ?
 "<Fokstad>"
@@ -3057,7 +3052,7 @@
 	"." CLB
 
 "<Anna>"
-	"Anna" N Prop Fem
+	"annen" Pron Dem Sg Fem
 "<Pavelsen>"
 	"Pavelsen" ?
 "<g>"
@@ -3151,7 +3146,7 @@
 	"." CLB
 
 "<Hans>"
-	"Hans" N Prop Sem/Mal
+	"hans" Det Poss Msc
 "<Lavde>"
 	"Lavde" ?
 "<?>"
@@ -3189,7 +3184,7 @@
 "<John>"
 	"John" N Prop Sem/Mal
 "<Haug>"
-	"Haug" N Prop Sem/Sur
+	"haug" N Msc Sg Indef
 "<,>"
 	"," CLB
 "<34>"
@@ -3248,7 +3243,7 @@
 	"." CLB
 
 "<Per>"
-	"Per" N Prop Sem/Sur
+	"Per" N Prop Sem/Mal
 "<Hirsti>"
 	"Hirsti" N Prop Sem/Sur
 "<,>"
@@ -3279,7 +3274,7 @@
 	"." CLB
 
 "<Anna>"
-	"Anna" N Prop Fem
+	"annen" Det Dem Sg Fem
 "<Samuelsen>"
 	"Samuelsen" N Prop Sem/Sur
 "<,>"
@@ -3441,9 +3436,10 @@
 "<¶>"
 	"¶" CLB
 "<Under>"
+	"under" Adv
 	"under" Pr
 "<en>"
-	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<visitas>"
 	"visitas" ?
 "<i>"
@@ -3514,7 +3510,7 @@
 "<på>"
 	"på" Pr
 "<en>"
-	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<rett>"
 	"rett" A Pos MF Sg Indef
 "<måte>"
@@ -3693,7 +3689,7 @@
 "<økte>"
 	"øke" V Ind Prt
 "<kraftig>"
-	"kraftig" A Pos Neu Sg Indef
+	"kraftig" A Der/AAdv Adv
 "<fra>"
 	"fra" Pr
 "<1893>"
@@ -3709,7 +3705,7 @@
 "<både>"
 	"både" CC
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<og>"
 	"og" CC
 "<daværende>"
@@ -3754,7 +3750,7 @@
 "<et>"
 	"et" Det Dem Sg Neu
 "<brev>"
-	"brev" N Neu Pl Indef
+	"brev" N Neu Sg Indef
 "<til>"
 	"til" Pr
 "<Tana>"
@@ -3929,7 +3925,7 @@
 "<blei>"
 	"bli" V Ind Prt Radical
 "<trykt>"
-	"trykt" ?
+	"trykke" V PrfPtc
 "<i>"
 	"i" Pr
 "<«>"
@@ -4017,11 +4013,11 @@
 	"bli" V Ind Prt Radical
 "<stående>"
 	"stå" V PrsPtc
+	"stående" A Pos Pl Def
 	"stående" A Pos Fem Sg Indef
 	"stående" A Pos MF Sg Indef
 	"stående" A Pos Msc Sg Indef
 	"stående" Adv
-	"stående" A Pos Pl Def
 "<og>"
 	"og" CC
 "<satte>"
@@ -4142,7 +4138,7 @@
 "<Både>"
 	"både" CC
 "<Per>"
-	"Per" N Prop Sem/Sur
+	"Per" N Prop Sem/Mal
 "<og>"
 	"og" CC
 "<Gunhild>"
@@ -4156,7 +4152,7 @@
 "<og>"
 	"og" CC
 "<Anna>"
-	"Anna" N Prop Fem
+	"annen" Det Dem Sg Fem
 "<Anderssen>"
 	"Anderssen" N Prop Sem/Sur
 "<utdanna>"
@@ -4182,9 +4178,11 @@
 "<måtte>"
 	"måtte" V Ind Prt
 "<Anna>"
-	"Anna" N Prop Fem
+	"annen" Det Dem Sg Fem
 "<nøye>"
-	"nøye" V Inf
+	"nøye" A Pos Msc Sg Indef
+	"nøye" A Pos Fem Sg Indef
+	"nøye" A Pos MF Sg Indef
 "<seg>"
 	"seg" Pron Refl Acc
 "<med>"
@@ -4192,7 +4190,9 @@
 "<1-årig>"
 	"1-årig" ?
 "<lærerinnekurs>"
-	"lærerinne+N#" Cmp kurs X N Msc Sg Indef
+	"lærerinne+N#" Cmp kurs N Msc Sg Indef
+	"lærerinne+N#" Cmp kurs N Neu Pl Indef
+	"lærerinne+N#" Cmp kurs N Neu Sg Indef
 "<.>"
 	"." CLB
 
@@ -4203,7 +4203,7 @@
 "<(>"
 	"(" PUNCT LEFT
 "<Lille>"
-	"Lille" N Prop Sem/Plc
+	"liten" A Pos Sg Def
 "<)>"
 	")" PUNCT RIGHT
 "<fra>"
@@ -4217,7 +4217,7 @@
 "<og>"
 	"og" CC
 "<Per>"
-	"Per" N Prop Sem/Sur
+	"Per" N Prop Sem/Mal
 "<Erik>"
 	"Erik" N Prop Sem/Mal
 "<Saraksen>"
@@ -4325,7 +4325,7 @@
 "<og>"
 	"og" CC
 "<Anna>"
-	"Anna" N Prop Fem
+	"annen" Pron Dem Sg Fem
 "<Pavelsen>"
 	"Pavelsen" ?
 "<Ravna>"
@@ -4353,7 +4353,7 @@
 "<var>"
 	"være" V Ind Prt
 "<strengt>"
-	"streng" A Pos Neu Sg Indef
+	"streng" A Der/AAdv Adv
 "<religiøse>"
 	"religiøs" A Pos Pl Def
 "<og>"
@@ -4412,7 +4412,7 @@
 "<og>"
 	"og" CC
 "<Anna>"
-	"Anna" N Prop Fem
+	"annen" Pron Dem Sg Fem
 "<Pavelsen>"
 	"Pavelsen" ?
 "<Ravna>"
@@ -4628,7 +4628,7 @@
 "<–>"
 	"–" PUNCT
 "<Kvitnes>"
-	"Kvitnes" N Prop Sem/Plc
+	"kvitne" V Ind Prs Pass
 "<ytterst>"
 	"ytterst" Adv
 "<i>"
@@ -4660,7 +4660,7 @@
 "<i>"
 	"i" Pr
 "<Vinna>"
-	"vinne" X V Ind Prt Radical
+	"Vinna" ?
 "<–>"
 	"–" PUNCT
 "<Storvik>"
@@ -4857,10 +4857,7 @@
 "<hvor>"
 	"hvor" Adv
 "<vanskelig>"
-	"vanskelig" A Pos Fem Sg Indef
-	"vanskelig" A Pos MF Sg Indef
-	"vanskelig" A Pos Msc Sg Indef
-	"vanskelig" A Pos Neu Sg Indef
+	"vanskelig" A Der/AAdv Adv
 "<det>"
 	"det" Pron Pers Sg3
 "<kunne>"
@@ -4910,12 +4907,12 @@
 "<(>"
 	"(" PUNCT LEFT
 "<Kilde>"
-	"Kilde" N Prop Sem/Sur
+	"kilde" N Fem Sg Indef
 "<:>"
 	":" PUNCT
 
 "<Statsarkivet>"
-	"Statsarkivet" N Prop Sem/Obj
+	"statsarkiv" N Neu Sg Def
 "<i>"
 	"i" Pr
 "<Tromsø>"
@@ -4947,14 +4944,14 @@
 "<blei>"
 	"bli" V Ind Prt Radical
 "<min>"
-	"min" Det Poss Sg Msc
+	"mine" V Imp
 "<bestemor>"
 	"bestemor" N Fem Sg Indef
 "<.>"
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<var>"
 	"være" V Ind Prt
 "<fra>"
@@ -5019,7 +5016,7 @@
 "<lå>"
 	"ligge" V Ind Prt
 "<sentralt>"
-	"sentral" A Pos Neu Sg Indef
+	"sentral" A Der/AAdv Adv
 "<i>"
 	"i" Pr
 "<leia>"
@@ -5080,7 +5077,7 @@
 "<på>"
 	"på" Pr
 "<Grand>"
-	"Grand" N Prop Sem/Obj
+	"grand" N Msc
 "<hotell>"
 	"hotell" N Neu Pl Indef
 	"hotell" N Neu Sg Indef
@@ -5141,7 +5138,7 @@
 "<for>"
 	"for" Adv
 "<Venstre>"
-	"venstre" A Pos Neu Sg Indef
+	"venstre" A Der/AAdv Adv
 "<i>"
 	"i" Pr
 "<kommunestyre>"
@@ -5294,11 +5291,11 @@
 	"bli" V Ind Prt Radical
 "<stående>"
 	"stå" V PrsPtc
+	"stående" A Pos Pl Def
 	"stående" A Pos Fem Sg Indef
 	"stående" A Pos MF Sg Indef
 	"stående" A Pos Msc Sg Indef
 	"stående" Adv
-	"stående" A Pos Pl Def
 "<.>"
 	"." CLB
 
@@ -5352,9 +5349,10 @@
 	"være" V Ind Prt
 	"var" A Pos Msc Sg Indef
 "<han>"
+	"han" Pron Pers Sg3 Acc
 	"han" Pron Pers Sg3 Nom
 "<styrer>"
-	"styre" N Neu Pl Indef
+	"styre" V Ind Prs
 "<.>"
 	"." CLB
 
@@ -5480,7 +5478,6 @@
 	"," CLB
 "<men>"
 	"men" CC
-	"men" N Neu Pl Indef
 "<etterkrigstidas>"
 	"etterkrigstidas" ?
 "<Sørøysund>"
@@ -5633,7 +5630,7 @@
 "<på>"
 	"på" Pr
 "<Møre>"
-	"Møre" N Prop Sem/Plc
+	"mør" A Pos Sg Def
 "<våren>"
 	"vår" N Msc Sg Def
 "<1959>"
@@ -5772,7 +5769,8 @@
 	"han" Pron Pers Sg3 Acc
 	"han" Pron Pers Sg3 Nom
 "<Kongens>"
-	"Kongen" N Prop Sem/Mal Clt
+	"konge" N Msc Sg Def Clt
+	"kong" N Msc Sg Def Clt
 "<fortjenestemedalje>"
 	"fortjenestemedalje" N Msc Sg Indef
 "<i>"
@@ -5787,7 +5785,6 @@
 "<Kårhamn>"
 	"Kårhamn" N Prop Sem/Plc
 "<internat>"
-	"internat" N Neu Pl Indef
 	"internat" N Neu Sg Indef
 "<1925>"
 	"1925" Det Qnt Pl
@@ -5831,7 +5828,7 @@
 "<var>"
 	"være" V Ind Prt
 "<en>"
-	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<ivrig>"
 	"ivrig" A Pos MF Sg Indef
 "<turmann>"
@@ -5883,7 +5880,7 @@
 "<Frida>"
 	"Frida" N Prop Fem
 "<Evjen>"
-	"Evjen" N Prop Sem/Sur
+	"evje" N Msc Sg Def
 "<)>"
 	")" PUNCT RIGHT
 "<¶>"
@@ -5895,13 +5892,14 @@
 "<som>"
 	"som" CS
 "<en>"
-	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<respektert>"
-	"respektere" Ex/V PrfPtc A Pos Fem Sg Indef
-	"respektere" Ex/V PrfPtc A Pos Msc Sg Indef
+	"respektere" V PrfPtc
 "<og>"
 	"og" CC
 "<rettferdig>"
+	"rettferdig" A Pos Msc Sg Indef
+	"rettferdig" A Pos Fem Sg Indef
 	"rettferdig" A Pos MF Sg Indef
 "<lærer>"
 	"lære" V Ind Prs
@@ -5924,13 +5922,12 @@
 	"," CLB
 "<men>"
 	"men" CC
-	"men" N Neu Pl Indef
 "<brukte>"
 	"brukt" A Pos Pl Def
 "<ikke>"
 	"ikke" Adv
 "<samisk>"
-	"samisk" A Pos Neu Sg Indef
+	"samisk" N Msc Sg Indef
 "<i>"
 	"i" Pr
 "<skolen>"
@@ -5939,7 +5936,7 @@
 	"." CLB
 
 "<Per>"
-	"Per" N Prop Sem/Sur
+	"Per" N Prop Sem/Mal
 "<Fokstads>"
 	"Fokstad" N Prop Sem/Sur Clt
 "<idéer>"
@@ -5947,7 +5944,7 @@
 "<om>"
 	"om" Pr
 "<samisk>"
-	"samisk" A Pos Fem Sg Indef
+	"samisk" A Pos MF Sg Indef
 "<skole>"
 	"skole" N Msc Sg Indef
 "<hadde>"
@@ -6015,10 +6012,11 @@
 	"brukt" A Pos Pl Def
 "<de>"
 	"de" Pron Pers Pl3 Nom
+	"den" Det Dem Pl
 "<aldri>"
 	"aldri" Adv
 "<samisk>"
-	"samisk" A Pos Neu Sg Indef
+	"samisk" N Msc Sg Indef
 "<heime>"
 	"heime" Adv
 "<.>"
@@ -6052,10 +6050,10 @@
 "<samiske>"
 	"samisk" A Pos Pl Def
 "<samtidig>"
+	"samtidig" Adv
 	"samtidig" A Pos Fem Sg Indef
 	"samtidig" A Pos MF Sg Indef
 	"samtidig" A Pos Msc Sg Indef
-	"samtidig" Adv
 "<,>"
 	"," CLB
 "<valgte>"
@@ -6117,7 +6115,6 @@
 	"," CLB
 "<men>"
 	"men" CC
-	"men" N Neu Pl Indef
 "<flytta>"
 	"flytte" V Ind Prt Radical
 "<så>"
@@ -6267,11 +6264,12 @@
 "<var>"
 	"være" V Ind Prt
 "<en>"
-	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<av>"
+	"av" Adv
 	"av" Pr
 "<Just>"
-	"Just" N Prop Sem/Sur
+	"just" Adv
 "<Qvigstads>"
 	"Qvigstad" N Prop Sem/Sur Clt
 "<informanter>"
@@ -6307,12 +6305,12 @@
 "<hadde>"
 	"ha" V Ind Prt
 "<mange>"
+	"mange" Det Dem Pl
 	"mange" A Pos Fem Sg Indef
 	"mange" A Pos MF Sg Indef
 	"mange" A Pos Msc Sg Indef
 	"mange" Adv
 	"mange" A Pos Pl Def
-	"mange" Det Dem Pl
 "<av>"
 	"av" Pr
 "<Qvigstads>"
@@ -6376,7 +6374,7 @@
 "<,>"
 	"," CLB
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<ville>"
 	"ville" V Inf
 "<til>"
@@ -6397,9 +6395,10 @@
 	"han" Pron Pers Sg3 Acc
 	"han" Pron Pers Sg3 Nom
 "<etter>"
+	"etter" Adv
 	"etter" Pr
 "<et>"
-	"et" Det Dem Sg Neu
+	"et" Pron Indef Sg Neu
 "<lengre>"
 	"lengre" Adv
 "<sykeleie>"
@@ -6408,7 +6407,7 @@
 	"." CLB
 
 "<Den>"
-	"Den" N Prop Sem/Mal
+	"den" Det Dem Sg MF
 "<siste>"
 	"sist" A Pos Sg Def
 	"siste" A Pos Sg Def
@@ -6453,7 +6452,7 @@
 "<¶>"
 	"¶" CLB
 "<Per>"
-	"per" Pr
+	"Per" N Prop Sem/Mal
 "<Fokstad>"
 	"Fokstad" N Prop Sem/Sur
 "<(>"
@@ -6502,7 +6501,8 @@
 	"." CLB
 
 "<Faren>"
-	"Faren" N Prop Sem/Plc
+	"fare" N Msc Sg Def
+	"far" N Msc Sg Def
 "<kunne>"
 	"kunne" V Ind Prt
 "<gjøre>"
@@ -6525,9 +6525,9 @@
 "<i>"
 	"i" Pr
 "<mange>"
+	"mange" A Pos Msc Sg Indef
 	"mange" A Pos Fem Sg Indef
 	"mange" Adv
-	"mange" A Pos Msc Sg Indef
 "<miljøer>"
 	"miljøer" ?
 "<.>"
@@ -6540,7 +6540,7 @@
 "<av>"
 	"av" Pr
 "<Per>"
-	"Per" N Prop Sem/Sur
+	"Per" N Prop Sem/Mal
 "<Fokstad>"
 	"Fokstad" N Prop Sem/Sur
 "<¶>"
@@ -6568,7 +6568,7 @@
 "<Unge>"
 	"ung" A Pos Sg Def
 "<Per>"
-	"Per" N Prop Sem/Sur
+	"Per" N Prop Sem/Mal
 "<tok>"
 	"ta" V Ind Prt
 "<lærereksamen>"
@@ -6694,7 +6694,7 @@
 "<ved>"
 	"ved" Pr
 "<Statens>"
-	"Statens" N Prop Sem/Obj
+	"stat" N Msc Sg Def Clt
 "<4-maanedlige>"
 	"4-maanedlige" ?
 "<sangkursus>"
@@ -6740,7 +6740,7 @@
 "<i>"
 	"i" Pr
 "<Paris>"
-	"Paris" N Prop Sem/Plc
+	"pari" N Msc Clt
 "<i>"
 	"i" Pr
 "<1920–21>"
@@ -6821,7 +6821,7 @@
 	"." CLB
 
 "<Høsten>"
-	"Høsten" N Prop Sem/Org
+	"høst" N Msc Sg Def
 "<1944>"
 	"1944" Det Qnt Pl
 "<blei>"
@@ -6900,7 +6900,7 @@
 "<kom>"
 	"komme" V Ind Prt
 "<raskt>"
-	"rask" A Pos Neu Sg Indef
+	"rask" A Der/AAdv Adv
 "<i>"
 	"i" Pr
 "<gang>"
@@ -6919,7 +6919,7 @@
 "<fikk>"
 	"få" V Ind Prt
 "<Per>"
-	"Per" N Prop Sem/Sur
+	"Per" N Prop Sem/Mal
 "<Fokstad>"
 	"Fokstad" N Prop Sem/Sur
 "<stilling>"
@@ -6967,7 +6967,7 @@
 	"." CLB
 
 "<Den>"
-	"Den" N Prop Sem/Mal
+	"den" Det Dem Sg MF
 "<nye>"
 	"ny" A Pos Sg Def
 "<skolen>"
@@ -7000,7 +7000,7 @@
 "<¶>"
 	"¶" CLB
 "<Per>"
-	"per" Pr
+	"Per" N Prop Sem/Mal
 "<Fokstad>"
 	"Fokstad" N Prop Sem/Sur
 "<markerte>"
@@ -7008,7 +7008,9 @@
 "<seg>"
 	"seg" Pron Refl Acc
 "<tidlig>"
-	"tidlig" A Pos Neu Sg Indef
+	"tidlig" A Pos Msc Sg Indef
+	"tidlig" A Pos Fem Sg Indef
+	"tidlig" A Pos MF Sg Indef
 "<som>"
 	"som" Pr
 "<forkjemper>"
@@ -7082,6 +7084,7 @@
 	"til" Pr
 "<en>"
 	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<resolusjon>"
 	"resolusjon" N Msc Sg Indef
 "<med>"
@@ -7144,7 +7147,7 @@
 "<for>"
 	"for" Adv
 "<samisk>"
-	"samisk" A Pos Fem Sg Indef
+	"samisk" A Pos MF Sg Indef
 "<skole>"
 	"skole" N Msc Sg Indef
 "<la>"
@@ -7186,12 +7189,13 @@
 	"i" Pr
 "<en>"
 	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<betenkning>"
 	"betenkning" N Fem Sg Indef
 "<til>"
 	"til" Pr
 "<Den>"
-	"Den" N Prop Sem/Mal
+	"den" Det Dem Sg MF
 "<parlamentariske>"
 	"parlamentarisk" A Pos Sg Def
 "<skolekommisjon>"
@@ -7212,11 +7216,13 @@
 "<også>"
 	"også" Adv
 "<for>"
+	"for" N Neu Sg Indef
 	"for" Pr
+	"for" N Neu Pl Indef
 "<en>"
-	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<samisk>"
-	"samisk" A Pos Fem Sg Indef
+	"samisk" A Pos MF Sg Indef
 "<ungdomsskole>"
 	"ungdomsskole" N Msc Sg Indef
 "<(>"
@@ -7330,7 +7336,7 @@
 "<gjennom>"
 	"gjennom" Pr
 "<Arbeiderpartiet>"
-	"Arbeiderpartiet" N Prop Sem/Org
+	"arbeiderparti" N Neu Sg Def
 "<,>"
 	"," CLB
 "<bl>"
@@ -7410,7 +7416,7 @@
 	"var" A Pos Fem Sg Indef
 	"var" A Pos Msc Sg Indef
 "<en>"
-	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<av>"
 	"av" Pr
 "<talerne>"
@@ -7469,10 +7475,9 @@
 "<den>"
 	"den" Det Dem Sg MF
 "<nye>"
-	"ny" A Pos Pl Def
-	"ny" A Pos Pl Indef
+	"ny" A Pos Sg Def
 "<samepolitiske>"
-	"samepolitiske" ?
+	"samepolitisk" A Pos Sg Def
 "<bevegelsen>"
 	"bevegelse" N Msc Sg Def
 "<.>"
@@ -7492,11 +7497,12 @@
 "<av>"
 	"av" Pr
 "<Norske>"
-	"Norske" N Prop Sem/Org
+	"norsk" A Pos Pl Def
 "<Samers>"
 	"same" N Msc Pl Indef Clt
 "<Riksforbund>"
-	"Riksforbund" N Prop Sem/Org
+	"riksforbund" N Neu Sg Indef
+	"riksforbund" N Neu Pl Indef
 "<i>"
 	"i" Pr
 "<1968>"
@@ -7542,7 +7548,8 @@
 "<etter>"
 	"etter" Pr
 "<Kongens>"
-	"Kongen" N Prop Sem/Mal Clt
+	"konge" N Msc Sg Def Clt
+	"kong" N Msc Sg Def Clt
 "<fortjenestemedalje>"
 	"fortjenestemedalje" N Msc Sg Indef
 "<i>"
@@ -7555,7 +7562,7 @@
 "<¶>"
 	"¶" CLB
 "<Per>"
-	"per" Pr
+	"Per" N Prop Sem/Mal
 "<Fokstad>"
 	"Fokstad" N Prop Sem/Sur
 "<¶>"
@@ -7576,7 +7583,7 @@
 "<¶>"
 	"¶" CLB
 "<Per>"
-	"per" Pr
+	"Per" N Prop Sem/Mal
 "<Fokstad>"
 	"Fokstad" N Prop Sem/Sur
 "<med>"
@@ -7599,7 +7606,7 @@
 "<til>"
 	"til" Pr
 "<Per>"
-	"Per" N Prop Sem/Sur
+	"Per" N Prop Sem/Mal
 "<Fokstad>"
 	"Fokstad" N Prop Sem/Sur
 "<i>"
@@ -7622,13 +7629,13 @@
 "<,>"
 	"," CLB
 "<Per>"
-	"per" Pr
+	"Per" N Prop Sem/Mal
 "<Fokstad>"
 	"Fokstad" N Prop Sem/Sur
 "<,>"
 	"," CLB
 "<hans>"
-	"hans" N Msc Sg Indef
+	"hans" Det Poss Msc
 "<kone>"
 	"kone" N Fem Sg Indef
 "<Aslaug>"
@@ -7648,7 +7655,7 @@
 "<Kirsti>"
 	"Kirsti" N Prop Fem
 "<Foss>"
-	"Foss" N Prop Sem/Plc
+	"foss" N Msc Sg Indef
 "<,>"
 	"," CLB
 "<Karin>"
@@ -7770,9 +7777,8 @@
 "<som>"
 	"som" Pr
 "<nødvendig>"
-	"nødvendig" A Pos Fem Sg Indef
-	"nødvendig" A Pos Neu Sg Indef
 	"nødvendig" A Pos Msc Sg Indef
+	"nødvendig" A Pos Fem Sg Indef
 "<for>"
 	"for" Pr
 "<at>"
@@ -7887,14 +7893,13 @@
 	"i" Pr
 "<kristendomstimene>"
 	"kristendom+N#" Cmp stim N Msc Pl Def
-	"kristendom+N#" CmpS time N Msc Pl Def
 "<.>"
 	"." CLB
 
 "<«>"
 	"«" ?
 "<Norsk>"
-	"Norsk" N Prop Sem/Sur
+	"norsk" N Msc Sg Indef
 "<er>"
 	"være" V Ind Prs
 "<det>"
@@ -7922,7 +7927,7 @@
 "<var>"
 	"være" V Ind Prt
 "<en>"
-	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<streng>"
 	"streng" A Pos Msc Sg Indef
 "<lærer>"
@@ -7977,10 +7982,9 @@
 "<foreldrene>"
 	"forelder" N Msc Pl Def
 "<dårlig>"
+	"dårlig" A Pos Msc Sg Indef
 	"dårlig" A Pos Fem Sg Indef
 	"dårlig" A Pos MF Sg Indef
-	"dårlig" A Pos Msc Sg Indef
-	"dårlig" A Pos Neu Sg Indef
 "<.>"
 	"." CLB
 
@@ -8009,7 +8013,7 @@
 "<og>"
 	"og" CC
 "<Per>"
-	"Per" N Prop Sem/Sur
+	"Per" N Prop Sem/Mal
 "<Hirsti>"
 	"Hirsti" N Prop Sem/Sur
 "<sendte>"
@@ -8045,7 +8049,7 @@
 "<til>"
 	"til" Pr
 "<Per>"
-	"Per" N Prop Sem/Sur
+	"Per" N Prop Sem/Mal
 "<Fokstad>"
 	"Fokstad" N Prop Sem/Sur
 "<merka>"
@@ -8084,7 +8088,6 @@
 	"," CLB
 "<men>"
 	"men" CC
-	"men" N Neu Pl Indef
 "<følte>"
 	"føle" V Ind Prt
 "<at>"
@@ -8135,7 +8138,7 @@
 "<som>"
 	"som" Pr
 "<en>"
-	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<spennende>"
 	"spennende" A Pos MF Sg Indef
 "<mann>"
@@ -8184,7 +8187,7 @@
 "<var>"
 	"være" V Ind Prt
 "<hans>"
-	"hans" N Msc Sg Indef
+	"hans" Det Poss Msc
 "<kjennetegn>"
 	"kjennetegn" N Neu Pl Indef
 	"kjennetegn" N Neu Sg Indef
@@ -8209,7 +8212,7 @@
 "<ikke>"
 	"ikke" Adv
 "<brukt>"
-	"bruke" V PrfPtc
+	"brukt" A Der/AAdv Adv
 "<heime>"
 	"heime" Adv
 "<,>"
@@ -8297,7 +8300,7 @@
 "<for>"
 	"for" Adv
 "<samisk>"
-	"samisk" A Pos Fem Sg Indef
+	"samisk" A Pos MF Sg Indef
 "<skolepolitikk>"
 	"skolepolitikk" N Msc Sg Indef
 "<og>"
@@ -8344,13 +8347,13 @@
 "<Også>"
 	"også" Adv
 "<Per>"
-	"Per" N Prop Sem/Sur
+	"Per" N Prop Sem/Mal
 "<Fokstad>"
 	"Fokstad" N Prop Sem/Sur
 "<var>"
 	"være" V Ind Prt
 "<en>"
-	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<effektiv>"
 	"effektiv" A Pos Fem Sg Indef
 	"effektiv" A Pos MF Sg Indef
@@ -8408,7 +8411,7 @@
 "<kom>"
 	"komme" V Ind Prt
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<til>"
 	"til" Pr
 "<Fuglåsen>"
@@ -8446,7 +8449,7 @@
 "<blei>"
 	"bli" V Ind Prt Radical
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<resten>"
 	"rest" N Msc Sg Def
 "<av>"
@@ -8465,7 +8468,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<underviste>"
 	"undervise" V Ind Prt
 "<både>"
@@ -8549,7 +8552,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<underviste>"
 	"undervise" V Ind Prt
 "<i>"
@@ -8598,11 +8601,10 @@
 	"var" A Pos Msc Sg Indef
 	"være" V Ind Prt
 "<samisktalende>"
+	"samisktalende" A Pos Pl Def
 	"samisktalende" A Pos Fem Sg Indef
 	"samisktalende" A Pos MF Sg Indef
 	"samisktalende" A Pos Msc Sg Indef
-	"samisktalende" A Pos Neu Sg Indef
-	"samisktalende" A Pos Pl Def
 "<.>"
 	"." CLB
 
@@ -8612,7 +8614,7 @@
 	"20+Det+Qnt+Pl#" Cmp tall N Neu Sg Def
 	"20+Det+Qnt+Pl#" Cmp-tall N Neu Sg Def
 "<var>"
-	"var" A Pos Msc Sg Indef
+	"være" V Ind Prt
 "<elevene>"
 	"elev" N Msc Pl Def
 "<fra>"
@@ -8634,7 +8636,7 @@
 "<og>"
 	"og" CC
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<underviste>"
 	"undervise" V Ind Prt
 "<alle>"
@@ -8657,7 +8659,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<fikk>"
 	"få" V Ind Prt
 "<nok>"
@@ -8722,17 +8724,15 @@
 "<,>"
 	"," CLB
 "<ukjent>"
+	"ukjent" A Pos Msc Sg Indef
 	"ukjent" A Pos Fem Sg Indef
 	"ukjent" A Pos MF Sg Indef
-	"ukjent" A Pos Msc Sg Indef
-	"ukjent" A Pos Neu Sg Indef
 "<,>"
 	"," CLB
 "<ukjent>"
+	"ukjent" A Pos Msc Sg Indef
 	"ukjent" A Pos Fem Sg Indef
 	"ukjent" A Pos MF Sg Indef
-	"ukjent" A Pos Msc Sg Indef
-	"ukjent" A Pos Neu Sg Indef
 "<,>"
 	"," CLB
 "<Birgit>"
@@ -8742,17 +8742,15 @@
 "<,>"
 	"," CLB
 "<ukjent>"
+	"ukjent" A Pos Msc Sg Indef
 	"ukjent" A Pos Fem Sg Indef
 	"ukjent" A Pos MF Sg Indef
-	"ukjent" A Pos Msc Sg Indef
-	"ukjent" A Pos Neu Sg Indef
 "<,>"
 	"," CLB
 "<ukjent>"
+	"ukjent" A Pos Msc Sg Indef
 	"ukjent" A Pos Fem Sg Indef
 	"ukjent" A Pos MF Sg Indef
-	"ukjent" A Pos Msc Sg Indef
-	"ukjent" A Pos Neu Sg Indef
 "<,>"
 	"," CLB
 "<Marie>"
@@ -8800,7 +8798,7 @@
 "<Samiske>"
 	"samisk" A Pos Sg Def
 "<Museum>"
-	"Museum" N Prop Sem/Org
+	"museum" N Neu Sg Indef
 "<)>"
 	")" PUNCT RIGHT
 "<¶>"
@@ -8810,10 +8808,9 @@
 "<er>"
 	"være" V Ind Prs
 "<trolig>"
+	"trolig" A Pos Msc Sg Indef
 	"trolig" A Pos Fem Sg Indef
 	"trolig" A Pos MF Sg Indef
-	"trolig" A Pos Msc Sg Indef
-	"trolig" A Pos Neu Sg Indef
 "<fra>"
 	"fra" Pr
 "<et>"
@@ -8845,7 +8842,7 @@
 "<til>"
 	"til" Pr
 "<venstre>"
-	"venstre" N Msc
+	"venstre" A Der/AAdv Adv
 "<for>"
 	"for" Adv
 "<henne>"
@@ -8893,20 +8890,19 @@
 "<Samiske>"
 	"samisk" A Pos Sg Def
 "<Museum>"
-	"Museum" N Prop Sem/Org
+	"museum" N Neu Sg Indef
 "<)>"
 	")" PUNCT RIGHT
 "<¶>"
 	"¶" CLB
 "<I>"
-	"I" ABBR
 	"i" Pr
 "<1928>"
 	"1928" Det Qnt Pl
 "<deltok>"
 	"delta" V Ind Prt
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<i>"
 	"i" Pr
 "<utarbeidelsen>"
@@ -8939,7 +8935,7 @@
 "<broren>"
 	"bror" N Msc Sg Def
 "<Per>"
-	"Per" N Prop Sem/Sur
+	"Per" N Prop Sem/Mal
 "<lagt>"
 	"legge" V PrfPtc
 "<fram>"
@@ -9101,7 +9097,6 @@
 	"," CLB
 "<men>"
 	"men" CC
-	"men" N Neu Pl Indef
 "<rømte>"
 	"rømme" V Ind Prt
 "<så>"
@@ -9156,7 +9151,7 @@
 "<kom>"
 	"komme" V Ind Prt
 "<raskt>"
-	"rask" A Pos Neu Sg Indef
+	"rask" A Der/AAdv Adv
 "<i>"
 	"i" Pr
 "<gang>"
@@ -9179,7 +9174,7 @@
 "<ikke>"
 	"ikke" Adv
 "<langt>"
-	"lang" A Pos Neu Sg Indef
+	"lang" A Der/AAdv Adv
 "<fra>"
 	"fra" Pr
 "<Ceavccageađgi>"
@@ -9253,7 +9248,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<var>"
 	"være" V Ind Prt
 "<ei>"
@@ -9286,7 +9281,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<bodde>"
 	"bo" V Ind Prt
 "<i>"
@@ -9315,7 +9310,7 @@
 "<at>"
 	"at" CS
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<brukta>"
 	"brukta" ?
 "<samisk>"
@@ -9323,16 +9318,17 @@
 "<med>"
 	"med" Pr
 "<samisktalende>"
-	"samisktalende" A Pos Neu Sg Indef
+	"samisktalende" A Pos Msc Sg Indef
+	"samisktalende" A Pos Fem Sg Indef
 "<.>"
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<var>"
 	"være" V Ind Prt
 "<en>"
-	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<dyktig>"
 	"dyktig" A Pos MF Sg Indef
 "<pedagog>"
@@ -9371,7 +9367,7 @@
 "<at>"
 	"at" CS
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<levde>"
 	"leve" V Ind Prt
 "<et>"
@@ -9396,15 +9392,13 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<var>"
 	"være" V Ind Prt
 "<ikke>"
 	"ikke" Adv
 "<aktiv>"
-	"aktiv" A Pos Fem Sg Indef
 	"aktiv" A Pos MF Sg Indef
-	"aktiv" A Pos Msc Sg Indef
 "<fagpolitisk>"
 	"fagpolitisk" ?
 "<.>"
@@ -9418,7 +9412,7 @@
 "<meldte>"
 	"melde" Ex/V PrfPtc A Pos Pl Def
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<seg>"
 	"sige" V Ind Prt
 "<ut>"
@@ -9434,7 +9428,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<var>"
 	"være" V Ind Prt
 "<heller>"
@@ -9452,7 +9446,7 @@
 "<skjønt>"
 	"skjønne" V PrfPtc
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<var>"
 	"var" A Pos Fem Sg Indef
 	"være" V Ind Prt
@@ -9536,7 +9530,7 @@
 "<tok>"
 	"ta" V Ind Prt
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<til>"
 	"til" Pr
 "<seg>"
@@ -9601,7 +9595,7 @@
 "<snart>"
 	"snart" Adv
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<hadde>"
 	"ha" V Ind Prt
 "<fri>"
@@ -9615,11 +9609,9 @@
 "<var>"
 	"være" V Ind Prt
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<aktiv>"
-	"aktiv" A Pos Fem Sg Indef
 	"aktiv" A Pos MF Sg Indef
-	"aktiv" A Pos Msc Sg Indef
 "<på>"
 	"på" Pr
 "<mange>"
@@ -9635,7 +9627,7 @@
 "<kjørte>"
 	"kjøre" V Ind Prt
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<hesteskyss>"
 	"hesteskyss" ?
 "<for>"
@@ -9655,7 +9647,7 @@
 "<at>"
 	"at" CS
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<var>"
 	"være" V Ind Prt
 "<ei>"
@@ -9669,9 +9661,11 @@
 "<tante>"
 	"tante" N Fem Sg Indef
 "<for>"
+	"for" N Neu Sg Indef
 	"for" Pr
+	"for" N Neu Pl Indef
 "<en>"
-	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<stor>"
 	"stor" A Pos MF Sg Indef
 "<familie>"
@@ -9680,7 +9674,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<forguda>"
 	"forgude" V Ind Prt Radical
 "<niesene>"
@@ -9716,7 +9710,7 @@
 "<i>"
 	"i" Pr
 "<Rogaland>"
-	"Rogaland" N Prop Sem/Plc
+	"rogaland" N Neu Sg Indef
 "<.>"
 	"." CLB
 
@@ -9737,7 +9731,7 @@
 "<der>"
 	"der" Adv
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<hadde>"
 	"ha" V Ind Prt
 "<bygd>"
@@ -9751,7 +9745,7 @@
 "<Da>"
 	"da" Adv
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<blei>"
 	"bli" V Ind Prt Radical
 "<dement>"
@@ -9778,7 +9772,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<døde>"
 	"dø" V Ind Prt
 "<i>"
@@ -9789,7 +9783,6 @@
 	"," CLB
 "<men>"
 	"men" CC
-	"men" N Neu Pl Indef
 "<er>"
 	"være" V Ind Prs
 "<gravlagt>"
@@ -9855,15 +9848,16 @@
 "<yngstebroren>"
 	"yngstebroren" ?
 "<Per>"
-	"Per" N Prop Sem/Sur
+	"Per" N Prop Sem/Mal
 "<,>"
 	"," CLB
 "<han>"
+	"han" Pron Pers Sg3 Acc
 	"han" Pron Pers Sg3 Nom
 "<mente>"
 	"mene" V Ind Prt
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<var>"
 	"var" A Pos Fem Sg Indef
 	"være" V Ind Prt
@@ -9898,7 +9892,7 @@
 "<så>"
 	"så" Adv
 "<Anna>"
-	"Anna" N Prop Fem
+	"annen" Pron Dem Sg Fem
 "<fikk>"
 	"få" V Ind Prt
 "<skolegang>"
@@ -9907,7 +9901,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<gikk>"
 	"gå" V Ind Prt
 "<amtsskole>"
@@ -9931,7 +9925,9 @@
 "<1-årig>"
 	"1-årig" ?
 "<lærerinnekurs>"
-	"lærerinne+N#" Cmp kurs X N Msc Sg Indef
+	"lærerinne+N#" Cmp kurs N Msc Sg Indef
+	"lærerinne+N#" Cmp kurs N Neu Pl Indef
+	"lærerinne+N#" Cmp kurs N Neu Sg Indef
 "<i>"
 	"i" Pr
 "<Tromsø>"
@@ -9944,14 +9940,13 @@
 	"." CLB
 
 "<I>"
-	"I" ABBR
 	"i" Pr
 "<1921/22>"
 	"1921/22" Det Qnt Pl
 "<fikk>"
 	"få" V Ind Prt
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<post>"
 	"post" N Msc Sg Indef
 "<i>"
@@ -9972,14 +9967,13 @@
 	"." CLB
 
 "<I>"
-	"I" ABBR
 	"i" Pr
 "<1922>"
 	"1922" Det Qnt Pl
 "<dro>"
 	"dra" V Ind Prt
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<til>"
 	"til" Pr
 "<Nord-Varanger>"
@@ -9988,7 +9982,6 @@
 	"," CLB
 "<men>"
 	"men" CC
-	"men" N Neu Pl Indef
 "<kom>"
 	"komme" V Ind Prt
 "<tilbake>"
@@ -10005,7 +9998,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<fikk>"
 	"få" V Ind Prt
 "<post>"
@@ -10031,16 +10024,16 @@
 "<Fjordtun>"
 	"Fjordtun" ?
 "<internat>"
-	"internat" N Neu Pl Indef
+	"internat" N Neu Sg Indef
 "<stod>"
 	"stå" V Ind Prt
 "<ferdig>"
-	"ferdig" A Pos Neu Sg Indef
+	"ferdig" A Der/AAdv Adv
 "<.>"
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<underviste>"
 	"undervise" V Ind Prt
 "<både>"
@@ -10170,7 +10163,6 @@
 "<Kårhamn>"
 	"Kårhamn" N Prop Sem/Plc
 "<internat>"
-	"internat" N Neu Pl Indef
 	"internat" N Neu Sg Indef
 "<.>"
 	"." CLB
@@ -10199,7 +10191,7 @@
 "<Fjordtun>"
 	"Fjordtun" ?
 "<internat>"
-	"internat" N Neu Pl Indef
+	"internat" N Neu Sg Indef
 "<,>"
 	"," CLB
 "<og>"
@@ -10218,13 +10210,13 @@
 	"." CLB
 
 "<Høsten>"
-	"Høsten" N Prop Sem/Org
+	"høst" N Msc Sg Def
 "<1944>"
 	"1944" Det Qnt Pl
 "<blei>"
 	"bli" V Ind Prt Radical
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<og>"
 	"og" CC
 "<husmor>"
@@ -10243,13 +10235,13 @@
 	"." CLB
 
 "<Høsten>"
-	"Høsten" N Prop Sem/Org
+	"høst" N Msc Sg Def
 "<1945>"
 	"1945" Det Qnt Pl
 "<samla>"
 	"samle" V Ind Prt Radical
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<,>"
 	"," CLB
 "<Kvalsundlæreren>"
@@ -10263,7 +10255,6 @@
 "<og>"
 	"og" CC
 "<søster>"
-	"søst" N Msc Pl Indef
 	"søster" N Fem Sg Indef
 "<Lydia>"
 	"Lydia" N Prop Fem
@@ -10302,7 +10293,7 @@
 "<til>"
 	"til" Pr
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<gikk>"
 	"gå" V Ind Prt
 "<av>"
@@ -10318,7 +10309,7 @@
 "<skolte>"
 	"skolte" ?
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<ved>"
 	"ved" Pr
 "<Fjordtun>"
@@ -10334,7 +10325,7 @@
 "<da>"
 	"da" Adv
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<skolte>"
 	"skolte" ?
 "<i>"
@@ -10351,7 +10342,7 @@
 "<sleit>"
 	"slite" V Ind Prt
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<med>"
 	"med" Pr
 "<forestillinger>"
@@ -10375,7 +10366,7 @@
 "<at>"
 	"at" CS
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<var>"
 	"være" V Ind Prt
 "<slem>"
@@ -10405,19 +10396,19 @@
 "<tante>"
 	"tante" N Fem Sg Indef
 "<Anna>"
-	"Anna" N Prop Fem
+	"annen" Pron Dem Sg Fem
 "<skolte>"
 	"skolte" ?
 "<i>"
 	"i" Pr
 "<Krampenes>"
-	"Krampenes" N Prop Sem/Plc
+	"krampe" N Fem Pl Def Clt
 "<,>"
 	"," CLB
 "<sendte>"
 	"sende" V Ind Prt
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<formanende>"
 	"formane" V PrsPtc
 "<brev>"
@@ -10443,13 +10434,13 @@
 "<¶>"
 	"¶" CLB
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<brukte>"
 	"bruke" V Ind Prt
 "<ikke>"
 	"ikke" Adv
 "<samisk>"
-	"samisk" A Pos Neu Sg Indef
+	"samisk" N Msc Sg Indef
 "<i>"
 	"i" Pr
 "<skolen>"
@@ -10458,7 +10449,6 @@
 	"," CLB
 "<men>"
 	"men" CC
-	"men" N Neu Pl Indef
 "<tok>"
 	"ta" V Ind Prt
 "<heller>"
@@ -10486,7 +10476,7 @@
 "<det>"
 	"det" Pron Pers Sg3
 "<et>"
-	"et" Det Dem Sg Neu
+	"et" Pron Indef Sg Neu
 "<stort>"
 	"stor" A Pos Neu Sg Indef
 "<lærerstevne>"
@@ -10505,7 +10495,7 @@
 "<både>"
 	"både" CC
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<,>"
 	"," CLB
 "<mine>"
@@ -10531,7 +10521,7 @@
 "<at>"
 	"at" CS
 "<Anna>"
-	"Anna" N Prop Fem
+	"annen" Pron Dem Sg Fem
 "<dro>"
 	"dra" V Ind Prt
 "<mamma>"
@@ -10544,7 +10534,7 @@
 "<bygda>"
 	"bygd" N Fem Sg Def
 "<rundt>"
-	"rund" A Pos Neu Sg Indef
+	"rund" A Der/AAdv Adv
 "<for>"
 	"for" Pr
 "<å>"
@@ -10570,7 +10560,7 @@
 "<kjøpte>"
 	"kjøpe" V Ind Prt
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<platene>"
 	"plate" N Fem Pl Def
 "<til>"
@@ -10594,15 +10584,14 @@
 "<var>"
 	"være" V Ind Prt
 "<hellig>"
+	"hellig" A Pos Msc Sg Indef
 	"hellig" A Pos Fem Sg Indef
 	"hellig" A Pos MF Sg Indef
-	"hellig" A Pos Msc Sg Indef
-	"hellig" A Pos Neu Sg Indef
 "<.>"
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<sympatiserte>"
 	"sympatisere" V Ind Prt
 "<med>"
@@ -10666,7 +10655,7 @@
 "<Når>"
 	"når" Adv
 "<Anna>"
-	"Anna" N Prop Fem
+	"annen" Pron Dem Sg Fem
 "<spanderte>"
 	"spandere" V Ind Prt
 "<,>"
@@ -10700,7 +10689,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<kjøpte>"
 	"kjøpe" V Ind Prt
 "<foreldregården>"
@@ -10708,7 +10697,7 @@
 "<der>"
 	"der" Adv
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<i>"
 	"i" Pr
 "<1957>"
@@ -10725,11 +10714,12 @@
 "<reiste>"
 	"reise" V Ind Prt
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<minst>"
 	"liten" A Superl
 "<en>"
 	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<gang>"
 	"gang" N Msc Sg Indef
 "<i>"
@@ -10740,11 +10730,10 @@
 	"," CLB
 "<men>"
 	"men" CC
-	"men" N Neu Pl Indef
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<blei>"
-	"blei" N Fem Sg Indef
+	"bli" V Ind Prt Radical
 "<nok>"
 	"nok" Adv
 "<på>"
@@ -10755,6 +10744,7 @@
 	"måte" N Msc Pl Indef
 "<en>"
 	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<fremmed>"
 	"fremmed" N Msc Sg Indef
 "<i>"
@@ -10767,7 +10757,8 @@
 "<¶>"
 	"¶" CLB
 "<Anna>"
-	"Anna" N Prop Fem
+	"annen" Pron Dem Sg Fem
+	"annen" Det Dem Sg Fem
 "<og>"
 	"og" CC
 "<Pavel>"
@@ -10866,7 +10857,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<bygde>"
 	"bygge" V Ind Prt
 "<hus>"
@@ -10890,7 +10881,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<var>"
 	"være" V Ind Prt
 "<aktiv>"
@@ -10918,19 +10909,19 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<holdt>"
 	"holde" V Ind Prt
 "<seg>"
 	"seg" Pron Refl Acc
 "<godt>"
-	"godt" Adv
+	"god" A Pos Neu Sg Indef
 "<orientert>"
-	"orientere" V PrfPtc
+	"orientere" Ex/V PrfPtc A Pos MF Sg Indef
 "<og>"
 	"og" CC
 "<kommenterte>"
-	"kommentere" V Ind Prt
+	"kommentere" Ex/V PrfPtc A Pos Pl Def
 "<dem>"
 	"de" Pron Pers Pl3 Acc
 "<som>"
@@ -10942,7 +10933,7 @@
 "<makta>"
 	"makt" N Fem Sg Def
 "<lokalt>"
-	"lokal" A Pos Neu Sg Indef
+	"lokal" A Der/AAdv Adv
 "<.>"
 	"." CLB
 
@@ -10959,7 +10950,7 @@
 "<hadde>"
 	"ha" V Ind Prt
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<hatt>"
 	"ha" V PrfPtc
 "<de>"
@@ -10981,7 +10972,7 @@
 "<¶>"
 	"¶" CLB
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<la>"
 	"legge" V Ind Prt
 "<seg>"
@@ -10997,7 +10988,7 @@
 "<det>"
 	"det" Pron Pers Sg3
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<mente>"
 	"mene" V Ind Prt
 "<var>"
@@ -11005,15 +10996,14 @@
 	"være" V Ind Prt
 	"var" A Pos Msc Sg Indef
 "<ukristelig>"
+	"ukristelig" A Pos Msc Sg Indef
 	"ukristelig" A Pos Fem Sg Indef
 	"ukristelig" A Pos MF Sg Indef
-	"ukristelig" A Pos Msc Sg Indef
-	"ukristelig" A Pos Neu Sg Indef
 "<.>"
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<hadde>"
 	"ha" V Ind Prt
 "<ei>"
@@ -11059,7 +11049,7 @@
 "<¶>"
 	"¶" CLB
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<hadde>"
 	"ha" V Ind Prt
 "<god>"
@@ -11088,7 +11078,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<«>"
 	"«" ?
 "<finska>"
@@ -11113,11 +11103,10 @@
 	"spesiell" A Pos Sg Def
 "<utseende>"
 	"utse" V PrsPtc
+	"utseende" A Pos Pl Def
 	"utseende" A Pos Fem Sg Indef
 	"utseende" A Pos MF Sg Indef
 	"utseende" A Pos Msc Sg Indef
-	"utseende" A Pos Neu Sg Indef
-	"utseende" A Pos Pl Def
 "<og>"
 	"og" CC
 "<ganglag>"
@@ -11125,9 +11114,9 @@
 "<var>"
 	"være" V Ind Prt
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<en>"
-	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<markant>"
 	"markant" A Pos MF Sg Indef
 "<skikkelse>"
@@ -11136,7 +11125,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<var>"
 	"var" A Pos Fem Sg Indef
 "<tante>"
@@ -11175,16 +11164,11 @@
 "<var>"
 	"være" V Ind Prt
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<svært>"
 	"svær" A Pos Neu Sg Indef
 "<stolt>"
-	"stole" Ex/V PrfPtc A Pos Fem Sg Indef
-	"stolt" A Pos Msc Sg Indef
-	"stole" Ex/V PrfPtc A Pos Msc Sg Indef
-	"stolt" A Pos Neu Sg Indef
-	"stolt" A Pos Fem Sg Indef
-	"stolt" A Pos MF Sg Indef
+	"stolt" A Der/AAdv Adv
 "<av>"
 	"av" Adv
 	"av" Pr
@@ -11192,7 +11176,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<hadde>"
 	"ha" V Ind Prt
 "<god>"
@@ -11218,7 +11202,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<var>"
 	"være" V Ind Prt
 "<gjestfri>"
@@ -11242,7 +11226,7 @@
 "<forærte>"
 	"forærte" ?
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<nevøen>"
 	"nevø" N Msc Sg Def
 "<Erling>"
@@ -11255,7 +11239,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<var>"
 	"være" V Ind Prt
 "<tøff>"
@@ -11265,10 +11249,9 @@
 "<og>"
 	"og" CC
 "<uredd>"
+	"uredd" A Pos Msc Sg Indef
 	"uredd" A Pos Fem Sg Indef
 	"uredd" A Pos MF Sg Indef
-	"uredd" A Pos Msc Sg Indef
-	"uredd" A Pos Neu Sg Indef
 "<og>"
 	"og" CC
 "<reiste>"
@@ -11278,7 +11261,7 @@
 "<fly>"
 	"fly" N Neu Sg Indef
 "<rundt>"
-	"rund" A Pos Neu Sg Indef
+	"rund" A Der/AAdv Adv
 "<i>"
 	"i" Pr
 "<landet>"
@@ -11306,7 +11289,7 @@
 "<døde>"
 	"dø" V Ind Prt
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<på>"
 	"på" Pr
 "<sykehjemmet>"
@@ -11355,7 +11338,7 @@
 "<(>"
 	"(" PUNCT LEFT
 "<Lille>"
-	"Lille" N Prop Sem/Plc
+	"liten" A Pos Sg Def
 "<)>"
 	")" PUNCT RIGHT
 "<[>"
@@ -11381,7 +11364,7 @@
 "<Olsen>"
 	"Olsen" N Prop Sem/Sur
 "<Lille>"
-	"Lille" N Prop Sem/Plc
+	"liten" A Pos Sg Def
 "<Ravdne>"
 	"Ravdne" ?
 "<,>"
@@ -11444,7 +11427,8 @@
 	"." CLB
 
 "<Faren>"
-	"Faren" N Prop Sem/Plc
+	"fare" N Msc Sg Def
+	"far" N Msc Sg Def
 "<døde>"
 	"dø" V Ind Prt
 "<da>"
@@ -11575,7 +11559,6 @@
 	"," CLB
 "<men>"
 	"men" CC
-	"men" N Neu Pl Indef
 "<fikk>"
 	"få" V Ind Prt
 "<hjelp>"
@@ -11658,7 +11641,6 @@
 "<Snefjord>"
 	"Snefjord" N Prop Sem/Plc
 "<internat>"
-	"internat" N Neu Pl Indef
 	"internat" N Neu Sg Indef
 "<da>"
 	"da" Adv
@@ -11909,7 +11891,7 @@
 "<og>"
 	"og" CC
 "<leverte>"
-	"levere" V Ind Prt
+	"levere" Ex/V PrfPtc A Pos Sg Def
 "<melk>"
 	"melk" N Fem Sg Indef
 "<til>"
@@ -12003,7 +11985,6 @@
 "<Snefjord>"
 	"Snefjord" N Prop Sem/Plc
 "<internat>"
-	"internat" N Neu Pl Indef
 	"internat" N Neu Sg Indef
 "<1939>"
 	"1939" Det Qnt Pl
@@ -12164,7 +12145,7 @@
 "<er>"
 	"være" V Ind Prs
 "<en>"
-	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<ualminnelig>"
 	"ualminnelig" A Pos Neu Sg Indef
 "<vakker>"
@@ -12195,7 +12176,7 @@
 	"." CLB
 
 "<Den>"
-	"Den" N Prop Sem/Mal
+	"den" Det Dem Sg MF
 "<lange>"
 	"lang" A Pos Sg Def
 "<strandlinjen>"
@@ -12203,10 +12184,7 @@
 "<er>"
 	"være" V Ind Prs
 "<vidunderlig>"
-	"vidunderlig" A Pos Fem Sg Indef
 	"vidunderlig" A Pos MF Sg Indef
-	"vidunderlig" A Pos Msc Sg Indef
-	"vidunderlig" A Pos Neu Sg Indef
 "<.>"
 	"." CLB
 
@@ -12247,11 +12225,11 @@
 "<dro>"
 	"dra" V Ind Prt
 "<ofte>"
+	"ofte" A Pos Pl Def
 	"ofte" A Pos Fem Sg Indef
 	"ofte" A Pos MF Sg Indef
 	"ofte" A Pos Msc Sg Indef
 	"ofte" Adv
-	"ofte" A Pos Pl Def
 "<til>"
 	"til" Pr
 "<Alta>"
@@ -12266,7 +12244,6 @@
 "<Hennes>"
 	"hennes" Det Poss Fem
 "<søster>"
-	"søst" N Msc Pl Indef
 	"søster" N Fem Sg Indef
 "<Julie>"
 	"Julie" N Prop Fem
@@ -12307,10 +12284,9 @@
 "<var>"
 	"være" V Ind Prt
 "<folkelig>"
+	"folkelig" A Pos Msc Sg Indef
 	"folkelig" A Pos Fem Sg Indef
 	"folkelig" A Pos MF Sg Indef
-	"folkelig" A Pos Msc Sg Indef
-	"folkelig" A Pos Neu Sg Indef
 "<,>"
 	"," CLB
 "<og>"
@@ -12318,9 +12294,11 @@
 "<six-pencen>"
 	"six-pencen" ?
 "<var>"
+	"var" A Pos Fem Sg Indef
+	"være" V Ind Prt
 	"var" A Pos Msc Sg Indef
 "<hans>"
-	"hans" N Msc Sg Indef
+	"hans" Det Poss Msc
 "<hodeplagg>"
 	"hodeplagg" N Neu Pl Indef
 	"hodeplagg" N Neu Sg Indef
@@ -12380,7 +12358,7 @@
 	"." CLB
 
 "<Den>"
-	"Den" N Prop Sem/Mal
+	"den" Det Dem Sg MF
 "<nye>"
 	"ny" A Pos Sg Def
 "<internatskolen>"
@@ -12424,7 +12402,6 @@
 	"," CLB
 "<men>"
 	"men" CC
-	"men" N Neu Pl Indef
 "<i>"
 	"i" Pr
 "<Pålbukta>"
@@ -12526,10 +12503,9 @@
 "<var>"
 	"være" V Ind Prt
 "<pertentlig>"
+	"pertentlig" A Pos Msc Sg Indef
 	"pertentlig" A Pos Fem Sg Indef
 	"pertentlig" A Pos MF Sg Indef
-	"pertentlig" A Pos Msc Sg Indef
-	"pertentlig" A Pos Neu Sg Indef
 "<med>"
 	"med" Pr
 "<norskundervisninga>"
@@ -12554,7 +12530,8 @@
 "<lært>"
 	"lært" ?
 "<noe>"
-	"noe" Det Qnt Sg Neu
+	"noe" Adv
+	"noe" Pron Indef
 "<samisk>"
 	"samisk" N Msc Sg Indef
 "<,>"
@@ -12846,7 +12823,7 @@
 "<for>"
 	"for" Adv
 "<Venstre>"
-	"venstre" N Msc
+	"venstre" A Der/AAdv Adv
 "<.>"
 	"." CLB
 
@@ -13028,11 +13005,11 @@
 "<i>"
 	"i" Pr
 "<engelsk>"
-	"engelsk" A Pos Neu Sg Indef
+	"engelsk" N Msc Sg Indef
 "<og>"
 	"og" CC
 "<finsk>"
-	"finsk" A Pos Neu Sg Indef
+	"finsk" N Msc Sg Indef
 "<,>"
 	"," CLB
 "<og>"
@@ -13051,7 +13028,7 @@
 "<ved>"
 	"ved" Pr
 "<Universitetet>"
-	"Universitetet" N Prop Sem/Org
+	"universitet" N Neu Sg Def
 "<i>"
 	"i" Pr
 "<Oslo>"
@@ -13065,7 +13042,6 @@
 	"Norge" N Prop Sem/Plc Clt
 "<Finnemisjonsselskaps>"
 	"finne+N#" Cmp misjonsselskap N Neu Sg Indef Clt
-	"finnemisjon+N#" CmpS selskap N Neu Sg Indef Clt
 "<75-års>"
 	"75-års" ?
 "<jubileum>"
@@ -13106,7 +13082,7 @@
 "<,>"
 	"," CLB
 "<Kong>"
-	"Kong" N Prop Sem/Plc
+	"kong" N Msc Sg Indef
 "<Olav>"
 	"Olav" N Prop Sem/Mal
 "<,>"
@@ -13178,18 +13154,14 @@
 "<som>"
 	"som" Pr
 "<andre>"
-	"andre" A Pos Fem Sg Indef
-	"andre" A Pos Neu Sg Indef
 	"andre" A Pos Msc Sg Indef
+	"andre" A Pos Fem Sg Indef
 "<,>"
 	"," CLB
 "<overvurderte>"
 	"overvurdere" V Ind Prt
 "<imidlertid>"
-	"imidlertid" A Pos Fem Sg Indef
-	"imidlertid" A Pos MF Sg Indef
-	"imidlertid" A Pos Msc Sg Indef
-	"imidlertid" A Pos Neu Sg Indef
+	"imidlertid" A Der/AAdv Adv
 "<den>"
 	"den" Det Dem Sg MF
 "<sjøsamiske>"
@@ -13221,7 +13193,7 @@
 "<¶>"
 	"¶" CLB
 "<Per>"
-	"per" Pr
+	"Per" N Prop Sem/Mal
 "<Erik>"
 	"Erik" N Prop Sem/Mal
 "<Saraksen>"
@@ -13496,7 +13468,7 @@
 	"." CLB
 
 "<Mora>"
-	"Mora" N Prop Sem/Plc
+	"mor" N Fem Sg Def
 "<solgte>"
 	"selge" V Ind Prt
 "<ei>"
@@ -13521,6 +13493,7 @@
 	"nok" Adv
 "<en>"
 	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<sesong>"
 	"sesong" N Msc Sg Indef
 "<på>"
@@ -13562,7 +13535,7 @@
 "<av>"
 	"av" Pr
 "<Per>"
-	"Per" N Prop Sem/Sur
+	"Per" N Prop Sem/Mal
 "<Erik>"
 	"Erik" N Prop Sem/Mal
 "<Saraksen>"
@@ -13626,7 +13599,6 @@
 "<¶>"
 	"¶" CLB
 "<Høsten>"
-	"Høsten" N Prop Sem/Org
 	"høst" N Msc Sg Def
 "<1924>"
 	"1924" Det Qnt Pl
@@ -13674,10 +13646,9 @@
 "<var>"
 	"være" V Ind Prt
 "<dårlig>"
+	"dårlig" A Pos Msc Sg Indef
 	"dårlig" A Pos Fem Sg Indef
 	"dårlig" A Pos MF Sg Indef
-	"dårlig" A Pos Msc Sg Indef
-	"dårlig" A Pos Neu Sg Indef
 "<,>"
 	"," CLB
 "<og>"
@@ -13833,7 +13804,7 @@
 "<,>"
 	"," CLB
 "<samisk>"
-	"samisk" A Pos Fem Sg Indef
+	"samisk" N Msc Sg Indef
 "<og>"
 	"og" CC
 "<finsk>"
@@ -13844,7 +13815,7 @@
 	"." CLB
 
 "<Hans>"
-	"Hans" N Prop Sem/Mal
+	"hans" Det Poss Msc
 "<Kr>"
 	"kr" ABBR
 "<.>"
@@ -13960,11 +13931,7 @@
 "<mange>"
 	"mange" A Pos Neu Sg Indef
 "<finsktalende>"
-	"finsktalende" A Pos Fem Sg Indef
-	"finsktalende" A Pos MF Sg Indef
-	"finsktalende" A Pos Msc Sg Indef
-	"finsktalende" A Pos Neu Sg Indef
-	"finsktalende" A Pos Pl Def
+	"finsktalende" A Der/AAdv Adv
 "<i>"
 	"i" Pr
 "<været>"
@@ -14067,7 +14034,7 @@
 "<for>"
 	"for" Adv
 "<Venstre>"
-	"venstre" A Pos Neu Sg Indef
+	"venstre" A Der/AAdv Adv
 "<i>"
 	"i" Pr
 "<herredsstyret>"
@@ -14190,7 +14157,7 @@
 "<var>"
 	"være" V Ind Prt
 "<en>"
-	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<dyktig>"
 	"dyktig" A Pos MF Sg Indef
 "<lærer>"
@@ -14206,7 +14173,7 @@
 "<og>"
 	"og" CC
 "<Hans>"
-	"Hans" N Prop Sem/Mal
+	"hans" Det Poss Msc
 "<Kr>"
 	"kr" ABBR
 "<.>"
@@ -14236,7 +14203,6 @@
 	"og" CC
 "<historie>"
 	"historie" N Fem Sg Indef
-	"historie" N Msc Sg Indef
 "<.>"
 	"." CLB
 
@@ -14251,7 +14217,6 @@
 "<Kiberg>"
 	"Kiberg" N Prop Sem/Sur
 "<internat>"
-	"internat" N Neu Pl Indef
 	"internat" N Neu Sg Indef
 "<1960>"
 	"1960" Det Qnt Pl
@@ -14278,7 +14243,7 @@
 "<¶>"
 	"¶" CLB
 "<Per>"
-	"per" Pr
+	"Per" N Prop Sem/Mal
 "<Erik>"
 	"Erik" N Prop Sem/Mal
 "<Saraksen>"
@@ -14324,11 +14289,9 @@
 "<internatstyrer>"
 	"internatstyrer" N Msc Sg Indef
 "<var>"
-	"var" A Pos Fem Sg Indef
 	"være" V Ind Prt
-	"var" A Pos Msc Sg Indef
 "<arbeidsomt>"
-	"arbeidsom" A Pos Neu Sg Indef
+	"arbeidsom" A Der/AAdv Adv
 "<,>"
 	"," CLB
 "<og>"
@@ -14342,16 +14305,13 @@
 	"seg" Pron Refl Acc
 "<om>"
 	"om" Adv
-	"om" CS
 	"om" Pr
 "<etter>"
 	"etter" Pr
 "<andre>"
-	"andre" A Pos Fem Sg Indef
-	"andre" A Pos Neu Sg Indef
 	"andre" A Pos Msc Sg Indef
 "<poster>"
-	"poste" V Ind Prs
+	"post" N Msc Pl Indef
 "<,>"
 	"," CLB
 "<bl>"
@@ -14372,6 +14332,7 @@
 	"." CLB
 
 "<I>"
+	"I" ABBR
 	"i" Pr
 "<1958>"
 	"1958" Det Qnt Pl
@@ -14399,7 +14360,7 @@
 	"han" Pron Pers Sg3 Acc
 	"han" Pron Pers Sg3 Nom
 "<blei>"
-	"blei" N Fem Sg Indef
+	"bli" V Ind Prt Radical
 "<til>"
 	"til" Pr
 "<1965>"
@@ -14430,7 +14391,8 @@
 	"han" Pron Pers Sg3 Acc
 	"han" Pron Pers Sg3 Nom
 "<Kongens>"
-	"Kongen" N Prop Sem/Mal Clt
+	"konge" N Msc Sg Def Clt
+	"kong" N Msc Sg Def Clt
 "<fortjenestemedalje>"
 	"fortjenestemedalje" N Msc Sg Indef
 "<i>"
@@ -14443,7 +14405,7 @@
 "<¶>"
 	"¶" CLB
 "<Samisk>"
-	"samisk" A Pos Neu Sg Indef
+	"samisk" N Msc Sg Indef
 "<var>"
 	"var" A Pos Fem Sg Indef
 	"var" A Pos Msc Sg Indef
@@ -14456,7 +14418,6 @@
 	"," CLB
 "<men>"
 	"men" CC
-	"men" N Neu Pl Indef
 "<i>"
 	"i" Pr
 "<dagligtale>"
@@ -14468,7 +14429,7 @@
 "<godt>"
 	"god" A Pos Neu Sg Indef
 "<norsk>"
-	"norsk" A Pos Neu Sg Indef
+	"norsk" N Msc Sg Indef
 "<.>"
 	"." CLB
 
@@ -14539,7 +14500,7 @@
 "<at>"
 	"at" CS
 "<ho>"
-	"ho" ?
+	"hun" Pron Pers Sg3 Nom Use/NG
 "<ikke>"
 	"ikke" Adv
 "<opplevde>"
@@ -14668,7 +14629,7 @@
 "<og>"
 	"og" CC
 "<skolehistoria>"
-	"skole+N#" Cmp historie N Fem Sg Def
+	"skolehistorie" N Fem Sg Def
 "<i>"
 	"i" Pr
 "<Tanafjorden>"
@@ -14689,7 +14650,7 @@
 "<men>"
 	"men" CC
 "<manusene>"
-	"manus" X N Msc Pl Def
+	"manus" N Neu Pl Def
 "<er>"
 	"være" V Ind Prs
 "<bevart>"
@@ -14776,7 +14737,7 @@
 "<¶>"
 	"¶" CLB
 "<Per>"
-	"per" Pr
+	"Per" N Prop Sem/Mal
 "<Erik>"
 	"Erik" N Prop Sem/Mal
 "<og>"
@@ -14849,11 +14810,10 @@
 	"være" V Ind Prt
 	"var" A Pos Msc Sg Indef
 "<norsktalende>"
+	"norsktalende" A Pos Pl Def
 	"norsktalende" A Pos Fem Sg Indef
 	"norsktalende" A Pos MF Sg Indef
 	"norsktalende" A Pos Msc Sg Indef
-	"norsktalende" A Pos Neu Sg Indef
-	"norsktalende" A Pos Pl Def
 "<.>"
 	"." CLB
 
@@ -14868,9 +14828,9 @@
 "<Sirbmá>"
 	"Sirbmá" ?
 "<var>"
-	"var" A Pos Fem Sg Indef
+	"være" V Ind Prt
 "<Anna>"
-	"Anna" N Prop Fem
+	"annen" Det Dem Sg Fem
 "<Anderssen>"
 	"Anderssen" N Prop Sem/Sur
 "<og>"
@@ -14906,6 +14866,7 @@
 	"ønske" V Ind Prt Radical
 "<en>"
 	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<vestlending>"
 	"vestlending" N Msc Sg Indef
 "<.>"
@@ -14927,7 +14888,7 @@
 "<fikk>"
 	"få" V Ind Prt
 "<Per>"
-	"Per" N Prop Sem/Sur
+	"Per" N Prop Sem/Mal
 "<Fokstad>"
 	"Fokstad" N Prop Sem/Sur
 "<post>"
@@ -14999,15 +14960,17 @@
 "<hadde>"
 	"ha" V Ind Prt
 "<ofte>"
+	"ofte" A Pos Pl Def
 	"ofte" A Pos Fem Sg Indef
 	"ofte" A Pos MF Sg Indef
 	"ofte" A Pos Msc Sg Indef
 	"ofte" Adv
-	"ofte" A Pos Pl Def
 "<ett-årig>"
 	"ett-årig" ?
 "<lærerinnekurs>"
-	"lærerinne+N#" Cmp kurs X N Msc Sg Indef
+	"lærerinne+N#" Cmp kurs N Msc Sg Indef
+	"lærerinne+N#" Cmp kurs N Neu Pl Indef
+	"lærerinne+N#" Cmp kurs N Neu Sg Indef
 "<,>"
 	"," CLB
 "<og>"
@@ -15048,7 +15011,7 @@
 "<i>"
 	"i" Pr
 "<en>"
-	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<ny>"
 	"ny" A Pos Fem Sg Indef
 	"ny" A Pos Msc Sg Indef
@@ -15062,16 +15025,15 @@
 	"." CLB
 
 "<De>"
-	"den" Det Dem Pl
+	"de" Pron Pers Pl3 Nom
 "<var>"
-	"var" A Pos Msc Sg Indef
+	"være" V Ind Prt
 "<nøkkelpersoner>"
 	"nøkkelperson" N Msc Pl Indef
 "<,>"
 	"," CLB
 "<men>"
 	"men" CC
-	"men" N Neu Pl Indef
 "<hadde>"
 	"ha" V Ind Prt
 "<lavere>"
@@ -15090,9 +15052,12 @@
 	"." CLB
 
 "<Siden>"
+	"side" N Msc Sg Def
 	"siden" Adv
 "<få>"
-	"få" A Pos Neu Sg Indef
+	"få" A Pos Msc Sg Indef
+	"få" A Pos Fem Sg Indef
+	"få" A Pos MF Sg Indef
 "<av>"
 	"av" Adv
 	"av" Pr
@@ -15129,12 +15094,11 @@
 "<svært>"
 	"svær" A Pos Neu Sg Indef
 "<vanskelig>"
-	"vanskelig" A Pos Fem Sg Indef
-	"vanskelig" A Pos MF Sg Indef
-	"vanskelig" A Pos Msc Sg Indef
-	"vanskelig" A Pos Neu Sg Indef
+	"vanskelig" A Der/AAdv Adv
 "<for>"
+	"for" N Neu Sg Indef
 	"for" Pr
+	"for" N Neu Pl Indef
 "<dem>"
 	"de" Pron Pers Pl3 Acc
 "<å>"
@@ -15308,7 +15272,7 @@
 "<og>"
 	"og" CC
 "<Per>"
-	"Per" N Prop Sem/Sur
+	"Per" N Prop Sem/Mal
 "<Erik>"
 	"Erik" N Prop Sem/Mal
 "<Saraksen>"
@@ -15321,6 +15285,7 @@
 	"i" Pr
 "<en>"
 	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<mannsalder>"
 	"mannsalder" N Msc Sg Indef
 "<,>"
@@ -15470,7 +15435,7 @@
 "<om>"
 	"om" Pr
 "<samisk>"
-	"samisk" A Pos Fem Sg Indef
+	"samisk" A Pos MF Sg Indef
 "<tradisjon>"
 	"tradisjon" N Msc Sg Indef
 "<,>"
@@ -15603,8 +15568,8 @@
 "<¶>"
 	"¶" CLB
 "<Alt>"
-	"all" Det Dem Sg Neu
 	"alt" Adv
+	"all" Det Dem Sg Neu
 "<tyder>"
 	"tyde" V Ind Prs
 "<på>"
@@ -15697,7 +15662,7 @@
 "<godt>"
 	"god" A Pos Neu Sg Indef
 "<norsk>"
-	"norsk" A Pos Neu Sg Indef
+	"norsk" N Msc Sg Indef
 "<,>"
 	"," CLB
 "<gi>"
@@ -15743,14 +15708,14 @@
 "<deres>"
 	"deres" Det Poss Pl
 "<var>"
-	"var" A Pos Fem Sg Indef
-	"var" A Pos Msc Sg Indef
+	"være" V Ind Prt
 "<eventyr>"
+	"eventyr" N Neu Pl Indef
 	"eventyr" N Neu Sg Indef
 "<,>"
 	"," CLB
 "<forankra>"
-	"forankre" V Ind Prt Radical
+	"forankre" V PrfPtc Radical
 "<i>"
 	"i" Pr
 "<naturen>"
@@ -15791,7 +15756,7 @@
 "<prektige>"
 	"prektig" A Pos Pl Def
 "<skoleinternater>"
-	"skoleinternater" ?
+	"skoleinternat" N Neu Pl Indef
 "<,>"
 	"," CLB
 "<gode>"
@@ -15898,6 +15863,7 @@
 	"gjenreisning" N Fem Sg Indef
 "<en>"
 	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<påkjenning>"
 	"påkjenning" N Fem Sg Indef
 "<.>"
@@ -15936,9 +15902,9 @@
 "<dem>"
 	"de" Pron Pers Pl3 Acc
 "<som>"
-	"som" Pr
+	"som" CS
 "<var>"
-	"var" A Pos Msc Sg Indef
+	"være" V Ind Prt
 "<lærere>"
 	"lærer" N Msc Pl Indef
 "<her>"
@@ -15954,11 +15920,10 @@
 	"like" Adv
 "<krevende>"
 	"kreve" V PrsPtc
+	"krevende" A Pos Pl Def
 	"krevende" A Pos Fem Sg Indef
 	"krevende" A Pos MF Sg Indef
 	"krevende" A Pos Msc Sg Indef
-	"krevende" A Pos Neu Sg Indef
-	"krevende" A Pos Pl Def
 "<som>"
 	"som" Pr
 "<i>"
@@ -16060,7 +16025,6 @@
 	"finnmarksbygdenes" ?
 "<historie>"
 	"historie" N Fem Sg Indef
-	"historie" N Msc Sg Indef
 "<og>"
 	"og" CC
 "<storsamfunnets>"
@@ -16094,7 +16058,7 @@
 	"." CLB
 
 "<Høsten>"
-	"Høsten" N Prop Sem/Org
+	"høst" N Msc Sg Def
 "<1944>"
 	"1944" Det Qnt Pl
 "<blei>"
@@ -16153,7 +16117,7 @@
 "<,>"
 	"," CLB
 "<et>"
-	"et" Det Dem Sg Neu
+	"et" Pron Indef Sg Neu
 "<nytt>"
 	"ny" A Pos Neu Sg Indef
 "<og>"
@@ -16227,11 +16191,10 @@
 	"blei" N Fem Sg Indef
 "<omfattende>"
 	"omfatte" V PrsPtc
+	"omfattende" A Pos Pl Def
 	"omfattende" A Pos Fem Sg Indef
 	"omfattende" A Pos MF Sg Indef
 	"omfattende" A Pos Msc Sg Indef
-	"omfattende" A Pos Neu Sg Indef
-	"omfattende" A Pos Pl Def
 "<med>"
 	"med" Adv
 	"med" Pr
@@ -16253,7 +16216,7 @@
 	"." CLB
 
 "<Norsk>"
-	"Norsk" N Prop Sem/Sur
+	"norsk" N Msc Sg Indef
 "<var>"
 	"være" V Ind Prt
 "<enerådende>"
@@ -16354,7 +16317,7 @@
 "<Vestertana>"
 	"Vestertana" N Prop Sem/Plc
 "<en>"
-	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<ledende>"
 	"ledende" A Pos MF Sg Indef
 "<skikkelse>"
@@ -16680,7 +16643,7 @@
 "<som>"
 	"som" CS
 "<Sametinget>"
-	"Sametinget" N Prop Sem/Org
+	"sameting" N Neu Sg Def
 "<,>"
 	"," CLB
 "<Finnmarkseiendommen>"
@@ -16709,7 +16672,7 @@
 "<vil>"
 	"ville" V Ind Prs
 "<få>"
-	"få" V Inf
+	"få" A Der/AAdv Adv
 "<for>"
 	"for" Pr
 "<kultur>"
@@ -16801,6 +16764,7 @@
 	"Finnmark" N Prop Sem/Plc
 "<et>"
 	"et" Det Dem Sg Neu
+	"et" Pron Indef Sg Neu
 "<anna>"
 	"annen" Det Dem Sg Fem
 	"annen" Pron Dem Sg Fem
@@ -16863,7 +16827,10 @@
 "<,>"
 	"," CLB
 "<Stig>"
-	"Stig" N Prop Sem/Mal
+	"stige" V Imp
+	"stig" A Pos Msc Sg Indef
+	"stig" A Pos Fem Sg Indef
+	"stig" A Pos MF Sg Indef
 "<:>"
 	":" PUNCT
 
@@ -16877,9 +16844,8 @@
 "<Gyldendal>"
 	"Gyldendal" N Prop Sem/Plc
 "<Norsk>"
-	"Norsk" N Prop Sem/Sur
+	"norsk" A Pos Neu Sg Indef
 "<forlag>"
-	"forlag" N Neu Pl Indef
 	"forlag" N Neu Sg Indef
 "<1971>"
 	"1971" Det Qnt Pl
@@ -16901,10 +16867,9 @@
 	"." CLB
 
 "<Privat>"
+	"privat" A Pos Msc Sg Indef
 	"privat" A Pos Fem Sg Indef
 	"privat" A Pos MF Sg Indef
-	"privat" A Pos Msc Sg Indef
-	"privat" A Pos Neu Sg Indef
 "<Andreassen>"
 	"Andreassen" N Prop Sem/Sur
 "<,>"
@@ -16926,7 +16891,6 @@
 	"Snefjord" N Prop Sem/Plc Clt
 "<historie>"
 	"historie" N Fem Sg Indef
-	"historie" N Msc Sg Indef
 "<.>"
 	"." CLB
 
@@ -16980,7 +16944,7 @@
 	"." CLB
 
 "<Statsarkivet>"
-	"Statsarkivet" N Prop Sem/Obj
+	"statsarkiv" N Neu Sg Def
 "<i>"
 	"i" Pr
 "<Tromsø>"
@@ -17001,16 +16965,12 @@
 
 "<Notat>"
 	"notat" N Neu Pl Indef
-	"notat" N Neu Sg Indef
 "<03.05.1955>"
 	"03.05.1955" ?
 "<Samisk>"
-	"samisk" A Pos Fem Sg Indef
-	"samisk" A Pos MF Sg Indef
-	"samisk" A Pos Msc Sg Indef
 	"samisk" A Pos Neu Sg Indef
 "<Arkiv>"
-	"Arkiv" N Prop Sem/Obj
+	"arkiv" N Neu Sg Indef
 "<Gammelshaug>"
 	"gammel+A#" CmpS haug N Msc Sg Indef
 "<,>"
@@ -17027,7 +16987,7 @@
 "<->"
 	"-" PUNCT
 "<en>"
-	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<kortfattet>"
 	"kortfattet" ?
 "<historisk>"
@@ -17058,9 +17018,8 @@
 "<Gyldendal>"
 	"Gyldendal" N Prop Sem/Plc
 "<Norsk>"
-	"Norsk" N Prop Sem/Sur
+	"norsk" A Pos Neu Sg Indef
 "<Forlag>"
-	"forlag" N Neu Pl Indef
 	"forlag" N Neu Sg Indef
 "<1994>"
 	"1994" Det Qnt Pl
@@ -17075,6 +17034,7 @@
 
 "<En>"
 	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<symfoni>"
 	"symfoni" N Msc Sg Indef
 "<med>"
@@ -17098,12 +17058,12 @@
 "<,>"
 	"," CLB
 "<Finn>"
-	"Finn" N Prop Sem/Sur
+	"finne" V Imp
 "<(>"
 	"(" PUNCT LEFT
 "<red>"
-	"lide" V Ind Prt
-	"ride" V Ind Prt
+	"red" N Msc Sg Indef
+	"red" ABBR
 "<.>"
 	"." CLB
 
@@ -17167,7 +17127,6 @@
 	"Sørøysund" N Prop Sem/Plc Clt
 "<historie>"
 	"historie" N Fem Sg Indef
-	"historie" N Msc Sg Indef
 "<.>"
 	"." CLB
 
@@ -17216,7 +17175,6 @@
 "<Snøfjord>"
 	"snø+N#" Cmp fjord N Msc Sg Indef
 "<internat>"
-	"internat" N Neu Pl Indef
 	"internat" N Neu Sg Indef
 "<.>"
 	"." CLB
@@ -17259,9 +17217,8 @@
 
 "<Det>"
 	"det" Det Dem Sg Neu
-	"det" Pron Pers Sg3
 "<Norske>"
-	"Norske" N Prop Sem/Org
+	"norsk" A Pos Sg Def
 "<Samlaget>"
 	"samlag" N Neu Sg Def
 "<,>"
@@ -17299,7 +17256,7 @@
 "<Nesseby>"
 	"Nesseby" N Prop Sem/Plc
 "<skolehistorie>"
-	"skolehistorie" N Msc Sg Indef
+	"skolehistorie" N Fem Sg Indef
 "<.>"
 	"." CLB
 
@@ -17330,7 +17287,7 @@
 	"." CLB
 
 "<Universitetet>"
-	"Universitetet" N Prop Sem/Org
+	"universitet" N Neu Sg Def
 "<i>"
 	"i" Pr
 "<Tromsø>"
@@ -17380,7 +17337,6 @@
 	"gammel" A Comp
 "<historie>"
 	"historie" N Fem Sg Indef
-	"historie" N Msc Sg Indef
 "<.>"
 	"." CLB
 
@@ -17395,7 +17351,6 @@
 "<,>"
 	"," CLB
 "<Just>"
-	"Just" N Prop Sem/Sur
 	"just" Adv
 "<:>"
 	":" PUNCT
@@ -17490,7 +17445,8 @@
 	"." CLB
 
 "<Manus>"
-	"Manu" N Prop Sem/Plc Clt
+	"manus" N Neu Sg Indef
+	"manus" N Neu Pl Indef
 "<2000>"
 	"2000" Det Qnt Pl
 "<Saraksen>"
@@ -17498,7 +17454,7 @@
 "<,>"
 	"," CLB
 "<Per>"
-	"per" Pr
+	"Per" N Prop Sem/Mal
 "<Erik>"
 	"Erik" N Prop Sem/Mal
 "<:>"
@@ -17521,7 +17477,7 @@
 "<,>"
 	"," CLB
 "<Per>"
-	"per" Pr
+	"Per" N Prop Sem/Mal
 "<Erik>"
 	"Erik" N Prop Sem/Mal
 "<:>"
@@ -17537,13 +17493,13 @@
 	"." CLB
 
 "<Diverse>"
-	"diverse" A Pos MF Sg Indef
+	"diverse" A Pos Neu Sg Indef
 "<manus>"
-	"manus" X N Msc Sg Indef
+	"manus" N Neu Sg Indef
 "<er>"
 	"være" V Ind Prs
 "<trykt>"
-	"trykt" ?
+	"trykke" V PrfPtc
 "<i>"
 	"i" Pr
 "<Tana>"
@@ -17581,7 +17537,6 @@
 	"slekte" V Ind Prs
 "<historie>"
 	"historie" N Fem Sg Indef
-	"historie" N Msc Sg Indef
 "<.>"
 	"." CLB
 
@@ -17629,7 +17584,7 @@
 "<Tana>"
 	"Tana" N Prop Sem/Plc
 "<skolehistorie>"
-	"skolehistorie" N Msc Sg Indef
+	"skolehistorie" N Fem Sg Indef
 "<.>"
 	"." CLB
 
@@ -17752,7 +17707,7 @@
 "<familien>"
 	"familie" N Msc Sg Def
 "<Lille>"
-	"Lille" N Prop Sem/Plc
+	"liten" A Pos Sg Def
 "</>"
 	"/" PUNCT
 "<Kratteng>"
@@ -17842,7 +17797,7 @@
 "<og>"
 	"og" CC
 "<Hans>"
-	"Hans" N Prop Sem/Mal
+	"hans" Det Poss Msc
 "<Kr>"
 	"kr" ABBR
 "<.>"
@@ -17883,10 +17838,7 @@
 "<omfatta>"
 	"omfatte" V PrfPtc Radical
 "<nedre>"
-	"nedre" A Pos Fem Sg Indef
-	"nedre" A Pos MF Sg Indef
-	"nedre" A Pos Msc Sg Indef
-	"nedre" A Pos Neu Sg Indef
+	"nedre" A Der/AAdv Adv
 "<Tana>"
 	"Tana" N Prop Sem/Plc
 "<og>"
@@ -18018,6 +17970,7 @@
 
 "<En>"
 	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<symfoni>"
 	"symfoni" N Msc Sg Indef
 "<med>"
@@ -18041,12 +17994,12 @@
 "<,>"
 	"," CLB
 "<Finn>"
-	"Finn" N Prop Sem/Sur
+	"finne" V Imp
 "<(>"
 	"(" PUNCT LEFT
 "<red>"
-	"lide" V Ind Prt
-	"ride" V Ind Prt
+	"red" N Msc Sg Indef
+	"red" ABBR
 "<.>"
 	"." CLB
 
@@ -18095,7 +18048,7 @@
 "<Samisk>"
 	"samisk" A Pos Fem Sg Indef
 "<skolehistorie>"
-	"skolehistorie" N Msc Sg Indef
+	"skolehistorie" N Fem Sg Indef
 "<,>"
 	"," CLB
 "<bl>"
@@ -18151,7 +18104,6 @@
 	"Pedersen" N Prop Sem/Sur Clt
 "<skrifter>"
 	"skrift" N Fem Pl Indef
-	"skrifte" N Neu Pl Indef
 "<Lappecodicillen>"
 	"Lappecodicillen" N Prop Sem/Obj
 "<i>"
@@ -18168,7 +18120,7 @@
 	"." CLB
 
 "<Universitetet>"
-	"Universitetet" N Prop Sem/Org
+	"universitet" N Neu Sg Def
 "<i>"
 	"i" Pr
 "<Tromsø>"
@@ -18205,7 +18157,6 @@
 	"gammel" A Comp
 "<historie>"
 	"historie" N Fem Sg Indef
-	"historie" N Msc Sg Indef
 "<.>"
 	"." CLB
 
@@ -18239,7 +18190,7 @@
 "<og>"
 	"og" CC
 "<samisk>"
-	"samisk" A Pos Fem Sg Indef
+	"samisk" A Pos MF Sg Indef
 "<språkforsker>"
 	"språkforsker" N Msc Sg Indef
 "<og>"
@@ -18272,7 +18223,7 @@
 "<i>"
 	"i" Pr
 "<Hans>"
-	"Hans" N Prop Sem/Mal
+	"hans" Det Poss Msc
 "<Lindkjølens>"
 	"lind+N#" Cmp kjøl N Msc Sg Def Clt
 "<artikkel>"
@@ -18282,7 +18233,7 @@
 "<Samisk>"
 	"samisk" A Pos Fem Sg Indef
 "<skolehistorie>"
-	"skolehistorie" N Msc Sg Indef
+	"skolehistorie" N Fem Sg Indef
 "<1>"
 	"1" Det Qnt Pl
 "<.>"
@@ -18562,7 +18513,7 @@
 "<etablere>"
 	"etablere" V Inf
 "<Norsk>"
-	"Norsk" N Prop Sem/Sur
+	"norsk" A Pos MF Sg Indef
 "<Finnemisjon>"
 	"finnemisjon" N Msc Sg Indef
 "<i>"
@@ -18616,7 +18567,7 @@
 "<barnehjemmet>"
 	"barnehjem" N Neu Sg Def
 "<Hans>"
-	"Hans" N Prop Sem/Mal
+	"hans" Det Poss Msc
 "<Schanches>"
 	"Schanche" N Prop Sem/Sur Clt
 "<Minne>"
@@ -18718,7 +18669,7 @@
 "<Tana>"
 	"Tana" N Prop Sem/Plc
 "<skolehistorie>"
-	"skolehistorie" N Msc Sg Indef
+	"skolehistorie" N Fem Sg Indef
 "<.>"
 	"." CLB
 
@@ -18823,7 +18774,7 @@
 	":" PUNCT
 
 "<Lappekodisillen>"
-	"Lappekodisillen" N Prop Sem/Obj
+	"lappekodisill" N Msc Sg Def
 "<i>"
 	"i" Pr
 "<nord>"
@@ -18878,7 +18829,7 @@
 	":" PUNCT
 
 "<Samebevegelsen>"
-	"Samebevegelsen" N Prop Sem/Obj
+	"samebevegelse" N Msc Sg Def
 "<i>"
 	"i" Pr
 "<Norge>"
@@ -18935,7 +18886,7 @@
 	"var" A Pos Fem Sg Indef
 	"var" A Pos Msc Sg Indef
 "<en>"
-	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<av>"
 	"av" Pr
 "<de>"
@@ -19022,7 +18973,7 @@
 "<i>"
 	"i" Pr
 "<Arbeiderpartiet>"
-	"Arbeiderpartiet" N Prop Sem/Org
+	"arbeiderparti" N Neu Sg Def
 "<og>"
 	"og" CC
 "<opptatt>"
@@ -19055,7 +19006,7 @@
 "<blei>"
 	"bli" V Ind Prt Radical
 "<trykt>"
-	"trykt" ?
+	"trykke" V PrfPtc
 "<i>"
 	"i" Pr
 "<boka>"
@@ -19121,7 +19072,7 @@
 	":" PUNCT
 
 "<Norsk>"
-	"Norsk" N Prop Sem/Sur
+	"norsk" N Msc Sg Indef
 "<aarbok>"
 	"aarbok" ?
 "<1923>"
@@ -19147,7 +19098,7 @@
 "<Samisk>"
 	"samisk" A Pos Fem Sg Indef
 "<skolehistorie>"
-	"skolehistorie" N Msc Sg Indef
+	"skolehistorie" N Fem Sg Indef
 "<2>"
 	"2" Det Qnt Pl
 "<.>"
@@ -19292,8 +19243,9 @@
 "<Lávvonjárga>"
 	"Lávvonjárga" ?
 "<var>"
-	"var" A Pos Msc Sg Indef
+	"være" V Ind Prt
 "<lærer>"
+	"lære" N Fem Pl Indef
 	"lærer" N Msc Sg Indef
 "<og>"
 	"og" CC
@@ -19312,7 +19264,7 @@
 "<var>"
 	"være" V Ind Prt
 "<en>"
-	"en" Det Dem Sg MF
+	"en" Pron Indef Sg MF
 "<av>"
 	"av" Pr
 "<lederne>"
@@ -19396,7 +19348,7 @@
 "<med>"
 	"med" Pr
 "<samisk>"
-	"samisk" A Pos Fem Sg Indef
+	"samisk" A Pos MF Sg Indef
 "<aksent>"
 	"aksent" N Msc Sg Indef
 "<.>"
@@ -19421,7 +19373,7 @@
 "<Olsen>"
 	"Olsen" N Prop Sem/Sur
 "<Lille>"
-	"Lille" N Prop Sem/Plc
+	"liten" A Pos Sg Def
 "<,>"
 	"," CLB
 "<men>"
@@ -19449,7 +19401,6 @@
 	"av" Pr
 "<hans>"
 	"hans" Det Poss Msc
-	"hans" N Msc Sg Indef
 "<etterkommere>"
 	"etterkommer" N Msc Pl Indef
 "<har>"
@@ -19457,9 +19408,9 @@
 "<noen>"
 	"noen" Pron Indef
 "<brukt>"
-	"bruke" V PrfPtc
+	"brukt" A Pos Neu Sg Indef
 "<Lille>"
-	"Lille" N Prop Sem/Plc
+	"liten" A Pos Sg Def
 "<eller>"
 	"eller" CC
 "<Lile>"
@@ -19467,10 +19418,6 @@
 "<,>"
 	"," CLB
 "<andre>"
-	"andre" A Pos Fem Sg Indef
-	"andre" A Pos MF Sg Indef
-	"andre" A Pos Msc Sg Indef
-	"andre" A Pos Neu Sg Indef
 	"annen" Pron Dem Pl
 	"annen" Det Dem Pl
 "<Olsen>"
@@ -19545,7 +19492,6 @@
 	"av" Pr
 "<Finnemisjonsselskapet>"
 	"finne+N#" Cmp misjonsselskap N Neu Sg Def
-	"finnemisjon+N#" CmpS selskap N Neu Sg Def
 "<fra>"
 	"fra" Pr
 "<1910>"
@@ -19565,7 +19511,7 @@
 "<Samenes>"
 	"same" N Msc Pl Def Clt
 "<Venn>"
-	"Venn" N Prop Sem/Sur
+	"venn" N Msc Sg Indef
 "<.>"
 	"." CLB
 
@@ -19619,7 +19565,6 @@
 	"luthersk" A Pos Sg Def
 "<Indremisjonsselskap>"
 	"indre+A#" Cmp misjonsselskap N Neu Sg Indef
-	"indremisjon+N#" CmpS selskap N Neu Sg Indef
 "<.>"
 	"." CLB
 
@@ -19695,7 +19640,7 @@
 "<Se>"
 	"se" V Inf
 "<Per>"
-	"Per" N Prop Sem/Sur
+	"Per" N Prop Sem/Mal
 "<Erik>"
 	"Erik" N Prop Sem/Mal
 "<Saraksens>"
@@ -19804,7 +19749,7 @@
 "<ved>"
 	"ved" Pr
 "<Universitetet>"
-	"Universitetet" N Prop Sem/Org
+	"universitet" N Neu Sg Def
 "<i>"
 	"i" Pr
 "<Oslo>"
@@ -19828,7 +19773,7 @@
 "<av>"
 	"av" Pr
 "<Norsk>"
-	"Norsk" N Prop Sem/Sur
+	"norsk" N Msc Sg Indef
 "<–>"
 	"–" PUNCT
 "<Samisk>"
@@ -19897,7 +19842,7 @@
 "<Samisk>"
 	"samisk" A Pos Fem Sg Indef
 "<skolehistorie>"
-	"skolehistorie" N Msc Sg Indef
+	"skolehistorie" N Fem Sg Indef
 "<4>"
 	"4" Det Qnt Pl
 "<¶>"
