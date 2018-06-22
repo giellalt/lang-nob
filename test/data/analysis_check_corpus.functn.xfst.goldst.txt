@@ -181,11 +181,12 @@
 "<her>"
 	"her" Adv @<ADVL
 "<skriver>"
+	"skrive" V Ind Prs @+FMAINV
 	"skriver" N Msc Sg Indef @<SPRED
 "<hans>"
 	"hans" Det Poss Msc @>N
 "<datterdatter>"
-	"datterdatter" N Fem Sg Indef @<SPRED
+	"datterdatter" N Fem Sg Indef @<OBJ
 "<om>"
 	"om" Pr @<ADVL
 "<de>"
@@ -252,11 +253,11 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @SUBJ>
+	"hun" Pron Pers Sg3 Nom Use/NG @SUBJ>
 "<er>"
 	"være" V Ind Prs @+FMAINV
 "<naturforvaltningskandidat>"
-	"naturforvaltningskandidat" N Msc Sg Indef @<SPRED
+	"naturforvaltningskandidat" N Msc Sg Indef @<SUBJ
 "<fra>"
 	"fra" Pr @<ADVL
 "<Norges>"
@@ -280,7 +281,7 @@
 "<ved>"
 	"ved" Pr @<ADVL
 "<Universitetet>"
-	"Universitetet" N Prop Sem/Org @P<
+	"universitet" N Neu Sg Def @P<
 "<i>"
 	"i" Pr @<ADVL
 "<Tromsø>"
@@ -289,7 +290,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @SUBJ>
+	"hun" Pron Pers Sg3 Nom Use/NG @SUBJ>
 "<har>"
 	"ha" V Ind Prs @+FMAINV
 "<arbeida>"
@@ -313,7 +314,7 @@
 "<Statens>"
 	"stat" N Msc Sg Def Clt @>N
 "<Skoger>"
-	"Skoger" N Prop Sem/Sur @HNOUN
+	"skog" N Msc Pl Indef @HNOUN
 "<,>"
 	"," CLB
 "<Forskningsrådet>"
@@ -328,7 +329,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @SUBJ>
+	"hun" Pron Pers Sg3 Nom Use/NG @SUBJ>
 "<har>"
 	"ha" V Ind Prs @+FMAINV
 "<bodd>"
@@ -354,9 +355,9 @@
 "<leder>"
 	"leder" N Msc Sg Indef @<SPRED
 "<i>"
-	"i" Pr @<ADVL
+	"i" Pr @N<
 "<Ishavskysten>"
-	"Ishavskysten" N Prop Sem/Org @P<
+	"ishavskyst" N Msc Sg Def @P<
 "<friluftsråd>"
 	"friluftsråd" N Neu Pl Indef @<SPRED
 	"friluftsråd" N Neu Sg Indef @<SPRED
@@ -374,7 +375,9 @@
 "<vært>"
 	"være" V PrfPtc @-FMAINV
 "<samepolitisk>"
-	"samepolitisk" A Der/AAdv Adv @<ADVL
+	"samepolitisk" A Pos Msc Sg Indef @X
+	"samepolitisk" A Pos Fem Sg Indef @X
+	"samepolitisk" A Pos MF Sg Indef @X
 "<engasjert>"
 	"engasjere" V PrfPtc @-FMAINV
 "<,>"
@@ -456,7 +459,7 @@
 "<og>"
 	"og" CC @CVP
 "<medforfatter>"
-	"medforfatter" ? @X
+	"medforfatter" N Msc Sg Indef @<OBJ
 "<av>"
 	"av" Pr @<ADVL
 "<artikkelen>"
@@ -466,7 +469,6 @@
 "<–>"
 	"–" PUNCT
 "<by>"
-	"bu" N Msc Pl Indef @<OBJ
 	"by" N Msc Sg Indef @<OBJ
 "<med>"
 	"med" Pr @<ADVL
@@ -508,7 +510,7 @@
 "<tidligere>"
 	"tidlig" A Comp @X
 "<upubliserte>"
-	"upubliserte" ? @X
+	"upublisert" A Pos Pl Def @A>
 "<artikler>"
 	"artikkel" N Msc Pl Indef @<OBJ
 "<.>"
@@ -529,10 +531,9 @@
 "<hans>"
 	"hans" Det Poss Msc @>N
 "<søster>"
-	"søst" N Msc Pl Indef @X
 	"søster" N Fem Sg Indef @X
 "<Anna>"
-	"Anna" N Prop Fem @X
+	"annen" Pron Dem Sg Fem @X
 "<,>"
 	"," CLB
 "<og>"
@@ -985,7 +986,7 @@
 "<på>"
 	"på" Pr @<ADVL
 "<Statsarkivet>"
-	"Statsarkivet" N Prop Sem/Obj @P<
+	"statsarkiv" N Neu Sg Def @P<
 "<.>"
 	"." CLB
 
@@ -1035,7 +1036,7 @@
 "<skolen>"
 	"skole" N Msc Sg Def @P<
 "<og>"
-	"og" CC @CNP
+	"og" CC @X
 "<i>"
 	"i" Pr @<ADVL
 "<landskapet>"
@@ -1219,15 +1220,15 @@
 "<og>"
 	"og" CC @X
 "<fram>"
-	"fram" Adv @ADVL>
+	"fram" Adv @<ADVL
 "<til>"
-	"til" Pr @ADVL>
+	"til" Pr @<ADVL
 "<omlag>"
 	"omlag" Adv @<ADVL
 "<1870>"
 	"1870" Det Qnt Pl @>N
 "<blei>"
-	"bli" V Ind Prt Radical @+FMAINV
+	"blei" N Fem Sg Indef @X
 "<lærebøkene>"
 	"lærebok" N Fem Pl Def @X
 "<gitt>"
@@ -1369,14 +1370,13 @@
 "<1870>"
 	"1870" Det Qnt Pl @>N
 "<blei>"
-	"bli" V Ind Prt Radical @+FMAINV
+	"blei" N Fem Sg Indef @X
 "<lærebøkene>"
 	"lærebok" N Fem Pl Def @X
 "<gitt>"
 	"gi" V PrfPtc @-FMAINV
 "<ut>"
 	"ut" Adv @<ADVL
-	"ut" Pr @<ADVL
 "<med>"
 	"med" Pr @<ADVL
 "<tekst>"
@@ -1566,9 +1566,9 @@
 "<">"
 	""" PUNCT
 "<Statens>"
-	"Staten" N Prop Sem/Obj Clt @>N
+	"stat" N Msc Sg Def Clt @>N
 "<grunn>"
-	"grunn" N Msc Sg Indef @X
+	"grunn" N Msc Sg Indef @P<
 "<">"
 	""" PUNCT
 "<,>"
@@ -1675,9 +1675,9 @@
 "<,>"
 	"," CLB
 "<likevel>"
-	"likevel" Adv @ADVL>
+	"likevel" Adv @X
 "<holdt>"
-	"holde" V Ind Prt @+FMAINV
+	"holde" Ex/V PrfPtc A Pos Msc Sg Indef @-FMAINV
 "<samisk>"
 	"samisk" N Msc Sg Indef @X
 "<stand>"
@@ -1771,7 +1771,7 @@
 	"." CLB
 
 "<Plassen>"
-	"Plassen" N Prop Sem/Sur @SUBJ>
+	"plass" N Msc Sg Def @SUBJ>
 "<hadde>"
 	"ha" V Ind Prt @+FMAINV
 "<vært>"
@@ -1808,7 +1808,7 @@
 	"." CLB
 
 "<Midt>"
-	"Midt" N Prop Sem/Sur @X
+	"midt" Adv @ADVL>
 "<på>"
 	"på" Pr @ADVL>
 "<1800-tallet>"
@@ -1856,7 +1856,7 @@
 "<1000>"
 	"1000" Det Qnt Pl @>N
 "<fiskere>"
-	"fisker" N Msc Pl Indef @<SUBJ
+	"fisker" N Msc Pl Indef @X
 "<fra>"
 	"fra" Pr @<ADVL
 "<Finnkongkeila>"
@@ -1877,7 +1877,7 @@
 "<,>"
 	"," CLB
 "<men>"
-	"men" N Neu Pl Indef @<OBJ
+	"men" CC @X
 "<ikke>"
 	"ikke" Adv @<ADVL
 "<bygd>"
@@ -1953,7 +1953,7 @@
 "<Samiske>"
 	"samisk" A Pos Sg Def @A>
 "<Museum>"
-	"Museum" N Prop Sem/Org @X
+	"museum" N Neu Sg Indef @X
 "<)>"
 	")" PUNCT RIGHT
 "<¶>"
@@ -1987,7 +1987,7 @@
 "<kalles>"
 	"kalle" V Ind Prs Pass @+FMAINV
 "<Nedre>"
-	"Nedre" N Prop Sem/Plc @X
+	"nedre" A Der/AAdv Adv @<ADVL
 "<Tana>"
 	"Tana" N Prop Sem/Plc @X
 "<og>"
@@ -2379,7 +2379,7 @@
 "<stifta>"
 	"stift" N Neu Pl Def @<SPRED
 "<og>"
-	"og" CC @CNP
+	"og" CC @X
 "<redigere>"
 	"redigere" V Inf @-FMAINV
 "<den>"
@@ -2421,9 +2421,9 @@
 "<emmisæren>"
 	"emmisæren" ? @X
 "<for>"
-	"for" Pr @<ADVL
+	"for" Adv @<ADVL
 "<Norsk>"
-	"Norsk" N Prop Sem/Sur @P<
+	"norsk" A Pos MF Sg Indef @A>
 "<Finnemisjon>"
 	"finnemisjon" N Msc Sg Indef @<OBJ
 "<.>"
@@ -2541,7 +2541,7 @@
 "<,>"
 	"," CLB
 "<og>"
-	"og" CC @CVP
+	"og" CC @X
 "<i>"
 	"i" Pr @<ADVL
 "<Bonjákas>"
@@ -2571,9 +2571,9 @@
 "<til>"
 	"til" Pr @<ADVL
 "<samisk>"
-	"samisk" A Der/AAdv Adv @A>
+	"samisk" A Der/AAdv Adv @<ADVL
 "<snakka>"
-	"snakke" V Ind Prt Radical @+FMAINV
+	"snakk" N Neu Pl Def @P<
 "<finsk>"
 	"finsk" N Msc Sg Indef @X
 "</>"
@@ -2780,7 +2780,7 @@
 	"." CLB
 
 "<Hans>"
-	"Hans" N Prop Sem/Mal @HNOUN
+	"hans" Det Poss Msc @X
 "<Baukop>"
 	"Baukop" ? @X
 "<,>"
@@ -2869,7 +2869,7 @@
 	"." CLB
 
 "<Anna>"
-	"Anna" N Prop Fem @ATTR>
+	"annen" Det Dem Sg Fem @>N
 "<Mathisen>"
 	"Mathisen" N Prop Sem/Sur @HNOUN
 "<,>"
@@ -2880,13 +2880,17 @@
 	"." CLB
 
 "<Agnes>"
-	"Agnes" N Prop Fem @HNOUN
+	"agne" V Inf Pass @-FMAINV
+	"agne" V Ind Prs Pass @+FMAINV
 "<Ravna>"
 	"Ravna" ? @X
 "<g>"
 	"g" ABBR
 "<Øvre>"
-	"Øvre" N Prop Sem/Sur @HNOUN
+	"øvre" A Pos Pl Def @X
+	"øvre" A Pos Msc Sg Indef @X
+	"øvre" A Pos Fem Sg Indef @X
+	"øvre" A Pos MF Sg Indef @X
 "<,>"
 	"," CLB
 "<11>"
@@ -3036,7 +3040,7 @@
 	"." CLB
 
 "<Anna>"
-	"Anna" N Prop Fem @HNOUN
+	"annen" Pron Dem Sg Fem @HNOUN
 "<Pavelsen>"
 	"Pavelsen" ? @X
 "<g>"
@@ -3130,7 +3134,7 @@
 	"." CLB
 
 "<Hans>"
-	"Hans" N Prop Sem/Mal @HNOUN
+	"hans" Det Poss Msc @X
 "<Lavde>"
 	"Lavde" ? @X
 "<?>"
@@ -3166,9 +3170,9 @@
 	"." CLB
 
 "<John>"
-	"John" N Prop Sem/Mal @ATTR>
+	"John" N Prop Sem/Mal @HNOUN
 "<Haug>"
-	"Haug" N Prop Sem/Sur @HNOUN
+	"haug" N Msc Sg Indef @HNOUN
 "<,>"
 	"," CLB
 "<34>"
@@ -3258,7 +3262,7 @@
 	"." CLB
 
 "<Anna>"
-	"Anna" N Prop Fem @ATTR>
+	"annen" Det Dem Sg Fem @>N
 "<Samuelsen>"
 	"Samuelsen" N Prop Sem/Sur @HNOUN
 "<,>"
@@ -3566,7 +3570,7 @@
 "<kristendom>"
 	"kristendom" N Msc Sg Indef @P<
 "<eller>"
-	"eller" CC @CNP
+	"eller" CC @X
 "<som>"
 	"som" Pr @<ADVL
 "<hjelpespråk>"
@@ -3908,7 +3912,7 @@
 "<blei>"
 	"bli" V Ind Prt Radical @+FMAINV
 "<trykt>"
-	"trykt" ? @X
+	"trykke" V PrfPtc @-FMAINV
 "<i>"
 	"i" Pr @<ADVL
 "<«>"
@@ -4130,7 +4134,7 @@
 "<og>"
 	"og" CC @CNP
 "<Anna>"
-	"Anna" N Prop Fem @ATTR>
+	"annen" Det Dem Sg Fem @>N
 "<Anderssen>"
 	"Anderssen" N Prop Sem/Sur @X
 "<utdanna>"
@@ -4156,9 +4160,11 @@
 "<måtte>"
 	"måtte" V Ind Prt @+FMAINV
 "<Anna>"
-	"Anna" N Prop Fem @<SUBJ
+	"annen" Det Dem Sg Fem @X
 "<nøye>"
-	"nøye" V Inf @-FMAINV
+	"nøye" A Pos Msc Sg Indef @X
+	"nøye" A Pos Fem Sg Indef @X
+	"nøye" A Pos MF Sg Indef @X
 "<seg>"
 	"seg" Pron Refl Acc @<OBJ
 "<med>"
@@ -4166,7 +4172,9 @@
 "<1-årig>"
 	"1-årig" ? @X
 "<lærerinnekurs>"
-	"lærerinne+N#" Cmp kurs X N Msc Sg Indef @P<
+	"lærerinne+N#" Cmp kurs N Msc Sg Indef @P<
+	"lærerinne+N#" Cmp kurs N Neu Pl Indef @P<
+	"lærerinne+N#" Cmp kurs N Neu Sg Indef @P<
 "<.>"
 	"." CLB
 
@@ -4177,7 +4185,7 @@
 "<(>"
 	"(" PUNCT LEFT
 "<Lille>"
-	"Lille" N Prop Sem/Plc @X
+	"liten" A Pos Sg Def @X
 "<)>"
 	")" PUNCT RIGHT
 "<fra>"
@@ -4299,7 +4307,7 @@
 "<og>"
 	"og" CC @X
 "<Anna>"
-	"Anna" N Prop Fem @X
+	"annen" Pron Dem Sg Fem @X
 "<Pavelsen>"
 	"Pavelsen" ? @X
 "<Ravna>"
@@ -4384,7 +4392,7 @@
 "<og>"
 	"og" CC @X
 "<Anna>"
-	"Anna" N Prop Fem @X
+	"annen" Pron Dem Sg Fem @X
 "<Pavelsen>"
 	"Pavelsen" ? @X
 "<Ravna>"
@@ -4588,20 +4596,19 @@
 "<vikarierte>"
 	"vikariere" Ex/V PrfPtc A Pos Pl Def @-FMAINV
 "<han>"
-	"han" Pron Pers Sg3 Acc @HNOUN
-	"han" Pron Pers Sg3 Nom @HNOUN
+	"han" Pron Pers Sg3 Acc @OBJ>
 "<i>"
 	"i" Pr @<ADVL
 "<kretsen>"
 	"krets" N Msc Sg Def @P<
 "<Finnkongkeila>"
-	"Finnkongkeila" N Prop Sem/Plc @HNOUN
+	"Finnkongkeila" N Prop Sem/Plc @X
 "<–>"
 	"–" PUNCT
 "<Kvitnes>"
-	"Kvitnes" N Prop Sem/Plc @X
+	"kvitne" V Ind Prs Pass @+FMAINV
 "<ytterst>"
-	"ytterst" Adv @X
+	"ytterst" Adv @<ADVL
 "<i>"
 	"i" Pr @<ADVL
 "<Tanafjorden>"
@@ -4631,11 +4638,11 @@
 "<i>"
 	"i" Pr @N<
 "<Vinna>"
-	"vinne" X V Ind Prt Radical @+FMAINV
+	"Vinna" ? @X
 "<–>"
 	"–" PUNCT
 "<Storvik>"
-	"Storvik" N Prop Sem/Plc @<OBJ
+	"Storvik" N Prop Sem/Plc @P<
 "<–>"
 	"–" PUNCT
 "<Mefjord>"
@@ -4876,12 +4883,12 @@
 "<(>"
 	"(" PUNCT LEFT
 "<Kilde>"
-	"Kilde" N Prop Sem/Sur @SUBJ>
+	"kilde" N Fem Sg Indef @SUBJ>
 "<:>"
 	":" PUNCT
 
 "<Statsarkivet>"
-	"Statsarkivet" N Prop Sem/Obj @X
+	"statsarkiv" N Neu Sg Def @X
 "<i>"
 	"i" Pr @ADVL>
 "<Tromsø>"
@@ -4913,14 +4920,14 @@
 "<blei>"
 	"bli" V Ind Prt Radical @+FMAINV
 "<min>"
-	"min" Det Poss Sg Msc @>N
+	"mine" V Imp @+FMAINV
 "<bestemor>"
-	"bestemor" N Fem Sg Indef @<SUBJ
+	"bestemor" N Fem Sg Indef @<OBJ
 "<.>"
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @SUBJ>
+	"hun" Pron Pers Sg3 Nom Use/NG @SUBJ>
 "<var>"
 	"være" V Ind Prt @+FMAINV
 "<fra>"
@@ -5044,7 +5051,7 @@
 "<på>"
 	"på" Pr @<ADVL
 "<Grand>"
-	"Grand" N Prop Sem/Obj @P<
+	"grand" N Msc @P<
 "<hotell>"
 	"hotell" N Neu Pl Indef @<OBJ
 	"hotell" N Neu Sg Indef @<OBJ
@@ -5309,9 +5316,10 @@
 "<var>"
 	"være" V Ind Prt @+FMAINV
 "<han>"
-	"han" Pron Pers Sg3 Nom @<SUBJ
+	"han" Pron Pers Sg3 Acc @SUBJ>
+	"han" Pron Pers Sg3 Nom @SUBJ>
 "<styrer>"
-	"styre" N Neu Pl Indef @<SPRED
+	"styre" V Ind Prs @+FMAINV
 "<.>"
 	"." CLB
 
@@ -5436,7 +5444,6 @@
 	"," CLB
 "<men>"
 	"men" CC @CVP
-	"men" N Neu Pl Indef @<OBJ
 "<etterkrigstidas>"
 	"etterkrigstidas" ? @X
 "<Sørøysund>"
@@ -5585,9 +5592,9 @@
 "<på>"
 	"på" Pr @ADVL>
 "<Møre>"
-	"Møre" N Prop Sem/Plc @P<
+	"mør" A Pos Sg Def @A>
 "<våren>"
-	"vår" N Msc Sg Def @X
+	"vår" N Msc Sg Def @P<
 "<1959>"
 	"1959" Det Qnt Pl @X
 "<skreiv>"
@@ -5724,7 +5731,8 @@
 	"han" Pron Pers Sg3 Acc @<SUBJ
 	"han" Pron Pers Sg3 Nom @<SUBJ
 "<Kongens>"
-	"Kongen" N Prop Sem/Mal Clt @>N
+	"konge" N Msc Sg Def Clt @>N
+	"kong" N Msc Sg Def Clt @>N
 "<fortjenestemedalje>"
 	"fortjenestemedalje" N Msc Sg Indef @<OBJ
 "<i>"
@@ -5832,9 +5840,9 @@
 	":" PUNCT
 
 "<Frida>"
-	"Frida" N Prop Fem @ATTR>
+	"Frida" N Prop Fem @X
 "<Evjen>"
-	"Evjen" N Prop Sem/Sur @X
+	"evje" N Msc Sg Def @X
 "<)>"
 	")" PUNCT RIGHT
 "<¶>"
@@ -5848,8 +5856,7 @@
 "<en>"
 	"en" Pron Indef Sg MF @X
 "<respektert>"
-	"respektere" Ex/V PrfPtc A Pos Fem Sg Indef @-FMAINV
-	"respektere" Ex/V PrfPtc A Pos Msc Sg Indef @-FMAINV
+	"respektere" V PrfPtc @-FMAINV
 "<og>"
 	"og" CC @CVP
 "<rettferdig>"
@@ -5876,7 +5883,7 @@
 "<,>"
 	"," CLB
 "<men>"
-	"men" N Neu Pl Indef @P<
+	"men" CC @X
 "<brukte>"
 	"brukt" A Pos Pl Def @X
 "<ikke>"
@@ -5965,6 +5972,7 @@
 	"brukt" A Pos Pl Def @X
 "<de>"
 	"de" Pron Pers Pl3 Nom @X
+	"den" Det Dem Pl @X
 "<aldri>"
 	"aldri" Adv @<ADVL
 "<samisk>"
@@ -6211,9 +6219,10 @@
 "<en>"
 	"en" Pron Indef Sg MF @<SUBJ
 "<av>"
+	"av" Adv @<ADVL
 	"av" Pr @<ADVL
 "<Just>"
-	"Just" N Prop Sem/Sur @P<
+	"just" Adv @<ADVL
 "<Qvigstads>"
 	"Qvigstad" N Prop Sem/Sur Clt @>N
 "<informanter>"
@@ -6344,12 +6353,12 @@
 	"." CLB
 
 "<Den>"
-	"Den" N Prop Sem/Mal @X
+	"den" Det Dem Sg MF @>N
 "<siste>"
 	"sist" A Pos Sg Def @A>
 	"siste" A Pos Sg Def @A>
 "<tida>"
-	"tid" N Fem Sg Def @X
+	"tid" N Fem Sg Def @SUBJ>
 "<snakka>"
 	"snakke" V Ind Prt Radical @+FMAINV
 "<han>"
@@ -6437,7 +6446,8 @@
 	"." CLB
 
 "<Faren>"
-	"Faren" N Prop Sem/Plc @SUBJ>
+	"fare" N Msc Sg Def @SUBJ>
+	"far" N Msc Sg Def @SUBJ>
 "<kunne>"
 	"kunne" V Ind Prt @+FMAINV
 "<gjøre>"
@@ -6625,7 +6635,7 @@
 "<ved>"
 	"ved" Pr @X
 "<Statens>"
-	"Staten" N Prop Sem/Obj Clt @P<
+	"stat" N Msc Sg Def Clt @P<
 "<4-maanedlige>"
 	"4-maanedlige" ? @X
 "<sangkursus>"
@@ -6671,7 +6681,7 @@
 "<i>"
 	"i" Pr @X
 "<Paris>"
-	"Paris" N Prop Sem/Plc @P<
+	"pari" N Msc Clt @P<
 "<i>"
 	"i" Pr @N<
 "<1920–21>"
@@ -6752,7 +6762,7 @@
 	"." CLB
 
 "<Høsten>"
-	"Høsten" N Prop Sem/Org @X
+	"høst" N Msc Sg Def @X
 "<1944>"
 	"1944" Det Qnt Pl @X
 "<blei>"
@@ -6898,11 +6908,11 @@
 	"." CLB
 
 "<Den>"
-	"Den" N Prop Sem/Mal @X
+	"den" Det Dem Sg MF @>N
 "<nye>"
 	"ny" A Pos Sg Def @A>
 "<skolen>"
-	"skole" N Msc Sg Def @X
+	"skole" N Msc Sg Def @SUBJ>
 "<fikk>"
 	"få" V Ind Prt @+FMAINV
 "<navnet>"
@@ -6910,7 +6920,7 @@
 "<Tana>"
 	"Tana" N Prop Sem/Plc @>N
 "<skole>"
-	"skole" N Msc Sg Indef @X
+	"skole" N Msc Sg Indef @<OBJ
 "<,>"
 	"," CLB
 "<der>"
@@ -6918,7 +6928,7 @@
 "<var>"
 	"være" V Ind Prt @+FMAINV
 "<Fokstad>"
-	"Fokstad" N Prop Sem/Sur @X
+	"Fokstad" N Prop Sem/Sur @<SPRED
 "<skolestyrer>"
 	"skolestyre" N Neu Pl Indef @<SPRED
 "<til>"
@@ -7124,11 +7134,11 @@
 "<til>"
 	"til" Pr @<ADVL
 "<Den>"
-	"Den" N Prop Sem/Mal @P<
+	"den" Det Dem Sg MF @>N
 "<parlamentariske>"
 	"parlamentarisk" A Pos Sg Def @A>
 "<skolekommisjon>"
-	"skolekommisjon" N Msc Sg Indef @<OBJ
+	"skolekommisjon" N Msc Sg Indef @P<
 "<(>"
 	"(" PUNCT LEFT
 "<1923–26>"
@@ -7264,7 +7274,7 @@
 "<gjennom>"
 	"gjennom" Pr @<ADVL
 "<Arbeiderpartiet>"
-	"Arbeiderpartiet" N Prop Sem/Org @P<
+	"arbeiderparti" N Neu Sg Def @P<
 "<,>"
 	"," CLB
 "<bl>"
@@ -7422,11 +7432,12 @@
 "<av>"
 	"av" Pr @<ADVL
 "<Norske>"
-	"Norske" N Prop Sem/Org @P<
+	"norsk" A Pos Pl Def @A>
 "<Samers>"
 	"same" N Msc Pl Indef Clt @>N
 "<Riksforbund>"
-	"Riksforbund" N Prop Sem/Org @<SPRED
+	"riksforbund" N Neu Sg Indef @P<
+	"riksforbund" N Neu Pl Indef @P<
 "<i>"
 	"i" Pr @N<
 "<1968>"
@@ -7472,9 +7483,10 @@
 "<etter>"
 	"etter" Pr @<ADVL
 "<Kongens>"
-	"Kongen" N Prop Sem/Mal Clt @>N
+	"konge" N Msc Sg Def Clt @>N
+	"kong" N Msc Sg Def Clt @>N
 "<fortjenestemedalje>"
-	"fortjenestemedalje" N Msc Sg Indef @<OBJ
+	"fortjenestemedalje" N Msc Sg Indef @P<
 "<i>"
 	"i" Pr @N<
 "<gull>"
@@ -7576,9 +7588,9 @@
 "<,>"
 	"," CLB
 "<Kirsti>"
-	"Kirsti" N Prop Fem @ATTR>
+	"Kirsti" N Prop Fem @HNOUN
 "<Foss>"
-	"Foss" N Prop Sem/Plc @HNOUN
+	"foss" N Msc Sg Indef @HNOUN
 "<,>"
 	"," CLB
 "<Karin>"
@@ -7820,7 +7832,7 @@
 "<«>"
 	"«" ? @X
 "<Norsk>"
-	"Norsk" N Prop Sem/Sur @SUBJ>
+	"norsk" N Msc Sg Indef @SUBJ>
 "<er>"
 	"være" V Ind Prs @+FMAINV
 "<det>"
@@ -8008,7 +8020,6 @@
 	"," CLB
 "<men>"
 	"men" CC @CVP
-	"men" N Neu Pl Indef @<OBJ
 "<følte>"
 	"føle" V Ind Prt @+FMAINV
 "<at>"
@@ -8133,7 +8144,7 @@
 "<ikke>"
 	"ikke" Adv @<ADVL
 "<brukt>"
-	"bruke" V PrfPtc @-FMAINV
+	"brukt" A Der/AAdv Adv @<ADVL
 "<heime>"
 	"heime" Adv @<ADVL
 "<,>"
@@ -8387,7 +8398,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @SUBJ>
+	"hun" Pron Pers Sg3 Nom Use/NG @SUBJ>
 "<underviste>"
 	"undervise" V Ind Prt @+FMAINV
 "<både>"
@@ -8471,7 +8482,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @SUBJ>
+	"hun" Pron Pers Sg3 Nom Use/NG @SUBJ>
 "<underviste>"
 	"undervise" V Ind Prt @+FMAINV
 "<i>"
@@ -8573,7 +8584,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @SUBJ>
+	"hun" Pron Pers Sg3 Nom Use/NG @SUBJ>
 "<fikk>"
 	"få" V Ind Prt @+FMAINV
 "<nok>"
@@ -8712,7 +8723,7 @@
 "<Samiske>"
 	"samisk" A Pos Sg Def @A>
 "<Museum>"
-	"Museum" N Prop Sem/Org @X
+	"museum" N Neu Sg Indef @X
 "<)>"
 	")" PUNCT RIGHT
 "<¶>"
@@ -8756,7 +8767,7 @@
 "<til>"
 	"til" Pr @ADVL>
 "<venstre>"
-	"venstre" N Msc @P<
+	"venstre" A Der/AAdv Adv @ADVL>
 "<for>"
 	"for" Adv @ADVL>
 "<henne>"
@@ -8804,7 +8815,7 @@
 "<Samiske>"
 	"samisk" A Pos Sg Def @A>
 "<Museum>"
-	"Museum" N Prop Sem/Org @X
+	"museum" N Neu Sg Indef @X
 "<)>"
 	")" PUNCT RIGHT
 "<¶>"
@@ -9008,7 +9019,6 @@
 	"," CLB
 "<men>"
 	"men" CC @CVP
-	"men" N Neu Pl Indef @<OBJ
 "<rømte>"
 	"rømme" V Ind Prt @+FMAINV
 "<så>"
@@ -9160,7 +9170,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @SUBJ>
+	"hun" Pron Pers Sg3 Nom Use/NG @SUBJ>
 "<var>"
 	"være" V Ind Prt @+FMAINV
 "<ei>"
@@ -9193,7 +9203,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @SUBJ>
+	"hun" Pron Pers Sg3 Nom Use/NG @SUBJ>
 "<bodde>"
 	"bo" V Ind Prt @+FMAINV
 "<i>"
@@ -9236,7 +9246,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @SUBJ>
+	"hun" Pron Pers Sg3 Nom Use/NG @SUBJ>
 "<var>"
 	"være" V Ind Prt @+FMAINV
 "<en>"
@@ -9304,15 +9314,13 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @SUBJ>
+	"hun" Pron Pers Sg3 Nom Use/NG @SUBJ>
 "<var>"
 	"være" V Ind Prt @+FMAINV
 "<ikke>"
 	"ikke" Adv @<ADVL
 "<aktiv>"
-	"aktiv" A Pos Fem Sg Indef @X
 	"aktiv" A Pos MF Sg Indef @X
-	"aktiv" A Pos Msc Sg Indef @X
 "<fagpolitisk>"
 	"fagpolitisk" ? @X
 "<.>"
@@ -9342,7 +9350,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @SUBJ>
+	"hun" Pron Pers Sg3 Nom Use/NG @SUBJ>
 "<var>"
 	"være" V Ind Prt @+FMAINV
 "<heller>"
@@ -9368,8 +9376,8 @@
 "<og>"
 	"og" CC @X
 "<Høyre-velger>"
-	"høyre+A#" Cmp-velger N Msc Sg Indef @<SPRED
-	"høyre+N#" Cmp-velger N Msc Sg Indef @<SPRED
+	"høyre+A#" Cmp-velger N Msc Sg Indef @<SUBJ
+	"høyre+N#" Cmp-velger N Msc Sg Indef @<SUBJ
 "<i>"
 	"i" Pr @N<
 "<alle>"
@@ -9586,11 +9594,11 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @SUBJ>
+	"hun" Pron Pers Sg3 Nom Use/NG @SUBJ>
 "<forguda>"
 	"forgude" V Ind Prt Radical @+FMAINV
 "<niesene>"
-	"niese" N Fem Pl Def @<OBJ
+	"niese" N Fem Pl Def @<SUBJ
 "<,>"
 	"," CLB
 "<og>"
@@ -9620,7 +9628,7 @@
 "<i>"
 	"i" Pr @<ADVL
 "<Rogaland>"
-	"Rogaland" N Prop Sem/Plc @P<
+	"rogaland" N Neu Sg Indef @P<
 "<.>"
 	"." CLB
 
@@ -9682,7 +9690,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @SUBJ>
+	"hun" Pron Pers Sg3 Nom Use/NG @SUBJ>
 "<døde>"
 	"dø" V Ind Prt @+FMAINV
 "<i>"
@@ -9693,7 +9701,6 @@
 	"," CLB
 "<men>"
 	"men" CC @CVP
-	"men" N Neu Pl Indef @<OBJ
 "<er>"
 	"være" V Ind Prs @+FMAINV
 "<gravlagt>"
@@ -9801,20 +9808,20 @@
 "<så>"
 	"så" Adv @<ADVL
 "<Anna>"
-	"Anna" N Prop Fem @X
+	"annen" Pron Dem Sg Fem @SUBJ>
 "<fikk>"
 	"få" V Ind Prt @+FMAINV
 "<skolegang>"
-	"skolegang" N Msc Sg Indef @X
+	"skolegang" N Msc Sg Indef @<OBJ
 "<.>"
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @SUBJ>
+	"hun" Pron Pers Sg3 Nom Use/NG @SUBJ>
 "<gikk>"
 	"gå" V Ind Prt @+FMAINV
 "<amtsskole>"
-	"amt+N#" CmpS skole N Msc Sg Indef @<OBJ
+	"amt+N#" CmpS skole N Msc Sg Indef @<SUBJ
 "<i>"
 	"i" Pr @<ADVL
 "<Vadsø>"
@@ -9834,7 +9841,9 @@
 "<1-årig>"
 	"1-årig" ? @X
 "<lærerinnekurs>"
-	"lærerinne+N#" Cmp kurs X N Msc Sg Indef @<OBJ
+	"lærerinne+N#" Cmp kurs N Msc Sg Indef @<OBJ
+	"lærerinne+N#" Cmp kurs N Neu Pl Indef @<OBJ
+	"lærerinne+N#" Cmp kurs N Neu Sg Indef @<OBJ
 "<i>"
 	"i" Pr @<ADVL
 "<Tromsø>"
@@ -9889,7 +9898,6 @@
 	"," CLB
 "<men>"
 	"men" CC @CVP
-	"men" N Neu Pl Indef @P<
 "<kom>"
 	"komme" V Ind Prt @+FMAINV
 "<tilbake>"
@@ -9906,11 +9914,11 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @SUBJ>
+	"hun" Pron Pers Sg3 Nom Use/NG @SUBJ>
 "<fikk>"
 	"få" V Ind Prt @+FMAINV
 "<post>"
-	"post" N Msc Sg Indef @<OBJ
+	"post" N Msc Sg Indef @<SUBJ
 "<Fjordtun>"
 	"Fjordtun" ? @X
 "<->"
@@ -9941,7 +9949,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @SUBJ>
+	"hun" Pron Pers Sg3 Nom Use/NG @SUBJ>
 "<underviste>"
 	"undervise" V Ind Prt @+FMAINV
 "<både>"
@@ -10118,7 +10126,7 @@
 	"." CLB
 
 "<Høsten>"
-	"Høsten" N Prop Sem/Org @X
+	"høst" N Msc Sg Def @X
 "<1944>"
 	"1944" Det Qnt Pl @X
 "<blei>"
@@ -10143,7 +10151,7 @@
 	"." CLB
 
 "<Høsten>"
-	"Høsten" N Prop Sem/Org @X
+	"høst" N Msc Sg Def @X
 "<1945>"
 	"1945" Det Qnt Pl @X
 "<samla>"
@@ -10163,7 +10171,6 @@
 "<og>"
 	"og" CC @CVP
 "<søster>"
-	"søst" N Msc Pl Indef @<OBJ
 	"søster" N Fem Sg Indef @<OBJ
 "<Lydia>"
 	"Lydia" N Prop Fem @<OBJ
@@ -10304,13 +10311,13 @@
 "<tante>"
 	"tante" N Fem Sg Indef @X
 "<Anna>"
-	"Anna" N Prop Fem @X
+	"annen" Pron Dem Sg Fem @X
 "<skolte>"
 	"skolte" ? @X
 "<i>"
 	"i" Pr @ADVL>
 "<Krampenes>"
-	"Krampenes" N Prop Sem/Plc @P<
+	"krampe" N Fem Pl Def Clt @P<
 "<,>"
 	"," CLB
 "<sendte>"
@@ -10357,7 +10364,6 @@
 	"," CLB
 "<men>"
 	"men" CC @CVP
-	"men" N Neu Pl Indef @<OBJ
 "<tok>"
 	"ta" V Ind Prt @+FMAINV
 "<heller>"
@@ -10430,17 +10436,17 @@
 "<at>"
 	"at" CS @X
 "<Anna>"
-	"Anna" N Prop Fem @X
+	"annen" Pron Dem Sg Fem @SUBJ>
 "<dro>"
 	"dra" V Ind Prt @+FMAINV
 "<mamma>"
-	"mamma" N Msc Sg Indef @X
+	"mamma" N Msc Sg Indef @<SUBJ
 "<og>"
-	"og" CC @CNP
+	"og" CC @X
 "<han>"
 	"han" Pron Pers Sg3 Acc @<OBJ
 "<bygda>"
-	"bygd" N Fem Sg Def @X
+	"bygd" N Fem Sg Def @<OBJ
 "<rundt>"
 	"rund" A Der/AAdv Adv @<ADVL
 "<for>"
@@ -10454,7 +10460,7 @@
 "<for>"
 	"for" Adv @<ADVL
 "<slekta>"
-	"slekt" N Fem Sg Def @X
+	"slekt" N Fem Sg Def @<OBJ
 "<.>"
 	"." CLB
 
@@ -10478,7 +10484,7 @@
 "<ungdom>"
 	"ungdom" N Msc Sg Indef @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<sang>"
 	"sang" N Msc Sg Indef @<OBJ
 "<med>"
@@ -10499,7 +10505,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @SUBJ>
+	"hun" Pron Pers Sg3 Nom Use/NG @SUBJ>
 "<sympatiserte>"
 	"sympatisere" V Ind Prt @+FMAINV
 "<med>"
@@ -10563,7 +10569,7 @@
 "<Når>"
 	"når" Adv @ADVL>
 "<Anna>"
-	"Anna" N Prop Fem @SUBJ>
+	"annen" Pron Dem Sg Fem @SUBJ>
 "<spanderte>"
 	"spandere" V Ind Prt @+FMAINV
 "<,>"
@@ -10571,7 +10577,7 @@
 "<kom>"
 	"komme" V Ind Prt @+FMAINV
 "<laks>"
-	"laks" N Msc Sg Indef @<OBJ
+	"laks" N Msc Sg Indef @<SUBJ
 "<,>"
 	"," CLB
 "<multer>"
@@ -10597,7 +10603,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @SUBJ>
+	"hun" Pron Pers Sg3 Nom Use/NG @SUBJ>
 "<kjøpte>"
 	"kjøpe" V Ind Prt @+FMAINV
 "<foreldregården>"
@@ -10636,11 +10642,11 @@
 "<,>"
 	"," CLB
 "<men>"
-	"men" CC @X
+	"men" CC @CVP
 "<ho>"
-	"hun" Pron Pers Sg3 Nom Use/NG @X
+	"hun" Pron Pers Sg3 Nom Use/NG @SUBJ>
 "<blei>"
-	"blei" N Fem Sg Indef @<OBJ
+	"bli" V Ind Prt Radical @+FMAINV
 "<nok>"
 	"nok" Adv @<ADVL
 "<på>"
@@ -10663,9 +10669,10 @@
 "<¶>"
 	"¶" CLB
 "<Anna>"
-	"Anna" N Prop Fem @X
+	"annen" Pron Dem Sg Fem @X
+	"annen" Det Dem Sg Fem @X
 "<og>"
-	"og" CC @CNP
+	"og" CC @X
 "<Pavel>"
 	"Pavel" N Prop Sem/Mal @ATTR>
 "<Anderssen>"
@@ -10762,12 +10769,12 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @SUBJ>
+	"hun" Pron Pers Sg3 Nom Use/NG @SUBJ>
 "<bygde>"
 	"bygge" V Ind Prt @+FMAINV
 "<hus>"
-	"hus" N Neu Pl Indef @<OBJ
-	"hus" N Neu Sg Indef @<OBJ
+	"hus" N Neu Pl Indef @<SUBJ
+	"hus" N Neu Sg Indef @<SUBJ
 "<i>"
 	"i" Pr @<ADVL
 "<Rypefjord>"
@@ -10786,7 +10793,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @SUBJ>
+	"hun" Pron Pers Sg3 Nom Use/NG @SUBJ>
 "<var>"
 	"være" V Ind Prt @+FMAINV
 "<aktiv>"
@@ -10802,7 +10809,7 @@
 "<lærerlaget>"
 	"lærerlag" N Neu Sg Def @P<
 "<og>"
-	"og" CC @CNP
+	"og" CC @X
 "<i>"
 	"i" Pr @<ADVL
 "<Finnmark>"
@@ -10814,7 +10821,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @SUBJ>
+	"hun" Pron Pers Sg3 Nom Use/NG @SUBJ>
 "<holdt>"
 	"holde" V Ind Prt @+FMAINV
 "<seg>"
@@ -10822,7 +10829,7 @@
 "<godt>"
 	"god" A Pos Neu Sg Indef @X
 "<orientert>"
-	"orientere" V PrfPtc @-FMAINV
+	"orientere" Ex/V PrfPtc A Pos MF Sg Indef @-FMAINV
 "<og>"
 	"og" CC @CVP
 "<kommenterte>"
@@ -10906,7 +10913,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @SUBJ>
+	"hun" Pron Pers Sg3 Nom Use/NG @SUBJ>
 "<hadde>"
 	"ha" V Ind Prt @+FMAINV
 "<ei>"
@@ -10914,7 +10921,7 @@
 "<skarp>"
 	"skarp" A Pos MF Sg Indef @A>
 "<tunge>"
-	"tunge" N Fem Sg Indef @<OBJ
+	"tunge" N Fem Sg Indef @<SUBJ
 "<som>"
 	"som" CS @X
 "<nok>"
@@ -10981,7 +10988,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @X
+	"hun" Pron Pers Sg3 Nom Use/NG @X
 "<«>"
 	"«" ? @X
 "<finska>"
@@ -11028,7 +11035,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @X
+	"hun" Pron Pers Sg3 Nom Use/NG @X
 "<var>"
 	"var" A Pos Fem Sg Indef @A>
 "<tante>"
@@ -11079,13 +11086,13 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @SUBJ>
+	"hun" Pron Pers Sg3 Nom Use/NG @SUBJ>
 "<hadde>"
 	"ha" V Ind Prt @+FMAINV
 "<god>"
 	"god" A Pos MF Sg Indef @A>
 "<hukommelse>"
-	"hukommelse" N Msc Sg Indef @<OBJ
+	"hukommelse" N Msc Sg Indef @<SUBJ
 "<og>"
 	"og" CC @CVP
 "<fortalte>"
@@ -11105,7 +11112,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @SUBJ>
+	"hun" Pron Pers Sg3 Nom Use/NG @SUBJ>
 "<var>"
 	"være" V Ind Prt @+FMAINV
 "<gjestfri>"
@@ -11142,7 +11149,7 @@
 	"." CLB
 
 "<Ho>"
-	"Ho" N Prop Sem/Mal @SUBJ>
+	"hun" Pron Pers Sg3 Nom Use/NG @SUBJ>
 "<var>"
 	"være" V Ind Prt @+FMAINV
 "<tøff>"
@@ -11241,7 +11248,7 @@
 "<(>"
 	"(" PUNCT LEFT
 "<Lille>"
-	"Lille" N Prop Sem/Plc @X
+	"liten" A Pos Sg Def @X
 "<)>"
 	")" PUNCT RIGHT
 "<[>"
@@ -11267,7 +11274,7 @@
 "<Olsen>"
 	"Olsen" N Prop Sem/Sur @<SPRED
 "<Lille>"
-	"Lille" N Prop Sem/Plc @X
+	"liten" A Pos Sg Def @X
 "<Ravdne>"
 	"Ravdne" ? @X
 "<,>"
@@ -11330,7 +11337,8 @@
 	"." CLB
 
 "<Faren>"
-	"Faren" N Prop Sem/Plc @SUBJ>
+	"fare" N Msc Sg Def @SUBJ>
+	"far" N Msc Sg Def @SUBJ>
 "<døde>"
 	"dø" V Ind Prt @+FMAINV
 "<da>"
@@ -11459,7 +11467,6 @@
 	"," CLB
 "<men>"
 	"men" CC @CVP
-	"men" N Neu Pl Indef @<OBJ
 "<fikk>"
 	"få" V Ind Prt @+FMAINV
 "<hjelp>"
@@ -12070,17 +12077,15 @@
 	"." CLB
 
 "<Den>"
-	"Den" N Prop Sem/Mal @X
+	"den" Det Dem Sg MF @>N
 "<lange>"
 	"lang" A Pos Sg Def @A>
 "<strandlinjen>"
-	"strandlinje" N Msc Sg Def @X
+	"strandlinje" N Msc Sg Def @SUBJ>
 "<er>"
 	"være" V Ind Prs @+FMAINV
 "<vidunderlig>"
-	"vidunderlig" A Pos Msc Sg Indef @X
-	"vidunderlig" A Pos Fem Sg Indef @X
-	"vidunderlig" A Pos MF Sg Indef @X
+	"vidunderlig" A Pos MF Sg Indef @<OBJ
 "<.>"
 	"." CLB
 
@@ -12135,7 +12140,6 @@
 "<Hennes>"
 	"hennes" Det Poss Fem @>N
 "<søster>"
-	"søst" N Msc Pl Indef @X
 	"søster" N Fem Sg Indef @X
 "<Julie>"
 	"Julie" N Prop Fem @X
@@ -12245,11 +12249,11 @@
 	"." CLB
 
 "<Den>"
-	"Den" N Prop Sem/Mal @X
+	"den" Det Dem Sg MF @>N
 "<nye>"
 	"ny" A Pos Sg Def @A>
 "<internatskolen>"
-	"internatskole" N Msc Sg Def @X
+	"internatskole" N Msc Sg Def @SUBJ>
 "<blei>"
 	"bli" V Ind Prt Radical @+FMAINV
 "<påbegynt>"
@@ -12257,8 +12261,8 @@
 "<samme>"
 	"samme" Det Dem @>N
 "<år>"
-	"år" N Neu Pl Indef @X
-	"år" N Neu Sg Indef @X
+	"år" N Neu Pl Indef @<OBJ
+	"år" N Neu Sg Indef @<OBJ
 "<,>"
 	"," CLB
 "<ikke>"
@@ -12288,9 +12292,9 @@
 "<,>"
 	"," CLB
 "<men>"
-	"men" N Neu Pl Indef @<OBJ
+	"men" CC @X
 "<i>"
-	"i" Pr @N<
+	"i" Pr @<ADVL
 "<Pålbukta>"
 	"Pålbukta" ? @X
 "<med>"
@@ -12396,7 +12400,7 @@
 "<norskundervisninga>"
 	"norskundervisning" N Fem Sg Def @P<
 "<og>"
-	"og" CC @CNP
+	"og" CC @X
 "<snakka>"
 	"snakke" V PrfPtc Radical @-FMAINV
 "<stivt>"
@@ -12415,7 +12419,8 @@
 "<lært>"
 	"lært" ? @X
 "<noe>"
-	"noe" Det Qnt Sg Neu @>N
+	"noe" Adv @<ADVL
+	"noe" Pron Indef @<SUBJ
 "<samisk>"
 	"samisk" N Msc Sg Indef @<OBJ
 "<,>"
@@ -12705,7 +12710,7 @@
 "<for>"
 	"for" Adv @<ADVL
 "<Venstre>"
-	"venstre" N Msc @X
+	"venstre" A Der/AAdv Adv @<ADVL
 "<.>"
 	"." CLB
 
@@ -12907,7 +12912,7 @@
 "<ved>"
 	"ved" Pr @<ADVL
 "<Universitetet>"
-	"Universitetet" N Prop Sem/Org @P<
+	"universitet" N Neu Sg Def @P<
 "<i>"
 	"i" Pr @<ADVL
 "<Oslo>"
@@ -12961,7 +12966,7 @@
 "<,>"
 	"," CLB
 "<Kong>"
-	"Kong" N Prop Sem/Plc @X
+	"kong" N Msc Sg Indef @X
 "<Olav>"
 	"Olav" N Prop Sem/Mal @X
 "<,>"
@@ -13342,7 +13347,7 @@
 	"." CLB
 
 "<Mora>"
-	"Mora" N Prop Sem/Plc @SUBJ>
+	"mor" N Fem Sg Def @SUBJ>
 "<solgte>"
 	"selge" V Ind Prt @+FMAINV
 "<ei>"
@@ -13414,7 +13419,7 @@
 "<Saraksen>"
 	"Saraksen" N Prop Sem/Sur @X
 "<og>"
-	"og" CC @CNP
+	"og" CC @X
 "<Sabba>"
 	"sabbe" V Ind Prt Radical @+FMAINV
 "<Olsen>"
@@ -13472,7 +13477,6 @@
 "<¶>"
 	"¶" CLB
 "<Høsten>"
-	"Høsten" N Prop Sem/Org @X
 	"høst" N Msc Sg Def @X
 "<1924>"
 	"1924" Det Qnt Pl @X
@@ -13687,7 +13691,7 @@
 	"." CLB
 
 "<Hans>"
-	"Hans" N Prop Sem/Mal @HNOUN
+	"hans" Det Poss Msc @X
 "<Kr>"
 	"kr" ABBR
 "<.>"
@@ -13902,7 +13906,7 @@
 "<for>"
 	"for" Adv @<ADVL
 "<Venstre>"
-	"venstre" A Pos Neu Sg Indef @X
+	"venstre" A Der/AAdv Adv @<ADVL
 "<i>"
 	"i" Pr @<ADVL
 "<herredsstyret>"
@@ -14041,7 +14045,7 @@
 "<og>"
 	"og" CC @X
 "<Hans>"
-	"Hans" N Prop Sem/Mal @<SPRED
+	"hans" Det Poss Msc @X
 "<Kr>"
 	"kr" ABBR
 "<.>"
@@ -14198,6 +14202,7 @@
 	"." CLB
 
 "<I>"
+	"I" ABBR
 	"i" Pr @ADVL>
 "<1958>"
 	"1958" Det Qnt Pl @X
@@ -14222,9 +14227,10 @@
 "<der>"
 	"der" Adv @<ADVL
 "<han>"
-	"han" Pron Pers Sg3 Acc @<OBJ
+	"han" Pron Pers Sg3 Acc @SUBJ>
+	"han" Pron Pers Sg3 Nom @SUBJ>
 "<blei>"
-	"blei" N Fem Sg Indef @<OBJ
+	"bli" V Ind Prt Radical @+FMAINV
 "<til>"
 	"til" Pr @<ADVL
 "<1965>"
@@ -14255,7 +14261,8 @@
 	"han" Pron Pers Sg3 Acc @<SUBJ
 	"han" Pron Pers Sg3 Nom @<SUBJ
 "<Kongens>"
-	"Kongen" N Prop Sem/Mal Clt @>N
+	"konge" N Msc Sg Def Clt @>N
+	"kong" N Msc Sg Def Clt @>N
 "<fortjenestemedalje>"
 	"fortjenestemedalje" N Msc Sg Indef @<OBJ
 "<i>"
@@ -14281,9 +14288,8 @@
 	"," CLB
 "<men>"
 	"men" CC @X
-	"men" N Neu Pl Indef @X
 "<i>"
-	"i" Pr @N<
+	"i" Pr @ADVL>
 "<dagligtale>"
 	"dagligtale" N Msc Sg Indef @P<
 "<snakka>"
@@ -14512,7 +14518,7 @@
 "<men>"
 	"men" CC @CVP
 "<manusene>"
-	"manus" X N Msc Pl Def @<SPRED
+	"manus" N Neu Pl Def @<SPRED
 "<er>"
 	"være" V Ind Prs @+FMAINV
 "<bevart>"
@@ -14689,9 +14695,9 @@
 "<var>"
 	"være" V Ind Prt @+FMAINV
 "<Anna>"
-	"Anna" N Prop Fem @ATTR>
+	"annen" Det Dem Sg Fem @>N
 "<Anderssen>"
-	"Anderssen" N Prop Sem/Sur @<SPRED
+	"Anderssen" N Prop Sem/Sur @X
 "<og>"
 	"og" CC @CNP
 "<Gunnar>"
@@ -14823,7 +14829,9 @@
 "<ett-årig>"
 	"ett-årig" ? @X
 "<lærerinnekurs>"
-	"lærerinne+N#" Cmp kurs X N Msc Sg Indef @<OBJ
+	"lærerinne+N#" Cmp kurs N Msc Sg Indef @<OBJ
+	"lærerinne+N#" Cmp kurs N Neu Pl Indef @<OBJ
+	"lærerinne+N#" Cmp kurs N Neu Sg Indef @<OBJ
 "<,>"
 	"," CLB
 "<og>"
@@ -14887,7 +14895,6 @@
 	"," CLB
 "<men>"
 	"men" CC @CVP
-	"men" N Neu Pl Indef @<SPRED
 "<hadde>"
 	"ha" V Ind Prt @+FMAINV
 "<lavere>"
@@ -14949,7 +14956,9 @@
 "<vanskelig>"
 	"vanskelig" A Der/AAdv Adv @<ADVL
 "<for>"
+	"for" N Neu Sg Indef @<SPRED
 	"for" Pr @<ADVL
+	"for" N Neu Pl Indef @<SPRED
 "<dem>"
 	"de" Pron Pers Pl3 Acc @<OBJ
 "<å>"
@@ -15561,7 +15570,7 @@
 "<,>"
 	"," CLB
 "<forankra>"
-	"forankre" V Ind Prt Radical @+FMAINV
+	"forankre" V PrfPtc Radical @-FMAINV
 "<i>"
 	"i" Pr @<ADVL
 "<naturen>"
@@ -15588,7 +15597,7 @@
 "<langs>"
 	"langs" Pr @X
 "<Ishavskysten>"
-	"Ishavskysten" N Prop Sem/Org @P<
+	"ishavskyst" N Msc Sg Def @P<
 "<med>"
 	"med" Pr @X
 "<russehandel>"
@@ -15901,7 +15910,7 @@
 	"." CLB
 
 "<Høsten>"
-	"Høsten" N Prop Sem/Org @X
+	"høst" N Msc Sg Def @X
 "<1944>"
 	"1944" Det Qnt Pl @>N
 "<blei>"
@@ -16056,7 +16065,7 @@
 	"." CLB
 
 "<Norsk>"
-	"Norsk" N Prop Sem/Sur @SUBJ>
+	"norsk" N Msc Sg Indef @SUBJ>
 "<var>"
 	"være" V Ind Prt @+FMAINV
 "<enerådende>"
@@ -16365,7 +16374,7 @@
 "<arenaer>"
 	"arena" N Msc Pl Indef @P<
 "<og>"
-	"og" CC @CNP
+	"og" CC @X
 "<med>"
 	"med" Pr @<ADVL
 "<massiv>"
@@ -16481,7 +16490,7 @@
 "<som>"
 	"som" CS @X
 "<Sametinget>"
-	"Sametinget" N Prop Sem/Org @<OBJ
+	"sameting" N Neu Sg Def @<OBJ
 "<,>"
 	"," CLB
 "<Finnmarkseiendommen>"
@@ -16510,7 +16519,7 @@
 "<vil>"
 	"ville" V Ind Prs @+FMAINV
 "<få>"
-	"få" V Inf @-FMAINV
+	"få" A Der/AAdv Adv @<ADVL
 "<for>"
 	"for" Pr @<ADVL
 "<kultur>"
@@ -16637,17 +16646,16 @@
 "<S>"
 	"S" ABBR
 	"s" ABBR
-	"s" ABBR N @HNOUN
 "<M>"
 	"M" Det Qnt Pl @>N
 "<Brydes>"
 	"Brydes" ? @X
 "<forlag>"
-	"forlag" N Neu Pl Indef @HNOUN
+	"forlag" N Neu Pl Indef @X
 "<,>"
 	"," CLB
 "<Oslo>"
-	"Oslo" N Prop Sem/Plc @HNOUN
+	"Oslo" N Prop Sem/Plc @X
 "<1943>"
 	"1943" Det Qnt Pl @X
 "<Altern>"
@@ -16655,15 +16663,15 @@
 "<,>"
 	"," CLB
 "<Håvard>"
-	"Håvard" N Prop Sem/Mal @HNOUN
+	"Håvard" N Prop Sem/Mal @X
 "<og>"
 	"og" CC @CNP
 "<Andersson>"
-	"Andersson" N Prop Sem/Sur @HNOUN
+	"Andersson" N Prop Sem/Sur @X
 "<,>"
 	"," CLB
 "<Stig>"
-	"Stig" N Prop Sem/Mal @HNOUN
+	"stige" V Imp @+FMAINV
 "<:>"
 	":" PUNCT
 
@@ -16677,9 +16685,8 @@
 "<Gyldendal>"
 	"Gyldendal" N Prop Sem/Plc @HNOUN
 "<Norsk>"
-	"Norsk" N Prop Sem/Sur @HNOUN
+	"norsk" A Pos Neu Sg Indef @A>
 "<forlag>"
-	"forlag" N Neu Pl Indef @HNOUN
 	"forlag" N Neu Sg Indef @HNOUN
 "<1971>"
 	"1971" Det Qnt Pl @>N
@@ -16778,7 +16785,7 @@
 	"." CLB
 
 "<Statsarkivet>"
-	"Statsarkivet" N Prop Sem/Obj @HNOUN
+	"statsarkiv" N Neu Sg Def @HNOUN
 "<i>"
 	"i" Pr @X
 "<Tromsø>"
@@ -16799,15 +16806,12 @@
 
 "<Notat>"
 	"notat" N Neu Pl Indef @HNOUN
-	"notat" N Neu Sg Indef @HNOUN
 "<03.05.1955>"
 	"03.05.1955" ? @X
 "<Samisk>"
-	"samisk" A Pos Msc Sg Indef @A>
-	"samisk" A Pos Fem Sg Indef @A>
-	"samisk" A Pos MF Sg Indef @A>
+	"samisk" A Pos Neu Sg Indef @A>
 "<Arkiv>"
-	"Arkiv" N Prop Sem/Obj @HNOUN
+	"arkiv" N Neu Sg Indef @HNOUN
 "<Gammelshaug>"
 	"gammel+A#" CmpS haug N Msc Sg Indef @HNOUN
 "<,>"
@@ -16855,9 +16859,8 @@
 "<Gyldendal>"
 	"Gyldendal" N Prop Sem/Plc @HNOUN
 "<Norsk>"
-	"Norsk" N Prop Sem/Sur @HNOUN
+	"norsk" A Pos Neu Sg Indef @A>
 "<Forlag>"
-	"forlag" N Neu Pl Indef @HNOUN
 	"forlag" N Neu Sg Indef @HNOUN
 "<1994>"
 	"1994" Det Qnt Pl @>N
@@ -16894,12 +16897,11 @@
 "<,>"
 	"," CLB
 "<Finn>"
-	"Finn" N Prop Sem/Sur @X
+	"finne" V Imp @+FMAINV
 "<(>"
 	"(" PUNCT LEFT
 "<red>"
-	"lide" V Ind Prt @+FMAINV
-	"ride" V Ind Prt @+FMAINV
+	"red" ABBR
 "<.>"
 	"." CLB
 
@@ -17053,9 +17055,8 @@
 
 "<Det>"
 	"det" Det Dem Sg Neu @>N
-	"det" Pron Pers Sg3 @HNOUN
 "<Norske>"
-	"Norske" N Prop Sem/Org @HNOUN
+	"norsk" A Pos Sg Def @A>
 "<Samlaget>"
 	"samlag" N Neu Sg Def @HNOUN
 "<,>"
@@ -17124,7 +17125,7 @@
 	"." CLB
 
 "<Universitetet>"
-	"Universitetet" N Prop Sem/Org @HNOUN
+	"universitet" N Neu Sg Def @HNOUN
 "<i>"
 	"i" Pr @X
 "<Tromsø>"
@@ -17188,7 +17189,6 @@
 "<,>"
 	"," CLB
 "<Just>"
-	"Just" N Prop Sem/Sur @HNOUN
 	"just" Adv @ADVL>
 "<:>"
 	":" PUNCT
@@ -17281,7 +17281,8 @@
 	"." CLB
 
 "<Manus>"
-	"Manu" N Prop Sem/Plc Clt @HNOUN
+	"manus" N Neu Sg Indef @HNOUN
+	"manus" N Neu Pl Indef @HNOUN
 "<2000>"
 	"2000" Det Qnt Pl @>N
 "<Saraksen>"
@@ -17328,33 +17329,33 @@
 	"." CLB
 
 "<Diverse>"
-	"diverse" A Pos MF Sg Indef @A>
+	"diverse" A Pos Neu Sg Indef @A>
 "<manus>"
-	"manus" X N Msc Sg Indef @SUBJ>
+	"manus" N Neu Sg Indef @SUBJ>
 "<er>"
 	"være" V Ind Prs @+FMAINV
 "<trykt>"
-	"trykt" ? @X
+	"trykke" V PrfPtc @-FMAINV
 "<i>"
 	"i" Pr @<ADVL
 "<Tana>"
 	"Tana" N Prop Sem/Plc @P<
 "<Årbok>"
-	"Årbok" N Prop Sem/Org @<SPRED
+	"Årbok" N Prop Sem/Org @<OBJ
 "<Solbakk>"
-	"Solbakk" N Prop Sem/Plc @<SPRED
+	"Solbakk" N Prop Sem/Plc @<OBJ
 "<,>"
 	"," CLB
 "<Aage>"
-	"Aage" N Prop Sem/Mal @<SPRED
+	"Aage" N Prop Sem/Mal @<OBJ
 "<og>"
 	"og" CC @CNP
 "<Vuolab>"
-	"Vuolab" N Prop Sem/Sur @<SPRED
+	"Vuolab" N Prop Sem/Sur @<OBJ
 "<,>"
 	"," CLB
 "<Solveig>"
-	"Solveig" N Prop Sem/Sur @<SPRED
+	"Solveig" N Prop Sem/Sur @<OBJ
 "<:>"
 	":" PUNCT
 
@@ -17540,7 +17541,7 @@
 "<familien>"
 	"familie" N Msc Sg Def @HNOUN
 "<Lille>"
-	"Lille" N Prop Sem/Plc @HNOUN
+	"liten" A Pos Sg Def @X
 "</>"
 	"/" PUNCT
 "<Kratteng>"
@@ -17630,7 +17631,7 @@
 "<og>"
 	"og" CC @X
 "<Hans>"
-	"Hans" N Prop Sem/Mal @X
+	"hans" Det Poss Msc @X
 "<Kr>"
 	"kr" ABBR
 "<.>"
@@ -17671,10 +17672,7 @@
 "<omfatta>"
 	"omfatte" V PrfPtc Radical @-FMAINV
 "<nedre>"
-	"nedre" A Pos Neu Sg Indef @A>
-	"nedre" A Pos Fem Sg Indef @A>
-	"nedre" A Pos MF Sg Indef @A>
-	"nedre" A Pos Msc Sg Indef @A>
+	"nedre" A Der/AAdv Adv @<ADVL
 "<Tana>"
 	"Tana" N Prop Sem/Plc @X
 "<og>"
@@ -17826,12 +17824,11 @@
 "<,>"
 	"," CLB
 "<Finn>"
-	"Finn" N Prop Sem/Sur @X
+	"finne" V Imp @+FMAINV
 "<(>"
 	"(" PUNCT LEFT
 "<red>"
-	"lide" V Ind Prt @+FMAINV
-	"ride" V Ind Prt @+FMAINV
+	"red" ABBR
 "<.>"
 	"." CLB
 
@@ -17952,7 +17949,7 @@
 	"." CLB
 
 "<Universitetet>"
-	"Universitetet" N Prop Sem/Org @HNOUN
+	"universitet" N Neu Sg Def @HNOUN
 "<i>"
 	"i" Pr @X
 "<Tromsø>"
@@ -18026,7 +18023,7 @@
 "<språkforsker>"
 	"språkforsker" N Msc Sg Indef @X
 "<og>"
-	"og" CC @CNP
+	"og" CC @X
 "<hadde>"
 	"ha" V Ind Prt @+FMAINV
 "<stor>"
@@ -18053,13 +18050,13 @@
 "<Stockfleth>"
 	"Stockfleth" N Prop Sem/Sur @P<
 "<i>"
-	"i" Pr @X
+	"i" Pr @N<
 "<Hans>"
-	"Hans" N Prop Sem/Mal @P<
+	"hans" Det Poss Msc @>N
 "<Lindkjølens>"
 	"lind+N#" Cmp kjøl N Msc Sg Def Clt @>N
 "<artikkel>"
-	"artikkel" N Msc Sg Indef @HNOUN
+	"artikkel" N Msc Sg Indef @P<
 "<i>"
 	"i" Pr @N<
 "<Samisk>"
@@ -18084,7 +18081,7 @@
 "<kart>"
 	"kart" N Neu Sg Indef @P<
 "<og>"
-	"og" CC @X
+	"og" CC @CNP
 "<stedsnavn>"
 	"stedsnavn" N Neu Pl Indef @X
 	"stedsnavn" N Neu Sg Indef @X
@@ -18345,7 +18342,7 @@
 "<etablere>"
 	"etablere" V Inf @-FMAINV
 "<Norsk>"
-	"Norsk" N Prop Sem/Sur @<OBJ
+	"norsk" A Pos MF Sg Indef @A>
 "<Finnemisjon>"
 	"finnemisjon" N Msc Sg Indef @<OBJ
 "<i>"
@@ -18398,7 +18395,7 @@
 "<barnehjemmet>"
 	"barnehjem" N Neu Sg Def @X
 "<Hans>"
-	"Hans" N Prop Sem/Mal @ATTR>
+	"hans" Det Poss Msc @>N
 "<Schanches>"
 	"Schanche" N Prop Sem/Sur Clt @>N
 "<Minne>"
@@ -18603,7 +18600,7 @@
 	":" PUNCT
 
 "<Lappekodisillen>"
-	"Lappekodisillen" N Prop Sem/Obj @HNOUN
+	"lappekodisill" N Msc Sg Def @HNOUN
 "<i>"
 	"i" Pr @N<
 "<nord>"
@@ -18657,7 +18654,7 @@
 	":" PUNCT
 
 "<Samebevegelsen>"
-	"Samebevegelsen" N Prop Sem/Obj @HNOUN
+	"samebevegelse" N Msc Sg Def @HNOUN
 "<i>"
 	"i" Pr @X
 "<Norge>"
@@ -18801,7 +18798,7 @@
 "<i>"
 	"i" Pr @<ADVL
 "<Arbeiderpartiet>"
-	"Arbeiderpartiet" N Prop Sem/Org @P<
+	"arbeiderparti" N Neu Sg Def @P<
 "<og>"
 	"og" CC @X
 "<opptatt>"
@@ -18834,7 +18831,7 @@
 "<blei>"
 	"bli" V Ind Prt Radical @+FMAINV
 "<trykt>"
-	"trykt" ? @X
+	"trykke" V PrfPtc @-FMAINV
 "<i>"
 	"i" Pr @<ADVL
 "<boka>"
@@ -18900,7 +18897,7 @@
 	":" PUNCT
 
 "<Norsk>"
-	"Norsk" N Prop Sem/Sur @X
+	"norsk" N Msc Sg Indef @X
 "<aarbok>"
 	"aarbok" ? @X
 "<1923>"
@@ -19201,7 +19198,7 @@
 "<Olsen>"
 	"Olsen" N Prop Sem/Sur @<OBJ
 "<Lille>"
-	"Lille" N Prop Sem/Plc @<OBJ
+	"liten" A Pos Sg Def @X
 "<,>"
 	"," CLB
 "<men>"
@@ -19234,9 +19231,9 @@
 "<noen>"
 	"noen" Pron Indef @<SUBJ
 "<brukt>"
-	"bruke" V PrfPtc @-FMAINV
+	"brukt" A Pos Neu Sg Indef @X
 "<Lille>"
-	"Lille" N Prop Sem/Plc @<OBJ
+	"liten" A Pos Sg Def @X
 "<eller>"
 	"eller" CC @X
 "<Lile>"
@@ -19336,7 +19333,7 @@
 "<Samenes>"
 	"same" N Msc Pl Def Clt @>N
 "<Venn>"
-	"Venn" N Prop Sem/Sur @X
+	"venn" N Msc Sg Indef @X
 "<.>"
 	"." CLB
 
@@ -19540,7 +19537,7 @@
 "<Karasjok>"
 	"Karasjok" N Prop Sem/Plc @P<
 "<og>"
-	"og" CC @CNP
+	"og" CC @X
 "<i>"
 	"i" Pr @<ADVL
 "<1949-62>"
@@ -19574,7 +19571,7 @@
 "<ved>"
 	"ved" Pr @<ADVL
 "<Universitetet>"
-	"Universitetet" N Prop Sem/Org @P<
+	"universitet" N Neu Sg Def @P<
 "<i>"
 	"i" Pr @<ADVL
 "<Oslo>"
@@ -19598,7 +19595,7 @@
 "<av>"
 	"av" Pr @<ADVL
 "<Norsk>"
-	"Norsk" N Prop Sem/Sur @P<
+	"norsk" N Msc Sg Indef @P<
 "<–>"
 	"–" PUNCT
 "<Samisk>"
