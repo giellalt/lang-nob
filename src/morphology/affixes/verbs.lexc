@@ -274,15 +274,15 @@ LEXICON BY
        by+V+PrfPtc:bydd #          ;
        by+V+PrsPtc:by   prfptcsuff ;
 
-LEXICON BYDE
-          byde+V+Inf:byde  #          ;
-          byde+V+Inf+Pass:byde  #          ;
-          byde+V+Imp:byd   #          ;
-      byde+V+Ind+Prs:byder #          ;
- byde+V+Ind+Prs+Pass:bydes #          ;
-      byde+V+Ind+Prt:bød   #          ;
-       byde+V+PrfPtc:bydd  #          ;
-       byde+V+PrsPtc:byd   prfptcsuff ;
+LEXICON XYDE
+          +V+Inf:yde  #          ;
+          +V+Inf+Pass:ydes  #          ;
+          +V+Imp:yd   #          ;
+      +V+Ind+Prs:yder #          ;
+ +V+Ind+Prs+Pass:ydes #          ;
+      +V+Ind+Prt:ød   #          ;
+       +V+PrfPtc:ydd  #          ;
+       +V+PrsPtc:yd   prfptcsuff ;
 
 LEXICON BÆRE
           bære+V+Inf:bære  #          ;
@@ -582,14 +582,14 @@ LEXICON GLI
        gli+V+PrfPtc:glidd    # ;
        gli+V+PrsPtc:glidende # ;
 
-LEXICON GLIPPE
-          glippe+V+Inf:glippe    # ;
-          glippe+V+Imp:glipp     # ;
-      glippe+V+Ind+Prs:glipper   # ;
- glippe+V+Ind+Prs+Pass:glippes   # ;
-      glippe+V+Ind+Prt:glapp     # ;
-       glippe+V+PrfPtc:gluppet   # ;
-       glippe+V+PrsPtc:glippende # ;
+LEXICON XIPPE
+          +V+Inf:ippe    # ;
+          +V+Imp:ipp     # ;
+      +V+Ind+Prs:ipper   # ;
+ +V+Ind+Prs+Pass:ippes   # ;
+      +V+Ind+Prt:app     # ;
+       +V+PrfPtc:uppet   # ;
+       +V+PrsPtc:ippende # ;
 
 LEXICON GNAGE
           gnage+V+Inf:gnage    # ;
@@ -1156,15 +1156,6 @@ LEXICON SLEPPE
       sleppe+V+Ind+Prt:slapp     # ;
        sleppe+V+PrfPtc:sluppet   # ;
        sleppe+V+PrsPtc:sleppende # ;
-
-LEXICON SLIPPE
-          slippe+V+Inf:slippe    # ;
-          slippe+V+Imp:slipp     # ;
-      slippe+V+Ind+Prs:slipper   # ;
- slippe+V+Ind+Prs+Pass:slippes   # ;
-      slippe+V+Ind+Prt:slapp     # ;
-       slippe+V+PrfPtc:sluppet   # ;
-       slippe+V+PrsPtc:slippende # ;
 
 LEXICON SLÅSS
      slåss+V+Inf:slåss     # ;
