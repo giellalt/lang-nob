@@ -247,17 +247,16 @@ LEXICON BRISTE
        briste+V+PrfPtc:brustet #          ;
        briste+V+PrsPtc:brist   prfptcsuff ;
 
-LEXICON BRYTE
-             bryte+V+Inf:bryte  #          ;
-             bryte+V+Inf+Pass:brytes  #          ;
-             bryte+V+Imp:bryt   #          ;
-         bryte+V+Ind+Prs:bryter #          ;
-         bryte+V+Ind+Prs+Pass:brytes #          ;
-         bryte+V+Ind+Prt:brøt   #          ;
-         bryte+V+Ind+Prt:braut  #          ;
-bryte+V+Ind+Prt+Err/Orth:brøyt  #          ; !SUB
-          bryte+V+PrfPtc:brytt  #          ;
-          bryte+V+PrsPtc:bryt   prfptcsuff ;
+LEXICON XYTE
+             +V+Inf:yte  #          ;
+             +V+Inf+Pass:ytes  #          ;
+             +V+Imp:yt   #          ;
+         +V+Ind+Prs:yter #          ;
+         +V+Ind+Prs+Pass:ytes #          ;
+         +V+Ind+Prt:øt   #          ;
+         +V+Ind+Prt:øyt  #          ;
+          +V+PrfPtc:utt  #          ;
+          +V+PrsPtc:yt   prfptcsuff ;
 
 LEXICON BURDE
      burde+V+Inf:burde # ;
