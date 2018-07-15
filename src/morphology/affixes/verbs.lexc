@@ -188,54 +188,54 @@ LEXICON XITE
        ite+V+PrsPtc:it   prfptcsuff ;
 
 LEXICON BLI
-             bli+V+Inf:bli   #          ;
-             bli+V+Imp:bli   #          ;
-         bli+V+Ind+Prs:blir  #          ;
-         bli+V+Ind+Prt:ble   #          ;
- bli+V+Ind+Prt+Radical:blei  #          ;
-          bli+V+PrfPtc:blitt #          ;
-          bli+V+PrsPtc:bliv  prfptcsuff ;
+             +V+Inf:bli   #          ;
+             +V+Imp:bli   #          ;
+         +V+Ind+Prs:blir  #          ;
+         +V+Ind+Prt:ble   #          ;
+ +V+Ind+Prt+Radical:blei  #          ;
+          +V+PrfPtc:blitt #          ;
+          +V+PrsPtc:bliv  prfptcsuff ;
 
 LEXICON BLIVE
-             blive+V+Inf:blive    # ;
-             blive+V+Imp:bliv     # ;
-         blive+V+Ind+Prs:bliver   # ;
-         blive+V+Ind+Prt:blev     # ;
- blive+V+Ind+Prt+Radical:bleiv    # ;
-          blive+V+PrfPtc:blevet   # ;
-          blive+V+PrsPtc:blivende # ;
+             +V+Inf:blive    # ;
+             +V+Imp:bliv     # ;
+         +V+Ind+Prs:bliver   # ;
+         +V+Ind+Prt:blev     # ;
+ +V+Ind+Prt+Radical:bleiv    # ;
+          +V+PrfPtc:blevet   # ;
+          +V+PrsPtc:blivende # ;
 
 LEXICON BRENNE
-          brenne+V+Inf:brenne  #          ;
-          brenne+V+Imp:brenn   #          ;
-      brenne+V+Ind+Prs:brenner #          ;
- brenne+V+Ind+Prs+Pass:brennes #          ;
-     brenne+V+Inf+Pass:brennes #          ;
-      brenne+V+Ind+Prt:brant   #          ;
-      brenne+V+Ind+Prt:brente  #          ;
-       brenne+V+PrfPtc:brent   #          ;
-       brenne+V+PrfPtc:brunnet #          ;
-       brenne+V+PrsPtc:brenn   prfptcsuff ;
+          +V+Inf:brenne  #          ;
+          +V+Imp:brenn   #          ;
+      +V+Ind+Prs:brenner #          ;
+ +V+Ind+Prs+Pass:brennes #          ;
+     +V+Inf+Pass:brennes #          ;
+      +V+Ind+Prt:brant   #          ;
+      +V+Ind+Prt:brente  #          ;
+       +V+PrfPtc:brent   #          ;
+       +V+PrfPtc:brunnet #          ;
+       +V+PrsPtc:brenn   prfptcsuff ;
 
 LEXICON BRESTE
-          breste+V+Inf:breste  #          ;
-          breste+V+Imp:brest   #          ;
-      breste+V+Ind+Prs:brester #          ;
- breste+V+Ind+Prs+Pass:brestes #          ;
-     breste+V+Inf+Pass:brestes #          ;
-      breste+V+Ind+Prt:brast   #          ;
-       breste+V+PrfPtc:brustet #          ;
-       breste+V+PrsPtc:brest   prfptcsuff ;
+          +V+Inf:breste  #          ;
+          +V+Imp:brest   #          ;
+      +V+Ind+Prs:brester #          ;
+ +V+Ind+Prs+Pass:brestes #          ;
+     +V+Inf+Pass:brestes #          ;
+      +V+Ind+Prt:brast   #          ;
+       +V+PrfPtc:brustet #          ;
+       +V+PrsPtc:brest   prfptcsuff ;
 
 LEXICON BRINGE
-     bringe+V+Inf:bringe  #          ;
-     bringe+V+Inf+Pass:bringes  #          ;
-     bringe+V+Imp:bring   #          ;
- bringe+V+Ind+Prs:bringer #          ;
- bringe+V+Ind+Prs+Pass:bringes #          ;
- bringe+V+Ind+Prt:brakte  #          ;
-  bringe+V+PrfPtc:brakt   #          ;
-  bringe+V+PrsPtc:bring   prfptcsuff ;
+     +V+Inf:bringe  #          ;
+     +V+Inf+Pass:bringes  #          ;
+     +V+Imp:bring   #          ;
+ +V+Ind+Prs:bringer #          ;
+ +V+Ind+Prs+Pass:bringes #          ;
+ +V+Ind+Prt:brakte  #          ;
+  +V+PrfPtc:brakt   #          ;
+  +V+PrsPtc:bring   prfptcsuff ;
 
 LEXICON BRISTE
           briste+V+Inf:briste  #          ;
@@ -264,14 +264,14 @@ LEXICON BURDE
  burde+V+Ind+Prt:burde # ;
 
 LEXICON BY
-          by+V+Inf:by   #          ;
-          by+V+Inf+Pass:by   #          ;
-          by+V+Imp:by   #          ;
-      by+V+Ind+Prs:byr  #          ;
- by+V+Ind+Prs+Pass:bys  #          ;
-      by+V+Ind+Prt:bød  #          ;
-       by+V+PrfPtc:bydd #          ;
-       by+V+PrsPtc:by   prfptcsuff ;
+          +V+Inf:by   #          ;
+          +V+Inf+Pass:by   #          ;
+          +V+Imp:by   #          ;
+      +V+Ind+Prs:byr  #          ;
+ +V+Ind+Prs+Pass:bys  #          ;
+      +V+Ind+Prt:bød  #          ;
+       +V+PrfPtc:bydd #          ;
+       +V+PrsPtc:by   prfptcsuff ;
 
 LEXICON XYDE
           +V+Inf:yde  #          ;
