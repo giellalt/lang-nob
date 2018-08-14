@@ -89,8 +89,8 @@ LEXICON m1Vn1
 ! ----------
 
 LEXICON x
-  +X: m1 ; !Temporarily excluding the xX
-!     m1 ; ! change line back if needed.
+!  +X: m1 ; !Temporarily excluding the xX
+       m1 ; ! change line back if needed.
 
 LEXICON mX
  +N+Msc: K ;
