@@ -759,6 +759,9 @@ REMOVE N IF (-1 Pron + Pers + Nom)(0 V + Ind);
 REMOVE N IF (-1 CLB)(0 ("men"));
 ## ... men misforstå meng rett
 
+# om
+REMOVE Pr IF (-1 Ind)(0 %om%)(1 ("ikke") OR (N));
+
 # slettes
 REMOVE Adv IF (-1 Ind)(0 ("slettes"))(NOT 1 ("ikke")); 
 ## Det er slettes ikke bra.
@@ -9424,7 +9427,7 @@ SELECT (Pr) IF
 # 2502
 SELECT (Pr) IF
 	(0 CS)
-	(NOT 0 %foer% OR %der%)
+	(NOT 0 %foer% OR %der% OR %om%)
 	(*-2C setn-gr BARRIER fv)
 	(*1C <<< LINK *-1 fv LINK NOT *-1 fv)
 ;

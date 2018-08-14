@@ -223,9 +223,9 @@ LEXICON MOR
      mor+N+Fem+Pl:mødr  e-ene ;
 
 LEXICON GÅS
-     gås+N+Fem+Sg:gås   0-a   ;
- gås+N+Msc+Sg+Def:gåsen K     ;
-     gås+N+Fem+Pl:gjess 0-ene ;
+     +N+Fem+Sg:gås   0-a   ;
+ +N+Msc+Sg+Def:gåsen K     ;
+     +N+Fem+Pl:gjess 0-ene ;
 
 LEXICON KU
      ku+N+Fem+Sg:ku   0-a    ;
