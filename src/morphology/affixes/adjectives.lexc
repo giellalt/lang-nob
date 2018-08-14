@@ -199,16 +199,16 @@ LEXICON STOR
         stor+A+Superl+Def:største # ;
 
 LEXICON UNG
-                  ung+A:ung    R ;
- ung+A+Pos+Msc+Sg+Indef:ung    # ;
- ung+A+Pos+Fem+Sg+Indef:ung    # ;
- ung+A+Pos+Neu+Sg+Indef:ungt   # ;
-       ung+A+Pos+Sg+Def:unge   # ;
-     ung+A+Pos+Pl+Indef:unge   # ;
-       ung+A+Pos+Pl+Def:unge   # ;
-             ung+A+Comp:yngre  # ;
-           ung+A+Superl:yngst  # ;
-       ung+A+Superl+Def:yngste # ;
+                  +A:ung    R ;
+ +A+Pos+Msc+Sg+Indef:ung    # ;
+ +A+Pos+Fem+Sg+Indef:ung    # ;
+ +A+Pos+Neu+Sg+Indef:ungt   # ;
+       +A+Pos+Sg+Def:unge   # ;
+     +A+Pos+Pl+Indef:unge   # ;
+       +A+Pos+Pl+Def:unge   # ;
+             +A+Comp:yngre  # ;
+           +A+Superl:yngst  # ;
+       +A+Superl+Def:yngste # ;
 
 
 
