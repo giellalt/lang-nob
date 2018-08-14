@@ -137,12 +137,6 @@ LEXICON grade-C
 
 ! Exceptional
 
-LEXICON FLER
-    fler+A+Comp+Pl+Indef:fler   # ;
-   flere+A+Comp+Pl+Indef:flere  # ;
-   flere+A+Superl+Pl+Def:fleste # ;
- flere+A+Superl+Pl+Indef:flest  # ;
-
 LEXICON GAMMEL
                   +A:gammel  R ;
   +A+Pos+Msc+Sg+Indef:gammel  # ;
@@ -170,31 +164,28 @@ LEXICON GOD
       +A+Comp+Nynorsk:betre # ;
 
 LEXICON LITEN
- liten+A+Pos+Msc+Sg+Indef:liten  # ;
- liten+A+Pos+Fem+Sg+Indef:lita   # ;
- liten+A+Pos+Neu+Sg+Indef:lite   # ;
-       liten+A+Pos+Sg+Def:lille  # ;
-       liten+A+Pos+Sg+Def:vesle  # ;
-     liten+A+Pos+Pl+Indef:små    # ;
-       liten+A+Pos+Pl+Def:små    # ;
-             liten+A+Comp:mindre # ;
-           liten+A+Superl:minst  # ;
-       liten+A+Superl+Def:minste # ;
-
-LEXICON NY
- ny aV ;
+ +A+Pos+Msc+Sg+Indef:liten  # ;
+ +A+Pos+Fem+Sg+Indef:lita   # ;
+ +A+Pos+Neu+Sg+Indef:lite   # ;
+       +A+Pos+Sg+Def:lille  # ;
+       +A+Pos+Sg+Def:vesle  # ;
+     +A+Pos+Pl+Indef:små    # ;
+       +A+Pos+Pl+Def:små    # ;
+             +A+Comp:mindre # ;
+           +A+Superl:minst  # ;
+       +A+Superl+Def:minste # ;
 
 
 LEXICON STOR
-                   stor+A:stor    R ;
-   stor+A+Pos+MF+Sg+Indef:stor    # ;
-  stor+A+Pos+Neu+Sg+Indef:stort   # ;
-        stor+A+Pos+Sg+Def:store   # ;
-      stor+A+Pos+Pl+Indef:store   # ;
-        stor+A+Pos+Pl+Def:store   # ;
-        stor+A+Comp+Indef:større  # ;
-      stor+A+Superl+Indef:størst  # ;
-        stor+A+Superl+Def:største # ;
+                   +A:stor    R ;
+   +A+Pos+MF+Sg+Indef:stor    # ;
+  +A+Pos+Neu+Sg+Indef:stort   # ;
+        +A+Pos+Sg+Def:store   # ;
+      +A+Pos+Pl+Indef:store   # ;
+        +A+Pos+Pl+Def:store   # ;
+        +A+Comp+Indef:større  # ;
+      +A+Superl+Indef:størst  # ;
+        +A+Superl+Def:største # ;
 
 LEXICON UNG
                   +A:ung    R ;
@@ -207,6 +198,19 @@ LEXICON UNG
              +A+Comp:yngre  # ;
            +A+Superl:yngst  # ;
        +A+Superl+Def:yngste # ;
+
+LEXICON MANGE
+ +A:mange positive    ;
+ +A:mange a-no-neuter ;
+ FLER ;
+ FLERE ;
+
+LEXICON FLER
+    +A+Comp+Pl+Indef:fler   # ;
+LEXICON FLERE
+   +A+Comp+Pl+Indef:flere  # ;
+   +A+Superl+Pl+Def:fleste # ;
+ +A+Superl+Pl+Indef:flest  # ;
 
 
 
