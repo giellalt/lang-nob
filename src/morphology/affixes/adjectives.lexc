@@ -34,8 +34,8 @@ LEXICON a1
  +A: grade-e  ;
 
 LEXICON a2lig
-         ig:ig a2 ; ! herlig
- ig+Nynorsk:eg a2 ; ! herleg
+         :ig a2 ; ! herlig
+ +Nynorsk:eg a2 ; ! herleg
 
 LEXICON a2 !
  +A: positive    ;
@@ -144,30 +144,30 @@ LEXICON FLER
  flere+A+Superl+Pl+Indef:flest  # ;
 
 LEXICON GAMMEL
-                  gammel+A:gammel  R ;
-  gammel+A+Pos+MF+Sg+Indef:gammel  # ;
- gammel+A+Pos+Neu+Sg+Indef:gammelt # ;
-       gammel+A+Pos+Sg+Def:gamle   # ;
-    gammel+A++Pos+Pl+Indef:gamle   # ;
-       gammel+A+Pos+Pl+Def:gamle   # ;
-             gammel+A+Comp:eldre   # ;
-           gammel+A+Superl:eldst   # ;
-       gammel+A+Superl+Def:eldste  # ;
+                  +A:gammel  R ;
+  +A+Pos+Msc+Sg+Indef:gammel  # ;
+  +A+Pos+Fem+Sg+Indef:gammel  # ;
+ +A+Pos+Neu+Sg+Indef:gammelt # ;
+       +A+Pos+Sg+Def:gamle   # ;
+    +A++Pos+Pl+Indef:gamle   # ;
+       +A+Pos+Pl+Def:gamle   # ;
+             +A+Comp:eldre   # ;
+           +A+Superl:eldst   # ;
+       +A+Superl+Def:eldste  # ;
 
 LEXICON GOD
-! god+A+Pos+Msc+Sg+Indef:god   # ;
-! god+A+Pos+Fem+Sg+Indef:god   # ;
-                   god+A:god   R ;
-   god+A+Pos+MF+Sg+Indef:god   # ;
-  god+A+Pos+Neu+Sg+Indef:godt  # ;
-        god+A+Pos+Sg+Def:gode  # ;
-      god+A+Pos+Pl+Indef:gode  # ;
-        god+A+Pos+Pl+Def:gode  # ;
-              god+A+Comp:bedre # ;
-            god+A+Superl:best  # ;
-        god+A+Superl+Def:beste # ;
+                   +A:god   R ;
+   +A+Pos+Msc+Sg+Indef:god   # ;
+   +A+Pos+Fem+Sg+Indef:god   # ;
+  +A+Pos+Neu+Sg+Indef:godt  # ;
+        +A+Pos+Sg+Def:gode  # ;
+      +A+Pos+Pl+Indef:gode  # ;
+        +A+Pos+Pl+Def:gode  # ;
+              +A+Comp:bedre # ;
+            +A+Superl:best  # ;
+        +A+Superl+Def:beste # ;
 
-      god+A+Comp+Nynorsk:betre # ;
+      +A+Comp+Nynorsk:betre # ;
 
 LEXICON LITEN
  liten+A+Pos+Msc+Sg+Indef:liten  # ;
@@ -186,8 +186,6 @@ LEXICON NY
 
 
 LEXICON STOR
-!     stor+A+Msc+Sg+Indef:stor    # ;
-!     stor+A+Fem+Sg+Indef:stor    # ;
                    stor+A:stor    R ;
    stor+A+Pos+MF+Sg+Indef:stor    # ;
   stor+A+Pos+Neu+Sg+Indef:stort   # ;

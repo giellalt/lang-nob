@@ -107,6 +107,10 @@ LEXICON Root !!= * @CODE@
  Nynorsk ;        !!= * @CODE@ Accepts nno forms
 ! Particle ;
 
+LEXICON AdjectivePrefix
+kjempe AdjectiveRoot ;
+super  AdjectiveRoot ;
+       AdjectiveRoot ;
 
 
 ! ======================
