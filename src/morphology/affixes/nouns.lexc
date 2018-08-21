@@ -93,7 +93,7 @@ LEXICON x
        m1 ; ! change line back if needed.
 
 LEXICON mX
- +N+Msc: K ;
+ +N+Msc+Sg+Indef: K ;
      +N: R ;
 
 LEXICON mD ! av garde
@@ -192,18 +192,18 @@ LEXICON RADIUS
                 +N:     R      ;
 
 LEXICON BROR
-         bror+N+Msc+Sg:bror  0-en  ;
-         bror+N+Msc+Pl:brødr e-ene ;
- bror+N+Msc+Pl+Nynorsk:brør  0-ne  ;
+         +N+Msc+Sg:bror  0-en  ;
+         +N+Msc+Pl:brødr e-ene ;
+ +N+Msc+Pl+Nynorsk:brør  0-ne  ;
 
 LEXICON BRODER
-         broder+N+Msc+Sg:broder 0-en  ;
-         broder+N+Msc+Pl:brødr  e-ene ;
- broder+N+Msc+Pl+Nynorsk:brør   0-ne  ;
+         +N+Msc+Sg:broder 0-en  ;
+         +N+Msc+Pl:brødr  e-ene ;
+ +N+Msc+Pl+Nynorsk:brør   0-ne  ;
 
 LEXICON FAR
-  far+N+Msc+Sg:far  0-en  ;
-  far+N+Msc+Pl:fedr e-ene ;
+  +N+Msc+Sg:far  0-en  ;
+  +N+Msc+Pl:fedr e-ene ;
 !           +N:     R     ;
 
 LEXICON DATTER
@@ -218,9 +218,9 @@ LEXICON DATTER
 !                      +N:         R ;
 
 LEXICON MOR
-     mor+N+Fem+Sg:mor   0-a   ;
- mor+N+Msc+Sg+Def:moren K     ;
-     mor+N+Fem+Pl:mødr  e-ene ;
+     +N+Fem+Sg:mor   0-a   ;
+ +N+Msc+Sg+Def:moren K     ;
+    +N+Fem+Pl:mødr  e-ene ;
 
 LEXICON GÅS
      +N+Fem+Sg:gås   0-a   ;
@@ -228,15 +228,15 @@ LEXICON GÅS
      +N+Fem+Pl:gjess 0-ene ;
 
 LEXICON KU
-     ku+N+Fem+Sg:ku   0-a    ;
- ku+N+Msc+Sg+Def:kuen K      ;
-     ku+N+Fem+Pl:kyr  0-a    ;
-     ku+N+Fem+Pl:ku   er-ene ;
+     +N+Fem+Sg:ku   0-a    ;
+ +N+Msc+Sg+Def:kuen K      ;
+     +N+Fem+Pl:kyr  0-a    ;
+     +N+Fem+Pl:ku   er-ene ;
 
 LEXICON KLE
- kle+N+Neu+Sg+Indef:kle    K     ;
-   kle+N+Neu+Sg+Def:kledet K     ;
-       kle+N+Neu+Pl:klæ    r-rne ;
+ +N+Neu+Sg+Indef:kle    K     ;
+   +N+Neu+Sg+Def:kledet K     ;
+       +N+Neu+Pl:klæ    r-rne ;
 
 
 LEXICON MANN
@@ -317,7 +317,7 @@ LEXICON fGLO
 ! -------
 
 LEXICON nX ! styrbord
- +N+Neu: K ;
+ +N+Neu+Sg+Indef: K ;
      +N: R ;
 
 LEXICON nD ! i live
@@ -412,7 +412,7 @@ LEXICON MUSEUM
         +N:um R        ;
 
 LEXICON KLÆR
-    +N+Neu:klær 0-ne  ;
+ +N+Neu+Pl:klær 0-ne  ;
 
  LEXICON TRE
  +N+Neu+Sg:tre  0-et  ;
