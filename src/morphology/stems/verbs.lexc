@@ -463,7 +463,10 @@ skyve:                     SKYVE   ;
           foreslå:fore       SLÅ     ;
         jernbeslå:jernbe       SLÅ     ;
           skamslå:skam       SLÅ     ;
-unnslå:unn SLÅ ; 
+unnslå:unn SLÅ ;
+underslå:under SLÅ ; 
+fastslå:fast SLÅ ; 
+
               slåss:       SLÅSS   ;
           lekeslåss:leke       SLÅSS   ;
            småslåss:små       SLÅSS   ;
