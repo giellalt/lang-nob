@@ -6,7 +6,13 @@ LEXICON dt
  +Adv: # ; ! perhaps unify, perhaps not.
 
 LEXICON Adverb
-
+av% dage adv ; ! av dage
+i% hjel adv ;
+av% gårde adv ;
+av% garde adv ;
+i% live adv ;
+til% låns adv ;
+i% søvne adv ;
 skuls adv ;
 kuli adv ; 
 vekk adv ; 
