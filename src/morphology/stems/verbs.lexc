@@ -27,7 +27,7 @@ regular-verbs ;
 LEXICON copula-aux
 KUNNE ;
 SKULLE ;
-VÆRE ;
+være: VÆRE ;
 
 LEXICON regular-verbs
 
@@ -5373,7 +5373,7 @@ unnslippe:unnsl XIPPE ;
 unnslå:unn SLÅ ;
 unnta:unn TA ;
 unnvike:unn VIKE ;
-unnvære:unn VÆRE ;
+!unnvære:unn UNNVÆRE ;
 urbanisere v2 ;
 urgere v2 ;
 urinere v2 ;

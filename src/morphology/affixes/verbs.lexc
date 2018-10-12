@@ -1662,8 +1662,18 @@ LEXICON VÆRE
 +V+PrfPtc:vært     # ;
 +V+PrsPtc:værende  # ;
 +V+Imp:vær      # ;
-+V+PrfPtc:turt     # ;
-+V+PrsPtc:tørrende # ;
++V+PrfPtc:vært     # ;
++V+PrsPtc:værrende # ;
+
+LEXICON UNNVÆRE
++V+Inf:være     # ;
++V+Ind+Prs:værer       # ;
++V+Ind+Prt:var      # ;
++V+PrfPtc:vært     # ;
++V+PrsPtc:værende  # ;
++V+Imp:vær      # ;
++V+PrfPtc:vært     # ;
++V+PrsPtc:værrende # ;
 
 
 LEXICON XREKKE
