@@ -21,15 +21,10 @@
 !! }}}
 
 LEXICON VerbRoot
-copula-aux ;
-regular-verbs ;
 
-LEXICON copula-aux
-KUNNE ;
-SKULLE ;
+kunne: KUNNE ;
+skulle: SKULLE ;
 være: VÆRE ;
-
-LEXICON regular-verbs
 
 abbreviere v2 ;
 abdisere v2 ;
@@ -1242,7 +1237,6 @@ fingranske v1 ;
 fininnstille v2 ;
 finjustere v2 ;
 finne: FINNE ;
-finnes v-s ;
 finslipe v2 ;
 finsnitte v1 ;
 finstrikke v1 ;
@@ -1642,7 +1636,6 @@ fremvise v2 ;
 frese v2 ;
 fri v4 ;
 frifinne:fri FINNE ;
-frifinnes v-s ;
 frigi:fri GI ; 
 frigjøre:fri GJØRE ;
 frikjenne v2 ;
@@ -1653,7 +1646,6 @@ friskne v1 ;
 friste v1 ;
 fristille v2 ;
 frita:fri TA ;
-fritas v-s ;
 fritere v2 ;
 fritte v1 ;
 frityrkoke v2 ;
@@ -2237,6 +2229,7 @@ inngravere v2 ;
 inngyte vx ;
 inngå:inn GÅ ;
 innhente v1 ;
+innholdsbestemme v2 ;
 innhylle v1 ;
 innkalle v2 ;
 innkapsle v1 ;
@@ -4210,7 +4203,6 @@ scrolle v1 ;
 se: SE ;
 sedimentere v2 ;
 seede v1 ;
-sees v-s ;
 segle v1 ;
 segmentere v2 ;
 segne v1 ;
@@ -4809,7 +4801,6 @@ stresse v1 ;
 streve v3 ;
 stride v3 ;
 stride: STRIDE ;
-strides v-s ;
 stridgråte vx ;
 stridregne v1 ;
 strigle v1 ;
@@ -5288,7 +5279,6 @@ tvette v1 ;
 tviholde v2 ;
 tvile v2 ;
 tvinge: TVINGE ;
-tvinges v-s ;
 tvinne vx ;
 tviste v1 ;
 tvære v3 ;
@@ -5734,7 +5724,6 @@ zoome v1 ;
 ærekrenke v1 ;
 æreskjelle v2 ;
 ødelegge:øde LEGGE ;
-ødelegges v-s ;
 ødsle v1 ;
 øke v2 ;
 økonomisere v2 ;
