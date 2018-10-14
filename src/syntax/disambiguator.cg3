@@ -688,6 +688,8 @@ LIST NOT-Neu = Msc Fem MF ;
 LIST NOT-Fem = Msc Neu ;
 LIST NOT-Msc = Fem Neu ;
 
+LIST ING = ING ;
+
 # Complementary sets
 
 LIST WORD = N A Adv V CS CC Interj Pcle Pr IM Det Pron Interj ;
@@ -723,8 +725,14 @@ SELECT N IF (-1 ("holde"))(1 ("stand"));
 # NP
 
 
+# AP
+
+REMOVE Def IF (-1 %like%)(0 A + Indef);
 
 # V
+
+# Derivation
+REMOVE ING IF (0 N + Fem);
 
 # Imperative or N
 REMOVE Imp IF (-1 A OR Det)(0 N);
@@ -748,7 +756,7 @@ REMOVE N + Fem + Sg + Def IF (-1 CLB OR CC)(*-2 Prt)(0 Prt);
 REMOVE N IF (-1 Pron)(-2 ("som"));
 REMOVE N IF (-1 N LINK *-2 ("som") BARRIER NOT-PRE-NP-HEAD);
 
-REMOVE N IF (-1 Pron + Pers + Nom)(0 V + Ind);
+REMOVE N IF (-1C Pron + Pers + Nom)(0 V + Ind);
 
 # Prop vs not
 # REMOVE Prop IF ..; manglar ei generalisering her.
@@ -5512,6 +5520,8 @@ SELECT (A Pl) IF
 
 SELECT Dem IF (0 %den%);
 
+SELECT:DetHuset Dem IF (0 Sg + Neu)(1 N + Sg + Neu + Def) ;
+
 # 2884
 SELECT (A Pl) IF
 	(1 Indef-Pl-N)
@@ -9752,7 +9762,7 @@ SELECT (Pron Pers) IF
 # 2461
 SELECT (Pron Pers) IF
 	(NOT 0 Clt OR Poss-det)
-	(1C ikke-AdvA-N)
+	(1C ikke-AdvA-N OR Prs OR Prt)
 	(NOT 1 nr2-det)
 ;
 
