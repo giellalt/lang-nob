@@ -73,9 +73,9 @@ LEXICON v4 ! ro, bie
  +V: r-pres     ;
      dde-pret   ;
 
-LEXICON v-s ! fritas
-     +V+Inf: # ;
- +V+Ind+Prs: # ;
+!LEXICON v-s ! fritas ! ikkje i bruk
+!     +V+Inf: # ;
+! +V+Ind+Prs: # ;
 
 LEXICON v1-s ! undres
      +V+Inf: # ;
