@@ -4742,7 +4742,7 @@ steike v2 ;
 steile v2 ;
 steine v1 ;
 steinsette:stein SETTE ;
-steke v2 ;
+steike+Use/NG:steke v2 ;
 stekke v1 ;
 stele v2 ;
 stele: STELE ;
