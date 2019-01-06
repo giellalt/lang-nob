@@ -2,6 +2,7 @@
 ! Adjectives
 
 ! a1 god god godt gode
+! a2 billig billig billig billige
 ! a3 ekte ekte ekte ekte
 ! a4 oppskjørtet oppskjørtet oppskjørtet oppskjørtede/oppskjørtete
 ! a5 makaber makaber makabert makabre
@@ -23,6 +24,7 @@ nordvestre a3 ;
 sørøstre a3 ;
 sørvestre a3 ;
 billig a2 ;
+lilla a3 ;
 samfunnsvitenskapelig a2 ;
 nettverksansvarlig a2 ;
 metallurgisk a2 ;
