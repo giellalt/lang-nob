@@ -660,6 +660,8 @@ ADD:spell-conservatively (&typo &SUGGESTWF) (<spelled>) IF (NEGATE -1 QMARK LINK
 # A simple grammar checker rule without suggestions: Ensure preceding adjective agrees with noun
 
 ADD:err_agr_neu_a (&err_agr_neu_a) TARGET A IF (-1 Det + Neu)(0 A + MF OR Msc OR Fem)(1 N + Neu);
+COPY:err_agr_neu_a (&SUGGEST)  TARGET (&err_agr_neu_a) ;
+
 ## Dette er et fin hus.
 ADD:err_agr_msc_a (&err_agr_msc_a) TARGET A IF (-1 Det + MF)(0 A + Neu)(1 N + Msc);
 ## Dette er en fint båt.

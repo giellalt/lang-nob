@@ -130,4 +130,19 @@
     </body>
   </error>
 
+  <error id="err_agr_neu_a">
+    <header>
+      <title xml:lang="en">Agreement for neuter</title>
+      <title xml:lang="nb">Kongruensfeil foran nøytrumssubstantiv</title>
+      <references> <ref n=""/></references>
+    </header>
+    <body>
+      <description xml:lang="en">The word $0 was bad here.</description>
+      <description xml:lang="se">Ordet $0 var ikke så bra her.</description>
+    <examples>
+      <ex xml:lang="nb">Dette er en fin hus.</ex>
+    </examples>
+    </body>
+  </error>
+
 </errors>
