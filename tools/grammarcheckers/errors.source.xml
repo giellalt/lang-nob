@@ -11,138 +11,34 @@
       </ids>
       <header>
         <title xml:lang="en">Real-word error</title>
-        <title xml:lang="se">Čállinmeattáhus</title>
+        <title xml:lang="nb">Čállinmeattáhus</title>
       </header>
       <body>
         <description xml:lang="en">The word "$1" exists in the dictionary, but means something different in this context.</description>
-        <description xml:lang="se">"$1" maŋis galggašii leat blah</description>
-      </body>
-    </default>
-
-    <default type="Grammar error">
-      <ids>
-        <e id="default"/>
-      </ids>
-      <header>
-        <title xml:lang="en">Grammar error</title>
-        <title xml:lang="se">Čállinmeattáhus</title>
-      </header>
-      <body>
-        <description xml:lang="en">The word "$1" exists in the dictionary, but means something different in this context.</description>
-        <description xml:lang="se">"$1" maŋis galggašii leat blah</description>
+        <description xml:lang="nb">"$1" er et eksisterende ord, men passer kanskje ikke her.</description>
       </body>
     </default>
   </defaults>
 
-  <error id="real-override">
-    <header>
-      <title xml:lang="en">cake instead of cheese</title>
-      <title xml:lang="se">gáhkku iige vuostá</title>
-    </header>
-    <body>
-      <description xml:lang="en">this should be "cake" instead of "cheese"</description>
-      <description xml:lang="se">galggašii leat "gáhkku" iige "vuostá"</description>
-    </body>
-  </error>
-
-  <error id="msyn-valency-ill">
-    <header>
-      <title xml:lang="en">illative instead of accusative</title>
-      <title xml:lang="se">illatiiva iige akkusatiiva</title>
-      <references> <ref n=""/></references>
-    </header>
-    <body>
-      <description xml:lang="en">illative instead of accusative</description>
-      <description xml:lang="se">illatiiva iige akkusatiiva</description>
-    <examples>
-      <ex xml:lang="se">Hui ollu liikon {bohccobierggu} ja {goikebierggu}.</ex>
-    </examples>
-    </body>
-  </error>
-
-
-  <error id="msyn-valency-acc">
-    <header>
-      <title xml:lang="en">accusative instead of nominative</title>
-      <title xml:lang="se">akkusatiiva iige nominatiiva</title>
-      <references> <ref n=""/></references>
-    </header>
-    <body>
-      <description xml:lang="en">accusative instead of nominative</description>
-      <description xml:lang="se">illatiiva iige nominatiiva</description>
-    <examples>
-      <ex xml:lang="se">Mun čálán {reive}.</ex>
-    </examples>
-    </body>
-  </error>
-
-  <error id="msyn-valency-loc-com">
-    <header>
-      <title xml:lang="en">msyn thing</title>
-      <title xml:lang="se">msyn thingy</title>
-      <references><ref n=""/></references>
-    </header>
-    <body>
-      <description xml:lang="en">wrong word</description>
-      <description xml:lang="se">boasttut sátni</description>
-    <examples>
-      <ex xml:lang="se">Ovdalgihtiigeassima sierra máksingoartta ferte álohii atnit go máksá boastagiro dahje báŋku {badjel}.</ex>
-    </examples>
-    </body>
-  </error>
-
-  <error id="lex-bokte-not-badjel">
-    <header>
-      <title xml:lang="en">"bokte" not "badjel"</title>
-      <title xml:lang="se">"bokte" iige "badjel"</title>
-      <references><ref n=""/></references>
-    </header>
-    <body>
-      <description xml:lang="en">wrong word</description>
-      <description xml:lang="se">boasttut sátni</description>
-    <examples>
-      <ex xml:lang="se">Ovdalgihtiigeassima sierra máksingoartta ferte álohii atnit go máksá boastagiro dahje báŋku {badjel}.</ex>
-    </examples>
-    </body>
-  </error>
-
-  <error id="syn-pred-not-attr-msg">
-    <header>
-      <title xml:lang="se">«$1» ja «$2» leaba blah</title>
-    </header>
-    <body>
-      <description xml:lang="se">Predicative, iige attributive – «$1» ja «$2» leaba blah</description>
-    </body>
-  </error>
-
-  <error id="msyn-valency-go-inf">
-    <header>
-      <title xml:lang="en">Try a subclause with <em>go</em> instead of illative</title>
-      <title xml:lang="se">Iskka<em>go</em>-oalgecealkaga iige infinitiiva</title>
-      <references> <ref n=""/></references>
-    </header>
-    <body>
-      <description xml:lang="en"><em>go</em> instead of illative</description>
-      <description xml:lang="se"><em>go</em> iige infinitiiva</description>
-    <examples>
-      <ex xml:lang="se">Soai leaigga sihke dolkan ja suhttan gullat olbmuid šláddariid sudno birra, ja bovdiiga.</ex>
-    </examples>
-    </body>
-  </error>
-
   <error id="err_agr_neu_a">
     <header>
-      <title xml:lang="en">Agreement for neuter</title>
-      <title xml:lang="nb">Kongruensfeil foran nøytrumssubstantiv</title>
-      <references> <ref n=""/></references>
+      <title xml:lang="en">When an adjective, such as "$1, stands in front of a neuter noun, such as "$2", it should be in the neuter.</title>
+      <title xml:lang="nb">Når et adjektiv, som her "$1", står foran et intetkjønnssubstantiv, som her "$2", skal det stå i nøytrum</title>
     </header>
     <body>
-      <description xml:lang="en">The word $0 was bad here.</description>
-      <description xml:lang="se">Ordet $0 var ikke så bra her.</description>
-    <examples>
-      <ex xml:lang="nb">Dette er en fin hus.</ex>
-    </examples>
+      <description xml:lang="en">Gender concord in noun phrases</description>
+      <description xml:lang="nb">Samsvar i kjønn i substantivfraser</description>
     </body>
   </error>
 
+  <error id="err_agr_msc_a">
+    <header>
+      <title xml:lang="en">When an adjective, such as "$1", stands in front of a masculine noun, here "$2", it should not be in the neuter.</title>
+      <title xml:lang="nb">Når et adjektiv, som her "$1", står foran et hankjønnssubstantiv, som her "$2", skal det ikkæ stå i nøytrum</title>
+    </header>
+    <body>
+      <description xml:lang="en">Gender concord in noun phrases</description>
+      <description xml:lang="nb">Samsvar i kjønn i substantivfraser</description>
+    </body>
+  </error>
 </errors>
