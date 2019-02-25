@@ -71,9 +71,9 @@ LEXICON n1n3
   n1 ;
   n3 ;
 
-!LEXICON m1n1
-!  m1 ;
-!  n1 ;
+LEXICON m1n1
+  m1 ;
+  n1 ;
 
 !LEXICON m1n1f1
 !  m1 ;
