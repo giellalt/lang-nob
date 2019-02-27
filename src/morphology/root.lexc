@@ -103,6 +103,7 @@ LEXICON Root !!= * @CODE@
  Pronoun ;		  !!= * @CODE@
  Numeral ;		  !!= * @CODE@
  Punctuation ;	  !!= * @CODE@
+ Symbols     ;	  !!= * @CODE@
  Abbreviation ;	  !!= * @CODE@
  Nynorsk ;        !!= * @CODE@ Accepts nno forms
 ! Particle ;
