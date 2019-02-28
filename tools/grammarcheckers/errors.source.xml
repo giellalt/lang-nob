@@ -22,23 +22,23 @@
 
   <error id="err_agr_neu_a">
     <header>
-      <title xml:lang="en">When an adjective, such as "$1, stands in front of a neuter noun, such as "$2", it should be in the neuter.</title>
-      <title xml:lang="nb">Når et adjektiv, som her "$1", står foran et intetkjønnssubstantiv, som her "$2", skal det stå i nøytrum</title>
+      <title xml:lang="en">Gender concord in noun phrases</title>
+      <title xml:lang="nb">Samsvar i kjønn i substantivfraser</title>
     </header>
     <body>
-      <description xml:lang="en">Gender concord in noun phrases</description>
-      <description xml:lang="nb">Samsvar i kjønn i substantivfraser</description>
+      <description xml:lang="en">When an adjective, such as "$1, stands in front of a neuter noun, such as "$2", it should be in the neuter.</description>
+      <description xml:lang="nb">Når et adjektiv, som her "$1", står foran et intetkjønnssubstantiv, som her "$2", skal det stå i nøytrum</description>
     </body>
   </error>
 
   <error id="err_agr_msc_a">
     <header>
-      <title xml:lang="en">When an adjective, such as "$1", stands in front of a masculine noun, here "$2", it should not be in the neuter.</title>
-      <title xml:lang="nb">Når et adjektiv, som her "$1", står foran et hankjønnssubstantiv, som her "$2", skal det ikkæ stå i nøytrum</title>
+      <title xml:lang="en">Gender concord in noun phrases</title>
+      <title xml:lang="nb">Samsvar i kjønn i substantivfraser</title>
     </header>
     <body>
-      <description xml:lang="en">Gender concord in noun phrases</description>
-      <description xml:lang="nb">Samsvar i kjønn i substantivfraser</description>
+      <description xml:lang="en">When an adjective, such as "$1", stands in front of a masculine noun, here "$2", it should not be in the neuter.</description>
+      <description xml:lang="nb">Når et adjektiv, som her "$1", står foran et hankjønnssubstantiv, som her "$2", skal det ikkæ stå i nøytrum</description>
     </body>
   </error>
 </errors>
