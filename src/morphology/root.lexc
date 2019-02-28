@@ -39,6 +39,7 @@ Multichar_Symbols !!= * @CODE@
  +Cmp+
  +CmpS+
  +Qnt ! quantifier noen, begge
+ +Symbol !!≈ * @CODE@ = independent symbols in the text stream, like £, €, ©
 
  +Nynorsk ! For dictionary use., Nynorsk only
  +Radical ! For dictionary testing, Radical Bokmål
