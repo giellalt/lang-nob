@@ -137,6 +137,15 @@ LEXICON grade-C
 
 ! Exceptional
 
+LEXICON A_FÅ
+                   +A:få   R ;
+      +A+Pos+Pl+Indef:få  # ;
+        +A+Pos+Pl+Def:få  # ;
+              +A+Comp:færre # ;
+            +A+Superl:færrest  # ;
+        +A+Superl+Def:færreste # ;
+
+
 LEXICON GAMMEL
                   +A:gammel  R ;
   +A+Pos+Msc+Sg+Indef:gammel  # ;
@@ -198,6 +207,21 @@ LEXICON UNG
              +A+Comp:yngre  # ;
            +A+Superl:yngst  # ;
        +A+Superl+Def:yngste # ;
+
+
+LEXICON VOND
+                   +A:vond   R ;
+   +A+Pos+Msc+Sg+Indef:vond   # ;
+   +A+Pos+Fem+Sg+Indef:vond   # ;
+  +A+Pos+Neu+Sg+Indef:vondt  # ;
+        +A+Pos+Sg+Def:vonde  # ;
+      +A+Pos+Pl+Indef:vonde  # ;
+        +A+Pos+Pl+Def:vonde  # ;
+              +A+Comp:verre # ;
+            +A+Superl:verst  # ;
+        +A+Superl+Def:verste # ;
+
+
 
 LEXICON MANGE
  +A:mange positive    ;
