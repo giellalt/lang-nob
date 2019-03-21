@@ -11,6 +11,9 @@
 
 
 LEXICON AdjectiveRoot
+få: A_FÅ ;
+vond: VOND ;
+
 septisk a2 ;
 helserelatert a2 ;
 drøy a1 ;
@@ -212,7 +215,6 @@ blind a1 ;
 ordblind a1 ;
 ond a1 ;
 blond a1 ;
-vond a1 ;
 rund a1 ;
 hard a1 ;
 beinhard a1 ;
@@ -3774,7 +3776,6 @@ slu a3 ;
 ru a3 ;
 edru a3 ;
 sky a3 ;
-få a3 ;
 indiskré a3 ;
 distré a3 ;
 passé a3 ;
