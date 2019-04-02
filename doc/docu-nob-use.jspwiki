@@ -1,6 +1,6 @@
 !!!How to use the Norwegian grammatical analyser
 
-There is a {{00_readme.txt}} file in {{$GTHOME/st/nob/obt}}. 
+There is a {{00_readme.txt}} file in {{$GTLANG/nob/obt}}
 Here come the highlights from that file:
 
 Before use: Make the files executable: {{chmod a+x bin/*}}
