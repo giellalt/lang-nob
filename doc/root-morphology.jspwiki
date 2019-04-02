@@ -4,6 +4,7 @@ INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Bokmål LANGUAGE.
 
 
  * Multichar_Symbols 
+ * +Symbol = independent symbols in the text stream, like £, €, ©
 
 
 
@@ -55,6 +56,7 @@ Basic lexica, pointing to the other lexicon files
  *  Pronoun ;		  
  *  Numeral ;		  
  *  Punctuation ;	  
+ *  Symbols     ;	  
  *  Abbreviation ;	  
  *  Nynorsk ;         Accepts nno forms
 
