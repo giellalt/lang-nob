@@ -15,11 +15,11 @@
    <ul>
     <li><a href="Links.html">Source file documentation</a></li>
     <li>Source files: 
-        <a href="https://victorio.uit.no/langtech/trunk/langs/nob/src/morphology/stems/">stems</a> /    
-       <a href="https://victorio.uit.no/langtech/trunk/langs/nob/src/morphology/affixes/">affixes</a> /  
-       <a href="https://victorio.uit.no/langtech/trunk/langs/nob/src/syntax/">syntax</a> /  
-       <a href="https://victorio.uit.no/langtech/trunk/langs/nob/src/phonology/nob-phon.twolc">twolc</a> /    
-       <a href="https://victorio.uit.no/langtech/trunk/langs/nob/test/src/gt-norm-yamls/">yaml</a> </li>
+        <a href="https://gtsvn.uit.no/langtech/trunk/langs/nob/src/morphology/stems/">stems</a> /    
+       <a href="https://gtsvn.uit.no/langtech/trunk/langs/nob/src/morphology/affixes/">affixes</a> /  
+       <a href="https://gtsvn.uit.no/langtech/trunk/langs/nob/src/syntax/">syntax</a> /  
+       <a href="https://gtsvn.uit.no/langtech/trunk/langs/nob/src/phonology/nob-phon.twolc">twolc</a> /    
+       <a href="https://gtsvn.uit.no/langtech/trunk/langs/nob/test/src/gt-norm-yamls/">yaml</a> </li>
      <li>Generation of: 
        <a href="http://giellatekno.uit.no/cgi/p-nob.nob.html">paradigms</a> / 
        <a href="http://giellatekno.uit.no/cgi/d-nob.nob.html">text</a> / 
