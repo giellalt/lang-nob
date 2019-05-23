@@ -58,6 +58,16 @@ Multichar_Symbols !!= * @CODE@
 
 +Der/AAdv !!= @CODE@ Adjectives are also adverbs
 
++ABBR
++Ex/V
++Ord
++Prdtc
++Qst
++Sem/Obj
++Sem/Sur
++Use/NG
+
+
 !! !!Flag diacritics
 !! We have manually optimised the structure of our lexicon using following
 !! flag diacritics to restrict morhpological combinatorics - only allow compounds
