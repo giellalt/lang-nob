@@ -3,6 +3,7 @@
 LEXICON Numeral 
 Textual ;
 ARABIC ;
+ARABICORD ;
 ROMAN ;
 ISOLATED-NUMEXP ;
 NUM-PREFIXES ;
@@ -190,6 +191,12 @@ LEXICON ARABIC3
 < [1|2|3|4|5|6|7|8|9|%0] >   CHAPTERHEADING ;
 
 
+LEXICON ARABICORD
+ < [1|2|3|4|5|6|7|8|9|0] [1|2|3|4|5|6|7|8|9|%0] > ARABICLOOPORD ;
+                       < [1|2|3|4|5|6|7|8|9]    > ARABICLOOPORD ;
+                                          1%0%0   ARABICLOOPORD ;
+
+
 LEXICON ARABICLOOP2
 +Use/Circ: ARABIC2 ;
 +Use/Circ: ARABIC3 ;
@@ -204,6 +211,10 @@ LEXICON CHAPTERHEADING
 LEXICON ARABICLOOP
 %.+Use/Circ:%.  ARABIC2 ;        ! 1.-2   multipart numbers
 %.+Use/Circ:%.  ARABIC3 ;        ! 1.-2   multipart numbers
+
+
+
+LEXICON ARABICLOOPORD
 %.+Det+Ord:%. #  ;
 
 +Use/Circ: ARABIC ;
