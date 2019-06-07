@@ -2,7 +2,7 @@
 
 LEXICON Numeral 
 Textual ;
-ARABIC ;
+ARABICS ;
 ARABICORD ;
 ROMAN ;
 ISOLATED-NUMEXP ;
@@ -157,309 +157,110 @@ LEXICON numtagsg
 ! Arabic numerals
 ! ---------------
 
-LEXICON NUM-PREFIXES
-§+Use/Circ:§ ARABIC ;       ! §24
-§§+Use/Circ:§§ ARABIC ;     ! §§24
-§% +Use/Circ:§%  ARABIC ;   ! § 24
-§§% +Use/Circ:§§%  ARABIC ; ! §§ 24
-%-+Use/Circ:%- ARABIC ;     ! -24 U+002D / regular hyphen
-%‒+Use/Circ:%‒ ARABIC ;     ! -24 U+2012 / figure dash
-%–+Use/Circ:%– ARABIC ;     ! -24 U+2013 / en dash
-%—+Use/Circ:%— ARABIC ;     ! -24 U+2014 / em dash
-%―+Use/Circ:%― ARABIC ;     ! -24 U02015 / horizontal bar
-%++Use/Circ:%+ ARABIC ;     ! <plus>24
-%-% +Use/Circ:%-%  ARABIC ; ! - 24
-%‒% +Use/Circ:%‒%  ARABIC ; ! - 24 U+2012
-%–% +Use/Circ:%–%  ARABIC ; ! - 24 U+2013
-%—% +Use/Circ:%—%  ARABIC ; ! - 24 U+2014
-%―% +Use/Circ:%―%  ARABIC ; ! - 24 U+2015
-%+% +Use/Circ:%+%  ARABIC ; ! <plus> 24
-%*+Use/Circ:%* ARABIC ;     ! *24
-%$+Use/Circ:%$ ARABIC ;     ! $24
-%€+Use/Circ:%€ ARABIC ;     ! €24
-%<+Use/Circ:%[%<%] ARABIC ; ! <24
-%>+Use/Circ:%[%>%] ARABIC ; ! >24
-s%.+Use/Circ:s%. ARABIC ;   ! s.24
 
-LEXICON ARABIC
-< [1|2|3|4|5|6|7|8|9|%0] >   ARABICLOOP ;
+!            CHAPTERHEADING ;        ! 1.-2   multipart numbers
 
-LEXICON ARABIC2
-< [1|2|3|4|5|6|7|8|9|%0] >   ARABICLOOP2 ;
-
-LEXICON ARABIC3
-< [1|2|3|4|5|6|7|8|9|%0] >   CHAPTERHEADING ;
-
-
-LEXICON ARABICORD
- < [1|2|3|4|5|6|7|8|9|%0] [1|2|3|4|5|6|7|8|9|%0] > ARABICLOOPORD ;
-                       < [1|2|3|4|5|6|7|8|9]    > ARABICLOOPORD ;
-                                          1%0%0   ARABICLOOPORD ;
-
-
-LEXICON ARABICLOOP2
-+Use/Circ: ARABIC2 ;
-+Use/Circ: ARABIC3 ;
-            CHAPTERHEADING ;        ! 1.-2   multipart numbers
-
-LEXICON CHAPTERHEADING
-    ARABIC3 ;
-!%.  ARABIC3 ;
-+N:%. # ;
-+N: # ; ! Temporær løysing, dette er "4.2. Hus", der "Hus" ikkje er Pl.
-
-LEXICON ARABICLOOP
-%.+Use/Circ:%.  ARABIC2 ;        ! 1.-2   multipart numbers
-%.+Use/Circ:%.  ARABIC3 ;        ! 1.-2   multipart numbers
+!LEXICON CHAPTERHEADING
+!    ARABIC3 ;
+!!%.  ARABIC3 ;
+!+N:%. # ;
+!+N: # ; ! Temporær løysing, dette er "4.2. Hus", der "Hus" ikkje er Pl.
 
 
 
-LEXICON ARABICLOOPORD
-%.+Det+Ord:%. #  ;
-
-+Use/Circ: ARABIC ;
-%-+Use/Circ:%- ARABIC ;            ! 1-2    multipart numbers
-%–+Use/Circ:%– ARABIC ;            ! 1–2    multipart numbers
-%—+Use/Circ:%— ARABIC ;            ! 1—2    multipart numbers
-%.%-+Use/Circ:%.%- ARABIC ;        ! 1.-2   multipart numbers
-%.%–+Use/Circ:%.%– ARABIC ;        ! 1.–2   multipart numbers
-%.%—+Use/Circ:%.%— ARABIC ;        ! 1.—2   multipart numbers
-%-% +Use/Circ:%-%  ARABIC ;        ! 1- 2   multipart numbers
-%–% +Use/Circ:%–%  ARABIC ;        ! 1– 2   multipart numbers
-%—% +Use/Circ:%—%  ARABIC ;        ! 1— 2   multipart numbers
-% %-+Use/Circ:% %- ARABIC ;        ! 1 -2   multipart numbers
-% %–+Use/Circ:% %– ARABIC ;        ! 1 –2   multipart numbers
-% %—+Use/Circ:% %— ARABIC ;        ! 1 —2   multipart numbers
-% %-% +Use/Circ:% %-%  ARABIC ;    ! 1 - 2  multipart numbers
-% %–% +Use/Circ:% %–%  ARABIC ;    ! 1 – 2  multipart numbers
-% %—% +Use/Circ:% %—%  ARABIC ;    ! 1 — 2  multipart numbers
-% %-%-% +Use/Circ:% %-%-%  ARABIC ; ! 1 -- 2 multipart numbers
-% %–%–% +Use/Circ:% %–%–%  ARABIC ; ! 1 –– 2 multipart numbers
-% %—%—% +Use/Circ:% %—%—%  ARABIC ; ! 1 —— 2 multipart numbers
-% %- ARABICDELIMITER ;             ! 1 -    multipart numbers
-% %– ARABICDELIMITER ;             ! 1 –    multipart numbers
-% %— ARABICDELIMITER ;             ! 1 —    multipart numbers
-% %-%- ARABICDELIMITER ;           ! 1 --   multipart numbers
-% %–%– ARABICDELIMITER ;           ! 1 ––   multipart numbers
-% %—%— ARABICDELIMITER ;           ! 1 ——   multipart numbers
-!%.+Use/Circ:%. ARABIC ;
-%,+Use/Circ:%, ARABIC ;
-% +Use/Circ:%  ARABIC ; ! Allowing for "23 500".
- +Use/Circ:   ARABIC ; ! Allowing for "23 500" w/nbsp (initial char is alt-space)
-%/+Use/Circ:%/ ARABIC ; ! 24/12
-!%'             ARABIC ; ! Since ' denotes cons.grad. This is not optimal either.
-!+A+Ord:%. # ;
-,%-+Det+Qnt+Pl:,%- # ;   ! 10,-
-,%–+Det+Qnt+Pl:,%– # ;   ! 10,–
-,%—+Det+Qnt+Pl:,%— # ;   ! 10,—
-%%+Det+Qnt+Pl:%% # ;  ! 50%. It is wrong, but 75 % of us write "75%".
-% %%+Det+Qnt+Pl:% %% # ; ! We must analyse the correct ones as well... 50 % etc.
-ARABICDELIMITER ; ! list of number-case delimiters
-+Det+Qnt+Pl: R ; ! Perhaps we need: RHyph? Hyphen and +Use/Circ added appropriately in RHyph
+!LEXICON ARABICCASE      
+!f # ;     ! s. 123f.  
+!ff # ;     ! s. 123ff.
+!b # ;     ! § 123b 
+!c # ;     ! § 123c 
+!d # ;     ! § 123d 
+!e # ;     ! § 123e 
+!  # ;  
+! R ; ! 1800-tallet
 
 
 
-
-LEXICON ARABICDELIMITER ! blank + 3 delim, what does the lg counc prefer? 
-+Det+Qnt+Pl:     ARABICCASE ; ! This is the 1984s case. 
-+Det+Qnt+Pl:%: ARABICCASE ; ! This is the 1984:s case.  ! skip these for nob?
-+Det+Qnt+Pl:%' ARABICCASE ; ! This is the 1984's case.
-+Det+Qnt+Pl:%- ARABICCASE ; ! This is the 1984-s case.
-
-
-
-LEXICON ARABICCASE      
-f # ;     ! s. 123f.  
-ff # ;     ! s. 123ff.
-b # ;     ! § 123b 
-c # ;     ! § 123c 
-d # ;     ! § 123d 
-e # ;     ! § 123e 
-  # ;  
- R ; ! 1800-tallet
+!LEXICON ROMNUMTAG
+! +Det+Qnt+Pl: # ;
+! NON-ONE-TAG ;
+!
+!LEXICON NON-ONE-TAG
+! +A+Ord:%. # ;                               !III. as ordinal.
+!! +A+Ord: # ;                                 ! No trouble.
+! +Det+Qnt+Pl:%: # ; 
+! +Det+Qnt+Pl:%' # ; 
+! +Det+Qnt+Pl:%- # ; 
+! +Det+Qnt+Pl:%´ # ; 
+! +Det+Qnt+Pl:   # ; 
 
 
 
 
 
-! The Roman numerals !
-! ------------------ !
-
-LEXICON ROMAN  
- ROM-THOUSAND ;  
- ROM-HUNDRED ;  
- ROM-TEN ;   
- ROM-TWO-NINE ;   
- ROM-ONE-BARE ; ! singleton I    
-
-LEXICON ROM-THOUSAND      
- M ROM-THOUSAND-TAG ; 
- MM ROM-THOUSAND-TAG ; 
- MMM ROM-THOUSAND-TAG ; 
- MMMM ROM-THOUSAND-TAG ;
- MMMMM ROM-THOUSAND-TAG ;
-
-LEXICON ROM-THOUSAND-TAG
-  ROMNUMTAG ;  
- ROM-HUNDRED ;  
- ROM-SPLIT    ;  
-
-LEXICON ROM-HUNDRED 
- C ROM-HUNDRED-TAG ; 
- CC ROM-HUNDRED-TAG ; 
- CCC ROM-HUNDRED-TAG ; 
- CD ROM-HUNDRED-TAG ; 
- D ROM-HUNDRED-TAG ; 
- DC ROM-HUNDRED-TAG ; 
- DCC ROM-HUNDRED-TAG ; 
- DCCC ROM-HUNDRED-TAG ; 
- CM ROM-HUNDRED-TAG ; 
-
-LEXICON ROM-HUNDRED-TAG    
-  ROMNUMTAG ;  
- ROM-TEN ;   
- ROM-SPLIT ;  
-
-LEXICON ROM-TEN  
- X ROM-TEN-TAG ;     
- XX ROM-TEN-TAG ;     
- XXX ROM-TEN-TAG ;     
- XL ROM-TEN-TAG ;     
- L ROM-TEN-TAG ;     
- LX ROM-TEN-TAG ;     
- LXX ROM-TEN-TAG ;     
- LXXX ROM-TEN-TAG ;     
- XC ROM-TEN-TAG ;     
-
-LEXICON ROM-TEN-TAG 
- ROMNUMTAG ;  
- ROM-ONE ;   
- ROM-SPLIT ;  
-
-LEXICON ROM-ONE  
- ROM-ONE-ONLY ;
- ROM-TWO-NINE ;
-
-LEXICON ROM-TWO-NINE
- II ROM-ONE-TAG ;     
- III ROM-ONE-TAG ;     
- IV  ROM-ONE-TAG ;     
- V ROM-ONE-TAG ;     
- VI ROM-ONE-TAG ;     
- VII ROM-ONE-TAG ;     
- VIII ROM-ONE-TAG ;     
- IX ROM-ONE-TAG ;     
-
-LEXICON ROM-ONE-ONLY
- I ROM-ONE-TAG ;     
-
-LEXICON ROM-ONE-BARE
- I NON-ONE-TAG ; ! to avoid I Det Pl
-
-LEXICON ROM-ONE-TAG 
-  ROMNUMTAG ;  
-! +N: ROMNUMTAG ;                          !The Olav viđeš fix (Roman V now gets A)
- ROM-SPLIT ;  
-
-! Here, we split the Roman numerals, in order to account for cases like "Kapihtal II-IV".
-! We may send this first part directly to ROM-TAG below (and get the +Det+Qnt+Pl tag), or we may
-! send them through a second loop, identical to the first one, but marked wit "2" (the lexica
-! are called 2ROMAN, etc. We do this instead of making a loop, since we do not want cases
-! like "II-IV-VI-VII-IX". If that should turn out to be a good idea, a loop would do the
-! trick.
-
-LEXICON ROM-SPLIT 
- :%- 2ROMAN ; ! II-VI, etc.
+LEXICON datetag
+ +Det+Qnt+Sem/Date+Sg:  # ;
 
 
-! Here goes loop 2.
+LEXICON dateyearcase_nullsuff_w_dot_tag
+ +Det+Qnt+Sem/Date+Sg:  MARKDOT ;
 
-LEXICON 2ROMAN  
- 2ROM-THOUSAND ;     
- 2ROM-HUNDRED ;  
- 2ROM-TEN ;    
- 2ROM-ONE ;    
 
-LEXICON 2ROM-THOUSAND   
- M 2ROM-THOUSAND-TAG ; 
- MM 2ROM-THOUSAND-TAG ; 
- MMM 2ROM-THOUSAND-TAG ;
- MMMM 2ROM-THOUSAND-TAG ;
- MMMMM 2ROM-THOUSAND-TAG ;
+LEXICON dateyearcase_fullsuff_tag
+ +Det+Qnt+Sem/Date+Sg:   # ;
 
-LEXICON 2ROM-THOUSAND-TAG
-  ROMNUMTAG ;  
- 2ROM-HUNDRED ;  
 
-LEXICON 2ROM-HUNDRED    
- C 2ROM-HUNDRED-TAG ; 
- CC 2ROM-HUNDRED-TAG ; 
- CCC 2ROM-HUNDRED-TAG ; 
- CD 2ROM-HUNDRED-TAG ; 
- D 2ROM-HUNDRED-TAG ; 
- DC 2ROM-HUNDRED-TAG ; 
- DCC 2ROM-HUNDRED-TAG ; 
- DCCC 2ROM-HUNDRED-TAG ;
- CM 2ROM-HUNDRED-TAG ; 
-
-LEXICON 2ROM-HUNDRED-TAG
-  ROMNUMTAG ;  
- 2ROM-TEN ;   
-
-LEXICON 2ROM-TEN 
- X 2ROM-TEN-TAG ;
- XX 2ROM-TEN-TAG ;      
- XXX 2ROM-TEN-TAG ;     
- XL 2ROM-TEN-TAG ;      
- L 2ROM-TEN-TAG ;
- LX 2ROM-TEN-TAG ;      
- LXX 2ROM-TEN-TAG ;     
- LXXX 2ROM-TEN-TAG ;    
- XC 2ROM-TEN-TAG ;      
-
-LEXICON 2ROM-TEN-TAG
-  ROMNUMTAG ; 
- 2ROM-ONE ;   
-
-LEXICON 2ROM-ONE 
- I 2ROM-ONE-TAG ;
- II 2ROM-ONE-TAG ;      
- III 2ROM-ONE-TAG ;     
- IV  2ROM-ONE-TAG ;     
- V 2ROM-ONE-TAG ;
- VI 2ROM-ONE-TAG ;      
- VII 2ROM-ONE-TAG ;     
- VIII 2ROM-ONE-TAG ;    
- IX 2ROM-ONE-TAG ;      
-
-LEXICON 2ROM-ONE-TAG
-  ROMNUMTAG ; 
-
-LEXICON ROMNUMTAG
- +Det+Qnt+Pl: # ;
- NON-ONE-TAG ;
-
-LEXICON NON-ONE-TAG
- +A+Ord:%. # ;                               !III. as ordinal.
-! +A+Ord: # ;                                 ! No trouble.
- +Det+Qnt+Pl:%: # ; 
- +Det+Qnt+Pl:%' # ; 
- +Det+Qnt+Pl:%- # ; 
- +Det+Qnt+Pl:%´ # ; 
- +Det+Qnt+Pl:   # ; 
+LEXICON numclock
+ +Det+Qnt+Sem/Time-clock+Sg: # ; !foreløpig
 
 
 
+!LEXICON ARABICCASEphone  
+! +Det+Qnt+Sem/Phonenr+Sg+Nom: # ;
+! +Det+Qnt+Sem/Phonenr+Sg+Acc: # ;
 
 
-! A final section with some isolated numeral expresssions !
-! ------------------------------------------------------- !
+
+LEXICON NUM-ARABICCASES
++Det+Qnt+Sg:   # ;
 
 
-LEXICON ISOLATED-NUMEXP    
-½+Det+Qnt+Sg:½ # ;   
-¹+Det+Qnt+Sg:¹ # ;   
-²+Det+Qnt+Pl:² # ;   
-³+Det+Qnt+Pl:³ # ;   
-¼+Det+Qnt+Sg:¼ # ;   
+
+LEXICON ARABICLOOPORD   !!≈ * __@CODE@__ ordinals
+ +A+Ord+Attr: MARKDOT ;
+! +Det+Qnt+Arab+Sg+Nom#%.%<sent%>:%. # ; !for Apertium bz. 22
+
+LEXICON ACASETAG   !!≈ * __@CODE@__  is for 1e+Det+Qnt+Sg+Det+Qnt:1e
++Det+Qnt+Sg: # ;
+
+LEXICON ARABICLOOPCOLL   !!≈ * __@CODE@__ collectives
+  # ;
+
+
+LEXICON ARABICDELIMITER   !!≈ * __@CODE@__  blank + 3 delim, what does the lg counc prefer?
+ +Det+Qnt+Sg:            #      ; ! This is the 1984 case, ie NGA
+! +Det+Qnt:            ARABICCOMPOUNDS ; ! 6-jáhkasaš, 
+
+
+LEXICON ROMNUMTAG   !!≈ * __@CODE@__
+  +Det+Qnt+Rom+Sg+Nom+Use/Circ:   #            ;
+!     +Det+Qnt+Sg+Gen+Use/Circ:   #            ;
+!     +Det+Qnt+Sg+Acc+Use/Circ:   #            ;
+    +A+Rom+Ord+Sg+Use/Circ:%. #            ; ! !III. as ordinal.
+
+
+
+LEXICON yeartag
+ +Det+Qnt+Sem/Year+Sg: # ;
+
+LEXICON yeartagpl
+ +Det+Qnt+Sem/Year+Pl: # ;
+
+
+
+LEXICON NUMTAG
++Det+Qnt:  # ;
+
+
+LEXICON RNum
+      +Cmp/Hyph+Cmp#:-∑# NounRoot ; ! For Num Cmp Noun, vi vil ikke ha Num Cmp Num
 

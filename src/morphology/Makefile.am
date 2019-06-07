@@ -33,8 +33,8 @@ GT_LEXC_SRCS_L1_L2=\
 			   stems/adverbs.lexc       \
 			   stems/conjunctions.lexc  \
 			   stems/interjections.lexc \
+			   stems/numerals.lexc     \
 			   stems/nouns.lexc         \
-			   stems/numerals.lexc      \
 			   stems/prepositions.lexc  \
 			   stems/pronouns.lexc      \
 			   stems/propernouns.lexc   \
@@ -58,6 +58,7 @@ GT_LEXC_L2_SRCS=\
 
 # Set this to the names of all generated lexc files, if any
 GENERATED_LEXC_SRCS=generated_files/punctuation.lexc \
+                    generated_files/arabic_roman_digits.lexc \
                     generated_files/symbols.lexc
 
 # Set this to the names of all source xml files, if any
@@ -81,6 +82,14 @@ GT_DISTRO_SRCS=
 ### gle/ for an example of how this is used.
 
 GIELLA_LOCAL_TARGETS=
+
+
+generated_files/arabic_roman_digits.lexc: \
+			$(GIELLA_SHARED)/smi/src/morphology/stems/arabic_roman_digits.lexc
+	$(AM_V_at)$(MKDIR_P) generated_files
+	$(AM_V_GEN)cp -f $< $@
+
+
 
 ### END: Local processing: ###
 
