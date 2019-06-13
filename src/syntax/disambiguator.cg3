@@ -4603,6 +4603,10 @@ CONSTRAINTS
 	(0 N)
 ;
 
+# verbet
+"<var>" REMOVE (A Pos Indef) IF
+	(-1 Pron OR N OR Adv)
+;
 
 # 2997
 "<ved>" REMOVE (N) IF
