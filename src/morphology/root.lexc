@@ -105,6 +105,9 @@ Multichar_Symbols !!= * @CODE@
  @U.Cap.Obl@        !!≈ | @CODE@ | Allowing downcasing of derived names: deatnulasj.
  @U.Cap.Opt@        !!≈ | @CODE@ | Allowing downcasing of derived names: deatnulasj.
 
+
+@P.Pmatch.Backtrack@
+
 ! =================================================
 !! Basic lexica, pointing to the other lexicon files
 ! =================================================
