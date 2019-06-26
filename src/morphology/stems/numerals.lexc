@@ -223,6 +223,9 @@ LEXICON numclock
 LEXICON NUM-ARABICCASES
 +Det+Qnt+Sg:   # ;
 
+LEXICON ID-ARABIC
++Det+Sem/ID:   # ;
+
 
 
 LEXICON ARABICLOOPORD   !!≈ * __@CODE@__ ordinals
