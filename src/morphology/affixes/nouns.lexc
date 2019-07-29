@@ -415,8 +415,8 @@ LEXICON KLÆR
  +N+Neu+Pl:klær 0-ne  ;
 
  LEXICON TRE
- +N+Neu+Sg:tre  0-et  ;
- +N+Neu+Pl:træ  r-rne ;
+ +N+Neu+Sg:e  0-et  ;
+ +N+Neu+Pl:æ  r-rne ;
 
 LEXICON TEMPUS ! tempus:temp TEMPUS ;
           :us     n1 ;
