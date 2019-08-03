@@ -136,6 +136,9 @@ kjempe AdjectiveRoot ;
 super  AdjectiveRoot ;
        AdjectiveRoot ;
 
+LEXICON Abbreviation
+Abbreviation-nob ;
+!Abbreviations-smi ;
 
 ! ======================
 ! Sublexica for NounRoot

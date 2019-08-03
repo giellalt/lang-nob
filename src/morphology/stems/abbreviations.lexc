@@ -1,6 +1,6 @@
-! ============================= !
-! File containing abbreviations !
-! ============================= !
+! ================================================== !
+! File containing abbreviations for Norwegian Bokmål !
+! ================================================== !
 
 ! Lexica for adding tags and periods
 ! ----------------------------------
@@ -8,7 +8,7 @@
 ! Splitting in 3 groups, because of the preprocessor
 ! - - - - - - - - - - - - - - - - - - - - - - - - -
 
-LEXICON Abbreviation
+LEXICON Abbreviation-nob
 ITRAB ;
 TRNUMAB ;
 TRAB ;
@@ -66,10 +66,7 @@ LEXICON ITRAB
 !ung ab ;
 
 
-A.L ab-dot-noun ;
-A.S ab-dot-noun ;
 Ap ab ;
-Eftf ab ;
 Fr.% P ab ;
 Fr.% p ab ;
 Fr.P ab ;
