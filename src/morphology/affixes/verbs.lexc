@@ -822,15 +822,15 @@ LEXICON KLYVE
 +V+PrfPtc:klyv     # ;
 +V+PrsPtc:klyvende # ;
 
-LEXICON KNEKKE
-+V+Inf:knekke    # ;
-+V+Imp:knekk     # ;
-+V+Ind+Prs:knekker   # ;
-+V+Ind+Prs+Pass:knekkes   # ;
-+V+Ind+Prt:knakk     # ;
-+V+PrfPtc:knekket   # ;
-+V+PrfPtc:knekt     # ;
-+V+PrsPtc:knekkende # ;
+LEXICON XEKKE ! knekke, kvekke
++V+Inf:ekke    # ;
++V+Imp:ekk     # ;
++V+Ind+Prs:ekker   # ;
++V+Ind+Prs+Pass:ekkes   # ;
++V+Ind+Prt:akk     # ;
++V+PrfPtc:ekket   # ;
++V+PrfPtc:ekt     # ;
++V+PrsPtc:ekkende # ;
 
 LEXICON KNESTE
 +V+Inf:kneste    # ;
