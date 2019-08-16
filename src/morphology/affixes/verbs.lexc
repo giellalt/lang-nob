@@ -802,16 +802,16 @@ LEXICON KLIVE
 +V+PrfPtc:kløvet   # ;
 +V+PrsPtc:klyvende # ;
 
-LEXICON KLYPE
-+V+Inf:klype    # ;
-+V+Imp:klyp     # ;
-+V+Ind+Prs:klyper   # ;
-+V+Ind+Prs+Pass:klypes   # ;
-+V+Ind+Prt:kløp     # ;
-+V+Ind+Prt:kløyp    # ;
-+V+Ind+Prt:klaup    # ;
-+V+PrfPtc:kløpe    # ;
-+V+PrsPtc:klypende # ;
+LEXICON XYPE ! klype:kl
++V+Inf:ype    # ;
++V+Imp:yp     # ;
++V+Ind+Prs:yper   # ;
++V+Ind+Prs+Pass:ypes   # ;
++V+Ind+Prt:øp     # ;
++V+Ind+Prt:øyp    # ;
++V+Ind+Prt:aup    # ;
++V+PrfPtc:øpe    # ;
++V+PrsPtc:ypende # ;
 
 LEXICON KLYVE
 +V+Inf:klyve    # ;
