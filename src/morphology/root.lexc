@@ -19,6 +19,42 @@
  
 
 Multichar_Symbols !!= * @CODE@
+
+
++Arab
++Attr
++Cmp/Hyph
++CmpNP/None
++Coll
++Err/Hyph
++Err/Lex
++Err/SpaceCmp
++Num
++OLang/ENG
++OLang/FIN
++OLang/NNO
++OLang/NOB
++OLang/RUS
++OLang/SMA
++OLang/SME
++OLang/SWE
++OLang/UND
++Rom
+
++Use/-Spell
++Use/SpellNoSugg
++v1
++v2
+@C.ErrOrth@
+@D.ErrOrth.ON@
+@P.ErrOrth.ON@
+
+
+
+
+
+
+!! !!Part of speech
  +N +A +Adv +V
  +CS +CC +Interj +Pcle +Pr +IM
  +Pers +Dem +Interr +Refl +Recipr +Rel +Qnt
@@ -65,6 +101,37 @@ Multichar_Symbols !!= * @CODE@
 +Qst
 +Sem/Obj
 +Sem/Sur
+
++Sem/Build
++Sem/Build-room
++Sem/Cat
++Sem/Date
++Sem/Domain
++Sem/Dummytag
++Sem/Event
++Sem/Group_Hum
++Sem/Hum
++Sem/ID
++Sem/Mat
++Sem/Measr
++Sem/Money
++Sem/Obj-el
++Sem/Obj-ling
++Sem/Org_Prod-audio
++Sem/Org_Prod-vis
++Sem/Prod-vis
++Sem/Route
++Sem/Rule
++Sem/State-sick
++Sem/Substnc
++Sem/Time-clock
++Sem/Tool-it
++Sem/Txt
++Sem/Veh
++Sem/Year
+
+
+
 +Use/NG
 +Use/-PMatch
 
