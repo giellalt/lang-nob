@@ -67,6 +67,14 @@
 ! Basic paradigms
 ! ===============
 
+LEXICON mD
++N+Msc+Sg+Indef: # ;
+LEXICON fD
++N+Fem+Sg+Indef: # ;
+LEXICON nD
++N+Neu+Sg+Indef: # ;
+
+
 LEXICON n1n3
   n1 ;
   n3 ;
