@@ -1,3 +1,7 @@
+LEXICON p
+ +Pr: # ;
+
+
 LEXICON Preposition
 per p ; ! 2 kr per enhet
 tillikemed p ;
@@ -81,8 +85,6 @@ utenom p ;
 innom p ;
 oppom p ;
 
-LEXICON p
- +Pr: # ;
 hos p ; 
 nedi p ; 
 oppi p ; 
