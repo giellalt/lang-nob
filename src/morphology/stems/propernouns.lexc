@@ -26489,7 +26489,8 @@ Gaski PROP-sur ;
 Zakarias PROP-mal ;
 Tørfoss PROP-mal ;
 Heaika PROP-mal ;
-Sámi PROP-org ; !
+Sámi PROP-org ; ! Gen in sme, as complex namxe in nob
+Saemien PROP-org ; !Gen in sma, as complex name in nob
 Sápmi PROP-plc ;
 Árja PROP-org ;
 Nordkalottfolket PROP-org ;
@@ -26497,3 +26498,16 @@ FeFo PROP-org ;
 Giellagáldu PROP-org ;
 Mikkola PROP-sur ;
 Nussir PROP-plc ;
+Balto PROP-sur ;
+Finbog PROP-sur ;
+Åarjel-Saemiej PROP-org ;
+Sijte PROP-org ;
+Beaivváš PROP-org ;
+Várdobáiki PROP-org ;
+Ravna PROP-fem ;
+Erke PROP-sur ;
+Niko PROP-mal ;
+Midt-Norge PROP-plc ;
+Reinås PROP-sur ;
+Nord-Troms PROP-plc ;
+Sámiráđđi PROP-org ;
