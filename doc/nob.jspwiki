@@ -15,6 +15,16 @@ INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Bokmål LANGUAGE.
 
 
  * Multichar_Symbols 
+
+
+
+
+
+
+
+
+
+!!Part of speech
  * +Symbol = independent symbols in the text stream, like £, €, ©
 
 
@@ -22,6 +32,10 @@ INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Bokmål LANGUAGE.
  +Use/Circ  circular string
 
  +Der/AAdv  Adjectives are also adverbs
+
+
+
+
 
 
 !!Symbols that need to be escaped on the lower side (towards twolc):
@@ -60,6 +74,8 @@ these flags. There exists a ready-made regex that will do the actual down-casing
 given the proper use of these flags.
  | @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
  | @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
+
+
 
 Basic lexica, pointing to the other lexicon files
 
