@@ -305,6 +305,8 @@ LEXICON TRNUMAB
 distr ab-dot-noun ;
 Arkivsaksnr ab-dot-noun ;
 arkivsaksnr ab-dot-noun ;
+Arkivsaknr ab-dot-noun ;
+arkivsaknr ab-dot-noun ;
 Apd		ab-dot ;                        
 Bnr		ab-dot-noun ;                   
 Gnr		ab-noun ;                       

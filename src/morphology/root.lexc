@@ -20,7 +20,7 @@
 
 Multichar_Symbols !!= * @CODE@
 
-
+!! TODO: legg desse der dei høyrer pent heime.
 +Arab
 +Attr
 +Cmp/Hyph
@@ -40,6 +40,19 @@ Multichar_Symbols !!= * @CODE@
 +OLang/SWE
 +OLang/UND
 +Rom
+
++CmpNP/First
++MWE
++Sem/Amount
++Sem/Curr
++Sem/Domain_Hum
++Sem/Edu_Hum
++Sem/Food-med
++Sem/Lang
++Sem/Part
++Sem/Sign
++Sem/State
++Sem/Time
 
 +Use/-Spell
 +Use/SpellNoSugg
