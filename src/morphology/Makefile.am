@@ -89,7 +89,7 @@ generated_files/arabic_roman_digits.lexc: \
 	$(AM_V_at)$(MKDIR_P) generated_files
 	$(AM_V_GEN)cp -f $< $@
 
-generated_files/%.lexc \
+generated_files/%.lexc: \
 			$(GIELLA_SHARED)/smi/src/morphology/stems/%.lexc
 	$(AM_V_at)$(MKDIR_P) generated_files
 	$(AM_V_GEN)cp -f $< $@
