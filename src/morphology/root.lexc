@@ -208,6 +208,7 @@ LEXICON Root !!= * @CODE@
  Punctuation ;	  !!= * @CODE@
  Symbols     ;	  !!= * @CODE@
  Abbreviation ;	  !!= * @CODE@
+ Acronym-smi ;	  !!= * @CODE@
  Nynorsk ;        !!= * @CODE@ Accepts nno forms
 ! Particle ;
 
@@ -260,6 +261,9 @@ Abbreviation-nob ;
 
 LEXICON Re
  #+Cmp+:e##  NounRoot ;   ! dynamic compounding ON
+
+LEXICON RHyph
+R ; ! todo fix R vs. RHyph
 
 LEXICON R
 ! change this and next 3
