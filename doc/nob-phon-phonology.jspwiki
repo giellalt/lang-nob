@@ -1,4 +1,4 @@
-!!!Morphophonological rules for Bokmål
+!!!MorpAhophonological rules for Bokmål
 
 
 
@@ -33,13 +33,16 @@ This rule is for dictionary use only.
 
 __e Deletion__  
 
-* __modenX1%>e __
+* __teaterX1>et __
+* __teat0r00et __
+
+* __modenX1>e __
 * __mod0n00e __
 
-* __*modenX1%>e __ (is not standard language)
+* __*modenX1>e __ (is not standard language)
 * __*moden00e __ (is not standard language)
 
-* __hare%>er __
+* __hare>er __
 * __har00er __
 
 * __viktig>est __
@@ -47,22 +50,22 @@ __e Deletion__
 
 __Consonant shortening before deletion__  
 
-* __sikkerX1%>e __
+* __sikkerX1>e __
 * __sik00r00e __
 
 
 __Geminate deletion in front of -t and -d__  
 
-* __kalle%>Q3te __
+* __kalle>Q3te __
 * __kal0000te __
 
 * __lykk0esQ1 __
 * __lyk0tes0 __
 
-* __all%>Q3t __
+* __all>Q3t __
 * __al000t __
 
-* __bygge%>Q3de __
+* __bygge>Q3de __
 * __byg0000de __
 
 
@@ -70,7 +73,7 @@ __Geminate deletion in front of -t and -d__
 
 __Delete foreign vowel__  
 
-* __kollegaX2%>er __
+* __kollegaX2>er __
 * __kolleg000er __
 
 
@@ -85,14 +88,14 @@ __Umlaut__
 
 __um Deletion 1__  
 
-* __museumX5%>er __
+* __museumX5>er __
 * __muse0000er __
 
 
 
 __t weakening__  
 
-* __oppskjørtetX6%>e __
+* __oppskjørtetX6>e __
 * __oppskjørted00e __
 
 
@@ -100,7 +103,7 @@ __t weakening__
 
 __Double t deleteion__  
 
-* __svart%>t __
+* __svart>t __
 * __svart00 __
 
 

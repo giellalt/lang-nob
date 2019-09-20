@@ -16,11 +16,6 @@ INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Bokmål LANGUAGE.
 
  * Multichar_Symbols 
 
-TODO: legg desse der dei høyrer pent heime.
-
-
-
-
 
 
 
@@ -30,13 +25,43 @@ TODO: legg desse der dei høyrer pent heime.
 
 
 
+
+
+
+NDS analyser tags
+
+
+
+
+!!Morphophonology
+
+Todo: Document these
+
+
+
+
  +Use/Circ  circular string
 
  +Der/AAdv  Adjectives are also adverbs
 
 
+Normativity and other usage tags
 
 
+
+
+!!Paradigm generation
+
+
+
+
+! Semantic tags
+
+
+
+
+
+!!Preprocessing
 
 
 !!Symbols that need to be escaped on the lower side (towards twolc):
@@ -48,7 +73,35 @@ TODO: legg desse der dei høyrer pent heime.
 }}}
 
 
+
+!!Compounding
+
+
+
+
+!!Language codes
+
+ * +OLang/SME - North Sámi
+ * +OLang/SMJ - Lule Sámi
+ * +OLang/SMA - South Sámi
+ * +OLang/FIN - Finnish
+ * +OLang/SWE - Swedish
+ * +OLang/NOB - Norw. bokmål
+ * +OLang/NNO - Norw. nynorsk
+ * +OLang/ENG - English
+ * +OLang/RUS - Russian
+ * +OLang/UND - Undefined
+
+
+
 !!Flag diacritics
+
+!Flags for ErrOrth
+
+
+
+!Flags for compounding
+
 We have manually optimised the structure of our lexicon using following
 flag diacritics to restrict morhpological combinatorics - only allow compounds
 with verbs if the verb is further derived into a noun again:
@@ -69,6 +122,10 @@ do no harm.
  | @P.CmpOnly.TRUE@ | Sets a flag to indicate that the word has passed R
  | @D.CmpOnly.FALSE@ | Disallow words coming directly from root.
 
+
+
+! Flags for governing initial capital
+
 Use the following flag diacritics to control downcasing of derived proper
 nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
 these flags. There exists a ready-made regex that will do the actual down-casing
@@ -76,6 +133,8 @@ given the proper use of these flags.
  | @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
  | @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
 
+
+!Flags for preprocessing
 
 
 Basic lexica, pointing to the other lexicon files
@@ -107,14 +166,7 @@ Basic lexica, pointing to the other lexicon files
 
 
 
-
-
-
-
-
-
-
-!!!Morphophonological rules for Bokmål
+!!!MorpAhophonological rules for Bokmål
 
 
 
@@ -149,13 +201,16 @@ This rule is for dictionary use only.
 
 __e Deletion__  
 
-* __modenX1%>e __
+* __teaterX1>et __
+* __teat0r00et __
+
+* __modenX1>e __
 * __mod0n00e __
 
-* __*modenX1%>e __ (is not standard language)
+* __*modenX1>e __ (is not standard language)
 * __*moden00e __ (is not standard language)
 
-* __hare%>er __
+* __hare>er __
 * __har00er __
 
 * __viktig>est __
@@ -163,22 +218,22 @@ __e Deletion__
 
 __Consonant shortening before deletion__  
 
-* __sikkerX1%>e __
+* __sikkerX1>e __
 * __sik00r00e __
 
 
 __Geminate deletion in front of -t and -d__  
 
-* __kalle%>Q3te __
+* __kalle>Q3te __
 * __kal0000te __
 
 * __lykk0esQ1 __
 * __lyk0tes0 __
 
-* __all%>Q3t __
+* __all>Q3t __
 * __al000t __
 
-* __bygge%>Q3de __
+* __bygge>Q3de __
 * __byg0000de __
 
 
@@ -186,7 +241,7 @@ __Geminate deletion in front of -t and -d__
 
 __Delete foreign vowel__  
 
-* __kollegaX2%>er __
+* __kollegaX2>er __
 * __kolleg000er __
 
 
@@ -201,14 +256,14 @@ __Umlaut__
 
 __um Deletion 1__  
 
-* __museumX5%>er __
+* __museumX5>er __
 * __muse0000er __
 
 
 
 __t weakening__  
 
-* __oppskjørtetX6%>e __
+* __oppskjørtetX6>e __
 * __oppskjørted00e __
 
 
@@ -216,7 +271,7 @@ __t weakening__
 
 __Double t deleteion__  
 
-* __svart%>t __
+* __svart>t __
 * __svart00 __
 
 
