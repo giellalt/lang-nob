@@ -73,6 +73,7 @@ annen+Det+Dem+Sg+Fem:annen # ;
 annen+Det+Dem+Sg+Msc:annen # ;
 annen+Det+Dem+Sg+Neu:annet # ;
 annen+Pron+Dem+Pl:andre # ;
+annen+Pron+Dem+Pl+Clt:andre # ;
 annen+Pron+Dem+Sg+Fem:anna # ;
 annen+Pron+Dem+Sg+Fem:annen # ;
 annen+Pron+Dem+Sg+Msc:annen # ;

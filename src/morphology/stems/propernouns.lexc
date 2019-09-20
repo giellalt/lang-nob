@@ -48,6 +48,17 @@ LEXICON ProperNoun
 !Joh PROP-mal ; ! otherwise 'Johan' is Ess of Joh
 !Resurssamiel PROP ;
 !Soar PROP ;
+
+Duodjeinstituhtta PROP-org ;
+Jarnge PROP-org ;
+Åarjelhsaemien% Teatere PROP-org ;
+Giellatekno PROP-org ;
+Klemetspelet PROP-org ;
+Kristuskransen PROP-org ;
+Bååstede PROP-org ;
+Tråante PROP-org ;
+Divvun PROP-org ;
+Aajege PROP-org ;
 ABC-company PROP-org ;
 AKP PROP-org ;
 AMI PROP-org ;
