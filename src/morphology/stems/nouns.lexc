@@ -13,6 +13,7 @@
 ! m2 lærer læreren lærere lærerne
 ! m3 bever beveren bevere beverne
 ! bevre(r) bevrene
+! m4 longs longsen longs/longser longsene
 ! n1 slott slottet slott slotta/slottene
 ! n2 eple eplet epler epla/eplene
 ! salt saltet salter salta/saltene
@@ -73,8 +74,9 @@ LEXICON ShortNounRoot
 ! These are kept separate in order not to
 ! allow them in compounding (rusle = rus + le)
 
-2_letter ;
-3_letter ;
++CmpNP/None: 2_letter ;
++CmpNP/None: 3_letter ;
+
 
 LEXICON 2_letter
 li f1 ; 
@@ -540,7 +542,10 @@ vær n1 ;
 øyr f1 ; 
 
 
+
+
 LEXICON Noun
+
 
 garde mD ;
 gårde mD ;
@@ -14926,6 +14931,7 @@ astral m1 ;
 asal m1 ;
 kommunestyresal m1 ;
 lesesal m1 ;
+plenumssal m1 ;
 spisesal m1 ;
 konferansesal m1 ;
 sovesal m1 ;
@@ -19604,9 +19610,9 @@ vits m1 ;
 kvarts m1 ;
 erts m1 ;
 nerts m1 ;
-shorts m1 ;
-bermudashorts m1 ;
-badeshorts m1 ;
+shorts m4 ;
+bermudashorts m4 ;
+badeshorts m4 ;
 struts m1 ;
 haus m1 ;
 hardhaus m1 ;
@@ -35469,4 +35475,10 @@ drittliv n1 ;
 drittsekk-tv m1 ;
 drittlei a1 ;
 
-duodji m1 ;
+duodji m4 ;
+longs m4 ;
+stillongs m4 ;
+tights m4 ;
+lånekort n1 ;
+kristuskrans m1 ;
+innskudd n1 ;

@@ -13,6 +13,7 @@
 ! m2  lærer       læreren     lærere      lærerne
 ! m3  bever       beveren     bevere      beverne
 !                             bevre(r)    bevrene
+! m4 longs longsen longs/longser longsene
 ! n1  slott       slottet     slott       slotta/slottene
 ! n2  eple        eplet       epler       epla/eplene
 !     salt        saltet      salter      salta/saltene
@@ -106,6 +107,11 @@ LEXICON mX
 
 !LEXICON mD ! av garde
 ! +N+Msc+Dat: K ;
+
+
+LEXICON m4
++N+Msc+Pl+Indef: K ; ! flere stillongs
+m1 ;
 
 LEXICON m1 ! dag, hane
  +N: R       ;
