@@ -265,6 +265,13 @@ LEXICON Abbreviation
 Abbreviation-nob ;
 !Abbreviations-smi ;
 
+LEXICON ProperNoun   !!= * __@CODE@__
+ @U.CmpHyph.TRUE@ ProperNoun-nob-nocomp ; ! Lexicon for NOB short names - always require hyphen
+ @U.CmpHyph.TRUE@ ProperNoun-smi-nocomp ; ! Lexicon for short names - always require hyphen
+                  ProperNoun-smi        ; ! SMI proper nouns
+                  ProperNoun-nob        ; ! contains the full nob name list
+
+
 ! ======================
 ! Sublexica for NounRoot
 ! ======================
