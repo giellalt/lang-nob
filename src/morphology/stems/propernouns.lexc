@@ -1,5 +1,16 @@
 
-LEXICON ProperNoun
+
+LEXICON ProperNoun-nob-nocomp
+
+AKP PROP-org ;
+AMI PROP-org ;
+ANC PROP-org ;
+ANSI PROP-org ;
+AOF PROP-org ;
+AP PROP-org ;
+AUF PROP-org ;
+
+LEXICON ProperNoun-nob
 
 !7-Eleven PROP-obj ;
 !Eir PROP-sur ; ! XXX Marginal, and id. with Eira.
@@ -19,13 +30,6 @@ Tråante PROP-org ;
 Divvun PROP-org ;
 Aajege PROP-org ;
 ABC-company PROP-org ;
-AKP PROP-org ;
-AMI PROP-org ;
-ANC PROP-org ;
-ANSI PROP-org ;
-AOF PROP-org ;
-AP PROP-org ;
-AUF PROP-org ;
 Aabakken PROP-plc ;
 Aabel PROP-mal ;
 Aabenraa PROP-sur ;
