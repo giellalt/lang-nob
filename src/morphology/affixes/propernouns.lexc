@@ -1,0 +1,42 @@
+LEXICON prop
+m1 ;
+
+LEXICON PROP
++N+Prop: K ;
+
+LEXICON PROP-surfem
++N+Prop+Sem/Sur: K ;
++N+Prop+Fem: K ;
+
+LEXICON PROP-surmal
++N+Prop+Sem/Sur: K ;
++N+Prop+Sem/Mal: K ;
+
+LEXICON PROP-malfem
++N+Prop+Sem/Mal: K ;
++N+Prop+Fem: K ;
+
+LEXICON PROP-surplc
++N+Prop+Sem/Sur: K ;
++N+Prop+Sem/Plc: K ;
+
+LEXICON PROP-fem
++N+Prop+Fem: K ;
+
+LEXICON PROP-mal
++N+Prop+Sem/Mal: K ;
+
+LEXICON PROP-sur
++N+Prop+Sem/Sur: K ;
+
+LEXICON PROP-plc
++N+Prop+Sem/Plc: K ;
+
+LEXICON PROP-org
++N+Prop+Sem/Org: K ;
+
+LEXICON PROP-ani
++N+Prop+Sem/Ani: K ;
+
+LEXICON PROP-obj
++N+Prop+Sem/Obj: K ;

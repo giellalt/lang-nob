@@ -21,9 +21,8 @@ while(<>) {
 	s/HEIM/BERN/g ;
 	s/SIJTE/ACCRA/g ;
 	s/HAWAII/ACCRA/g ;
-# names with South Saami inflection
-	s/^Måehvie\+/!Måehvie+/g ;
 
+# Removing all sme special letters	
 	s/b9/b/g ;
 	s/d9/d/g ;
 	s/g9/g/g ;
@@ -47,25 +46,22 @@ while(<>) {
 
 	# Substitutions due to orthographic differences between SMJ and SME:
 	s/t:(.*)h /t:$1d9 /g ;
-	s/čč/ttj/g ;
-	s/Č/Tj/g ;
+	s/čč/tsj/g ;
+	s/Č/Tsj/g ;
 	# Andreevič -> Andreevitj:
-#	s/^(.*)č /$1tj:$1t9j /g ;
-	s/č/tj/g ;
-	s/šž/sjtj/g ;
-	s/Šž/Sjtj/g ;
+#	s/^(.*)č /$1tsj:$1tsj /g ;
+	s/č/tsj/g ;
+	s/šž/sjtsj/g ;
+	s/Šž/Sjtsj/g ;
 	s/šš/ssj/g ;
-	s/žž/dtj/g ;
+	s/žž/dtsj/g ;
 	s/Š/Sj/g ;
 	s/š/sj/g ;
-	s/ž/dj/g ;
+	s/ž/dsj/g ;
 	# j->i || Vow i .* : .* Vow _ ; Heaika:Heajka -> Heaika:Heaika. But Majken 	
 #	s/([ÁAEIOUaáeiou])i(.*):(.*)([ÁAEIOUaáeiou])j/$1i$2:$3$4i/g ;
     s/([ÁAEIOUaáeiou])i([^j].*):(.*)([ÁAEIOUaáeiou])j([^ÁAEIOUaáeiou])/$1i$2:$3$4i$5/g ;
 
-	s/ia\+(.+ MOLDAVIA)/ije+$1/g ; # Change the lemma form of MOLDAVIA words
-	s/ie\+(.+ MACKENZIE)/ije+$1/g ; # Change the lemma form of MOLDAVIA words
-	s/i\+(.+ MALAWI)/ije+$1/g ;    # Change the lemma form of MALAWI words
 
 	my $line = $_;
 
