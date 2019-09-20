@@ -1101,6 +1101,7 @@ LEXICON SKRIVE
 +V+Ind+Prt+Radical:skreiv    # ;
 +V+PrfPtc:skrevet   # ;
 +V+PrsPtc:skrivende # ;
++V+Ind+Prs+Pass:skrives # ;
 
 LEXICON SKRYTE
 +V+Inf:skryte    # ;
