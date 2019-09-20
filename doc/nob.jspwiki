@@ -16,6 +16,7 @@ INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Bokmål LANGUAGE.
 
  * Multichar_Symbols 
 
+TODO: legg desse der dei høyrer pent heime.
 
 
 
@@ -95,7 +96,9 @@ Basic lexica, pointing to the other lexicon files
  *  Punctuation ;	  
  *  Symbols     ;	  
  *  Abbreviation ;	  
+ *  Acronym-smi ;	  
  *  Nynorsk ;         Accepts nno forms
+
 
 
 
@@ -168,6 +171,9 @@ __Geminate deletion in front of -t and -d__
 
 * __kalle%>Q3te __
 * __kal0000te __
+
+* __lykk0esQ1 __
+* __lyk0tes0 __
 
 * __all%>Q3t __
 * __al000t __
