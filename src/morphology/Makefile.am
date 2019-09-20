@@ -16,7 +16,7 @@
 ## along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 # Add language-specific flags for hfst-lexc compilation here:
-HFST_LEXC_LOCAL_FLAGS=
+HFST_LEXC_LOCAL_FLAGS=--Werror
 
 # Set this to name of lexc file containing Multichar_Symbols and LEXICON Root
 GT_LEXC_ROOT=$(srcdir)/root.lexc
@@ -27,7 +27,7 @@ GT_LEXC_SRCS_L1_L2=\
 			   affixes/acronyms.lexc  \
 			   affixes/adjectives.lexc  \
 			   affixes/nouns.lexc       \
-			   affixes/propernouns.lexc       \
+			   affixes/propernouns.lexc  \
 			   stems/nynorsk-stems.lexc \
 			   affixes/symbols.lexc     \
 			   affixes/verbs.lexc       \
@@ -40,9 +40,8 @@ GT_LEXC_SRCS_L1_L2=\
 			   stems/nouns.lexc         \
 			   stems/prepositions.lexc  \
 			   stems/pronouns.lexc      \
-			   stems/nob-propernouns.lexc   \
-			   stems/subjunctions.lexc  \
-			   stems/verbs.lexc         
+			   stems/subjunctions.lexc \
+			   stems/verbs.lexc 
 
 # If you are building an error-detecting L2 analyser, specify the lexc files
 # that differ between the regular L1 and the L2 analysers below, in L1 and
@@ -77,7 +76,7 @@ GT_LOCAL_XFSCRIPT_SRCS=
 
 # Define here any additional sources just included in the distro:
 GT_DISTRO_SRCS=stems/$(GTLANG)-propernouns.lexc \
-               $(top_srcdir)/src/scripts/smi-$(GTLANG)-conversion.pl
+		$(top_srcdir)/src/scripts/smi-$(GTLANG)-conversion.pl
 
 
 ### BEGIN: Local processing: ###
@@ -90,10 +89,26 @@ GT_DISTRO_SRCS=stems/$(GTLANG)-propernouns.lexc \
 
 GIELLA_LOCAL_TARGETS=
 
+generated_files/smi-propernouns.lexc: \
+			$(GIELLA_SHARED)/smi/src/morphology/stems/smi-propernouns.lexc
+	$(AM_V_at)$(MKDIR_P) generated_files
+	$(AM_V_GEN)cp -f $< $@
+
 generated_files/arabic_roman_digits.lexc: \
 			$(GIELLA_SHARED)/smi/src/morphology/stems/arabic_roman_digits.lexc
 	$(AM_V_at)$(MKDIR_P) generated_files
 	$(AM_V_GEN)cp -f $< $@
+
+generated_files/smi-$(GTLANG)-propernouns.lexc: \
+		generated_files/smi-propernouns.lexc \
+		$(srcdir)/stems/$(GTLANG)-propernouns.lexc
+	$(AM_V_GEN)rm -f $@ && \
+	cp -f $(srcdir)/stems/$(GTLANG)-propernouns.lexc $@ && \
+	echo "" >> $@ && \
+	echo "! <--- Dump from SMI -->" >> $@ && \
+	echo "" >> $@ && \
+	$(top_srcdir)/src/scripts/smi-$(GTLANG)-conversion.pl $< >> $@
+
 
 generated_files/%.lexc: \
 			$(GIELLA_SHARED)/smi/src/morphology/stems/%.lexc
