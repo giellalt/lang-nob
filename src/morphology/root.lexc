@@ -20,49 +20,6 @@
 
 Multichar_Symbols !!= * @CODE@
 
-!! TODO: legg desse der dei høyrer pent heime.
-+Arab
-+Attr
-+Cmp/Hyph
-+CmpNP/None
-+Coll
-+Err/Hyph
-+Err/Lex
-+Err/SpaceCmp
-+Num
-+OLang/ENG
-+OLang/FIN
-+OLang/NNO
-+OLang/NOB
-+OLang/RUS
-+OLang/SMA
-+OLang/SME
-+OLang/SWE
-+OLang/UND
-+Rom
-
-+CmpNP/First
-+MWE
-+Sem/Amount
-+Sem/Curr
-+Sem/Domain_Hum
-+Sem/Edu_Hum
-+Sem/Food-med
-+Sem/Lang
-+Sem/Part
-+Sem/Sign
-+Sem/State
-+Sem/Time
-
-+Use/-Spell
-+Use/SpellNoSugg
-+v1
-+v2
-@C.ErrOrth@
-@D.ErrOrth.ON@
-@P.ErrOrth.ON@
-
-
 
 
 
@@ -90,24 +47,8 @@ Multichar_Symbols !!= * @CODE@
  +Qnt ! quantifier noen, begge
  +Symbol !!≈ * @CODE@ = independent symbols in the text stream, like £, €, ©
 
- +Nynorsk ! For dictionary use., Nynorsk only
- +Radical ! For dictionary testing, Radical Bokmål
- +Err/Orth ! For speller use
 
- +X ! denoting not-checked.
- +1 +2 +3
- X1 X2 X3 X4 X5 X6 X7 X8 X9
- Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9
- Y1 Y2 Y3 Y4 Y5 Y6 Y7 Y8 Y9
- Z1 Z2 Z3 Z4 Z5 Z6 Z7 Z8 Z9
- l7 ! always l
- %^NYNAG ! Nynorsk agens lærar / lærer
 
-+Use/Circ !!= @CODE@ circular string
-
-+Der/AAdv !!= @CODE@ Adjectives are also adverbs
-
-+ABBR
 +Ex/V
 +Ord
 +Prdtc
@@ -115,16 +56,73 @@ Multichar_Symbols !!= * @CODE@
 +Sem/Obj
 +Sem/Sur
 
+
+
+!! !! NDS analyser tags
+
+ +Nynorsk ! For dictionary use., Nynorsk only
+ +Radical ! For dictionary testing, Radical Bokmål
+
+
+ +X ! denoting not-checked.
+ +1 +2 +3
+
+!! !!Morphophonology
+
+!! Todo: Document these
+
+ X1 X2 X3 X4 X5 X6 X7 X8 X9
+ Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9
+ Y1 Y2 Y3 Y4 Y5 Y6 Y7 Y8 Y9
+ Z1 Z2 Z3 Z4 Z5 Z6 Z7 Z8 Z9
+
+l7 ! always l
+
+%^NYNAG ! Nynorsk agens lærar / lærer
+
++Use/Circ !!= @CODE@ circular string
+
++Der/AAdv !!= @CODE@ Adjectives are also adverbs
+
+
+!! !! Normativity and other usage tags
+
++Err/Orth ! For speller use
++Err/Hyph
++Err/Lex
++Err/SpaceCmp
+
++Use/NG
++Use/-Spell
++Use/SpellNoSugg
+
+
+!! !!Paradigm generation
++v1
++v2
+
+Are these needed?
+
+
+
+!! ! Semantic tags
+
++Sem/Amount
 +Sem/Build
 +Sem/Build-room
 +Sem/Cat
++Sem/Curr
 +Sem/Date
 +Sem/Domain
++Sem/Domain_Hum
 +Sem/Dummytag
++Sem/Edu_Hum
 +Sem/Event
++Sem/Food-med
 +Sem/Group_Hum
 +Sem/Hum
 +Sem/ID
++Sem/Lang
 +Sem/Mat
 +Sem/Measr
 +Sem/Money
@@ -132,11 +130,15 @@ Multichar_Symbols !!= * @CODE@
 +Sem/Obj-ling
 +Sem/Org_Prod-audio
 +Sem/Org_Prod-vis
++Sem/Part
 +Sem/Prod-vis
 +Sem/Route
 +Sem/Rule
++Sem/Sign
++Sem/State
 +Sem/State-sick
 +Sem/Substnc
++Sem/Time
 +Sem/Time-clock
 +Sem/Tool-it
 +Sem/Txt
@@ -145,7 +147,9 @@ Multichar_Symbols !!= * @CODE@
 
 
 
-+Use/NG
+
+!! !!Preprocessing
+
 +Use/-PMatch
 
         !! !!Symbols that need to be escaped on the lower side (towards twolc):
@@ -157,7 +161,41 @@ Multichar_Symbols !!= * @CODE@
         !! }}}
 
 
+
+!! !!Compounding
+
++Cmp/Hyph
++CmpNP/None
++CmpNP/First
+
+
+
+!! !!Language codes
+
++OLang/SME !!≈ * @CODE@ - North Sámi
++OLang/SMJ !!≈ * @CODE@ - Lule Sámi
++OLang/SMA !!≈ * @CODE@ - South Sámi
++OLang/FIN !!≈ * @CODE@ - Finnish
++OLang/SWE !!≈ * @CODE@ - Swedish
++OLang/NOB !!≈ * @CODE@ - Norw. bokmål
++OLang/NNO !!≈ * @CODE@ - Norw. nynorsk
++OLang/ENG !!≈ * @CODE@ - English
++OLang/RUS !!≈ * @CODE@ - Russian
++OLang/UND !!≈ * @CODE@ - Undefined
+
+
+
 !! !!Flag diacritics
+
+!! !Flags for ErrOrth
+
+@C.ErrOrth@
+@D.ErrOrth.ON@
+@P.ErrOrth.ON@
+
+
+!! !Flags for compounding
+
 !! We have manually optimised the structure of our lexicon using following
 !! flag diacritics to restrict morhpological combinatorics - only allow compounds
 !! with verbs if the verb is further derived into a noun again:
@@ -177,7 +215,11 @@ Multichar_Symbols !!= * @CODE@
  @U.CmpNone.FALSE@ !!≈ | @CODE@ | Combines with the prev tag to prohibit compounding
  @P.CmpOnly.TRUE@  !!≈ | @CODE@ | Sets a flag to indicate that the word has passed R
  @D.CmpOnly.FALSE@ !!≈ | @CODE@ | Disallow words coming directly from root.
-!! 
+
+
+
+!! ! Flags for governing initial capital
+
 !! Use the following flag diacritics to control downcasing of derived proper
 !! nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
 !! these flags. There exists a ready-made regex that will do the actual down-casing
@@ -185,6 +227,8 @@ Multichar_Symbols !!= * @CODE@
  @U.Cap.Obl@        !!≈ | @CODE@ | Allowing downcasing of derived names: deatnulasj.
  @U.Cap.Opt@        !!≈ | @CODE@ | Allowing downcasing of derived names: deatnulasj.
 
+
+!! !Flags for preprocessing
 
 @P.Pmatch.Backtrack@
 
@@ -254,37 +298,6 @@ Abbreviation-nob ;
 ! v4  nå          når         nådde       nådd
 ! v4  bie         bier        bidde       bidd
 
-
-! =========
-! Compounds
-! =========
-
-LEXICON Re
- #+Cmp+:e##  NounRoot ;   ! dynamic compounding ON
-
-LEXICON RHyph
-R ; ! todo fix R vs. RHyph
-
-LEXICON R
-! change this and next 3
- #+CmpS+:s##  NounRoot ; ! dynamic compounding ON
- #+Cmp+:##  NounRoot ;   ! dynamic compounding ON
- #+Cmp%-:%-  NounRoot ;   ! dynamic compounding ON
- #+Cmp%-:%-  # ;   ! two-part helse- og sosialarbeid
- #+CmpS+:s-  # ; ! two-part salgs- og forskningsenheter
-! #+Cmp%-:%-  # ;   ! dynamic compounding OFF
-
-! ---
-! Commented out
-! #+Cmp+:#  main-verb ;
-! #+Cmp+:#  regular-adj ;
-
-
-! compare smj:
-!   LEXICON R
-!    # NounRoot ;                      ! This is the normal case.
-!    #:%- NounRoot ;                        ! These 3 cases add a hyphen, so
-!    #:%- ProperNoun ;  ! pounds. Thus: London-Hull, LondonHull, Hull-viessu
 
 
 ! =======

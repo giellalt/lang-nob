@@ -58,6 +58,17 @@
 ! LEKSIKON leksikon, pl. leksika
 ! MUSEUM museum, museet, museer
 
+LEXICON NounRoot
+Noun ;
+HyphNouns ;
+
+LEXICON HyphNouns
+! TODO: Kanskje desse ikkje bör bli lista.
+lule R ;
+barne R ;
+heste R ;
+
+
 LEXICON ShortNounRoot
 ! These are kept separate in order not to
 ! allow them in compounding (rusle = rus + le)
@@ -528,7 +539,8 @@ vær n1 ;
 øyk n1 ; 
 øyr f1 ; 
 
-LEXICON NounRoot
+
+LEXICON Noun
 
 garde mD ;
 gårde mD ;

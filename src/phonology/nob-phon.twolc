@@ -1,4 +1,4 @@
-!! !!!Morphophonological rules for Bokmål
+!! !!!MorpAhophonological rules for Bokmål
 
 Alphabet
  a b c d e f g h i j k l m n o p q r s t u v w x y z æ ø å
@@ -91,13 +91,16 @@ Rules
                        _ Q3: X4: ;
              i g %>:0  _ s t ;
 
-!!€ modenX1%>e
+!!€ teaterX1>et
+!!€ teat0r00et
+
+!!€ modenX1>e
 !!€ mod0n00e
 
-!!$ modenX1%>e
+!!$ modenX1>e
 !!$ moden00e
 
-!!€ hare%>er
+!!€ hare>er
 !!€ har00er
 
 !!€ viktig>est
@@ -108,7 +111,7 @@ Rules
  Cx:0 <=> Vow Cx _ e: LNR X1: %>: ( e | a ) ;
           where Cx in ( b d v ) ;
 
-!!€ sikkerX1%>e
+!!€ sikkerX1>e
 !!€ sik00r00e
 
 
@@ -119,16 +122,16 @@ Rules
           Vow Cx _  e:   LNR X1: %>: ( e | a ) ;  ! sikker:sikre
       where Cx in ( f k p s l n g ) ;
 
-!!€ kalle%>Q3te
+!!€ kalle>Q3te
 !!€ kal0000te
 
 !!€ lykk0esQ1
 !!€ lyk0tes0
 
-!!€ all%>Q3t
+!!€ all>Q3t
 !!€ al000t
 
-!!€ bygge%>Q3de
+!!€ bygge>Q3de
 !!€ byg0000de
 
 
@@ -141,7 +144,7 @@ Rules
  Vx:0 <=> _ X2:  ;
 	where Vx in (a o) ;
 
-!!€ kollegaX2%>er
+!!€ kollegaX2>er
 !!€ kolleg000er
 
 
@@ -175,7 +178,7 @@ Rules
 !! __@RULENAME@__  
  u:0 <=> _ m: X5: %>:0 ;
 
-!!€ museumX5%>er
+!!€ museumX5>er
 !!€ muse0000er
 
 !"um Deletion 2" ! now m rule
@@ -186,7 +189,7 @@ Rules
 !! __@RULENAME@__  
  t:d <=> [Cns:|Vow:] _ X6:0 %>:0 e ;
 
-!!€ oppskjørtetX6%>e
+!!€ oppskjørtetX6>e
 !!€ oppskjørted00e
  
 
@@ -198,7 +201,7 @@ Rules
            Vow t _  e:   LNR X1: %>: ( e | a ) ;  ! sikker:sikre
            Vow t _ (e:0)         %>: Q3:0 [d|t] ; ! kaller:kalte
 
-!!€ svart%>t
+!!€ svart>t
 !!€ svart00
 
 !" inf-e"
