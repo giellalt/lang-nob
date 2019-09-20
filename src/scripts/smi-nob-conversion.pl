@@ -79,6 +79,7 @@ while(<>) {
 	
 
 # sme special symbols
+	s/^//g ;
 	s/b9/b/g ;
 	s/e9/e/g ;
 	s/d9/d/g ;
@@ -86,7 +87,7 @@ while(<>) {
 	s/h9/h/g ;
 	s/j9/j/g ;
 	s/k9/k/g ;
-	s/m9/m5/g ;
+	s/m9/m/g ;
 	s/n9/n/g ;
 	s/o9/o/g ;
 	s/p9/p/g ;
@@ -95,9 +96,14 @@ while(<>) {
 	s/t9/t/g ;
 	s/z9/z/g ;
 	s/æ9/æ/g ;
+	s/5 / /g ;
 	s/7 / /g ;
 	s/8 / /g ;
 	s/9 / /g ;
+	s/5^/ /g ;
+	s/7^/ /g ;
+	s/8^/ /g ;
+	s/9^/ /g ;
 
 
 	my $line = $_;
