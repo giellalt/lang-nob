@@ -114,12 +114,16 @@ Rules
 
 "Geminate deletion in front of -t and -d"
 !! __@RULENAME@__  
- Cx:0 <=> Vow Cx _ (e:0)         %>: Q3:0 [d|t] ; ! kaller:kalte
+ Cx:0 <=> Vow Cx _ (e:0)         %>: Q3: [d|t] ; ! kaller:kalte
+          Vow Cx _ :t e s  Q1:  ; ! lykkes:lyktes
           Vow Cx _  e:   LNR X1: %>: ( e | a ) ;  ! sikker:sikre
       where Cx in ( f k p s l n g ) ;
 
 !!€ kalle%>Q3te
 !!€ kal0000te
+
+!!€ lykk0esQ1
+!!€ lyk0tes0
 
 !!€ all%>Q3t
 !!€ al000t
