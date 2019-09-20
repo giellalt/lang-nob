@@ -101,8 +101,7 @@ LEXICON positive-indef
   +Pos+MF+Sg+Indef: # ;
 
 LEXICON positive-def
- +Pos+Sg+Def:%>e # ;
- +Pos+Sg+Def:%>e # ;
+ +Pos+Sg+Def+Clt:%>es # ;
  +Pos+Sg+Def:%>e # ;
  +Pos+Pl+Def:%>e # ;
 

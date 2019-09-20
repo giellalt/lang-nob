@@ -341,7 +341,8 @@ LEXICON n1 ! hus
 
 LEXICON n1morph
  +N+Neu+Sg: 0-et    ;
- +N+Neu+Pl: 0-ene-a ;
+! +N+Neu+Pl: 0-ene-a ;
+ +N+Neu+Pl: 0-er-ene-a ; ! tribunaler
 
 LEXICON n1b ! rom
  +N+Neu+Sg:mX4 0-et    ;
