@@ -51,7 +51,7 @@ LEXICON ProperNoun
 
 Duodjeinstituhtta PROP-org ;
 Jarnge PROP-org ;
-Åarjelhsaemien% Teatere PROP-org ;
+Åarjelhsaemien% Teatere+MWE:Åarjelhsaemien% Teatere PROP-org ;
 Giellatekno PROP-org ;
 Klemetspelet PROP-org ;
 Kristuskransen PROP-org ;
