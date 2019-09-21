@@ -1030,7 +1030,9 @@ LEXICON SKJÆRE
 +V+Ind+Prs:skjærer   # ;
 +V+Ind+Prs+Pass:skjæres   # ;
 +V+Ind+Prt:skar      # ;
++V+Ind+Prt+Err/Orth:skjærte      # ;
 +V+PrfPtc:skåret    # ;
++V+PrfPtc+Err/Orth:skjært   # ;
 +V+PrsPtc:skjærende # ;
 
 LEXICON SKLI
