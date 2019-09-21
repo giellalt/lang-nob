@@ -4,9 +4,9 @@ m1 ;
 LEXICON PROP
 +N+Prop: K ;
 
-LEXICON PROP-surfem
-+N+Prop+Sem/Sur: K ;
-+N+Prop+Fem: K ;
+!LEXICON PROP-surfem
+!+N+Prop+Sem/Sur: K ;
+!+N+Prop+Fem: K ;
 
 LEXICON PROP-surmal
 +N+Prop+Sem/Sur: K ;
