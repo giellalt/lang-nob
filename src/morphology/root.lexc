@@ -103,12 +103,23 @@ l7 ! always l
 +v1
 +v2
 
-Are these needed?
++ABBR
++ACR
++Arab
++Attr
++Coll
++Dyn
++MWE
++Num
++Rom
++Use/PMatch
 
 
 
 !! ! Semantic tags
 
++Sem/Atr
++Sem/Fem
 +Sem/Amount
 +Sem/Build
 +Sem/Build-room
