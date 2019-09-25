@@ -42,6 +42,8 @@ Multichar_Symbols !!= * @CODE@
  +Interj +Intens
  +Prop +Fem +Sem/Mal +Sem/Plc +Sem/Org +Sem/Ani
  +CLB +PUNCT +HYPH +LEFT +RIGHT
+ +CLBfinal       !!≈ * __@CODE@__  Sentence final abbreviated expression ending in full stop, so that the full stop is ambiguous
+
  +Cmp+
  +CmpS+
  +Qnt ! quantifier noen, begge
