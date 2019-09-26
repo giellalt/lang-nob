@@ -79,38 +79,38 @@ LEXICON ShortNounRoot
 
 
 LEXICON 2_letter
-li+Cmp/Nome:li f1 ; 
-ri+Cmp/Nome:ri f1 ; 
-ro+Cmp/Nome:ro f1 ; 
-ur+Cmp/Nome:ur f1 ; 
-øy+Cmp/Nome:øy f1 ; 
-ed+Cmp/Nome:ed m1 ; 
-ål+Cmp/Nome:ål m1 ; 
-øl+Cmp/Nome:øl m1 ; 
-do+Cmp/Nome:do m1 ; 
-mo+Cmp/Nome:mo m1 ; 
-is+Cmp/Nome:is m1 ; 
-os+Cmp/Nome:os m1 ; 
-ås+Cmp/Nome:ås m1 ; 
-by+Cmp/Nome:by m1 ; 
-le+Cmp/Nome:le n1 ; 
-hi+Cmp/Nome:hi n1 ; 
-åk+Cmp/Nome:åk n1 ; 
-øk+Cmp/Nome:øk n1 ; 
-il+Cmp/Nome:il n1 ; 
-ul+Cmp/Nome:ul n1 ; 
-yl+Cmp/Nome:yl n1 ; 
-øl+Cmp/Nome:øl n1 ; 
-bo+Cmp/Nome:bo n1 ; 
-ap+Cmp/Nome:ap n1 ; 
-or+Cmp/Nome:or n1 ; 
-år+Cmp/Nome:år n1 ; 
-tå+Cmp/Nome:tå f1X ; 
-fe+Cmp/Nome:fe n3c ; 
-ne+Cmp/Nome:ne n1sg ; 
-yr+Cmp/Nome:yr n1sg ; 
-te+Cmp/Nome:te m1 ; 
-ve+Cmp/Nome:ve n2 ; 
+li+CmpNP/None:li f1 ; 
+ri+CmpNP/None:ri f1 ; 
+ro+CmpNP/None:ro f1 ; 
+ur+CmpNP/None:ur f1 ; 
+øy+CmpNP/None:øy f1 ; 
+ed+CmpNP/None:ed m1 ; 
+ål+CmpNP/None:ål m1 ; 
+øl+CmpNP/None:øl m1 ; 
+do+CmpNP/None:do m1 ; 
+mo+CmpNP/None:mo m1 ; 
+is+CmpNP/None:is m1 ; 
+os+CmpNP/None:os m1 ; 
+ås+CmpNP/None:ås m1 ; 
+by+CmpNP/None:by m1 ; 
+le+CmpNP/None:le n1 ; 
+hi+CmpNP/None:hi n1 ; 
+åk+CmpNP/None:åk n1 ; 
+øk+CmpNP/None:øk n1 ; 
+il+CmpNP/None:il n1 ; 
+ul+CmpNP/None:ul n1 ; 
+yl+CmpNP/None:yl n1 ; 
+øl+CmpNP/None:øl n1 ; 
+bo+CmpNP/None:bo n1 ; 
+ap+CmpNP/None:ap n1 ; 
+or+CmpNP/None:or n1 ; 
+år+CmpNP/None:år n1 ; 
+tå+CmpNP/None:tå f1X ; 
+fe+CmpNP/None:fe n3c ; 
+ne+CmpNP/None:ne n1sg ; 
+yr+CmpNP/None:yr n1sg ; 
+te+CmpNP/None:te m1 ; 
+ve+CmpNP/None:ve n2 ; 
 
 LEXICON 3_letter
 
