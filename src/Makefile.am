@@ -110,16 +110,12 @@ analyser-gt-norm.xfst: analyser-gt-norm.tmp.xfst \
 # pattern as the raw fst:
 analyser-pmatchdisamb-gt-desc.hfst: analyser-pmatchdisamb-gt-desc.tmp.hfst      \
 					filters/remove-orig_lang-tags.hfst           \
-					filters/remove-derivation-position-tags.hfst \
 					filters/remove-homonymy-tags.hfst            \
-					filters/remove-norm-comp-tags.hfst           \
-					filters/rename-POS_before_Der-tags.hfst
+					filters/remove-norm-comp-tags.hfst           
 	$(AM_V_XFST)$(PRINTF) "read regex                             \
-				@\"filters/remove-derivation-position-tags.hfst\" \
-			.o. @\"filters/remove-orig_lang-tags.hfst\"           \
+			    @\"filters/remove-orig_lang-tags.hfst\"           \
 			.o. @\"filters/remove-homonymy-tags.hfst\"            \
 			.o. @\"filters/remove-norm-comp-tags.hfst\"           \
-			.o. @\"filters/rename-POS_before_Der-tags.hfst\"      \
 			.o. @\"$<\"                                           \
 			;\n\
 		 $(INVERT_HFST)\
@@ -133,16 +129,12 @@ analyser-pmatchdisamb-gt-desc.hfst: analyser-pmatchdisamb-gt-desc.tmp.hfst      
 # pattern as the raw fst:
 analyser-disamb-gt-desc.%: analyser-disamb-gt-desc.tmp.%      \
 					filters/remove-orig_lang-tags.%           \
-					filters/remove-derivation-position-tags.% \
 					filters/remove-homonymy-tags.%            \
-					filters/remove-norm-comp-tags.%           \
-					filters/rename-POS_before_Der-tags.%
+					filters/remove-norm-comp-tags.%           
 	$(AM_V_XFST)$(PRINTF) "read regex                           \
-				@\"filters/remove-derivation-position-tags.$*\" \
-			.o. @\"filters/remove-orig_lang-tags.$*\"           \
+			     @\"filters/remove-orig_lang-tags.$*\"           \
 			.o. @\"filters/remove-homonymy-tags.$*\"            \
 			.o. @\"filters/remove-norm-comp-tags.$*\"           \
-			.o. @\"filters/rename-POS_before_Der-tags.$*\"      \
 			.o. @\"$<\"                                         \
 			;\n\
 		 $(INVERT_HFST)\
@@ -153,8 +145,6 @@ analyser-disamb-gt-desc.%: analyser-disamb-gt-desc.tmp.%      \
 analyser-gramcheck-gt-desc.hfst: analyser-gramcheck-gt-desc.tmp.hfst \
 				filters/remove-dialect-tags.hfst             \
 				filters/remove-norm-comp-tags.hfst           \
-				filters/remove-derivation-position-tags.hfst \
-				filters/rename-POS_before_Der-tags.hfst      \
 				filters/remove-word-boundary.hfst			 \
 				orthography/spellrelax-with-flagtags.compose.hfst
 	$(AM_V_HXFST)$(PRINTF) "\
@@ -162,8 +152,6 @@ analyser-gramcheck-gt-desc.hfst: analyser-gramcheck-gt-desc.tmp.hfst \
 	read regex \
 			@\"filters/remove-dialect-tags.hfst\"             \
 		.o. @\"filters/remove-norm-comp-tags.hfst\"           \
-		.o. @\"filters/remove-derivation-position-tags.hfst\" \
-		.o. @\"filters/rename-POS_before_Der-tags.hfst\"      \
 		.o. @\"$<\"                                           \
 		.o. @\"orthography/spellrelax-with-flagtags.compose.hfst\" \
 		.o. @\"filters/remove-word-boundary.hfst\"            \
