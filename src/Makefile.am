@@ -78,18 +78,12 @@ analyser-gt-desc.%: analyser-gt-desc.tmp.%                    \
 # And also for the normative analyser (foma and hfst):
 analyser-gt-norm.%: analyser-gt-norm.tmp.% \
 					filters/remove-MinusSpell-strings.%                    \
-					filters/insert-default-compounding-tags.%              \
-					filters/insert-default_left_compounding-tags.%         \
-					filters/split-CmpN-tags.%                              \
 					filters/convert_to_flags-CmpNP-tags.%                  \
 					filters/split-CmpNP-tags.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
-			    @\"filters/split-CmpN-tags.$*\"                             \
-			.o. @\"filters/insert-default_left_compounding-tags.$*\"        \
-			.o. @\"filters/insert-default-compounding-tags.$*\"             \
+			.o. @\"filters/remove-MinusSpell-strings.$*\"                   \
 			.o. @\"filters/convert_to_flags-CmpNP-tags.$*\"                 \
 			.o. @\"filters/split-CmpNP-tags.$*\"                            \
-			.o. @\"filters/remove-MinusSpell-strings.$*\"                   \
 			.o. @\"$<\"                                                     \
 			;\n\
 		 twosided flag-diacritics\n\
