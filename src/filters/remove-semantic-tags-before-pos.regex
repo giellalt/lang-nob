@@ -1,0 +1,6 @@
+### This is a file generated with $GIELLA_CORE/scripts/taglist2remove_semantic_tags_before_pos_regex.sh - do not edit!!!
+
+0 <- "+Sem/Ani",
+0 <- "+Sem/Mal",
+0 <- "+Sem/Org",
+0 <- "+Sem/Plc" || _ ( ? ) [ "+N" | "+A" ] ;

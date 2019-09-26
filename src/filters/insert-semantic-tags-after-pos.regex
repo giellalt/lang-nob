@@ -1,0 +1,17 @@
+# This is a generated file - do not edit!
+# The script file used to generate it is:
+# /Users/ttr000/main/giella-core/scripts/taglist2insert_semantic_tags_after_pos_regex.sh
+# The generated regex inserts semantic tags
+# after some POS tags. It should be used in
+# tandem with another script that will remove
+# the semantic tags before the same POS's, so
+# that the total effect will be that the tags
+# are moved.
+[ "+Sem/Ani"     <- [..] || "+Sem/Ani" ( ? ) [ "+N" | "+A" ]    "+Prop" _ ,,
+  "+Sem/Ani"     <- [..] || "+Sem/Ani" ( ? ) [ "+N" | "+A" ] _ \"+Prop"   ] .o.
+[ "+Sem/Mal"     <- [..] || "+Sem/Mal" ( ? ) [ "+N" | "+A" ]    "+Prop" _ ,,
+  "+Sem/Mal"     <- [..] || "+Sem/Mal" ( ? ) [ "+N" | "+A" ] _ \"+Prop"   ] .o.
+[ "+Sem/Org"     <- [..] || "+Sem/Org" ( ? ) [ "+N" | "+A" ]    "+Prop" _ ,,
+  "+Sem/Org"     <- [..] || "+Sem/Org" ( ? ) [ "+N" | "+A" ] _ \"+Prop"   ] .o.
+[ "+Sem/Plc"     <- [..] || "+Sem/Plc" ( ? ) [ "+N" | "+A" ]    "+Prop" _ ,,
+  "+Sem/Plc"     <- [..] || "+Sem/Plc" ( ? ) [ "+N" | "+A" ] _ \"+Prop"   ] ;
