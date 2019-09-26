@@ -81,7 +81,7 @@ analyser-gt-norm.%: analyser-gt-norm.tmp.% \
 					filters/convert_to_flags-CmpNP-tags.%                  \
 					filters/split-CmpNP-tags.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
-			.o. @\"filters/remove-MinusSpell-strings.$*\"                   \
+			    @\"filters/remove-MinusSpell-strings.$*\"                   \
 			.o. @\"filters/convert_to_flags-CmpNP-tags.$*\"                 \
 			.o. @\"filters/split-CmpNP-tags.$*\"                            \
 			.o. @\"$<\"                                                     \
