@@ -14,38 +14,6 @@ TRNUMAB ;
 TRAB ;
 NOAB ;
 
-! Now splitting according to POS, and dot or not
-! - - - - - - - - - - - - - - - - - - - - - - -
-
-! First collecting POS info, *-noun, *-adv, etc.
-! Splitting when in doubt: -noun-adj => -noun and -adj
-! Then pointing to two contlexes, dot and non-dot.
-
-LEXICON ab ! No POS, don't know what pos
-ab-nodot ;
-ab-dot ;
-
-LEXICON ab-noun
-ab-nodot-noun ;
-ab-dot-noun ;
-
-LEXICON ab-nodot-noun ! The bulk
-+ABBR+N: # ;  ! no period, that is.
-
-LEXICON ab-nodot ! default
-+ABBR: # ;  ! no period, that is.
-
-LEXICON ab-dot ! Default
-+ABBR:%. # ;
-
-LEXICON ab-dot-noun ! abbrs that must have a period.
-+ABBR+N:%. # ;
-
-
-
-! The abbreviation lexicon itself
-! -------------------------------
-
 ! =============================================== !
 !            Intransitive abbreviations           !
 ! =============================================== !
