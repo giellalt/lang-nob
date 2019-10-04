@@ -21,9 +21,6 @@
 Multichar_Symbols !!= * @CODE@
 
 
-
-
-
 !! !!Part of speech
  +N +A +Adv +V
  +CS +CC +Interj +Pcle +Pr +IM
@@ -40,7 +37,12 @@ Multichar_Symbols !!= * @CODE@
  +Pass +Ind +Prs +Prt +Imp
  +Inf +PrsPtc +PrfPtc
  +Interj +Intens
- +Prop +Fem +Sem/Mal +Sem/Plc +Sem/Org +Sem/Ani
+ +Prop +Fem
+ +Sem/Mal +Sem/Plc +Sem/Org +Sem/Ani
+     +Sem/Amount +Sem/Curr +Sem/Domain_Hum +Sem/Edu_Hum +Sem/Food-med +Sem/Lang +Sem/Part
+        +Sem/State +Sem/Time 
+
+
  +CLB +PUNCT +HYPH +LEFT +RIGHT
  +CLBfinal       !!≈ * __@CODE@__  Sentence final abbreviated expression ending in full stop, so that the full stop is ambiguous
 
@@ -115,12 +117,19 @@ l7 ! always l
 +Use/PMatch
 
 
+!! ! Tags for abbreviation handling
+
+
++Gram/IAbbr
++Gram/TAbbr
++Gram/TNumAbbr
 
 !! ! Semantic tags
-
+! +Sem/Amount +Sem/Curr +Sem/Domain_Hum +Sem/Edu_Hum +Sem/Food-med +Sem/Lang +Sem/Part
+! +Sem/State +Sem/Time +Gram/IAbbr +Gram/TAbbr +Gram/TNumAbbr +CmpNP/First @P.Pmatch.Loc@
 +Sem/Atr
 +Sem/Fem
-+Sem/Amount
+!+Sem/Amount ! sjekk
 +Sem/Build
 +Sem/Build-room
 +Sem/Cat
@@ -276,7 +285,7 @@ super  AdjectiveRoot ;
 
 LEXICON Abbreviation
 Abbreviation-nob ;
-!Abbreviations-smi ;
+Abbreviation-smi ;
 
 LEXICON ProperNoun   !!= * __@CODE@__
  @U.CmpHyph.TRUE@ ProperNoun-nob-nocomp ; ! Lexicon for NOB short names - always require hyphen
