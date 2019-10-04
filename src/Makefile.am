@@ -82,7 +82,7 @@ analyser-gt-norm.%: analyser-gt-norm.tmp.% \
 					filters/split-CmpNP-tags.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
 			    @\"filters/remove-MinusSpell-strings.$*\"                   \
-			.o. @\"filters/convert_to_flags-CmpNP-tags.$*\"                 \
+			.o. @\"filters/convert_to_flags-CmpNP-tags.$*\"            \
 			.o. @\"filters/split-CmpNP-tags.$*\"                            \
 			.o. @\"$<\"                                                     \
 			;\n\
@@ -146,11 +146,13 @@ analyser-gramcheck-gt-desc.hfst: analyser-gramcheck-gt-desc.tmp.hfst \
 				filters/remove-dialect-tags.hfst             \
 				filters/remove-norm-comp-tags.hfst           \
 				filters/remove-word-boundary.hfst			 \
+				filters/convert_to_flags-CmpNP-tags.hfst \
 				orthography/spellrelax-with-flagtags.compose.hfst
 	$(AM_V_HXFST)$(PRINTF) "\
 	set encode-weights ON\n\
 	read regex \
 			@\"filters/remove-dialect-tags.hfst\"             \
+	    	.o. @\"filters/convert_to_flags-CmpNP-tags.hfst\"            \
 		.o. @\"filters/remove-norm-comp-tags.hfst\"           \
 		.o. @\"$<\"                                           \
 		.o. @\"orthography/spellrelax-with-flagtags.compose.hfst\" \
