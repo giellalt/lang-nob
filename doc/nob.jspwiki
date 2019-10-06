@@ -17,10 +17,9 @@ INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Bokmål LANGUAGE.
  * Multichar_Symbols 
 
 
-
-
-
 !!Part of speech
+
+
  * __+CLBfinal__  Sentence final abbreviated expression ending in full stop, so that the full stop is ambiguous
 
  * +Symbol = independent symbols in the text stream, like £, €, ©
@@ -56,9 +55,11 @@ Normativity and other usage tags
 
 
 
+! Tags for abbreviation handling
+
+
 
 ! Semantic tags
-
 
 
 
