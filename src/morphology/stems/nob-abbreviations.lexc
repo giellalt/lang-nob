@@ -313,7 +313,6 @@ gnr ab ;
 j		ab-dot ;                        
 jnr		ab-dot ;                        
 kap		ab-dot-noun ;                   
-kr		ab ;                            
 kr ab ;
 lnr ab ;
 maks ab ;
