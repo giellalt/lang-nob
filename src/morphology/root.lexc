@@ -114,7 +114,6 @@ l7 ! always l
 +MWE
 +Num
 +Rom
-+Use/PMatch
 
 
 !! ! Tags for abbreviation handling
@@ -172,6 +171,7 @@ l7 ! always l
 
 !! !!Preprocessing
 
++Use/PMatch 
 +Use/-PMatch
 
         !! !!Symbols that need to be escaped on the lower side (towards twolc):
