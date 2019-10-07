@@ -38,6 +38,7 @@ LEXICON ACASETAG   !!≈ * __@CODE@__  is for 1e+Det+Qnt+Sg+Det+Qnt:1e
 
 LEXICON ARABICLOOPCOLL   !!≈ * __@CODE@__ collectives
   ARABICDELIMITER ;
+ 
 
 LEXICON ARABICDELIMITER   !!≈ * __@CODE@__  blank + 3 delim, what does the lg counc prefer?
  +Det+Qnt+Sg:            #      ; ! This is the 1984 case, ie NGA
