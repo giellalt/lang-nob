@@ -1,4 +1,6 @@
 
+!! !!!Numerals (number words)
+
 
 LEXICON Numeral 
 Textual ;
@@ -147,62 +149,4 @@ søttiende a3 ;
 åttiende a3 ;
 nittiende a3 ;
 hundrede a3 ;
-
-
-
-! Arabic numerals
-! ---------------
-
-
-!            CHAPTERHEADING ;        ! 1.-2   multipart numbers
-
-!LEXICON CHAPTERHEADING
-!    ARABIC3 ;
-!!%.  ARABIC3 ;
-!+N:%. # ;
-!+N: # ; ! Temporær løysing, dette er "4.2. Hus", der "Hus" ikkje er Pl.
-
-
-
-!LEXICON ARABICCASE      
-!f # ;     ! s. 123f.  
-!ff # ;     ! s. 123ff.
-!b # ;     ! § 123b 
-!c # ;     ! § 123c 
-!d # ;     ! § 123d 
-!e # ;     ! § 123e 
-!  # ;  
-! R ; ! 1800-tallet
-
-
-
-!LEXICON ROMNUMTAG
-! +Det+Qnt+Pl: # ;
-! NON-ONE-TAG ;
-!
-!LEXICON NON-ONE-TAG
-! +A+Ord:%. # ;                               !III. as ordinal.
-!! +A+Ord: # ;                                 ! No trouble.
-! +Det+Qnt+Pl:%: # ; 
-! +Det+Qnt+Pl:%' # ; 
-! +Det+Qnt+Pl:%- # ; 
-! +Det+Qnt+Pl:%´ # ; 
-! +Det+Qnt+Pl:   # ; 
-
-
-
-
-
-
-
-
-
-
-!LEXICON ARABICCASEphone  
-! +Det+Qnt+Sem/Phonenr+Sg+Nom: # ;
-! +Det+Qnt+Sem/Phonenr+Sg+Acc: # ;
-
-
-
-
 
