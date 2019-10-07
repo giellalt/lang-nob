@@ -1,0 +1,67 @@
+!! !!!Tags for numerals (number words)
+
+!! !!Basic tags
+LEXICON numtag
++Det+Qnt+Pl: # ;
+
+LEXICON numtagsg
++Det+Qnt+Sg: # ;
+
+
+!! !!Tags for special use
+
+!! !Date
+LEXICON datetag
+ +Det+Qnt+Sem/Date+Sg:  # ;
+
+LEXICON dateyearcase_nullsuff_w_dot_tag
+ +Det+Qnt+Sem/Date+Sg:  MARKDOT ;
+
+LEXICON dateyearcase_fullsuff_tag
+ +Det+Qnt+Sem/Date+Sg:   # ;
+
+!! !Clock
+LEXICON numclock
+ +Det+Qnt+Sem/Time-clock+Sg: # ; !foreløpig
+
+LEXICON NUM-ARABICCASES
++Det+Qnt+Sg:   # ;
+
+LEXICON ID-ARABIC
++Det+Sem/ID:   # ;
+
+LEXICON ARABICLOOPORD   !!≈ * __@CODE@__ ordinals
+ +A+Ord: MARKDOT ;
+
+LEXICON ACASETAG   !!≈ * __@CODE@__  is for 1e+Det+Qnt+Sg+Det+Qnt:1e
++Det+Qnt+Sg: # ;
+
+LEXICON ARABICLOOPCOLL   !!≈ * __@CODE@__ collectives
+  ARABICDELIMITER ;
+
+LEXICON ARABICDELIMITER   !!≈ * __@CODE@__  blank + 3 delim, what does the lg counc prefer?
+ +Det+Qnt+Sg:            #      ; ! This is the 1984 case, ie NGA
+
+LEXICON ROMNUMTAG   !!≈ * __@CODE@__
+  +Det+Qnt+Rom+Use/Circ:  #            ;
+  +A+Rom+Ord+Use/Circ:%.  #            ; ! !III. as ordinal.
+
+LEXICON yeartag
+ +Det+Qnt+Sem/Year+Sg: # ;
+
+LEXICON yeartagpl
+ +Det+Qnt+Sem/Year+Pl: # ;
+
+LEXICON NUMTAG
++Det+Qnt:  # ;
+
+LEXICON RNum
+      +Cmp/Hyph+Cmp#:-∑# NounRoot ; ! For Num Cmp Noun, vi vil ikke ha Num Cmp Num
+
+
+
+
+!LEXICON ARABICCASEphone  
+! +Det+Qnt+Sem/Phonenr+Sg+Nom: # ;
+! +Det+Qnt+Sem/Phonenr+Sg+Acc: # ;
+
