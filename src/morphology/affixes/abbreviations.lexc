@@ -19,12 +19,27 @@
 !! !!Lexica for adding tags and periods
 ! ----------------------------------
 
-LEXICON ab ! No POS, don't know what pos, guessing N
-ab-noun ;
 LEXICON ab-dot
 ab-dot-noun ;
-LEXICON ab-nodot
-ab-nodot-noun ;
+
+
+! Do not quite know, but assuming noun.
+
+LEXICON ab-dot-trab 
+ab-dot-noun-trab 	  ;
+LEXICON ab-dot-trnumab 
+ab-dot-noun-trnumab   ;
+LEXICON ab-itrab 
+ab-noun-itrab 		  ;
+LEXICON ab-nodot-trab 
+ab-nodot-noun-trab 	  ;
+LEXICON ab-nodot-trnumab 
+ab-nodot-noun-trnumab ;
+LEXICON ab-trab 
+ab-noun-trab 		  ;
+LEXICON ab-trnumab
+ab-noun-trnumab		  ;
+
 
 !! !!The sublexica
 
@@ -69,6 +84,8 @@ LEXICON ab-nodot-noun-trnumab
 +ABBR+Gram/TNumAbbr: ab-nodot-noun ;
 LEXICON ab-nodot-noun   !!= * __@CODE@__  The bulk
 +N+ABBR: # ;
+
+
 
 LEXICON ab-nodot-adj-itrab
 +ABBR+Gram/IAbbr: ab-nodot-adj ;
