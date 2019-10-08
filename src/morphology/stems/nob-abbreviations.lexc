@@ -277,22 +277,22 @@ Arkivsaksnr ab-dot-noun ;
 arkivsaksnr ab-dot-noun ;
 Arkivsaknr ab-dot-noun ;
 arkivsaknr ab-dot-noun ;
-Apd		ab-dot ;                        
-Bnr		ab-dot-noun ;                   
-Gnr		ab-noun ;                       
+Apd  ab-dot ;                        
+Bnr  ab-dot-noun ;                   
+Gnr  ab-noun ;                       
 ILO-konv.% nr:ILO-konv.% nr ab-dot ;
 ILOkonv.% nr:ILOkonv.% nr ab-dot ;
 Jak ab-dot-noun ;
-Kommunenr	ab-dot-noun ;
-O.nr		ab-noun ;                   
+Kommunenr ab-dot-noun ;
+O.nr  ab-noun ;                   
 P.b ab ;
 Pb              ab-noun ; ! Postbox
 Pb ab ;
-Postnr		ab-dot-noun ;
+Postnr  ab-dot-noun ;
 Ref ab ;
-Rt		ab-dot ;                        
+Rt  ab-dot ;                        
 Rv ab ;
-S.nr		ab-noun ;                   
+S.nr  ab-noun ;                   
 St.% meld.% nr:St.% meld.% nr ab-dot ;
 St.% meld:St.% meld ab-dot ;
 St.meld ab-dot ;
@@ -302,25 +302,25 @@ Tlf ab ;
 a.% D:a.% D ab ;
 a.D ab ;
 a.D ab-dot ;
-alm		ab-dot ;                        
-avd		ab-noun ;                       
+alm  ab-dot ;                        
+avd  ab-noun ;                       
 avsn ab ;
-b.c		ab-dot ;  !b.c. 18-22
-bnr		ab-noun ;                       
-fnr		ab-noun ;
-gnr		ab-dot-noun ;                   
+b.c  ab-dot ;  !b.c. 18-22
+bnr  ab-noun ;                       
+fnr  ab-noun ;
+gnr  ab-dot-noun ;                   
 gnr ab ;
-j		ab-dot ;                        
-jnr		ab-dot ;                        
-kap		ab-dot-noun ;                   
+j  ab-dot ;                        
+jnr  ab-dot ;                        
+kap  ab-dot-noun ;                   
 kr ab ;
 lnr ab ;
 maks ab ;
 mill ab ;
-mob		ab-noun ;
+mob  ab-noun ;
 mobiltlf ab ;
 nkr ab ;
-nr		ab-noun ; ! Nr nicht            
+nr  ab-noun ; ! Nr nicht            
 nr ab ;
 op ab ;
 oppg ab ;
@@ -331,16 +331,16 @@ pgf ab ;
 pst ab ;
 ref ab ;
 rv ab ;
-s		ab-noun ;                       
+s  ab-noun ;                       
 setn ab ;
 st.% meld.% nr:st.% meld.% nr ab-dot ;
 st.meld ab-dot ;
 st.meld.% nr:st.meld.% nr ab-dot ;
 st.meld.nr ab-dot ;
-tab	ab ; ! or: Add capital Tab.         
-tlf		ab-dot-noun ;                   
+tab ab ; ! or: Add capital Tab.         
+tlf  ab-dot-noun ;                   
 tlf ab ;
-vnr		ab-dot-noun ;                   
+vnr  ab-dot-noun ;                   
 § ab-nodot ;
 
 
