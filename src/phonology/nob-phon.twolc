@@ -15,8 +15,17 @@ Alphabet
 ! 0:d
  s:'
 
-
- %#:0 %>:0 
+! Morpheme boundaries and escaped quotes - leave as is,
+! they will be converted to zero/the real thing at a later stage.
+ %#
+ %>
+ %<
+ %|»
+ «%|
+ «7
+ »7
+ %[%<%]
+ %[%>%]
 
  X1:0 X2:0 X3:0 X4:0 X5:0 X6:0 X7:0 X8:0 X9:0
  Q1:0 Q2:0 Q3:0 Q4:0 Q5:0 Q6:0 Q7:0 Q8:0 Q9:0
