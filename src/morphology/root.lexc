@@ -122,6 +122,7 @@ l7 ! always l
 +Gram/IAbbr
 +Gram/TAbbr
 +Gram/TNumAbbr
++Gram/NumNoAbbr
 
 !! ! Semantic tags
 ! +Sem/Amount +Sem/Curr +Sem/Domain_Hum +Sem/Edu_Hum +Sem/Food-med +Sem/Lang +Sem/Part
