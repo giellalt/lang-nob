@@ -33,7 +33,6 @@ GT_LEXC_SRCS_L1_L2=\
 			   affixes/symbols.lexc     \
 			   affixes/numerals.lexc     \
 			   affixes/verbs.lexc       \
-			   stems/nob-abbreviations.lexc \
 			   stems/adjectives.lexc    \
 			   stems/adverbs.lexc       \
 			   stems/conjunctions.lexc  \
@@ -62,7 +61,7 @@ GT_LEXC_L2_SRCS=\
 
 # Set this to the names of all generated lexc files, if any
 GENERATED_LEXC_SRCS=generated_files/smi-$(GTLANG)-propernouns.lexc \
-                    generated_files/smi-abbreviations.lexc \
+                    generated_files/smi-$(GTLANG)-abbreviations.lexc \
                     generated_files/punctuation.lexc \
                     generated_files/smi-acronyms.lexc \
                     generated_files/arabic_roman_digits.lexc \
@@ -79,7 +78,8 @@ GT_LOCAL_XFSCRIPT_SRCS=
 
 # Define here any additional sources just included in the distro:
 GT_DISTRO_SRCS=stems/$(GTLANG)-propernouns.lexc \
-		$(top_srcdir)/src/scripts/smi-$(GTLANG)-conversion.pl
+			  stems/$(GTLANG)-abbreviations.lexc \
+			  $(top_srcdir)/src/scripts/smi-$(GTLANG)-conversion.pl
 
 
 ### BEGIN: Local processing: ###
@@ -102,6 +102,11 @@ generated_files/arabic_roman_digits.lexc: \
 	$(AM_V_at)$(MKDIR_P) generated_files
 	$(AM_V_GEN)cp -f $< $@
 
+generated_files/smi-abbreviations.lexc: \
+			$(GIELLA_SHARED)/smi/src/morphology/stems/smi-abbreviations.lexc
+	$(AM_V_at)$(MKDIR_P) generated_files
+	$(AM_V_GEN)cp -f $< $@
+
 generated_files/smi-$(GTLANG)-propernouns.lexc: \
 		generated_files/smi-propernouns.lexc \
 		$(srcdir)/stems/$(GTLANG)-propernouns.lexc
@@ -112,11 +117,6 @@ generated_files/smi-$(GTLANG)-propernouns.lexc: \
 	echo "" >> $@ && \
 	$(top_srcdir)/src/scripts/smi-$(GTLANG)-conversion.pl $< >> $@
 
-generated_files/smi-abbreviations.lexc: \
-			$(GIELLA_SHARED)/smi/src/morphology/stems/smi-abbreviations.lexc
-	$(AM_V_at)$(MKDIR_P) generated_files
-	$(AM_V_GEN)cp -f $< $@
-
 generated_files/smi-$(GTLANG)-abbreviations.lexc: \
 		generated_files/smi-abbreviations.lexc \
 		$(srcdir)/stems/$(GTLANG)-abbreviations.lexc
@@ -126,8 +126,6 @@ generated_files/smi-$(GTLANG)-abbreviations.lexc: \
 	echo "! <--- Dump from SMI -->" >> $@ && \
 	echo "" >> $@ && \
 	$(top_srcdir)/src/scripts/smi-$(GTLANG)-conversion.pl $< >> $@
-
-
 
 generated_files/%.lexc: \
 			$(GIELLA_SHARED)/smi/src/morphology/stems/%.lexc
