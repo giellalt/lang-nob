@@ -125,7 +125,8 @@ generated_files/smi-$(GTLANG)-abbreviations.lexc: \
 	echo "" >> $@ && \
 	echo "! <--- Dump from SMI -->" >> $@ && \
 	echo "" >> $@ && \
-	cat $< >> $@
+	$(top_srcdir)/src/scripts/smi-$(GTLANG)-conversion.pl $< >> $@
+
 
 
 generated_files/%.lexc: \
