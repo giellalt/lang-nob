@@ -649,7 +649,7 @@ Lac PROP-sur ;
 Mac PROP-obj ;
 Pec PROP-sur ;
 Vác PROP-sur ;
-Siskin0d PROP ; !The Gen form is Siskindda. How to make it?
+Siskind PROP ; !The Gen form is Siskindda. How to make it?
 Gad PROP-sur ;
 Sad PROP-sur ;
 Holmblad PROP-sur ;
@@ -1607,7 +1607,7 @@ Namskogan PROP-plc ;
 Kåfjordbergan PROP-plc ;
 Máijan PROP ; ! is this correct, or Essive?
 Kjørvågmárkan PROP-plc ;
-Ál0lan PROP-mal ;
+Állan PROP-mal ;
 Valan PROP-plc ;
 Köbenhámman PROP-plc ;
 Københámman PROP-plc ;
@@ -1897,9 +1897,9 @@ Juhán PROP-mal ;
 Geakkán PROP-plc ; !Not sure
 Ellán PROP-fem ;
 Niillán PROP ; !WHAT IS THIS?
-Án0nán PROP-fem ;
+Ánnán PROP-fem ;
 Deahppán PROP-mal ;
-Bier0rán PROP-mal ;
+Bierrán PROP-mal ;
 Issán PROP-mal ;
 Jón PROP-mal ;
 Høn PROP-sur ;
@@ -2175,7 +2175,7 @@ Amerihká PROP-plc ;
 Olá PROP-mal ;
 Nilá PROP-mal ;
 Sálá PROP-plc ;
-Ám0má PROP-mal ;
+Ámmá PROP-mal ;
 Paraná PROP-plc ;
 Lená PROP-fem ;
 Diinná PROP-plc ;
