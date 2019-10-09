@@ -76,15 +76,17 @@ analyser-gt-desc.%: analyser-gt-desc.tmp.%                    \
 		 quit\n" | $(XFST_TOOL)
 
 # And also for the normative analyser (foma and hfst):
-analyser-gt-norm.%: analyser-gt-norm.tmp.% \
-					filters/remove-MinusSpell-strings.%                    \
-					filters/convert_to_flags-CmpNP-tags.%                  \
+analyser-gt-norm.%: analyser-gt-norm.tmp.%                \
+					filters/remove-Nynorsk-strings.%      \
+					filters/remove-MinusSpell-strings.%   \
+					filters/convert_to_flags-CmpNP-tags.% \
 					filters/split-CmpNP-tags.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
-			    @\"filters/remove-MinusSpell-strings.$*\"                   \
-			.o. @\"filters/convert_to_flags-CmpNP-tags.$*\"            \
-			.o. @\"filters/split-CmpNP-tags.$*\"                            \
-			.o. @\"$<\"                                                     \
+				@\"filters/remove-Nynorsk-strings.$*\"      \
+			.o. @\"filters/remove-MinusSpell-strings.$*\"   \
+			.o. @\"filters/convert_to_flags-CmpNP-tags.$*\" \
+			.o. @\"filters/split-CmpNP-tags.$*\"            \
+			.o. @\"$<\"                                     \
 			;\n\
 		 twosided flag-diacritics\n\
 		 $(INVERT_HFST)\
@@ -102,13 +104,10 @@ analyser-gt-norm.xfst: analyser-gt-norm.tmp.xfst \
 		 save stack $@\n\
 		 quit\n" | $(XFST) $(VERBOSITY)
 
-
-
-
-
 # Special case for the disamb analyser, since it follows the same filename
 # pattern as the raw fst:
-analyser-pmatchdisamb-gt-desc.hfst: analyser-pmatchdisamb-gt-desc.tmp.hfst      \
+analyser-pmatchdisamb-gt-desc.hfst: \
+					analyser-pmatchdisamb-gt-desc.tmp.hfst       \
 					filters/remove-orig_lang-tags.hfst           \
 					filters/remove-homonymy-tags.hfst            \
 					filters/remove-norm-comp-tags.hfst           
@@ -121,9 +120,6 @@ analyser-pmatchdisamb-gt-desc.hfst: analyser-pmatchdisamb-gt-desc.tmp.hfst      
 		 $(INVERT_HFST)\
 		 save stack $@\n\
 		 quit\n" | $(HFST_XFST) -p $(MORE_VERBOSITY)
-
-
-
 
 # Special case for the disamb analyser, since it follows the same filename
 # pattern as the raw fst:
@@ -152,8 +148,9 @@ analyser-gramcheck-gt-desc.hfst: analyser-gramcheck-gt-desc.tmp.hfst \
 	set encode-weights ON\n\
 	read regex \
 			@\"filters/remove-dialect-tags.hfst\"             \
-	    	.o. @\"filters/convert_to_flags-CmpNP-tags.hfst\"            \
 		.o. @\"filters/remove-norm-comp-tags.hfst\"           \
+    	.o. @\"filters/convert_to_flags-CmpNP-tags.hfst\"     \
+		.o. @\"filters/split-CmpNP-tags.$*\"                  \
 		.o. @\"$<\"                                           \
 		.o. @\"orthography/spellrelax-with-flagtags.compose.hfst\" \
 		.o. @\"filters/remove-word-boundary.hfst\"            \
@@ -164,54 +161,22 @@ analyser-gramcheck-gt-desc.hfst: analyser-gramcheck-gt-desc.tmp.hfst \
 	quit\n" | $(HFST_XFST) -p $(MORE_VERBOSITY)
 
 
+generator-gt-norm.%: generator-gt-norm.tmp.%              \
+					filters/remove-Nynorsk-strings.%      \
+					filters/remove-MinusSpell-strings.%   \
+					filters/remove-norm-comp-tags.%
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+				@\"filters/remove-Nynorsk-strings.$*\"      \
+			.o. @\"filters/remove-MinusSpell-strings.$*\"   \
+			.o. @\"filters/remove-norm-comp-tags.$*\"       \
+			.o. @\"$<\"                                     \
+			;\n\
+		 $(INVERT_XFST)$(INVERT_FOMA)\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
 
 
 # These are older (?) -- XXX look at these.
-
-# We need to add processing of language-specific tags in the analyser:
-# HFST:
-analyser-%-norm.hfst: analyser-%-norm.tmp.hfst \
-					 filters/remove-Nynorsk-strings.hfst
-	$(AM_V_RGX2FST)$(PRINTF) "\
-				@\"filters/remove-Nynorsk-strings.hfst\" \
-			.o. @\"$<\"                                       \
-			;" \
-		| $(HFST_REGEXP2FST) $(MORE_VERBOSITY) $(HFST_FLAGS) $(HFST_FORMAT) \
-		  -S --xerox-composition=ON \
-		| $(HFST_INVERT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
-		> $@
-
-# Xerox:
-analyser-%-norm.xfst: analyser-%-norm.tmp.xfst \
-					filters/remove-Nynorsk-strings.xfst
-	$(AM_V_XFST)$(PRINTF) "read regex                         \
-				@\"filters/remove-Nynorsk-strings.xfst\" \
-			.o. @\"$<\"                                       \
-			;\n\
-		 save stack $@\n\
-		 quit\n" | $(XFST) $(VERBOSITY)
-
-# F:
-analyser-%-norm.foma: analyser-%-norm.tmp.foma \
-					filters/remove-Nynorsk-strings.foma
-	$(AM_V_XFST)$(PRINTF) "read regex                         \
-				@\"filters/remove-Nynorsk-strings.foma\" \
-			.o. @\"$<\"                                       \
-			;\n\
-		 save stack $@\n\
-		 quit\n" | $(FOMA) $(VERBOSITY)
-
-# We need to add processing of language-specific tags in the generator:
-# HFST:
-generator-%-norm.hfst: generator-%-norm.tmp.hfst \
-					 filters/remove-Nynorsk-strings.hfst
-	$(AM_V_RGX2FST)$(PRINTF) "\
-				@\"filters/remove-Nynorsk-strings.hfst\" \
-			.o. @\"$<\"                                       \
-			;" \
-		| $(HFST_REGEXP2FST) $(MORE_VERBOSITY) $(HFST_FLAGS) $(HFST_FORMAT) \
-		  -S --xerox-composition=ON \
-		> $@
 
 # Xerox:
 generator-%-norm.xfst: generator-%-norm.tmp.xfst \
@@ -223,17 +188,6 @@ generator-%-norm.xfst: generator-%-norm.tmp.xfst \
 		 invert net\n\
 		 save stack $@\n\
 		 quit\n" | $(XFST) $(VERBOSITY)
-
-# Foma:
-generator-%-norm.foma: generator-%-norm.tmp.foma \
-					 filters/remove-Nynorsk-strings.foma
-	$(AM_V_XFST)$(PRINTF) "read regex                         \
-				@\"filters/remove-Nynorsk-strings.foma\" \
-			.o. @\"$<\"                                       \
-			;\n\
-		 invert net\n\
-		 save stack $@\n\
-		 quit\n" | $(FOMA) $(VERBOSITY)
 
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
