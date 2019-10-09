@@ -63,6 +63,7 @@ EXTEDITOR=@SEE@
 ##### --include "(pattern1|pattern2|...)"                          #####
 ##### --exclude "(pattern1|pattern2|...)"                          #####
 @GTCORE@/scripts/extract-lemmas.sh \
+    --exclude "( R )" \
     $source_file > $lemmas
 
 ###### Start testing: #######
@@ -110,6 +111,19 @@ for f in $fsttype; do
 			| fgrep -v "+?" | grep -v "^$" | cut -f2 \
 			>> $generated_lemmas.$f.txt
 
+        # Generate nouns, extract those that do not generate in singular,
+        # and plural, and try to generate them as acronyms:
+        sed 's/$/+N+Prop/' $lemmas \
+			| $lookup_tool $generator_file.$suffix \
+			| fgrep "+?" | cut -d "+" -f1 \
+			| sed 's/$/+N+Prop+Pl/' \
+			| $lookup_tool $generator_file.$suffix \
+			| fgrep "+?" | cut -d "+" -f1 \
+			| sed 's/$/+N+Prop+ACR+Msc+Sg+Indef/' \
+			| $lookup_tool $generator_file.$suffix \
+			| fgrep -v "+?" | grep -v "^$" | cut -f2 \
+			>> $generated_lemmas.$f.txt
+
 ###### Collect results, and generate debug info if FAIL: #######
         # Sort and compare original input with resulting output - the diff is
         # used to generate lemmas which are opened in SEE:
@@ -119,7 +133,7 @@ for f in $fsttype; do
         # Open the diff file in SubEthaEdit (if there is a diff):
         if [ -s $result_file.$f.txt ]; then
             grep -v '^$' $result_file.$f.txt \
-              | sed 's/$/+N+Prop/' \
+              | sed 's/$/+N+Prop+Msc+Sg+Indef/' \
               | $lookup_tool $generator_file.$suffix \
               > $gen_result_file.$f.txt
             # If we have an analyser, analyse the missing lemmas as well:
