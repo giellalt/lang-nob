@@ -150,7 +150,7 @@ analyser-gramcheck-gt-desc.hfst: analyser-gramcheck-gt-desc.tmp.hfst \
 			@\"filters/remove-dialect-tags.hfst\"             \
 		.o. @\"filters/remove-norm-comp-tags.hfst\"           \
     	.o. @\"filters/convert_to_flags-CmpNP-tags.hfst\"     \
-		.o. @\"filters/split-CmpNP-tags.$*\"                  \
+		.o. @\"filters/split-CmpNP-tags.hfst\"                \
 		.o. @\"$<\"                                           \
 		.o. @\"orthography/spellrelax-with-flagtags.compose.hfst\" \
 		.o. @\"filters/remove-word-boundary.hfst\"            \
