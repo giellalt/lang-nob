@@ -204,9 +204,9 @@ Rules
 
 
 
-"Double t deleteion"
+"Double t deletion"
 !! __@RULENAME@__  
- t:0 <=> t: %>:0 _ #: ;
+ t:0 <=> t: %>:   _ .#. ;
            Vow t _  e:   LNR X1: %>: ( e | a ) ;  ! sikker:sikre
            Vow t _ (e:0)         %>: Q3:0 [d|t] ; ! kaller:kalte
 
