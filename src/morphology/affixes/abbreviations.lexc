@@ -57,7 +57,9 @@ LEXICON ab-noun   !!= * __@CODE@__
 +Use/NG: ab-dot-noun   ;
 
 LEXICON ab-adj-itrab
-+ABBR+Gram/IAbbr: ab-adj ;
++Gram/IAbbr: ab-adj ;
+LEXICON ab-adj-trab
++Gram/TAbbr: ab-adj ;
 LEXICON ab-adj   !!= * __@CODE@__
          ab-nodot-adj ;
 +Use/NG: ab-dot-adj   ;
