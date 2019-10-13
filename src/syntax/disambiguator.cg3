@@ -25,6 +25,7 @@ LIST s-gr = "$\;" "$:" "$..." "$--" "$-" "$," "$\"" konj >>> <<< CLB ;
 LIST @Adv = Adv;
 LIST spoersmaal-t = "$\?";
 LIST s^periode-beg/CLB-CC = "$\;" "$:" "$..." "$--" "$-" "$," "$\"" konj >>> <<< ;
+LIST ABBR = ABBR ;
 
 LIST %aar% = "år" ;
 LIST %aldri% = "aldri" ;
@@ -701,6 +702,13 @@ CONSTRAINTS
 SECTION
 
 # Giellatekno early rules
+
+# Abbreviations
+REMOVE:NotAbbr ABBR ;
+
+REMOVE:AbbrBeforePara ABBR IF (0 CLB)(1 CLB) ; 
+
+# Nynorsk
 REMOVE:Nynorsk (Nynorsk) ;
 
 REMOVE:Lexicalised CmpS ;
@@ -791,8 +799,6 @@ SELECT Prop IF (0 ("Nordlys"));
 
 REMOVE Pl IF (-1 Pr)(0 ("tillegg"))(1 ("til"));
 
-
-# 
 
 
 
