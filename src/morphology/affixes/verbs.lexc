@@ -31,14 +31,14 @@ LEXICON vx
 LEXICON v12 ! score -> scoret, scorte
                  +V:     inf-prsptc ;
                  +V:     regpres    ;
- +V+Ind+Prs+Nynorsk:%>ar #          ;
+ +V+Ind+Prs+Use/NG+Nynorsk+Use/NG:%>ar #          ;
                          a-et-pret  ;
                         te-pret    ;
 
 LEXICON v13 ! sveve -> svevet, svevde.
                  +V:     inf-prsptc ;
                  +V:     regpres    ;
- +V+Ind+Prs+Nynorsk:%>ar #          ;
+ +V+Ind+Prs+Use/NG+Nynorsk+Use/NG:%>ar #          ;
                          a-et-pret  ;
                          de-pret    ;
 
@@ -54,7 +54,7 @@ LEXICON v14
 LEXICON v1 ! kaste
                  +V:     inf-prsptc ;
                  +V:     regpres    ;
- +V+Ind+Prs+Nynorsk:%>ar #          ;
+ +V+Ind+Prs+Use/NG+Nynorsk+Use/NG:%>ar #          ;
                          a-et-pret  ;
 
 
@@ -106,22 +106,22 @@ LEXICON v3-s ! trives
 LEXICON inf-prsptc
              +Inf:       #          ;
         +Inf+Pass:%>s  # ;
-     +Inf+Nynorsk:%>a    #          ;
-+Inf+Pass+Nynorsk:%>ast # ;
+     +Inf+Use/NG+Nynorsk+Use/NG:%>a    #          ;
++Inf+Pass+Use/NG+Nynorsk+Use/NG:%>ast # ;
              +Imp:Q3X4   #          ;
           +PrsPtc:%>     prfptcsuff ;
-  +PrsPtc+Nynorsk:%>ande #          ;
+  +PrsPtc+Use/NG+Nynorsk+Use/NG:%>ande #          ;
              +ING:%>ing  #          ;
 
 LEXICON regpres
               +Ind+Prs:%>er  # ;
          +Ind+Prs+Pass:%>es  # ;
-      +Ind+Prs+Nynorsk:%>ast # ;
+      +Ind+Prs+Use/NG+Nynorsk+Use/NG:%>ast # ;
 
 LEXICON r-pres
               +Ind+Prs:%>r  # ;
          +Ind+Prs+Pass:%>s  # ;
- +Ind+Prs+Pass+Nynorsk:%>st # ;
+ +Ind+Prs+Pass+Use/NG+Nynorsk+Use/NG:%>st # ;
 
 LEXICON a-et-pret
  +V+Ind+Prt+Radical:%>a  # ;
@@ -149,7 +149,7 @@ LEXICON dde-pret
 
 LEXICON prfptcsuff
          :ende # ;
- +Nynorsk:ande # ;
+ +Use/NG+Nynorsk+Use/NG:ande # ;
 
 
 
