@@ -124,7 +124,7 @@ LEXICON m1-e- ! stut, stuteplage
 LEXICON m1morph
          +N+Msc+Sg: 0-en   ;
          +N+Msc+Pl: er-ene ;
- +N+Msc+Pl+Use/NG+Nynorsk+Use/NG: ar-ane ;
+ +N+Msc+Pl+Nynorsk+Use/NG: ar-ane ;
 
 LEXICON m1sg ! bruk
  +N+Msc+Sg: 0-en ;
@@ -136,25 +136,25 @@ LEXICON m1pl ! gamledager
 LEXICON m1X
          +N+Msc+Sg:   0-en   ;
          +N+Msc+Pl:Z1 er-ene ;
- +N+Msc+Pl+Use/NG+Nynorsk+Use/NG:Z1 ar-ane ;
+ +N+Msc+Pl+Nynorsk+Use/NG:Z1 ar-ane ;
                 +N:   R      ;
 
 LEXICON m1b ! dam
          +N+Msc+Sg:mX4 0-en   ;
          +N+Msc+Pl:m   er-ene ;
- +N+Msc+Pl+Use/NG+Nynorsk+Use/NG:m   ar-ane ;
+ +N+Msc+Pl+Nynorsk+Use/NG:m   ar-ane ;
                 +N:    R      ;
 
 LEXICON m1c ! fe, komite
          +N+Msc+Sg: 0-en   ;
          +N+Msc+Pl: er-ene ;
- +N+Msc+Pl+Use/NG+Nynorsk+Use/NG: ar-ane ;
+ +N+Msc+Pl+Nynorsk+Use/NG: ar-ane ;
                 +N: R      ;
 
 LEXICON m1V ! sko
          +N+Msc+Sg: 0-en  ;
          +N+Msc+Pl: 0-ene ;
- +N+Msc+Pl+Use/NG+Nynorsk+Use/NG: 0-a   ;
+ +N+Msc+Pl+Nynorsk+Use/NG: 0-a   ;
                 +N: R     ;
 
 LEXICON m2 ! lærer
@@ -167,7 +167,7 @@ LEXICON m2 ! lærer
 LEXICON m3 ! onkel
          +N+Msc+Sg:   0-en     ;
          +N+Msc+Pl:X1 e-er-ene ; ! X1 deletes the vowel -e-
- +N+Msc+Pl+Use/NG+Nynorsk+Use/NG:X1 ar-ane   ; ! X1 deletes the vowel -e-
+ +N+Msc+Pl+Nynorsk+Use/NG:X1 ar-ane   ; ! X1 deletes the vowel -e-
                 +N:   R        ;
 
 LEXICON m3V ! meter
@@ -195,25 +195,25 @@ LEXICON KONTO
          +N+Msc+Sg:     0-en   ;
          +N+Msc+Pl:X2i  0-ene  ; ! delete o
          +N+Msc+Pl:     er-ene ; ! Regular pl
- +N+Msc+Pl+Use/NG+Nynorsk+Use/NG:     ar-ane ; ! Regular pl
+ +N+Msc+Pl+Nynorsk+Use/NG:     ar-ane ; ! Regular pl
                 +N:     R      ;
 
 LEXICON RADIUS
          +N+Msc+Sg:%>us 0-en   ;
      +N+Msc+Sg+Def:%>en K      ; ! short def
          +N+Msc+Pl:     er-ene ; ! Regular pl
- +N+Msc+Pl+Use/NG+Nynorsk+Use/NG:     ar-ane ; ! Regular pl
+ +N+Msc+Pl+Nynorsk+Use/NG:     ar-ane ; ! Regular pl
                 +N:     R      ;
 
 LEXICON BROR
          +N+Msc+Sg:bror  0-en  ;
          +N+Msc+Pl:brødr e-ene ;
- +N+Msc+Pl+Use/NG+Nynorsk+Use/NG:brør  0-ne  ;
+ +N+Msc+Pl+Nynorsk+Use/NG:brør  0-ne  ;
 
 LEXICON BRODER
          +N+Msc+Sg:broder 0-en  ;
          +N+Msc+Pl:brødr  e-ene ;
- +N+Msc+Pl+Use/NG+Nynorsk+Use/NG:brør   0-ne  ;
+ +N+Msc+Pl+Nynorsk+Use/NG:brør   0-ne  ;
 
 LEXICON FAR
   +N+Msc+Sg:far  0-en  ;
@@ -227,8 +227,8 @@ LEXICON DATTER
 !   +N+Fem+Sg+Def+Radical:datra    K ;
           +N+Fem+Sg+Indef:døtre    K ;
             +N+Fem+Sg+Def:døtrene  K ;
-  +N+Fem+Sg+Use/NG+Nynorsk+Use/NG+Indef:dotter   K ;
-    +N+Fem+Sg+Use/NG+Nynorsk+Use/NG+Def:dotra    K ;
+  +N+Fem+Sg+Nynorsk+Use/NG+Indef:dotter   K ;
+    +N+Fem+Sg+Nynorsk+Use/NG+Def:dotra    K ;
 !                      +N:         R ;
 
 LEXICON MOR

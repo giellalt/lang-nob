@@ -35,7 +35,7 @@ LEXICON a1
 
 LEXICON a2lig
          :ig a2 ; ! herlig
- +Use/NG+Nynorsk+Use/NG:eg a2 ; ! herleg
+ +Nynorsk+Use/NG:eg a2 ; ! herleg
 
 LEXICON a2 !
  +A: positive    ;
@@ -70,9 +70,9 @@ LEXICON aV ! ny, fri
              +A+Superl:est  # ;
          +A+Superl+Def:este # ;
 
-       +A+Comp+Use/NG+Nynorsk+Use/NG:are  # ;
-     +A+Superl+Use/NG+Nynorsk+Use/NG:ast  # ;
- +A+Superl+Def+Use/NG+Nynorsk+Use/NG:aste # ;
+       +A+Comp+Nynorsk+Use/NG:are  # ;
+     +A+Superl+Nynorsk+Use/NG:ast  # ;
+ +A+Superl+Def+Nynorsk+Use/NG:aste # ;
 
 
 LEXICON EGEN ! legen
@@ -119,18 +119,18 @@ LEXICON grade-e
          +Superl+Indef:%>est  # ;
            +Superl+Def:%>este # ;
 
-         +Comp+Use/NG+Nynorsk+Use/NG:%>are  # ;
- +Superl+Indef+Use/NG+Nynorsk+Use/NG:%>ast  # ;
-   +Superl+Def+Use/NG+Nynorsk+Use/NG:%>aste # ;
+         +Comp+Nynorsk+Use/NG:%>are  # ;
+ +Superl+Indef+Nynorsk+Use/NG:%>ast  # ;
+   +Superl+Def+Nynorsk+Use/NG:%>aste # ;
 
 LEXICON grade-C
                  +Comp:%>ere  # ;
          +Superl+Indef:%>est  # ;
            +Superl+Def:%>este # ;
 
-         +Comp+Use/NG+Nynorsk+Use/NG:%>are  # ;
- +Superl+Indef+Use/NG+Nynorsk+Use/NG:%>ast  # ;
-   +Superl+Def+Use/NG+Nynorsk+Use/NG:%>aste # ;
+         +Comp+Nynorsk+Use/NG:%>are  # ;
+ +Superl+Indef+Nynorsk+Use/NG:%>ast  # ;
+   +Superl+Def+Nynorsk+Use/NG:%>aste # ;
 
 
 
@@ -169,7 +169,7 @@ LEXICON GOD
             +A+Superl:best  # ;
         +A+Superl+Def:beste # ;
 
-      +A+Comp+Use/NG+Nynorsk+Use/NG:betre # ;
+      +A+Comp+Nynorsk+Use/NG:betre # ;
 
 LEXICON LITEN
  +A+Pos+Msc+Sg+Indef:liten  # ;
