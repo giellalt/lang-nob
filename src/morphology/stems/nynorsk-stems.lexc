@@ -1,27 +1,27 @@
 
 LEXICON Prnyn
-+Pr+Nynorsk: # ;
++Pr+Nynorsk+Use/NG: # ;
 
 LEXICON Advnyn
-+Adv+Nynorsk: # ;
++Adv+Nynorsk+Use/NG: # ;
 
 LEXICON Anyn
-+A+Nynorsk: # ;
++A+Nynorsk+Use/NG: # ;
 
 LEXICON Vnyn
-+V+Nynorsk: # ;
++V+Nynorsk+Use/NG: # ;
 
 !LEXICON Nnyn_m1
-!+N+Nynorsk: # ;
+!+N+Nynorsk+Use/NG: # ;
 
 LEXICON Propnyn
-+N+Prop+Nynorsk: # ;
++N+Prop+Nynorsk+Use/NG: # ;
 
 LEXICON Pronnyn
-+Pron+Nynorsk: # ;
++Pron+Nynorsk+Use/NG: # ;
 
 LEXICON nnnb 
-+Nynorsk: # ;
++Nynorsk+Use/NG: # ;
 
 LEXICON Nynorsk
 
@@ -71,21 +71,21 @@ kalle:kalla Vnyn ;
 
 måned:månad m1 ;
 skuddår:skotår n1 ;
-dø+V+Ind+Prt+Nynorsk:døydde # ;
-dø+V+Inf+Nynorsk:døy # ;
+dø+V+Ind+Prt+Nynorsk+Use/NG:døydde # ;
+dø+V+Inf+Nynorsk+Use/NG:døy # ;
 
 begynne:byrja Vnyn ;
 kjent:kjend Anyn ;
 født:fødd Anyn ;
-verdenskrig+Nynorsk:verdskrig m1 ;
-middelalder+Nynorsk:mellomalder m3 ;
+verdenskrig+Nynorsk+Use/NG:verdskrig m1 ;
+middelalder+Nynorsk+Use/NG:mellomalder m3 ;
 
-navn+Nynorsk:namn n1 ;
-kirke+Nynorsk:kyrkje f1 ;
-hovedsak+Nynorsk:hovudsak f1 ;
-innbygger+Nynorsk:innbyggjar m2 ;
-gang+Nynorsk:gong m1 ;
-tall+Nynorsk:tal n1 ;
+navn+Nynorsk+Use/NG:namn n1 ;
+kirke+Nynorsk+Use/NG:kyrkje f1 ;
+hovedsak+Nynorsk+Use/NG:hovudsak f1 ;
+innbygger+Nynorsk+Use/NG:innbyggjar m2 ;
+gang+Nynorsk+Use/NG:gong m1 ;
+tall+Nynorsk+Use/NG:tal n1 ;
 
 noen:nokre Pronnyn ;
 jeg:eg Pronnyn ;
@@ -165,7 +165,7 @@ visshet:visse nnnb ;
 tirsdag:tysdag nnnb ;
 tegn:teikn nnnb ;
 hovedsak:hovudsak nnnb ;
-stedsnavn+Nynorsk:stadnamn n1 ;
+stedsnavn+Nynorsk+Use/NG:stadnamn n1 ;
 kjøtt:kjøt nnnb ;
 hovedstad:hovudstad nnnb ;
 genitiv:genitiv nnnb ;
