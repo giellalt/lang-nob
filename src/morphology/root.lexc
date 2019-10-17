@@ -276,7 +276,7 @@ LEXICON Root !!= * @CODE@
  Symbols     ;	  !!= * @CODE@
  Abbreviation ;	  !!= * @CODE@
  Acronym-smi ;	  !!= * @CODE@
- Nynorsk ;        !!= * @CODE@ Accepts nno forms
+ +Use/NG: Nynorsk ;        !!= * @CODE@ Accepts nno forms, does not generate
 ! Particle ;
 
 LEXICON AdjectivePrefix

@@ -173,7 +173,7 @@ LEXICON m3 ! onkel
 LEXICON m3V ! meter
  +N+Msc+Sg:   0-en  ;
  +N+Msc+Pl:X1 0-ene ;
- +N+Msc+Pl:X1 0-ane ;
+ +N+Msc+Pl+Use/NG:X1 0-ane ;
         +N:   R     ;
 
 LEXICON m1n3
@@ -188,13 +188,13 @@ LEXICON ma ! alliert
 LEXICON KOLLEGA
  +N+Msc+Sg:   0-en   ;
  +N+Msc+Pl:X2 er-ene ; ! delete a, kolleger
- +N+Msc+Pl:   er-ene ; ! keep a, kollegaer
+ +N+Msc+Pl+Use/NG:   er-ene ; ! keep a, kollegaer
         +N:   R      ;
 
 LEXICON KONTO
          +N+Msc+Sg:     0-en   ;
          +N+Msc+Pl:X2i  0-ene  ; ! delete o
-         +N+Msc+Pl:     er-ene ; ! Regular pl
+         +N+Msc+Pl+Use/NG:     er-ene ; ! Regular pl
  +N+Msc+Pl+Nynorsk+Use/NG:     ar-ane ; ! Regular pl
                 +N:     R      ;
 
@@ -243,9 +243,10 @@ LEXICON GÅS
 
 LEXICON KU
      +N+Fem+Sg:ku   0-a    ;
+ +N+Fem+Sg+Def:kua K      ;
  +N+Msc+Sg+Def:kuen K      ;
      +N+Fem+Pl:kyr  0-a    ;
-     +N+Fem+Pl:ku   er-ene ;
+     +N+Fem+Pl+Use/NG:ku   er-ene ;
 
 LEXICON KLE
  +N+Neu+Sg+Indef:kle    K     ;
@@ -413,7 +414,7 @@ LEXICON n5 ! middel
 LEXICON FORUM ! forum
  +N+Neu+Sg:um 0-et   ;
  +N+Neu+Pl:   a-aene ;
- +N+Neu+Pl:um er-ene ;
+ +N+Neu+Pl+Use/NG:um er-ene ;
         +N:um R      ;
 
 LEXICON LEKSIKON ! leksikon
@@ -456,7 +457,7 @@ LEXICON e-ene
 
 LEXICON e-ene-a
  +Indef:%>e   K ;
-   +Def:%>ene K ;
+   +Def+Use/NG:%>ene K ;
    +Def:%>a   K ;
 
 LEXICON er-ene
@@ -464,13 +465,13 @@ LEXICON er-ene
    +Def:%>ene K ;
 
 LEXICON e-er-ene
- +Indef:%>e   K ;
+ +Indef+Use/NG:%>e   K ;
  +Indef:%>er  K ;
    +Def:%>ene K ;
 
 LEXICON er-ene-a
  +Indef:%>er  K ;
-   +Def:%>ene K ;
+   +Def+Use/NG:%>ene K ;
    +Def:%>a   K ;
 
 LEXICON ar-ane	 !! @CODE@ for nynorsk only.
@@ -509,8 +510,8 @@ LEXICON 0-ene
 
 LEXICON 0-er-ene-a
  +Indef:      K ;
- +Indef:%>er  K ;
-   +Def:%>ene K ;
+ +Indef+Use/NG:%>er  K ;
+   +Def+Use/NG:%>ene K ;
    +Def:%>a   K ;
 
 LEXICON 0-ne
@@ -523,7 +524,7 @@ LEXICON 0-et
 
 LEXICON 0-ene-a
         +Indef:      K ;
-          +Def:%>ene K ;
+          +Def+Use/NG:%>ene K ;
           +Def:%>a   K ;
 ! +Def+Radical:%>a   K ; ! If needed
 

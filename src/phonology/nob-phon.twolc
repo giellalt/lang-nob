@@ -96,8 +96,7 @@ Rules
 !! __@RULENAME@__  
  e:0 <=>          Cns: _ LNR X1: %>: ( e | a ) ;
          Vow ( Cns:* ) _ ( Dummy:* - Z2: ) %>:0 [ Vow | Cns Cns ] ;
-		       _ %>:0 Q3: ;
-                       _ Q3: X4: ;
+		       _ [%>:0 Q3:|Q3: X4:] ;
              i g %>:0  _ s t ;
 
 !!€ teaterX1>et
@@ -105,6 +104,9 @@ Rules
 
 !!€ modenX1>e
 !!€ mod0n00e
+
+!!€ reparere>Q3te
+!!€ reparer000te
 
 !!$ modenX1>e
 !!$ moden00e
