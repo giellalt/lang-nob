@@ -63,8 +63,8 @@ LEXICON ACRONOUN              ! Here we add the POS tag
 +N+ACR: acroconnector ;
 
 LEXICON acroconnector     ! Here comes a set of possible symbols to ...
-               acronull ; ! SgNom only in sma
-         :%>%: acrosuff ;
+                acronull ; ! SgNom only in sma
+   +Use/NG:%>%: acrosuff ;
  +Err/Orth:%>%- acrosuff ; 
  +Err/Orth:%>   acrosuff ; ! ... put between the abbreviation and its suffix
  +Err/Orth:%>'  acrosuff ; ! No POS tag here in order to avoid the POS
