@@ -148,7 +148,7 @@ Basic lexica, pointing to the other lexicon files
  *  Symbols     ;	  
  *  Abbreviation ;	  
  *  Acronym-smi ;	  
- *  Nynorsk ;         Accepts nno forms
+ *  +Use/NG: Nynorsk ;         Accepts nno forms, does not generate
 
 
 

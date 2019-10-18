@@ -159,7 +159,7 @@ Basic lexica, pointing to the other lexicon files
  *  Symbols     ;	  
  *  Abbreviation ;	  
  *  Acronym-smi ;	  
- *  Nynorsk ;         Accepts nno forms
+ *  +Use/NG: Nynorsk ;         Accepts nno forms, does not generate
 
 
 
@@ -192,14 +192,10 @@ Basic lexica, pointing to the other lexicon files
 
 
 
-Nynorsk dictionary rules
 
 __Change -er stem to -ar in Nynorsk__  
 
-This rule is for dictionary use only.
 
-* __lærer%^NYNAG __
-* __lærar0 __
 
 
 
@@ -211,6 +207,9 @@ __e Deletion__
 
 * __modenX1>e __
 * __mod0n00e __
+
+* __reparere>Q3te __
+* __reparer000te __
 
 * __*modenX1>e __ (is not standard language)
 * __*moden00e __ (is not standard language)
