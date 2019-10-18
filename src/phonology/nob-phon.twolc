@@ -7,23 +7,23 @@ Alphabet
  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Ø Å
  Á É Ó Ú Í À È Ò Ù Ì Ä Ë Ö Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð
  '
- o:ø u:y a:e g:0 e:0 m:0 r:0 t:0 u:0
- l7:l ! This one not deleted by t
+! o:ø u:y a:e g:0 e:0 m:0 r:0 t:0 u:0
+! l7:l ! This one not deleted by t
 
- t:d
- 0:t
+! t:d
+! 0:t
 ! 0:d
- s:'
+! s:'
 
 ! Morpheme boundaries and escaped quotes - leave as is,
 ! they will be converted to zero/the real thing at a later stage.
  %#
- %>
+ %>:0
  %<
  %|»
  «%|
- «7
- »7
+! «7
+! »7
  %[%<%]
  %[%>%]
 
@@ -76,16 +76,14 @@ Rules
 
 
 
-!! Nynorsk dictionary rules
+! Nynorsk dictionary rules
 
 "Change -er stem to -ar in Nynorsk"
 !! __@RULENAME@__  
  e:a <=> _ r %^NYNAG: ;
 
-!! This rule is for dictionary use only.
+! This rule is for dictionary use only.
 
-!!€ lærer%^NYNAG
-!!€ lærar0
 
  
 
@@ -94,10 +92,10 @@ Rules
 
 "e Deletion"
 !! __@RULENAME@__  
- e:0 <=>          Cns: _ LNR X1: %>: ( e | a ) ;
-         Vow ( Cns:* ) _ ( Dummy:* - Z2: ) %>:0 [ Vow | Cns Cns ] ;
-		       _ [%>:0 Q3:|Q3: X4:] ;
-             i g %>:0  _ s t ;
+ e:0 <=>      Cns:  _ LNR X1: %>:0 ( e | a ) ;
+         Vow  Cns:* _  [Dummy:* - Z2:]  %>:0 [ Vow | Cns Cns ] ;
+	            _ %>:0 Q3: ;
+          i g %>:0  _ s t ;
 
 !!€ teaterX1>et
 !!€ teat0r00et
@@ -119,7 +117,7 @@ Rules
 
 "Consonant shortening before deletion"
 !! __@RULENAME@__  
- Cx:0 <=> Vow Cx _ e: LNR X1: %>: ( e | a ) ;
+ Cx:0 <=> Vow Cx _ e: LNR X1: %>:0 ( e | a ) ;
           where Cx in ( b d v ) ;
 
 !!€ sikkerX1>e
@@ -128,9 +126,9 @@ Rules
 
 "Geminate deletion in front of -t and -d"
 !! __@RULENAME@__  
- Cx:0 <=> Vow Cx _ (e:0)         %>: Q3: [d|t] ; ! kaller:kalte
+ Cx:0 <=> Vow Cx _ (e:0)         %>:0 Q3: [d|t] ; ! kaller:kalte
           Vow Cx _ :t e s  Q1:  ; ! lykkes:lyktes
-          Vow Cx _  e:   LNR X1: %>: ( e | a ) ;  ! sikker:sikre
+          Vow Cx _  e:   LNR X1: %>:0 ( e | a ) ;  ! sikker:sikre
       where Cx in ( f k p s l n g ) ;
 
 !!€ kalle>Q3te
@@ -162,13 +160,13 @@ Rules
 "Delete r"
 !! __@RULENAME@__  
  r:0 <=>   _ %>:0 X3: ;
-         r _ e: LNR X1: %>: ( e | a ) ;
+         r _ e: LNR X1: %>:0 ( e | a ) ;
 ! sparepengar : sparepengane
 
 "Delete m"
 !! __@RULENAME@__  
  m:0 <=>    _ X4: [ #: (Q3:) | %>:0 s ] ;      ! kammX4:kam
-          m _ e: LNR X1: %>: ( e | a ) ; ! gammel:gamle
+          m _ e: LNR X1: %>:0 ( e | a ) ; ! gammel:gamle
           m _ e: %>:0 Q3: t ;
          u: _ X5: %>:0 ;
          
@@ -208,9 +206,9 @@ Rules
 
 "Double t deletion"
 !! __@RULENAME@__  
- t:0 <=> t: %>:   _ .#. ;
-           Vow t _  e:   LNR X1: %>: ( e | a ) ;  ! sikker:sikre
-           Vow t _ (e:0)         %>: Q3:0 [d|t] ; ! kaller:kalte
+ t:0 <=> t: %>:0   _ .#. ;
+           Vow t _  e:   LNR X1: %>:0 ( e | a ) ;  ! sikker:sikre
+           Vow t _ (e:0)         %>:0 Q3:0 [d|t] ; ! kaller:kalte
 
 !!€ svart>t
 !!€ svart00
