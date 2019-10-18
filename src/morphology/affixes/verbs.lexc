@@ -108,7 +108,7 @@ LEXICON inf-prsptc
         +Inf+Pass:%>s  # ;
      +Inf+Nynorsk+Use/NG:%>a    #          ;
 +Inf+Pass+Nynorsk+Use/NG:%>ast # ;
-             +Imp:Q3X4   #          ;
+             +Imp:%>Q3X4   #          ;
           +PrsPtc:%>     prfptcsuff ;
   +PrsPtc+Nynorsk+Use/NG:%>ande #          ;
              +ING:%>ing  #          ;
