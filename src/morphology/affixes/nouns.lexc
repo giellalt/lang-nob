@@ -160,8 +160,8 @@ LEXICON m1V ! sko
 LEXICON m2 ! lærer
  +N+Msc+Sg:        0-en   ;
  +N+Msc+Pl:        e-ne   ;
- +N+Msc+Sg:%^NYNAG 0-en   ;
- +N+Msc+Pl:%^NYNAG ar-ane ;
+ +N+Msc+Sg+Use/NG:%^NYNAG 0-en   ;
+ +N+Msc+Pl+Use/NG:%^NYNAG ar-ane ;
         +N:        R      ;
 
 LEXICON m3 ! onkel
