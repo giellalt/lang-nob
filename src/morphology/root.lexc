@@ -254,6 +254,7 @@ l7 ! always l
 !! !Flags for preprocessing
 
 @P.Pmatch.Backtrack@
+@PMATCH_BACKTRACK@
 
 ! =================================================
 !! Basic lexica, pointing to the other lexicon files

@@ -28,6 +28,9 @@ LEXICON a23
 !  a1 ;
 !  a2 ;
 
+LEXICON a1pos
+ +A: positive ;
+
 LEXICON a1
  +A: positive ;
  +A: a-neuter ;
@@ -77,7 +80,7 @@ LEXICON aV ! ny, fri
 
 LEXICON EGEN ! legen
                   +A:nX1 positive ;
- +A+Pos+Neu+Sg+Indef:t   #        ;
+ +A+Pos+Neu+Sg+Indef:%>t   #        ;
                   +A:nX1 grade-e  ;
 
 LEXICON LIKEDAN !
@@ -229,7 +232,7 @@ LEXICON MANGE
  FLERE ;
 
 LEXICON FLER
-    +A+Comp+Pl+Indef:fler   # ;
+    +A+Comp+Pl+Indef+Use/NG:fler   # ;
 LEXICON FLERE
    +A+Comp+Pl+Indef:flere  # ;
    +A+Superl+Pl+Def:fleste # ;
