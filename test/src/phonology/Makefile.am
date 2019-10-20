@@ -15,8 +15,10 @@ endif # CAN_HFST
 
 # List tests that are presently (expected) failures here, ie things that should
 # be fixed *later*, but is not critical at the moment:
-XFAIL_TESTS=pair-test-hfst.sh \
-	pair-test-positive.sh
+XFAIL_TESTS=
+
+#pair-test-hfst.sh \
+#	pair-test-positive.sh
 
 # Make sure all tests scripts are included in the distributed tarballs:
 EXTRA_DIST=pair-test-negative.sh.in \
