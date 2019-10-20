@@ -18,7 +18,7 @@ Alphabet
 ! Morpheme boundaries and escaped quotes - leave as is,
 ! they will be converted to zero/the real thing at a later stage.
  %#
- %>:0
+ %>
  %<
  %|»
  «%|
@@ -92,61 +92,61 @@ Rules
 
 "e Deletion"
 !! __@RULENAME@__  
- e:0 <=>      Cns:  _ LNR X1: %>:0 ( e | a ) ;
-         Vow  Cns:* _  [Dummy:* - Z2:]  %>:0 [ Vow | Cns Cns ] ;
-	            _ %>:0 Q3: ;
-          i g %>:0  _ s t ;
+ e:0 <=>      Cns:  _ LNR X1: %> ( e | a ) ;
+         Vow  Cns:* _  [Dummy:* - Z2:]  %> [ Vow | Cns Cns ] ;
+	            _ %> Q3: ;
+          i g %>  _ s t ;
 
 !!€ teaterX1>et
-!!€ teat0r00et
+!!€ teat0r0>et
 
 !!€ modenX1>e
-!!€ mod0n00e
+!!€ mod0n0>e
 
 !!€ reparere>Q3te
-!!€ reparer000te
+!!€ reparer0>0te
 
 !!$ modenX1>e
-!!$ moden00e
+!!$ moden0>e
 
 !!€ hare>er
-!!€ har00er
+!!€ har0>er
 
 !!€ viktig>est
-!!€ viktig00st
+!!€ viktig>0st
 
 "Consonant shortening before deletion"
 !! __@RULENAME@__  
- Cx:0 <=> Vow Cx _ e: LNR X1: %>:0 ( e | a ) ;
+ Cx:0 <=> Vow Cx _ e: LNR X1: %> ( e | a ) ;
           where Cx in ( b d v ) ;
 
 !!€ sikkerX1>e
-!!€ sik00r00e
+!!€ sik00r0>e
 
 
 "Geminate deletion in front of -t and -d"
 !! __@RULENAME@__  
- Cx:0 <=> Vow Cx _ (e:0)         %>:0 Q3: [d|t] ; ! kaller:kalte
+ Cx:0 <=> Vow Cx _ (e:0)         %> Q3: [d|t] ; ! kaller:kalte
           Vow Cx _ :t e s  Q1:  ; ! lykkes:lyktes
-          Vow Cx _  e:   LNR X1: %>:0 ( e | a ) ;  ! sikker:sikre
+          Vow Cx _  e:   LNR X1: %> ( e | a ) ;  ! sikker:sikre
       where Cx in ( f k p s l n g ) ;
 
 !!€ kalle>Q3te
-!!€ kal0000te
+!!€ kal00>0te
 
 !!€ lykk0esQ1
 !!€ lyk0tes0
 
 !!€ all>Q3t
-!!€ al000t
+!!€ al0>0t
 
 !!€ bygge>Q3de
-!!€ byg0000de
+!!€ byg00>0de
 
 
 
 !"Delete schwaa" ! h a r e:0 %> e r
-! e:0 <=> Vow ( Cns:* ) _ ( Dummy:* - Z2: ) %>:0 [ Vow | Cns Cns ] ;
+! e:0 <=> Vow ( Cns:* ) _ ( Dummy:* - Z2: ) %> [ Vow | Cns Cns ] ;
 
 "Delete foreign vowel"
 !! __@RULENAME@__  
@@ -154,21 +154,21 @@ Rules
 	where Vx in (a o) ;
 
 !!€ kollegaX2>er
-!!€ kolleg000er
+!!€ kolleg00>er
 
 
 "Delete r"
 !! __@RULENAME@__  
- r:0 <=>   _ %>:0 X3: ;
-         r _ e: LNR X1: %>:0 ( e | a ) ;
+ r:0 <=>   _ %> X3: ;
+         r _ e: LNR X1: %> ( e | a ) ;
 ! sparepengar : sparepengane
 
 "Delete m"
 !! __@RULENAME@__  
- m:0 <=>    _ X4: [ #: (Q3:) | %>:0 s ] ;      ! kammX4:kam
-          m _ e: LNR X1: %>:0 ( e | a ) ; ! gammel:gamle
-          m _ e: %>:0 Q3: t ;
-         u: _ X5: %>:0 ;
+ m:0 <=>    _ X4: [ #: (Q3:) | %> s ] ;      ! kammX4:kam
+          m _ e: LNR X1: %> ( e | a ) ; ! gammel:gamle
+          m _ e: %> Q3: t ;
+         u: _ X5: %> ;
          
 
 "Umlaut"
@@ -185,39 +185,39 @@ Rules
 
 "um Deletion 1"
 !! __@RULENAME@__  
- u:0 <=> _ m: X5: %>:0 ;
+ u:0 <=> _ m: X5: %> ;
 
 !!€ museumX5>er
-!!€ muse0000er
+!!€ muse000>er
 
 !"um Deletion 2" ! now m rule
-! m:0 <=> u: _ X5: %>:0 ;
+! m:0 <=> u: _ X5: %> ;
 
 
 "t weakening"
 !! __@RULENAME@__  
- t:d <=> [Cns:|Vow:] _ X6:0 %>:0 e ;
+ t:d <=> [Cns:|Vow:] _ X6:0 %> e ;
 
 !!€ oppskjørtetX6>e
-!!€ oppskjørted00e
+!!€ oppskjørted0>e
  
 
 
 
 "Double t deletion"
 !! __@RULENAME@__  
- t:0 <=> t: %>:0   _ .#. ;
-           Vow t _  e:   LNR X1: %>:0 ( e | a ) ;  ! sikker:sikre
-           Vow t _ (e:0)         %>:0 Q3:0 [d|t] ; ! kaller:kalte
+ t:0 <=>   Cns t %> _  .#. ;  ! svart
+           Vow t    _  e:  LNR X1: %> (e|a) ;      ! sikker:sikre
+           Vow t    _ (e:0)        %> Q3:0 [d|t] ; ! kaller:kalte
 
 !!€ svart>t
-!!€ svart00
+!!€ svart>0
 
 !" inf-e"
-! e:0 <=> _ %>:0 Q3: ;
+! e:0 <=> _ %> Q3: ;
 
 !!€ presentere%>Q3t
-!!€ presenter000t
+!!€ presenter0>0t
 
 ! Insertion rules
 ! ---------------
@@ -234,7 +234,7 @@ Rules
 
 "Clitic after s-final"
 !! __@RULENAME@__  
- s:' <=> s %>:0 _ ;
+ s:' <=> s %> _ ;
 ! huss -> hus'
 
 ! Test to have an error
