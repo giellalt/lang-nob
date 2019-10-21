@@ -9,6 +9,25 @@ SUBDIRS = filters . apertium
 ##################################################################
 
 
+generator-mt-gt-norm.hfst: generator-mt-gt-norm.tmp.hfst \
+			$(top_builddir)/src/filters/remove-norm-comp-tags.hfst             \
+			$(top_builddir)/src/filters/remove-Use_minus_PMatch-tags.hfst      \
+			$(top_builddir)/src/filters/remove-Use_PMatch-strings.hfst         \
+			$(top_builddir)/src/filters/remove-Use_GC-strings.hfst             \
+			$(top_builddir)/src/filters/remove-Use_minusGC-tags.hfst
+	$(AM_V_RGX2FST)$(PRINTF) "\
+	    @\"$(top_builddir)/src/filters/remove-norm-comp-tags.hfst\"             \
+	.o. @\"$(top_builddir)/src/filters/remove-Use_minus_PMatch-tags.hfst\"      \
+	.o. @\"$(top_builddir)/src/filters/remove-Use_PMatch-strings.hfst\"         \
+	.o. @\"$(top_builddir)/src/filters/remove-Use_GC-strings.hfst\"             \
+	.o. @\"$(top_builddir)/src/filters/remove-Use_minusGC-tags.hfst\"           \
+   	.o. @\"$<\" \
+    	;" \
+		| $(HFST_REGEXP2FST) $(HFST_FLAGS) $(HFST_FORMAT) \
+			-S --xerox-composition=ON \
+		-o $@
+
+
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
 ##################################################################
