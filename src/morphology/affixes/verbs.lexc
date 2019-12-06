@@ -1094,7 +1094,7 @@ LEXICON SKRIVE
 +V+Imp:skriv     # ;
 +V+Ind+Prs:skriver   # ;
 +V+Ind+Prt+Use/NG:skrev     # ;
-+V+Ind+Prtl:skreiv    # ;
++V+Ind+Prt:skreiv    # ;
 +V+PrfPtc:skrevet   # ;
 +V+PrsPtc:skrivende # ;
 +V+Ind+Prs+Pass:skrives # ;
@@ -1405,7 +1405,7 @@ LEXICON SVIKE
 +V+Ind+Prs:sviker   # ;
 +V+Ind+Prs+Pass:svikes   # ;
 +V+Ind+Prt+Use/NG:svek     # ;
-+V+Ind+Prtl:sveik    # ;
++V+Ind+Prt:sveik    # ;
 +V+PrfPtc:sveket   # ;
 +V+PrsPtc:svikende # ;
 
@@ -1535,7 +1535,7 @@ LEXICON TRYTE
 +V+Ind+Prs:tryter   # ;
 +V+Ind+Prs+Pass:trytes   # ;
 +V+Ind+Prt:trøt     # ;
-+V+Ind+Prt+Err/ORth:trøyt     # ;
++V+Ind+Prt+Err/Orth:trøyt     # ;
 +V+PrfPtc:trytet   # ;
 +V+PrsPtc:trytende # ;
 
@@ -1564,7 +1564,7 @@ LEXICON TYTE
 +V+Ind+Prs:tyter   # ;
 +V+Ind+Prs+Pass:tytes   # ;
 +V+Ind+Prt:tøt     # ;
-+V+Ind+Prt+Err/Orthl:tøyt    # ;
++V+Ind+Prt+Err/Orth:tøyt    # ;
 +V+PrfPtc:tytt    # ;
 +V+PrsPtc:tytende # ;
 
