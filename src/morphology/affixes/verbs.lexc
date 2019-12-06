@@ -788,15 +788,14 @@ LEXICON KLIPE
 +V+PrsPtc:klipende # ;
 
 LEXICON KLIVE
-+V+Inf:klyve    # ;
-+V+Imp:klyv     # ;
-+V+Ind+Prs:klyver   # ;
-+V+Ind+Prs+Pass:klyves   # ;
-+V+Ind+Prt+Use/NG:kløv     # ;
-+V+Ind+Prt+Use/NG:kløyv    # ;
-+V+Ind+Prt:klauv    # ;
-+V+PrfPtc:kløvet   # ;
-+V+PrsPtc:klyvende # ;
++V+Inf:klive    # ;
++V+Imp:klyi     # ;
++V+Ind+Prs:kliver   # ;
++V+Ind+Prs+Pass:klives   # ;
++V+Ind+Prt+Use/NG:klev     # ;
++V+Ind+Prt:kleiv    # ;
++V+PrfPtc:klevet   # ;
++V+PrsPtc:klivende # ;
 
 LEXICON XYPE ! klype:kl
 +V+Inf:ype    # ;
@@ -1284,8 +1283,8 @@ LEXICON SPØRRE
 +V+PrsPtc:spørrende # ;
 
 LEXICON STELE
-+V+Inf+Radical:stele    # ;
-+V+Imp+Radical:stel     # ;
++V+Inf:stele    # ;
++V+Imp:stel     # ;
 +V+Ind+Prs:steler   # ;
 +V+Ind+Prs+Pass:steles   # ;
 +V+Ind+Prt:stal     # ;
@@ -1651,7 +1650,7 @@ LEXICON VITE
 +V+PrsPtc:vitende # ;
 
 LEXICON VRI
-+V+Inf:vrie    # ;
++V+Inf:vri    # ;
 +V+Imp:vri     # ;
 +V+Ind+Prs:vrir    # ;
 +V+Ind+Prs+Pass:vris    # ;

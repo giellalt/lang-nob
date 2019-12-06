@@ -160,8 +160,8 @@ LEXICON m1V ! sko
 LEXICON m2 ! lærer
  +N+Msc+Sg:        0-en   ;
  +N+Msc+Pl:        e-ne   ;
- +N+Msc+Sg+Use/NG:%^NYNAG 0-en   ;
- +N+Msc+Pl+Use/NG:%^NYNAG ar-ane ;
+ +N+Msc+Sg+Nynorsk+Use/NG:%^NYNAG 0-en   ;
+ +N+Msc+Pl+Nynorsk+Use/NG:%^NYNAG ar-ane ;
         +N:        R      ;
 
 LEXICON m3 ! onkel
@@ -225,8 +225,8 @@ LEXICON DATTER
             +N+Fem+Sg+Def:datra    K ;
             +N+Msc+Sg+Def:datteren K ;
 !   +N+Fem+Sg+Def+Radical:datra    K ;
-          +N+Fem+Sg+Indef:døtre    K ;
-            +N+Fem+Sg+Def:døtrene  K ;
+          +N+Fem+Pl+Indef:døtre    K ;
+            +N+Fem+Pl+Def:døtrene  K ;
   +N+Fem+Sg+Nynorsk+Use/NG+Indef:dotter   K ;
     +N+Fem+Sg+Nynorsk+Use/NG+Def:dotra    K ;
 !                      +N:         R ;
@@ -235,6 +235,16 @@ LEXICON MOR
      +N+Fem+Sg:mor   0-a   ;
  +N+Msc+Sg+Def:moren K     ;
     +N+Fem+Pl:mødr  e-ene ;
+
+LEXICON FOT
+     +N+Msc+Sg:fot   0-en   ;
+    +N+Msc+Pl:føtt  e-ene ;
+
+LEXICON ROT
+     +N+Fem+Sg:rot   0-a   ;
+ +N+Msc+Sg+Def:roten K     ;
+    +N+Fem+Pl:røtt  er-ene ;
+
 
 LEXICON GÅS
      +N+Fem+Sg:gås   0-a   ;
@@ -293,6 +303,9 @@ LEXICON f1sg ! grisetang
  +N+Fem+Sg: 0-a ;
  +N+Msc+Sg: en  ; ! myren !^C^
 
+LEXICON f1pl
+ +N+Fem+Pl: er-ene ;
+ 
 LEXICON f1b ! skam
  +N+Fem+Sg:mX4 0-a    ;
  +N+Msc+Sg:m   en     ; ! myren !^C^
@@ -439,6 +452,11 @@ LEXICON TEMPUS ! tempus:temp TEMPUS ;
  +N+Neu+Sg:ora    K  ;
  +N+Neu+Pl:oraene K  ;
         +N:us     R  ;
+
+LEXICON TÅ
+ +N+Fem+Sg:tå  0-a  ;
+ +N+Msc+Use/NG:tåen # ;
+ +N+Fem+Pl:tæ  r-rne ;
 
 ! Lexica for definiteness declension
 ! ==================================
