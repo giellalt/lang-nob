@@ -187,9 +187,9 @@ l7 ! always l
 
 !! !!Compounding
 
-+Cmp/Hyph
-+CmpNP/None
-+CmpNP/First
++Cmp/Hyph !!≈ * @CODE@ - 
++CmpNP/None !!≈ * @CODE@ - 
++CmpNP/First !!≈ * @CODE@ - 
 
 
 
@@ -212,10 +212,10 @@ l7 ! always l
 
 !! !Flags for ErrOrth
 
-@C.ErrOrth@
-@D.ErrOrth.ON@
-@P.ErrOrth.ON@
-
+@C.ErrOrth@ !!≈ * @CODE@ - 
+@D.ErrOrth.ON@ !!≈ * @CODE@ - 
+@P.ErrOrth.ON@ !!≈ * @CODE@ - 
+@R.ErrOrth.ON@ !!≈ * @CODE@ - 
 
 !! !Flags for compounding
 
@@ -239,6 +239,24 @@ l7 ! always l
  @P.CmpOnly.TRUE@  !!≈ | @CODE@ | Sets a flag to indicate that the word has passed R
  @D.CmpOnly.FALSE@ !!≈ | @CODE@ | Disallow words coming directly from root.
 
+!! The tags are of the following form:
+!! * __+CmpNP/xxx__ - Normative (N), Position (P), ie the tag describes what
+!!                    position the tagged word can be in in a compound
+!! * __+CmpN/xxx__  - Normative (N) __form__ ie the tag describes what
+!!                    form the tagged word should use when making compounds
+!! * __+Cmp/xxx__   - Descriptive compounding tags, ie tags that ''describes''
+!!                    what form a word actually is using in a compound
+
+!! This entry / word should be in the following position(s):
+
++CmpNP/All       !!≈ * __@CODE@__ - ... in all positions, __default__, this tag does not have to be written
++CmpNP/First     !!≈ * __@CODE@__ - ... only be first part in a compound or alone
++CmpNP/Pref      !!≈ * __@CODE@__ - ... only __first__ part in a compound, NEVER alone
++CmpNP/Last      !!≈ * __@CODE@__ - ... only be last part in a compound or alone
++CmpNP/Suff      !!≈ * __@CODE@__ - ... only __last__ part in a compound, NEVER alone
++CmpNP/None      !!≈ * __@CODE@__ - ... does not take part in compounds
++CmpNP/Only      !!≈ * __@CODE@__ - ... only be part of a compound, i.e. can never
+                 !!                     be used alone, but can appear in any position
 
 
 !! ! Flags for governing initial capital
@@ -253,16 +271,17 @@ l7 ! always l
 
 !! !Flags for preprocessing
 
-@P.Pmatch.Backtrack@
-@PMATCH_BACKTRACK@
+@P.Pmatch.Backtrack@  !!≈ * @CODE@ - 
+@PMATCH_BACKTRACK@ !!≈ * @CODE@ - 
 
 ! =================================================
 !! Basic lexica, pointing to the other lexicon files
 ! =================================================
 
 LEXICON Root !!= * @CODE@
- ShortNounRoot ;  !!= * @CODE@
- NounRoot ;		  !!= * @CODE@
+ FinalNoun ;  !!= * @CODE@ for -skap etc. that is affix rather than compound
+ ShortNounRoot ;  !!= * @CODE@ 2- and 3-letter words
+ NounRoot ;		  !!= * @CODE@ The rest
  ProperNoun ;	  !!= * @CODE@
  AdjectivePrefix ;  !!= * @CODE@
  VerbRoot ;		  !!= * @CODE@
@@ -280,20 +299,20 @@ LEXICON Root !!= * @CODE@
  +Use/NG: Nynorsk ;        !!= * @CODE@ Accepts nno forms, does not generate
 ! Particle ;
 
-LEXICON AdjectivePrefix
-kjempe AdjectiveRoot ;
-super  AdjectiveRoot ;
-       AdjectiveRoot ;
+LEXICON AdjectivePrefix !!≈ * @CODE@ - 
+kjempe AdjectiveRoot ; !!≈ * @CODE@ - 
+super  AdjectiveRoot ; !!≈ * @CODE@ - 
+       AdjectiveRoot ; !!≈ * @CODE@ - 
 
-LEXICON Abbreviation
-Abbreviation-nob ;
-Abbreviation-smi ;
+LEXICON Abbreviation !!≈ * @CODE@ - 
+Abbreviation-nob ; !!≈ * @CODE@ - 
+Abbreviation-smi ; !!≈ * @CODE@ - 
 
 LEXICON ProperNoun   !!= * __@CODE@__
- @U.CmpHyph.TRUE@ ProperNoun-nob-nocomp ; ! Lexicon for NOB short names - always require hyphen
- @U.CmpHyph.TRUE@ ProperNoun-smi-nocomp ; ! Lexicon for short names - always require hyphen
-                  ProperNoun-smi        ; ! SMI proper nouns
-                  ProperNoun-nob        ; ! contains the full nob name list
+ @U.CmpHyph.TRUE@ ProperNoun-nob-nocomp ; !! Lexicon for NOB short names - always require hyphen
+ @U.CmpHyph.TRUE@ ProperNoun-smi-nocomp ; !! Lexicon for short names - always require hyphen
+                  ProperNoun-smi        ; !! SMI proper nouns
+                  ProperNoun-nob        ; !! contains the full nob name list
 
 
 ! ======================

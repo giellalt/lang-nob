@@ -98,7 +98,7 @@ LEXICON positive
   positive-def   ;
 
 LEXICON positive-indef
-                    R ;
+!                    R ; ! A+N-samansetjingar er for dristig (?)
  +Pos+Msc+Sg+Indef: # ;
  +Pos+Fem+Sg+Indef: # ;
   +Pos+MF+Sg+Indef: # ;
@@ -115,7 +115,7 @@ LEXICON a-neuter ! fint
 LEXICON a-no-neuter ! vennlig
  +Der/AAdv+Adv: # ;
  +Pos+Neu+Sg+Indef: # ;
-                    R ;
+!                    R ;
  
 LEXICON grade-e
                  +Comp:%>ere  # ;
@@ -140,7 +140,7 @@ LEXICON grade-C
 ! Exceptional
 
 LEXICON A_FÅ
-                   +A:få   R ;
+!                   +A:få   R ;
       +A+Pos+Pl+Indef:få  # ;
         +A+Pos+Pl+Def:få  # ;
               +A+Comp:færre # ;
@@ -149,7 +149,7 @@ LEXICON A_FÅ
 
 
 LEXICON GAMMEL
-                  +A:gammel  R ;
+!                  +A:gammel  R ;
   +A+Pos+Msc+Sg+Indef:gammel  # ;
   +A+Pos+Fem+Sg+Indef:gammel  # ;
  +A+Pos+Neu+Sg+Indef:gammelt # ;
@@ -161,7 +161,7 @@ LEXICON GAMMEL
        +A+Superl+Def:eldste  # ;
 
 LEXICON GOD
-                   +A:god   R ;
+!                   +A:god   R ;
    +A+Pos+Msc+Sg+Indef:god   # ;
    +A+Pos+Fem+Sg+Indef:god   # ;
   +A+Pos+Neu+Sg+Indef:godt  # ;
@@ -188,7 +188,7 @@ LEXICON LITEN
 
 
 LEXICON STOR
-                   +A:stor    R ;
+!                   +A:stor    R ;
    +A+Pos+MF+Sg+Indef:stor    # ;
   +A+Pos+Neu+Sg+Indef:stort   # ;
         +A+Pos+Sg+Def:store   # ;
@@ -199,7 +199,7 @@ LEXICON STOR
         +A+Superl+Def:største # ;
 
 LEXICON UNG
-                  +A:ung    R ;
+!                  +A:ung    R ;
  +A+Pos+Msc+Sg+Indef:ung    # ;
  +A+Pos+Fem+Sg+Indef:ung    # ;
  +A+Pos+Neu+Sg+Indef:ungt   # ;
@@ -212,7 +212,7 @@ LEXICON UNG
 
 
 LEXICON VOND
-                   +A:vond   R ;
+!                   +A:vond   R ;
    +A+Pos+Msc+Sg+Indef:vond   # ;
    +A+Pos+Fem+Sg+Indef:vond   # ;
   +A+Pos+Neu+Sg+Indef:vondt  # ;
