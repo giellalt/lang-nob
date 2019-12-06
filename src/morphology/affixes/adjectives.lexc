@@ -101,7 +101,7 @@ LEXICON positive-indef
 !                    R ; ! A+N-samansetjingar er for dristig (?)
  +Pos+Msc+Sg+Indef: # ;
  +Pos+Fem+Sg+Indef: # ;
-  +Pos+MF+Sg+Indef: # ;
+  +Pos+MF+Sg+Indef: # ; ! MF ???
 
 LEXICON positive-def
  +Pos+Sg+Def+Clt:%>es # ;
@@ -189,7 +189,8 @@ LEXICON LITEN
 
 LEXICON STOR
 !                   +A:stor    R ;
-   +A+Pos+MF+Sg+Indef:stor    # ;
+   +A+Pos+Msc+Sg+Indef:stor    # ;
+   +A+Pos+Fem+Sg+Indef:stor    # ;
   +A+Pos+Neu+Sg+Indef:stort   # ;
         +A+Pos+Sg+Def:store   # ;
       +A+Pos+Pl+Indef:store   # ;

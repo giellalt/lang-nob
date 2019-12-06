@@ -303,9 +303,6 @@ LEXICON f1sg ! grisetang
  +N+Fem+Sg: 0-a ;
  +N+Msc+Sg: en  ; ! myren !^C^
 
-LEXICON f1pl
- +N+Fem+Pl: er-ene ;
- 
 LEXICON f1b ! skam
  +N+Fem+Sg:mX4 0-a    ;
  +N+Msc+Sg:m   en     ; ! myren !^C^
