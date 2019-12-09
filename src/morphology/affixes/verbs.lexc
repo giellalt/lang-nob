@@ -80,19 +80,19 @@ LEXICON v1-s ! undres
      +V+Inf: # ;
  +V+Ind+Prs: # ;
  +V+Ind+Prt: # ;
-  +V+PrfPtc: # ;
+  +V+PrfPrc: # ;
 
 LEXICON v2-s ! føles, synes
      +V+Inf:   # ;
  +V+Ind+Prs:   # ;
  +V+Ind+Prt:Q1 # ;
-  +V+PrfPtc:Q1 # ;
+  +V+PrfPrc:Q1 # ;
 
 LEXICON v3-s ! trives
      +V+Inf:   # ;
  +V+Ind+Prs:   # ;
  +V+Ind+Prt:Q2 # ;
-  +V+PrfPtc:Q2 # ;
+  +V+PrfPrc:Q2 # ;
 
 
 
@@ -108,8 +108,8 @@ LEXICON inf-prsptc
      +Inf+Nynorsk+Use/NG:%>a    #          ;
 +Inf+Pass+Nynorsk+Use/NG:%>ast # ;
              +Imp:%>Q3X4   #          ;
-          +PrsPtc:%>     prsptcsuff ;
-  +PrsPtc+Nynorsk+Use/NG:%>ande #          ;
+          +PrsPrc:%>     prsptcsuff ;
+  +PrsPrc+Nynorsk+Use/NG:%>ande #          ;
              +ING:%>ing  #          ;
 
 LEXICON regpres
@@ -125,25 +125,25 @@ LEXICON r-pres
 LEXICON a-et-pret
  +V+Ind+Prt+Radical:%>a  # ;
          +V+Ind+Prt:%>et # ;
-  +V+PrfPtc+Radical:%>a  # ;
-          +V+PrfPtc:%>et # ;
-       +Ex/V+PrfPtc+A:%>et positive-indef ;
-       +Ex/V+PrfPtc+A:%>ed positive-def ;
+  +V+PrfPrc+Radical:%>a  # ;
+          +V+PrfPrc:%>et # ;
+       +Ex/V+PrfPrc+A:%>et positive-indef ;
+       +Ex/V+PrfPrc+A:%>ed positive-def ;
 
 LEXICON te-pret
  +V+Ind+Prt:%>Q3te # ;
-  +V+PrfPtc:%>Q3t  # ;
-  +V+PrfPtc+Ex/V+A:%>Q3t  positive ; ! over til adj
+  +V+PrfPrc:%>Q3t  # ;
+  +V+PrfPrc+Ex/V+A:%>Q3t  positive ; ! over til adj
  
 LEXICON de-pret
  +V+Ind+Prt:%>Q3de # ;
-  +V+PrfPtc:%>Q3d  # ;
-  +V+PrfPtc+Ex/V+A:%>Q3d  positive ;
+  +V+PrfPrc:%>Q3d  # ;
+  +V+PrfPrc+Ex/V+A:%>Q3d  positive ;
 
 LEXICON dde-pret
  +V+Ind+Prt:%>dde # ;
-  +V+PrfPtc:%>dd  # ;
-  +V+PrfPtc+Ex/V+A:%>dd  positive ;
+  +V+PrfPrc:%>dd  # ;
+  +V+PrfPrc+Ex/V+A:%>dd  positive ;
 
 
 LEXICON prsptcsuff
@@ -164,8 +164,8 @@ LEXICON BE
  +V+Ind+Prs+Pass:bes  #          ;
      +V+Inf+Pass:bes  #          ;
       +V+Ind+Prt:ba   #          ;
-       +V+PrfPtc:bedt #          ;
-       +V+PrsPtc:be   prsptcsuff ;
+       +V+PrfPrc:bedt #          ;
+       +V+PrsPrc:be   prsptcsuff ;
 
 LEXICON BINDE
           +V+Inf:binde  #          ;
@@ -174,8 +174,8 @@ LEXICON BINDE
  +V+Ind+Prs+Pass:bindes #          ;
      +V+Inf+Pass:bindes #          ;
       +V+Ind+Prt:bandt  #          ;
-       +V+PrfPtc:bundet #          ;
-       +V+PrsPtc:bind   prsptcsuff ;
+       +V+PrfPrc:bundet #          ;
+       +V+PrsPrc:bind   prsptcsuff ;
 
 LEXICON XITE
           +V+Inf:ite  #          ;
@@ -185,8 +185,8 @@ LEXICON XITE
      +V+Inf+Pass:ites #          ;
       +V+Ind+Prt:et   #          ;
       +V+Ind+Prt:eit  #          ;
-       +V+PrfPtc:itt  #          ;
-       +V+PrsPtc:it   prsptcsuff ;
+       +V+PrfPrc:itt  #          ;
+       +V+PrsPrc:it   prsptcsuff ;
 
 LEXICON BLI
              +V+Inf:bli   #          ;
@@ -194,8 +194,8 @@ LEXICON BLI
          +V+Ind+Prs:blir  #          ;
          +V+Ind+Prt:ble   #          ;
  +V+Ind+Prt+Radical:blei  #          ;
-          +V+PrfPtc:blitt #          ;
-          +V+PrsPtc:bliv  prsptcsuff ;
+          +V+PrfPrc:blitt #          ;
+          +V+PrsPrc:bliv  prsptcsuff ;
 
 LEXICON BLIVE
              +V+Inf:blive    # ;
@@ -203,8 +203,8 @@ LEXICON BLIVE
          +V+Ind+Prs:bliver   # ;
          +V+Ind+Prt:blev     # ;
  +V+Ind+Prt+Radical:bleiv    # ;
-          +V+PrfPtc:blevet   # ;
-          +V+PrsPtc:blivende # ;
+          +V+PrfPrc:blevet   # ;
+          +V+PrsPrc:blivende # ;
 
 LEXICON BRENNE
           +V+Inf:brenne  #          ;
@@ -214,9 +214,9 @@ LEXICON BRENNE
      +V+Inf+Pass:brennes #          ;
       +V+Ind+Prt:brant   #          ;
       +V+Ind+Prt+Use/NG:brente  #          ; ! XXX todo: TV/IV
-       +V+PrfPtc:brent   #          ;
-       +V+PrfPtc+Use/NG:brunnet #          ; ! XXX todo: TV/IV
-       +V+PrsPtc:brenn   prsptcsuff ;
+       +V+PrfPrc:brent   #          ;
+       +V+PrfPrc+Use/NG:brunnet #          ; ! XXX todo: TV/IV
+       +V+PrsPrc:brenn   prsptcsuff ;
 
 LEXICON BRESTE
           +V+Inf:breste  #          ;
@@ -225,8 +225,8 @@ LEXICON BRESTE
  +V+Ind+Prs+Pass:brestes #          ;
      +V+Inf+Pass:brestes #          ;
       +V+Ind+Prt:brast   #          ;
-       +V+PrfPtc:brustet #          ;
-       +V+PrsPtc:brest   prsptcsuff ;
+       +V+PrfPrc:brustet #          ;
+       +V+PrsPrc:brest   prsptcsuff ;
 
 LEXICON BRINGE
      +V+Inf:bringe  #          ;
@@ -235,8 +235,8 @@ LEXICON BRINGE
  +V+Ind+Prs:bringer #          ;
  +V+Ind+Prs+Pass:bringes #          ;
  +V+Ind+Prt:brakte  #          ;
-  +V+PrfPtc:brakt   #          ;
-  +V+PrsPtc:bring   prsptcsuff ;
+  +V+PrfPrc:brakt   #          ;
+  +V+PrsPrc:bring   prsptcsuff ;
 
 LEXICON BRISTE
           +V+Inf:briste  #          ;
@@ -245,8 +245,8 @@ LEXICON BRISTE
       +V+Ind+Prs:brister #          ;
  +V+Ind+Prs+Pass:bristes #          ;
       +V+Ind+Prt:brast   #          ;
-       +V+PrfPtc:brustet #          ;
-       +V+PrsPtc:brist   prsptcsuff ;
+       +V+PrfPrc:brustet #          ;
+       +V+PrsPrc:brist   prsptcsuff ;
 
 LEXICON XYTE
              +V+Inf:yte  #          ;
@@ -256,8 +256,8 @@ LEXICON XYTE
          +V+Ind+Prs+Pass:ytes #          ;
          +V+Ind+Prt:øt   #          ;
          +V+Ind+Prt+Use/NG:øyt  #          ;
-          +V+PrfPtc:utt  #          ;
-          +V+PrsPtc:yt   prsptcsuff ;
+          +V+PrfPrc:utt  #          ;
+          +V+PrsPrc:yt   prsptcsuff ;
 
 LEXICON BURDE
      +V+Inf:burde # ;
@@ -271,8 +271,8 @@ LEXICON BY
       +V+Ind+Prs:byr  #          ;
  +V+Ind+Prs+Pass:bys  #          ;
       +V+Ind+Prt:bød  #          ;
-       +V+PrfPtc:bydd #          ;
-       +V+PrsPtc:by   prsptcsuff ;
+       +V+PrfPrc:bydd #          ;
+       +V+PrsPrc:by   prsptcsuff ;
 
 LEXICON XYDE
           +V+Inf:yde  #          ;
@@ -281,8 +281,8 @@ LEXICON XYDE
       +V+Ind+Prs:yder #          ;
  +V+Ind+Prs+Pass:ydes #          ;
       +V+Ind+Prt:ød   #          ;
-       +V+PrfPtc:ydd  #          ;
-       +V+PrsPtc:yd   prsptcsuff ;
+       +V+PrfPrc:ydd  #          ;
+       +V+PrsPrc:yd   prsptcsuff ;
 
 LEXICON BÆRE
           +V+Inf:bære  #          ;
@@ -291,8 +291,8 @@ LEXICON BÆRE
       +V+Ind+Prs:bærer #          ;
  +V+Ind+Prs+Pass:bæres #          ;
       +V+Ind+Prt:bar   #          ;
-       +V+PrfPtc:båret #          ;
-       +V+PrsPtc:bær   prsptcsuff ;
+       +V+PrfPrc:båret #          ;
+       +V+PrsPrc:bær   prsptcsuff ;
 
 LEXICON XETTE
          +V+Inf:ette  #          ;
@@ -301,8 +301,8 @@ LEXICON XETTE
      +V+Ind+Prs:etter #          ;
 +V+Ind+Prs+Pass:ettes #          ;
      +V+Ind+Prt:att   #          ;
-      +V+PrfPtc:ettet #          ;
-      +V+PrsPtc:ett   prsptcsuff ;
+      +V+PrfPrc:ettet #          ;
+      +V+PrsPrc:ett   prsptcsuff ;
 
 LEXICON DRA
      +V+Inf:dra   #          ;
@@ -312,8 +312,8 @@ LEXICON DRA
  +V+Ind+Prs+Pass:dras  #          ;
  +V+Ind+Prt:dro   #          ;
  +V+Ind+Prt+Use/NG:drog  #          ;
-  +V+PrfPtc:dratt #          ;
-  +V+PrsPtc:dra   prsptcsuff ;
+  +V+PrfPrc:dratt #          ;
+  +V+PrsPrc:dra   prsptcsuff ;
 
 LEXICON XIKKE
          +V+Inf:ikke  #          ;
@@ -322,8 +322,8 @@ LEXICON XIKKE
      +V+Ind+Prs:ikker #          ;
 +V+Ind+Prs+Pass:ikkes #          ;
      +V+Ind+Prt:akk   #          ;
-      +V+PrfPtc:ukket #          ;
-      +V+PrsPtc:ikk   prsptcsuff ;
+      +V+PrfPrc:ukket #          ;
+      +V+PrsPrc:ikk   prsptcsuff ;
 
 LEXICON DRIVE
           +V+Inf:drive  #          ;
@@ -332,8 +332,8 @@ LEXICON DRIVE
       +V+Ind+Prs:driver #          ;
  +V+Ind+Prs+Pass:drives #          ;
       +V+Ind+Prt:drev   #          ;
-       +V+PrfPtc:drevet #          ;
-       +V+PrsPtc:driv   prsptcsuff ;
+       +V+PrfPrc:drevet #          ;
+       +V+PrsPrc:driv   prsptcsuff ;
 
 LEXICON DØLGE
           +V+Inf:dølge  #          ;
@@ -342,8 +342,8 @@ LEXICON DØLGE
       +V+Ind+Prs:dølger #          ;
  +V+Ind+Prs+Pass:dølges #          ;
       +V+Ind+Prt:dulgte #          ;
-       +V+PrfPtc:dulgt  #          ;
-       +V+PrsPtc:dølg   prsptcsuff ;
+       +V+PrfPrc:dulgt  #          ;
+       +V+PrsPrc:dølg   prsptcsuff ;
 
 LEXICON DØ
           +V+Inf:dø   #          ;
@@ -351,7 +351,7 @@ LEXICON DØ
       +V+Ind+Prs:dør  #          ;
  +V+Ind+Prs+Pass:døes #          ;
       +V+Ind+Prt:døde #          ;
-       +V+PrfPtc:dødd #          ;
+       +V+PrfPrc:dødd #          ;
         +V+Prdtc:dø   prsptcsuff ;
 
 LEXICON EIE
@@ -361,8 +361,8 @@ LEXICON EIE
      +V+Ind+Prs:eier #          ;
 +V+Ind+Prs+Pass:eies #          ;
      +V+Ind+Prt:eide #          ;
-      +V+PrfPtc:eid  #          ;
-      +V+PrsPtc:ei   prsptcsuff ;
+      +V+PrfPrc:eid  #          ;
+      +V+PrsPrc:ei   prsptcsuff ;
 
 LEXICON ETE
           +V+Inf:ete  #          ;
@@ -371,8 +371,8 @@ LEXICON ETE
       +V+Ind+Prs:eter #          ;
  +V+Ind+Prs+Pass:etes #          ;
       +V+Ind+Prt:åt   #          ;
-       +V+PrfPtc:ett  #          ;
-       +V+PrsPtc:et   prsptcsuff ;
+       +V+PrfPrc:ett  #          ;
+       +V+PrsPrc:et   prsptcsuff ;
 
 LEXICON FALLE
           +V+Inf:falle  #          ;
@@ -380,8 +380,8 @@ LEXICON FALLE
       +V+Ind+Prs:faller #          ;
  +V+Ind+Prs+Pass:falles #          ;
       +V+Ind+Prt:falt   #          ;
-       +V+PrfPtc:falt   #          ;
-       +V+PrsPtc:fall   prsptcsuff ;
+       +V+PrfPrc:falt   #          ;
+       +V+PrsPrc:fall   prsptcsuff ;
 
 LEXICON FARE
           +V+Inf:fare  #          ;
@@ -389,8 +389,8 @@ LEXICON FARE
       +V+Ind+Prs:farer #          ;
  +V+Ind+Prs+Pass:fares #          ;
       +V+Ind+Prt:for   #          ;
-       +V+PrfPtc:fart  #          ;
-       +V+PrsPtc:far   prsptcsuff ;
+       +V+PrfPrc:fart  #          ;
+       +V+PrsPrc:far   prsptcsuff ;
 
 LEXICON FINNE
           +V+Inf:finne  #          ;
@@ -399,8 +399,8 @@ LEXICON FINNE
  +V+Ind+Prs+Pass:finnes #          ;
       +V+Ind+Prt:fant   #          ;
  +V+Ind+Prt+Pass:fantes #          ;
-        inne+V+PrfPtc:funnet #          ;
-       +V+PrsPtc:finn   prsptcsuff ;
+        inne+V+PrfPrc:funnet #          ;
+       +V+PrsPrc:finn   prsptcsuff ;
 
 LEXICON FISE
           +V+Inf:fise  #          ;
@@ -410,9 +410,9 @@ LEXICON FISE
       +V+Ind+Prt+Use/NG:fes   #          ;
       +V+Ind+Prt:feis  #          ;
       +V+Ind+Prt+Use/NG:fiste #          ;
-       +V+PrfPtc:fist  #          ;
-       +V+PrfPtc+Use/NG:feset #          ;
-       +V+PrsPtc:fis   prsptcsuff ;
+       +V+PrfPrc:fist  #          ;
+       +V+PrfPrc+Use/NG:feset #          ;
+       +V+PrsPrc:fis   prsptcsuff ;
 
 LEXICON FLY
           +V+Inf:fly    #          ;
@@ -420,17 +420,17 @@ LEXICON FLY
       +V+Ind+Prs:flyr   #          ;
  +V+Ind+Prs+Pass:flys   #          ;
       +V+Ind+Prt:fløy   #          ;
-       +V+PrfPtc:flydd  #          ;
-       +V+PrfPtc+Use/NG:fløyet #          ;
-       +V+PrsPtc:fly    prsptcsuff ;
+       +V+PrfPrc:flydd  #          ;
+       +V+PrfPrc+Use/NG:fløyet #          ;
+       +V+PrsPrc:fly    prsptcsuff ;
 LEXICON LYGE
 +V+Inf:lyge    #          ;
 +V+Imp:lyg     #          ;
 +V+Ind+Prs:lyger   #          ;
 +V+Ind+Prs+Pass:lyges   #          ; ! Fiks meg
 +V+Ind+Prt:løy     #          ;
-+V+PrfPtc:løyet   #          ;
-+V+PrsPtc:lygende prsptcsuff ;
++V+PrfPrc:løyet   #          ;
++V+PrsPrc:lygende prsptcsuff ;
 
 LEXICON LJUGE
 +V+Inf:ljuge    #          ;
@@ -438,8 +438,8 @@ LEXICON LJUGE
 +V+Ind+Prs:ljuger   #          ;
 +V+Ind+Prs+Pass:ljuges   #          ; ! Fiks meg
 +V+Ind+Prt:løy      #          ;
-+V+PrfPtc:løyet    #          ;
-+V+PrsPtc:ljugende prsptcsuff ;
++V+PrfPrc:løyet    #          ;
++V+PrsPrc:ljugende prsptcsuff ;
 
 LEXICON FLYGE
 +V+Inf:flyge  #          ;
@@ -447,10 +447,10 @@ LEXICON FLYGE
 +V+Ind+Prs:flyger #          ;
 +V+Ind+Prs+Pass:flyges #          ; ! Fiks meg
 +V+Ind+Prt:fløy   #          ;
-+V+PrfPtc:flydd  #          ;
-+V+PrfPtc+Use/NG:fløyet #          ;
-+V+PrsPtc:fly    prsptcsuff ;
-+V+PrsPtc:flyv   prsptcsuff ;
++V+PrfPrc:flydd  #          ;
++V+PrfPrc+Use/NG:fløyet #          ;
++V+PrsPrc:fly    prsptcsuff ;
++V+PrsPrc:flyv   prsptcsuff ;
 
 
 LEXICON FLYTE
@@ -461,8 +461,8 @@ LEXICON FLYTE
 +V+Ind+Prt:fløt     # ;
 +V+Ind+Prt+Err/Orth:fløyt    # ;
 +V+Ind+Prt:flaut    # ;
-+V+PrfPtc:flytt    # ;
-+V+PrsPtc:flytende # ;
++V+PrfPrc:flytt    # ;
++V+PrsPrc:flytende # ;
 
 LEXICON LATE
 +V+Inf:late  # ;
@@ -471,7 +471,7 @@ LEXICON LATE
 +V+Ind+Prs:later # ;
 +V+Ind+Prs+Pass:lates # ;
 +V+Ind+Prt:lot   # ;
-+V+PrfPtc:latt  # ;
++V+PrfPrc:latt  # ;
 
 LEXICON FRYSE
 +V+Inf:fryse    # ;
@@ -481,9 +481,9 @@ LEXICON FRYSE
 +V+Ind+Prt+Use/NG:frøs     # ;
 +V+Ind+Prt+Use/NG:frøys    # ;
 +V+Ind+Prt:fraus    # ;
-+V+PrfPtc+Use/NG:fryst    # ; ! TV/IV
-+V+PrfPtc:frosset  # ;
-+V+PrsPtc:frysende # ;
++V+PrfPrc+Use/NG:fryst    # ; ! TV/IV
++V+PrfPrc:frosset  # ;
++V+PrsPrc:frysende # ;
 
 LEXICON FYKE
 +V+Inf:fyke    # ;
@@ -493,16 +493,16 @@ LEXICON FYKE
 +V+Ind+Prt+Use/NG:føk     # ;
 +V+Ind+Prt:fauk    # ;
 +V+Ind+Prt+Use/NG:føyk    # ;
-+V+PrfPtc:føket   # ;
-+V+PrsPtc:fykende # ;
++V+PrfPrc:føket   # ;
++V+PrsPrc:fykende # ;
 
 LEXICON FÅ
 +V+Inf:få     # ;
 +V+Imp:få     # ;
 +V+Ind+Prs:får    # ;
 +V+Ind+Prt:fikk   # ;
-+V+PrfPtc:fått   # ;
-+V+PrsPtc:fående # ;
++V+PrfPrc:fått   # ;
++V+PrsPrc:fående # ;
 
 LEXICON FØLGE
 +V+Inf:følge    # ;
@@ -510,8 +510,8 @@ LEXICON FØLGE
 +V+Ind+Prs:følger   # ;
 +V+Ind+Prs+Pass:følges   # ;
 +V+Ind+Prt:fulgte   # ;
-+V+PrfPtc:fulgt    # ;
-+V+PrsPtc:følgende # ;
++V+PrfPrc:fulgt    # ;
++V+PrsPrc:følgende # ;
 
 LEXICON GALE
 +V+Inf:gale    # ;
@@ -520,8 +520,8 @@ LEXICON GALE
 +V+Ind+Prs+Pass:gales   # ;
 +V+Ind+Prt:gol     # ;
 +V+Ind+Prt+Use/NG:galte   # ;
-+V+PrfPtc:galt    # ;
-+V+PrsPtc:galende # ;
++V+PrfPrc:galt    # ;
++V+PrsPrc:galende # ;
 
 LEXICON GIDDE
 +V+Inf:gidde    # ;
@@ -529,8 +529,8 @@ LEXICON GIDDE
 +V+Ind+Prs:gidder     # ;
 +V+Ind+Prs+Pass:giddes     # ;
 +V+Ind+Prt:gadd     # ;
-+V+PrfPtc:giddet     # ;
-+V+PrsPtc:giddende # ;
++V+PrfPrc:giddet     # ;
++V+PrsPrc:giddende # ;
 
 LEXICON GI
 +V+Inf:gi      # ;
@@ -539,9 +539,9 @@ LEXICON GI
 +V+Ind+Prs+Pass:gis     # ;
 +V+Ind+Prt:ga      # ;
 +V+Ind+Prt+Use/NG:gav     # ;
-+V+PrfPtc:gitt    # ;
-+V+PrsPtc:giende  # ;
-+V+PrsPtc+Use/NG:givende # ;
++V+PrfPrc:gitt    # ;
++V+PrsPrc:giende  # ;
++V+PrsPrc+Use/NG:givende # ;
 
 LEXICON GJELDE
 +V+Inf:gjelde    # ;
@@ -549,8 +549,8 @@ LEXICON GJELDE
 +V+Ind+Prs:gjelder   # ;
 +V+Ind+Prs+Pass:gjeldes   # ;
 +V+Ind+Prt:gjaldt    # ;
-+V+PrfPtc:gjeldt    # ;
-+V+PrsPtc:gjeldende # ;
++V+PrfPrc:gjeldt    # ;
++V+PrsPrc:gjeldende # ;
 
 LEXICON GJØRE
 +V+Inf:gjøre    # ;
@@ -558,8 +558,8 @@ LEXICON GJØRE
 +V+Ind+Prs:gjør     # ;
 +V+Ind+Prs+Pass:gjøres   # ;
 +V+Ind+Prt:gjorde   # ;
-+V+PrfPtc:gjort    # ;
-+V+PrsPtc:gjørende # ;
++V+PrfPrc:gjort    # ;
++V+PrsPrc:gjørende # ;
 
 LEXICON GLEPPE
 +V+Inf:gleppe    # ;
@@ -567,8 +567,8 @@ LEXICON GLEPPE
 +V+Ind+Prs:glepper   # ;
 +V+Ind+Prs+Pass:gleppes   # ;
 +V+Ind+Prt:glapp     # ;
-+V+PrfPtc:gluppet   # ;
-+V+PrsPtc:gleppende # ;
++V+PrfPrc:gluppet   # ;
++V+PrsPrc:gleppende # ;
 
 LEXICON GLI
 +V+Inf:gli      # ;
@@ -576,8 +576,8 @@ LEXICON GLI
 +V+Ind+Prs:glir     # ;
 +V+Ind+Prs+Pass:glis     # ;
 +V+Ind+Prt:gled     # ;
-+V+PrfPtc:glidd    # ;
-+V+PrsPtc:glidende # ;
++V+PrfPrc:glidd    # ;
++V+PrsPrc:glidende # ;
 
 LEXICON XIPPE
 +V+Inf:ippe    # ;
@@ -585,8 +585,8 @@ LEXICON XIPPE
 +V+Ind+Prs:ipper   # ;
 +V+Ind+Prs+Pass:ippes   # ;
 +V+Ind+Prt:app     # ;
-+V+PrfPtc:uppet   # ;
-+V+PrsPtc:ippende # ;
++V+PrfPrc:uppet   # ;
++V+PrsPrc:ippende # ;
 
 LEXICON GNAGE
 +V+Inf:gnage    # ;
@@ -597,8 +597,8 @@ LEXICON GNAGE
 +V+Ind+Prt+Use/NG:gnagde   # ;
 +V+Ind+Prt+Use/NG:gnaget   # ;
 +V+Ind+Prt:gnaga    # ;
-+V+PrfPtc:gnagd    # ;
-+V+PrsPtc:gnagende # ;
++V+PrfPrc:gnagd    # ;
++V+PrsPrc:gnagende # ;
 
 LEXICON GNI
 +V+Inf:gni     # ;
@@ -607,8 +607,8 @@ LEXICON GNI
 +V+Ind+Prs+Pass:gnies   # ;
 +V+Ind+Prt+Use/NG:gned    # ;
 +V+Ind+Prt:gnei    # ;
-+V+PrfPtc:gnidd   # ;
-+V+PrsPtc:gniende # ;
++V+PrfPrc:gnidd   # ;
++V+PrsPrc:gniende # ;
 
 LEXICON GRAVE
 +V+Inf:grave    # ;
@@ -617,9 +617,9 @@ LEXICON GRAVE
 +V+Ind+Prs+Pass:graves   # ;
 +V+Ind+Prt+Use/NG:gravde   # ;
 +V+Ind+Prt:grov     # ;
-+V+PrfPtc:gravd    # ;
-+V+PrfPtc+Use/NG:gravet   # ;
-+V+PrsPtc:gravende # ;
++V+PrfPrc:gravd    # ;
++V+PrfPrc+Use/NG:gravet   # ;
++V+PrsPrc:gravende # ;
 
 LEXICON GRINE
 +V+Inf:grine    # ;
@@ -628,8 +628,8 @@ LEXICON GRINE
 +V+Ind+Prs+Pass:grines   # ;
 +V+Ind+Prt:grein    # ;
 +V+Ind+Prt+Use/NG:gren     # ;
-+V+PrfPtc:grint    # ;
-+V+PrsPtc:grinende # ;
++V+PrfPrc:grint    # ;
++V+PrsPrc:grinende # ;
 
 LEXICON GRIPE
 +V+Inf:gripe    # ;
@@ -638,8 +638,8 @@ LEXICON GRIPE
 +V+Ind+Prs+Pass:gripes   # ;
 +V+Ind+Prt+Use/NG:grep     # ;
 +V+Ind+Prt:greip    # ;
-+V+PrfPtc:grepet   # ;
-+V+PrsPtc:gripende # ;
++V+PrfPrc:grepet   # ;
++V+PrsPrc:gripende # ;
 
 LEXICON GRÅTE
 +V+Inf:gråte    # ;
@@ -647,8 +647,8 @@ LEXICON GRÅTE
 +V+Ind+Prs:gråter   # ;
 +V+Ind+Prs+Pass:gråtes   # ;
 +V+Ind+Prt:gråt     # ;
-+V+PrfPtc:grått    # ;
-+V+PrsPtc:gråtende # ;
++V+PrfPrc:grått    # ;
++V+PrsPrc:gråtende # ;
 
 LEXICON GYSE
 +V+Inf:gyse    # ;
@@ -657,8 +657,8 @@ LEXICON GYSE
 +V+Ind+Prs+Pass:gyses   # ;
 +V+Ind+Prt:gyste   # ;
 +V+Ind+Prt+Use/NG:gjøs    # ;
-+V+PrfPtc:gyst    # ;
-+V+PrsPtc:gysende # ;
++V+PrfPrc:gyst    # ;
++V+PrsPrc:gysende # ;
 
 LEXICON GYTE
 +V+Inf:gyte    # ;
@@ -666,8 +666,8 @@ LEXICON GYTE
 +V+Ind+Prs:gyter   # ;
 +V+Ind+Prs+Pass:gytes   # ;
 +V+Ind+Prt:gjøt    # ;
-+V+PrfPtc:gytt    # ;
-+V+PrsPtc:gytende # ;
++V+PrfPrc:gytt    # ;
++V+PrsPrc:gytende # ;
 
 LEXICON GYVE
 +V+Inf:gyve    # ;
@@ -676,9 +676,9 @@ LEXICON GYVE
 +V+Ind+Prs+Pass:gyves   # ;
 +V+Ind+Prt:gjøv    # ;
 +V+Ind+Prt+Use/NG:gøyv    # ;
-+V+PrfPtc+Use/NG:gyvd    # ;
-+V+PrfPtc:gjøvet  # ;
-+V+PrsPtc:gyvende # ;
++V+PrfPrc+Use/NG:gyvd    # ;
++V+PrfPrc:gjøvet  # ;
++V+PrsPrc:gyvende # ;
 
 LEXICON GÅ
 +V+Inf:gå     # ;
@@ -686,16 +686,16 @@ LEXICON GÅ
 +V+Ind+Prs:går    # ;
 +V+Ind+Prs+Pass:gås    # ;
 +V+Ind+Prt:gikk   # ;
-+V+PrfPtc:gått   # ;
-+V+PrsPtc:gående # ;
++V+PrfPrc:gått   # ;
++V+PrsPrc:gående # ;
 
 LEXICON HA
 +V+Inf:ha     # ;
 +V+Imp:ha     # ;
 +V+Ind+Prs:har    # ;
 +V+Ind+Prt:hadde  # ;
-+V+PrfPtc:hatt   # ;
-+V+PrsPtc:haende # ;
++V+PrfPrc:hatt   # ;
++V+PrsPrc:haende # ;
 
 LEXICON HENGE
 +V+Inf:henge    # ;
@@ -703,9 +703,9 @@ LEXICON HENGE
 +V+Ind+Prs:henger   # ;
 +V+Ind+Prs+Pass:henges   # ;
 +V+Ind+Prt:hang     # ;
-+V+PrfPtc+Use/NG:hunget   # ;
-+V+PrfPtc:hengt    # ;
-+V+PrsPtc:hengende # ;
++V+PrfPrc+Use/NG:hunget   # ;
++V+PrfPrc:hengt    # ;
++V+PrsPrc:hengende # ;
 
 LEXICON HETE
 +V+Inf:hete    # ;
@@ -714,9 +714,9 @@ LEXICON HETE
 +V+Ind+Prs+Pass:hetes   # ;
 +V+Ind+Prt:het     # ;
 +V+Ind+Prt+Use/NG:hette   # ;
-+V+PrfPtc+Use/NG:hett    # ;
-+V+PrfPtc:hetet   # ;
-+V+PrsPtc:hetende # ;
++V+PrfPrc+Use/NG:hett    # ;
++V+PrfPrc:hetet   # ;
++V+PrsPrc:hetende # ;
 
 LEXICON HIVE
 +V+Inf:hive    # ;
@@ -725,9 +725,9 @@ LEXICON HIVE
 +V+Ind+Prs+Pass:hives   # ;
 +V+Ind+Prt+Use/NG:hev     # ;
 +V+Ind+Prt:heiv    # ;
-+V+PrfPtc+Use/NG:hivd    # ;
-+V+PrfPtc:hevet   # ;
-+V+PrsPtc:hivende # ;
++V+PrfPrc+Use/NG:hivd    # ;
++V+PrfPrc:hevet   # ;
++V+PrsPrc:hivende # ;
 
 LEXICON HJELPE
 +V+Inf:hjelpe    # ;
@@ -735,8 +735,8 @@ LEXICON HJELPE
 +V+Ind+Prs:hjelper   # ;
 +V+Ind+Prs+Pass:hjelpes   # ;
 +V+Ind+Prt:hjalp     # ;
-+V+PrfPtc:hjulpet   # ;
-+V+PrsPtc:hjelpende # ;
++V+PrfPrc:hjulpet   # ;
++V+PrsPrc:hjelpende # ;
 
 LEXICON HOGGE
 +V+Inf:hogge    # ;
@@ -744,9 +744,9 @@ LEXICON HOGGE
 +V+Ind+Prs:hogger   # ;
 +V+Ind+Prs+Pass:hogges   # ;
 +V+Ind+Prt:hogd     # ;
-+V+PrfPtc+Use/NG:hogget   # ;
-+V+PrfPtc:hogd     # ;
-+V+PrsPtc:hoggende # ;
++V+PrfPrc+Use/NG:hogget   # ;
++V+PrfPrc:hogd     # ;
++V+PrsPrc:hoggende # ;
 
 LEXICON HOLDE
 +V+Inf:holde    # ;
@@ -754,8 +754,8 @@ LEXICON HOLDE
 +V+Ind+Prs:holder   # ;
 +V+Ind+Prs+Pass:holdes   # ;
 +V+Ind+Prt:holdt    # ;
-+V+PrfPtc:holdt    # ;
-+V+PrsPtc:holdende # ;
++V+PrfPrc:holdt    # ;
++V+PrsPrc:holdende # ;
 
 LEXICON HUGGE
 +V+Inf:hugge    # ;
@@ -763,9 +763,9 @@ LEXICON HUGGE
 +V+Ind+Prs:hugger   # ;
 +V+Ind+Prs+Pass:hugges   # ;
 +V+Ind+Prt:hugd     # ;
-+V+PrfPtc:hugd     # ;
-+V+PrfPtc+Use/NG:hugget   # ;
-+V+PrsPtc:huggende # ;
++V+PrfPrc:hugd     # ;
++V+PrfPrc+Use/NG:hugget   # ;
++V+PrsPrc:huggende # ;
 
 LEXICON KLINGE
 +V+Inf:klinge    # ;
@@ -773,8 +773,8 @@ LEXICON KLINGE
 +V+Ind+Prs:klinger   # ;
 +V+Ind+Prs+Pass:klinges   # ;
 +V+Ind+Prt:klang     # ;
-+V+PrfPtc:klinget   # ;
-+V+PrsPtc:klingende # ;
++V+PrfPrc:klinget   # ;
++V+PrsPrc:klingende # ;
 
 LEXICON KLIPE
 +V+Inf:klipe    # ;
@@ -783,9 +783,9 @@ LEXICON KLIPE
 +V+Ind+Prs+Pass:klipes   # ;
 +V+Ind+Prt+Use/NG:klep     # ;
 +V+Ind+Prt:kleip    # ;
-+V+PrfPtc+Use/NG:klipt    # ;
-+V+PrfPtc:klepet   # ;
-+V+PrsPtc:klipende # ;
++V+PrfPrc+Use/NG:klipt    # ;
++V+PrfPrc:klepet   # ;
++V+PrsPrc:klipende # ;
 
 LEXICON KLIVE
 +V+Inf:klive    # ;
@@ -794,8 +794,8 @@ LEXICON KLIVE
 +V+Ind+Prs+Pass:klives   # ;
 +V+Ind+Prt+Use/NG:klev     # ;
 +V+Ind+Prt:kleiv    # ;
-+V+PrfPtc:klevet   # ;
-+V+PrsPtc:klivende # ;
++V+PrfPrc:klevet   # ;
++V+PrsPrc:klivende # ;
 
 LEXICON XYPE ! klype:kl
 +V+Inf:ype    # ;
@@ -805,8 +805,8 @@ LEXICON XYPE ! klype:kl
 +V+Ind+Prt+Use/NG:øp     # ;
 +V+Ind+Prt+Use/NG:øyp    # ;
 +V+Ind+Prt:aup    # ;
-+V+PrfPtc:øpet    # ;
-+V+PrsPtc:ypende # ;
++V+PrfPrc:øpet    # ;
++V+PrsPrc:ypende # ;
 
 LEXICON KLYVE
 +V+Inf:klyve    # ;
@@ -814,8 +814,8 @@ LEXICON KLYVE
 +V+Ind+Prs:klyver   # ;
 +V+Ind+Prs+Pass:klyves   # ;
 +V+Ind+Prt:klyv     # ;
-+V+PrfPtc:klyv     # ;
-+V+PrsPtc:klyvende # ;
++V+PrfPrc:klyv     # ;
++V+PrsPrc:klyvende # ;
 
 LEXICON XEKKE ! knekke, kvekke
 +V+Inf:ekke    # ;
@@ -823,9 +823,9 @@ LEXICON XEKKE ! knekke, kvekke
 +V+Ind+Prs:ekker   # ;
 +V+Ind+Prs+Pass:ekkes   # ;
 +V+Ind+Prt:akk     # ;
-+V+PrfPtc:ekket   # ;
-+V+PrfPtc:ekt     # ;
-+V+PrsPtc:ekkende # ;
++V+PrfPrc:ekket   # ;
++V+PrfPrc:ekt     # ;
++V+PrsPrc:ekkende # ;
 
 LEXICON KNESTE
 +V+Inf:kneste    # ;
@@ -833,8 +833,8 @@ LEXICON KNESTE
 +V+Ind+Prs:knester   # ;
 +V+Ind+Prs+Pass:knestes   # ;
 +V+Ind+Prt:knast     # ;
-+V+PrfPtc:knestet   # ;
-+V+PrsPtc:knestende # ;
++V+PrfPrc:knestet   # ;
++V+PrsPrc:knestende # ;
 
 LEXICON KNETTE
 +V+Inf:knette    # ;
@@ -842,8 +842,8 @@ LEXICON KNETTE
 +V+Ind+Prs:knetter   # ;
 +V+Ind+Prs+Pass:knettes   # ;
 +V+Ind+Prt:knatt     # ;
-+V+PrfPtc:knettet   # ;
-+V+PrsPtc:knettende # ;
++V+PrfPrc:knettet   # ;
++V+PrsPrc:knettende # ;
 
 LEXICON KNIPE
 +V+Inf:knipe    # ;
@@ -852,36 +852,36 @@ LEXICON KNIPE
 +V+Ind+Prs+Pass:knipes   # ;
 +V+Ind+Prt+Use/NG:knep     # ;
 +V+Ind+Prt:kneip    # ;
-+V+PrfPtc:knepet   # ;
-+V+PrsPtc:knipende # ;
++V+PrfPrc:knepet   # ;
++V+PrsPrc:knipende # ;
 
 LEXICON KOMME
 +V+Inf:komme    # ;
 +V+Ind+Prs:kommer   # ;
 +V+Ind+Prt:kom      # ;
-+V+PrfPtc:kommet   # ;
-+V+PrsPtc:kommende # ;
++V+PrfPrc:kommet   # ;
++V+PrsPrc:kommende # ;
 +V+Imp:kom      # ;
 
 LEXICON KUNNE
 +V+Inf:kunne  # ;
 +V+Ind+Prs:kan    # ;
 +V+Ind+Prt:kunne  # ;
-+V+PrfPtc:kunnet # ;
++V+PrfPrc:kunnet # ;
 
 LEXICON LA
 +V+Inf:la   # ;
 +V+Imp:la   # ;
 +V+Ind+Prs:lar  # ;
 +V+Ind+Prt:lot  # ;
-+V+PrfPtc:latt # ;
++V+PrfPrc:latt # ;
 
 LEXICON LE
 +V+Inf:le   # ;
 +V+Imp:lo   # ;
 +V+Ind+Prs:ler  # ;
 +V+Ind+Prt:lo   # ;
-+V+PrfPtc:ledd # ;
++V+PrfPrc:ledd # ;
 
 LEXICON LEGGE
 +V+Inf:legge    # ;
@@ -890,8 +890,8 @@ LEXICON LEGGE
 +V+Ind+Prs:legger   # ;
 +V+Ind+Prs+Pass:legges   # ;
 +V+Ind+Prt:la       # ;
-+V+PrfPtc:lagt     # ;
-+V+PrsPtc:leggende # ;
++V+PrfPrc:lagt     # ;
++V+PrsPrc:leggende # ;
 
 LEXICON LIGGE
 +V+Inf:ligge    # ;
@@ -899,8 +899,8 @@ LEXICON LIGGE
 +V+Ind+Prs:ligger   # ;
 +V+Ind+Prs+Pass:ligges   # ;
 +V+Ind+Prt:lå       # ;
-+V+PrfPtc:ligget   # ;
-+V+PrsPtc:liggende # ;
++V+PrfPrc:ligget   # ;
++V+PrsPrc:liggende # ;
 
 LEXICON LYDE
 +V+Inf:lyde    # ;
@@ -908,20 +908,20 @@ LEXICON LYDE
 +V+Ind+Prs:lyder   # ;
 +V+Ind+Prs+Pass:lydes   # ;
 +V+Ind+Prt:lød     # ;
-+V+PrfPtc:lydt    # ;
-+V+PrsPtc:lydende # ;
++V+PrfPrc:lydt    # ;
++V+PrsPrc:lydende # ;
 
 LEXICON MÅTTE
 +V+Inf:måtte # ;
 +V+Ind+Prs:må    # ;
 +V+Ind+Prt:måtte # ;
-+V+PrfPtc:mått  # ;
++V+PrfPrc:mått  # ;
 
 LEXICON MØTE
      +V+Inf:øte  # ;
  +V+Ind+Prs:øter # ;
  +V+Ind+Prt:øtte # ;
-  +V+PrfPtc:øtt  # ;
+  +V+PrfPrc:øtt  # ;
 
 LEXICON PIPE
 +V+Inf:pipe    # ;
@@ -930,8 +930,8 @@ LEXICON PIPE
 +V+Ind+Prs+Pass:pipes   # ;
 +V+Ind+Prt+Use/NG:pep     # ;
 +V+Ind+Prt:peip    # ;
-+V+PrfPtc:pepet   # ;
-+V+PrsPtc:pipende # ;
++V+PrfPrc:pepet   # ;
++V+PrsPrc:pipende # ;
 
 LEXICON RIVE
 +V+Inf:rive    # ;
@@ -939,8 +939,8 @@ LEXICON RIVE
 +V+Ind+Prs:river   # ;
 +V+Ind+Prt+Use/NG:rev     # ;
 +V+Ind+Prt:reiv    # ;
-+V+PrfPtc:revet   # ;
-+V+PrsPtc:rivende # ;
++V+PrfPrc:revet   # ;
++V+PrsPrc:rivende # ;
 
 LEXICON RYKE
 +V+Inf:ryke     # ;
@@ -948,8 +948,8 @@ LEXICON RYKE
 +V+Ind+Prs:ryker    # ;
 +V+Ind+Prt+Use/NG:røk      # ;
 +V+Ind+Prt:røyk     # ;
-+V+PrfPtc:røket    # ;
-+V+PrsPtc:røykende # ;
++V+PrfPrc:røket    # ;
++V+PrsPrc:røykende # ;
 
 LEXICON SETTE
 +V+Inf:sette    # ;
@@ -957,8 +957,8 @@ LEXICON SETTE
 +V+Ind+Prs:setter   # ;
 +V+Ind+Prs+Pass:settes   # ;
 +V+Ind+Prt:satte    # ;
-+V+PrfPtc:satt     # ;
-+V+PrsPtc:settende # ;
++V+PrfPrc:satt     # ;
++V+PrsPrc:settende # ;
 
 LEXICON SELGE
 +V+Inf:selge    # ;
@@ -966,8 +966,8 @@ LEXICON SELGE
 +V+Ind+Prs:selger   # ;
 +V+Ind+Prs+Pass:selges   # ;
 +V+Ind+Prt:solgte   # ;
-+V+PrfPtc:solgt    # ;
-+V+PrsPtc:selgende # ;
++V+PrfPrc:solgt    # ;
++V+PrsPrc:selgende # ;
 
 LEXICON SE
 +V+Inf:se     # ;
@@ -976,8 +976,8 @@ LEXICON SE
 +V+Ind+Prs+Pass:ses    # ;
 +V+Ind+Prs+Pass+Use/NG:sees   # ;
 +V+Ind+Prt:så     # ;
-+V+PrfPtc:sett   # ;
-+V+PrsPtc:seende # ;
++V+PrfPrc:sett   # ;
++V+PrsPrc:seende # ;
 
 LEXICON SIGE
 +V+Inf:sige    # ;
@@ -986,9 +986,9 @@ LEXICON SIGE
 +V+Ind+Prs+Pass:siges   # ;
 +V+Ind+Prt+Use/NG:seg     # ;
 +V+Ind+Prt:seig    # ;
-+V+PrfPtc+Use/NG:seget   # ;
-+V+PrfPtc:sigd    # ;
-+V+PrsPtc:sigende # ;
++V+PrfPrc+Use/NG:seget   # ;
++V+PrfPrc:sigd    # ;
++V+PrsPrc:sigende # ;
 
 LEXICON SITTE
 +V+Inf:sitte    # ;
@@ -996,8 +996,8 @@ LEXICON SITTE
 +V+Ind+Prs:sitter   # ;
 +V+Ind+Prs+Pass:sittes   # ;
 +V+Ind+Prt:satt     # ;
-+V+PrfPtc:sittet   # ;
-+V+PrsPtc:sittende # ;
++V+PrfPrc:sittet   # ;
++V+PrsPrc:sittende # ;
 
 LEXICON SI
 +V+Inf:si     # ;
@@ -1005,8 +1005,8 @@ LEXICON SI
 +V+Ind+Prs:sier   # ;
 +V+Ind+Prs+Pass:sies   # ;
 +V+Ind+Prt:sa     # ;
-+V+PrfPtc:sagt   # ;
-+V+PrsPtc:siende # ;
++V+PrfPrc:sagt   # ;
++V+PrsPrc:siende # ;
 
 LEXICON SKJELVE
 +V+Inf:skjelve    # ;
@@ -1014,8 +1014,8 @@ LEXICON SKJELVE
 +V+Ind+Prs:skjelver   # ;
 +V+Ind+Prs+Pass:skjelves   # ;
 +V+Ind+Prt:skalv      # ;
-+V+PrfPtc:skjelvet   # ;
-+V+PrsPtc:skjelvende # ;
++V+PrfPrc:skjelvet   # ;
++V+PrsPrc:skjelvende # ;
 
 LEXICON SKJÆRE
 +V+Inf:skjære    # ;
@@ -1024,9 +1024,9 @@ LEXICON SKJÆRE
 +V+Ind+Prs+Pass:skjæres   # ;
 +V+Ind+Prt:skar      # ;
 +V+Ind+Prt+Err/Orth:skjærte      # ;
-+V+PrfPtc:skåret    # ;
-+V+PrfPtc+Err/Orth:skjært   # ;
-+V+PrsPtc:skjærende # ;
++V+PrfPrc:skåret    # ;
++V+PrfPrc+Err/Orth:skjært   # ;
++V+PrsPrc:skjærende # ;
 
 LEXICON SKLI
 +V+Inf:skli     # ;
@@ -1036,8 +1036,8 @@ LEXICON SKLI
 +V+Ind+Prt+Use/NG:sklidde  # ;
 +V+Ind+Prt+Use/NG:skled    # ;
 +V+Ind+Prt:sklei    # ;
-+V+PrfPtc:sklidd   # ;
-+V+PrsPtc:skliende # ;
++V+PrfPrc:sklidd   # ;
++V+PrsPrc:skliende # ;
 
 LEXICON SKRIDE
 +V+Inf:skride    # ;
@@ -1047,8 +1047,8 @@ LEXICON SKRIDE
 +V+Ind+Prs+Pass:skrides   # ;
 +V+Ind+Prs+Pass:skris     # ;
 +V+Ind+Prt:skred     # ;
-+V+PrfPtc:skredet   # ;
-+V+PrsPtc:skridende # ;
++V+PrfPrc:skredet   # ;
++V+PrsPrc:skridende # ;
 
 LEXICON RIDE
 +V+Inf:ride    # ;
@@ -1057,8 +1057,8 @@ LEXICON RIDE
 +V+Ind+Prs+Pass:rides   # ; ! Fiks meg
 +V+Ind+Prt+Use/NG:red     # ; ! FIks meg
 +V+Ind+Prt:reid     # ; ! FIks meg
-+V+PrfPtc:ridd    # ;
-+V+PrsPtc:ridende # ;
++V+PrfPrc:ridd    # ;
++V+PrsPrc:ridende # ;
 
 LEXICON LIDE
 +V+Inf:lide    # ;
@@ -1066,8 +1066,8 @@ LEXICON LIDE
 +V+Ind+Prs:lider   # ;
 +V+Ind+Prs+Pass:rides   # ; ! Fiks meg
 +V+Ind+Prt:red     # ; ! FIks meg
-+V+PrfPtc:lidd    # ;
-+V+PrsPtc:lidende # ;
++V+PrfPrc:lidd    # ;
++V+PrsPrc:lidende # ;
 
 LEXICON KVEDE
 +V+Inf:kvede    # ;
@@ -1075,8 +1075,8 @@ LEXICON KVEDE
 +V+Ind+Prs:kveder   # ; ! Fiks meg
 +V+Ind+Prs+Pass:rides    # ; ! Fiks meg
 +V+Ind+Prt:kvad     # ; ! FIks meg
-+V+PrfPtc:kvedet   # ;
-+V+PrsPtc:kvedende # ;
++V+PrfPrc:kvedet   # ;
++V+PrsPrc:kvedende # ;
 
 LEXICON SKRIKE
 +V+Inf:skrike    # ;
@@ -1085,8 +1085,8 @@ LEXICON SKRIKE
 +V+Ind+Prs+Pass:skrikes   # ;
 +V+Ind+Prt:skreik    # ;
 +V+Ind+Prt+Use/NG:skrek     # ;
-+V+PrfPtc:skreket   # ;
-+V+PrsPtc:skrikende # ;
++V+PrfPrc:skreket   # ;
++V+PrsPrc:skrikende # ;
 
 
 LEXICON SKRIVE
@@ -1095,8 +1095,8 @@ LEXICON SKRIVE
 +V+Ind+Prs:skriver   # ;
 +V+Ind+Prt+Use/NG:skrev     # ;
 +V+Ind+Prt:skreiv    # ;
-+V+PrfPtc:skrevet   # ;
-+V+PrsPtc:skrivende # ;
++V+PrfPrc:skrevet   # ;
++V+PrsPrc:skrivende # ;
 +V+Ind+Prs+Pass:skrives # ;
 
 LEXICON SKRYTE
@@ -1107,14 +1107,14 @@ LEXICON SKRYTE
 +V+Ind+Prt+Use/NG:skrøt     # ;
 +V+Ind+Prt:skraut    # ;
 +V+Ind+Prt+Err/Orth:skrøyt    # ;
-+V+PrfPtc:skrytt    # ;
-+V+PrsPtc:skrytende # ;
++V+PrfPrc:skrytt    # ;
++V+PrsPrc:skrytende # ;
 
 LEXICON SKULLE
 +V+Inf:skulle  # ;
 +V+Ind+Prs:skal    # ;
 +V+Ind+Prt:skulle  # ;
-+V+PrfPtc:skullet # ;
++V+PrfPrc:skullet # ;
 
 LEXICON SKVETTE
 +V+Inf:skvette    # ;
@@ -1122,8 +1122,8 @@ LEXICON SKVETTE
 +V+Ind+Prs:skvetter   # ;
 +V+Ind+Prs+Pass:skvettes   # ;
 +V+Ind+Prt:skvatt     # ;
-+V+PrfPtc:skvettet   # ;
-+V+PrsPtc:skvettende # ;
++V+PrfPrc:skvettet   # ;
++V+PrsPrc:skvettende # ;
 
 LEXICON SKYTE
 +V+Inf:skyte    # ;
@@ -1133,8 +1133,8 @@ LEXICON SKYTE
 +V+Ind+Prt+Use/NG:skjøt    # ;
 +V+Ind+Prt+Err/Orth:skøyt    # ;
 +V+Ind+Prt:skaut    # ;
-+V+PrfPtc:skutt    # ;
-+V+PrsPtc:skytende # ;
++V+PrfPrc:skutt    # ;
++V+PrsPrc:skytende # ;
 
 LEXICON SKYVE
 +V+Inf:skyve    # ;
@@ -1143,8 +1143,8 @@ LEXICON SKYVE
 +V+Ind+Prs+Pass:skyves   # ;
 +V+Ind+Prt+Use/NG:skjøv    # ;
 +V+Ind+Prt:skauv    # ;
-+V+PrfPtc:skjøvet  # ;
-+V+PrsPtc:skyvende # ;
++V+PrfPrc:skjøvet  # ;
++V+PrsPrc:skyvende # ;
 
 LEXICON SLEPPE
 +V+Inf:sleppe    # ;
@@ -1152,15 +1152,15 @@ LEXICON SLEPPE
 +V+Ind+Prs:slepper   # ;
 +V+Ind+Prs+Pass:sleppes   # ;
 +V+Ind+Prt:slapp     # ;
-+V+PrfPtc:sluppet   # ;
-+V+PrsPtc:sleppende # ;
++V+PrfPrc:sluppet   # ;
++V+PrsPrc:sleppende # ;
 
 LEXICON SLÅSS
 +V+Inf:slåss     # ;
 +V+Imp:slåss     # ;
 +V+Ind+Prs:slåss     # ;
 +V+Ind+Prt:sloss     # ;
-+V+PrsPtc:slåssende # ;
++V+PrsPrc:slåssende # ;
 
 LEXICON SLÅ
 +V+Inf:slå     # ;
@@ -1168,8 +1168,8 @@ LEXICON SLÅ
 +V+Ind+Prs:slår    # ;
 +V+Ind+Prs+Pass:slås    # ;
 +V+Ind+Prt:slo     # ;
-+V+PrfPtc:slått   # ;
-+V+PrsPtc:slående # ;
++V+PrfPrc:slått   # ;
++V+PrsPrc:slående # ;
 
 LEXICON SMELLE
 +V+Inf:smelle    # ;
@@ -1177,8 +1177,8 @@ LEXICON SMELLE
 +V+Ind+Prs:smeller   # ;
 +V+Ind+Prs+Pass:smelles   # ;
 +V+Ind+Prt:smalt     # ;
-+V+PrfPtc:smelt     # ;
-+V+PrsPtc:smellende # ;
++V+PrfPrc:smelt     # ;
++V+PrsPrc:smellende # ;
 
 LEXICON SMETTE
 +V+Inf:smette    # ;
@@ -1186,8 +1186,8 @@ LEXICON SMETTE
 +V+Ind+Prs:smetter   # ;
 +V+Ind+Prs+Pass:smettes   # ;
 +V+Ind+Prt:smatt     # ;
-+V+PrfPtc:smettet   # ;
-+V+PrsPtc:smettende # ;
++V+PrfPrc:smettet   # ;
++V+PrsPrc:smettende # ;
 
 LEXICON SMYGE
 +V+Inf:smyge    # ;
@@ -1197,8 +1197,8 @@ LEXICON SMYGE
 +V+Ind+Prt+Use/NG:smøg     # ;
 +V+Ind+Prt+Err/Orth:smøyg    # ;
 +V+Ind+Prt:smaug    # ;
-+V+PrfPtc:smøget   # ;
-+V+PrsPtc:smygende # ;
++V+PrfPrc:smøget   # ;
++V+PrsPrc:smygende # ;
 
 LEXICON SMØRE
 +V+Inf:smøre    # ;
@@ -1206,8 +1206,8 @@ LEXICON SMØRE
 +V+Ind+Prs:smører   # ;
 +V+Ind+Prs+Pass:smøres   # ;
 +V+Ind+Prt:smurte   # ;
-+V+PrfPtc:smurt    # ;
-+V+PrsPtc:smørende # ;
++V+PrfPrc:smurt    # ;
++V+PrsPrc:smørende # ;
 
 LEXICON SNIKE
 +V+Inf:snike    # ;
@@ -1216,8 +1216,8 @@ LEXICON SNIKE
 +V+Ind+Prs+Pass:snikes   # ;
 +V+Ind+Prt:sneik    # ;
 +V+Ind+Prt+Use/NG:snek     # ;
-+V+PrfPtc:sneket   # ;
-+V+PrsPtc:snikende # ;
++V+PrfPrc:sneket   # ;
++V+PrsPrc:snikende # ;
 
 LEXICON SNYTE
 +V+Inf:snyte    # ;
@@ -1226,16 +1226,16 @@ LEXICON SNYTE
 +V+Ind+Prs+Pass:snytes   # ;
 +V+Ind+Prt+Use/NG:snøt     # ;
 +V+Ind+Prt:snøyt    # ;
-+V+PrfPtc:snytt    # ;
-+V+PrsPtc:snytende # ;
++V+PrfPrc:snytt    # ;
++V+PrsPrc:snytende # ;
 
 LEXICON SOVE
 +V+Inf:sove    # ;
 +V+Imp:sov     # ;
 +V+Ind+Prs:sover   # ;
 +V+Ind+Prt:sov     # ;
-+V+Ind+PrfPtc:sovet   # ;
-+V+PrsPtc:sovende # ;
++V+Ind+PrfPrc:sovet   # ;
++V+PrsPrc:sovende # ;
 
 LEXICON SPINNE
 +V+Inf:spinne    # ;
@@ -1243,8 +1243,8 @@ LEXICON SPINNE
 +V+Ind+Prs:spinner   # ;
 +V+Ind+Prs+Pass:spinnes   # ;
 +V+Ind+Prt:spant     # ;
-+V+PrfPtc:spunnet   # ;
-+V+PrsPtc:spinnende # ;
++V+PrfPrc:spunnet   # ;
++V+PrsPrc:spinnende # ;
 
 LEXICON SPREKKE
 +V+Inf:sprekke    # ;
@@ -1252,8 +1252,8 @@ LEXICON SPREKKE
 +V+Ind+Prs:sprekker   # ;
 +V+Ind+Prs+Pass:sprekkes   # ;
 +V+Ind+Prt:sprakk     # ;
-+V+PrfPtc:sprukket   # ;
-+V+PrsPtc:sprekkende # ;
++V+PrfPrc:sprukket   # ;
++V+PrsPrc:sprekkende # ;
 
 LEXICON SPRETTE
 +V+Inf:sprette    #          ;
@@ -1261,8 +1261,8 @@ LEXICON SPRETTE
 +V+Ind+Prs:spretter   #          ;
 +V+Ind+Prs+Pass:sprettes   #          ;
 +V+Ind+Prt:spratt     #          ;
-+V+PrfPtc:sprettet   #          ;
-+V+PrsPtc:sprettende #          ;
++V+PrfPrc:sprettet   #          ;
++V+PrsPrc:sprettende #          ;
 
 
 LEXICON SPRINGE
@@ -1270,8 +1270,8 @@ LEXICON SPRINGE
 +V+Imp:spring     # ;
 +V+Ind+Prs:springer   # ;
 +V+Ind+Prt:sprang     # ;
-+V+PrfPtc:sprunget   # ;
-+V+PrsPtc:springende # ;
++V+PrfPrc:sprunget   # ;
++V+PrsPrc:springende # ;
 
 LEXICON SPØRRE
 +V+Inf:spørre    # ;
@@ -1279,8 +1279,8 @@ LEXICON SPØRRE
 +V+Ind+Prs:spør      # ;
 +V+Ind+Prs+Pass:spørres   # ;
 +V+Ind+Prt:spurte    # ;
-+V+PrfPtc:spurt     # ;
-+V+PrsPtc:spørrende # ;
++V+PrfPrc:spurt     # ;
++V+PrsPrc:spørrende # ;
 
 LEXICON STELE
 +V+Inf:stele    # ;
@@ -1288,8 +1288,8 @@ LEXICON STELE
 +V+Ind+Prs:steler   # ;
 +V+Ind+Prs+Pass:steles   # ;
 +V+Ind+Prt:stal     # ;
-+V+PrfPtc:stelt    # ;
-+V+PrsPtc:stelende # ;
++V+PrfPrc:stelt    # ;
++V+PrsPrc:stelende # ;
 
 
 LEXICON STIGE
@@ -1299,8 +1299,8 @@ LEXICON STIGE
 +V+Ind+Prs+Pass:stiges   # ;
 +V+Ind+Prt:steig    # ;
 +V+Ind+Prt+Use/NG:steg     # ;
-+V+PrfPtc:steget   # ;
-+V+PrsPtc:stigende # ;
++V+PrfPrc:steget   # ;
++V+PrsPrc:stigende # ;
 
 LEXICON STIKKE
 +V+Inf:stikke    # ;
@@ -1308,8 +1308,8 @@ LEXICON STIKKE
 +V+Ind+Prs:stikker   # ;
 +V+Ind+Prs+Pass:stikkes   # ;
 +V+Ind+Prt:stakk     # ;
-+V+PrfPtc:stukket   # ;
-+V+PrsPtc:stikkende # ;
++V+PrfPrc:stukket   # ;
++V+PrsPrc:stikkende # ;
 
 LEXICON STJELE
 +V+Inf:stjele    # ;
@@ -1317,8 +1317,8 @@ LEXICON STJELE
 +V+Ind+Prs:stjeler   # ;
 +V+Ind+Prs+Pass:stjeles   # ;
 +V+Ind+Prt:stjal     # ;
-+V+PrfPtc:stjålet   # ;
-+V+PrsPtc:stjelende # ;
++V+PrfPrc:stjålet   # ;
++V+PrsPrc:stjelende # ;
 
 LEXICON STREKKE
 +V+Inf:strekke    # ;
@@ -1326,8 +1326,8 @@ LEXICON STREKKE
 +V+Ind+Prs:strekker   # ;
 +V+Ind+Prs+Pass:strekkes   # ;
 +V+Ind+Prt:strekk     # ;
-+V+PrfPtc:strekk     # ;
-+V+PrsPtc:strekkende # ;
++V+PrfPrc:strekk     # ;
++V+PrsPrc:strekkende # ;
 
 LEXICON STRIDE
 +V+Inf:stride    # ;
@@ -1335,8 +1335,8 @@ LEXICON STRIDE
 +V+Ind+Prs:strider   # ;
 +V+Ind+Prs+Pass:strides   # ;
 +V+Ind+Prt:stred     # ;
-+V+PrfPtc:stritt    # ;
-+V+PrsPtc:stridende # ;
++V+PrfPrc:stritt    # ;
++V+PrsPrc:stridende # ;
 
 LEXICON STRYKE
 +V+Inf:stryke    # ;
@@ -1346,8 +1346,8 @@ LEXICON STRYKE
 +V+Ind+Prt:strøk     # ;
 +V+Ind+Prt+Use/NG:strauk     # ;
 +V+Ind+Prt+Err/Orth:strøyk    # ;
-+V+PrfPtc:strøket   # ;
-+V+PrsPtc:strykende # ;
++V+PrfPrc:strøket   # ;
++V+PrsPrc:strykende # ;
 
 LEXICON STÅ
 +V+Inf:stå     # ;
@@ -1356,8 +1356,8 @@ LEXICON STÅ
 +V+Ind+Prs+Pass:stås    # ;
 +V+Ind+Prt+Use/NG:stod    # ;
 +V+Ind+Prt:sto     # ;
-+V+PrfPtc:stått   # ;
-+V+PrsPtc:stående # ;
++V+PrfPrc:stått   # ;
++V+PrsPrc:stående # ;
 
 LEXICON STØKKE
 +V+Inf:støkke    # ;
@@ -1365,8 +1365,8 @@ LEXICON STØKKE
 +V+Ind+Prs:støkker   # ;
 +V+Ind+Prs+Pass:støkkes   # ;
 +V+Ind+Prt:støkk     # ;
-+V+PrfPtc:støkket   # ;
-+V+PrsPtc:støkkende # ;
++V+PrfPrc:støkket   # ;
++V+PrsPrc:støkkende # ;
 
 LEXICON SVELTE
 +V+Inf:svelte    # ;
@@ -1376,9 +1376,9 @@ LEXICON SVELTE
 +V+Ind+Prt+Use/NG:svalt     # ;
 +V+Ind+Prt+Use/NG:svelta     # ;
 +V+Ind+Prt:sveltet     # ;
-+V+PrfPtc:sveltet   # ;
-+V+PrfPtc:svelta   # ;
-+V+PrsPtc:sveltende # ;
++V+PrfPrc:sveltet   # ;
++V+PrfPrc:svelta   # ;
++V+PrsPrc:sveltende # ;
 
 LEXICON SVERGE
 +V+Inf:sverge    # ;
@@ -1386,8 +1386,8 @@ LEXICON SVERGE
 +V+Ind+Prs:sverger   # ;
 +V+Ind+Prs+Pass:sverges   # ;
 +V+Ind+Prt:sverget   # ;
-+V+PrfPtc:sverget   # ;
-+V+PrsPtc:svergende # ;
++V+PrfPrc:sverget   # ;
++V+PrsPrc:svergende # ;
 
 LEXICON SVI
 +V+Inf:svi     # ;
@@ -1396,8 +1396,8 @@ LEXICON SVI
 +V+Ind+Prs+Pass:svis    # ;
 +V+Ind+Prt+Use/NG:sved    # ;
 +V+Ind+Prt:svei    # ;
-+V+PrfPtc:svidd   # ;
-+V+PrsPtc:sviende # ;
++V+PrfPrc:svidd   # ;
++V+PrsPrc:sviende # ;
 
 LEXICON SVIKE
 +V+Inf:svike    # ;
@@ -1406,8 +1406,8 @@ LEXICON SVIKE
 +V+Ind+Prs+Pass:svikes   # ;
 +V+Ind+Prt+Use/NG:svek     # ;
 +V+Ind+Prt:sveik    # ;
-+V+PrfPtc:sveket   # ;
-+V+PrsPtc:svikende # ;
++V+PrfPrc:sveket   # ;
++V+PrsPrc:svikende # ;
 
 LEXICON SVINGE
 +V+Inf:svinge    # ;
@@ -1416,9 +1416,9 @@ LEXICON SVINGE
 +V+Ind+Prs+Pass:svinges   # ;
 +V+Ind+Prt:svingte   # ;
 +V+Ind+Prt+Use/NG:svang     # ;
-+V+PrfPtc+Use/NG:svingt    # ;
-+V+PrfPtc:svungrt   # ;
-+V+PrsPtc:svingende # ;
++V+PrfPrc+Use/NG:svingt    # ;
++V+PrfPrc:svungrt   # ;
++V+PrsPrc:svingende # ;
 
 LEXICON SVINNE
 +V+Inf:svinne    # ;
@@ -1426,8 +1426,8 @@ LEXICON SVINNE
 +V+Ind+Prs:svinner   # ;
 +V+Ind+Prs+Pass:svinnes   # ;
 +V+Ind+Prt:svant     # ;
-+V+PrfPtc:svunnet   # ;
-+V+PrsPtc:svinnende # ;
++V+PrfPrc:svunnet   # ;
++V+PrsPrc:svinnende # ;
 
 LEXICON SVIVE
 +V+Inf:svive    # ;
@@ -1435,8 +1435,8 @@ LEXICON SVIVE
 +V+Ind+Prs:sviver   # ;
 +V+Ind+Prs+Pass:svives   # ;
 +V+Ind+Prt:svivet   # ;
-+V+PrfPtc:svivet   # ;
-+V+PrsPtc:svivende # ;
++V+PrfPrc:svivet   # ;
++V+PrsPrc:svivende # ;
 
 LEXICON SYNGE
 +V+Inf:synge    # ;
@@ -1444,8 +1444,8 @@ LEXICON SYNGE
 +V+Ind+Prs:synger   # ;
 +V+Ind+Prs+Pass:synges   # ;
 +V+Ind+Prt:sang     # ;
-+V+PrfPtc:sunget   # ;
-+V+PrsPtc:syngende # ;
++V+PrfPrc:sunget   # ;
++V+PrsPrc:syngende # ;
 
 LEXICON SYNKE
 +V+Inf:synke    # ;
@@ -1453,8 +1453,8 @@ LEXICON SYNKE
 +V+Ind+Prs:synker   # ;
 +V+Ind+Prs+Pass:synkes   # ;
 +V+Ind+Prt:sank     # ;
-+V+PrfPtc:sunket   # ;
-+V+PrsPtc:synkende # ;
++V+PrfPrc:sunket   # ;
++V+PrsPrc:synkende # ;
 
 LEXICON SØKKE
 +V+Inf:søkke    # ;
@@ -1462,8 +1462,8 @@ LEXICON SØKKE
 +V+Ind+Prs:søkker   # ;
 +V+Ind+Prs+Pass:søkkes   # ;
 +V+Ind+Prt:søkk     # ;
-+V+PrfPtc:søkket   # ;
-+V+PrsPtc:søkkende # ;
++V+PrfPrc:søkket   # ;
++V+PrsPrc:søkkende # ;
 
 LEXICON TA
 +V+Inf:ta     # ;
@@ -1471,8 +1471,8 @@ LEXICON TA
 +V+Ind+Prs:tar    # ;
 +V+Ind+Prs+Pass:tas    # ;
 +V+Ind+Prt:tok    # ;
-+V+PrfPtc:tatt   # ;
-+V+PrsPtc:taende # ;
++V+PrfPrc:tatt   # ;
++V+PrsPrc:taende # ;
 
 LEXICON TELLE
 +V+Inf:telle    # ;
@@ -1480,8 +1480,8 @@ LEXICON TELLE
 +V+Ind+Prs:teller   # ;
 +V+Ind+Prs+Pass:telles   # ;
 +V+Ind+Prt:talte    # ;
-+V+PrfPtc:talt     # ;
-+V+PrsPtc:tellende # ;
++V+PrfPrc:talt     # ;
++V+PrsPrc:tellende # ;
 
 LEXICON TIE
 +V+Inf:tie    # ;
@@ -1489,8 +1489,8 @@ LEXICON TIE
 +V+Ind+Prs:tier   # ;
 +V+Ind+Prs+Pass:ties   # ;
 +V+Ind+Prt:tidde  # ;
-+V+PrfPtc:tidd   # ;
-+V+PrsPtc:tiende # ;
++V+PrfPrc:tidd   # ;
++V+PrsPrc:tiende # ;
 
 LEXICON TRE_V
 +V+Inf:tre     # ;
@@ -1498,8 +1498,8 @@ LEXICON TRE_V
 +V+Ind+Prs:trer    # ;
 +V+Ind+Prs+Pass:tres    # ;
 +V+Ind+Prt:tredde  # ;
-+V+PrfPtc:tredd   # ;
-+V+PrsPtc:treende # ;
++V+PrfPrc:tredd   # ;
++V+PrsPrc:treende # ;
 
 LEXICON TREFFE
 +V+Inf:treffe    # ;
@@ -1507,8 +1507,8 @@ LEXICON TREFFE
 +V+Ind+Prs:treffer   # ;
 +V+Ind+Prs+Pass:treffes   # ;
 +V+Ind+Prt:traff     # ;
-+V+PrfPtc:truffet   # ;
-+V+PrsPtc:treffende # ;
++V+PrfPrc:truffet   # ;
++V+PrsPrc:treffende # ;
 
 LEXICON TREKKE
 +V+Inf:trekke    # ;
@@ -1516,8 +1516,8 @@ LEXICON TREKKE
 +V+Ind+Prs:trekker   # ;
 +V+Ind+Prs+Pass:trekkes   # ;
 +V+Ind+Prt:trakk     # ;
-+V+PrfPtc:trekt     # ;
-+V+PrsPtc:trekkende # ;
++V+PrfPrc:trekt     # ;
++V+PrsPrc:trekkende # ;
 
 LEXICON TRIVE
 +V+Inf:trive    # ;
@@ -1526,8 +1526,8 @@ LEXICON TRIVE
 +V+Ind+Prs+Pass:trives   # ;
 +V+Ind+Prt+Use/NG:trev    # ;
 +V+Ind+Prt:treiv    # ;
-+V+PrfPtc:trevet   # ;
-+V+PrsPtc:trivende # ;
++V+PrfPrc:trevet   # ;
++V+PrsPrc:trivende # ;
 
 LEXICON TRYTE
 +V+Inf:tryte    # ;
@@ -1536,8 +1536,8 @@ LEXICON TRYTE
 +V+Ind+Prs+Pass:trytes   # ;
 +V+Ind+Prt:trøt     # ;
 +V+Ind+Prt+Err/Orth:trøyt     # ;
-+V+PrfPtc:trytet   # ;
-+V+PrsPtc:trytende # ;
++V+PrfPrc:trytet   # ;
++V+PrsPrc:trytende # ;
 
 LEXICON TRÅ
 +V+Inf:trå     # ;
@@ -1546,8 +1546,8 @@ LEXICON TRÅ
 +V+Ind+Prs+Pass:trås    # ;
 +V+Ind+Prt+Use/NG:tro     # ;
 +V+Ind+Prt:trådde  # ;
-+V+PrfPtc:trådd   # ;
-+V+PrsPtc:trående # ;
++V+PrfPrc:trådd   # ;
++V+PrsPrc:trående # ;
 
 LEXICON TVINGE
 +V+Inf:tvinge    # ;
@@ -1555,8 +1555,8 @@ LEXICON TVINGE
 +V+Ind+Prs:tvinger   # ;
 +V+Ind+Prs+Pass:tvinges   # ;
 +V+Ind+Prt:tvang     # ;
-+V+PrfPtc:tvunget   # ;
-+V+PrsPtc:tvingende # ;
++V+PrfPrc:tvunget   # ;
++V+PrsPrc:tvingende # ;
 
 LEXICON TYTE
 +V+Inf:tyte    # ;
@@ -1565,8 +1565,8 @@ LEXICON TYTE
 +V+Ind+Prs+Pass:tytes   # ;
 +V+Ind+Prt:tøt     # ;
 +V+Ind+Prt+Err/Orth:tøyt    # ;
-+V+PrfPtc:tytt    # ;
-+V+PrsPtc:tytende # ;
++V+PrfPrc:tytt    # ;
++V+PrsPrc:tytende # ;
 
 LEXICON TØRRE
 +V+Inf:tørre  # ;
@@ -1575,7 +1575,7 @@ LEXICON TØRRE
 +V+Ind+Prs+Pass:tørres # ;
 +V+Ind+Prt:torde  # ;
 +V+Ind+Prt+Use/NG:turde  # ;
-+V+PrfPtc:tort   # ;
++V+PrfPrc:tort   # ;
 
 LEXICON VEIE
 +V+Inf:veie    # ;
@@ -1584,8 +1584,8 @@ LEXICON VEIE
 +V+Ind+Prs+Pass:veies   # ;
 +V+Ind+Prt:veide   # ;
 +V+Ind+Prt+Use/NG:vog     # ;
-+V+PrfPtc:veid    # ;
-+V+PrsPtc:veiende # ;
++V+PrfPrc:veid    # ;
++V+PrsPrc:veiende # ;
 
 LEXICON VELGE
 +V+Inf:velge    # ;
@@ -1593,8 +1593,8 @@ LEXICON VELGE
 +V+Ind+Prs:velger   # ;
 +V+Ind+Prs+Pass:velges   # ;
 +V+Ind+Prt:valgte   # ;
-+V+PrfPtc:valgt    # ;
-+V+PrsPtc:velgende # ;
++V+PrfPrc:valgt    # ;
++V+PrsPrc:velgende # ;
 
 LEXICON VEVE
 +V+Inf:veve    # ;
@@ -1603,8 +1603,8 @@ LEXICON VEVE
 +V+Ind+Prs+Pass:veves   # ;
 +V+Ind+Prt:vevde   # ;
 +V+Ind+Prt+Use/NG:vov     # ;
-+V+PrfPtc:vevd    # ;
-+V+PrsPtc:vevende # ;
++V+PrfPrc:vevd    # ;
++V+PrsPrc:vevende # ;
 
 LEXICON VIKE
 +V+Inf:vike    # ;
@@ -1613,14 +1613,14 @@ LEXICON VIKE
 +V+Ind+Prs+Pass:vikes   # ;
 +V+Ind+Prt+Use/NG:vek     # ;
 +V+Ind+Prt:veik    # ;
-+V+PrfPtc:veket   # ;
-+V+PrsPtc:vikende # ;
++V+PrfPrc:veket   # ;
++V+PrsPrc:vikende # ;
 
 LEXICON VILLE
 +V+Inf:ville  # ;
 +V+Ind+Prs:vil    # ;
 +V+Ind+Prt:ville  # ;
-+V+PrfPtc:villet # ;
++V+PrfPrc:villet # ;
 
 LEXICON VINDE
 +V+Inf:vinde    # ;
@@ -1628,8 +1628,8 @@ LEXICON VINDE
 +V+Ind+Prs:vinder   # ;
 +V+Ind+Prs+Pass:vindes   # ;
 +V+Ind+Prt:vindet   # ;
-+V+PrfPtc:vindet   # ;
-+V+PrsPtc:vindende # ;
++V+PrfPrc:vindet   # ;
++V+PrsPrc:vindende # ;
 
 LEXICON VINNE
 +V+Inf:vinne    # ;
@@ -1637,8 +1637,8 @@ LEXICON VINNE
 +V+Ind+Prs:vinner   # ;
 +V+Ind+Prs+Pass:vinnes   # ;
 +V+Ind+Prt:vant     # ;
-+V+PrfPtc:vunnet   # ;
-+V+PrsPtc:vinnende # ;
++V+PrfPrc:vunnet   # ;
++V+PrsPrc:vinnende # ;
 
 LEXICON VITE
 +V+Inf:vite    # ;
@@ -1646,8 +1646,8 @@ LEXICON VITE
 +V+Ind+Prs:veit     # ;
 +V+Ind+Prs+Use/NG:vet     # ;
 +V+Ind+Prt:visste  # ;
-+V+PrfPtc:visst   # ;
-+V+PrsPtc:vitende # ;
++V+PrfPrc:visst   # ;
++V+PrsPrc:vitende # ;
 
 LEXICON VRI
 +V+Inf:vri    # ;
@@ -1657,28 +1657,28 @@ LEXICON VRI
 +V+Ind+Prt:vridde  # ;
 +V+Ind+Prt+Use/NG:vred    # ;
 +V+Ind+Prt:vrei    # ;
-+V+PrfPtc:vridd   # ;
-+V+PrsPtc:vriende # ;
++V+PrfPrc:vridd   # ;
++V+PrsPrc:vriende # ;
 
 LEXICON VÆRE
 +V+Inf:være     # ;
 +V+Ind+Prs:er       # ;
 +V+Ind+Prt:var      # ;
-+V+PrfPtc:vært     # ;
-+V+PrsPtc:værende  # ;
++V+PrfPrc:vært     # ;
++V+PrsPrc:værende  # ;
 +V+Imp:vær      # ;
-+V+PrfPtc:vært     # ;
-+V+PrsPtc:værrende # ;
++V+PrfPrc:vært     # ;
++V+PrsPrc:værrende # ;
 
 LEXICON UNNVÆRE
 +V+Inf:være     # ;
 +V+Ind+Prs:værer       # ;
 +V+Ind+Prt:var      # ;
-+V+PrfPtc:vært     # ;
-+V+PrsPtc:værende  # ;
++V+PrfPrc:vært     # ;
++V+PrsPrc:værende  # ;
 +V+Imp:vær      # ;
-+V+PrfPtc:vært     # ;
-+V+PrsPtc:værrende # ;
++V+PrfPrc:vært     # ;
++V+PrsPrc:værrende # ;
 
 
 LEXICON XREKKE
@@ -1688,7 +1688,7 @@ LEXICON XREKKE
 +V+Ind+Prs+Pass:rekkes #          ;
 +V+Inf+Pass:rekkes #          ;
 +V+Ind+Prt:rakk   #          ;
-+V+PrfPtc:rukket #          ;
-+V+PrsPtc:rekk   prsptcsuff ;
++V+PrfPrc:rukket #          ;
++V+PrsPrc:rekk   prsptcsuff ;
 
 
