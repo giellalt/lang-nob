@@ -87,6 +87,7 @@ l7 ! always l
 +Use/Circ !!= @CODE@ circular string
 
 +Der/AAdv !!= @CODE@ Adjectives are also adverbs
++Der/NomAct !!= @CODE@ verb +ing
 
 
 !! !! Normativity and other usage tags
