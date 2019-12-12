@@ -21,8 +21,8 @@ LEXICON Personal
  hun+Pron+Pers+Sg3+Acc:henne # ;
  den+Pron+Pers+Sg3:den # ; ! Gender? -- no, only as Det Dem (?)
  det+Pron+Pers+Sg3:det # ; ! Gender? -- no, only as Det Dem (?)
- den+Pron+Pers+Sg3+Clt:dens # ; ! Gender? -- no, only as Det Dem (?)
- det+Pron+Pers+Sg3+Clt:dets # ; ! Gender? -- no, only as Det Dem (?)
+ den+Pron+Pers+Sg3+Poss:dens # ; ! Gender? -- no, only as Det Dem (?) # var Clt
+ det+Pron+Pers+Sg3+Poss:dets # ; ! Gender? -- no, only as Det Dem (?) # var Clt
   vi+Pron+Pers+Pl1+Nom:vi # ;
   vi+Pron+Pers+Pl1+Acc:oss # ;
 dere+Pron+Pers+Pl2+Nom:dere # ;
@@ -41,25 +41,26 @@ hva+Pron+Interr:hva # ;
 hvem+Pron+Interr:hvem # ;
 
 LEXICON Possessive 
-din+Det+Poss+Sg+Fem:di # ;
-din+Det+Poss+Sg+Msc:din # ;
-din+Det+Poss+Pl:dine # ;
-din+Det+Poss+Sg+Neu:ditt # ;
+din+Det+Poss+Sg2+Fem:di # ;
+din+Det+Poss+Sg2+Msc:din # ;
+din+Det+Poss+Pl2:dine # ;
+din+Det+Poss+Sg2+Neu:ditt # ;
 min+Det+Poss+Sg+Fem:mi # ;
 min+Det+Poss+Sg+Msc:min # ;
 min+Det+Poss+Pl:mine # ;
 min+Det+Poss+Sg+Neu:mitt # ;
-sin+Det+Poss+Sg+Fem:si # ;
-sin+Det+Poss+Sg+Msc:sin # ;
-sin+Det+Poss+Pl:sine # ;
-sin+Det+Poss+Sg+Neu:sitt # ;
-vår+Det+Poss+Sg+Fem:vår # ;
-vår+Det+Poss+Sg+Msc:vår # ;
-vår+Det+Poss+Pl:våre # ;
-vår+Det+Poss+Sg+Neu:vårt # ;
-hans+Det+Poss+Msc:hans # ;
-hennes+Det+Poss+Fem:hennes # ;
-deres+Det+Poss+Pl:deres # ;
+sin+Det+Poss+Sg3+Fem:si # ;
+sin+Det+Poss+Sg3+Msc:sin # ;
+sin+Det+Poss+Pl3:sine # ;
+sin+Det+Poss+Sg3+Neu:sitt # ;
+vår+Det+Poss+Sg1+Fem:vår # ;
+vår+Det+Poss+Sg1+Msc:vår # ;
+vår+Det+Poss+Pl1:våre # ;
+vår+Det+Poss+Sg1+Neu:vårt # ;
+hans+Det+Poss+Sg3+Msc:hans # ;
+hennes+Det+Poss+Sg3+Fem:hennes # ;
+deres+Det+Poss+Pl2:deres # ;
+deres+Det+Poss+Pl2:deres # ;
 
 LEXICON Other_Pronouns
 
