@@ -97,7 +97,7 @@ LEXICON m1Vn1
 ! Masc2ulines
 ! ----------
 
-LEXICON x
+LEXICON mx
 !  +X: m1 ; !Temporarily excluding the xX
        m1 ; ! change line back if needed.
 
@@ -185,42 +185,42 @@ LEXICON ma ! alliert
  +N+Msc+Pl: e-e ;
         +N: R   ;
 
-LEXICON KOLLEGA
+LEXICON mKOLLEGA
  +N+Msc+Sg:   0-en   ;
  +N+Msc+Pl:X2 er-ene ; ! delete a, kolleger
  +N+Msc+Pl+Use/NG:   er-ene ; ! keep a, kollegaer
         +N:   R      ;
 
-LEXICON KONTO
+LEXICON mKONTO
          +N+Msc+Sg:     0-en   ;
          +N+Msc+Pl:X2i  0-ene  ; ! delete o
          +N+Msc+Pl+Use/NG:     er-ene ; ! Regular pl
  +N+Msc+Pl+Nynorsk+Use/NG:     ar-ane ; ! Regular pl
                 +N:     R      ;
 
-LEXICON RADIUS
+LEXICON mRADIUS
          +N+Msc+Sg:%>us 0-en   ;
      +N+Msc+Sg+Def:%>en K      ; ! short def
          +N+Msc+Pl:     er-ene ; ! Regular pl
  +N+Msc+Pl+Nynorsk+Use/NG:     ar-ane ; ! Regular pl
                 +N:     R      ;
 
-LEXICON BROR
+LEXICON mBROR
          +N+Msc+Sg:bror  0-en  ;
          +N+Msc+Pl:brødr e-ene ;
  +N+Msc+Pl+Nynorsk+Use/NG:brør  0-ne  ;
 
-LEXICON BRODER
+LEXICON mBRODER
          +N+Msc+Sg:broder 0-en  ;
          +N+Msc+Pl:brødr  e-ene ;
  +N+Msc+Pl+Nynorsk+Use/NG:brør   0-ne  ;
 
-LEXICON FAR
+LEXICON mFAR
   +N+Msc+Sg:far  0-en  ;
   +N+Msc+Pl:fedr e-ene ;
 !           +N:     R     ;
 
-LEXICON DATTER
+LEXICON fDATTER
           +N+Fem+Sg+Indef:datter   K ;
             +N+Fem+Sg+Def:datra    K ;
             +N+Msc+Sg+Def:datteren K ;
@@ -231,40 +231,40 @@ LEXICON DATTER
     +N+Fem+Sg+Nynorsk+Use/NG+Def:dotra    K ;
 !                      +N:         R ;
 
-LEXICON MOR
+LEXICON fMOR
      +N+Fem+Sg:mor   0-a   ;
  +N+Msc+Sg+Def:moren K     ;
     +N+Fem+Pl:mødr  e-ene ;
 
-LEXICON FOT
+LEXICON fFOT
      +N+Msc+Sg:fot   0-en   ;
     +N+Msc+Pl:føtt  e-ene ;
 
-LEXICON ROT
+LEXICON fROT
      +N+Fem+Sg:rot   0-a   ;
  +N+Msc+Sg+Def:roten K     ;
     +N+Fem+Pl:røtt  er-ene ;
 
 
-LEXICON GÅS
+LEXICON fGÅS
      +N+Fem+Sg:gås   0-a   ;
  +N+Msc+Sg+Def:gåsen K     ;
      +N+Fem+Pl:gjess 0-ene ;
 
-LEXICON KU
+LEXICON fKU
      +N+Fem+Sg:ku   0-a    ;
  +N+Fem+Sg+Def:kua K      ;
  +N+Msc+Sg+Def:kuen K      ;
      +N+Fem+Pl:kyr  0-a    ;
      +N+Fem+Pl+Use/NG:ku   er-ene ;
 
-LEXICON KLE
+LEXICON fKLE
  +N+Neu+Sg+Indef:kle    K     ;
    +N+Neu+Sg+Def:kledet K     ;
        +N+Neu+Pl:klæ    r-rne ;
 
 
-LEXICON MANN
+LEXICON mMANN
   +N+Msc+Sg:mann   0-en  ;
   +N+Msc+Pl:mannZ1 0-ene ;
 !        +N:   R     ;
@@ -421,36 +421,36 @@ LEXICON n5 ! middel
 
 
 
-LEXICON FORUM ! forum
+LEXICON nFORUM ! forum
  +N+Neu+Sg:um 0-et   ;
  +N+Neu+Pl:   a-aene ;
  +N+Neu+Pl+Use/NG:um er-ene ;
         +N:um R      ;
 
-LEXICON LEKSIKON ! leksikon
+LEXICON nLEKSIKON ! leksikon
  +N+Neu+Sg:on 0-et   ;
  +N+Neu+Pl:   a-aene ;
         +N:on R      ;
 
-LEXICON MUSEUM
+LEXICON nMUSEUM
  +N+Neu+Sg:um 0-et     ;
  +N+Neu+Pl:   er-ene-a ;
         +N:um R        ;
 
-LEXICON KLÆR
+LEXICON nplKLÆR
  +N+Neu+Pl:klær 0-ne  ;
 
- LEXICON TRE
+ LEXICON nTRE
  +N+Neu+Sg:e  0-et  ;
  +N+Neu+Pl:æ  r-rne ;
 
-LEXICON TEMPUS ! tempus:temp TEMPUS ;
+LEXICON nTEMPUS ! tempus:temp TEMPUS ;
           :us     n1 ;
  +N+Neu+Sg:ora    K  ;
  +N+Neu+Pl:oraene K  ;
         +N:us     R  ;
 
-LEXICON TÅ
+LEXICON fTÅ
  +N+Fem+Sg:tå  0-a  ;
  +N+Msc+Use/NG:tåen # ;
  +N+Fem+Pl:tæ  r-rne ;
