@@ -107,6 +107,7 @@ LEXICON positive-def
  +Pos+Sg+Def+Clt:%>es # ;
  +Pos+Sg+Def:%>e # ;
  +Pos+Pl+Def:%>e # ;
+ +Pos+Pl+Indef:%>e # ;
 
 LEXICON a-neuter ! fint
  +Pos+Neu+Sg+Indef:%>Q3t # ;
