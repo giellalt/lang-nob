@@ -81,13 +81,13 @@ analyser-gt-desc.%: analyser-gt-desc.tmp.%                    \
 analyser-gt-norm.%: analyser-gt-norm.tmp.%                \
 					filters/remove-Nynorsk-strings.%      \
 					filters/remove-MinusSpell-strings.%   \
-					filters/remove-derivation-position-tags.xfst   \
+					filters/remove-derivation-position-tags.%   \
 					filters/convert_to_flags-CmpNP-tags.% \
 					filters/split-CmpNP-tags.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
 				@\"filters/remove-Nynorsk-strings.$*\"      \
 			.o. @\"filters/remove-MinusSpell-strings.$*\"   \
-			.o. @\"filters/remove-derivation-position-tags.xfst\"      \
+			.o. @\"filters/remove-derivation-position-tags.$*\"      \
 			.o. @\"filters/convert_to_flags-CmpNP-tags.$*\" \
 			.o. @\"filters/split-CmpNP-tags.$*\"            \
 			.o. @\"$<\"                                     \
@@ -135,7 +135,7 @@ analyser-disamb-gt-desc.%: analyser-disamb-gt-desc.tmp.%      \
 					filters/remove-orig_lang-tags.%           \
 					filters/remove-derivation-position-tags.% \
 					filters/remove-homonymy-tags.%            \
-					filters/remove-norm-comp-tags.%           
+					filters/remove-norm-comp-tags.%           \
 					filters/rename-POS_before_Der-tags.%
 	$(AM_V_XFST)$(PRINTF) "read regex                           \
 				@\"filters/remove-derivation-position-tags.$*\" \
@@ -156,7 +156,7 @@ analyser-gramcheck-gt-desc.hfst: analyser-gramcheck-gt-desc.tmp.hfst \
 				filters/remove-word-boundary.hfst			 \
 				filters/remove-derivation-position-tags.hfst \
 				filters/rename-POS_before_Der-tags.hfst      \
-				filters/convert_to_flags-CmpNP-tags.hfst \
+				filters/convert_to_flags-CmpNP-tags.hfst     \
 				orthography/spellrelax-with-flagtags.compose.hfst
 	$(AM_V_HXFST)$(PRINTF) "\
 	set encode-weights ON\n\
@@ -181,11 +181,11 @@ generator-gt-norm.%: generator-gt-norm.tmp.%              \
 					filters/remove-Nynorsk-strings.%      \
 					filters/remove-MinusSpell-strings.%   \
 					filters/remove-norm-comp-tags.%       \
-					filters/remove-derivation-position-tags.$(1) 
+					filters/remove-derivation-position-tags.% 
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
 				@\"filters/remove-Nynorsk-strings.$*\"      \
 			.o. @\"filters/remove-MinusSpell-strings.$*\"   \
-			.o. @\"filters/remove-derivation-position-tags.$(1)\" \
+			.o. @\"filters/remove-derivation-position-tags.$*\" \
 			.o. @\"filters/remove-norm-comp-tags.$*\"       \
 			.o. @\"$<\"                                     \
 			;\n\
@@ -199,9 +199,9 @@ generator-gt-norm.%: generator-gt-norm.tmp.%              \
 # Xerox:
 generator-%-norm.xfst: generator-%-norm.tmp.xfst \
 					 filters/remove-Nynorsk-strings.xfst
-	$(AM_V_XFST)$(PRINTF) "read regex                         \
+	$(AM_V_XFST)$(PRINTF) "read regex                    \
 				@\"filters/remove-Nynorsk-strings.xfst\" \
-			.o. @\"$<\"                                       \
+			.o. @\"$<\"                                  \
 			;\n\
 		 invert net\n\
 		 save stack $@\n\
