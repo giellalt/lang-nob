@@ -22,6 +22,8 @@ GIELLA_FILTER_LOCAL_REGEX_SRCS=\
 					downcase_UCletters.regex \
 					remove-Nynorsk-strings.regex \
 					remove-norm-comp-tags.regex \
+				    remove-derivation-position-tags.regex      \
+					rename-POS_before_Der-tags.regex           \
 					convert_to_flags-CmpNP-tags.regex \
 					split-CmpNP-tags.regex
 

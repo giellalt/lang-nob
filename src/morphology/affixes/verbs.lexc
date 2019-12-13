@@ -110,7 +110,7 @@ LEXICON inf-prsptc
              +Imp:%>Q3X4   #          ;
           +PrsPrc:%>     prsptcsuff ;
   +PrsPrc+Nynorsk+Use/NG:%>ande #          ;
-        +Der/NomAct:%>ing f1      ;
+        +Der1+Der/NomAct:%>ing f1      ;
 
 LEXICON regpres
               +Ind+Prs:%>er  # ;
