@@ -66,8 +66,10 @@ endif # CAN_FOMA
 
 # We need to specify -gt- to avoid applying the filters to the raw fst:
 analyser-gt-desc.%: analyser-gt-desc.tmp.%                    \
+					filters/remove-derivation-position-tags.% \
 					filters/remove-norm-comp-tags.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+				@\"filters/remove-derivation-position-tags.$*\" \
 			 @\"filters/remove-norm-comp-tags.$*\"           \
 			.o. @\"$<\"                                         \
 			;\n\
@@ -79,11 +81,13 @@ analyser-gt-desc.%: analyser-gt-desc.tmp.%                    \
 analyser-gt-norm.%: analyser-gt-norm.tmp.%                \
 					filters/remove-Nynorsk-strings.%      \
 					filters/remove-MinusSpell-strings.%   \
+					filters/remove-derivation-position-tags.xfst   \
 					filters/convert_to_flags-CmpNP-tags.% \
 					filters/split-CmpNP-tags.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
 				@\"filters/remove-Nynorsk-strings.$*\"      \
 			.o. @\"filters/remove-MinusSpell-strings.$*\"   \
+			.o. @\"filters/remove-derivation-position-tags.xfst\"      \
 			.o. @\"filters/convert_to_flags-CmpNP-tags.$*\" \
 			.o. @\"filters/split-CmpNP-tags.$*\"            \
 			.o. @\"$<\"                                     \
@@ -110,11 +114,15 @@ analyser-pmatchdisamb-gt-desc.hfst: \
 					analyser-pmatchdisamb-gt-desc.tmp.hfst       \
 					filters/remove-orig_lang-tags.hfst           \
 					filters/remove-homonymy-tags.hfst            \
+					filters/remove-derivation-position-tags.hfst \
 					filters/remove-norm-comp-tags.hfst           
+					filters/rename-POS_before_Der-tags.hfst
 	$(AM_V_XFST)$(PRINTF) "read regex                             \
-			    @\"filters/remove-orig_lang-tags.hfst\"           \
+				@\"filters/remove-derivation-position-tags.hfst\" \
+			.o. @\"filters/remove-orig_lang-tags.hfst\"           \
 			.o. @\"filters/remove-homonymy-tags.hfst\"            \
 			.o. @\"filters/remove-norm-comp-tags.hfst\"           \
+			.o. @\"filters/rename-POS_before_Der-tags.hfst\"      \
 			.o. @\"$<\"                                           \
 			;\n\
 		 $(INVERT_HFST)\
@@ -125,12 +133,16 @@ analyser-pmatchdisamb-gt-desc.hfst: \
 # pattern as the raw fst:
 analyser-disamb-gt-desc.%: analyser-disamb-gt-desc.tmp.%      \
 					filters/remove-orig_lang-tags.%           \
+					filters/remove-derivation-position-tags.% \
 					filters/remove-homonymy-tags.%            \
 					filters/remove-norm-comp-tags.%           
+					filters/rename-POS_before_Der-tags.%
 	$(AM_V_XFST)$(PRINTF) "read regex                           \
-			     @\"filters/remove-orig_lang-tags.$*\"           \
+				@\"filters/remove-derivation-position-tags.$*\" \
+			.o. @\"filters/remove-orig_lang-tags.$*\"           \
 			.o. @\"filters/remove-homonymy-tags.$*\"            \
 			.o. @\"filters/remove-norm-comp-tags.$*\"           \
+			.o. @\"filters/rename-POS_before_Der-tags.$*\"      \
 			.o. @\"$<\"                                         \
 			;\n\
 		 $(INVERT_HFST)\
@@ -142,6 +154,8 @@ analyser-gramcheck-gt-desc.hfst: analyser-gramcheck-gt-desc.tmp.hfst \
 				filters/remove-dialect-tags.hfst             \
 				filters/remove-norm-comp-tags.hfst           \
 				filters/remove-word-boundary.hfst			 \
+				filters/remove-derivation-position-tags.hfst \
+				filters/rename-POS_before_Der-tags.hfst      \
 				filters/convert_to_flags-CmpNP-tags.hfst \
 				orthography/spellrelax-with-flagtags.compose.hfst
 	$(AM_V_HXFST)$(PRINTF) "\
@@ -151,6 +165,8 @@ analyser-gramcheck-gt-desc.hfst: analyser-gramcheck-gt-desc.tmp.hfst \
 		.o. @\"filters/remove-norm-comp-tags.hfst\"           \
     	.o. @\"filters/convert_to_flags-CmpNP-tags.hfst\"     \
 		.o. @\"filters/split-CmpNP-tags.hfst\"                \
+		.o. @\"filters/remove-derivation-position-tags.hfst\" \
+		.o. @\"filters/rename-POS_before_Der-tags.hfst\"      \
 		.o. @\"$<\"                                           \
 		.o. @\"orthography/spellrelax-with-flagtags.compose.hfst\" \
 		.o. @\"filters/remove-word-boundary.hfst\"            \
@@ -164,10 +180,12 @@ analyser-gramcheck-gt-desc.hfst: analyser-gramcheck-gt-desc.tmp.hfst \
 generator-gt-norm.%: generator-gt-norm.tmp.%              \
 					filters/remove-Nynorsk-strings.%      \
 					filters/remove-MinusSpell-strings.%   \
-					filters/remove-norm-comp-tags.%
+					filters/remove-norm-comp-tags.%       \
+					filters/remove-derivation-position-tags.$(1) 
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
 				@\"filters/remove-Nynorsk-strings.$*\"      \
 			.o. @\"filters/remove-MinusSpell-strings.$*\"   \
+			.o. @\"filters/remove-derivation-position-tags.$(1)\" \
 			.o. @\"filters/remove-norm-comp-tags.$*\"       \
 			.o. @\"$<\"                                     \
 			;\n\
