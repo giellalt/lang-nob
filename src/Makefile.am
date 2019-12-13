@@ -115,7 +115,7 @@ analyser-pmatchdisamb-gt-desc.hfst: \
 					filters/remove-orig_lang-tags.hfst           \
 					filters/remove-homonymy-tags.hfst            \
 					filters/remove-derivation-position-tags.hfst \
-					filters/remove-norm-comp-tags.hfst           
+					filters/remove-norm-comp-tags.hfst           \
 					filters/rename-POS_before_Der-tags.hfst
 	$(AM_V_XFST)$(PRINTF) "read regex                             \
 				@\"filters/remove-derivation-position-tags.hfst\" \
