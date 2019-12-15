@@ -103,7 +103,7 @@ LIST %hoeyre/venstre% = "venstre" "høyre" ;
 LIST %hogge/sage/kappe/fyre% = ("hogge" V) ("sage" V) ("kappe" V) ("fyre" V) ;
 LIST %hundre/tusen% = "tusen" "hundre" ;
 LIST %hundre/tusen/osv% = "tusen" "par" "million" "milliard" "hundre" ;
-LIST %huset% = ("huse" A PrfPtc) ;
+LIST %huset% = ("huse" A PrfPrc) ;
 LIST %hva% = "hva" ;
 LIST %hvem% = "hvem" ;
 LIST %hvem/hva% = "hvem" "hva" ;
@@ -187,7 +187,7 @@ LIST %selv% = "sjøl" "sjæl" "selv" ;
 
 SETS
 LIST %seng% = "seng" ;
-LIST %sett% = ("se" PrfPtc) ;
+LIST %sett% = ("se" PrfPrc) ;
 LIST %si% = ("sin" det Poss Sg Fem) ;
 LIST %si%-Inf = ("si" Inf) ;
 LIST %siden% = "siden" ;
@@ -217,7 +217,7 @@ LIST %stikk% = ("stikk" Adv) ;
 LIST %syvende% = "syvende" "sjuende" ;
 LIST %ta% = "ta" ;
 LIST %til% = "til" ;
-LIST %tiltalte% = ("tiltale" A PrfPtc Sg Def) ;
+LIST %tiltalte% = ("tiltale" A PrfPrc Sg Def) ;
 LIST %tross% = "tross" ;
 LIST %tvers% = "tvers" ;
 LIST %tvert% = ("tvert" Adv) ;
@@ -234,7 +234,7 @@ LIST %viss% = "viss" ;
 LIST %ytterligere% = "ytterligere" ;
 LIST <<< = <<< ;
 LIST <adv> = <adv> ;
-LIST PrfPtc = PrfPtc PrfPtc ; # TT la til PrPtc for gt-kompatibilitet
+LIST PrfPrc = PrfPrc PrfPrc ; # TT la til PrPtc for gt-kompatibilitet
 LIST <PrsPtc> = i1 i3 i4 PrsPtc ; # ditto
 LIST >>> = >>> ;
 
@@ -267,7 +267,7 @@ LIST A-ub = (A Indef) (A <PrsPtc>) ;
 LIST A-Indef-Sg = (A Sg Indef) (A <PrsPtc>) ;
 LIST A-Indef-Sg/%bare% = "bare" (A Sg Indef) (A <PrsPtc>) ;
 LIST A/Adv = A Adv ;
-LIST A/Adviv = "så" "nå" "hele" "halve" "dette" ("vite" PrfPtc) ("fortsette" PrfPtc) ;
+LIST A/Adviv = "så" "nå" "hele" "halve" "dette" ("vite" PrfPrc) ("fortsette" PrfPrc) ;
 LIST Adv = Adv <adv> ;
 LIST AdvCC = "verken" "hverken" "enten" "både" (CC <adv>) ;
 LIST adv/A-Neu-ub = Adv <adv> (A Neu Indef) ;
@@ -369,7 +369,7 @@ LIST Clt = Clt ;
 LIST Clt/%slags% = "slags" Clt ;
 LIST grads-Adv = "stor" "mye" "liten" "ille" "god" ;
 LIST hj-V = "være" "ville" "skulle" "måtte" "kunne" "ha" "få" "burde" "bli" ;
-LIST hj-V-iv = ("bli" Inf) ("bli" PrfPtc) ("ha" Inf) ("ha" PrfPtc) ("være" Inf) ("være" PrfPtc) ("få" Inf) ("få" PrfPtc) ("skulle" Inf) ("skulle" PrfPtc) ("kunne" Inf) ("kunne" PrfPtc) ("ville" Inf) ("ville" PrfPtc) ("måtte" Inf) ("måtte" PrfPtc) ("burde" Inf) ("burde" PrfPtc) ;
+LIST hj-V-iv = ("bli" Inf) ("bli" PrfPrc) ("ha" Inf) ("ha" PrfPrc) ("være" Inf) ("være" PrfPrc) ("få" Inf) ("få" PrfPrc) ("skulle" Inf) ("skulle" PrfPrc) ("kunne" Inf) ("kunne" PrfPrc) ("ville" Inf) ("ville" PrfPrc) ("måtte" Inf) ("måtte" PrfPrc) ("burde" Inf) ("burde" PrfPrc) ;
 LIST hoeflig = hoeflig ;
 LIST høflig = "Deres" "Dem" "De" ;
 LIST Der/AAdv = Der/AAdv ;
@@ -394,9 +394,9 @@ LIST ikke-AdvA-N = "siden" "<$-->" ":" "$-" "$," <parentes-beg> <parentes-slutt>
 LIST ikke-AdvA-N-Det-Pr = "$-" "$," V Pron CS CC IM Interj <<< <ellipse> ;
 LIST ikke-AdvA-N-Pron-det = CC Pr CS IM Interj <ellipse> (V Prs) (V Prt) (Det Dem) (N Clt) ("$," CLB) ;
 LIST ikke-AdvA-N-Pron-CC-det = "siden" Pr CS IM Interj <ellipse> (V Prs) (V Prt) (Det Dem) (N Clt) ("$," CLB) (CLB CC) (CC <adv>) ;
-LIST ikke-AdvA-N-Pron-CC-Det-CS2 = "siden" Pr IM Interj <ellipse> (V Prs) (V Prt) (V Inf) (V Pass) (V PrfPtc) ("$," CLB) (CLB CC) (CC <adv>) ;
-LIST ikke-AdvA-N-Pron-CC-det2 = "siden" Pr CS IM Interj <ellipse> (V Prs) (V Prt) (V Inf) (V Pass) (V PrfPtc) ("$," CLB) (CLB CC) (CC <adv>) ;
-LIST ikke-AdvA-N-Pron-CC-det2-Pr = CS IM Interj <ellipse> (V Prs) (V Prt) (V Inf) (V Pass) (V PrfPtc) ("$," CLB) (CLB CC) (CC <adv>) ;
+LIST ikke-AdvA-N-Pron-CC-Det-CS2 = "siden" Pr IM Interj <ellipse> (V Prs) (V Prt) (V Inf) (V Pass) (V PrfPrc) ("$," CLB) (CLB CC) (CC <adv>) ;
+LIST ikke-AdvA-N-Pron-CC-det2 = "siden" Pr CS IM Interj <ellipse> (V Prs) (V Prt) (V Inf) (V Pass) (V PrfPrc) ("$," CLB) (CLB CC) (CC <adv>) ;
+LIST ikke-AdvA-N-Pron-CC-det2-Pr = CS IM Interj <ellipse> (V Prs) (V Prt) (V Inf) (V Pass) (V PrfPrc) ("$," CLB) (CLB CC) (CC <adv>) ;
 LIST ikke-AdvA-Nmgen-CC-detmdem-Pr = Pron CS IM Interj <ellipse> (V Prs) (V Prt) ("$," CLB) (CLB CC) (CC <adv>) ;
 LIST ikke-AdvA-Nmgen-Pron-detmdem-Pr = CS IM Interj CC <ellipse> (V Prs) (V Prt) ("$," CLB) ;
 LIST ikke-AdvA-Nmgen-Pron-CC-detmdem-Pr = CS IM Interj <ellipse> (V Prs) (V Prt) ("$," CLB) (CLB CC) (CC <adv>) ;
@@ -414,7 +414,7 @@ LIST ABBR = ABBR ;
 SETS
 LIST ikke-Pr = CS Adv A V Pron IM N Interj det (CLB CC) <anf> <ellipse> ;
 LIST ikke-Pr-CS = Adv A V Pron IM N Interj det (CLB CC) <anf> <ellipse> ;
-LIST ikke-Prs-Prt = "siden" det Pr Pron CS CC IM N Interj A Adv Inf PrfPtc ;
+LIST ikke-Prs-Prt = "siden" det Pr Pron CS CC IM N Interj A Adv Inf PrfPrc ;
 LIST ikke-Refl = n n1 i1 i2 i3 i4 tr1 tr2 tr3 tr4 tr5 tr6 tr7 tr8 tr9 tr10 tr11 tr12 tr12/til tr13 tr13/til tr14 tr15 tr16 tr17 tr18 tr19 tr20 tr20/til tr21 tr21/til tr22 tr22/til tr23 d1 d2 d3 d4 d5 d6 d7 d8 d9 pr1 pr2 pr3 pr4 pr5 pr6 pr7 pr8 pr9 pr10 pr11 pr12 pr13 pa pa/til pa1 pa1/til pa1refl4 pa2 pa2/til pa3 pa3/til pa4 pa4/til pa5 pa5 pa5/til pa6 pa7 a2 a6 a7 a8 a9 a10 a11 a13 a14 a15 a16 a17 <aux1/Inf> <aux1/Infinitiv> <aux1/perf_part> k1 k2 ;
 LIST ikke-N = "siden" "$-" "$," V Pr Pron CS CC IM det Interj A Adv ;
 LIST ikke-N-A-Det-Adv = "siden" "$-" "$," Pron (N Clt) V Pr CS CC IM Interj ;
@@ -429,12 +429,12 @@ LIST ikke-tr1/tr4-10/tr14/dtr1-9/refl/pr1/pr3-10/adv2/adv6-11/adv13-14/kaus = tr
 LIST ikke-V = "siden" det Pr Pron CS CC IM N Interj A Adv ;
 LIST Imp = Imp ;
 LIST Inf = Inf ;
-LIST inf/PrfPtc = (V Inf) (V PrfPtc) ;
+LIST inf/PrfPrc = (V Inf) (V PrfPrc) ;
 LIST infmerke = IM ;
 
 SETS
 LIST Interj = Interj ;
-LIST iv = (V Inf) (V PrfPtc) ;
+LIST iv = (V Inf) (V PrfPrc) ;
 
 LIST kolon = (":" CLB) ;
 LIST komma = "$," ;
@@ -458,7 +458,7 @@ SETS
 
 LIST m-hj-V = ("få" V) ("skulle" V) ("kunne" V) ("ville" V) ("måtte" V) ("burde" V) ;
 LIST m-hj-V-fv = ("få" Prs) ("skulle" Prs) ("kunne" Prs) ("ville" Prs) ("måtte" Prs) ("burde" Prs) ("skulle" Prt) ("kunne" Prt) ("ville" Prt) ("måtte" Prt) ("burde" Prt) ("få" Prt) ;
-LIST m-hj-V-perfpart = ("skulle" PrfPtc) ("kunne" PrfPtc) ("ville" PrfPtc) ("måtte" PrfPtc) ("burde" PrfPtc) ("få" PrfPtc) ;
+LIST m-hj-V-perfpart = ("skulle" PrfPrc) ("kunne" PrfPrc) ("ville" PrfPrc) ("måtte" PrfPrc) ("burde" PrfPrc) ("få" PrfPrc) ;
 LIST m-hj-V-Prt = ("skulle" Prt) ("kunne" Prt) ("ville" Prt) ("måtte" Prt) ("burde" Prt) ("få" Prt) ;
 LIST Msc = Msc MF (A Def) ;
 LIST Msc-be = (Msc Def) ;
@@ -467,7 +467,7 @@ LIST Msc-Sg = (Sg Msc) (MF Sg) (A Def) (Msc uboey) (N Prop) ;
 LIST Msc-Sg-ub = (Sg Msc Indef) (Msc uboey) (N Prop) (Msc Def Clt) ;
 LIST Msc/Fem = Msc Fem MF (A Def) (A <PrsPtc>) ;
 LIST mest-sanns-A-istf-N = "ville" "venstre" "stille" "snille" "myke" "mjuke" "klare" "høyre" "høgre" "flott" ;
-LIST mest-sanns-N-istf-A = "året" "skyld" "lo" "hull" "faren" ("skygg" Def) ("folke" PrfPtc) ("live" PrfPtc) ("kute" A PrfPtc) ;
+LIST mest-sanns-N-istf-A = "året" "skyld" "lo" "hull" "faren" ("skygg" Def) ("folke" PrfPrc) ("live" PrfPrc) ("kute" A PrfPrc) ;
 LIST mest-sanns-V-istf-N = "temmer" "tapper" "suger" "strever" "strekker" "stiller" "stikker" "slukker" "koker" "hogger" "binder" ;
 LIST Neu = Neu ;
 LIST Neu-be = (Neu Def) ;
@@ -506,9 +506,9 @@ LIST parentes = <parentes-beg> <parentes-slutt> ;
 LIST parentes-beg = <parentes-beg> ;
 LIST parentes-slutt = <parentes-slutt> ;
 LIST Pass = (V Pass) ;
-LIST perf-gen = (A PrfPtc Clt) (PrfPtc Pass) ;
-LIST PrfPtc/PrfPtc = PrfPtc PrfPtc ;
-LIST PrfPtc/Inf = (V PrfPtc) (V Inf) ;
+LIST perf-gen = (A PrfPrc Clt) (PrfPrc Pass) ;
+LIST PrfPrc/PrfPrc = PrfPrc PrfPrc ;
+LIST PrfPrc/Inf = (V PrfPrc) (V Inf) ;
 LIST Interr = Interr ;
 
 
@@ -676,7 +676,7 @@ LIST utrop-t = "!" ;
 LIST veldig-farlige-part = "nære" "nyte" "mige" "make" "lite" "hele" "gale" "fore" "ete" "brune" "bene" "bare" "ale" Clt ;
 LIST veldig-farlige-V = ("stede" Prs) ("dy" Prs) ("grade" Prs) ;
 LIST V = V ;
-LIST V-u-Imp = (V Prs) (V Prt) (V PrfPtc) (V Inf) ;
+LIST V-u-Imp = (V Prs) (V Prt) (V PrfPrc) (V Inf) ;
 LIST Nynorsk = Nynorsk ;
 LIST X = X ;
 LIST Pos = Pos ;
@@ -993,7 +993,7 @@ MAP (@ADVL>) TARGET Adv (*-1 S-BOUNDARY3 BARRIER Ind)(*1 Ind);
 
 
 
-MAP:-FMAINV (@-FMAINV) TARGET PrfPtc ;
+MAP:-FMAINV (@-FMAINV) TARGET PrfPrc ;
 
 
 
@@ -1161,7 +1161,7 @@ MAP:CNP (@CNP) TARGET CC IF (-1 N)(*1 N BARRIER NOT-NPMOD);
 #MAP:CVP (@CVP) TARGET CC IF (*-2 Ind)(-1 COMMA)(*1 Ind);
 MAP:CVP (@CVP) TARGET CC IF (*-1 Ind)(*1 Ind);
 MAP:CVP (@CVP) TARGET CC IF (-1 Imp)(1 Imp);
-MAP:CVP (@CVP) TARGET CC IF (*-1 PrfPtc)(1 PrfPtc);
+MAP:CVP (@CVP) TARGET CC IF (*-1 PrfPrc)(1 PrfPrc);
 MAP:CVP (@CVP) TARGET CC IF (*-1 PrsPtc)(1 PrsPtc);
 
 
