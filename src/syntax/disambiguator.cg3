@@ -104,7 +104,7 @@ LIST %hoeyre/venstre% = "venstre" "høyre" ;
 LIST %hogge/sage/kappe/fyre% = ("hogge" V) ("sage" V) ("kappe" V) ("fyre" V) ;
 LIST %hundre/tusen% = "tusen" "hundre" ;
 LIST %hundre/tusen/osv% = "tusen" "par" "million" "milliard" "hundre" ;
-LIST %huset% = ("huse" A PrfPtc) ;
+LIST %huset% = ("huse" A PrfPrc) ;
 LIST %hva% = "hva" ;
 LIST %hvem% = "hvem" ;
 LIST %hvem/hva% = "hvem" "hva" ;
@@ -188,7 +188,7 @@ LIST %selv% = "sjøl" "sjæl" "selv" ;
 
 SETS
 LIST %seng% = "seng" ;
-LIST %sett% = ("se" PrfPtc) ;
+LIST %sett% = ("se" PrfPrc) ;
 LIST %si% = ("sin" det Poss Sg Fem) ;
 LIST %si%-Inf = ("si" Inf) ;
 LIST %siden% = "siden" ;
@@ -218,7 +218,7 @@ LIST %stikk% = ("stikk" Adv) ;
 LIST %syvende% = "syvende" "sjuende" ;
 LIST %ta% = "ta" ;
 LIST %til% = "til" ;
-LIST %tiltalte% = ("tiltale" A PrfPtc Sg Def) ;
+LIST %tiltalte% = ("tiltale" A PrfPrc Sg Def) ;
 LIST %tross% = "tross" ;
 LIST %tvers% = "tvers" ;
 LIST %tvert% = ("tvert" Adv) ;
@@ -235,7 +235,7 @@ LIST %viss% = "viss" ;
 LIST %ytterligere% = "ytterligere" ;
 LIST <<< = <<< ;
 LIST <adv> = <adv> ;
-LIST PrfPtc = PrfPtc PrfPtc ; # TT la til PrPtc for gt-kompatibilitet
+LIST PrfPrc = PrfPrc PrfPrc ; # TT la til PrPtc for gt-kompatibilitet
 LIST <PrsPtc> = i1 i3 i4 PrsPtc ; # ditto
 LIST >>> = >>> ;
 
@@ -268,7 +268,7 @@ LIST A-ub = (A Indef) (A <PrsPtc>) ;
 LIST A-Indef-Sg = (A Sg Indef) (A <PrsPtc>) ;
 LIST A-Indef-Sg/%bare% = "bare" (A Sg Indef) (A <PrsPtc>) ;
 LIST A/Adv = A Adv ;
-LIST A/Adviv = "så" "nå" "hele" "halve" "dette" ("vite" PrfPtc) ("fortsette" PrfPtc) ;
+LIST A/Adviv = "så" "nå" "hele" "halve" "dette" ("vite" PrfPrc) ("fortsette" PrfPrc) ;
 LIST Adv = Adv <adv> ;
 LIST AdvCC = "verken" "hverken" "enten" "både" (CC <adv>) ;
 LIST adv/A-Neu-ub = Adv <adv> (A Neu Indef) ;
@@ -370,7 +370,7 @@ LIST Clt = Clt ;
 LIST Clt/%slags% = "slags" Clt ;
 LIST grads-Adv = "stor" "mye" "liten" "ille" "god" ;
 LIST hj-V = "være" "ville" "skulle" "måtte" "kunne" "ha" "få" "burde" "bli" ;
-LIST hj-V-iv = ("bli" Inf) ("bli" PrfPtc) ("ha" Inf) ("ha" PrfPtc) ("være" Inf) ("være" PrfPtc) ("få" Inf) ("få" PrfPtc) ("skulle" Inf) ("skulle" PrfPtc) ("kunne" Inf) ("kunne" PrfPtc) ("ville" Inf) ("ville" PrfPtc) ("måtte" Inf) ("måtte" PrfPtc) ("burde" Inf) ("burde" PrfPtc) ;
+LIST hj-V-iv = ("bli" Inf) ("bli" PrfPrc) ("ha" Inf) ("ha" PrfPrc) ("være" Inf) ("være" PrfPrc) ("få" Inf) ("få" PrfPrc) ("skulle" Inf) ("skulle" PrfPrc) ("kunne" Inf) ("kunne" PrfPrc) ("ville" Inf) ("ville" PrfPrc) ("måtte" Inf) ("måtte" PrfPrc) ("burde" Inf) ("burde" PrfPrc) ;
 LIST hoeflig = hoeflig ;
 LIST høflig = "Deres" "Dem" "De" ;
 LIST Der/AAdv = Der/AAdv ;
@@ -395,9 +395,9 @@ LIST ikke-AdvA-N = "siden" "<$-->" ":" "$-" "$," <parentes-beg> <parentes-slutt>
 LIST ikke-AdvA-N-Det-Pr = "$-" "$," V Pron CS CC IM Interj <<< <ellipse> ;
 LIST ikke-AdvA-N-Pron-det = CC Pr CS IM Interj <ellipse> (V Prs) (V Prt) (Det Dem) (N Clt) ("$," CLB) ;
 LIST ikke-AdvA-N-Pron-CC-det = "siden" Pr CS IM Interj <ellipse> (V Prs) (V Prt) (Det Dem) (N Clt) ("$," CLB) (CLB CC) (CC <adv>) ;
-LIST ikke-AdvA-N-Pron-CC-Det-CS2 = "siden" Pr IM Interj <ellipse> (V Prs) (V Prt) (V Inf) (V Pass) (V PrfPtc) ("$," CLB) (CLB CC) (CC <adv>) ;
-LIST ikke-AdvA-N-Pron-CC-det2 = "siden" Pr CS IM Interj <ellipse> (V Prs) (V Prt) (V Inf) (V Pass) (V PrfPtc) ("$," CLB) (CLB CC) (CC <adv>) ;
-LIST ikke-AdvA-N-Pron-CC-det2-Pr = CS IM Interj <ellipse> (V Prs) (V Prt) (V Inf) (V Pass) (V PrfPtc) ("$," CLB) (CLB CC) (CC <adv>) ;
+LIST ikke-AdvA-N-Pron-CC-Det-CS2 = "siden" Pr IM Interj <ellipse> (V Prs) (V Prt) (V Inf) (V Pass) (V PrfPrc) ("$," CLB) (CLB CC) (CC <adv>) ;
+LIST ikke-AdvA-N-Pron-CC-det2 = "siden" Pr CS IM Interj <ellipse> (V Prs) (V Prt) (V Inf) (V Pass) (V PrfPrc) ("$," CLB) (CLB CC) (CC <adv>) ;
+LIST ikke-AdvA-N-Pron-CC-det2-Pr = CS IM Interj <ellipse> (V Prs) (V Prt) (V Inf) (V Pass) (V PrfPrc) ("$," CLB) (CLB CC) (CC <adv>) ;
 LIST ikke-AdvA-Nmgen-CC-detmdem-Pr = Pron CS IM Interj <ellipse> (V Prs) (V Prt) ("$," CLB) (CLB CC) (CC <adv>) ;
 LIST ikke-AdvA-Nmgen-Pron-detmdem-Pr = CS IM Interj CC <ellipse> (V Prs) (V Prt) ("$," CLB) ;
 LIST ikke-AdvA-Nmgen-Pron-CC-detmdem-Pr = CS IM Interj <ellipse> (V Prs) (V Prt) ("$," CLB) (CLB CC) (CC <adv>) ;
@@ -414,7 +414,7 @@ LIST ikke-Det-Pr = "siden" V Pr Pron CS CC IM N Interj A Adv ;
 SETS
 LIST ikke-Pr = CS Adv A V Pron IM N Interj det (CLB CC) <anf> <ellipse> ;
 LIST ikke-Pr-CS = Adv A V Pron IM N Interj det (CLB CC) <anf> <ellipse> ;
-LIST ikke-Prs-Prt = "siden" det Pr Pron CS CC IM N Interj A Adv Inf PrfPtc ;
+LIST ikke-Prs-Prt = "siden" det Pr Pron CS CC IM N Interj A Adv Inf PrfPrc ;
 LIST ikke-Refl = n n1 i1 i2 i3 i4 tr1 tr2 tr3 tr4 tr5 tr6 tr7 tr8 tr9 tr10 tr11 tr12 tr12/til tr13 tr13/til tr14 tr15 tr16 tr17 tr18 tr19 tr20 tr20/til tr21 tr21/til tr22 tr22/til tr23 d1 d2 d3 d4 d5 d6 d7 d8 d9 pr1 pr2 pr3 pr4 pr5 pr6 pr7 pr8 pr9 pr10 pr11 pr12 pr13 pa pa/til pa1 pa1/til pa1refl4 pa2 pa2/til pa3 pa3/til pa4 pa4/til pa5 pa5 pa5/til pa6 pa7 a2 a6 a7 a8 a9 a10 a11 a13 a14 a15 a16 a17 <aux1/Inf> <aux1/Infinitiv> <aux1/perf_part> k1 k2 ;
 LIST ikke-N = "siden" "$-" "$," V Pr Pron CS CC IM det Interj A Adv ;
 LIST ikke-N-A-Det-Adv = "siden" "$-" "$," Pron (N Clt) V Pr CS CC IM Interj ;
@@ -429,12 +429,12 @@ LIST ikke-tr1/tr4-10/tr14/dtr1-9/refl/pr1/pr3-10/adv2/adv6-11/adv13-14/kaus = tr
 LIST ikke-V = "siden" det Pr Pron CS CC IM N Interj A Adv ;
 LIST Imp = Imp ;
 LIST Inf = Inf ;
-LIST inf/PrfPtc = (V Inf) (V PrfPtc) ;
+LIST inf/PrfPrc = (V Inf) (V PrfPrc) ;
 LIST infmerke = IM ;
 
 SETS
 LIST Interj = Interj ;
-LIST iv = (V Inf) (V PrfPtc) ;
+LIST iv = (V Inf) (V PrfPrc) ;
 
 LIST kolon = (":" CLB) ;
 LIST komma = "$," ;
@@ -458,7 +458,7 @@ SETS
 
 LIST m-hj-V = ("få" V) ("skulle" V) ("kunne" V) ("ville" V) ("måtte" V) ("burde" V) ;
 LIST m-hj-V-fv = ("få" Prs) ("skulle" Prs) ("kunne" Prs) ("ville" Prs) ("måtte" Prs) ("burde" Prs) ("skulle" Prt) ("kunne" Prt) ("ville" Prt) ("måtte" Prt) ("burde" Prt) ("få" Prt) ;
-LIST m-hj-V-perfpart = ("skulle" PrfPtc) ("kunne" PrfPtc) ("ville" PrfPtc) ("måtte" PrfPtc) ("burde" PrfPtc) ("få" PrfPtc) ;
+LIST m-hj-V-perfpart = ("skulle" PrfPrc) ("kunne" PrfPrc) ("ville" PrfPrc) ("måtte" PrfPrc) ("burde" PrfPrc) ("få" PrfPrc) ;
 LIST m-hj-V-Prt = ("skulle" Prt) ("kunne" Prt) ("ville" Prt) ("måtte" Prt) ("burde" Prt) ("få" Prt) ;
 LIST Msc = Msc MF (A Def) ;
 LIST Msc-be = (Msc Def) ;
@@ -467,7 +467,7 @@ LIST Msc-Sg = (Sg Msc) (MF Sg) (A Def) (Msc uboey) (N Prop) ;
 LIST Msc-Sg-ub = (Sg Msc Indef) (Msc uboey) (N Prop) (Msc Def Clt) ;
 LIST Msc/Fem = Msc Fem MF (A Def) (A <PrsPtc>) ;
 LIST mest-sanns-A-istf-N = "ville" "venstre" "stille" "snille" "myke" "mjuke" "klare" "høyre" "høgre" "flott" ;
-LIST mest-sanns-N-istf-A = "året" "skyld" "lo" "hull" "faren" ("skygg" Def) ("folke" PrfPtc) ("live" PrfPtc) ("kute" A PrfPtc) ;
+LIST mest-sanns-N-istf-A = "året" "skyld" "lo" "hull" "faren" ("skygg" Def) ("folke" PrfPrc) ("live" PrfPrc) ("kute" A PrfPrc) ;
 LIST mest-sanns-V-istf-N = "temmer" "tapper" "suger" "strever" "strekker" "stiller" "stikker" "slukker" "koker" "hogger" "binder" ;
 LIST Neu = Neu ;
 LIST Neu-be = (Neu Def) ;
@@ -506,9 +506,9 @@ LIST parentes = <parentes-beg> <parentes-slutt> ;
 LIST parentes-beg = <parentes-beg> ;
 LIST parentes-slutt = <parentes-slutt> ;
 LIST Pass = (V Pass) ;
-LIST perf-gen = (A PrfPtc Clt) (PrfPtc Pass) ;
-LIST PrfPtc/PrfPtc = PrfPtc PrfPtc ;
-LIST PrfPtc/Inf = (V PrfPtc) (V Inf) ;
+LIST perf-gen = (A PrfPrc Clt) (PrfPrc Pass) ;
+LIST PrfPrc/PrfPrc = PrfPrc PrfPrc ;
+LIST PrfPrc/Inf = (V PrfPrc) (V Inf) ;
 
 SETS
 LIST periode-beg/CLB-CC = >>> (CC CLB) ;
@@ -674,7 +674,7 @@ LIST veldig-farlige-part = "nære" "nyte" "mige" "make" "lite" "hele" "gale" "fo
 LIST veldig-farlige-V = ("stede" Prs) ("dy" Prs) ("grade" Prs) ;
 LIST V = V ;
 LIST IM = IM ;
-LIST V-u-Imp = (V Prs) (V Prt) (V PrfPtc) (V Inf) ;
+LIST V-u-Imp = (V Prs) (V Prt) (V PrfPrc) (V Inf) ;
 LIST Nynorsk = Nynorsk ;
 LIST X = X ;
 LIST Pos = Pos ;
@@ -747,14 +747,14 @@ REMOVE Imp IF (-1 A OR Det)(0 N);
 
 # V vs A
 
-REMOVE PrfPtc + A + Pos + Def IF (-1 N OR Pron)(0 Prt);
+REMOVE PrfPrc + A + Pos + Def IF (-1 N OR Pron)(0 Prt);
 
 ## Motstanden varte ved.
 
 # N vs V
 
-REMOVE Neu + Sg + Def IF (-2 PrfPtc)(-1 CC)(0 PrfPtc);
-REMOVE Prt IF (-2C PrfPtc)(-1 CC)(0 PrfPtc);
+REMOVE Neu + Sg + Def IF (-2 PrfPrc)(-1 CC)(0 PrfPrc);
+REMOVE Prt IF (-2C PrfPrc)(-1 CC)(0 PrfPrc);
 
 # Definite feminine or preterite
 REMOVE Prt IF (-1 Pr)(0  N + Fem + Sg + Def);
@@ -889,27 +889,27 @@ SELECT Prop IF (NOT -1 CLB); # XXX
 
 
 # 3522
-"<bredt>" SELECT (V PrfPtc) IF
+"<bredt>" SELECT (V PrfPrc) IF
 	(1 %seg%)
 	(*-1 %ha% BARRIER setn-gr)
 ;
 
 
 # 3523
-"<bredt>" SELECT (V PrfPtc) IF
+"<bredt>" SELECT (V PrfPrc) IF
 	(1 %over%)
 	(*-1 %ha% BARRIER setn-gr)
 ;
 
 
 # 3520
-"<bredt>" REMOVE (V PrfPtc) IF
+"<bredt>" REMOVE (V PrfPrc) IF
 	(NOT 1 %over% OR %seg%)
 ;
 
 
 # 3521
-"<bredt>" REMOVE (V PrfPtc) IF
+"<bredt>" REMOVE (V PrfPrc) IF
 	(*-1 setn-gr BARRIER %ha%)
 ;
 
@@ -1289,7 +1289,7 @@ SELECT Prop IF (NOT -1 CLB); # XXX
 
 # 3463
 "<fast>" SELECT (A Sg Neu Indef) IF
-	(NOT 0 PrfPtc OR farlige-A)
+	(NOT 0 PrfPrc OR farlige-A)
 	(NOT 1 N/A)
 	(NOT -1 det)
 	(*-1 setn-gr LINK NOT 1 Pr/Adv)
@@ -1300,7 +1300,7 @@ SELECT Prop IF (NOT -1 CLB); # XXX
 
 # 3464
 "<fast>" SELECT (A Sg Neu Indef) IF
-	(NOT 0 PrfPtc OR farlige-A)
+	(NOT 0 PrfPrc OR farlige-A)
 	(NOT 1 N/A)
 	(NOT -1 det)
 	(*-1 setn-gr LINK NOT 1 Pr/Adv)
@@ -1610,7 +1610,7 @@ CONSTRAINTS
 
 # 3426
 "<for>" REMOVE (Adv) IF
-	(1 PrfPtc)
+	(1 PrfPrc)
 	(NOT 1 Adv OR A-pos)
 ;
 
@@ -1903,7 +1903,7 @@ CONSTRAINTS
 
 
 # 3381
-"<godta>" REMOVE (V PrfPtc) IF
+"<godta>" REMOVE (V PrfPrc) IF
 	(NOT 1 Pron-akk)
 ;
 
@@ -1950,18 +1950,18 @@ CONSTRAINTS
 
 
 # 3374
-"<grått>" SELECT (V PrfPtc) IF
+"<grått>" SELECT (V PrfPrc) IF
 	(NOT -1 Det-Pr-IM-Abe)
 	(NOT -2 Def-Neu-det)
 	(*-1 %ha% BARRIER fv)
-	(*-1 %ha% BARRIER PrfPtc)
+	(*-1 %ha% BARRIER PrfPrc)
 	(*-1 %ha% BARRIER setn-gr)
 	(*-1 Nom BARRIER setn-gr)
 ;
 
 
 # 3373
-"<grått>" REMOVE (V PrfPtc) IF
+"<grått>" REMOVE (V PrfPrc) IF
 	(*-1 setn-gr BARRIER %ha%)
 ;
 
@@ -2271,7 +2271,7 @@ CONSTRAINTS
 
 
 # 3324
-"<huset>" REMOVE (V PrfPtc) IF
+"<huset>" REMOVE (V PrfPrc) IF
 	(*-1C setn-gr LINK *1C fv LINK NOT 0 hj-V)
 ;
 
@@ -2398,19 +2398,19 @@ CONSTRAINTS
 
 
 # 3305
-"<klart>" SELECT (V PrfPtc) IF
+"<klart>" SELECT (V PrfPrc) IF
 	(NOT 1 %for%)
 	(NOT -1 Det-Pr-IM-Abe)
 	(NOT -2 Def-Neu-det)
 	(*-1 %ha% BARRIER fv)
-	(*-1 %ha% BARRIER PrfPtc)
+	(*-1 %ha% BARRIER PrfPrc)
 	(*-1 %ha% BARRIER setn-gr)
 	(*-1 Nom BARRIER setn-gr)
 ;
 
 
 # 3303
-"<klart>" REMOVE (V PrfPtc) IF
+"<klart>" REMOVE (V PrfPrc) IF
 	(1 %for%)
 	(2 Pron-akk)
 	(*-1 %ha% BARRIER setn-gr)
@@ -2418,7 +2418,7 @@ CONSTRAINTS
 
 
 # 3304
-"<klart>" REMOVE (V PrfPtc) IF
+"<klart>" REMOVE (V PrfPrc) IF
 	(*-1 setn-gr BARRIER %ha%)
 ;
 
@@ -2448,7 +2448,7 @@ CONSTRAINTS
 
 
 # 3299
-"<kontra>" SELECT (V PrfPtc) IF
+"<kontra>" SELECT (V PrfPrc) IF
 	(-1 %ha%)
 ;
 
@@ -2472,7 +2472,7 @@ CONSTRAINTS
 
 
 # 3295
-"<kontra>" REMOVE (V PrfPtc) IF
+"<kontra>" REMOVE (V PrfPrc) IF
 	(*-1C setn-gr BARRIER %ha%)
 ;
 
@@ -2491,7 +2491,7 @@ CONSTRAINTS
 
 
 # 3291
-"<lett>" SELECT (V PrfPtc) IF
+"<lett>" SELECT (V PrfPrc) IF
 	(1 Pron-akk)
 	(2 %etter/fram/opp%)
 	(*-1 %ha% BARRIER setn-gr)
@@ -2499,20 +2499,20 @@ CONSTRAINTS
 
 
 # 3292
-"<lett>" SELECT (V PrfPtc) IF
+"<lett>" SELECT (V PrfPrc) IF
 	(1 %etter/fram/opp%)
 	(*-1 %ha% BARRIER setn-gr)
 ;
 
 
 # 3289
-"<lett>" REMOVE (V PrfPtc) IF
+"<lett>" REMOVE (V PrfPrc) IF
 	(NOT 1 %etter/fram/opp% OR Pron-akk)
 ;
 
 
 # 3290
-"<lett>" REMOVE (V PrfPtc) IF
+"<lett>" REMOVE (V PrfPrc) IF
 	(*-1 setn-gr BARRIER %ha%)
 ;
 
@@ -2685,12 +2685,12 @@ CONSTRAINTS
 
 
 # 3265
-"<livet>" SELECT (V PrfPtc) IF
+"<livet>" SELECT (V PrfPrc) IF
 	(1 %opp%)
 	(NOT -1 Det-Pr-IM-Abe)
 	(NOT -2 Def-Neu-det)
 	(*-1 %ha% BARRIER fv)
-	(*-1 %ha% BARRIER PrfPtc)
+	(*-1 %ha% BARRIER PrfPrc)
 	(*-1 %ha% BARRIER setn-gr)
 	(*-1 Nom BARRIER setn-gr)
 ;
@@ -2733,13 +2733,13 @@ CONSTRAINTS
 
 
 # 3258
-"<meget>" REMOVE (PrfPtc) IF
+"<meget>" REMOVE (PrfPrc) IF
 	(0 A)
 ;
 
 
 # 3257
-"<meget>" REMOVE (PrfPtc) IF
+"<meget>" REMOVE (PrfPrc) IF
 	(0 A)
 ;
 
@@ -3044,7 +3044,7 @@ CONSTRAINTS
 	(NOT 1 Inf OR adverb)
 	(*-1C m-hj-V BARRIER setn-gr)
 	(*-1C m-hj-V BARRIER Inf)
-	(*-1C m-hj-V BARRIER PrfPtc)
+	(*-1C m-hj-V BARRIER PrfPrc)
 ;
 
 
@@ -3054,7 +3054,7 @@ CONSTRAINTS
 	(NOT 2 adverb OR Inf)
 	(*-1C m-hj-V BARRIER setn-gr)
 	(*-1C m-hj-V BARRIER Inf)
-	(*-1C m-hj-V BARRIER PrfPtc)
+	(*-1C m-hj-V BARRIER PrfPrc)
 ;
 
 
@@ -3241,7 +3241,7 @@ SELECT (CS) IF (0 ("om"))(*1 (",") LINK 1 Prs);
 "<om>" SELECT (Pr) IF
 	(*-1 periode-beg/CC-CLB BARRIER %spoerre%)
 	(*-1 ikke-Poss-det LINK 0 N)
-	(*-1 setn-gr LINK *1 fv LINK 0 %ha% LINK *1 PrfPtc)
+	(*-1 setn-gr LINK *1 fv LINK 0 %ha% LINK *1 PrfPrc)
 ;
 
 
@@ -3258,7 +3258,7 @@ SELECT (CS) IF (0 ("om"))(*1 (",") LINK 1 Prs);
 	(NOT -1 Det-Pr-IM-Abe)
 	(NOT -2 Def-Neu-det)
 	(*-1 p-hj-V BARRIER fv)
-	(*-1 p-hj-V BARRIER PrfPtc)
+	(*-1 p-hj-V BARRIER PrfPrc)
 	(*-1 p-hj-V BARRIER setn-gr)
 	(*-1 Nom BARRIER setn-gr)
 	(*-1 %det%-Pron BARRIER setn-gr)
@@ -3266,11 +3266,11 @@ SELECT (CS) IF (0 ("om"))(*1 (",") LINK 1 Prs);
 
 
 # 3188
-"<omvendt>" SELECT (PrfPtc) IF
+"<omvendt>" SELECT (PrfPrc) IF
 	(NOT -1 Det-Pr-IM-Abe OR CC)
 	(NOT -2 Def-Neu-det)
 	(*-1 p-hj-V BARRIER fv)
-	(*-1 p-hj-V BARRIER PrfPtc)
+	(*-1 p-hj-V BARRIER PrfPrc)
 	(*-1 p-hj-V BARRIER setn-gr)
 	(*-1 Nom BARRIER setn-gr)
 	(*-1 setn-gr BARRIER %det%-Pron)
@@ -3278,19 +3278,19 @@ SELECT (CS) IF (0 ("om"))(*1 (",") LINK 1 Prs);
 
 
 # 3187
-"<opptatt>" SELECT (V PrfPtc) IF
+"<opptatt>" SELECT (V PrfPrc) IF
 	(1 %ved%)
 	(NOT -1 Det-Pr-IM-Abe)
 	(NOT -2 Def-Neu-det)
 	(*-1 p-hj-V BARRIER fv)
-	(*-1 p-hj-V BARRIER PrfPtc)
+	(*-1 p-hj-V BARRIER PrfPrc)
 	(*-1 p-hj-V BARRIER setn-gr)
 	(*-1 Nom BARRIER setn-gr)
 ;
 
 
 # 3186
-"<opptatt>" REMOVE (V PrfPtc) IF
+"<opptatt>" REMOVE (V PrfPrc) IF
 	(NOT 1 %ved%)
 ;
 
@@ -3359,27 +3359,27 @@ SELECT (CS) IF (0 ("om"))(*1 (",") LINK 1 Prs);
 
 
 # 3174
-"<redd>" SELECT (V PrfPtc) IF
+"<redd>" SELECT (V PrfPrc) IF
 	(*-1 p-hj-V BARRIER setn-gr)
 	(*1 %seng% BARRIER setn-gr)
 ;
 
 
 # 3175
-"<redd>" SELECT (V PrfPtc) IF
+"<redd>" SELECT (V PrfPrc) IF
 	(1 %opp%)
 	(*-1 p-hj-V BARRIER setn-gr)
 ;
 
 
 # 3172
-"<redd>" REMOVE (V PrfPtc) IF
+"<redd>" REMOVE (V PrfPrc) IF
 	(*-1 p-hj-V BARRIER setn-gr)
 ;
 
 
 # 3173
-"<redd>" REMOVE (V PrfPtc) IF
+"<redd>" REMOVE (V PrfPrc) IF
 	(NOT 1 %opp%)
 	(*-1 setn-gr BARRIER p-hj-V)
 	(*1 setn-gr BARRIER %seng%)
@@ -3387,19 +3387,19 @@ SELECT (CS) IF (0 ("om"))(*1 (",") LINK 1 Prs);
 
 
 # 3171
-"<rent>" SELECT (V PrfPtc) IF
+"<rent>" SELECT (V PrfPrc) IF
 	(NOT 1 %for%)
 	(NOT -1 Det-Pr-IM-Abe)
 	(NOT -2 Def-Neu-det)
 	(*-1 %ha% BARRIER fv)
-	(*-1 %ha% BARRIER PrfPtc)
+	(*-1 %ha% BARRIER PrfPrc)
 	(*-1 %ha% BARRIER setn-gr)
 	(*-1 Nom BARRIER setn-gr)
 ;
 
 
 # 3170
-"<rent>" REMOVE (V PrfPtc) IF
+"<rent>" REMOVE (V PrfPrc) IF
 	(*-1 setn-gr BARRIER %ha%)
 ;
 
@@ -3565,7 +3565,7 @@ SELECT (CS) IF (0 ("om"))(*1 (",") LINK 1 Prs);
 
 
 # 3137
-"<sett>" SELECT (V PrfPtc) IF
+"<sett>" SELECT (V PrfPrc) IF
 	(-1 adverb)
 	(-2 Nom)
 	(-3 Pr)
@@ -3573,7 +3573,7 @@ SELECT (CS) IF (0 ("om"))(*1 (",") LINK 1 Prs);
 
 
 # 3138
-"<sett>" SELECT (V PrfPtc) IF
+"<sett>" SELECT (V PrfPrc) IF
 	(1 fv)
 	(-1 adverb)
 	(-2 Nom)
@@ -3583,7 +3583,7 @@ SELECT (CS) IF (0 ("om"))(*1 (",") LINK 1 Prs);
 
 
 # 3139
-"<sett>" SELECT (V PrfPtc) IF
+"<sett>" SELECT (V PrfPrc) IF
 	(1 fv)
 	(-1 A-komp)
 	(-2 setn-gr)
@@ -3592,7 +3592,7 @@ SELECT (CS) IF (0 ("om"))(*1 (",") LINK 1 Prs);
 
 
 # 3140
-"<sett>" SELECT (V PrfPtc) IF
+"<sett>" SELECT (V PrfPrc) IF
 	(1 fv)
 	(-1 adverb)
 	(-2 setn-gr)
@@ -3601,35 +3601,35 @@ SELECT (CS) IF (0 ("om"))(*1 (",") LINK 1 Prs);
 
 
 # 3141
-"<sett>" SELECT (V PrfPtc) IF
+"<sett>" SELECT (V PrfPrc) IF
 	(-1 adverb)
 	(*-1 setn-gr BARRIER Neu-det)
 ;
 
 
 # 3142
-"<sett>" SELECT (V PrfPtc) IF
+"<sett>" SELECT (V PrfPrc) IF
 	(1 %at%)
 	(*-1 Det/A/gen/prop LINK *1 ikke-AdvA-det)
 ;
 
 
 # 3143
-"<sett>" SELECT (V PrfPtc) IF
+"<sett>" SELECT (V PrfPrc) IF
 	(1 %at%)
 	(NOT *-1 Det/A/gen/prop BARRIER setn-gr)
 ;
 
 
 # 3144
-"<sett>" SELECT (V PrfPtc) IF
+"<sett>" SELECT (V PrfPrc) IF
 	(1 Pr)
 	(*-1 Det/A/gen/prop LINK *1 ikke-AdvA-det)
 ;
 
 
 # 3145
-"<sett>" SELECT (V PrfPtc) IF
+"<sett>" SELECT (V PrfPrc) IF
 	(1 Pr)
 	(NOT *-1 Det/A/gen/prop BARRIER setn-gr)
 ;
@@ -3734,10 +3734,10 @@ CONSTRAINTS
 
 
 # 3122
-"<siktet>" SELECT (V PrfPtc) IF
+"<siktet>" SELECT (V PrfPrc) IF
 	(1 Pron)
 	(2 %inn%)
-	(*-1 setn-gr LINK *1 p-hj-V LINK NOT *1 PrfPtc)
+	(*-1 setn-gr LINK *1 p-hj-V LINK NOT *1 PrfPrc)
 ;
 
 
@@ -3930,7 +3930,7 @@ CONSTRAINTS
 
 # 3087
 "<som>" SELECT (Pr) IF
-	(NOT 1 PrfPtc)
+	(NOT 1 PrfPrc)
 	(-1 >>> LINK NOT *1 fv)
 	(*1C <<< LINK *-1 fv LINK NOT *-1 fv)
 ;
@@ -3994,7 +3994,7 @@ CONSTRAINTS
 # 3080
 "<som>" SELECT (CS) IF
 	(NOT -1 >>>)
-	(*2 N LINK *-1 ikke-AdvA-det LINK 0 Prs/Prt LINK NOT 0 %for/foer/naar% LINK NOT 0 PrfPtc LINK NOT *-1 ikke-Adv)
+	(*2 N LINK *-1 ikke-AdvA-det LINK 0 Prs/Prt LINK NOT 0 %for/foer/naar% LINK NOT 0 PrfPrc LINK NOT *-1 ikke-Adv)
 	(*1 Prs/Prt LINK NOT 1 tegnsetting LINK NOT 0 CC)
 ;
 
@@ -4044,19 +4044,19 @@ CONSTRAINTS
 
 
 # 3077
-"<spent>" SELECT (PrfPtc) IF
+"<spent>" SELECT (PrfPrc) IF
 	(1 %fra/for/ut%)
 	(NOT -1 Det-Pr-IM-Abe)
 	(NOT -2 Def-Neu-det)
 	(*-1 p-hj-V BARRIER fv)
-	(*-1 p-hj-V BARRIER PrfPtc)
+	(*-1 p-hj-V BARRIER PrfPrc)
 	(*-1 p-hj-V BARRIER setn-gr)
 	(*-1 Nom BARRIER setn-gr)
 ;
 
 
 # 3076
-"<spent>" REMOVE (PrfPtc) IF
+"<spent>" REMOVE (PrfPrc) IF
 	(NOT 1 %fra/for/ut%)
 ;
 
@@ -4080,18 +4080,18 @@ CONSTRAINTS
 
 
 # 3072
-"<svart>" SELECT (V PrfPtc) IF
+"<svart>" SELECT (V PrfPrc) IF
 	(NOT -1 Det-Pr-IM-Abe)
 	(NOT -2 Def-Neu-det)
 	(*-1 %ha/faa% BARRIER fv)
-	(*-1 %ha/faa% BARRIER PrfPtc)
+	(*-1 %ha/faa% BARRIER PrfPrc)
 	(*-1 %ha/faa% BARRIER setn-gr)
 	(*-1 Nom BARRIER setn-gr)
 ;
 
 
 # 3071
-"<svart>" REMOVE (V PrfPtc) IF
+"<svart>" REMOVE (V PrfPrc) IF
 	(*-1 setn-gr BARRIER %ha/faa%)
 ;
 
@@ -4381,13 +4381,13 @@ CONSTRAINTS
 
 
 # 3033
-"<tapt>" SELECT (V PrfPtc) IF
+"<tapt>" SELECT (V PrfPrc) IF
 	(*-1 V LINK 0 %gaa%)
 ;
 
 
 # 3032
-"<tatt>" SELECT (PrfPtc) IF
+"<tatt>" SELECT (PrfPrc) IF
 	(-2 %det%)
 	(-3 %i%)
 ;
@@ -4747,7 +4747,7 @@ CONSTRAINTS
 
 # 2974
 "<ville>" REMOVE (A Pl) IF
-	(1 inf/PrfPtc)
+	(1 inf/PrfPrc)
 ;
 
 
@@ -4805,7 +4805,7 @@ CONSTRAINTS
 # 2971
 "<visst>" SELECT (A Pos Sg Neu Indef) IF
 	(-1 hj-V)
-	(*1 PrfPtc/Inf BARRIER setn-gr)
+	(*1 PrfPrc/Inf BARRIER setn-gr)
 ;
 
 
@@ -4843,7 +4843,7 @@ CONSTRAINTS
 
 
 # 2964
-"<åtte>" REMOVE (PrfPtc) IF
+"<åtte>" REMOVE (PrfPrc) IF
 	(0 det)
 ;
 
@@ -4898,14 +4898,14 @@ SELECT (<adv>) IF
 # 2956
 SELECT (<adv>) IF
 	(-1 N/Pron)
-	(1C PrfPtc/Inf)
+	(1C PrfPrc/Inf)
 	(*-2C fv BARRIER ikke-AdvN-Pron-CC-det)
 ;
 
 
 # 2957
 SELECT (<adv>) IF
-	(1C PrfPtc/Inf)
+	(1C PrfPrc/Inf)
 	(-1C fv)
 ;
 
@@ -5429,8 +5429,8 @@ SELECT (A Pl) IF
 
 # 2874
 SELECT (A Pl) IF
-	(NOT 0 Adv OR PrfPtc)
-	(NOT 1 komma OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
+	(NOT 1 komma OR PrfPrc)
 	(*-1 kop LINK 0 iv LINK NOT *1 ikke-Adv)
 	(*-1 %som% BARRIER ikke-AdvV)
 	(*-1 %som% LINK -1 Nom-Pl)
@@ -5439,8 +5439,8 @@ SELECT (A Pl) IF
 
 # 2875
 SELECT (A Pl) IF
-	(NOT 0 Adv OR PrfPtc)
-	(NOT 1 komma OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
+	(NOT 1 komma OR PrfPrc)
 	(*-1 kop LINK 0 fv LINK NOT *1 ikke-Adv)
 	(*-1 %som% BARRIER ikke-AdvV)
 	(*-1 %som% LINK -1 Nom-Pl)
@@ -5449,9 +5449,9 @@ SELECT (A Pl) IF
 
 # 2876
 SELECT (A Pl) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(-1 kop OR iv)
-	(NOT 1 N/A/Adv OR PrfPtc)
+	(NOT 1 N/A/Adv OR PrfPrc)
 	(-2 Nom-Pl)
 	(*-4C CLB-komma LINK 1C fv LINK 0 hj-V)
 	(*-3C fv BARRIER ikke-AdvA-N-Pron-CC-det)
@@ -5460,18 +5460,18 @@ SELECT (A Pl) IF
 
 # 2877
 SELECT (A Pl) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(-1 Nom-Pl)
-	(NOT 1 N/A/Adv OR PrfPtc)
+	(NOT 1 N/A/Adv OR PrfPrc)
 	(*-3C CLB-komma LINK 1C fv LINK 0 kop LINK NOT *1 ikke-AdvA-N-Pron-CC-det)
 ;
 
 
 # 2878
 SELECT (A Pl) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(-1 kop OR iv)
-	(NOT 1 N/A/Adv OR PrfPtc)
+	(NOT 1 N/A/Adv OR PrfPrc)
 	(-2 Nom-Pl)
 	(*-5 setn-gr LINK 1 Adv LINK 1 fv LINK 0 hj-V)
 	(*-3C fv BARRIER ikke-AdvA-N-Pron-CC-det)
@@ -5480,9 +5480,9 @@ SELECT (A Pl) IF
 
 # 2879
 SELECT (A Pl) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(-1 kop OR iv)
-	(NOT 1 N/A/Adv OR PrfPtc)
+	(NOT 1 N/A/Adv OR PrfPrc)
 	(-2 Nom-Pl)
 	(*-6 setn-gr LINK 1 Pr)
 	(*-3C fv LINK 0 hj-V LINK NOT *1 ikke-AdvA-N-Pron-CC-det)
@@ -5491,9 +5491,9 @@ SELECT (A Pl) IF
 
 # 2880
 SELECT (A Pl) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(-1 Nom-Pl)
-	(NOT 1 N/A/Adv OR PrfPtc)
+	(NOT 1 N/A/Adv OR PrfPrc)
 	(*-4 setn-gr LINK 1 Adv LINK 1 fv LINK 0 kop)
 	(*-2C fv BARRIER ikke-AdvA-N-Pron-CC-det)
 ;
@@ -5501,9 +5501,9 @@ SELECT (A Pl) IF
 
 # 2881
 SELECT (A Pl) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(-1 Nom-Pl)
-	(NOT 1 N/A/Adv OR PrfPtc)
+	(NOT 1 N/A/Adv OR PrfPrc)
 	(*-5 setn-gr LINK 1 Pr)
 	(*-2C fv LINK 0 kop LINK NOT *1 ikke-AdvA-N-Pron-CC-det)
 ;
@@ -5796,8 +5796,8 @@ SELECT (A Pl) IF
 
 # 2907
 SELECT (A Pl) IF
-	(NOT 0 PrfPtc OR farlige-A)
-	(NOT 1 PrfPtc OR infmerke)
+	(NOT 0 PrfPrc OR farlige-A)
+	(NOT 1 PrfPrc OR infmerke)
 	(NOT -1 Det/A/komma/CC)
 	(*-1 setn-gr LINK *1 Nom-Pl LINK *1 kop-fv LINK NOT *1 ikke-AdvA)
 	(*-1 setn-gr LINK *1 fv LINK 0 kop)
@@ -5809,8 +5809,8 @@ SELECT (A Pl) IF
 
 # 2908
 SELECT (A Pl) IF
-	(NOT 0 PrfPtc OR farlige-A)
-	(NOT 1 PrfPtc OR infmerke)
+	(NOT 0 PrfPrc OR farlige-A)
+	(NOT 1 PrfPrc OR infmerke)
 	(NOT -1 Det/A/komma/CC)
 	(*-1 setn-gr LINK *1 Nom-Pl LINK *1 fv LINK 0 hj-V)
 	(*-1 setn-gr LINK *1 Nom-Pl LINK *1 hj-V LINK *1 kop LINK 0 iv LINK NOT *1 ikke-AdvA)
@@ -5832,7 +5832,7 @@ SELECT (A Sg Neu) IF
 
 # 2802
 SELECT (A Sg Neu Indef) IF
-	(NOT 0 Adv OR PrfPtc/PrfPtc)
+	(NOT 0 Adv OR PrfPrc/PrfPrc)
 	(1C Adv)
 	(2C fv)
 ;
@@ -5891,7 +5891,7 @@ SELECT (A Sg Neu Indef) IF
 
 # 2808
 SELECT (A Sg Neu Indef) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(-1 kop)
 	(1C A)
 	(-1C Prs/Prt)
@@ -5901,7 +5901,7 @@ SELECT (A Sg Neu Indef) IF
 # 2809
 SELECT (A Sg Neu Indef) IF
 	(NOT 0 Clt OR det)
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(NOT 0 Inf OR Prs/Prt)
 	(-1C Indef-Sg-Neu-A)
 	(NOT 1 Indef-Sg-Msc/Fem-N OR A)
@@ -5913,7 +5913,7 @@ SELECT (A Sg Neu Indef) IF
 # 2810
 SELECT (A Sg Neu Indef) IF
 	(NOT 0 Clt OR det)
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(NOT 0 Inf OR Prs/Prt)
 	(1C A)
 	(-1C fv)
@@ -5923,8 +5923,8 @@ SELECT (A Sg Neu Indef) IF
 
 # 2811
 SELECT (A Sg Neu Indef) IF
-	(NOT 0 Adv OR PrfPtc)
-	(NOT 0 PrfPtc OR Prs/Prt)
+	(NOT 0 Adv OR PrfPrc)
+	(NOT 0 PrfPrc OR Prs/Prt)
 	(1C Adv)
 	(-1C fv)
 ;
@@ -5932,7 +5932,7 @@ SELECT (A Sg Neu Indef) IF
 
 # 2812
 SELECT (A Sg Neu Indef) IF
-	(NOT 0 PrfPtc/Inf OR PrfPtc)
+	(NOT 0 PrfPrc/Inf OR PrfPrc)
 	(NOT 0 Adv OR farlige-A)
 	(NOT 0 Pr OR N)
 	(-1 N/Pron)
@@ -5943,7 +5943,7 @@ SELECT (A Sg Neu Indef) IF
 
 # 2813
 SELECT (A Sg Neu Indef) IF
-	(NOT 0 PrfPtc/Inf OR PrfPtc)
+	(NOT 0 PrfPrc/Inf OR PrfPrc)
 	(NOT 0 Adv OR farlige-A)
 	(NOT 0 Pr OR N)
 	(-1 N/Pron)
@@ -5954,18 +5954,18 @@ SELECT (A Sg Neu Indef) IF
 
 # 2814
 SELECT (A Sg Neu Indef) IF
-	(NOT 0 farlige-A OR PrfPtc)
+	(NOT 0 farlige-A OR PrfPrc)
 	(-1 N/Pron)
-	(1C PrfPtc/Inf)
+	(1C PrfPrc/Inf)
 	(*-2C fv BARRIER ikke-AdvN-Pron-CC-det)
 ;
 
 
 # 2815
 SELECT (A Sg Neu Indef) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(NOT 0 farlige-A OR m-hj-V)
-	(1C PrfPtc/Inf)
+	(1C PrfPrc/Inf)
 	(-1C fv)
 ;
 
@@ -5983,7 +5983,7 @@ SELECT (A Sg Neu Indef) IF
 # 2817
 SELECT (A Sg Neu Indef) IF
 	(NOT 0 Adv OR farlige-A)
-	(NOT 0 orden OR PrfPtc)
+	(NOT 0 orden OR PrfPrc)
 	(-1 Pron-pers)
 	(1C fv)
 ;
@@ -5991,7 +5991,7 @@ SELECT (A Sg Neu Indef) IF
 
 # 2818
 SELECT (A Sg Neu Indef) IF
-	(NOT 0 PrfPtc OR ikke-A)
+	(NOT 0 PrfPrc OR ikke-A)
 	(1C fv)
 	(-1C setn-gr)
 ;
@@ -6053,7 +6053,7 @@ SELECT (A Sg Neu Indef) IF
 SELECT (A Sg Neu Indef) IF
 	(NOT 0 Adv OR N-gen)
 	(NOT 0 orden OR farlige-A)
-	(NOT 0 PrfPtc OR PrfPtc)
+	(NOT 0 PrfPrc OR PrfPrc)
 	(NOT 0 Prt OR A-Pl)
 	(1C A)
 	(NOT -1 det OR A)
@@ -6063,7 +6063,7 @@ SELECT (A Sg Neu Indef) IF
 
 # 2825
 SELECT (A Sg Neu Indef) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(1C A)
 	(-1C Fem-det)
 ;
@@ -6071,7 +6071,7 @@ SELECT (A Sg Neu Indef) IF
 
 # 2826
 SELECT (A Sg Neu Indef) IF
-	(NOT 0 orden OR PrfPtc)
+	(NOT 0 orden OR PrfPrc)
 	(1C A)
 	(-1C Msc-det)
 ;
@@ -6079,7 +6079,7 @@ SELECT (A Sg Neu Indef) IF
 
 # 2827
 SELECT (A Sg Neu Indef) IF
-	(NOT 0 PrfPtc OR farlige-A)
+	(NOT 0 PrfPrc OR farlige-A)
 	(NOT 0 orden OR Adv)
 	(1 A-Pl)
 	(-1C Pl-det)
@@ -6131,7 +6131,7 @@ SELECT (A Sg Neu Indef) IF
 
 # 2832
 SELECT (A Sg Neu Indef) IF
-	(NOT 0 PrfPtc OR farlige-A)
+	(NOT 0 PrfPrc OR farlige-A)
 	(NOT 1 N/A)
 	(NOT -1 det)
 	(*-1 setn-gr LINK NOT 1 Pr/Adv)
@@ -6142,7 +6142,7 @@ SELECT (A Sg Neu Indef) IF
 
 # 2833
 SELECT (A Sg Neu Indef) IF
-	(NOT 0 PrfPtc OR farlige-A)
+	(NOT 0 PrfPrc OR farlige-A)
 	(NOT 1 N/A)
 	(NOT -1 det)
 	(*-1 setn-gr LINK NOT 1 Pr/Adv)
@@ -6154,8 +6154,8 @@ SELECT (A Sg Neu Indef) IF
 
 # 2834
 SELECT (A Sg Neu Indef) IF
-	(NOT 0 Adv OR PrfPtc)
-	(NOT 1 komma OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
+	(NOT 1 komma OR PrfPrc)
 	(*-1 kop LINK 0 iv LINK NOT *1 ikke-Adv)
 	(*-1 %som% BARRIER ikke-AdvV)
 	(*-1 %som% LINK -1 Nom-Neu-Sg)
@@ -6164,8 +6164,8 @@ SELECT (A Sg Neu Indef) IF
 
 # 2835
 SELECT (A Sg Neu Indef) IF
-	(NOT 0 Adv OR PrfPtc)
-	(NOT 1 komma OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
+	(NOT 1 komma OR PrfPrc)
 	(*-1 kop LINK 0 fv LINK NOT *1 ikke-Adv)
 	(*-1 %som% BARRIER ikke-AdvV)
 	(*-1 %som% LINK -1 Nom-Neu-Sg)
@@ -6174,9 +6174,9 @@ SELECT (A Sg Neu Indef) IF
 
 # 2836
 SELECT (A Sg Neu Indef) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(-1 kop OR iv)
-	(NOT 1 N/A/Adv OR PrfPtc)
+	(NOT 1 N/A/Adv OR PrfPrc)
 	(-2 Nom-Neu-Sg)
 	(*-4C CLB-komma LINK 1C fv LINK 0 hj-V)
 	(*-3C fv BARRIER ikke-AdvA-N-Pron-CC-det)
@@ -6185,18 +6185,18 @@ SELECT (A Sg Neu Indef) IF
 
 # 2837
 SELECT (A Sg Neu Indef) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(-1 Nom-Neu-Sg)
-	(NOT 1 N/A/Adv OR PrfPtc)
+	(NOT 1 N/A/Adv OR PrfPrc)
 	(*-3C CLB-komma LINK 1C fv LINK 0 kop LINK NOT *1 ikke-AdvA-N-Pron-CC-det)
 ;
 
 
 # 2838
 SELECT (A Sg Neu Indef) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(-1 kop OR iv)
-	(NOT 1 N/A/Adv OR PrfPtc)
+	(NOT 1 N/A/Adv OR PrfPrc)
 	(-2 Nom-Neu-Sg)
 	(*-5 setn-gr LINK 1 Adv LINK 1 fv LINK 0 hj-V)
 	(*-3C fv BARRIER ikke-AdvA-N-Pron-CC-det)
@@ -6205,9 +6205,9 @@ SELECT (A Sg Neu Indef) IF
 
 # 2839
 SELECT (A Sg Neu Indef) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(-1 kop OR iv)
-	(NOT 1 N/A/Adv OR PrfPtc)
+	(NOT 1 N/A/Adv OR PrfPrc)
 	(-2 Nom-Neu-Sg)
 	(*-6 setn-gr LINK 1 Pr)
 	(*-3C fv LINK 0 hj-V LINK NOT *1 ikke-AdvA-N-Pron-CC-det)
@@ -6216,9 +6216,9 @@ SELECT (A Sg Neu Indef) IF
 
 # 2840
 SELECT (A Sg Neu Indef) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(-1 Nom-Neu-Sg)
-	(NOT 1 N/A/Adv OR PrfPtc)
+	(NOT 1 N/A/Adv OR PrfPrc)
 	(*-4 setn-gr LINK 1 Adv LINK 1 fv LINK 0 kop)
 	(*-2C fv BARRIER ikke-AdvA-N-Pron-CC-det)
 ;
@@ -6226,9 +6226,9 @@ SELECT (A Sg Neu Indef) IF
 
 # 2841
 SELECT (A Sg Neu Indef) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(-1 Nom-Neu-Sg)
-	(NOT 1 N/A/Adv OR PrfPtc)
+	(NOT 1 N/A/Adv OR PrfPrc)
 	(*-5 setn-gr LINK 1 Pr)
 	(*-2C fv LINK 0 kop LINK NOT *1 ikke-AdvA-N-Pron-CC-det)
 ;
@@ -6347,7 +6347,7 @@ SELECT (A Sg Neu Indef) IF
 
 # 2853
 SELECT (A Sg Neu Indef) IF
-	(NOT 0 %ytterligere% OR PrfPtc)
+	(NOT 0 %ytterligere% OR PrfPrc)
 	(1 komma/CC)
 	(NOT 2 A/Adv)
 	(*-1 ikke-Adv LINK 0 %det%-Pron LINK -1 %ha%)
@@ -6356,7 +6356,7 @@ SELECT (A Sg Neu Indef) IF
 
 # 2854
 SELECT (A Sg Neu Indef) IF
-	(NOT 0 %ytterligere% OR PrfPtc)
+	(NOT 0 %ytterligere% OR PrfPrc)
 	(NOT 1 N OR komma/CC)
 	(*-1 ikke-Adv LINK 0 %det%-Pron LINK -1 %ha%)
 ;
@@ -6419,7 +6419,7 @@ SELECT (A Sg Neu Indef) IF
 	(NOT 1 ikke-N OR Indef-Sg-Msc-N)
 	(NOT -1 Neu-det OR A)
 	(*-1 p-hj-V BARRIER setn-gr)
-	(*-1 PrfPtc BARRIER setn-gr)
+	(*-1 PrfPrc BARRIER setn-gr)
 ;
 
 
@@ -6432,7 +6432,7 @@ SELECT (A Sg Neu Indef) IF
 	(NOT 1 ikke-N OR Indef-Sg-Msc-N)
 	(NOT -2 Neu-det)
 	(*-1 p-hj-V BARRIER setn-gr)
-	(*-1 PrfPtc BARRIER setn-gr)
+	(*-1 PrfPrc BARRIER setn-gr)
 ;
 
 
@@ -6451,8 +6451,8 @@ SELECT (A Sg Neu Indef) IF
 # 2863
 SELECT (A Sg Neu Indef) IF
 	(NOT 0 det OR Adv)
-	(NOT 0 PrfPtc OR farlige-A)
-	(NOT 1 komma OR PrfPtc)
+	(NOT 0 PrfPrc OR farlige-A)
+	(NOT 1 komma OR PrfPrc)
 	(NOT -1 Det/A/komma/CC)
 	(*-1 setn-gr LINK *1 Nom-Neu-Sg LINK *1 kop-fv LINK NOT *1 ikke-AdvA)
 	(*-1 setn-gr LINK *1 fv LINK 0 kop)
@@ -6468,7 +6468,7 @@ SELECT (A Sg Neu Indef) IF
 
 # 2864
 SELECT (A Sg Neu Indef) IF
-	(NOT 0 PrfPtc OR farlige-A)
+	(NOT 0 PrfPrc OR farlige-A)
 	(1 komma)
 	(NOT -1 Det/A/komma/CC)
 	(NOT 2 A-Indef-Sg)
@@ -6482,8 +6482,8 @@ SELECT (A Sg Neu Indef) IF
 
 # 2865
 SELECT (A Sg Neu Indef) IF
-	(NOT 0 PrfPtc OR farlige-A)
-	(NOT 1 N/A/Adv OR PrfPtc)
+	(NOT 0 PrfPrc OR farlige-A)
+	(NOT 1 N/A/Adv OR PrfPrc)
 	(NOT -1 Det/A/komma/CC)
 	(*-1 setn-gr LINK *1 Nom-Neu-Sg LINK *1 fv LINK 0 hj-V)
 	(*-1 setn-gr LINK *1 Nom-Neu-Sg LINK *1 hj-V LINK *1 kop LINK 0 iv LINK NOT *1 ikke-AdvA)
@@ -6687,7 +6687,7 @@ SELECT (A Pos Sg Neu Indef) IF
 # 2782
 SELECT (A Pos Sg Neu Indef) IF
 	(0 %mye/lite%)
-	(1C PrfPtc)
+	(1C PrfPrc)
 ;
 
 
@@ -6795,7 +6795,7 @@ SELECT (A MF Sg Indef) IF
 
 # 2735
 SELECT (A MF Sg Indef) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(NOT 1 N/A/Adv)
 	(*-1 kop LINK 0 iv LINK NOT *1 ikke-Adv)
 	(*-1 %som% BARRIER ikke-AdvV)
@@ -6805,7 +6805,7 @@ SELECT (A MF Sg Indef) IF
 
 # 2736
 SELECT (A MF Sg Indef) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(NOT 1 N/A/Adv)
 	(*-1 kop LINK 0 fv LINK NOT *1 ikke-Adv)
 	(*-1 %som% BARRIER ikke-AdvV)
@@ -6815,9 +6815,9 @@ SELECT (A MF Sg Indef) IF
 
 # 2737
 SELECT (A MF Sg Indef) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(-1 kop OR iv)
-	(NOT 1 N/A/Adv OR PrfPtc)
+	(NOT 1 N/A/Adv OR PrfPrc)
 	(-2 Nom-Msc-Sg)
 	(*-4C CLB-komma LINK 1C fv LINK 0 hj-V)
 	(*-3C fv BARRIER ikke-AdvA-N-Pron-CC-det)
@@ -6826,18 +6826,18 @@ SELECT (A MF Sg Indef) IF
 
 # 2738
 SELECT (A MF Sg Indef) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(-1 Nom-Msc-Sg)
-	(NOT 1 N/A/Adv OR PrfPtc)
+	(NOT 1 N/A/Adv OR PrfPrc)
 	(*-3C CLB-komma LINK 1C fv LINK 0 kop LINK NOT *1 ikke-AdvA-N-Pron-CC-det)
 ;
 
 
 # 2739
 SELECT (A MF Sg Indef) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(-1 kop OR iv)
-	(NOT 1 N/A/Adv OR PrfPtc)
+	(NOT 1 N/A/Adv OR PrfPrc)
 	(-2 Nom-Msc-Sg)
 	(*-5 setn-gr LINK 1 Adv LINK 1 fv LINK 0 hj-V)
 	(*-3C fv BARRIER ikke-AdvA-N-Pron-CC-det)
@@ -6846,9 +6846,9 @@ SELECT (A MF Sg Indef) IF
 
 # 2740
 SELECT (A MF Sg Indef) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(-1 kop OR iv)
-	(NOT 1 N/A/Adv OR PrfPtc)
+	(NOT 1 N/A/Adv OR PrfPrc)
 	(-2 Nom-Msc-Sg)
 	(*-6 setn-gr LINK 1 Pr)
 	(*-3C fv LINK 0 hj-V LINK NOT *1 ikke-AdvA-N-Pron-CC-det)
@@ -6857,9 +6857,9 @@ SELECT (A MF Sg Indef) IF
 
 # 2741
 SELECT (A MF Sg Indef) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(-1 Nom-Msc-Sg)
-	(NOT 1 N/A/Adv OR PrfPtc)
+	(NOT 1 N/A/Adv OR PrfPrc)
 	(*-4 setn-gr LINK 1 Adv LINK 1 fv LINK 0 kop)
 	(*-2C fv BARRIER ikke-AdvA-N-Pron-CC-det)
 ;
@@ -6867,9 +6867,9 @@ SELECT (A MF Sg Indef) IF
 
 # 2742
 SELECT (A MF Sg Indef) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(-1 Nom-Msc-Sg)
-	(NOT 1 N/A/Adv OR PrfPtc)
+	(NOT 1 N/A/Adv OR PrfPrc)
 	(*-5 setn-gr LINK 1 Pr)
 	(*-2C fv LINK 0 kop LINK NOT *1 ikke-AdvA-N-Pron-CC-det)
 ;
@@ -6877,8 +6877,8 @@ SELECT (A MF Sg Indef) IF
 
 # 2743
 SELECT (A MF Sg Indef) IF
-	(NOT 0 Adv OR PrfPtc)
-	(NOT 1 komma OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
+	(NOT 1 komma OR PrfPrc)
 	(*-1 kop LINK 0 iv LINK NOT *1 ikke-Adv)
 	(*-1 %som% BARRIER ikke-AdvV)
 	(*-1 %som% LINK -1 Nom-Fem-Sg)
@@ -6887,8 +6887,8 @@ SELECT (A MF Sg Indef) IF
 
 # 2744
 SELECT (A MF Sg Indef) IF
-	(NOT 0 Adv OR PrfPtc)
-	(NOT 1 komma OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
+	(NOT 1 komma OR PrfPrc)
 	(*-1 kop LINK 0 fv LINK NOT *1 ikke-Adv)
 	(*-1 %som% BARRIER ikke-AdvV)
 	(*-1 %som% LINK -1 Nom-Fem-Sg)
@@ -6897,9 +6897,9 @@ SELECT (A MF Sg Indef) IF
 
 # 2745
 SELECT (A MF Sg Indef) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(-1 kop OR iv)
-	(NOT 1 N/A/Adv OR PrfPtc)
+	(NOT 1 N/A/Adv OR PrfPrc)
 	(-2 Nom-Fem-Sg)
 	(*-4C CLB-komma LINK 1C fv LINK 0 hj-V)
 	(*-3C fv BARRIER ikke-AdvA-N-Pron-CC-det)
@@ -6908,18 +6908,18 @@ SELECT (A MF Sg Indef) IF
 
 # 2746
 SELECT (A MF Sg Indef) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(-1 Nom-Fem-Sg)
-	(NOT 1 N/A/Adv OR PrfPtc)
+	(NOT 1 N/A/Adv OR PrfPrc)
 	(*-3C CLB-komma LINK 1C fv LINK 0 kop LINK NOT *1 ikke-AdvA-N-Pron-CC-det)
 ;
 
 
 # 2747
 SELECT (A MF Sg Indef) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(-1 kop OR iv)
-	(NOT 1 N/A/Adv OR PrfPtc)
+	(NOT 1 N/A/Adv OR PrfPrc)
 	(-2 Nom-Fem-Sg)
 	(*-5 setn-gr LINK 1 Adv LINK 1 fv LINK 0 hj-V)
 	(*-3C fv BARRIER ikke-AdvA-N-Pron-CC-det)
@@ -6928,9 +6928,9 @@ SELECT (A MF Sg Indef) IF
 
 # 2748
 SELECT (A MF Sg Indef) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(-1 kop OR iv)
-	(NOT 1 N/A/Adv OR PrfPtc)
+	(NOT 1 N/A/Adv OR PrfPrc)
 	(-2 Nom-Fem-Sg)
 	(*-6 setn-gr LINK 1 Pr)
 	(*-3C fv LINK 0 hj-V LINK NOT *1 ikke-AdvA-N-Pron-CC-det)
@@ -6939,9 +6939,9 @@ SELECT (A MF Sg Indef) IF
 
 # 2749
 SELECT (A MF Sg Indef) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(-1 Nom-Fem-Sg)
-	(NOT 1 N/A/Adv OR PrfPtc)
+	(NOT 1 N/A/Adv OR PrfPrc)
 	(*-4 setn-gr LINK 1 Adv LINK 1 fv LINK 0 kop)
 	(*-2C fv BARRIER ikke-AdvA-N-Pron-CC-det)
 ;
@@ -6949,9 +6949,9 @@ SELECT (A MF Sg Indef) IF
 
 # 2750
 SELECT (A MF Sg Indef) IF
-	(NOT 0 Adv OR PrfPtc)
+	(NOT 0 Adv OR PrfPrc)
 	(-1 Nom-Fem-Sg)
-	(NOT 1 N/A/Adv OR PrfPtc)
+	(NOT 1 N/A/Adv OR PrfPrc)
 	(*-5 setn-gr LINK 1 Pr)
 	(*-2C fv LINK 0 kop LINK NOT *1 ikke-AdvA-N-Pron-CC-det)
 ;
@@ -6989,7 +6989,7 @@ SELECT (A MF Sg Indef) IF
 
 # 2754
 SELECT (A MF Sg Indef) IF
-	(NOT 0 farlige-A OR PrfPtc)
+	(NOT 0 farlige-A OR PrfPrc)
 	(NOT 0 Inf OR N-gen)
 	(1 komma/CC)
 	(NOT 1 CLB OR Adv)
@@ -7206,8 +7206,8 @@ SELECT (A MF Sg Indef) IF
 
 # 2774
 SELECT (A MF Sg Indef) IF
-	(NOT 0 PrfPtc OR farlige-A)
-	(NOT 1 N/A/Adv OR PrfPtc)
+	(NOT 0 PrfPrc OR farlige-A)
+	(NOT 1 N/A/Adv OR PrfPrc)
 	(NOT 1 komma OR infmerke)
 	(NOT -1 Det/A/komma/CC)
 	(*-1 setn-gr LINK *1 Nom-Fem-Sg LINK *1 kop-fv LINK NOT *1 ikke-AdvA)
@@ -7220,7 +7220,7 @@ SELECT (A MF Sg Indef) IF
 
 # 2775
 SELECT (A MF Sg Indef) IF
-	(NOT 0 PrfPtc OR farlige-A)
+	(NOT 0 PrfPrc OR farlige-A)
 	(1 komma)
 	(NOT -1 Det/A/komma/CC)
 	(NOT 2 A-Indef-Sg)
@@ -7234,8 +7234,8 @@ SELECT (A MF Sg Indef) IF
 
 # 2776
 SELECT (A MF Sg Indef) IF
-	(NOT 0 PrfPtc OR farlige-A)
-	(NOT 1 PrfPtc OR infmerke)
+	(NOT 0 PrfPrc OR farlige-A)
+	(NOT 1 PrfPrc OR infmerke)
 	(NOT -1 Det/A/komma/CC)
 	(*-1 setn-gr LINK *1 Nom-Fem-Sg LINK *1 fv LINK 0 hj-V)
 	(*-1 setn-gr LINK *1 Nom-Fem-Sg LINK *1 hj-V LINK *1 kop LINK 0 iv LINK NOT *1 ikke-AdvA)
@@ -7248,8 +7248,8 @@ SELECT (A MF Sg Indef) IF
 
 # 2777
 SELECT (A MF Sg Indef) IF
-	(NOT 0 PrfPtc OR farlige-A)
-	(NOT 1 N/A/Adv OR PrfPtc)
+	(NOT 0 PrfPrc OR farlige-A)
+	(NOT 1 N/A/Adv OR PrfPrc)
 	(NOT 1 komma OR infmerke)
 	(NOT -1 Det/A/komma/CC)
 	(*-1 setn-gr LINK *1 Nom-Msc-Sg LINK *1 kop-fv LINK NOT *1 ikke-AdvA)
@@ -7262,7 +7262,7 @@ SELECT (A MF Sg Indef) IF
 
 # 2778
 SELECT (A MF Sg Indef) IF
-	(NOT 0 PrfPtc OR farlige-A)
+	(NOT 0 PrfPrc OR farlige-A)
 	(1 komma)
 	(NOT -1 Det/A/komma/CC)
 	(NOT 2 A-Indef-Sg)
@@ -7276,8 +7276,8 @@ SELECT (A MF Sg Indef) IF
 
 # 2779
 SELECT (A MF Sg Indef) IF
-	(NOT 0 PrfPtc OR farlige-A)
-	(NOT 1 PrfPtc OR infmerke)
+	(NOT 0 PrfPrc OR farlige-A)
+	(NOT 1 PrfPrc OR infmerke)
 	(NOT -1 Det/A/komma/CC)
 	(*-1 setn-gr LINK *1 Nom-Msc-Sg LINK *1 fv LINK 0 hj-V)
 	(*-1 setn-gr LINK *1 Nom-Msc-Sg LINK *1 hj-V LINK *1 kop LINK 0 iv LINK NOT *1 ikke-AdvA)
@@ -7364,7 +7364,7 @@ SELECT (A) IF
 
 # 2721
 SELECT (A) IF
-	(NOT 0 Pr OR PrfPtc)
+	(NOT 0 Pr OR PrfPrc)
 	(1 Indef-N)
 	(NOT 1 det)
 	(NOT -1 Pr)
@@ -7466,7 +7466,7 @@ SELECT (Adv) IF
 # 2698
 SELECT (Adv) IF
 	(NOT 0 %saa/og/selv% OR CS)
-	(NOT 0 Pr OR PrfPtc)
+	(NOT 0 Pr OR PrfPrc)
 	(NOT 0 %alt% OR %saa%)
 	(1 Nom)
 	(-1 fv)
@@ -7496,7 +7496,7 @@ SELECT (Adv) IF
 SELECT (Adv) IF
 	(0 CS)
 	(NOT 0 %saa/og/selv% OR %ei%)
-	(NOT 0 Pr OR PrfPtc/Inf)
+	(NOT 0 Pr OR PrfPrc/Inf)
 	(-1 N/Pron)
 	(*-4 setn-gr LINK 1 Adv)
 	(*-2C fv BARRIER ikke-AdvN-Pron-CC-det)
@@ -7507,7 +7507,7 @@ SELECT (Adv) IF
 # 2702
 SELECT (Adv) IF
 	(NOT 0 CS OR %saa/og/selv%)
-	(NOT 0 Pr OR PrfPtc/Inf)
+	(NOT 0 Pr OR PrfPrc/Inf)
 	(-1 N/Pron)
 	(*-4 setn-gr LINK 1 Adv)
 	(*-2C fv BARRIER ikke-AdvN-Pron-CC-det)
@@ -7517,7 +7517,7 @@ SELECT (Adv) IF
 # 2703
 SELECT (Adv) IF
 	(NOT 0 %saa/og/selv% OR %ei%)
-	(NOT 0 Pr OR PrfPtc/Inf)
+	(NOT 0 Pr OR PrfPrc/Inf)
 	(-1 N/Pron)
 	(*-4 setn-gr LINK 1 Pr LINK NOT 1 fv)
 	(*-2C fv BARRIER ikke-AdvN-Pron-CC-det)
@@ -7537,7 +7537,7 @@ SELECT (Adv) IF
 SELECT (Adv) IF
 	(NOT 0 %saa/og/selv%)
 	(-1 N/Pron)
-	(1C PrfPtc/Inf)
+	(1C PrfPrc/Inf)
 	(*-2C fv BARRIER ikke-AdvN-Pron-CC-det)
 ;
 
@@ -7545,7 +7545,7 @@ SELECT (Adv) IF
 # 2706
 SELECT (Adv) IF
 	(NOT 0 %saa/og/selv%)
-	(1C PrfPtc/Inf)
+	(1C PrfPrc/Inf)
 	(-1C fv)
 ;
 
@@ -7674,7 +7674,7 @@ SELECT (CLB CC) IF
 	(0 CLB/CC-CC)
 	(1 Prt)
 	(-1 Prt)
-	(NOT 1 PrfPtc)
+	(NOT 1 PrfPrc)
 ;
 
 
@@ -7683,7 +7683,7 @@ SELECT (CLB CC) IF
 	(0 CLB/CC-CC)
 	(1 Prt)
 	(-1 Prt)
-	(NOT -1 PrfPtc)
+	(NOT -1 PrfPrc)
 ;
 
 
@@ -7709,7 +7709,7 @@ SELECT (CLB CC) IF
 	(-1 komma)
 	(*-1 Prs/Prt BARRIER setn-gr)
 	(*1 Prs/Prt BARRIER setn-gr)
-	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPtc LINK NOT -1 Pr/komma)
+	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPrc LINK NOT -1 Pr/komma)
 	(*1 Prs/Prt BARRIER setn-gr-u-komma)
 	(*1 Prs/Prt LINK *-1 komma LINK *-1 komma)
 ;
@@ -9299,7 +9299,7 @@ SELECT (Interj) IF
 
 
 # 2509
-SELECT (PrfPtc) IF
+SELECT (PrfPrc) IF
 	(NOT 0 Prs/Prt)
 	(-1 %om/enn/som/hvis%)
 	(-1C CS)
@@ -9377,7 +9377,7 @@ SELECT (Pr) IF
 # 2495
 SELECT (Pr) IF
 	(0 CS)
-	(1 PrfPtc)
+	(1 PrfPrc)
 	(2 N/A)
 	(*1C setn-gr BARRIER fv)
 ;
@@ -9457,7 +9457,7 @@ SELECT (Pr) IF
 REMOVE (CS) IF
 	(0 Pr)
 	(NOT 0 A)
-	(NOT 1 PrfPtc)
+	(NOT 1 PrfPrc)
 	(*1C setn-gr BARRIER Prs/Prt)
 ;
 
@@ -9528,7 +9528,7 @@ SELECT (Prs) IF
 	(-1 N/Pron)
 	(NOT -1 tall OR Acc)
 	(-2 trans2)
-	(-2C inf/PrfPtc)
+	(-2C inf/PrfPrc)
 	(NOT -2 ditrans)
 ;
 
@@ -9612,7 +9612,7 @@ SELECT (Prt) IF
 	(-1 N/Pron)
 	(NOT -1 tall OR Acc)
 	(-2 trans2)
-	(-2C inf/PrfPtc)
+	(-2C inf/PrfPrc)
 	(NOT -2 ditrans)
 ;
 
@@ -9677,7 +9677,7 @@ SELECT (Prt) IF
 # 2451
 SELECT (Pron Pers) IF
 	(0 %Det/dette%)
-	(1 PrfPtc)
+	(1 PrfPrc)
 	(-1C fv)
 	(NOT 1 N-Neu)
 ;
@@ -9719,7 +9719,7 @@ SELECT (Pron Pers) IF
 # 2455
 SELECT (Pron Pers) IF
 	(0 %den/denne%)
-	(1 PrfPtc)
+	(1 PrfPrc)
 	(-1C fv)
 	(NOT 1 N-Msc/Fem OR adverb)
 ;
@@ -9793,7 +9793,7 @@ SELECT (Pron Pers) IF
 # 2464
 SELECT (Pron Pers) IF
 	(NOT 0 N)
-	(1C PrfPtc/Inf)
+	(1C PrfPrc/Inf)
 	(-1C fv)
 ;
 
@@ -9803,7 +9803,7 @@ SELECT (Pron Pers) IF
 	(NOT 0 N)
 	(1C adverb)
 	(-1C fv)
-	(2C PrfPtc/Inf)
+	(2C PrfPrc/Inf)
 ;
 
 
@@ -10080,7 +10080,7 @@ SELECT (CS) IF
 # 2425
 SELECT (CS) IF
 	(0 %om/enn/som/hvis%)
-	(1 PrfPtc)
+	(1 PrfPrc)
 	(NOT 1 Def-Sg-Neu-N OR Def-Sg-Fem-N)
 	(NOT 2 N/A)
 	(*1 setn-gr BARRIER Prs/Prt)
@@ -10570,7 +10570,7 @@ SELECT (N) IF
 # 2361
 SELECT (N) IF
 	(0 samset OR A)
-	(NOT 0 Prs/Prt OR PrfPtc)
+	(NOT 0 Prs/Prt OR PrfPrc)
 	(NOT 1 N)
 ;
 
@@ -11338,7 +11338,7 @@ SELECT (V Inf Pass) IF
 	(-1 @Adv)
 	(*-1 m-hj-V BARRIER setn-gr)
 	(*-1 m-hj-V BARRIER Inf)
-	(*-1 m-hj-V BARRIER PrfPtc)
+	(*-1 m-hj-V BARRIER PrfPrc)
 ;
 
 
@@ -11349,7 +11349,7 @@ SELECT (V Inf Pass) IF
 	(NOT -1 ikke-AdvN-Pron-CC)
 	(*-1 m-hj-V BARRIER setn-gr)
 	(*-1 m-hj-V BARRIER Inf)
-	(*-1 m-hj-V BARRIER PrfPtc)
+	(*-1 m-hj-V BARRIER PrfPrc)
 ;
 
 
@@ -11406,7 +11406,7 @@ SELECT (V Inf) IF
 	(-1 @Adv)
 	(*-1 m-hj-V BARRIER setn-gr)
 	(*-1 m-hj-V BARRIER Inf)
-	(*-1 m-hj-V BARRIER PrfPtc)
+	(*-1 m-hj-V BARRIER PrfPrc)
 ;
 
 
@@ -11416,7 +11416,7 @@ SELECT (V Inf) IF
 	(NOT -1 ikke-AdvN-Pron-CC)
 	(*-1 m-hj-V BARRIER setn-gr)
 	(*-1 m-hj-V BARRIER Inf)
-	(*-1 m-hj-V BARRIER PrfPtc)
+	(*-1 m-hj-V BARRIER PrfPrc)
 ;
 
 
@@ -11441,7 +11441,7 @@ SELECT (V Inf) IF
 
 
 # 2257
-SELECT (V PrfPtc) IF
+SELECT (V PrfPrc) IF
 	(NOT 0 farlige-part)
 	(-1 N)
 	(NOT 1 N/A)
@@ -11450,7 +11450,7 @@ SELECT (V PrfPtc) IF
 
 
 # 2258
-SELECT (V PrfPtc) IF
+SELECT (V PrfPrc) IF
 	(NOT 0 farlige-part)
 	(-1 setn-gr)
 	(*1 overskrift BARRIER setn-gr)
@@ -11458,39 +11458,39 @@ SELECT (V PrfPtc) IF
 
 
 # 2259
-SELECT (V PrfPtc) IF
+SELECT (V PrfPrc) IF
 	(NOT 0 farlige-part)
 	(-1C komma)
 	(NOT -1 CLB)
-	(*-1C PrfPtc BARRIER setn-gr)
+	(*-1C PrfPrc BARRIER setn-gr)
 ;
 
 
 # 2260
-SELECT (V PrfPtc) IF
+SELECT (V PrfPrc) IF
 	(NOT 0 farlige-part)
 	(-1C CC)
 	(NOT -1 CLB)
-	(*-1C PrfPtc BARRIER setn-gr)
+	(*-1C PrfPrc BARRIER setn-gr)
 ;
 
 
 # 2261
-SELECT (V PrfPtc) IF
+SELECT (V PrfPrc) IF
 	(NOT 0 Def-Sg-Fem-N OR farlige-part)
-	(-1C PrfPtc)
+	(-1C PrfPrc)
 ;
 
 
 # 2262
-SELECT (V PrfPtc) IF
+SELECT (V PrfPrc) IF
 	(NOT 0 Def-Sg-Neu-N OR farlige-part)
 	(-1C Pass)
 ;
 
 
 # 2263
-SELECT (V PrfPtc) IF
+SELECT (V PrfPrc) IF
 	(NOT 0 farlige-part OR N)
 	(-1 A-komp)
 	(-2 komma/strek)
@@ -11498,7 +11498,7 @@ SELECT (V PrfPtc) IF
 
 
 # 2264
-SELECT (V PrfPtc) IF
+SELECT (V PrfPrc) IF
 	(NOT 0 farlige-part)
 	(1C Pr)
 	(-1C N)
@@ -11508,7 +11508,7 @@ SELECT (V PrfPtc) IF
 
 
 # 2265
-SELECT (V PrfPtc) IF
+SELECT (V PrfPrc) IF
 	(NOT 0 N OR farlige-part)
 	(-1 komma)
 	(1C Pr)
@@ -11517,7 +11517,7 @@ SELECT (V PrfPtc) IF
 
 
 # 2266
-SELECT (V PrfPtc) IF
+SELECT (V PrfPrc) IF
 	(NOT 0 farlige-part OR Prs/Prt)
 	(1C Pr)
 	(-1C N)
@@ -11525,11 +11525,11 @@ SELECT (V PrfPtc) IF
 
 
 # 2267
-SELECT (V PrfPtc) IF
+SELECT (V PrfPrc) IF
 	(NOT 0 farlige-part OR Inf)
 	(NOT -1 Det-Pr-IM-Abe)
 	(*-1 m-hj-V-Prt BARRIER fv)
-	(*-1 m-hj-V-Prt BARRIER PrfPtc)
+	(*-1 m-hj-V-Prt BARRIER PrfPrc)
 	(*-1 m-hj-V-Prt BARRIER Inf)
 	(*-1 m-hj-V-Prt BARRIER setn-gr)
 	(*-1 Nom BARRIER setn-gr)
@@ -11537,85 +11537,85 @@ SELECT (V PrfPtc) IF
 
 
 # 2268
-SELECT (V PrfPtc) IF
+SELECT (V PrfPrc) IF
 	(NOT 0 farlige-part)
 	(NOT -1 Det-Pr-IM-Abe)
 	(*-1 p-hj-V BARRIER fv)
-	(*-1 p-hj-V BARRIER PrfPtc)
+	(*-1 p-hj-V BARRIER PrfPrc)
 	(*-1 p-hj-V BARRIER setn-gr)
 	(*-1 p-hj-V LINK 0 Inf LINK *-1 infmerke)
 ;
 
 
 # 2269
-SELECT (V PrfPtc) IF
+SELECT (V PrfPrc) IF
 	(NOT 0 farlige-part)
 	(NOT -1 Det-Pr-IM-Abe)
 	(*-1 p-hj-V BARRIER fv)
-	(*-1 p-hj-V BARRIER PrfPtc)
+	(*-1 p-hj-V BARRIER PrfPrc)
 	(*-1 p-hj-V BARRIER setn-gr)
 	(*-1 som/komma/og BARRIER setn-gr)
 ;
 
 
 # 2270
-SELECT (V PrfPtc) IF
+SELECT (V PrfPrc) IF
 	(NOT 0 farlige-part)
 	(-1 @Adv)
 	(*-1 p-hj-V BARRIER fv)
-	(*-1 p-hj-V BARRIER PrfPtc)
+	(*-1 p-hj-V BARRIER PrfPrc)
 	(*-1 p-hj-V BARRIER setn-gr)
 	(*-1 Nom BARRIER setn-gr)
 ;
 
 
 # 2271
-SELECT (V PrfPtc) IF
+SELECT (V PrfPrc) IF
 	(NOT 0 farlige-part)
 	(-1 Det-etterstilt)
 	(*-1 p-hj-V BARRIER fv)
-	(*-1 p-hj-V BARRIER PrfPtc)
+	(*-1 p-hj-V BARRIER PrfPrc)
 	(*-1 p-hj-V BARRIER setn-gr)
 	(*-1 Nom BARRIER setn-gr)
 ;
 
 
 # 2272
-SELECT (V PrfPtc) IF
+SELECT (V PrfPrc) IF
 	(NOT 0 farlige-part)
 	(NOT -1 Det-Pr-IM-Abe)
 	(-2 Def-Neu-det LINK NOT 1 Def-Sg-Neu-A)
 	(*-1 p-hj-V BARRIER fv)
-	(*-1 p-hj-V BARRIER PrfPtc)
+	(*-1 p-hj-V BARRIER PrfPrc)
 	(*-1 p-hj-V BARRIER setn-gr)
 	(*-1 Nom BARRIER setn-gr)
 ;
 
 
 # 2273
-SELECT (V PrfPtc) IF
+SELECT (V PrfPrc) IF
 	(NOT 0 farlige-part)
 	(NOT -1 Det-Pr-IM-Abe)
 	(NOT -2 Def-Neu-det)
 	(*-1 p-hj-V BARRIER fv)
-	(*-1 p-hj-V BARRIER PrfPtc)
+	(*-1 p-hj-V BARRIER PrfPrc)
 	(*-1 p-hj-V BARRIER setn-gr)
 	(*-1 Nom BARRIER setn-gr)
 ;
 
-REMOVE (A) IF (0  V + PrfPtc)(NOT *1 N BARRIER NOT-PRE-NP-HEAD);
+REMOVE (A) IF (0  V + PrfPrc)(NOT *1 N BARRIER NOT-PRE-NP-HEAD);
 
 # 2274
-SELECT (V PrfPtc) IF
+SELECT (V PrfPrc) IF
 	(-1 %ikke/aldri%)
 	(*-2 N/Pron LINK *-1 ikke-AdvA-det LINK 0 %ha%-Prs/Prt LINK 0 N LINK -1 A-komp)
 ;
 
-REMOVE PrfPtc IF (0 Prt)(NOT *0 Prs OR Prt BARRIER CLB);
+REMOVE PrfPrc IF (0 Prt)(NOT *0 Prs OR Prt BARRIER CLB);
 
 
 # 2275
-SELECT (V PrfPtc) IF
+SELECT (V PrfPrc) IF
 	(-1 %ingen%)
 	(-2 %ha%-Prs/Prt)
 	(-3 N)
@@ -11624,20 +11624,20 @@ SELECT (V PrfPtc) IF
 
 
 # 2276
-SELECT (V PrfPtc) IF
+SELECT (V PrfPrc) IF
 	(*-1 V LINK 0 %faa% LINK *1 ikke-AdvA-det LINK 0 Def-N LINK 1 %sitt% LINK NOT *1 ikke-AdvA)
 ;
 
 
 # 2277
-SELECT (V PrfPtc) IF
+SELECT (V PrfPrc) IF
 	(-1C %ha%-Prs/Prt)
 	(*1 %siden% BARRIER setn-gr)
 ;
 
 
 # 2278
-SELECT (V PrfPtc) IF
+SELECT (V PrfPrc) IF
 	(*-1 setn-gr LINK 0 spoerreAdv LINK *1 ikke-AdvA-det LINK 0 Nom LINK *1 ikke-Adv LINK 0 p-hj-V LINK 0 Prs/Prt LINK NOT *1 alt)
 ;
 
@@ -11654,8 +11654,8 @@ SELECT (V PrfPtc) IF
 CONSTRAINTS
 
 # 2279
-SELECT (V PrfPtc) IF
-	(0 PrfPtc)
+SELECT (V PrfPrc) IF
+	(0 PrfPrc)
 	(NOT 0 farlige-A)
 	(NOT -1 det)
 	(*-1 setn-gr LINK NOT 1 Pr/Adv)
@@ -11665,8 +11665,8 @@ SELECT (V PrfPtc) IF
 
 
 # 2280
-SELECT (V PrfPtc) IF
-	(0 PrfPtc)
+SELECT (V PrfPrc) IF
+	(0 PrfPrc)
 	(NOT 0 farlige-A)
 	(*-1 setn-gr LINK NOT 1 Pr/Adv)
 	(*-1 Def-Pl-N BARRIER ikke-Adv)
@@ -11676,8 +11676,8 @@ SELECT (V PrfPtc) IF
 
 
 # 2281
-SELECT (V PrfPtc) IF
-	(0 PrfPtc)
+SELECT (V PrfPrc) IF
+	(0 PrfPrc)
 	(NOT 0 farlige-A)
 	(NOT 1 N/A)
 	(NOT -1 det)
@@ -11688,7 +11688,7 @@ SELECT (V PrfPtc) IF
 
 
 # 2282
-SELECT (V PrfPtc) IF
+SELECT (V PrfPrc) IF
 	(NOT 0 ikke-A-V OR Inf)
 	(*-1 strek/parentes BARRIER Prs/Prt)
 	(*-1 strek/parentes LINK NOT 0 parentes-beg LINK *-1 strek/parentes LINK NOT 0 parentes-slutt LINK *-1 Prs/Prt LINK 0 hj-V LINK NOT 0 kop LINK NOT *1 kop)
@@ -11697,7 +11697,7 @@ SELECT (V PrfPtc) IF
 
 
 # 2283
-SELECT (V PrfPtc) IF
+SELECT (V PrfPrc) IF
 	(NOT 0 ikke-A-V)
 	(*-1 strek/parentes BARRIER Prs/Prt)
 	(*-1 strek/parentes LINK NOT 0 parentes-beg LINK *-1 strek/parentes LINK NOT 0 parentes-slutt LINK *-1 Prs/Prt LINK 0 p-hj-V LINK NOT 0 kop LINK NOT *1 kop)
@@ -11765,7 +11765,7 @@ SELECT (V Prt) IF
 # 2210
 SELECT (V Prt) IF
 	(NOT 0 CC/Pron OR farlige-V)
-	(NOT 0 Inf OR PrfPtc)
+	(NOT 0 Inf OR PrfPrc)
 	(NOT -1 A OR N-gen)
 	(*-2 %som% LINK NOT *-1 fv)
 	(*-2 %som% LINK 1 fv LINK NOT *1 fv)
@@ -11951,7 +11951,7 @@ SELECT (V Prt) IF
 
 # 2229
 SELECT (V Prt) IF
-	(NOT 0 PrfPtc OR farlige-V)
+	(NOT 0 PrfPrc OR farlige-V)
 	(-1C N)
 	(NOT *1 overskrift BARRIER setn-gr)
 	(NOT 1 Prs/Prt)
@@ -11985,7 +11985,7 @@ SELECT (V Prt) IF
 
 # 2232
 SELECT (V Prt) IF
-	(NOT 0 PrfPtc OR farlige-V)
+	(NOT 0 PrfPrc OR farlige-V)
 	(-1C N)
 	(NOT *1 overskrift BARRIER setn-gr)
 	(NOT 1 Prs/Prt)
@@ -12018,7 +12018,7 @@ SELECT (V Prt) IF
 
 # 2235
 SELECT (V Prt) IF
-	(NOT 0 PrfPtc OR farlige-forledd-V)
+	(NOT 0 PrfPrc OR farlige-forledd-V)
 	(-1C N)
 	(NOT *1 overskrift BARRIER setn-gr)
 	(NOT -1 Clt)
@@ -12159,7 +12159,7 @@ SELECT (V Prt) IF
 # 2250
 SELECT (V Prt) IF
 	(0 m-hj-V-Prt)
-	(*1C PrfPtc BARRIER setn-gr)
+	(*1C PrfPrc BARRIER setn-gr)
 	(*1 setn-gr BARRIER m-hj-V-fv)
 ;
 
@@ -12271,43 +12271,43 @@ SELECT (V) IF
 
 
 # 2199
-REMOVE (PrfPtc Sg Def) IF
+REMOVE (PrfPrc Sg Def) IF
 	(0 Pos-be-Sg)
 ;
 
 
 # 2197
-REMOVE (PrfPtc Pl) IF
+REMOVE (PrfPrc Pl) IF
 	(0 Pos-Indef-Pl)
 ;
 
 
 # 2198
-REMOVE (PrfPtc Pl) IF
+REMOVE (PrfPrc Pl) IF
 	(0 Pos-be-Pl)
 ;
 
 
 # 2196
-REMOVE (PrfPtc Sg Neu Indef) IF
+REMOVE (PrfPrc Sg Neu Indef) IF
 	(0 Pos-Indef-Sg-Neu)
 ;
 
 
 # 2195
-REMOVE (PrfPtc MF Sg Indef) IF
+REMOVE (PrfPrc MF Sg Indef) IF
 	(0 Pos-Indef-Sg-Msc/Fem)
 ;
 
 
 # 2193
-REMOVE (PrfPtc) IF
+REMOVE (PrfPrc) IF
 	(0 samset OR N)
 ;
 
 
 # 2194
-REMOVE (PrfPtc) IF
+REMOVE (PrfPrc) IF
 	(0 <adv>)
 ;
 
@@ -12556,7 +12556,7 @@ REMOVE (A Pl) IF
 
 # 2164
 REMOVE (A Pl) IF
-	(0 PrfPtc)
+	(0 PrfPrc)
 	(*1 N/A-pos LINK NOT 0 Pl LINK NOT *-1 ikke-AdvA-det)
 	(*-1 ikke-Adv LINK 0 %ha%-Prs/Prt)
 ;
@@ -12607,7 +12607,7 @@ REMOVE (A Neu Indef) IF
 
 # 2159
 REMOVE (A Neu) IF
-	(0 PrfPtc)
+	(0 PrfPrc)
 	(NOT 0 Msc OR Fem)
 	(*1 N/A-pos LINK NOT 0 Neu LINK NOT *-1 ikke-AdvA-det)
 	(*-1 ikke-Adv LINK 0 %ha%-Prs/Prt)
@@ -12619,7 +12619,7 @@ REMOVE (A Neu) IF
 
 
 # 2158
-REMOVE (A PrfPtc Sg Neu Indef) IF
+REMOVE (A PrfPrc Sg Neu Indef) IF
 	(1 N/A)
 	(NOT 1 Neu OR A-komp)
 	(NOT 1 A-sup OR A-be)
@@ -12633,7 +12633,7 @@ REMOVE (A PrfPtc Sg Neu Indef) IF
 
 
 # 2156
-REMOVE (A PrfPtc MF Sg Indef) IF
+REMOVE (A PrfPrc MF Sg Indef) IF
 	(1 N/A)
 	(NOT 1 Msc/Fem OR A-komp)
 	(NOT 1 A-sup OR N-prop)
@@ -12642,26 +12642,26 @@ REMOVE (A PrfPtc MF Sg Indef) IF
 
 
 # 2157
-REMOVE (A PrfPtc MF Sg Indef) IF
+REMOVE (A PrfPrc MF Sg Indef) IF
 	(0 Pos-Indef-Sg-Neu)
 ;
 
 
 # 2155
-REMOVE (A PrfPtc MF) IF
+REMOVE (A PrfPrc MF) IF
 	(-1C V)
 	(NOT 1 N/A OR komma/CC)
 ;
 
 
 # 2154
-REMOVE (A PrfPtc Clt) IF
+REMOVE (A PrfPrc Clt) IF
 	(NOT -1 Def-det OR Pl-det)
 ;
 
 
 # 2142
-REMOVE (A PrfPtc) IF
+REMOVE (A PrfPrc) IF
 	(0 V)
 	(-1 Pron)
 	(NOT 1 N/A OR V)
@@ -12671,22 +12671,22 @@ REMOVE (A PrfPtc) IF
 
 
 # 2143
-REMOVE (A PrfPtc) IF
+REMOVE (A PrfPrc) IF
 	(1 Pron)
 	(NOT -1 det OR A)
 ;
 
 
 # 2144
-REMOVE (A PrfPtc) IF
+REMOVE (A PrfPrc) IF
 	(1 det)
 	(NOT -1 det OR A)
 ;
 
 
 # 2145
-REMOVE (A PrfPtc) IF
-	(0 PrfPtc)
+REMOVE (A PrfPrc) IF
+	(0 PrfPrc)
 	(-1C N)
 	(NOT 1 N/A)
 	(NOT -2 Pr)
@@ -12694,7 +12694,7 @@ REMOVE (A PrfPtc) IF
 
 
 # 2146
-REMOVE (A PrfPtc) IF
+REMOVE (A PrfPrc) IF
 	(1 A)
 	(-1 Pr)
 	(NOT 2 N)
@@ -12702,7 +12702,7 @@ REMOVE (A PrfPtc) IF
 
 
 # 2147
-REMOVE (A PrfPtc) IF
+REMOVE (A PrfPrc) IF
 	(1 komma/CC)
 	(-1 Pr)
 	(NOT 2 A)
@@ -12710,7 +12710,7 @@ REMOVE (A PrfPtc) IF
 
 
 # 2148
-REMOVE (A PrfPtc) IF
+REMOVE (A PrfPrc) IF
 	(1 komma/CC)
 	(-1 Pr)
 	(NOT 3 N/A OR komma/CC)
@@ -12718,21 +12718,21 @@ REMOVE (A PrfPtc) IF
 
 
 # 2149
-REMOVE (A PrfPtc) IF
+REMOVE (A PrfPrc) IF
 	(0 Pl-N)
 	(-1 A-Pl)
 ;
 
 
 # 2150
-REMOVE (A PrfPtc) IF
+REMOVE (A PrfPrc) IF
 	(0 Indef-Sg-Msc/Fem-N)
 	(-1 Indef-Sg-Msc/Fem-A)
 ;
 
 
 # 2151
-REMOVE (A PrfPtc) IF
+REMOVE (A PrfPrc) IF
 	(NOT 0 %tiltalte%)
 	(-1 Pr)
 	(NOT 1 N/A OR komma/CC)
@@ -12740,7 +12740,7 @@ REMOVE (A PrfPtc) IF
 
 
 # 2152
-REMOVE (A PrfPtc) IF
+REMOVE (A PrfPrc) IF
 	(NOT 0 %tiltalte%)
 	(-1 periode-beg/CS)
 	(NOT 1 N/A OR komma/CC)
@@ -12748,7 +12748,7 @@ REMOVE (A PrfPtc) IF
 
 
 # 2153
-REMOVE (A PrfPtc) IF
+REMOVE (A PrfPrc) IF
 	(NOT 0 %tiltalte%)
 	(-1C V)
 	(NOT 1 komma/CC OR Pr)
@@ -12935,7 +12935,7 @@ REMOVE (A MF) IF
 
 # 2121
 REMOVE (A MF) IF
-	(0 PrfPtc)
+	(0 PrfPrc)
 	(NOT 0 Neu)
 	(*1 N/A-pos LINK NOT 0 Msc LINK NOT 0 Fem LINK NOT *-1 ikke-AdvA-det)
 	(*-1 ikke-Adv LINK 0 %ha%-Prs/Prt)
@@ -12944,7 +12944,7 @@ REMOVE (A MF) IF
 
 # 2122
 REMOVE (A MF) IF
-	(0 PrfPtc)
+	(0 PrfPrc)
 	(NOT 0 Msc OR Neu)
 	(*1 N/A-pos LINK NOT 0 Fem LINK NOT *-1 ikke-AdvA-det)
 	(*-1 ikke-Adv LINK 0 %ha%-Prs/Prt)
@@ -12953,7 +12953,7 @@ REMOVE (A MF) IF
 
 # 2123
 REMOVE (A MF) IF
-	(0 PrfPtc)
+	(0 PrfPrc)
 	(NOT 0 Fem OR Neu)
 	(*1 N/A-pos LINK NOT 0 Msc LINK NOT *-1 ikke-AdvA-det)
 	(*-1 ikke-Adv LINK 0 %ha%-Prs/Prt)
@@ -13095,7 +13095,7 @@ REMOVE (A) IF
 
 # 2118
 REMOVE (A) IF
-	(0 PrfPtc OR Prs/Prt)
+	(0 PrfPrc OR Prs/Prt)
 	(1 N-prop)
 	(NOT -1 det)
 ;
@@ -13227,9 +13227,9 @@ REMOVE (CLB CC) IF
 # 2037
 REMOVE (CLB) IF
 	(0 komma)
-	(1 PrfPtc)
+	(1 PrfPrc)
 	(NOT 1 farlige-part)
-	(*-1C PrfPtc BARRIER setn-gr)
+	(*-1C PrfPrc BARRIER setn-gr)
 	(*1 CLB/CC-CC BARRIER setn-gr)
 ;
 
@@ -13389,8 +13389,8 @@ REMOVE (CLB) IF
 # 2055
 REMOVE (CLB) IF
 	(0 CC)
-	(1 PrfPtc)
-	(-1C PrfPtc)
+	(1 PrfPrc)
+	(-1C PrfPrc)
 	(NOT 1 farlige-part)
 ;
 
@@ -13398,9 +13398,9 @@ REMOVE (CLB) IF
 # 2056
 REMOVE (CLB) IF
 	(0 CC)
-	(1 PrfPtc)
+	(1 PrfPrc)
 	(NOT 1 Prt OR farlige-part)
-	(*-1C PrfPtc BARRIER setn-gr)
+	(*-1C PrfPrc BARRIER setn-gr)
 ;
 
 
@@ -13762,7 +13762,7 @@ REMOVE (Det Pl) IF
 # 2024
 REMOVE (Det Msc) IF
 	(0 %en%)
-	(1 PrfPtc/Inf OR Indef-Sg-Msc-A)
+	(1 PrfPrc/Inf OR Indef-Sg-Msc-A)
 	(-1 hj-V)
 	(NOT 1 farlige-Inf OR Indef-Sg-Msc-N)
 	(2 komma/CC)
@@ -13773,7 +13773,7 @@ REMOVE (Det Msc) IF
 # 2025
 REMOVE (Det Msc) IF
 	(0 %en%)
-	(1 PrfPtc/Inf OR Indef-Sg-Msc-A)
+	(1 PrfPrc/Inf OR Indef-Sg-Msc-A)
 	(-1 hj-V)
 	(NOT 1 farlige-Inf OR Indef-Sg-Msc-N)
 	(NOT 2 Indef-Sg-Msc-N OR komma/CC)
@@ -13783,7 +13783,7 @@ REMOVE (Det Msc) IF
 # 2026
 REMOVE (Det Msc) IF
 	(0 %en%)
-	(1 PrfPtc/Inf)
+	(1 PrfPrc/Inf)
 	(-1 hj-V)
 	(NOT 1 farlige-part OR farlige-Inf)
 	(NOT 1 Indef-Sg-Msc-N OR Indef-Sg-Msc-A)
@@ -14108,7 +14108,7 @@ REMOVE (Imp) IF
 REMOVE (Imp) IF
 	(0 hj-V)
 	(-1 setn-gr)
-	(*1 ikke-AdvA-det LINK 0 N/Pron/%all%/%mang%/%mange% LINK *1 ikke-Poss-det LINK 0 PrfPtc)
+	(*1 ikke-AdvA-det LINK 0 N/Pron/%all%/%mang%/%mange% LINK *1 ikke-Poss-det LINK 0 PrfPrc)
 ;
 
 
@@ -14226,11 +14226,11 @@ REMOVE (CC) IF
 
 
 # 1973
-REMOVE (PrfPtc) IF
+REMOVE (PrfPrc) IF
 	(0 Prs/Prt)
 	(-1 CC)
 	(NOT -1 Adv)
-	(*-1 p-hj-V LINK 0 Prs/Prt LINK NOT *1 PrfPtc)
+	(*-1 p-hj-V LINK 0 Prs/Prt LINK NOT *1 PrfPrc)
 ;
 
 
@@ -15196,7 +15196,7 @@ REMOVE (N) IF
 
 # 1863
 REMOVE (N) IF
-	(0 PrfPtc)
+	(0 PrfPrc)
 	(NOT 1 %som%-CS)
 	(*-1 ikke-Adv LINK 0 %det%-Pron LINK -1 kop)
 ;
@@ -15290,7 +15290,7 @@ REMOVE (V Prs) IF
 
 # 1811
 REMOVE (V Prs) IF
-	(-1C PrfPtc)
+	(-1C PrfPrc)
 	(NOT 1 Nom)
 ;
 
@@ -15459,7 +15459,7 @@ REMOVE (V Prs) IF
 # 1829
 REMOVE (V Prs) IF
 	(NOT 0 Pass)
-	(-1 inf/PrfPtc)
+	(-1 inf/PrfPrc)
 	(*-1 setn-gr LINK *1C fv LINK 0 trans2)
 	(*-1 setn-gr LINK NOT 0 %som%)
 ;
@@ -15771,7 +15771,7 @@ REMOVE (V Inf) IF
 	(NOT -1 komma)
 	(*-1 setn-gr BARRIER infmerke)
 	(*-1 m-hj-V-Prt BARRIER setn-gr)
-	(*-1C m-hj-V-Prt LINK *1C PrfPtc)
+	(*-1C m-hj-V-Prt LINK *1C PrfPrc)
 	(*-2C setn-gr BARRIER aci)
 	(*-2 setn-gr BARRIER CC)
 ;
@@ -15865,18 +15865,18 @@ REMOVE (V Inf) IF
 
 
 # 1773
-REMOVE (V PrfPtc) IF
+REMOVE (V PrfPrc) IF
 	(0 A)
 	(1C N)
 	(-1C komma/CC)
 	(NOT -1 CLB)
 	(-2 N-appell)
-	(*-2 setn-gr BARRIER PrfPtc)
+	(*-2 setn-gr BARRIER PrfPrc)
 ;
 
 
 # 1774
-REMOVE (V PrfPtc) IF
+REMOVE (V PrfPrc) IF
 	(NOT 0 %ta%)
 	(-1 Pron-akk-mfn/Pl)
 	(*-1C setn-gr BARRIER objpred-Pron-V)
@@ -15889,7 +15889,7 @@ REMOVE (V PrfPtc) IF
 CONSTRAINTS
 
 # 1775
-REMOVE (V PrfPtc) IF
+REMOVE (V PrfPrc) IF
 	(-1C CLB-komma)
 	(*-2C setn-gr BARRIER p-hj-V)
 	(*-2C setn-gr BARRIER m-hj-V-Prt)
@@ -15897,22 +15897,22 @@ REMOVE (V PrfPtc) IF
 
 
 # 1776
-REMOVE (V PrfPtc) IF
+REMOVE (V PrfPrc) IF
 	(-1 CLB/CC-CC)
-	(NOT -2 CLB-komma OR PrfPtc)
-	(NOT -3 PrfPtc)
+	(NOT -2 CLB-komma OR PrfPrc)
+	(NOT -3 PrfPrc)
 	(*-2C setn-gr-u-strek BARRIER p-hj-V)
 	(*-2C setn-gr-u-strek BARRIER m-hj-V-Prt)
 ;
 
 
 # 1777
-REMOVE (V PrfPtc) IF
+REMOVE (V PrfPrc) IF
 	(NOT 0 %ta%)
 	(NOT *1 overskrift BARRIER setn-gr)
 	(NOT -1 periode-beg/CLB/strek OR %om/enn/som/hvis%)
 	(NOT -1 Pass OR N)
-	(NOT -1 PrfPtc OR CC)
+	(NOT -1 PrfPrc OR CC)
 	(NOT -1 A-komp OR Pron-akk-mfn/Pl)
 	(*-1C setn-gr BARRIER p-hj-V)
 	(*-1C setn-gr BARRIER m-hj-V-Prt)
@@ -15920,7 +15920,7 @@ REMOVE (V PrfPtc) IF
 
 
 # 1778
-REMOVE (V PrfPtc) IF
+REMOVE (V PrfPrc) IF
 	(NOT 0 %ta%)
 	(*-1 setn-gr BARRIER p-hj-V)
 	(*-1 det LINK NOT 0 Qnt LINK NOT *1 ikke-AdvA)
@@ -15928,14 +15928,14 @@ REMOVE (V PrfPtc) IF
 
 
 # 1779
-REMOVE (V PrfPtc) IF
+REMOVE (V PrfPrc) IF
 	(-1 %ut%)
 	(NOT -2 %fullt%)
 ;
 
 
 # 1780
-REMOVE (V PrfPtc) IF
+REMOVE (V PrfPrc) IF
 	(-1 %til%)
 	(-2 %og%)
 	(NOT -3 %av%)
@@ -15943,14 +15943,14 @@ REMOVE (V PrfPtc) IF
 
 
 # 1781
-REMOVE (V PrfPtc) IF
+REMOVE (V PrfPrc) IF
 	(-1 %til%)
 	(NOT -2 %og%)
 ;
 
 
 # 1782
-REMOVE (V PrfPtc) IF
+REMOVE (V PrfPrc) IF
 	(-1 Pr)
 	(NOT -1 CS OR %bla%)
 	(NOT -1 %ut% OR @Adv)
@@ -15958,25 +15958,25 @@ REMOVE (V PrfPtc) IF
 
 
 # 1783
-REMOVE (V PrfPtc) IF
+REMOVE (V PrfPrc) IF
 	(-1 N-gen)
 ;
 
 
 # 1784
-REMOVE (V PrfPtc) IF
+REMOVE (V PrfPrc) IF
 	(0 perf-gen)
 ;
 
 
 # 1785
-REMOVE (V PrfPtc) IF
+REMOVE (V PrfPrc) IF
 	(0 veldig-farlige-part)
 ;
 
 
 # 1786
-REMOVE (V PrfPtc) IF
+REMOVE (V PrfPrc) IF
 	(-1 N)
 	(NOT *1 overskrift BARRIER setn-gr)
 	(NOT -1 A-komp)
@@ -16066,7 +16066,7 @@ REMOVE (V Prt) IF
 
 # 1730
 REMOVE (V Prt) IF
-	(0 PrfPtc)
+	(0 PrfPrc)
 	(NOT 0 %var%)
 	(NOT -1 N/Pron OR Adv)
 	(*-1 setn-gr LINK *1C fv LINK 0 p-hj-V)
@@ -16223,7 +16223,7 @@ REMOVE (V Prt) IF
 # 1746
 REMOVE (V Prt) IF
 	(NOT 0 %var% OR Imp)
-	(-1 inf/PrfPtc)
+	(-1 inf/PrfPrc)
 	(*-1 setn-gr LINK *1C fv LINK 0 trans2)
 	(*-1 setn-gr LINK NOT -1 >>>)
 	(*-1 setn-gr LINK NOT 0 %som%)
@@ -16622,7 +16622,7 @@ SELECT (CLB CC) IF
 SELECT (CLB CC) IF
 	(0 CLB/CC-CC)
 	(*1 Prs/Prt BARRIER setn-gr)
-	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPtc LINK -1 Pr-intrans)
+	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPrc LINK -1 Pr-intrans)
 	(*-1 Prs/Prt BARRIER setn-gr)
 ;
 
@@ -16635,7 +16635,7 @@ SELECT (CLB CC) IF
 SELECT (CLB CC) IF
 	(0 CLB/CC-CC)
 	(*1 setn-gr/parentes-beg LINK *-1 Prs/Prt)
-	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPtc LINK NOT -1 Pr/komma)
+	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPrc LINK NOT -1 Pr/komma)
 	(*1 Prs/Prt LINK NOT -1 N-gen)
 	(*1 Prs/Prt LINK NOT -1 N/Pron)
 	(*1 Prs/Prt LINK -1 Adv LINK -1 N/Pron LINK NOT -1 N/Pron)
@@ -16648,7 +16648,7 @@ SELECT (CLB CC) IF
 SELECT (CLB CC) IF
 	(0 CLB/CC-CC)
 	(*1 setn-gr/parentes-beg LINK *-1 Prs/Prt)
-	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPtc LINK NOT -1 Pr/komma)
+	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPrc LINK NOT -1 Pr/komma)
 	(*1 Prs/Prt LINK NOT -1 N-gen)
 	(*1 Prs/Prt LINK NOT -1 N/Pron)
 	(*1 Prs/Prt LINK -1 Adv LINK NOT -1 N/Pron)
@@ -16661,7 +16661,7 @@ SELECT (CLB CC) IF
 SELECT (CLB CC) IF
 	(0 CLB/CC-CC)
 	(*1 setn-gr/parentes-beg LINK *-1 Prs/Prt)
-	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPtc LINK NOT -1 Pr/komma)
+	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPrc LINK NOT -1 Pr/komma)
 	(*1 Prs/Prt LINK NOT -1 N-gen)
 	(*1 Prs/Prt LINK -1 N/Pron LINK NOT -1 N/Pron)
 	(*-1C setn-gr LINK 0 CS LINK *1 Prs/Prt LINK NOT *1 AdvCC)
@@ -16673,7 +16673,7 @@ SELECT (CLB CC) IF
 SELECT (CLB CC) IF
 	(0 CLB/CC-CC)
 	(*1 setn-gr/parentes-beg LINK *-1 Prs/Prt)
-	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPtc LINK NOT -1 Pr/komma)
+	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPrc LINK NOT -1 Pr/komma)
 	(*1 Prs/Prt LINK NOT -1 N-gen)
 	(*1 Prs/Prt LINK NOT -1 N/Pron)
 	(*1 Prs/Prt LINK NOT -1 Adv)
@@ -16686,7 +16686,7 @@ SELECT (CLB CC) IF
 SELECT (CLB CC) IF
 	(0 CLB/CC-CC)
 	(*1 setn-gr/parentes-beg LINK *-1 Prs/Prt)
-	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPtc LINK NOT -1 Pr/komma)
+	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPrc LINK NOT -1 Pr/komma)
 	(*1 Prs/Prt LINK NOT -1 N-gen)
 	(*1 Prs/Prt LINK NOT -1 N/Pron)
 	(*1 Prs/Prt LINK -1 Adv LINK -1 N/Pron LINK NOT -1 N/Pron)
@@ -16698,7 +16698,7 @@ SELECT (CLB CC) IF
 SELECT (CLB CC) IF
 	(0 CLB/CC-CC)
 	(*1 setn-gr/parentes-beg LINK *-1 Prs/Prt)
-	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPtc LINK NOT -1 Pr/komma)
+	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPrc LINK NOT -1 Pr/komma)
 	(*1 Prs/Prt LINK NOT -1 N-gen)
 	(*1 Prs/Prt LINK NOT -1 N/Pron)
 	(*1 Prs/Prt LINK -1 Adv LINK NOT -1 N/Pron)
@@ -16710,7 +16710,7 @@ SELECT (CLB CC) IF
 SELECT (CLB CC) IF
 	(0 CLB/CC-CC)
 	(*1 setn-gr/parentes-beg LINK *-1 Prs/Prt)
-	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPtc LINK NOT -1 Pr/komma)
+	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPrc LINK NOT -1 Pr/komma)
 	(*1 Prs/Prt LINK NOT -1 N-gen)
 	(*1 Prs/Prt LINK -1 N/Pron LINK NOT -1 N/Pron)
 	(*-1C setn-gr LINK NOT 0 CS LINK *1 Prs/Prt LINK NOT *1 AdvCC)
@@ -16721,7 +16721,7 @@ SELECT (CLB CC) IF
 SELECT (CLB CC) IF
 	(0 CLB/CC-CC)
 	(*1 setn-gr/parentes-beg LINK *-1 Prs/Prt)
-	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPtc LINK NOT -1 Pr/komma)
+	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPrc LINK NOT -1 Pr/komma)
 	(*1 Prs/Prt LINK NOT -1 N-gen)
 	(*1 Prs/Prt LINK NOT -1 N/Pron)
 	(*1 Prs/Prt LINK NOT -1 Adv)
@@ -16890,7 +16890,7 @@ SELECT (CLB) IF
 	(NOT 1 CC-<adv> OR Prs/Prt)
 	(*1 Prs/Prt BARRIER setn-gr)
 	(*-1C setn-gr LINK *1 Prs/Prt LINK *1 CLB-CC LINK NOT -1 komma)
-	(*2 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPtc LINK NOT -1 Pr/komma)
+	(*2 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPrc LINK NOT -1 Pr/komma)
 ;
 
 
@@ -16917,7 +16917,7 @@ SELECT (CLB) IF
 SELECT (CLB) IF
 	(0 komma)
 	(1 Prs/Prt)
-	(NOT 1 farlige-V OR PrfPtc)
+	(NOT 1 farlige-V OR PrfPrc)
 	(NOT -1 A)
 	(*-1C setn-gr LINK *1 Prs/Prt LINK 0 p-hj-V LINK NOT *1 CLB-CC)
 ;
@@ -16938,7 +16938,7 @@ SELECT (CLB) IF
 	(0 komma)
 	(NOT 1 Pr OR CC)
 	(2 Prs/Prt)
-	(NOT 2 farlige-V OR PrfPtc)
+	(NOT 2 farlige-V OR PrfPrc)
 	(*-1C setn-gr LINK *1 Prs/Prt LINK NOT *1 CLB-CC)
 ;
 
@@ -16947,7 +16947,7 @@ SELECT (CLB) IF
 SELECT (CLB) IF
 	(0 komma)
 	(1 Prs/Prt)
-	(NOT 1 farlige-V OR PrfPtc)
+	(NOT 1 farlige-V OR PrfPrc)
 	(*-1C setn-gr LINK *1 Prs/Prt LINK NOT *1 CLB-CC)
 ;
 
@@ -16958,7 +16958,7 @@ SELECT (CLB) IF
 	(NOT 1 setn-gr OR CC-<adv>)
 	(*1 Prs/Prt BARRIER setn-gr)
 	(*-1C setn-gr LINK *1 Prs/Prt LINK NOT *1 CLB-CC)
-	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPtc LINK -1 Nom LINK NOT -1 Nom)
+	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPrc LINK -1 Nom LINK NOT -1 Nom)
 	(*1 Prs/Prt LINK NOT -1 CC)
 ;
 
@@ -16969,7 +16969,7 @@ SELECT (CLB) IF
 	(NOT 1 setn-gr OR CC-<adv>)
 	(*1 Prs/Prt BARRIER setn-gr)
 	(*-1C setn-gr LINK *1 Prs/Prt LINK NOT *1 CLB-CC)
-	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPtc LINK NOT -1 Pr/komma LINK NOT 0 Nom)
+	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPrc LINK NOT -1 Pr/komma LINK NOT 0 Nom)
 	(*1 Prs/Prt LINK NOT -1 CC)
 ;
 
@@ -16980,7 +16980,7 @@ SELECT (CLB) IF
 	(-1 strek)
 	(*-1 fv BARRIER setn-gr)
 	(*1 Prs/Prt BARRIER setn-gr)
-	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPtc LINK NOT -1 Pr/komma)
+	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPrc LINK NOT -1 Pr/komma)
 ;
 
 
@@ -16991,7 +16991,7 @@ SELECT (CLB) IF
 	(-2 strek)
 	(*-1 fv BARRIER setn-gr)
 	(*1 Prs/Prt BARRIER setn-gr)
-	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPtc LINK NOT -1 Pr/komma)
+	(*1 Prs/Prt LINK NOT 0 farlige-V LINK NOT 0 PrfPrc LINK NOT -1 Pr/komma)
 ;
 
 
@@ -17571,7 +17571,7 @@ SELECT (V Prs) IF
 
 
 # 1614
-SELECT (V PrfPtc) IF
+SELECT (V PrfPrc) IF
 	(NOT 0 farlige-part)
 	(1C Pr)
 	(-1C N)
@@ -17581,7 +17581,7 @@ SELECT (V PrfPtc) IF
 
 
 # 1615
-SELECT (V PrfPtc) IF
+SELECT (V PrfPrc) IF
 	(NOT 0 hj-V)
 	(*-1 fv LINK 0 %ha% LINK NOT *1 setn-gr)
 	(*1 Inf LINK *-1 ikke-Poss-det LINK 0 N/Pron/%all%/%mang%/%mange% LINK NOT 0 infmerke LINK NOT *-1 ikke-AdvA-det)
@@ -17950,7 +17950,7 @@ REMOVE (Imp) IF
 
 
 # 1577
-REMOVE (PrfPtc) IF
+REMOVE (PrfPrc) IF
 	(0 samset OR N)
 ;
 
@@ -18019,7 +18019,7 @@ REMOVE (V Prs) IF
 
 
 # 1569
-REMOVE (V PrfPtc) IF
+REMOVE (V PrfPrc) IF
 	(NOT 0 farlige-part)
 	(1C Pr)
 	(-1C N)
@@ -18068,7 +18068,7 @@ REMOVE (V) IF
 
 
 REMOVE (A) IF
-	(0 PrfPtc)
+	(0 PrfPrc)
 	(-1 ("ha"))
 	(1 Pr OR V OR det)
 ;
@@ -18110,7 +18110,7 @@ REMOVE A + Pos + Def IF (-1 N OR Pron)(0 Prt);
 
 # V and not N
 
-REMOVE N + Neu + Sg + Def IF (-2 PrfPtc)(-1 CC);
+REMOVE N + Neu + Sg + Def IF (-2 PrfPrc)(-1 CC);
 REMOVE N + Pl + Indef IF (0 Prs)(1 IM)(2 Inf);
 ## han prøver å sykle
 

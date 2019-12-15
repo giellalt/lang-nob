@@ -155,7 +155,7 @@ LEXICON ab-dot-verb   !!= * __@CODE@__
 LEXICON ab-dot-IVprfprc-trab    +V+ABBR+Gram/TAbbr:    ab-dot-IVprfprc ;
 
 LEXICON ab-dot-IVprfprc   !!= * __@CODE@__
- +V+Sg+PrfPtc+ABBR: DOT ; ! Period.
+ +V+Sg+PrfPrc+ABBR: DOT ; ! Period.
 
 
 
