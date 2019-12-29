@@ -13,12 +13,14 @@ LEXICON Personal
  jeg+Pron+Pers+Sg1+Acc:meg # ;
   du+Pron+Pers+Sg2+Nom:du # ;
   du+Pron+Pers+Sg2+Acc:deg # ;
+ han/hun+Pron+Pers+Sg3+Nom:han/hun # ;
  han+Pron+Pers+Sg3+Nom:han # ;
  hun+Pron+Pers+Sg3+Nom:hun # ;
  hun+Pron+Pers+Sg3+Nom+Use/NG:ho # ;
  han+Pron+Pers+Sg3+Acc:han # ;
  han+Pron+Pers+Sg3+Acc:ham # ;
  hun+Pron+Pers+Sg3+Acc:henne # ;
+ han/henne+Pron+Pers+Sg3+Acc:han/henne # ;
  den+Pron+Pers+Sg3:den # ; ! Gender? -- no, only as Det Dem (?)
  det+Pron+Pers+Sg3:det # ; ! Gender? -- no, only as Det Dem (?)
  den+Pron+Pers+Sg3+Poss:dens # ; ! Gender? -- no, only as Det Dem (?) # var Clt
@@ -59,6 +61,7 @@ vår+Det+Poss+Pl1:våre # ;
 vår+Det+Poss+Sg1+Neu:vårt # ;
 hans+Det+Poss+Msc+Sg3:hans # ;
 hennes+Det+Poss+Fem+Sg3:hennes # ;
+hans/hennes+Det+Poss+Sg3:hans/hennes # ;
 deres+Det+Poss+Pl2:deres # ;
 deres+Det+Poss+Pl3:deres # ;
 
