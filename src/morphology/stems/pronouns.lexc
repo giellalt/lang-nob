@@ -20,7 +20,7 @@ LEXICON Personal
  han+Pron+Pers+Sg3+Acc:han # ;
  han+Pron+Pers+Sg3+Acc:ham # ;
  hun+Pron+Pers+Sg3+Acc:henne # ;
- han/henne+Pron+Pers+Sg3+Acc:han/henne # ;
+ han/hun+Pron+Pers+Sg3+Acc:han/henne # ;
  den+Pron+Pers+Sg3:den # ; ! Gender? -- no, only as Det Dem (?)
  det+Pron+Pers+Sg3:det # ; ! Gender? -- no, only as Det Dem (?)
  den+Pron+Pers+Sg3+Poss:dens # ; ! Gender? -- no, only as Det Dem (?) # var Clt
