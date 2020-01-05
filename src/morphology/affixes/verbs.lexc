@@ -1501,6 +1501,15 @@ LEXICON TRE_V
 +V+PrfPrc:tredd   # ;
 +V+PrsPrc:treende # ;
 
+LEXICON TORE
++V+Inf:tore    # ;
++V+Imp:tør   # ;
++V+Ind+Prs:tør   # ;
++V+Ind+Prt:turte     # ;
++V+Ind+Prt+Use/NG:torde     # ;
++V+PrfPrc:turt   # ;
++V+PrfPrc+Use/NG:tort   # ;
+
 LEXICON TREFFE
 +V+Inf:treffe    # ;
 +V+Imp:treff     # ;

@@ -486,8 +486,8 @@ LEXICON e-er-ene
 
 LEXICON er-ene-a
  +Indef:%>er  K ;
-   +Def+Use/NG:%>ene K ;
-   +Def:%>a   K ;
+   +Def:%>ene K ;
+   +Def+Use/NG:%>a   K ;
 
 LEXICON ar-ane	 !! @CODE@ for nynorsk only.
  +Indef:%>ar  K ; !!
