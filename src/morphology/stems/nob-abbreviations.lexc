@@ -505,7 +505,6 @@ adm.% dir:adm.% dir ab-trab ;
 adm.% direktør:adm.% direktør ab-nodot-trab ;
 adm.dir ab-trab ;
 adm.direktør ab-nodot-trab ;
-adm ab-trab ;
 adr ab-trab ;
 akk ab-trab ;
 alm ab-trab ;
