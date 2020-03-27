@@ -458,6 +458,7 @@ Pfg ab-trab ;
 Q ab-trab ;
 R ab-trab ;
 Reg ab-dot-trab ;
+Regnsk ab-dot-trab ;
 S ab-trab ;
 S.% u:S.% u ab-trab ;
 S.u ab-trab ;
