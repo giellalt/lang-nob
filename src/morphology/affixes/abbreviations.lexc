@@ -144,9 +144,8 @@ LEXICON ab-dot-cc-trab
 LEXICON ab-dot-cc   !!= * __@CODE@__
 +ABBR:  DOT ;
 
-
-LEXICON ab-dot-verb-itrab
-+V+ABBR+Gram/IAbbr:    ab-dot-verb ;
+LEXICON ab-dot-verb-trab  +V+ABBR+Gram/TAbbr:    ab-dot-verb ;
+LEXICON ab-dot-verb-itrab +V+ABBR+Gram/IAbbr:    ab-dot-verb ;
 
 LEXICON ab-dot-verb   !!= * __@CODE@__
  +V+Imp+ABBR: DOT ; ! Period.
