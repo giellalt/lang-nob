@@ -29,16 +29,10 @@ LEXICON ab-dot-trab
 ab-dot-noun-trab 	  ;
 LEXICON ab-dot-trnumab 
 ab-dot-noun-trnumab   ;
-LEXICON ab-itrab 
-ab-noun-itrab 		  ;
 LEXICON ab-nodot-trab 
 ab-nodot-noun-trab 	  ;
 LEXICON ab-nodot-trnumab 
 ab-nodot-noun-trnumab ;
-LEXICON ab-trab 
-ab-noun-trab 		  ;
-LEXICON ab-trnumab
-ab-noun-trnumab		  ;
 
 
 !! !!The sublexica
