@@ -675,8 +675,8 @@ ADDRELATION:err_agr_msc_a ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&err_agr_ms
 ## Dette er en fint båt.
 #$ Dette er en fin båt.
 
-ADD:err_pron_nom (&err_pron_nom) TARGET (Pron Pers Sg2 Acc) IF (-1C Pr);
-COPY:err_pron_nom (Nom &SUGGEST) EXCEPT (Acc) TARGET (Pron Pers Sg2 &err_pron_nom);
+ADD:err_pron_nom (&err_pron_nom) TARGET (Pron Pers Sg2 Nom) IF (-1 Pr);
+COPY:err_pron_nom (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg2 &err_pron_nom);
 ## Vi snakker om du.
 #$ Vi snakker om deg.
 
