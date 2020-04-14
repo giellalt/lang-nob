@@ -41,4 +41,15 @@
       <description xml:lang="nb">Når et adjektiv, som her "$1", står foran et hankjønnssubstantiv, som her "$2", skal det ikkæ stå i nøytrum</description>
     </body>
   </error>
+
+  <error id="err_pron_nom">
+    <header>
+      <title xml:lang="en">Nominative after preposition</title>
+      <title xml:lang="nb">Nominativ etter preposition</title>
+    </header>
+    <body>
+      <description xml:lang="en">When a preposition, here "$1", stands in front of a pronoun, here "$2", it should be in the accusative.</description>
+      <description xml:lang="nb">Når en preposisjon, som her "$1", står foran et pronomen, som her "$2", skal det stå i akkusativ.</description>
+    </body>
+  </error>
 </errors>
