@@ -645,6 +645,9 @@ SET NON-APP = ALLSYNTAG - (@APP);
 LIST &err-agr = &err-agr ;
 LIST &err_agr_neu_a = &err_agr_neu_a ;
 LIST &attr-not-pred = &attr-not-pred ;
+LIST &err_agr_fem_det =  &err_agr_fem_det ;
+LIST &err_agr_gen_fem =  &err_agr_gen_fem ;
+LIST &err_pron_nom = &err_pron_nom ;
 
 MAPPING-PREFIX = & ;
 
@@ -661,24 +664,73 @@ ADD:spell-conservatively (&typo &SUGGESTWF) (<spelled>) IF (NEGATE -1 QMARK LINK
 
 # A simple grammar checker rule without suggestions: Ensure preceding adjective agrees with noun
 
-ADD:err_agr_neu_a (&err_agr_neu_a) TARGET A IF (-1 Det + Neu)(0 A + MF OR Msc OR Fem)(1 N + Neu);
+ADD:err_agr_neu_a (&err_agr_neu_a) TARGET A IF (-1 Det)(0 A + MF OR Msc OR Fem)(1 N + Neu);
 COPY:err_agr_neu_a (Neu Sg Indef &SUGGEST)  EXCEPT (Fem Sg Indef) OR (Msc Sg Indef) OR (MF Sg Indef)  TARGET (A Pos &err_agr_neu_a) ;
 ADDRELATION:err_agr_neu_a ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&err_agr_neu_a)) ;
 
 ## Dette er et fin hus.
 #$ Dette er et fint hus.
 
-ADD:err_agr_msc_a (&err_agr_msc_a) TARGET A IF (-1 Det + MF OR Pron + Indef + MF)(0 A + Neu)(1 N + Msc);
+ADD:err_agr_msc_a (&err_agr_msc_a) TARGET A IF (-1 Det + MF OR Pron + Indef + MF OR Pron + Indef + Msc)(0 A + Neu)(1 N + Msc);
 COPY:err_agr_msc_a (Msc Sg Indef &SUGGEST) EXCEPT (Neu Sg Indef) TARGET (A Pos &err_agr_msc_a);
 ADDRELATION:err_agr_msc_a ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&err_agr_msc_a)) ;
 
 ## Dette er en fint båt.
 #$ Dette er en fin båt.
 
+
+ADD:err_agr_fem_det (&err_agr_fem_det) TARGET (Det Dem Neu Sg) IF (1 (N Fem Sg Def));
+COPY:err_agr_fem_det (Fem Sg &SUGGEST) EXCEPT (Neu Sg) TARGET (Det Dem &err_agr_fem_det);
+## Mannen kjøpte det boka.
+#$ Mannen kjøpte den boka.
+
+
+
+ADD:err_agr_gen_fem (&err_agr_gen_fem) TARGET ("et" Det Neu) IF (1 (Def Clt))(2 (N Sg Fem Indef));
+COPY:err_agr_gen_fem ("ei" Det Fem &SUGGEST) EXCEPT ("et" Det Neu) TARGET (&err_agr_gen_fem);
+
+ADD:err_agr_gen_fem (&err_agr_gen_fem) TARGET ("et" Pron Indef Neu Sg) IF (1 (Def Clt))(2 (N Sg Fem Indef));
+COPY:err_agr_gen_fem ("ei" Det Fem &SUGGEST) EXCEPT ("et" Pron Indef Neu Sg) TARGET (&err_agr_gen_fem);
+## Det er et realitetens kvinne
+#$ Det er ei realitetens kvinne
+
+
+ADD:err_agr_gen_msc (&err_agr_gen_msc) TARGET ("et" Det Neu) IF (1 (Def Clt))(2 (N Sg Msc Indef));
+COPY:err_agr_gen_msc ("en" Det Dem Msc Sg &SUGGEST) EXCEPT ("et" Det Neu) TARGET (&err_agr_gen_msc);
+
+ADD:err_agr_gen_msc (&err_agr_gen_msc) TARGET ("et" Pron Indef Neu Sg) IF (1 (Def Clt))(2 (N Sg Msc Indef));
+COPY:err_agr_gen_msc ("en" Det Dem Msc Sg &SUGGEST) EXCEPT ("et" Pron Indef Neu Sg) TARGET (&err_agr_gen_msc);
+## Det er et realitetens kvinne
+#$ Det er ei realitetens kvinne
+
+
+# Definite that should be indefinite
+#ADD:err_defness_m_def (&err_defness_m_def) TARGET
+
+
+
+# Case errors
+
 ADD:err_pron_nom (&err_pron_nom) TARGET (Pron Pers Sg2 Nom) IF (-1 Pr);
 COPY:err_pron_nom (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg2 &err_pron_nom);
 ## Vi snakker om du.
 #$ Vi snakker om deg.
+
+
+
+# og/å
+
+ADD:err_og_aa (&err_og_aa) TARGET ("og" CC) IF (-1 Ind)(1 Inf);
+COPY:err_og_aa ("å" IM &SUGGEST) EXCEPT ("og" CC) TARGET (&err_og_aa);
+## Vi prøver og gå.
+#$ Vi prøver å gå.
+
+ADD:err_aa_og (&err_aa_og) TARGET ("å" IM) IF (-1 N) (1 N);
+COPY:err_aa_og ("og" CC &SUGGEST) EXCEPT ("å" IM) TARGET (&err_aa_og);
+## Det var Trond å Kari.
+#$ Det var Trond og Kari.
+
+	
 
 # And one with a suggestion where we simply change the tag Sg into Attr:
 COPY:attr-not-pred (Attr &SUGGEST) EXCEPT (Sg) TARGET (&attr-not-pred) ;
