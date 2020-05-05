@@ -1,5 +1,5 @@
 ! =============================== !
-! Hyphenator for West Greenlandic !
+!     Hyphenator for Norwegian    
 ! =============================== !
 
 echo << defining Cns and Vow... >>
@@ -7,26 +7,19 @@ echo << defining Cns and Vow... >>
 define Vow	[ a | á | e | i | o | u | y | æ | ø | å | ä | ö |
                   A | Á | E | I | O | U | Y | Æ | Ø | Å | Ä | Ö | 
 é | ó | ú | í | à | è | ò | ù | ì | ë | ü | ï | â | ê | ô | û | î | ã | ý |
-É | Ó | Ú | Í | À | È | Ò | Ù | Ì | Ë | Ü | Ï | Â | Ê | Ô | Û | Î | Ã | Ý ] ;
+xÉ | Ó | Ú | Í | À | È | Ò | Ù | Ì | Ë | Ü | Ï | Â | Ê | Ô | Û | Î | Ã | Ý ] ;
 
-define KalVow [ a | e | i | o | u | A | E | I | O | U ] ;
-
-define ForVow [ Vow - KalVow ] ;
-
-define LongVow [ a a | A a | A A | e e | E e | E E | i i | I i | I I |
-                 o o | O o | O O | u u | U u | U U | a i | A i | A I ] ;
-
-
-define A2 [ a | A | i | I ] ;
-define E2 [ e | E ] ;
-define I2 [ i | I ] ;
-define O2 [ o | O ] ;
-define U2 [ u | U ] ;
+define Diphthong [ [A|a] u | [e|e] i | [Ø|ø] y | [A|a] i ] ;
 
 define Cns [ b | c | č | d | đ | ð | f | g | h | j | k | l | m | n | ŋ | 
              B | C | Č | D | Đ | Ð | F | G | H | J | K | L | M | N | Ŋ | 
              ñ | p | q | r | s | š | t | ŧ | v | w | x | z | ž |   
              Ñ | P | Q | R | S | Š | T | Ŧ | V | W | X | Z | Ž ] ; 
+
+define Res     [ l | m | n | r | v ] ;
+
+define Nucleus [ Vow | Diphthong ] ;
+define Coda    [ Nucleus (Res|Cns) (Cns) ] ;
 
 define S [ S | s ] ; 
 
@@ -34,39 +27,33 @@ define Cnss [ Cns - S ] ;
 
 !define Sgm [ Cns | Vow ] ;
 
-!define Cns [ Cnssymb | Vow i ] ;
 
-define Dummy [ %^K ] ;
 
 echo << Rules>>
 
-define NG          [..] -> %-  || Vow ([r|R|n|N]) _ [ n g | N G ] ;
-define beforeCV    [..] -> %-  || Vow           _ Cns Vow ;  !a-te-qu-seq
-define sC          [..] -> %-  || Vow S Cns*    _ Cns Vow ;
-define Css         [..] -> %-  || Vow Cns S     _ S ;
-define CCV         [..] -> %-  || Vow Cnss+     _ Cns Vow ;  !il-lu, Matt-hæ-u-sip
-define CsCV        [..] -> %-  || Vow Cnss+     _ S Cnss Vow ; !Kron-stadt, Kris-tus
-define keep       [..] -> %^K || [a|A]         _ A2 ,
-                                  [e|E]         _ E2 ,
-                                  [i|I]         _ I2 ,
-                                  [o|O]         _ O2 ,
-                                  [u|U]         _ U2 ; 
-define VV          [..] -> %-  || Vow           _ Vow ;      !Matt-hæ-u-sip
+define R1 [..] -> %- || (S) (Cns) (Res) Coda _ S [p ([l|r]) | t (r)| k ([l|r])] Nucleus ;
+define R2 [..] -> %- || (S) (Cns) (Res) Coda _   [p ([l|r]) | t (r)| k ([l|r])] Nucleus ;
+define R3 [..] -> %- || (S) (Cns) (Res) Coda _   [b|d|g|f] Res Nucleus ;
+define R4 [..] -> %- || (S) (Cns) (Res) Coda _ Cns Nucleus ;
+define R5 [..] -> %- || (S) (Cns) (Res) Diphthongx _ Nucleus ;
+define R6 [..] -> %- || (S) (Cns) (Res) Coda _ Nucleus ;
 
 echo << Cleanup...>>
-define clean  Dummy -> 0 ;
-
-! Lagre denne fila: i xfst: source < dennefila.txt og deretter: save hy.fst
-! cat fil.txt | preprocess | ./lookup -utf8 hy.fst | cut -f2 | tr '\n' ' ' | less
+!define clean  Dummy -> 0 ;
 
 read regex [
-    NG
-.o. beforeCV
-.o. sC
-.o. Css
-.o. CCV
-.o. CsCV
-.o. keep
-.o. VV
-.o. clean
+    R1
+.o. R2    
+.o. R3
+.o. R4
+.o. R5    
+.o. R6   
+!.o. clean
 ] ;
+
+
+! Lokal debugging:
+! xfst -e "source < hyphenation.xfscript"
+! i xfst: invert net
+! i xfst: save h.fst
+! cat input | lookup h.fst
