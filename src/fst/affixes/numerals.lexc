@@ -59,6 +59,15 @@ LEXICON NUMTAG
 LEXICON RNum
       +Cmp/Hyph+Cmp#:-∑# NounRoot ; ! For Num Cmp Noun, vi vil ikke ha Num Cmp Num
 
+LEXICON PROSENT !!≈ * __@CODE@__ % and case suffix
+                    POSTPROSENT ; ! case suffix
+ % %%+Err/MissingSpace:%%   POSTPROSENT ; ! 50%. It is wrong, but 75 % of us write "75%".
+          % %%:% %% POSTPROSENT ; ! the correct ones as well... 50 % etc.
+ % %%+Err/MissingSpace:%%   POSTPROSENT ; ! 50%. It is wrong, but 75 % of us write "75%".
+
+LEXICON POSTPROSENT !!≈ * __@CODE@__ % and case suffix
+< "@R.ErrOrth.ON@" "+Err/Orth":0 "@C.ErrOrth@" > ARABICDELIMITER ;
+   @D.ErrOrth.ON@@C.ErrOrth@                     ARABICDELIMITER ;
 
 
 
