@@ -1,7 +1,0 @@
-Voikko-Dictionary-Format: 5
-Language: nb-x-svfst
-Description: Norwegian Bokmål dictionary for VFST backend
-Morphology-Backend: null
-Speller-Backend: vfst
-Suggestion-Backend: vfst
-Grammar-Backend: null
