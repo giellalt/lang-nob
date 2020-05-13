@@ -1,0 +1,4 @@
+llt:lt	3
+ppt:pt	3
+kkt:kt	3
+ligt:lig	3

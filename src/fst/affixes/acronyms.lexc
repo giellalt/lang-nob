@@ -1,0 +1,80 @@
+! Divvun & Giellatekno - open source grammars for Sámi and other languages
+! Copyright © 2000-2010 The University of Tromsø & the Norwegian Sámi Parliament
+! http://giellatekno.uit.no & http://divvun.no
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version. The GNU General Public License
+! is found at http://www.gnu.org/licenses/gpl.html. It is
+! also available in the file $GTHOME/LICENSE.txt.
+!
+! Other licensing options are available upon request, please contact
+! giellatekno@hum.uit.no or feedback@divvun.no
+
+
+LEXICON ACRONOUN_cons  
+ ACRONOUN ;
+
+LEXICON ACRONOUN_vow  
+ ACRONOUN ;
+
+LEXICON UNIT   !!= * __@CODE@__  As acro, but without paradigm
++N+ABBR: # ;
+
+LEXICON ACRO_ACCRA  !!= * __@CODE@__ 
++N+Prop+ACR: acroconnector ;
+!+N+Prop:%> ACCRADECL ;
+
+LEXICON ACRO_BERN
++N+Prop+ACR: acroconnector ;
+!+N+Prop:%> BERN-UCASE ;
+
+LEXICON ACRO_LONDON
++N+Prop+ACR: acroconnector ;
+!+N+Prop:%> LONDON-UCASE ;
+
+LEXICON ACRO_NYSTØ
++N+Prop+ACR: acroconnector ;
+!+N+Prop:%> NYSTØ-OBL ;
+
+LEXICON ACRO_cons 
+ ACRO ;    
+
+LEXICON ACRO_vow 
+ ACRO ;    
+
+
+LEXICON ACRO 
+ +N+Prop+ACR: acroconnector ; 
+ 
+LEXICON DYN_ACRO_cons 
+ DYN_ACRO ;    
+
+LEXICON DYN_ACRO_vow 
+ DYN_ACRO ;    
+   
+
+LEXICON DYN_ACRO
+ +N+Prop+Sem/Org+ACR+Dyn: acroconnector ;
+
+
+LEXICON ACRONOUN              ! Here we add the POS tag
++N+ACR: acroconnector ;
+
+LEXICON acroconnector     ! Here comes a set of possible symbols to ...
+                acronull ; ! SgNom only in sma
+   +Use/NG:%>%: acrosuff ;
+ +Err/Orth:%>%- acrosuff ; 
+ +Err/Orth:%>   acrosuff ; ! ... put between the abbreviation and its suffix
+ +Err/Orth:%>'  acrosuff ; ! No POS tag here in order to avoid the POS
+ +Err/Orth:%>%´ acrosuff ; ! tag for non-ACRO entries using the acroconnector
+ +Err/Orth:%>%` acrosuff ; ! inflection lexicon. (cf. the punct-sme-lex.txt file)
+               RHyph    ; ! Acros compound with a hyphen
+ +Err/Orth:     R ;        ! Without hyphen, not normative:  NRK23
+
+LEXICON acronull
++Msc+Sg+Indef: K ;
+
+LEXICON acrosuff
++Msc+Sg+Indef: K ;

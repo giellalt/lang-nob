@@ -1,0 +1,25 @@
+á (->) á, # Letter + combining acute
+Á (->) Á, # Letter + combining acute
+æ (->) ä, # ditto, etc.
+æ (->) ä,
+Æ (->) Ä,
+Æ (->) Ä,
+ø (->) ö,
+ø (->) ö,
+Ø (->) Ö,
+Ø (->) Ö,
+ö (->) ø,
+ö (->) ø,
+Ö (->) Ø,
+Ö (->) Ø,
+ï (->) i, # sma norm
+é (->) e,
+É (->) E,
+è (->) e,
+È (->) E,
+ó (->) o
+;
+
+# Explanation:
+# lexical side (->) input 
+

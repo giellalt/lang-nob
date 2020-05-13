@@ -1,0 +1,23 @@
+
+
+This is a grammatical analyser for Bokmål Norwegian.
+
+It was originally made based on a wordform list 
+(in times before lemma lists were available), and thus
+contains many misclassified lemmas. Here, we use it since
+it is flexible, partly for e-dictionaries, and partly for
+generating frequency lists.
+
+The analyser cannot be used for normative purposes.
+
+
+
+----
+
+The structure of the source file catalogue is the same for all
+the languages, it is documented [here|/infra/infraremake/NewinfraCatalogues.html].
+
+
+These pages document how to build the parsers. If you want to know
+how to use them on the command line, read the
+[How to use the morphological parsers|/tools/docu-sme-manual.html] page.

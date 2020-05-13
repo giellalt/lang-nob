@@ -1,0 +1,59 @@
+! =============================== !
+!     Hyphenator for Norwegian    
+! =============================== !
+
+echo << defining Cns and Vow... >>
+
+define Vow	[ a | á | e | i | o | u | y | æ | ø | å | ä | ö |
+                  A | Á | E | I | O | U | Y | Æ | Ø | Å | Ä | Ö | 
+é | ó | ú | í | à | è | ò | ù | ì | ë | ü | ï | â | ê | ô | û | î | ã | ý |
+xÉ | Ó | Ú | Í | À | È | Ò | Ù | Ì | Ë | Ü | Ï | Â | Ê | Ô | Û | Î | Ã | Ý ] ;
+
+define Diphthong [ [A|a] u | [e|e] i | [Ø|ø] y | [A|a] i ] ;
+
+define Cns [ b | c | č | d | đ | ð | f | g | h | j | k | l | m | n | ŋ | 
+             B | C | Č | D | Đ | Ð | F | G | H | J | K | L | M | N | Ŋ | 
+             ñ | p | q | r | s | š | t | ŧ | v | w | x | z | ž |   
+             Ñ | P | Q | R | S | Š | T | Ŧ | V | W | X | Z | Ž ] ; 
+
+define Res     [ l | m | n | r | v ] ;
+
+define Nucleus [ Vow | Diphthong ] ;
+define Coda    [ Nucleus (Res|Cns) (Cns) ] ;
+
+define S [ S | s ] ; 
+
+define Cnss [ Cns - S ] ;
+
+!define Sgm [ Cns | Vow ] ;
+
+
+
+echo << Rules>>
+
+define R1 [..] -> %- || (S) (Cns) (Res) Coda _ S [p ([l|r]) | t (r)| k ([l|r])] Nucleus ;
+define R2 [..] -> %- || (S) (Cns) (Res) Coda _   [p ([l|r]) | t (r)| k ([l|r])] Nucleus ;
+define R3 [..] -> %- || (S) (Cns) (Res) Coda _   [b|d|g|f] Res Nucleus ;
+define R4 [..] -> %- || (S) (Cns) (Res) Coda _ Cns Nucleus ;
+define R5 [..] -> %- || (S) (Cns) (Res) Diphthongx _ Nucleus ;
+define R6 [..] -> %- || (S) (Cns) (Res) Coda _ Nucleus ;
+
+echo << Cleanup...>>
+!define clean  Dummy -> 0 ;
+
+read regex [
+    R1
+.o. R2    
+.o. R3
+.o. R4
+.o. R5    
+.o. R6   
+!.o. clean
+] ;
+
+
+! Lokal debugging:
+! xfst -e "source < hyphenation.xfscript"
+! i xfst: invert net
+! i xfst: save h.fst
+! cat input | lookup h.fst

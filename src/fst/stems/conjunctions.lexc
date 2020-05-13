@@ -1,0 +1,19 @@
+
+
+LEXICON Conjunction
+både conj ;
+og conj ;
+og adv ;
+enten conj ;
+eller conj ;
+samt conj ;
+men conj ;
+verken conj ;
+verken+Err/Orth:hverken conj ;
+dog conj ; 
+endog conj ; 
+
+LEXICON conj
+ +CC: # ;
+
+

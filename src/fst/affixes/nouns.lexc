@@ -1,0 +1,559 @@
+! ====================== !
+! Bokmål noun morphology !
+! ====================== !
+
+! Declension classes
+! Main types, from Bokmålsordboka
+
+! f1  bru         brua        bruer       bruene
+! f2  pumpe       pumpa       pumper      pumpene
+! m1  stol        stolen      stoler      stolene
+!     bakke       bakken      bakker      bakkene
+!     pumpe       pumpen      pumper      pumpene
+! m2  lærer       læreren     lærere      lærerne
+! m3  bever       beveren     bevere      beverne
+!                             bevre(r)    bevrene
+! m4 longs longsen longs/longser longsene
+! n1  slott       slottet     slott       slotta/slottene
+! n2  eple        eplet       epler       epla/eplene
+!     salt        saltet      salter      salta/saltene
+! n3  kontor      kontoret    kontor      kontora
+!                             kontorer    kontorene
+!     høve        høvet       høve/høver  høva/høvene
+! n4  salt        saltet      salter      salta/saltene ??
+! n5  middel      midlet      midler      midla/midlene ??
+
+! Subtypes, mainly from Finsk-norsk ordbok, also system-specific
+
+! x  unclassified, to m1 by default
+! mX indecl
+! m1sg sg only
+! m1pl pl only
+! m1b dam
+! m1b fe, komite
+! m1V sko pl. sko
+! m3V meter pl. meter
+! ma alliert, alierte, allierte, allierte
+! KOLLEGA kollegaer, kolleger
+! KONTO kontoer, konti
+! RADIUS radiuser, radii
+! BROR brødre
+! FAR fedre
+! MANN menn
+
+! mD gårde, garde, dage  (av gårde)
+! fD tide (i tide)
+! nD live (i live)
+
+! DATTER døtre
+! f1b skam
+! f1X bok pl. bøker
+! f1V mus, pl. mus
+! fGLO glo, pl glør
+
+! n1b rom pl. rom
+! n1s sg only
+! n2b program pl. programmer
+! n2c kontor pl. kontor, kontorer
+! n2s mørke, not pl.
+! n3b lager def. lageret
+! n3c fe, feet
+! n4b faktum pl fakta
+! FORUM forum, forumet, fora/forumer, foraene/forumene
+! LEKSIKON leksikon, pl. leksika
+! MUSEUM museum, museet, museer
+
+
+
+! Basic paradigms
+! ===============
+
+LEXICON mD
++N+Msc+Sg+Indef: # ;
+LEXICON fD
++N+Fem+Sg+Indef: # ;
+LEXICON nD
++N+Neu+Sg+Indef: # ;
+
+
+LEXICON n1n3
+  n1 ;
+  n3 ;
+
+LEXICON m1n1
+  m1 ;
+  n1 ;
+
+!LEXICON m1n1f1
+!  m1 ;
+!  f1 ;
+!  n1 ;
+
+LEXICON m1Vn1
+  m1V ;
+  n1  ;
+
+
+! Masc2ulines
+! ----------
+
+LEXICON mx
+!  +X: m1 ; !Temporarily excluding the xX
+       m1 ; ! change line back if needed.
+
+LEXICON mX
+ +N+Msc+Sg+Indef: K ;
+     +N: R ;
+
+!LEXICON mD ! av garde
+! +N+Msc+Dat: K ;
+
+
+LEXICON m4
++N+Msc+Pl+Indef: K ; ! flere stillongs
+m1 ;
+
+LEXICON m1 ! dag, hane
+ +N: R       ;
+     m1morph ;
+
+LEXICON m1-e- ! stut, stuteplage
+ +N: Re      ;
+     m1morph ;
+
+LEXICON m1morph
+         +N+Msc+Sg: 0-en   ;
+         +N+Msc+Pl: er-ene ;
+ +N+Msc+Pl+Nynorsk+Use/NG: ar-ane ;
+
+LEXICON m1sg ! bruk
+ +N+Msc+Sg: 0-en ;
+        +N: R    ;
+
+LEXICON m1pl ! gamledager
+ +N+Msc+Pl: r-ne ;
+
+LEXICON m1X
+         +N+Msc+Sg:   0-en   ;
+         +N+Msc+Pl:Z1 er-ene ;
+ +N+Msc+Pl+Nynorsk+Use/NG:Z1 ar-ane ;
+                +N:   R      ;
+
+LEXICON m1b ! dam
+         +N+Msc+Sg:mX4 0-en   ;
+         +N+Msc+Pl:m   er-ene ;
+ +N+Msc+Pl+Nynorsk+Use/NG:m   ar-ane ;
+                +N:    R      ;
+
+LEXICON m1c ! fe, komite
+         +N+Msc+Sg: 0-en   ;
+         +N+Msc+Pl: er-ene ;
+ +N+Msc+Pl+Nynorsk+Use/NG: ar-ane ;
+                +N: R      ;
+
+LEXICON m1V ! sko
+         +N+Msc+Sg: 0-en  ;
+         +N+Msc+Pl: 0-ene ;
+ +N+Msc+Pl+Nynorsk+Use/NG: 0-a   ;
+                +N: R     ;
+
+LEXICON m2 ! lærer
+ +N+Msc+Sg:        0-en   ;
+ +N+Msc+Pl:        e-ne   ;
+ +N+Msc+Sg+Nynorsk+Use/NG:%^NYNAG 0-en   ;
+ +N+Msc+Pl+Nynorsk+Use/NG:%^NYNAG ar-ane ;
+        +N:        R      ;
+
+LEXICON m3 ! onkel
+         +N+Msc+Sg:   0-en     ;
+         +N+Msc+Pl:X1 e-er-ene ; ! X1 deletes the vowel -e-
+ +N+Msc+Pl+Nynorsk+Use/NG:X1 ar-ane   ; ! X1 deletes the vowel -e-
+                +N:   R        ;
+
+LEXICON m3V ! meter
+ +N+Msc+Sg:   0-en  ;
+ +N+Msc+Pl:X1 0-ene ;
+ +N+Msc+Pl+Use/NG:X1 0-ane ;
+        +N:   R     ;
+
+LEXICON m1n3
+  m1 ;
+  n3 ;
+
+LEXICON ma ! alliert
+ +N+Msc+Sg: 0-e ;
+ +N+Msc+Pl: e-e ;
+        +N: R   ;
+
+LEXICON mKOLLEGA
+ +N+Msc+Sg:   0-en   ;
+ +N+Msc+Pl:X2 er-ene ; ! delete a, kolleger
+ +N+Msc+Pl+Use/NG:   er-ene ; ! keep a, kollegaer
+        +N:   R      ;
+
+LEXICON mKONTO
+         +N+Msc+Sg:     0-en   ;
+         +N+Msc+Pl:X2i  0-ene  ; ! delete o
+         +N+Msc+Pl+Use/NG:     er-ene ; ! Regular pl
+ +N+Msc+Pl+Nynorsk+Use/NG:     ar-ane ; ! Regular pl
+                +N:     R      ;
+
+LEXICON mRADIUS
+         +N+Msc+Sg:%>us 0-en   ;
+     +N+Msc+Sg+Def:%>en K      ; ! short def
+         +N+Msc+Pl:     er-ene ; ! Regular pl
+ +N+Msc+Pl+Nynorsk+Use/NG:     ar-ane ; ! Regular pl
+                +N:     R      ;
+
+LEXICON mBROR
+         +N+Msc+Sg:bror  0-en  ;
+         +N+Msc+Pl:brødr e-ene ;
+ +N+Msc+Pl+Nynorsk+Use/NG:brør  0-ne  ;
+
+LEXICON mBRODER
+         +N+Msc+Sg:broder 0-en  ;
+         +N+Msc+Pl:brødr  e-ene ;
+ +N+Msc+Pl+Nynorsk+Use/NG:brør   0-ne  ;
+
+LEXICON mFAR
+  +N+Msc+Sg:far  0-en  ;
+  +N+Msc+Pl:fedr e-ene ;
+!           +N:     R     ;
+
+LEXICON fDATTER
+          +N+Fem+Sg+Indef:datter   K ;
+            +N+Fem+Sg+Def:datra    K ;
+            +N+Msc+Sg+Def:datteren K ;
+!   +N+Fem+Sg+Def+Radical:datra    K ;
+          +N+Fem+Pl+Indef:døtre    K ;
+            +N+Fem+Pl+Def:døtrene  K ;
+  +N+Fem+Sg+Nynorsk+Use/NG+Indef:dotter   K ;
+    +N+Fem+Sg+Nynorsk+Use/NG+Def:dotra    K ;
+!                      +N:         R ;
+
+LEXICON fMOR
+     +N+Fem+Sg:mor   0-a   ;
+ +N+Msc+Sg+Def:moren K     ;
+    +N+Fem+Pl:mødr  e-ene ;
+
+LEXICON fFOT
+     +N+Msc+Sg:fot   0-en   ;
+    +N+Msc+Pl:føtt  e-ene ;
+
+LEXICON fROT
+     +N+Fem+Sg:rot   0-a   ;
+ +N+Msc+Sg+Def:roten K     ;
+    +N+Fem+Pl:røtt  er-ene ;
+
+
+LEXICON fGÅS
+     +N+Fem+Sg:gås   0-a   ;
+ +N+Msc+Sg+Def:gåsen K     ;
+     +N+Fem+Pl:gjess 0-ene ;
+
+LEXICON fKU
+     +N+Fem+Sg:ku   0-a    ;
+ +N+Fem+Sg+Def:kua K      ;
+ +N+Msc+Sg+Def:kuen K      ;
+     +N+Fem+Pl:kyr  0-a    ;
+     +N+Fem+Pl+Use/NG:ku   er-ene ;
+
+LEXICON fKLE
+ +N+Neu+Sg+Indef:kle    K     ;
+   +N+Neu+Sg+Def:kledet K     ;
+       +N+Neu+Pl:klæ    r-rne ;
+
+
+LEXICON mMANN
+  +N+Msc+Sg:mann   0-en  ;
+  +N+Msc+Pl:mannZ1 0-ene ;
+!        +N:   R     ;
+
+LEXICON indeclm !mX, eigentleg.
+  +N+Msc+Indcl: # ;
+!           +N: R ;
+
+! Feminines
+! ---------
+
+LEXICON fx ! Former vx, awaiting classification.
+  f1 ;
+
+LEXICON fX ! førehand
+ +N+Fem+Sg+Indef: # ;
+
+!LEXICON fD ! i tide
+! +N+Fem+Dat: K ;
+
+
+LEXICON f1-e- ! helg
+ +N: Re      ;
+     f1morph ;
+
+LEXICON f1 ! myr, krone
+ +N: R       ;
+     f1morph ;
+
+LEXICON f1morph
+ +N+Fem+Sg: 0-a    ;
+ +N+Msc+Sg: en     ; ! myren !^C^
+ +N+Fem+Pl: er-ene ;
+
+LEXICON f1sg ! grisetang
+ +N+Fem+Sg: 0-a ;
+ +N+Msc+Sg: en  ; ! myren !^C^
+
+LEXICON f1b ! skam
+ +N+Fem+Sg:mX4 0-a    ;
+ +N+Msc+Sg:m   en     ; ! myren !^C^
+ +N+Fem+Pl:m   er-ene ;
+        +N:    R      ;
+
+LEXICON f1X ! bok
+ +N+Fem+Sg:   0-a    ;
+ +N+Msc+Sg:   en     ; ! boken !^C^
+ +N+Fem+Pl:Z1 er-ene ;
+        +N:   R      ;
+
+LEXICON f1V ! mus
+ +N+Fem+Sg: 0-a   ;
+ +N+Msc+Sg: en    ; ! musen !^C^
+ +N+Fem+Pl: 0-ene ;
+        +N: R     ;
+
+LEXICON f2
+  f1 ;
+
+LEXICON f3 ! lever
+ +N+Fem+Sg:X1 0-a    ;
+ +N+Msc+Sg:   en     ; ! levren !^C^
+ +N+Fem+Pl:X1 er-ene ;
+        +N:   R      ;
+
+LEXICON fGLO
+ +N+Fem+Sg:   0-a   ;
+ +N+Msc+Sg:   en    ; ! levren !^C^
+ +N+Fem+Pl:Z1 r-rne ;
+        +N:   R     ;
+
+
+
+! Neuters
+! -------
+
+LEXICON nX ! styrbord
+ +N+Neu+Sg+Indef: K ;
+     +N: R ;
+
+!LEXICON nD ! i live
+! +N+Neu+Dat: K ;
+
+
+!LEXICON n1-e- !
+! +N: Re ;
+
+LEXICON n1 ! hus
+ +N: R       ;
+     n1morph ;
+
+LEXICON n1morph
+ +N+Neu+Sg: 0-et    ;
+! +N+Neu+Pl: 0-ene-a ;
+ +N+Neu+Pl: 0-er-ene-a ; ! tribunaler
+
+LEXICON n1b ! rom
+ +N+Neu+Sg:mX4 0-et    ;
+ +N+Neu+Pl:m   0-ene-a ;
+        +N:    R       ;
+
+LEXICON n1sg ! yr
+ +N+Neu+Sg: 0-et ;
+        +N: R    ;
+
+LEXICON n2 ! eple, salt
+ +N+Neu+Sg: 0-et     ;
+ +N+Neu+Pl: er-ene-a ;
+        +N: R        ;
+
+LEXICON n2b ! program
+ +N+Neu+Sg:mX4 0-et       ;
+ +N+Neu+Pl:m   0-er-ene-a ;
+        +N:    R          ;
+
+LEXICON n2c ! album, kontor
+ +N+Neu+Sg: 0-et       ;
+ +N+Neu+Pl: 0-er-ene-a ;
+        +N: R          ;
+
+LEXICON n2s ! mørke
+ +N+Neu+Sg: 0-et ;
+        +N: R    ;
+
+LEXICON n3 ! middel
+ +N+Neu+Sg:X1 0-et     ;
+ +N+Neu+Pl:X1 er-ene-a ;
+        +N:   R        ;
+
+LEXICON n3b ! lager
+ +N+Neu+Sg:   0-et    ;
+ +N+Neu+Pl:X1 e-ene-a ;
+        +N:   R       ;
+
+LEXICON n3c ! fe
+ +N+Neu+Sg: 0-et ;
+ +N+Neu+Pl: 0-ne ;
+        +N: R    ;
+
+LEXICON n4 ! kriterium
+ +N+Neu+Sg:X5 0-et     ;
+ +N+Neu+Pl:X5 er-ene-a ;
+        +N:   R        ;
+
+LEXICON n4b ! faktum
+ +N+Neu+Sg:   0-et   ;
+ +N+Neu+Pl:X5 a-aene ;
+        +N:   R      ;
+
+LEXICON n5 ! middel
+ +N+Neu+Sg:X1 0-et     ;
+ +N+Neu+Pl:X1 er-ene-a ;
+        +N:   R        ;
+
+
+
+LEXICON nFORUM ! forum
+ +N+Neu+Sg:um 0-et   ;
+ +N+Neu+Pl:   a-aene ;
+ +N+Neu+Pl+Use/NG:um er-ene ;
+        +N:um R      ;
+
+LEXICON nLEKSIKON ! leksikon
+ +N+Neu+Sg:on 0-et   ;
+ +N+Neu+Pl:   a-aene ;
+        +N:on R      ;
+
+LEXICON nMUSEUM
+ +N+Neu+Sg:um 0-et     ;
+ +N+Neu+Pl:   er-ene-a ;
+        +N:um R        ;
+
+LEXICON nplKLÆR
+ +N+Neu+Pl:klær 0-ne  ;
+
+ LEXICON nTRE
+ +N+Neu+Sg:e  0-et  ;
+ +N+Neu+Pl:æ  r-rne ;
+
+LEXICON nTEMPUS ! tempus:temp TEMPUS ;
+          :us     n1 ;
+ +N+Neu+Sg:ora    K  ;
+ +N+Neu+Pl:oraene K  ;
+        +N:us     R  ;
+
+LEXICON fTÅ
+ +N+Fem+Sg:tå  0-a  ;
+ +N+Msc+Use/NG:tåen # ;
+ +N+Fem+Pl:tæ  r-rne ;
+
+! Lexica for definiteness declension
+! ==================================
+
+LEXICON a-aene
+ +Indef:%>a    K ;
+   +Def:%>aene K ;
+
+LEXICON e-ne
+ +Indef:%>e  K ;
+   +Def:%>ne K ;
+
+LEXICON e-ene
+ +Indef:%>e   K ;
+   +Def:%>ene K ;
+
+LEXICON e-ene-a
+ +Indef:%>e   K ;
+   +Def+Use/NG:%>ene K ;
+   +Def:%>a   K ;
+
+LEXICON er-ene
+ +Indef:%>er  K ;
+   +Def:%>ene K ;
+
+LEXICON e-er-ene
+ +Indef+Use/NG:%>e   K ;
+ +Indef:%>er  K ;
+   +Def:%>ene K ;
+
+LEXICON er-ene-a
+ +Indef:%>er  K ;
+   +Def:%>ene K ;
+   +Def+Use/NG:%>a   K ;
+
+LEXICON ar-ane	 !! @CODE@ for nynorsk only.
+ +Indef:%>ar  K ; !!
+   +Def:%>ane K ; !!
+
+LEXICON 0-ane !! @CODE@ for nynorsk only.
+ +Indef:      K ;
+   +Def:%>ane K ;
+
+LEXICON r-rne  ! trær
+ +Indef:%>r   K ;
+   +Def:%>rne K ;
+
+LEXICON r-ne  ! gamledager
+ +Indef:%>r  K ;
+   +Def:%>ne K ;
+
+LEXICON 0-a
+        +Indef:    K ;
+          +Def:%>a K ;
+! +Def+Radical:%>a K ; ! If needed
+
+LEXICON 0-en
+ +Indef:     K ;
+   +Def:%>en K ;
+
+LEXICON 0-ene
+ +Indef:      K ;
+   +Def:%>ene K ;
+
+!LEXICON 0-er-ene
+! +Indef:      K ;
+! +Indef:%>er  K ;
+!   +Def:%>ene K ;
+
+LEXICON 0-er-ene-a
+ +Indef:      K ;
+ +Indef+Use/NG:%>er  K ;
+   +Def+Use/NG:%>ene K ;
+   +Def:%>a   K ;
+
+LEXICON 0-ne
+ +Indef:     K ;
+   +Def:%>ne K ;
+
+LEXICON 0-et
+ +Indef:     K ;
+   +Def:%>et K ;
+
+LEXICON 0-ene-a
+        +Indef:      K ;
+          +Def+Use/NG:%>ene K ;
+          +Def:%>a   K ;
+! +Def+Radical:%>a   K ; ! If needed
+
+LEXICON en ! Use 0-en instead
+! +Indef:     K ; ! commented out for dict, comment
+               ! in again for eventual syntax ("en dør")
+    +Def:%>en K ; ! døren = dør+N+Msc :-/
+
+LEXICON 0-e
+ +Indef:    K ;
+   +Def:%>e K ;
+
+LEXICON e-e
+ +Indef:%>e K ;
+   +Def:%>e K ;
+
+

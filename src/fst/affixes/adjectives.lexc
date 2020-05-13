@@ -1,0 +1,244 @@
+! =============================
+!! !!!Sublexica for adjective roots
+! =============================
+!! * a1  god         god         godt        gode
+!! * a2  norsk       norsk       norsk       norske
+!! * a3  ekte        ekte        ekte        ekte
+!! * a4  oppskjørtet oppskjørtet oppskjørtet oppskjørtede/oppskjørtete
+!! * a5  makaber     makaber     makabert    makabre
+!! *     lunken      lunken      lunkent     lunkne
+!! * aV  blå         blå         blått       blå
+
+
+
+
+
+! Basic paradigms
+! ===============
+
+LEXICON a23
+  a2 ;
+  a3 ;
+
+!LEXICON a13
+!  a1 ;
+!  a3 ;
+
+!LEXICON a12
+!  a1 ;
+!  a2 ;
+
+LEXICON a1pos
+ +A: positive ;
+
+LEXICON a1
+ +A: positive ;
+ +A: a-neuter ;
+ +A: grade-e  ;
+
+LEXICON a2lig
+         :ig a2 ; ! herlig
+ +Nynorsk+Use/NG:eg a2 ; ! herleg
+
+LEXICON a2 !
+ +A: positive    ;
+ +A: a-no-neuter ;
+ +A: grade-C     ;
+
+LEXICON a3 !
+ +A: positive    ;
+ +A: a-no-neuter ;
+
+LEXICON a4 ! oppskjørtet
+ +A:   positive-indef ;
+ +A:   positive-def   ;
+ +A:X6 positive-def   ;
+ +A:   a-no-neuter    ;
+ +A:   grade-e        ; !oppskjørtete
+ +A:X6 grade-e        ; !oppskjørtede
+
+LEXICON a5 ! overlegen
+ +A:X1 positive ;
+ +A:   a-neuter ;
+ +A:X1 grade-e  ;
+
+LEXICON aV ! ny, fri
+   +A+Pos+Msc+Sg+Indef:     # ;
+   +A+Pos+Fem+Sg+Indef:     # ;
+   +A+Pos+Neu+Sg+Indef:tt   # ;
+         +A+Pos+Sg+Def:e    # ;
+       +A+Pos+Pl+Indef:e    # ;
+         +A+Pos+Pl+Def:e    # ;
+               +A+Comp:ere  # ;
+             +A+Superl:est  # ;
+         +A+Superl+Def:este # ;
+
+       +A+Comp+Nynorsk+Use/NG:are  # ;
+     +A+Superl+Nynorsk+Use/NG:ast  # ;
+ +A+Superl+Def+Nynorsk+Use/NG:aste # ;
+
+
+LEXICON EGEN ! legen
+                  +A:nX1 positive ;
+ +A+Pos+Neu+Sg+Indef:%>t   #        ;
+                  +A:nX1 grade-e  ;
+
+LEXICON LIKEDAN !
+ +A:  positive-indef ; ! likedan
+ +A:n positive-def   ; ! likedanne
+ +A:  a-neuter       ; ! likedant
+
+
+
+! Sublexica
+! =========
+
+LEXICON positive
+  positive-indef ;
+  positive-def   ;
+
+LEXICON positive-indef
+!                    R ; ! A+N-samansetjingar er for dristig (?)
+ +Pos+Msc+Sg+Indef: # ;
+ +Pos+Fem+Sg+Indef: # ;
+  +Pos+MF+Sg+Indef: # ; ! MF ???
+
+LEXICON positive-def
+ +Pos+Sg+Def+Clt:%>es # ;
+ +Pos+Sg+Def:%>e # ;
+ +Pos+Pl+Def:%>e # ;
+ +Pos+Pl+Indef:%>e # ;
+
+LEXICON a-neuter ! fint
+ +Pos+Neu+Sg+Indef:%>Q3t # ;
+ +Der/AAdv+Adv:%>Q3t # ;
+
+LEXICON a-no-neuter ! vennlig
+ +Der/AAdv+Adv: # ;
+ +Pos+Neu+Sg+Indef: # ;
+!                    R ;
+ 
+LEXICON grade-e
+                 +Comp:%>ere  # ;
+         +Superl+Indef:%>est  # ;
+           +Superl+Def:%>este # ;
+
+         +Comp+Nynorsk+Use/NG:%>are  # ;
+ +Superl+Indef+Nynorsk+Use/NG:%>ast  # ;
+   +Superl+Def+Nynorsk+Use/NG:%>aste # ;
+
+LEXICON grade-C
+                 +Comp:%>ere  # ;
+         +Superl+Indef:%>est  # ;
+           +Superl+Def:%>este # ;
+
+         +Comp+Nynorsk+Use/NG:%>are  # ;
+ +Superl+Indef+Nynorsk+Use/NG:%>ast  # ;
+   +Superl+Def+Nynorsk+Use/NG:%>aste # ;
+
+
+
+! Exceptional
+
+LEXICON A_FÅ
+!                   +A:få   R ;
+      +A+Pos+Pl+Indef:få  # ;
+        +A+Pos+Pl+Def:få  # ;
+              +A+Comp:færre # ;
+            +A+Superl:færrest  # ;
+        +A+Superl+Def:færreste # ;
+
+
+LEXICON GAMMEL
+!                  +A:gammel  R ;
+  +A+Pos+Msc+Sg+Indef:gammel  # ;
+  +A+Pos+Fem+Sg+Indef:gammel  # ;
+ +A+Pos+Neu+Sg+Indef:gammelt # ;
+       +A+Pos+Sg+Def:gamle   # ;
+     +A+Pos+Pl+Indef:gamle   # ;
+       +A+Pos+Pl+Def:gamle   # ;
+             +A+Comp:eldre   # ;
+           +A+Superl:eldst   # ;
+       +A+Superl+Def:eldste  # ;
+
+LEXICON GOD
+!                   +A:god   R ;
+   +A+Pos+Msc+Sg+Indef:god   # ;
+   +A+Pos+Fem+Sg+Indef:god   # ;
+  +A+Pos+Neu+Sg+Indef:godt  # ;
+        +A+Pos+Sg+Def:gode  # ;
+      +A+Pos+Pl+Indef:gode  # ;
+        +A+Pos+Pl+Def:gode  # ;
+              +A+Comp:bedre # ;
+            +A+Superl:best  # ;
+        +A+Superl+Def:beste # ;
+
+      +A+Comp+Nynorsk+Use/NG:betre # ;
+
+LEXICON LITEN
+ +A+Pos+Msc+Sg+Indef:liten  # ;
+ +A+Pos+Fem+Sg+Indef:lita   # ;
+ +A+Pos+Neu+Sg+Indef:lite   # ;
+       +A+Pos+Sg+Def:lille  # ;
+       +A+Pos+Sg+Def:vesle  # ;
+     +A+Pos+Pl+Indef:små    # ;
+       +A+Pos+Pl+Def:små    # ;
+             +A+Comp:mindre # ;
+           +A+Superl:minst  # ;
+       +A+Superl+Def:minste # ;
+
+
+LEXICON STOR
+!                   +A:stor    R ;
+   +A+Pos+Msc+Sg+Indef:stor    # ;
+   +A+Pos+Fem+Sg+Indef:stor    # ;
+  +A+Pos+Neu+Sg+Indef:stort   # ;
+        +A+Pos+Sg+Def:store   # ;
+      +A+Pos+Pl+Indef:store   # ;
+        +A+Pos+Pl+Def:store   # ;
+        +A+Comp+Indef:større  # ;
+      +A+Superl+Indef:størst  # ;
+        +A+Superl+Def:største # ;
+
+LEXICON UNG
+!                  +A:ung    R ;
+ +A+Pos+Msc+Sg+Indef:ung    # ;
+ +A+Pos+Fem+Sg+Indef:ung    # ;
+ +A+Pos+Neu+Sg+Indef:ungt   # ;
+       +A+Pos+Sg+Def:unge   # ;
+     +A+Pos+Pl+Indef:unge   # ;
+       +A+Pos+Pl+Def:unge   # ;
+             +A+Comp:yngre  # ;
+           +A+Superl:yngst  # ;
+       +A+Superl+Def:yngste # ;
+
+
+LEXICON VOND
+!                   +A:vond   R ;
+   +A+Pos+Msc+Sg+Indef:vond   # ;
+   +A+Pos+Fem+Sg+Indef:vond   # ;
+  +A+Pos+Neu+Sg+Indef:vondt  # ;
+        +A+Pos+Sg+Def:vonde  # ;
+      +A+Pos+Pl+Indef:vonde  # ;
+        +A+Pos+Pl+Def:vonde  # ;
+              +A+Comp:verre # ;
+            +A+Superl:verst  # ;
+        +A+Superl+Def:verste # ;
+
+
+
+LEXICON MANGE
+ +A:mange positive    ;
+ +A:mange a-no-neuter ;
+ FLER ;
+ FLERE ;
+
+LEXICON FLER
+    +A+Comp+Pl+Indef+Use/NG:fler   # ;
+LEXICON FLERE
+   +A+Comp+Pl+Indef:flere  # ;
+   +A+Superl+Pl+Def:fleste # ;
+ +A+Superl+Pl+Indef:flest  # ;
+
+
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE errors>
+
+<errors>
+
+  <defaults>
+    <default type="Grammar error">
+      <ids>
+        <re v="real-.*"/>
+        <e id="unreal-girjji"/>
+      </ids>
+      <header>
+        <title xml:lang="en">Real-word error</title>
+        <title xml:lang="nb">Čállinmeattáhus</title>
+      </header>
+      <body>
+        <description xml:lang="en">The word "$1" exists in the dictionary, but means something different in this context.</description>
+        <description xml:lang="nb">"$1" er et eksisterende ord, men passer kanskje ikke her.</description>
+      </body>
+    </default>
+  </defaults>
+
+  <error id="err_agr_neu_a">
+    <header>
+      <title xml:lang="en">Gender concord in noun phrases</title>
+      <title xml:lang="nb">Samsvar i kjønn i substantivfraser</title>
+    </header>
+    <body>
+      <description xml:lang="en">When an adjective, such as "$1, stands in front of a neuter noun, such as "$2", it should be in the neuter.</description>
+      <description xml:lang="nb">Når et adjektiv, som her "$1", står foran et intetkjønnssubstantiv, som her "$2", skal det stå i nøytrum</description>
+    </body>
+  </error>
+
+  <error id="err_agr_msc_a">
+    <header>
+      <title xml:lang="en">Gender concord in noun phrases</title>
+      <title xml:lang="nb">Samsvar i kjønn i substantivfraser</title>
+    </header>
+    <body>
+      <description xml:lang="en">When an adjective, such as "$1", stands in front of a masculine noun, here "$2", it should not be in the neuter.</description>
+      <description xml:lang="nb">Når et adjektiv, som her "$1", står foran et hankjønnssubstantiv, som her "$2", skal det ikkæ stå i nøytrum</description>
+    </body>
+  </error>
+
+  <error id="err_pron_nom">
+    <header>
+      <title xml:lang="en">Nominative after preposition</title>
+      <title xml:lang="nb">Nominativ etter preposition</title>
+    </header>
+    <body>
+      <description xml:lang="en">When a preposition, here "$1", stands in front of a pronoun, here "$2", it should be in the accusative.</description>
+      <description xml:lang="nb">Når en preposisjon, som her "$1", står foran et pronomen, som her "$2", skal det stå i akkusativ.</description>
+    </body>
+  </error>
+</errors>

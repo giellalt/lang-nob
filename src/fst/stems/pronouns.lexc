@@ -1,0 +1,140 @@
+
+LEXICON Pronoun
+
+Personal ;
+Reflexive ;
+Reciprocal ;
+Interrogative ;
+Possessive ;
+Other_Pronouns ;
+
+LEXICON Personal 
+ jeg+Pron+Pers+Sg1+Nom:jeg # ;
+ jeg+Pron+Pers+Sg1+Acc:meg # ;
+  du+Pron+Pers+Sg2+Nom:du # ;
+  du+Pron+Pers+Sg2+Acc:deg # ;
+ han/hun+Pron+Pers+Sg3+Nom:han/hun # ;
+ han+Pron+Pers+Sg3+Nom:han # ;
+ hun+Pron+Pers+Sg3+Nom:hun # ;
+ hun+Pron+Pers+Sg3+Nom+Use/NG:ho # ;
+ han+Pron+Pers+Sg3+Acc:han # ;
+ han+Pron+Pers+Sg3+Acc:ham # ;
+ hun+Pron+Pers+Sg3+Acc:henne # ;
+ han/hun+Pron+Pers+Sg3+Acc:han/henne # ;
+ den+Pron+Pers+Sg3:den # ; ! Gender? -- no, only as Det Dem (?)
+ det+Pron+Pers+Sg3:det # ; ! Gender? -- no, only as Det Dem (?)
+ den+Pron+Pers+Sg3+Poss:dens # ; ! Gender? -- no, only as Det Dem (?) # var Clt
+ det+Pron+Pers+Sg3+Poss:dets # ; ! Gender? -- no, only as Det Dem (?) # var Clt
+  vi+Pron+Pers+Pl1+Nom:vi # ;
+  vi+Pron+Pers+Pl1+Acc:oss # ;
+dere+Pron+Pers+Pl2+Nom:dere # ;
+dere+Pron+Pers+Pl2+Acc:dere # ;
+  de+Pron+Pers+Pl3+Nom:de # ;
+  de+Pron+Pers+Pl3+Acc:dem # ;
+
+LEXICON Reflexive 
+seg+Pron+Refl+Acc:seg # ;
+
+LEXICON Reciprocal
+hverandre+Pron+Recipr+Acc:hverandre # ;
+
+LEXICON Interrogative 
+hva+Pron+Interr:hva # ;
+hvem+Pron+Interr:hvem # ;
+
+LEXICON Possessive 
+din+Det+Poss+Fem+Sg2:di # ;
+din+Det+Poss+Msc+Sg2:din # ;
+din+Det+Poss+Pl2:dine # ;
+din+Det+Poss+Neu+Sg2:ditt # ;
+min+Det+Poss+Fem+Sg:mi # ;
+min+Det+Poss+Msc+Sg:min # ;
+min+Det+Poss+Pl:mine # ;
+min+Det+Poss+Neu+Sg:mitt # ;
+sin+Det+Poss+Fem+Sg3:si # ;
+sin+Det+Poss+Msc+Sg3:sin # ;
+sin+Det+Poss+Pl3:sine # ;
+sin+Det+Poss+Neu+Sg3:sitt # ;
+vår+Det+Poss+Sg1+Fem:vår # ;
+vår+Det+Poss+Sg1+Msc:vår # ;
+vår+Det+Poss+Pl1:våre # ;
+vår+Det+Poss+Sg1+Neu:vårt # ;
+hans+Det+Poss+Msc+Sg3:hans # ;
+hennes+Det+Poss+Fem+Sg3:hennes # ;
+hans/hennes+Det+Poss+Sg3:hans/hennes # ;
+deres+Det+Poss+Pl2:deres # ;
+deres+Det+Poss+Pl3:deres # ;
+
+LEXICON Other_Pronouns
+
+all+Det+Dem+Pl:alle K ;
+all+Det+Dem+Fem+Sg:all # ;
+all+Det+Dem+Msc+Sg:all # ;
+all+Det+Dem+Neu+Sg:alt # ;
+annen+Det+Dem+Pl:andre # ;
+annen+Det+Dem+Fem+Sg:anna # ;
+annen+Det+Dem+Fem+Sg:annen # ;
+annen+Det+Dem+Msc+Sg:annen # ;
+annen+Det+Dem+Neu+Sg:annet # ;
+annen+Pron+Dem+Pl:andre # ;
+annen+Pron+Dem+Pl+Clt:andre # ;
+annen+Pron+Dem+Fem+Sg:anna # ;
+annen+Pron+Dem+Fem+Sg:annen # ;
+annen+Pron+Dem+Msc+Sg:annen # ;
+annen+Pron+Dem+Neu+Sg:annet # ;
+annenhver+Det+Dem+Msc+Sg:annenhver # ;
+annenhver+Det+Dem+Fem+Sg:annenhver # ;
+annenhver+Det+Dem+Neu+Sg:annenhvert # ;
+begge+Det+Qnt+Pl:begge # ;
+begge+Pron+Qnt+Pl:begge # ;
+den+Det+Dem+Pl:de # ;
+den+Det+Dem+Msc+Sg:den # ;
+den+Det+Dem+Fem+Sg:den # ;
+denne+Det+Dem+Msc+Sg:denne K ;
+denne+Det+Dem+Fem+Sg:denne K ;
+den+Det+Dem+Neu+Sg:det # ;
+denne+Det+Dem+Neu+Sg:dette K ;
+denne+Det+Dem+Pl:disse K ;
+ei+Det+Dem+Fem+Sg:ei # ;
+en+Det+Dem+Msc+Sg:en # ;
+en+Det+Dem+Fem+Sg:en # ;
+en+Pron+Indef+Msc+Sg:en # ;
+en+Pron+Indef+Fem+Sg:en # ;
+eneste+Det+Dem:eneste # ;
+et+Det+Dem+Neu+Sg:et # ;
+et+Pron+Indef+Neu+Sg:et # ;
+ett+Det+Dem+Neu+Sg:ett # ;
+flere+Det+Dem+Pl:flere # ;
+flere+Pron+Indef+Pl:flere # ;
+hver+Det+Dem+Msc+Sg:hver # ;
+hver+Det+Dem+Fem+Sg:hver # ;
+hver+Det+Dem+Neu+Sg:hvert # ;
+hvilken+Det+Dem+Pl:hvilke # ;
+hvilken+Det+Dem+Msc+Sg:hvilken # ;
+hvilken+Det+Dem+Fem+Sg:hvilken # ;
+hvilken+Det+Dem+Neu+Sg:hvilket # ;
+hvis+Det+Poss+Qst:hvis # ;
+ingen+Pron+Indef:ingen # ;
+man+Pron+Indef:man # ;
+mange+Det+Dem+Pl:mange # ;
+noe+Det+Qnt+Neu+Sg:noe # ;
+noe+Pron+Indef:noe # ;
+noen+Det+Qnt+Pl:noen # ;
+noen+Pron+Indef:noen # ;
+samme+Det+Dem:samme # ;
+selv+Det+Intens:selv # ;
+selv+Det+Intens:selve # ;
+selv+Pron+Intens:selv # ;
+selv+Pron+Intens:selve # ;
+sjøl+Det+Intens:sjøl # ;
+sjøl+Pron+Intens:sjøl # ;
+slik+Det+Dem+Pl:slike # ;
+slik+Det+Dem+Fem+Sg:slik # ;
+slik+Det+Dem+Msc+Sg:slik # ;
+slik+Det+Dem+Neu+Sg:slikt # ;
+sånn+Det+Dem+Fem+Sg:sånn # ;
+sånn+Det+Dem+Msc+Sg:sånn # ;
+sånn+Det+Dem+Neu+Sg:sånt # ;
+sånn+Det+Dem+Sg+Pl:sånne # ;
+én+Det+Dem+Msc+Sg:én # ;
+én+Det+Dem+Fem+Sg:én # ;

@@ -1,0 +1,1207 @@
+# -*- cg-pre-pipe: "$GTHOME/giella-core/scripts/preprocess --abbr=$GTHOME/langs/nob/tools/preprocess/abbr.txt | hfst-optimised-lookup  $GTHOME/langs/nob/src/analyser-disamb-gt-desc.hfstol | $GTHOME/giella-core/scripts/lookup2cg" -*-
+
+# ============================================ #
+# The OBT-based Bokmål Norwegian disambiguator #
+# ============================================ #
+
+# This disambiguator is based upon the OBT disambiguator. It contains
+# the morphological rules only.
+
+# The original OBT disambiguator was written in CG-1 by Kristin Hagen and
+# Anders Nøklestad at UiO. It was translated to CG-2 by Lars Nygård.
+# The conversion to the Tromsø format was done by Trond Trosterud.
+
+
+DELIMITERS = "<.>" "<:>" "<!>" "<?>" "<|>" sent ;
+
+SETS
+LIST BOS = >>>	;
+LIST EOS = <<< ;
+LIST ikke-Poss-det = "hei" ;
+LIST replikk = "$--" "$-" ;
+LIST int-setn-gr = "$\;" "$:" "$..." "$--" "$-" "$," "$\"" CLB ;
+LIST s-gr/Interj = "$\;" "$:" "$..." "$--" "$-" "$," "$\"" konj >>> <<< Interj CLB ;
+LIST s-gr = "$\;" "$:" "$..." "$--" "$-" "$," "$\"" konj >>> <<< CLB ;
+LIST @Adv = Adv;
+LIST spoersmaal-t = "$\?";
+LIST s^periode-beg/CLB-CC = "$\;" "$:" "$..." "$--" "$-" "$," "$\"" konj >>> <<< ;
+
+LIST %aar% = "år" ;
+LIST %aldri% = "aldri" ;
+LIST %all% = "all" ;
+LIST %alle% = ("all" det Pl) ;
+LIST %aller% = ("aller" Adv) ;
+LIST %alt% = ("all" det Neu) ;
+LIST %andre% = "andre" ;
+LIST %annen%-Pl = ("annen" Pl) ;
+LIST %annen/samme%/Qnt = ("annen") ("samme") (Det Qnt) ;
+LIST %annen/samme%/Qnt-Fem = ("annen" Fem) ("samme") (Det Qnt) ;
+LIST %annen/samme%/Qnt-Msc = ("annen" Msc) ("samme") (Det Qnt) ;
+LIST %annen/samme%/Qnt-Neu = ("annen" Neu) ("samme") (Det Qnt) ;
+LIST %antas% = ("anta" Pass) ;
+LIST %at% = "at" ;
+LIST %av% = "av" ;
+LIST %baade% = "både" ;
+LIST %bare% = ("bare" Adv) ;
+LIST %begge/selve/alle% = "selve" "begge" ("all" det Pl) ;
+LIST %bla% = "blant annet" "bl.a." ;
+LIST %brudeparet/paret% = "par" "brudepar" ;
+LIST %da% = "da" ;
+LIST %de% = ("de" det) ;
+LIST %del/andel% = "del" "andel" ;
+LIST %den% = ("den" det) ;
+LIST %den/denne% = ("den" det) ("denne" det) ;
+LIST %den/Det/de% = "det" "den" "de" ;
+LIST %der% = "der" ;
+LIST %det% = ("det" det) ;
+LIST %det%-Pron = ("det" Pron) ;
+LIST %Det/dette% = ("det" det) ("dette" det) ;
+LIST %Det/dette%-Pron = ("det" Pron) ("dette" Pron) ;
+LIST %ei% = ("en" Fem) ;
+LIST %eller% = "eller" ;
+LIST %en% = ("en" Msc) ;
+LIST %en/den/denne% = "en" "denne" "den" ;
+LIST %en/ei/et% = ("en" Msc) ("en" Fem) ("en" Neu) ;
+LIST %en/et% = ("en" Msc) ("en" Neu) ;
+LIST %enda% = "enda" ;
+LIST %enn% = "enn" ;
+LIST %et% = ("en" det) ;
+LIST %etter/fram/opp% = ("etter" Pr) ("fram" Pr) ("frem" Pr) ("opp" Pr) ;
+LIST %faa% = "få" ;
+LIST %fast% = ("fast" A) ;
+LIST %fast%-V = "tjore" "surre" "sette" "klore" "brenne" "binde" ;
+LIST %fatte/kreve/ta% = ("fatte" V) ("kreve" V) ("ta" V) ;
+LIST %flere% = ("mange" A Comp) ;
+LIST %foer% = "før" ;
+LIST %foere% = "føre" ;
+LIST %foerste% = ("første" A) ;
+LIST %for% = "for" ;
+LIST %for%-V = ("fare" V) ;
+LIST %for/altfor% = "for" "altfor" ;
+LIST %for/foer/naar% = "når" "før" "for" ;
+LIST %fra% = "fra" ;
+LIST %fra/for/ut% = "ut" "fra" "for" ;
+LIST %fram/inn/opp% = ("fram" Pr) ("frem" Pr) ("inn" Pr) ("opp" Pr) ;
+LIST %fram/opp/paa% = ("på") ("fram" Pr) ("frem" Pr) ("opp" Pr) ;
+LIST %fullt% = ("full" A Sg Neu Indef) ;
+LIST %fullt/mange% = "mange" ("full" A Sg Neu Indef) ;
+LIST %gaa% = "gå" ;
+LIST %gang% = "gang" ;
+LIST %ganger% = ("gange" Prs) ;
+LIST %gjoere% = "gjøre" ;
+LIST %grad% = ("grad" N Sg) ;
+LIST %grader% = ("grad" N Pl) ;
+LIST %gå% = "gå" ;
+LIST %ha% = "ha" ;
+LIST %ha%-Prs/Prt = ("ha" Prs) ("ha" Prt) ;
+LIST %ha/faa% = "ha" "få" ;
+LIST %hele% = ("hel" A Sg Def) ;
+LIST %helhet% = ("helhet") ;
+LIST %helst% = ("helst" Adv) ;
+LIST %henne% = "henne" ;
+LIST %hoeyre/venstre% = "venstre" "høyre" ;
+LIST %hogge/sage/kappe/fyre% = ("hogge" V) ("sage" V) ("kappe" V) ("fyre" V) ;
+LIST %hundre/tusen% = "tusen" "hundre" ;
+LIST %hundre/tusen/osv% = "tusen" "par" "million" "milliard" "hundre" ;
+LIST %huset% = ("huse" A PrfPrc) ;
+LIST %hva% = "hva" ;
+LIST %hvem% = "hvem" ;
+LIST %hvem/hva% = "hvem" "hva" ;
+
+SETS
+LIST %hver% = "hver" ;
+LIST %hver%-Fem = ("hver" Fem) ;
+LIST %hver%-Msc = ("hver" Msc) ;
+LIST %hver%-Neu = ("hver" Neu) ;
+LIST %hverken/verken% = ("verken") ("verken") ;
+LIST %hvert% = "hver" (Det Qnt Neu) ;
+LIST %hvilken% = "hvilken" ;
+LIST %hvor/hva% = "hvor" "hva" ;
+LIST %hvorfor% = ("hvorfor" Adv) ;
+LIST %i% = ("i" Pr) ;
+LIST %i/aa% = ("I" Prop) ("Å" Prop) ;
+LIST %i/paa% = "på" ("i" Pr) ;
+LIST %ikke% = "ikke" ;
+LIST %ikke/aldri% = "ikke" "aldri" ;
+LIST %ikke/ingen% = "ingen" "ikke" ;
+LIST %ikke/ogsaa% = "også" "ikke" ;
+LIST %imot% = "imot" ;
+LIST %ingen% = "ingen" ;
+LIST %inn% = "inn" ;
+LIST %ja-nei% = "nei" "ja" ;
+LIST %ja-nei-aa% = "å" "nei" "ja" ;
+LIST %jeg% = "jeg" ;
+LIST %jesu/kristi/pauli% = ("Jesu" Clt) ("Kristi" Clt) ("Pauli" Clt) ;
+LIST %kamp/fot/tall% = "tall" "kamp" "fot" ;
+LIST %klokke% = "klokke" ;
+LIST %kort/lang/paa% = "på" "lang" "kort" ;
+LIST %la% = "la" ;
+LIST %langt% = ("lang" A Pos Neu) ;
+LIST %lenge% = ("lenge" A) ;
+LIST %like% = "like" ;
+LIST %med% = "med" ;
+LIST %men% = "men" ;
+LIST %mest/minst% = ("mye" Superl Indef) ("liten" Superl Indef) ;
+LIST %meste% = ("mye" Superl Def) ;
+LIST %meste/minste% = ("mye" Superl Def) ("liten" Superl Def) ;
+LIST %minst% = ("liten" A Superl Indef) ;
+LIST %minste% = ("liten" Superl Def) ;
+LIST %mot% = ("mot" Pr) ;
+LIST %motsatt% = "motsatt" ;
+LIST %mye/lite% = "mye" "litt" "lite" ;
+LIST %naa% = "nå" ;
+LIST %naa/da/her/der% = ("nå" Adv) ("da" Adv) ("her" Pr) ("der" Pr) ;
+LIST %naar% = "når" ;
+LIST %naerpaa% = "nærpå" ;
+LIST %neste% = "neste" ;
+LIST %noe% = "noe" ;
+LIST %noen% = "noen" ;
+LIST %noen%-Neu = ("noen" Neu) ;
+LIST %noen/ingen% = "noen" "ingen" ;
+LIST %noen/noe% = "noen" "noe" ;
+LIST %nok% = "nok" ;
+LIST %nok/til% = "til" "nok" ;
+LIST %oftest% = ("ofte" A Superl) ;
+LIST %og% = "og" ;
+LIST %og/eller% = "og" "eller" ;
+LIST %og/men% = "og" "men" ;
+LIST %om% = "om" ;
+LIST %om/enn/som/hvis% = "som" "om" "hvis" "enn" ;
+LIST %opp% = "opp" ;
+LIST %over% = "over" ;
+LIST %paa% = "på" ;
+LIST %re%-N = ("re" N) ;
+LIST %redd% = ("redd" A) ;
+LIST %rundt% = ("rund" A Pos Sg Neu Indef) ;
+LIST %saa% = "så" ;
+LIST %saa%-Prt = ("se" V Prt) ;
+LIST %saa/for% = "så" "for" ;
+LIST %saa/ganske% = "så" "ganske" ;
+LIST %saa/og/selv% = "så" "sjøl" "selv" "og" ;
+LIST %samme% = "samme" ;
+LIST %samme/neste/ene/eneste/forrige% = ("forrige" det) ("samme" det) ("neste" det) ("eneste" det) ("ene" det) ;
+LIST %samme/neste/ene/eneste/selve/forrige% = ("selve" det) ("forrige" det) ("samme" det) ("neste" det) ("eneste" det) ("ene" det) ;
+LIST %se/hoeres/kjennes% = "se" "kjennes" "høres" ;
+LIST %seg% = ("seg" Pron) ;
+LIST %selv% = "sjøl" "sjæl" "selv" ;
+
+SETS
+LIST %seng% = "seng" ;
+LIST %sett% = ("se" PrfPrc) ;
+LIST %si% = ("sin" det Poss Sg Fem) ;
+LIST %si%-Inf = ("si" Inf) ;
+LIST %siden% = "siden" ;
+LIST %sin% = ("sin" det Poss Sg Msc) ;
+LIST %sine% = ("sin" det Poss Pl) ;
+LIST %sist% = ("sist" Adv) ;
+LIST %siste% = ("sist" Pl) ;
+LIST %siste%/ordenstall = ("sist" Def) ("sist" Pl) <ordenstall> ;
+LIST %sitt% = ("sin" det Poss Sg Neu) ;
+LIST %sjelden% = "sjelden" ;
+LIST %skifte/bytte% = ("skifte" V) ("bytte" V) ;
+LIST %slaa% = ("slå" V) ;
+LIST %slags% = "slags" ;
+LIST %slettes% = ("slette" Pass) ;
+LIST %slik%-Adv = ("slik" Adv) ;
+LIST %slutt% = ("slutt" N Msc) ;
+LIST %som% = "som" ;
+LIST %som%-Pr = ("som" Pr) ;
+LIST %som%-CS = ("som" CS) ;
+LIST %som/at% = "at" ("som" CS) ;
+LIST %som/enn% = "som" "enn" ;
+LIST %som/om% = "som" "om" ;
+LIST %som/om/der% = "som" "om" "der" ;
+LIST %spoerre% = "spørre" ;
+LIST %stein%-Adv = ("stein" Adv) ;
+LIST %stikk% = ("stikk" Adv) ;
+LIST %syvende% = "syvende" "sjuende" ;
+LIST %ta% = "ta" ;
+LIST %til% = "til" ;
+LIST %tiltalte% = ("tiltale" A PrfPrc Sg Def) ;
+LIST %tross% = "tross" ;
+LIST %tvers% = "tvers" ;
+LIST %tvert% = ("tvert" Adv) ;
+LIST %ut% = "ut" ;
+LIST %uten% = "uten" ;
+LIST %vaere% = "være" ;
+LIST %vanlig% = ("vanlig" Sg) ;
+LIST %var% = ("var" A) ("være" Prt) ;
+LIST %ve% = "ve" ;
+LIST %ved% = ("ved" Pr) ;
+LIST %vel% = "vel" ;
+LIST %videre% = ("vid" A Comp) ;
+LIST %viss% = "viss" ;
+LIST %ytterligere% = "ytterligere" ;
+LIST <<< = <<< ;
+LIST <adv> = <adv> ;
+LIST PrfPrc = PrfPrc PrfPrc ; # TT la til PrPtc for gt-kompatibilitet
+LIST <PrsPtc> = i1 i3 i4 PrsPtc ; # ditto
+LIST >>> = >>> ;
+
+LIST Pers = Pers ;
+LIST Pl3 = Pl3 ;
+
+SETS
+
+
+LIST aci = "se" "merke" "la" "kjenne" "høre" "føle" "be" ;
+LIST A = A Pos ;
+LIST A-AdvN-CC = Adv A N CC ;
+LIST A-be = (A Def) (A <PrsPtc>) ;
+LIST A-Sg = (A Sg) (A <PrsPtc>) ;
+LIST A-Fem = (A Fem) (A MF) (A <PrsPtc>) (A Def) ;
+LIST A-Pl = (A Pl) (A <PrsPtc>) ;
+LIST A-gen = (A Clt) ;
+LIST A-komp = (A Comp) ;
+LIST A-Msc = (A Msc) (A MF) (A <PrsPtc>) (A Def) ;
+LIST A-Msc/Fem = (A Msc) (A Fem) (A MF) (A <PrsPtc>) (A Def) ;
+LIST A-Msc/Neu = (A Msc) (A MF) (A Neu) (A <PrsPtc>) (A Def) ;
+LIST A-Neu = (A Neu) (A Def) (A <PrsPtc>) ;
+LIST A-Neu-ub = (A Neu Indef) (A <PrsPtc>) ;
+LIST A-pos = (A Pos) ;
+LIST A-N-CC = A N CC ;
+LIST A-sup = (A Superl) ;
+LIST A-sup-be = (A Superl Def) ;
+LIST A-sup-ub = (A Superl Indef) ;
+LIST A-ub = (A Indef) (A <PrsPtc>) ;
+LIST A-Indef-Sg = (A Sg Indef) (A <PrsPtc>) ;
+LIST A-Indef-Sg/%bare% = "bare" (A Sg Indef) (A <PrsPtc>) ;
+LIST A/Adv = A Adv ;
+LIST A/Adviv = "så" "nå" "hele" "halve" "dette" ("vite" PrfPrc) ("fortsette" PrfPrc) ;
+LIST Adv = Adv <adv> ;
+LIST AdvCC = "verken" "hverken" "enten" "både" (CC <adv>) ;
+LIST adv/A-Neu-ub = Adv <adv> (A Neu Indef) ;
+LIST adverb = Adv <adv> (A Neu Indef) ("nær" Superl Def) ("noen" det Neu) ;
+LIST adverb/komp = Adv <adv> (A Neu Indef) (A Comp) ("nær" Superl Def) ("noen" det Neu) ;
+LIST adverb/komp/Indef-sup = Adv <adv> (A Neu Indef) (A Comp) (A Superl Indef) ("noen" det Neu) ;
+LIST adverb/komp/Indef-sup/PrsPtc = Adv <adv> (A Neu Indef) (A Comp) (A Superl Indef) (A <PrsPtc>) ;
+LIST adverbialN = "øyeblikk" "år" "vinter" "vei" "uke" "torsdag" "tonnkilometer" "tiår" "tirsdag" "time" "tiendelssekund" "tidelssekund" "tid" "søndag" "stykke" "stund" "steg" "sted" "sommer" "skritt" "sjømil" "september" "sekundmeter" "sekund" "påske" "pinse" "periode" "onsdag" "oktober" "november" "noengang" "natt" "nanosekund" "nanometer" "måned" "morgen" "minutt" "millisekund" "millimeter" "mil" "mikrometer" "meter" "mars" "mandag" "mai" "m." "lørdag" "kveld" "kvartmil" "kvadratmillimeter" "kvadratmeter" "kvadratkilometer" "kvadratdesimeter" "kvadratcentimeter" "kubikkmillimeter" "kubikkmeter" "kubikkdesimeter" "kubikkcentimeter" "km" "klokke" "kilometer" "juni" "juli" "jul" "januar" "høst" "hverdag" "hundredelssekund" "helligdag" "helgedag" "halvår" "halvmil" "halvmeter" "gang" "fredag" "formiddag" "februar" "ettermiddag" "døgn" "desimeter" "desember" "dag" "centimeter" "august" "april" <dato> ("liv" Sg Def) ("vår" N) ;
+LIST Acc = Acc ;
+LIST alt = "siden" A Adv V Pr Pron CS IM N Interj det CC <anf> <komma> <ellipse> <kolon> <parentes-beg> <parentes-slutt> <semi> <strek> ;
+LIST anf = <anf> ;
+LIST bare-A = "vedkommende" "ugjort" "tilsvarende" "skrå" "nær" "ny" "middels" "kort" "iført" "halv" "fånyttes" "fri" ;
+LIST Def = Def ;
+LIST Def-det = "hin" "dette" "det" "denne" "den" ;
+LIST Def-Det-Sg = ("hin" Sg) ("denne" Sg) ("dette" Sg) ("den" Sg) ("det" Sg) ("de" Sg) (Det Sg Def) (N Clt) ;
+LIST Def-Det-Sg/Pl = "hin" "dette" "det" "denne" "den" "de" (Det Def) ;
+LIST Def-Sg-Fem-A/komp/sup = (A Sg Def) (A Comp) (A Superl Def) (A <PrsPtc>) ;
+LIST Def-Sg-Fem-N = (N Sg Fem Def) ;
+LIST Def-Sg-Msc-A = (A Sg Def) (A Superl Def) (A <PrsPtc>) ;
+LIST Def-Sg-Msc-A/komp/sup = (A Sg Def) (A Comp) (A Superl Def) (A <PrsPtc>) ;
+LIST Def-Sg-Msc-N = (N Sg Msc Def) ;
+LIST Def-Sg-Msc/Fem-N = (N Sg Msc Def) (N Sg Fem Def) ;
+LIST Def-Sg-Neu-A = (A Sg Def) (A Superl Def) (A <PrsPtc>) ;
+LIST Def-Sg-Neu-A/komp/sup = (A Sg Def) (A Comp) (A Superl Def) (A <PrsPtc>) ;
+LIST Def-Sg-Neu-N = (N Sg Neu Def) ;
+LIST Def-Sg-N = (N Sg Def) ;
+LIST Def-Sg-N/be-Sg-A = (N Sg Def) (A Sg Def) (A <PrsPtc>) ;
+LIST Def-Fem-det = (Det Poss Fem) ("hin" det Fem) ("denne" det Fem) ("den" det Fem) ;
+LIST Def-Pl-N = (N Pl Def) ;
+LIST Def-Pl-N/Pl-A = (N Pl Def) (A Pl) (A <PrsPtc>) ;
+LIST Def-Msc-det = (Det Poss Msc) ("hin" det Msc) ("denne" det Msc) ("den" det Msc) ;
+LIST Def-Neu-det = (Det Poss Neu) ("hin" det Neu) ("dette" det Neu) ("det" det Neu) ;
+LIST Def-N = (N Def) ;
+LIST CLB = CLB ;
+LIST CLB-komma = (CLB <komma>) ;
+LIST CLB-komma/CC = (CLB <komma>) (CLB CC) ;
+LIST CLB-CC = (CLB CC) ;
+LIST CLB/CC-CC = ("og" CC) ("eller" CC) ("men" CC) ;
+LIST dato = <dato> ;
+LIST Dem = Dem ;
+LIST Det = Det ;
+LIST dem/Poss/gen = Dem Poss Clt ;
+LIST det = det ;
+LIST Det-Sg = (Det Sg) ;
+LIST Det-Sg-Neu-halvt = "halv" (Det Sg Neu) ;
+
+SETS
+LIST Det-Sg/Pron-Sg = (Det Sg) (Pron Sg) ;
+LIST Det-etterstilt = (Det Poss) ("selv" det forst) ("sjøl" det forst) ;
+LIST Det-gen = det (N Clt) ;
+LIST Det-Qnt = (Det Qnt) ;
+LIST Det-Msc-Sg = (Det Sg Msc) ;
+LIST Det-Msc-Pl = (Det Pl Msc) ;
+LIST Det-Msc/Fem = (Det Msc) (Det Fem) ;
+LIST Det-Neu-Sg = (Det Sg Neu) ;
+LIST Det-Neu-Sg/Poss/gen = (Det Sg Neu) Poss Clt ;
+LIST Det-Pr-IM-Abe = "siden" det Pr IM (A Def) (A <PrsPtc>) ;
+LIST Det-N = det N ;
+LIST Det/A = det A ;
+LIST Det/A/gen/prop = det A Clt Prop ;
+LIST Det/A/komma/CC = "$," (A Msc) (A Fem) (A MF) (A Pl) (A <PrsPtc>) (A Def) det CC ;
+LIST Det/Adv = det Adv ;
+LIST ditrans = d1 d2 d3 d6 d7 rl6 rl7 rl8 ;
+LIST ellipse = ("$--" <strek>) <ellipse> ;
+LIST Sg = Sg ;
+LIST Sg3 = Sg3 ;
+LIST MF = MF ;
+LIST Sg-Fem-N/tall-N/maalN/tidsN = "år" "uke" "tusen" "trillion" "tonnkilometer" "time" "tiendelssekund" "tidelssekund" "snes" "sjømil" "sekundmeter" "sekund" "prosent" "nanosekund" "nanometer" "måned" "mrd." "minutt" "millisekund" "million" "millimeter" "milliliter" "milligram" "milliard" "mill." "mil" "mikrometer" "meter" "liter" "kvartmil" "kvartliter" "kvadrillion" "kvadratmillimeter" "kvadratmeter" "kvadratkilometer" "kvadratdesimeter" "kvadratcentimeter" "kubikkmillimeter" "kubikkmeter" "kubikkdesimeter" "kubikkcentimeter" "kilometer" "kilogram" "kilo" "hundredelssekund" "hundre" "hektoliter" "hektogram" "halvår" "halvmillion" "halvmil" "halvmeter" "halvliter" "halvkilo" "gram" "døgn" "dusin" "desimeter" "desiliter" "desigram" "dekaliter" "dag" "centimeter" "centiliter" "centigram" "billion" "billiard" (N Sg Fem) ("gang" Pl) ;
+
+
+LIST Sg-N = (N Sg) ;
+LIST f-subj = ("det" Pron) ;
+LIST farger = "turkis" "svart" "rød" "rosa" "oransje" "lilla" "indigo" "hvit" "gul" "grønn" "grå" "fiolett" "blå" ;
+LIST farlige-A = "året" "vite" "vis" "var" "tids" "sige" "se" "mige" "live" "like" "lette" "lage" "helle" "før" "fore" "ete" "eie" "egen" "bar" "annen" "angående" "ale" ;
+LIST farlige-A-N = "venstre" "tunge" "skrå" "skarp" "rett" "ny" "like" "lik" "kvalm" "høy" "helt" "helt" "heller" "gode" "faren" (A Comp) ("visse" N) ("sivil" N) ("absolutt" N) ("konkret" N) ("sett" Neu) ("halv" uboey) ("var" N Indef) ("lit" Sg Def) ("middel" Clt) ("al" Pl Def) ;
+LIST farlige-Pl-N = ("hjelp" Pl Indef) ("lede" Pl Msc Indef) ("led" Pl Msc Indef) ("falle" Pl Msc Indef) ("fall" Pl Msc Indef) ("snus" Pl Msc Indef) ("finn" Pl Indef) ("finne" Pl Indef) ("komme" Pl Indef) ("under" Pl Indef) ("får" Pl) ("ønske" Pl) ("slag" Clt) ("jeg" Pl) ("lo" Pl) ("var" Pl) ("nå" Pl) ("sett" Pl) ("al" Pl Def) ("mot" Pl Indef) ("men" Pl Indef) ("gir" Pl Indef) ;
+LIST farlige-forledd-V = ("kontre" Prt) ("helle" Prs) ("nå" Prs) ("elle" Prs) ("fø" Prs) ("fare" Prt) ("tro" A) ("tiltale" Prt) ;
+LIST farlige-Imp = "vare" "så" "se" "nå" "neie" "mine" "mene" "hanse" "føre" "fore" "ete" "ene" "bedre" ;
+LIST farlige-Inf = "tre" "så" "støtte" "skole" "pose" "nå" "nye" "norske" "neste" "lite" "like" "lekre" "hele" "friske" "fri" "fjerne" "finere" "disse" "dette" "bedre" ("slette" Pass) ;
+LIST farlige-Msc-N = "ville" "ved" "syke" "skrå" "like" "helt" "heller" "eldste" ("ho" Sg Indef Clt) ("å" Sg Indef) ("alt" Sg Indef) ("mens" Sg Indef) ("meget" Sg Indef) ("side" Sg Def) ("lit" Sg Def) ("middel" Clt) ("gode" Sg Indef) ("al" Pl Def) ;
+LIST farlige-Neu-N = "vilt" "venstre" "var" "under" "tre" "skrå" "sett" "selv" "nå" "ny" "mot" "lik" "konkret" "jeg" "høyre" "godt" "gode" "folk" "bak" ("stikk" Adv) ("alt" Indef) ("fort" Indef) ("slag" Clt) ("lo" Pl) ("al" Pl Def) ("middel" Clt) ("men" Sg Indef) ("men" Pl Indef) ;
+LIST farlige-part = "vite" "via" "vekke" "svare" "stole" "spenne" "skjønne" "sale" "renne" "re" "pule" "prime" "ose" "oppta" "omvende" "nære" "nyte" "mige" "make" "lyse" "live" "lite" "lete" "leite" "kontre" "klare" "hete" "helle" "hele" "gråte" "gale" "fortsette" "fore" "ete" "desidere" "brune" "bre" "bene" "bare" "anstrenge" "ale" Clt ;
+LIST farlige-V = ("ansette" V Prt) ("kontre" Prt) ("gange" Prs) ("stede" Prs) ("nå" Prs) ("elle" Prs) ("fø" Prs) ("sige" Prt) ("fare" Prt) ("se" Prt) ("helle" Prs) ("mige" Prt) ("dy" Prs) ("dage" Prs) ("grade" Prs) ("tro" A) ;
+LIST Fem = Fem MF (A Def) ;
+LIST Fem-be = (fem Def) ;
+LIST Fem-det = (Det Fem) ;
+LIST Fem-Sg = (fem Sg) (MF Sg) (A Def) (fem uboey) (N Prop) ;
+LIST Pl = Pl ;
+LIST Pl-A/adverb = (A Pl) (A Neu Indef) (A <PrsPtc>) Adv <adv> ;
+LIST Pl-A/Pl-det = (A Pl) (Det Pl) (A <PrsPtc>) ;
+LIST Pl-A/Pl-Det/Poss/gen = (A Pl) (Det Pl) (A <PrsPtc>) Poss Clt ;
+LIST Pl-be = (Pl Def) ;
+LIST Pl-det = (Det Pl) ;
+LIST Pl-N = (N Pl) ;
+LIST fork = fork ;
+LIST fork/ukjent-ord = fork ukjent ;
+LIST fv = (V Prs) (V Prt) (V Imp) ;
+LIST Clt = Clt ;
+LIST Clt/%slags% = "slags" Clt ;
+LIST grads-Adv = "stor" "mye" "liten" "ille" "god" ;
+LIST hj-V = "være" "ville" "skulle" "måtte" "kunne" "ha" "få" "burde" "bli" ;
+LIST hj-V-iv = ("bli" Inf) ("bli" PrfPrc) ("ha" Inf) ("ha" PrfPrc) ("være" Inf) ("være" PrfPrc) ("få" Inf) ("få" PrfPrc) ("skulle" Inf) ("skulle" PrfPrc) ("kunne" Inf) ("kunne" PrfPrc) ("ville" Inf) ("ville" PrfPrc) ("måtte" Inf) ("måtte" PrfPrc) ("burde" Inf) ("burde" PrfPrc) ;
+LIST hoeflig = hoeflig ;
+LIST høflig = "Deres" "Dem" "De" ;
+LIST Der/AAdv = Der/AAdv ;
+
+SETS
+LIST ikke-A = "siden" Adv V Pr Pron CS IM N Interj det (CLB CC) <anf> <ellipse> (CC <adv>) ;
+LIST ikke-A-N = "siden" Adv V Pr Pron CS CC IM Interj det <<< <ellipse> ;
+LIST ikke-A-V = "siden" N Adv Pr Pron CS CC IM Interj det <<< <ellipse> ;
+LIST ikke-Adv = "siden" "$," V Pr Pron CS CC IM Interj N det <ellipse> (A Msc) (A Fem) (A MF) (A Pl) (A Comp) (A Superl) (A <PrsPtc>) (A Def) ;
+LIST ikke-AdvA =          "siden" ":" V Pr Pron CS IM N Interj det <ellipse> (CLB CC) (CC <adv>) ;
+LIST ikke-AdvA-det =      "siden" ":" V Pr Pron CS IM N Interj <ellipse> (CLB CC) (CC <adv>) ;
+LIST ikke-AdvA-Det-Pron = "siden" ":" V Pr CS IM N Interj <ellipse> (CLB CC) (CC <adv>) ;
+LIST ikke-AdvA-Det-N =    "siden" "<$-->" ":" "$-" "$," <parentes-beg> <parentes-slutt> V Pr Pron CS CC IM Interj <<< <ellipse> ;
+LIST ikke-AdvA-Det/%all%/%mang%/%mange% = "siden" "mange" "mang" "all" ":" V Pr Pron CS IM N Interj <ellipse> (CLB CC) (CC <adv>) ;
+LIST ikke-AdvA-det2 = "siden" ":" V Pr Pron CS IM N Interj <ellipse> ;
+LIST ikke-AdvA-komma = "siden" "$-" <parentes-slutt> V Pr Pron CS IM N Interj det <ellipse> ("$," CLB) (CLB CC) (CC <adv>) ;
+LIST ikke-AdvA-CC = "siden" ":" V Pr Pron CS IM N Interj det <ellipse> ;
+LIST ikke-AdvA-Qnt = "siden" V Pr Pron CS CC IM N Interj <ellipse> (Det Dem) (Det Poss) (Det forst) ;
+LIST ikke-AdvA-Pr = "$," det V Pron CS CC IM Interj N <ellipse> ;
+LIST ikke-AdvA-Pr-det = "$," V Pron CS CC IM Interj N <ellipse> ;
+LIST ikke-AdvA-N = "siden" "<$-->" ":" "$-" "$," <parentes-beg> <parentes-slutt> V Pr Pron CS CC IM Interj det <<< <ellipse> ;
+LIST ikke-AdvA-N-Det-Pr = "$-" "$," V Pron CS CC IM Interj <<< <ellipse> ;
+LIST ikke-AdvA-N-Pron-det = CC Pr CS IM Interj <ellipse> (V Prs) (V Prt) (Det Dem) (N Clt) ("$," CLB) ;
+LIST ikke-AdvA-N-Pron-CC-det = "siden" Pr CS IM Interj <ellipse> (V Prs) (V Prt) (Det Dem) (N Clt) ("$," CLB) (CLB CC) (CC <adv>) ;
+LIST ikke-AdvA-N-Pron-CC-Det-CS2 = "siden" Pr IM Interj <ellipse> (V Prs) (V Prt) (V Inf) (V Pass) (V PrfPrc) ("$," CLB) (CLB CC) (CC <adv>) ;
+LIST ikke-AdvA-N-Pron-CC-det2 = "siden" Pr CS IM Interj <ellipse> (V Prs) (V Prt) (V Inf) (V Pass) (V PrfPrc) ("$," CLB) (CLB CC) (CC <adv>) ;
+LIST ikke-AdvA-N-Pron-CC-det2-Pr = CS IM Interj <ellipse> (V Prs) (V Prt) (V Inf) (V Pass) (V PrfPrc) ("$," CLB) (CLB CC) (CC <adv>) ;
+LIST ikke-AdvA-Nmgen-CC-detmdem-Pr = Pron CS IM Interj <ellipse> (V Prs) (V Prt) ("$," CLB) (CLB CC) (CC <adv>) ;
+LIST ikke-AdvA-Nmgen-Pron-detmdem-Pr = CS IM Interj CC <ellipse> (V Prs) (V Prt) ("$," CLB) ;
+LIST ikke-AdvA-Nmgen-Pron-CC-detmdem-Pr = CS IM Interj <ellipse> (V Prs) (V Prt) ("$," CLB) (CLB CC) (CC <adv>) ;
+LIST ikke-AdvA-Nmgen-Pron-CC-detmdem-Pr2 = CS IM Interj <ellipse> V ("$," CLB) (CLB CC) (CC <adv>) ;
+LIST ikke-Advkomp-Indef-sup = "siden" "$," V Pr Pron CS CC IM Interj N det <ellipse> (A Msc) (A Fem) (A MF) (A Pl) (A Superl Def) (A <PrsPtc>) (A Def) ;
+LIST ikke-AdvPr = "siden" "$," V Pron CS CC IM Interj N det <ellipse> (A Msc) (A Fem) (A MF) (A Pl) (A Comp) (A Superl) (A <PrsPtc>) (A Def) ;
+LIST ikke-AdvN-Pron-CC = "siden" det V Pr CS Interj <ellipse> (Det Dem) (A MF) (A Msc) (A Fem) (A MF) (A Pl) (A Def) (A <PrsPtc>) (N Clt) ("$," CLB) (CLB CC) (CC <adv>) ;
+LIST ikke-AdvN-Pron-CC-det = "siden" V Pr CS Interj <ellipse> (Det Dem) (A <PrsPtc>) (A MF) (A Msc) (A Fem) (A MF) (A Pl) (A Def) (N Clt) ("$," CLB) (CLB CC) (CC <adv>) ;
+LIST ikke-AdvN-Pron-CC-Det-V = "siden" Pr CS Interj <ellipse> (Det Dem) (A MF) (A Msc) (A Fem) (A MF) (A Pl) (A Def) (A <PrsPtc>) (N Clt) ("$," CLB) (CLB CC) (CC <adv>) ;
+LIST ikke-AdvV = "siden" "$," Pr Pron CS CC IM Interj N det <ellipse> (A Msc) (A Fem) (A Pl) (A MF) (A Comp) (A Superl) (A <PrsPtc>) (A Def) ;
+LIST ikke-det = "siden" V Pr Pron CS CC IM N Interj A Adv ;
+LIST ikke-Det-Pr = "siden" V Pr Pron CS CC IM N Interj A Adv ;
+LIST ABBR = ABBR ;
+
+SETS
+LIST ikke-Pr = CS Adv A V Pron IM N Interj det (CLB CC) <anf> <ellipse> ;
+LIST ikke-Pr-CS = Adv A V Pron IM N Interj det (CLB CC) <anf> <ellipse> ;
+LIST ikke-Prs-Prt = "siden" det Pr Pron CS CC IM N Interj A Adv Inf PrfPrc ;
+LIST ikke-Refl = n n1 i1 i2 i3 i4 tr1 tr2 tr3 tr4 tr5 tr6 tr7 tr8 tr9 tr10 tr11 tr12 tr12/til tr13 tr13/til tr14 tr15 tr16 tr17 tr18 tr19 tr20 tr20/til tr21 tr21/til tr22 tr22/til tr23 d1 d2 d3 d4 d5 d6 d7 d8 d9 pr1 pr2 pr3 pr4 pr5 pr6 pr7 pr8 pr9 pr10 pr11 pr12 pr13 pa pa/til pa1 pa1/til pa1refl4 pa2 pa2/til pa3 pa3/til pa4 pa4/til pa5 pa5 pa5/til pa6 pa7 a2 a6 a7 a8 a9 a10 a11 a13 a14 a15 a16 a17 <aux1/Inf> <aux1/Infinitiv> <aux1/perf_part> k1 k2 ;
+LIST ikke-N = "siden" "$-" "$," V Pr Pron CS CC IM det Interj A Adv ;
+LIST ikke-N-A-Det-Adv = "siden" "$-" "$," Pron (N Clt) V Pr CS CC IM Interj ;
+LIST ikke-N-A-Det-Pron = "siden" "$-" "$," Adv V Pr CS CC IM Interj ;
+LIST ikke-N-A-Det-Pron-Adv = "siden" "$-" "$," (N Clt) V Pr CS CC IM Interj ;
+
+SETS
+LIST ikke-N-Pron = "siden" "$-" "$," V Pr CS CC IM det Interj A Adv ;
+LIST ikke-N-V = "siden" "$-" "$," Pr Pron CS CC IM det Interj A Adv ;
+LIST ikke-tall = "somme" "samtlige" "noen" "ingen" "hver" "enhver" "begge" "all" ;
+LIST ikke-tr1/tr4-10/tr14/dtr1-9/refl/pr1/pr3-10/adv2/adv6-11/adv13-14/kaus = tr2 tr3 tr11 tr12 tr12/til tr13 tr13/til tr15 tr16 tr17 tr18 tr19 tr20 tr20/til tr21 tr21/til tr22 tr22/til tr23 t n n1 i1 i2 i3 i4 pr2 pr11 pr12 pr13 a1 a3 a4 a5 a12 a15 a16 a17 pa pa/til pa1 pa1/til pa1 refl4 pa2 pa2/til pa3 pa3/til pa4 pa4/til pa5 pa5 pa5/til pa6 pa7 pa8 <aux1/Inf> <aux1/Infinitiv> <aux1/perf_part> ;
+LIST ikke-V = "siden" det Pr Pron CS CC IM N Interj A Adv ;
+LIST Imp = Imp ;
+LIST Inf = Inf ;
+LIST inf/PrfPrc = (V Inf) (V PrfPrc) ;
+LIST infmerke = IM ;
+
+SETS
+LIST Interj = Interj ;
+LIST iv = (V Inf) (V PrfPrc) ;
+
+LIST kolon = (":" CLB) ;
+LIST komma = "$," ;
+LIST komma-Interj = "$," Interj ;
+
+SETS
+LIST komma/CC = "$," CC ;
+LIST komma/CC/strek = "$," <strek> CC ;
+LIST komma/setn-slutt = "$," <<< ;
+LIST komma/strek = "$," <strek> ;
+LIST Comp = Comp ;
+LIST CC = CC ;
+LIST CC-<adv> = (CC <adv>) ;
+LIST CC/Pron = CC (Pron Pers) ;
+LIST kop = "være" "virke" "synes" "hete" "bli" ("kalle" Pass) ;
+LIST kop-fv = ("være" Prs) ("bli" Prs) ("hete" Prs) ("synes" Prs) ("virke" Prs) ("kalle" Prs Pass) ("være" Prt) ("bli" Prt) ("hete" Prt) ("synes" Prt) ("virke" Prt) ("kalle" Prt Pass) ;
+LIST Qnt = Qnt ;
+LIST Qnt-med-flere = "mange" "halv" "flere" (Det Qnt) ("adskillig" Pl) ;
+
+SETS
+
+LIST m-hj-V = ("få" V) ("skulle" V) ("kunne" V) ("ville" V) ("måtte" V) ("burde" V) ;
+LIST m-hj-V-fv = ("få" Prs) ("skulle" Prs) ("kunne" Prs) ("ville" Prs) ("måtte" Prs) ("burde" Prs) ("skulle" Prt) ("kunne" Prt) ("ville" Prt) ("måtte" Prt) ("burde" Prt) ("få" Prt) ;
+LIST m-hj-V-perfpart = ("skulle" PrfPrc) ("kunne" PrfPrc) ("ville" PrfPrc) ("måtte" PrfPrc) ("burde" PrfPrc) ("få" PrfPrc) ;
+LIST m-hj-V-Prt = ("skulle" Prt) ("kunne" Prt) ("ville" Prt) ("måtte" Prt) ("burde" Prt) ("få" Prt) ;
+LIST Msc = Msc MF (A Def) ;
+LIST Msc-be = (Msc Def) ;
+LIST Msc-det = (Det Msc) ;
+LIST Msc-Sg = (Sg Msc) (MF Sg) (A Def) (Msc uboey) (N Prop) ;
+LIST Msc-Sg-ub = (Sg Msc Indef) (Msc uboey) (N Prop) (Msc Def Clt) ;
+LIST Msc/Fem = Msc Fem MF (A Def) (A <PrsPtc>) ;
+LIST mest-sanns-A-istf-N = "ville" "venstre" "stille" "snille" "myke" "mjuke" "klare" "høyre" "høgre" "flott" ;
+LIST mest-sanns-N-istf-A = "året" "skyld" "lo" "hull" "faren" ("skygg" Def) ("folke" PrfPrc) ("live" PrfPrc) ("kute" A PrfPrc) ;
+LIST mest-sanns-V-istf-N = "temmer" "tapper" "suger" "strever" "strekker" "stiller" "stikker" "slukker" "koker" "hogger" "binder" ;
+LIST Neu = Neu ;
+LIST Neu-be = (Neu Def) ;
+LIST Neu-det = (Det Neu) ;
+LIST Neu-Sg = (Sg Neu) (A bu) (Neu uboey) (N Prop) ;
+LIST Neu-Sg-A = (A Sg Neu) (A Def) (A <PrsPtc>) ;
+LIST Nom = (N) (A) (Pron) (Det) ;
+LIST Nom-Sg = (N Sg) ("all" Sg) ("De" Nom) ("han" Nom) ("jeg" Nom) ("hun" Nom) ("du" Nom) ("den" Pron) ("denne" Pron) ("det" Pron) ("dette" Pron) ("man" Pron) ;
+LIST Nom-Fem-Sg = (N Sg Fem) ("all" det Fem) ("jeg" Nom) ("hun" Nom) ("du" Nom) ("den" Pron) ("denne" Pron) ;
+LIST Nom-Pl = "vi" "disse" "dere" "de" (N Pl) ("all" det Pl) ;
+LIST Nom-Msc-Sg = (N Sg Msc) ("all" det Msc) ("De" Nom) ("han" Nom) ("jeg" Nom) ("hun" Nom) ("du" Nom) ("man" Pron) ("den" Pron) ("denne" Pron) ;
+LIST Nom-Neu-Sg = (N Sg Neu) ("all" det Neu) ("det" Pron) ("dette" Pron) ;
+LIST Nom-uten-Pron = N A det ;
+LIST Nom/akk-Pron = "jeg" "han" "du" "dere" ;
+LIST Nom/at = ("at" CS) (N) (A) (Pron) (Det) ;
+LIST Nom/Pr = (Pr) (N) (A) (Pron) (Det) ;
+LIST Nom/som = ("som" CS) (N) (A) (Pron) (Det) ;
+LIST Nominativ = Nom ;
+LIST npu-V = "trenge" "orke" "klare" "gidde" "behøve" ;
+LIST nr2-det = "sånn" "sådan" "slik" "samme" "noe" "neste" "hver" "halvannen" "forrige" "eneste" "eigen" "egen" "annen" (Det Qnt Pl) ("ene" det) ;
+LIST nr2-Det-Fem-be = ("noe" Fem) ("ene" Def) ("eneste" Def) ("samme" Def) ("forrige" Def) ("neste" Def) ("annen" Def) ("egen" Def) ("eigen" Def) ;
+LIST nr2-Det-Fem-ub = ("noe" Fem) ("annen" Fem Indef) ("eneste" Def) ("slik" Fem) ("sånn" Fem) ("sådan" Fem) ("egen" Fem Indef) ("egen" MF Indef) ("eigen" Fem Indef) ("halvannen" Fem) ("hver" det Fem) ;
+LIST nr2-Det-Pl = (Det Qnt Pl) ("eneste" Def) ("samme" Def) ("forrige" Def) ("neste" Def) ("annen" Pl) ("slik" Pl) ("sånn" Pl) ("sådan" Pl) ("egen" Pl) ("eigen" Pl) ;
+LIST nr2-Det-Msc-be = ("noe" Msc) ("ene" Def) ("eneste" Def) ("samme" Def) ("forrige" Def) ("neste" Def) ("annen" Def) ("egen" Def) ("eigen" Def) ;
+LIST nr2-Det-Msc-ub = ("noe" Msc) ("annen" Msc Indef) ("eneste" Def) ("slik" Msc) ("sånn" Msc) ("sådan" Msc) ("egen" MF Indef) ("eigen" Msc Indef) ("halvannen" Msc) ("hver" det Msc) ;
+LIST nr2-Det-Neu-be = ("noe" Neu) ("ene" Def) ("eneste" Def) ("samme" Def) ("forrige" Def) ("neste" Def) ("annen" Def) ("egen" Neu Def) ("eigen" Neu Def) ;
+LIST nr2-Det-Neu-ub = ("noe" Neu) ("annen" Neu Indef) ("eneste" Def) ("slik" Neu) ("sånn" Neu) ("sådan" Neu) ("egen" Neu Indef) ("eigen" Neu Indef) ("halvannen" Neu) ("hver" det Neu) ;
+LIST nr2-Det-u-Pl = "sånn" "sådan" "slik" "samme" "neste" "hver" "halvannen" "forrige" "eneste" "eigen" "egen" "annen" ("ene" det) ;
+LIST objpred-Pron-V = "ønske" "spise" "snakke" "si" "se" "oppleve" "male" "lage" "kjenne" "kalle" "høre" "holde" "gjøre" "føle" "drikke" ;
+LIST objpred-V = "ønske" "male" "lage" "kalle" "holde" "gjøre" ;
+LIST orden = ("ene" det Qnt) <ordenstall> ;
+LIST overskrift = <overskrift> ;
+LIST p-hj-V = "være" "ha" "få" "bli" ;
+LIST paa = "på" ;
+LIST parentes = <parentes-beg> <parentes-slutt> ;
+LIST parentes-beg = <parentes-beg> ;
+LIST parentes-slutt = <parentes-slutt> ;
+LIST Pass = (V Pass) ;
+LIST perf-gen = (A PrfPrc Clt) (PrfPrc Pass) ;
+LIST PrfPrc/PrfPrc = PrfPrc PrfPrc ;
+LIST PrfPrc/Inf = (V PrfPrc) (V Inf) ;
+LIST Interr = Interr ;
+
+
+SETS
+LIST periode-beg/CLB-CC = >>> (CC CLB) ;
+LIST periode-beg/CLB/strek = >>> CLB <strek> ;
+LIST periode-beg/komma/CC/strek = >>> <komma> CC <strek> ;
+LIST periode-beg/CC-CLB = >>> (CLB CC) ;
+LIST periode-beg/CS = >>> CS ;
+LIST periode-slutt/CC-CLB = <<< (CLB CC) ;
+LIST Pos-be-Sg = (A Pos Sg Def) ;
+LIST Pos-be-Pl = (A Pos Pl) ;
+LIST Pos-Indef-Sg = (A Pos Sg Indef) ;
+LIST Pos-Indef-Sg-Msc/Fem = (A Pos MF Sg Indef) ;
+LIST Pos-Indef-Sg-Neu = (A Pos Sg Neu Indef) ;
+LIST Pos-Indef-Pl = (A Pos Pl) ;
+LIST Poss = Poss ;
+LIST Poss-det = (Det Poss) ;
+LIST Poss-Det-Neu = (Det Poss Neu) ;
+LIST Poss/gen = Poss Clt ;
+LIST predik3/5-7 = pr3 pr5 pr6 pr7 ;
+LIST premod-N/prop = "tonnkilometer" "tallerken" "snes" "slurk" "sjømil" "sekundmeter" "prosent" "porsjon" "neve" "nanometer" "millimeter" "milliliter" "milligram" "mil" "mikrometer" "meter" "mengde" "liter" "lass" "kvartmil" "kvartliter" "kvadratmillimeter" "kvadratmeter" "kvadratkilometer" "kvadratdesimeter" "kvadratcentimeter" "kubikkmillimeter" "kubikkmeter" "kubikkdesimeter" "kubikkcentimeter" "kopp" "klunk" "kilometer" "kilogram" "kilo" "håndfull" "hektoliter" "hektogram" "handfull" "halvmil" "halvmeter" "halvliter" "halvkilo" "gram" "glass" "fåtall" "dusin" "desimeter" "desiliter" "desigram" "del" "dekaliter" "centimeter" "centiliter" "centigram" "bit" "anelse" Prop ("gang" Pl) ;
+LIST Pr = Pr ;
+LIST Pr-intrans = "vekke" "utenfra" "underveis" "inne" "imot" "iblant" "iblandt" "hjemme" "hit" "herifra" "herfra" "her" "heime" "frem" "fram" "etterpå" "dit" "derifra" "derfra" "der" ;
+LIST Pr-intrans/Adv = "vekke" "utenfra" "underveis" "inne" "iblant" "iblandt" "hjemme" "hit" "herifra" "herfra" "her" "heime" "frem" "fram" "etterpå" "dit" "derifra" "derfra" "der" Adv ;
+
+SETS
+LIST Pr-tall = "siden" Pr (Det Qnt) ;
+LIST Pr/@Adv = @Adv Pr ;
+LIST Pr/Adv = "siden" Pr Adv (A <adv>) (A Sg Neu Indef) ;
+LIST Pr/Advu-A = "siden" Pr Adv <adv> ;
+LIST Pr/komma = Pr ("$," <komma>) ;
+LIST Prs = Prs ;
+LIST Ind = Ind ;
+LIST PrsPtc = (A <PrsPtc>) ;
+LIST Prs/Prt = (V Prs) (V Prt) ;
+LIST Prs/Prt/adverb = Adv <adv> (V Prs) (V Prt) (A Neu Indef) ("noen" det Neu) ;
+LIST Prsent-ub = "et" "en" "ei" (N Indef) ;
+LIST Prsent-V = "være" "stå" "ligge" "komme" "henge" ;
+LIST Prt = Prt ;
+LIST Pron = Pron ;
+LIST Pron-akk = "seg" (Pron Pers Acc) ;
+LIST Pron-akk-Pl = ("vi" Acc) ("de" Acc) ("dere" Acc) ("disse" Pron) ;
+LIST Pron-akk-Msc/Fem = ("De" Acc) ("han" Acc) ("jeg" Acc) ("hun" Acc) ("du" Acc) ("den" Pron) ("denne" Pron) ;
+LIST Pron-akk-mfn/Pl = "seg" ("De" Acc) ("han" Acc) ("jeg" Acc) ("hun" Acc) ("du" Acc) ("den" Pron) ("denne" Pron) ("vi" Acc) ("de" Acc) ("dere" Acc) ("de" Acc) ("disse" Pron) ("det" Pron) ("dette" Pron) ;
+LIST Pron-Neu = ("det" Pron) ("dette" Pron) ;
+LIST Pron-nom = (Pron Pers Nom) ;
+LIST Pron-nom/%seg% = (Pron Pers Nom) ;
+LIST Pron-pers = (Pron Pers) ;
+LIST Pron-r = "seg" "hverandre" "hinannen" ;
+LIST Prop = Prop ;
+LIST CmpS = CmpS ;
+
+SETS
+
+LIST Prop-Det-Sg = ("Det" N Prop) ("Den" N Prop) ;
+
+LIST Refl = rl1 rl2 rl3 rl4 rl5 rl6 rl7 rl8 rl9 rl10 rl11 rl12 rl13 rl14 rl15 rl16 rl17 rl18 rl19 rl20 ;
+LIST rel-Pron = "som" ;
+
+LIST retning = "øst" "vest" "syd" "nord" "aust" ;
+LIST romertall = <romertall> ;
+
+
+SETS
+
+LIST s-V = <s-V> ;
+LIST samset = samset ;
+LIST sanseV = "se" "merke" "la" "kjenne" "høre" "føle" "be" ;
+LIST CS = "hvor" "hva" CS ;
+LIST CS-ren = CS ;
+LIST CS/CC = CS CC ;
+
+SETS
+LIST setn-gr = "hvorledes" "hvorfor" "hvordan" "hvor" "hva" "$--" "$-" CS >>> <<< (":" CLB) ("$\;" CLB) (CLB CC) (CLB <komma>) ;
+LIST setn-gr-u-komma = "hvorledes" "hvorfor" "hvordan" "hvor" "hva" "$--" "$-" CS >>> <<< (":" CLB) ("$\;" CLB) (CLB CC) ;
+LIST setn-gr-u-CS = "hvorledes" "hvorfor" "hvordan" "hvor" "hva" "$--" "$-" >>> <<< (":" CLB) ("$\;" CLB) (CLB CC) (CLB <komma>) ;
+LIST setn-gr-u-strek = "hvorledes" "hvorfor" "hvordan" "hvor" "hva" CS @CS >>> <<< (":" CLB) ("$\;" CLB) (CLB CC) (CLB <komma>) ;
+LIST setn-gr/IM = "hvorledes" "hvorfor" "hvordan" "hvor" "hva" "$--" "$-" IM CS @CS >>> <<< (":" CLB) ("$\;" CLB) (CLB CC) (CLB <komma>) ;
+LIST setn-gr/parentes-beg = "hvorledes" "hvorfor" "hvordan" "hvor" "hva" "$--" "$-" <parentes-beg> CS @CS >>> <<< (":" CLB) ("$\;" CLB) (CLB CC) (CLB <komma>) ;
+LIST setn-gr/V = "hvorledes" "hvorfor" "hvordan" "hvor" "hva" "$--" "$-" V CS @CS >>> <<< (":" CLB) ("$\;" CLB) (CLB CC) (CLB <komma>) ;
+
+SETS
+LIST setningsAdv = "øyensynlig" "òg" "visstnok" "visselig" "ventelig" "vanligvis" "unektelig" "uheldigvis" "tydeligvis" "trolig" "tilfeldigvis" "sogar" "sluttelig" "simpelthen" "sannsynligvis" "sannelig" "saktens" "rimeligvis" "riktignok" "også" "ofte" "nødvendigvis" "nesten" "neppe" "nemlig" "naturligvis" "muligvis" "muligens" "lykkeligvis" "liksom" "klokelig" "kanskje" "jo" "jamvel" "jammen" "især" "imidlertid" "ikke" "heldigvis" "gudskjelov" "gledeligvis" "følgelig" "fortrinnsvis" "forresten" "fornuftigvis" "formodentlig" "formelig" "forhåpentligvis" "ellers" "eksempelvis" "dog" "dessverre" "dessuten" "beklageligvis" "bare" "antakelig" "antagelig" "altså" "alltid" "aldri" ("kan" Adv) ("hende" Adv) ("nok" Adv) ("nå" Adv) ("så" Adv) ("da" Adv) ;
+LIST sier-V = "tilføye" "tenke" "svare" "sukke" "spørre" "skrive" "si" "rope" "mumle" "mene" "hyle" "hviske" "fortsette" "fortelle" "anta" "advare" ;
+LIST som/komma/og = "$," ("og" CC) ("som" CS) ;
+LIST sp = sp ;
+LIST spoerreAdv = "hvorledes" "hvorfor" "hvordan" "hvor" "hva" ;
+
+SETS
+LIST spraak = "tysk" "svensk" "spansk" "portugisisk" "nynorsk" "norsk" "keltisk" "italiensk" "fransk" "finsk" "engelsk" "dansk" "bosnisk" "amerikansk" "samisk" "nordsamisk" "sørsamisk" "lulesamisk" "enaresamisk" "kildinsamisk" "umesamisk" "pitesamisk" "sjøsamisk" "finsk" "estisk" ;
+LIST strek = <strek> ;
+LIST strek/parentes = <strek> <parentes-beg> <parentes-slutt> ;
+LIST N = N ;
+LIST N-appell = (N appell) ;
+LIST N-Sg/komma/CC = (N Sg) ("$,") CC ;
+LIST N-Fem = (N Fem) ;
+LIST N-fl/komma/CC = (N Pl) ("$,") CC ;
+LIST N-gen = (N Clt) ;
+LIST N-Msc = (N Msc) ;
+LIST N-Msc-Pl = (N Pl Msc) ;
+LIST N-Msc/Fem = (N Msc) (N Fem) ;
+LIST N-Msc/Fem-Sg = (N Sg Msc) (N Sg Fem) ;
+LIST N-Msc/Fem-Sg-ub = (N Sg Msc Indef) (N Sg Fem Indef) ;
+LIST N-Neu = (N Neu) ;
+LIST N-Neu-Sg = (N Sg Neu) ;
+LIST N-prop = (N Prop) ;
+LIST N-ub = (N Indef) ;
+LIST N-uboey = (N uboey) ;
+LIST N/A = N A ;
+LIST N/A-Sg-be = (N Sg Def) (A Sg Def) (A <PrsPtc>) ;
+LIST N/A-Pl = (N Pl) (A Pl) (A <PrsPtc>) ;
+LIST N/A-gen = (A Clt) (N Clt) ;
+LIST N/A-pos = N (A Pos) ;
+LIST N/A/Adv = N A Adv ;
+LIST N/A/Det-Qnt-%av% = N A ("av" Pr) (Det Qnt) ;
+LIST N/A/nr2-det = "sånn" "sådan" "slik" "samme" "noe" "neste" "hver" "halvannen" "forrige" "eneste" "eigen" "egen" "annen" N A (Det Qnt Pl) ("ene" det) ;
+LIST N/A/Pron/det = N A Pron det ;
+LIST N/A/Pron/Det/CC = N A Pron det CC ;
+LIST N/Pron = N Pron ;
+LIST N/Pron/%all% = N Pron ("all" det Qnt) ;
+LIST N/Pron/%all%/%mang%/%mange% = N Pron ("all" det Qnt) ("mang" det) ("mange" det) ;
+LIST N/Pron/Pl-A/%all%/%mang%/%mange% = N Pron (A Pl) (A <PrsPtc>) ("all" det Qnt) ("mang" det) ("mange" A) ;
+LIST N/Pron/Pr = N Pron Pr ;
+LIST PUNCT = PUNCT ;
+LIST Superl = Superl ;
+LIST tall = "1" (Det Qnt Pl) ("en" det Qnt) ("én" det Qnt) ;
+LIST tall-Pl = (Det Qnt Pl) ;
+LIST tall-N = "tusen" "trillion" "titusen" "mrd." "million" "milliard" "mill." "kvadrillion" "hundre" "halvmillion" "billion" "billiard" ;
+LIST tegnsetting = <komma> <ellipse> <kolon> <parentes-beg> <parentes-slutt> <semi> <strek> ;
+LIST tittel = <tittel> @tittel ;
+LIST tr1/tr4-10/tr14/dtr1-9/refl/pr1/pr3-10/adv2/adv6-11/adv13-14/kaus = tr1 tr4 tr5 tr6 tr7 tr8 tr9 tr10 tr14 d1 d2 d3 d4 d5 d6 d7 d8 d9 rl1 rl2 rl3 rl4 rl5 rl6 rl7 rl8 rl9 rl10 rl11 rl12 rl13 rl14 rl15 rl16 rl17 rl18 rl19 rl20 pr1 pr3 pr4 pr5 pr6 pr7 pr8 pr9 pr10 a2 a6 a7 a8 a9 a10 a11 a13 a14 k1 k2 ;
+LIST trans12/til = tr12/til ;
+LIST trans2 = tr2 tr18 ;
+LIST Indef = Indef ;
+LIST Indef-det = ("en" det) ("noen" det) ("ingen" det) ;
+LIST Indef-Sg = (ub Sg) (ent Indef) ;
+LIST Indef-Sg-Fem-A = (A Sg Fem Indef) (A MF Sg Indef) (A <PrsPtc>) ;
+LIST Indef-Sg-Fem-A/adverb = (A Sg Fem Indef) (A MF Sg Indef) (A Indef Neu) (A <PrsPtc>) Adv <adv> ;
+LIST Indef-Sg-Fem-A/komp = (A Sg Fem Indef) (A MF Sg Indef) (A <PrsPtc>) (A Comp) ;
+LIST Indef-Sg-Fem-N = (N Sg Fem Indef) ;
+LIST Indef-Sg-Msc-A = (A Sg Msc Indef) (A MF Sg Indef) (A <PrsPtc>) ;
+LIST Indef-Sg-Msc-A/adverb = (A Sg Msc Indef) (A MF Sg Indef) (A Indef Neu) Adv <adv> (A <PrsPtc>) ;
+LIST Indef-Sg-Msc-A/komp = (A Sg Msc Indef) (A MF Sg Indef) (A <PrsPtc>) (A Comp) ;
+LIST Indef-Sg-Msc-N = (N Sg Msc Indef) ;
+LIST Indef-Sg-Msc/Fem-A = (A Sg Msc Indef) (A Sg Fem Indef) (A MF Sg Indef) (A <PrsPtc>) ;
+LIST Indef-Sg-Msc/Fem-det = ("én" det Sg Msc) ("en" det Sg Msc) ("noen" det Sg Msc) ("ingen" det Sg Msc) ("en" det Sg Fem) ("noen" det Sg Fem) ("ingen" det Sg Fem) ;
+LIST Indef-Sg-Msc/Fem-N = (N Sg Msc Indef) (N Sg Fem Indef) (N Sg Msc Indef Clt) (N Sg Fem Indef Clt) ;
+LIST Indef-Sg-Neu-A = (A Sg Neu Indef) (A <PrsPtc>) ;
+LIST Indef-Sg-Neu-A/komp = (A Sg Neu Indef) (A Comp) (A <PrsPtc>) ;
+LIST Indef-Sg-Neu-N = (N Sg Neu Indef) ;
+LIST Indef-Sg-N = (N Sg Indef) ;
+LIST Indef-Fem-det = ("en" det Fem) ("noen" det Fem) ("ingen" det Fem) ;
+LIST Indef-Pl-Neu-N = (N Pl Neu Indef) ;
+LIST Indef-Pl-N = (N Pl Indef) ;
+
+LIST Indef-Msc-det = ("én" det Msc) ("en" det Msc) ("noen" det Msc) ("ingen" det Msc) ;
+LIST Indef-Msc/Fem-det = ("én" det Msc) ("en" det Msc) ("noen" det Msc) ("ingen" det Msc) ("en" det Fem) ("noen" det Fem) ("ingen" det Fem) ;
+LIST Indef-Neu-det = ("en" det Neu) ("noen" det Neu) ("ingen" det Neu) ;
+LIST Indef-slektsterm = ("mor" Sg Indef) ("far" Sg Indef) ("syster" Sg Indef) ("søster" Sg Indef) ("bror" Sg Indef) ("datter" Sg Indef) ("bestemor" Sg Indef) ("bestefar" Sg Indef) ("farfar" Sg Indef) ("farmor" Sg Indef) ("mormor" Sg Indef) ("morfar" Sg Indef) ;
+LIST Indef-N = (N Indef) ;
+
+LIST utfyll-CS = "siden" "når" "før" "der" "da" ;
+LIST utrop-t = "!" ;
+LIST veldig-farlige-part = "nære" "nyte" "mige" "make" "lite" "hele" "gale" "fore" "ete" "brune" "bene" "bare" "ale" Clt ;
+LIST veldig-farlige-V = ("stede" Prs) ("dy" Prs) ("grade" Prs) ;
+LIST V = V ;
+LIST V-u-Imp = (V Prs) (V Prt) (V PrfPrc) (V Inf) ;
+LIST Nynorsk = Nynorsk ;
+LIST X = X ;
+LIST Pos = Pos ;
+LIST Num = Num ;
+
+# Dollar sets
+
+LIST DEF = Def Indef ;
+LIST NUM = Sg Pl ;
+LIST GEN = Msc Fem Neu ;
+
+LIST NOT-Neu = Msc Fem MF ;
+LIST NOT-Fem = Msc Neu ;
+LIST NOT-Msc = Fem Neu ;
+LIST Sem/Mal = Mal Sem/Mal ;
+LIST Sem/Fem = Fem Sem/Fem ;
+LIST Sem/Sur = Sur Sem/Sur; 
+LIST Sem/Plc = Sem/Plc ;
+
+# Complementary sets
+
+LIST WORD = N A Adv V CS CC Interj Pcle Pr IM Det Pron Interj ;
+
+SET PRE-N =  A | Det | (Def Clt) | (Indef Clt) | Num | (Det Poss) | CC ; # Det???
+
+LIST COMMA = (",") ;
+SET MARK =  COMMA | ("\\") | ("\;") ; #"
+SET WORDMARK = WORD | MARK ;
+
+SET NOT-PRE-N = WORDMARK - PRE-N ;
+
+LIST PUNCT-LEFT = (PUNCT LEFT) ;
+LIST PUNCT-RIGHT = (PUNCT RIGHT) ;
+SET PRE-APP   = COMMA OR PUNCT-LEFT ;
+
+
+SET NOT-ADV = WORDMARK - Adv - CC ; # adding CC
+SET NOT-Prop = WORDMARK - Prop - CC ;
+SET LEX-ADV = Adv - (A*) ;
+SET NOT-A = WORDMARK - A ;
+SET NOT-CC = WORDMARK - CC ;
+SET NOUNADJ = N | A ;
+
+SET NP-MEMBER = PRE-N | N | Pron ;
+
+LIST TIME-N = "søndag" ;
+
+#!! The set __NOT-NPMOD__ is used to find barriers between NPs.
+#!! Typical usage: ... (*1 N BARRIER NPT-NPMOD) ...
+#!! meaning: Scan to the first noun, ignoring anything that can be
+#!! part of the noun phrase of that noun (i.e., "scan to the next NP head")
+
+SET NOT-NPMOD     = WORD - PRE-N OR ABBR ;
+
+SET NOT-NPMOD-ACC     = NOT-NPMOD OR ABBR ;
+SET NOT-NPMOD-ACC-ADV     = NOT-NPMOD  - Adv OR ABBR ;
+# To be used in mappingrules, before the disambuation of Acc and Gen.
+
+SET NOT-NPMODADV    = WORD - PRE-N - Adv  ;
+# NOT-NPMODADV = "NOT-PRE-N-OR-ADV"
+SET NOT-NPMODADV-INDEF   = WORD - PRE-N - Adv - Indef ;
+## NOT-NPMODADVI = "     ...-OR-INDEF"
+# Illative indir.obj.
+# <== is this our NOT-NPMOD set?
+SET NAPP     = WORD - PRE-APP ;
+
+LIST SGPRON = (Pron Sg) ;
+LIST PLPRON = (Pron Pl) ;
+
+
+SET HEAD-N = N  ;
+
+SET NP = N OR A ;                      # anything that can take except numerals
+SET NP-HEAD        = Pron OR HEAD-N  ;
+SET NP-HEAD-SG     = SGPRON OR (N Sg) OR (A Sg)   - Dem ;
+SET NP-HEAD-PL     = PLPRON OR (N Pl) OR (A Pl)   - Dem ;
+
+
+SET VFIN = Ind OR Imp ;
+LIST IM = IM ;
+LIST COPULA = "være" ;
+
+
+
+
+
+
+#!! !!Syntactic tags
+# --------------
+
+LIST @+FAUXV = @+FAUXV ;  	#!! * @+FAUXV : finite auxiliary verb 
+		 					#!! ** ferte: Son ferte oaidnit ollislaš gova. - She must see the whole picture.
+LIST @+FMAINV = @+FMAINV ;	#!! * @+FMAINV : finite main verb
+							#!! ** oaidná: Son oaidná ollislaš gova. - She sees the whole picture	
+LIST @-FAUXV = @-FAUXV ;	#!! * @-FAUXV : infinite auxiliary verb
+							#!! ** sáhte: In sáhte gáhku borrat. - I cannot eat cake.	
+LIST @-FMAINV = @-FMAINV ;	#!! * @-FMAINV : infinite main verb
+							#!! ** oaidnit: Son ferte oaidnit ollislaš gova. - She must see the whole picture.
+LIST @-FSUBJ> = @-FSUBJ> ;	#!! * @-FSUBJ> : Subject of infinite verb outside the verbal.
+							#!! ** mu: Diet dáhpáhuvai mu dieđikeahttá. - It happened without me knowing about it.
+LIST @-F<OBJ = @-F<OBJ ;	#!! * @-F<OBJ : Subject of infinite verb outside the verbal.
+							#!! ** nuppi: Ulbmil lea oažžut nuppi boagustit. - The goal is to get the other one to laugh.
+LIST @-FOBJ> = @-FOBJ> ;	#!! * @-FOBJ> : Object of infinite verb outside the verbal.
+							#!! ** váldovuoittuid: Sii vurde váldovuoittuid fasket. - They waited to grab the main prizes.
+LIST @SPRED<OBJ = @SPRED<OBJ ;	#!! * @SPRED<OBJ : Object of an subsject predicative. (some adjectives are transitive)
+							  	#!! ** guliid: Mánát leat oažžulat guliid.
+LIST @-FADVL = @-FADVL ; 	#!! * @-FADVL : Adverbial complement of infinite verb outside the verbal.
+							#!! ** várrogasat: Dihkkadeaddji rávve skohtervuddjiid várrogasat mátkkoštit. - The roadman warns snowscooter drivers to drive carefully.
+LIST @>ADVL = @>ADVL ; 	#!! * @>ADVL : Modifier of an adverbial to the right.
+						#!! ** vaikko: doppe leat vaikko man ollu studeanttat.
+LIST @ADVL< = @ADVL< ; 	#!! * @ADVL< : Komplement for adverbial.
+						#!! ** vahkus: Son málesta guktii vahkus.
+LIST @<ADVL = @<ADVL ;	#!! * @<ADVL : Adverbial after the main verb.
+						#!! ** dás: Eanet dieđuid gávnnat dás.
+LIST @ADVL> = @ADVL> ;	#!! * @ADVL> : Adverbial to the left of the main verb
+						#!! ** viimmat: Dál de viimmat asttan lohkat reivve.
+LIST @ADVL>CS = @ADVL>CS ;	#!! * @ADVL>CS : Adverbial modifying subjunction.
+							#!! ** 'beare' pointing at 'danin go': Muhto dus ii leat riekti dearpat su beare danin go sáhtát.
+LIST <hab> = <hab> ;	#!! * <hab> : Habitive, specifying an adverbial, e.g. @ADVL> <hab>
+						#!! ** Máhtes: Máhtes lea beana.
+LIST <ext> = <ext> ;	#!! * <ext> : Extencial, specifying an subject, e.g. @<SUBJ <ext>
+						#!! ** beana: Máhtes lea beana.
+LIST <logo> = <logo> ;	#!! * <logo> : logoforic pronouns, e.g. @>N <logo> (for MT)
+LIST <cs> = <cs> ;	#!! * <cs> : 
+LIST @>N = @>N ;      	#!! * @>N : Modifier of a noun to the right.
+						#!! ** geavatlaš: Ráđđehussii lea geavatlaš politihkka deaŧalaš. - For the government, practical politics is important.
+LIST @N< = @N< ;		#!! * @N< : Complement of noun to the left.
+						#!! ** vihtta: Mun boađán diibmu vihtta.
+LIST @>A = @>A ;		#!! * @>A : Modifier of an adjective to the right.
+						#!! ** juohke: Seminára lágiduvvo juohke nuppi jagi.
+LIST @P< = @P< ;		#!! * @P< : Complement of preposition.
+						#!! ** soađi: Dat dáhpáhuvai maŋŋel soađi.
+LIST @>P = @>P ;		#!! * @>P : Complement of postposition.
+						#!! ** riegádeami: Seta riegádeami maŋŋel Áttán elii vel 800 jagi.
+LIST @HNOUN = @HNOUN ;	#!! * @HNOUN : Stray noun in sentence fragment.
+						#!! ** muittut: Fidnokurssa muittut.
+LIST @INTERJ = @INTERJ ;	#!! * @INTERJ : Interjection.
+							#!! ** Hei: Hei, boađe!
+LIST @>Num = @>Num ;		#!! * @>Num : Attribute of numeral to the right.
+						#!! ** dušše: Mun ledjen dušše guokte mánu doppe.
+LIST @Pron< = @Pron< ;	#!! * @Pron< : Complement of pronoun to the left.
+						#!! ** Birehiin: Moai Birehiin leimme doppe.
+LIST @>Pron = @>Pron ;	#!! * @>Pron : Modifyer of pronoun to the right.
+						#!! ** vaikko: Olmmoš sáhttá bargat vaikko maid.
+LIST @Num< = @Num< ;	#!! * @Num< : Complement of numeral to the left.
+						#!! ** girjjiin: Dat lea okta min buoremus girjjiin.
+LIST @OBJ = @OBJ ;		#!! * @OBJ : Object, the verb is not in the sentence (ellipse)
+LIST @<OBJ = @<OBJ ;	#!! * @<OBJ : Object, the verb is to the left.
+						#!! ** gávtti: Son goarru gávtti.
+LIST @OBJ> = @OBJ> ;	#!! * @OBJ> : Object, the verb is to the right.
+						#!! ** filmma: Dán filmma leat Kárášjoga nuorat oaidnán.
+LIST @OPRED = @OPRED ;	#!! * @OPRED : Object predicative, the verb is not in the sentence (ellipse).
+LIST @<OPRED = @<OPRED ;	#!! * @<OPRED : Object predicative, the verb is to the left.
+							#!! ** buriid: Son ráhkada gáhkuid hui buriid.
+LIST @OPRED> = @OPRED> ;	#!! * @OPRED> : Object predicative, the verb is to the right.
+							#!! ** dohkkemeahttumin: Son oinnii dohkkemeahttumin bargat ášši nu.
+LIST @PCLE = @PCLE ;		#!! * @PCLE : Particle.
+							#!! ** Amma: Amma mii eat leat máksán? - We have not paid, have we?
+LIST @COMP-CS< = @COMP-CS< ;	#!! * @COMP-CS< : Complement of subjunction.
+								#!! ** vejolaš: Dat šaddá nu buorre go vejolaš.
+LIST @SPRED = @SPRED ;		#!! * @SPRED : Subject predicative, the verb is not in the sentence (ellipse).
+LIST @<SPRED = @<SPRED ;		#!! * @<SPRED : Subject predicative, the verb is to the left.
+							#!! ** árgabivttas: Ovdal lei gákti árgabivttas.
+LIST @SPRED> = @SPRED> ;		#!! * @SPRED> : Subject predicative, the verb is to the left.
+							#!! ** álbmogin: Sápmelaččaid historjá álbmogin lea duháhiid jagiid boaris.
+LIST @SUBJ = @SUBJ ;		#!! * @SUBJ : Subject, the finite verb is not in the sentence (ellipse).
+LIST @<SUBJ = @<SUBJ ;		#!! * @<SUBJ : Subject, the finite verb is to the left.
+							#!! ** gákti: Ovdal lei gákti árgabivttas.
+LIST @SUBJ> = @SUBJ> ;		#!! * @SUBJ> : Subject, the finite verb is to the right.
+							#!! ** Son: Son lea mu oabbá. - Sheis my sister.
+LIST @PPRED = @PPRED ;		#!! * @PPRED : Predicative for predicative.
+LIST @APP = @APP ;			#!! * @APP : Apposition
+LIST @APP-N< = @APP-N< ;	#!! * @APP-N< : Apposition to noun to the left.
+							#!! ** oahpaheaddji: Oidnen Ánne, min oahpaheaddji.
+LIST @APP-Pron< = @APP-Pron< ;	#!! * @APP-Pron< : Apposition to pronoun to the left.
+								#!! ** boazodoalloáirasat: Ja moai boazodoalloáirasat áigguime vaikko guovttá joatkit barggu.
+LIST @APP>Pron = @APP>Pron ;	#!! * @APP>Pron : Apposition to noun to the right.
+LIST @APP-Num< = @APP-Num< ;	#!! * @APP-Num< : Apposition to numeral to the left.
+LIST @APP-ADVL< = @APP-ADVL< ;	#!! * @APP-ADVL< : Apposition to adverbial to the left.
+								#!! ** bearjadaga: Mun vuolggán ihttin, bearjadaga.
+LIST @VOC = @VOC ;	#!! * @VOC : Vocative
+					#!! ** Miss Turner : Bures boahtin deike, Miss Turner! - Welcome her, Miss Turner!
+LIST @CVP = @CVP ;	#!! * @CVP : Conjunction or subjunction that conjoins finite verb phrases.
+					#!! ** go : Leago guhkes áigi dassá go Máreha oidnet? - Is it a long time since you saw Máret?
+LIST @CNP = @CNP ;	#!! * @CNP : Local conjunction or subjunction.
+					#!! ** vai : Leago nieida vai bárdni? - Is it a girl or a boy?
+LIST @CMPND = @CMPND ;	#!! * @CMPND
+LIST @X = @X ;		#!! * @X : The function is unknown, e.g. because of that the word is unknown
+
+LIST ADVL = @ADVL @ADVL> @ADVL-ine> @ADVL-ela> @<ADVL-ine @<ADVL-ela @ADVL< @<ADVL @>ADVL @-F<ADVL @-F<ADVL-ela @-F<ADVL-ine ;
+SET SUBJ = @<SUBJ OR @SUBJ> OR @SUBJ ;
+SET SPRED = @<SPRED OR @SPRED> OR @SPRED ;
+SET OPRED = @<OPRED OR @OPRED> OR @OPRED ;
+SET FOBJ = @-F<OBJ OR @-FOBJ> ;
+SET FMAINV = @-FMAINV OR @+FMAINV OR (V @<OBJ) OR (V @N<) OR (V @A<) OR (V @<SUBJ) OR (V @<ADVL) ;
+SET FAUXV = @-FAUXV OR @+FAUXV ;
+LIST HAB-V-TAGS = Pl3 Sg3 ConNeg PrfPrc Inf ;
+
+SET OBJ = (@<OBJ) OR (@OBJ>) OR (@OBJ) OR (@-F<OBJ) OR (@-FOBJ>) ;
+LIST <OBJ = @-F<OBJ @<OBJ ;
+LIST OBJ> = @OBJ> @-FOBJ> ;
+
+SET <OBJ-OTHERS = <OBJ OR (Gen) OR (Nom) OR (Adv) ;
+SET OBJ>-OTHERS = OBJ> OR (Gen) OR (Nom) OR (Adv) ;
+
+SET SYN-V = V + SUBJ OR OBJ + V OR ADVL + V OR (V @N<) OR (V @A<) OR V + SPRED OR (V @COMP-CS<) ;
+
+
+SET NOT-NPMODCC   = WORD - PRE-N - COMMA - @CNP ;
+
+
+
+# Boundary sets
+
+SET S-BOUNDARY = CS | Interr | (";") | (":") | BOS | EOS ;
+SET S-BOUNDARY2 = CS | Interr | (";") | (":") | BOS | EOS | (@CVP) ;
+SET S-BOUNDARY3 = CS | Interr | (";") | (":") | BOS | EOS | (@CVP) | CLB ;
+SET SV-BOUNDARY = S-BOUNDARY OR Inf - ("være" Ind) OR ("ha" Ind) OR FMAINV ;
+
+
+
+#!! * Syntactic sets
+# --------------
+
+LIST ALLSYNTAG = (@+FAUXV) (@+FMAINV) (@-FAUXV) (@-FMAINV) (@-FSUBJ>)(@-FOBJ)(@-F<ADVL)(@-FADVL>)(@>A) (@>ADVL) (@ADVL<) (@<ADVL) (@ADVL>) (@ADVL) (@>N) (@APP) (@APP-N<) (@APP-Pron<) (@APP>Pron) (@APP-Num<) (@APP-ADVL<) (@VOC)(@CNP) (@CVP) (@P<) (@>P) (@HNOUN) (@INTERJ) (@Pron<) (@OBJ) (@OBJ>) (@<OBJ) (@OPRED) (@<OPRED) (@OPRED>) (@SPRED<OBJ) (@PCLE) (@COMP-CS<) (@N<) (@SPRED) (@<SPRED) (@SPRED>) (@PPRED) (@Num<) (@SUBJ) (@<SUBJ) (@SUBJ>) (@X);
+ 
+
+SET NON-APP = ALLSYNTAG - (@APP);
+
+#!! These were the set types.
+
+
+
+
+
+         SECTION         #
+
+
+
+MAP:interj (@INTERJ) TARGET Interj ;
+
+
+
+
+
+MAP:n<titel1 (@N<) TARGET ("jr") OR ("sr") (-1 Prop) ;
+
+
+
+
+
+
+
+
+
+#!! * Border sets and their complements
+# ---------------------------------
+
+
+SET CP = (Pron Interr) ;
+
+
+LIST BOUNDARYSYMBOLS =  "\;" ":" "-" "–" ;
+
+
+
+SET BOC = S-BOUNDARY OR BOS ;
+SET BOC-PUNCT = BOC - ("-") - ("–") ;
+SET EOC = S-BOUNDARY OR EOS ;
+
+SET NP-BOUNDARY = BOS OR EOS OR VFIN OR Inf OR CS OR CP OR @CVP ;
+
+
+
+
+
+#!! * Syntactic sets
+# --------------
+
+LIST HEAD = @SUBJ> @<SUBJ @SUBJ @OBJ @OBJ> @<OBJ @ADVL @ADVL> @<ADVL @SPRED> @<SPRED @SPRED @OPRED> @<OPRED @OPRED @-FSUBJ> @-FOBJ> @-FADVL> @-FSPRED> @-F<SUBJ @-F<OBJ @-F<ADVL @-F<SPRED ;
+
+
+LIST GRADE-ADV = "mest" ;
+
+SET NON-APP = ALLSYNTAG - (@APP);
+
+#!! These were the set types.
+
+
+
+
+
+         SECTION         #
+
+
+
+MAP:IM (@IM) TARGET IM ;
+
+#!! !!Numeral outside the sentence
+
+
+#!!	* __ordHNOUN__	
+MAP:NumHNOUN (@HNOUN) TARGET (ord) (-1 BOS) ;	
+	#$ 4. Álbmotskuvlla ja oahpaheaddjiseminára gaskasaš áigi.
+
+
+
+# Adverbials
+
+MAP (@<ADVL) TARGET Adv (*-1 Ind);
+MAP (@ADVL>) TARGET Adv (*-1 S-BOUNDARY3 BARRIER Ind)(*1 Ind);
+
+
+
+
+
+MAP:-FMAINV (@-FMAINV) TARGET PrfPrc ;
+
+
+
+
+
+
+
+
+
+
+
+
+# Initials
+# --------
+
+LIST INITIAL = "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m"
+        "n" "o" "p" "q" "r" "s" "t" "u" "v" "w" "x" "y" "z"
+        "á" "æ" "ø" "å" "ö" "ä" ;
+
+LIST CAP-INITIAL = "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M"
+        "N" "O" "P" "Q" "R" "S" "T" "U" "V" "W" "X" "Y" "Z"
+        "Á" "Æ" "Ø" "Å" "Ö" "Ä" ;
+
+
+#!! Finite verbs
+
+MAP:FMAINV @+FMAINV TARGET Ind OR Imp ; # obviously first approximation
+MAP:FMAINV @-FMAINV TARGET Inf ; # obviously first approximation
+
+
+#!! !!Numeral outside the sentence
+
+
+#!!	* __ordHNOUN__	
+MAP:NumHNOUN (@HNOUN) TARGET (Ord) (-1 BOS) ;	
+	#$ 4. Álbmotskuvlla ja oahpaheaddjiseminára gaskasaš áigi.
+
+
+#!! * __n<titel1__ (@N<) for ("jr") or ("sr"); if first one to the left is Prop
+MAP:n<titel1 (@N<) TARGET ("jr") OR ("sr") (-1 Prop) ;
+
+
+
+
+#!! * __n<titel2__ (@N<) for INITIAL; if first one to the left is a noun, or if to the left of you is a single letter which is part of a noun conjunction ''bustávas e ja f gáibiduvvo''
+MAP:n<titel2 (@N<) TARGET INITIAL ((-1 N) OR (-1 CC LINK -1 INITIAL LINK -1 N))(NEGATE 1 Prop OR Num OR INITIAL) ;
+
+MAP (@ATTR>) TARGET Prop + Sem/Fem IF (1 Prop + Sem/Fem);
+MAP (@ATTR>) TARGET Prop + Sem/Mal IF (1 Prop + Sem/Mal);
+MAP (@ATTR>) TARGET Prop + Sem/Mal OR Prop + Sem/Fem IF (1 Prop + Sem/Sur OR Sem/Plc);
+
+MAP:num> (@>N) TARGET Num (1 N ) ;
+
+MAP:>a (@>A) TARGET GRADE-ADV (*1 A BARRIER NOT-NPMOD) ;
+
+MAP:>adv (@>ADVL) TARGET GRADE-ADV (1 Adv) ;
+
+MAP:>adv (@>N) TARGET GRADE-ADV (1 N) ;
+MAP:>adv (@>N) TARGET GRADE-ADV (1 CC LINK 1 GRADE-ADV LINK 1 N) ;
+
+
+
+
+# NPs
+
+MAP:PROP-N (@>N) TARGET Prop IF (1 ("kommune") OR ("skole") OR ("avis"));
+
+MAP:PN (@>N) TARGET N + Clt IF (*1 N BARRIER NOT-A);
+MAP:AN (@A>) TARGET A IF (1 N);
+#MAP:AN (@A>) TARGET A IF (-1 Det OR Pr OR V)(1 N);
+MAP:DN (@>N) TARGET Det IF (*1 N BARRIER NOT-A);
+
+
+# APs
+
+MAP:PA (@>N) TARGET N + Clt IF (1 A)(2 EOS);
+MAP:AA (@A>) TARGET A IF (1 A)(2 EOS);
+MAP:DA (@>N) TARGET Det IF (1 A)(2 EOS);
+
+
+
+# PPs
+
+REMOVE:Adv_PP Pr IF (0 Adv)(1 Pr);
+## Da ble lærebøkene gitt ut på norsk.
+
+
+MAP:p< (@P<) N (*-1 Pr BARRIER NOT-NPMOD);
+
+
+
+# Subjects
+
+MAP (@SUBJ>) TARGET Pron + Nom (1 Ind);
+MAP (@<SUBJ) TARGET Pron + Nom (*-1 Ind BARRIER NOT-ADV);
+MAP (@SUBJ>) TARGET N (*-1 BOS BARRIER WORD)(1 (":")) ;
+MAP (@SUBJ>) TARGET N IF (*-1 BOS BARRIER NOT-NPMOD)(1 Ind);
+MAP (@SUBJ>) TARGET N IF (*-1 Adv LINK *-1 BOS BARRIER NOT-NPMOD)(1 Ind);
+MAP (@<SUBJ) TARGET N IF (*-1 Ind BARRIER NOT-NPMOD LINK *-1 BOS OR S-BOUNDARY BARRIER N);
+
+	# Subject predicatives - SPRED
+MAP (@<SPRED) TARGET N IF (*-1 ("være") BARRIER V LINK *-1 (@SUBJ>));
+
+
+# Objects
+
+MAP (@<OBJ) TARGET Acc IF (*-1 V);
+MAP (@OBJ>) TARGET Acc IF (*1 V);
+
+MAP (@<OBJ) TARGET N IF (*-1 Ind LINK *-1 (@SUBJ>));
+
+MAP (@<OBJ) TARGET N IF (*-1 Ind LINK *-1 (@SUBJ>));
+MAP (@<OBJ) TARGET A IF (*-1 Ind LINK *-1 (@SUBJ>))(1 EOS);
+
+MAP (@<OBJ) TARGET N IF (*-1 (@<SUBJ));
+MAP (@<OBJ) TARGET A IF (*-1 (@<SUBJ))(1 EOS);
+
+
+
+MAP:<spred (@<SPRED) TARGET (A ) OR (N) IF (*-1 (N ) BARRIER NOT-A LINK -1 COPULA + FMAINV)(NEGATE -1 @<SPRED) ;
+
+
+
+
+MAP:>cc (@>CC) TARGET ("både")(*1 ("og")) ;
+
+
+LIST ADVLCASEAdv = Adv Pr  ;
+
+
+	# Infinite object - FOBJ
+
+
+
+
+#!! * __<advlPoPr__ (@<ADVL) for Po or Pr; if mainverb to the left.
+MAP:<advlPoPr (@<ADVL) TARGET Pr (*-1 FMAINV BARRIER SV-BOUNDARY) ;
+#!! * __advlPoPr>__ (@<ADVL) for Po or Pr; if mainverb to the right.
+MAP:advlPoPr> (@ADVL>) TARGET Pr (*1 FMAINV BARRIER SV-BOUNDARY) ;
+
+#!! * __BOSPo>__ (@ADVL>) for Po; if trapped between BOS to the right and S-BOUNDARY OR COMMA to the left, because the main verb will then automatically be on your right side.
+
+
+
+
+
+
+#!! * __advl>inbetween__ (@ADVL>) for Adv; if inbetween two sentenceboundaries where no mainverb is present.
+MAP:advl>inbetween (@ADVL>) TARGET Adv (*-1 BOC BARRIER FMAINV)(*1 S-BOUNDARY BARRIER FMAINV)  ;
+	#$ Son muitala maid ahte nu guhká go orohagat eai vuosttal mearkkaid, de sii lávejit juolludit mearkkaid ohcciide.
+	#$ Dál de viimmat asttan čállit reivve.
+
+#!! * __comma<advlEOS__ (@<ADVL) for Adv if; comma found to the left and the finite mainverb to the left of comma. To the right is the end of the sentence.
+MAP:comma<advlEOS (@<ADVL) TARGET Adv (*-1 COMMA BARRIER V LINK *-1 FMAINV BARRIER S-BOUNDARY)(*1 EOS BARRIER FMAINV) ;
+	#$ Guovdageainnu guovllut gal leat vel mu mielas sestojuvvon oalle bures dássážii, movt šat guhká.
+	#$ De eai leat šat dušše tálat, muhto bustávat maid.
+
+
+
+# Coordination
+
+MAP:CNP (@CNP) TARGET CC IF (-1 N)(*1 N BARRIER NOT-NPMOD);
+#MAP:CVP (@CVP) TARGET CC IF (*-1 Ind)(1 Ind);
+#MAP:CVP (@CVP) TARGET CC IF (-1 Ind)(*1 Ind);
+#MAP:CVP (@CVP) TARGET CC IF (*-2 Ind)(-1 COMMA)(*1 Ind);
+MAP:CVP (@CVP) TARGET CC IF (*-1 Ind)(*1 Ind);
+MAP:CVP (@CVP) TARGET CC IF (-1 Imp)(1 Imp);
+MAP:CVP (@CVP) TARGET CC IF (*-1 PrfPrc)(1 PrfPrc);
+MAP:CVP (@CVP) TARGET CC IF (*-1 PrsPtc)(1 PrsPtc);
+
+
+#!! !!HNOUN MAPPING
+
+MAP:hnounNom (@HNOUN) TARGET NP-HEAD - A OR (Num Nom) 
+(NEGATE *0 V BARRIER (":"))(NEGATE *-1 PUNCT BARRIER (":") LINK -1 WORD) ;
+
+MAP:hnounNom (@HNOUN) TARGET A OR (Num Nom) (*-1 BOS BARRIER WORD)(*1 EOS BARRIER WORD) ;
+
+
+
+
+
+
+MAP:HNOUNcoor (@HNOUN) TARGET N (-1 @CNP LINK -1 @HNOUN) ;
+	#$ Oslos ja Londonis.
+
+
+
+#!! ! __missingX__ adds @X to all missings
+MAP:missingX (@X) TARGET (?) ;
+
+AFTER-SECTIONS
+
+REMOVE:WORD WORD - ALLSYNTAG ;
+
+
+
+#!! ! __therestX__ adds @X to all what is left, often errouneus disambiguated forms
+
+MAP:leftoversX (@X) TARGET WORD ;
+
+
+
+
+#!! !!For Apertium:
+#!! The analysis give double analysis because of optional semtags. We go for the one with semtag.
+
+	#=====#
+      END #
+	#=====#
+
