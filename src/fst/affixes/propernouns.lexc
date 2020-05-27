@@ -77,3 +77,12 @@ LEXICON PROP-ani
 
 LEXICON PROP-obj
 +N+Prop+Sem/Obj: K ;
+
+
+LEXICON GATA-plc
++N+Prop+Sem/Plc:gata K ;
++N+Prop+Sem/Plc:gaten K ; 
++N+Prop+ABBRR+Gram/TNumAbbr+Sem/Plc:gt DOT ;
+
+
+

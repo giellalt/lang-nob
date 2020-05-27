@@ -41,7 +41,6 @@ while(<>) {
 	s/DUORTNUS/PROP/g ;
 	s/ENDLEX/PROP/g ;
 	s/ ERVASTI/i PROP/g ;
-	s/GATA/PROP/g ;
 	s/GIRUNA/PROP/g ;
 	s/HANNOLA/PROP/g ;
 	s/HAWAII/PROP/g ;
