@@ -1,0 +1,9 @@
+name = "Norwegian Bokmål"
+version = "@SPELLERVERSION@"
+
+[macos]
+system_pkg_id = "no.divvun.MacDivvun.nb"
+
+[windows]
+system_product_code = "0BEB7B50-5408-48BE-9AED-18992977BD6B"
+msoffice_product_code = "E5B12E99-8DD0-4D7B-9B1D-913CB04728A1"
