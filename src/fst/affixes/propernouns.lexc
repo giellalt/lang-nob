@@ -82,7 +82,7 @@ LEXICON PROP-obj
 LEXICON GATA-plc
 +N+Prop+Sem/Plc:gata K ;
 +N+Prop+Sem/Plc:gaten K ; 
-+N+Prop+ABBRR+Gram/TNumAbbr+Sem/Plc:gt DOT ;
++N+Prop+ABBR+Gram/TNumAbbr+Sem/Plc:gt DOT ;
 
 
 
