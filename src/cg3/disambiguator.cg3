@@ -25,7 +25,18 @@ LIST s-gr = "$\;" "$:" "$..." "$--" "$-" "$," "$\"" konj >>> <<< CLB ;
 LIST @Adv = Adv;
 LIST spoersmaal-t = "$\?";
 LIST s^periode-beg/CLB-CC = "$\;" "$:" "$..." "$--" "$-" "$," "$\"" konj >>> <<< ;
+
 LIST ABBR = ABBR ;
+LIST Num = Num ;
+LIST Arab = Arab ;
+LIST Ord = Ord ;
+LIST Sem/Date = Sem/Date ;
+LIST Sem/Year = Sem/Year ;	
+LIST Sem/Phonenr = Sem/Phonenr ;
+LIST Sem/ID = Sem/ID ;
+LIST Sem/Time = Sem/Time ;	
+LIST Sem/Time-clock = Sem/Time-clock ;
+LIST Err/Orth = Err/Orth ;
 
 LIST %aar% = "år" ;
 LIST %aldri% = "aldri" ;
@@ -691,6 +702,30 @@ LIST NOT-Msc = Fem Neu ;
 
 LIST ING = ING ;
 
+#!! * Amount sets
+ 
+LIST VOLUME = "cl" (".*liter"r) "dl" "liter" "ml"  ;
+
+LIST WEIGHT = "mg" "kg" "kilo" "tonn" "g" ;
+
+LIST LENGTH = "tomme" "mil" (".*meter"r) "cm" "alen" "km" "mm" ;
+
+LIST TEMPERATURE = "kuldegrad" "varmegrad" "grad" ;
+
+#LIST AMOUNT = "uhcánaš" "unnánaš" ;
+
+LIST TIME-UNIT-MEASURE =  "minutt" "sekund" "time" "uke" ;  # in MEASURE-set
+
+LIST TIME-UNIT2 =  (".*år"r) "måned" "dag" ;
+
+SET TIME-UNIT = TIME-UNIT-MEASURE OR TIME-UNIT2 ;
+
+SET MEASURE = VOLUME OR WEIGHT OR LENGTH OR TEMPERATURE OR TIME-UNIT-MEASURE OR ("m2") ;
+
+LIST CURRENCY = "kr" "dollar" "euro" "kroner" "€" "$" ;
+
+	
+	
 # Complementary sets
 
 LIST WORD = N A Adv V CS CC Interj Pcle Pr IM Det Pron Interj ;
@@ -710,6 +745,35 @@ REMOVE:AbbrBeforePara ABBR IF (0 CLB)(1 CLB) ;
 
 # Nynorsk
 REMOVE:Nynorsk (Nynorsk) ;
+
+
+
+# Numerals
+
+SELECT:SemYear Sem/Date (0 Num) ;
+SELECT:SemYear Sem/Year (0 Num)(NOT -1 CURRENCY)(NOT 1 CURRENCY OR MEASURE OR ("år")) ;
+	#% Bures boahtin 2016 beaivái
+SELECT:SemYear Sem/Year (0 Num)(NOT -1 CURRENCY);
+SELECT:SemYear Sem/Year (0 Num)(1 ("år") + Pl) ; #apertium
+REMOVE:SemYear Sem/Year (0 Num) ((-1 CURRENCY) OR (1 CURRENCY OR MEASURE)) ;
+REMOVE:SemPhonenr Sem/Phonenr (0 Num) ; #vi fjerner alle inntil videre
+
+SELECT:Sem/DateGen  Sem/Date (-1 ("den")) ; #foreløpig
+SELECT:clock Sem/Time-clock  ;
+
+	
+SELECT:ArabNom (Arab Nom) (-1 BOS)(NEGATE 1 Sem/Time);
+SELECT:Arab1 (Arab Nom)(0 ("1")) ;
+
+SELECT:Sem/ID Sem/ID IF (-1 ("§")) ; 
+REMOVE:Sem/ID Sem/ID IF (1 CURRENCY) ; 
+
+SELECT:Arab Arab IF (NOT 0 Ord OR Prop OR Arab + Err/Orth) ; # In Apertium we get analysis both with and without the tag.
+
+REMOVE:dyn  Arab (0 Prop) ; # foreløpig løsning, til vi har ny løsning for numerals.lexc
+
+#!! * Rule for adding <vdic> to verbs denoting verbal actions like: ... dadjá Aili Kestkitalo.
+
 
 REMOVE:Lexicalised CmpS ;
 #REMOVE:LexAdv Der/AAdv IF (0 Adv LINK NOT 0 A);
