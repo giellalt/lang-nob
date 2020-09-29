@@ -20,7 +20,7 @@
     </default>
   </defaults>
 
-  <error id="err_agr_neu_a">
+  <error id="msyn-agr-adjmsc-adjneu">
     <header>
       <title xml:lang="en">Gender concord in noun phrases</title>
       <title xml:lang="nb">Samsvar i kjønn i substantivfraser</title>
@@ -31,7 +31,7 @@
     </body>
   </error>
 
-  <error id="err_agr_msc_a">
+  <error id="msyn-agr-adjneu-adjmsc">
     <header>
       <title xml:lang="en">Gender concord in noun phrases</title>
       <title xml:lang="nb">Samsvar i kjønn i substantivfraser</title>
@@ -42,7 +42,7 @@
     </body>
   </error>
 
-  <error id="err_pron_nom">
+  <error id="msyn-pron-nom-acc">
     <header>
       <title xml:lang="en">Nominative after preposition</title>
       <title xml:lang="nb">Nominativ etter preposition</title>
@@ -52,4 +52,32 @@
       <description xml:lang="nb">Når en preposisjon, som her "$1", står foran et pronomen, som her "$2", skal det stå i akkusativ.</description>
     </body>
   </error>
+
+  <error id="real-aa-og">
+    <header>
+      <title xml:lang="en">og rather than å</title>
+      <title xml:lang="nb">og i steden for å</title>
+    </header>
+    <body>
+      <description xml:lang="en">Between two nouns, like "$1" and "$2", use "og", not "å"</description>
+      <description xml:lang="nb">Mellom to substantiv, som "$1" og "$2", skal det være "og" og ikke "å".</description>
+    </body>
+  </error>
+
+  <error id="real-og-aa">
+    <header>
+      <title xml:lang="en">å rather than og</title>
+      <title xml:lang="nb">å i steden for og</title>
+    </header>
+    <body>
+      <description xml:lang="en">An infinitive, like  "$1", shall have  "å" in front of it, and not "og"</description>
+      <description xml:lang="nb">En infinitiv, som  "$1", skal ha "å" foran seg, og ikke "og"</description>
+    </body>
+  </error>
+
+  
+
+
+
+
 </errors>
