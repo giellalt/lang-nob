@@ -96,9 +96,11 @@ l7 ! always l
 +Err/Hyph
 +Err/Lex
 +Err/SpaceCmp
++Err/MissingSpace
 
 +Use/NG
 +Use/-Spell
++Use/-PLX
 +Use/SpellNoSugg
 
 
