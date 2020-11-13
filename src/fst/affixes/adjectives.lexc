@@ -140,6 +140,13 @@ LEXICON grade-C
 
 ! Exceptional
 
+LEXICON A_SMÅ
+!                   +A:få   R ;
+      +A+Pos+Pl+Indef:små  # ;
+      +A+Pos+Neu+Sg+Indef:smått  # ;
+
+
+
 LEXICON A_FÅ
 !                   +A:få   R ;
       +A+Pos+Pl+Indef:få  # ;
