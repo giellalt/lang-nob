@@ -12,6 +12,7 @@
 
 LEXICON AdjectiveRoot
 få: A_FÅ ;
+små:
 vond: VOND ;
 
 vidstrakt a2 ;
@@ -1887,6 +1888,7 @@ epikureisk a2 ;
 fariseisk a2 ;
 elyseisk a2 ;
 grafisk a2 ;
+leksikografisk a2 ;
 telegrafisk a2 ;
 kalligrafisk a2 ;
 stratigrafisk a2 ;

@@ -3482,6 +3482,7 @@ overrumple v1 ;
 overse:over SE ;
 oversende v2 ;
 oversette:over SETTE ;
+maskinoversette:maskinover SETTE ;
 overskride:over SKRIDE ; 
 overskrive:over SKRIVE ;
 overskue v1 ;
