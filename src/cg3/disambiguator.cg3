@@ -37,6 +37,7 @@ LIST Sem/ID = Sem/ID ;
 LIST Sem/Time = Sem/Time ;	
 LIST Sem/Time-clock = Sem/Time-clock ;
 LIST Err/Orth = Err/Orth ;
+LIST IM = IM ;
 
 LIST %aar% = "år" ;
 LIST %aldri% = "aldri" ;
@@ -746,7 +747,7 @@ REMOVE:AbbrBeforePara ABBR IF (0 CLB)(1 CLB) ;
 # Nynorsk
 REMOVE:Nynorsk (Nynorsk) ;
 
-
+SELECT:aaIM IM IF (0 ("å"))(1 Inf);
 
 # Numerals
 
