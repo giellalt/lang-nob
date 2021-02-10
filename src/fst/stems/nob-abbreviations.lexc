@@ -270,6 +270,7 @@ LEXICON TRNUMAB
          Postnr+N:Postnr         ab-dot-noun-trnumab ;
             Ref+N:Ref            ab-noun-trnumab          ;
              Rt+N:Rt             ab-dot-trnumab      ;
+             Fv+N:Fv             ab-noun-trnumab          ;
              Rv+N:Rv             ab-noun-trnumab          ;
            S.nr+N:S.nr           ab-noun-trnumab     ;
  St.% meld.% nr+N:St.% meld.% nr ab-dot-trnumab      ;
