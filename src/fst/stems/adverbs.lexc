@@ -6,6 +6,8 @@ LEXICON dt
  +Adv: # ; ! perhaps unify, perhaps not.
 
 LEXICON Adverb
+uansett adv ;
+
 respektive adv ;
 avslutningsvis adv ;
 av% dage adv ; ! av dage
@@ -382,6 +384,7 @@ nordover adv ;
 nordpå adv ;
 nordøst adv  ;
 nylig adv ; 
+nå+Err/Orth:nu adv ;
 nå adv ;
 når adv ;
 nåvel adv ;
