@@ -7,7 +7,7 @@ LEXICON Re
  #+Cmp+:e##  NounRoot ;   ! dynamic compounding ON
 
 LEXICON RHyph
-R ; ! todo fix R vs. RHyph
+ #+Cmp%-:%-##  NounRoot ;   ! dynamic compounding ON
 
 LEXICON R
 @P.CmpFrst.FALSE@@P.CmpPref.FALSE@@D.CmpLast.TRUE@@D.CmpNone.TRUE@@U.CmpNone.FALSE@@P.CmpOnly.TRUE@ RReal ; ! Flags to control compounding 
@@ -16,7 +16,6 @@ LEXICON RReal
 ! change this and next 3
  #+CmpS+:s##  NounRoot ; ! dynamic compounding ON
  #+Cmp+:##  NounRoot ;   ! dynamic compounding ON
- #+Cmp%-:%-  NounRoot ;   ! dynamic compounding ON
  #+Cmp%-:%-  # ;   ! two-part helse- og sosialarbeid
  #+CmpS+:s-  # ; ! two-part salgs- og forskningsenheter
  
