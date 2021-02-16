@@ -202,7 +202,12 @@ Rules
 !!€ oppskjørted0>e
  
 
+"compund"
+Cx:0 <=> Cx _ #: #: Cx ;
+     where Cx in (b d f g k l m n p r s t v ) ;
 
+!!€ grammatikk##kontroll
+!!€ grammatik000kontroll
 
 "Double t deletion"
 !! __@RULENAME@__  
