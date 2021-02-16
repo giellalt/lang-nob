@@ -22,6 +22,7 @@
 !     høve        høvet       høve/høver  høva/høvene
 ! n4  salt        saltet      salter      salta/saltene ??
 ! n5  middel      midlet      midler      midla/midlene ??
+! n6 kammer kammeret kamre/kammer kamra/kamrene
 
 ! Subtypes, mainly from Finsk-norsk ordbok, also system-specific
 
@@ -164,9 +165,16 @@ LEXICON m2 ! lærer
  +N+Msc+Pl+Nynorsk+Use/NG:%^NYNAG ar-ane ;
         +N:        R      ;
 
-LEXICON m3 ! onkel
+
+LEXICON m3 ! bever, bevrer/bevre
          +N+Msc+Sg:   0-en     ;
          +N+Msc+Pl:X1 e-er-ene ; ! X1 deletes the vowel -e-
+ +N+Msc+Pl+Nynorsk+Use/NG:X1 ar-ane   ; ! X1 deletes the vowel -e-
+                +N:   R        ;
+
+LEXICON m3r ! onkel, onkler/*onkle
+         +N+Msc+Sg:   0-en     ;
+         +N+Msc+Pl:X1 er-ene ; ! X1 deletes the vowel -e-
  +N+Msc+Pl+Nynorsk+Use/NG:X1 ar-ane   ; ! X1 deletes the vowel -e-
                 +N:   R        ;
 
@@ -370,6 +378,9 @@ LEXICON n1sg ! yr
  +N+Neu+Sg: 0-et ;
         +N: R    ;
 
+LEXICON n1pl ! odds
+ +N+Neu+Pl: 0-ene-a ; ! tribunaler
+
 LEXICON n2 ! eple, salt
  +N+Neu+Sg: 0-et     ;
  +N+Neu+Pl: er-ene-a ;
@@ -417,6 +428,11 @@ LEXICON n4b ! faktum
 LEXICON n5 ! middel
  +N+Neu+Sg:X1 0-et     ;
  +N+Neu+Pl:X1 er-ene-a ;
+        +N:   R        ;
+
+LEXICON n6 ! kammer
+ +N+Neu+Sg:X1 0-et     ;
+ +N+Neu+Pl:X1 0-e-ene-a ;
         +N:   R        ;
 
 
@@ -486,6 +502,12 @@ LEXICON e-er-ene
 
 LEXICON er-ene-a
  +Indef:%>er  K ;
+   +Def:%>ene K ;
+   +Def+Use/NG:%>a   K ;
+
+LEXICON 0-e-ene-a
+ +Indef+Use/NG:  K ;
+ +Indef:%>e  K ;
    +Def:%>ene K ;
    +Def+Use/NG:%>a   K ;
 
