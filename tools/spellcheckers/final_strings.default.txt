@@ -2,3 +2,11 @@ llt:lt	3
 ppt:pt	3
 kkt:kt	3
 ligt:lig	3
+idig:id		5
+on:eon		3
+igeste:igste	2
+igste:igeste	10
+elig:lig	5
+inde:inne	5
+inne:inde	5
+
