@@ -15,6 +15,7 @@ få: A_FÅ ;
 små: A_SMÅ ;
 vond: VOND ;
 
+artikkelbasert a2 ;
 aggressiv a1 ;
 vidstrakt a2 ;
 uforlikt a2 ;
@@ -26,6 +27,9 @@ langveisfarende a3 ;
 lemster a5 ;
 arverettslig a2 ;
 testamentarisk a2 ;
+
+korrekturlest a2 ;
+maskinlært a2 ;
 
 foreslått a2 ;
 vedtatt a2 ;
