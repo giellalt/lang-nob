@@ -1,61 +1,184 @@
 
-# Norwegian Bokmål morphological analyser                      !
-INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Norwegian Bokmål LANGUAGE.
+# Norwegian Bokmål morphological analyser                      
+this documents the symbols and intro lexicon of **Norwegian Bokmål**.
 
 
- * Multichar_Symbols 
+ **Multichar_Symbols ** 
+
+Here come the **tags**.
 
 
-## Part of speech
+## Grammatical tags
+
+### Part of speech
+
+ - ** +N +A +Adv +V        ** 
+ - ** +CS +CC +Interj +Pcle +Pr +IM    ** 
+ - ** +Pers +Dem +Interr +Refl +Recipr +Rel +Qnt ** 
+
+### Subtags
+
+ * **+ING									** = ing-derivation
+ * **+Indef +Def +Poss +Indcl				** = 
+ * **+Sg +Pl								** = 
+ * **+Sg1 +Sg2 +Sg3 +Pl1 +Pl2 +Pl3			** = 
+ * **+Pron +Nom +Acc +Dat +Det				** = 
+ * **+Msc +Fem +Neu +MF						** = 
+ * **+Pos +Comp +Superl 					** = 
+ * **+Clt									** = 
+ * **+Dat									** = 
+ * **+Pass +Ind +Prs +Prt +Imp				** = 
+ * **+Inf +PrsPrc +PrfPrc					** = 
+ * **+Interj +Intens						** = 
+ * **+Prop 								** = 
+ * **+Qnt**  quantifier noen, begge
 
 
+
+### Other tags
+
+ * **+CLB +PUNCT +HYPH +LEFT +RIGHT**
  * **+CLBfinal**  Sentence final abbreviated expression ending in full stop, so that the full stop is ambiguous
 
+ * **+Cmp+** 
+ * **+CmpS+** 
  * +Symbol = independent symbols in the text stream, like £, €, ©
 
 
 
+ * **+Ex/V** for derivation
+ * **+Ord** 
+ * **+Prdt** 
+ * **+Qst** 
 
 
 
 NDS analyser tags
 
+ * **+Nynorsk**  For dictionary use., Nynorsk only
+ * **+Radical**  For dictionary testing, Radical Bokmål
 
+
+ * **+X**  denoting not-checked.
+ * **+1 +2 +3**  not in use??
 
 
 ## Morphophonology
 
 Todo: Document these
 
+ * **X1 X2 X3 X4 X5 X6 X7 X8 X9** 
+ * **Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9** 
+ * **Y1 Y2 Y3 Y4 Y5 Y6 Y7 Y8 Y9** 
+ * **Z1 Z2 Z3 Z4 Z5 Z6 Z7 Z8 Z9** 
 
+ * **l7**  always l
 
+ * **%^NYNAG**  Nynorsk agens lærar / lærer
 
- +Use/Circ  circular string
+ * +Use/Circ  circular string
 
- +Der/AAdv  Adjectives are also adverbs
- +Der/NomAct  verb +ing
- +Der1 
+ * +Der/AAdv  Adjectives are also adverbs
+ * +Der/NomAct  verb +ing
+ * +Der1 
+ * **+Der** 
 
 Normativity and other usage tags
 
+ * **+Err/Orth**    For speller use
+ * **+Err/Hyph		** 
+ * **+Err/Lex		** 
+ * **+Err/SpaceCmp	** 
+ * **+Err/MissingSpace** 
 
+ * **+Use/NG			** 
+ * **+Use/-Spell		** 
+ * **+Use/-PLX		** 
+ * **+Use/SpellNoSugg** 
+
+
+## Other tags
+ * **+ABBR** 
+ * **+ACR** 
+ * **+Arab** 
+ * **+Attr** 
+ * **+Coll** 
+ * **+Dyn** 
+ * **+MWE** 
+ * **+Num** 
+ * **+Rom** 
 
 
 ## Paradigm generation
 
+ * **+v1	** 
+ * **+v2	** 
 
 
 ###  Tags for abbreviation handling
 
 
+ * **+Gram/IAbbr	** 
+ * **+Gram/TAbbr	** 
+ * **+Gram/TNumAbbr** 
+ * **+Gram/NumNoAbbr** 
 
 ###  Semantic tags
 
+### Semtags
+
+ * **+Sem/Amount		** 
+ * **+Sem/Ani		** 
+ * **+Sem/Atr		** 
+ * **+Sem/Build		** 
+ * **+Sem/Build-room	** 
+ * **+Sem/Cat		** 
+ * **+Sem/Curr		** 
+ * **+Sem/Date		** 
+ * **+Sem/Domain		** 
+ * __+Sem/Domain_Hum	      __ 
+ * **+Sem/Dummytag	** 
+ * __+Sem/Edu_Hum	      __ 
+ * **+Sem/Event		** 
+ * **+Sem/Fem		** 
+ * **+Sem/Food-med	** 
+ * __+Sem/Group_Hum	      __ 
+ * **+Sem/Hum		** 
+ * **+Sem/ID			** 
+ * **+Sem/Lang		** 
+ * **+Sem/Mal		** 
+ * **+Sem/Mat		** 
+ * **+Sem/Measr		** 
+ * **+Sem/Money		** 
+ * **+Sem/Obj  		** 
+ * **+Sem/Obj-el		** 
+ * **+Sem/Obj-ling	** 
+ * **+Sem/Org		** 
+ * __+Sem/Org_Prod-audio   __ 
+ * __+Sem/Org_Prod-vis     __ 
+ * **+Sem/Part		** 
+ * **+Sem/Plc		** 
+ * **+Sem/Prod-vis	** 
+ * **+Sem/Route		** 
+ * **+Sem/Rule		** 
+ * **+Sem/Sign		** 
+ * **+Sem/State		** 
+ * **+Sem/State-sick	** 
+ * **+Sem/Substnc	** 
+ * **+Sem/Sur   		** 
+ * **+Sem/Time		** 
+ * **+Sem/Time-clock	** 
+ * **+Sem/Tool-it	** 
+ * **+Sem/Txt		** 
+ * **+Sem/Veh		** 
+ * **+Sem/Year		** 
 
 
 
 ## Preprocessing
 
+ * **+Use/PMatch** 
+ * **+Use/-PMatch** 
 
 ## Symbols that need to be escaped on the lower side (towards twolc):
 * **»7**:  Literal »
@@ -104,6 +227,9 @@ Normativity and other usage tags
 We have manually optimised the structure of our lexicon using following
 flag diacritics to restrict morhpological combinatorics - only allow compounds
 with verbs if the verb is further derived into a noun again:
+
+|   Flag | Comment
+| --- | --- 
 |  @P.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
 |  @D.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
 |  @C.NeedNoun@ | (Dis)allow compounds with verbs unless nominalised
@@ -112,6 +238,9 @@ For languages that allow compounding, the following flag diacritics are needed
 to control position-based compounding restrictions for nominals. Their use is
 handled automatically if combined with +CmpN/xxx tags. If not used, they will
 do no harm.
+
+|   Flag | Comment
+| --- | --- 
 |  @P.CmpFrst.FALSE@ | Require that words tagged as such only appear first
 |  @D.CmpPref.TRUE@ | Block such words from entering ENDLEX
 |  @P.CmpPref.FALSE@ | Block these words from making further compounds
@@ -147,6 +276,10 @@ Use the following flag diacritics to control downcasing of derived proper
 nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
 these flags. There exists a ready-made regex that will do the actual down-casing
 given the proper use of these flags.
+
+
+|   Flag | Comment
+| --- | --- 
 |  @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
 |  @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
 
@@ -156,7 +289,7 @@ given the proper use of these flags.
  * @P.Pmatch.Backtrack@ - 
  * @PMATCH_BACKTRACK@ - 
 
-Basic lexica, pointing to the other lexicon files
+# Basic lexica, pointing to the other lexicon files
 
  * LEXICON Root 
  *  FinalNoun ;   for -skap etc. that is affix rather than compound
@@ -194,11 +327,48 @@ SMI proper nouns
 contains the full nob name list
 
 
+## Sublexica for NounRoot
+
+This list for reference:
+
+|   kode | sg.ind. | sg.def | pl.ind. | pl.def.
+| --- | --- | --- | --- | --- 
+|  f1  | bru         | brua        | bruer       | bruene
+|  f2  | pumpe       | pumpa       | pumper      | pumpene
+|  m1  | stol        | stolen      | stoler      | stolene
+|      | bakke       | bakken      | bakker      | bakkene
+|      | pumpe       | pumpen      | pumper      | pumpene
+|  m2  | lærer       | læreren     | lærere      | lærerne
+|  m3  | bever       | beveren     | bevere      | beverne
+|      |             |             | bevre(r)    | bevrene
+|  n1  | slott       | slottet     | slott       | slotta/slottene
+|  n2  | eple        | eplet       | epler       | epla/eplene
+|      | salt        | saltet      | salter      | salta/saltene
+|  n3  | kontor      | kontoret    | kontor      | kontora
+|      |             |             | kontorer    | kontorene
+|      | høve        | høvet       | høve/høver  | høva/høvene
+|  	 | 			   | 			 | 			   | 
+|  a1  | god         | god         | godt        | gode
+|  a2  | norsk       | norsk       | norsk       | norske
+|  a3  | ekte        | ekte        | ekte        | ekte
+|  a4  | oppskjørtet | oppskjørtet | oppskjørtet | oppskjørtede/oppskjørtete
+|  a5  | makaber     | makaber     | makabert    | makabre
+|      | lunken      | lunken      | lunkent     | lunkne
+|  	 | 			   | 			 | 			   | 
+|  v1  | kaste       | kaster      | kasta       | kasta
+|      |             |             | kastet      | kastet
+|  v2  | lyse        | lyser       | lyste       | lyst
+|  v3  | leve        | lever       | levde       | levd
+|  v4  | nå          | når         | nådde       | nådd
+|  v4  | bie         | bier        | bidde       | bidd
 
 
 
+Clitics
 
-
+ * **LEXICON K** 
+ * **+Clt:%>s # ;** 
+ * **# ;** 
 
 # MorpAhophonological rules for Bokmål
 
