@@ -1,6 +1,6 @@
-!! !!!Tags for numerals (number words)
+!! # Tags for numerals (number words)
 
-!! !!Basic tags
+!! ## Basic tags
 LEXICON numtag
 +Det+Qnt+Pl: # ;
 
@@ -8,9 +8,9 @@ LEXICON numtagsg
 +Det+Qnt+Sg: # ;
 
 
-!! !!Tags for special use
+!! ## Tags for special use
 
-!! !Date
+!! ### Date
 LEXICON datetag
  +Det+Qnt+Sem/Date+Sg:  # ;
 
@@ -20,7 +20,7 @@ LEXICON dateyearcase_nullsuff_w_dot_tag
 LEXICON dateyearcase_fullsuff_tag
  +Det+Qnt+Sem/Date+Sg:   # ;
 
-!! !Clock
+!! ### Clock
 LEXICON numclock
  +Det+Qnt+Sem/Time-clock+Sg: # ; !foreløpig
 
@@ -30,20 +30,20 @@ LEXICON NUM-ARABICCASES
 LEXICON ID-ARABIC
 +Det+Sem/ID:   # ;
 
-LEXICON ARABICLOOPORD   !!≈ * __@CODE@__ ordinals
+LEXICON ARABICLOOPORD   !!≈ * **@CODE@** ordinals
  +A+Ord: MARKDOT ;
 
-LEXICON ACASETAG   !!≈ * __@CODE@__  is for 1e+Det+Qnt+Sg+Det+Qnt:1e
+LEXICON ACASETAG   !!≈ * **@CODE@**  is for 1e+Det+Qnt+Sg+Det+Qnt:1e
 +Det+Qnt+Sg: # ;
 
-LEXICON ARABICLOOPCOLL   !!≈ * __@CODE@__ collectives
+LEXICON ARABICLOOPCOLL   !!≈ * **@CODE@** collectives
   ARABICDELIMITER ;
  
 
-LEXICON ARABICDELIMITER   !!≈ * __@CODE@__  blank + 3 delim, what does the lg counc prefer?
+LEXICON ARABICDELIMITER   !!≈ * **@CODE@**  blank + 3 delim, what does the lg counc prefer?
  +Det+Qnt+Sg:            #      ; ! This is the 1984 case, ie NGA
 
-LEXICON ROMNUMTAG   !!≈ * __@CODE@__
+LEXICON ROMNUMTAG   !!≈ * **@CODE@**
   +Det+Qnt+Rom+Use/Circ:  #            ;
   +A+Rom+Ord+Use/Circ:%.  #            ; ! !III. as ordinal.
 
@@ -59,13 +59,13 @@ LEXICON NUMTAG
 LEXICON RNum
       +Cmp/Hyph+Cmp#:-∑# NounRoot ; ! For Num Cmp Noun, vi vil ikke ha Num Cmp Num
 
-LEXICON PROSENT !!≈ * __@CODE@__ % and case suffix
+LEXICON PROSENT !!≈ * **@CODE@** % and case suffix
                     POSTPROSENT ; ! case suffix
  % %%+Err/MissingSpace:%%   POSTPROSENT ; ! 50%. It is wrong, but 75 % of us write "75%".
           % %%:% %% POSTPROSENT ; ! the correct ones as well... 50 % etc.
  % %%+Err/MissingSpace:%%   POSTPROSENT ; ! 50%. It is wrong, but 75 % of us write "75%".
 
-LEXICON POSTPROSENT !!≈ * __@CODE@__ % and case suffix
+LEXICON POSTPROSENT !!≈ * **@CODE@** % and case suffix
 < "@R.ErrOrth.ON@" "+Err/Orth":0 "@C.ErrOrth@" > ARABICDELIMITER ;
    @D.ErrOrth.ON@@C.ErrOrth@                     ARABICDELIMITER ;
 

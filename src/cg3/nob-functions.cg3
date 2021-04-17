@@ -397,7 +397,7 @@ SETS
 LIST NOT-REAL-V = PrsPrc ;
 
 SET REAL-V = V - NOT-REAL-V  ;
-  #!! ** V is all readings with a V tag in them, REAL-V should
+  #!!     - V is all readings with a V tag in them, REAL-V should
   #!! be the ones without an N tag following the V.  
   #!! The REAL-V set thus awaits a fix to the preprocess V ... N bug.
             
@@ -447,7 +447,7 @@ SET NP-HEAD-ACC    = (Pron Acc) OR (N Acc) OR (A Acc) - RCmpnd ;
 
 #!! These sets model noun phrases (NPs). The idea is to first define whatever can
 #!! occur in front of the head of the NP, and thereafter negate that with the
-#!! expression __WORD - premodifiers__.
+#!! expression **WORD - premodifiers**.
 
 
 SET PRE-NP-HEAD = (Prop Attr) OR (Prop @>N) OR A OR ABBR OR ("buorre") OR     Num OR RCmpnd OR CC OR (Pron Dem) OR (Pron Ref) OR Indef OR 
@@ -475,7 +475,7 @@ SET PRE-APP   = COMMA OR PUNCT-LEFT OR PRE-NP-HEAD ;
 
 
 
-#!! The set __NOT-NPMOD__ is used to find barriers between NPs.
+#!! The set **NOT-NPMOD** is used to find barriers between NPs.
 #!! Typical usage: ... (*1 N BARRIER NPT-NPMOD) ...
 #!! meaning: Scan to the first noun, ignoring anything that can be
 #!! part of the noun phrase of that noun (i.e., "scan to the next NP head")
@@ -583,42 +583,42 @@ SET NON-APP = ALLSYNTAG - (@APP);
          SECTION         #
 
 
-#!! !!Some particular subjunctions
+#!! ## Some particular subjunctions
 
-#!! !!Adverb rules
+#!! ## Adverb rules
 
-#!! !!!MAPPING OF COMP-CS< , COMPLEMENTS OF PARTICLES IN COMPARISON
+#!! # MAPPING OF COMP-CS< , COMPLEMENTS OF PARTICLES IN COMPARISON
 #!! First map all COMP-CS<, then remove the other readings
 
 
 SECTION
  	
-#!! * __killAllnotComp__ Removes analysis which are not @COMP-CS<
+#!! * **killAllnotComp** Removes analysis which are not @COMP-CS<
 SELECT:killAllnotComp  @COMP-CS< ;	
 
-#!! !! ** ''This was the kill all not Comp rule!!''
+#!!     - *This was the kill all not Comp rule!!*
 
 
 SECTION
 
-#!! !!!MAPPING OF CC AND CS
+#!! # MAPPING OF CC AND CS
 
 #!! Mostly we map both @CNP and @CVP, then we select @CNP, after that we remove them so @CVP remains
 
-#!! * __cnpCompSC__ Map @CNP if @COMP-CS< or COMPAR ahte
+#!! * **cnpCompSC** Map @CNP if @COMP-CS< or COMPAR ahte
 MAP:cnpCompSC (@CNP) TARGET ("go" CS) (*1 @COMP-CS< BARRIER S-BOUNDARY OR CC OR CS);
 	#$ Son lea buoret go mun.
 	#$ Internáhta váhnenčoahkkimiidda bohte ollu váhnemat, ollu eanet go lágiduvvon biirečoahkkimiidda.
 
-#!! * __cnpCompSpec__ special rule because of PrfPrc = VFIN
+#!! * **cnpCompSpec** special rule because of PrfPrc = VFIN
 MAP:cnpCompSpec (@CNP) TARGET ("go" CS) (*1 PrfPrc BARRIER REAL-V LINK 1 NP-HEAD-NOM - Attr - Comp) ;
 	#$ Dat ii galgga dagahit ahte boazolohku šaddá alit go siidii mearriduvvon lohku.
 
-#!! * __CSasCVP__ Map @CVP to CS
+#!! * **CSasCVP** Map @CVP to CS
 MAP:CSasCVP (@CVP) TARGET CS (NEGATE 0 Indef) ;
 	#$ Leago guhkes áigi dassá go Máreha oidnet?
 
-#!! * __CCasCNPCVP__ Map (@CNP @CVP) to CC
+#!! * **CCasCNPCVP** Map (@CNP @CVP) to CC
 MAP:CCasCNPCVP (@CNP @CVP) TARGET CC ;
 
 
@@ -637,40 +637,40 @@ REMOVE:ja (@CVP)  IF (-1 Num LINK -1 Pr)(1 Num) ;
 	#$ Guovdageainnu suohkan áigu ovttasbargat Eanodaga ja Álttá suohkaniiguin, ovdánahttit mátkkoštanealáhusa.
 
 
-#!! * __killAllCNP__ removes all remaining @CNP
+#!! * **killAllCNP** removes all remaining @CNP
 REMOVE:killAllCNP @CNP IF (0 @CVP) ;
 
-#!! * __XCC-CS__ removes CC and CS with no synttag
+#!! * **XCC-CS** removes CC and CS with no synttag
 MAP:CC-CS (@X) TARGET CC-CS ;
 REMOVE (@X) ;    
 
 
 
 	
-#!! !!!VERB MAPPINGS
+#!! # VERB MAPPINGS
 
 
-#!! !!Verbs as predicatives (@SPRED>) and (@<OPRED) 
+#!! ## Verbs as predicatives (@SPRED>) and (@<OPRED) 
 
-#!! !The tags (@SPRED>) and (@<OPRED) target  PrfPrc
+#!! ### The tags (@SPRED>) and (@<OPRED) target  PrfPrc
 #!! The rules are no documented yet
 
 
 
-#!! !!Passive verbs often have 
+#!! ## Passive verbs often have 
 
 
 MAP:-FMAINVPrfPrc (@-FMAINV) TARGET PrfPrc + Pass (*-1 REAL-COPULAS + VFIN + Sg3 BARRIER NOT-ADV-PCLE LINK NEGATE -1 Nom)(NEGATE *-1C PrfPrc BARRIER REAL-V OR N) (*1 (N Sg Nom) BARRIER NOT-A) ; 
 
 
-#!! !!Verbs as prenominal participles (@>N):
+#!! ## Verbs as prenominal participles (@>N):
 
 
 
 
 
 
-#!! !(@<SUBJ)  target Inf
+#!! ### (@<SUBJ)  target Inf
 
 
 MAP:-F<OBJInf (@-F<OBJ) TARGET Inf ((-1 TRANS-V + Inf LINK 0 SUBJ OR SPRED) OR (-1 Acc LINK -1 TRANS-V + Inf LINK 0 SUBJ OR SPRED)) ;
@@ -681,7 +681,7 @@ MAP:-F<OBJInf4 (@-F<OBJ) TARGET Inf (*-1 TRANS-V + Inf BARRIER NOT-ADV-PCLE LINK
 
 
 
-#!!	* __OBJInf__ Inf 		
+#!!	* **OBJInf** Inf 		
 MAP:<OBJInf1 (@<OBJ) TARGET Inf (*-1 TRANS-V BARRIER NOT-ADV-PCLE OR COMMA LINK NOT 0 AUX OR Adv)(NEGATE 0 Pl3 LINK *-1 TRANS-V LINK 0 (Pl Nom))(NEGATE -1 CC LINK -1 Inf LINK -1 AUX)(NEGATE 0 Inf LINK *-1 AUX BARRIER REAL-V) ; 
 	#$ Mun hálidan oahppat goarrut gávtti.
 	#$ Oahpa goarrut gávtti.
@@ -696,18 +696,18 @@ MAP:<OBJInf1 (@<OBJ) TARGET Inf (-1 Nom LINK *-1 TRANS-V BARRIER NOT-NPMODADV LI
 	#$ Raporttas bokte dáhttu bargojoavku čalmmustahttit Sámedikki.
 	#$ Dan maŋŋá duste maiddái eará dearvvašvuođabargit hállat dan birra.
 
-#!!	* __OBJInf__ Inf 		
+#!!	* **OBJInf** Inf 		
 MAP:<OBJInfforanVFIN (@OBJ>) TARGET Inf (1 TRANS-V + VFIN)(-1 BOC) ; 
 	#$ Galgabehtet muitit, ahte báhčit oažžu dáppe meahcis...
 
 
 
-#!!	* __1__ maps <OBJ to Inf if -1 TV etc.
+#!!	* **1** maps <OBJ to Inf if -1 TV etc.
 MAP:1 (@<OBJ) TARGET Inf (*-1 TRANS-V BARRIER SV-BOUNDARY OR AUX OR Acc OR COMMA LINK NOT 0 AUX LINK 0 PrfPrc);
 
 
 # Coordination
-#!!	* __<OBJInfCoord1__
+#!!	* **<OBJInfCoord1**
 MAP:<OBJInfCoord1 (@<OBJ) TARGET Inf (*-1 CC BARRIER NOT-ADV LINK *-1 Inf BARRIER REAL-V LINK *-1 NOT-AUX-V BARRIER NOT-ADV LINK NOT 0 Imprt OR AUX) ; 
 # LINK *-1 Nom BARRIER S-BOUNDARY);
 	#$ Son boahtá stálljii ja veahkeha čorget ja biebmat heasttaid.
@@ -720,7 +720,7 @@ MAP:<OBJInfCoord3 (@<OBJ) TARGET Inf (*-1 CC OR COMMA BARRIER SV-BOUNDARY OR REA
 	#$ Go skuvla nogai sullii geassemánu 1. beaivve, de barge internáhttaoahpaheaddjit ijat beaivái láhkket ohppiid bevddiid, oljet láhttiid ja rádjat buot skuvlastohpogálvvuid ja dávviriid keallirlatnjii.
 
 
-#!!	* __<OBJInfCoord2__
+#!!	* **<OBJInfCoord2**
 MAP:<OBJInfCoord2 (@<OBJ) TARGET Inf (-1 CC LINK *-1 Inf BARRIER REAL-V LINK *-1 NOT-AUX-V BARRIER NOT-ADV LINK 0 Imprt OR AUX LINK *-1 BOC BARRIER WORD);
 	#$ Oahpa goarrut gávtti ja gođđit ránu.	  
 
@@ -736,13 +736,13 @@ MAP:<OBJ (@<OBJ) TARGET Inf IF (*-1 CC BARRIER NOT-ADV LINK *-1 (V @<OBJ) BARRIE
 
 
 
-#!! !(@+FMAINV) and (@+FAUXV) and (@-FAUXV)
+#!! ### (@+FMAINV) and (@+FAUXV) and (@-FAUXV)
 
 
 
 
 
-#!! * __-FAUXVaux__ AUX verbs     
+#!! * **-FAUXVaux** AUX verbs     
 MAP:-FAUXVaux (@-FAUXV) TARGET AUX + Inf (*-1 AUX BARRIER REAL-V OR S-BOUNDARY)(*1 Inf BARRIER REAL-V OR S-BOUNDARY OR (A Nom)) ;
 MAP:-FAUXVaux (@-FAUXV) TARGET REAL-COPULAS + Inf (*-1 AUX BARRIER REAL-V OR S-BOUNDARY)(*1 PrfPrc - @>N BARRIER REAL-V OR S-BOUNDARY) ;
 	#$ Don fertet máhttit čilget niegu veardádusaid, ovdalgo sáhtát dan dieđu ipmirdit.
@@ -751,35 +751,35 @@ MAP:-FAUXVaux (@-FAUXV) TARGET REAL-COPULAS + Inf (*-1 AUX BARRIER REAL-V OR S-B
 	#% Min ulbmil lea ahte galgá leat vejolaš eallit mielkebuvttadandietnasiin fylkkas, deattasta Tretnes.
 
 
-#!! * __+FMAINVCop__  copulas even if PrfPrc coming after
+#!! * **+FMAINVCop**  copulas even if PrfPrc coming after
 MAP:+FMAINVCop (@+FMAINV) TARGET VFIN-NOT-IMP + COPULAS (*1 Nom BARRIER PrfPrc  LINK *1 COMMA OR CS BARRIER VFIN LINK *1 COPULAS + PrfPrc BARRIER VFIN OR Nom OR S-BOUNDARY OR LEFT) ;	
 	#$ Eará guovlluin gos leat vel unnit sámit go Finnmárkkus, leamaš dákkár ákkain vel stuorát deaddu almmolaš ságastallamis.
 
 
-#!! * __+FAUXVCop__  copulas coming before the mainverb
+#!! * **+FAUXVCop**  copulas coming before the mainverb
 MAP:+FAUXVCop (@+FAUXV) TARGET VFIN-NOT-IMP + COPULAS (*1 PrfPrc BARRIER VFIN OR S-BOUNDARY OR (PUNCT LEFT) LINK NOT 0 (@>N) LINK NOT -1 (Num Nom)) ;	
 	#$ Son lea leamaš oahpaheaddji maŋimuš 15-20 jagi, sihke mánáidskuvllas ja joatkkaskuvllas.
 	#% Mun, Johanas, lean dat guhte lean gullan ja oaidnán buot dán .
 	#% Eará guovlluin gos leat vel unnit sámit go Finnmárkkus, leamaš dákkár ákkain vel stuorát deaddu almmolaš ságastallamis.
 
 
-#!! * __+FMAINVAux1__  
+#!! * **+FMAINVAux1**  
 MAP:+FMAINVAux1 (@+FMAINV) TARGET VFIN (NEGATE *1 Inf BARRIER S-BOUNDARY);
 	#$ Maid Máret áiggui goarrumis?
 
 		
-#!! * __+FAUXVCop__  copulas coming after the mainverb
+#!! * **+FAUXVCop**  copulas coming after the mainverb
 MAP:+FAUXVCop (@+FAUXV) TARGET VFIN-NOT-IMP + COPULAS (*-1 PrfPrc  BARRIER NOT-ADV-PCLE LINK NOT 0 SYN-V OR (@>N) OR (N Nom))
  ;
 	#$ Ja boahtán ledje su gudnejahttit.
  	#% Lonohallan lea čatnon Barents regiovdnii, dát mearkkaša ahte lonohallan lea Ruššii.		
     
-#!! * __+FMAINVCop__  copulas 	
+#!! * **+FMAINVCop**  copulas 	
 MAP:+FMAINVCop (@+FMAINV) TARGET VFIN + COPULAS (NEGATE *-1 Inf OR PrfPrc BARRIER VFIN OR S-BOUNDARY)(NEGATE *1 Inf OR PrfPrc - @>N  BARRIER VFIN OR S-BOUNDARY OR (PUNCT LEFT));	
 	#$ Mun lean Romssas. 
 
     
-#!! * __+FMAINV__  to the remaining finite verbs which are not AUX    
+#!! * **+FMAINV**  to the remaining finite verbs which are not AUX    
 MAP:+FMAINV (@+FMAINV) TARGET VFIN-NOT-AUX (NOT 0 V + OBJ OR V + SUBJ OR V + ADVL OR (V @>N) OR (V @N<)) (NEGATE *0 VFIN-NOT-AUX OR @+FMAINV BARRIER S-BOUNDARY OR COMMA)(NEGATE *-1 (V @>N) BARRIER NOT-A) (NEGATE *-1 REAL-V - @>N BARRIER S-BOUNDARY OR COMMA)(NEGATE *1 VFIN OR PrfPrc - @>N BARRIER S-BOUNDARY OR COMMA)(NEGATE 0 Inf LINK -1 CC LINK *-1 Inf BARRIER REAL-V LINK -1 AUX) ;
 	#$ Boađe boahtte vahku.
 	#$ Son lea oappáin náitalan.
@@ -797,7 +797,7 @@ MAP:+FMAINVObjV_a (@+FMAINV) TARGET VFIN-NOT-AUX + TRANS-V (NOT 0 V + OBJ OR V +
 MAP:+FMAINVObjV_b (@+FMAINV) TARGET VFIN-NOT-AUX + TRANS-V (NOT 0 V + OBJ OR V + SUBJ OR V + ADVL OR (V @>N) OR (V @N<))(1 Acc LINK 1 TRANS-V + OBJ) ;
 	#$ Dii oahppabehtet lohkat ja čállit sámegillii.
 
-#!! * __+FMAINV__  to finite verb after mainverb
+#!! * **+FMAINV**  to finite verb after mainverb
 MAP:+FMAINVafterInf (@+FMAINV) TARGET VFIN-NOT-AUX + Inf (NOT 0 V + OBJ OR V + SUBJ OR V + ADVL OR (V @>N) OR (V @N<)) (-1 (V @OBJ>) LINK -1 BOC) ;
 	#$ Galgabehtet muitit, ahte báhčit oažžu dáppe meahcis...
 
@@ -835,15 +835,15 @@ MAP:-FMAINVfragment (@-FMAINV) TARGET PrfPrc (NOT 0 SYN-V) (-1 Adv LINK -1 BOS) 
 	#$ Guhká bargan journalistan.
 
 
-#!! !(@-FMAINV) and (@-FAUXV)
+#!! ### (@-FMAINV) and (@-FAUXV)
 
 
-#!! * __-FAUXVPrfPrcAux__  to PrfPrc AUX  before Inf or Actio Ess
+#!! * **-FAUXVPrfPrcAux**  to PrfPrc AUX  before Inf or Actio Ess
 MAP:-FAUXVPrfPrcAux (@-FAUXV) TARGET PrfPrc + AUX (*1 Inf BARRIER SV-BOUNDARY OR (N Ess) OR (A Ess))(*-1 ("leat") BARRIER NOT-ADV-PCLE) (NEGATE 0 V LINK *1 Acc BARRIER NOT-ADV-PCLE LINK 1 Inf + OBJ);	
 	#$ In leat sáhttán gáhku borrat dan rájes.
 	#% Jus lean váiban dahje ferten lihkkat árrat, de manan nohkkat oalle árrat.
 
-#!! * __-FMAINVPrfPrc__  to PrfPrc 
+#!! * **-FMAINVPrfPrc**  to PrfPrc 
 MAP:-FMAINVPrfPrc (@-FMAINV) TARGET PrfPrc (*-1 REAL-COPULAS + VFIN + VFIN BARRIER S-BOUNDARY)
 #(NEGATE *-1C PrfPrc BARRIER REAL-V OR N)
 (NEGATE -1 PrfPrc); 
@@ -856,21 +856,21 @@ MAP:-FMAINVPrfPrc (@-FMAINV) TARGET PrfPrc (*-1 REAL-COPULAS + VFIN + VFIN BARRI
 	#$ Oahppit leat lohkan ollu girjjiid.
 	#$ Lean mun gal oaidnán čakčaseavdnjadiin dola rievdamiin čázi alde Deanus.
 
-#!! * __-FMAINVPrfPrccoord__  to PrfPrc coordination	
+#!! * **-FMAINVPrfPrccoord**  to PrfPrc coordination	
 MAP:-FMAINVPrfPrccoord (@-FMAINV) TARGET PrfPrc (*-1 CC BARRIER REAL-V OR S-BOUNDARY LINK *-1 PrfPrc - @>N BARRIER REAL-V OR S-BOUNDARY LINK *-1 REAL-COPULAS  BARRIER NOT-ADV-PCLE)(NEGATE 0 VFIN + AUX LINK *1 Inf BARRIER NOT-ADV-PCLE);
 	#$ ... dákkár orgánii leat boahtán dahje ovddiduvvon.
 	#$ Sápmelaččat ledje dohkkehuvvon Norgga álgoálbmogin ovdalgo konvenšuvnna ledje šiehtadan gárvásii ja dasa vuolláičállán.
 	#%  Jus lean váiban dahje ferten lihkkat árrat, de manan nohkkat oalle árrat.
 
-#!! * __-FMAINVPrfPrccoord__  to PrfPrc coordination	
+#!! * **-FMAINVPrfPrccoord**  to PrfPrc coordination	
 MAP:-FMAINVPrfPrccoord (@-FMAINV) TARGET PrfPrc (-1 CC LINK -1 @-FMAINV) ;
 	#$ Son lei vuolggahan mu dán máilbmái dáhpedorpmis geainna nu, riegádahttán ja guoddán mu heakkastis vahágis, biebman ja bivttastan dalle go muittii.
 
-#!! * __-FMAINVPrfbeforeAux__  to PrfPrc before the Aux	
+#!! * **-FMAINVPrfbeforeAux**  to PrfPrc before the Aux	
 MAP:-FMAINVPrfbeforeAux (@-FMAINV) TARGET PrfPrc (*1 REAL-COPULAS + FAUXV BARRIER NOT-ADV-PCLE LINK NEGATE *1 PrfPrc BARRIER NOT-ADV-PCLE)(NEGATE -1 BOC LINK 1 Pass LINK 1 ("leat") LINK *2 NP-HEAD-NOM BARRIER NOT-NPMOD);     
 	#$ Ja boahtán ledje su gudnejahttit.
 
-#!! * __-FMAINVPrfafterMan__  to PrfPrc before the Aux	
+#!! * **-FMAINVPrfafterMan**  to PrfPrc before the Aux	
 MAP:-FMAINVPrfafterMan (@-FMAINV) TARGET PrfPrc (-1 ("man"))(*1 ("leat") BARRIER REAL-V);     
 	#$ Dattetge duvdet min sámepolitihkkarat iežaset buorren ovdamearkan álgoálbmotservvodagas , dasa ahte man lihkostuvvan min Sámi ovttasbargu stáhta eiseválddiiguin lea leamaš.
 
@@ -880,7 +880,7 @@ MAP:-FMAINV (@-FMAINV) TARGET ("beaivádit" PrfPrc)(1 Sem/Date) ;
 	#$ Ii lean gal mihkkege heahtediliid, muhto lei čielggas ahte muhtumat dovde dorvvohisvuođa ja dovde okto báhcán.
 	#% go oaidná biebman boahtá divrras šaddat.
 
-#!! * __-FMAINVInf__  to Inf
+#!! * **-FMAINVInf**  to Inf
 MAP:-FMAINVInf (@-FMAINV) TARGET Inf (NOT 0 FAUXV)(NEGATE 0 A LINK *-1 COPULAS BARRIER REAL-V OR (N Nom) OR (A Nom))(NEGATE 0 (Pl Nom) LINK *1 VFIN + Pl3 BARRIER NOT-NPMODADV OR COMMA);
 
 
@@ -889,7 +889,7 @@ MAP:-FMAINVInf (@-FMAINV) TARGET Inf (NOT 0 FAUXV)(NEGATE 0 A LINK *-1 COPULAS B
 
 
 
-#!! * __+FAUXV__ to  Aux
+#!! * **+FAUXV** to  Aux
 MAP:+FAUXV (@+FAUXV) TARGET VFIN-NOT-IMP + AUX (NEGATE 0 V LINK *1 Acc BARRIER NOT-ADV-PCLE LINK 1 Inf + OBJ)(NEGATE 0 A LINK 1 CC LINK 1 A) ;
 
 MAP:+FMAINV (@+FMAINV) TARGET VFIN-NOT-IMP  ;
@@ -900,26 +900,26 @@ MAP:+FMAINV (@+FMAINV) TARGET VFIN-NOT-IMP  ;
 MAP:NPrsPrc2 (@>N) TARGET PrsPrc ((0C PrsPrc) OR (0 ("johtit") LINK 1 N));
 #MAP:NPrsPrc2 (@>N) TARGET PrsPrc (NOT 0 NomAg OR VFIN LINK 1C N) ;
 
-#!! * __PrfPrcEllipsis__ being verbal head when finite verb is missing
+#!! * **PrfPrcEllipsis** being verbal head when finite verb is missing
 MAP:PrfPrcEllipsis @-FMAINV TARGET PrfPrc (NOT *-1 VFIN)(1 A OR N);
 
 
-#!! !And then we remove the verbs which didn't get any syntactic tag, in favour of verbs with syntactic tags.
+#!! ### And then we remove the verbs which didn't get any syntactic tag, in favour of verbs with syntactic tags.
 
 MAP:fragmverb (@-FMAINV) TARGET PrfPrc (0C PrfPrc)  ;
 	#$ Ođastuvvon: 07.03.2017 - 16:29
 
 
-#!! * __realverbX__
+#!! * **realverbX**
 MAP:realverbX (@X) TARGET REAL-V  ;
 	## Oađidettiin gullen olbmo boahtimin.
 
 
 
-#!! !__killifVinCohort__ This rule removes all other readings, if there is a mapped V reading in the same cohort. Every case which this goes wrong, should be fixed in mapping rules or previous disrules.
+#!! ### **killifVinCohort** This rule removes all other readings, if there is a mapped V reading in the same cohort. Every case which this goes wrong, should be fixed in mapping rules or previous disrules.
 SELECT:killifVinCohort SYN-V  ;
 
-#!! * __X__
+#!! * **X**
 REMOVE:X (@X) ;
 
 
@@ -927,14 +927,14 @@ SELECT:Adv Adv (0 A LINK 1 @+FMAINV OR @+FAUXV)(-1 N) ;
 	#$ Tommi ja Annika dárkilit geahččaba Pippi oaidnin dihte mo diŋggaohccit barget.
 
 
-#!! !!!NOUNS
+#!! # NOUNS
 # Disambiguating nouns 
 # Nouns vs. adjectives
 
 	
 # Disambiguating proper nouns 
 
-#!! !!!CASE DISAMBIGUATION
+#!! # CASE DISAMBIGUATION
 
 LIST WORDLEMMA = (".*"r) ;
 
@@ -1005,10 +1005,10 @@ LIST PERS-TAGS = Sg1 Sg2 Sg3 Du1 Du2 Du3 Pl1 Pl2 Pl3 ;
 MAP:subj>Pers (@SUBJ>) TARGET $$PERS-TAGS + Nom IF ((*1 $$PERS-TAGS + VFIN BARRIER SV-BOUNDARY OR N) OR (1 (Sg Com) LINK *1 $$PERS-TAGS + VFIN BARRIER SV-BOUNDARY OR N) OR (*1 Refl BARRIER NOT-ADV-PCLE LINK *1 $$PERS-TAGS + VFIN BARRIER NOT-ADV-PCLE)) ;
  
 
-#!! * __subj>Sgnr2__ (@SUBJ>) for Nom Sg; if VFIN + Sg3 to the right.
+#!! * **subj>Sgnr2** (@SUBJ>) for Nom Sg; if VFIN + Sg3 to the right.
 MAP:subj>Sg (@SUBJ>) TARGET N OR Pron + Nom IF (*1 VFIN BARRIER REAL-V OR S-BOUNDARY OR COMMA);
 
-#!! * __<subjSg__ (@<SUBJ) for Nom Sg; if VFIN Sg3 or Du2 to the left (no HAB allowed to the left).
+#!! * **<subjSg** (@<SUBJ) for Nom Sg; if VFIN Sg3 or Du2 to the left (no HAB allowed to the left).
 MAP:<subjSg (@<SUBJ) TARGET N OR Pron + Nom IF (*-1 VFIN  BARRIER S-BOUNDARY) ;
 
 MAP:subjCoorTEST (@SUBJ>) TARGET Nom IF ((1 CC OR COMMA LINK *1 @SUBJ> - Rel BARRIER NOT-NPMOD) OR (*-1 CC BARRIER NOT-NPMOD OR CC LINK -1 @SUBJ>)) ;
@@ -1028,7 +1028,7 @@ MAP:subj>App (@SUBJ>) TARGET (N Nom) OR (Pron Nom) (1 COMMA LINK *1 @APP-N< OR @
  
  
 
-#!! !!HNOUN MAPPING
+#!! ## HNOUN MAPPING
 
 MAP:hnounNom (@HNOUN) TARGET NP-HEAD-NOM - A OR (Num Nom) (NEGATE *0 REAL-V BARRIER (":"))(NEGATE *-1 PUNCT BARRIER (":") LINK -1 WORD) ;
 	#$ Fiskes, rukses, alit, ruoná ja muđui buotlágaš ivnnit.
