@@ -1,4 +1,4 @@
-!! !!!MorpAhophonological rules for Bokmål
+!! # MorpAhophonological rules for Bokmål
 
 Alphabet
  a b c d e f g h i j k l m n o p q r s t u v w x y z æ ø å
@@ -70,7 +70,7 @@ Sets
 ! Z2 = protects vowel
 
 
-!! !!!Rule section
+!! # Rule section
 
 Rules
 
@@ -79,7 +79,7 @@ Rules
 ! Nynorsk dictionary rules
 
 "Change -er stem to -ar in Nynorsk"
-!! __@RULENAME@__  
+!! **@RULENAME@**  
  e:a <=> _ r %^NYNAG: ;
 
 ! This rule is for dictionary use only.
@@ -91,7 +91,7 @@ Rules
 ! --------------------
 
 "e Deletion"
-!! __@RULENAME@__  
+!! **@RULENAME@**  
  e:0 <=>      Cns:  _ LNR X1: %> ( e | a ) ;
          Vow  Cns:* _  [Dummy:* - Z2:]  %> [ Vow | Cns Cns ] ;
 	            _ %> Q3: ;
@@ -116,7 +116,7 @@ Rules
 !!€ viktig>0st
 
 "Consonant shortening before deletion"
-!! __@RULENAME@__  
+!! **@RULENAME@**  
  Cx:0 <=> Vow Cx _ e: LNR X1: %> ( e | a ) ;
           where Cx in ( b d v ) ;
 
@@ -125,7 +125,7 @@ Rules
 
 
 "Geminate deletion in front of -t and -d"
-!! __@RULENAME@__  
+!! **@RULENAME@**  
  Cx:0 <=> Vow Cx _ (e:0)         %> Q3: [d|t] ; ! kaller:kalte
           Vow Cx _ :t e s  Q1:  ; ! lykkes:lyktes
           Vow Cx _  e:   LNR X1: %> ( e | a ) ;  ! sikker:sikre
@@ -149,7 +149,7 @@ Rules
 ! e:0 <=> Vow ( Cns:* ) _ ( Dummy:* - Z2: ) %> [ Vow | Cns Cns ] ;
 
 "Delete foreign vowel"
-!! __@RULENAME@__  
+!! **@RULENAME@**  
  Vx:0 <=> _ X2:  ;
 	where Vx in (a o) ;
 
@@ -158,13 +158,13 @@ Rules
 
 
 "Delete r"
-!! __@RULENAME@__  
+!! **@RULENAME@**  
  r:0 <=>   _ %> X3: ;
          r _ e: LNR X1: %> ( e | a ) ;
 ! sparepengar : sparepengane
 
 "Delete m"
-!! __@RULENAME@__  
+!! **@RULENAME@**  
  m:0 <=>    _ X4: [ #: (Q3:) | %> s ] ;      ! kammX4:kam
           m _ e: LNR X1: %> ( e | a ) ; ! gammel:gamle
           m _ e: %> Q3: t ;
@@ -172,7 +172,7 @@ Rules
          
 
 "Umlaut"
-!! __@RULENAME@__  
+!! **@RULENAME@**  
  Vx:Vy <=> _ Cns:* ( e:0 ) Z1: ;
  where Vx in ( u o a å )
        Vy in ( y ø e e )
@@ -184,7 +184,7 @@ Rules
 
 
 "um Deletion 1"
-!! __@RULENAME@__  
+!! **@RULENAME@**  
  u:0 <=> _ m: X5: %> ;
 
 !!€ museumX5>er
@@ -195,7 +195,7 @@ Rules
 
 
 "t weakening"
-!! __@RULENAME@__  
+!! **@RULENAME@**  
  t:d <=> [Cns:|Vow:] _ X6:0 %> e ;
 
 !!€ oppskjørtetX6>e
@@ -210,7 +210,7 @@ Cx:0 <=> Cx _ #: #: Cx ;
 !!€ grammatik000kontroll
 
 "Double t deletion"
-!! __@RULENAME@__  
+!! **@RULENAME@**  
  t:0 <=>   Cns t %> _  .#. ;  ! svart
            Vow t    _  e:  LNR X1: %> (e|a) ;      ! sikker:sikre
            Vow t    _ (e:0)        %> Q3:0 [d|t] ; ! kaller:kalte
@@ -228,7 +228,7 @@ Cx:0 <=> Cx _ #: #: Cx ;
 ! ---------------
 
 "Insert t in passives"
-!! __@RULENAME@__  
+!! **@RULENAME@**  
  0:t <=> _ e s Q1: ;
 
 !"Insert d in passives"
@@ -238,7 +238,7 @@ Cx:0 <=> Cx _ #: #: Cx ;
 ! -------
 
 "Clitic after s-final"
-!! __@RULENAME@__  
+!! **@RULENAME@**  
  s:' <=> s %> _ ;
 ! huss -> hus'
 

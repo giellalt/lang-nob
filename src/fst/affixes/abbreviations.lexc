@@ -13,10 +13,10 @@
 ! giellatekno@uit.no or feedback@divvun.no
 
 ! ===========================================
-!! !!!Continuation lexicons for abbreviations
+!! # Continuation lexicons for abbreviations
 ! ===========================================
 
-!! !!Lexica for adding tags and periods
+!! ## Lexica for adding tags and periods
 ! ----------------------------------
 
 LEXICON ab-dot
@@ -34,9 +34,9 @@ ab-nodot-noun-trab 	  ;
 !LEXICON ab-nodot-trnumab ab-nodot-noun-trnumab ;
 
 
-!! !!The sublexica
+!! ## The sublexica
 
-!! !Continuation lexicons for abbrs both with and witout final period
+!! ### Continuation lexicons for abbrs both with and witout final period
 
 LEXICON ab-noun-itrab
 +ABBR+Gram/IAbbr:    ab-noun ;
@@ -45,7 +45,7 @@ LEXICON ab-noun-trab
 LEXICON ab-noun-trnumab
 +ABBR+Gram/TNumAbbr: ab-noun ;
 
-LEXICON ab-noun   !!= * __@CODE@__
+LEXICON ab-noun   !!= * **@CODE@**
          ab-nodot-noun ;
 +Use/NG: ab-dot-noun   ;
 
@@ -53,23 +53,23 @@ LEXICON ab-adj-itrab
 +Gram/IAbbr: ab-adj ;
 LEXICON ab-adj-trab
 +Gram/TAbbr: ab-adj ;
-LEXICON ab-adj   !!= * __@CODE@__
+LEXICON ab-adj   !!= * **@CODE@**
          ab-nodot-adj ;
 +Use/NG: ab-dot-adj   ;
 
 LEXICON ab-adv-itrab
 +ABBR+Gram/IAbbr:    ab-adv ;
-LEXICON ab-adv   !!= * __@CODE@__
+LEXICON ab-adv   !!= * **@CODE@**
          ab-nodot-adv ;
 +Use/NG: ab-dot-adv   ;
 
 LEXICON ab-num-itrab
 +ABBR+Gram/IAbbr: ab-num ;
-LEXICON ab-num   !!= * __@CODE@__
+LEXICON ab-num   !!= * **@CODE@**
          ab-nodot-num ;
 +Use/NG: ab-dot-num   ;
 
-!! !Lexicons without final period
+!! ### Lexicons without final period
 
 LEXICON ab-nodot-noun-itrab
 +ABBR+Gram/IAbbr:    ab-nodot-noun ;
@@ -77,28 +77,28 @@ LEXICON ab-nodot-noun-trab
 +ABBR+Gram/TAbbr:    ab-nodot-noun ;
 LEXICON ab-nodot-noun-trnumab
 +ABBR+Gram/TNumAbbr: ab-nodot-noun ;
-LEXICON ab-nodot-noun   !!= * __@CODE@__  The bulk
+LEXICON ab-nodot-noun   !!= * **@CODE@**  The bulk
 +N+ABBR: # ;
 
 
 
 LEXICON ab-nodot-adj-itrab
 +ABBR+Gram/IAbbr: ab-nodot-adj ;
-LEXICON ab-nodot-adj   !!= * __@CODE@__
+LEXICON ab-nodot-adj   !!= * **@CODE@**
 +A+ABBR: # ;
 
 LEXICON ab-nodot-adv-itrab
 +ABBR+Gram/IAbbr:    ab-nodot-adv ;
 LEXICON ab-nodot-adv-trnumab
 +ABBR+Gram/TNumAbbr: ab-nodot-adv ;
-LEXICON ab-nodot-adv   !!= * __@CODE@__
+LEXICON ab-nodot-adv   !!= * **@CODE@**
 +Adv+ABBR: #     ;
            RHyph ;
 
-LEXICON ab-nodot-num   !!= * __@CODE@__
+LEXICON ab-nodot-num   !!= * **@CODE@**
 +Num+ABBR: # ;
 
-!! !Lexicons with final period
+!! ### Lexicons with final period
 
 LEXICON ab-dot-noun-itrab
 +ABBR+Gram/IAbbr:    ab-dot-noun ;
@@ -106,14 +106,14 @@ LEXICON ab-dot-noun-trab
 +ABBR+Gram/TAbbr:    ab-dot-noun ;
 LEXICON ab-dot-noun-trnumab
 +ABBR+Gram/TNumAbbr: ab-dot-noun ;
-LEXICON ab-dot-noun   !!= * __@CODE@__  This is the lexicon for abbrs that must have a period.
+LEXICON ab-dot-noun   !!= * **@CODE@**  This is the lexicon for abbrs that must have a period.
 +N+ABBR: DOT ;
 
 LEXICON ab-dot-adj-itrab
 +ABBR+Gram/IAbbr:    ab-dot-adj ;
 LEXICON ab-dot-adj-trab
 +ABBR+Gram/TAbbr:    ab-dot-adj ;
-LEXICON ab-dot-adj   !!= * __@CODE@__  This is the lexicon for abbrs that must have a period.
+LEXICON ab-dot-adj   !!= * **@CODE@**  This is the lexicon for abbrs that must have a period.
 +A+ABBR: DOT ;
 
 LEXICON ab-dot-adv-itrab
@@ -125,28 +125,28 @@ LEXICON ab-dot-adv-trab
 LEXICON ab-dot-adv-trnumab
 +ABBR+Gram/TNumAbbr:  ab-dot-adv ;
 
-LEXICON ab-dot-adv   !!= * __@CODE@__  This is the lexicon for abbrs that must have a period.
+LEXICON ab-dot-adv   !!= * **@CODE@**  This is the lexicon for abbrs that must have a period.
 +A+ABBR:  DOT ; ! Adv without case.
 
 LEXICON ab-dot-num-trab  +Num+ABBR+Gram/TAbbr: ab-dot-num ;
-LEXICON ab-dot-num   !!= * __@CODE@__  This is the lexicon for abbrs that must have a period.
+LEXICON ab-dot-num   !!= * **@CODE@**  This is the lexicon for abbrs that must have a period.
 +A+ABBR: DOT ;
 
 LEXICON ab-dot-cc-trab
 +CC+ABBR+Gram/TAbbr: ab-dot-cc ;
-LEXICON ab-dot-cc   !!= * __@CODE@__
+LEXICON ab-dot-cc   !!= * **@CODE@**
 +ABBR:  DOT ;
 
 LEXICON ab-dot-verb-trab  +V+ABBR+Gram/TAbbr:    ab-dot-verb ;
 LEXICON ab-dot-verb-itrab +V+ABBR+Gram/IAbbr:    ab-dot-verb ;
 
-LEXICON ab-dot-verb   !!= * __@CODE@__
+LEXICON ab-dot-verb   !!= * **@CODE@**
  +V+Imp+ABBR: DOT ; ! Period.
 
 
 LEXICON ab-dot-IVprfprc-trab    +V+ABBR+Gram/TAbbr:    ab-dot-IVprfprc ;
 
-LEXICON ab-dot-IVprfprc   !!= * __@CODE@__
+LEXICON ab-dot-IVprfprc   !!= * **@CODE@**
  +V+Sg+PrfPrc+ABBR: DOT ; ! Period.
 
 
@@ -154,7 +154,7 @@ LEXICON ab-dot-IVprfprc   !!= * __@CODE@__
 
 
 
-LEXICON DOT   !!= * __@CODE@__ - Adds the dot to dotted abbreviations.
+LEXICON DOT   !!= * **@CODE@** - Adds the dot to dotted abbreviations.
 
  +Use/-PMatch:%. # ; ! We need the dot here for regular fsts
 ! Split the abbr + full stop in two segments, but only when using pmatch:
