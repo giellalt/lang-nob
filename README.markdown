@@ -10,8 +10,8 @@ authors named in the AUTHORS file are available to grant other licencing
 choices.
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-nob)](https://github.com/giellalt/lang-nob/issues)
-[![Build Status](https://github.com/giellalt/lang-nob/workflows/Build%20Speller%20Archives%20and%20Bundles/badge.svg)](https://github.com/giellalt/lang-nob/actions)
-[![License](https://img.shields.io/github/license/giellalt/template-lang-nob)](https://raw.githubusercontent.com/giellalt/lang-nob/develop/LICENSE)
+[![Build Status](https://github.com/giellalt/lang-nob/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-nob/actions)
+[![License](https://img.shields.io/github/license/giellalt/lang-nob)](https://raw.githubusercontent.com/giellalt/lang-nob/develop/LICENSE)
 
 Install proofing tools and [keyboards](https://github.com/giellalt/keyboard-nob)
 for the Norwegian Bokmål language by using the [Divvun Installer](http://divvun.no)
