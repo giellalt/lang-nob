@@ -1,11 +1,15 @@
+!! # Bokmål adverbs
 
 LEXICON adv
+!! @LEXNAME@  the tag +Adv
  +Adv: # ;
 
 LEXICON dt
- +Adv: # ; ! perhaps unify, perhaps not.
+!! @LEXNAME@  Also +Adv  perhaps unify, perhaps not.
+ +Adv: # ; 
 
 LEXICON Adverb
+!! @LEXNAME@ 
 uansett adv ;
 
 respektive adv ;

@@ -1,6 +1,7 @@
-
+!! # Bokmål propernouns
 
 LEXICON ProperNoun-nob-nocomp
+!! @LEXNAME@ 
 
 AKP PROP-org ;
 AMI PROP-org ;
@@ -11,6 +12,7 @@ AP PROP-org ;
 AUF PROP-org ;
 
 LEXICON ProperNoun-nob
+!! @LEXNAME@ 
 
 !7-Eleven PROP-obj ;
 !Eir PROP-sur ; ! XXX Marginal, and id. with Eira.

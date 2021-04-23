@@ -3,6 +3,7 @@
 
 
 LEXICON Numeral 
+!! @LEXNAME@ 
 Textual ;
 ARABICS ;
 ARABICORD ;
@@ -11,6 +12,7 @@ ISOLATED-NUMEXP ;
 NUM-PREFIXES ;
 
 LEXICON Textual
+!! @LEXNAME@ 
 2-9 ;
 TEXTTENS ;
 TEXTTEENS ;
@@ -20,6 +22,7 @@ ORDTEXT ;
 
 
 LEXICON TEXTTHOUSANDS 
+!! @LEXNAME@ 
 1000CONT ;
 et 1000CONT ; ! ettusen
 to 1000CONT ;
@@ -33,6 +36,7 @@ syv 1000CONT ;
 ni  1000CONT ;
 
 LEXICON 1000CONT
+!! @LEXNAME@ 
 tusen numtag ;
 tusenog TEXTHUNDREDS ;
 tusenog TEXTTENS ;
@@ -40,6 +44,7 @@ tusenog TEXTTEENS ;
 tusenog TEXTONES ;
 
 LEXICON TEXTHUNDREDS
+!! @LEXNAME@ 
 100CONT ;
 ett 100CONT ;
 to 100CONT ;
@@ -63,12 +68,14 @@ atten  100CONT ;
 nitten  100CONT ;
 
 LEXICON 100CONT
+!! @LEXNAME@ 
 hundreog TEXTTENS ;
 hundreog TEXTTEENS ;
 hundreog TEXTONES ;
 hundre numtag ;
 
 LEXICON TEXTTENS
+!! @LEXNAME@ 
 
 tjue TEXTTENSCONT ;
 tyve TEXTTENSCONT ;
@@ -84,10 +91,12 @@ nitti TEXTTENSCONT ;
 hundre TEXTTENSCONT ;
 
 LEXICON TEXTTENSCONT
+!! @LEXNAME@ 
 TEXTONES ; 
 numtag ;
 
 LEXICON TEXTTEENS
+!! @LEXNAME@ 
 elleve numtag ;
 tolv numtag ;
 tretten numtag ;
@@ -100,10 +109,12 @@ atten numtag ;
 nitten numtag ;
 
 LEXICON TEXTONES
+!! @LEXNAME@ 
 en numtagsg ;
 2-9 ;
 
 LEXICON 2-9
+!! @LEXNAME@ 
 to numtag ;
 tre numtag ;
 fire numtag ;
@@ -116,6 +127,7 @@ ni numtag ;
 ti numtag ;
 
 LEXICON ORDTEXT
+!! @LEXNAME@ 
 første a3 ;
 andre a3 ;
 tredje a3 ;

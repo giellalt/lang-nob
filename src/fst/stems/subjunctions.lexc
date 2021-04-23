@@ -1,5 +1,7 @@
+!! # Bokmål subjunctions
 
 LEXICON Subjunction
+!! LEXICON @LEXNAME@
 ettersom subj ;
 dersom subj ; 
 å+IM:å # ;
@@ -19,6 +21,7 @@ hvorfor adv ;
 hvorvidt subj ;
 
 LEXICON subj
+!! LEXICON @LEXNAME@ gives tag +CS
  +CS: # ;
 
 
