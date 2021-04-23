@@ -374,6 +374,455 @@ Clitics
  * ** +Clt:%>s # ;  ** 
  * ** # ;   ** 
 
+
+# Adjectives
+
+    -------------------------
+    a1 god god godt gode
+    a2 billig billig billig billige
+    a3 ekte ekte ekte ekte
+    a4 oppskjørtet oppskjørtet oppskjørtet oppskjørtede/oppskjørtete
+    a5 makaber makaber makabert makabre
+    a5 lunken lunken lunkent lunkne
+    aV blå blå blått blå
+
+
+
+AdjectiveRoot 
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Bokmål adverbs
+
+adv  the tag +Adv
+
+dt  Also +Adv  perhaps unify, perhaps not.
+
+Adverb 
+
+
+# Bokmål conjunctions
+
+
+conj for the tag +CC
+
+Conjunction  både, og, ..
+
+
+
+# Bokmål interjections
+
+ij 
+
+Interjection 
+
+
+
+
+# File containing abbreviations for Norwegian Bokmål !
+
+
+
+Abbreviation-nob 
+
+##            Intransitive abbreviations           
+
+These give clause boundaries before capital letters
+and numbers, but not elsewhere.
+
+---------------------------------------------
+Vi bor i Sth. CLB 10 av oss er innflyttere.
+Vi bor i Sth. CLB Saara er også innflytter.
+Vi vet at Sth. er en fin by.
+
+
+ITRAB 
+
+
+
+
+
+    Transitive number-related abbreviations      !
+
+These ones are transitive when followed by numbers or
+singleton letters, and intransitive elsewhere.
+
+--------------------------------------------------
+Gården har Gnr. 10.
+Gården har Gnr. 5. a.
+Alle gårder har ikke Gnr. CLB Det er et problem.
+Alle gårder har ikke Gnr. og det er et problem.
+--------------------------------------------------
+
+TRNUMAB 
+
+
+
+
+#              Transitive abbreviations           
+
+TRAB 
+
+dot% noStb.db
+Abbreviations that never induce sentence boundaries
+The file is too large and should be shrinked
+
+
+# Bokmål propernouns
+
+ProperNoun-nob-nocomp 
+
+
+ProperNoun-nob 
+
+
+
+# Bokmål noun morphology 
+
+    ---------------------------------------------------
+    Declension classes
+    Main types, from Bokmålsordboka
+    
+    f1  bru         brua        bruer       bruene
+    f2  pumpe       pumpa       pumper      pumpene
+    m1  stol        stolen      stoler      stolene
+        bakke       bakken      bakker      bakkene
+        pumpe       pumpen      pumper      pumpene
+    m2  lærer       læreren     lærere      lærerne
+    m3  bever       beveren     bevere      beverne
+                                bevre(r)    bevrene
+    m4 longs longsen longs/longser longsene
+    n1  slott       slottet     slott       slotta/slottene
+    n2  eple        eplet       epler       epla/eplene
+        salt        saltet      salter      salta/saltene
+    n3  kontor      kontoret    kontor      kontora
+                                kontorer    kontorene
+        høve        høvet       høve/høver  høva/høvene
+    n4  salt        saltet      salter      salta/saltene ??
+    n5  middel      midlet      midler      midla/midlene ??
+    n6 kammer kammeret kamre/kammer kamra/kamrene
+    
+    Subtypes, mainly from Finsk-norsk ordbok, also system-specific
+    
+    x  unclassified, to m1 by default
+    mX indecl
+    m1sg sg only
+    m1pl pl only
+    m1b dam
+    m1b fe, komite
+    m1V sko pl. sko
+    m3V meter pl. meter
+    ma alliert, alierte, allierte, allierte
+    KOLLEGA kollegaer, kolleger
+    KONTO kontoer, konti
+    RADIUS radiuser, radii
+    BROR brødre
+    FAR fedre
+    MANN menn
+    mD gårde, garde, dage  (av gårde)
+    fD tide (i tide)
+    nD live (i live)
+    DATTER døtre
+    f1b skam
+    f1X bok pl. bøker
+    f1V mus, pl. mus
+    fGLO glo, pl glør
+    n1b rom pl. rom
+    n1s sg only
+    n2b program pl. programmer
+    n2c kontor pl. kontor, kontorer
+    n2s mørke, not pl.
+    n3b lager def. lageret
+    n3c fe, feet
+    n4b faktum pl fakta
+    FORUM forum, forumet, fora/forumer, foraene/forumene
+    LEKSIKON leksikon, pl. leksika
+    MUSEUM museum, museet, museer
+
+
+
+
+## Basic paradigms
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@NO CODE@ for nynorsk only.
+
+@NO CODE@ for nynorsk only.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Bokmål noun lexicon 
+
+    ----------------------------------------------------
+    Declension classes
+    Main types, from Bokmålsordboka
+   
+    f1 bru brua bruer bruene
+    f2 pumpe pumpa pumper pumpene
+    m1 stol stolen stoler stolene
+    bakke bakken bakker bakkene
+    pumpe pumpen pumper pumpene
+    m2 lærer læreren lærere lærerne
+    m3 bever beveren bevere beverne
+    bevre(r) bevrene
+    m4 longs longsen longs/longser longsene
+    n1 slott slottet slott slotta/slottene
+    n2 eple eplet epler epla/eplene
+    salt saltet salter salta/saltene
+    n3 kontor kontoret kontor kontora
+                       kontorer kontorene
+    høve høvet høve/høver høva/høvene
+    n4 salt saltet salter salta/saltene ??
+    n5 middel midlet midler midla/midlene ??
+    n6 kammer kammeret kamre/kammer kamra/kamrene
+   
+    mx unclassified, to m1 by default
+    mX indecl
+    m1sg sg only
+    m1pl pl only
+    m1b dam
+    m1b fe, komité
+    m1V sko pl. sko
+    m3V meter pl. meter
+    m3r sykkel, vinkel vinkelen, vinkler, vinklene
+    ma alliert, alierte, allierte, allierte
+    KOLLEGA kollegaer, kolleger
+    mKONTO kontoer, konti
+    mRADIUS radiuser, radii
+    mBROR brødre
+    mFAR fedre
+    mMANN menn
+    mD gårde, garde, dage (av gårde)
+    fD tide (i tide)
+    nD live (i live)
+   
+    fDATTER døtre
+    f1b skam
+    f1X bok pl. bøker
+    f1V mus, pl. mus
+   
+    nX styrbord, zoo. indecl.
+    n1b rom pl. rom
+    n1sg sg only
+    n2b program pl. programmer
+    n2c kontor pl. kontor, kontorer
+    n2s mørke, not pl.
+    n3b lager def. lageret
+    n3c fe, feet
+    n4b faktum, faktumet, fakta, faktaene
+    FORUM forum, forumet, fora/forumer, foraene/forumene
+    nLEKSIKON leksikon, pl. leksika
+    nMUSEUM museum, museet, museer
+    n1pl odds, oddsene
+
+
+FinalNoun 
+
+
+NounRoot 
+
+HyphNouns  TODO: Kanskje desse ikkje bör bli lista.
+
+ShortNounRoot 
+These are kept separate in order not to
+allow them in compounding (rusle = rus + le)
+
+
+2_letter 
+
+3_letter 
+
+
+Noun  here come the stems
+
+
+
+
+
+
+
+
+# Numerals (number words)
+
+
+Numeral 
+
+Textual 
+
+
+TEXTTHOUSANDS 
+
+1000CONT 
+
+TEXTHUNDREDS 
+
+100CONT 
+
+TEXTTENS 
+
+
+TEXTTENSCONT 
+
+TEXTTEENS 
+
+TEXTONES 
+
+2-9 
+
+ORDTEXT 
+
+# Nynorsk stems 
+for tolerant dictionary reading
+
+Prnyn 
+
+Advnyn 
+
+Anyn 
+
+Vnyn 
+
+
+Propnyn 
+
+Pronnyn 
+
+nnnb 
+
+Nynorsk  her kjem alle orda
+
+
+
+
+
+
+
+
+
+
 # MorpAhophonological rules for Bokmål
 
 
@@ -495,3 +944,60 @@ Clitics
 
 * ★*a* (is not standard language)
 * ★*b* (is not standard language)
+# Preopositions
+
+p gives tag +Pr
+
+
+Preposition  list (appr 90 prepositions)
+
+
+# Pronoun stems
+
+
+Pronoun 
+
+Personal 
+
+Reflexive 
+
+Reciprocal 
+
+Interrogative 
+
+Possessive 
+
+Other_Pronouns 
+
+# Bokmål subjunctions
+
+LEXICON Subjunction
+
+LEXICON subj gives tag +CS
+
+
+
+
+# Verb stems
+
+    ------------------------------------
+    Main types, from Bokmålsordboka
+    v1 kaste kaster kasta kasta
+    kastet kastet
+    v2 lyse lyser lyste lyst
+    reparere reparerer reparerte reparert
+    v3 leve lever levde levd
+    v4 nå når nådde nådd
+    v4 bie bier bidde bidd
+    
+    Subtypes
+    v13 v1 or v3
+    v1-s passive v1 verbs
+    v2-s passive v2 verbs
+    v3-s passive v3 verbs
+
+
+VerbRoot
+
+
+

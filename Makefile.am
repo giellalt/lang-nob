@@ -7,32 +7,34 @@
 #
 # dir/filename.lexc => filename-dir.md
 
-MD_PAGES=root-morphology.md  \
-		  phonology-morphology.md
+MD_PAGES=root-morphology.md          \
+		adjectives-stems.md          \
+		adverbs-stems.md             \
+		conjunctions-stems.md        \
+		interjections-stems.md       \
+		nob-abbreviations-stems.md   \
+		nob-propernouns-stems.md     \
+		nouns-affixes.md             \
+		nouns-stems.md               \
+		numerals-stems.md            \
+		nynorsk-stems-stems.md       \
+		phonology-morphology.md      \
+		prepositions-stems.md        \
+		pronouns-stems.md            \
+		subjunctions-stems.md        \
+		verbs-stems.md
+
+# acronyms-stems.md           \
+# adjectives-affixes.md       \
+# adjectives-oahpa-affixes.md \
+# adjectives-oahpa-stems.md   \
 # clitics-morphology.md       \
 # compounding-morphology.md   \
-# abbreviations-stems.md      \
-# acronyms-stems.md           \
-# adjectives-oahpa-stems.md   \
-# adjectives-stems.md         \
-# adpositions-stems.md        \
-# adverbs-stems.md            \
-# conjunctions-stems.md       \
-# interjections-stems.md      \
 # nouns-oahpa-stems.md        \
-# nouns-stems.md              \
-# numerals-stems.md           \
 # particles-stems.md          \
-# pronouns-stems.md           \
+# propernouns-affixes.md      \
 # propernouns-stems.md        \
 # punctuation-stems.md        \
-# smi-propernouns-stems.md    \
-# subjunctions-stems.md       \
-# verbs-stems.md              \
-# adjectives-oahpa-affixes.md \
-# adjectives-affixes.md       \
-# nouns-affixes.md            \
-# propernouns-affixes.md      \
 # verbs-affixes.md
 
 include $(top_srcdir)/../giella-core/am-shared/docs-dir-include.am
