@@ -3,7 +3,7 @@
 this documents the symbols and intro lexicon of **Norwegian Bokmål**.
 
 
- **Multichar_Symbols ** 
+ **Multichar_Symbols** 
 
 Here come the **tags**.
 
@@ -12,180 +12,175 @@ Here come the **tags**.
 
 ### Part of speech
 
- - ** +N +A +Adv +V        ** 
- - ** +CS +CC +Interj +Pcle +Pr +IM    ** 
- - ** +Pers +Dem +Interr +Refl +Recipr +Rel +Qnt ** 
+ - **+N +A +Adv +V** 
+ - **+CS +CC +Interj +Pcle +Pr +IM** 
+ - **+Pers +Dem +Interr +Refl +Recipr +Rel +Qnt** 
 
 ### Subtags
 
- * ** +ING									    ** = ing-derivation
- * ** +Indef +Def +Poss +Indcl				    ** = 
- * ** +Sg +Pl								    ** = 
- * ** +Sg1 +Sg2 +Sg3 +Pl1 +Pl2 +Pl3			    ** = 
- * ** +Pron +Nom +Acc +Dat +Det				    ** = 
- * ** +Msc +Fem +Neu +MF						    ** = 
- * ** +Pos +Comp +Superl 					    ** = 
- * ** +Clt									    ** = 
- * ** +Dat									    ** = 
- * ** +Pass +Ind +Prs +Prt +Imp				    ** = 
- * ** +Inf +PrsPrc +PrfPrc					    ** = 
- * ** +Interj +Intens						    ** = 
- * ** +Prop 								    ** = 
- * ** +Qnt  **  quantifier noen, begge
+ * **+ING** = ing-derivation
+ * **+Indef +Def +Poss +Indcl** = 
+ * **+Sg +Pl** = 
+ * **+Sg1 +Sg2 +Sg3 +Pl1 +Pl2 +Pl3** = 
+ * **+Pron +Nom +Acc +Dat +Det** = 
+ * **+Msc +Fem +Neu +MF** = 
+ * **+Pos +Comp +Superl** = 
+ * **+Clt** = 
+ * **+Dat** = 
+ * **+Pass +Ind +Prs +Prt +Imp** = 
+ * **+Inf +PrsPrc +PrfPrc** = 
+ * **+Interj +Intens** = 
+ * **+Prop** = 
+ * **+Qnt**  quantifier noen, begge
 
 
 
 ### Other tags
 
- * ** +CLB +PUNCT +HYPH +LEFT +RIGHT    **
+ * **+CLB +PUNCT +HYPH +LEFT +RIGHT**
  * **+CLBfinal**  Sentence final abbreviated expression ending in full stop, so that the full stop is ambiguous
 
- * ** +Cmp+   ** 
- * ** +CmpS+  ** 
+ * **+Cmp+** 
+ * **+CmpS+** 
  * +Symbol = independent symbols in the text stream, like £, €, ©
 
 
 
- * **+Ex/V   ** for derivation
- * **+Ord   ** 
- * **+Prdt ** 
- * **+Qst   ** 
+ * **+Ex/V** for derivation
+ * **+Ord** 
+ * **+Prdt** 
+ * **+Qst** 
 
 
 
 NDS analyser tags
 
- * ** +Nynorsk   **  For dictionary use., Nynorsk only
- * ** +Radical   **  For dictionary testing, Radical Bokmål
+ * **+Nynorsk**  For dictionary use., Nynorsk only
+ * **+Radical**  For dictionary testing, Radical Bokmål
 
 
- * ** +X  **  denoting not-checked.
- * ** +1 +2 +3  **  not in use??
+ * **+X**  denoting not-checked.
+ * **+1 +2 +3**  not in use??
 
 
 ## Morphophonology
 
 Todo: Document these
 
- * ** X1 X2 X3 X4 X5 X6 X7 X8 X9   ** 
- * ** Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9   ** 
- * ** Y1 Y2 Y3 Y4 Y5 Y6 Y7 Y8 Y9   ** 
- * ** Z1 Z2 Z3 Z4 Z5 Z6 Z7 Z8 Z9   ** 
-
- * **l7  **  always l
-
- * **%^NYNAG  **  Nynorsk agens lærar / lærer
-
- * +Use/Circ  circular string
-
- * +Der/AAdv  Adjectives are also adverbs
- * +Der/NomAct  verb +ing
- * +Der1 
- * **+Der  ** 
+ * **X1 X2 X3 X4 X5 X6 X7 X8 X9** 
+ * **Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9** 
+ * **Y1 Y2 Y3 Y4 Y5 Y6 Y7 Y8 Y9** 
+ * **Z1 Z2 Z3 Z4 Z5 Z6 Z7 Z8 Z9** 
+ * **l7**  always l
+ * **%^NYNAG**  Nynorsk agens lærar / lærer
+ * +Use/Circ circular string
+ * +Der/AAdv Adjectives are also adverbs
+ * +Der/NomAct verb +ing
+ * +Der1
+ * **+Der** 
 
 Normativity and other usage tags
 
- * **+Err/Orth           **    For speller use
- * **+Err/Hyph		    ** 
- * **+Err/Lex		    ** 
- * **+Err/SpaceCmp	    ** 
- * **+Err/MissingSpace   ** 
-
- * **+Use/NG			   ** 
- * **+Use/-Spell		   ** 
- * **+Use/-PLX		   ** 
- * **+Use/SpellNoSugg   ** 
+ * **+Err/Orth**    For speller use
+ * **+Err/Hyph** 
+ * **+Err/Lex** 
+ * **+Err/SpaceCmp** 
+ * **+Err/MissingSpace** 
+ * **+Use/NG** 
+ * **+Use/-Spell** 
+ * **+Use/-PLX** 
+ * **+Use/SpellNoSugg** 
 
 
 ## Other tags
- * **+ABBR   ** 
- * **+ACR    ** 
- * **+Arab   ** 
- * **+Attr   ** 
- * **+Coll   ** 
- * **+Dyn    ** 
- * **+MWE    ** 
- * **+Num    ** 
- * **+Rom    ** 
+ * **+ABBR** 
+ * **+ACR** 
+ * **+Arab** 
+ * **+Attr** 
+ * **+Coll** 
+ * **+Dyn** 
+ * **+MWE** 
+ * **+Num** 
+ * **+Rom** 
 
 
 ## Paradigm generation
 
- * **+v1	    ** 
- * **+v2	    ** 
+ * **+v1** 
+ * **+v2** 
 
 
 ###  Tags for abbreviation handling
 
 
- * **+Gram/IAbbr	       ** 
- * **+Gram/TAbbr	       ** 
- * **+Gram/TNumAbbr     ** 
- * **+Gram/NumNoAbbr    ** 
+ * **+Gram/IAbbr** 
+ * **+Gram/TAbbr** 
+ * **+Gram/TNumAbbr** 
+ * **+Gram/NumNoAbbr** 
 
 ###  Semantic tags
 
 ### Semtags
 
- * **+Sem/Amount		      ** 
- * **+Sem/Ani		      ** 
- * **+Sem/Atr		      ** 
- * **+Sem/Build		      ** 
- * **+Sem/Build-room	      ** 
- * **+Sem/Cat		      ** 
- * **+Sem/Curr		      ** 
- * **+Sem/Date		      ** 
- * **+Sem/Domain		      ** 
- * **+Sem/Domain_Hum	      ** 
- * **+Sem/Dummytag	      ** 
- * **+Sem/Edu_Hum	      ** 
- * **+Sem/Event		      ** 
- * **+Sem/Fem		      ** 
- * **+Sem/Food-med	      ** 
- * **+Sem/Group_Hum	      ** 
- * **+Sem/Hum		      ** 
- * **+Sem/ID			      ** 
- * **+Sem/Lang		      ** 
- * **+Sem/Mal		      ** 
- * **+Sem/Mat		      ** 
- * **+Sem/Measr		      ** 
- * **+Sem/Money		      ** 
- * **+Sem/Obj  		      ** 
- * **+Sem/Obj-el		      ** 
- * **+Sem/Obj-ling	      ** 
- * **+Sem/Org		      ** 
- * **+Sem/Org_Prod-audio   ** 
- * **+Sem/Org_Prod-vis     ** 
- * **+Sem/Part		      ** 
- * **+Sem/Plc		      ** 
- * **+Sem/Prod-vis	      ** 
- * **+Sem/Route		      ** 
- * **+Sem/Rule		      ** 
- * **+Sem/Sign		      ** 
- * **+Sem/State		      ** 
- * **+Sem/State-sick	      ** 
- * **+Sem/Substnc	      ** 
- * **+Sem/Sur   		      ** 
- * **+Sem/Time		      ** 
- * **+Sem/Time-clock	      ** 
- * **+Sem/Tool-it	      ** 
- * **+Sem/Txt		      ** 
- * **+Sem/Veh		      ** 
- * **+Sem/Year		      ** 
+ * **+Sem/Amount** 
+ * **+Sem/Ani** 
+ * **+Sem/Atr** 
+ * **+Sem/Build** 
+ * **+Sem/Build-room** 
+ * **+Sem/Cat** 
+ * **+Sem/Curr** 
+ * **+Sem/Date** 
+ * **+Sem/Domain** 
+ * **+Sem/Domain_Hum** 
+ * **+Sem/Dummytag** 
+ * **+Sem/Edu_Hum** 
+ * **+Sem/Event** 
+ * **+Sem/Fem** 
+ * **+Sem/Food-med** 
+ * **+Sem/Group_Hum** 
+ * **+Sem/Hum** 
+ * **+Sem/ID** 
+ * **+Sem/Lang** 
+ * **+Sem/Mal** 
+ * **+Sem/Mat** 
+ * **+Sem/Measr** 
+ * **+Sem/Money** 
+ * **+Sem/Obj** 
+ * **+Sem/Obj-el** 
+ * **+Sem/Obj-ling** 
+ * **+Sem/Org** 
+ * **+Sem/Org_Prod-audio** 
+ * **+Sem/Org_Prod-vis** 
+ * **+Sem/Part** 
+ * **+Sem/Plc** 
+ * **+Sem/Prod-vis** 
+ * **+Sem/Route** 
+ * **+Sem/Rule** 
+ * **+Sem/Sign** 
+ * **+Sem/State** 
+ * **+Sem/State-sick** 
+ * **+Sem/Substnc** 
+ * **+Sem/Sur** 
+ * **+Sem/Time** 
+ * **+Sem/Time-clock** 
+ * **+Sem/Tool-it** 
+ * **+Sem/Txt** 
+ * **+Sem/Veh** 
+ * **+Sem/Year** 
 
 
 
 ## Preprocessing
 
- * **+Use/PMatch   ** 
- * **+Use/-PMatch  ** 
+ * **+Use/PMatch** 
+ * **+Use/-PMatch** 
 
 ## Symbols that need to be escaped on the lower side (towards twolc):
  * **»7**:  Literal »
  * **«7**:  Literal «
 ```
-  %[%>%]  - Literal >
-  %[%<%]  - Literal <
+ %[%>%] - Literal >
+ %[%<%] - Literal <
 ```
 
 
@@ -229,7 +224,6 @@ flag diacritics to restrict morhpological combinatorics - only allow compounds
 with verbs if the verb is further derived into a noun again:
 
 |   Flag | Comment
-
 | --- | --- 
  |  @P.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
  |  @D.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
@@ -241,7 +235,6 @@ handled automatically if combined with +CmpN/xxx tags. If not used, they will
 do no harm.
 
 |   Flag | Comment
-
 | --- | --- 
  |  @P.CmpFrst.FALSE@ | Require that words tagged as such only appear first
  |  @D.CmpPref.TRUE@ | Block such words from entering ENDLEX
@@ -281,7 +274,6 @@ given the proper use of these flags.
 
 
 |   Flag | Comment
-
 | --- | --- 
  |  @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
  |  @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
@@ -294,25 +286,25 @@ given the proper use of these flags.
 
 # Basic lexica, pointing to the other lexicon files
 
- * LEXICON Root 
- *  FinalNoun ;   for -skap etc. that is affix rather than compound
- *  ShortNounRoot ;   2- and 3-letter words
- *  NounRoot ;		   The rest
- *  ProperNoun ;	  
- *  AdjectivePrefix ;  
- *  VerbRoot ;		  
- *  Adverb ;		  
- *  Subjunction ;	  
- *  Conjunction ;	  
- *  Preposition ;	  
- *  Interjection ;	  
- *  Pronoun ;		  
- *  Numeral ;		  
- *  Punctuation ;	  
- *  Symbols     ;	  
- *  Abbreviation ;	  
- *  Acronym-smi ;	  
- *  +Use/NG: Nynorsk ;         Accepts nno forms, does not generate
+ * LEXICON Root
+ * FinalNoun ; for -skap etc. that is affix rather than compound
+ * ShortNounRoot ; 2- and 3-letter words
+ * NounRoot ; The rest
+ * ProperNoun ;
+ * AdjectivePrefix ;
+ * VerbRoot ;
+ * Adverb ;
+ * Subjunction ;
+ * Conjunction ;
+ * Preposition ;
+ * Interjection ;
+ * Pronoun ;
+ * Numeral ;
+ * Punctuation ;
+ * Symbols ;
+ * Abbreviation ;
+ * Acronym-smi ;
+ * +Use/NG: Nynorsk ; Accepts nno forms, does not generate
 
  * LEXICON AdjectivePrefix - 
  * kjempe AdjectiveRoot ; - 
@@ -323,7 +315,7 @@ given the proper use of these flags.
  * Abbreviation-nob ; - 
  * Abbreviation-smi ; - 
 
- * **LEXICON ProperNoun   **
+ * **LEXICON ProperNoun**
 Lexicon for NOB short names - always require hyphen
 Lexicon for short names - always require hyphen
 SMI proper nouns
@@ -335,7 +327,6 @@ contains the full nob name list
 This list for reference:
 
 |   kode | sg.ind. | sg.def | pl.ind. | pl.def.
-
 | --- | --- | --- | --- | --- 
 |  f1  | bru         | brua        | bruer       | bruene
 |  f2  | pumpe       | pumpa       | pumper      | pumpene
@@ -351,14 +342,14 @@ This list for reference:
 |  n3  | kontor      | kontoret    | kontor      | kontora
 |      |             |             | kontorer    | kontorene
 |      | høve        | høvet       | høve/høver  | høva/høvene
-|  	 | 			   | 			 | 			   | 
+|      |             |           |             | 
 |  a1  | god         | god         | godt        | gode
 |  a2  | norsk       | norsk       | norsk       | norske
 |  a3  | ekte        | ekte        | ekte        | ekte
 |  a4  | oppskjørtet | oppskjørtet | oppskjørtet | oppskjørtede/oppskjørtete
 |  a5  | makaber     | makaber     | makabert    | makabre
 |      | lunken      | lunken      | lunkent     | lunkne
-|  	 | 			   | 			 | 			   | 
+|      |             |           |             | 
 |  v1  | kaste       | kaster      | kasta       | kasta
 |      |             |             | kastet      | kastet
 |  v2  | lyse        | lyser       | lyste       | lyst
@@ -370,9 +361,9 @@ This list for reference:
 
 Clitics
 
- * **LEXICON K   ** 
- * ** +Clt:%>s # ;  ** 
- * ** # ;   ** 
+ * **LEXICON K** 
+ * **+Clt:%>s # ;** 
+ * **# ;** 
 
 
 # Adjectives
