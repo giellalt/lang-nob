@@ -1,6 +1,12 @@
+!! # Bokmål conjunctions
 
+
+LEXICON conj
+!! @LEXNAME@ for the tag +CC
+ +CC: # ;
 
 LEXICON Conjunction
+!! @LEXNAME@  både, og, ..
 både conj ;
 og conj ;
 og adv ;
@@ -13,7 +19,5 @@ verken+Err/Orth:hverken conj ;
 dog conj ; 
 endog conj ; 
 
-LEXICON conj
- +CC: # ;
 
 

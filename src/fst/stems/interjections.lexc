@@ -1,5 +1,11 @@
+!! # Bokmål interjections
+
+LEXICON ij
+!! @LEXNAME@ 
+ +Interj: # ;
 
 LEXICON Interjection
+!! @LEXNAME@ 
 folkens ij ;
 heisann ij ;
 pokker ij ;
@@ -53,12 +59,6 @@ uuu ij ;
 ååå ij ;
 æ ij ;
 æh ij ;
-
-LEXICON ij
- +Interj: # ;
-
-
-
 akk ij ; 
 hoi ij ; 
 hui ij ; 
@@ -69,3 +69,7 @@ unnskyld ij ;
 hysj ij ; 
 pokker ij ; 
 vips ij ; 
+
+
+
+

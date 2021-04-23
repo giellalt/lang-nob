@@ -1,0 +1,9 @@
+# Bokmål interjections
+
+ij 
+
+Interjection 
+
+
+
+

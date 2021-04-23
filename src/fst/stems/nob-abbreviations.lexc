@@ -1,5 +1,5 @@
 ! ================================================== !
-! File containing abbreviations for Norwegian Bokmål !
+!! # File containing abbreviations for Norwegian Bokmål !
 ! ================================================== !
 
 ! Lexica for adding tags and periods
@@ -9,22 +9,26 @@
 ! - - - - - - - - - - - - - - - - - - - - - - - - -
 
 LEXICON Abbreviation-nob
+!! @LEXNAME@ 
 ITRAB ;
 TRNUMAB ;
 TRAB ;
 
 ! =============================================== !
-!            Intransitive abbreviations           !
+!! ##            Intransitive abbreviations           
 ! =============================================== !
 
-! These give clause boundaries before capital letters
-! and numbers, but not elsewhere.
-! Vi bor i Sth. CLB 10 av oss er innflyttere.
-! Vi bor i Sth. CLB Saara er også innflytter.
-! Vi vet at Sth. er en fin by.
+!! These give clause boundaries before capital letters
+!! and numbers, but not elsewhere.
+
+!! ---------------------------------------------
+!! Vi bor i Sth. CLB 10 av oss er innflyttere.
+!! Vi bor i Sth. CLB Saara er også innflytter.
+!! Vi vet at Sth. er en fin by.
 
 
 LEXICON ITRAB
+!! @LEXNAME@ 
 
 !eng ab ;
 !mil ab ;
@@ -239,17 +243,21 @@ LEXICON ITRAB
 
 
 ! =============================================== !
-!    Transitive number-related abbreviations      !
+!!     Transitive number-related abbreviations      !
 ! =============================================== !
 
-! These ones are transitive when followed by numbers or
-! singleton letters, and intransitive elsewhere.
-! Gården har Gnr. 10.
-! Gården har Gnr. 5. a.
-! Alle gårder har ikke Gnr. CLB Det er et problem.
-! Alle gårder har ikke Gnr. og det er et problem.
+!! These ones are transitive when followed by numbers or
+!! singleton letters, and intransitive elsewhere.
+
+!! --------------------------------------------------
+!! Gården har Gnr. 10.
+!! Gården har Gnr. 5. a.
+!! Alle gårder har ikke Gnr. CLB Det er et problem.
+!! Alle gårder har ikke Gnr. og det er et problem.
+!! --------------------------------------------------
 
 LEXICON TRNUMAB
+!! @LEXNAME@ 
 
           distr+N:distr          ab-dot-noun-trnumab ;
     Arkivsaksnr+N:Arkivsaksnr    ab-dot-noun-trnumab ;
@@ -323,14 +331,15 @@ LEXICON TRNUMAB
 
 
 ! =============================================== !
-!              Transitive abbreviations           !
+!! #              Transitive abbreviations           
 ! =============================================== !
 
 LEXICON TRAB
+!! @LEXNAME@ 
 
-! dot% noStb.db
-! Abbreviations that never induce sentence boundaries
-! The file is too large and should be shrinked
+!! dot% noStb.db
+!! Abbreviations that never induce sentence boundaries
+!! The file is too large and should be shrinked
 
 Ev.luth+N:Ev.luth ab-noun-trab ;
 H.% K.% H+N:H.% K.% H ab-noun-trab ;
