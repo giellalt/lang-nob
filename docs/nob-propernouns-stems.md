@@ -1,9 +1,9 @@
 # Bokmål propernouns
 
-ProperNoun-nob-nocomp 
+LEXICON ProperNoun-nob-nocomp contains some acronyms
 
 
-ProperNoun-nob 
+LEXICON ProperNoun-nob contains the list of 2200 or so names. The rest come from common files.
 
 
 

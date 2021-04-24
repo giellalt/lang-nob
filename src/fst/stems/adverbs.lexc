@@ -1,17 +1,16 @@
 !! # Bokmål adverbs
 
 LEXICON adv
-!! @LEXNAME@  the tag +Adv
+!! LEXICON @LEXNAME@  adds the tag +Adv
  +Adv: # ;
 
 LEXICON dt
-!! @LEXNAME@  Also +Adv  perhaps unify, perhaps not.
+!! LEXICON @LEXNAME@  also ads +Adv  perhaps unify, perhaps not.
  +Adv: # ; 
 
 LEXICON Adverb
-!! @LEXNAME@ 
+!! @LEXNAME@ lists some 600 Norwegian adverbs, including MWE such as "i live"
 uansett adv ;
-
 respektive adv ;
 avslutningsvis adv ;
 av% dage adv ; ! av dage

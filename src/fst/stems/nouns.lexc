@@ -66,23 +66,23 @@
 
 
 LEXICON FinalNoun
-!! @LEXNAME@ 
+!! LEXICON @LEXNAME@ 
 skap+CmpNP/First:skap n1 ;
 
 
 LEXICON NounRoot
-!! @LEXNAME@ 
+!! LEXICON @LEXNAME@ 
 Noun ;
 HyphNouns ;
 
 LEXICON HyphNouns
-!! @LEXNAME@  TODO: Kanskje desse ikkje bör bli lista.
+!! LEXICON @LEXNAME@  TODO: Kanskje desse ikkje bör bli lista.
 lule R ;
 barne R ;
 heste R ;
 
 LEXICON ShortNounRoot
-!! @LEXNAME@ 
+!! LEXICON @LEXNAME@ 
 !! These are kept separate in order not to
 !! allow them in compounding (rusle = rus + le)
 
@@ -90,7 +90,7 @@ LEXICON ShortNounRoot
  3_letter ;
 
 LEXICON 2_letter
-!! @LEXNAME@ 
+!! LEXICON @LEXNAME@ 
 ap+CmpNP/None:ap n1 ; 
 bo+CmpNP/None:bo n1 ; 
 by+CmpNP/None:by m1 ; 
@@ -126,7 +126,7 @@ yr+CmpNP/None:yr n1sg ;
 øy+CmpNP/None:øy f1 ; 
 
 LEXICON 3_letter
-!! @LEXNAME@ 
+!! LEXICON @LEXNAME@ 
 sol+CmpNP/None:sol f1 ;
 ild+CmpNP/None:ild m1 ;
 lyd+CmpNP/None:lyd m1 ;
@@ -574,7 +574,7 @@ vær+CmpNP/None:vær n1 ;
 øyr+CmpNP/None:øyr f1 ; 
 
 LEXICON Noun
-!! @LEXNAME@  here come the stems
+!! LEXICON @LEXNAME@  here come the stems
 
 
 blår+N+Fem+Pl+Indef:blår # ;

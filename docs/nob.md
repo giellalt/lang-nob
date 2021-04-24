@@ -398,12 +398,11 @@ AdjectiveRoot
 
 # Bokmål adverbs
 
-adv  the tag +Adv
+LEXICON adv  adds the tag +Adv
 
-dt  Also +Adv  perhaps unify, perhaps not.
+LEXICON dt  also ads +Adv  perhaps unify, perhaps not.
 
-Adverb 
-
+Adverb lists some 600 Norwegian adverbs, including MWE such as "i live"
 
 # Bokmål conjunctions
 
@@ -416,14 +415,14 @@ Conjunction  både, og, ..
 
 # Bokmål interjections
 
-ij 
+LEXICON ij adds the tag **+Interj**
 
-Interjection 
-
-
+LEXICON Interjection lists *folkens, heisann, pokker* and some 60 more interjections.
 
 
-# File containing abbreviations for Norwegian Bokmål !
+
+
+# File containing abbreviations for Norwegian Bokmål 
 
 
 
@@ -474,10 +473,10 @@ The file is too large and should be shrinked
 
 # Bokmål propernouns
 
-ProperNoun-nob-nocomp 
+LEXICON ProperNoun-nob-nocomp contains some acronyms
 
 
-ProperNoun-nob 
+LEXICON ProperNoun-nob contains the list of 2200 or so names. The rest come from common files.
 
 
 
@@ -733,24 +732,24 @@ ProperNoun-nob
     n1pl odds, oddsene
 
 
-FinalNoun 
+LEXICON FinalNoun 
 
 
-NounRoot 
+LEXICON NounRoot 
 
-HyphNouns  TODO: Kanskje desse ikkje bör bli lista.
+LEXICON HyphNouns  TODO: Kanskje desse ikkje bör bli lista.
 
-ShortNounRoot 
+LEXICON ShortNounRoot 
 These are kept separate in order not to
 allow them in compounding (rusle = rus + le)
 
 
-2_letter 
+LEXICON 2_letter 
 
-3_letter 
+LEXICON 3_letter 
 
 
-Noun  here come the stems
+LEXICON Noun  here come the stems
 
 
 
@@ -762,51 +761,51 @@ Noun  here come the stems
 # Numerals (number words)
 
 
-Numeral 
+LEXICON Numeral 
 
-Textual 
-
-
-TEXTTHOUSANDS 
-
-1000CONT 
-
-TEXTHUNDREDS 
-
-100CONT 
-
-TEXTTENS 
+LEXICON Textual 
 
 
-TEXTTENSCONT 
+LEXICON TEXTTHOUSANDS 
 
-TEXTTEENS 
+LEXICON 1000CONT 
 
-TEXTONES 
+LEXICON TEXTHUNDREDS 
 
-2-9 
+LEXICON 100CONT 
 
-ORDTEXT 
+LEXICON TEXTTENS 
+
+
+LEXICON TEXTTENSCONT 
+
+LEXICON TEXTTEENS 
+
+LEXICON TEXTONES 
+
+LEXICON 2-9 
+
+LEXICON ORDTEXT 
 
 # Nynorsk stems 
 for tolerant dictionary reading
 
-Prnyn 
+LEXICON Prnyn 
 
-Advnyn 
+LEXICON Advnyn 
 
-Anyn 
+LEXICON Anyn 
 
-Vnyn 
+LEXICON Vnyn 
 
 
-Propnyn 
+LEXICON Propnyn 
 
-Pronnyn 
+LEXICON Pronnyn 
 
-nnnb 
+LEXICON nnnb 
 
-Nynorsk  her kjem alle orda
+LEXICON Nynorsk  her kjem alle orda
 
 
 
@@ -1003,28 +1002,28 @@ Test to have an error
 * ★*b* (is not standard language)
 # Preopositions
 
-p gives tag +Pr
+LEXICON p gives tag +Pr
 
 
-Preposition  list (appr 90 prepositions)
+LEXICON Preposition  list (appr 90 prepositions)
 
 
 # Pronoun stems
 
 
-Pronoun 
+LEXICON Pronoun 
 
-Personal 
+LEXICON Personal 
 
-Reflexive 
+LEXICON Reflexive 
 
-Reciprocal 
+LEXICON Reciprocal 
 
-Interrogative 
+LEXICON Interrogative 
 
-Possessive 
+LEXICON Possessive 
 
-Other_Pronouns 
+LEXICON Other_Pronouns 
 
 # Bokmål subjunctions
 
@@ -1054,7 +1053,7 @@ LEXICON subj gives tag +CS
     v3-s passive v3 verbs
 
 
-VerbRoot
+LEXICON VerbRoot
 
 
 

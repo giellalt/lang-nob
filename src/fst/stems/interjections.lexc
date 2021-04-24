@@ -1,11 +1,11 @@
 !! # Bokmål interjections
 
 LEXICON ij
-!! @LEXNAME@ 
+!! LEXICON @LEXNAME@ adds the tag **+Interj**
  +Interj: # ;
 
 LEXICON Interjection
-!! @LEXNAME@ 
+!! LEXICON @LEXNAME@ lists *folkens, heisann, pokker* and some 60 more interjections.
 folkens ij ;
 heisann ij ;
 pokker ij ;

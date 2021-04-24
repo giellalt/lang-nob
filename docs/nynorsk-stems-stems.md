@@ -1,22 +1,22 @@
 # Nynorsk stems 
 for tolerant dictionary reading
 
-Prnyn 
+LEXICON Prnyn 
 
-Advnyn 
+LEXICON Advnyn 
 
-Anyn 
+LEXICON Anyn 
 
-Vnyn 
+LEXICON Vnyn 
 
 
-Propnyn 
+LEXICON Propnyn 
 
-Pronnyn 
+LEXICON Pronnyn 
 
-nnnb 
+LEXICON nnnb 
 
-Nynorsk  her kjem alle orda
+LEXICON Nynorsk  her kjem alle orda
 
 
 

@@ -1,12 +1,12 @@
 !! # Preopositions
 
 LEXICON p
-!! @LEXNAME@ gives tag +Pr
+!! LEXICON @LEXNAME@ gives tag +Pr
  +Pr: # ;
 
 
 LEXICON Preposition
- !! @LEXNAME@  list (appr 90 prepositions)
+ !! LEXICON @LEXNAME@  list (appr 90 prepositions)
 per p ; ! 2 kr per enhet
 tillikemed p ;
 tilmed p ;
