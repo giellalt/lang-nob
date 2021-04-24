@@ -21,17 +21,18 @@ Alphabet
 
 !! ### Boundary symbols
 
-! Morpheme boundaries and escaped quotes - leave as is,
-! they will be converted to zero/the real thing at a later stage.
+!! Morpheme boundaries and escaped quotes - leave as is,
+!! they will be converted to zero/the real thing at a later stage.
+
  %#         !!≈ * **@CODE@**
  %>         !!≈ * **@CODE@**
  %<         !!≈ * **@CODE@**
- %|»      !! * **%|»**
- «%|      !! * **%|«**
-! «7     
-! »7     
+ %|»      !!  * **%\|»**
+ «%|      !!  * **%\|«**
  %[%<%]   !!≈ * **@CODE@**
  %[%>%]   !!≈ * **@CODE@**
+! «7     
+! »7     
 
 !! ### Morphophonological triggers
 
