@@ -1,17 +1,17 @@
 # Pronoun stems
 
 
-Pronoun 
+LEXICON Pronoun 
 
-Personal 
+LEXICON Personal 
 
-Reflexive 
+LEXICON Reflexive 
 
-Reciprocal 
+LEXICON Reciprocal 
 
-Interrogative 
+LEXICON Interrogative 
 
-Possessive 
+LEXICON Possessive 
 
-Other_Pronouns 
+LEXICON Other_Pronouns 
 

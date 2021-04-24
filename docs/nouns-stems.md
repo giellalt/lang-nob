@@ -63,24 +63,24 @@
     n1pl odds, oddsene
 
 
-FinalNoun 
+LEXICON FinalNoun 
 
 
-NounRoot 
+LEXICON NounRoot 
 
-HyphNouns  TODO: Kanskje desse ikkje bör bli lista.
+LEXICON HyphNouns  TODO: Kanskje desse ikkje bör bli lista.
 
-ShortNounRoot 
+LEXICON ShortNounRoot 
 These are kept separate in order not to
 allow them in compounding (rusle = rus + le)
 
 
-2_letter 
+LEXICON 2_letter 
 
-3_letter 
+LEXICON 3_letter 
 
 
-Noun  here come the stems
+LEXICON Noun  here come the stems
 
 
 

@@ -2,7 +2,7 @@
 
 
 LEXICON Pronoun
-!! @LEXNAME@ 
+!! LEXICON @LEXNAME@ 
 Personal ;
 Reflexive ;
 Reciprocal ;
@@ -11,7 +11,7 @@ Possessive ;
 Other_Pronouns ;
 
 LEXICON Personal 
-!! @LEXNAME@ 
+!! LEXICON @LEXNAME@ 
  jeg+Pron+Pers+Sg1+Nom:jeg # ;
  jeg+Pron+Pers+Sg1+Acc:meg # ;
   du+Pron+Pers+Sg2+Nom:du # ;
@@ -36,20 +36,20 @@ dere+Pron+Pers+Pl2+Acc:dere # ;
   de+Pron+Pers+Pl3+Acc:dem # ;
 
 LEXICON Reflexive 
-!! @LEXNAME@ 
+!! LEXICON @LEXNAME@ 
 seg+Pron+Refl+Acc:seg # ;
 
 LEXICON Reciprocal
-!! @LEXNAME@ 
+!! LEXICON @LEXNAME@ 
 hverandre+Pron+Recipr+Acc:hverandre # ;
 
 LEXICON Interrogative 
-!! @LEXNAME@ 
+!! LEXICON @LEXNAME@ 
 hva+Pron+Interr:hva # ;
 hvem+Pron+Interr:hvem # ;
 
 LEXICON Possessive 
-!! @LEXNAME@ 
+!! LEXICON @LEXNAME@ 
 din+Det+Poss+Fem+Sg2:di # ;
 din+Det+Poss+Msc+Sg2:din # ;
 din+Det+Poss+Pl2:dine # ;
@@ -73,7 +73,7 @@ deres+Det+Poss+Pl2:deres # ;
 deres+Det+Poss+Pl3:deres # ;
 
 LEXICON Other_Pronouns
-!! @LEXNAME@ 
+!! LEXICON @LEXNAME@ 
 
 all+Det+Dem+Pl:alle K ;
 all+Det+Dem+Fem+Sg:all # ;

@@ -1,7 +1,7 @@
 !! # Bokmål propernouns
 
 LEXICON ProperNoun-nob-nocomp
-!! @LEXNAME@ 
+!! LEXICON @LEXNAME@ contains some acronyms
 
 AKP PROP-org ;
 AMI PROP-org ;
@@ -12,7 +12,7 @@ AP PROP-org ;
 AUF PROP-org ;
 
 LEXICON ProperNoun-nob
-!! @LEXNAME@ 
+!! LEXICON @LEXNAME@ contains the list of 2200 or so names. The rest come from common files.
 
 !7-Eleven PROP-obj ;
 !Eir PROP-sur ; ! XXX Marginal, and id. with Eira.

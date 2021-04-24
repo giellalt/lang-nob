@@ -2,38 +2,38 @@
 !! for tolerant dictionary reading
 
 LEXICON Prnyn
-!! @LEXNAME@ 
+!! LEXICON @LEXNAME@ 
 +Pr+Nynorsk+Use/NG: # ;
 
 LEXICON Advnyn
-!! @LEXNAME@ 
+!! LEXICON @LEXNAME@ 
 +Adv+Nynorsk+Use/NG: # ;
 
 LEXICON Anyn
-!! @LEXNAME@ 
+!! LEXICON @LEXNAME@ 
 +A+Nynorsk+Use/NG: # ;
 
 LEXICON Vnyn
-!! @LEXNAME@ 
+!! LEXICON @LEXNAME@ 
 +V+Nynorsk+Use/NG: # ;
 
 !LEXICON Nnyn_m1
 !+N+Nynorsk+Use/NG: # ;
 
 LEXICON Propnyn
-!! @LEXNAME@ 
+!! LEXICON @LEXNAME@ 
 +N+Prop+Nynorsk+Use/NG: # ;
 
 LEXICON Pronnyn
-!! @LEXNAME@ 
+!! LEXICON @LEXNAME@ 
 +Pron+Nynorsk+Use/NG: # ;
 
 LEXICON nnnb 
-!! @LEXNAME@ 
+!! LEXICON @LEXNAME@ 
 +Nynorsk+Use/NG: # ;
 
 LEXICON Nynorsk
-!! @LEXNAME@  her kjem alle orda
+!! LEXICON @LEXNAME@  her kjem alle orda
 fra:frå Prnyn ;
 uten:utan Prnyn ;
 hos:hjå Prnyn ;

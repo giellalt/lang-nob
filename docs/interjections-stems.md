@@ -1,8 +1,8 @@
 # Bokmål interjections
 
-ij 
+LEXICON ij adds the tag **+Interj**
 
-Interjection 
+LEXICON Interjection lists *folkens, heisann, pokker* and some 60 more interjections.
 
 
 

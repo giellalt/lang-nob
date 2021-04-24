@@ -1,4 +1,4 @@
-# File containing abbreviations for Norwegian Bokmål !
+# File containing abbreviations for Norwegian Bokmål 
 
 
 
