@@ -15,11 +15,14 @@
 
 ### Boundary symbols
 
+Morpheme boundaries and escaped quotes - leave as is,
+they will be converted to zero/the real thing at a later stage.
+
  * **%#**
  * **%>**
  * **%<**
-* **%|»**
-* **%|«**
+ * **%\|»**
+ * **%\|«**
  * **%[%<%]**
  * **%[%>%]**
 
