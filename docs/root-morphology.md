@@ -65,7 +65,7 @@ NDS analyser tags
 
 ## Morphophonology
 
-Todo: Document these
+Todo: Document these and remove unused ones.
 
  * **X1 X2 X3 X4 X5 X6 X7 X8 X9** 
  * **Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9** 
@@ -284,14 +284,14 @@ given the proper use of these flags.
  * @P.Pmatch.Backtrack@ - 
  * @PMATCH_BACKTRACK@ - 
 
-# Basic lexica, pointing to the other lexicon files
+## Basic lexica, pointing to the other lexicon files
 
- * LEXICON Root
+### LEXICON Root
  * FinalNoun ; for -skap etc. that is affix rather than compound
  * ShortNounRoot ; 2- and 3-letter words
  * NounRoot ; The rest
  * ProperNoun ;
- * AdjectivePrefix ;
+ * AdjectivePrefix ; = kjempeinteressant leksikon, sjå nedanfor.
  * VerbRoot ;
  * Adverb ;
  * Subjunction ;
@@ -304,27 +304,30 @@ given the proper use of these flags.
  * Symbols ;
  * Abbreviation ;
  * Acronym-smi ;
- * +Use/NG: Nynorsk ; Accepts nno forms, does not generate
+ * +Err/Orth: Nynorsk ; Accepts nno forms, does not generate, changed from Use/NG to have speller work.
 
- * LEXICON AdjectivePrefix - 
+
+## Other lexica
+
+### LEXICON AdjectivePrefix pointing to:
  * kjempe AdjectiveRoot ; - 
  * super AdjectiveRoot ; - 
  * AdjectiveRoot ; - 
 
- * LEXICON Abbreviation - 
+### LEXICON Abbreviation pointing to:
  * Abbreviation-nob ; - 
  * Abbreviation-smi ; - 
 
- * **LEXICON ProperNoun**
-Lexicon for NOB short names - always require hyphen
-Lexicon for short names - always require hyphen
-SMI proper nouns
-contains the full nob name list
+### LEXICON ProperNoun pointing to: 
+ * @U.CmpHyph.TRUE@ ProperNoun-nob-nocomp ; =  Lexicon for NOB short names - always require hyphen
+ * @U.CmpHyph.TRUE@ ProperNoun-smi-nocomp ; =  Lexicon for short names - always require hyphen
+ * ProperNoun-smi ; =  SMI proper nouns
+ * ProperNoun-nob ; =  contains the full nob name list
 
 
 ## Sublexica for NounRoot
 
-This list for reference:
+This table shows the codes for nominal and verbal inflection. Irregular inflection has separate codes:
 
 |   kode | sg.ind. | sg.def | pl.ind. | pl.def.
 | --- | --- | --- | --- | --- 
@@ -359,9 +362,9 @@ This list for reference:
 
 
 
-Clitics
+## Clitics
 
- * **LEXICON K** 
+### K pointing nouns here to get "genitive" -s
  * **+Clt:%>s # ;** 
  * **# ;** 
 
