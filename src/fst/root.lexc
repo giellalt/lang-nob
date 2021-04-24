@@ -80,7 +80,7 @@ Multichar_Symbols !!≈ **@CODE@**
 
 !! ## Morphophonology
 
-!! Todo: Document these
+!! Todo: Document these and remove unused ones.
 
  X1 X2 X3 X4 X5 X6 X7 X8 X9   !!≈ * **@CODE@** 
  Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9   !!≈ * **@CODE@** 
@@ -303,51 +303,58 @@ l7  !!≈ * **@CODE@**  always l
 @PMATCH_BACKTRACK@ !!≈ * @CODE@ - 
 
 ! =================================================
-!! # Basic lexica, pointing to the other lexicon files
+!! ## Basic lexica, pointing to the other lexicon files
 ! =================================================
 
-LEXICON Root !!≈ * @CODE@
+LEXICON Root 
+!! ### LEXICON @LEXNAME@
  FinalNoun ;  !!≈ * @CODE@ for -skap etc. that is affix rather than compound
- ShortNounRoot ;  !!≈ * @CODE@ 2- and 3-letter words
- NounRoot ;        !!≈ * @CODE@ The rest
- ProperNoun ;     !!≈ * @CODE@
- AdjectivePrefix ;  !!≈ * @CODE@
- VerbRoot ;        !!≈ * @CODE@
- Adverb ;        !!≈ * @CODE@
- Subjunction ;     !!≈ * @CODE@
- Conjunction ;     !!≈ * @CODE@
- Preposition ;     !!≈ * @CODE@
+ ShortNounRoot ;    !!≈ * @CODE@ 2- and 3-letter words
+ NounRoot ;         !!≈ * @CODE@ The rest
+ ProperNoun ;       !!≈ * @CODE@
+ AdjectivePrefix ;  !!≈ * @CODE@ = kjempeinteressant leksikon, sjå nedanfor.
+ VerbRoot ;         !!≈ * @CODE@
+ Adverb ;           !!≈ * @CODE@
+ Subjunction ;      !!≈ * @CODE@
+ Conjunction ;      !!≈ * @CODE@
+ Preposition ;      !!≈ * @CODE@
  Interjection ;     !!≈ * @CODE@
- Pronoun ;        !!≈ * @CODE@
- Numeral ;        !!≈ * @CODE@
- Punctuation ;     !!≈ * @CODE@
- Symbols     ;     !!≈ * @CODE@
+ Pronoun ;          !!≈ * @CODE@
+ Numeral ;          !!≈ * @CODE@
+ Punctuation ;      !!≈ * @CODE@
+ Symbols     ;      !!≈ * @CODE@
  Abbreviation ;     !!≈ * @CODE@
- Acronym-smi ;     !!≈ * @CODE@
- +Use/NG: Nynorsk ;        !!≈ * @CODE@ Accepts nno forms, does not generate
+ Acronym-smi ;      !!≈ * @CODE@
+ +Err/Orth: Nynorsk ; !!≈ * @CODE@ Accepts nno forms, does not generate, changed from Use/NG to have speller work.
 ! Particle ;
 
-LEXICON AdjectivePrefix !!≈ * @CODE@ - 
+
+!! ## Other lexica
+
+LEXICON AdjectivePrefix
+!! ### LEXICON @LEXNAME@ pointing to:
 kjempe AdjectiveRoot ; !!≈ * @CODE@ - 
 super  AdjectiveRoot ; !!≈ * @CODE@ - 
        AdjectiveRoot ; !!≈ * @CODE@ - 
 
-LEXICON Abbreviation !!≈ * @CODE@ - 
+LEXICON Abbreviation 
+!! ### LEXICON @LEXNAME@ pointing to:
 Abbreviation-nob ; !!≈ * @CODE@ - 
 Abbreviation-smi ; !!≈ * @CODE@ - 
 
-LEXICON ProperNoun   !!≈ * **@CODE@**
- @U.CmpHyph.TRUE@ ProperNoun-nob-nocomp ; !! Lexicon for NOB short names - always require hyphen
- @U.CmpHyph.TRUE@ ProperNoun-smi-nocomp ; !! Lexicon for short names - always require hyphen
-                  ProperNoun-smi        ; !! SMI proper nouns
-                  ProperNoun-nob        ; !! contains the full nob name list
+LEXICON ProperNoun
+!! ### LEXICON @LEXNAME@ pointing to: 
+ @U.CmpHyph.TRUE@ ProperNoun-nob-nocomp ; !!≈ * @CODE@ =  Lexicon for NOB short names - always require hyphen
+ @U.CmpHyph.TRUE@ ProperNoun-smi-nocomp ; !!≈ * @CODE@ =  Lexicon for short names - always require hyphen
+                  ProperNoun-smi        ; !!≈ * @CODE@ =  SMI proper nouns
+                  ProperNoun-nob        ; !!≈ * @CODE@ =  contains the full nob name list
 
 
 ! ======================
 !! ## Sublexica for NounRoot
 ! ======================
 
-!! This list for reference:
+!! This table shows the codes for nominal and verbal inflection. Irregular inflection has separate codes:
 
 !! |   kode | sg.ind. | sg.def | pl.ind. | pl.def.
 !! | --- | --- | --- | --- | --- 
@@ -383,10 +390,11 @@ LEXICON ProperNoun   !!≈ * **@CODE@**
 
 
 ! =======
-!! Clitics
+!! ## Clitics
 ! =======
 
-LEXICON K   !!≈ * **@CODE@** 
+LEXICON K 
+!! ### @LEXNAME@ pointing nouns here to get "genitive" -s
  +Clt:%>s # ;  !!≈ * **@CODE@** 
  # ;   !!≈ * **@CODE@** 
 

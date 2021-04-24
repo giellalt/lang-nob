@@ -1,38 +1,60 @@
-!! # MorpAhophonological rules for Bokmål
+!! # Morphophonological rules for Bokmål
 
+
+!! ## Sets and definitions
+
+!! ### Alphabet
 Alphabet
- a b c d e f g h i j k l m n o p q r s t u v w x y z æ ø å
- á é ó ú í à è ò ù ì ä ë ö ü ï â ê ô û î ã ý þ ñ ð ß ç
 
- A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Ø Å
- Á É Ó Ú Í À È Ò Ù Ì Ä Ë Ö Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð
- '
+ a b c d e f g h i j k l m n o p q r s t u v w x y z æ ø å !!≈ * **@CODE@**
+ á é ó ú í à è ò ù ì ä ë ö ü ï â ê ô û î ã ý þ ñ ð ß ç     !!≈ * **@CODE@**
+ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Ø Å !!≈ * **@CODE@**
+ Á É Ó Ú Í À È Ò Ù Ì Ä Ë Ö Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð         !!≈ * **@CODE@**
+ '   !!≈ * **@CODE@**
+  l7:l    !!≈ * **@CODE@** This one not deleted by t
+
 ! o:ø u:y a:e g:0 e:0 m:0 r:0 t:0 u:0
-  l7:l ! This one not deleted by t
-
 ! t:d
 ! 0:t
 ! 0:d
 ! s:'
 
+!! ### Boundary symbols
+
 ! Morpheme boundaries and escaped quotes - leave as is,
 ! they will be converted to zero/the real thing at a later stage.
- %#
- %>
- %<
- %|»
- «%|
-! «7
-! »7
- %[%<%]
- %[%>%]
+ %#         !!≈ * **@CODE@**
+ %>         !!≈ * **@CODE@**
+ %<         !!≈ * **@CODE@**
+ %|»      !! * **%|»**
+ «%|      !! * **%|«**
+! «7     
+! »7     
+ %[%<%]   !!≈ * **@CODE@**
+ %[%>%]   !!≈ * **@CODE@**
 
- X1:0 X2:0 X3:0 X4:0 X5:0 X6:0 X7:0 X8:0 X9:0
- Q1:0 Q2:0 Q3:0 Q4:0 Q5:0 Q6:0 Q7:0 Q8:0 Q9:0
- Y1:0 Y2:0 Y3:0 Y4:0 Y5:0 Y6:0 Y7:0 Y8:0 Y9:0 
- Z1:0 Z2:0 Z3:0 Z4:0 Z5:0 Z6:0 Z7:0 Z8:0 Z9:0 
+!! ### Morphophonological triggers
 
-%^NYNAG:0 ;
+!! #### Triggers for nominal rules
+X1:0  !!≈ * **@CODE@** = Epenthetic vowel moden:modne
+X2:0  !!≈ * **@CODE@** = ...
+X3:0  !!≈ * **@CODE@** = Plural r deletion -er, -ene
+X4:0  !!≈ * **@CODE@** = dumm:dum Delete m
+X5:0  !!≈ * **@CODE@** = um deletion, faktum:fakta
+X6:0  !!≈ * **@CODE@** = t:d weakening, oppskjørtet:oppskjørtede
+
+!! #### Trigers for verbal rules
+Q1:0  !!≈ * **@CODE@** = Passive
+Q2:0  !!≈ * **@CODE@** = ...
+Q3:0  !!≈ * **@CODE@** = Verb vowel and geminate deltion kalte, fylte
+
+!! #### Triggers for common rules (both for N and V)
+Z1:0  !!≈ * **@CODE@** = o:ø, a:e Umlaut
+Z2:0  !!≈ * **@CODE@** = protects vowel
+
+!! #### Nynorsk
+%^NYNAG:0 ;  !!≈ * **@CODE@** Trigger for Nynorsk dictionary forms.
+
 
 ! the chapter "Rule-variables" must under the M4 regime:
 ! To be removed when compiling on Xerox twolc:
@@ -46,100 +68,103 @@ Alphabet
 
 !htwolc        Cx Cy Cz Vx Vy ;
 
-Sets
- Vow = a e i o u y æ ø å ;
- Cns = b c d f g h j k l m n p q r s t v w x z ;
- LNR = l n r ;
- Dummy = X1 X2 X3 X4 X5 X6 X7 X8 X9 %^NYNAG
- Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9
- Y1 Y2 Y3 Y4 Y5 Y6 Y7 Y8 Y9 
- Z1 Z2 Z3 Z4 Z5 Z6 Z7 Z8 Z9 ;  ! %+ 
+!! ### Sets
+Sets 
+ Vow = a e i o u y æ ø å ;                       !!≈ * **@CODE@**
+ Cns = b c d f g h j k l m n p q r s t v w x z ; !!≈ * **@CODE@**
+ LNR = l n r ;                                   !!≈ * **@CODE@**
+ Dummy = X1 X2 X3 X4 X5 X6 Q1 Q2 Q3  Z1 Z2 %^NYNAG ; !!≈ * **@CODE@**
 
-! Use of diacritics
-! Q  = Verbal rules
-! Q1 = Passive
-! Q3 = Verb vowel and geminate deltion kalte, fylte
-! X  = Nominal rules
-! X1 = Epenthetic vowel moden:modne
-! X3 = Plural r deletion -er, -ene
-! X4 = dumm:dum Delete m
-! X5 = um deletion, faktum:fakta
-! X6 = t:d weakening, oppskjørtet:oppskjørtede
-! Z  = Common rules
-! Z1 = o:ø, a:e Umlaut
-! Z2 = protects vowel
+!! ## Rule section
 
-
-!! # Rule section
-
-Rules
+Rules 
 
 
 
-! Nynorsk dictionary rules
+!! ### Nynorsk dictionary rules
 
 "Change -er stem to -ar in Nynorsk"
 !! **@RULENAME@**  
  e:a <=> _ r %^NYNAG: ;
 
-! This rule is for dictionary use only.
+!! This rule is for dictionary use only.
 
 
  
+!! ### Umlaut
 
-! Epenthetic deletions
+"Umlaut Rule"
+!! **@RULENAME@**  
+ Vx:Vy <=> _ Cns:* ( e:0 ) Z1: ;
+ where Vx in ( u o a å )
+       Vy in ( y ø e e )
+       matched ;
+! bok : bøker
+
+
+!! ### Vowel deletions rules
 ! --------------------
 
-"e Deletion"
+"Epenthetic Deletion Rule"
 !! **@RULENAME@**  
  e:0 <=>      Cns:  _ LNR X1: %> ( e | a ) ;
          Vow  Cns:* _  [Dummy:* - Z2:]  %> [ Vow | Cns Cns ] ;
-	            _ %> Q3: ;
+               _ %> Q3: ;
           i g %>  _ s t ;
 
+!! ##### Tests:
 !!€ teaterX1>et
 !!€ teat0r0>et
-
 !!€ modenX1>e
 !!€ mod0n0>e
-
 !!€ reparere>Q3te
 !!€ reparer0>0te
-
 !!$ modenX1>e
 !!$ moden0>e
-
 !!€ hare>er
 !!€ har0>er
-
 !!€ viktig>est
 !!€ viktig>0st
+!!€ presentere%>Q3t
+!!€ presenter0>0t
 
-"Consonant shortening before deletion"
+"Delete foreign vowel Rule"
+!! **@RULENAME@**  
+ Vx:0 <=> _ X2:  ;
+   where Vx in (a o) ;
+
+!! ##### Tests:
+!!€ kollegaX2>er
+!!€ kolleg00>er
+
+
+
+!! ### Consonant deletion
+
+"Consonant shortening before deletion Rule"
 !! **@RULENAME@**  
  Cx:0 <=> Vow Cx _ e: LNR X1: %> ( e | a ) ;
           where Cx in ( b d v ) ;
 
+!! ##### Tests:
 !!€ sikkerX1>e
 !!€ sik00r0>e
 
 
-"Geminate deletion in front of -t and -d"
+"Geminate deletion in front of -t and -d Rule"
 !! **@RULENAME@**  
  Cx:0 <=> Vow Cx _ (e:0)         %> Q3: [d|t] ; ! kaller:kalte
           Vow Cx _ :t e s  Q1:  ; ! lykkes:lyktes
           Vow Cx _  e:   LNR X1: %> ( e | a ) ;  ! sikker:sikre
       where Cx in ( f k p s l n g ) ;
 
+!! ##### Tests:
 !!€ kalle>Q3te
 !!€ kal00>0te
-
 !!€ lykk0esQ1
 !!€ lyk0tes0
-
 !!€ all>Q3t
 !!€ al0>0t
-
 !!€ bygge>Q3de
 !!€ byg00>0de
 
@@ -148,22 +173,14 @@ Rules
 !"Delete schwaa" ! h a r e:0 %> e r
 ! e:0 <=> Vow ( Cns:* ) _ ( Dummy:* - Z2: ) %> [ Vow | Cns Cns ] ;
 
-"Delete foreign vowel"
-!! **@RULENAME@**  
- Vx:0 <=> _ X2:  ;
-	where Vx in (a o) ;
 
-!!€ kollegaX2>er
-!!€ kolleg00>er
-
-
-"Delete r"
+"Delete r Rule"
 !! **@RULENAME@**  
  r:0 <=>   _ %> X3: ;
          r _ e: LNR X1: %> ( e | a ) ;
 ! sparepengar : sparepengane
 
-"Delete m"
+"Delete m Rule"
 !! **@RULENAME@**  
  m:0 <=>    _ X4: [ #: (Q3:) | %> s ] ;      ! kammX4:kam
           m _ e: LNR X1: %> ( e | a ) ; ! gammel:gamle
@@ -171,22 +188,15 @@ Rules
          u: _ X5: %> ;
          
 
-"Umlaut"
-!! **@RULENAME@**  
- Vx:Vy <=> _ Cns:* ( e:0 ) Z1: ;
- where Vx in ( u o a å )
-       Vy in ( y ø e e )
-       matched ;
-! bok : bøker
-
 !"m deletion"
 ! m:0 <=> Vow: _ m #: ;
 
 
-"um Deletion 1"
-!! **@RULENAME@**  
+"um Deletion 1 Rule"
+!! **@RULENAME@** (um Deletion 2 is now part of the *Delete m Rule*)
  u:0 <=> _ m: X5: %> ;
 
+!! ##### Tests:
 !!€ museumX5>er
 !!€ muse000>er
 
@@ -194,54 +204,60 @@ Rules
 ! m:0 <=> u: _ X5: %> ;
 
 
-"t weakening"
+"t weakening Rule"
 !! **@RULENAME@**  
  t:d <=> [Cns:|Vow:] _ X6:0 %> e ;
 
+!! ##### Tests:
 !!€ oppskjørtetX6>e
 !!€ oppskjørted0>e
  
-
-"compund"
-Cx:0 <=> Cx _ #: #: Cx ;
-     where Cx in (b d f g k l m n p r s t v ) ;
-
-!!€ grammatikk##kontroll
-!!€ grammatik000kontroll
-
-"Double t deletion"
+"Double t deletion Rule"
 !! **@RULENAME@**  
  t:0 <=>   Cns t %> _  .#. ;  ! svart
            Vow t    _  e:  LNR X1: %> (e|a) ;      ! sikker:sikre
            Vow t    _ (e:0)        %> Q3:0 [d|t] ; ! kaller:kalte
 
+!! ##### Tests:
 !!€ svart>t
 !!€ svart>0
 
 !" inf-e"
 ! e:0 <=> _ %> Q3: ;
 
-!!€ presentere%>Q3t
-!!€ presenter0>0t
 
-! Insertion rules
+!! ### Insertion rules
 ! ---------------
 
-"Insert t in passives"
+"Insert t in passives Rule"
 !! **@RULENAME@**  
  0:t <=> _ e s Q1: ;
 
 !"Insert d in passives"
 ! 0:d <=> _ e s Q1: ;
 
-! Clitics
+
+!! ### Compound rule
+
+
+"compund Rule"
+Cx:0 <=> Cx _ #: #: Cx ;
+     where Cx in (b d f g k l m n p r s t v ) ;
+
+!! ##### Tests:
+!!€ grammatikk##kontroll
+!!€ grammatik000kontroll
+
+
+
+!! ### Clitics
 ! -------
 
-"Clitic after s-final"
+"Clitic after s-final Rule"
 !! **@RULENAME@**  
  s:' <=> s %> _ ;
 ! huss -> hus'
 
-! Test to have an error
+!! Test to have an error
 !!$ a
 !!$ b

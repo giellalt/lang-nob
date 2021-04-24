@@ -65,7 +65,7 @@ NDS analyser tags
 
 ## Morphophonology
 
-Todo: Document these
+Todo: Document these and remove unused ones.
 
  * **X1 X2 X3 X4 X5 X6 X7 X8 X9** 
  * **Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9** 
@@ -284,14 +284,14 @@ given the proper use of these flags.
  * @P.Pmatch.Backtrack@ - 
  * @PMATCH_BACKTRACK@ - 
 
-# Basic lexica, pointing to the other lexicon files
+## Basic lexica, pointing to the other lexicon files
 
- * LEXICON Root
+### LEXICON Root
  * FinalNoun ; for -skap etc. that is affix rather than compound
  * ShortNounRoot ; 2- and 3-letter words
  * NounRoot ; The rest
  * ProperNoun ;
- * AdjectivePrefix ;
+ * AdjectivePrefix ; = kjempeinteressant leksikon, sjå nedanfor.
  * VerbRoot ;
  * Adverb ;
  * Subjunction ;
@@ -304,27 +304,30 @@ given the proper use of these flags.
  * Symbols ;
  * Abbreviation ;
  * Acronym-smi ;
- * +Use/NG: Nynorsk ; Accepts nno forms, does not generate
+ * +Err/Orth: Nynorsk ; Accepts nno forms, does not generate, changed from Use/NG to have speller work.
 
- * LEXICON AdjectivePrefix - 
+
+## Other lexica
+
+### LEXICON AdjectivePrefix pointing to:
  * kjempe AdjectiveRoot ; - 
  * super AdjectiveRoot ; - 
  * AdjectiveRoot ; - 
 
- * LEXICON Abbreviation - 
+### LEXICON Abbreviation pointing to:
  * Abbreviation-nob ; - 
  * Abbreviation-smi ; - 
 
- * **LEXICON ProperNoun**
-Lexicon for NOB short names - always require hyphen
-Lexicon for short names - always require hyphen
-SMI proper nouns
-contains the full nob name list
+### LEXICON ProperNoun pointing to: 
+ * @U.CmpHyph.TRUE@ ProperNoun-nob-nocomp ; =  Lexicon for NOB short names - always require hyphen
+ * @U.CmpHyph.TRUE@ ProperNoun-smi-nocomp ; =  Lexicon for short names - always require hyphen
+ * ProperNoun-smi ; =  SMI proper nouns
+ * ProperNoun-nob ; =  contains the full nob name list
 
 
 ## Sublexica for NounRoot
 
-This list for reference:
+This table shows the codes for nominal and verbal inflection. Irregular inflection has separate codes:
 
 |   kode | sg.ind. | sg.def | pl.ind. | pl.def.
 | --- | --- | --- | --- | --- 
@@ -359,9 +362,9 @@ This list for reference:
 
 
 
-Clitics
+## Clitics
 
- * **LEXICON K** 
+### K pointing nouns here to get "genitive" -s
  * **+Clt:%>s # ;** 
  * **# ;** 
 
@@ -814,125 +817,185 @@ Nynorsk  her kjem alle orda
 
 
 
-# MorpAhophonological rules for Bokmål
+# Morphophonological rules for Bokmål
+
+
+## Sets and definitions
+
+### Alphabet
+
+ * **a b c d e f g h i j k l m n o p q r s t u v w x y z æ ø å**
+ * **á é ó ú í à è ò ù ì ä ë ö ü ï â ê ô û î ã ý þ ñ ð ß ç**
+ * **A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Ø Å**
+ * **Á É Ó Ú Í À È Ò Ù Ì Ä Ë Ö Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð**
+ * **'**
+ * **l7:l** This one not deleted by t
+
+
+### Boundary symbols
+
+ * **%#**
+ * **%>**
+ * **%<**
+* **%|»**
+* **%|«**
+ * **%[%<%]**
+ * **%[%>%]**
+
+### Morphophonological triggers
+
+#### Triggers for nominal rules
+ * **X1:0** = Epenthetic vowel moden:modne
+ * **X2:0** = ...
+ * **X3:0** = Plural r deletion -er, -ene
+ * **X4:0** = dumm:dum Delete m
+ * **X5:0** = um deletion, faktum:fakta
+ * **X6:0** = t:d weakening, oppskjørtet:oppskjørtede
+
+#### Trigers for verbal rules
+ * **Q1:0** = Passive
+ * **Q2:0** = ...
+ * **Q3:0** = Verb vowel and geminate deltion kalte, fylte
+
+#### Triggers for common rules (both for N and V)
+ * **Z1:0** = o:ø, a:e Umlaut
+ * **Z2:0** = protects vowel
+
+#### Nynorsk
+ * **%^NYNAG:0 ;** Trigger for Nynorsk dictionary forms.
 
 
 
 
 
 
+### Sets
+ * **Vow = a e i o u y æ ø å ;**
+ * **Cns = b c d f g h j k l m n p q r s t v w x z ;**
+ * **LNR = l n r ;**
+ * **Dummy = X1 X2 X3 X4 X5 X6 Q1 Q2 Q3 Z1 Z2 %^NYNAG ;**
+
+## Rule section
 
 
 
 
-
-
-
-
-# Rule section
-
-
-
-
+### Nynorsk dictionary rules
 
 **Change -er stem to -ar in Nynorsk**  
 
+This rule is for dictionary use only.
 
 
 
+### Umlaut
+
+**Umlaut Rule**  
 
 
-**e Deletion**  
+### Vowel deletions rules
 
+**Epenthetic Deletion Rule**  
+
+##### Tests:
 * *teaterX1>et*
 * *teat0r0>et*
-
 * *modenX1>e*
 * *mod0n0>e*
-
 * *reparere>Q3te*
 * *reparer0>0te*
-
 * ★*modenX1>e* (is not standard language)
 * ★*moden0>e* (is not standard language)
-
 * *hare>er*
 * *har0>er*
-
 * *viktig>est*
 * *viktig>0st*
+* *presentere%>Q3t*
+* *presenter0>0t*
 
-**Consonant shortening before deletion**  
+**Delete foreign vowel Rule**  
 
+##### Tests:
+* *kollegaX2>er*
+* *kolleg00>er*
+
+
+
+### Consonant deletion
+
+**Consonant shortening before deletion Rule**  
+
+##### Tests:
 * *sikkerX1>e*
 * *sik00r0>e*
 
 
-**Geminate deletion in front of -t and -d**  
+**Geminate deletion in front of -t and -d Rule**  
 
+##### Tests:
 * *kalle>Q3te*
 * *kal00>0te*
-
 * *lykk0esQ1*
 * *lyk0tes0*
-
 * *all>Q3t*
 * *al0>0t*
-
 * *bygge>Q3de*
 * *byg00>0de*
 
 
 
 
-**Delete foreign vowel**  
 
-* *kollegaX2>er*
-* *kolleg00>er*
+**Delete r Rule**  
 
-
-**Delete r**  
-
-**Delete m**  
-
-
-**Umlaut**  
+**Delete m Rule**  
 
 
 
-**um Deletion 1**  
 
+**um Deletion 1 Rule** (um Deletion 2 is now part of the *Delete m Rule*)
+
+##### Tests:
 * *museumX5>er*
 * *muse000>er*
 
 
 
-**t weakening**  
+**t weakening Rule**  
 
+##### Tests:
 * *oppskjørtetX6>e*
 * *oppskjørted0>e*
 
+**Double t deletion Rule**  
 
-
-* *grammatikk##kontroll*
-* *grammatik000kontroll*
-
-**Double t deletion**  
-
+##### Tests:
 * *svart>t*
 * *svart>0*
 
 
-* *presentere%>Q3t*
-* *presenter0>0t*
+
+### Insertion rules
+
+**Insert t in passives Rule**  
 
 
-**Insert t in passives**  
+
+### Compound rule
 
 
 
-**Clitic after s-final**  
+##### Tests:
+* *grammatikk##kontroll*
+* *grammatik000kontroll*
 
+
+
+### Clitics
+
+**Clitic after s-final Rule**  
+
+Test to have an error
 * ★*a* (is not standard language)
 * ★*b* (is not standard language)
 # Preopositions
