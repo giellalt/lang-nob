@@ -1,9 +1,8 @@
 # Bokmål adverbs
 
-adv  the tag +Adv
+LEXICON adv  adds the tag +Adv
 
-dt  Also +Adv  perhaps unify, perhaps not.
+LEXICON dt  also ads +Adv  perhaps unify, perhaps not.
 
-Adverb 
-
+Adverb lists some 600 Norwegian adverbs, including MWE such as "i live"
 

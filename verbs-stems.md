@@ -18,7 +18,7 @@
     v3-s passive v3 verbs
 
 
-VerbRoot
+LEXICON VerbRoot
 
 
 
