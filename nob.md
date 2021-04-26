@@ -5,15 +5,15 @@ this documents the symbols and intro lexicon of **Norwegian Bokmål**.
 
  **Multichar_Symbols** 
 
-Here come the **tags**.
+Here we declare the **tags** and all other multicharacter symbols.
 
 
 ## Grammatical tags
 
 ### Part of speech
 
- - **+N +A +Adv +V** 
- - **+CS +CC +Interj +Pcle +Pr +IM** 
+ - **+N +A +Adv +V** Open parts of speech
+ - **+CS +CC +Interj +Pcle +Pr +IM** Closed POS (IM = **å**)
  - **+Pers +Dem +Interr +Refl +Recipr +Rel +Qnt** 
 
 ### Subtags
@@ -23,15 +23,15 @@ Here come the **tags**.
  * **+Sg +Pl** = 
  * **+Sg1 +Sg2 +Sg3 +Pl1 +Pl2 +Pl3** = 
  * **+Pron +Nom +Acc +Dat +Det** = 
- * **+Msc +Fem +Neu +MF** = 
- * **+Pos +Comp +Superl** = 
- * **+Clt** = 
- * **+Dat** = 
- * **+Pass +Ind +Prs +Prt +Imp** = 
- * **+Inf +PrsPrc +PrfPrc** = 
- * **+Interj +Intens** = 
- * **+Prop** = 
- * **+Qnt**  quantifier noen, begge
+ * **+Msc +Fem +Neu +MF** = Gender. MF = Masc or Fem (used for adjs, not nouns)
+ * **+Pos +Comp +Superl** = For adjectives
+ * **+Clt** = the so-called "genitive s"
+ * **+Dat** = for fixed expressions *i live*
+ * **+Pass +Ind +Prs +Prt +Imp** = for verb voice, mood, tense
+ * **+Inf +PrsPrc +PrfPrc** = for infinite verbs
+ * **+Prop** = Propernouns are tagged +N+Prop
+ * **+Qnt** = quantifier noen, begge
+ * **+Intens** = **hmm, what is this...**
 
 
 
@@ -39,13 +39,9 @@ Here come the **tags**.
 
  * **+CLB +PUNCT +HYPH +LEFT +RIGHT**
  * **+CLBfinal**  Sentence final abbreviated expression ending in full stop, so that the full stop is ambiguous
-
  * **+Cmp+** 
  * **+CmpS+** 
- * +Symbol = independent symbols in the text stream, like £, €, ©
-
-
-
+ * **+Symbol** = independent symbols in the text stream, like £, €, ©
  * **+Ex/V** for derivation
  * **+Ord** 
  * **+Prdt** 
@@ -65,21 +61,26 @@ NDS analyser tags
 
 ## Morphophonology
 
-Todo: Document these and remove unused ones.
+### Triggers
 
- * **X1 X2 X3 X4 X5 X6 X7 X8 X9** 
- * **Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9** 
- * **Y1 Y2 Y3 Y4 Y5 Y6 Y7 Y8 Y9** 
- * **Z1 Z2 Z3 Z4 Z5 Z6 Z7 Z8 Z9** 
- * **l7**  always l
- * **%^NYNAG**  Nynorsk agens lærar / lærer
- * +Use/Circ circular string
- * +Der/AAdv Adjectives are also adverbs
- * +Der/NomAct verb +ing
- * +Der1
- * **+Der** 
+ * **X1 X2 X3 X4 X5 X6** = Nominal
+ * **Q1 Q2 Q3** = 
+ * **Z1 Z2** = 
+ * **%^NYNAG** =  Nynorsk agens lærar / lærer
 
-Normativity and other usage tags
+### Special symbols
+
+ * **l7** =  always l
+ * **+Use/Circ** = circular string
+
+### Derivation
+
+ * **+Der/AAdv** = Adjectives are also adverbs
+ * **+Der/NomAct** = verb +ing
+ * **+Der1** = derivation position
+ * **+Der** = mark derivation
+
+### Normativity and other usage tags
 
  * **+Err/Orth**    For speller use
  * **+Err/Hyph** 
@@ -111,7 +112,6 @@ Normativity and other usage tags
 
 
 ###  Tags for abbreviation handling
-
 
  * **+Gram/IAbbr** 
  * **+Gram/TAbbr** 
@@ -1041,6 +1041,250 @@ LEXICON Subjunction
 
 LEXICON subj gives tag +CS
 
+
+
+# Sublexica for verb roots
+
+    -----------------------------
+    Main types, from Bokmålsordboka
+    v1  kaste       kaster      kasta       kasta
+                               kastet      kastet
+    v2  lyse        lyser       lyste       lyst
+       reparere    reparerer   reparerte   reparert
+    v3  leve        lever       levde       levd
+    v4  nå          når         nådde       nådd
+    v4  bie         bier        bidde       bidd
+  
+    Subtypes
+    v12 v1 or v2
+    v13 v1 or v3
+    v14 v1 or v4
+    v1-s passive v1 verbs
+    v2-s passive v2 verbs
+    v3-s passive v3 verbs
+
+
+## Sublexica for regular verbs 
+
+### Preliminary lexica
+
+**LEXICON vx** points to v1.
+
+**LEXICON v12** for both v1 and v2 past forms, or: score -> scoret, scorte (NG  = do not generate)
+
+**LEXICON v13** also here: v1, v3: sveve -> svevet (NG), svevde.
+
+
+**LEXICON v23** 
+
+**LEXICON v14** where v4 is NG
+
+**LEXICON v1** =  kaste
+
+
+**LEXICON v2** = blåse, studere
+
+**LEXICON v3** =  leve
+
+**LEXICON v4** =  ro, bie
+
+
+**LEXICON v1-s** =  undres
+
+**LEXICON v2-s** =  føles, synes
+
+**LEXICON v3-s** =  trives
+
+
+
+
+
+## Conjugation sublexica
+
+**LEXICON inf-prsptc** = 
+
+**LEXICON regpres** = 
+
+**LEXICON r-pres** = 
+
+**LEXICON a-et-pret** = 
+
+**LEXICON te-pret** = 
+
+**LEXICON de-pret** = 
+
+**LEXICON dde-pret** = 
+
+
+**LEXICON prsptcsuff** = 
+
+
+
+### Sublexica for irregular verbs 
+
+
+ * **LEXICON BE** 
+ * **LEXICON BINDE** 
+ * **LEXICON XITE** 
+ * **LEXICON BLI** 
+ * **LEXICON BLIVE** 
+ * **LEXICON BRENNE** 
+ * **LEXICON BRESTE** 
+ * **LEXICON BRINGE** 
+ * **LEXICON BRISTE** 
+ * **LEXICON XYTE** = yte, flyte, tryte
+ * **LEXICON BURDE** 
+ * **LEXICON BY** 
+ * **LEXICON XYDE** = lyde, tyde, syde, ...
+ * **LEXICON BÆRE** 
+ * **LEXICON XETTE** 
+ * **LEXICON DRA** 
+ * **LEXICON XIKKE** = drikke
+ * **LEXICON DRIVE** 
+ * **LEXICON DØLGE** 
+ * **LEXICON DØ** 
+ * **LEXICON EIE** 
+ * **LEXICON ETE** 
+ * **LEXICON FALLE** 
+ * **LEXICON FARE** 
+ * **LEXICON FINNE** 
+ * **LEXICON FISE** 
+ * **LEXICON FLY** 
+ * **LEXICON LYGE**
+ * **LEXICON LJUGE**
+ * **LEXICON FLYGE**
+ * **LEXICON FLYTE**
+ * **LEXICON LATE**
+ * **LEXICON FRYSE**
+ * **LEXICON FYKE**
+ * **LEXICON FÅ**
+ * **LEXICON FØLGE**
+ * **LEXICON GALE**
+ * **LEXICON GIDDE**
+ * **LEXICON GI**
+ * **LEXICON GJELDE**
+ * **LEXICON GJØRE**
+ * **LEXICON GLEPPE**
+ * **LEXICON GLI**
+ * **LEXICON XIPPE** = glippe, slippe
+ * **LEXICON GNAGE**
+ * **LEXICON GNI**
+ * **LEXICON GRAVE**
+ * **LEXICON GRINE**
+ * **LEXICON GRIPE**
+ * **LEXICON GRÅTE**
+ * **LEXICON GYSE**
+ * **LEXICON GYTE**
+ * **LEXICON GYVE**
+ * **LEXICON GÅ**
+ * **LEXICON HA**
+ * **LEXICON HENGE**
+ * **LEXICON HETE**
+ * **LEXICON HIVE**
+ * **LEXICON HJELPE**
+ * **LEXICON HOGGE**
+ * **LEXICON HOLDE**
+ * **LEXICON HUGGE**
+ * **LEXICON KLINGE**
+ * **LEXICON KLIPE**
+ * **LEXICON KLIVE**
+ * **LEXICON XYPE** = klype:kl
+ * **LEXICON KLYVE**
+ * **LEXICON XEKKE** = knekke, kvekke
+ * **LEXICON KNESTE**
+ * **LEXICON KNETTE**
+ * **LEXICON KNIPE**
+ * **LEXICON KOMME**
+ * **LEXICON KUNNE**
+ * **LEXICON LA**
+ * **LEXICON LE**
+ * **LEXICON LEGGE**
+ * **LEXICON LIGGE**
+ * **LEXICON LYDE**
+ * **LEXICON MÅTTE**
+ * **LEXICON MØTE**
+ * **LEXICON PIPE**
+ * **LEXICON RIVE**
+ * **LEXICON RYKE**
+ * **LEXICON SETTE**
+ * **LEXICON SELGE**
+ * **LEXICON SE**
+ * **LEXICON SIGE**
+ * **LEXICON SITTE**
+ * **LEXICON SI**
+ * **LEXICON SKJELVE**
+ * **LEXICON SKJÆRE**
+ * **LEXICON SKLI**
+ * **LEXICON SKRIDE**
+ * **LEXICON RIDE**
+ * **LEXICON LIDE**
+ * **LEXICON KVEDE**
+ * **LEXICON SKRIKE**
+ * **LEXICON SKRIVE**
+ * **LEXICON SKRYTE**
+ * **LEXICON SKULLE**
+ * **LEXICON SKVETTE**
+ * **LEXICON SKYTE**
+ * **LEXICON SKYVE**
+ * **LEXICON SLEPPE**
+ * **LEXICON SLÅSS**
+ * **LEXICON SLÅ**
+ * **LEXICON SMELLE**
+ * **LEXICON SMETTE**
+ * **LEXICON SMYGE**
+ * **LEXICON SMØRE**
+ * **LEXICON SNIKE**
+ * **LEXICON SNYTE**
+ * **LEXICON SOVE**
+ * **LEXICON SPINNE**
+ * **LEXICON SPREKKE**
+ * **LEXICON SPRETTE**
+ * **LEXICON SPRINGE**
+ * **LEXICON SPØRRE**
+ * **LEXICON STELE**
+ * **LEXICON STIGE**
+ * **LEXICON STIKKE**
+ * **LEXICON STJELE**
+ * **LEXICON STREKKE**
+ * **LEXICON STRIDE**
+ * **LEXICON STRYKE**
+ * **LEXICON STÅ**
+ * **LEXICON STØKKE**
+ * **LEXICON SVELTE**
+ * **LEXICON SVERGE**
+ * **LEXICON SVI**
+ * **LEXICON SVIKE**
+ * **LEXICON SVINGE**
+ * **LEXICON SVINNE**
+ * **LEXICON SVIVE**
+ * **LEXICON SYNGE**
+ * **LEXICON SYNKE**
+ * **LEXICON SØKKE**
+ * **LEXICON TA**
+ * **LEXICON TELLE**
+ * **LEXICON TIE**
+ * **LEXICON TRE_V**
+ * **LEXICON TORE**
+ * **LEXICON TREFFE**
+ * **LEXICON TREKKE**
+ * **LEXICON TRIVE**
+ * **LEXICON TRYTE**
+ * **LEXICON TRÅ**
+ * **LEXICON TVINGE**
+ * **LEXICON TYTE**
+ * **LEXICON TØRRE**
+ * **LEXICON VEIE**
+ * **LEXICON VELGE**
+ * **LEXICON VEVE**
+ * **LEXICON VIKE**
+ * **LEXICON VILLE**
+ * **LEXICON VINDE**
+ * **LEXICON VINNE**
+ * **LEXICON VITE**
+ * **LEXICON VRI**
+ * **LEXICON VÆRE**
+ * **LEXICON UNNVÆRE**
+ * **LEXICON XREKKE** = brekke, overrekke, radbrekk, rekke
 
 
 

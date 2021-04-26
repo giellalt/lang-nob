@@ -419,6 +419,7 @@ MD_PAGES = root-morphology.md          \
 		prepositions-stems.md        \
 		pronouns-stems.md            \
 		subjunctions-stems.md        \
+		verbs-affixes.md             \
 		verbs-stems.md
 
 
@@ -902,8 +903,7 @@ $(INDEX): $(HEADER) $(LINKS)
 # particles-stems.md          \
 # propernouns-affixes.md      \
 # propernouns-stems.md        \
-# punctuation-stems.md        \
-# verbs-affixes.md
+# punctuation-stems.md
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
