@@ -14,10 +14,11 @@
 
 
 
-! Basic paradigms
+!! ## Basic paradigms
 ! ===============
 
 LEXICON a23
+!! @LEXNAME@
   a2 ;
   a3 ;
 
@@ -91,7 +92,7 @@ LEXICON LIKEDAN !
 
 
 
-! Sublexica
+!! ### Sublexica
 ! =========
 
 LEXICON positive

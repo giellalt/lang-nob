@@ -5,15 +5,15 @@ this documents the symbols and intro lexicon of **Norwegian Bokmål**.
 
  **Multichar_Symbols** 
 
-Here come the **tags**.
+Here we declare the **tags** and all other multicharacter symbols.
 
 
 ## Grammatical tags
 
 ### Part of speech
 
- - **+N +A +Adv +V** 
- - **+CS +CC +Interj +Pcle +Pr +IM** 
+ - **+N +A +Adv +V** Open parts of speech
+ - **+CS +CC +Interj +Pcle +Pr +IM** Closed POS (IM = **å**)
  - **+Pers +Dem +Interr +Refl +Recipr +Rel +Qnt** 
 
 ### Subtags
@@ -23,15 +23,15 @@ Here come the **tags**.
  * **+Sg +Pl** = 
  * **+Sg1 +Sg2 +Sg3 +Pl1 +Pl2 +Pl3** = 
  * **+Pron +Nom +Acc +Dat +Det** = 
- * **+Msc +Fem +Neu +MF** = 
- * **+Pos +Comp +Superl** = 
- * **+Clt** = 
- * **+Dat** = 
- * **+Pass +Ind +Prs +Prt +Imp** = 
- * **+Inf +PrsPrc +PrfPrc** = 
- * **+Interj +Intens** = 
- * **+Prop** = 
- * **+Qnt**  quantifier noen, begge
+ * **+Msc +Fem +Neu +MF** = Gender. MF = Masc or Fem (used for adjs, not nouns)
+ * **+Pos +Comp +Superl** = For adjectives
+ * **+Clt** = the so-called "genitive s"
+ * **+Dat** = for fixed expressions *i live*
+ * **+Pass +Ind +Prs +Prt +Imp** = for verb voice, mood, tense
+ * **+Inf +PrsPrc +PrfPrc** = for infinite verbs
+ * **+Prop** = Propernouns are tagged +N+Prop
+ * **+Qnt** = quantifier noen, begge
+ * **+Intens** = **hmm, what is this...**
 
 
 
@@ -39,13 +39,9 @@ Here come the **tags**.
 
  * **+CLB +PUNCT +HYPH +LEFT +RIGHT**
  * **+CLBfinal**  Sentence final abbreviated expression ending in full stop, so that the full stop is ambiguous
-
  * **+Cmp+** 
  * **+CmpS+** 
- * +Symbol = independent symbols in the text stream, like £, €, ©
-
-
-
+ * **+Symbol** = independent symbols in the text stream, like £, €, ©
  * **+Ex/V** for derivation
  * **+Ord** 
  * **+Prdt** 
@@ -65,21 +61,26 @@ NDS analyser tags
 
 ## Morphophonology
 
-Todo: Document these and remove unused ones.
+### Triggers
 
- * **X1 X2 X3 X4 X5 X6 X7 X8 X9** 
- * **Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9** 
- * **Y1 Y2 Y3 Y4 Y5 Y6 Y7 Y8 Y9** 
- * **Z1 Z2 Z3 Z4 Z5 Z6 Z7 Z8 Z9** 
- * **l7**  always l
- * **%^NYNAG**  Nynorsk agens lærar / lærer
- * +Use/Circ circular string
- * +Der/AAdv Adjectives are also adverbs
- * +Der/NomAct verb +ing
- * +Der1
- * **+Der** 
+ * **X1 X2 X3 X4 X5 X6** = Nominal
+ * **Q1 Q2 Q3** = 
+ * **Z1 Z2** = 
+ * **%^NYNAG** =  Nynorsk agens lærar / lærer
 
-Normativity and other usage tags
+### Special symbols
+
+ * **l7** =  always l
+ * **+Use/Circ** = circular string
+
+### Derivation
+
+ * **+Der/AAdv** = Adjectives are also adverbs
+ * **+Der/NomAct** = verb +ing
+ * **+Der1** = derivation position
+ * **+Der** = mark derivation
+
+### Normativity and other usage tags
 
  * **+Err/Orth**    For speller use
  * **+Err/Hyph** 
@@ -111,7 +112,6 @@ Normativity and other usage tags
 
 
 ###  Tags for abbreviation handling
-
 
  * **+Gram/IAbbr** 
  * **+Gram/TAbbr** 
