@@ -823,17 +823,18 @@ LEXICON Nynorsk  her kjem alle orda
 
 ### Alphabet
 
- * **a b c d e f g h i j k l m n o p q r s t u v w x y z æ ø å**
+We declare both the a-å letters and all other possible letters.
+ * **a b c d e f g h i j k l m n o p q r s t u v w x y z æ ø å** 
  * **á é ó ú í à è ò ù ì ä ë ö ü ï â ê ô û î ã ý þ ñ ð ß ç**
  * **A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Ø Å**
  * **Á É Ó Ú Í À È Ò Ù Ì Ä Ë Ö Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð**
- * **'**
- * **l7:l** This one not deleted by t
+ * **'** This is the apostrophe
+ * **l7:l** This **l** not deleted by **t**
 
 
 ### Boundary symbols
 
-Morpheme boundaries and escaped quotes - leave as is,
+Morpheme boundaries and escaped quotes - do not delete in twolc,
 they will be converted to zero/the real thing at a later stage.
 
  * **%#**
@@ -845,6 +846,8 @@ they will be converted to zero/the real thing at a later stage.
  * **%[%>%]**
 
 ### Morphophonological triggers
+
+These symbols cause the twolc rules to work.
 
 #### Triggers for nominal rules
  * **X1:0** = Epenthetic vowel moden:modne
@@ -863,7 +866,7 @@ they will be converted to zero/the real thing at a later stage.
  * **Z1:0** = o:ø, a:e Umlaut
  * **Z2:0** = protects vowel
 
-#### Nynorsk
+#### Nynorsk trigger
  * **%^NYNAG:0 ;** Trigger for Nynorsk dictionary forms.
 
 
@@ -872,6 +875,7 @@ they will be converted to zero/the real thing at a later stage.
 
 
 ### Sets
+
  * **Vow = a e i o u y æ ø å ;**
  * **Cns = b c d f g h j k l m n p q r s t v w x z ;**
  * **LNR = l n r ;**
@@ -879,27 +883,22 @@ they will be converted to zero/the real thing at a later stage.
 
 ## Rule section
 
+This section shows the twolc rules and the tests used to check whether they work
 
-
-
-### Nynorsk dictionary rules
-
-**Change -er stem to -ar in Nynorsk**  
-
-This rule is for dictionary use only.
 
 
 
 ### Umlaut
 
-**Umlaut Rule**  
+**Umlaut Rule**  for *bok : bøker* etc.
+
 
 
 ### Vowel deletions rules
 
-**Epenthetic Deletion Rule**  
+**Epenthetic Deletion Rule**  for deleting -e- in *moden : modne* etc, in *hare + -er* and in *ærlig + est > ærligst*
 
-##### Tests:
+*Tests:*
 * *teaterX1>et*
 * *teat0r0>et*
 * *modenX1>e*
@@ -915,9 +914,9 @@ This rule is for dictionary use only.
 * *presentere%>Q3t*
 * *presenter0>0t*
 
-**Delete foreign vowel Rule**  
+**Delete foreign vowel Rule**  for deleting final a or o in words like *kollega : kolleger*. Trigger is **X2**.
 
-##### Tests:
+*Tests:*
 * *kollegaX2>er*
 * *kolleg00>er*
 
@@ -927,14 +926,14 @@ This rule is for dictionary use only.
 
 **Consonant shortening before deletion Rule**  
 
-##### Tests:
+*Tests:*
 * *sikkerX1>e*
 * *sik00r0>e*
 
 
 **Geminate deletion in front of -t and -d Rule**  
 
-##### Tests:
+*Tests:*
 * *kalle>Q3te*
 * *kal00>0te*
 * *lykk0esQ1*
@@ -957,7 +956,7 @@ This rule is for dictionary use only.
 
 **um Deletion 1 Rule** (um Deletion 2 is now part of the *Delete m Rule*)
 
-##### Tests:
+*Tests:*
 * *museumX5>er*
 * *muse000>er*
 
@@ -965,13 +964,13 @@ This rule is for dictionary use only.
 
 **t weakening Rule**  
 
-##### Tests:
+*Tests:*
 * *oppskjørtetX6>e*
 * *oppskjørted0>e*
 
 **Double t deletion Rule**  
 
-##### Tests:
+*Tests:*
 * *svart>t*
 * *svart>0*
 
@@ -987,7 +986,7 @@ This rule is for dictionary use only.
 
 
 
-##### Tests:
+*Tests:*
 * *grammatikk##kontroll*
 * *grammatik000kontroll*
 
@@ -995,7 +994,18 @@ This rule is for dictionary use only.
 
 ### Clitics
 
-**Clitic after s-final Rule**  
+**Clitic after s-final Rule**  for changing the so-called *genitive -s* to **'** for s-final stems: *huss -> hus'*
+
+
+
+
+
+### Nynorsk dictionary rules
+
+**Change -er stem to -ar in Nynorsk**  
+
+This rule is for dictionary use only. The idea is to be able to click on words in a Nynorsk text and get translation to North Sámi. Therefore, the Bokmål analyser is able to give an analysis to Nynorsk words as well. The Nynorsk-only forms are removed from all other transducers than the `-dict` transducer.
+
 
 Test to have an error
 * ★*a* (is not standard language)

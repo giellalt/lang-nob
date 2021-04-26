@@ -6,12 +6,13 @@
 !! ### Alphabet
 Alphabet
 
- a b c d e f g h i j k l m n o p q r s t u v w x y z æ ø å !!≈ * **@CODE@**
+!! We declare both the a-å letters and all other possible letters.
+ a b c d e f g h i j k l m n o p q r s t u v w x y z æ ø å !!≈ * **@CODE@** 
  á é ó ú í à è ò ù ì ä ë ö ü ï â ê ô û î ã ý þ ñ ð ß ç     !!≈ * **@CODE@**
  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Ø Å !!≈ * **@CODE@**
  Á É Ó Ú Í À È Ò Ù Ì Ä Ë Ö Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð         !!≈ * **@CODE@**
- '   !!≈ * **@CODE@**
-  l7:l    !!≈ * **@CODE@** This one not deleted by t
+ '   !!≈ * **@CODE@** This is the apostrophe
+  l7:l    !!≈ * **@CODE@** This **l** not deleted by **t**
 
 ! o:ø u:y a:e g:0 e:0 m:0 r:0 t:0 u:0
 ! t:d
@@ -21,7 +22,7 @@ Alphabet
 
 !! ### Boundary symbols
 
-!! Morpheme boundaries and escaped quotes - leave as is,
+!! Morpheme boundaries and escaped quotes - do not delete in twolc,
 !! they will be converted to zero/the real thing at a later stage.
 
  %#         !!≈ * **@CODE@**
@@ -35,6 +36,8 @@ Alphabet
 ! »7     
 
 !! ### Morphophonological triggers
+
+!! These symbols cause the twolc rules to work.
 
 !! #### Triggers for nominal rules
 X1:0  !!≈ * **@CODE@** = Epenthetic vowel moden:modne
@@ -53,7 +56,7 @@ Q3:0  !!≈ * **@CODE@** = Verb vowel and geminate deltion kalte, fylte
 Z1:0  !!≈ * **@CODE@** = o:ø, a:e Umlaut
 Z2:0  !!≈ * **@CODE@** = protects vowel
 
-!! #### Nynorsk
+!! #### Nynorsk trigger
 %^NYNAG:0 ;  !!≈ * **@CODE@** Trigger for Nynorsk dictionary forms.
 
 
@@ -70,6 +73,7 @@ Z2:0  !!≈ * **@CODE@** = protects vowel
 !htwolc        Cx Cy Cz Vx Vy ;
 
 !! ### Sets
+
 Sets 
  Vow = a e i o u y æ ø å ;                       !!≈ * **@CODE@**
  Cns = b c d f g h j k l m n p q r s t v w x z ; !!≈ * **@CODE@**
@@ -78,42 +82,34 @@ Sets
 
 !! ## Rule section
 
+!! This section shows the twolc rules and the tests used to check whether they work
+
 Rules 
-
-
-
-!! ### Nynorsk dictionary rules
-
-"Change -er stem to -ar in Nynorsk"
-!! **@RULENAME@**  
- e:a <=> _ r %^NYNAG: ;
-
-!! This rule is for dictionary use only.
 
 
  
 !! ### Umlaut
 
 "Umlaut Rule"
-!! **@RULENAME@**  
+!! **@RULENAME@**  for *bok : bøker* etc.
  Vx:Vy <=> _ Cns:* ( e:0 ) Z1: ;
  where Vx in ( u o a å )
        Vy in ( y ø e e )
        matched ;
-! bok : bøker
+
 
 
 !! ### Vowel deletions rules
 ! --------------------
 
 "Epenthetic Deletion Rule"
-!! **@RULENAME@**  
+!! **@RULENAME@**  for deleting -e- in *moden : modne* etc, in *hare + -er* and in *ærlig + est > ærligst*
  e:0 <=>      Cns:  _ LNR X1: %> ( e | a ) ;
          Vow  Cns:* _  [Dummy:* - Z2:]  %> [ Vow | Cns Cns ] ;
                _ %> Q3: ;
           i g %>  _ s t ;
 
-!! ##### Tests:
+!! *Tests:*
 !!€ teaterX1>et
 !!€ teat0r0>et
 !!€ modenX1>e
@@ -130,11 +126,11 @@ Rules
 !!€ presenter0>0t
 
 "Delete foreign vowel Rule"
-!! **@RULENAME@**  
+!! **@RULENAME@**  for deleting final a or o in words like *kollega : kolleger*. Trigger is **X2**.
  Vx:0 <=> _ X2:  ;
    where Vx in (a o) ;
 
-!! ##### Tests:
+!! *Tests:*
 !!€ kollegaX2>er
 !!€ kolleg00>er
 
@@ -147,7 +143,7 @@ Rules
  Cx:0 <=> Vow Cx _ e: LNR X1: %> ( e | a ) ;
           where Cx in ( b d v ) ;
 
-!! ##### Tests:
+!! *Tests:*
 !!€ sikkerX1>e
 !!€ sik00r0>e
 
@@ -159,7 +155,7 @@ Rules
           Vow Cx _  e:   LNR X1: %> ( e | a ) ;  ! sikker:sikre
       where Cx in ( f k p s l n g ) ;
 
-!! ##### Tests:
+!! *Tests:*
 !!€ kalle>Q3te
 !!€ kal00>0te
 !!€ lykk0esQ1
@@ -197,7 +193,7 @@ Rules
 !! **@RULENAME@** (um Deletion 2 is now part of the *Delete m Rule*)
  u:0 <=> _ m: X5: %> ;
 
-!! ##### Tests:
+!! *Tests:*
 !!€ museumX5>er
 !!€ muse000>er
 
@@ -209,7 +205,7 @@ Rules
 !! **@RULENAME@**  
  t:d <=> [Cns:|Vow:] _ X6:0 %> e ;
 
-!! ##### Tests:
+!! *Tests:*
 !!€ oppskjørtetX6>e
 !!€ oppskjørted0>e
  
@@ -219,7 +215,7 @@ Rules
            Vow t    _  e:  LNR X1: %> (e|a) ;      ! sikker:sikre
            Vow t    _ (e:0)        %> Q3:0 [d|t] ; ! kaller:kalte
 
-!! ##### Tests:
+!! *Tests:*
 !!€ svart>t
 !!€ svart>0
 
@@ -245,7 +241,7 @@ Rules
 Cx:0 <=> Cx _ #: #: Cx ;
      where Cx in (b d f g k l m n p r s t v ) ;
 
-!! ##### Tests:
+!! *Tests:*
 !!€ grammatikk##kontroll
 !!€ grammatik000kontroll
 
@@ -255,9 +251,21 @@ Cx:0 <=> Cx _ #: #: Cx ;
 ! -------
 
 "Clitic after s-final Rule"
-!! **@RULENAME@**  
+!! **@RULENAME@**  for changing the so-called *genitive -s* to **'** for s-final stems: *huss -> hus'*
  s:' <=> s %> _ ;
-! huss -> hus'
+
+
+
+
+
+!! ### Nynorsk dictionary rules
+
+"Change -er stem to -ar in Nynorsk"
+!! **@RULENAME@**  
+ e:a <=> _ r %^NYNAG: ;
+
+!! This rule is for dictionary use only. The idea is to be able to click on words in a Nynorsk text and get translation to North Sámi. Therefore, the Bokmål analyser is able to give an analysis to Nynorsk words as well. The Nynorsk-only forms are removed from all other transducers than the `-dict` transducer.
+
 
 !! Test to have an error
 !!$ a
