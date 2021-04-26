@@ -20,33 +20,33 @@
 
 Multichar_Symbols !!≈ **@CODE@** 
 
-!! Here come the **tags**.
+!! Here we declare the **tags** and all other multicharacter symbols.
 
 
 !! ## Grammatical tags
 
 !! ### Part of speech
 
- +N +A +Adv +V        !!≈ - **@CODE@** 
- +CS +CC +Interj +Pcle +Pr +IM    !!≈ - **@CODE@** 
+ +N +A +Adv +V        !!≈ - **@CODE@** Open parts of speech
+ +CS +CC +Interj +Pcle +Pr +IM    !!≈ - **@CODE@** Closed POS (IM = **å**)
  +Pers +Dem +Interr +Refl +Recipr +Rel +Qnt !!≈ - **@CODE@** 
  
  !! ### Subtags
  
  +ING                               !!≈ * **@CODE@** = ing-derivation
- +Indef +Def +Poss +Indcl                !!≈ * **@CODE@** = 
+ +Indef +Def +Poss +Indcl           !!≈ * **@CODE@** = 
  +Sg +Pl                            !!≈ * **@CODE@** = 
- +Sg1 +Sg2 +Sg3 +Pl1 +Pl2 +Pl3             !!≈ * **@CODE@** = 
- +Pron +Nom +Acc +Dat +Det                !!≈ * **@CODE@** = 
- +Msc +Fem +Neu +MF                      !!≈ * **@CODE@** = 
- +Pos +Comp +Superl                    !!≈ * **@CODE@** = 
- +Clt                               !!≈ * **@CODE@** = 
- +Dat                               !!≈ * **@CODE@** = 
- +Pass +Ind +Prs +Prt +Imp                !!≈ * **@CODE@** = 
- +Inf +PrsPrc +PrfPrc                   !!≈ * **@CODE@** = 
- +Interj +Intens                      !!≈ * **@CODE@** = 
- +Prop                             !!≈ * **@CODE@** = 
- +Qnt  !!≈ * **@CODE@**  quantifier noen, begge
+ +Sg1 +Sg2 +Sg3 +Pl1 +Pl2 +Pl3      !!≈ * **@CODE@** = 
+ +Pron +Nom +Acc +Dat +Det          !!≈ * **@CODE@** = 
+ +Msc +Fem +Neu +MF                 !!≈ * **@CODE@** = Gender. MF = Masc or Fem (used for adjs, not nouns)
+ +Pos +Comp +Superl                 !!≈ * **@CODE@** = For adjectives
+ +Clt                               !!≈ * **@CODE@** = the so-called "genitive s"
+ +Dat                               !!≈ * **@CODE@** = for fixed expressions *i live*
+ +Pass +Ind +Prs +Prt +Imp          !!≈ * **@CODE@** = for verb voice, mood, tense
+ +Inf +PrsPrc +PrfPrc               !!≈ * **@CODE@** = for infinite verbs
+ +Prop                              !!≈ * **@CODE@** = Propernouns are tagged +N+Prop
+ +Qnt                               !!≈ * **@CODE@** = quantifier noen, begge
+ +Intens                            !!≈ * **@CODE@** = **hmm, what is this...**
 
 
 
@@ -54,17 +54,13 @@ Multichar_Symbols !!≈ **@CODE@**
 
  +CLB +PUNCT +HYPH +LEFT +RIGHT    !!≈ * **@CODE@**
  +CLBfinal       !!≈ * **@CODE@**  Sentence final abbreviated expression ending in full stop, so that the full stop is ambiguous
-
  +Cmp+   !!≈ * **@CODE@** 
  +CmpS+  !!≈ * **@CODE@** 
- +Symbol !!≈ * @CODE@ = independent symbols in the text stream, like £, €, ©
-
-
-
-+Ex/V   !!≈ * **@CODE@** for derivation
-+Ord   !!≈ * **@CODE@** 
-+Prdt !!≈ * **@CODE@** 
-+Qst   !!≈ * **@CODE@** 
+ +Symbol !!≈ * **@CODE@** = independent symbols in the text stream, like £, €, ©
+ +Ex/V   !!≈ * **@CODE@** for derivation
+ +Ord    !!≈ * **@CODE@** 
+ +Prdt   !!≈ * **@CODE@** 
+ +Qst    !!≈ * **@CODE@** 
 
 
 
@@ -80,21 +76,26 @@ Multichar_Symbols !!≈ **@CODE@**
 
 !! ## Morphophonology
 
-!! Todo: Document these and remove unused ones.
+!! ### Triggers
 
- X1 X2 X3 X4 X5 X6 X7 X8 X9   !!≈ * **@CODE@** 
- Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9   !!≈ * **@CODE@** 
- Y1 Y2 Y3 Y4 Y5 Y6 Y7 Y8 Y9   !!≈ * **@CODE@** 
- Z1 Z2 Z3 Z4 Z5 Z6 Z7 Z8 Z9   !!≈ * **@CODE@** 
-l7  !!≈ * **@CODE@**  always l
-%^NYNAG  !!≈ * **@CODE@**  Nynorsk agens lærar / lærer
-+Use/Circ !!≈ * @CODE@ circular string
-+Der/AAdv !!≈ * @CODE@ Adjectives are also adverbs
-+Der/NomAct !!≈ * @CODE@ verb +ing
-+Der1 !!≈ * @CODE@
-+Der  !!≈ * **@CODE@** 
+ X1 X2 X3 X4 X5 X6 !!≈ * **@CODE@** = Nominal
+ Q1 Q2 Q3          !!≈ * **@CODE@** = 
+ Z1 Z2             !!≈ * **@CODE@** = 
+%^NYNAG            !!≈ * **@CODE@** =  Nynorsk agens lærar / lærer
 
-!! Normativity and other usage tags
+!! ### Special symbols
+
+ l7                !!≈ * **@CODE@** =  always l
++Use/Circ          !!≈ * **@CODE@** = circular string
+
+!! ### Derivation
+
++Der/AAdv          !!≈ * **@CODE@** = Adjectives are also adverbs
++Der/NomAct        !!≈ * **@CODE@** = verb +ing
++Der1              !!≈ * **@CODE@** = derivation position
++Der               !!≈ * **@CODE@** = mark derivation
+
+!! ### Normativity and other usage tags
 
 +Err/Orth           !!≈ * **@CODE@**    For speller use
 +Err/Hyph          !!≈ * **@CODE@** 
@@ -126,7 +127,6 @@ l7  !!≈ * **@CODE@**  always l
 
 
 !! ###  Tags for abbreviation handling
-
 
 +Gram/IAbbr          !!≈ * **@CODE@** 
 +Gram/TAbbr          !!≈ * **@CODE@** 

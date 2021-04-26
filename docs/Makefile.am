@@ -22,7 +22,10 @@ MD_PAGES=root-morphology.md          \
 		prepositions-stems.md        \
 		pronouns-stems.md            \
 		subjunctions-stems.md        \
+		verbs-affixes.md             \
 		verbs-stems.md
+
+include $(top_srcdir)/../giella-core/am-shared/docs-dir-include.am
 
 # acronyms-stems.md           \
 # adjectives-affixes.md       \
@@ -34,7 +37,4 @@ MD_PAGES=root-morphology.md          \
 # particles-stems.md          \
 # propernouns-affixes.md      \
 # propernouns-stems.md        \
-# punctuation-stems.md        \
-# verbs-affixes.md
-
-include $(top_srcdir)/../giella-core/am-shared/docs-dir-include.am
+# punctuation-stems.md

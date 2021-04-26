@@ -15,14 +15,18 @@
 !! # Symbol affixes
 
 LEXICON Noun_symbols_possibly_inflected
+!! @LEXNAME@ 
  +N+Symbol: SYMBOL_connector ;
 
 LEXICON Noun_symbols_never_inflected
+!! @LEXNAME@ 
  +N+Symbol: # ;
 
 LEXICON SYMBOL_connector
+!! @LEXNAME@ 
                SYMBOL_NO_suff ; ! §
 
 LEXICON SYMBOL_NO_suff
+!! @LEXNAME@ 
  +Sg+Nom: # ;
 

@@ -1,7 +1,11 @@
+!! # Propernoun morphology
+
 LEXICON FirstTag
+!! @LEXNAME@ 
 +N+Prop+Attr: # ; ! von Gelderen, af Heidenstam
 
 LEXICON PROP
+!! @LEXNAME@ 
 +N+Prop: K ;
 
 !LEXICON PROP-surfem
@@ -9,13 +13,16 @@ LEXICON PROP
 !+N+Prop+Fem: K ;
 
 LEXICON PROP-surmal
+!! @LEXNAME@ 
 +N+Prop+Sem/Sur: K ;
 +N+Prop+Sem/Mal: K ;
 
 LEXICON PROP-malfem
+!! @LEXNAME@ 
 +N+Prop+Sem/Mal: K ;
 +N+Prop+Sem/Fem: K ;
 
+!! ... one lexicon for each combined tag,to split them.
 LEXICON PROP-malplc
 +N+Prop+Sem/Mal: K ;
 +N+Prop+Sem/Plc: K ;

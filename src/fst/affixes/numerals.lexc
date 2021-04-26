@@ -2,9 +2,11 @@
 
 !! ## Basic tags
 LEXICON numtag
+!! @LEXNAME@
 +Det+Qnt+Pl: # ;
 
 LEXICON numtagsg
+!! @LEXNAME@
 +Det+Qnt+Sg: # ;
 
 
@@ -12,33 +14,43 @@ LEXICON numtagsg
 
 !! ### Date
 LEXICON datetag
+!! @LEXNAME@
  +Det+Qnt+Sem/Date+Sg:  # ;
 
 LEXICON dateyearcase_nullsuff_w_dot_tag
+!! @LEXNAME@
  +Det+Qnt+Sem/Date+Sg:  MARKDOT ;
 
 LEXICON dateyearcase_fullsuff_tag
+!! @LEXNAME@
  +Det+Qnt+Sem/Date+Sg:   # ;
 
 !! ### Clock
 LEXICON numclock
+!! @LEXNAME@
  +Det+Qnt+Sem/Time-clock+Sg: # ; !foreløpig
 
 LEXICON NUM-ARABICCASES
+!! @LEXNAME@
 +Det+Qnt+Sg:   # ;
 
 LEXICON ID-ARABIC
+!! @LEXNAME@
 +Det+Sem/ID:   # ;
 
 LEXICON ARABICLOOPORD   !!≈ * **@CODE@** ordinals
+!! @LEXNAME@
  +A+Ord: MARKDOT ;
 
 LEXICON ACASETAG   !!≈ * **@CODE@**  is for 1e+Det+Qnt+Sg+Det+Qnt:1e
+!! @LEXNAME@
 +Det+Qnt+Sg: # ;
 
 LEXICON ARABICLOOPCOLL   !!≈ * **@CODE@** collectives
+!! @LEXNAME@
   ARABICDELIMITER ;
  
+!! ... and many more lexica
 
 LEXICON ARABICDELIMITER   !!≈ * **@CODE@**  blank + 3 delim, what does the lg counc prefer?
  +Det+Qnt+Sg:            #      ; ! This is the 1984 case, ie NGA

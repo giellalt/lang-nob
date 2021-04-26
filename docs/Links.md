@@ -13,4 +13,5 @@
 * [prepositions-stems.md](prepositions-stems.md)
 * [pronouns-stems.md](pronouns-stems.md)
 * [subjunctions-stems.md](subjunctions-stems.md)
+* [verbs-affixes.md](verbs-affixes.md)
 * [verbs-stems.md](verbs-stems.md)
