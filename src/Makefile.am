@@ -43,6 +43,29 @@ CUSTOM_FSTS=
 ########################################################
 #### Add language-specific transducer targets here: ####
 
+# Hfst - add weights to compounds if using tropical-semiring fst format:
+if WITH_OFST_TROPICAL
+generator-raw-gt-desc.hfst: generator-raw-gt-desc.tmp.hfst
+	$(AM_V_REWEIGHT)$(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
+			-S '+Cmp' -a 10 --arcs-only -i $< \
+			-S '+CmpS' -a 10 --arcs-only -i $< \
+		> $@
+endif
+
+#		| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
+#			-S '+Der'  -a 5 --arcs-only \
+#		| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
+#			-S '+Der1' -a 5 --arcs-only \
+#		| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
+#			-S '+Der2' -a 5 --arcs-only \
+#		| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
+#			-S '+Der3' -a 5 --arcs-only \
+#		| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
+#			-S '+Der4' -a 5 --arcs-only \
+#		| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
+#			-S '+Der5' -a 5 --arcs-only 
+
+
 #### Xerox transducers:
 if CAN_XFST
 GT_ANALYSERS+=
@@ -179,7 +202,7 @@ analyser-gramcheck-gt-desc.hfst: analyser-gramcheck-gt-desc.tmp.hfst \
 	read regex \
 			@\"filters/remove-dialect-tags.hfst\"             \
 		.o. @\"filters/remove-norm-comp-tags.hfst\"           \
-    	.o. @\"filters/convert_to_flags-CmpNP-tags.hfst\"     \
+		.o. @\"filters/convert_to_flags-CmpNP-tags.hfst\"     \
 		.o. @\"filters/split-CmpNP-tags.hfst\"                \
 		.o. @\"filters/remove-derivation-position-tags.hfst\" \
 		.o. @\"filters/rename-POS_before_Der-tags.hfst\"      \
