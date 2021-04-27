@@ -54,6 +54,7 @@ Multichar_Symbols !!≈ **@CODE@**
 
  +CLB +PUNCT +HYPH +LEFT +RIGHT    !!≈ * **@CODE@**
  +CLBfinal       !!≈ * **@CODE@**  Sentence final abbreviated expression ending in full stop, so that the full stop is ambiguous
+ +Cmp    !!≈ * **@CODE@** 
  +Cmp+   !!≈ * **@CODE@** 
  +CmpS+  !!≈ * **@CODE@** 
  +Symbol !!≈ * **@CODE@** = independent symbols in the text stream, like £, €, ©
