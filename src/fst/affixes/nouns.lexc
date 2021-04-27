@@ -97,7 +97,7 @@ LEXICON m1Vn1
   n1  ;
 
 
-! Masc2ulines
+! Masculines
 ! ----------
 
 LEXICON mx
@@ -195,6 +195,9 @@ LEXICON ma ! alliert
  +N+Msc+Pl: e-e ;
         +N: R   ;
 
+
+!! #### Irregulars
+
 LEXICON mKOLLEGA
  +N+Msc+Sg:   0-en   ;
  +N+Msc+Pl:X2 er-ene ; ! delete a, kolleger
@@ -229,49 +232,6 @@ LEXICON mFAR
   +N+Msc+Sg:far  0-en  ;
   +N+Msc+Pl:fedr e-ene ;
 !           +N:     R     ;
-
-LEXICON fDATTER
-          +N+Fem+Sg+Indef:datter   K ;
-            +N+Fem+Sg+Def:datra    K ;
-            +N+Msc+Sg+Def:datteren K ;
-!   +N+Fem+Sg+Def+Radical:datra    K ;
-          +N+Fem+Pl+Indef:døtre    K ;
-            +N+Fem+Pl+Def:døtrene  K ;
-  +N+Fem+Sg+Nynorsk+Use/NG+Indef:dotter   K ;
-    +N+Fem+Sg+Nynorsk+Use/NG+Def:dotra    K ;
-!                      +N:         R ;
-
-LEXICON fMOR
-     +N+Fem+Sg:mor   0-a   ;
- +N+Msc+Sg+Def:moren K     ;
-    +N+Fem+Pl:mødr  e-ene ;
-
-LEXICON fFOT
-     +N+Msc+Sg:fot   0-en   ;
-    +N+Msc+Pl:føtt  e-ene ;
-
-LEXICON fROT
-     +N+Fem+Sg:rot   0-a   ;
- +N+Msc+Sg+Def:roten K     ;
-    +N+Fem+Pl:røtt  er-ene ;
-
-
-LEXICON fGÅS
-     +N+Fem+Sg:gås   0-a   ;
- +N+Msc+Sg+Def:gåsen K     ;
-     +N+Fem+Pl:gjess 0-ene ;
-
-LEXICON fKU
-     +N+Fem+Sg:ku   0-a    ;
- +N+Fem+Sg+Def:kua K      ;
- +N+Msc+Sg+Def:kuen K      ;
-     +N+Fem+Pl:kyr  0-a    ;
-     +N+Fem+Pl+Use/NG:ku   er-ene ;
-
-LEXICON fKLE
- +N+Neu+Sg+Indef:kle    K     ;
-   +N+Neu+Sg+Def:kledet K     ;
-       +N+Neu+Pl:klæ    r-rne ;
 
 
 LEXICON mMANN
@@ -345,6 +305,60 @@ LEXICON fGLO
  +N+Msc+Sg:   en    ; ! levren !^C^
  +N+Fem+Pl:Z1 r-rne ;
         +N:   R     ;
+
+LEXICON fDATTER
+          +N+Fem+Sg+Indef:datter   K ;
+            +N+Fem+Sg+Def:datra    K ;
+            +N+Msc+Sg+Def:datteren K ;
+!   +N+Fem+Sg+Def+Radical:datra    K ;
+          +N+Fem+Pl+Indef:døtre    K ;
+            +N+Fem+Pl+Def:døtrene  K ;
+  +N+Fem+Sg+Nynorsk+Use/NG+Indef:dotter   K ;
+    +N+Fem+Sg+Nynorsk+Use/NG+Def:dotra    K ;
+!                      +N:         R ;
+
+!LEXICON fSØSTER
+!          +N+Fem+Sg+Indef:søster   K ;
+!            +N+Fem+Sg+Def:datra    K ;
+!            +N+Msc+Sg+Def:datteren K ;
+!!   +N+Fem+Sg+Def+Radical:datra    K ;
+!          +N+Fem+Pl+Indef:døtre    K ;
+!            +N+Fem+Pl+Def:døtrene  K ;
+!  +N+Fem+Sg+Nynorsk+Use/NG+Indef:dotter   K ;
+!    +N+Fem+Sg+Nynorsk+Use/NG+Def:dotra    K ;
+!!                      +N:         R ;
+
+LEXICON fMOR
+     +N+Fem+Sg:mor   0-a   ;
+ +N+Msc+Sg+Def:moren K     ;
+    +N+Fem+Pl:mødr  e-ene ;
+
+LEXICON fFOT
+     +N+Msc+Sg:fot   0-en   ;
+    +N+Msc+Pl:føtt  e-ene ;
+
+LEXICON fROT
+     +N+Fem+Sg:rot   0-a   ;
+ +N+Msc+Sg+Def:roten K     ;
+    +N+Fem+Pl:røtt  er-ene ;
+
+
+LEXICON fGÅS
+     +N+Fem+Sg:gås   0-a   ;
+ +N+Msc+Sg+Def:gåsen K     ;
+     +N+Fem+Pl:gjess 0-ene ;
+
+LEXICON fKU
+     +N+Fem+Sg:ku   0-a    ;
+ +N+Fem+Sg+Def:kua K      ;
+ +N+Msc+Sg+Def:kuen K      ;
+     +N+Fem+Pl:kyr  0-a    ;
+     +N+Fem+Pl+Use/NG:ku   er-ene ;
+
+LEXICON fKLE
+ +N+Neu+Sg+Indef:kle    K     ;
+   +N+Neu+Sg+Def:kledet K     ;
+       +N+Neu+Pl:klæ    r-rne ;
 
 
 
