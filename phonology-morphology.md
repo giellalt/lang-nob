@@ -81,6 +81,7 @@ This section shows the twolc rules and the tests used to check whether they work
 **Epenthetic Deletion Rule**  for deleting -e- in *moden : modne* etc, in *hare + -er* and in *ærlig + est > ærligst*
 
 *Tests:*
+* *søsterX1>a*
 * *teaterX1>et*
 * *teat0r0>et*
 * *modenX1>e*
@@ -188,6 +189,9 @@ This section shows the twolc rules and the tests used to check whether they work
 
 This rule is for dictionary use only. The idea is to be able to click on words in a Nynorsk text and get translation to North Sámi. Therefore, the Bokmål analyser is able to give an analysis to Nynorsk words as well. The Nynorsk-only forms are removed from all other transducers than the `-dict` transducer.
 
+
+* *a*
+* *b*
 
 Test to have an error
 * ★*a* (is not standard language)
