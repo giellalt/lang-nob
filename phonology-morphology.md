@@ -6,12 +6,12 @@
 ### Alphabet
 
 We declare both the a-å letters and all other possible letters.
- * **a b c d e f g h i j k l m n o p q r s t u v w x y z æ ø å** 
- * **á é ó ú í à è ò ù ì ä ë ö ü ï â ê ô û î ã ý þ ñ ð ß ç**
- * **A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Ø Å**
- * **Á É Ó Ú Í À È Ò Ù Ì Ä Ë Ö Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð**
- * **'** This is the apostrophe
- * **l7:l** This **l** not deleted by **t**
+ * ** a b c d e f g h i j k l m n o p q r   t u v w x y z æ ø å ** 
+ * ** á é ó ú í à è ò ù ì ä ë ö ü ï â ê ô û î ã ý þ ñ ð ß ç     **
+ * ** A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Ø Å **
+ * ** Á É Ó Ú Í À È Ò Ù Ì Ä Ë Ö Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð         **
+ * ** '   ** This is the apostrophe
+ * **  l7:l    ** This **l** not deleted by **t**
 
 
 ### Boundary symbols
@@ -19,37 +19,37 @@ We declare both the a-å letters and all other possible letters.
 Morpheme boundaries and escaped quotes - do not delete in twolc,
 they will be converted to zero/the real thing at a later stage.
 
- * **%#**
- * **%>**
- * **%<**
+ * ** %#         **
+ * ** %>         **
+ * ** %<         **
  * **%\|»**
  * **%\|«**
- * **%[%<%]**
- * **%[%>%]**
+ * ** %[%<%]   **
+ * ** %[%>%]   **
 
 ### Morphophonological triggers
 
 These symbols cause the twolc rules to work.
 
 #### Triggers for nominal rules
- * **X1:0** = Epenthetic vowel moden:modne
- * **X2:0** = ...
- * **X3:0** = Plural r deletion -er, -ene
- * **X4:0** = dumm:dum Delete m
- * **X5:0** = um deletion, faktum:fakta
- * **X6:0** = t:d weakening, oppskjørtet:oppskjørtede
+ * **X1:0  ** = Epenthetic vowel moden:modne
+ * **X2:0  ** = ...
+ * **X3:0  ** = Plural r deletion -er, -ene
+ * **X4:0  ** = dumm:dum Delete m
+ * **X5:0  ** = um deletion, faktum:fakta
+ * **X6:0  ** = t:d weakening, oppskjørtet:oppskjørtede
 
 #### Trigers for verbal rules
- * **Q1:0** = Passive
- * **Q2:0** = ...
- * **Q3:0** = Verb vowel and geminate deltion kalte, fylte
+ * **Q1:0  ** = Passive
+ * **Q2:0  ** = ...
+ * **Q3:0  ** = Verb vowel and geminate deltion kalte, fylte
 
 #### Triggers for common rules (both for N and V)
- * **Z1:0** = o:ø, a:e Umlaut
- * **Z2:0** = protects vowel
+ * **Z1:0  ** = o:ø, a:e Umlaut
+ * **Z2:0  ** = protects vowel
 
 #### Nynorsk trigger
- * **%^NYNAG:0 ;** Trigger for Nynorsk dictionary forms.
+ * **%^NYNAG:0 ;  ** Trigger for Nynorsk dictionary forms.
 
 
 
@@ -58,10 +58,10 @@ These symbols cause the twolc rules to work.
 
 ### Sets
 
- * **Vow = a e i o u y æ ø å ;**
- * **Cns = b c d f g h j k l m n p q r s t v w x z ;**
- * **LNR = l n r ;**
- * **Dummy = X1 X2 X3 X4 X5 X6 Q1 Q2 Q3 Z1 Z2 %^NYNAG ;**
+ * ** Vow = a e i o u y æ ø å ;                       **
+ * ** Cn  = b c d f g h j k l m n p q r   t v w x z ; **
+ * ** LNR = l n r ;                                   **
+ * ** Dummy = X1 X2 X3 X4 X5 X6 Q1 Q2 Q3  Z1 Z2 %^NYNAG ; **
 
 ## Rule section
 
