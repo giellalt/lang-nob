@@ -47,8 +47,8 @@ CUSTOM_FSTS=
 if WITH_OFST_TROPICAL
 generator-raw-gt-desc.hfst: generator-raw-gt-desc.tmp.hfst
 	$(AM_V_REWEIGHT)$(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
-			-S '+Cmp+' -a 10 --arcs-only -i $< \
-			-S '+CmpS+' -a 10 --arcs-only -i $< \
+			-S '+Cmp' -a 10 --arcs-only -i $< \
+			-S '+CmpS' -a 10 --arcs-only -i $< \
 		> $@
 endif
 
