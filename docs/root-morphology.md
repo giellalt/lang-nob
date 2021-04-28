@@ -40,8 +40,9 @@ Here we declare the **tags** and all other multicharacter symbols.
  * **+CLB +PUNCT +HYPH +LEFT +RIGHT**
  * **+CLBfinal**  Sentence final abbreviated expression ending in full stop, so that the full stop is ambiguous
  * **+Cmp** 
- * **+Cmp+** 
- * **+CmpS+** 
+ * **+Cmp+** declaring both awaiting cleanup
+ * **+CmpS** 
+ * **+CmpS+** declaring both awaiting cleanup
  * **+Symbol** = independent symbols in the text stream, like £, €, ©
  * **+Ex/V** for derivation
  * **+Ord** 
