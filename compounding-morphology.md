@@ -1,0 +1,9 @@
+
+# Norwegian Bokmål compounding
+
+
+
+
+
+
+
