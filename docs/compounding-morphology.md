@@ -1,9 +1,0 @@
-
-# Norwegian Bokmål compounding
-
-
-
-
-
-
-
