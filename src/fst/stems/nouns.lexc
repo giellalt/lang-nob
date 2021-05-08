@@ -24909,6 +24909,7 @@ idrettstipend n1 ;
 snarærend n1 ;
 bind n1 ;
 gasbind n1 ;
+munnbind n1 ;
 fond n1 ;
 klimafond n1 ;
 områdefond n1 ;
