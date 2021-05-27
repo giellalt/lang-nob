@@ -1,16 +1,23 @@
 # -*- cg-pre-pipe: "$GTHOME/giella-core/scripts/preprocess --abbr=$GTHOME/langs/nob/tools/preprocess/abbr.txt | hfst-optimised-lookup  $GTHOME/langs/nob/src/analyser-disamb-gt-desc.hfstol | $GTHOME/giella-core/scripts/lookup2cg" -*-
 
 # ============================================ #
-# The OBT-based Bokmål Norwegian disambiguator #
+#!! # The OBT-Giellatekno Bokmål Norwegian disambiguator 
 # ============================================ #
 
-# This disambiguator is based upon the OBT disambiguator. It contains
-# the morphological rules only.
+#!! This disambiguator is based upon the disambiguator from OBT
+#!! (Oslo-Bergen-taggeren), hereafter OBT-cg. It is adjusted to the GiellaLT FST and
+#!! extended with several rules. It contains
+#!! the morphological rules only.
 
-# The original OBT disambiguator was written in CG-1 by Kristin Hagen and
-# Anders Nøklestad at UiO. It was translated to CG-2 by Lars Nygård.
-# The conversion to the Tromsø format was done by Trond Trosterud.
+#!! The original OBT disambiguator was written in CG-1 by Kristin Hagen and
+#!! Anders Nøklestad at UiO. It was translated to CG-2 by Lars Nygård.
+#!! The conversion to CG-3 and the Tromsø format was done by Trond Trosterud.
 
+
+#!! ## Delimiters and sets
+
+#!! The tagsets are a superset of the OBT and GiellaLT tags, so that 
+#!! the labels are kept from OBT-cg, but GiellaLT content is added when needed.
 
 DELIMITERS = "<.>" "<:>" "<!>" "<?>" "<|>" sent ;
 
@@ -735,21 +742,27 @@ SET NOT-PRE-NP-HEAD = WORD - PRE-NP-HEAD ;
 	
 CONSTRAINTS
 
+
+#!! ## Rule section
+
 SECTION
 
-# Giellatekno early rules
+#!! ### Giellatekno early rules
 
-# Abbreviations
+#!! **NotAbbr** removes abbreviations whenever alternatives
 REMOVE:NotAbbr ABBR ;
 
+#!! **AbbrBeforePara** removes CLB before CLB
 REMOVE:AbbrBeforePara ABBR IF (0 CLB)(1 CLB) ; 
 
 # Nynorsk
+#!! **Nynorsk** removes all *+Nynorsk* forms (they are in use only for the dictionary interface, and that does not use disambiguation).
 REMOVE:Nynorsk (Nynorsk) ;
 
+#!! **aaIM** selects +IM for *å*
 SELECT:aaIM IM IF (0 ("å"))(1 Inf);
 
-# Numerals
+#!! #### Numerals
 
 SELECT:SemYear Sem/Date (0 Num) ;
 SELECT:SemYear Sem/Year (0 Num)(NOT -1 CURRENCY)(NOT 1 CURRENCY OR MEASURE OR ("år")) ;
@@ -869,11 +882,7 @@ REMOVE Pl IF (-1 Pr)(0 ("tillegg"))(1 ("til"));
 
 
 
-
-
-
-
-
+#!! ## Mostly OBT Rules
 
 # ############################################################
 # ############################################################
@@ -881,7 +890,7 @@ REMOVE Pl IF (-1 Pr)(0 ("tillegg"))(1 ("til"));
 # ############################################################
 # ############################################################
 
-# OBT
+#!! The bulk of the file contains rules from the original OBT file.
 
 SECTION
 
@@ -18139,9 +18148,9 @@ REMOVE (A) IF
 ;
 
 
-# Giellatekno late rules
+#!! ## Giellatekno late rules
 
-# Neuter sg pl
+#!! ### Neuter sg pl
 
 REMOVE Neu + Pl IF (-1 BOS OR PUNCT)(0 Neu + Sg)(1 EOS OR PUNCT);
 
@@ -18150,13 +18159,13 @@ REMOVE Neu + Sg IF (-1 ("flere"))(0 Neu + Pl);
 REMOVE Neu + Sg IF (*-1 ("flere") OR ("mange") BARRIER V)(0 Neu + Pl);
 
 
-# Pronouns
+#!! ### Pronouns
 
 REMOVE (Acc) IF (-1 CS)(1 Prs OR Prt);
 
 REMOVE (Pron) IF (0 Det + $$GEN)(*1 N + $$GEN BARRIER NOT-PRE-NP-HEAD);	
 
-# Det rules
+#!! ###  Det rules
 
 REMOVE Pron + Pers + Pl3 IF (1 N + Pl OR A + Pl OR Qnt + Pl);
 
@@ -18173,20 +18182,20 @@ REMOVE (Pl) IF (-1 Det + Sg)(0 Sg);
 
 REMOVE A + Pos + Def IF (-1 N OR Pron)(0 Prt);
 
-# V and not N
+#!! ###  V and not N
 
 REMOVE N + Neu + Sg + Def IF (-2 PrfPrc)(-1 CC);
 REMOVE N + Pl + Indef IF (0 Prs)(1 IM)(2 Inf);
 ## han prøver å sykle
 
-# Prepositions
+#!! ###  Prepositions
 
 # Pr or Adv OR CS
 REMOVE Adv IF (0 Pr)(1 Det OR A OR Qnt OR N);
 REMOVE CS IF (0 Pr)(*1 EOS OR CLB BARRIER Ind);
 
 
-# Late rules, Gt
+#!! ###  Late rules, Gt
 
 # Han arbeider som bud.
 REMOVE:SomPr Pl IF (-1 %som%-Pr)(0 N + Sg);
@@ -18196,7 +18205,7 @@ REMOVE:LexAdv A + Der/AAdv IF (0 Adv);
 
 
 
-# Rules with weithts
+#!! ###  Rules with weights
 #!! **minweight** selects reading with lowest weight.
 SELECT:minweight (<W=MIN>);
 

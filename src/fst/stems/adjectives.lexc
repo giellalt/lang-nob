@@ -1,7 +1,12 @@
+!! # Norwegian Bokmål Adjectives
 
-!! # Adjectives
+!! This file documents the Bokmål noun stem file [stems/adjectives.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/adjectives.lexc).
 
-!!     -------------------------
+!! ## Overview of the declension classes
+
+!!     ----------------------------------------------------
+!!     Main types, from Bokmålsordboka
+!!    
 !!     a1 god god godt gode
 !!     a2 billig billig billig billige
 !!     a3 ekte ekte ekte ekte
@@ -9,27 +14,27 @@
 !!     a5 makaber makaber makabert makabre
 !!     a5 lunken lunken lunkent lunkne
 !!     aV blå blå blått blå
-
+!!     ... and some irregular ones
 
 
 LEXICON AdjectiveRoot
-!! @LEXNAME@ 
-få: A_FÅ ;
-små: A_SMÅ ;
-vond: VOND ;
+!! @LEXNAME@ is the list of adjectives (some 5500 stems)
+få: A_FÅ ; !!≈ * @CODE@ 
+små: A_SMÅ ; !!≈ * @CODE@ 
+vond: VOND ; !!≈ * @CODE@ 
 
-artikkelbasert a2 ;
-aggressiv a1 ;
+artikkelbasert a2 ; !!≈ * @CODE@ 
+aggressiv a1 ; !!≈ * @CODE@ 
 vidstrakt a2 ;
 uforlikt a2 ;
 fargeglad a2 ;
 ditransitiv a2 ;
-avbøtende a3 ;
+avbøtende a3 ; !!≈ * @CODE@ 
 identitetsskapende a3 ;
 kulturskapende a3 ;
 nytenkende a3 ;
 riksgrenseoverskridende a3 ;
-bundet a4 ;
+bundet a4 ; !!≈ * @CODE@ 
 førstvoterende a3 ;
 tjenestetrengende a3 ;
 langveisfarende a3 ;
@@ -51,9 +56,9 @@ kry a2 ;
 kul a1 ;
 diakron a1 ;
 dritkul a1 ;
-dritredd a2 ;
-dritsur+v1:drit#sur a1 ;
-dritsur+v2:dritt#sur a1 ;
+dritredd a2 ; !!≈ * @CODE@ 
+dritsur+v1:drit#sur a1 ; !!≈ * @CODE@ 
+dritsur+v2:dritt#sur a1 ; !!≈ * @CODE@ 
 dritlei+v1:drit#lei a2 ;
 dritlei+v2:dritt#lei a1 ;
 dritdårlig a2 ;
@@ -84,7 +89,7 @@ dritvond a1 ;
 dritbillig a2 ;
 dritdeilig a2 ;
 dritfarlig a2 ;
-
+!! * ...
 septisk a2 ;
 helserelatert a2 ;
 kunnskapsbasert a2 ;
