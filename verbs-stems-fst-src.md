@@ -1,8 +1,13 @@
 
-# Verb stems
+# Norwegian Bokmål verb stems
 
-    ------------------------------------
+This file documents the Bokmål verb stem file [stems/verbs.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/verbs.lexc).
+
+## Overview of the declension classes
+
+    ----------------------------------------------------
     Main types, from Bokmålsordboka
+   
     v1 kaste kaster kasta kasta
     kastet kastet
     v2 lyse lyser lyste lyst
@@ -16,9 +21,24 @@
     v1-s passive v1 verbs
     v2-s passive v2 verbs
     v3-s passive v3 verbs
+   Strong verbs have verb-specific lexica
 
 
-LEXICON VerbRoot
+## The entries
 
 
+LEXICON VerbRoot contains the verbs
 
+ * innbefatte v1 ; 
+ * tilslutte v1 ; 
+
+
+ * abbreviere v2 ; 
+ * abdisere v2 ; 
+ * allmenngjøre:allmenn GJØRE ; 
+ * anbringe:an BRINGE ; 
+ * andøve v3 ; 
+ * anfalle:an FALLE ; 
+ * angi:an GI ; 
+ * angripe:an GRIPE ; 
+ * ankomme:an KOMME ;  etc.

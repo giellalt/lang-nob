@@ -1,7 +1,10 @@
 # Bokmål noun lexicon 
 
+This file documents the Bokmål noun stem file [stems/nouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nouns.lexc).
+
+## Overview of the declension classes
+
     ----------------------------------------------------
-    Declension classes
     Main types, from Bokmålsordboka
    
     f1 bru brua bruer bruene
@@ -22,6 +25,8 @@
     n4 salt saltet salter salta/saltene ??
     n5 middel midlet midler midla/midlene ??
     n6 kammer kammeret kamre/kammer kamra/kamrene
+   
+   Subtypes
    
     mx unclassified, to m1 by default
     mX indecl
@@ -63,24 +68,29 @@
     n1pl odds, oddsene
 
 
-LEXICON FinalNoun 
+## The lexica themselves
+
+LEXICON FinalNoun is a separate lexicon to point to. For now it contains only *-skap*.
 
 
-LEXICON NounRoot 
+LEXICON NounRoot is the lexicon pointed to from `root.lexc` It points to
+ Noun ;
+ HyphNouns ;
 
-LEXICON HyphNouns  TODO: Kanskje desse ikkje bör bli lista.
+LEXICON HyphNouns  contains forms only in used in first part of compounds, like *barne*.  TODO: Kanskje desse ikkje bör bli lista.
 
 LEXICON ShortNounRoot 
-These are kept separate in order not to
+The lexicon points to two lexica which are kept separate in order not to
 allow them in compounding (rusle = rus + le)
+ 2_letter ;
+ 3_letter ;
+
+LEXICON 2_letter is stems with two lettes.
+
+LEXICON 3_letter  is stems with 3 letters
 
 
-LEXICON 2_letter 
-
-LEXICON 3_letter 
-
-
-LEXICON Noun  here come the stems
+LEXICON Noun  here come the long list of stems (tens of thousands)
 
 
 
