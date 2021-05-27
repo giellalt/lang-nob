@@ -1,8 +1,13 @@
 
-!! # Verb stems
+!! # Norwegian Bokmål verb stems
 
-!!     ------------------------------------
+!! This file documents the Bokmål verb stem file [stems/verbs.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/verbs.lexc).
+
+!! ## Overview of the declension classes
+
+!!     ----------------------------------------------------
 !!     Main types, from Bokmålsordboka
+!!    
 !!     v1 kaste kaster kasta kasta
 !!     kastet kastet
 !!     v2 lyse lyser lyste lyst
@@ -16,20 +21,25 @@
 !!     v1-s passive v1 verbs
 !!     v2-s passive v2 verbs
 !!     v3-s passive v3 verbs
+!!
+!!    Strong verbs have verb-specific lexica
+
+
+!! ## The entries
 
 
 LEXICON VerbRoot
-!! LEXICON @LEXNAME@
+!! LEXICON @LEXNAME@ contains the verbs
 
-innbefatte v1 ;
-tilslutte v1 ;
+innbefatte v1 ; !!≈ * @CODE@ 
+tilslutte v1 ; !!≈ * @CODE@ 
 overbeskatte v1 ;
 konkurranseutsette v1 ;
 lovbeskytte v1 ;
 
 
-abbreviere v2 ;
-abdisere v2 ;
+abbreviere v2 ; !!≈ * @CODE@ 
+abdisere v2 ; !!≈ * @CODE@ 
 abonnere v2 ;
 abortere v2 ;
 absentere v2 ;
@@ -89,7 +99,7 @@ alkoholisere v2 ;
 allegorisere v2 ;
 alliere v2 ;
 allitterere v2 ;
-allmenngjøre:allmenn GJØRE ;
+allmenngjøre:allmenn GJØRE ; !!≈ * @CODE@ 
 allokere v2 ;
 alludere v2 ;
 alne v1 ;
@@ -104,26 +114,26 @@ amortisere v2 ;
 amputere v2 ;
 analysere v2 ;
 anbefale v2 ;
-anbringe:an BRINGE ;
-andøve v3 ;
+anbringe:an BRINGE ; !!≈ * @CODE@ 
+andøve v3 ; !!≈ * @CODE@ 
 ane v2 ;
 anerkjenne v2 ;
-anfalle:an FALLE ;
+anfalle:an FALLE ; !!≈ * @CODE@ 
 anfekte v1 ;
 anføre v2 ;
-angi:an GI ;
+angi:an GI ; !!≈ * @CODE@ 
 angle v1 ;
 anglifisere v2 ;
 anglisere v2 ;
 angre v1 ;
-angripe:an GRIPE ;
+angripe:an GRIPE ; !!≈ * @CODE@ 
 angå:an GÅ ;
 anholde:an HOLDE ;
 animalisere v2 ;
 animere v2 ;
 anke v1 ;
 anklage v1 ;
-ankomme:an KOMME ;
+ankomme:an KOMME ; !!≈ * @CODE@  etc.
 ankre v1 ;
 anlegge:an LEGGE ;
 anløpe v2 ;
