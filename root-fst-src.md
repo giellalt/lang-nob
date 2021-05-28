@@ -12,8 +12,8 @@ Here we declare the **tags** and all other multicharacter symbols.
 
 ### Part of speech
 
- - **+N +A +Adv +V** Open parts of speech
- - **+CS +CC +Interj +Pcle +Pr +IM** Closed POS (IM = **å**)
+ - **+N +A +Adv +V** = Open parts of speech
+ - **+CS +CC +Interj +Pcle +Pr +IM** = Closed POS (IM = **å**)
  - **+Pers +Dem +Interr +Refl +Recipr +Rel +Qnt** 
 
 ### Subtags
@@ -65,9 +65,9 @@ NDS analyser tags
 
 ### Triggers
 
- * **X1 X2 X3 X4 X5 X6** = Nominal
- * **Q1 Q2 Q3** = 
- * **Z1 Z2** = 
+ * **X1 X2 X3 X4 X5 X6** = Nominal stems
+ * **Q1 Q2 Q3** = Verbal stems
+ * **Z1 Z2** = Both verbal and nominal stems
  * **%^NYNAG** =  Nynorsk agens lærar / lærer
 
 ### Special symbols

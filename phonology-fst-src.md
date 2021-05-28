@@ -72,15 +72,15 @@ This section shows the twolc rules and the tests used to check whether they work
 
 ### Umlaut
 
-**Umlaut Rule**  for *bok : bøker* etc.
+**Umlaut Rule**  for *bok : bøker* etc. It shifts the vowels *u, o, a, å* to *y, ø, e, e*, respectively when **Z1** is found after the stem.
 
 
 
 ### Vowel deletions rules
 
-**Epenthetic Deletion Rule**  for deleting -e- in *moden : modne* etc, in *hare + -er* and in *ærlig + est > ærligst*
+**Epenthetic Deletion Rule**  is actually 3 rules in one: 1) it deletes -e- in *moden : modne* etc, 2) it deletes the stem -e in *hare + -er* and 3) it delets suffix -e in *ærlig + est > ærligst*
 
-*Tests:*
+*Tests:* (star denotes negativ test, test that is supposed to fail)
 * *søsterX1>a*
 * *teaterX1>et*
 * *teat0r0>et*
@@ -97,7 +97,7 @@ This section shows the twolc rules and the tests used to check whether they work
 * *presentere%>Q3t*
 * *presenter0>0t*
 
-**Delete foreign vowel Rule**  for deleting final a or o in words like *kollega : kolleger*. Trigger is **X2**.
+**Delete foreign vowel Rule**  for deleting final a or o in words like *kollega : kolleger*. Trigger symbol to the right is **X2**.
 
 *Tests:*
 * *kollegaX2>er*
@@ -114,7 +114,7 @@ This section shows the twolc rules and the tests used to check whether they work
 * *sik00r0>e*
 
 
-**Geminate deletion in front of -t and -d Rule**  
+**Geminate deletion in front of -t and -d Rule** deletes: 1) before **Q3 and d or t** (*kaller:kalte*) 2) before passive **Q1 t** (*lykkes:lyktes*) and 3) before epenthetic **-e-** and **l, n** or **r** (*sikker:sikre*)
 
 *Tests:*
 * *kalle>Q3te*
@@ -130,9 +130,9 @@ This section shows the twolc rules and the tests used to check whether they work
 
 
 
-**Delete r Rule**  
+**Delete r Rule** deletes **r** in plural *-er* to get *-er + -ne* = plural *-ene* 
 
-**Delete m Rule**  
+**Delete m Rule** for *kam:kammen*, here we delete the second m when word-final.  
 
 
 
