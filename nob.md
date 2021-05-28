@@ -5881,6 +5881,7 @@ SYMBOL_NO_suff
 
 # Morphophonological rules for Bokmål
 
+This file documents the [phonology.twolc file](http://github.com/giellalt/lang-nob/blob/main/src/fst/phonology.twolc) 
 
 ## Sets and definitions
 
