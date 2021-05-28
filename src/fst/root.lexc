@@ -27,8 +27,8 @@ Multichar_Symbols !!≈ **@CODE@**
 
 !! ### Part of speech
 
- +N +A +Adv +V        !!≈ - **@CODE@** Open parts of speech
- +CS +CC +Interj +Pcle +Pr +IM    !!≈ - **@CODE@** Closed POS (IM = **å**)
+ +N +A +Adv +V        !!≈ - **@CODE@** = Open parts of speech
+ +CS +CC +Interj +Pcle +Pr +IM    !!≈ - **@CODE@** = Closed POS (IM = **å**)
  +Pers +Dem +Interr +Refl +Recipr +Rel +Qnt !!≈ - **@CODE@** 
  
  !! ### Subtags
@@ -80,9 +80,9 @@ Multichar_Symbols !!≈ **@CODE@**
 
 !! ### Triggers
 
- X1 X2 X3 X4 X5 X6 !!≈ * **@CODE@** = Nominal
- Q1 Q2 Q3          !!≈ * **@CODE@** = 
- Z1 Z2             !!≈ * **@CODE@** = 
+ X1 X2 X3 X4 X5 X6 !!≈ * **@CODE@** = Nominal stems
+ Q1 Q2 Q3          !!≈ * **@CODE@** = Verbal stems
+ Z1 Z2             !!≈ * **@CODE@** = Both verbal and nominal stems
 %^NYNAG            !!≈ * **@CODE@** =  Nynorsk agens lærar / lærer
 
 !! ### Special symbols
