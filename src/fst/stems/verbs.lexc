@@ -29,7 +29,7 @@
 
 
 LEXICON VerbRoot
-!! LEXICON @LEXNAME@ contains the verbs
+!! LEXICON @LEXNAME@ contains the 5700 or so  verbs
 
 innbefatte v1 ; !!≈ * @CODE@ 
 tilslutte v1 ; !!≈ * @CODE@ 
@@ -133,7 +133,7 @@ animalisere v2 ;
 animere v2 ;
 anke v1 ;
 anklage v1 ;
-ankomme:an KOMME ; !!≈ * @CODE@  etc.
+ankomme:an KOMME ; !!≈ * @CODE@  
 ankre v1 ;
 anlegge:an LEGGE ;
 anløpe v2 ;
@@ -1179,8 +1179,8 @@ fakse v1 ;
 faksimilere v2 ;
 faktorisere v2 ;
 fakturere v2 ;
-falle: FALLE ;
-fallere v2 ;
+falle: FALLE ; !!≈ * @CODE@ 
+fallere v2 ; !! * etc.
 falme v1 ;
 false v1 ;
 falsifisere v2 ;
