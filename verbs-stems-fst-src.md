@@ -27,7 +27,7 @@ This file documents the Bokmål verb stem file [stems/verbs.lexc](https://github
 ## The entries
 
 
-LEXICON VerbRoot contains the verbs
+LEXICON VerbRoot contains the 5700 or so  verbs
 
  * innbefatte v1 ; 
  * tilslutte v1 ; 
@@ -41,4 +41,6 @@ LEXICON VerbRoot contains the verbs
  * anfalle:an FALLE ; 
  * angi:an GI ; 
  * angripe:an GRIPE ; 
- * ankomme:an KOMME ;  etc.
+ * ankomme:an KOMME ;  
+ * falle: FALLE ; 
+* etc.
