@@ -91,7 +91,7 @@ Rules
 !! ### Umlaut
 
 "Umlaut Rule"
-!! **@RULENAME@**  for *bok : bøker* etc.
+!! **@RULENAME@**  for *bok : bøker* etc. It shifts the vowels *u, o, a, å* to *y, ø, e, e*, respectively when **Z1** is found after the stem.
  Vx:Vy <=> _ Cns:* ( e:0 ) Z1: ;
  where Vx in ( u o a å )
        Vy in ( y ø e e )
@@ -103,13 +103,13 @@ Rules
 ! --------------------
 
 "Epenthetic Deletion Rule"
-!! **@RULENAME@**  for deleting -e- in *moden : modne* etc, in *hare + -er* and in *ærlig + est > ærligst*
+!! **@RULENAME@**  is actually 3 rules in one: 1) it deletes -e- in *moden : modne* etc, 2) it deletes the stem -e in *hare + -er* and 3) it delets suffix -e in *ærlig + est > ærligst*
  e:0 <=>      Cns:  _ LNR X1: %> ( e | a ) ;
          Vow  Cns:* _  [Dummy:* - Z2:]  %> [ Vow | Cns Cns ] ;
                _ %> Q3: ;
           i g %>  _ s t ;
 
-!! *Tests:*
+!! *Tests:* (star denotes negativ test, test that is supposed to fail)
 !!€ søsterX1>a
 !!£ søst00>ra
 !!€ teaterX1>et
@@ -128,7 +128,7 @@ Rules
 !!€ presenter0>0t
 
 "Delete foreign vowel Rule"
-!! **@RULENAME@**  for deleting final a or o in words like *kollega : kolleger*. Trigger is **X2**.
+!! **@RULENAME@**  for deleting final a or o in words like *kollega : kolleger*. Trigger symbol to the right is **X2**.
  Vx:0 <=> _ X2:  ;
    where Vx in (a o) ;
 
@@ -151,7 +151,7 @@ Rules
 
 
 "Geminate deletion in front of -t and -d Rule"
-!! **@RULENAME@**  
+!! **@RULENAME@** deletes: 1) before **Q3 and d or t** (*kaller:kalte*) 2) before passive **Q1 t** (*lykkes:lyktes*) and 3) before epenthetic **-e-** and **l, n** or **r** (*sikker:sikre*)
  Cx:0 <=> Vow Cx _ (e:0)         %> Q3: [d|t] ; ! kaller:kalte
           Vow Cx _ :t e s  Q1:  ; ! lykkes:lyktes
           Vow Cx _  e:   LNR X1: %> ( e | a ) ;  ! sikker:sikre
@@ -174,13 +174,13 @@ Rules
 
 
 "Delete r Rule"
-!! **@RULENAME@**  
+!! **@RULENAME@** deletes **r** in plural *-er* to get *-er + -ne* = plural *-ene* 
  r:0 <=>   _ %> X3: ;
          r _ e: LNR X1: %> ( e | a ) ;
-! sparepengar : sparepengane
+! sparepenger : sparepengene
 
 "Delete m Rule"
-!! **@RULENAME@**  
+!! **@RULENAME@** for *kam:kammen*, here we delete the second m when word-final.  
  m:0 <=>    _ X4: [ #: (Q3:) | %> s ] ;      ! kammX4:kam
           m _ e: LNR X1: %> ( e | a ) ; ! gammel:gamle
           m _ e: %> Q3: t ;
