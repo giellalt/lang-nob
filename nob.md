@@ -5735,8 +5735,8 @@ a23
     n4b faktum pl fakta
     FORUM forum, forumet, fora/forumer, foraene/forumene
     LEKSIKON leksikon, pl. leksika
-    MUSEUM museum, museet, museer
-
+    nMUSEUM museum, museet, museer
+    nØYE
 
 
 
@@ -5801,6 +5801,7 @@ a23
 
   +N+Fem+Sg+Def+Radical:datra    K ;
                      +N:         R ;
+
 
 
 
@@ -6398,8 +6399,6 @@ LEXICON 3_letter  is stems with 3 letters
 
 
 LEXICON Noun  here come the long list of stems (tens of thousands)
-
-
 
 
 

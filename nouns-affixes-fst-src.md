@@ -58,8 +58,8 @@
     n4b faktum pl fakta
     FORUM forum, forumet, fora/forumer, foraene/forumene
     LEKSIKON leksikon, pl. leksika
-    MUSEUM museum, museet, museer
-
+    nMUSEUM museum, museet, museer
+    nØYE
 
 
 
@@ -124,6 +124,7 @@
 
   +N+Fem+Sg+Def+Radical:datra    K ;
                      +N:         R ;
+
 
 
 
