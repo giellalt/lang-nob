@@ -41,12 +41,12 @@ seg+Pron+Refl+Acc:seg # ;
 
 LEXICON Reciprocal
 !! LEXICON @LEXNAME@ 
-hverandre+Pron+Recipr+Acc:hverandre # ;
+hverandre+Pron+Recipr+Acc:hverandre K ;
 
 LEXICON Interrogative 
 !! LEXICON @LEXNAME@ 
 hva+Pron+Interr:hva # ;
-hvem+Pron+Interr:hvem # ;
+hvem+Pron+Interr:hvem K ;
 
 LEXICON Possessive 
 !! LEXICON @LEXNAME@ 

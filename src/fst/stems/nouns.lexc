@@ -576,7 +576,7 @@ zoo+CmpNP/None:zoo nX ;
 ørn+CmpNP/None:ørn m1 ; 
 øse+CmpNP/None:øse f1 ; 
 øst+CmpNP/None:øst m1 ; 
-øye+CmpNP/None:øye n2 ; 
+øye+CmpNP/None:øye nØYE ; 
 øyk+CmpNP/None:øyk n1 ; 
 øyr+CmpNP/None:øyr f1 ; 
 
@@ -36375,6 +36375,7 @@ styrthjelm m1X ;
 førehand fX ;
 overhånd fX ;
 forhånd fX ;
+overs mX ;
 haida mX ;
 nordhaida mX ;
 media mX ;
@@ -38161,7 +38162,8 @@ ametyst m1 ;
 fraktebåt m1 ;
 miljøvernlov f1 ;
 ambulansefly n1 ;
-
-
+skjærenål f1 ;
+heksekost m1 ;
+skinnnål f1 ;
 
 ! neste: videosnutt

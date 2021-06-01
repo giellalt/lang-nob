@@ -63,8 +63,8 @@
 !!     n4b faktum pl fakta
 !!     FORUM forum, forumet, fora/forumer, foraene/forumene
 !!     LEKSIKON leksikon, pl. leksika
-!!     MUSEUM museum, museet, museer
-
+!!     nMUSEUM museum, museet, museer
+!!     nØYE
 
 
 
@@ -468,6 +468,11 @@ LEXICON nMUSEUM
  +N+Neu+Sg:um 0-et     ;
  +N+Neu+Pl:   er-ene-a ;
         +N:um R        ;
+
+LEXICON nØYE
+ +N+Neu+Sg: 0-et     ;
+ +N+Neu+Pl:   e-ene ;
+        +N: R        ;
 
 LEXICON nplKLÆR
  +N+Neu+Pl:klær 0-ne  ;
