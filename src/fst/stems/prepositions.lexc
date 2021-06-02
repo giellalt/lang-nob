@@ -8,6 +8,7 @@ LEXICON p
 LEXICON Preposition
  !! LEXICON @LEXNAME@  list (appr 90 prepositions)
 per p ; ! 2 kr per enhet
+blandt p ;
 tillikemed p ;
 tilmed p ;
 attmed p ;
@@ -68,6 +69,7 @@ uten p ;
 mellom p ;
 imellom p ;
 stundimellom p ;
+inni p ;
 innimellom p ;
 derimellom p ;
 gjennom p ;

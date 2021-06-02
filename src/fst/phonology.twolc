@@ -144,11 +144,13 @@ Rules
 "Consonant shortening before deletion Rule"
 !! **@RULENAME@**  
  Cx:0 <=> Vow Cx _ e: LNR X1: %> ( e | a ) ;
-          where Cx in ( b d v ) ;
+          where Cx in ( b d v s ) ;
 
 !! *Tests:*
 !!€ sikkerX1>e
 !!€ sik00r0>e
+!!€ trusselX1>er
+!!€ trus00l0>er
 
 
 "Geminate deletion in front of -t and -d Rule"
