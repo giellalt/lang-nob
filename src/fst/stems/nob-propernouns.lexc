@@ -20,6 +20,24 @@ LEXICON ProperNoun-nob
 !Resurssamiel PROP ;
 !Soar PROP ;
 
+Sony PROP-obj ;
+Samsung PROP-obj ;
+Tor PROP-mal ;
+Bob PROP-mal ;
+Xbox PROP-obj ;
+Asus PROP-obj ;
+Riddu PROP-org ;
+Riđđu PROP-org ;
+Josh PROP-mal ;
+Bluetooth PROP-obj ;
+Huawei PROP-org ;
+Kygo PROP-mal ;
+Robyn PROP-fem ;
+Records PROP-org ;
+Dell PROP-obj ;
+Depp PROP-sur ;
+Brad PROP-mal ;
+Rick PROP-mal ;
 Statsforvalteren PROP-mal ;
 OzeroOzero3 PROP-plc ;
 NEMKO PROP-org ;

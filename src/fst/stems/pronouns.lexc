@@ -17,6 +17,7 @@ LEXICON Personal
   du+Pron+Pers+Sg2+Nom:du # ;
   du+Pron+Pers+Sg2+Acc:deg # ;
  han/hun+Pron+Pers+Sg3+Nom:han/hun # ;
+ hen+Pron+Pers+Sg3+Nom+Err/Orth:hen # ;
  han+Pron+Pers+Sg3+Nom:han # ;
  hun+Pron+Pers+Sg3+Nom:hun # ;
  hun+Pron+Pers+Sg3+Nom+Use/NG:ho # ;
@@ -75,6 +76,7 @@ deres+Det+Poss+Pl3:deres # ;
 LEXICON Other_Pronouns
 !! LEXICON @LEXNAME@ 
 
+selveste+Det+Dem+Sg:selveste # ;
 all+Det+Dem+Pl:alle K ;
 all+Det+Dem+Fem+Sg:all # ;
 all+Det+Dem+Msc+Sg:all # ;

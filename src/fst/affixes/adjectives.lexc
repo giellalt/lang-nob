@@ -38,6 +38,11 @@ LEXICON a1
  +A: a-neuter ;
  +A: grade-e  ;
 
+LEXICON a1b
+ +A:mX4 positive ;
+ +A:mX4 a-neuter ;
+ +A:mX4 grade-e  ;
+
 LEXICON a2lig
          :ig a2 ; ! herlig
  +Nynorsk+Use/NG:eg a2 ; ! herleg

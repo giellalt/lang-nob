@@ -470,9 +470,9 @@ LEXICON nMUSEUM
         +N:um R        ;
 
 LEXICON nØYE
- +N+Neu+Sg: 0-et     ;
- +N+Neu+Pl:   e-ene ;
-        +N: R        ;
+ +N+Neu+Sg:e 0-et     ;
+ +N+Neu+Pl:ne   e-ene ;
+        +N:en R        ;
 
 LEXICON nplKLÆR
  +N+Neu+Pl:klær 0-ne  ;
