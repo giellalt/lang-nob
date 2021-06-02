@@ -113,6 +113,8 @@ This section shows the twolc rules and the tests used to check whether they work
 *Tests:*
 * *sikkerX1>e*
 * *sik00r0>e*
+* *trusselX1>er*
+* *trus00l0>er*
 
 
 **Geminate deletion in front of -t and -d Rule** deletes: 1) before **Q3 and d or t** (*kaller:kalte*) 2) before passive **Q1 t** (*lykkes:lyktes*) and 3) before epenthetic **-e-** and **l, n** or **r** (*sikker:sikre*)
