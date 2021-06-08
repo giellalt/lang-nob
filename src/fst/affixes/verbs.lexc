@@ -396,9 +396,11 @@ LEXICON FINNE !!≈ * **@CODE@**
           +V+Imp:finn   #          ;
       +V+Ind+Prs:finner #          ;
  +V+Ind+Prs+Pass:finnes #          ;
+ +v+Ing+Prs+Pass:fins   #          ;
       +V+Ind+Prt:fant   #          ;
  +V+Ind+Prt+Pass:fantes #          ;
-        inne+V+PrfPrc:funnet #          ;
+       +V+PrfPrc:funnet #          ;
+  +V+PrfPrc+Pass:funnes #          ;
        +V+PrsPrc:finn   prsptcsuff ;
 LEXICON FISE !!≈ * **@CODE@** 
           +V+Inf:fise  #          ;
@@ -860,7 +862,7 @@ LEXICON MÅTTE !!≈ * **@CODE@**
      +V+Inf:måtte # ;
  +V+Ind+Prs:må    # ;
  +V+Ind+Prt:måtte # ;
-  +V+PrfPrc:mått  # ;
+  +V+PrfPrc:måttet  # ;
 LEXICON MØTE !!≈ * **@CODE@**
      +V+Inf:øte  # ;
  +V+Ind+Prs:øter # ;
@@ -1182,7 +1184,10 @@ LEXICON SPØRRE !!≈ * **@CODE@**
           +V+Imp:spør      # ;
       +V+Ind+Prs:spør      # ;
  +V+Ind+Prs+Pass:spørres   # ;
+ +v+Ind+Prs+Pass:spørs     # ;
       +V+Ind+Prt:spurte    # ;
+   +V+Ind+Prt+Pass:spurtes # ;
++V+Ind+PrfPrc+Pass:spurtes # ;
        +V+PrfPrc:spurt     # ;
        +V+PrsPrc:spørrende # ;
 LEXICON STELE !!≈ * **@CODE@**

@@ -10,9 +10,11 @@ LEXICON dt
 !! LEXICON @LEXNAME@  also ads +Adv  perhaps unify, perhaps not.
  +Adv: # ; 
 
+LEXICON 
+
 LEXICON Adverb
 !! @LEXNAME@ lists some 600 Norwegian adverbs, including MWE such as "i live"
-forsåvidt adv ;
+for% så% vidt+Err/Orth:forsåvidt adv ;
 live adv ;
 idet+Err/Lex:idet adv ;
 simpelthen adv ;
@@ -204,6 +206,7 @@ forbi adv  ;
 forfra adv ;
 forgjeves adv ;
 forholdsvis adv ; 
+forhåpentligvis adv ;
 forleden adv ;
 forreste adv ;
 forsiktig adv ; 
@@ -312,6 +315,7 @@ innmari adv  ;
 inntil adv ; 
 innvendig adv ; 
 intet adv ;
+isteden adv ;
 itu adv ;
 jammen adv ;
 jamvel adv ;
@@ -334,9 +338,8 @@ leilighetsvis adv ;
 lell adv ;
 lenge adv ; 
 lenger adv ;
-lengere adv ; 
-lengre adv ;
 lengst adv ;
+lenger+Adv+Err/Orth:lengere # ; 
 lett adv ; 
 liggende adv ; 
 like adv ; 
