@@ -1,5 +1,7 @@
 !! # Bokmål interjections
 
+!! This file documents the Bokmål interjections stem file [stems/interjections.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/interjections.lexc).
+
 LEXICON ij
 !! LEXICON @LEXNAME@ adds the tag **+Interj**
  +Interj: # ;

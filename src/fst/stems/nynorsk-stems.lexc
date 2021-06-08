@@ -1,6 +1,8 @@
 !! # Nynorsk stems 
 !! for tolerant dictionary reading
 
+!! This file documents the nynorsk stem file for the bokmål analyzer [stems/nynorsk-stems.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nynorsk-stems.lexc).
+
 LEXICON Prnyn
 !! LEXICON @LEXNAME@ 
 +Pr+Nynorsk+Use/NG: # ;
