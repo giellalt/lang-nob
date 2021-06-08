@@ -6,24 +6,26 @@
 !!     Declension classes
 !!     Main types, from Bokmålsordboka
 !!     
-!!     f1  bru         brua        bruer       bruene
-!!     f2  pumpe       pumpa       pumper      pumpene
-!!     m1  stol        stolen      stoler      stolene
-!!         bakke       bakken      bakker      bakkene
-!!         pumpe       pumpen      pumper      pumpene
-!!     m2  lærer       læreren     lærere      lærerne
-!!     m3  bever       beveren     bevere      beverne
-!!                                 bevre(r)    bevrene
-!!     m4 longs longsen longs/longser longsene
-!!     n1  slott       slottet     slott       slotta/slottene
-!!     n2  eple        eplet       epler       epla/eplene
-!!         salt        saltet      salter      salta/saltene
-!!     n3  kontor      kontoret    kontor      kontora
-!!                                 kontorer    kontorene
-!!         høve        høvet       høve/høver  høva/høvene
-!!     n4  salt        saltet      salter      salta/saltene ??
-!!     n5  middel      midlet      midler      midla/midlene ??
-!!     n6 kammer kammeret kamre/kammer kamra/kamrene
+!!     f1  bru         brua        bruer           bruene
+!!     f2  pumpe       pumpa       pumper          pumpene
+!!     f3  søster      søstera     søstre/søstrer  søstrene
+!!     m1  stol        stolen      stoler          stolene
+!!         bakke       bakken      bakker          bakkene
+!!         pumpe       pumpen      pumper          pumpene
+!!     m2  lærer       læreren     lærere          lærerne
+!!     m3  bever       beveren     bevere          beverne
+!!                                 bevrer          bevrene
+!!                                 bevre           bevrene
+!!     m4  longs       longsen     longs/longser   longsene
+!!     n1  slott       slottet     slott           slotta/slottene
+!!     n2  eple        eplet       epler           epla/eplene
+!!         salt        saltet      salter          salta/saltene
+!!     n3  kontor      kontoret    kontor/kontorer kontora/kontorene
+!!         høve        høvet       HØVE/høver      høva/høvene
+!!         middel      midlet      MIDDEL/midler   midla/midlene
+!!     n4  salt        saltet      salter          salta/saltene ??
+!!     n5  middel      midlet      midler          midla/midlene ??
+!!     n6  kammer      kammeret    kamre/kammer    kamra/kamrene
 !!     
 !!     Subtypes, mainly from Finsk-norsk ordbok, also system-specific
 !!     
@@ -35,6 +37,8 @@
 !!     m1b fe, komite
 !!     m1V sko pl. sko
 !!     m3V meter pl. meter
+!!     m3b finger pl. fingrer/fingre
+!!     m3c forelder pl. foreldre
 !!     ma alliert, alierte, allierte, allierte
 !!     KOLLEGA kollegaer, kolleger
 !!     KONTO kontoer, konti
@@ -49,16 +53,17 @@
 !      
 !!     DATTER døtre
 !!     f1b skam
-!!     f1X bok pl. bøker
+!!     f1X bok, pl. bøker
 !!     f1V mus, pl. mus
 !!     fGLO glo, pl glør
+!!     f3b lever. def levra
 !      
 !!     n1b rom pl. rom
 !!     n1s sg only
-!!     n2b program pl. programmer
-!!     n2c kontor pl. kontor, kontorer
+!!     n2b program. pl. programmer
+!!     n2c kontor. pl. kontor, kontorer
 !!     n2s mørke, not pl.
-!!     n3b lager def. lageret
+!!     n3b lager, def. lageret
 !!     n3c fe, feet
 !!     n4b faktum pl fakta
 !!     FORUM forum, forumet, fora/forumer, foraene/forumene
@@ -168,15 +173,28 @@ LEXICON m2 ! lærer
         +N:        R      ;
 
 
-LEXICON m3 ! bever, bevrer/bevre
-         +N+Msc+Sg:   0-en     ;
-         +N+Msc+Pl:X1 e-er-ene ; ! X1 deletes the vowel -e-
+LEXICON m3 ! bever, bevere/bevrer/bevre
+                +N+Msc+Sg:   0-en     ;
+          +N+Msc+Pl+Indef:e  #        ; ! bevere
+                +N+Msc+Pl:X1 e-er-ene ; ! X1 deletes the vowel -e-
  +N+Msc+Pl+Nynorsk+Use/NG:X1 ar-ane   ; ! X1 deletes the vowel -e-
-                +N:   R        ;
+                       +N:   R        ;
+
+LEXICON m3b ! finger, fingrer/fingre
+                +N+Msc+Sg:   0-en     ;
+                +N+Msc+Pl:X1 e-er-ene ; ! X1 deletes the vowel -e-
+ +N+Msc+Pl+Nynorsk+Use/NG:X1 ar-ane   ; ! X1 deletes the vowel -e-
+                       +N:   R        ;
+
+LEXICON m3c ! forelder, foreldre
+                +N+Msc+Sg:   0-en     ;
+                +N+Msc+Pl:X1 e-ene    ; ! X1 deletes the vowel -e-
+ +N+Msc+Pl+Nynorsk+Use/NG:X1 ar-ane   ; ! X1 deletes the vowel -e-
+                       +N:   R        ;
 
 LEXICON m3r ! onkel, onkler/*onkle
-         +N+Msc+Sg:   0-en     ;
-         +N+Msc+Pl:X1 er-ene ; ! X1 deletes the vowel -e-
+                +N+Msc+Sg:   0-en     ;
+                +N+Msc+Pl:X1 er-ene   ; ! X1 deletes the vowel -e-
  +N+Msc+Pl+Nynorsk+Use/NG:X1 ar-ane   ; ! X1 deletes the vowel -e-
                 +N:   R        ;
 
@@ -294,15 +312,21 @@ LEXICON f1V ! mus
 LEXICON f2
   f1 ;
 
-LEXICON f3 ! lever
+LEXICON f3 ! søster
+ +N+Fem+Sg:a  #      ;
+ +N+Msc+Sg:   en     ; ! søsteren !^C^
+ +N+Fem+Pl:X1 er-ene ;
+        +N:   R      ;
+
+LEXICON f3b ! lever
  +N+Fem+Sg:X1 0-a    ;
- +N+Msc+Sg:   en     ; ! levren !^C^
+ +N+Msc+Sg:   en     ; ! leveren !^C^
  +N+Fem+Pl:X1 er-ene ;
         +N:   R      ;
 
 LEXICON fGLO
  +N+Fem+Sg:   0-a   ;
- +N+Msc+Sg:   en    ; ! levren !^C^
+ +N+Msc+Sg:   en    ; ! gloen !^C^
  +N+Fem+Pl:Z1 r-rne ;
         +N:   R     ;
 
