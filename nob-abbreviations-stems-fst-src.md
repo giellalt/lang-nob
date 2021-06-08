@@ -1,5 +1,7 @@
 # File containing abbreviations for Norwegian Bokmål 
 
+This file documents the Bokmål abbrevioations stem file [stems/nob-abbreviations.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nob-abbreviations.lexc).
+
 
 
 Abbreviation-nob 

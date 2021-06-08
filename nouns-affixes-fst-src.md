@@ -4,24 +4,26 @@
     Declension classes
     Main types, from Bokmålsordboka
     
-    f1  bru         brua        bruer       bruene
-    f2  pumpe       pumpa       pumper      pumpene
-    m1  stol        stolen      stoler      stolene
-        bakke       bakken      bakker      bakkene
-        pumpe       pumpen      pumper      pumpene
-    m2  lærer       læreren     lærere      lærerne
-    m3  bever       beveren     bevere      beverne
-                                bevre(r)    bevrene
-    m4 longs longsen longs/longser longsene
-    n1  slott       slottet     slott       slotta/slottene
-    n2  eple        eplet       epler       epla/eplene
-        salt        saltet      salter      salta/saltene
-    n3  kontor      kontoret    kontor      kontora
-                                kontorer    kontorene
-        høve        høvet       høve/høver  høva/høvene
-    n4  salt        saltet      salter      salta/saltene ??
-    n5  middel      midlet      midler      midla/midlene ??
-    n6 kammer kammeret kamre/kammer kamra/kamrene
+    f1  bru         brua        bruer           bruene
+    f2  pumpe       pumpa       pumper          pumpene
+    f3  søster      søstera     søstre/søstrer  søstrene
+    m1  stol        stolen      stoler          stolene
+        bakke       bakken      bakker          bakkene
+        pumpe       pumpen      pumper          pumpene
+    m2  lærer       læreren     lærere          lærerne
+    m3  bever       beveren     bevere          beverne
+                                bevrer          bevrene
+                                bevre           bevrene
+    m4  longs       longsen     longs/longser   longsene
+    n1  slott       slottet     slott           slotta/slottene
+    n2  eple        eplet       epler           epla/eplene
+        salt        saltet      salter          salta/saltene
+    n3  kontor      kontoret    kontor/kontorer kontora/kontorene
+        høve        høvet       HØVE/høver      høva/høvene
+        middel      midlet      MIDDEL/midler   midla/midlene
+    n4  salt        saltet      salter          salta/saltene ??
+    n5  middel      midlet      midler          midla/midlene ??
+    n6  kammer      kammeret    kamre/kammer    kamra/kamrene
     
     Subtypes, mainly from Finsk-norsk ordbok, also system-specific
     
@@ -33,6 +35,8 @@
     m1b fe, komite
     m1V sko pl. sko
     m3V meter pl. meter
+    m3b finger pl. fingrer/fingre
+    m3c forelder pl. foreldre
     ma alliert, alierte, allierte, allierte
     KOLLEGA kollegaer, kolleger
     KONTO kontoer, konti
@@ -45,15 +49,16 @@
     nD live (i live)
     DATTER døtre
     f1b skam
-    f1X bok pl. bøker
+    f1X bok, pl. bøker
     f1V mus, pl. mus
     fGLO glo, pl glør
+    f3b lever. def levra
     n1b rom pl. rom
     n1s sg only
-    n2b program pl. programmer
-    n2c kontor pl. kontor, kontorer
+    n2b program. pl. programmer
+    n2c kontor. pl. kontor, kontorer
     n2s mørke, not pl.
-    n3b lager def. lageret
+    n3b lager, def. lageret
     n3c fe, feet
     n4b faktum pl fakta
     FORUM forum, forumet, fora/forumer, foraene/forumene
@@ -95,7 +100,10 @@
 
 
 
+
+
 #### Irregulars
+
 
 
 

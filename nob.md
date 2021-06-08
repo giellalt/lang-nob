@@ -5675,31 +5675,32 @@ a23
 
 
 
-
 # Bokmål noun morphology 
 
     ---------------------------------------------------
     Declension classes
     Main types, from Bokmålsordboka
     
-    f1  bru         brua        bruer       bruene
-    f2  pumpe       pumpa       pumper      pumpene
-    m1  stol        stolen      stoler      stolene
-        bakke       bakken      bakker      bakkene
-        pumpe       pumpen      pumper      pumpene
-    m2  lærer       læreren     lærere      lærerne
-    m3  bever       beveren     bevere      beverne
-                                bevre(r)    bevrene
-    m4 longs longsen longs/longser longsene
-    n1  slott       slottet     slott       slotta/slottene
-    n2  eple        eplet       epler       epla/eplene
-        salt        saltet      salter      salta/saltene
-    n3  kontor      kontoret    kontor      kontora
-                                kontorer    kontorene
-        høve        høvet       høve/høver  høva/høvene
-    n4  salt        saltet      salter      salta/saltene ??
-    n5  middel      midlet      midler      midla/midlene ??
-    n6 kammer kammeret kamre/kammer kamra/kamrene
+    f1  bru         brua        bruer           bruene
+    f2  pumpe       pumpa       pumper          pumpene
+    f3  søster      søstera     søstre/søstrer  søstrene
+    m1  stol        stolen      stoler          stolene
+        bakke       bakken      bakker          bakkene
+        pumpe       pumpen      pumper          pumpene
+    m2  lærer       læreren     lærere          lærerne
+    m3  bever       beveren     bevere          beverne
+                                bevrer          bevrene
+                                bevre           bevrene
+    m4  longs       longsen     longs/longser   longsene
+    n1  slott       slottet     slott           slotta/slottene
+    n2  eple        eplet       epler           epla/eplene
+        salt        saltet      salter          salta/saltene
+    n3  kontor      kontoret    kontor/kontorer kontora/kontorene
+        høve        høvet       HØVE/høver      høva/høvene
+        middel      midlet      MIDDEL/midler   midla/midlene
+    n4  salt        saltet      salter          salta/saltene ??
+    n5  middel      midlet      midler          midla/midlene ??
+    n6  kammer      kammeret    kamre/kammer    kamra/kamrene
     
     Subtypes, mainly from Finsk-norsk ordbok, also system-specific
     
@@ -5711,6 +5712,8 @@ a23
     m1b fe, komite
     m1V sko pl. sko
     m3V meter pl. meter
+    m3b finger pl. fingrer/fingre
+    m3c forelder pl. foreldre
     ma alliert, alierte, allierte, allierte
     KOLLEGA kollegaer, kolleger
     KONTO kontoer, konti
@@ -5723,15 +5726,16 @@ a23
     nD live (i live)
     DATTER døtre
     f1b skam
-    f1X bok pl. bøker
+    f1X bok, pl. bøker
     f1V mus, pl. mus
     fGLO glo, pl glør
+    f3b lever. def levra
     n1b rom pl. rom
     n1s sg only
-    n2b program pl. programmer
-    n2c kontor pl. kontor, kontorer
+    n2b program. pl. programmer
+    n2c kontor. pl. kontor, kontorer
     n2s mørke, not pl.
-    n3b lager def. lageret
+    n3b lager, def. lageret
     n3c fe, feet
     n4b faktum pl fakta
     FORUM forum, forumet, fora/forumer, foraene/forumene
@@ -5773,7 +5777,10 @@ a23
 
 
 
+
+
 #### Irregulars
+
 
 
 
@@ -6084,6 +6091,8 @@ Test to have an error
 * ★*b* (is not standard language)
 # File containing abbreviations for Norwegian Bokmål 
 
+This file documents the Bokmål abbrevioations stem file [stems/nob-abbreviations.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nob-abbreviations.lexc).
+
 
 
 Abbreviation-nob 
@@ -6177,7 +6186,9 @@ LEXICON VerbRoot contains the 5700 or so  verbs
  * ankomme:an KOMME ;  
  * falle: FALLE ; 
 * etc.
-# Preopositions
+# Bokmål prepositions
+
+This file documents the Bokmål prepositions stem file [stems/prepositions.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/prepositions.lexc).
 
 LEXICON p gives tag +Pr
 
@@ -6187,6 +6198,8 @@ LEXICON Preposition  list (appr 90 prepositions)
 
 # Bokmål propernouns
 
+This file documents the Bokmål proper nouns stem file [stems/nob-propernouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nob-propernouns.lexc).
+
 LEXICON ProperNoun-nob-nocomp contains some acronyms
 
 
@@ -6194,8 +6207,9 @@ LEXICON ProperNoun-nob contains the list of 2200 or so names. The rest come from
 
 
 
-# Pronoun stems
+# Bokmål pronoun stems
 
+This file documents the Bokmål pronouns stem file [stems/pronouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/pronouns.lexc).
 
 LEXICON Pronoun 
 
@@ -6213,6 +6227,8 @@ LEXICON Other_Pronouns
 
 # Bokmål interjections
 
+This file documents the Bokmål interjections stem file [stems/interjections.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/interjections.lexc).
+
 LEXICON ij adds the tag **+Interj**
 
 LEXICON Interjection lists *folkens, heisann, pokker* and some 60 more interjections.
@@ -6221,8 +6237,9 @@ LEXICON Interjection lists *folkens, heisann, pokker* and some 60 more interject
 
 
 
-# Numerals (number words)
+# Bokmål numerals (number words)
 
+This file documents the Bokmål numerals stem file [stems/numerals.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/numerals.lexc).
 
 LEXICON Numeral 
 
@@ -6252,6 +6269,8 @@ LEXICON ORDTEXT
 
 # Bokmål conjunctions
 
+This file documents the Bokmål conjunctions stem file [stems/conjunctions.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/conjunctions.lexc).
+
 
 conj for the tag +CC
 
@@ -6261,7 +6280,7 @@ Conjunction  både, og, ..
 
 # Norwegian Bokmål Adjectives
 
-This file documents the Bokmål noun stem file [stems/adjectives.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/adjectives.lexc).
+This file documents the Bokmål adjective stem file [stems/adjectives.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/adjectives.lexc).
 
 ## Overview of the declension classes
 
@@ -6303,6 +6322,8 @@ AdjectiveRoot is the list of adjectives (some 5500 stems)
 
 
 # Bokmål adverbs
+
+This file documents the Bokmål adverb stem file [stems/adverbs.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/adverbs.lexc).
 
 LEXICON adv  adds the tag +Adv
 
@@ -6412,6 +6433,8 @@ LEXICON Noun  here come the long list of stems (tens of thousands)
 
 # Bokmål subjunctions
 
+This file documents the Bokmål subjunctions stem file [stems/subjunctions.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/subjunctions.lexc).
+
 LEXICON Subjunction
 
 LEXICON subj gives tag +CS
@@ -6420,6 +6443,8 @@ LEXICON subj gives tag +CS
 
 # Nynorsk stems 
 for tolerant dictionary reading
+
+This file documents the nynorsk stem file for the bokmål analyzer [stems/nynorsk-stems.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nynorsk-stems.lexc).
 
 LEXICON Prnyn 
 

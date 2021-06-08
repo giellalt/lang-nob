@@ -1,6 +1,7 @@
 
-# Numerals (number words)
+# Bokmål numerals (number words)
 
+This file documents the Bokmål numerals stem file [stems/numerals.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/numerals.lexc).
 
 LEXICON Numeral 
 

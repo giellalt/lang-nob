@@ -1,6 +1,6 @@
 # Norwegian Bokmål Adjectives
 
-This file documents the Bokmål noun stem file [stems/adjectives.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/adjectives.lexc).
+This file documents the Bokmål adjective stem file [stems/adjectives.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/adjectives.lexc).
 
 ## Overview of the declension classes
 

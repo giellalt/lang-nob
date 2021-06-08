@@ -1,5 +1,7 @@
 # Bokmål adverbs
 
+This file documents the Bokmål adverb stem file [stems/adverbs.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/adverbs.lexc).
+
 LEXICON adv  adds the tag +Adv
 
 LEXICON dt  also ads +Adv  perhaps unify, perhaps not.
