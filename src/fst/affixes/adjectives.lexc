@@ -148,25 +148,25 @@ LEXICON grade-C
 ! Exceptional
 
 LEXICON A_SMÅ
-!                   +A:få   R ;
-      +A+Pos+Pl+Indef:små  # ;
+!                        +A:få   R ;
+            +A+Pos+Pl+Indef:små  # ;
       +A+Pos+Neu+Sg+Indef:smått  # ;
 
 
 
 LEXICON A_FÅ
-!                   +A:få   R ;
-      +A+Pos+Pl+Indef:få  # ;
-        +A+Pos+Pl+Def:få  # ;
-              +A+Comp:færre # ;
-            +A+Superl:færrest  # ;
-        +A+Superl+Def:færreste # ;
+!                     +A:få   R ;
+          +A+Pos+Pl+Indef:få  # ;
+            +A+Pos+Pl+Def:få  # ;
+                +A+Comp:færre # ;
+            +A+Superl:færrest # ;
+       +A+Superl+Def:færreste # ;
 
 
 LEXICON GAMMEL
-!                  +A:gammel  R ;
-  +A+Pos+Msc+Sg+Indef:gammel  # ;
-  +A+Pos+Fem+Sg+Indef:gammel  # ;
+!                  +A:gammel R ;
+  +A+Pos+Msc+Sg+Indef:gammel # ;
+  +A+Pos+Fem+Sg+Indef:gammel # ;
  +A+Pos+Neu+Sg+Indef:gammelt # ;
        +A+Pos+Sg+Def:gamle   # ;
      +A+Pos+Pl+Indef:gamle   # ;
@@ -176,9 +176,9 @@ LEXICON GAMMEL
        +A+Superl+Def:eldste  # ;
 
 LEXICON GOD
-!                   +A:god   R ;
-   +A+Pos+Msc+Sg+Indef:god   # ;
-   +A+Pos+Fem+Sg+Indef:god   # ;
+!                   +A:god  R ;
+   +A+Pos+Msc+Sg+Indef:god  # ;
+   +A+Pos+Fem+Sg+Indef:god  # ;
   +A+Pos+Neu+Sg+Indef:godt  # ;
         +A+Pos+Sg+Def:gode  # ;
       +A+Pos+Pl+Indef:gode  # ;
@@ -203,9 +203,9 @@ LEXICON LITEN
 
 
 LEXICON STOR
-!                   +A:stor    R ;
-   +A+Pos+Msc+Sg+Indef:stor    # ;
-   +A+Pos+Fem+Sg+Indef:stor    # ;
+!                   +A:stor   R ;
+   +A+Pos+Msc+Sg+Indef:stor   # ;
+   +A+Pos+Fem+Sg+Indef:stor   # ;
   +A+Pos+Neu+Sg+Indef:stort   # ;
         +A+Pos+Sg+Def:store   # ;
       +A+Pos+Pl+Indef:store   # ;
@@ -215,7 +215,7 @@ LEXICON STOR
         +A+Superl+Def:største # ;
 
 LEXICON UNG
-!                  +A:ung    R ;
+!                 +A:ung    R ;
  +A+Pos+Msc+Sg+Indef:ung    # ;
  +A+Pos+Fem+Sg+Indef:ung    # ;
  +A+Pos+Neu+Sg+Indef:ungt   # ;
@@ -224,20 +224,20 @@ LEXICON UNG
        +A+Pos+Pl+Def:unge   # ;
              +A+Comp:yngre  # ;
            +A+Superl:yngst  # ;
-       +A+Superl+Def:yngste # ;
+      +A+Superl+Def:yngste  # ;
 
 
 LEXICON VOND
-!                   +A:vond   R ;
-   +A+Pos+Msc+Sg+Indef:vond   # ;
-   +A+Pos+Fem+Sg+Indef:vond   # ;
-  +A+Pos+Neu+Sg+Indef:vondt  # ;
-        +A+Pos+Sg+Def:vonde  # ;
-      +A+Pos+Pl+Indef:vonde  # ;
-        +A+Pos+Pl+Def:vonde  # ;
+!                   +A:vond R ;
+   +A+Pos+Msc+Sg+Indef:vond # ;
+   +A+Pos+Fem+Sg+Indef:vond # ;
+  +A+Pos+Neu+Sg+Indef:vondt # ;
+        +A+Pos+Sg+Def:vonde # ;
+      +A+Pos+Pl+Indef:vonde # ;
+        +A+Pos+Pl+Def:vonde # ;
               +A+Comp:verre # ;
-            +A+Superl:verst  # ;
-        +A+Superl+Def:verste # ;
+            +A+Superl:verst # ;
+       +A+Superl+Def:verste # ;
 
 
 
@@ -254,5 +254,15 @@ LEXICON FLERE
    +A+Superl+Pl+Def:fleste # ;
  +A+Superl+Pl+Indef:flest  # ;
 
-
+LEXICON LANG
+!                   +A:lang R ;
+   +A+Pos+Msc+Sg+Indef:lang # ;
+   +A+Pos+Fem+Sg+Indef:lang # ;
+  +A+Pos+Neu+Sg+Indef:langt # ;
+        +A+Pos+Sg+Def:lange # ;
+      +A+Pos+Pl+Indef:lange # ;
+        +A+Pos+Pl+Def:lange # ;
+             +A+Comp:lengre # ;
+           +A+Superl:lengst # ;
+      +A+Superl+Def:lengste # ;
 

@@ -335,7 +335,7 @@ LEXICON fMOR
 
 LEXICON fFOT
      +N+Msc+Sg:fot   0-en   ;
-    +N+Msc+Pl:føtt  e-ene ;
+    +N+Msc+Pl:føtt  er-ene ;
 
 LEXICON fROT
      +N+Fem+Sg:rot   0-a   ;

@@ -103,8 +103,9 @@ jeg:eg Pronnyn ;
 dere:dykk Pronnyn ;
 deres:deira Pronnyn ;
 dere:dokker Pronnyn ;
-de:dei Propnyn ;
-hva:kva Propnyn ;
+de:dei Pronnyn ;
+hva:kva Pronnyn ;
+hennes:hennar Pronnyn ;
 
 ! Probably good enough just to use prop here, not prop plc?
 Andesfjella:Andesfjella Propnyn ;
