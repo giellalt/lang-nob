@@ -1,4 +1,6 @@
-!! # Preopositions
+!! # Bokmål prepositions
+
+!! This file documents the Bokmål prepositions stem file [stems/prepositions.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/prepositions.lexc).
 
 LEXICON p
 !! LEXICON @LEXNAME@ gives tag +Pr
