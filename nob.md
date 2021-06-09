@@ -5314,6 +5314,7 @@ The rules are no documented yet
  * **LEXICON DRA** 
  * **LEXICON XIKKE** = drikke
  * **LEXICON DRIVE** 
+ * **LEXICON DRITE** 
  * **LEXICON DØLGE** 
  * **LEXICON DØ** 
  * **LEXICON EIE** 
@@ -6314,7 +6315,6 @@ AdjectiveRoot is the list of adjectives (some 5500 stems)
  * dritsur+v1:drit#sur a1 ; 
  * dritsur+v2:dritt#sur a1 ; 
 * ...
-
 
 
 

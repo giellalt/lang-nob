@@ -96,6 +96,7 @@
  * **LEXICON DRA** 
  * **LEXICON XIKKE** = drikke
  * **LEXICON DRIVE** 
+ * **LEXICON DRITE** 
  * **LEXICON DØLGE** 
  * **LEXICON DØ** 
  * **LEXICON EIE** 
