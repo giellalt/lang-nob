@@ -1228,8 +1228,8 @@ LEXICON STREKKE !!≈ * **@CODE@**
           +V+Imp:strekk     # ;
       +V+Ind+Prs:strekker   # ;
  +V+Ind+Prs+Pass:strekkes   # ;
-      +V+Ind+Prt:strekk     # ;
-       +V+PrfPrc:strekk     # ;
+      +V+Ind+Prt:strakk     # ;
+       +V+PrfPrc:strukket   # ;
        +V+PrsPrc:strekkende # ;
 LEXICON STRIDE !!≈ * **@CODE@**
           +V+Inf:stride    # ;
@@ -1407,7 +1407,7 @@ LEXICON TREKKE !!≈ * **@CODE@**
       +V+Ind+Prs:trekker   # ;
  +V+Ind+Prs+Pass:trekkes   # ;
       +V+Ind+Prt:trakk     # ;
-       +V+PrfPrc:trekt     # ;
+       +V+PrfPrc:trukket   # ;
        +V+PrsPrc:trekkende # ;
 LEXICON TRIVE !!≈ * **@CODE@**
             +V+Inf:trive    # ;
