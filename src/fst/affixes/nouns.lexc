@@ -55,17 +55,18 @@
 !!     f1b skam
 !!     f1X bok, pl. bøker
 !!     f1V mus, pl. mus
-!!     fGLO glo, pl glør
-!!     f3b lever. def levra
+!!     fGLO glo, pl. glør
+!!     f3b lever. def. levra
 !      
-!!     n1b rom pl. rom
+!!     n1b rom, def. rommet
+!!     n1n1b publikum, def. publikumet/publikummet
 !!     n1s sg only
-!!     n2b program. pl. programmer
-!!     n2c kontor. pl. kontor, kontorer
+!!     n2b program, pl. programmer
+!!     n2c kontor, pl. kontor, kontorer
 !!     n2s mørke, not pl.
 !!     n3b lager, def. lageret
 !!     n3c fe, feet
-!!     n4b faktum pl fakta
+!!     n4b faktum, pl. fakta
 !!     FORUM forum, forumet, fora/forumer, foraene/forumene
 !!     LEKSIKON leksikon, pl. leksika
 !!     nMUSEUM museum, museet, museer
@@ -92,6 +93,10 @@ LEXICON m1n1
   m1 ;
   n1 ;
 
+LEXICON m1n2
+  m1 ;
+  n2 ;
+
 !LEXICON m1n1f1
 !  m1 ;
 !  f1 ;
@@ -100,6 +105,10 @@ LEXICON m1n1
 LEXICON m1Vn1
   m1V ;
   n1  ;
+
+LEXICON n1n1b 
+  n1  ;
+  n1b ;
 
 
 ! Masculines
@@ -289,11 +298,11 @@ LEXICON f1morph
 
 LEXICON f1sg ! grisetang
  +N+Fem+Sg: 0-a ;
- +N+Msc+Sg: en  ; ! myren !^C^
+ +N+Msc+Sg: en  ; ! grisetangen !^C^
 
 LEXICON f1b ! skam
  +N+Fem+Sg:mX4 0-a    ;
- +N+Msc+Sg:m   en     ; ! myren !^C^
+ +N+Msc+Sg:m   en     ; ! skammen !^C^
  +N+Fem+Pl:m   er-ene ;
         +N:    R      ;
 
@@ -313,16 +322,16 @@ LEXICON f2
   f1 ;
 
 LEXICON f3 ! søster
- +N+Fem+Sg:a  #      ;
- +N+Msc+Sg:   en     ; ! søsteren !^C^
- +N+Fem+Pl:X1 er-ene ;
-        +N:   R      ;
+ +N+Fem+Sg:   0-a      ; ! søster, søstera
+ +N+Msc+Sg:   en       ; ! søsteren !^C^
+ +N+Fem+Pl:X1 e-er-ene ;
+        +N:   R        ;
 
 LEXICON f3b ! lever
- +N+Fem+Sg:X1 0-a    ;
- +N+Msc+Sg:   en     ; ! leveren !^C^
- +N+Fem+Pl:X1 er-ene ;
-        +N:   R      ;
+ +N+Fem+Sg:X1 0-a      ; ! lever, levra
+ +N+Msc+Sg:   en       ; ! leveren !^C^
+ +N+Fem+Pl:X1 e-er-ene ; ! levre/levrer, levrene. Mangler levere
+        +N:   R        ;
 
 LEXICON fGLO
  +N+Fem+Sg:   0-a   ;
@@ -332,10 +341,12 @@ LEXICON fGLO
 
 LEXICON fDATTER
           +N+Fem+Sg+Indef:datter   K ;
-            +N+Fem+Sg+Def:datra    K ;
+ !          +N+Fem+Sg+Def:datra    K ;
+            +N+Fem+Sg+Def:dattera  K ;
             +N+Msc+Sg+Def:datteren K ;
 !   +N+Fem+Sg+Def+Radical:datra    K ;
           +N+Fem+Pl+Indef:døtre    K ;
+          +N+Fem+Pl+Indef:døtrer   K ;
             +N+Fem+Pl+Def:døtrene  K ;
   +N+Fem+Sg+Nynorsk+Use/NG+Indef:dotter   K ;
     +N+Fem+Sg+Nynorsk+Use/NG+Def:dotra    K ;
@@ -384,7 +395,9 @@ LEXICON fKLE
    +N+Neu+Sg+Def:kledet K     ;
        +N+Neu+Pl:klæ    r-rne ;
 
-
+LEXICON indeclf 
+  +N+Fem+Indcl: # ;
+!           +N: R ;
 
 ! Neuters
 ! -------
@@ -450,7 +463,7 @@ LEXICON n3b ! lager
  +N+Neu+Pl:X1 e-ene-a ;
         +N:   R       ;
 
-LEXICON n3c ! fe
+LEXICON n3c ! fe Dette stemmer ikkje, det er fe-feet-fe-fea/feene
  +N+Neu+Sg: 0-et ;
  +N+Neu+Pl: 0-ne ;
         +N: R    ;
@@ -465,12 +478,12 @@ LEXICON n4b ! faktum
  +N+Neu+Pl:X5 a-aene ;
         +N:   R      ;
 
-LEXICON n5 ! middel
+LEXICON n5 ! middel Her er det større valfridom (2021)
  +N+Neu+Sg:X1 0-et     ;
  +N+Neu+Pl:X1 er-ene-a ;
         +N:   R        ;
 
-LEXICON n6 ! kammer
+LEXICON n6 ! kammer Dette stemmer ikkje (per 2021), det er kammeret
  +N+Neu+Sg:X1 0-et     ;
  +N+Neu+Pl:X1 0-e-ene-a ;
         +N:   R        ;

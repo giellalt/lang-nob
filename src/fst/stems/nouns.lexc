@@ -9,24 +9,25 @@
 !!     ----------------------------------------------------
 !!     Main types, from Bokmålsordboka
 !!    
-!!     f1 bru brua bruer bruene
-!!     f2 pumpe pumpa pumper pumpene
-!!     m1 stol stolen stoler stolene
-!!     bakke bakken bakker bakkene
-!!     pumpe pumpen pumper pumpene
-!!     m2 lærer læreren lærere lærerne
-!!     m3 bever beveren bevere beverne
-!!     bevre(r) bevrene
-!!     m4 longs longsen longs/longser longsene
-!!     n1 slott slottet slott slotta/slottene
-!!     n2 eple eplet epler epla/eplene
-!!     salt saltet salter salta/saltene
-!!     n3 kontor kontoret kontor kontora
-!!                        kontorer kontorene
-!!     høve høvet høve/høver høva/høvene
-!!     n4 salt saltet salter salta/saltene ??
-!!     n5 middel midlet midler midla/midlene ??
-!!     n6 kammer kammeret kamre/kammer kamra/kamrene
+!!     f1  bru         brua        bruer           bruene
+!!     f2  pumpe       pumpa       pumper          pumpene
+!!     f3  søster      søstera     søstre/søstrer  søstrene
+!!     m1  stol        stolen      stoler          stolene
+!!         bakke       bakken      bakker          bakkene
+!!         pumpe       pumpen      pumper          pumpene
+!!     m2  lærer       læreren     lærere          lærerne
+!!     m3  bever       beveren     bevere          beverne
+!!                                 bevrer          bevrene
+!!                                 bevre           bevrene
+!!     m4  longs       longsen     longs/longser   longsene
+!!     n1  slott       slottet     slott           slotta/slottene
+!!     n2  eple        eplet       epler           epla/eplene
+!!         salt        saltet      salter          salta/saltene
+!!     n3  kontor      kontoret    kontor/kontorer kontora/kontorene
+!!         høve        høvet       HØVE/høver      høva/høvene
+!!     n4  salt        saltet      salter          salta/saltene ??
+!!     n5  middel      midlet      MIDDEL/midler   midla/midlene ??
+!!     n6  kammer      kammeret    kamre/kammer    kamra/kamrene
 !!    
 !!    Subtypes
 !!    
@@ -831,6 +832,7 @@ moldjord f1 ;
 leiejord f1 ;
 tilleggsjord f1 ;
 dødhud f1 ;
+gåsehud f1 ;
 pigghud f1 ;
 selhud f1 ;
 reinhud f1 ;
@@ -2516,6 +2518,7 @@ kontaktflate f1 ;
 golvflate f1 ;
 plate f1 ;
 kokeplate f1 ;
+juleplate f1 ;
 svømmeplate f1 ;
 longplayingplate f1 ;
 hullplate f1 ;
@@ -6753,6 +6756,7 @@ scoring f1 ;
 1-%0-scoring f1 ;
 2-%0-scoring f1 ;
 foring f1 ;
+koring f1 ;
 grønnsporing f1 ;
 avsporing f1 ;
 lassoring f1 ;
@@ -8260,6 +8264,7 @@ grettenhet f1 ;
 besuttenhet f1 ;
 usannhet f1 ;
 knapphet f1 ;
+skarphet f1 ;
 forutsigbarhet f1 ;
 spillbarhet f1 ;
 verifiserbarhet f1 ;
@@ -8268,6 +8273,7 @@ el-sikkerhet f1 ;
 tapperhet f1 ;
 munntørrhet f1 ;
 surhet f1 ;
+sårhet f1 ;
 annerledeshet f1 ;
 håpløshet f1 ;
 maktesløshet f1 ;
@@ -8801,6 +8807,7 @@ jernbanebru f1 ;
 vippebru f1 ;
 gangbru f1 ;
 isbru f1 ;
+fru indeclf ;
 jomfru f1 ;
 furu f1 ;
 kronglefuru f1 ;
@@ -9026,6 +9033,7 @@ søppelkurv f1 ;
 papirkurv f1 ;
 munnskurv f1 ;
 klauv f1 ;
+sky f1 ;
 røyksky f1 ;
 tordensky f1 ;
 perlemorsky f1 ;
@@ -9648,6 +9656,7 @@ minnestund m1 ;
 fortellerstund m1 ;
 verneånd m1 ;
 skytsånd m1 ;
+tidsånd m1 ;
 vånd m1 ;
 pølsebod m1 ;
 materialbod m1 ;
@@ -10260,6 +10269,7 @@ drage m1 ;
 krage m1 ;
 prestekrage m1 ;
 cottage m1 ;
+image m1n2 ;
 bridge m1 ;
 lege m1 ;
 skolelege m1 ;
@@ -12085,8 +12095,8 @@ ionosfære m1 ;
 ozonosfære m1 ;
 troposfære m1 ;
 stratosfære m1 ;
-velvære m1 ;
-premiére m1 ;
+velvære n2 ;
+premiere m1 ;
 femøre m1 ;
 base m1 ;
 database m1 ;
@@ -13106,6 +13116,7 @@ handelsbalanse m1 ;
 kjønnsbalanse m1 ;
 resursbalanse m1 ;
 driftsbalanse m1 ;
+hvitbalanse m1 ;
 maktbalanse m1 ;
 ubalanse m1 ;
 råbalanse m1 ;
@@ -13378,6 +13389,7 @@ smiesse m1 ;
 forskningsinteresse m1 ;
 urfolksinteresse m1 ;
 samfunnsinteresse m1 ;
+tristesse m1 ;
 isse m1 ;
 baisse m1 ;
 abscisse m1 ;
@@ -17022,8 +17034,8 @@ kaffekjel m1 ;
 oljekjel m1 ;
 ystekjel m1 ;
 varmtvannskjel m1 ;
-sjel m1 ;
-ildsjel m1 ;
+sjel f1 ;
+ildsjel f1 ;
 hakel m1 ;
 rekel m1 ;
 rundvinkel m1 ;
@@ -22174,6 +22186,7 @@ debet m1 ;
 profet m1 ;
 sameprofet m1 ;
 ugildhet m1 ;
+kjedsomhet m1 ;
 godhet m1 ;
 hardhet m1 ;
 brinellhardhet m1 ;
@@ -23136,6 +23149,7 @@ adjunkt m1 ;
 infarkt m1 ;
 viadukt m1 ;
 akvedukt m1 ;
+kløkt m1 ;
 asfalt m1 ;
 sandasfalt m1 ;
 gummiasfalt m1 ;
@@ -23507,6 +23521,7 @@ slaktepart m1 ;
 mestepart m1 ;
 størstepart m1 ;
 frampart m1 ;
+brorpart m1 ;
 samarbeidspart m1 ;
 forhandlingspart m1 ;
 motpart m1 ;
@@ -23717,6 +23732,7 @@ ekstremist m1 ;
 pessimist m1 ;
 optimist m1 ;
 organist m1 ;
+pianist m1 ;
 humanist m1 ;
 satanist m1 ;
 gnist m1 ;
@@ -24258,6 +24274,7 @@ steinsprut m1 ;
 vannsprut m1 ;
 flasketut m1 ;
 helvt m1 ;
+flyt m1 ;
 kapitalflyt m1 ;
 informasjonsflyt m1 ;
 neverfløyt m1 ;
@@ -24389,6 +24406,7 @@ sameby m1 ;
 hjemby m1 ;
 reinby m1 ;
 innby m1 ;
+storby m1 ;
 landsby m1 ;
 hyttelandsby m1 ;
 vertsby m1 ;
@@ -25500,7 +25518,6 @@ tørkle n1 ;
 lommetørkle n1 ;
 åkle n1 ;
 okkupasjonstilfelle n1 ;
-informasjonsskille n1 ;
 tidsspille n1 ;
 mausole n1 ;
 legeme n1 ;
@@ -26731,6 +26748,9 @@ mukk n1 ;
 sukk n1 ;
 hjertesukk n1 ;
 stukk n1 ;
+dykk n1 ;
+djupdykk n1 ;
+dypdykk n1 ;
 nykk n1 ;
 rykk n1 ;
 innrykk n1 ;
@@ -26824,6 +26844,7 @@ lysblink n1 ;
 vink n1 ;
 blunk n1 ;
 klynk n1 ;
+kok m1n1 ;
 oppkok n1 ;
 avkok n1 ;
 eineavkok n1 ;
@@ -27415,6 +27436,7 @@ banespill n1 ;
 regnespill n1 ;
 hørespill n1 ;
 gjestespill n1 ;
+skytespill n1 ;
 skuespill n1 ;
 dragspill n1 ;
 backspill n1 ;
@@ -27875,10 +27897,10 @@ litium n1 ;
 strontium n1 ;
 otium n1 ;
 juridikum n1 ;
-publikum n1 ;
-møtepublikum n1 ;
-kinopublikum n1 ;
-minoritetspublikum n1 ;
+publikum n1n1b ;
+møtepublikum n1n1b ;
+kinopublikum n1n1b ;
+minoritetspublikum n1n1b ;
 unikum n1 ;
 perikum n1 ;
 praktikum n1 ;
@@ -28007,7 +28029,6 @@ nomen n1 ;
 pronomen n1 ;
 kvantorpronomen n1 ;
 relativpronomen n1 ;
-skytevåpen n1 ;
 opplysningsvesen n1 ;
 fengselsvesen n1 ;
 uvesen n1 ;
@@ -29494,6 +29515,7 @@ kryssforhør n1 ;
 avhør n1 ;
 dommeravhør n1 ;
 påhør n1 ;
+gjenhør n1 ;
 interiør n1 ;
 eksteriør n1 ;
 oppgjør n1 ;
@@ -30127,6 +30149,7 @@ russekort n1 ;
 skattekort n1 ;
 valgkort n1 ;
 frikort n1 ;
+grafikkort n1 ;
 bankkort n1 ;
 kontokort n1 ;
 førerkort n1 ;
@@ -30542,6 +30565,7 @@ språkalternativ n1 ;
 utviklingsalternativ n1 ;
 finansieringsalternativ n1 ;
 proadjektiv n1 ;
+objektiv n3 ;
 bokollektiv n1 ;
 klimaperspektiv n1 ;
 nordområdeperspektiv n1 ;
@@ -30682,9 +30706,9 @@ tjenestefartøy n1 ;
 luftfartøy n1 ;
 ringnotfartøy n1 ;
 undertøy n1 ;
-trafikkstøy n1 ;
-bomullstøy n1 ;
-utendørsstøy n1 ;
+trafikkstøy m1 ;
+bomullstøy m1 ;
+utendørsstøy m1 ;
 fottøy n1 ;
 vinterfottøy n1 ;
 utøy n1 ;
@@ -30720,7 +30744,6 @@ fremmend m2 ;
 minuend m2 ;
 rettslærd m2 ;
 avdød m2 ;
-skille m2 ;
 karriere m2 ;
 proffkarriere m2 ;
 fotballkarriere m2 ;
@@ -32927,6 +32950,8 @@ tilfelle n2 ;
 spesialtilfelle n2 ;
 gjentagelsestilfelle n2 ;
 tvilstilfelle n2 ;
+skille n2 ;
+informasjonsskille n2 ;
 hovedskille n2 ;
 grenseskille n2 ;
 veiskille n2 ;
@@ -33892,6 +33917,8 @@ fabrikat n2 ;
 konsulat n2 ;
 optimat n2 ;
 format n2 ;
+bredformat n2 ;
+breiformat n2 ;
 papirformat n2 ;
 koordinat n2 ;
 internat n2 ;
@@ -35422,6 +35449,7 @@ våpen n3 ;
 kjernevåpen n3 ;
 fylkesvåpen n3 ;
 riksvåpen n3 ;
+skytevåpen n3 ;
 merkevesen n3 ;
 skolevesen n3 ;
 helsevesen n3 ;
@@ -36342,6 +36370,7 @@ løvetann f1X ;
 nertann f1X ;
 overtann f1X ;
 fortann f1X ;
+blåtann indeclf ;
 kraft f1X ;
 datakraft f1X ;
 handkraft f1X ;
@@ -37468,6 +37497,7 @@ kommunikasjonssvikt m1sg ;
 oppmerksomhetssvikt m1sg ;
 internflukt m1sg ;
 flukt m1sg ;
+tilflukt m1sg ;
 flint m1sg ;
 rentefot m1sg ;
 hast m1sg ;
@@ -37589,7 +37619,7 @@ selvskryt:selv#skryt n1sg ;
 trav n1sg ;
 slarv n1sg ;
 støv n1sg ;
-støy n1sg ;
+støy m1 ;
 gamledager:gamledage m1pl ;
 meslinger:meslinge m1pl ;
 brennkopper:brennkoppe m1pl ;
@@ -37926,6 +37956,7 @@ spillestil m1 ;
 hverdagsliv n1 ;
 mentalitet m1 ;
 sentimentalitet m1 ;
+brutalitet m1 ;
 ingeniørfag n1 ;
 biodrivstoff n1 ;
 ultralyd m1 ;
@@ -38123,6 +38154,12 @@ nynazist m1 ;
 trommis m1 ;
 ketose m1 ;
 visdomsord n1 ;
+tjuetall n1 ;
+trettitall n1 ;
+førtitall n1 ;
+femtitall n1 ;
+sekstitall n1 ;
+syttitall n1 ;
 åttitall n1 ;
 kampfly n1 ;
 topptur m1 ;
