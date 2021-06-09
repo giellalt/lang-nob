@@ -60,6 +60,7 @@ ellers:elles Advnyn ;
 enda:enno Advnyn ;
 nå:no Advnyn ;
 oftest:oftast Advnyn ;
+egentlig:eigentleg Advnyn ;
 
 flere:fleire Anyn ;
 egen:eigen Anyn ;
@@ -69,6 +70,7 @@ trolig:truleg Anyn ;
 nåværende:noverande Anyn ;
 videregående:vidaregoande Anyn ;
 tidlig:tidlegare Anyn ;
+likendes:likandes Anyn ;
 
 være:vore 	 Vnyn ;
 komme:kjem	 Vnyn ;
@@ -76,9 +78,12 @@ finnes:finst Vnyn ;
 få:fekk		 Vnyn ;
 være:vera	 Vnyn ;
 være:vere	 Vnyn ;
+komme:kome   Vnyn ;
+komme:koma   Vnyn ;
 si:seie Vnyn ;
 inneholde:inneheld Vnyn ;
 kalle:kalla Vnyn ;
+gjøre:gjere Vnyn ;
 
 måned:månad m1 ;
 skuddår:skotår n1 ;
@@ -438,4 +443,4 @@ avsted:avstad nnnb ;
 avhør:avhøyr nnnb ;
 avgårde:avgarde nnnb ;
 øye:auga nnnb ;
-tar:tek nnnb ;
+eneste:einaste nnnb ;
