@@ -7,24 +7,25 @@ This file documents the Bokmål noun stem file [stems/nouns.lexc](https://github
     ----------------------------------------------------
     Main types, from Bokmålsordboka
    
-    f1 bru brua bruer bruene
-    f2 pumpe pumpa pumper pumpene
-    m1 stol stolen stoler stolene
-    bakke bakken bakker bakkene
-    pumpe pumpen pumper pumpene
-    m2 lærer læreren lærere lærerne
-    m3 bever beveren bevere beverne
-    bevre(r) bevrene
-    m4 longs longsen longs/longser longsene
-    n1 slott slottet slott slotta/slottene
-    n2 eple eplet epler epla/eplene
-    salt saltet salter salta/saltene
-    n3 kontor kontoret kontor kontora
-                       kontorer kontorene
-    høve høvet høve/høver høva/høvene
-    n4 salt saltet salter salta/saltene ??
-    n5 middel midlet midler midla/midlene ??
-    n6 kammer kammeret kamre/kammer kamra/kamrene
+    f1  bru         brua        bruer           bruene
+    f2  pumpe       pumpa       pumper          pumpene
+    f3  søster      søstera     søstre/søstrer  søstrene
+    m1  stol        stolen      stoler          stolene
+        bakke       bakken      bakker          bakkene
+        pumpe       pumpen      pumper          pumpene
+    m2  lærer       læreren     lærere          lærerne
+    m3  bever       beveren     bevere          beverne
+                                bevrer          bevrene
+                                bevre           bevrene
+    m4  longs       longsen     longs/longser   longsene
+    n1  slott       slottet     slott           slotta/slottene
+    n2  eple        eplet       epler           epla/eplene
+        salt        saltet      salter          salta/saltene
+    n3  kontor      kontoret    kontor/kontorer kontora/kontorene
+        høve        høvet       HØVE/høver      høva/høvene
+    n4  salt        saltet      salter          salta/saltene ??
+    n5  middel      midlet      MIDDEL/midler   midla/midlene ??
+    n6  kammer      kammeret    kamre/kammer    kamra/kamrene
    
    Subtypes
    

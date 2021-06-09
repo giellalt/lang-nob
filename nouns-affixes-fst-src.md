@@ -51,16 +51,17 @@
     f1b skam
     f1X bok, pl. bøker
     f1V mus, pl. mus
-    fGLO glo, pl glør
-    f3b lever. def levra
-    n1b rom pl. rom
+    fGLO glo, pl. glør
+    f3b lever. def. levra
+    n1b rom, def. rommet
+    n1n1b publikum, def. publikumet/publikummet
     n1s sg only
-    n2b program. pl. programmer
-    n2c kontor. pl. kontor, kontorer
+    n2b program, pl. programmer
+    n2c kontor, pl. kontor, kontorer
     n2s mørke, not pl.
     n3b lager, def. lageret
     n3c fe, feet
-    n4b faktum pl fakta
+    n4b faktum, pl. fakta
     FORUM forum, forumet, fora/forumer, foraene/forumene
     LEKSIKON leksikon, pl. leksika
     nMUSEUM museum, museet, museer
@@ -69,6 +70,8 @@
 
 
 ## Basic paradigms
+
+
 
 
 
@@ -132,7 +135,6 @@
 
   +N+Fem+Sg+Def+Radical:datra    K ;
                      +N:         R ;
-
 
 
 
