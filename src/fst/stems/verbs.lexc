@@ -271,6 +271,7 @@ avkle v4 ;
 avkorte v1 ;
 avkrefte v1 ;
 avkreve v3 ;
+påkreve v3 ;
 avlaste v1 ;
 avle v1 ;
 avlede v1 ;
@@ -981,6 +982,7 @@ drifte v1 ;
 drikke:dr XIKKE ;
 drille v1 ;
 driste v1 ;
+drite: DRITE ;
 drive: DRIVE ;
 droppe v1 ;
 drukne v1 ;
@@ -1180,6 +1182,7 @@ faksimilere v2 ;
 faktorisere v2 ;
 fakturere v2 ;
 falle: FALLE ; !!≈ * @CODE@ 
+henfalle: FALLE ;
 fallere v2 ; !! * etc.
 falme v1 ;
 false v1 ;
