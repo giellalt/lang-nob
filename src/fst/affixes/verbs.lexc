@@ -324,7 +324,7 @@ LEXICON DRA !!≈ * **@CODE@**
   +V+PrsPrc:dra   prsptcsuff ;
 LEXICON XIKKE !!≈ * **@CODE@** = drikke
          +V+Inf:ikke  #          ;
-         +V+Inf+Pass:ikkes  #          ;
+   +V+Inf+Pass:ikkes  #          ;
          +V+Imp:ikk   #          ;
      +V+Ind+Prs:ikker #          ;
 +V+Ind+Prs+Pass:ikkes #          ;
@@ -333,16 +333,27 @@ LEXICON XIKKE !!≈ * **@CODE@** = drikke
       +V+PrsPrc:ikk   prsptcsuff ;
 LEXICON DRIVE !!≈ * **@CODE@** 
           +V+Inf:drive  #          ;
-          +V+Inf+Pass:drives  #          ;
+    +V+Inf+Pass:drives  #          ;
           +V+Imp:driv   #          ;
       +V+Ind+Prs:driver #          ;
  +V+Ind+Prs+Pass:drives #          ;
       +V+Ind+Prt:drev   #          ;
        +V+PrfPrc:drevet #          ;
        +V+PrsPrc:driv   prsptcsuff ;
+LEXICON DRITE !!≈ * **@CODE@** 
+          +V+Inf:drite  #          ;
+    +V+Inf+Pass:drites  #          ;
+          +V+Imp:driv   #          ;
+      +V+Ind+Prs:driter #          ;
+ +V+Ind+Prs+Pass:drites #          ;
+      +V+Ind+Prt:dret   #          ;
+      +V+Ind+Prt:dreit  #          ;
+       +V+PrfPrc:dritt  #          ;
+       +V+PrcPrc:dritet #          ;
+       +V+PrsPrc:drit   prsptcsuff ;
 LEXICON DØLGE !!≈ * **@CODE@** 
           +V+Inf:dølge  #          ;
-          +V+Inf+Pass:dølges  #          ;
+    +V+Inf+Pass:dølges  #          ;
           +V+Imp:dølg   #          ;
       +V+Ind+Prs:dølger #          ;
  +V+Ind+Prs+Pass:dølges #          ;
@@ -359,7 +370,7 @@ LEXICON DØ !!≈ * **@CODE@**
         +V+Prdtc:dø   prsptcsuff ;
 LEXICON EIE !!≈ * **@CODE@** 
          +V+Inf:eie  #          ;
-         +V+Inf+Pass:eies  #          ;
+   +V+Inf+Pass:eies  #          ;
          +V+Imp:ei   #          ;
      +V+Ind+Prs:eier #          ;
 +V+Ind+Prs+Pass:eies #          ;
@@ -368,7 +379,7 @@ LEXICON EIE !!≈ * **@CODE@**
       +V+PrsPrc:ei   prsptcsuff ;
 LEXICON ETE !!≈ * **@CODE@** 
           +V+Inf:ete  #          ;
-          +V+Inf+Pass:etes  #          ;
+    +V+Inf+Pass:etes  #          ;
           +V+Imp:et   #          ;
       +V+Ind+Prs:eter #          ;
  +V+Ind+Prs+Pass:etes #          ;
