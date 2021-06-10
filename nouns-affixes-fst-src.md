@@ -19,15 +19,11 @@
     n2  eple        eplet       epler           epla/eplene
         salt        saltet      salter          salta/saltene
     n3  kontor      kontoret    kontor/kontorer kontora/kontorene
-        høve        høvet       HØVE/høver      høva/høvene
-        middel      midlet      MIDDEL/midler   midla/midlene
-    n4  salt        saltet      salter          salta/saltene ??
-    n5  middel      midlet      midler          midla/midlene ??
-    n6  kammer      kammeret    kamre/kammer    kamra/kamrene
+    n4  kriterium   kriteriet   kriterier       kriteria/kriteriene
     
     Subtypes, mainly from Finsk-norsk ordbok, also system-specific
     
-    x  unclassified, to m1 by default
+    mx  unclassified, to m1 by default
     mX indecl
     m1sg sg only
     m1pl pl only
@@ -59,10 +55,14 @@
     n1n1b publikum, def. publikumet/publikummet
     n1s sg only
     n2b program, pl. programmer
-    n2c kontor, pl. kontor, kontorer
     n2s mørke, not pl.
-    n3b lager, def. lageret
-    n3c fe, feet
+    n3b hinder, hinderet,       hinder/hindre,      hindra/hindrene
+    n3c middel, middelet/midlet middel/midler       midla/midlene
+    n3d lager,  lageret,        lager/lagre,        lagra/lagrene
+    n3e pulver, pulveret,       pulver/pulvere,     pulvera/pulverne
+    n3f beger,  begeret,        beger/begre,        begra/begerne
+    n3g alter,  alteret/altret, alter/altere/altre, altera/altra/altrene
+    n3h tema,   temaet,         tema/temaer,        temaene
     n4b faktum, pl. fakta
     FORUM forum, forumet, fora/forumer, foraene/forumene
     LEKSIKON leksikon, pl. leksika
@@ -141,6 +141,10 @@
 
   +N+Fem+Sg+Def+Radical:datra    K ;
                      +N:         R ;
+
+
+
+
 
 
 
