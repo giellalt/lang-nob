@@ -110,6 +110,10 @@ LEXICON n1n1b
   n1  ;
   n1b ;
 
+LEXICON m3f3
+  m3 ;
+  f3 ;
+
 
 ! Masculines
 ! ----------
@@ -321,16 +325,17 @@ LEXICON f1V ! mus
 LEXICON f2
   f1 ;
 
-LEXICON f3 ! søster
- +N+Fem+Sg:   0-a      ; ! søster, søstera
- +N+Msc+Sg:   en       ; ! søsteren !^C^
- +N+Fem+Pl:X1 e-er-ene ;
-        +N:   R        ;
 
-LEXICON f3b ! lever
+LEXICON f3 ! lever
  +N+Fem+Sg:X1 0-a      ; ! lever, levra
  +N+Msc+Sg:   en       ; ! leveren !^C^
  +N+Fem+Pl:X1 e-er-ene ; ! levre/levrer, levrene. Mangler levere
+        +N:   R        ;
+
+LEXICON f3b ! søster
+ +N+Fem+Sg:   0-a      ; ! søster, søstera
+ +N+Msc+Sg:   en       ; ! søsteren !^C^
+ +N+Fem+Pl:X1 e-er-ene ;
         +N:   R        ;
 
 LEXICON fGLO
@@ -348,8 +353,8 @@ LEXICON fDATTER
           +N+Fem+Pl+Indef:døtre    K ;
           +N+Fem+Pl+Indef:døtrer   K ;
             +N+Fem+Pl+Def:døtrene  K ;
-  +N+Fem+Sg+Nynorsk+Use/NG+Indef:dotter   K ;
-    +N+Fem+Sg+Nynorsk+Use/NG+Def:dotra    K ;
+ N+Fem+Sg+Nynorsk+Use/NG+Indef:dotter   K ;
+  +N+Fem+Sg+Nynorsk+Use/NG+Def:dottera  K ;
 !                      +N:         R ;
 
 !LEXICON fSØSTER
