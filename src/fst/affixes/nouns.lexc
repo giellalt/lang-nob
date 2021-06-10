@@ -35,7 +35,9 @@
 !!     m1pl pl only
 !!     m1b dam
 !!     m1b fe, komite
-!!     m1V sko pl. sko
+!!     m1V sko pl. sko, skoa/skoene
+!!     m1Vb byte, pl. byte/byter, bytene
+!!     m1Vc glipp, pl. glipp, glippene
 !!     m3V meter pl. meter
 !!     m3b finger pl. fingrer/fingre
 !!     m3c forelder pl. foreldre
@@ -102,8 +104,8 @@ LEXICON m1n2
 !  f1 ;
 !  n1 ;
 
-LEXICON m1Vn1
-  m1V ;
+LEXICON m1Vcn1
+  m1Vc ;
   n1  ;
 
 LEXICON n1n1b 
@@ -173,6 +175,18 @@ LEXICON m1c ! fe, komite
                 +N: R      ;
 
 LEXICON m1V ! sko
+         +N+Msc+Sg: 0-en    ;
+         +N+Msc+Pl: 0-ene-a ;
+ +N+Msc+Pl+Nynorsk+Use/NG: 0-a   ;
+                +N: R       ;
+
+LEXICON m1Vb ! byte
+         +N+Msc+Sg: 0-en     ;
+         +N+Msc+Pl: 0-er-ene ;
+ +N+Msc+Pl+Nynorsk+Use/NG: 0-a   ;
+                +N: R        ;
+
+LEXICON m1Vc ! glipp
          +N+Msc+Sg: 0-en  ;
          +N+Msc+Pl: 0-ene ;
  +N+Msc+Pl+Nynorsk+Use/NG: 0-a   ;
@@ -603,10 +617,10 @@ LEXICON 0-ene
  +Indef:      K ;
    +Def:%>ene K ;
 
-!LEXICON 0-er-ene
-! +Indef:      K ;
-! +Indef:%>er  K ;
-!   +Def:%>ene K ;
+LEXICON 0-er-ene
+ +Indef:      K ;
+ +Indef:%>er  K ;
+   +Def:%>ene K ;
 
 LEXICON 0-er-ene-a
  +Indef:      K ;
