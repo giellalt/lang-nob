@@ -188,7 +188,7 @@ LEXICON m2 ! lærer
 
 LEXICON m3 ! bever, bevere/bevrer/bevre
                 +N+Msc+Sg:   0-en     ;
-          +N+Msc+Pl+Indef:e  #        ; ! bevere
+                +N+Msc+Pl:   e-ne     ; ! bevere, beverne
                 +N+Msc+Pl:X1 e-er-ene ; ! X1 deletes the vowel -e-
  +N+Msc+Pl+Nynorsk+Use/NG:X1 ar-ane   ; ! X1 deletes the vowel -e-
                        +N:   R        ;
@@ -205,7 +205,7 @@ LEXICON m3c ! forelder, foreldre
  +N+Msc+Pl+Nynorsk+Use/NG:X1 ar-ane   ; ! X1 deletes the vowel -e-
                        +N:   R        ;
 
-LEXICON m3r ! onkel, onkler/*onkle
+LEXICON m3r ! onkel, onkler
                 +N+Msc+Sg:   0-en     ;
                 +N+Msc+Pl:X1 er-ene   ; ! X1 deletes the vowel -e-
  +N+Msc+Pl+Nynorsk+Use/NG:X1 ar-ane   ; ! X1 deletes the vowel -e-
