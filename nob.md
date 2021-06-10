@@ -5711,7 +5711,9 @@ a23
     m1pl pl only
     m1b dam
     m1b fe, komite
-    m1V sko pl. sko
+    m1V sko pl. sko, skoa/skoene
+    m1Vb byte, pl. byte/byter, bytene
+    m1Vc glipp, pl. glipp, glippene
     m3V meter pl. meter
     m3b finger pl. fingrer/fingre
     m3c forelder pl. foreldre
@@ -5783,7 +5785,11 @@ a23
 
 
 
+
+
+
 #### Irregulars
+
 
 
 
@@ -6371,7 +6377,9 @@ This file documents the Bokmål noun stem file [stems/nouns.lexc](https://github
     m1pl pl only
     m1b dam
     m1b fe, komité
-    m1V sko pl. sko
+    m1V  sko pl. sko, skoa/skoene
+    m1Vb byte, pl. byte/byter, bytene
+    m1Vc glipp, pl. glipp, glippene
     m3V meter pl. meter
     m3r sykkel, vinkel vinkelen, vinkler, vinklene
     ma alliert, alierte, allierte, allierte

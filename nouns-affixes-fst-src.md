@@ -33,7 +33,9 @@
     m1pl pl only
     m1b dam
     m1b fe, komite
-    m1V sko pl. sko
+    m1V sko pl. sko, skoa/skoene
+    m1Vb byte, pl. byte/byter, bytene
+    m1Vc glipp, pl. glipp, glippene
     m3V meter pl. meter
     m3b finger pl. fingrer/fingre
     m3c forelder pl. foreldre
@@ -105,7 +107,11 @@
 
 
 
+
+
+
 #### Irregulars
+
 
 
 
