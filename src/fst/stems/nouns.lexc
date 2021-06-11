@@ -57,6 +57,7 @@
 !!     f3b lever. def. levra
 !      
 !!     n1b rom, def. rommet
+!!     n1c søsken, søskenet, søsken, søskena/søsknene
 !!     n1n1b publikum, def. publikumet/publikummet
 !!     n1s sg only
 !!     n2b program, pl. programmer
@@ -28055,7 +28056,7 @@ gatekjøkken n1 ;
 treningskjøkken n1 ;
 grovkjøkken n1 ;
 skabilken n1 ;
-søsken n1 ;
+søsken n1c ;
 porselen n1 ;
 acetylen n1 ;
 polyetylen n1 ;

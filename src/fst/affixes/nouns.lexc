@@ -57,6 +57,7 @@
 !!     f3b lever. def. levra
 !      
 !!     n1b rom, def. rommet
+!!     n1c søsken, søskenet, søsken, søskena/søsknene
 !!     n1n1b publikum, def. publikumet/publikummet
 !!     n1s sg only
 !!     n2b program, pl. programmer
@@ -445,6 +446,11 @@ LEXICON n1b ! rom
  +N+Neu+Sg:mX4 0-et    ;
  +N+Neu+Pl:m   0-ene-a ;
         +N:    R       ;
+
+LEXICON n1c ! søsken, pl. søskena/søsknene
+  +N+Neu+Sg:   0-et  ;
+  +N+Neu+Pl:   0-a   ;
+  +N+Neu+Pl:X1 0-ene ;
 
 LEXICON n1sg ! yr
  +N+Neu+Sg: 0-et ;
