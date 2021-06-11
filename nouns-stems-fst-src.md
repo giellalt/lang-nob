@@ -52,6 +52,7 @@
     fGLO glo, pl. glør
     f3b lever. def. levra
     n1b rom, def. rommet
+    n1c søsken, søskenet, søsken, søskena/søsknene
     n1n1b publikum, def. publikumet/publikummet
     n1s sg only
     n2b program, pl. programmer

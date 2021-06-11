@@ -5730,6 +5730,7 @@ a23
     fGLO glo, pl. glør
     f3b lever. def. levra
     n1b rom, def. rommet
+    n1c søsken, søskenet, søsken, søskena/søsknene
     n1n1b publikum, def. publikumet/publikummet
     n1s sg only
     n2b program, pl. programmer
@@ -5819,6 +5820,7 @@ a23
 
   +N+Fem+Sg+Def+Radical:datra    K ;
                      +N:         R ;
+
 
 
 
@@ -6333,7 +6335,6 @@ AdjectiveRoot is the list of adjectives (some 5500 stems)
 
 
 
-
 # Bokmål adverbs
 
 This file documents the Bokmål adverb stem file [stems/adverbs.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/adverbs.lexc).
@@ -6398,6 +6399,7 @@ Adverb lists some 600 Norwegian adverbs, including MWE such as "i live"
     fGLO glo, pl. glør
     f3b lever. def. levra
     n1b rom, def. rommet
+    n1c søsken, søskenet, søsken, søskena/søsknene
     n1n1b publikum, def. publikumet/publikummet
     n1s sg only
     n2b program, pl. programmer

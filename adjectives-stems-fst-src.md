@@ -40,4 +40,3 @@ AdjectiveRoot is the list of adjectives (some 5500 stems)
 
 
 
-
