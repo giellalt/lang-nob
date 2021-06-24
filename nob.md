@@ -5800,6 +5800,7 @@ LEXICON ProperNoun-nob contains the list of 2200 or so names. The rest come from
 
 
 
+
 # Bokmål subjunctions
 
 This file documents the Bokmål subjunctions stem file [stems/subjunctions.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/subjunctions.lexc).
