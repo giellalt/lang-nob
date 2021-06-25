@@ -5973,7 +5973,7 @@ LEXICON ORDTEXT
     ma alliert, alierte, allierte, allierte
     KOLLEGA kollegaer, kolleger
     KONTO kontoer, konti
-    RADIUS radiuser, radii
+    RADIUS radien/radiusen, radier, radiene
     BROR brødre
     FAR fedre
     MANN menn
@@ -5990,15 +5990,18 @@ LEXICON ORDTEXT
     n1c søsken, søskenet, søsken, søskena/søsknene
     n1n1b publikum, def. publikumet/publikummet
     n1s sg only
-    n2b program, pl. programmer
+    n2b medlem, pl. medlemmer
     n2s mørke, not pl.
-    n3b hinder, hinderet/hindret, hinder/hindre,      hindra/hindrene
-    n3c middel, middelet/midlet   middel/midler       midla/midlene
-    n3d lager,  lageret,          lager/lagre,        lagra/lagrene
-    n3e pulver, pulveret,         pulver/pulvere,     pulvera/pulverne
-    n3f beger,  begeret,          beger/begre,        begra/begerne
-    n3g alter,  alteret/altret,   alter/altere/altre, altera/altra/altrene
-    n4b faktum, pl. fakta
+    n3m program, pl. program/programmer
+    n3b hinder, hinderet,       hinder/hindre,      hindra/hindrene
+    n3c middel, middelet/midlet middel/midler       midla/midlene
+    n3d lager,  lageret,        lager/lagre,        lagra/lagrene
+    n3e pulver, pulveret,       pulver/pulvere,     pulvera/pulverne
+    n3f beger,  begeret,        beger/begre,        begra/begerne
+    n3g alter,  alteret/altret, alter/altere/altre, altera/altra/altrene
+    n3h tema,   temaet,         tema/temaer,        temaene
+    n4b faktum, faktumet,       fakta,              faktaene
+    n4c nøytrum, nøytrumet/nøytret, nøytra/nøytrer, nøytraene/nøytra/nøytrene
     FORUM forum, forumet, fora/forumer, foraene/forumene
     LEKSIKON leksikon, pl. leksika
     nMUSEUM museum, museet, museer
@@ -6359,7 +6362,7 @@ ARABICLOOPCOLL
     ma alliert, alierte, allierte, allierte
     KOLLEGA kollegaer, kolleger
     KONTO kontoer, konti
-    RADIUS radiuser, radii
+    RADIUS radien/radiusen, radier, radiene
     BROR brødre
     FAR fedre
     MANN menn
@@ -6376,8 +6379,9 @@ ARABICLOOPCOLL
     n1c søsken, søskenet, søsken, søskena/søsknene
     n1n1b publikum, def. publikumet/publikummet
     n1s sg only
-    n2b program, pl. programmer
+    n2b medlem, pl. medlemmer
     n2s mørke, not pl.
+    n3m program, pl. program/programmer
     n3b hinder, hinderet,       hinder/hindre,      hindra/hindrene
     n3c middel, middelet/midlet middel/midler       midla/midlene
     n3d lager,  lageret,        lager/lagre,        lagra/lagrene
@@ -6385,7 +6389,8 @@ ARABICLOOPCOLL
     n3f beger,  begeret,        beger/begre,        begra/begerne
     n3g alter,  alteret/altret, alter/altere/altre, altera/altra/altrene
     n3h tema,   temaet,         tema/temaer,        temaene
-    n4b faktum, pl. fakta
+    n4b faktum, faktumet,       fakta,              faktaene
+    n4c nøytrum, nøytrumet/nøytret, nøytra/nøytrer, nøytraene/nøytra/nøytrene
     FORUM forum, forumet, fora/forumer, foraene/forumene
     LEKSIKON leksikon, pl. leksika
     nMUSEUM museum, museet, museer
@@ -6394,6 +6399,8 @@ ARABICLOOPCOLL
 
 
 ## Basic paradigms
+
+
 
 
 
@@ -6463,6 +6470,9 @@ ARABICLOOPCOLL
 
   +N+Fem+Sg+Def+Radical:datra    K ;
                      +N:         R ;
+
+
+
 
 
 
