@@ -127,6 +127,10 @@ LEXICON n2n4b ! multiplum
   n2  ;
   n4b ;
 
+LEXICON n2n3c ! kjørel
+  n2  ;
+  n3c ;
+
 ! Masculines
 ! ----------
 
@@ -540,6 +544,9 @@ LEXICON n4c ! nøytrum
               n4  ;
               n4b ;
 
+LEXICON npldef ! 1980-årene
+  +N+Neu+Pl: a-ene ;
+
 
 LEXICON nFORUM ! forum
  +N+Neu+Sg:um 0-et   ;
@@ -702,4 +709,9 @@ LEXICON e-e
  +Indef:%>e K ;
    +Def:%>e K ;
 
+! ONLY DEFINITE LEXICA
+! ====================
 
+LEXICON a-ene
+ +Def:a   K ;
+ +Def:ene K ;
