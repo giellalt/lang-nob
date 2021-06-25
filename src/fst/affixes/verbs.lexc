@@ -72,17 +72,45 @@ LEXICON v2
  +V: regpres    ;
    te-pret    ;
 
+LEXICON v2et
+!! **LEXICON @LEXNAME@** = demme
+ +V: inf-prsptc ;
+ +V: regpres    ;
+     te-pret    ;
+     et-pret    ;
+
+LEXICON v2a
+!! **LEXICON @LEXNAME@** = demme
+ +V: inf-prsptc ;
+ +V: regpres    ;
+     te-pret    ;
+     a-pret     ;
+
 LEXICON v3 
 !! **LEXICON @LEXNAME@** =  leve
  +V: inf-prsptc ;
  +V: regpres    ;
      de-pret    ;
 
+LEXICON v3et
+!! **LEXICON @LEXNAME@** = bygge
+ +V: inf-prsptc ;
+ +V: regpres    ;
+     de-pret    ;
+     et-pret    ;
+
 LEXICON v4 
 !! **LEXICON @LEXNAME@** =  ro, bie
  +V: inf-prsptc ;
  +V: r-pres     ;
      dde-pret   ;
+
+LEXICON v4et
+!! **LEXICON @LEXNAME@** = bygge
+ +V: inf-prsptc ;
+ +V: r-pres     ;
+     dde-pret   ;
+     et-pret    ;
 
 !LEXICON v-s ! fritas ! ikkje i bruk
 !     +V+Inf: # ;
@@ -161,6 +189,19 @@ LEXICON de-pret
   +V+PrfPrc:%>Q3d  # ;
   +V+PrfPrc+Ex/V+A:%>Q3d  positive ;
 
+LEXICON et-pret
+!! **LEXICON @LEXNAME@** = 
+         +V+Ind+Prt:%>et # ;
+          +V+PrfPrc:%>et # ;
+       +Ex/V+PrfPrc+A:%>et positive-indef ;
+       +Ex/V+PrfPrc+A:%>ed positive-def ;
+
+LEXICON a-pret
+!! **LEXICON @LEXNAME@** = 
+         +V+Ind+Prt:%>a # ;
+          +V+PrfPrc:%>a # ;
+       +Ex/V+PrfPrc+A:%>a positive-indecl ;
+
 LEXICON dde-pret
 !! **LEXICON @LEXNAME@** = 
  +V+Ind+Prt:%>dde # ;
@@ -189,6 +230,9 @@ LEXICON BE !!≈ * **@CODE@**
       +V+Ind+Prt:ba   #          ;
        +V+PrfPrc:bedt #          ;
        +V+PrsPrc:be   prsptcsuff ;
+LEXICON BETY !!≈ * **@CODE@** 
+                :bety    v4 ;
+      +V+Ind+Prt:betød   #  ;
 LEXICON BINDE !!≈ * **@CODE@** 
           +V+Inf:binde  #          ;
           +V+Imp:bind   #          ;
@@ -262,6 +306,9 @@ LEXICON BRISTE !!≈ * **@CODE@**
       +V+Ind+Prt:brast   #          ;
        +V+PrfPrc:brustet #          ;
        +V+PrsPrc:brist   prsptcsuff ;
+LEXICON BRY !!≈ * **@CODE@** 
+                :bry    v4 ;
+      +V+Ind+Prt:brød   #  ;    
 LEXICON XYTE !!≈ * **@CODE@** = yte, flyte, tryte
              +V+Inf:yte  #          ;
              +V+Inf+Pass:ytes  #          ;
@@ -375,7 +422,11 @@ LEXICON EIE !!≈ * **@CODE@**
      +V+Ind+Prs:eier #          ;
 +V+Ind+Prs+Pass:eies #          ;
      +V+Ind+Prt:eide #          ;
+     +V+Ind+Prt:eiet #          ;
+     +V+Ind+Prt:åtte #          ;
       +V+PrfPrc:eid  #          ;
+      +V+PrfPrc:eiet #          ;
+      +V+PrfPrc:ått  #          ;
       +V+PrsPrc:ei   prsptcsuff ;
 LEXICON ETE !!≈ * **@CODE@** 
           +V+Inf:ete  #          ;
@@ -477,6 +528,9 @@ LEXICON LATE !!≈ * **@CODE@**
  +V+Ind+Prs+Pass:lates # ;
       +V+Ind+Prt:lot   # ;
        +V+PrfPrc:latt  # ;
+LEXICON FORNEMME !!≈ * **@CODE@**
+            :fornemme v1 ;
+  +V+Ind+Prt:fornam   #  ;
 LEXICON FRYSE !!≈ * **@CODE@**
             +V+Inf:fryse    # ;
             +V+Imp:frys     # ;
@@ -588,8 +642,8 @@ LEXICON GNAGE !!≈ * **@CODE@**
         +V+Ind+Prt:gnog     # ;
  +V+Ind+Prt+Use/NG:gnagde   # ;
  +V+Ind+Prt+Use/NG:gnaget   # ;
-        +V+Ind+Prt:gnaga    # ;
          +V+PrfPrc:gnagd    # ;
+         +V+PrfPrc:gnaget   # ;
          +V+PrsPrc:gnagende # ;
 LEXICON GNI !!≈ * **@CODE@**
             +V+Inf:gni     # ;
@@ -720,6 +774,7 @@ LEXICON HOGGE !!≈ * **@CODE@**
            +V+Imp:hogg     # ;
        +V+Ind+Prs:hogger   # ;
   +V+Ind+Prs+Pass:hogges   # ;
+       +V+Ind+Prt:hogg     # ;
        +V+Ind+Prt:hogd     # ;
  +V+PrfPrc+Use/NG:hogget   # ;
         +V+PrfPrc:hogd     # ;
@@ -737,10 +792,15 @@ LEXICON HUGGE !!≈ * **@CODE@**
            +V+Imp:hugg     # ;
        +V+Ind+Prs:hugger   # ;
   +V+Ind+Prs+Pass:hugges   # ;
-       +V+Ind+Prt:hugd     # ;
+       +V+Ind+Prt:hugg     # ;
+       +V+Ind+Prt:hugde    # ;
+       +V+Ind+Prt:hugget   # ;
         +V+PrfPrc:hugd     # ;
  +V+PrfPrc+Use/NG:hugget   # ;
         +V+PrsPrc:huggende # ;
+LEXICON JAGE !!≈ * **@CODE@**
+           :jage v13   ;
+ +V+Ind+Prt:jog  #     ;
 LEXICON KLINGE !!≈ * **@CODE@**
           +V+Inf:klinge    # ;
           +V+Imp:kling     # ;
@@ -1303,6 +1363,7 @@ LEXICON SVI !!≈ * **@CODE@**
    +V+Ind+Prs+Pass:svis    # ;
  +V+Ind+Prt+Use/NG:sved    # ;
         +V+Ind+Prt:svei    # ;
+        +V+Ind+Prt:svidde  # ;
          +V+PrfPrc:svidd   # ;
          +V+PrsPrc:sviende # ;
 LEXICON SVIKE !!≈ * **@CODE@**
@@ -1378,16 +1439,20 @@ LEXICON TELLE !!≈ * **@CODE@**
       +V+Ind+Prs:teller   # ;
  +V+Ind+Prs+Pass:telles   # ;
       +V+Ind+Prt:talte    # ;
+      +V+Ind+Prt:telte    # ;
+      +V+Ind+Prt:tellet   # ;
        +V+PrfPrc:talt     # ;
+       +V+PrfPrc:telt     # ;
+       +V+PrfPrc:tellet   # ;
        +V+PrsPrc:tellende # ;
-LEXICON TIE !!≈ * **@CODE@**
-          +V+Inf:tie    # ;
-          +V+Imp:ti     # ;
-      +V+Ind+Prs:tier   # ;
- +V+Ind+Prs+Pass:ties   # ;
-      +V+Ind+Prt:tidde  # ;
-       +V+PrfPrc:tidd   # ;
-       +V+PrsPrc:tiende # ;
+!LEXICON TIE !!≈ * **@CODE@**
+!          +V+Inf:tie    # ;
+!          +V+Imp:ti     # ;
+!      +V+Ind+Prs:tier   # ;
+! +V+Ind+Prs+Pass:ties   # ;
+!      +V+Ind+Prt:tidde  # ;
+!       +V+PrfPrc:tidd   # ;
+!       +V+PrsPrc:tiende # ;
 LEXICON TRE_V !!≈ * **@CODE@**
           +V+Inf:tre     # ;
           +V+Imp:tre     # ;
@@ -1445,7 +1510,9 @@ LEXICON TRÅ !!≈ * **@CODE@**
    +V+Ind+Prs+Pass:trås    # ;
  +V+Ind+Prt+Use/NG:tro     # ;
         +V+Ind+Prt:trådde  # ;
+        +V+Ind+Prt:trådte  # ;
          +V+PrfPrc:trådd   # ;
+         +V+PrfPrc:trådt   # ;
          +V+PrsPrc:trående # ;
 LEXICON TVINGE !!≈ * **@CODE@**
           +V+Inf:tvinge    # ;
@@ -1489,15 +1556,15 @@ LEXICON VELGE !!≈ * **@CODE@**
       +V+Ind+Prt:valgte   # ;
        +V+PrfPrc:valgt    # ;
        +V+PrsPrc:velgende # ;
-LEXICON VEVE !!≈ * **@CODE@**
-            +V+Inf:veve    # ;
-            +V+Imp:vev     # ;
-        +V+Ind+Prs:vever   # ;
-   +V+Ind+Prs+Pass:veves   # ;
-        +V+Ind+Prt:vevde   # ;
- +V+Ind+Prt+Use/NG:vov     # ;
-         +V+PrfPrc:vevd    # ;
-         +V+PrsPrc:vevende # ;
+!LEXICON VEVE !!≈ * **@CODE@**
+!            +V+Inf:veve    # ;
+!            +V+Imp:vev     # ;
+!        +V+Ind+Prs:vever   # ;
+!   +V+Ind+Prs+Pass:veves   # ;
+!        +V+Ind+Prt:vevde   # ;
+! +V+Ind+Prt+Use/NG:vov     # ;
+!         +V+PrfPrc:vevd    # ;
+!         +V+PrsPrc:vevende # ;
 LEXICON VIKE !!≈ * **@CODE@**
             +V+Inf:vike    # ;
             +V+Imp:vik     # ;

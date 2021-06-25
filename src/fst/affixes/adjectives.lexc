@@ -116,6 +116,14 @@ LEXICON positive-def
  +Pos+Pl+Def:%>e # ;
  +Pos+Pl+Indef:%>e # ;
 
+LEXICON  positive-indecl ! e.g. prfprc of verbs ending in -a
+  +Pos+Msc+Sg+Indef: # ;
+  +Pos+Fem+Sg+Indef: # ;
+  +Pos+Neu+Sg+Indef: # ;
+  +Pos+Pl+Indef: # ;
+  +Pos+Sg+Def: # ;
+  +Pos+Pl+Def: # ;
+
 LEXICON a-neuter ! fint
  +Pos+Neu+Sg+Indef:%>Q3t # ;
  +Der/AAdv+Adv:%>Q3t # ;
