@@ -35,9 +35,9 @@ LEXICON v12 !
 !! **LEXICON @LEXNAME@** for both v1 and v2 past forms, or: score -> scoret, scorte (NG  = do not generate)
                  +V:     inf-prsptc ;
                  +V:     regpres    ;
- +V+Ind+Prs+Nynorsk+Use/NG:%>ar #          ;
+ +V+Ind+Prs+Nynorsk+Use/NG:%>ar #   ;
                          a-et-pret  ;
-           +Use/NG:    te-pret    ;
+           +Use/NG:    te-pret      ;
 
 LEXICON v13 
 !! **LEXICON @LEXNAME@** also here: v1, v3: sveve -> svevet (NG), svevde.
@@ -50,7 +50,7 @@ LEXICON v13
 
 LEXICON v23
 !! **LEXICON @LEXNAME@** 
-  v2 ;
+          v2 ;
 +Use/NG:  v3 ;
 
 LEXICON v14
@@ -62,7 +62,7 @@ LEXICON v1
 !! **LEXICON @LEXNAME@** =  kaste
                  +V:     inf-prsptc ;
                  +V:     regpres    ;
- +V+Ind+Prs+Nynorsk+Use/NG:%>ar #          ;
+ +V+Ind+Prs+Nynorsk+Use/NG:%>ar #   ;
                          a-et-pret  ;
 
 
@@ -70,7 +70,7 @@ LEXICON v2
 !! **LEXICON @LEXNAME@** = blåse, studere
  +V: inf-prsptc ;
  +V: regpres    ;
-   te-pret    ;
+     te-pret    ;
 
 LEXICON v2et
 !! **LEXICON @LEXNAME@** = demme
@@ -655,15 +655,8 @@ LEXICON GNI !!≈ * **@CODE@**
          +V+PrfPrc:gnidd   # ;
          +V+PrsPrc:gniende # ;
 LEXICON GRAVE !!≈ * **@CODE@**
-            +V+Inf:grave    # ;
-            +V+Imp:grav     # ;
-        +V+Ind+Prs:graver   # ;
-   +V+Ind+Prs+Pass:graves   # ;
- +V+Ind+Prt+Use/NG:gravde   # ;
-        +V+Ind+Prt:grov     # ;
-         +V+PrfPrc:gravd    # ;
-  +V+PrfPrc+Use/NG:gravet   # ;
-         +V+PrsPrc:gravende # ;
+                  :grave    v3et ;
+        +V+Ind+Prt:grov     #    ;
 LEXICON GRINE !!≈ * **@CODE@**
             +V+Inf:grine    # ;
             +V+Imp:grin     # ;
@@ -1300,7 +1293,11 @@ LEXICON STREKKE !!≈ * **@CODE@**
       +V+Ind+Prs:strekker   # ;
  +V+Ind+Prs+Pass:strekkes   # ;
       +V+Ind+Prt:strakk     # ;
+      +V+Ind+Prt:strakte    # ;
+      +V+Ind+Prt:strekte    # ;
        +V+PrfPrc:strukket   # ;
+       +V+PrfPrc:strakt     # ;
+       +V+PrfPrc:strekt     # ;
        +V+PrsPrc:strekkende # ;
 LEXICON STRIDE !!≈ * **@CODE@**
           +V+Inf:stride    # ;
