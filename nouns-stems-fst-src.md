@@ -55,17 +55,18 @@
     n1c søsken, søskenet, søsken, søskena/søsknene
     n1n1b publikum, def. publikumet/publikummet
     n1s sg only
-    n2b medlem, pl. medlemmer
+    n2m medlem, pl. medlemmer
     n2s mørke, not pl.
     n3m program, pl. program/programmer
-    n3b hinder, hinderet,       hinder/hindre,      hindra/hindrene
-    n3c middel, middelet/midlet middel/midler       midla/midlene
-    n3d lager,  lageret,        lager/lagre,        lagra/lagrene
-    n3e pulver, pulveret,       pulver/pulvere,     pulvera/pulverne
-    n3f beger,  begeret,        beger/begre,        begra/begerne
-    n3g alter,  alteret/altret, alter/altere/altre, altera/altra/altrene
-    n3h tema,   temaet,         tema/temaer,        temaene
-    n4b faktum, faktumet,       fakta,              faktaene
+    n3b hinder,   hinderet/hindret,     hinder/hindre,      hindra/hindrene
+    n3c middel,   middelet/midlet       middel/midler       midla/midlene
+    n3d lager,    lageret,              lager/lagre,        lagra/lagrene
+    n3e pulver,   pulveret,             pulver/pulvere,     pulvera/pulverne
+    n3f beger,    begeret,              beger/begre,        begra/begerne
+    n3g alter,    alteret/altret,       alter/altere/altre, altera/altra/altrene
+    n3h tema,     temaet,               tema/temaer,        temaene
+    n3i rabalder, rabalderet/rabaldret, rabalder/rabaldre,  rabaldra/rabaldrene
+    n4b faktum,   faktumet,             fakta,              faktaene
     n4c nøytrum, nøytrumet/nøytret, nøytra/nøytrer, nøytraene/nøytra/nøytrene
     FORUM forum, forumet, fora/forumer, foraene/forumene
     LEKSIKON leksikon, pl. leksika

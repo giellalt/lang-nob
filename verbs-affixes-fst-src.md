@@ -39,9 +39,17 @@
 
 **LEXICON v2** = blåse, studere
 
+**LEXICON v2et** = demme
+
+**LEXICON v2a** = demme
+
 **LEXICON v3** =  leve
 
+**LEXICON v3et** = bygge
+
 **LEXICON v4** =  ro, bie
+
+**LEXICON v4et** = bygge
 
 
 **LEXICON v1-s** =  undres
@@ -68,6 +76,10 @@
 
 **LEXICON de-pret** = 
 
+**LEXICON et-pret** = 
+
+**LEXICON a-pret** = 
+
 **LEXICON dde-pret** = 
 
 
@@ -79,6 +91,7 @@
 
 
  * **LEXICON BE** 
+ * **LEXICON BETY** 
  * **LEXICON BINDE** 
  * **LEXICON XITE** 
  * **LEXICON BLI** 
@@ -87,6 +100,7 @@
  * **LEXICON BRESTE** 
  * **LEXICON BRINGE** 
  * **LEXICON BRISTE** 
+ * **LEXICON BRY** 
  * **LEXICON XYTE** = yte, flyte, tryte
  * **LEXICON BURDE** 
  * **LEXICON BY** 
@@ -111,6 +125,7 @@
  * **LEXICON FLYGE**
  * **LEXICON FLYTE**
  * **LEXICON LATE**
+ * **LEXICON FORNEMME**
  * **LEXICON FRYSE**
  * **LEXICON FYKE**
  * **LEXICON FÅ**
@@ -141,6 +156,7 @@
  * **LEXICON HOGGE**
  * **LEXICON HOLDE**
  * **LEXICON HUGGE**
+ * **LEXICON JAGE**
  * **LEXICON KLINGE**
  * **LEXICON KLIPE**
  * **LEXICON KLIVE**
@@ -218,7 +234,6 @@
  * **LEXICON SØKKE**
  * **LEXICON TA**
  * **LEXICON TELLE**
- * **LEXICON TIE**
  * **LEXICON TRE_V**
  * **LEXICON TORE**
  * **LEXICON TREFFE**
@@ -231,7 +246,6 @@
  * **LEXICON TØRRE**
  * **LEXICON VEIE**
  * **LEXICON VELGE**
- * **LEXICON VEVE**
  * **LEXICON VIKE**
  * **LEXICON VILLE**
  * **LEXICON VINDE**

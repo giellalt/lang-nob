@@ -37,7 +37,7 @@ LEXICON VerbRoot contains the 5700 or so  verbs
  * abdisere v2 ; 
  * allmenngjøre:allmenn GJØRE ; 
  * anbringe:an BRINGE ; 
- * andøve v3 ; 
+ * andøve v3et ; 
  * anfalle:an FALLE ; 
  * angi:an GI ; 
  * angripe:an GRIPE ; 

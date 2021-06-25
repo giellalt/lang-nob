@@ -5990,17 +5990,18 @@ LEXICON ORDTEXT
     n1c søsken, søskenet, søsken, søskena/søsknene
     n1n1b publikum, def. publikumet/publikummet
     n1s sg only
-    n2b medlem, pl. medlemmer
+    n2m medlem, pl. medlemmer
     n2s mørke, not pl.
     n3m program, pl. program/programmer
-    n3b hinder, hinderet,       hinder/hindre,      hindra/hindrene
-    n3c middel, middelet/midlet middel/midler       midla/midlene
-    n3d lager,  lageret,        lager/lagre,        lagra/lagrene
-    n3e pulver, pulveret,       pulver/pulvere,     pulvera/pulverne
-    n3f beger,  begeret,        beger/begre,        begra/begerne
-    n3g alter,  alteret/altret, alter/altere/altre, altera/altra/altrene
-    n3h tema,   temaet,         tema/temaer,        temaene
-    n4b faktum, faktumet,       fakta,              faktaene
+    n3b hinder,   hinderet/hindret,     hinder/hindre,      hindra/hindrene
+    n3c middel,   middelet/midlet       middel/midler       midla/midlene
+    n3d lager,    lageret,              lager/lagre,        lagra/lagrene
+    n3e pulver,   pulveret,             pulver/pulvere,     pulvera/pulverne
+    n3f beger,    begeret,              beger/begre,        begra/begerne
+    n3g alter,    alteret/altret,       alter/altere/altre, altera/altra/altrene
+    n3h tema,     temaet,               tema/temaer,        temaene
+    n3i rabalder, rabalderet/rabaldret, rabalder/rabaldre,  rabaldra/rabaldrene
+    n4b faktum,   faktumet,             fakta,              faktaene
     n4c nøytrum, nøytrumet/nøytret, nøytra/nøytrer, nøytraene/nøytra/nøytrene
     FORUM forum, forumet, fora/forumer, foraene/forumene
     LEKSIKON leksikon, pl. leksika
@@ -6168,7 +6169,7 @@ LEXICON VerbRoot contains the 5700 or so  verbs
  * abdisere v2 ; 
  * allmenngjøre:allmenn GJØRE ; 
  * anbringe:an BRINGE ; 
- * andøve v3 ; 
+ * andøve v3et ; 
  * anfalle:an FALLE ; 
  * angi:an GI ; 
  * angripe:an GRIPE ; 
@@ -6379,18 +6380,19 @@ ARABICLOOPCOLL
     n1c søsken, søskenet, søsken, søskena/søsknene
     n1n1b publikum, def. publikumet/publikummet
     n1s sg only
-    n2b medlem, pl. medlemmer
+    n2m medlem, pl. medlemmer
     n2s mørke, not pl.
     n3m program, pl. program/programmer
-    n3b hinder, hinderet,       hinder/hindre,      hindra/hindrene
-    n3c middel, middelet/midlet middel/midler       midla/midlene
-    n3d lager,  lageret,        lager/lagre,        lagra/lagrene
-    n3e pulver, pulveret,       pulver/pulvere,     pulvera/pulverne
-    n3f beger,  begeret,        beger/begre,        begra/begerne
-    n3g alter,  alteret/altret, alter/altere/altre, altera/altra/altrene
-    n3h tema,   temaet,         tema/temaer,        temaene
-    n4b faktum, faktumet,       fakta,              faktaene
-    n4c nøytrum, nøytrumet/nøytret, nøytra/nøytrer, nøytraene/nøytra/nøytrene
+    n3b hinder,   hinderet/hindret,     hinder/hindre,      hindra/hindrene
+    n3c middel,   middelet/midlet       middel/midler       midla/midlene
+    n3d lager,    lageret,              lager/lagre,        lagra/lagrene
+    n3e pulver,   pulveret,             pulver/pulvere,     pulvera/pulverne
+    n3f beger,    begeret,              beger/begre,        begra/begerne
+    n3g alter,    alteret/altret,       alter/altere/altre, altera/altra/altrene
+    n3h tema,     temaet,               tema/temaer,        temaene
+    n3i rabalder, rabalderet/rabaldret, rabalder/rabaldre,  rabaldra/rabaldrene
+    n4b faktum,   faktumet,             fakta,              faktaene
+    n4c nøytrum,  nøytrumet/nøytret,    nøytra/nøytrer,     nøytraene/nøytra/nøytrene
     FORUM forum, forumet, fora/forumer, foraene/forumene
     LEKSIKON leksikon, pl. leksika
     nMUSEUM museum, museet, museer
@@ -6470,6 +6472,7 @@ ARABICLOOPCOLL
 
   +N+Fem+Sg+Def+Radical:datra    K ;
                      +N:         R ;
+
 
 
 
@@ -6624,6 +6627,7 @@ a23
 
 
 
+
 # Sublexica for verb roots
 
     -----------------------------
@@ -6665,9 +6669,17 @@ a23
 
 **LEXICON v2** = blåse, studere
 
+**LEXICON v2et** = demme
+
+**LEXICON v2a** = demme
+
 **LEXICON v3** =  leve
 
+**LEXICON v3et** = bygge
+
 **LEXICON v4** =  ro, bie
+
+**LEXICON v4et** = bygge
 
 
 **LEXICON v1-s** =  undres
@@ -6694,6 +6706,10 @@ a23
 
 **LEXICON de-pret** = 
 
+**LEXICON et-pret** = 
+
+**LEXICON a-pret** = 
+
 **LEXICON dde-pret** = 
 
 
@@ -6705,6 +6721,7 @@ a23
 
 
  * **LEXICON BE** 
+ * **LEXICON BETY** 
  * **LEXICON BINDE** 
  * **LEXICON XITE** 
  * **LEXICON BLI** 
@@ -6713,6 +6730,7 @@ a23
  * **LEXICON BRESTE** 
  * **LEXICON BRINGE** 
  * **LEXICON BRISTE** 
+ * **LEXICON BRY** 
  * **LEXICON XYTE** = yte, flyte, tryte
  * **LEXICON BURDE** 
  * **LEXICON BY** 
@@ -6737,6 +6755,7 @@ a23
  * **LEXICON FLYGE**
  * **LEXICON FLYTE**
  * **LEXICON LATE**
+ * **LEXICON FORNEMME**
  * **LEXICON FRYSE**
  * **LEXICON FYKE**
  * **LEXICON FÅ**
@@ -6767,6 +6786,7 @@ a23
  * **LEXICON HOGGE**
  * **LEXICON HOLDE**
  * **LEXICON HUGGE**
+ * **LEXICON JAGE**
  * **LEXICON KLINGE**
  * **LEXICON KLIPE**
  * **LEXICON KLIVE**
@@ -6844,7 +6864,6 @@ a23
  * **LEXICON SØKKE**
  * **LEXICON TA**
  * **LEXICON TELLE**
- * **LEXICON TIE**
  * **LEXICON TRE_V**
  * **LEXICON TORE**
  * **LEXICON TREFFE**
@@ -6857,7 +6876,6 @@ a23
  * **LEXICON TØRRE**
  * **LEXICON VEIE**
  * **LEXICON VELGE**
- * **LEXICON VEVE**
  * **LEXICON VIKE**
  * **LEXICON VILLE**
  * **LEXICON VINDE**
