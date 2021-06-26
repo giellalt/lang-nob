@@ -103,7 +103,7 @@
  * **LEXICON BRY** 
  * **LEXICON XYTE** = yte, flyte, tryte
  * **LEXICON BURDE** 
- * **LEXICON BY** 
+ * **LEXICON BY**
  * **LEXICON XYDE** = lyde, tyde, syde, ...
  * **LEXICON BÆRE** 
  * **LEXICON XETTE** 
@@ -120,10 +120,11 @@
  * **LEXICON FINNE** 
  * **LEXICON FISE** 
  * **LEXICON FLY** 
+ * **LEXICON FLYGE**
+
+ * **LEXICON FLYTE**
  * **LEXICON LYGE**
  * **LEXICON LJUGE**
- * **LEXICON FLYGE**
- * **LEXICON FLYTE**
  * **LEXICON LATE**
  * **LEXICON FORNEMME**
  * **LEXICON FRYSE**
