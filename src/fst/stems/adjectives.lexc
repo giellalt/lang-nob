@@ -23,6 +23,12 @@ få: A_FÅ ; !!≈ * @CODE@
 små: A_SMÅ ; !!≈ * @CODE@ 
 vond: VOND ; !!≈ * @CODE@ 
 
+skoleflink a1 ;
+trykksterk a1 ;
+enklitisk a2 ;
+sørestisk a2 ;
+viskos a1 ;
+viskøs a1 ;
 artikkelbasert a2 ; !!≈ * @CODE@ 
 aggressiv a1 ; !!≈ * @CODE@ 
 medrivende a3 ;
