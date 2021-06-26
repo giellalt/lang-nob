@@ -293,6 +293,10 @@ LEXICON mFAR
   +N+Msc+Pl:fedr e-ene ;
 !           +N:     R     ;
 
+LEXICON mFOT
++N+Msc+Sg:fot   0-en   ;
++N+Msc+Pl:føtt  er-ene ;
+
 
 LEXICON mMANN
   +N+Msc+Sg:mann   0-en  ;
@@ -325,41 +329,41 @@ LEXICON f1 ! myr, krone
      f1morph ;
 
 LEXICON f1morph
- +N+Fem+Sg: 0-a    ;
- +N+Msc+Sg: en     ; ! myren !^C^
- +N+Fem+Pl: er-ene ;
+       +N+Fem+Sg: 0-a    ;
++N+Msc+Sg+Use/NG: en     ; ! myren !^C^
+       +N+Fem+Pl: er-ene ;
 
 LEXICON f1sg ! grisetang
- +N+Fem+Sg: 0-a ;
- +N+Msc+Sg: en  ; ! grisetangen !^C^
+        +N+Fem+Sg: 0-a ;
+ +N+Msc+Sg+Use/NG: en  ; ! grisetangen !^C^
 
 LEXICON f1b ! skam
- +N+Fem+Sg:mX4 0-a    ;
- +N+Msc+Sg:m   en     ; ! skammen !^C^
- +N+Fem+Pl:m   er-ene ;
-        +N:    R      ;
+        +N+Fem+Sg:mX4 0-a    ;
+ +N+Msc+Sg+Use/NG:m   en     ; ! skammen !^C^
+        +N+Fem+Pl:m   er-ene ;
+               +N:    R      ;
 
 LEXICON f1X ! bok
- +N+Fem+Sg:   0-a    ;
- +N+Msc+Sg:   en     ; ! boken !^C^
- +N+Fem+Pl:Z1 er-ene ;
-        +N:   R      ;
+        +N+Fem+Sg:   0-a    ;
+ +N+Msc+Sg+Use/NG:   en     ; ! boken !^C^
+        +N+Fem+Pl:Z1 er-ene ;
+               +N:   R      ;
 
 LEXICON f1V ! mus
- +N+Fem+Sg: 0-a   ;
- +N+Msc+Sg: en    ; ! musen !^C^
- +N+Fem+Pl: 0-ene ;
-        +N: R     ;
+        +N+Fem+Sg: 0-a   ;
+ +N+Msc+Sg+Use/NG: en    ; ! musen !^C^
+        +N+Fem+Pl: 0-ene ;
+               +N: R     ;
 
 LEXICON f2
   f1 ;
 
 
 LEXICON f3 ! lever
- +N+Fem+Sg:X1 0-a      ; ! lever, levra
- +N+Msc+Sg:   en       ; ! leveren !^C^
- +N+Fem+Pl:X1 e-er-ene ; ! levre/levrer, levrene. Mangler levere
-        +N:   R        ;
+        +N+Fem+Sg:X1 0-a      ; ! lever, levra
+ +N+Msc+Sg+Use/NG:   en       ; ! leveren !^C^
+        +N+Fem+Pl:X1 e-er-ene ; ! levre/levrer, levrene. Mangler levere
+               +N:   R        ;
 
 LEXICON f3b ! søster
  +N+Fem+Sg:   0-a      ; ! søster, søstera
@@ -368,19 +372,19 @@ LEXICON f3b ! søster
         +N:   R        ;
 
 LEXICON fGLO
- +N+Fem+Sg:   0-a   ;
- +N+Msc+Sg:   en    ; ! gloen !^C^
- +N+Fem+Pl:Z1 r-rne ;
-        +N:   R     ;
+        +N+Fem+Sg:   0-a   ;
+ +N+Msc+Sg+Use/NG:   en    ; ! gloen !^C^
+        +N+Fem+Pl:Z1 r-rne ;
+               +N:   R     ;
 
 LEXICON fDATTER
           +N+Fem+Sg+Indef:datter   K ;
  !          +N+Fem+Sg+Def:datra    K ;
             +N+Fem+Sg+Def:dattera  K ;
-            +N+Msc+Sg+Def:datteren K ;
+     +N+Msc+Sg+Def+Use/NG:datteren K ;
 !   +N+Fem+Sg+Def+Radical:datra    K ;
           +N+Fem+Pl+Indef:døtre    K ;
-          +N+Fem+Pl+Indef:døtrer   K ;
+   +N+Fem+Pl+Indef+Use/NG:døtrer   K ;
             +N+Fem+Pl+Def:døtrene  K ;
  N+Fem+Sg+Nynorsk+Use/NG+Indef:dotter   K ;
   +N+Fem+Sg+Nynorsk+Use/NG+Def:dottera  K ;
@@ -398,36 +402,27 @@ LEXICON fDATTER
 !!                      +N:         R ;
 
 LEXICON fMOR
-     +N+Fem+Sg:mor   0-a   ;
- +N+Msc+Sg+Def:moren K     ;
-    +N+Fem+Pl:mødr  e-ene ;
-
-LEXICON fFOT
-     +N+Msc+Sg:fot   0-en   ;
-    +N+Msc+Pl:føtt  er-ene ;
+            +N+Fem+Sg:mor   0-a   ;
+ +N+Msc+Sg+Def+Use/NG:moren K     ;
+            +N+Fem+Pl:mødr  e-ene ;
 
 LEXICON fROT
-     +N+Fem+Sg:rot   0-a   ;
- +N+Msc+Sg+Def:roten K     ;
-    +N+Fem+Pl:røtt  er-ene ;
+            +N+Fem+Sg:rot   0-a   ;
+ +N+Msc+Sg+Def+Use/NG:roten K     ;
+            +N+Fem+Pl:røtt  er-ene ;
 
 
 LEXICON fGÅS
-     +N+Fem+Sg:gås   0-a   ;
- +N+Msc+Sg+Def:gåsen K     ;
-     +N+Fem+Pl:gjess 0-ene ;
+            +N+Fem+Sg:gås   0-a   ;
+ +N+Msc+Sg+Def+Use/NG:gåsen K     ;
+            +N+Fem+Pl:gjess 0-ene ;
 
 LEXICON fKU
-     +N+Fem+Sg:ku   0-a    ;
- +N+Fem+Sg+Def:kua K      ;
- +N+Msc+Sg+Def:kuen K      ;
-     +N+Fem+Pl:kyr  0-a    ;
+            +N+Fem+Sg:ku   0-a    ;
+        +N+Fem+Sg+Def:kua K      ;
+ +N+Msc+Sg+Def+Use/NG:kuen K      ;
+            +N+Fem+Pl:kyr  0-a    ;
      +N+Fem+Pl+Use/NG:ku   er-ene ;
-
-LEXICON fKLE
- +N+Neu+Sg+Indef:kle    K     ;
-   +N+Neu+Sg+Def:kledet K     ;
-       +N+Neu+Pl:klæ    r-rne ;
 
 LEXICON indeclf 
   +N+Fem+Indcl: # ;
@@ -572,9 +567,18 @@ LEXICON nMUSEUM
         +N:um R        ;
 
 LEXICON nØYE
- +N+Neu+Sg:e 0-et     ;
- +N+Neu+Pl:ne   e-ene ;
-        +N:en R        ;
+             +N+Neu+Sg:e   0-et     ;
+             +N+Neu+Pl:ne  e-ene    ;
++N+Neu+Pl+Indef+Use/NG:er  K        ;
+  +N+Neu+Pl+Def+Use/NG:ene K        ;
+  +N+Neu+Pl+Def+Use/NG:a   K        ;
+                    +N:en  R        ;
+
+LEXICON nKLE ! håndkle, tørkle
+       +N+Neu+Sg+Indef:kle    K     ;
+         +N+Neu+Sg+Def:kleet  K     ;
++N+Neu+Sg+Def+Err/Orth:kledet K     ;
+             +N+Neu+Pl:klæ    r-rne ;
 
 LEXICON nplKLÆR
  +N+Neu+Pl:klær 0-ne  ;
@@ -584,15 +588,15 @@ LEXICON nplKLÆR
  +N+Neu+Pl:æ  r-rne ;
 
 LEXICON nTEMPUS ! tempus:temp TEMPUS ;
-          :us     n1 ;
- +N+Neu+Sg:ora    K  ;
- +N+Neu+Pl:oraene K  ;
-        +N:us     R  ;
+                       :us     n1 ;
+ +N+Neu+Pl+Indef+Use/NG:ora    K  ;
+   +N+Neu+Pl+Def+Use/NG:oraene K  ;
+                     +N:us     R  ;
 
 LEXICON fTÅ
- +N+Fem+Sg:tå  0-a  ;
+     +N+Fem+Sg:tå   0-a  ;
  +N+Msc+Use/NG:tåen # ;
- +N+Fem+Pl:tæ  r-rne ;
+     +N+Fem+Pl:tæ   r-rne ;
 
 ! Lexica for definiteness declension
 ! ==================================
