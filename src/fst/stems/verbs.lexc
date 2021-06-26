@@ -4943,7 +4943,7 @@ sveive v1 ;
 svekke v1 ;
 svelge v1 ;
 svelle v2et ;
-svelte: SVELTE ;
+svelte: SVELTE ; ! Egt to verb, det andre er svelte v1. Problematisk å ha med begge utan vidare?
 sveltefore v1 ;
 svepe v2 ;
 sverge: SVERGE ;
@@ -5272,7 +5272,7 @@ trygle v1 ;
 trykke v2et ;
 trylle v1 ;
 tryne v1 ;
-tryte: TRYTE ;
+tryte: TRYTE ; ! truleg feil i bokmålsordboka her. Sjekk opp når dei har oppdatert.
 trå: TRÅ ;
 tråkke v1 ;
 tråkle v1 ;
