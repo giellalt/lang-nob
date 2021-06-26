@@ -145,9 +145,9 @@
 
 
 
+
   +N+Fem+Sg+Def+Radical:datra    K ;
                      +N:         R ;
-
 
 
 
