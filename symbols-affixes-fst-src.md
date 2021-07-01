@@ -9,3 +9,5 @@ SYMBOL_connector
 
 SYMBOL_NO_suff 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/symbols.lexc)</small>

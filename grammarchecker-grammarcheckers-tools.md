@@ -1,5 +1,5 @@
 
-  B O K M Å L   N O R W E G I A N   G R A M M A R   C H E C K E R
+B O K M Å L   N O R W E G I A N   G R A M M A R   C H E C K E R
 
 
 
@@ -145,7 +145,7 @@
 * Sets for verbs
 
 
-    - V is all readings with a V tag in them, REAL-V should
+- V is all readings with a V tag in them, REAL-V should
 be the ones without an N tag following the V.  
 The REAL-V set thus awaits a fix to the preprocess V ... N bug.
 
@@ -279,3 +279,5 @@ These were the set types.
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../tools/grammarcheckers/grammarchecker.cg3](http://github.com/giellalt/lang-nob/blob/main/../tools/grammarcheckers/grammarchecker.cg3)</small>

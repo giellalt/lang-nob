@@ -4,17 +4,17 @@ This file documents the Bokmål adjective stem file [stems/adjectives.lexc](http
 
 ## Overview of the declension classes
 
-    ----------------------------------------------------
-    Main types, from Bokmålsordboka
-   
-    a1 god god godt gode
-    a2 billig billig billig billige
-    a3 ekte ekte ekte ekte
-    a4 oppskjørtet oppskjørtet oppskjørtet oppskjørtede/oppskjørtete
-    a5 makaber makaber makabert makabre
-    a5 lunken lunken lunkent lunkne
-    aV blå blå blått blå
-    ... and some irregular ones
+----------------------------------------------------
+Main types, from Bokmålsordboka
+
+a1 god god godt gode
+a2 billig billig billig billige
+a3 ekte ekte ekte ekte
+a4 oppskjørtet oppskjørtet oppskjørtet oppskjørtede/oppskjørtete
+a5 makaber makaber makabert makabre
+a5 lunken lunken lunkent lunkne
+aV blå blå blått blå
+... and some irregular ones
 
 
 AdjectiveRoot is the list of adjectives (some 5500 stems)
@@ -40,3 +40,6 @@ AdjectiveRoot is the list of adjectives (some 5500 stems)
 
 
 
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/adjectives.lexc)</small>

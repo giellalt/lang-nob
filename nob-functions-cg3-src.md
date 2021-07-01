@@ -137,7 +137,7 @@
 * Sets for verbs
 
 
-    - V is all readings with a V tag in them, REAL-V should
+- V is all readings with a V tag in them, REAL-V should
 be the ones without an N tag following the V.  
 The REAL-V set thus awaits a fix to the preprocess V ... N bug.
 
@@ -244,7 +244,7 @@ First map all COMP-CS<, then remove the other readings
 
 * **killAllnotComp** Removes analysis which are not @COMP-CS<
 
-    - *This was the kill all not Comp rule!!*
+*
 
 
 
@@ -488,3 +488,5 @@ The rules are no documented yet
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/cg3/nob-functions.cg3](http://github.com/giellalt/lang-nob/blob/main/../src/cg3/nob-functions.cg3)</small>

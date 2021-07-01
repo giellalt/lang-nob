@@ -23,7 +23,7 @@ ITRAB
 
 
 
-    Transitive number-related abbreviations      !
+Transitive number-related abbreviations      !
 
 These ones are transitive when followed by numbers or
 singleton letters, and intransitive elsewhere.
@@ -49,3 +49,5 @@ Abbreviations that never induce sentence boundaries
 The file is too large and should be shrinked
 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/nob-abbreviations.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/nob-abbreviations.lexc)</small>

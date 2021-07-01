@@ -29,3 +29,5 @@ LEXICON 2-9
 
 LEXICON ORDTEXT 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/numerals.lexc)</small>

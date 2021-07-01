@@ -8,3 +8,5 @@ LEXICON dt  also ads +Adv  perhaps unify, perhaps not.
 
 Adverb lists some 600 Norwegian adverbs, including MWE such as "i live"
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/adverbs.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/adverbs.lexc)</small>

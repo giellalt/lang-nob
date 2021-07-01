@@ -249,11 +249,11 @@ do no harm.
 
 The tags are of the following form:
 * **+CmpNP/xxx** - Normative (N), Position (P), ie the tag describes what
-                   position the tagged word can be in in a compound
+position the tagged word can be in in a compound
 * **+CmpN/xxx**  - Normative (N) **form** ie the tag describes what
-                   form the tagged word should use when making compounds
+form the tagged word should use when making compounds
 * **+Cmp/xxx**   - Descriptive compounding tags, ie tags that *describes*
-                   what form a word actually is using in a compound
+what form a word actually is using in a compound
 
 This entry / word should be in the following position(s):
 
@@ -264,7 +264,7 @@ This entry / word should be in the following position(s):
  * **+CmpNP/Suff** - ... only **last** part in a compound, NEVER alone
  * **+CmpNP/None** - ... does not take part in compounds
  * **+CmpNP/Only** - ... only be part of a compound, i.e. can never
-                    be used alone, but can appear in any position
+be used alone, but can appear in any position
 
 
 ###  Flags for governing initial capital
@@ -370,3 +370,5 @@ This table shows the codes for nominal and verbal inflection. Irregular inflecti
  * **+Clt:%>s # ;** 
  * **# ;** 
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/root.lexc)</small>

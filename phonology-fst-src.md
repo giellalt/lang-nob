@@ -23,8 +23,8 @@ they will be converted to zero/the real thing at a later stage.
  * **%#**
  * **%>**
  * **%<**
- * **%\|»**
- * **%\|«**
+* **%\|»**
+* **%\|«**
  * **%[%<%]**
  * **%[%>%]**
 
@@ -199,3 +199,5 @@ This rule is for dictionary use only. The idea is to be able to click on words i
 Test to have an error
 * ★*a* (is not standard language)
 * ★*b* (is not standard language)
+* * *
+<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/phonology.twolc)</small>
