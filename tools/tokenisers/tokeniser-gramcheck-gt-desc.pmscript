@@ -62,7 +62,7 @@ Define blank           Whitespace | incondform
                        | { } ! U+200A    Hair Space                 &#8202;
                        | {​}  ! U+200B    Zero-Width Space           &#8203;
                        | {‌}  ! U+200C    Zero Width Non-Joiner      &#8204;
-                       | {‍}  ! U+200D    Zero Width Joiner          &#8205; 
+                       | {‍}  ! U+200D    Zero Width Joiner          &#8205;
 !                      | {}  ! U+200E    Left-To-Right Mark         &#8206; ! Causes syntax error in pmatch
 !                      | {}  ! U+200F    Right-To-Left Mark         &#8207; ! Causes syntax error in pmatch
 !                      | {}  ! U+2028    Line separator             &#8232; ! Causes syntax error in pmatch
@@ -110,7 +110,7 @@ Define alphabet "a-z"
                |{š}|{ž}|{č}|{đ}|{í}|{ŋ}|{ň}|{ŧ}|{ň}
                |{Š}|{Ž}|{Č}|{Đ}|{Í}|{Ŋ}|{Ň}|{Ŧ}|{Ň}
                | "0-9"
-               |{_}|{§}|{°}|{†}
+               |{_}|{§}|{°}|{†}|{}
                ! Combining diacritics as individual symbols,
                ! to be able to analyse unknown words with
                ! decomposed diacritics. All combining diacritics
