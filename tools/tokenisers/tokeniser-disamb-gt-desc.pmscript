@@ -110,7 +110,7 @@ Define alphabet "a-z"
                |{š}|{ž}|{č}|{đ}|{í}|{ŋ}|{ň}|{ŧ}|{ň}
                |{Š}|{Ž}|{Č}|{Đ}|{Í}|{Ŋ}|{Ň}|{Ŧ}|{Ň}
                | "0-9"
-               |{_}|{§}|{°}|{†}|{}
+               |{_}|{§}|{°}|{†}|{}|{‑}
                ! Combining diacritics as individual symbols,
                ! to be able to analyse unknown words with
                ! decomposed diacritics. All combining diacritics
