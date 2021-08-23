@@ -16,12 +16,21 @@ AUF PROP-org ;
 LEXICON ProperNoun-nob
 !! LEXICON @LEXNAME@ contains the list of 2200 or so names. The rest come from common files.
 
+
+!! Adjectives
+Nasjonal PROPADJ_a1-org ;
+Digital PROPADJ_a1-org ;
+Sentral PROPADJ_a1-org ;
+Aktuell PROPADJ_a1-org ;
+
 !7-Eleven PROP-obj ;
 !Eir PROP-sur ; ! XXX Marginal, and id. with Eira.
 !Joh PROP-mal ; ! otherwise 'Johan' is Ess of Joh
 !Resurssamiel PROP ;
 !Soar PROP ;
 
+
+!! Nouns
 Sony PROP-obj ;
 Samsung PROP-obj ;
 Tor PROP-mal ;
