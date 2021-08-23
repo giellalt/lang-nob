@@ -810,6 +810,8 @@ SELECT N IF (-1 ("holde"))(1 ("stand"));
 
 # NP
 
+REMOVE Fem IF (0 Det + Msc)(1C N + Msc);
+REMOVE Msc IF (0 Det + Fem)(1C N + Fem);
 
 # AP
 
