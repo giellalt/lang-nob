@@ -1,5 +1,5 @@
 # ========================== #
-# Faroese dependency grammar #
+# Norwegian Bokmål dependency grammar #
 # ========================== #
 
 # This file is deprecated.
@@ -85,7 +85,10 @@ LIST LEFT = LEFT ;
 LIST RIGHT = RIGHT ;
 
 LIST V* = V* ;
- 
+
+LIST <ctjHead> = <ctjHead> ;
+LIST MCL-CONJ = ("for" Adv); # these typically introduce a main clause, not coordination
+
 SET WORD = N | V | A | Pr | Pron | Adv | CC | CS | Interj | Num | ("\?") ;
 
 
@@ -94,7 +97,6 @@ Dat Msc Fem Neu Sg Pl Def Indef Cmp Sup Prs Prt 1Sg 2Sg 3Sg Inf PrfPrc
 PrsPrc Sup Imp CLB PUNCT LEFT RIGHT ;
 
 
-LIST NAGD = Nom Acc Gen Dat ;
 LIST GENDER = Msc Fem Neu ;
 LIST NUMBER = Sg Pl ;
 LIST POS = N V A Adv Pr Pron ;
@@ -200,6 +202,7 @@ LIST @IOBJ> = @IOBJ> ;
 LIST @>N = @>N ;
 LIST @N< = @N< ;
 LIST @>A = @>A ;
+LIST @A> = @A> ;
 LIST @A< = @A< ;
 LIST @IM = @IM ;
 LIST @<SPRED = @<SPRED ;
@@ -312,7 +315,7 @@ LIST KONJ = CS CC ;
 LIST @-FARG = @-FOBJ @-FSUBJ ;
 SET @ARG = @SUBJ OR @OBJ OR @SPRED OR @OPRED OR @ADVL  ; #  OR @ICL-OBJ OR @<PPRED OR @ADVL>SUBJ
 SET @-FARG/ADVL = @-FARG ; # OR @-FADVL ;
-SET @ARG/ADVL = @ARG OR @ADVL - (@ADVL + CC) ;
+SET @ARG/ADVL = @ARG OR @ADVL ; #- (@ADVL + CC) ;
 SET @CLAUSE = @ARG/ADVL OR @-FARG/ADVL OR @V ;
 
 
@@ -365,7 +368,6 @@ SUBSTITUTE:SubV=FS-IMVcs (@IMV) (@FS-IMV) TARGET V (*-1 (<aux>) BARRIER @MV LINK
 # in relative clauses:
 SUBSTITUTE:SubV=FS-Nmv (@FMV) (@FS-N<) TARGET V (*-1 Interr BARRIER VFIN) ;
 SUBSTITUTE:SubV=FS-Nmv (@FMV) (@FS-N<) TARGET V (*-1 ("sum" CS @CVP) BARRIER VFIN) ;
-#SUBSTITUTE (@FAUX) (@FS-N<) TARGET V (*-1 Interr BARRIER COMMA)(0 Neg LINK 1 GOSTEGE) ;
 SUBSTITUTE:SubV=FSN-IMV (@IMV) (@FS-N<IMV) TARGET V (*-1 (<aux>) BARRIER @MV LINK *-1 Interr BARRIER COMMA OR CS) ;
 SUBSTITUTE:SubVmain=FS-Naux (@FAUX) (@FS-N<) TARGET V (*-1 Interr BARRIER VFIN) ;
 SUBSTITUTE:SubV=FSN-IAUX (@IAUX) (@FS-N<IAUX) TARGET V (*-1 (<aux>) BARRIER @MV LINK *-1 Interr BARRIER @MV) ;
@@ -401,12 +403,12 @@ SETPARENT:r3 ("sjálvur") TO (-1 ("seg"));
 SETPARENT:r4 ("sum" @CVP) TO (-1 N OR V);
 SETPARENT:r5 ("sum" @CVP) TO (*-1 N OR V BARRIER WORD);
 
-SETPARENT (A $$NAGD) TO (-1 CC)(-2 (A $$NAGD));  # Look at the cc structure !!
-
+SETPARENT:ccA (A) TO (-1 CC)(-2 (A));  # Look at the cc structure !!
+SETPARENT:AN @A> TO (1 N);
 SETPARENT:CCNP (@CNP)(-1 N) TO (*1 N BARRIER NPNH);
 	## Per og Kari
 
-SETPARENT:CCA (@CNP)(-1 $$POS + $$NAGD) TO (1 $$POS + $$NAGD);
+SETPARENT:CCA (@CNP)(-1 $$POS) TO (1 $$POS);
 	## oydin og ber.
 
 SETPARENT @N< TO (*-1 N OR Pron BARRIER NPNH);
@@ -500,6 +502,10 @@ SETPARENT:r24 @CVP TO (*-1 (@MAINV));
 
 ### CC
 
+LIST COORD = @SUBJ> @<SUBJ @<OBJ @OBJ> @<SPRED @SPRED> @<OPRED @OPRED> @APP-N< @ADVL<OBJ @SUBJ<ADVL @OBJ>SPRED @COMP-CS< @SPRED @>P @P< @ADVL> @<ADVL  @CL-ADVL> @CL-<ADVL  @i-ADVL> @i-<ADVL @i-ADVL @-F<OBJ  @<IOBJ @IOBJ> ;
+LIST VERBCOORD = @FMV @FAUX @IAUX @FAUX @FS-IMV @FS-VFIN< @FS-ADVL @FS-OBJ @IMV @FS-N<IMV @FS-P< @FS-P<IMV @FS-OBJ> @FS-<OBJ @ICL-P< @ICL-OBJ @ICL-SUBJ;
+
+
 SETPARENT:r25 @CNP (-1 BOS OR CLB OR LEFT) TO (*1  (@MAINV)) ;
 
 SETPARENT:2vCC @CNP TO (1 VFIN);
@@ -518,6 +524,41 @@ SETPARENT:SetKonjToV KONJ + @CVP TO (*1 VFIN OR NONVFIN BARRIER S-BOUNDARY2) ;
 
 SETPARENT:SetCNPToWord @CNP TO (*-1 WORD) ;
 SETPARENT:SetCNPToWord @CVP + CC TO (*-1 WORD) ;
+
+
+
+# From sme:
+# coordination - not verbs
+SETPARENT:Coord $$COORD TO (*-1 COMMA OR @CNP BARRIER @V OR S-BOUNDARY OR $$COORD LINK *-1 $$COORD + <ctjHead>);
+	## Maahtoe jïh skuvle lea dellie mubpie vihkeles tsiehkiem daennie orre våaroemisnie.
+
+# coordinatin of @>N
+SETPARENT:>NCoord @>N TO (*-1 COMMA OR CC BARRIER @CLAUSE LINK *-1C @>N + <ctjHead> BARRIER @CLAUSE);
+	## Dát leat luohtehahtti ja duohta sánit .
+	#$ Niegadan su birra go oainnán David Beckham ja Manchester United!
+SETPARENT:Not>NCoord @>N TO (1 (N @>N));
+	## Dát lea Dávveda bártni ja Abrahama bártni sohka.
+
+### verbcoordination
+
+# verbcoordination - mainclauses
+#SUBSTITUTE:ctjHead (V) (<ctjHead> V) TARGET VFIN (NEGATE *-1 CC OR COMMA BARRIER CS OR MCL-CONJ LINK *-1 VFIN BARRIER CS)(0 @MCLV)(*1 COMMA OR CC BARRIER CS OR (":") LINK **1 VFIN LINK 0 @MCLV) ; # Added (CS @CVP) barrier (next line) tt.
+SUBSTITUTE:ctjHead (V) (<ctjHead> V) TARGET VFIN (NEGATE *-1 CC OR COMMA BARRIER CS  OR MCL-CONJ LINK *-1 VFIN BARRIER CS)(0 @MCLV)(*1 COMMA OR CC BARRIER CS OR (":") LINK **1 VFIN BARRIER (CS @CVP) LINK 0 @MCLV ) ;
+	## Muhtun geasi nieida jávkkai, ja olbmot ohce su, muhto eai gávdnan su eai gostege, eaige diehtán gosa lei šaddan.
+SUBSTITUTE:ctjHead (V) (<ctjHead> V) TARGET VFIN (NEGATE *-1 CC OR COMMA BARRIER CS LINK *-1 VFIN BARRIER CS)(0 @MCLV)(*1 ("som") BARRIER @V LINK *1 COMMA OR @CVP BARRIER CS LINK *1 @SUBJ> BARRIER @V LINK **1 VFIN LINK 0 @MCLV) ; # a relative clause in between
+	## Lea vuosttaš CD maid Sámi Jienat almmuha ja CD galgá leat válmmas geassemánu 10. beaivvi 2005.
+
+# verbcoordination - subclauses
+SUBSTITUTE:ctjHead (V) (<ctjHead> V) TARGET VFIN (NEGATE *-1 CC OR COMMA BARRIER CS LINK *-1 VFIN BARRIER CS)(0 @SCLV)(NEGATE *-1 CS BARRIER @V  LINK *1 @SCLV)(*1 COMMA OR CC LINK *1 VFIN BARRIER CS LINK 0 @SCLV) ;
+	## Go bassat lihtiid dahje málestit siiddas, de sáhttit seammás guldalit radio.
+# From sme stops here.
+
+
+
+
+
+
+
 
 
 
