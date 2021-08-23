@@ -1,5 +1,13 @@
 !! # Propernoun morphology
 
+
+LEXICON PROPADJ_a1-org
++A+PROP+Sem/Org+Msc+Indef: # ;
++A+PROP+Sem/Org+Fem+Indef: # ;
++A+PROP+Sem/Org+Neu+Indef:%>t # ;
++A+PROP+Sem/Org+Pl+Indef: # ;
+
+
 LEXICON FirstTag
 !! @LEXNAME@ 
 +N+Prop+Attr: # ; ! von Gelderen, af Heidenstam
