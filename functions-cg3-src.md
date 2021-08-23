@@ -183,7 +183,15 @@ part of the noun phrase of that noun (i.e., "scan to the next NP head")
 
 
 
+
 * Syntactic sets
+
+
+
+
+
+
+
 
 
 
@@ -330,6 +338,9 @@ Finite verbs
 
 
 
+
+
+
 * **<advlPoPr** (@<ADVL) for Po or Pr; if mainverb to the left.
 * **advlPoPr>** (@<ADVL) for Po or Pr; if mainverb to the right.
 
@@ -343,6 +354,8 @@ Finite verbs
 * **advl>inbetween** (@ADVL>) for Adv; if inbetween two sentenceboundaries where no mainverb is present.
 
 * **comma<advlEOS** (@<ADVL) for Adv if; comma found to the left and the finite mainverb to the left of comma. To the right is the end of the sentence.
+
+
 
 
 

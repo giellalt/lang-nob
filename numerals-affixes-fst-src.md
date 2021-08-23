@@ -9,41 +9,44 @@ numtagsg
 ## Tags for special use
 
 ### Date
-datetag
 
-dateyearcase_nullsuff_w_dot_tag
 
-dateyearcase_fullsuff_tag
 
 ### Clock
-numclock
 
-NUM-ARABICCASES
 
-ID-ARABIC
 
- * **LEXICON ARABICLOOPORD** ordinals
-ARABICLOOPORD
 
- * **LEXICON ACASETAG**  is for 1e+Det+Qnt+Sg+Det+Qnt:1e
-ACASETAG
 
- * **LEXICON ARABICLOOPCOLL** collectives
-ARABICLOOPCOLL
 
 ... and many more lexica
 
- * **LEXICON ARABICDELIMITER**  blank + 3 delim, what does the lg counc prefer?
 
- * **LEXICON ROMNUMTAG**
-
+ * **LEXICON ARABICCASEORD**  adds +Arab
 
 
+ * **LEXICON ARABICCASE**  adds +Arab
+
+ * **LEXICON ARABICCASES**  adds +Arab
+
+ * **LEXICON ARABICCOMPOUNDS**  ! arabic as first part,
 
 
- * **LEXICON PROSENT** % and case suffix
 
- * **LEXICON POSTPROSENT** % and case suffix
+ * **LEXICON ARABICCASECOLL**  adds +Arab
+
+ * **LEXICON ARABICCASE0**  adds +Arab
+
+
+
+
+
+
+
+
+
+
+
 
 
 

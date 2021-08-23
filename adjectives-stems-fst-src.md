@@ -17,6 +17,8 @@ aV blå blå blått blå
 ... and some irregular ones
 
 
+
+
 AdjectiveRoot is the list of adjectives (some 5500 stems)
  * få: A_FÅ ; 
  * små: A_SMÅ ; 
