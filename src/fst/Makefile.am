@@ -65,6 +65,7 @@ GT_LEXC_L2_SRCS=\
 GENERATED_LEXC_SRCS=generated_files/smi-$(GTLANG)-propernouns.lexc \
                     generated_files/smi-$(GTLANG)-abbreviations.lexc \
                     generated_files/punctuation.lexc \
+		    generated_files/smi-digits.lexc \
                     generated_files/smi-acronyms.lexc \
                     generated_files/arabic_roman_digits.lexc \
                     generated_files/symbols.lexc
