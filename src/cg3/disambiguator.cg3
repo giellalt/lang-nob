@@ -103,8 +103,8 @@ LIST %fra% = "fra" ;
 LIST %fra/for/ut% = "ut" "fra" "for" ;
 LIST %fram/inn/opp% = ("fram" Pr) ("frem" Pr) ("inn" Pr) ("opp" Pr) ;
 LIST %fram/opp/paa% = ("på") ("fram" Pr) ("frem" Pr) ("opp" Pr) ;
-LIST %fullt% = ("full" A Sg Neu Indef) ;
-LIST %fullt/mange% = "mange" ("full" A Sg Neu Indef) ;
+LIST %fullt% = ("full" A Neu Sg Indef) ;
+LIST %fullt/mange% = "mange" ("full" A Neu Sg Indef) ;
 LIST %gaa% = "gå" ;
 LIST %gang% = "gang" ;
 LIST %ganger% = ("gange" Prs) ;
@@ -192,7 +192,7 @@ LIST %over% = "over" ;
 LIST %paa% = "på" ;
 LIST %re%-N = ("re" N) ;
 LIST %redd% = ("redd" A) ;
-LIST %rundt% = ("rund" A Pos Sg Neu Indef) ;
+LIST %rundt% = ("rund" A Pos Neu Sg Indef) ;
 LIST %saa% = "så" ;
 LIST %saa%-Prt = ("se" V Prt) ;
 LIST %saa/for% = "så" "for" ;
@@ -211,12 +211,12 @@ LIST %sett% = ("se" PrfPrc) ;
 LIST %si% = ("sin" det Poss Sg Fem) ;
 LIST %si%-Inf = ("si" Inf) ;
 LIST %siden% = "siden" ;
-LIST %sin% = ("sin" det Poss Sg Msc) ;
+LIST %sin% = ("sin" det Poss Msc Sg) ;
 LIST %sine% = ("sin" det Poss Pl) ;
 LIST %sist% = ("sist" Adv) ;
 LIST %siste% = ("sist" Pl) ;
 LIST %siste%/ordenstall = ("sist" Def) ("sist" Pl) <ordenstall> ;
-LIST %sitt% = ("sin" det Poss Sg Neu) ;
+LIST %sitt% = ("sin" det Poss Neu Sg) ;
 LIST %sjelden% = "sjelden" ;
 LIST %skifte/bytte% = ("skifte" V) ("bytte" V) ;
 LIST %slaa% = ("slå" V) ;
@@ -308,11 +308,11 @@ LIST Def-Sg-Fem-A/komp/sup = (A Sg Def) (A Comp) (A Superl Def) (A <PrsPtc>) ;
 LIST Def-Sg-Fem-N = (N Sg Fem Def) ;
 LIST Def-Sg-Msc-A = (A Sg Def) (A Superl Def) (A <PrsPtc>) ;
 LIST Def-Sg-Msc-A/komp/sup = (A Sg Def) (A Comp) (A Superl Def) (A <PrsPtc>) ;
-LIST Def-Sg-Msc-N = (N Sg Msc Def) ;
-LIST Def-Sg-Msc/Fem-N = (N Sg Msc Def) (N Sg Fem Def) ;
+LIST Def-Sg-Msc-N = (N Msc Sg Def) ;
+LIST Def-Sg-Msc/Fem-N = (N Msc Sg Def) (N Sg Fem Def) ;
 LIST Def-Sg-Neu-A = (A Sg Def) (A Superl Def) (A <PrsPtc>) ;
 LIST Def-Sg-Neu-A/komp/sup = (A Sg Def) (A Comp) (A Superl Def) (A <PrsPtc>) ;
-LIST Def-Sg-Neu-N = (N Sg Neu Def) ;
+LIST Def-Sg-Neu-N = (N Neu Sg Def) ;
 LIST Def-Sg-N = (N Sg Def) ;
 LIST Def-Sg-N/be-Sg-A = (N Sg Def) (A Sg Def) (A <PrsPtc>) ;
 LIST Def-Fem-det = (Det Poss Fem) ("hin" det Fem) ("denne" det Fem) ("den" det Fem) ;
@@ -332,18 +332,18 @@ LIST Det = Det ;
 LIST dem/Poss/gen = Dem Poss Clt ;
 LIST det = det ;
 LIST Det-Sg = (Det Sg) ;
-LIST Det-Sg-Neu-halvt = "halv" (Det Sg Neu) ;
+LIST Det-Sg-Neu-halvt = "halv" (Det Neu Sg) ;
 
 SETS
 LIST Det-Sg/Pron-Sg = (Det Sg) (Pron Sg) ;
 LIST Det-etterstilt = (Det Poss) ("selv" det forst) ("sjøl" det forst) ;
 LIST Det-gen = det (N Clt) ;
 LIST Det-Qnt = (Det Qnt) ;
-LIST Det-Msc-Sg = (Det Sg Msc) ;
+LIST Det-Msc-Sg = (Det Msc Sg) ;
 LIST Det-Msc-Pl = (Det Pl Msc) ;
 LIST Det-Msc/Fem = (Det Msc) (Det Fem) ;
-LIST Det-Neu-Sg = (Det Sg Neu) ;
-LIST Det-Neu-Sg/Poss/gen = (Det Sg Neu) Poss Clt ;
+LIST Det-Neu-Sg = (Det Neu Sg) ;
+LIST Det-Neu-Sg/Poss/gen = (Det Neu Sg) Poss Clt ;
 LIST Det-Pr-IM-Abe = "siden" det Pr IM (A Def) (A <PrsPtc>) ;
 LIST Det-N = det N ;
 LIST Det/A = det A ;
@@ -482,8 +482,8 @@ LIST m-hj-V-Prt = ("skulle" Prt) ("kunne" Prt) ("ville" Prt) ("måtte" Prt) ("bu
 LIST Msc = Msc MF (A Def) ;
 LIST Msc-be = (Msc Def) ;
 LIST Msc-det = (Det Msc) ;
-LIST Msc-Sg = (Sg Msc) (MF Sg) (A Def) (Msc uboey) (N Prop) ;
-LIST Msc-Sg-ub = (Sg Msc Indef) (Msc uboey) (N Prop) (Msc Def Clt) ;
+LIST Msc-Sg = (Msc Sg) (MF Sg) (A Def) (Msc uboey) (N Prop) ;
+LIST Msc-Sg-ub = (Msc Sg Indef) (Msc uboey) (N Prop) (Msc Def Clt) ;
 LIST Msc/Fem = Msc Fem MF (A Def) (A <PrsPtc>) ;
 LIST mest-sanns-A-istf-N = "ville" "venstre" "stille" "snille" "myke" "mjuke" "klare" "høyre" "høgre" "flott" ;
 LIST mest-sanns-N-istf-A = "året" "skyld" "lo" "hull" "faren" ("skygg" Def) ("folke" PrfPrc) ("live" PrfPrc) ("kute" A PrfPrc) ;
@@ -491,14 +491,14 @@ LIST mest-sanns-V-istf-N = "temmer" "tapper" "suger" "strever" "strekker" "still
 LIST Neu = Neu ;
 LIST Neu-be = (Neu Def) ;
 LIST Neu-det = (Det Neu) ;
-LIST Neu-Sg = (Sg Neu) (A bu) (Neu uboey) (N Prop) ;
-LIST Neu-Sg-A = (A Sg Neu) (A Def) (A <PrsPtc>) ;
+LIST Neu-Sg = (Neu Sg) (A bu) (Neu uboey) (N Prop) ;
+LIST Neu-Sg-A = (A Neu Sg) (A Def) (A <PrsPtc>) ;
 LIST Nom = (N) (A) (Pron) (Det) ;
 LIST Nom-Sg = (N Sg) ("all" Sg) ("De" Nom) ("han" Nom) ("jeg" Nom) ("hun" Nom) ("du" Nom) ("den" Pron) ("denne" Pron) ("det" Pron) ("dette" Pron) ("man" Pron) ;
 LIST Nom-Fem-Sg = (N Sg Fem) ("all" det Fem) ("jeg" Nom) ("hun" Nom) ("du" Nom) ("den" Pron) ("denne" Pron) ;
 LIST Nom-Pl = "vi" "disse" "dere" "de" (N Pl) ("all" det Pl) ;
-LIST Nom-Msc-Sg = (N Sg Msc) ("all" det Msc) ("De" Nom) ("han" Nom) ("jeg" Nom) ("hun" Nom) ("du" Nom) ("man" Pron) ("den" Pron) ("denne" Pron) ;
-LIST Nom-Neu-Sg = (N Sg Neu) ("all" det Neu) ("det" Pron) ("dette" Pron) ;
+LIST Nom-Msc-Sg = (N Msc Sg) ("all" det Msc) ("De" Nom) ("han" Nom) ("jeg" Nom) ("hun" Nom) ("du" Nom) ("man" Pron) ("den" Pron) ("denne" Pron) ;
+LIST Nom-Neu-Sg = (N Neu Sg) ("all" det Neu) ("det" Pron) ("dette" Pron) ;
 LIST Nom-uten-Pron = N A det ;
 LIST Nom/akk-Pron = "jeg" "han" "du" "dere" ;
 LIST Nom/at = ("at" CS) (N) (A) (Pron) (Det) ;
@@ -540,7 +540,7 @@ LIST Pos-be-Sg = (A Pos Sg Def) ;
 LIST Pos-be-Pl = (A Pos Pl) ;
 LIST Pos-Indef-Sg = (A Pos Sg Indef) ;
 LIST Pos-Indef-Sg-Msc/Fem = (A Pos MF Sg Indef) ;
-LIST Pos-Indef-Sg-Neu = (A Pos Sg Neu Indef) ;
+LIST Pos-Indef-Sg-Neu = (A Pos Neu Sg Indef) ;
 LIST Pos-Indef-Pl = (A Pos Pl) ;
 LIST Poss = Poss ;
 LIST Poss-det = (Det Poss) ;
@@ -555,7 +555,7 @@ LIST Pr-intrans/Adv = "vekke" "utenfra" "underveis" "inne" "iblant" "iblandt" "h
 SETS
 LIST Pr-tall = "siden" Pr (Det Qnt) ;
 LIST Pr/@Adv = @Adv Pr ;
-LIST Pr/Adv = "siden" Pr Adv (A <adv>) (A Sg Neu Indef) ;
+LIST Pr/Adv = "siden" Pr Adv (A <adv>) (A Neu Sg Indef) ;
 LIST Pr/Advu-A = "siden" Pr Adv <adv> ;
 LIST Pr/komma = Pr ("$," <komma>) ;
 LIST Prs = Prs ;
@@ -627,10 +627,10 @@ LIST N-gen = (N Clt) ;
 LIST N-Msc = (N Msc) ;
 LIST N-Msc-Pl = (N Pl Msc) ;
 LIST N-Msc/Fem = (N Msc) (N Fem) ;
-LIST N-Msc/Fem-Sg = (N Sg Msc) (N Sg Fem) ;
-LIST N-Msc/Fem-Sg-ub = (N Sg Msc Indef) (N Sg Fem Indef) ;
+LIST N-Msc/Fem-Sg = (N Msc Sg) (N Sg Fem) ;
+LIST N-Msc/Fem-Sg-ub = (N Msc Sg Indef) (N Sg Fem Indef) ;
 LIST N-Neu = (N Neu) ;
-LIST N-Neu-Sg = (N Sg Neu) ;
+LIST N-Neu-Sg = (N Neu Sg) ;
 LIST N-prop = (N Prop) ;
 LIST N-ub = (N Indef) ;
 LIST N-uboey = (N uboey) ;
@@ -666,16 +666,16 @@ LIST Indef-Sg-Fem-A = (A Sg Fem Indef) (A MF Sg Indef) (A <PrsPtc>) ;
 LIST Indef-Sg-Fem-A/adverb = (A Sg Fem Indef) (A MF Sg Indef) (A Indef Neu) (A <PrsPtc>) Adv <adv> ;
 LIST Indef-Sg-Fem-A/komp = (A Sg Fem Indef) (A MF Sg Indef) (A <PrsPtc>) (A Comp) ;
 LIST Indef-Sg-Fem-N = (N Sg Fem Indef) ;
-LIST Indef-Sg-Msc-A = (A Sg Msc Indef) (A MF Sg Indef) (A <PrsPtc>) ;
-LIST Indef-Sg-Msc-A/adverb = (A Sg Msc Indef) (A MF Sg Indef) (A Indef Neu) Adv <adv> (A <PrsPtc>) ;
-LIST Indef-Sg-Msc-A/komp = (A Sg Msc Indef) (A MF Sg Indef) (A <PrsPtc>) (A Comp) ;
-LIST Indef-Sg-Msc-N = (N Sg Msc Indef) ;
-LIST Indef-Sg-Msc/Fem-A = (A Sg Msc Indef) (A Sg Fem Indef) (A MF Sg Indef) (A <PrsPtc>) ;
-LIST Indef-Sg-Msc/Fem-det = ("én" det Sg Msc) ("en" det Sg Msc) ("noen" det Sg Msc) ("ingen" det Sg Msc) ("en" det Sg Fem) ("noen" det Sg Fem) ("ingen" det Sg Fem) ;
-LIST Indef-Sg-Msc/Fem-N = (N Sg Msc Indef) (N Sg Fem Indef) (N Sg Msc Indef Clt) (N Sg Fem Indef Clt) ;
-LIST Indef-Sg-Neu-A = (A Sg Neu Indef) (A <PrsPtc>) ;
-LIST Indef-Sg-Neu-A/komp = (A Sg Neu Indef) (A Comp) (A <PrsPtc>) ;
-LIST Indef-Sg-Neu-N = (N Sg Neu Indef) ;
+LIST Indef-Sg-Msc-A = (A Msc Sg Indef) (A MF Sg Indef) (A <PrsPtc>) ;
+LIST Indef-Sg-Msc-A/adverb = (A Msc Sg Indef) (A MF Sg Indef) (A Indef Neu) Adv <adv> (A <PrsPtc>) ;
+LIST Indef-Sg-Msc-A/komp = (A Msc Sg Indef) (A MF Sg Indef) (A <PrsPtc>) (A Comp) ;
+LIST Indef-Sg-Msc-N = (N Msc Sg Indef) ;
+LIST Indef-Sg-Msc/Fem-A = (A Msc Sg Indef) (A Sg Fem Indef) (A MF Sg Indef) (A <PrsPtc>) ;
+LIST Indef-Sg-Msc/Fem-det = ("én" det Msc Sg) ("en" det Msc Sg) ("noen" det Msc Sg) ("ingen" det Msc Sg) ("en" det Sg Fem) ("noen" det Sg Fem) ("ingen" det Sg Fem) ;
+LIST Indef-Sg-Msc/Fem-N = (N Msc Sg Indef) (N Sg Fem Indef) (N Msc Sg Indef Clt) (N Sg Fem Indef Clt) ;
+LIST Indef-Sg-Neu-A = (A Neu Sg Indef) (A <PrsPtc>) ;
+LIST Indef-Sg-Neu-A/komp = (A Neu Sg Indef) (A Comp) (A <PrsPtc>) ;
+LIST Indef-Sg-Neu-N = (N Neu Sg Indef) ;
 LIST Indef-Sg-N = (N Sg Indef) ;
 LIST Indef-Fem-det = ("en" det Fem) ("noen" det Fem) ("ingen" det Fem) ;
 LIST Indef-Pl-Neu-N = (N Pl Neu Indef) ;
@@ -739,7 +739,9 @@ LIST CURRENCY = "kr" "dollar" "euro" "kroner" "€" "$" ;
 LIST WORD = N A Adv V CS CC Interj Pcle Pr IM Det Pron Interj ;
 LIST PRE-NP-HEAD = Clt A Det ;
 SET NOT-PRE-NP-HEAD = WORD - PRE-NP-HEAD ;
-	
+
+SET NOT-ADV = WORD - Adv ;
+
 CONSTRAINTS
 
 
@@ -796,7 +798,7 @@ REMOVE:NoX X + V IF (0 V) ; # Vi skriver, fjern X.
 REMOVE:gang ("gange") IF (0 ("gang"))(-1 Qnt) ; # fire ganger
 REMOVE:per ("per") IF (0 ("Per"));
 
-SELECT:ext A + Pos + Neu IF (*-1 ("være") LINK -1 ("det")) ; # Det er vanskelig.
+SELECT:ext A + Pos + Neu IF (*-1 ("være") LINK -1 ("det"))(NOT 1 A + Pos + Neu) ; # Det er vanskelig.
 
 REMOVE ("én") IF (0 ("en")); # en gang
 
@@ -897,6 +899,14 @@ REMOVE Pl IF (-1 Pr)(0 ("tillegg"))(1 ("til"));
 SECTION
 
 SELECT Prop IF (NOT -1 CLB); # XXX
+
+
+REMOVE:apred (N) IF
+	(0 (A Pos Msc Sg))
+	(-1 ("være"))
+	(-2 N OR Pron)
+;
+
 
 # 3532
 "<bak>" REMOVE (N) IF
@@ -1364,7 +1374,7 @@ SELECT Prop IF (NOT -1 CLB); # XXX
 
 
 # 3463
-"<fast>" SELECT (A Sg Neu Indef) IF
+"<fast>" SELECT (A Neu Sg Indef) IF
 	(NOT 0 PrfPrc OR farlige-A)
 	(NOT 1 N/A)
 	(NOT -1 det)
@@ -1375,7 +1385,7 @@ SELECT Prop IF (NOT -1 CLB); # XXX
 
 
 # 3464
-"<fast>" SELECT (A Sg Neu Indef) IF
+"<fast>" SELECT (A Neu Sg Indef) IF
 	(NOT 0 PrfPrc OR farlige-A)
 	(NOT 1 N/A)
 	(NOT -1 det)
@@ -1870,14 +1880,14 @@ CONSTRAINTS
 
 
 # 3396
-"<føre>" SELECT (N Sg Neu) IF
+"<føre>" SELECT (N Neu Sg) IF
 	(-1 A-Neu-ub)
 	(*-1 setn-gr LINK *1 m-hj-V LINK *1C Inf)
 ;
 
 
 # 3397
-"<føre>" SELECT (N Sg Neu) IF
+"<føre>" SELECT (N Neu Sg) IF
 	(-1 A-Neu-ub)
 	(*-1 setn-gr BARRIER m-hj-V)
 ;
@@ -2062,7 +2072,7 @@ CONSTRAINTS
 
 
 # 3369
-"<handler>" REMOVE (N Sg Msc) IF
+"<handler>" REMOVE (N Msc Sg) IF
 	(*-1 ikke-AdvA LINK NOT 0 Det-Msc-Sg)
 ;
 
@@ -2293,7 +2303,7 @@ CONSTRAINTS
 
 
 # 3333
-"<holder>" REMOVE (N Sg Msc) IF
+"<holder>" REMOVE (N Msc Sg) IF
 	(*-1 ikke-AdvA LINK NOT 0 Det-Msc-Sg)
 ;
 
@@ -2335,7 +2345,7 @@ CONSTRAINTS
 
 
 # 3326
-"<hundre>" SELECT (N Sg Neu) IF
+"<hundre>" SELECT (N Neu Sg) IF
 	(*-1 Det-Sg-Neu-halvt BARRIER ikke-AdvA)
 ;
 
@@ -2715,14 +2725,14 @@ CONSTRAINTS
 
 
 # 3271
-"<lite>" SELECT (A Pos Sg Neu Indef) IF
+"<lite>" SELECT (A Pos Neu Sg Indef) IF
 	(1 Pr)
 	(NOT 1 %paa%)
 ;
 
 
 # 3272
-"<lite>" SELECT (A Pos Sg Neu Indef) IF
+"<lite>" SELECT (A Pos Neu Sg Indef) IF
 	(1C A)
 ;
 
@@ -2958,7 +2968,7 @@ CONSTRAINTS
 
 
 # 3235
-"<noe>" SELECT (Det Sg Neu) IF
+"<noe>" SELECT (Det Neu Sg) IF
 	(1 A)
 	(-1C det)
 ;
@@ -2972,7 +2982,7 @@ CONSTRAINTS
 CONSTRAINTS
 
 # 3236
-"<noe>" SELECT (Det Sg Neu) IF
+"<noe>" SELECT (Det Neu Sg) IF
 	(1 A-komp)
 	(2 A)
 	(3 N)
@@ -3481,7 +3491,7 @@ SELECT (CS) IF (0 ("om"))(*1 (",") LINK 1 Prs);
 
 
 # 3168
-"<rett>" SELECT (A Sg Neu Indef) IF
+"<rett>" SELECT (A Neu Sg Indef) IF
 	(1 %til%)
 	(-1C V)
 	(NOT -1 %ha%)
@@ -3489,7 +3499,7 @@ SELECT (CS) IF (0 ("om"))(*1 (",") LINK 1 Prs);
 
 
 # 3169
-"<rett>" SELECT (A Sg Neu Indef) IF
+"<rett>" SELECT (A Neu Sg Indef) IF
 	(1C Pr)
 	(-1C V)
 	(NOT 1 %til%)
@@ -3634,7 +3644,7 @@ SELECT (CS) IF (0 ("om"))(*1 (",") LINK 1 Prs);
 
 
 # 3146
-"<sett>" SELECT (N Sg Neu Indef) IF
+"<sett>" SELECT (N Neu Sg Indef) IF
 	(NOT 1 Nom)
 	(*-1 Indef-Neu-det BARRIER ikke-AdvA)
 ;
@@ -3742,33 +3752,33 @@ CONSTRAINTS
 
 
 # 3128
-"<siden>" SELECT (N Sg Msc Def) IF
+"<siden>" SELECT (N Msc Sg Def) IF
 	(1 %av%)
 	(-1 Pr)
 ;
 
 
 # 3129
-"<siden>" SELECT (N Sg Msc Def) IF
+"<siden>" SELECT (N Msc Sg Def) IF
 	(-1 nr2-Det-Msc-be)
 ;
 
 
 # 3130
-"<siden>" SELECT (N Sg Msc Def) IF
+"<siden>" SELECT (N Msc Sg Def) IF
 	(-1 Def-Msc-det)
 ;
 
 
 # 3131
-"<siden>" SELECT (N Sg Msc Def) IF
+"<siden>" SELECT (N Msc Sg Def) IF
 	(*-1 nr2-Det-Msc-be LINK *1 Def-Sg-Msc-A)
 	(*-1 nr2-Det-Msc-be BARRIER ikke-AdvA)
 ;
 
 
 # 3132
-"<siden>" SELECT (N Sg Msc Def) IF
+"<siden>" SELECT (N Msc Sg Def) IF
 	(*-1 Def-Msc-det LINK *1 Def-Sg-Msc-A)
 	(*-1 Def-Msc-det BARRIER ikke-AdvA)
 ;
@@ -3949,7 +3959,7 @@ CONSTRAINTS
 
 
 # 3102
-"<slags>" REMOVE (N Sg Neu) IF
+"<slags>" REMOVE (N Neu Sg) IF
 	(-1 Pl-det)
 ;
 
@@ -3987,7 +3997,7 @@ CONSTRAINTS
 
 
 # 3096
-"<sliter>" REMOVE (N Sg Msc) IF
+"<sliter>" REMOVE (N Msc Sg) IF
 	(*-1 ikke-AdvA LINK NOT 0 Det-Msc-Sg)
 ;
 
@@ -4586,7 +4596,7 @@ CONSTRAINTS
 
 
 # 3013
-"<tusen>" SELECT (N Sg Neu) IF
+"<tusen>" SELECT (N Neu Sg) IF
 	(*-1 Det-Sg-Neu-halvt BARRIER ikke-AdvA)
 ;
 
@@ -4871,7 +4881,7 @@ CONSTRAINTS
 
 
 # 2970
-"<visst>" SELECT (A Pos Sg Neu Indef) IF
+"<visst>" SELECT (A Pos Neu Sg Indef) IF
 	(-1 kop)
 	(1C A)
 	(-1C Prs/Prt)
@@ -4879,7 +4889,7 @@ CONSTRAINTS
 
 
 # 2971
-"<visst>" SELECT (A Pos Sg Neu Indef) IF
+"<visst>" SELECT (A Pos Neu Sg Indef) IF
 	(-1 hj-V)
 	(*1 PrfPrc/Inf BARRIER setn-gr)
 ;
@@ -5898,7 +5908,7 @@ SELECT (A Pl) IF
 
 
 # 2867
-SELECT (A Sg Neu) IF
+SELECT (A Neu Sg) IF
 	(0 N)
 	(NOT 0 N-gen OR ikke-A-N)
 	(1C N-Neu-Sg)
@@ -5907,7 +5917,7 @@ SELECT (A Sg Neu) IF
 
 
 # 2802
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 Adv OR PrfPrc/PrfPrc)
 	(1C Adv)
 	(2C fv)
@@ -5915,7 +5925,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2803
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 ikke-A OR %fast%)
 	(-1C Pron-akk)
 	(-2C V)
@@ -5924,7 +5934,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2804
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 ikke-A)
 	(-1 Pron-akk)
 	(-2 Pr)
@@ -5933,7 +5943,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2805
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 Clt OR ikke-A)
 	(1 komma/CC)
 	(-1C V)
@@ -5945,7 +5955,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2806
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 Clt OR ikke-A)
 	(1 komma/CC)
 	(-1C V)
@@ -5956,7 +5966,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2807
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 Clt OR ikke-A)
 	(-1C V)
 	(NOT 1 Nom OR komma/CC)
@@ -5966,7 +5976,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2808
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 Adv OR PrfPrc)
 	(-1 kop)
 	(1C A)
@@ -5975,7 +5985,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2809
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 Clt OR det)
 	(NOT 0 Adv OR PrfPrc)
 	(NOT 0 Inf OR Prs/Prt)
@@ -5987,7 +5997,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2810
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 Clt OR det)
 	(NOT 0 Adv OR PrfPrc)
 	(NOT 0 Inf OR Prs/Prt)
@@ -5998,7 +6008,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2811
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 Adv OR PrfPrc)
 	(NOT 0 PrfPrc OR Prs/Prt)
 	(1C Adv)
@@ -6007,7 +6017,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2812
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 PrfPrc/Inf OR PrfPrc)
 	(NOT 0 Adv OR farlige-A)
 	(NOT 0 Pr OR N)
@@ -6018,7 +6028,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2813
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 PrfPrc/Inf OR PrfPrc)
 	(NOT 0 Adv OR farlige-A)
 	(NOT 0 Pr OR N)
@@ -6029,7 +6039,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2814
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 farlige-A OR PrfPrc)
 	(-1 N/Pron)
 	(1C PrfPrc/Inf)
@@ -6038,7 +6048,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2815
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 Adv OR PrfPrc)
 	(NOT 0 farlige-A OR m-hj-V)
 	(1C PrfPrc/Inf)
@@ -6047,7 +6057,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2816
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 Adv OR farlige-A)
 	(NOT 0 orden OR N)
 	(1C fv)
@@ -6057,7 +6067,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2817
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 Adv OR farlige-A)
 	(NOT 0 orden OR PrfPrc)
 	(-1 Pron-pers)
@@ -6066,7 +6076,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2818
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 PrfPrc OR ikke-A)
 	(1C fv)
 	(-1C setn-gr)
@@ -6074,7 +6084,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2819
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 ikke-A OR Adv)
 	(-1C adverb)
 	(NOT *1 overskrift BARRIER setn-gr)
@@ -6086,7 +6096,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2820
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 Adv)
 	(1 CC)
 	(-1 Adv OR %saa/ganske%)
@@ -6098,7 +6108,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2821
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 Adv)
 	(-1 Adv OR %saa/ganske%)
 	(NOT *1 overskrift BARRIER setn-gr)
@@ -6108,7 +6118,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2822
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 farlige-A OR orden)
 	(1C A)
 	(NOT -1 A OR komma/CC)
@@ -6117,8 +6127,9 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2823
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 farlige-A OR orden)
+	(NOT 0 Adv)
 	(1C A)
 	(NOT *-1 det BARRIER setn-gr)
 	(NOT -1 A OR komma/CC)
@@ -6126,7 +6137,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2824
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 Adv OR N-gen)
 	(NOT 0 orden OR farlige-A)
 	(NOT 0 PrfPrc OR PrfPrc)
@@ -6138,7 +6149,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2825
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 Adv OR PrfPrc)
 	(1C A)
 	(-1C Fem-det)
@@ -6146,7 +6157,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2826
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 orden OR PrfPrc)
 	(1C A)
 	(-1C Msc-det)
@@ -6154,7 +6165,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2827
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 PrfPrc OR farlige-A)
 	(NOT 0 orden OR Adv)
 	(1 A-Pl)
@@ -6163,7 +6174,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2828
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 Prs/Prt)
 	(1 komma)
 	(-1 CC)
@@ -6178,7 +6189,7 @@ SELECT (A Sg Neu Indef) IF
 CONSTRAINTS
 
 # 2829
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 N OR Prs/Prt)
 	(1 komma)
 	(NOT 2 adverb)
@@ -6187,7 +6198,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2830
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 Prs/Prt)
 	(-1 CC)
 	(NOT 1 Indef-Sg-Neu-N OR komma)
@@ -6198,7 +6209,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2831
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 N OR Prs/Prt)
 	(NOT 1 Indef-Sg-Neu-N OR komma)
 	(*-1 ikke-Adv LINK 0 CC LINK NOT 0 <adv> LINK -1C Indef-Sg-Neu-A LINK NOT 0 Msc/Fem)
@@ -6206,7 +6217,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2832
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 PrfPrc OR farlige-A)
 	(NOT 1 N/A)
 	(NOT -1 det)
@@ -6217,7 +6228,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2833
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 PrfPrc OR farlige-A)
 	(NOT 1 N/A)
 	(NOT -1 det)
@@ -6229,7 +6240,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2834
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 Adv OR PrfPrc)
 	(NOT 1 komma OR PrfPrc)
 	(*-1 kop LINK 0 iv LINK NOT *1 ikke-Adv)
@@ -6239,7 +6250,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2835
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 Adv OR PrfPrc)
 	(NOT 1 komma OR PrfPrc)
 	(*-1 kop LINK 0 fv LINK NOT *1 ikke-Adv)
@@ -6249,7 +6260,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2836
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 Adv OR PrfPrc)
 	(-1 kop OR iv)
 	(NOT 1 N/A/Adv OR PrfPrc)
@@ -6260,7 +6271,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2837
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 Adv OR PrfPrc)
 	(-1 Nom-Neu-Sg)
 	(NOT 1 N/A/Adv OR PrfPrc)
@@ -6269,7 +6280,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2838
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 Adv OR PrfPrc)
 	(-1 kop OR iv)
 	(NOT 1 N/A/Adv OR PrfPrc)
@@ -6280,7 +6291,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2839
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 Adv OR PrfPrc)
 	(-1 kop OR iv)
 	(NOT 1 N/A/Adv OR PrfPrc)
@@ -6291,7 +6302,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2840
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 Adv OR PrfPrc)
 	(-1 Nom-Neu-Sg)
 	(NOT 1 N/A/Adv OR PrfPrc)
@@ -6301,7 +6312,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2841
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 Adv OR PrfPrc)
 	(-1 Nom-Neu-Sg)
 	(NOT 1 N/A/Adv OR PrfPrc)
@@ -6311,7 +6322,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2842
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(1 Indef-Sg-Neu-N)
 	(-1 CC)
 	(NOT 1 ikke-N)
@@ -6321,7 +6332,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2843
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(1 setn-gr)
 	(-1 CC)
 	(NOT 1 CS)
@@ -6331,7 +6342,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2844
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 ikke-A)
 	(1 CC)
 	(NOT 1 CLB)
@@ -6346,7 +6357,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2845
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 farlige-A OR N-gen)
 	(NOT 0 Pl OR Prs/Prt)
 	(1 komma/CC)
@@ -6358,7 +6369,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2846
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 orden OR farlige-A)
 	(NOT 0 Pl OR Prs/Prt)
 	(1 Indef-Sg-Neu-N)
@@ -6368,7 +6379,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2847
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 farlige-A OR det)
 	(NOT 0 N OR fv)
 	(-1C Indef-Neu-det)
@@ -6377,7 +6388,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2848
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 farlige-A)
 	(*-1 nr2-Det-Neu-ub BARRIER ikke-AdvA)
 	(*-1 nr2-Det-Neu-ub LINK -1 CC LINK -1 Indef-Neu-det)
@@ -6388,7 +6399,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2849
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 farlige-A)
 	(*-1 nr2-Det-Neu-ub BARRIER ikke-AdvA)
 	(*-1 nr2-Det-Neu-ub LINK -1 Indef-Neu-det)
@@ -6399,7 +6410,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2850
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 farlige-A)
 	(*-1 Indef-Neu-det BARRIER ikke-AdvA)
 	(*1 Indef-Sg-Neu-N BARRIER ikke-AdvA)
@@ -6408,21 +6419,21 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2851
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(1 %noen%-Neu)
 	(*-1 ikke-Adv LINK 0 %noen%-Neu)
 ;
 
 
 # 2852
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(1 %et%)
 	(*-1 ikke-Adv LINK 0 %et%)
 ;
 
 
 # 2853
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 %ytterligere% OR PrfPrc)
 	(1 komma/CC)
 	(NOT 2 A/Adv)
@@ -6431,7 +6442,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2854
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 %ytterligere% OR PrfPrc)
 	(NOT 1 N OR komma/CC)
 	(*-1 ikke-Adv LINK 0 %det%-Pron LINK -1 %ha%)
@@ -6439,7 +6450,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2855
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 %ytterligere% OR %mye/lite%)
 	(1 komma/CC)
 	(NOT 2 A/Adv)
@@ -6448,7 +6459,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2856
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 %ytterligere% OR %mye/lite%)
 	(NOT 1 N OR komma/CC)
 	(*-1 ikke-Adv LINK 0 %gaa% LINK -1 %det%-Pron)
@@ -6456,7 +6467,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2857
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 %ytterligere% OR %mye/lite%)
 	(1 komma/CC)
 	(NOT 2 A/Adv)
@@ -6465,7 +6476,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2858
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 %ytterligere% OR %mye/lite%)
 	(NOT 1 N OR komma/CC)
 	(*-1 ikke-Adv LINK 0 %det%-Pron LINK -1 %gaa%)
@@ -6477,7 +6488,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2859
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 orden OR farlige-A)
 	(NOT 0 Pl OR Prs/Prt)
 	(1 Indef-Sg-Neu-N)
@@ -6488,7 +6499,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2860
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 orden OR farlige-A)
 	(NOT 0 Pl OR Prs/Prt)
 	(1 Indef-Sg-Neu-N)
@@ -6500,7 +6511,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2861
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 orden OR farlige-A)
 	(NOT 0 Pl OR Prs/Prt)
 	(1 Indef-Sg-Neu-N)
@@ -6513,7 +6524,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2862
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 orden OR farlige-A)
 	(NOT 0 Pl OR Prs/Prt)
 	(1 Indef-Sg-Neu-N)
@@ -6525,7 +6536,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2863
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 det OR Adv)
 	(NOT 0 PrfPrc OR farlige-A)
 	(NOT 1 komma OR PrfPrc)
@@ -6543,7 +6554,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2864
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 PrfPrc OR farlige-A)
 	(1 komma)
 	(NOT -1 Det/A/komma/CC)
@@ -6557,7 +6568,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2865
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(NOT 0 PrfPrc OR farlige-A)
 	(NOT 1 N/A/Adv OR PrfPrc)
 	(NOT -1 Det/A/komma/CC)
@@ -6571,7 +6582,7 @@ SELECT (A Sg Neu Indef) IF
 
 
 # 2866
-SELECT (A Sg Neu Indef) IF
+SELECT (A Neu Sg Indef) IF
 	(0 %rundt%)
 	(1 Det-Qnt)
 ;
@@ -6754,21 +6765,21 @@ SELECT (A Pos Pl) IF
 
 
 # 2781
-SELECT (A Pos Sg Neu Indef) IF
+SELECT (A Pos Neu Sg Indef) IF
 	(0 %mye/lite%)
 	(1 infmerke)
 ;
 
 
 # 2782
-SELECT (A Pos Sg Neu Indef) IF
+SELECT (A Pos Neu Sg Indef) IF
 	(0 %mye/lite%)
 	(1C PrfPrc)
 ;
 
 
 # 2783
-SELECT (A Pos Sg Neu Indef) IF
+SELECT (A Pos Neu Sg Indef) IF
 	(0 %mye/lite%)
 	(1 Pr)
 	(NOT 1 %paa% OR %med%)
@@ -6776,7 +6787,7 @@ SELECT (A Pos Sg Neu Indef) IF
 
 
 # 2784
-SELECT (A Pos Sg Neu Indef) IF
+SELECT (A Pos Neu Sg Indef) IF
 	(0 %mye/lite%)
 	(1C A)
 ;
@@ -9113,7 +9124,7 @@ SELECT (Det Poss Pl) IF
 
 
 # 2538
-SELECT (Det Poss Sg Msc) IF
+SELECT (Det Poss Msc Sg) IF
 	(-1 Indef-slektsterm)
 	(-1C Indef-Sg-Msc-N)
 	(NOT -1 Fem)
@@ -9121,41 +9132,41 @@ SELECT (Det Poss Sg Msc) IF
 
 
 # 2539
-SELECT (Det Poss Sg Msc) IF
+SELECT (Det Poss Msc Sg) IF
 	(-1 Msc-be OR Sg)
 	(-1C N)
 ;
 
 
 # 2540
-SELECT (Det Poss Sg Msc) IF
+SELECT (Det Poss Msc Sg) IF
 	(1 nr2-det)
 	(*2C Indef-Sg-Msc-N BARRIER ikke-AdvA-det)
 ;
 
 
 # 2541
-SELECT (Det Poss Sg Msc) IF
+SELECT (Det Poss Msc Sg) IF
 	(*1C Indef-Sg-Msc-N BARRIER ikke-AdvA)
 ;
 
 
 # 2535
-SELECT (Det Poss Sg Neu) IF
+SELECT (Det Poss Neu Sg) IF
 	(-1 Neu-be OR Sg)
 	(-1C N)
 ;
 
 
 # 2536
-SELECT (Det Poss Sg Neu) IF
+SELECT (Det Poss Neu Sg) IF
 	(1 nr2-det)
 	(*2C Indef-Sg-Neu-N BARRIER ikke-AdvA-det)
 ;
 
 
 # 2537
-SELECT (Det Poss Sg Neu) IF
+SELECT (Det Poss Neu Sg) IF
 	(*1C Indef-Sg-Neu-N BARRIER ikke-AdvA)
 ;
 
@@ -10340,7 +10351,7 @@ SELECT (N Pl) IF
 
 
 # 2403
-SELECT (N Sg Msc) IF
+SELECT (N Msc Sg) IF
 	(0 A)
 	(NOT 0 farlige-Msc-N OR fv)
 	(NOT 1 N-Msc)
@@ -10351,7 +10362,7 @@ SELECT (N Sg Msc) IF
 
 
 # 2404
-SELECT (N Sg Msc) IF
+SELECT (N Msc Sg) IF
 	(0 A)
 	(NOT 0 farlige-Msc-N)
 	(NOT 1 N-Msc)
@@ -10361,7 +10372,7 @@ SELECT (N Sg Msc) IF
 
 
 # 2405
-SELECT (N Sg Msc) IF
+SELECT (N Msc Sg) IF
 	(NOT 0 farlige-Msc-N OR fv)
 	(NOT -1 komma/CC)
 	(*-1 nr2-Det-u-Pl BARRIER ikke-AdvA-det)
@@ -10370,7 +10381,7 @@ SELECT (N Sg Msc) IF
 
 
 # 2406
-SELECT (N Sg Msc) IF
+SELECT (N Msc Sg) IF
 	(NOT 0 farlige-Msc-N OR A)
 	(NOT -1 komma/CC)
 	(*-1C Msc-det LINK NOT 0 nr2-det LINK NOT *1 ikke-AdvA)
@@ -10379,7 +10390,7 @@ SELECT (N Sg Msc) IF
 
 
 # 2407
-SELECT (N Sg Msc) IF
+SELECT (N Msc Sg) IF
 	(NOT 0 fv OR A)
 	(NOT -1 komma/CC)
 	(*-1C Msc-det LINK NOT 0 nr2-det LINK NOT *1 ikke-AdvA)
@@ -10387,7 +10398,7 @@ SELECT (N Sg Msc) IF
 
 
 # 2402
-SELECT (N Sg Neu Indef) IF
+SELECT (N Neu Sg Indef) IF
 	(0 Indef-Sg-Neu-N)
 	(NOT 0 farlige-Neu-N OR Prs/Prt)
 	(-1C Indef-Sg-Neu-A)
@@ -10397,7 +10408,7 @@ SELECT (N Sg Neu Indef) IF
 
 
 # 2397
-SELECT (N Sg Neu) IF
+SELECT (N Neu Sg) IF
 	(0 A)
 	(NOT 0 farlige-Neu-N)
 	(NOT 1 N-Neu)
@@ -10408,7 +10419,7 @@ SELECT (N Sg Neu) IF
 
 
 # 2398
-SELECT (N Sg Neu) IF
+SELECT (N Neu Sg) IF
 	(0 A)
 	(NOT 0 farlige-Neu-N)
 	(1 N-Neu OR fv)
@@ -10418,7 +10429,7 @@ SELECT (N Sg Neu) IF
 
 
 # 2399
-SELECT (N Sg Neu) IF
+SELECT (N Neu Sg) IF
 	(0 A)
 	(NOT 0 farlige-Neu-N)
 	(NOT 1 N-Neu)
@@ -10428,7 +10439,7 @@ SELECT (N Sg Neu) IF
 
 
 # 2400
-SELECT (N Sg Neu) IF
+SELECT (N Neu Sg) IF
 	(NOT 0 A OR farlige-Neu-N)
 	(NOT -1 komma/CC)
 	(*-1 nr2-Det-u-Pl BARRIER ikke-AdvA)
@@ -10437,7 +10448,7 @@ SELECT (N Sg Neu) IF
 
 
 # 2401
-SELECT (N Sg Neu) IF
+SELECT (N Neu Sg) IF
 	(NOT 0 A OR farlige-Neu-N)
 	(NOT -1 komma/CC)
 	(*-1C Neu-det LINK NOT 0 nr2-det LINK NOT *1 ikke-AdvA)
@@ -10648,6 +10659,7 @@ SELECT (N) IF
 	(0 samset OR A)
 	(NOT 0 Prs/Prt OR PrfPrc)
 	(NOT 1 N)
+	(NOT *-1 ("være") BARRIER NOT-ADV)
 ;
 
 
@@ -12365,7 +12377,7 @@ REMOVE (PrfPrc Pl) IF
 
 
 # 2196
-REMOVE (PrfPrc Sg Neu Indef) IF
+REMOVE (PrfPrc Neu Sg Indef) IF
 	(0 Pos-Indef-Sg-Neu)
 ;
 
@@ -12656,7 +12668,7 @@ REMOVE (A Pl) IF
 
 
 # 2162
-REMOVE (A Sg Neu) IF
+REMOVE (A Neu Sg) IF
 	(-1 Pl-det)
 	(NOT 1 komma/CC OR setn-gr)
 	(NOT 1 A-Sg OR A-Pl)
@@ -12666,7 +12678,7 @@ REMOVE (A Sg Neu) IF
 
 
 # 2161
-REMOVE (A Sg Neu Indef) IF
+REMOVE (A Neu Sg Indef) IF
 	(0 Adv)
 	(NOT 0 samset)
 ;
@@ -12695,7 +12707,7 @@ REMOVE (A Neu) IF
 
 
 # 2158
-REMOVE (A PrfPrc Sg Neu Indef) IF
+REMOVE (A PrfPrc Neu Sg Indef) IF
 	(1 N/A)
 	(NOT 1 Neu OR A-komp)
 	(NOT 1 A-sup OR A-be)
@@ -15040,7 +15052,7 @@ REMOVE (N Pl) IF
 
 
 # 1890
-REMOVE (N Sg Msc Indef) IF
+REMOVE (N Msc Sg Indef) IF
 	(0 Prs)
 	(1 Prs/Prt OR N)
 	(-1 Def-Msc-det)
@@ -15048,7 +15060,7 @@ REMOVE (N Sg Msc Indef) IF
 
 
 # 1888
-REMOVE (N Sg Msc) IF
+REMOVE (N Msc Sg) IF
 	(0 A)
 	(*-1C det LINK NOT 0 Msc LINK NOT 0 Pl LINK NOT 0 %selv% LINK NOT 0 %samme/neste/ene/eneste/selve/forrige%)
 	(*-1C det BARRIER ikke-AdvA)
@@ -15056,7 +15068,7 @@ REMOVE (N Sg Msc) IF
 
 
 # 1889
-REMOVE (N Sg Msc) IF
+REMOVE (N Msc Sg) IF
 	(-1 %noen/noe%)
 	(NOT -1 Msc-Sg)
 	(-2C Pr)
@@ -15064,7 +15076,7 @@ REMOVE (N Sg Msc) IF
 
 
 # 1885
-REMOVE (N Sg Neu) IF
+REMOVE (N Neu Sg) IF
 	(NOT -1 Adv OR Clt)
 	(*-1 det LINK NOT 1 komma)
 	(*-1 det LINK NOT 0 ikke-det LINK NOT 0 %samme/neste/ene/eneste/selve/forrige% LINK NOT 0 Neu-det LINK NOT 0 Poss-det LINK NOT 0 %all% LINK NOT *1 ikke-AdvA)
@@ -15072,7 +15084,7 @@ REMOVE (N Sg Neu) IF
 
 
 # 1886
-REMOVE (N Sg Neu) IF
+REMOVE (N Neu Sg) IF
 	(0 A)
 	(*-1C det LINK NOT 0 Neu LINK NOT 0 Pl LINK NOT 0 %selv% LINK NOT 0 %samme/neste/ene/eneste/selve/forrige%)
 	(*-1C det BARRIER ikke-AdvA)
@@ -15080,7 +15092,7 @@ REMOVE (N Sg Neu) IF
 
 
 # 1887
-REMOVE (N Sg Neu) IF
+REMOVE (N Neu Sg) IF
 	(-1 %noen/noe%)
 	(NOT -1 Neu-Sg)
 	(-2C Pr)
