@@ -341,6 +341,7 @@ Finite verbs
 
 
 
+
 * **<advlPoPr** (@<ADVL) for Po or Pr; if mainverb to the left.
 * **advlPoPr>** (@<ADVL) for Po or Pr; if mainverb to the right.
 
@@ -362,6 +363,7 @@ Finite verbs
 
 
 
+
 ## HNOUN MAPPING
 
 
@@ -370,6 +372,10 @@ Finite verbs
 
 
 
+
+
+
+## Complex sentences
 
 
 
@@ -465,6 +471,7 @@ the labels are kept from OBT-cg, but GiellaLT content is added when needed.
 
 
 
+
 ## Rule section
 
 
@@ -534,6 +541,9 @@ the labels are kept from OBT-cg, but GiellaLT content is added when needed.
 
 
 The bulk of the file contains rules from the original OBT file.
+
+
+
 
 
 

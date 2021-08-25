@@ -72,6 +72,7 @@ the labels are kept from OBT-cg, but GiellaLT content is added when needed.
 
 
 
+
 ## Rule section
 
 
@@ -141,6 +142,9 @@ the labels are kept from OBT-cg, but GiellaLT content is added when needed.
 
 
 The bulk of the file contains rules from the original OBT file.
+
+
+
 
 
 
