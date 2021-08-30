@@ -5,14 +5,53 @@
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-nob)](https://github.com/giellalt/lang-nob/issues)
 [![Build status](https://github.com/giellalt/lang-nob/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-nob/actions)
 
-This page documents the work on the [Norwegian Bokmål language model](http://github.com/giellalt/lang-nob). 
+This page documents the work on the [Norwegian Bokmål language model](http://github.com/giellalt/lang-nob). It was originally made based on a wordform list 
+(in times before lemma lists were available), and thus
+contains many misclassified lemmas. Here, we use it since
+it is flexible, partly for e-dictionaries, and partly for
+generating frequency lists.
 
+The analyser cannot be used for normative purposes.
+
+Giellatekno's main focus is on the Saami langauges and other circumpolar
+minority languages. As part of our work we need to build bilingual
+resources. This is where Norwegian comes in. For analysing Norwegian we
+either use the Oslo-Bergen tagger, or we use our own resources.
+
+Generation of:
+- [paradigms](http://giellatekno.uit.no/cgi/p-nob.nob.html)
+- [text](http://giellatekno.uit.no/cgi/d-nob.nob.html)
+
+# Documentation on the Norwegian analyser Oslo-Bergen-taggeren
+
+The Oslo-Bergen tagger is available for Bokmål and Nynorsk. It has [an
+official webpage](http://tekstlab.uio.no/obt-ny/), where it is available
+under GPL, this documentation is for the Giellatekno in-house use of it.
+
+- [Compiling and using the Norwegian analysers](docu-nob-use.html)
+- [The tagset of the Norwegian analysers](docu-nob-tags.html)
+- [Background information on the Norwegian
+  analysers](docu-nob-background.html)
+
+# Documentation on our own resources for Norwegian
+
+The analysers are modeled like all the other Giellatekno languages.
+
+Our Norwegian analyser was an auxiliary device made for analysing
+Norwegian at a time when the Oslo-Bergen tagger was not freely
+available. It is based upon a huge wordform list, most of which has been
+manually converted to lemma/stem-based lexc format. One should also
+consider using the Oslo-Bergen tagger instead or our analyser.
+
+Our disambiguator (The syntax file above) is based upon the Oslo-Bergen
+tagger, with some improvements
 
 # In-source documentation
 
 The source files: [stems](https://github.com/giellalt/lang-nob/tree/main/src/fst/stems/)
  ◊ [affixes](https://github.com/giellalt/lang-nob/tree/main/src/fst/affixes)
  ◊ [twolc](https://github.com/giellalt/lang-nob/tree/main/src/fst/phonology.twolc)
+ ◊ [syntax](https://github.com/giellalt/lang-nob/tree/main/src/syntax/)
  ◊ [yaml](https://github.com/giellalt/lang-nob/tree/main/test/src/gt-norm-yamls/)
 
 
