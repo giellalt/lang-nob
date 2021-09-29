@@ -44,6 +44,7 @@ LIST Sem/ID = Sem/ID ;
 LIST Sem/Time = Sem/Time ;	
 LIST Sem/Time-clock = Sem/Time-clock ;
 LIST Err/Orth = Err/Orth ;
+LIST Use/Circ = Use/Circ ;
 LIST IM = IM ;
 
 LIST %aar% = "år" ;
