@@ -190,9 +190,6 @@ NDS analyser tags
 ## Compounding
 
  * +Cmp/Hyph - 
- * +CmpNP/None - 
- * +CmpNP/First - 
-
 
 
 ## Language codes
@@ -306,7 +303,7 @@ given the proper use of these flags.
  * Symbols ;
  * Abbreviation ;
  * Acronym-smi ;
- * +Err/Orth: Nynorsk ; Accepts nno forms, does not generate, changed from Use/NG to have speller work.
+ * Nynorsk ; Accepts nno forms, does not generate, changed from Use/NG to have speller work.
 
 
 ## Other lexica
