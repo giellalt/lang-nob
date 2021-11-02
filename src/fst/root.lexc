@@ -308,27 +308,27 @@ Multichar_Symbols !!≈ **@CODE@**
 !! ## Basic lexica, pointing to the other lexicon files
 ! =================================================
 
-LEXICON Root 
+LEXICON Root
 !! ### LEXICON @LEXNAME@
- FinalNoun ;  !!≈ * @CODE@ for -skap etc. that is affix rather than compound
- ShortNounRoot ;    !!≈ * @CODE@ 2- and 3-letter words
- NounRoot ;         !!≈ * @CODE@ The rest
- ProperNoun ;       !!≈ * @CODE@
- AdjectivePrefix ;  !!≈ * @CODE@ = kjempeinteressant leksikon, sjå nedanfor.
- VerbRoot ;         !!≈ * @CODE@
- Adverb ;           !!≈ * @CODE@
- Subjunction ;      !!≈ * @CODE@
- Conjunction ;      !!≈ * @CODE@
- Preposition ;      !!≈ * @CODE@
- Interjection ;     !!≈ * @CODE@
- Pronoun ;          !!≈ * @CODE@
- Numeral ;          !!≈ * @CODE@
- Punctuation ;      !!≈ * @CODE@
- Symbols     ;      !!≈ * @CODE@
- Abbreviation ;     !!≈ * @CODE@
- Acronym-smi ;      !!≈ * @CODE@
- Nynorsk     ; !!≈ * @CODE@ Accepts nno forms, does not generate, changed from Use/NG to have speller work.
-! Particle ;
+   FinalNoun       ; !!≈ * @CODE@ for -skap etc. that is affix rather than compound
+   ShortNounRoot   ; !!≈ * @CODE@ 2- and 3-letter words
+   NounRoot        ; !!≈ * @CODE@ The rest
+   ProperNoun      ; !!≈ * @CODE@
+   AdjectivePrefix ; !!≈ * @CODE@ = kjempeinteressant leksikon, sjå nedanfor.
+   VerbRoot        ; !!≈ * @CODE@
+   Adverb          ; !!≈ * @CODE@
+   Subjunction     ; !!≈ * @CODE@
+   Conjunction     ; !!≈ * @CODE@
+   Preposition     ; !!≈ * @CODE@
+   Interjection    ; !!≈ * @CODE@
+   Pronoun         ; !!≈ * @CODE@
+   Numeral         ; !!≈ * @CODE@
+   Punctuation     ; !!≈ * @CODE@
+   Symbols         ; !!≈ * @CODE@
+   Abbreviation    ; !!≈ * @CODE@
+   Acronym-smi     ; !!≈ * @CODE@
+   Nynorsk         ; !!≈ * @CODE@ Accepts nno forms, does not generate, changed from Use/NG to have speller work.
+!  Particle        ;
 
 
 !! ## Other lexica
