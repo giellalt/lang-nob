@@ -37775,7 +37775,7 @@ auto mx ;
 glip mx ;
 båtrip mx ;
 momp mx ;
-kapp+CmpNP/None m1 ;
+kapp+CmpNP/None:kapp m1 ;
 fiber m3 ;
 kandelaber m3 ;
 svaber m3 ;
