@@ -5,34 +5,34 @@
 
 LEXICON Prnyn
 !! LEXICON @LEXNAME@ 
-+Pr+Nynorsk+Use/NG: # ;
++Pr+Nynorsk+Err/Orth: # ;
 
 LEXICON Advnyn
 !! LEXICON @LEXNAME@ 
-+Adv+Nynorsk+Use/NG: # ;
++Adv+Nynorsk+Err/Orth: # ;
 
 LEXICON Anyn
 !! LEXICON @LEXNAME@ 
-+A+Nynorsk+Use/NG: # ;
++A+Nynorsk+Err/Orth: # ;
 
 LEXICON Vnyn
 !! LEXICON @LEXNAME@ 
-+V+Nynorsk+Use/NG: # ;
++V+Nynorsk+Err/Orth: # ;
 
 !LEXICON Nnyn_m1
-!+N+Nynorsk+Use/NG: # ;
+!+N+Nynorsk+Err/Orth: # ;
 
 LEXICON Propnyn
 !! LEXICON @LEXNAME@ 
-+N+Prop+Nynorsk+Use/NG: # ;
++N+Prop+Nynorsk+Err/Orth: # ;
 
 LEXICON Pronnyn
 !! LEXICON @LEXNAME@ 
-+Pron+Nynorsk+Use/NG: # ;
++Pron+Nynorsk+Err/Orth: # ;
 
 LEXICON nnnb 
 !! LEXICON @LEXNAME@ 
-+Nynorsk+Use/NG: # ;
++Nynorsk+Err/Orth: # ;
 
 LEXICON Nynorsk
 !! LEXICON @LEXNAME@  her kjem alle orda
@@ -57,7 +57,7 @@ selv:sjølve Advnyn ;
 hvor:kor Advnyn ;
 hvor:kvar Advnyn ;
 ellers:elles Advnyn ;
-enda:enno Advnyn ;
+ennå:enno Advnyn ;
 nå:no Advnyn ;
 oftest:oftast Advnyn ;
 egentlig:eigentleg Advnyn ;
@@ -73,37 +73,37 @@ videregående:vidaregoande Anyn ;
 tidlig:tidlegare Anyn ;
 likendes:likandes Anyn ;
 
-være:vore 	 Vnyn ;
-komme:kjem	 Vnyn ;
 finnes:finst Vnyn ;
-få:fekk		 Vnyn ;
-være:vera	 Vnyn ;
-være:vere	 Vnyn ;
-komme:kome   Vnyn ;
-komme:koma   Vnyn ;
-si:seie Vnyn ;
+få:fekk Vnyn ;
+gjøre:gjera Vnyn ;
+gjøre:gjere Vnyn ;
 inneholde:inneheld Vnyn ;
 kalle:kalla Vnyn ;
-gjøre:gjere Vnyn ;
-gjøre:gjera Vnyn ;
+komme:kjem Vnyn ;
+komme:koma Vnyn ;
+komme:kome Vnyn ;
+si:seie Vnyn ;
+være:vera Vnyn ;
+være:vere Vnyn ;
+være:vore Vnyn ;
 
 måned:månad m1 ;
 skuddår:skotår n1 ;
-dø+V+Ind+Prt+Nynorsk+Use/NG:døydde # ;
-dø+V+Inf+Nynorsk+Use/NG:døy # ;
+dø+V+Ind+Prt+Nynorsk+Err/Orth:døydde # ;
+dø+V+Inf+Nynorsk+Err/Orth:døy # ;
 
 begynne:byrja Vnyn ;
 kjent:kjend Anyn ;
 født:fødd Anyn ;
-verdenskrig+Nynorsk+Use/NG:verdskrig m1 ;
-middelalder+Nynorsk+Use/NG:mellomalder m3 ;
+verdenskrig+Nynorsk+Err/Orth:verdskrig m1 ;
+middelalder+Nynorsk+Err/Orth:mellomalder m3 ;
 
-navn+Nynorsk+Use/NG:namn n1 ;
-kirke+Nynorsk+Use/NG:kyrkje f1 ;
-hovedsak+Nynorsk+Use/NG:hovudsak f1 ;
-innbygger+Nynorsk+Use/NG:innbyggjar m2 ;
-gang+Nynorsk+Use/NG:gong m1 ;
-tall+Nynorsk+Use/NG:tal n1 ;
+navn+Nynorsk+Err/Orth:namn n1 ;
+kirke+Nynorsk+Err/Orth:kyrkje f1 ;
+hovedsak+Nynorsk+Err/Orth:hovudsak f1 ;
+innbygger+Nynorsk+Err/Orth:innbyggjar m2 ;
+gang+Nynorsk+Err/Orth:gong m1 ;
+tall+Nynorsk+Err/Orth:tal n1 ;
 
 noen:nokre Pronnyn ;
 jeg:eg Pronnyn ;
@@ -185,7 +185,7 @@ visshet:visse nnnb ;
 tirsdag:tysdag nnnb ;
 tegn:teikn nnnb ;
 hovedsak:hovudsak nnnb ;
-stedsnavn+Nynorsk+Use/NG:stadnamn n1 ;
+stedsnavn+Nynorsk+Err/Orth:stadnamn n1 ;
 kjøtt:kjøt nnnb ;
 hovedstad:hovudstad nnnb ;
 genitiv:genitiv nnnb ;
@@ -260,7 +260,7 @@ kirkesokn:kyrkjesokn nnnb ;
 kirkegård:kyrkjegard nnnb ;
 kunstner:kunstnar nnnb ;
 hevn:hemn nnnb ;
-eiendom:eigedom nnnb ;
+eiendom:eigendom nnnb ;
 derifra:derifrå nnnb ;
 bryllup:bryllaup nnnb ;
 virkemiddel:verkemiddel nnnb ;

@@ -327,7 +327,7 @@ LEXICON Root
  Symbols     ;      !!≈ * @CODE@
  Abbreviation ;     !!≈ * @CODE@
  Acronym-smi ;      !!≈ * @CODE@
- +Err/Orth: Nynorsk ; !!≈ * @CODE@ Accepts nno forms, does not generate, changed from Use/NG to have speller work.
+ Nynorsk     ; !!≈ * @CODE@ Accepts nno forms, does not generate, changed from Use/NG to have speller work.
 ! Particle ;
 
 
