@@ -9,6 +9,7 @@ LEXICON p
 
 LEXICON Preposition
  !! LEXICON @LEXNAME@  list (appr 90 prepositions)
+etter+Err/Lex:efter p ;
 per p ; ! 2 kr per enhet
 blandt p ;
 tillikemed p ;
