@@ -5662,6 +5662,8 @@ AdjectiveRoot is the list of adjectives (some 5500 stems)
  * små: A_SMÅ ; 
  * vond: VOND ; 
 
+
+
  * artikkelbasert a2 ; 
  * aggressiv a1 ; 
  * avbøtende a3 ; 
