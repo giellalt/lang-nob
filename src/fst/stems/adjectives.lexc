@@ -28,6 +28,55 @@ få: A_FÅ ; !!≈ * @CODE@
 små: A_SMÅ ; !!≈ * @CODE@ 
 vond: VOND ; !!≈ * @CODE@ 
 
+interpersonal a1 ;
+markedsøkonomisk a2 ;
+hinduistisk a2 ;
+mekanistisk a2 ;
+monokausal a1 ;
+nymarxistisk a2 ;
+pasientrapportert a2 ;
+personalistisk a2 ;
+praktisk-moralsk a2 ;
+sykdomsorientert a2 ;
+kulturspesifikke a1 ;
+utviklingsrelatert a2 ;
+tverrkulturell a1 ;
+helsesviktrelatert a2 ;
+yrkesetisk a2 ;
+biomedisinsk a2 ;
+empatisk a2 ;
+personsentrert a2 ;
+affektiv a2 ;
+tverrprofesjonell a1 ;
+evidensbasert a2 ;
+uønsket a4 ;
+uegennyttig a2 ;
+ubesværet a4 ;
+nyutdannet a4 ;
+innforstått a2 ;
+uerstattelig a2 ;
+ubevisst a2 ;
+telemedisinsk a2 ;
+postoperativ a1 ;
+pleietrengende a3 ;
+palliativ a1 ;
+masterutdannet a4 ;
+kvalitetsforbedrende a3 ;
+kollektivistisk a2 ;
+situasjonsspesifikk a1 ;
+ivaretakende a3 ;
+induktiv a1 ;
+individualistisk a2 ;
+helsepolitisk a2 ;
+fenomenologisk a2 ;
+relasjonell a1 ;
+psykomotorisk a2 ;
+postoperativ a1 ;
+obstruktiv a1 ;
+nyutdannet a3 ;
+innforstått a2 ;
+
+
 artikkelbasert a2 ; !!≈ * @CODE@ 
 aggressiv a1 ; !!≈ * @CODE@ 
 medrivende a3 ;
