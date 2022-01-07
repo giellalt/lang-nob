@@ -357,7 +357,10 @@ LIST Sg = Sg ;
 LIST Sg3 = Sg3 ;
 LIST MF = MF ;
 LIST Sg-Fem-N/tall-N/maalN/tidsN = "år" "uke" "tusen" "trillion" "tonnkilometer" "time" "tiendelssekund" "tidelssekund" "snes" "sjømil" "sekundmeter" "sekund" "prosent" "nanosekund" "nanometer" "måned" "mrd." "minutt" "millisekund" "million" "millimeter" "milliliter" "milligram" "milliard" "mill." "mil" "mikrometer" "meter" "liter" "kvartmil" "kvartliter" "kvadrillion" "kvadratmillimeter" "kvadratmeter" "kvadratkilometer" "kvadratdesimeter" "kvadratcentimeter" "kubikkmillimeter" "kubikkmeter" "kubikkdesimeter" "kubikkcentimeter" "kilometer" "kilogram" "kilo" "hundredelssekund" "hundre" "hektoliter" "hektogram" "halvår" "halvmillion" "halvmil" "halvmeter" "halvliter" "halvkilo" "gram" "døgn" "dusin" "desimeter" "desiliter" "desigram" "dekaliter" "dag" "centimeter" "centiliter" "centigram" "billion" "billiard" (N Sg Fem) ("gang" Pl) ;
-LIST CmpS = CmpS ;
+LIST CmpS = Cmp/s ;
+LIST Cmp/null = Cmp/null ;
+LIST Cmp = CmpS Cmp/null ;
+LIST DeleteCmp = DeleteCmp ;
 
 LIST Sg-N = (N Sg) ;
 LIST f-subj = ("det" Pron) ;
@@ -765,6 +768,11 @@ REMOVE:Nynorsk (Nynorsk) ;
 #!! **aaIM** selects +IM for *å*
 SELECT:aaIM IM IF (0 ("å"))(1 Inf);
 
+REMOVE (Use/SpellNoSugg) ;
+REMOVE ("<Use\/Circ.*>"r) ;
+
+REMOVE:NotDer (Ex/V) IF (0 N + $$NUM + $$DEF); 
+
 #!! #### Numerals
 
 SELECT:SemYear Sem/Date (0 Num) ;
@@ -778,6 +786,7 @@ REMOVE:SemPhonenr Sem/Phonenr (0 Num) ; #vi fjerner alle inntil videre
 SELECT:Sem/DateGen  Sem/Date (-1 ("den")) ; #foreløpig
 SELECT:clock Sem/Time-clock  ;
 
+REMOVE Use/Circ ;
 	
 SELECT:ArabNom (Arab Nom) (-1 BOS)(NEGATE 1 Sem/Time);
 SELECT:Arab1 (Arab Nom)(0 ("1")) ;
@@ -792,8 +801,22 @@ REMOVE:dyn  Arab (0 Prop) ; # foreløpig løsning, til vi har ny løsning for nu
 #!! * Rule for adding <vdic> to verbs denoting verbal actions like: ... dadjá Aili Kestkitalo.
 
 
+#MAP (DeleteCmp) N (0/1 Cmp/null);
+#REMOVE SUB:1 (0 DeleteCmp) ;
 REMOVE:Lexicalised CmpS ;
+REMOVE:lexicalisedonlyNull SUB:1 (Cmp/null) (NOT 0t/1 (Cmp/null));
+REMOVE:lexicalisedonly SUB:1 (Cmp) (NOT 0t/1 (Cmp));
+REMOVE:lexicalisedonlyS SUB:1 (Cmp/null) (0t/1 (CmpS));
+
+# Remove skal kigge på sub-reading 1 efter tag (Cmp) og fjerne hele reading
+# hvis der findes en anden reading som ikke har en sub-reading med (Cmp).
+
+REMOVE:Lexicalised Cmp/null ;
+#REMOVE:Lexicalised2 N IF (0/1 CmpS) ;
+#REMOVE:Lexicalised2 N IF (0/1 Cmp/null) ;
 #REMOVE:LexAdv Der/AAdv IF (0 Adv LINK NOT 0 A);
+
+
 
 REMOVE:NoX X + V IF (0 V) ; # Vi skriver, fjern X.
 REMOVE:gang ("gange") IF (0 ("gang"))(-1 Qnt) ; # fire ganger
