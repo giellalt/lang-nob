@@ -86,6 +86,8 @@ the labels are kept from OBT-cg, but GiellaLT content is added when needed.
 
 **aaIM** selects +IM for *å*
 
+
+
 #### Numerals
 
 
@@ -96,6 +98,10 @@ the labels are kept from OBT-cg, but GiellaLT content is added when needed.
 
 
 * Rule for adding <vdic> to verbs denoting verbal actions like: ... dadjá Aili Kestkitalo.
+
+
+
+
 
 
 
