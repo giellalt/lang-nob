@@ -20,21 +20,21 @@ aV blå blå blått blå
 
 
 AdjectiveRoot is the list of adjectives (some 5500 stems)
- * få: A_FÅ ; 
- * små: A_SMÅ ; 
- * vond: VOND ; 
+* få: A_FÅ ; 
+* små: A_SMÅ ; 
+* vond: VOND ; 
 
 
 
- * artikkelbasert a2 ; 
- * aggressiv a1 ; 
- * avbøtende a3 ; 
- * bundet a4 ; 
+* artikkelbasert a2 ; 
+* aggressiv a1 ; 
+* avbøtende a3 ; 
+* bundet a4 ; 
 
 
- * dritredd a2 ; 
- * dritsur+v1:drit#sur a1 ; 
- * dritsur+v2:dritt#sur a1 ; 
+* dritredd a2 ; 
+* dritsur+v1:drit#sur a1 ; 
+* dritsur+v2:dritt#sur a1 ; 
 * ...
 
 

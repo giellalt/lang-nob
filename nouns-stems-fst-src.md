@@ -77,16 +77,16 @@ LEXICON FinalNoun is a separate lexicon to point to. For now it contains only *-
 
 
 LEXICON NounRoot is the lexicon pointed to from `root.lexc` It points to
- Noun ;
- HyphNouns ;
+Noun ;
+HyphNouns ;
 
 LEXICON HyphNouns  contains forms only in used in first part of compounds, like *barne*.  TODO: Kanskje desse ikkje bör bli lista.
 
 LEXICON ShortNounRoot 
 The lexicon points to two lexica which are kept separate in order not to
 allow them in compounding (rusle = rus + le)
- 2_letter ;
- 3_letter ;
+2_letter ;
+3_letter ;
 
 LEXICON 2_letter is stems with two lettes.
 

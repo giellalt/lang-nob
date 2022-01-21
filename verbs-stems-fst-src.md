@@ -29,20 +29,20 @@ Strong verbs have verb-specific lexica
 
 LEXICON VerbRoot contains the 5700 or so  verbs
 
- * innbefatte v1 ; 
- * tilslutte v1 ; 
+* innbefatte v1 ; 
+* tilslutte v1 ; 
 
 
- * abbreviere v2 ; 
- * abdisere v2 ; 
- * allmenngjøre:allmenn GJØRE ; 
- * anbringe:an BRINGE ; 
- * andøve v3 ; 
- * anfalle:an FALLE ; 
- * angi:an GI ; 
- * angripe:an GRIPE ; 
- * ankomme:an KOMME ;  
- * falle: FALLE ; 
+* abbreviere v2 ; 
+* abdisere v2 ; 
+* allmenngjøre:allmenn GJØRE ; 
+* anbringe:an BRINGE ; 
+* andøve v3 ; 
+* anfalle:an FALLE ; 
+* angi:an GI ; 
+* angripe:an GRIPE ; 
+* ankomme:an KOMME ;  
+* falle: FALLE ; 
 * etc.
 * * *
 <small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/verbs.lexc)</small>

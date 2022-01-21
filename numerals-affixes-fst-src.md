@@ -22,20 +22,20 @@ numtagsg
 ... and many more lexica
 
 
- * **LEXICON ARABICCASEORD**  adds +Arab
+* **LEXICON ARABICCASEORD**  adds +Arab
 
 
- * **LEXICON ARABICCASE**  adds +Arab
+* **LEXICON ARABICCASE**  adds +Arab
 
- * **LEXICON ARABICCASES**  adds +Arab
+* **LEXICON ARABICCASES**  adds +Arab
 
- * **LEXICON ARABICCOMPOUNDS**  ! arabic as first part,
+* **LEXICON ARABICCOMPOUNDS**  ! arabic as first part,
 
 
 
- * **LEXICON ARABICCASECOLL**  adds +Arab
+* **LEXICON ARABICCASECOLL**  adds +Arab
 
- * **LEXICON ARABICCASE0**  adds +Arab
+* **LEXICON ARABICCASE0**  adds +Arab
 
 
 

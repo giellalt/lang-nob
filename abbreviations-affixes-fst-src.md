@@ -13,52 +13,52 @@
 ### Continuation lexicons for abbrs both with and witout final period
 
 
- * **LEXICON ab-noun   **
+* **LEXICON ab-noun   **
 
- * **LEXICON ab-adj   **
+* **LEXICON ab-adj   **
 
- * **LEXICON ab-adv   **
+* **LEXICON ab-adv   **
 
- * **LEXICON ab-num   **
+* **LEXICON ab-num   **
 
 ### Lexicons without final period
 
- * **LEXICON ab-nodot-noun   **  The bulk
+* **LEXICON ab-nodot-noun   **  The bulk
 
 
 
- * **LEXICON ab-nodot-adj   **
+* **LEXICON ab-nodot-adj   **
 
- * **LEXICON ab-nodot-adv   **
+* **LEXICON ab-nodot-adv   **
 
- * **LEXICON ab-nodot-num   **
+* **LEXICON ab-nodot-num   **
 
 ### Lexicons with final period
 
- * **LEXICON ab-dot-noun   **  This is the lexicon for abbrs that must have a period.
+* **LEXICON ab-dot-noun   **  This is the lexicon for abbrs that must have a period.
 
- * **LEXICON ab-dot-adj   **  This is the lexicon for abbrs that must have a period.
-
-
- * **LEXICON ab-dot-adv   **  This is the lexicon for abbrs that must have a period.
-
- * **LEXICON ab-dot-num   **  This is the lexicon for abbrs that must have a period.
-
- * **LEXICON ab-dot-cc   **
+* **LEXICON ab-dot-adj   **  This is the lexicon for abbrs that must have a period.
 
 
- * **LEXICON ab-dot-verb   **
+* **LEXICON ab-dot-adv   **  This is the lexicon for abbrs that must have a period.
+
+* **LEXICON ab-dot-num   **  This is the lexicon for abbrs that must have a period.
+
+* **LEXICON ab-dot-cc   **
+
+
+* **LEXICON ab-dot-verb   **
 
 
 
- * **LEXICON ab-dot-IVprfprc   **
-
-
+* **LEXICON ab-dot-IVprfprc   **
 
 
 
 
- * **LEXICON DOT   ** - Adds the dot to dotted abbreviations.
+
+
+* **LEXICON DOT   ** - Adds the dot to dotted abbreviations.
 
 
 * * *
