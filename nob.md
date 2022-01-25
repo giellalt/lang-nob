@@ -1,894 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-The set **NOT-NPMOD** is used to find barriers between NPs.
-Typical usage: ... (*1 N BARRIER NPT-NPMOD) ...
-meaning: Scan to the first noun, ignoring anything that can be
-part of the noun phrase of that noun (i.e., "scan to the next NP head")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Syntactic tags
-
-* @+FAUXV : finite auxiliary verb 
-- ferte: Son ferte oaidnit ollislaš gova. - She must see the whole picture.
-* @+FMAINV : finite main verb
-- oaidná: Son oaidná ollislaš gova. - She sees the whole picture	
-* @-FAUXV : infinite auxiliary verb
-- sáhte: In sáhte gáhku borrat. - I cannot eat cake.	
-* @-FMAINV : infinite main verb
-- oaidnit: Son ferte oaidnit ollislaš gova. - She must see the whole picture.
-* @-FSUBJ> : Subject of infinite verb outside the verbal.
-- mu: Diet dáhpáhuvai mu dieđikeahttá. - It happened without me knowing about it.
-* @-F<OBJ : Subject of infinite verb outside the verbal.
-- nuppi: Ulbmil lea oažžut nuppi boagustit. - The goal is to get the other one to laugh.
-* @-FOBJ> : Object of infinite verb outside the verbal.
-- váldovuoittuid: Sii vurde váldovuoittuid fasket. - They waited to grab the main prizes.
-* @SPRED<OBJ : Object of an subsject predicative. (some adjectives are transitive)
-- guliid: Mánát leat oažžulat guliid.
-* @-FADVL : Adverbial complement of infinite verb outside the verbal.
-- várrogasat: Dihkkadeaddji rávve skohtervuddjiid várrogasat mátkkoštit. - The roadman warns snowscooter drivers to drive carefully.
-* @>ADVL : Modifier of an adverbial to the right.
-- vaikko: doppe leat vaikko man ollu studeanttat.
-* @ADVL< : Komplement for adverbial.
-- vahkus: Son málesta guktii vahkus.
-* @<ADVL : Adverbial after the main verb.
-- dás: Eanet dieđuid gávnnat dás.
-* @ADVL> : Adverbial to the left of the main verb
-- viimmat: Dál de viimmat asttan lohkat reivve.
-* @ADVL>CS : Adverbial modifying subjunction.
-- 'beare' pointing at 'danin go': Muhto dus ii leat riekti dearpat su beare danin go sáhtát.
-* <hab> : Habitive, specifying an adverbial, e.g. @ADVL> <hab>
-- Máhtes: Máhtes lea beana.
-* <ext> : Extencial, specifying an subject, e.g. @<SUBJ <ext>
-- beana: Máhtes lea beana.
-* <logo> : logoforic pronouns, e.g. @>N <logo> (for MT)
-* <cs> : 
-* @>N : Modifier of a noun to the right.
-- geavatlaš: Ráđđehussii lea geavatlaš politihkka deaŧalaš. - For the government, practical politics is important.
-* @N< : Complement of noun to the left.
-- vihtta: Mun boađán diibmu vihtta.
-* @>A : Modifier of an adjective to the right.
-- juohke: Seminára lágiduvvo juohke nuppi jagi.
-* @P< : Complement of preposition.
-- soađi: Dat dáhpáhuvai maŋŋel soađi.
-* @>P : Complement of postposition.
-- riegádeami: Seta riegádeami maŋŋel Áttán elii vel 800 jagi.
-* @HNOUN : Stray noun in sentence fragment.
-- muittut: Fidnokurssa muittut.
-* @INTERJ : Interjection.
-- Hei: Hei, boađe!
-* @>Num : Attribute of numeral to the right.
-- dušše: Mun ledjen dušše guokte mánu doppe.
-* @Pron< : Complement of pronoun to the left.
-- Birehiin: Moai Birehiin leimme doppe.
-* @>Pron : Modifyer of pronoun to the right.
-- vaikko: Olmmoš sáhttá bargat vaikko maid.
-* @Num< : Complement of numeral to the left.
-- girjjiin: Dat lea okta min buoremus girjjiin.
-* @OBJ : Object, the verb is not in the sentence (ellipse)
-* @<OBJ : Object, the verb is to the left.
-- gávtti: Son goarru gávtti.
-* @OBJ> : Object, the verb is to the right.
-- filmma: Dán filmma leat Kárášjoga nuorat oaidnán.
-* @OPRED : Object predicative, the verb is not in the sentence (ellipse).
-* @<OPRED : Object predicative, the verb is to the left.
-- buriid: Son ráhkada gáhkuid hui buriid.
-* @OPRED> : Object predicative, the verb is to the right.
-- dohkkemeahttumin: Son oinnii dohkkemeahttumin bargat ášši nu.
-* @PCLE : Particle.
-- Amma: Amma mii eat leat máksán? - We have not paid, have we?
-* @COMP-CS< : Complement of subjunction.
-- vejolaš: Dat šaddá nu buorre go vejolaš.
-* @SPRED : Subject predicative, the verb is not in the sentence (ellipse).
-* @<SPRED : Subject predicative, the verb is to the left.
-- árgabivttas: Ovdal lei gákti árgabivttas.
-* @SPRED> : Subject predicative, the verb is to the left.
-- álbmogin: Sápmelaččaid historjá álbmogin lea duháhiid jagiid boaris.
-* @SUBJ : Subject, the finite verb is not in the sentence (ellipse).
-* @<SUBJ : Subject, the finite verb is to the left.
-- gákti: Ovdal lei gákti árgabivttas.
-* @SUBJ> : Subject, the finite verb is to the right.
-- Son: Son lea mu oabbá. - Sheis my sister.
-* @PPRED : Predicative for predicative.
-* @APP : Apposition
-* @APP-N< : Apposition to noun to the left.
-- oahpaheaddji: Oidnen Ánne, min oahpaheaddji.
-* @APP-Pron< : Apposition to pronoun to the left.
-- boazodoalloáirasat: Ja moai boazodoalloáirasat áigguime vaikko guovttá joatkit barggu.
-* @APP>Pron : Apposition to noun to the right.
-* @APP-Num< : Apposition to numeral to the left.
-* @APP-ADVL< : Apposition to adverbial to the left.
-- bearjadaga: Mun vuolggán ihttin, bearjadaga.
-* @VOC : Vocative
-- Miss Turner : Bures boahtin deike, Miss Turner! - Welcome her, Miss Turner!
-* @CVP : Conjunction or subjunction that conjoins finite verb phrases.
-- go : Leago guhkes áigi dassá go Máreha oidnet? - Is it a long time since you saw Máret?
-* @CNP : Local conjunction or subjunction.
-- vai : Leago nieida vai bárdni? - Is it a girl or a boy?
-* @CMPND
-* @X : The function is unknown, e.g. because of that the word is unknown
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* Syntactic sets
-
-
-
-
-
-
-
-
-
-
-
-These were the set types.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* Border sets and their complements
-
-
-
-
-
-
-
-
-
-
-
-
-
-* Syntactic sets
-
-
-
-
-
-These were the set types.
-
-
-
-
-
-
-
-
-
-## Numeral outside the sentence
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Finite verbs
-
-
-
-## Numeral outside the sentence
-
-
-
-
-* **n<titel1** (@N<) for ("jr") or ("sr"); if first one to the left is Prop
-
-
-
-
-* **n<titel2** (@N<) for INITIAL; if first one to the left is a noun, or if to the left of you is a single letter which is part of a noun conjunction *bustávas e ja f gáibiduvvo*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* **<advlPoPr** (@<ADVL) for Po or Pr; if mainverb to the left.
-* **advlPoPr>** (@<ADVL) for Po or Pr; if mainverb to the right.
-
-* **BOSPo>** (@ADVL>) for Po; if trapped between BOS to the right and S-BOUNDARY OR COMMA to the left, because the main verb will then automatically be on your right side.
-
-
-
-
-
-
-* **advl>inbetween** (@ADVL>) for Adv; if inbetween two sentenceboundaries where no mainverb is present.
-
-* **comma<advlEOS** (@<ADVL) for Adv if; comma found to the left and the finite mainverb to the left of comma. To the right is the end of the sentence.
-
-
-
-
-
-
-
-
-
-## HNOUN MAPPING
-
-
-
-
-
-
-
-
-
-
-## Complex sentences
-
-
-
-
-###  **missingX** adds @X to all missings
-
-
-
-
-
-###  **therestX** adds @X to all what is left, often errouneus disambiguated forms
-
-
-
-
-
-## For Apertium:
-The analysis give double analysis because of optional semtags. We go for the one with semtag.
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/cg3/functions.cg3](http://github.com/giellalt/lang-nob/blob/main/../src/cg3/functions.cg3)</small>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* Sets for POS sub-categories
-
-
-
-
-
-
-* Sets for Semantic tags
-
-
-
-
-
-* Sets for Morphosyntactic properties
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* Sets for verbs
-
-
-- V is all readings with a V tag in them, REAL-V should
-be the ones without an N tag following the V.  
-The REAL-V set thus awaits a fix to the preprocess V ... N bug.
-
-
-
-* The set COPULAS is for predicative constructions
-
-
-
-
-
-
-
-* NP sets defined according to their morphosyntactic features
-
-
-
-
-
-
-
-
-* The PRE-NP-HEAD family of sets
-
-These sets model noun phrases (NPs). The idea is to first define whatever can
-occur in front of the head of the NP, and thereafter negate that with the
-expression **WORD - premodifiers**.
-
-
-
-
-
-
-
-
-
-
-
-
-The set **NOT-NPMOD** is used to find barriers between NPs.
-Typical usage: ... (*1 N BARRIER NPT-NPMOD) ...
-meaning: Scan to the first noun, ignoring anything that can be
-part of the noun phrase of that noun (i.e., "scan to the next NP head")
-
-
-
-
-
-
-* Miscellaneous sets
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* Border sets and their complements
-
-
-
-
-
-
-
-
-
-
-
-
-
-* Syntactic sets
-
-
-
-
-These were the set types.
-
-
-
-
-
-
-## Some particular subjunctions
-
-## Adverb rules
-
-# MAPPING OF COMP-CS< , COMPLEMENTS OF PARTICLES IN COMPARISON
-First map all COMP-CS<, then remove the other readings
-
-
-
-* **killAllnotComp** Removes analysis which are not @COMP-CS<
-
-*
-
-
-
-# MAPPING OF CC AND CS
-
-Mostly we map both @CNP and @CVP, then we select @CNP, after that we remove them so @CVP remains
-
-* **cnpCompSC** Map @CNP if @COMP-CS< or COMPAR ahte
-
-* **cnpCompSpec** special rule because of PrfPrc = VFIN
-
-* **CSasCVP** Map @CVP to CS
-
-* **CCasCNPCVP** Map (@CNP @CVP) to CC
-
-
-
-
-
-
-
-
-
-* **killAllCNP** removes all remaining @CNP
-
-* **XCC-CS** removes CC and CS with no synttag
-
-
-
-
-# VERB MAPPINGS
-
-
-## Verbs as predicatives (@SPRED>) and (@<OPRED) 
-
-### The tags (@SPRED>) and (@<OPRED) target  PrfPrc
-The rules are no documented yet
-
-
-
-## Passive verbs often have 
-
-
-
-
-## Verbs as prenominal participles (@>N):
-
-
-
-
-
-
-### (@<SUBJ)  target Inf
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### (@+FMAINV) and (@+FAUXV) and (@-FAUXV)
-
-
-
-
-
-* **-FAUXVaux** AUX verbs     
-
-
-* **+FMAINVCop**  copulas even if PrfPrc coming after
-
-
-* **+FAUXVCop**  copulas coming before the mainverb
-
-
-* **+FMAINVAux1**  
-
-
-* **+FAUXVCop**  copulas coming after the mainverb
-
-* **+FMAINVCop**  copulas 	
-
-
-* **+FMAINV**  to the remaining finite verbs which are not AUX    
-
-
-
-
-* **+FMAINV**  to finite verb after mainverb
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### (@-FMAINV) and (@-FAUXV)
-
-
-* **-FAUXVPrfPrcAux**  to PrfPrc AUX  before Inf or Actio Ess
-
-* **-FMAINVPrfPrc**  to PrfPrc 
-
-* **-FMAINVPrfPrccoord**  to PrfPrc coordination	
-
-* **-FMAINVPrfPrccoord**  to PrfPrc coordination	
-
-* **-FMAINVPrfbeforeAux**  to PrfPrc before the Aux	
-
-* **-FMAINVPrfafterMan**  to PrfPrc before the Aux	
-
-
-
-* **-FMAINVInf**  to Inf
-
-
-
-
-
-
-* **+FAUXV** to  Aux
-
-
-
-
-* **PrfPrcEllipsis** being verbal head when finite verb is missing
-
-
-### And then we remove the verbs which didn't get any syntactic tag, in favour of verbs with syntactic tags.
-
-
-
-* **realverbX**
-
-
-
-### **killifVinCohort** This rule removes all other readings, if there is a mapped V reading in the same cohort. Every case which this goes wrong, should be fixed in mapping rules or previous disrules.
-
-* **X**
-
-
-
-
-# NOUNS
-
-
-
-# CASE DISAMBIGUATION
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* **subj>Sgnr2** (@SUBJ>) for Nom Sg; if VFIN + Sg3 to the right.
-
-* **<subjSg** (@<SUBJ) for Nom Sg; if VFIN Sg3 or Du2 to the left (no HAB allowed to the left).
-
-
-
-
-
-
-
-## HNOUN MAPPING
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/cg3/nob-functions.cg3](http://github.com/giellalt/lang-nob/blob/main/../src/cg3/nob-functions.cg3)</small>
 # The OBT-Giellatekno Bokmål Norwegian disambiguator 
 
 This disambiguator is based upon the disambiguator from OBT
@@ -5240,6 +4350,1098 @@ The bulk of the file contains rules from the original OBT file.
 
 * * *
 <small>This (part of) documentation was generated from [../src/cg3/disambiguator.cg3](http://github.com/giellalt/lang-nob/blob/main/../src/cg3/disambiguator.cg3)</small>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The set **NOT-NPMOD** is used to find barriers between NPs.
+Typical usage: ... (*1 N BARRIER NPT-NPMOD) ...
+meaning: Scan to the first noun, ignoring anything that can be
+part of the noun phrase of that noun (i.e., "scan to the next NP head")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Syntactic tags
+
+* @+FAUXV : finite auxiliary verb 
+- ferte: Son ferte oaidnit ollislaš gova. - She must see the whole picture.
+* @+FMAINV : finite main verb
+- oaidná: Son oaidná ollislaš gova. - She sees the whole picture	
+* @-FAUXV : infinite auxiliary verb
+- sáhte: In sáhte gáhku borrat. - I cannot eat cake.	
+* @-FMAINV : infinite main verb
+- oaidnit: Son ferte oaidnit ollislaš gova. - She must see the whole picture.
+* @-FSUBJ> : Subject of infinite verb outside the verbal.
+- mu: Diet dáhpáhuvai mu dieđikeahttá. - It happened without me knowing about it.
+* @-F<OBJ : Subject of infinite verb outside the verbal.
+- nuppi: Ulbmil lea oažžut nuppi boagustit. - The goal is to get the other one to laugh.
+* @-FOBJ> : Object of infinite verb outside the verbal.
+- váldovuoittuid: Sii vurde váldovuoittuid fasket. - They waited to grab the main prizes.
+* @SPRED<OBJ : Object of an subsject predicative. (some adjectives are transitive)
+- guliid: Mánát leat oažžulat guliid.
+* @-FADVL : Adverbial complement of infinite verb outside the verbal.
+- várrogasat: Dihkkadeaddji rávve skohtervuddjiid várrogasat mátkkoštit. - The roadman warns snowscooter drivers to drive carefully.
+* @>ADVL : Modifier of an adverbial to the right.
+- vaikko: doppe leat vaikko man ollu studeanttat.
+* @ADVL< : Komplement for adverbial.
+- vahkus: Son málesta guktii vahkus.
+* @<ADVL : Adverbial after the main verb.
+- dás: Eanet dieđuid gávnnat dás.
+* @ADVL> : Adverbial to the left of the main verb
+- viimmat: Dál de viimmat asttan lohkat reivve.
+* @ADVL>CS : Adverbial modifying subjunction.
+- 'beare' pointing at 'danin go': Muhto dus ii leat riekti dearpat su beare danin go sáhtát.
+* <hab> : Habitive, specifying an adverbial, e.g. @ADVL> <hab>
+- Máhtes: Máhtes lea beana.
+* <ext> : Extencial, specifying an subject, e.g. @<SUBJ <ext>
+- beana: Máhtes lea beana.
+* <logo> : logoforic pronouns, e.g. @>N <logo> (for MT)
+* <cs> : 
+* @>N : Modifier of a noun to the right.
+- geavatlaš: Ráđđehussii lea geavatlaš politihkka deaŧalaš. - For the government, practical politics is important.
+* @N< : Complement of noun to the left.
+- vihtta: Mun boađán diibmu vihtta.
+* @>A : Modifier of an adjective to the right.
+- juohke: Seminára lágiduvvo juohke nuppi jagi.
+* @P< : Complement of preposition.
+- soađi: Dat dáhpáhuvai maŋŋel soađi.
+* @>P : Complement of postposition.
+- riegádeami: Seta riegádeami maŋŋel Áttán elii vel 800 jagi.
+* @HNOUN : Stray noun in sentence fragment.
+- muittut: Fidnokurssa muittut.
+* @INTERJ : Interjection.
+- Hei: Hei, boađe!
+* @>Num : Attribute of numeral to the right.
+- dušše: Mun ledjen dušše guokte mánu doppe.
+* @Pron< : Complement of pronoun to the left.
+- Birehiin: Moai Birehiin leimme doppe.
+* @>Pron : Modifyer of pronoun to the right.
+- vaikko: Olmmoš sáhttá bargat vaikko maid.
+* @Num< : Complement of numeral to the left.
+- girjjiin: Dat lea okta min buoremus girjjiin.
+* @OBJ : Object, the verb is not in the sentence (ellipse)
+* @<OBJ : Object, the verb is to the left.
+- gávtti: Son goarru gávtti.
+* @OBJ> : Object, the verb is to the right.
+- filmma: Dán filmma leat Kárášjoga nuorat oaidnán.
+* @OPRED : Object predicative, the verb is not in the sentence (ellipse).
+* @<OPRED : Object predicative, the verb is to the left.
+- buriid: Son ráhkada gáhkuid hui buriid.
+* @OPRED> : Object predicative, the verb is to the right.
+- dohkkemeahttumin: Son oinnii dohkkemeahttumin bargat ášši nu.
+* @PCLE : Particle.
+- Amma: Amma mii eat leat máksán? - We have not paid, have we?
+* @COMP-CS< : Complement of subjunction.
+- vejolaš: Dat šaddá nu buorre go vejolaš.
+* @SPRED : Subject predicative, the verb is not in the sentence (ellipse).
+* @<SPRED : Subject predicative, the verb is to the left.
+- árgabivttas: Ovdal lei gákti árgabivttas.
+* @SPRED> : Subject predicative, the verb is to the left.
+- álbmogin: Sápmelaččaid historjá álbmogin lea duháhiid jagiid boaris.
+* @SUBJ : Subject, the finite verb is not in the sentence (ellipse).
+* @<SUBJ : Subject, the finite verb is to the left.
+- gákti: Ovdal lei gákti árgabivttas.
+* @SUBJ> : Subject, the finite verb is to the right.
+- Son: Son lea mu oabbá. - Sheis my sister.
+* @PPRED : Predicative for predicative.
+* @APP : Apposition
+* @APP-N< : Apposition to noun to the left.
+- oahpaheaddji: Oidnen Ánne, min oahpaheaddji.
+* @APP-Pron< : Apposition to pronoun to the left.
+- boazodoalloáirasat: Ja moai boazodoalloáirasat áigguime vaikko guovttá joatkit barggu.
+* @APP>Pron : Apposition to noun to the right.
+* @APP-Num< : Apposition to numeral to the left.
+* @APP-ADVL< : Apposition to adverbial to the left.
+- bearjadaga: Mun vuolggán ihttin, bearjadaga.
+* @VOC : Vocative
+- Miss Turner : Bures boahtin deike, Miss Turner! - Welcome her, Miss Turner!
+* @CVP : Conjunction or subjunction that conjoins finite verb phrases.
+- go : Leago guhkes áigi dassá go Máreha oidnet? - Is it a long time since you saw Máret?
+* @CNP : Local conjunction or subjunction.
+- vai : Leago nieida vai bárdni? - Is it a girl or a boy?
+* @CMPND
+* @X : The function is unknown, e.g. because of that the word is unknown
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* Syntactic sets
+
+
+
+
+
+
+
+
+
+
+
+These were the set types.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* Border sets and their complements
+
+
+
+
+
+
+
+
+
+
+
+
+
+* Syntactic sets
+
+
+
+
+
+These were the set types.
+
+
+
+
+
+
+
+
+
+## Numeral outside the sentence
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Finite verbs
+
+
+
+## Numeral outside the sentence
+
+
+
+
+* **n<titel1** (@N<) for ("jr") or ("sr"); if first one to the left is Prop
+
+
+
+
+* **n<titel2** (@N<) for INITIAL; if first one to the left is a noun, or if to the left of you is a single letter which is part of a noun conjunction *bustávas e ja f gáibiduvvo*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* **<advlPoPr** (@<ADVL) for Po or Pr; if mainverb to the left.
+* **advlPoPr>** (@<ADVL) for Po or Pr; if mainverb to the right.
+
+* **BOSPo>** (@ADVL>) for Po; if trapped between BOS to the right and S-BOUNDARY OR COMMA to the left, because the main verb will then automatically be on your right side.
+
+
+
+
+
+
+* **advl>inbetween** (@ADVL>) for Adv; if inbetween two sentenceboundaries where no mainverb is present.
+
+* **comma<advlEOS** (@<ADVL) for Adv if; comma found to the left and the finite mainverb to the left of comma. To the right is the end of the sentence.
+
+
+
+
+
+
+
+
+
+## HNOUN MAPPING
+
+
+
+
+
+
+
+
+
+
+## Complex sentences
+
+
+
+
+###  **missingX** adds @X to all missings
+
+
+
+
+
+###  **therestX** adds @X to all what is left, often errouneus disambiguated forms
+
+
+
+
+
+## For Apertium:
+The analysis give double analysis because of optional semtags. We go for the one with semtag.
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/cg3/functions.cg3](http://github.com/giellalt/lang-nob/blob/main/../src/cg3/functions.cg3)</small>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* Sets for POS sub-categories
+
+
+
+
+
+
+* Sets for Semantic tags
+
+
+
+
+
+* Sets for Morphosyntactic properties
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* Sets for verbs
+
+
+- V is all readings with a V tag in them, REAL-V should
+be the ones without an N tag following the V.  
+The REAL-V set thus awaits a fix to the preprocess V ... N bug.
+
+
+
+* The set COPULAS is for predicative constructions
+
+
+
+
+
+
+
+* NP sets defined according to their morphosyntactic features
+
+
+
+
+
+
+
+
+* The PRE-NP-HEAD family of sets
+
+These sets model noun phrases (NPs). The idea is to first define whatever can
+occur in front of the head of the NP, and thereafter negate that with the
+expression **WORD - premodifiers**.
+
+
+
+
+
+
+
+
+
+
+
+
+The set **NOT-NPMOD** is used to find barriers between NPs.
+Typical usage: ... (*1 N BARRIER NPT-NPMOD) ...
+meaning: Scan to the first noun, ignoring anything that can be
+part of the noun phrase of that noun (i.e., "scan to the next NP head")
+
+
+
+
+
+
+* Miscellaneous sets
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* Border sets and their complements
+
+
+
+
+
+
+
+
+
+
+
+
+
+* Syntactic sets
+
+
+
+
+These were the set types.
+
+
+
+
+
+
+## Some particular subjunctions
+
+## Adverb rules
+
+# MAPPING OF COMP-CS< , COMPLEMENTS OF PARTICLES IN COMPARISON
+First map all COMP-CS<, then remove the other readings
+
+
+
+* **killAllnotComp** Removes analysis which are not @COMP-CS<
+
+*
+
+
+
+# MAPPING OF CC AND CS
+
+Mostly we map both @CNP and @CVP, then we select @CNP, after that we remove them so @CVP remains
+
+* **cnpCompSC** Map @CNP if @COMP-CS< or COMPAR ahte
+
+* **cnpCompSpec** special rule because of PrfPrc = VFIN
+
+* **CSasCVP** Map @CVP to CS
+
+* **CCasCNPCVP** Map (@CNP @CVP) to CC
+
+
+
+
+
+
+
+
+
+* **killAllCNP** removes all remaining @CNP
+
+* **XCC-CS** removes CC and CS with no synttag
+
+
+
+
+# VERB MAPPINGS
+
+
+## Verbs as predicatives (@SPRED>) and (@<OPRED) 
+
+### The tags (@SPRED>) and (@<OPRED) target  PrfPrc
+The rules are no documented yet
+
+
+
+## Passive verbs often have 
+
+
+
+
+## Verbs as prenominal participles (@>N):
+
+
+
+
+
+
+### (@<SUBJ)  target Inf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### (@+FMAINV) and (@+FAUXV) and (@-FAUXV)
+
+
+
+
+
+* **-FAUXVaux** AUX verbs     
+
+
+* **+FMAINVCop**  copulas even if PrfPrc coming after
+
+
+* **+FAUXVCop**  copulas coming before the mainverb
+
+
+* **+FMAINVAux1**  
+
+
+* **+FAUXVCop**  copulas coming after the mainverb
+
+* **+FMAINVCop**  copulas 	
+
+
+* **+FMAINV**  to the remaining finite verbs which are not AUX    
+
+
+
+
+* **+FMAINV**  to finite verb after mainverb
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### (@-FMAINV) and (@-FAUXV)
+
+
+* **-FAUXVPrfPrcAux**  to PrfPrc AUX  before Inf or Actio Ess
+
+* **-FMAINVPrfPrc**  to PrfPrc 
+
+* **-FMAINVPrfPrccoord**  to PrfPrc coordination	
+
+* **-FMAINVPrfPrccoord**  to PrfPrc coordination	
+
+* **-FMAINVPrfbeforeAux**  to PrfPrc before the Aux	
+
+* **-FMAINVPrfafterMan**  to PrfPrc before the Aux	
+
+
+
+* **-FMAINVInf**  to Inf
+
+
+
+
+
+
+* **+FAUXV** to  Aux
+
+
+
+
+* **PrfPrcEllipsis** being verbal head when finite verb is missing
+
+
+### And then we remove the verbs which didn't get any syntactic tag, in favour of verbs with syntactic tags.
+
+
+
+* **realverbX**
+
+
+
+### **killifVinCohort** This rule removes all other readings, if there is a mapped V reading in the same cohort. Every case which this goes wrong, should be fixed in mapping rules or previous disrules.
+
+* **X**
+
+
+
+
+# NOUNS
+
+
+
+# CASE DISAMBIGUATION
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* **subj>Sgnr2** (@SUBJ>) for Nom Sg; if VFIN + Sg3 to the right.
+
+* **<subjSg** (@<SUBJ) for Nom Sg; if VFIN Sg3 or Du2 to the left (no HAB allowed to the left).
+
+
+
+
+
+
+
+## HNOUN MAPPING
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/cg3/nob-functions.cg3](http://github.com/giellalt/lang-nob/blob/main/../src/cg3/nob-functions.cg3)</small># Morphophonological rules for Bokmål
+
+This file documents the [phonology.twolc file](http://github.com/giellalt/lang-nob/blob/main/src/fst/phonology.twolc) 
+
+## Sets and definitions
+
+### Alphabet
+
+We declare both the a-å letters and all other possible letters.
+* **a b c d e f g h i j k l m n o p q r s t u v w x y z æ ø å** 
+* **á é ó ú í à è ò ù ì ä ë ö ü ï â ê ô û î ã ý þ ñ ð ß ç**
+* **A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Ø Å**
+* **Á É Ó Ú Í À È Ò Ù Ì Ä Ë Ö Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð**
+* **'** This is the apostrophe
+* **l7:l** This **l** not deleted by **t**
+
+
+### Boundary symbols
+
+Morpheme boundaries and escaped quotes - do not delete in twolc,
+they will be converted to zero/the real thing at a later stage.
+
+* **%#**
+* **%>**
+* **%<**
+* **%\|»**
+* **%\|«**
+* **%[%<%]**
+* **%[%>%]**
+
+### Morphophonological triggers
+
+These symbols cause the twolc rules to work.
+
+#### Triggers for nominal rules
+* **X1:0** = Epenthetic vowel moden:modne
+* **X2:0** = ...
+* **X3:0** = Plural r deletion -er, -ene
+* **X4:0** = dumm:dum Delete m
+* **X5:0** = um deletion, faktum:fakta
+* **X6:0** = t:d weakening, oppskjørtet:oppskjørtede
+
+#### Trigers for verbal rules
+* **Q1:0** = Passive
+* **Q2:0** = ...
+* **Q3:0** = Verb vowel and geminate deltion kalte, fylte
+
+#### Triggers for common rules (both for N and V)
+* **Z1:0** = o:ø, a:e Umlaut
+* **Z2:0** = protects vowel
+
+#### Nynorsk trigger
+* **%^NYNAG:0 ;** Trigger for Nynorsk dictionary forms.
+
+
+
+
+
+
+### Sets
+
+* **Vow = a e i o u y æ ø å ;**
+* **Cns = b c d f g h j k l m n p q r s t v w x z ;**
+* **LNR = l n r ;**
+* **Dummy = X1 X2 X3 X4 X5 X6 Q1 Q2 Q3 Z1 Z2 %^NYNAG ;**
+
+## Rule section
+
+This section shows the twolc rules and the tests used to check whether they work
+
+
+
+
+### Umlaut
+
+**Umlaut Rule**  for *bok : bøker* etc. It shifts the vowels *u, o, a, å* to *y, ø, e, e*, respectively when **Z1** is found after the stem.
+
+
+
+### Vowel deletions rules
+
+**Epenthetic Deletion Rule**  is actually 3 rules in one: 1) it deletes -e- in *moden : modne* etc, 2) it deletes the stem -e in *hare + -er* and 3) it delets suffix -e in *ærlig + est > ærligst*
+
+*Tests:* (star denotes negativ test, test that is supposed to fail)
+* *søsterX1>a*
+* *teaterX1>et*
+* *teat0r0>et*
+* *modenX1>e*
+* *mod0n0>e*
+* *reparere>Q3te*
+* *reparer0>0te*
+* ★*modenX1>e* (is not standard language)
+* ★*moden0>e* (is not standard language)
+* *hare>er*
+* *har0>er*
+* *viktig>est*
+* *viktig>0st*
+* *presentere%>Q3t*
+* *presenter0>0t*
+
+**Delete foreign vowel Rule**  for deleting final a or o in words like *kollega : kolleger*. Trigger symbol to the right is **X2**.
+
+*Tests:*
+* *kollegaX2>er*
+* *kolleg00>er*
+
+
+
+### Consonant deletion
+
+**Consonant shortening before deletion Rule**  
+
+*Tests:*
+* *sikkerX1>e*
+* *sik00r0>e*
+* *trusselX1>er*
+* *trus00l0>er*
+
+
+**Geminate deletion in front of -t and -d Rule** deletes: 1) before **Q3 and d or t** (*kaller:kalte*) 2) before passive **Q1 t** (*lykkes:lyktes*) and 3) before epenthetic **-e-** and **l, n** or **r** (*sikker:sikre*)
+
+*Tests:*
+* *kalle>Q3te*
+* *kal00>0te*
+* *lykk0esQ1*
+* *lyk0tes0*
+* *all>Q3t*
+* *al0>0t*
+* *bygge>Q3de*
+* *byg00>0de*
+
+
+
+
+
+**Delete r Rule** deletes **r** in plural *-er* to get *-er + -ne* = plural *-ene* 
+
+**Delete m Rule** for *kam:kammen*, here we delete the second m when word-final.  
+
+
+
+
+**um Deletion 1 Rule** (um Deletion 2 is now part of the *Delete m Rule*)
+
+*Tests:*
+* *museumX5>er*
+* *muse000>er*
+
+
+
+**t weakening Rule**  
+
+*Tests:*
+* *oppskjørtetX6>e*
+* *oppskjørted0>e*
+
+**Double t deletion Rule**  
+
+*Tests:*
+* *svart>t*
+* *svart>0*
+
+
+
+### Insertion rules
+
+**Insert t in passives Rule**  
+
+
+
+### Compound rule
+
+
+
+*Tests:*
+* *grammatikk##kontroll*
+* *grammatik000kontroll*
+
+
+
+### Clitics
+
+**Clitic after s-final Rule**  for changing the so-called *genitive -s* to **'** for s-final stems: *huss -> hus'*
+
+
+
+
+
+### Nynorsk dictionary rules
+
+**Change -er stem to -ar in Nynorsk**  
+
+This rule is for dictionary use only. The idea is to be able to click on words in a Nynorsk text and get translation to North Sámi. Therefore, the Bokmål analyser is able to give an analysis to Nynorsk words as well. The Nynorsk-only forms are removed from all other transducers than the `-dict` transducer.
+
+
+* *a*
+* *b*
+
+Test to have an error
+* ★*a* (is not standard language)
+* ★*b* (is not standard language)
+* * *
+<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/phonology.twolc)</small>
 # Norwegian Bokmål morphological analyser                      
 this documents the symbols and intro lexicon of **Norwegian Bokmål**.
 
@@ -5621,327 +5823,21 @@ SYMBOL_connector
 SYMBOL_NO_suff 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/symbols.lexc)</small>
-# Continuation lexicons for abbreviations
+<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/symbols.lexc)</small># Propernoun morphology
 
-## Lexica for adding tags and periods
 
 
 
+FirstTag 
 
+PROP 
 
 
-## The sublexica
+PROP-surmal 
 
-### Continuation lexicons for abbrs both with and witout final period
+PROP-malfem 
 
-
-* **LEXICON ab-noun   **
-
-* **LEXICON ab-adj   **
-
-* **LEXICON ab-adv   **
-
-* **LEXICON ab-num   **
-
-### Lexicons without final period
-
-* **LEXICON ab-nodot-noun   **  The bulk
-
-
-
-* **LEXICON ab-nodot-adj   **
-
-* **LEXICON ab-nodot-adv   **
-
-* **LEXICON ab-nodot-num   **
-
-### Lexicons with final period
-
-* **LEXICON ab-dot-noun   **  This is the lexicon for abbrs that must have a period.
-
-* **LEXICON ab-dot-adj   **  This is the lexicon for abbrs that must have a period.
-
-
-* **LEXICON ab-dot-adv   **  This is the lexicon for abbrs that must have a period.
-
-* **LEXICON ab-dot-num   **  This is the lexicon for abbrs that must have a period.
-
-* **LEXICON ab-dot-cc   **
-
-
-* **LEXICON ab-dot-verb   **
-
-
-
-* **LEXICON ab-dot-IVprfprc   **
-
-
-
-
-
-
-* **LEXICON DOT   ** - Adds the dot to dotted abbreviations.
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/abbreviations.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/abbreviations.lexc)</small># Bokmål noun morphology 
-
----------------------------------------------------
-Declension classes
-Main types, from Bokmålsordboka
-
-f1  bru         brua        bruer           bruene
-f2  pumpe       pumpa       pumper          pumpene
-f3  søster      søstera     søstre/søstrer  søstrene
-m1  stol        stolen      stoler          stolene
-bakke       bakken      bakker          bakkene
-pumpe       pumpen      pumper          pumpene
-m2  lærer       læreren     lærere          lærerne
-m3  bever       beveren     bevere          beverne
-bevrer          bevrene
-bevre           bevrene
-m4  longs       longsen     longs/longser   longsene
-n1  slott       slottet     slott           slotta/slottene
-n2  eple        eplet       epler           epla/eplene
-salt        saltet      salter          salta/saltene
-n3  kontor      kontoret    kontor/kontorer kontora/kontorene
-høve        høvet       HØVE/høver      høva/høvene
-middel      midlet      MIDDEL/midler   midla/midlene
-n4  salt        saltet      salter          salta/saltene ??
-n5  middel      midlet      midler          midla/midlene ??
-n6  kammer      kammeret    kamre/kammer    kamra/kamrene
-
-Subtypes, mainly from Finsk-norsk ordbok, also system-specific
-
-x  unclassified, to m1 by default
-mX indecl
-m1sg sg only
-m1pl pl only
-m1b dam
-m1b fe, komite
-m1V sko pl. sko, skoa/skoene
-m1Vb byte, pl. byte/byter, bytene
-m1Vc glipp, pl. glipp, glippene
-m3V meter pl. meter
-m3b finger pl. fingrer/fingre
-m3c forelder pl. foreldre
-ma alliert, alierte, allierte, allierte
-KOLLEGA kollegaer, kolleger
-KONTO kontoer, konti
-RADIUS radiuser, radii
-BROR brødre
-FAR fedre
-MANN menn
-mD gårde, garde, dage  (av gårde)
-fD tide (i tide)
-nD live (i live)
-DATTER døtre
-f1b skam
-f1X bok, pl. bøker
-f1V mus, pl. mus
-fGLO glo, pl. glør
-f3b lever. def. levra
-n1b rom, def. rommet
-n1n1b publikum, def. publikumet/publikummet
-n1s sg only
-n2b program, pl. programmer
-n2c kontor, pl. kontor, kontorer
-n2s mørke, not pl.
-n3b lager, def. lageret
-n3c fe, feet
-n4b faktum, pl. fakta
-FORUM forum, forumet, fora/forumer, foraene/forumene
-LEKSIKON leksikon, pl. leksika
-nMUSEUM museum, museet, museer
-nØYE
-
-
-
-## Basic paradigms
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#### Irregulars
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-+N+Fem+Sg+Def+Radical:datra    K ;
-+N:         R ;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@NO CODE@ for nynorsk only.
-
-@NO CODE@ for nynorsk only.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/nouns.lexc)</small># Sublexica for adjective roots
-
-* a1  god         god         godt        gode
-* a2  norsk       norsk       norsk       norske
-* a3  ekte        ekte        ekte        ekte
-* a4  oppskjørtet oppskjørtet oppskjørtet oppskjørtede/oppskjørtete
-* a5  makaber     makaber     makabert    makabre
-*     lunken      lunken      lunkent     lunkne
-* aV  blå         blå         blått       blå
-
-
-
-
-
-## Basic paradigms
-
-a23
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Sublexica
-
-
-
-
-
-
-
-
-
-
+... one lexicon for each combined tag,to split them.
 
 
 
@@ -5965,7 +5861,7 @@ a23
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/adjectives.lexc)</small># Sublexica for verb roots
+<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/propernouns.lexc)</small># Sublexica for verb roots
 
 -----------------------------
 Main types, from Bokmålsordboka
@@ -6211,7 +6107,76 @@ v3-s passive v3 verbs
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/verbs.lexc)</small># Tags for numerals (number words)
+<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/verbs.lexc)</small># Sublexica for adjective roots
+
+* a1  god         god         godt        gode
+* a2  norsk       norsk       norsk       norske
+* a3  ekte        ekte        ekte        ekte
+* a4  oppskjørtet oppskjørtet oppskjørtet oppskjørtede/oppskjørtete
+* a5  makaber     makaber     makabert    makabre
+*     lunken      lunken      lunkent     lunkne
+* aV  blå         blå         blått       blå
+
+
+
+
+
+## Basic paradigms
+
+a23
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Sublexica
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/adjectives.lexc)</small># Tags for numerals (number words)
 
 ## Basic tags
 numtag
@@ -6265,21 +6230,84 @@ numtagsg
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/numerals.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/numerals.lexc)</small># Propernoun morphology
+<small>This (part of) documentation was generated from [../src/fst/affixes/numerals.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/numerals.lexc)</small># Bokmål noun morphology 
+
+---------------------------------------------------
+Declension classes
+Main types, from Bokmålsordboka
+
+f1  bru         brua        bruer           bruene
+f2  pumpe       pumpa       pumper          pumpene
+f3  søster      søstera     søstre/søstrer  søstrene
+m1  stol        stolen      stoler          stolene
+bakke       bakken      bakker          bakkene
+pumpe       pumpen      pumper          pumpene
+m2  lærer       læreren     lærere          lærerne
+m3  bever       beveren     bevere          beverne
+bevrer          bevrene
+bevre           bevrene
+m4  longs       longsen     longs/longser   longsene
+n1  slott       slottet     slott           slotta/slottene
+n2  eple        eplet       epler           epla/eplene
+salt        saltet      salter          salta/saltene
+n3  kontor      kontoret    kontor/kontorer kontora/kontorene
+høve        høvet       HØVE/høver      høva/høvene
+middel      midlet      MIDDEL/midler   midla/midlene
+n4  salt        saltet      salter          salta/saltene ??
+n5  middel      midlet      midler          midla/midlene ??
+n6  kammer      kammeret    kamre/kammer    kamra/kamrene
+
+Subtypes, mainly from Finsk-norsk ordbok, also system-specific
+
+x  unclassified, to m1 by default
+mX indecl
+m1sg sg only
+m1pl pl only
+m1b dam
+m1b fe, komite
+m1V sko pl. sko, skoa/skoene
+m1Vb byte, pl. byte/byter, bytene
+m1Vc glipp, pl. glipp, glippene
+m3V meter pl. meter
+m3b finger pl. fingrer/fingre
+m3c forelder pl. foreldre
+ma alliert, alierte, allierte, allierte
+KOLLEGA kollegaer, kolleger
+KONTO kontoer, konti
+RADIUS radiuser, radii
+BROR brødre
+FAR fedre
+MANN menn
+mD gårde, garde, dage  (av gårde)
+fD tide (i tide)
+nD live (i live)
+DATTER døtre
+f1b skam
+f1X bok, pl. bøker
+f1V mus, pl. mus
+fGLO glo, pl. glør
+f3b lever. def. levra
+n1b rom, def. rommet
+n1n1b publikum, def. publikumet/publikummet
+n1s sg only
+n2b program, pl. programmer
+n2c kontor, pl. kontor, kontorer
+n2s mørke, not pl.
+n3b lager, def. lageret
+n3c fe, feet
+n4b faktum, pl. fakta
+FORUM forum, forumet, fora/forumer, foraene/forumene
+LEKSIKON leksikon, pl. leksika
+nMUSEUM museum, museet, museer
+nØYE
+
+
+
+## Basic paradigms
 
 
 
 
-FirstTag 
-
-PROP 
-
-
-PROP-surmal 
-
-PROP-malfem 
-
-... one lexicon for each combined tag,to split them.
 
 
 
@@ -6287,6 +6315,116 @@ PROP-malfem
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Irregulars
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
++N+Fem+Sg+Def+Radical:datra    K ;
++N:         R ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@NO CODE@ for nynorsk only.
+
+@NO CODE@ for nynorsk only.
 
 
 
@@ -6303,209 +6441,71 @@ PROP-malfem
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/propernouns.lexc)</small># Morphophonological rules for Bokmål
+<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/nouns.lexc)</small>
+# Continuation lexicons for abbreviations
 
-This file documents the [phonology.twolc file](http://github.com/giellalt/lang-nob/blob/main/src/fst/phonology.twolc) 
+## Lexica for adding tags and periods
 
-## Sets and definitions
 
-### Alphabet
 
-We declare both the a-å letters and all other possible letters.
-* **a b c d e f g h i j k l m n o p q r s t u v w x y z æ ø å** 
-* **á é ó ú í à è ò ù ì ä ë ö ü ï â ê ô û î ã ý þ ñ ð ß ç**
-* **A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Ø Å**
-* **Á É Ó Ú Í À È Ò Ù Ì Ä Ë Ö Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð**
-* **'** This is the apostrophe
-* **l7:l** This **l** not deleted by **t**
 
 
-### Boundary symbols
 
-Morpheme boundaries and escaped quotes - do not delete in twolc,
-they will be converted to zero/the real thing at a later stage.
+## The sublexica
 
-* **%#**
-* **%>**
-* **%<**
-* **%\|»**
-* **%\|«**
-* **%[%<%]**
-* **%[%>%]**
+### Continuation lexicons for abbrs both with and witout final period
 
-### Morphophonological triggers
 
-These symbols cause the twolc rules to work.
+* **LEXICON ab-noun   **
 
-#### Triggers for nominal rules
-* **X1:0** = Epenthetic vowel moden:modne
-* **X2:0** = ...
-* **X3:0** = Plural r deletion -er, -ene
-* **X4:0** = dumm:dum Delete m
-* **X5:0** = um deletion, faktum:fakta
-* **X6:0** = t:d weakening, oppskjørtet:oppskjørtede
+* **LEXICON ab-adj   **
 
-#### Trigers for verbal rules
-* **Q1:0** = Passive
-* **Q2:0** = ...
-* **Q3:0** = Verb vowel and geminate deltion kalte, fylte
+* **LEXICON ab-adv   **
 
-#### Triggers for common rules (both for N and V)
-* **Z1:0** = o:ø, a:e Umlaut
-* **Z2:0** = protects vowel
+* **LEXICON ab-num   **
 
-#### Nynorsk trigger
-* **%^NYNAG:0 ;** Trigger for Nynorsk dictionary forms.
+### Lexicons without final period
 
+* **LEXICON ab-nodot-noun   **  The bulk
 
 
 
+* **LEXICON ab-nodot-adj   **
 
+* **LEXICON ab-nodot-adv   **
 
-### Sets
+* **LEXICON ab-nodot-num   **
 
-* **Vow = a e i o u y æ ø å ;**
-* **Cns = b c d f g h j k l m n p q r s t v w x z ;**
-* **LNR = l n r ;**
-* **Dummy = X1 X2 X3 X4 X5 X6 Q1 Q2 Q3 Z1 Z2 %^NYNAG ;**
+### Lexicons with final period
 
-## Rule section
+* **LEXICON ab-dot-noun   **  This is the lexicon for abbrs that must have a period.
 
-This section shows the twolc rules and the tests used to check whether they work
+* **LEXICON ab-dot-adj   **  This is the lexicon for abbrs that must have a period.
 
 
+* **LEXICON ab-dot-adv   **  This is the lexicon for abbrs that must have a period.
 
+* **LEXICON ab-dot-num   **  This is the lexicon for abbrs that must have a period.
 
-### Umlaut
+* **LEXICON ab-dot-cc   **
 
-**Umlaut Rule**  for *bok : bøker* etc. It shifts the vowels *u, o, a, å* to *y, ø, e, e*, respectively when **Z1** is found after the stem.
 
+* **LEXICON ab-dot-verb   **
 
 
-### Vowel deletions rules
 
-**Epenthetic Deletion Rule**  is actually 3 rules in one: 1) it deletes -e- in *moden : modne* etc, 2) it deletes the stem -e in *hare + -er* and 3) it delets suffix -e in *ærlig + est > ærligst*
+* **LEXICON ab-dot-IVprfprc   **
 
-*Tests:* (star denotes negativ test, test that is supposed to fail)
-* *søsterX1>a*
-* *teaterX1>et*
-* *teat0r0>et*
-* *modenX1>e*
-* *mod0n0>e*
-* *reparere>Q3te*
-* *reparer0>0te*
-* ★*modenX1>e* (is not standard language)
-* ★*moden0>e* (is not standard language)
-* *hare>er*
-* *har0>er*
-* *viktig>est*
-* *viktig>0st*
-* *presentere%>Q3t*
-* *presenter0>0t*
 
-**Delete foreign vowel Rule**  for deleting final a or o in words like *kollega : kolleger*. Trigger symbol to the right is **X2**.
 
-*Tests:*
-* *kollegaX2>er*
-* *kolleg00>er*
 
 
 
-### Consonant deletion
+* **LEXICON DOT   ** - Adds the dot to dotted abbreviations.
 
-**Consonant shortening before deletion Rule**  
 
-*Tests:*
-* *sikkerX1>e*
-* *sik00r0>e*
-* *trusselX1>er*
-* *trus00l0>er*
-
-
-**Geminate deletion in front of -t and -d Rule** deletes: 1) before **Q3 and d or t** (*kaller:kalte*) 2) before passive **Q1 t** (*lykkes:lyktes*) and 3) before epenthetic **-e-** and **l, n** or **r** (*sikker:sikre*)
-
-*Tests:*
-* *kalle>Q3te*
-* *kal00>0te*
-* *lykk0esQ1*
-* *lyk0tes0*
-* *all>Q3t*
-* *al0>0t*
-* *bygge>Q3de*
-* *byg00>0de*
-
-
-
-
-
-**Delete r Rule** deletes **r** in plural *-er* to get *-er + -ne* = plural *-ene* 
-
-**Delete m Rule** for *kam:kammen*, here we delete the second m when word-final.  
-
-
-
-
-**um Deletion 1 Rule** (um Deletion 2 is now part of the *Delete m Rule*)
-
-*Tests:*
-* *museumX5>er*
-* *muse000>er*
-
-
-
-**t weakening Rule**  
-
-*Tests:*
-* *oppskjørtetX6>e*
-* *oppskjørted0>e*
-
-**Double t deletion Rule**  
-
-*Tests:*
-* *svart>t*
-* *svart>0*
-
-
-
-### Insertion rules
-
-**Insert t in passives Rule**  
-
-
-
-### Compound rule
-
-
-
-*Tests:*
-* *grammatikk##kontroll*
-* *grammatik000kontroll*
-
-
-
-### Clitics
-
-**Clitic after s-final Rule**  for changing the so-called *genitive -s* to **'** for s-final stems: *huss -> hus'*
-
-
-
-
-
-### Nynorsk dictionary rules
-
-**Change -er stem to -ar in Nynorsk**  
-
-This rule is for dictionary use only. The idea is to be able to click on words in a Nynorsk text and get translation to North Sámi. Therefore, the Bokmål analyser is able to give an analysis to Nynorsk words as well. The Nynorsk-only forms are removed from all other transducers than the `-dict` transducer.
-
-
-* *a*
-* *b*
-
-Test to have an error
-* ★*a* (is not standard language)
-* ★*b* (is not standard language)
 * * *
-<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/phonology.twolc)</small>
+<small>This (part of) documentation was generated from [../src/fst/affixes/abbreviations.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/abbreviations.lexc)</small>
 # Norwegian Bokmål compounding
 
 
@@ -6527,108 +6527,7 @@ LEXICON Interjection lists *folkens, heisann, pokker* and some 60 more interject
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/interjections.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/interjections.lexc)</small># File containing abbreviations for Norwegian Bokmål 
-
-This file documents the Bokmål abbrevioations stem file [stems/nob-abbreviations.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nob-abbreviations.lexc).
-
-
-
-Abbreviation-nob 
-
-##            Intransitive abbreviations           
-
-These give clause boundaries before capital letters
-and numbers, but not elsewhere.
-
----------------------------------------------
-Vi bor i Sth. CLB 10 av oss er innflyttere.
-Vi bor i Sth. CLB Saara er også innflytter.
-Vi vet at Sth. er en fin by.
-
-
-ITRAB 
-
-
-
-
-
-Transitive number-related abbreviations      !
-
-These ones are transitive when followed by numbers or
-singleton letters, and intransitive elsewhere.
-
---------------------------------------------------
-Gården har Gnr. 10.
-Gården har Gnr. 5. a.
-Alle gårder har ikke Gnr. CLB Det er et problem.
-Alle gårder har ikke Gnr. og det er et problem.
---------------------------------------------------
-
-TRNUMAB 
-
-
-
-
-#              Transitive abbreviations           
-
-TRAB 
-
-dot% noStb.db
-Abbreviations that never induce sentence boundaries
-The file is too large and should be shrinked
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nob-abbreviations.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/nob-abbreviations.lexc)</small># Bokmål propernouns
-
-This file documents the Bokmål proper nouns stem file [stems/nob-propernouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nob-propernouns.lexc).
-
-LEXICON ProperNoun-nob-nocomp contains some acronyms
-
-
-LEXICON ProperNoun-nob contains the list of 2200 or so names. The rest come from common files.
-
-
-Adjectives
-
-
-
-Nouns
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nob-propernouns.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/nob-propernouns.lexc)</small># Nynorsk stems 
-for tolerant dictionary reading
-
-This file documents the nynorsk stem file for the bokmål analyzer [stems/nynorsk-stems.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nynorsk-stems.lexc).
-
-LEXICON Prnyn 
-
-LEXICON Advnyn 
-
-LEXICON Anyn 
-
-LEXICON Vnyn 
-
-
-LEXICON Propnyn 
-
-LEXICON Pronnyn 
-
-LEXICON nnnb 
-
-LEXICON Nynorsk  her kjem alle orda
-
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nynorsk-stems.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/nynorsk-stems.lexc)</small># Bokmål prepositions
+<small>This (part of) documentation was generated from [../src/fst/stems/interjections.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/interjections.lexc)</small># Bokmål prepositions
 
 This file documents the Bokmål prepositions stem file [stems/prepositions.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/prepositions.lexc).
 
@@ -6651,7 +6550,162 @@ Conjunction  både, og, ..
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/conjunctions.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/conjunctions.lexc)</small># Bokmål noun lexicon 
+<small>This (part of) documentation was generated from [../src/fst/stems/conjunctions.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/conjunctions.lexc)</small># Bokmål subjunctions
+
+This file documents the Bokmål subjunctions stem file [stems/subjunctions.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/subjunctions.lexc).
+
+LEXICON Subjunction
+
+LEXICON subj gives tag +CS
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/subjunctions.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/subjunctions.lexc)</small># Bokmål propernouns
+
+This file documents the Bokmål proper nouns stem file [stems/nob-propernouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nob-propernouns.lexc).
+
+LEXICON ProperNoun-nob-nocomp contains some acronyms
+
+
+LEXICON ProperNoun-nob contains the list of 2200 or so names. The rest come from common files.
+
+
+Adjectives
+
+
+
+Nouns
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/nob-propernouns.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/nob-propernouns.lexc)</small>
+# Norwegian Bokmål verb stems
+
+This file documents the Bokmål verb stem file [stems/verbs.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/verbs.lexc).
+
+## Overview of the declension classes
+
+----------------------------------------------------
+Main types, from Bokmålsordboka
+
+v1 kaste kaster kasta kasta
+kastet kastet
+v2 lyse lyser lyste lyst
+reparere reparerer reparerte reparert
+v3 leve lever levde levd
+v4 nå når nådde nådd
+v4 bie bier bidde bidd
+
+Subtypes
+v13 v1 or v3
+v1-s passive v1 verbs
+v2-s passive v2 verbs
+v3-s passive v3 verbs
+Strong verbs have verb-specific lexica
+
+
+## The entries
+
+
+LEXICON VerbRoot contains the 5700 or so  verbs
+
+* innbefatte v1 ; 
+* tilslutte v1 ; 
+
+
+* abbreviere v2 ; 
+* abdisere v2 ; 
+* allmenngjøre:allmenn GJØRE ; 
+* anbringe:an BRINGE ; 
+* andøve v3 ; 
+* anfalle:an FALLE ; 
+* angi:an GI ; 
+* angripe:an GRIPE ; 
+* ankomme:an KOMME ;  
+* falle: FALLE ; 
+* etc.
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/verbs.lexc)</small># Norwegian Bokmål Adjectives
+
+This file documents the Bokmål adjective stem file [stems/adjectives.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/adjectives.lexc).
+
+## Overview of the declension classes
+
+----------------------------------------------------
+Main types, from Bokmålsordboka
+
+a1 god god godt gode
+a2 billig billig billig billige
+a3 ekte ekte ekte ekte
+a4 oppskjørtet oppskjørtet oppskjørtet oppskjørtede/oppskjørtete
+a5 makaber makaber makabert makabre
+a5 lunken lunken lunkent lunkne
+aV blå blå blått blå
+... and some irregular ones
+
+
+
+
+AdjectiveRoot is the list of adjectives (some 5500 stems)
+* få: A_FÅ ; 
+* små: A_SMÅ ; 
+* vond: VOND ; 
+
+
+
+* artikkelbasert a2 ; 
+* aggressiv a1 ; 
+* avbøtende a3 ; 
+* bundet a4 ; 
+
+
+* dritredd a2 ; 
+* dritsur+v1:drit#sur a1 ; 
+* dritsur+v2:dritt#sur a1 ; 
+* ...
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/adjectives.lexc)</small>
+# Bokmål numerals (number words)
+
+This file documents the Bokmål numerals stem file [stems/numerals.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/numerals.lexc).
+
+LEXICON Numeral 
+
+LEXICON Textual 
+
+
+LEXICON TEXTTHOUSANDS 
+
+LEXICON 1000CONT 
+
+LEXICON TEXTHUNDREDS 
+
+LEXICON 100CONT 
+
+LEXICON TEXTTENS 
+
+
+LEXICON TEXTTENSCONT 
+
+LEXICON TEXTTEENS 
+
+LEXICON TEXTONES 
+
+LEXICON 2-9 
+
+LEXICON ORDTEXT 
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/numerals.lexc)</small># Bokmål noun lexicon 
 
 This file documents the Bokmål noun stem file [stems/nouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nouns.lexc).
 
@@ -6755,55 +6809,7 @@ LEXICON Noun  here come the long list of stems (tens of thousands)
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/nouns.lexc)</small># Norwegian Bokmål Adjectives
-
-This file documents the Bokmål adjective stem file [stems/adjectives.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/adjectives.lexc).
-
-## Overview of the declension classes
-
-----------------------------------------------------
-Main types, from Bokmålsordboka
-
-a1 god god godt gode
-a2 billig billig billig billige
-a3 ekte ekte ekte ekte
-a4 oppskjørtet oppskjørtet oppskjørtet oppskjørtede/oppskjørtete
-a5 makaber makaber makabert makabre
-a5 lunken lunken lunkent lunkne
-aV blå blå blått blå
-... and some irregular ones
-
-
-
-
-AdjectiveRoot is the list of adjectives (some 5500 stems)
-* få: A_FÅ ; 
-* små: A_SMÅ ; 
-* vond: VOND ; 
-
-
-
-* artikkelbasert a2 ; 
-* aggressiv a1 ; 
-* avbøtende a3 ; 
-* bundet a4 ; 
-
-
-* dritredd a2 ; 
-* dritsur+v1:drit#sur a1 ; 
-* dritsur+v2:dritt#sur a1 ; 
-* ...
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/adjectives.lexc)</small># Bokmål pronoun stems
+<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/nouns.lexc)</small># Bokmål pronoun stems
 
 This file documents the Bokmål pronouns stem file [stems/pronouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/pronouns.lexc).
 
@@ -6822,97 +6828,7 @@ LEXICON Possessive
 LEXICON Other_Pronouns 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/pronouns.lexc)</small># Bokmål subjunctions
-
-This file documents the Bokmål subjunctions stem file [stems/subjunctions.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/subjunctions.lexc).
-
-LEXICON Subjunction
-
-LEXICON subj gives tag +CS
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/subjunctions.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/subjunctions.lexc)</small>
-# Norwegian Bokmål verb stems
-
-This file documents the Bokmål verb stem file [stems/verbs.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/verbs.lexc).
-
-## Overview of the declension classes
-
-----------------------------------------------------
-Main types, from Bokmålsordboka
-
-v1 kaste kaster kasta kasta
-kastet kastet
-v2 lyse lyser lyste lyst
-reparere reparerer reparerte reparert
-v3 leve lever levde levd
-v4 nå når nådde nådd
-v4 bie bier bidde bidd
-
-Subtypes
-v13 v1 or v3
-v1-s passive v1 verbs
-v2-s passive v2 verbs
-v3-s passive v3 verbs
-Strong verbs have verb-specific lexica
-
-
-## The entries
-
-
-LEXICON VerbRoot contains the 5700 or so  verbs
-
-* innbefatte v1 ; 
-* tilslutte v1 ; 
-
-
-* abbreviere v2 ; 
-* abdisere v2 ; 
-* allmenngjøre:allmenn GJØRE ; 
-* anbringe:an BRINGE ; 
-* andøve v3 ; 
-* anfalle:an FALLE ; 
-* angi:an GI ; 
-* angripe:an GRIPE ; 
-* ankomme:an KOMME ;  
-* falle: FALLE ; 
-* etc.
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/verbs.lexc)</small>
-# Bokmål numerals (number words)
-
-This file documents the Bokmål numerals stem file [stems/numerals.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/numerals.lexc).
-
-LEXICON Numeral 
-
-LEXICON Textual 
-
-
-LEXICON TEXTTHOUSANDS 
-
-LEXICON 1000CONT 
-
-LEXICON TEXTHUNDREDS 
-
-LEXICON 100CONT 
-
-LEXICON TEXTTENS 
-
-
-LEXICON TEXTTENSCONT 
-
-LEXICON TEXTTEENS 
-
-LEXICON TEXTONES 
-
-LEXICON 2-9 
-
-LEXICON ORDTEXT 
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/numerals.lexc)</small># Bokmål adverbs
+<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/pronouns.lexc)</small># Bokmål adverbs
 
 This file documents the Bokmål adverb stem file [stems/adverbs.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/adverbs.lexc).
 
@@ -6923,7 +6839,91 @@ LEXICON dt  also ads +Adv  perhaps unify, perhaps not.
 Adverb lists some 600 Norwegian adverbs, including MWE such as "i live"
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/adverbs.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/adverbs.lexc)</small>
+<small>This (part of) documentation was generated from [../src/fst/stems/adverbs.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/adverbs.lexc)</small># Nynorsk stems 
+for tolerant dictionary reading
+
+This file documents the nynorsk stem file for the bokmål analyzer [stems/nynorsk-stems.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nynorsk-stems.lexc).
+
+LEXICON Prnyn 
+
+LEXICON Advnyn 
+
+LEXICON Anyn 
+
+LEXICON Vnyn 
+
+
+LEXICON Propnyn 
+
+LEXICON Pronnyn 
+
+LEXICON nnnb 
+
+LEXICON Nynorsk  her kjem alle orda
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/nynorsk-stems.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/nynorsk-stems.lexc)</small># File containing abbreviations for Norwegian Bokmål 
+
+This file documents the Bokmål abbrevioations stem file [stems/nob-abbreviations.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nob-abbreviations.lexc).
+
+
+
+Abbreviation-nob 
+
+##            Intransitive abbreviations           
+
+These give clause boundaries before capital letters
+and numbers, but not elsewhere.
+
+---------------------------------------------
+Vi bor i Sth. CLB 10 av oss er innflyttere.
+Vi bor i Sth. CLB Saara er også innflytter.
+Vi vet at Sth. er en fin by.
+
+
+ITRAB 
+
+
+
+
+
+Transitive number-related abbreviations      !
+
+These ones are transitive when followed by numbers or
+singleton letters, and intransitive elsewhere.
+
+--------------------------------------------------
+Gården har Gnr. 10.
+Gården har Gnr. 5. a.
+Alle gårder har ikke Gnr. CLB Det er et problem.
+Alle gårder har ikke Gnr. og det er et problem.
+--------------------------------------------------
+
+TRNUMAB 
+
+
+
+
+#              Transitive abbreviations           
+
+TRAB 
+
+dot% noStb.db
+Abbreviations that never induce sentence boundaries
+The file is too large and should be shrinked
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/nob-abbreviations.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/nob-abbreviations.lexc)</small>
 
 
 We describe here how abbreviations are in Norwegian Bokmål are read out, e.g.
@@ -7187,8 +7187,6 @@ These were the set types.
 
 
 ### Grammarchecker sets
-
-
 
 
 
