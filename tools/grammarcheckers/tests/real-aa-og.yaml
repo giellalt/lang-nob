@@ -1,0 +1,7 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+  
+Tests:
+  - "Det var Trond {å}€{og} Kari."
+  - "Vi vil hoppe {å}€{og} sprette."

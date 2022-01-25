@@ -1,0 +1,6 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+  
+Tests:
+  - "Dette er en {fint}£{fin} båt."

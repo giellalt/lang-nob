@@ -1,0 +1,8 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+  
+Tests:
+  - "Vi snakker om {du}£{deg}."
+  - "Jeg sa av {jeg}£{meg} kommer."
+  
