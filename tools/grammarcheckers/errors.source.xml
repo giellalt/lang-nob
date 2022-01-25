@@ -42,6 +42,18 @@
     </body>
   </error>
 
+  <error id="msyn-qu-pldef-plindef">
+    <header>
+      <title xml:lang="en">Indefinite noun in quantor phrases</title>
+      <title xml:lang="nb">Ubesttemt substantiv i kvantorfraser</title>
+    </header>
+    <body>
+      <description xml:lang="en">When a noun, such as "$1, stands after a numeral or quantor,  "$2", it should be in indefinite from.</description>
+      <description xml:lang="nb">Når et substantiv, som her "$1", står etter et tallord eller en kvantor, som her "$2", skal det stå i ubestemt form.</description>
+    </body>
+  </error>
+
+
   <error id="msyn-pron-nom-acc">
     <header>
       <title xml:lang="en">Nominative after preposition</title>

@@ -99,6 +99,8 @@ LIST Det = Det ;
 LIST AUX = "ha" ; # XXX
 SET NOT-AUX-V = V - AUX ;
 LIST Comp = Comp ;
+LIST Pl = Pl ;
+LIST Def = Def ;
 
 LIST CS = CS ;
 LIST CC = CC ;
@@ -649,6 +651,7 @@ LIST &msyn-agr-detneu-detmsc =  &msyn-agr-detneu-detmsc ;
 LIST &msyn-pron-nom-acc = &msyn-pron-nom-acc ;
 LIST &real-aa-og = &real-aa-og ;
 LIST &real-og-aa = &real-og-aa ;
+LIST &msyn-qu-pldef-plindef = &msyn-qu-pldef-plindef ;
 
 MAPPING-PREFIX = & ;
 
@@ -708,8 +711,8 @@ COPY:msyn-agr-detneu-detmsc ("en" Det Dem Msc Sg &SUGGEST) EXCEPT ("et" Pron Ind
 # Definite that should be indefinite
 #ADD:msyn-defness_m_def (&msyn-defness_m_def) TARGET
 
-
-
+ADD:msyn-qu-pldef-plindef (&msyn-qu-pldef-plindef) TARGET N + Pl + Def IF (*-1 Num OR ("mange") BARRIER NOT-A);
+COPY:msyn-qu-pldef-plindef (Indef &SUGGEST) EXCEPT Def TARGET (&msyn-qu-pldef-plindef); 
 # Case errors
 
 ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg2 Nom) IF (-1 Pr);
