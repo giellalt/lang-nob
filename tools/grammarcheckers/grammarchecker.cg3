@@ -725,12 +725,12 @@ COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg2 &msyn-p
 # og/å
 
 ADD:real-og-aa (&real-og-aa) TARGET ("og" CC) IF (-1 Ind)(1 Inf);
-COPY:real-og-aa ("å" IM &SUGGEST) EXCEPT ("og" CC) TARGET (&real-og-aa);
+COPY:real-og-aa ("å" IM &SUGGEST) EXCEPT ("og" CC) TARGET (CC &real-og-aa);
 ## Vi prøver og gå.
 #$ Vi prøver å gå.
 
-ADD:real-aa-og (&real-aa-og) TARGET ("å" IM) IF (-1 N) (1 N);
-COPY:real-aa-og ("og" CC &SUGGEST) EXCEPT ("å" IM) TARGET (&real-aa-og);
+ADD:real-aa-og (&real-aa-og) TARGET ("å") IF (-1 N) (1 N);
+COPY:real-aa-og ("og" CC &SUGGEST) EXCEPT ("å" IM) TARGET (IM &real-aa-og);
 ## Det var Trond å Kari.
 #$ Det var Trond og Kari.
 
