@@ -359,8 +359,11 @@ LIST MF = MF ;
 LIST Sg-Fem-N/tall-N/maalN/tidsN = "år" "uke" "tusen" "trillion" "tonnkilometer" "time" "tiendelssekund" "tidelssekund" "snes" "sjømil" "sekundmeter" "sekund" "prosent" "nanosekund" "nanometer" "måned" "mrd." "minutt" "millisekund" "million" "millimeter" "milliliter" "milligram" "milliard" "mill." "mil" "mikrometer" "meter" "liter" "kvartmil" "kvartliter" "kvadrillion" "kvadratmillimeter" "kvadratmeter" "kvadratkilometer" "kvadratdesimeter" "kvadratcentimeter" "kubikkmillimeter" "kubikkmeter" "kubikkdesimeter" "kubikkcentimeter" "kilometer" "kilogram" "kilo" "hundredelssekund" "hundre" "hektoliter" "hektogram" "halvår" "halvmillion" "halvmil" "halvmeter" "halvliter" "halvkilo" "gram" "døgn" "dusin" "desimeter" "desiliter" "desigram" "dekaliter" "dag" "centimeter" "centiliter" "centigram" "billion" "billiard" (N Sg Fem) ("gang" Pl) ;
 LIST CmpS = Cmp/s ;
 LIST Cmp/null = Cmp/null ;
-LIST Cmp = CmpS Cmp/null ;
+LIST Cmp = Cmp/s Cmp/null ;
 LIST DeleteCmp = DeleteCmp ;
+
+LIST Ex = Ex/V Ex/A Ex/N ;
+LIST Use/SpellNoSugg = Use/SpellNoSugg ;
 
 LIST Sg-N = (N Sg) ;
 LIST f-subj = ("det" Pron) ;
@@ -758,6 +761,9 @@ SECTION
 #!! **NotAbbr** removes abbreviations whenever alternatives
 REMOVE:NotAbbr ABBR ;
 
+#!!
+REMOVE:Use/SpellNoSugg Use/SpellNoSugg ; 
+
 #!! **AbbrBeforePara** removes CLB before CLB
 REMOVE:AbbrBeforePara ABBR IF (0 CLB)(1 CLB) ; 
 
@@ -765,10 +771,13 @@ REMOVE:AbbrBeforePara ABBR IF (0 CLB)(1 CLB) ;
 #!! **Nynorsk** removes all *+Nynorsk* forms (they are in use only for the dictionary interface, and that does not use disambiguation).
 REMOVE:Nynorsk (Nynorsk) ;
 
+#!! **aa**
+REMOVE:aa ABBR IF (0 IM);
+
 #!! **aaIM** selects +IM for *å*
 SELECT:aaIM IM IF (0 ("å"))(1 Inf);
 
-REMOVE (Use/SpellNoSugg) ;
+REMOVE:SNS (*) IF (0  Use/SpellNoSugg) ;
 REMOVE ("<Use\/Circ.*>"r) ;
 
 REMOVE:NotDer (Ex/V) IF (0 N + $$NUM + $$DEF); 
@@ -800,22 +809,14 @@ REMOVE:dyn  Arab (0 Prop) ; # foreløpig løsning, til vi har ny løsning for nu
 
 #!! * Rule for adding <vdic> to verbs denoting verbal actions like: ... dadjá Aili Kestkitalo.
 
+#!! #### Compounds
 
-#MAP (DeleteCmp) N (0/1 Cmp/null);
-#REMOVE SUB:1 (0 DeleteCmp) ;
-REMOVE:Lexicalised CmpS ;
-REMOVE:lexicalisedonlyNull SUB:1 (Cmp/null) (NOT 0t/1 (Cmp/null));
-REMOVE:lexicalisedonly SUB:1 (Cmp) (NOT 0t/1 (Cmp));
-REMOVE:lexicalisedonlyS SUB:1 (Cmp/null) (0t/1 (CmpS));
+# Remove dynamic compounds when lexicalised are present
+REMOVE:LexicalisedOnly1 SUB:1 Cmp ; # hfst only
+REMOVE:LexicalisedOnly2 SUB:2 Cmp ; # hfst only
+REMOVE:NotDerived SUB:1 Ex ;
 
-# Remove skal kigge på sub-reading 1 efter tag (Cmp) og fjerne hele reading
-# hvis der findes en anden reading som ikke har en sub-reading med (Cmp).
-
-REMOVE:Lexicalised Cmp/null ;
-#REMOVE:Lexicalised2 N IF (0/1 CmpS) ;
-#REMOVE:Lexicalised2 N IF (0/1 Cmp/null) ;
-#REMOVE:LexAdv Der/AAdv IF (0 Adv LINK NOT 0 A);
-
+REMOVE:SpellNoSugg (0 Use/SpellNoSugg) ;
 
 
 REMOVE:NoX X + V IF (0 V) ; # Vi skriver, fjern X.
@@ -16346,7 +16347,7 @@ REMOVE (V Prt) IF
 REMOVE (V Prt) IF
 	(NOT 0 %var%)
 	(NOT -1 Adv OR parentes)
-	(*-1 setn-gr LINK *1C fv LINK NOT 0 trans2)
+	(*-1 setn-gr LINK *1C fv) # LINK NOT 0 trans2) TT: trans2 OBT
 	(*-1 setn-gr LINK NOT 0 %som%)
 ;
 
@@ -18171,6 +18172,9 @@ REMOVE (V) IF
 ;
 
 
+REMOVE Prt IF (-2 hj-V)(-1 Inf)(0 N + Neu + Sg + Def);
+## De saktmodige skal arve landet.
+
 # 1566
 REMOVE (V) IF
 	(NOT 0 ikke-N-V)
@@ -18187,6 +18191,10 @@ REMOVE (A) IF
 
 
 #!! ## Giellatekno late rules
+
+LIST IDNOUN = "artikkel" "kapittel" "paragraf" "punkt" ;
+
+SELECT:SemID Sem/ID IF (-1 IDNOUN OR (":"))(0 Num);
 
 #!! ### Neuter sg pl
 
@@ -18207,7 +18215,7 @@ REMOVE (Pron) IF (0 Det + $$GEN)(*1 N + $$GEN BARRIER NOT-PRE-NP-HEAD);
 
 REMOVE Pron + Pers + Pl3 IF (1 N + Pl OR A + Pl OR Qnt + Pl);
 
-REMOVE Det IF (0 Pron)(NOT *1 N BARRIER NOT-PRE-NP-HEAD);
+REMOVE Det IF (0 Pron)(NOT *1 N OR Num BARRIER NOT-PRE-NP-HEAD);
 REMOVE Det IF (0 Pron)(0 Det + Neu)(*1C N + Msc OR N + Fem BARRIER NOT-PRE-NP-HEAD);
 REMOVE Det IF (0 Pron)(1 Pr OR V OR CLB OR EOS);
 
