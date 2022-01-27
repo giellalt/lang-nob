@@ -67,23 +67,34 @@
 
   <error id="real-aa-og">
     <header>
-      <title xml:lang="en">og rather than å</title>
-      <title xml:lang="nb">og i steden for å</title>
+      <title xml:lang="en">Use "og" rather than "å"</title>
+      <title xml:lang="nb">Bruk "og" i steden for "å"</title>
     </header>
     <body>
-      <description xml:lang="en">Between two nouns, like "$1" and "$2", use "og", not "å"</description>
-      <description xml:lang="nb">Mellom to substantiv, som "$1" og "$2", skal det være "og" og ikke "å".</description>
+      <description xml:lang="en">Between two nouns, like "$2" and "$3", use "og", not "å".</description>
+      <description xml:lang="nb">Mellom to substantiv, som "$2" og "$3", skal det være "og" og ikke "å".</description>
+    </body>
+  </error>
+
+  <error id="real-v-aa-og">
+    <header>
+      <title xml:lang="en">Use "og" rather than "å"</title>
+      <title xml:lang="nb">Bruk "og" i steden for "å"</title>
+    </header>
+    <body>
+      <description xml:lang="en">Between two similar verbs, like "$2" and "$3", use "og", not "å".</description>
+      <description xml:lang="nb">Mellom to like verb, som "$2" og "$3", skal det være "og" og ikke "å".</description>
     </body>
   </error>
 
   <error id="real-og-aa">
     <header>
-      <title xml:lang="en">å rather than og</title>
-      <title xml:lang="nb">å i steden for og</title>
+      <title xml:lang="en">Use "å" rather than "og"</title>
+      <title xml:lang="nb">Bruk "å" i steden for "og"</title>
     </header>
     <body>
-      <description xml:lang="en">An infinitive, like  "$1", shall have  "å" in front of it, and not "og"</description>
-      <description xml:lang="nb">En infinitiv, som  "$1", skal ha "å" foran seg, og ikke "og"</description>
+      <description xml:lang="en">An infinitive, like  "$1", shall have  "å" in front of it, and not "og".</description>
+      <description xml:lang="nb">En infinitiv, som  "$1", skal ha "å" foran seg, og ikke "og".</description>
     </body>
   </error>
 
