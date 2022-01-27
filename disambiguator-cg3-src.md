@@ -54,6 +54,7 @@ the labels are kept from OBT-cg, but GiellaLT content is added when needed.
 
 
 
+
 * Amount sets
 
 
@@ -80,9 +81,12 @@ the labels are kept from OBT-cg, but GiellaLT content is added when needed.
 
 **NotAbbr** removes abbreviations whenever alternatives
 
+
 **AbbrBeforePara** removes CLB before CLB
 
 **Nynorsk** removes all *+Nynorsk* forms (they are in use only for the dictionary interface, and that does not use disambiguation).
+
+**aa**
 
 **aaIM** selects +IM for *å*
 
@@ -99,8 +103,7 @@ the labels are kept from OBT-cg, but GiellaLT content is added when needed.
 
 * Rule for adding <vdic> to verbs denoting verbal actions like: ... dadjá Aili Kestkitalo.
 
-
-
+#### Compounds
 
 
 
@@ -4312,7 +4315,10 @@ The bulk of the file contains rules from the original OBT file.
 
 
 
+
 ## Giellatekno late rules
+
+
 
 ### Neuter sg pl
 

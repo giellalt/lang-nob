@@ -142,6 +142,12 @@ B O K M Å L   N O R W E G I A N   G R A M M A R   C H E C K E R
 
 
 
+
+
+
+
+
+
 * Sets for verbs
 
 
@@ -245,6 +251,11 @@ These were the set types.
 
 
 ### Grammarchecker sets
+
+
+
+
+
 
 
 
