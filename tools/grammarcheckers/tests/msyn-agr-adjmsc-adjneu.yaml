@@ -1,0 +1,8 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+  
+Tests:
+  - "Et nyskapt folk skal prise Herren."
+  - "Dette er et fin hus."
+  
