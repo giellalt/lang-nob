@@ -111,6 +111,7 @@ LIST Num = Num ;
 LIST Interj = Interj ;
 LIST ABBR = ABBR ;
 LIST ACR = ACR ;
+LIST IM = IM ;
 
 LIST Msc = Msc ;
 LIST Fem = Fem ;
@@ -157,6 +158,7 @@ LIST Sem/Date = Sem/Date ;
 LIST Sem/Fem = Sem/Fem ;
 LIST Sem/Group = Sem/Group ;
 LIST Sem/Hum = Sem/Hum ;
+LIST Sem/ID = Sem/ID ;
 LIST Sem/Mal = Sem/Mal ;
 LIST Sem/Measr = Sem/Measr ;
 LIST Sem/Money = Sem/Money ;
@@ -330,6 +332,13 @@ LIST CAP-INITIAL = "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M"
         "N" "O" "P" "Q" "R" "S" "T" "U" "V" "W" "X" "Y" "Z"
         "Á" "Æ" "Ø" "Å" "Ö" "Ä" ;
 
+
+
+LIST hj-V = "være" "ville" "skulle" "måtte" "kunne" "ha" "få" "burde" "bli" ;
+LIST hj-V-iv = ("bli" Inf) ("bli" PrfPrc) ("ha" Inf) ("ha" PrfPrc) ("være" Inf) ("være" PrfPrc) ("få" Inf) ("få" PrfPrc) ("skulle" Inf) ("skulle" PrfPrc) ("kunne" Inf) ("kunne" PrfPrc) ("ville" Inf) ("ville" PrfPrc) ("måtte" Inf) ("måtte" PrfPrc) ("burde" Inf) ("burde" PrfPrc) ;
+
+
+
 # Tag sets
 # ========
   SETS
@@ -365,14 +374,18 @@ SET V-MOOD = Ind OR Imprt ;
 
 SET VFIN =  V-MOOD ;
 
+LIST QUASIAUX = "akte" "begynne" "fortsette" "gidde" "huske" "lære" "orke" "prøve" "slippe" "slutte" "tenke" ;
+	
 SET VFIN-NOT-IMP = Ind ;
 SET VFIN-NOT-AUX = Ind - AUX ;
 
 SET NOT-PRFPRC = WORD - PrfPrc ;
 
-# Person
+# form
 # - - - - 
 
+LIST VERBFORM = Inf PrfPrc PrsPrc Prs Prt Imp ;
+LIST INDFORM = Prs Prt ;
 
 # Pronoun sets
 # ------------
@@ -650,12 +663,14 @@ LIST &msyn-agr-detneu-detfem =  &msyn-agr-detneu-detfem ;
 LIST &msyn-agr-detneu-detmsc =  &msyn-agr-detneu-detmsc ;
 LIST &msyn-pron-nom-acc = &msyn-pron-nom-acc ;
 LIST &real-aa-og = &real-aa-og ;
+LIST &real-v-aa-og = &real-v-aa-og ;
 LIST &real-og-aa = &real-og-aa ;
 LIST &msyn-qu-pldef-plindef = &msyn-qu-pldef-plindef ;
 
 MAPPING-PREFIX = & ;
 
-TEMPLATE nextWordCrossSent = (-1 (*));
+TEMPLATE nextWordCrossSent = (-1 (*)); # Adding mark to word that find the reference word to the left
+TEMPLATE previousWordCrossSent = (1 (*)); # and vice versa
 
 SECTION
 
@@ -668,7 +683,7 @@ ADD:spell-conservatively (&typo &SUGGESTWF) (<spelled>) IF (NEGATE -1 QMARK LINK
 
 # A simple grammar checker rule without suggestions: Ensure preceding adjective agrees with noun
 
-ADD:msyn-agr-adjmsc-adjneu (&msyn-agr-adjmsc-adjneu) TARGET A IF (-1 Det)(0 A + MF OR Msc OR Fem)(1 N + Neu);
+ADD:msyn-agr-adjmsc-adjneu (&msyn-agr-adjmsc-adjneu) TARGET A IF (-1 Det)(0 A + MF OR Msc OR Fem)(NOT 0 A + Neu)(1C N + Neu);
 COPY:msyn-agr-adjmsc-adjneu (Neu Sg Indef &SUGGEST)  EXCEPT (Fem Sg Indef) OR (Msc Sg Indef) OR (MF Sg Indef)  TARGET (A Pos &msyn-agr-adjmsc-adjneu) ;
 ADDRELATION:msyn-agr-adjmsc-adjneu ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&msyn-agr-adjmsc-adjneu)) ;
 
@@ -711,11 +726,16 @@ COPY:msyn-agr-detneu-detmsc ("en" Det Dem Msc Sg &SUGGEST) EXCEPT ("et" Pron Ind
 # Definite that should be indefinite
 #ADD:msyn-defness_m_def (&msyn-defness_m_def) TARGET
 
-ADD:msyn-qu-pldef-plindef (&msyn-qu-pldef-plindef) TARGET N + Pl + Def IF (*-1 Num OR ("mange") BARRIER NOT-A);
+ADD:msyn-qu-pldef-plindef (&msyn-qu-pldef-plindef) TARGET N + Pl + Def IF (*-1 Num OR ("mange") BARRIER NOT-A LINK NOT 0 Sem/ID LINK NOT -1 (§));
 COPY:msyn-qu-pldef-plindef (Indef &SUGGEST) EXCEPT Def TARGET (&msyn-qu-pldef-plindef); 
+ADDRELATION:msyn-qu-pldef-plindef ($2) (*) FROM (T:previousWordCrossSent LINK 0 (&msyn-qu-pldef-plindef)) ;
+
+## Vi har mange bøkene.
+
+
 # Case errors
 
-ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg2 Nom) IF (-1 Pr);
+ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg2 Nom) IF (-1 Pr)(NOT -1 ("for") OR ("som") OR ("om"));
 COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg2 &msyn-pron-nom-acc);
 ## Vi snakker om du.
 #$ Vi snakker om deg.
@@ -731,10 +751,26 @@ COPY:real-og-aa ("å" IM &SUGGEST) EXCEPT ("og" CC) TARGET (CC &real-og-aa);
 
 ADD:real-aa-og (&real-aa-og) TARGET ("å") IF (-1 N) (1 N);
 COPY:real-aa-og ("og" CC &SUGGEST) EXCEPT ("å" IM) TARGET (IM &real-aa-og);
+ADDRELATION:real-aa-og ($2) (N) FROM (1 IM LINK 0 (&real-aa-og)) ;
+ADDRELATION:real-aa-og ($3) (N) FROM (-1 IM LINK 0 (&real-aa-og)) ;
 ## Det var Trond å Kari.
 #$ Det var Trond og Kari.
 
-	
+ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF (-2 hj-V)(-1 V + $$VERBFORM LINK NOT 0 QUASIAUX) (1 V + $$VERBFORM);
+ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF (NOT *-4 ("som") LINK -1 A)(-2 hj-V)(-1 V + $$VERBFORM LINK NOT 0 QUASIAUX) (1 V + $$VERBFORM);
+COPY:real-v-aa-og ("og" CC &SUGGEST) EXCEPT ("å" IM) TARGET (IM &real-v-aa-og);
+#$ Vi prøver å skrive lyrikk.
+#$ Vi må prøve å skrive lyrikk.
+#% Vi må lese å skrive lyrikk.
+#$ Det er ikke så lett som man skulle tro å skrive lyrikk.
+#% Vi vil skrive å utgi lyrikk.
+
+ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF ( -2 hj-V)(-1 V + $$INDFORM)(NOT -1 QUASIAUX) (1 V + $$INDFORM);
+ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF (NOT -2 hj-V)(-1 V + $$INDFORM)(NOT -1 QUASIAUX) (1 V + $$INDFORM);
+
+ADDRELATION:real-v-aa-og ($2) (V) FROM (1 IM LINK 0 (&real-v-aa-og)) ;
+ADDRELATION:real-v-aa-og ($3) (V) FROM (-1 IM LINK 0 (&real-v-aa-og)) ;
+
 
 # Simple punctuation rules showing how to change the lemma in the suggestions:
 ADD:use-guillemets (&guillemets) TARGET (""");
