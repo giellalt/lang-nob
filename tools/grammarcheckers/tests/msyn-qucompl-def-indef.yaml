@@ -1,0 +1,8 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+  
+Tests:
+  - "Vi har fem {båtene}£{båter}."
+  - "Jeg har reist til mange {landene}£{land} i Europa."
+

@@ -1,0 +1,8 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+  
+Tests:
+  - "Eplet var {god}£{godt}."
+  - "Jeg spiste et eple som var {god}£{godt}."
+  

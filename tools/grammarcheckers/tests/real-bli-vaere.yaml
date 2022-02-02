@@ -1,0 +1,7 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+  
+Tests:
+  - "Jeg liker å {bli}£{være} med familien min."
+  

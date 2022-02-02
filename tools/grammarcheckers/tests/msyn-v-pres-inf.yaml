@@ -1,0 +1,9 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+  
+Tests:
+  - "Jeg liker å {lærer}£{lære} norsk."
+  - "Jeg {like}£{liker} å {lærer}£{lære} norsk."
+  - "Jeg vil {lærer}£{lære} norsk."
+  - "Jeg vil {prøver}£{prøve} norsk."
