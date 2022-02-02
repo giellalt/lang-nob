@@ -661,19 +661,30 @@ LIST &msyn-agr-adjmsc-adjneu = &msyn-agr-adjmsc-adjneu ;
 LIST &msyn-agr-adjneu-adjmsc = &msyn-agr-adjneu-adjmsc ;
 LIST &msyn-agr-detneu-detfem =  &msyn-agr-detneu-detfem ;
 LIST &msyn-agr-detneu-detmsc =  &msyn-agr-detneu-detmsc ;
+LIST &msyn-det-msc-neu = &msyn-det-msc-neu ;
+LIST &msyn-pred-adjmsc-adjneu = &msyn-pred-adjmsc-adjneu ;
+LIST &msyn-pred-adjneu-adjmsc = &msyn-pred-adjneu-adjmsc ;
 LIST &msyn-pron-nom-acc = &msyn-pron-nom-acc ;
+LIST &msyn-qucompl-def-indef = &msyn-qucompl-def-indef ;
+LIST &msyn-v-inf-pres = &msyn-v-inf-pres ;
+LIST &msyn-v-pres-inf = &msyn-v-pres-inf ;
 LIST &real-aa-og = &real-aa-og ;
-LIST &real-v-aa-og = &real-v-aa-og ;
+LIST &real-bli-vaere = &real-bli-vaere ;
 LIST &real-og-aa = &real-og-aa ;
-LIST &msyn-qu-pldef-plindef = &msyn-qu-pldef-plindef ;
+LIST &real-vaere-bli = &real-vaere-bli ;
 
 MAPPING-PREFIX = & ;
 
 TEMPLATE nextWordCrossSent = (-1 (*)); # Adding mark to word that find the reference word to the left
 TEMPLATE previousWordCrossSent = (1 (*)); # and vice versa
 
+
+#!! # Rule section
+
 SECTION
 
+
+#!! ## Speller rules
 # Speller suggestions rule – add &SUGGESTWF to any spelling suggestion
 # that we actually want to suggest to the user.
 # The simplest is to just add it to all spelled words:
@@ -681,7 +692,12 @@ ADD:spell-it-all (&typo &SUGGESTWF) (<spelled>) ;
 # But perhaps you want to only suggest spellings of words that are not inside "quotes":
 ADD:spell-conservatively (&typo &SUGGESTWF) (<spelled>) IF (NEGATE -1 QMARK LINK 2 QMARK);
 
-# A simple grammar checker rule without suggestions: Ensure preceding adjective agrees with noun
+
+#!! ## NP internal agreement
+
+#  Ensure preceding adjective agrees with noun
+
+#!! msyn-agr-adjmsc-adjneu
 
 ADD:msyn-agr-adjmsc-adjneu (&msyn-agr-adjmsc-adjneu) TARGET A IF (-1 Det)(0 A + MF OR Msc OR Fem)(NOT 0 A + Neu)(1C N + Neu);
 COPY:msyn-agr-adjmsc-adjneu (Neu Sg Indef &SUGGEST)  EXCEPT (Fem Sg Indef) OR (Msc Sg Indef) OR (MF Sg Indef)  TARGET (A Pos &msyn-agr-adjmsc-adjneu) ;
@@ -690,6 +706,8 @@ ADDRELATION:msyn-agr-adjmsc-adjneu ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&m
 ## Dette er et fin hus.
 #$ Dette er et fint hus.
 
+
+#!! msyn-agr-adjneu-adjmsc
 ADD:msyn-agr-adjneu-adjmsc (&msyn-agr-adjneu-adjmsc) TARGET A IF (-1 Det + MF OR Pron + Indef + MF OR Pron + Indef + Msc)(0 A + Neu)(1 N + Msc);
 COPY:msyn-agr-adjneu-adjmsc (Msc Sg Indef &SUGGEST) EXCEPT (Neu Sg Indef) TARGET (A Pos &msyn-agr-adjmsc-adjneu);
 ADDRELATION:msyn-agr-adjneu-adjmsc ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&msyn-agr-adjneu-adjmsc)) ;
@@ -697,7 +715,7 @@ ADDRELATION:msyn-agr-adjneu-adjmsc ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&m
 ## Dette er en fint båt.
 #$ Dette er en fin båt.
 
-
+#!! msyn-agr-detneu-detfem
 ADD:msyn-agr-detneu-detfem (&msyn-agr-detneu-detfem) TARGET (Det Dem Neu Sg) IF (1 (N Fem Sg Def));
 COPY:msyn-agr-detneu-detfem (Fem Sg &SUGGEST) EXCEPT (Neu Sg) TARGET (Det Dem &msyn-agr-detneu-detfem);
 ## Mannen kjøpte det boka.
@@ -713,7 +731,7 @@ COPY:msyn-agr-detneu-detfem ("ei" Det Fem &SUGGEST) EXCEPT ("et" Pron Indef Neu 
 ## Det er et realitetens kvinne
 #$ Det er ei realitetens kvinne
 
-
+#!! msyn-agr-detneu-detmsc
 ADD:msyn-agr-detneu-detmsc (&msyn-agr-detneu-detmsc) TARGET ("et" Det Neu) IF (1 (Def Clt))(2 (N Sg Msc Indef));
 COPY:msyn-agr-detneu-detmsc ("en" Det Dem Msc Sg &SUGGEST) EXCEPT ("et" Det Neu) TARGET (&msyn-agr-detneu-detmsc);
 
@@ -723,17 +741,46 @@ COPY:msyn-agr-detneu-detmsc ("en" Det Dem Msc Sg &SUGGEST) EXCEPT ("et" Pron Ind
 #$ Det er ei realitetens kvinne
 
 
+#!! msyn-det-msc-neu
+
 # Definite that should be indefinite
 #ADD:msyn-defness_m_def (&msyn-defness_m_def) TARGET
 
-ADD:msyn-qu-pldef-plindef (&msyn-qu-pldef-plindef) TARGET N + Pl + Def IF (*-1 Num OR ("mange") BARRIER NOT-A LINK NOT 0 Sem/ID LINK NOT -1 (§));
-COPY:msyn-qu-pldef-plindef (Indef &SUGGEST) EXCEPT Def TARGET (&msyn-qu-pldef-plindef); 
-ADDRELATION:msyn-qu-pldef-plindef ($2) (*) FROM (T:previousWordCrossSent LINK 0 (&msyn-qu-pldef-plindef)) ;
 
+#!! ## Quantifier phrases
+
+ADD:msyn-qucompl-def-indef (&msyn-qucompl-def-indef) TARGET N + Pl + Def IF (*-1 Num OR ("mange") BARRIER NOT-A LINK NOT 0 Sem/ID LINK NOT -1 (§));
+COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT Def TARGET (&msyn-qucompl-def-indef); 
+ADDRELATION:msyn-qucompl-def-indef ($2) (*) FROM (T:previousWordCrossSent LINK 0 (&msyn-qucompl-def-indef)) ;
 ## Vi har mange bøkene.
 
+#!! ## Predicative gender agreement
 
-# Case errors
+
+#!! msyn-pred-adjmsc-adjneu
+
+ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A Msc Sg) IF (-2C (N Neu Sg) OR ("det"))(-1 ("være"));
+COPY:msyn-pred-adjmsc-adjneu (Neu Sg Indef &SUGGEST) EXCEPT (Msc Sg Indef)  TARGET (A Pos &msyn-pred-adjmsc-adjneu);
+ADDRELATION:real-v-aa-og ($2) (N) FROM (2 A LINK 0 (&msyn-pred-adjmsc-adjneu)) ;
+
+## Eplet var god.
+#$ Eplet var godt.
+
+
+ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A Msc Sg) IF (-3C (N Neu Sg) OR ("det"))(-2 ("som"))(-1 ("være"));
+COPY:msyn-pred-adjmsc-adjneu (Neu Sg Indef &SUGGEST) EXCEPT (Msc Sg Indef) TARGET (A Pos &msyn-pred-adjmsc-adjneu);
+ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (3 A LINK 0 (&msyn-pred-adjmsc-adjneu)) ;
+ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (4 A LINK 0 (&msyn-pred-adjmsc-adjneu)) ;
+ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (5 A LINK 0 (&msyn-pred-adjmsc-adjneu)) ;
+ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (6 A LINK 0 (&msyn-pred-adjmsc-adjneu)) ;
+## Jeg spiste et eple som var god.
+#$ Jeg spiste et eple som var godt.
+
+
+#!! msyn-pred-adjneu-adjmsc
+
+
+#!! ## Case errors
 
 ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg2 Nom) IF (-1 Pr)(NOT -1 ("for") OR ("som") OR ("om"));
 COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg2 &msyn-pron-nom-acc);
@@ -742,7 +789,30 @@ COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg2 &msyn-p
 
 
 
-# og/å
+#!! ## Finite verb
+
+ADD:msyn-v-inf-pres (&msyn-v-inf-pres) TARGET (V Inf) IF (-1C (N) OR (Pron Nom))(0 V)(NOT *0 VFIN);
+COPY:msyn-v-inf-pres (Ind Prs &SUGGEST) EXCEPT (Inf)  TARGET (V Inf &msyn-v-inf-pres);
+ADDRELATION:msyn-v-inf-pres ($2) (*) FROM (1 V LINK 0 (&msyn-v-inf-pres)) ;
+
+## Jeg like peanøtter.
+#$ Jeg liker peanøtter.
+
+## Jeg spise peanøtter.
+#$ Jeg spiser peanøtter.
+
+
+
+#!! ## Infinitive
+
+ADD:msyn-v-pres-inf (&msyn-v-pres-inf) TARGET (V Ind Prs) IF (-2C (N) OR (Pron Nom))(-1 hj-V)(0 V);
+COPY:msyn-v-pres-inf (Inf &SUGGEST) EXCEPT (Ind Prs)  TARGET (V Ind Prs &msyn-v-pres-inf);
+ADDRELATION:msyn-v-pres-inf ($2) (V) FROM (1 V LINK 0 (&msyn-v-pres-inf)) ;
+
+
+
+
+#!! ## og/å
 
 ADD:real-og-aa (&real-og-aa) TARGET ("og" CC) IF (-1 Ind)(1 Inf);
 COPY:real-og-aa ("å" IM &SUGGEST) EXCEPT ("og" CC) TARGET (CC &real-og-aa);

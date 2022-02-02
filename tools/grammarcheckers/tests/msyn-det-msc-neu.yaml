@@ -1,0 +1,9 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+  
+Tests:
+  - "Vi bor i {en}£{et} land."
+  - "Norge er {en}£{et} land."
+  - "Norge er {en}£{et} {fin}£{fint}land."  
+  
