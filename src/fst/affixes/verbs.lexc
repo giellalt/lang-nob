@@ -147,6 +147,7 @@ LEXICON a-et-pret
   +V+PrfPrc+Radical:%>a  # ;
           +V+PrfPrc:%>et # ;
        +Ex/V+PrfPrc+A:%>et positive-indef ;
+       +Ex/V+PrfPrc+A:%>et a-no-neuter ;
        +Ex/V+PrfPrc+A:%>ed positive-def ;
 
 LEXICON te-pret
@@ -154,18 +155,21 @@ LEXICON te-pret
  +V+Ind+Prt:%>Q3te # ;
   +V+PrfPrc:%>Q3t  # ;
   +V+PrfPrc+Ex/V+A:%>Q3t  positive ; ! over til adj
+  +V+PrfPrc+Ex/V+A:%>Q3t  a-no-neuter ; ! over til adj
  
 LEXICON de-pret
 !! **LEXICON @LEXNAME@** = 
  +V+Ind+Prt:%>Q3de # ;
   +V+PrfPrc:%>Q3d  # ;
   +V+PrfPrc+Ex/V+A:%>Q3d  positive ;
+  +V+PrfPrc+Ex/V+A:%>Q3d  a-no-neuter ;
 
 LEXICON dde-pret
 !! **LEXICON @LEXNAME@** = 
  +V+Ind+Prt:%>dde # ;
   +V+PrfPrc:%>dd  # ;
   +V+PrfPrc+Ex/V+A:%>dd  positive ;
+  +V+PrfPrc+Ex/V+A:%>dd  a-no-neuter ;
 
 
 LEXICON prsptcsuff
