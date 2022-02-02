@@ -11,8 +11,17 @@ TESTS=\
 	msyn-agr-adjmsc-adjneu.yaml \
 	msyn-agr-adjneu-adjmsc.yaml \
 	msyn-pron-nom-acc.yaml \
+	msyn-det-msc-neu.yaml \
+	msyn-pred-adjmsc-adjneu.yaml \
+	msyn-pred-adjneu-adjmsc.yaml \
+	msyn-qucompl-def-indef.yaml \
+	msyn-v-inf-pres.yaml \
+	msyn-v-pres-inf.yaml \
+	real-bli-vaere.yaml \
+	real-og-aa.yaml \
 	real-aa-og.yaml \
 	real-og-aa.yaml
+
 
 
 # List tests that are presently (expected) failures here, ie things that should
@@ -21,6 +30,14 @@ XFAIL_TESTS=\
 	msyn-agr-adjmsc-adjneu.yaml \
 	msyn-agr-adjneu-adjmsc.yaml \
 	msyn-pron-nom-acc.yaml \
+	msyn-det-msc-neu.yaml \
+	msyn-pred-adjmsc-adjneu.yaml \
+	msyn-pred-adjneu-adjmsc.yaml \
+	msyn-qucompl-def-indef.yaml \
+	msyn-v-inf-pres.yaml \
+	msyn-v-pres-inf.yaml \
+	real-bli-vaere.yaml \
+	real-og-aa.yaml \
 	real-aa-og.yaml \
 	real-og-aa.yaml
 

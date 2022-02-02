@@ -4,5 +4,6 @@ Config:
   
 Tests:
   - "Et nyskapt folk skal prise Herren."
-  - "Dette er et fin hus."
+  - "Dette er et {fin}£{fint} hus."
+  - "Det var mitt første minne."
   
