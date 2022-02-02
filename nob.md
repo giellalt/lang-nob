@@ -7204,30 +7204,73 @@ These were the set types.
 
 
 
+# Rule section
+
+
+
+## Speller rules
+
+
+## NP internal agreement
+
+
+msyn-agr-adjmsc-adjneu
+
+
+
+
+msyn-agr-adjneu-adjmsc
+
+
+msyn-agr-detneu-detfem
+
+
+
+
+
+msyn-agr-detneu-detmsc
+
+
+
+msyn-det-msc-neu
+
+
+
+## Quantifier phrases
+
+
+## Predicative gender agreement
+
+
+msyn-pred-adjmsc-adjneu
 
 
 
 
 
 
+msyn-pred-adjneu-adjmsc
+
+
+## Case errors
+
+
+
+
+## Finite verb
 
 
 
 
 
 
+## Infinitive
 
 
 
 
 
-
-
-
-
-
-
-
+## og/å
 
 
 
