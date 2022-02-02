@@ -109,6 +109,7 @@ LEXICON positive-indef
  +Pos+Msc+Sg+Indef: # ;
  +Pos+Fem+Sg+Indef: # ;
   +Pos+MF+Sg+Indef: # ; ! MF ???
+  +Pos+Neu+Sg+Indef: # ; ! MF ???
 
 LEXICON positive-def
  +Pos+Sg+Def+Clt:%>es # ;
