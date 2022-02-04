@@ -208,7 +208,7 @@ LIST Prs = Prs ;
 
 LIST Ind = Ind ;
 
-LIST Imprt = Imprt ;
+LIST Imp = Imp Imprt ;
 
 #LIST Sg1 = Sg1 ;
 #LIST Sg2 = Sg2 ;
@@ -370,11 +370,11 @@ SET NOT-VERB = WORD - V ;
 SET V-IND-FIN = Prs OR Prt ;
  # Problem: "In boahtán" is an invisible indicative
 
-SET V-MOOD = Ind OR Imprt ;
+SET V-MOOD = Ind OR Imp ;
 
 SET VFIN =  V-MOOD ;
 
-LIST QUASIAUX = "akte" "begynne" "fortsette" "gidde" "huske" "lære" "orke" "prøve" "slippe" "slutte" "tenke" ;
+LIST QUASIAUX = "akte" "begynne" "fortsette" "gidde" "huske" "like" "lære" "orke" "prøve" "slippe" "slutte" "tenke" ;
 	
 SET VFIN-NOT-IMP = Ind ;
 SET VFIN-NOT-AUX = Ind - AUX ;
@@ -791,7 +791,7 @@ COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg2 &msyn-p
 
 #!! ## Finite verb
 
-ADD:msyn-v-inf-pres (&msyn-v-inf-pres) TARGET (V Inf) IF (-1C (N) OR (Pron Nom))(0 V)(NOT *0 VFIN);
+ADD:msyn-v-inf-pres (&msyn-v-inf-pres) TARGET (V Inf) IF (-1C (N) OR (Pron Nom))(*-2 BOS BARRIER VFIN)(NOT -1 ("å"))(0 V)(NOT *0 VFIN);
 COPY:msyn-v-inf-pres (Ind Prs &SUGGEST) EXCEPT (Inf)  TARGET (V Inf &msyn-v-inf-pres);
 ADDRELATION:msyn-v-inf-pres ($2) (*) FROM (1 V LINK 0 (&msyn-v-inf-pres)) ;
 
@@ -801,6 +801,7 @@ ADDRELATION:msyn-v-inf-pres ($2) (*) FROM (1 V LINK 0 (&msyn-v-inf-pres)) ;
 ## Jeg spise peanøtter.
 #$ Jeg spiser peanøtter.
 
+#$ Hvorfor skulle jeg miste dere begge på en slik dag?
 
 
 #!! ## Infinitive
@@ -819,7 +820,7 @@ COPY:real-og-aa ("å" IM &SUGGEST) EXCEPT ("og" CC) TARGET (CC &real-og-aa);
 ## Vi prøver og gå.
 #$ Vi prøver å gå.
 
-ADD:real-aa-og (&real-aa-og) TARGET ("å") IF (-1 N) (1 N);
+ADD:real-aa-og (&real-aa-og) TARGET ("å") IF (-1 N) (1C N);
 COPY:real-aa-og ("og" CC &SUGGEST) EXCEPT ("å" IM) TARGET (IM &real-aa-og);
 ADDRELATION:real-aa-og ($2) (N) FROM (1 IM LINK 0 (&real-aa-og)) ;
 ADDRELATION:real-aa-og ($3) (N) FROM (-1 IM LINK 0 (&real-aa-og)) ;
@@ -829,6 +830,8 @@ ADDRELATION:real-aa-og ($3) (N) FROM (-1 IM LINK 0 (&real-aa-og)) ;
 ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF (-2 hj-V)(-1 V + $$VERBFORM LINK NOT 0 QUASIAUX) (1 V + $$VERBFORM);
 ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF (NOT *-4 ("som") LINK -1 A)(-2 hj-V)(-1 V + $$VERBFORM LINK NOT 0 QUASIAUX) (1 V + $$VERBFORM);
 COPY:real-v-aa-og ("og" CC &SUGGEST) EXCEPT ("å" IM) TARGET (IM &real-v-aa-og);
+COPY:real-v-aa-og ("og" CC &SUGGEST) EXCEPT ("å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR) TARGET (N &real-v-aa-og);
+
 #$ Vi prøver å skrive lyrikk.
 #$ Vi må prøve å skrive lyrikk.
 #% Vi må lese å skrive lyrikk.
@@ -837,9 +840,11 @@ COPY:real-v-aa-og ("og" CC &SUGGEST) EXCEPT ("å" IM) TARGET (IM &real-v-aa-og);
 
 ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF ( -2 hj-V)(-1 V + $$INDFORM)(NOT -1 QUASIAUX) (1 V + $$INDFORM);
 ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF (NOT -2 hj-V)(-1 V + $$INDFORM)(NOT -1 QUASIAUX) (1 V + $$INDFORM);
+COPY:real-v-aa-og ("og" CC &SUGGEST) EXCEPT ("å" IM) TARGET (IM &real-v-aa-og);
+COPY:real-v-aa-og ("og" CC &SUGGEST) EXCEPT ("å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR) TARGET (N &real-v-aa-og);
 
-ADDRELATION:real-v-aa-og ($2) (V) FROM (1 IM LINK 0 (&real-v-aa-og)) ;
-ADDRELATION:real-v-aa-og ($3) (V) FROM (-1 IM LINK 0 (&real-v-aa-og)) ;
+ADDRELATION:real-v-aa-og ($2) (V) FROM (1 IM OR N LINK 0 (&real-v-aa-og)) ;
+ADDRELATION:real-v-aa-og ($3) (V) FROM (-1 IM OR N LINK 0 (&real-v-aa-og)) ;
 
 
 # Simple punctuation rules showing how to change the lemma in the suggestions:
