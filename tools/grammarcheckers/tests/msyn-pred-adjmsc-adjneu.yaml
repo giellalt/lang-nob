@@ -5,4 +5,7 @@ Config:
 Tests:
   - "Eplet var {god}£{godt}."
   - "Jeg spiste et eple som var {god}£{godt}."
+  - "Landet er {full}£{fullt} av voldsferd."
+  - "Hver avkrok av landet er full av voldsferd."
+  - "Mitt hjerte er rolig."
   
