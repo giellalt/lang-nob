@@ -759,7 +759,7 @@ ADDRELATION:msyn-qucompl-def-indef ($2) (*) FROM (T:previousWordCrossSent LINK 0
 
 #!! msyn-pred-adjmsc-adjneu
 
-ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A Msc Sg) IF (-2C (N Neu Sg) OR ("det"))(-1 ("være"));
+ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A Msc Sg) IF (-2C (N Neu Sg) OR ("det"))(NOT 0 Neu)(-1 ("være"));
 COPY:msyn-pred-adjmsc-adjneu (Neu Sg Indef &SUGGEST) EXCEPT (Msc Sg Indef)  TARGET (A Pos &msyn-pred-adjmsc-adjneu);
 ADDRELATION:real-v-aa-og ($2) (N) FROM (2 A LINK 0 (&msyn-pred-adjmsc-adjneu)) ;
 
