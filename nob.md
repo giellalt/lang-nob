@@ -7505,6 +7505,7 @@ msyn-pred-adjneu-adjmsc
 
 
 
+
 * * *
 <small>This (part of) documentation was generated from [../tools/grammarcheckers/grammarchecker.cg3](http://github.com/giellalt/lang-nob/blob/main/../tools/grammarcheckers/grammarchecker.cg3)</small>Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
 Then just:
