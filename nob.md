@@ -5245,7 +5245,17 @@ The rules are no documented yet
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/cg3/nob-functions.cg3](http://github.com/giellalt/lang-nob/blob/main/../src/cg3/nob-functions.cg3)</small># Morphophonological rules for Bokmål
+<small>This (part of) documentation was generated from [../src/cg3/nob-functions.cg3](http://github.com/giellalt/lang-nob/blob/main/../src/cg3/nob-functions.cg3)</small>
+# Norwegian Bokmål compounding
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/compounding.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/compounding.lexc)</small># Morphophonological rules for Bokmål
 
 This file documents the [phonology.twolc file](http://github.com/giellalt/lang-nob/blob/main/src/fst/phonology.twolc) 
 
@@ -5447,7 +5457,1109 @@ Test to have an error
 * ★*a* (is not standard language)
 * ★*b* (is not standard language)
 * * *
-<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/phonology.twolc)</small>
+<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/phonology.twolc)</small># Bokmål noun lexicon 
+
+This file documents the Bokmål noun stem file [stems/nouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nouns.lexc).
+
+## Overview of the declension classes
+
+----------------------------------------------------
+Main types, from Bokmålsordboka
+
+f1  bru         brua        bruer           bruene
+f2  pumpe       pumpa       pumper          pumpene
+f3  søster      søstera     søstre/søstrer  søstrene
+m1  stol        stolen      stoler          stolene
+bakke       bakken      bakker          bakkene
+pumpe       pumpen      pumper          pumpene
+m2  lærer       læreren     lærere          lærerne
+m3  bever       beveren     bevere          beverne
+bevrer          bevrene
+bevre           bevrene
+m4  longs       longsen     longs/longser   longsene
+n1  slott       slottet     slott           slotta/slottene
+n2  eple        eplet       epler           epla/eplene
+salt        saltet      salter          salta/saltene
+n3  kontor      kontoret    kontor/kontorer kontora/kontorene
+høve        høvet       HØVE/høver      høva/høvene
+n4  salt        saltet      salter          salta/saltene ??
+n5  middel      midlet      MIDDEL/midler   midla/midlene ??
+n6  kammer      kammeret    kamre/kammer    kamra/kamrene
+
+Subtypes
+
+mx unclassified, to m1 by default
+mX indecl
+m1sg sg only
+m1pl pl only
+m1b dam
+m1b fe, komité
+m1V  sko pl. sko, skoa/skoene
+m1Vb byte, pl. byte/byter, bytene
+m1Vc glipp, pl. glipp, glippene
+m3V meter pl. meter
+m3r sykkel, vinkel vinkelen, vinkler, vinklene
+ma alliert, alierte, allierte, allierte
+KOLLEGA kollegaer, kolleger
+mKONTO kontoer, konti
+mRADIUS radiuser, radii
+mBROR brødre
+mFAR fedre
+mMANN menn
+mD gårde, garde, dage (av gårde)
+fD tide (i tide)
+nD live (i live)
+
+fDATTER døtre
+f1b skam
+f1X bok pl. bøker
+f1V mus, pl. mus
+
+nX styrbord, zoo. indecl.
+n1b rom pl. rom
+n1sg sg only
+n2b program pl. programmer
+n2c kontor pl. kontor, kontorer
+n2s mørke, not pl.
+n3b lager def. lageret
+n3c fe, feet
+n4b faktum, faktumet, fakta, faktaene
+FORUM forum, forumet, fora/forumer, foraene/forumene
+nLEKSIKON leksikon, pl. leksika
+nMUSEUM museum, museet, museer
+n1pl odds, oddsene
+
+
+## The lexica themselves
+
+LEXICON FinalNoun is a separate lexicon to point to. For now it contains only *-skap*.
+
+
+LEXICON NounRoot is the lexicon pointed to from `root.lexc` It points to
+Noun ;
+HyphNouns ;
+
+LEXICON HyphNouns  contains forms only in used in first part of compounds, like *barne*.  TODO: Kanskje desse ikkje bör bli lista.
+
+LEXICON ShortNounRoot 
+The lexicon points to two lexica which are kept separate in order not to
+allow them in compounding (rusle = rus + le)
+2_letter ;
+3_letter ;
+
+LEXICON 2_letter is stems with two lettes.
+
+LEXICON 3_letter  is stems with 3 letters
+
+
+LEXICON Noun  here come the long list of stems (tens of thousands)
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/nouns.lexc)</small># File containing abbreviations for Norwegian Bokmål 
+
+This file documents the Bokmål abbrevioations stem file [stems/nob-abbreviations.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nob-abbreviations.lexc).
+
+
+
+Abbreviation-nob 
+
+##            Intransitive abbreviations           
+
+These give clause boundaries before capital letters
+and numbers, but not elsewhere.
+
+---------------------------------------------
+Vi bor i Sth. CLB 10 av oss er innflyttere.
+Vi bor i Sth. CLB Saara er også innflytter.
+Vi vet at Sth. er en fin by.
+
+
+ITRAB 
+
+
+
+
+
+Transitive number-related abbreviations      !
+
+These ones are transitive when followed by numbers or
+singleton letters, and intransitive elsewhere.
+
+--------------------------------------------------
+Gården har Gnr. 10.
+Gården har Gnr. 5. a.
+Alle gårder har ikke Gnr. CLB Det er et problem.
+Alle gårder har ikke Gnr. og det er et problem.
+--------------------------------------------------
+
+TRNUMAB 
+
+
+
+
+#              Transitive abbreviations           
+
+TRAB 
+
+dot% noStb.db
+Abbreviations that never induce sentence boundaries
+The file is too large and should be shrinked
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/nob-abbreviations.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/nob-abbreviations.lexc)</small># Nynorsk stems 
+for tolerant dictionary reading
+
+This file documents the nynorsk stem file for the bokmål analyzer [stems/nynorsk-stems.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nynorsk-stems.lexc).
+
+LEXICON Prnyn 
+
+LEXICON Advnyn 
+
+LEXICON Anyn 
+
+LEXICON Vnyn 
+
+
+LEXICON Propnyn 
+
+LEXICON Pronnyn 
+
+LEXICON nnnb 
+
+LEXICON Nynorsk  her kjem alle orda
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/nynorsk-stems.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/nynorsk-stems.lexc)</small># Bokmål propernouns
+
+This file documents the Bokmål proper nouns stem file [stems/nob-propernouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nob-propernouns.lexc).
+
+LEXICON ProperNoun-nob-nocomp contains some acronyms
+
+
+LEXICON ProperNoun-nob contains the list of 2200 or so names. The rest come from common files.
+
+
+Adjectives
+
+
+
+Nouns
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/nob-propernouns.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/nob-propernouns.lexc)</small># Bokmål adverbs
+
+This file documents the Bokmål adverb stem file [stems/adverbs.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/adverbs.lexc).
+
+LEXICON adv  adds the tag +Adv
+
+LEXICON dt  also ads +Adv  perhaps unify, perhaps not.
+
+Adverb lists some 600 Norwegian adverbs, including MWE such as "i live"
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/adverbs.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/adverbs.lexc)</small># Bokmål prepositions
+
+This file documents the Bokmål prepositions stem file [stems/prepositions.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/prepositions.lexc).
+
+LEXICON p gives tag +Pr
+
+
+LEXICON Preposition  list (appr 90 prepositions)
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/prepositions.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/prepositions.lexc)</small># Bokmål interjections
+
+This file documents the Bokmål interjections stem file [stems/interjections.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/interjections.lexc).
+
+LEXICON ij adds the tag **+Interj**
+
+LEXICON Interjection lists *folkens, heisann, pokker* and some 60 more interjections.
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/interjections.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/interjections.lexc)</small># Bokmål pronoun stems
+
+This file documents the Bokmål pronouns stem file [stems/pronouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/pronouns.lexc).
+
+LEXICON Pronoun 
+
+LEXICON Personal 
+
+LEXICON Reflexive 
+
+LEXICON Reciprocal 
+
+LEXICON Interrogative 
+
+LEXICON Possessive 
+
+LEXICON Other_Pronouns 
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/pronouns.lexc)</small># Bokmål subjunctions
+
+This file documents the Bokmål subjunctions stem file [stems/subjunctions.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/subjunctions.lexc).
+
+LEXICON Subjunction
+
+LEXICON subj gives tag +CS
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/subjunctions.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/subjunctions.lexc)</small>
+# Bokmål numerals (number words)
+
+This file documents the Bokmål numerals stem file [stems/numerals.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/numerals.lexc).
+
+LEXICON Numeral 
+
+LEXICON Textual 
+
+
+LEXICON TEXTTHOUSANDS 
+
+LEXICON 1000CONT 
+
+LEXICON TEXTHUNDREDS 
+
+LEXICON 100CONT 
+
+LEXICON TEXTTENS 
+
+
+LEXICON TEXTTENSCONT 
+
+LEXICON TEXTTEENS 
+
+LEXICON TEXTONES 
+
+LEXICON 2-9 
+
+LEXICON ORDTEXT 
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/numerals.lexc)</small># Norwegian Bokmål Adjectives
+
+This file documents the Bokmål adjective stem file [stems/adjectives.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/adjectives.lexc).
+
+## Overview of the declension classes
+
+----------------------------------------------------
+Main types, from Bokmålsordboka
+
+a1 god god godt gode
+a2 billig billig billig billige
+a3 ekte ekte ekte ekte
+a4 oppskjørtet oppskjørtet oppskjørtet oppskjørtede/oppskjørtete
+a5 makaber makaber makabert makabre
+a5 lunken lunken lunkent lunkne
+aV blå blå blått blå
+... and some irregular ones
+
+
+
+
+AdjectiveRoot is the list of adjectives (some 5500 stems)
+* få: A_FÅ ; 
+* små: A_SMÅ ; 
+* vond: VOND ; 
+
+
+
+* artikkelbasert a2 ; 
+* aggressiv a1 ; 
+* avbøtende a3 ; 
+* bundet a4 ; 
+
+
+* dritredd a2 ; 
+* dritsur+v1:drit#sur a1 ; 
+* dritsur+v2:dritt#sur a1 ; 
+* ...
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/adjectives.lexc)</small>
+# Norwegian Bokmål verb stems
+
+This file documents the Bokmål verb stem file [stems/verbs.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/verbs.lexc).
+
+## Overview of the declension classes
+
+----------------------------------------------------
+Main types, from Bokmålsordboka
+
+v1 kaste kaster kasta kasta
+kastet kastet
+v2 lyse lyser lyste lyst
+reparere reparerer reparerte reparert
+v3 leve lever levde levd
+v4 nå når nådde nådd
+v4 bie bier bidde bidd
+
+Subtypes
+v13 v1 or v3
+v1-s passive v1 verbs
+v2-s passive v2 verbs
+v3-s passive v3 verbs
+Strong verbs have verb-specific lexica
+
+
+## The entries
+
+
+LEXICON VerbRoot contains the 5700 or so  verbs
+
+* innbefatte v1 ; 
+* tilslutte v1 ; 
+
+
+* abbreviere v2 ; 
+* abdisere v2 ; 
+* allmenngjøre:allmenn GJØRE ; 
+* anbringe:an BRINGE ; 
+* andøve v3 ; 
+* anfalle:an FALLE ; 
+* angi:an GI ; 
+* angripe:an GRIPE ; 
+* ankomme:an KOMME ;  
+* falle: FALLE ; 
+* etc.
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/verbs.lexc)</small># Bokmål conjunctions
+
+This file documents the Bokmål conjunctions stem file [stems/conjunctions.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/conjunctions.lexc).
+
+
+conj for the tag +CC
+
+Conjunction  både, og, ..
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/conjunctions.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/conjunctions.lexc)</small># Bokmål noun morphology 
+
+---------------------------------------------------
+Declension classes
+Main types, from Bokmålsordboka
+
+f1  bru         brua        bruer           bruene
+f2  pumpe       pumpa       pumper          pumpene
+f3  søster      søstera     søstre/søstrer  søstrene
+m1  stol        stolen      stoler          stolene
+bakke       bakken      bakker          bakkene
+pumpe       pumpen      pumper          pumpene
+m2  lærer       læreren     lærere          lærerne
+m3  bever       beveren     bevere          beverne
+bevrer          bevrene
+bevre           bevrene
+m4  longs       longsen     longs/longser   longsene
+n1  slott       slottet     slott           slotta/slottene
+n2  eple        eplet       epler           epla/eplene
+salt        saltet      salter          salta/saltene
+n3  kontor      kontoret    kontor/kontorer kontora/kontorene
+høve        høvet       HØVE/høver      høva/høvene
+middel      midlet      MIDDEL/midler   midla/midlene
+n4  salt        saltet      salter          salta/saltene ??
+n5  middel      midlet      midler          midla/midlene ??
+n6  kammer      kammeret    kamre/kammer    kamra/kamrene
+
+Subtypes, mainly from Finsk-norsk ordbok, also system-specific
+
+x  unclassified, to m1 by default
+mX indecl
+m1sg sg only
+m1pl pl only
+m1b dam
+m1b fe, komite
+m1V sko pl. sko, skoa/skoene
+m1Vb byte, pl. byte/byter, bytene
+m1Vc glipp, pl. glipp, glippene
+m3V meter pl. meter
+m3b finger pl. fingrer/fingre
+m3c forelder pl. foreldre
+ma alliert, alierte, allierte, allierte
+KOLLEGA kollegaer, kolleger
+KONTO kontoer, konti
+RADIUS radiuser, radii
+BROR brødre
+FAR fedre
+MANN menn
+mD gårde, garde, dage  (av gårde)
+fD tide (i tide)
+nD live (i live)
+DATTER døtre
+f1b skam
+f1X bok, pl. bøker
+f1V mus, pl. mus
+fGLO glo, pl. glør
+f3b lever. def. levra
+n1b rom, def. rommet
+n1n1b publikum, def. publikumet/publikummet
+n1s sg only
+n2b program, pl. programmer
+n2c kontor, pl. kontor, kontorer
+n2s mørke, not pl.
+n3b lager, def. lageret
+n3c fe, feet
+n4b faktum, pl. fakta
+FORUM forum, forumet, fora/forumer, foraene/forumene
+LEKSIKON leksikon, pl. leksika
+nMUSEUM museum, museet, museer
+nØYE
+
+
+
+## Basic paradigms
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### Irregulars
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
++N+Fem+Sg+Def+Radical:datra    K ;
++N:         R ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@NO CODE@ for nynorsk only.
+
+@NO CODE@ for nynorsk only.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/nouns.lexc)</small># Tags for numerals (number words)
+
+## Basic tags
+numtag
+
+numtagsg
+
+
+## Tags for special use
+
+### Date
+
+
+
+### Clock
+
+
+
+
+
+
+... and many more lexica
+
+
+* **LEXICON ARABICCASEORD**  adds +Arab
+
+
+* **LEXICON ARABICCASE**  adds +Arab
+
+* **LEXICON ARABICCASES**  adds +Arab
+
+* **LEXICON ARABICCOMPOUNDS**  ! arabic as first part,
+
+
+
+* **LEXICON ARABICCASECOLL**  adds +Arab
+
+* **LEXICON ARABICCASE0**  adds +Arab
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/numerals.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/numerals.lexc)</small># Propernoun morphology
+
+
+
+
+FirstTag 
+
+PROP 
+
+
+PROP-surmal 
+
+PROP-malfem 
+
+... one lexicon for each combined tag,to split them.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/propernouns.lexc)</small># Sublexica for adjective roots
+
+* a1  god         god         godt        gode
+* a2  norsk       norsk       norsk       norske
+* a3  ekte        ekte        ekte        ekte
+* a4  oppskjørtet oppskjørtet oppskjørtet oppskjørtede/oppskjørtete
+* a5  makaber     makaber     makabert    makabre
+*     lunken      lunken      lunkent     lunkne
+* aV  blå         blå         blått       blå
+
+
+
+
+
+## Basic paradigms
+
+a23
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Sublexica
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/adjectives.lexc)</small># Sublexica for verb roots
+
+-----------------------------
+Main types, from Bokmålsordboka
+v1  kaste       kaster      kasta       kasta
+kastet      kastet
+v2  lyse        lyser       lyste       lyst
+reparere    reparerer   reparerte   reparert
+v3  leve        lever       levde       levd
+v4  nå          når         nådde       nådd
+v4  bie         bier        bidde       bidd
+
+Subtypes
+v12 v1 or v2
+v13 v1 or v3
+v14 v1 or v4
+v1-s passive v1 verbs
+v2-s passive v2 verbs
+v3-s passive v3 verbs
+
+
+## Sublexica for regular verbs 
+
+### Preliminary lexica
+
+**LEXICON vx** points to v1.
+
+**LEXICON v12** for both v1 and v2 past forms, or: score -> scoret, scorte (NG  = do not generate)
+
+**LEXICON v13** also here: v1, v3: sveve -> svevet (NG), svevde.
+
+
+**LEXICON v23** 
+
+**LEXICON v14** where v4 is NG
+
+**LEXICON v1** =  kaste
+
+
+**LEXICON v2** = blåse, studere
+
+**LEXICON v3** =  leve
+
+**LEXICON v4** =  ro, bie
+
+
+**LEXICON v1-s** =  undres
+
+**LEXICON v2-s** =  føles, synes
+
+**LEXICON v3-s** =  trives
+
+
+
+
+
+## Conjugation sublexica
+
+**LEXICON inf-prsptc** = 
+
+**LEXICON regpres** = 
+
+**LEXICON r-pres** = 
+
+**LEXICON a-et-pret** = 
+
+**LEXICON te-pret** = 
+
+**LEXICON de-pret** = 
+
+**LEXICON dde-pret** = 
+
+
+**LEXICON prsptcsuff** = 
+
+
+
+### Sublexica for irregular verbs 
+
+
+* **LEXICON BE** 
+* **LEXICON BINDE** 
+* **LEXICON XITE** 
+* **LEXICON BLI** 
+* **LEXICON BLIVE** 
+* **LEXICON BRENNE** 
+* **LEXICON BRESTE** 
+* **LEXICON BRINGE** 
+* **LEXICON BRISTE** 
+* **LEXICON XYTE** = yte, flyte, tryte
+* **LEXICON BURDE** 
+* **LEXICON BY** 
+* **LEXICON XYDE** = lyde, tyde, syde, ...
+* **LEXICON BÆRE** 
+* **LEXICON XETTE** 
+* **LEXICON DRA** 
+* **LEXICON XIKKE** = drikke
+* **LEXICON DRIVE** 
+* **LEXICON DRITE** 
+* **LEXICON DØLGE** 
+* **LEXICON DØ** 
+* **LEXICON EIE** 
+* **LEXICON ETE** 
+* **LEXICON FALLE** 
+* **LEXICON FARE** 
+* **LEXICON FINNE** 
+* **LEXICON FISE** 
+* **LEXICON FLY** 
+* **LEXICON LYGE**
+* **LEXICON LJUGE**
+* **LEXICON FLYGE**
+* **LEXICON FLYTE**
+* **LEXICON LATE**
+* **LEXICON FRYSE**
+* **LEXICON FYKE**
+* **LEXICON FÅ**
+* **LEXICON FØLGE**
+* **LEXICON GALE**
+* **LEXICON GIDDE**
+* **LEXICON GI**
+* **LEXICON GJELDE**
+* **LEXICON GJØRE**
+* **LEXICON GLEPPE**
+* **LEXICON GLI**
+* **LEXICON XIPPE** = glippe, slippe
+* **LEXICON GNAGE**
+* **LEXICON GNI**
+* **LEXICON GRAVE**
+* **LEXICON GRINE**
+* **LEXICON GRIPE**
+* **LEXICON GRÅTE**
+* **LEXICON GYSE**
+* **LEXICON GYTE**
+* **LEXICON GYVE**
+* **LEXICON GÅ**
+* **LEXICON HA**
+* **LEXICON HENGE**
+* **LEXICON HETE**
+* **LEXICON HIVE**
+* **LEXICON HJELPE**
+* **LEXICON HOGGE**
+* **LEXICON HOLDE**
+* **LEXICON HUGGE**
+* **LEXICON KLINGE**
+* **LEXICON KLIPE**
+* **LEXICON KLIVE**
+* **LEXICON XYPE** = klype:kl
+* **LEXICON KLYVE**
+* **LEXICON XEKKE** = knekke, kvekke
+* **LEXICON KNESTE**
+* **LEXICON KNETTE**
+* **LEXICON KNIPE**
+* **LEXICON KOMME**
+* **LEXICON KUNNE**
+* **LEXICON LA**
+* **LEXICON LE**
+* **LEXICON LEGGE**
+* **LEXICON LIGGE**
+* **LEXICON LYDE**
+* **LEXICON MÅTTE**
+* **LEXICON MØTE**
+* **LEXICON PIPE**
+* **LEXICON RIVE**
+* **LEXICON RYKE**
+* **LEXICON SETTE**
+* **LEXICON SELGE**
+* **LEXICON SE**
+* **LEXICON SIGE**
+* **LEXICON SITTE**
+* **LEXICON SI**
+* **LEXICON SKJELVE**
+* **LEXICON SKJÆRE**
+* **LEXICON SKLI**
+* **LEXICON SKRIDE**
+* **LEXICON RIDE**
+* **LEXICON LIDE**
+* **LEXICON KVEDE**
+* **LEXICON SKRIKE**
+* **LEXICON SKRIVE**
+* **LEXICON SKRYTE**
+* **LEXICON SKULLE**
+* **LEXICON SKVETTE**
+* **LEXICON SKYTE**
+* **LEXICON SKYVE**
+* **LEXICON SLEPPE**
+* **LEXICON SLÅSS**
+* **LEXICON SLÅ**
+* **LEXICON SMELLE**
+* **LEXICON SMETTE**
+* **LEXICON SMYGE**
+* **LEXICON SMØRE**
+* **LEXICON SNIKE**
+* **LEXICON SNYTE**
+* **LEXICON SOVE**
+* **LEXICON SPINNE**
+* **LEXICON SPREKKE**
+* **LEXICON SPRETTE**
+* **LEXICON SPRINGE**
+* **LEXICON SPØRRE**
+* **LEXICON STELE**
+* **LEXICON STIGE**
+* **LEXICON STIKKE**
+* **LEXICON STJELE**
+* **LEXICON STREKKE**
+* **LEXICON STRIDE**
+* **LEXICON STRYKE**
+* **LEXICON STÅ**
+* **LEXICON STØKKE**
+* **LEXICON SVELTE**
+* **LEXICON SVERGE**
+* **LEXICON SVI**
+* **LEXICON SVIKE**
+* **LEXICON SVINGE**
+* **LEXICON SVINNE**
+* **LEXICON SVIVE**
+* **LEXICON SYNGE**
+* **LEXICON SYNKE**
+* **LEXICON SØKKE**
+* **LEXICON TA**
+* **LEXICON TELLE**
+* **LEXICON TIE**
+* **LEXICON TRE_V**
+* **LEXICON TORE**
+* **LEXICON TREFFE**
+* **LEXICON TREKKE**
+* **LEXICON TRIVE**
+* **LEXICON TRYTE**
+* **LEXICON TRÅ**
+* **LEXICON TVINGE**
+* **LEXICON TYTE**
+* **LEXICON TØRRE**
+* **LEXICON VEIE**
+* **LEXICON VELGE**
+* **LEXICON VEVE**
+* **LEXICON VIKE**
+* **LEXICON VILLE**
+* **LEXICON VINDE**
+* **LEXICON VINNE**
+* **LEXICON VITE**
+* **LEXICON VRI**
+* **LEXICON VÆRE**
+* **LEXICON UNNVÆRE**
+* **LEXICON XREKKE** = brekke, overrekke, radbrekk, rekke
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/verbs.lexc)</small>
+# Symbol affixes
+
+Noun_symbols_possibly_inflected 
+
+Noun_symbols_never_inflected 
+
+SYMBOL_connector 
+
+SYMBOL_NO_suff 
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/symbols.lexc)</small>
+# Continuation lexicons for abbreviations
+
+## Lexica for adding tags and periods
+
+
+
+
+
+
+## The sublexica
+
+### Continuation lexicons for abbrs both with and witout final period
+
+
+* **LEXICON ab-noun   **
+
+* **LEXICON ab-adj   **
+
+* **LEXICON ab-adv   **
+
+* **LEXICON ab-num   **
+
+### Lexicons without final period
+
+* **LEXICON ab-nodot-noun   **  The bulk
+
+
+
+* **LEXICON ab-nodot-adj   **
+
+* **LEXICON ab-nodot-adv   **
+
+* **LEXICON ab-nodot-num   **
+
+### Lexicons with final period
+
+* **LEXICON ab-dot-noun   **  This is the lexicon for abbrs that must have a period.
+
+* **LEXICON ab-dot-adj   **  This is the lexicon for abbrs that must have a period.
+
+
+* **LEXICON ab-dot-adv   **  This is the lexicon for abbrs that must have a period.
+
+* **LEXICON ab-dot-num   **  This is the lexicon for abbrs that must have a period.
+
+* **LEXICON ab-dot-cc   **
+
+
+* **LEXICON ab-dot-verb   **
+
+
+
+* **LEXICON ab-dot-IVprfprc   **
+
+
+
+
+
+
+* **LEXICON DOT   ** - Adds the dot to dotted abbreviations.
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/abbreviations.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/abbreviations.lexc)</small>
 # Norwegian Bokmål morphological analyser                      
 this documents the symbols and intro lexicon of **Norwegian Bokmål**.
 
@@ -5818,1118 +6930,232 @@ This table shows the codes for nominal and verbal inflection. Irregular inflecti
 
 * * *
 <small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/root.lexc)</small>
-# Symbol affixes
 
-Noun_symbols_possibly_inflected 
 
-Noun_symbols_never_inflected 
 
-SYMBOL_connector 
 
-SYMBOL_NO_suff 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+retroflex plosive, voiceless			t`  ʈ	    0288, 648 (` = ASCII 096)
+retroflex plosive, voiced			d`	ɖ		0256, 598
+labiodental nasal					F 	ɱ		0271, 625
+retroflex nasal						n` 	ɳ		0273, 627
+palatal nasal						J 	ɲ		0272, 626
+velar nasal							N 	ŋ		014B, 331
+uvular nasal							N\	ɴ		0274, 628
+	
+bilabial trill						B\ 	ʙ		0299, 665
+uvular trill							R\ 	ʀ		0280, 640
+alveolar tap							4	ɾ		027E, 638
+retroflex flap						r` 	ɽ		027D, 637
+bilabial fricative, voiceless		p\ 	ɸ		0278, 632
+bilabial fricative, voiced			B 	β		03B2, 946
+dental fricative, voiceless			T 	θ		03B8, 952
+dental fricative, voiced				D 	ð		00F0, 240
+postalveolar fricative, voiceless	S	ʃ		0283, 643
+postalveolar fricative, voiced		Z 	ʒ		0292, 658
+retroflex fricative, voiceless		s` 	ʂ		0282, 642
+retroflex fricative, voiced			z` 	ʐ		0290, 656
+palatal fricative, voiceless			C 	ç		00E7, 231
+palatal fricative, voiced			j\ 	ʝ		029D, 669
+velar fricative, voiced	        	G 	ɣ		0263, 611
+uvular fricative, voiceless			X	χ		03C7, 967
+uvular fricative, voiced				R 	ʁ		0281, 641
+pharyngeal fricative, voiceless		X\ 	ħ		0127, 295
+pharyngeal fricative, voiced			?\ 	ʕ		0295, 661
+glottal fricative, voiced			h\	ɦ		0266, 614
+
+alveolar lateral fricative, vl.		K 
+alveolar lateral fricative, vd.		K\
+
+labiodental approximant				P (or v\) 
+alveolar approximant					r\ 
+retroflex approximant				r\` 
+velar approximant					M\
+
+retroflex lateral approximant		l` 
+palatal lateral approximant			L 
+velar lateral approximant			L\
+Clicks
+
+bilabial								O\	(O = capital letter) 
+dental								|\
+(post)alveolar						!\ 
+palatoalveolar						=\ 
+alveolar lateral						|\|\
+Ejectives, implosives
+
+ejective								_>	e.g. ejective p		p_>
+implosive							_<	e.g. implosive b	b_<
+Vowels
+
+close back unrounded					M
+close central unrounded 				1 
+close central rounded				} 
+lax i								I 
+lax y								Y 
+lax u								U
+
+close-mid front rounded				2 
+close-mid central unrounded			@\ 
+close-mid central rounded			8 
+close-mid back unrounded				7
+
+schwa	ə							@
+
+open-mid front unrounded				E 
+open-mid front rounded				9
+open-mid central unrounded			3 
+open-mid central rounded				3\ 
+open-mid back unrounded				V 
+open-mid back rounded				O
+
+ash (ae digraph)						{ 
+open schwa (turned a)				6
+
+open front rounded					& 
+open back unrounded	        		A 
+open back rounded					Q
+Other symbols
+
+voiceless labial-velar fricative		W 
+voiced labial-palatal approx.		H 
+voiceless epiglottal fricative		H\ 
+voiced epiglottal fricative			<\ 
+epiglottal plosive					>\
+
+alveolo-palatal fricative, vl. 		s\ 
+alveolo-palatal fricative, voiced	z\ 
+alveolar lateral flap				l\ 
+simultaneous S and x					x\ 
+tie bar								_
+Suprasegmentals
+
+primary stress						" 
+secondary stress						% 
+long									: 
+half-long							:\ 
+extra-short							_X 
+linking mark							-\
+Tones and word accents
+
+level extra high						_T 
+level high							_H
+level mid							_M 
+level low							_L 
+level extra low						_B
+downstep								! 
+upstep								^	(caret, circumflex)
+
+contour, rising						 
+contour, falling						_F 
+contour, high rising					_H_T 
+contour, low rising					_B_L 
+
+contour, rising-falling				_R_F 
+(NB Instead of being written as diacritics with _, all prosodic 
+marks can alternatively be placed in a separate tier, set off 
+by < >, as recommended for the next two symbols.)
+global rise						<R> 
+global fall						<F>
+Diacritics						
+									
+voiceless						_0	(0 = figure), e.g. n_0
+voiced							_v 
+aspirated						_h 
+more rounded						_O	(O = letter) 
+less rounded						_c 
+advanced							_+
+retracted						_-
+centralized						_" 
+syllabic							=	(or _=) e.g. n= (or n_=) 
+non-syllabic						_^ 
+rhoticity						`
+									
+breathy voiced					_t 
+creaky voiced					_k
+linguolabial						_N 
+labialized						_w 
+palatalized						'	(or _j) e.g. t' (or t_j) 
+velarized						_G 
+pharyngealized					_?\
+									
+dental							_d 
+apical							_a 
+laminal							_m
+nasalized						~	(or _~) e.g. A~ (or A_~) 
+nasal release					_n
+lateral release					_l 
+no audible release				_}
+
+velarized or pharyngealized		_e 
+velarized l, alternatively		5 
+raised							_r 
+lowered							_o 
+advanced tongue root				_A 
+retracted tongue root			_q
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/symbols.lexc)</small># Propernoun morphology
-
-
-
-
-FirstTag 
-
-PROP 
-
-
-PROP-surmal 
-
-PROP-malfem 
-
-... one lexicon for each combined tag,to split them.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/propernouns.lexc)</small># Sublexica for verb roots
-
------------------------------
-Main types, from Bokmålsordboka
-v1  kaste       kaster      kasta       kasta
-kastet      kastet
-v2  lyse        lyser       lyste       lyst
-reparere    reparerer   reparerte   reparert
-v3  leve        lever       levde       levd
-v4  nå          når         nådde       nådd
-v4  bie         bier        bidde       bidd
-
-Subtypes
-v12 v1 or v2
-v13 v1 or v3
-v14 v1 or v4
-v1-s passive v1 verbs
-v2-s passive v2 verbs
-v3-s passive v3 verbs
-
-
-## Sublexica for regular verbs 
-
-### Preliminary lexica
-
-**LEXICON vx** points to v1.
-
-**LEXICON v12** for both v1 and v2 past forms, or: score -> scoret, scorte (NG  = do not generate)
-
-**LEXICON v13** also here: v1, v3: sveve -> svevet (NG), svevde.
-
-
-**LEXICON v23** 
-
-**LEXICON v14** where v4 is NG
-
-**LEXICON v1** =  kaste
-
-
-**LEXICON v2** = blåse, studere
-
-**LEXICON v3** =  leve
-
-**LEXICON v4** =  ro, bie
-
-
-**LEXICON v1-s** =  undres
-
-**LEXICON v2-s** =  føles, synes
-
-**LEXICON v3-s** =  trives
-
-
-
-
-
-## Conjugation sublexica
-
-**LEXICON inf-prsptc** = 
-
-**LEXICON regpres** = 
-
-**LEXICON r-pres** = 
-
-**LEXICON a-et-pret** = 
-
-**LEXICON te-pret** = 
-
-**LEXICON de-pret** = 
-
-**LEXICON dde-pret** = 
-
-
-**LEXICON prsptcsuff** = 
-
-
-
-### Sublexica for irregular verbs 
-
-
-* **LEXICON BE** 
-* **LEXICON BINDE** 
-* **LEXICON XITE** 
-* **LEXICON BLI** 
-* **LEXICON BLIVE** 
-* **LEXICON BRENNE** 
-* **LEXICON BRESTE** 
-* **LEXICON BRINGE** 
-* **LEXICON BRISTE** 
-* **LEXICON XYTE** = yte, flyte, tryte
-* **LEXICON BURDE** 
-* **LEXICON BY** 
-* **LEXICON XYDE** = lyde, tyde, syde, ...
-* **LEXICON BÆRE** 
-* **LEXICON XETTE** 
-* **LEXICON DRA** 
-* **LEXICON XIKKE** = drikke
-* **LEXICON DRIVE** 
-* **LEXICON DRITE** 
-* **LEXICON DØLGE** 
-* **LEXICON DØ** 
-* **LEXICON EIE** 
-* **LEXICON ETE** 
-* **LEXICON FALLE** 
-* **LEXICON FARE** 
-* **LEXICON FINNE** 
-* **LEXICON FISE** 
-* **LEXICON FLY** 
-* **LEXICON LYGE**
-* **LEXICON LJUGE**
-* **LEXICON FLYGE**
-* **LEXICON FLYTE**
-* **LEXICON LATE**
-* **LEXICON FRYSE**
-* **LEXICON FYKE**
-* **LEXICON FÅ**
-* **LEXICON FØLGE**
-* **LEXICON GALE**
-* **LEXICON GIDDE**
-* **LEXICON GI**
-* **LEXICON GJELDE**
-* **LEXICON GJØRE**
-* **LEXICON GLEPPE**
-* **LEXICON GLI**
-* **LEXICON XIPPE** = glippe, slippe
-* **LEXICON GNAGE**
-* **LEXICON GNI**
-* **LEXICON GRAVE**
-* **LEXICON GRINE**
-* **LEXICON GRIPE**
-* **LEXICON GRÅTE**
-* **LEXICON GYSE**
-* **LEXICON GYTE**
-* **LEXICON GYVE**
-* **LEXICON GÅ**
-* **LEXICON HA**
-* **LEXICON HENGE**
-* **LEXICON HETE**
-* **LEXICON HIVE**
-* **LEXICON HJELPE**
-* **LEXICON HOGGE**
-* **LEXICON HOLDE**
-* **LEXICON HUGGE**
-* **LEXICON KLINGE**
-* **LEXICON KLIPE**
-* **LEXICON KLIVE**
-* **LEXICON XYPE** = klype:kl
-* **LEXICON KLYVE**
-* **LEXICON XEKKE** = knekke, kvekke
-* **LEXICON KNESTE**
-* **LEXICON KNETTE**
-* **LEXICON KNIPE**
-* **LEXICON KOMME**
-* **LEXICON KUNNE**
-* **LEXICON LA**
-* **LEXICON LE**
-* **LEXICON LEGGE**
-* **LEXICON LIGGE**
-* **LEXICON LYDE**
-* **LEXICON MÅTTE**
-* **LEXICON MØTE**
-* **LEXICON PIPE**
-* **LEXICON RIVE**
-* **LEXICON RYKE**
-* **LEXICON SETTE**
-* **LEXICON SELGE**
-* **LEXICON SE**
-* **LEXICON SIGE**
-* **LEXICON SITTE**
-* **LEXICON SI**
-* **LEXICON SKJELVE**
-* **LEXICON SKJÆRE**
-* **LEXICON SKLI**
-* **LEXICON SKRIDE**
-* **LEXICON RIDE**
-* **LEXICON LIDE**
-* **LEXICON KVEDE**
-* **LEXICON SKRIKE**
-* **LEXICON SKRIVE**
-* **LEXICON SKRYTE**
-* **LEXICON SKULLE**
-* **LEXICON SKVETTE**
-* **LEXICON SKYTE**
-* **LEXICON SKYVE**
-* **LEXICON SLEPPE**
-* **LEXICON SLÅSS**
-* **LEXICON SLÅ**
-* **LEXICON SMELLE**
-* **LEXICON SMETTE**
-* **LEXICON SMYGE**
-* **LEXICON SMØRE**
-* **LEXICON SNIKE**
-* **LEXICON SNYTE**
-* **LEXICON SOVE**
-* **LEXICON SPINNE**
-* **LEXICON SPREKKE**
-* **LEXICON SPRETTE**
-* **LEXICON SPRINGE**
-* **LEXICON SPØRRE**
-* **LEXICON STELE**
-* **LEXICON STIGE**
-* **LEXICON STIKKE**
-* **LEXICON STJELE**
-* **LEXICON STREKKE**
-* **LEXICON STRIDE**
-* **LEXICON STRYKE**
-* **LEXICON STÅ**
-* **LEXICON STØKKE**
-* **LEXICON SVELTE**
-* **LEXICON SVERGE**
-* **LEXICON SVI**
-* **LEXICON SVIKE**
-* **LEXICON SVINGE**
-* **LEXICON SVINNE**
-* **LEXICON SVIVE**
-* **LEXICON SYNGE**
-* **LEXICON SYNKE**
-* **LEXICON SØKKE**
-* **LEXICON TA**
-* **LEXICON TELLE**
-* **LEXICON TIE**
-* **LEXICON TRE_V**
-* **LEXICON TORE**
-* **LEXICON TREFFE**
-* **LEXICON TREKKE**
-* **LEXICON TRIVE**
-* **LEXICON TRYTE**
-* **LEXICON TRÅ**
-* **LEXICON TVINGE**
-* **LEXICON TYTE**
-* **LEXICON TØRRE**
-* **LEXICON VEIE**
-* **LEXICON VELGE**
-* **LEXICON VEVE**
-* **LEXICON VIKE**
-* **LEXICON VILLE**
-* **LEXICON VINDE**
-* **LEXICON VINNE**
-* **LEXICON VITE**
-* **LEXICON VRI**
-* **LEXICON VÆRE**
-* **LEXICON UNNVÆRE**
-* **LEXICON XREKKE** = brekke, overrekke, radbrekk, rekke
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/verbs.lexc)</small># Sublexica for adjective roots
-
-* a1  god         god         godt        gode
-* a2  norsk       norsk       norsk       norske
-* a3  ekte        ekte        ekte        ekte
-* a4  oppskjørtet oppskjørtet oppskjørtet oppskjørtede/oppskjørtete
-* a5  makaber     makaber     makabert    makabre
-*     lunken      lunken      lunkent     lunkne
-* aV  blå         blå         blått       blå
-
-
-
-
-
-## Basic paradigms
-
-a23
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Sublexica
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/adjectives.lexc)</small># Tags for numerals (number words)
-
-## Basic tags
-numtag
-
-numtagsg
-
-
-## Tags for special use
-
-### Date
-
-
-
-### Clock
-
-
-
-
-
-
-... and many more lexica
-
-
-* **LEXICON ARABICCASEORD**  adds +Arab
-
-
-* **LEXICON ARABICCASE**  adds +Arab
-
-* **LEXICON ARABICCASES**  adds +Arab
-
-* **LEXICON ARABICCOMPOUNDS**  ! arabic as first part,
-
-
-
-* **LEXICON ARABICCASECOLL**  adds +Arab
-
-* **LEXICON ARABICCASE0**  adds +Arab
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/numerals.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/numerals.lexc)</small># Bokmål noun morphology 
-
----------------------------------------------------
-Declension classes
-Main types, from Bokmålsordboka
-
-f1  bru         brua        bruer           bruene
-f2  pumpe       pumpa       pumper          pumpene
-f3  søster      søstera     søstre/søstrer  søstrene
-m1  stol        stolen      stoler          stolene
-bakke       bakken      bakker          bakkene
-pumpe       pumpen      pumper          pumpene
-m2  lærer       læreren     lærere          lærerne
-m3  bever       beveren     bevere          beverne
-bevrer          bevrene
-bevre           bevrene
-m4  longs       longsen     longs/longser   longsene
-n1  slott       slottet     slott           slotta/slottene
-n2  eple        eplet       epler           epla/eplene
-salt        saltet      salter          salta/saltene
-n3  kontor      kontoret    kontor/kontorer kontora/kontorene
-høve        høvet       HØVE/høver      høva/høvene
-middel      midlet      MIDDEL/midler   midla/midlene
-n4  salt        saltet      salter          salta/saltene ??
-n5  middel      midlet      midler          midla/midlene ??
-n6  kammer      kammeret    kamre/kammer    kamra/kamrene
-
-Subtypes, mainly from Finsk-norsk ordbok, also system-specific
-
-x  unclassified, to m1 by default
-mX indecl
-m1sg sg only
-m1pl pl only
-m1b dam
-m1b fe, komite
-m1V sko pl. sko, skoa/skoene
-m1Vb byte, pl. byte/byter, bytene
-m1Vc glipp, pl. glipp, glippene
-m3V meter pl. meter
-m3b finger pl. fingrer/fingre
-m3c forelder pl. foreldre
-ma alliert, alierte, allierte, allierte
-KOLLEGA kollegaer, kolleger
-KONTO kontoer, konti
-RADIUS radiuser, radii
-BROR brødre
-FAR fedre
-MANN menn
-mD gårde, garde, dage  (av gårde)
-fD tide (i tide)
-nD live (i live)
-DATTER døtre
-f1b skam
-f1X bok, pl. bøker
-f1V mus, pl. mus
-fGLO glo, pl. glør
-f3b lever. def. levra
-n1b rom, def. rommet
-n1n1b publikum, def. publikumet/publikummet
-n1s sg only
-n2b program, pl. programmer
-n2c kontor, pl. kontor, kontorer
-n2s mørke, not pl.
-n3b lager, def. lageret
-n3c fe, feet
-n4b faktum, pl. fakta
-FORUM forum, forumet, fora/forumer, foraene/forumene
-LEKSIKON leksikon, pl. leksika
-nMUSEUM museum, museet, museer
-nØYE
-
-
-
-## Basic paradigms
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#### Irregulars
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-+N+Fem+Sg+Def+Radical:datra    K ;
-+N:         R ;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@NO CODE@ for nynorsk only.
-
-@NO CODE@ for nynorsk only.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/nouns.lexc)</small>
-# Continuation lexicons for abbreviations
-
-## Lexica for adding tags and periods
-
-
-
-
-
-
-## The sublexica
-
-### Continuation lexicons for abbrs both with and witout final period
-
-
-* **LEXICON ab-noun   **
-
-* **LEXICON ab-adj   **
-
-* **LEXICON ab-adv   **
-
-* **LEXICON ab-num   **
-
-### Lexicons without final period
-
-* **LEXICON ab-nodot-noun   **  The bulk
-
-
-
-* **LEXICON ab-nodot-adj   **
-
-* **LEXICON ab-nodot-adv   **
-
-* **LEXICON ab-nodot-num   **
-
-### Lexicons with final period
-
-* **LEXICON ab-dot-noun   **  This is the lexicon for abbrs that must have a period.
-
-* **LEXICON ab-dot-adj   **  This is the lexicon for abbrs that must have a period.
-
-
-* **LEXICON ab-dot-adv   **  This is the lexicon for abbrs that must have a period.
-
-* **LEXICON ab-dot-num   **  This is the lexicon for abbrs that must have a period.
-
-* **LEXICON ab-dot-cc   **
-
-
-* **LEXICON ab-dot-verb   **
-
-
-
-* **LEXICON ab-dot-IVprfprc   **
-
-
-
-
-
-
-* **LEXICON DOT   ** - Adds the dot to dotted abbreviations.
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/abbreviations.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/abbreviations.lexc)</small>
-# Norwegian Bokmål compounding
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/compounding.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/compounding.lexc)</small># Bokmål interjections
-
-This file documents the Bokmål interjections stem file [stems/interjections.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/interjections.lexc).
-
-LEXICON ij adds the tag **+Interj**
-
-LEXICON Interjection lists *folkens, heisann, pokker* and some 60 more interjections.
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/interjections.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/interjections.lexc)</small># Bokmål prepositions
-
-This file documents the Bokmål prepositions stem file [stems/prepositions.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/prepositions.lexc).
-
-LEXICON p gives tag +Pr
-
-
-LEXICON Preposition  list (appr 90 prepositions)
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/prepositions.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/prepositions.lexc)</small># Bokmål conjunctions
-
-This file documents the Bokmål conjunctions stem file [stems/conjunctions.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/conjunctions.lexc).
-
-
-conj for the tag +CC
-
-Conjunction  både, og, ..
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/conjunctions.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/conjunctions.lexc)</small># Bokmål subjunctions
-
-This file documents the Bokmål subjunctions stem file [stems/subjunctions.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/subjunctions.lexc).
-
-LEXICON Subjunction
-
-LEXICON subj gives tag +CS
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/subjunctions.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/subjunctions.lexc)</small># Bokmål propernouns
-
-This file documents the Bokmål proper nouns stem file [stems/nob-propernouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nob-propernouns.lexc).
-
-LEXICON ProperNoun-nob-nocomp contains some acronyms
-
-
-LEXICON ProperNoun-nob contains the list of 2200 or so names. The rest come from common files.
-
-
-Adjectives
-
-
-
-Nouns
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nob-propernouns.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/nob-propernouns.lexc)</small>
-# Norwegian Bokmål verb stems
-
-This file documents the Bokmål verb stem file [stems/verbs.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/verbs.lexc).
-
-## Overview of the declension classes
-
-----------------------------------------------------
-Main types, from Bokmålsordboka
-
-v1 kaste kaster kasta kasta
-kastet kastet
-v2 lyse lyser lyste lyst
-reparere reparerer reparerte reparert
-v3 leve lever levde levd
-v4 nå når nådde nådd
-v4 bie bier bidde bidd
-
-Subtypes
-v13 v1 or v3
-v1-s passive v1 verbs
-v2-s passive v2 verbs
-v3-s passive v3 verbs
-Strong verbs have verb-specific lexica
-
-
-## The entries
-
-
-LEXICON VerbRoot contains the 5700 or so  verbs
-
-* innbefatte v1 ; 
-* tilslutte v1 ; 
-
-
-* abbreviere v2 ; 
-* abdisere v2 ; 
-* allmenngjøre:allmenn GJØRE ; 
-* anbringe:an BRINGE ; 
-* andøve v3 ; 
-* anfalle:an FALLE ; 
-* angi:an GI ; 
-* angripe:an GRIPE ; 
-* ankomme:an KOMME ;  
-* falle: FALLE ; 
-* etc.
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/verbs.lexc)</small># Norwegian Bokmål Adjectives
-
-This file documents the Bokmål adjective stem file [stems/adjectives.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/adjectives.lexc).
-
-## Overview of the declension classes
-
-----------------------------------------------------
-Main types, from Bokmålsordboka
-
-a1 god god godt gode
-a2 billig billig billig billige
-a3 ekte ekte ekte ekte
-a4 oppskjørtet oppskjørtet oppskjørtet oppskjørtede/oppskjørtete
-a5 makaber makaber makabert makabre
-a5 lunken lunken lunkent lunkne
-aV blå blå blått blå
-... and some irregular ones
-
-
-
-
-AdjectiveRoot is the list of adjectives (some 5500 stems)
-* få: A_FÅ ; 
-* små: A_SMÅ ; 
-* vond: VOND ; 
-
-
-
-* artikkelbasert a2 ; 
-* aggressiv a1 ; 
-* avbøtende a3 ; 
-* bundet a4 ; 
-
-
-* dritredd a2 ; 
-* dritsur+v1:drit#sur a1 ; 
-* dritsur+v2:dritt#sur a1 ; 
-* ...
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/adjectives.lexc)</small>
-# Bokmål numerals (number words)
-
-This file documents the Bokmål numerals stem file [stems/numerals.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/numerals.lexc).
-
-LEXICON Numeral 
-
-LEXICON Textual 
-
-
-LEXICON TEXTTHOUSANDS 
-
-LEXICON 1000CONT 
-
-LEXICON TEXTHUNDREDS 
-
-LEXICON 100CONT 
-
-LEXICON TEXTTENS 
-
-
-LEXICON TEXTTENSCONT 
-
-LEXICON TEXTTEENS 
-
-LEXICON TEXTONES 
-
-LEXICON 2-9 
-
-LEXICON ORDTEXT 
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/numerals.lexc)</small># Bokmål noun lexicon 
-
-This file documents the Bokmål noun stem file [stems/nouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nouns.lexc).
-
-## Overview of the declension classes
-
-----------------------------------------------------
-Main types, from Bokmålsordboka
-
-f1  bru         brua        bruer           bruene
-f2  pumpe       pumpa       pumper          pumpene
-f3  søster      søstera     søstre/søstrer  søstrene
-m1  stol        stolen      stoler          stolene
-bakke       bakken      bakker          bakkene
-pumpe       pumpen      pumper          pumpene
-m2  lærer       læreren     lærere          lærerne
-m3  bever       beveren     bevere          beverne
-bevrer          bevrene
-bevre           bevrene
-m4  longs       longsen     longs/longser   longsene
-n1  slott       slottet     slott           slotta/slottene
-n2  eple        eplet       epler           epla/eplene
-salt        saltet      salter          salta/saltene
-n3  kontor      kontoret    kontor/kontorer kontora/kontorene
-høve        høvet       HØVE/høver      høva/høvene
-n4  salt        saltet      salter          salta/saltene ??
-n5  middel      midlet      MIDDEL/midler   midla/midlene ??
-n6  kammer      kammeret    kamre/kammer    kamra/kamrene
-
-Subtypes
-
-mx unclassified, to m1 by default
-mX indecl
-m1sg sg only
-m1pl pl only
-m1b dam
-m1b fe, komité
-m1V  sko pl. sko, skoa/skoene
-m1Vb byte, pl. byte/byter, bytene
-m1Vc glipp, pl. glipp, glippene
-m3V meter pl. meter
-m3r sykkel, vinkel vinkelen, vinkler, vinklene
-ma alliert, alierte, allierte, allierte
-KOLLEGA kollegaer, kolleger
-mKONTO kontoer, konti
-mRADIUS radiuser, radii
-mBROR brødre
-mFAR fedre
-mMANN menn
-mD gårde, garde, dage (av gårde)
-fD tide (i tide)
-nD live (i live)
-
-fDATTER døtre
-f1b skam
-f1X bok pl. bøker
-f1V mus, pl. mus
-
-nX styrbord, zoo. indecl.
-n1b rom pl. rom
-n1sg sg only
-n2b program pl. programmer
-n2c kontor pl. kontor, kontorer
-n2s mørke, not pl.
-n3b lager def. lageret
-n3c fe, feet
-n4b faktum, faktumet, fakta, faktaene
-FORUM forum, forumet, fora/forumer, foraene/forumene
-nLEKSIKON leksikon, pl. leksika
-nMUSEUM museum, museet, museer
-n1pl odds, oddsene
-
-
-## The lexica themselves
-
-LEXICON FinalNoun is a separate lexicon to point to. For now it contains only *-skap*.
-
-
-LEXICON NounRoot is the lexicon pointed to from `root.lexc` It points to
-Noun ;
-HyphNouns ;
-
-LEXICON HyphNouns  contains forms only in used in first part of compounds, like *barne*.  TODO: Kanskje desse ikkje bör bli lista.
-
-LEXICON ShortNounRoot 
-The lexicon points to two lexica which are kept separate in order not to
-allow them in compounding (rusle = rus + le)
-2_letter ;
-3_letter ;
-
-LEXICON 2_letter is stems with two lettes.
-
-LEXICON 3_letter  is stems with 3 letters
-
-
-LEXICON Noun  here come the long list of stems (tens of thousands)
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/nouns.lexc)</small># Bokmål pronoun stems
-
-This file documents the Bokmål pronouns stem file [stems/pronouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/pronouns.lexc).
-
-LEXICON Pronoun 
-
-LEXICON Personal 
-
-LEXICON Reflexive 
-
-LEXICON Reciprocal 
-
-LEXICON Interrogative 
-
-LEXICON Possessive 
-
-LEXICON Other_Pronouns 
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/pronouns.lexc)</small># Bokmål adverbs
-
-This file documents the Bokmål adverb stem file [stems/adverbs.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/adverbs.lexc).
-
-LEXICON adv  adds the tag +Adv
-
-LEXICON dt  also ads +Adv  perhaps unify, perhaps not.
-
-Adverb lists some 600 Norwegian adverbs, including MWE such as "i live"
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/adverbs.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/adverbs.lexc)</small># Nynorsk stems 
-for tolerant dictionary reading
-
-This file documents the nynorsk stem file for the bokmål analyzer [stems/nynorsk-stems.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nynorsk-stems.lexc).
-
-LEXICON Prnyn 
-
-LEXICON Advnyn 
-
-LEXICON Anyn 
-
-LEXICON Vnyn 
-
-
-LEXICON Propnyn 
-
-LEXICON Pronnyn 
-
-LEXICON nnnb 
-
-LEXICON Nynorsk  her kjem alle orda
-
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nynorsk-stems.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/nynorsk-stems.lexc)</small># File containing abbreviations for Norwegian Bokmål 
-
-This file documents the Bokmål abbrevioations stem file [stems/nob-abbreviations.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nob-abbreviations.lexc).
-
-
-
-Abbreviation-nob 
-
-##            Intransitive abbreviations           
-
-These give clause boundaries before capital letters
-and numbers, but not elsewhere.
-
----------------------------------------------
-Vi bor i Sth. CLB 10 av oss er innflyttere.
-Vi bor i Sth. CLB Saara er også innflytter.
-Vi vet at Sth. er en fin by.
-
-
-ITRAB 
-
-
-
-
-
-Transitive number-related abbreviations      !
-
-These ones are transitive when followed by numbers or
-singleton letters, and intransitive elsewhere.
-
---------------------------------------------------
-Gården har Gnr. 10.
-Gården har Gnr. 5. a.
-Alle gårder har ikke Gnr. CLB Det er et problem.
-Alle gårder har ikke Gnr. og det er et problem.
---------------------------------------------------
-
-TRNUMAB 
-
-
-
-
-#              Transitive abbreviations           
-
-TRAB 
-
-dot% noStb.db
-Abbreviations that never induce sentence boundaries
-The file is too large and should be shrinked
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nob-abbreviations.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/nob-abbreviations.lexc)</small>
+<small>This (part of) documentation was generated from [../src/phonetics/txt2ipa.xfscript](http://github.com/giellalt/lang-nob/blob/main/../src/phonetics/txt2ipa.xfscript)</small>
 
 
 We describe here how abbreviations are in Norwegian Bokmål are read out, e.g.
@@ -7280,4 +7506,158 @@ msyn-pred-adjneu-adjmsc
 
 
 * * *
-<small>This (part of) documentation was generated from [../tools/grammarcheckers/grammarchecker.cg3](http://github.com/giellalt/lang-nob/blob/main/../tools/grammarcheckers/grammarchecker.cg3)</small>
+<small>This (part of) documentation was generated from [../tools/grammarcheckers/grammarchecker.cg3](http://github.com/giellalt/lang-nob/blob/main/../tools/grammarcheckers/grammarchecker.cg3)</small>Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
+Then just:
+$ make
+$ echo "ja, ja" | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
+
+Issues:
+- [X] Ambiguous input
+- Seems to work fine
+- [X] Ambiguous multiword expessions with ambiguous tokenisation
+- Seems to work – represented within lexc now; hfst-tokenise also
+supports forms on the analyses now
+- [X] Ambiguous multiword expessions need reorganising after CG
+- The module cg-mwesplit takes wordforms from readings and turns them into
+new cohorts
+- [X] Unknown words
+- The set-difference method only works for words without
+flag diacritics (even though we should be working only on the form-side?)
+and leads to binary blow-up: With only lower unknowns, we get 45M;
+lower+upper gives 67M, while no unknowns gives 27M
+- Fixed instead by treating empty analyses as unknown-tokens in
+hfst-tokenise, and outputting unmatched strings with a prefix
+- [ ] Treat input that's within superblanks as unmatched
+- probably requires a change in hfst-tokenise itself
+- [X] Try >1 space for ambiguous MWE's? – represented within lexc now
+- [ ] Try set-difference-unknowns method with regular hfst commands?
+
+More usage examples:
+$ echo "Juos gorreválggain lea (dárbbašlaš) deavdit gáibádusa boasttu olmmoš, man mielde lahtuid." | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
+$ echo "(gáfe) 'ja' ja 3. ja? ц jaja ukjend \"ukjend\"" | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
+$ echo "márffibiillagáffe" | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
+
+Pmatch documentation:
+https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstPmatch
+
+
+
+
+
+
+Characters which have analyses in the lexicon, but can appear without spaces
+before/after, that is, with no context conditions, and adjacent to words:
+* Punct contains ASCII punctuation marks
+* The symbol after m-dash is soft-hyphen `U+00AD`
+* The symbol following {•} is byte-order-mark / zero-width no-break space
+`U+FEFF`.
+
+Whitespace contains ASCII white space and
+the List contains some unicode white space characters
+* En Quad U+2000 to Zero-Width Joiner U+200d'
+* Narrow No-Break Space U+202F
+* Medium Mathematical Space U+205F
+* Word joiner U+2060
+
+
+
+
+Apart from what's in our morphology, there are
+1) unknown word-like forms, and
+2) unmatched strings
+We want to give 1) a match, but let 2) be treated specially by hfst-tokenise -a
+* select extended latin symbols
+* select symbols
+* various symbols from Private area (probably Microsoft),
+so far:
+* U+F0B7 for "x in box"
+
+TODO: Could use something like this, but built-in's don't include šžđčŋ:
+
+
+Simply give an empty reading when something is unknown:
+hfst-tokenise --giella-cg will treat such empty analyses as unknowns, and
+remove empty analyses from other readings. Empty readings are also
+legal in CG, they get a default baseform equal to the wordform, but
+no tag to check, so it's safer to let hfst-tokenise handle them.
+
+
+
+Finally we mark as a token any sequence making up a:
+* known word in context
+* unknown (OOV) token in context
+* sequence of word and punctuation
+* URL in context
+
+* * *
+<small>This (part of) documentation was generated from [../tools/tokenisers/tokeniser-gramcheck-gt-desc.pmscript](http://github.com/giellalt/lang-nob/blob/main/../tools/tokenisers/tokeniser-gramcheck-gt-desc.pmscript)</small># Tokeniser for nob
+
+Usage:
+```
+$ make
+$ echo "ja, ja" | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
+$ echo "Juos gorreválggain lea (dárbbašlaš) deavdit gáibádusa boasttu olmmoš, man mielde lahtuid." | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
+$ echo "(gáfe) 'ja' ja 3. ja? ц jaja ukjend \"ukjend\"" | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
+$ echo "márffibiillagáffe" | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
+```
+
+Pmatch documentation:
+https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstPmatch
+
+
+
+
+
+
+Characters which have analyses in the lexicon, but can appear without spaces
+before/after, that is, with no context conditions, and adjacent to words:
+* Punct contains ASCII punctuation marks
+* The symbol after m-dash is soft-hyphen `U+00AD`
+* The symbol following {•} is byte-order-mark / zero-width no-break space
+`U+FEFF`.
+
+Whitespace contains ASCII white space and
+the List contains some unicode white space characters
+* En Quad U+2000 to Zero-Width Joiner U+200d'
+* Narrow No-Break Space U+202F
+* Medium Mathematical Space U+205F
+* Word joiner U+2060
+
+
+
+
+Apart from what's in our morphology, there are
+1. unknown word-like forms, and
+2. unmatched strings
+We want to give 1) a match, but let 2) be treated specially by
+`hfst-tokenise -a`
+Unknowns are made of:
+* lower-case ASCII
+* upper-case ASCII
+* select extended latin symbols
+ASCII digits
+* select symbols
+* Combining diacritics as individual symbols,
+* various symbols from Private area (probably Microsoft),
+so far:
+* U+F0B7 for "x in box"
+
+
+
+## Unknown handling
+Unknowns are tagged ?? and treated specially with `hfst-tokenise`
+hfst-tokenise --giella-cg will treat such empty analyses as unknowns, and
+remove empty analyses from other readings. Empty readings are also
+legal in CG, they get a default baseform equal to the wordform, but
+no tag to check, so it's safer to let hfst-tokenise handle them.
+
+
+
+Finally we mark as a token any sequence making up a:
+* known word in context
+* unknown (OOV) token in context
+* sequence of word and punctuation
+* URL in context
+
+* * *
+<small>This (part of) documentation was generated from [../tools/tokenisers/tokeniser-disamb-gt-desc.pmscript](http://github.com/giellalt/lang-nob/blob/main/../tools/tokenisers/tokeniser-disamb-gt-desc.pmscript)</small>
