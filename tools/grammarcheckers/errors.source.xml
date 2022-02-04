@@ -76,6 +76,28 @@
     </body>
   </error>
 
+  <error id="msyn-v-inf-pres">
+    <header>
+      <title xml:lang="en">Verb not in present tense</title>
+      <title xml:lang="nb">Verbet står ikke i presens</title>
+    </header>
+    <body>
+      <description xml:lang="en">When a verb, here "$1", is the main verb of the sentence it should not be in the infinitive.</description>
+      <description xml:lang="nb">Når et verb, som her "$1", er hovedverbet i setninga skal det ikke stå i infinitiv.</description>
+    </body>
+  </error>
+
+  <error id="msyn-v-pres-inf">
+    <header>
+      <title xml:lang="en">Verb not in the infinitive</title>
+      <title xml:lang="nb">Verbet står ikke i infinitiv</title>
+    </header>
+    <body>
+      <description xml:lang="en">When a verb, here "$1", is following an auxiliary like "$2", it should  be in the infinitive.</description>
+      <description xml:lang="nb">Når et verb, som her "$1", kommer etter et hjelpeverb, som "$2", skal det stå i infinitiv.</description>
+    </body>
+  </error>
+
   <error id="real-aa-og">
     <header>
       <title xml:lang="en">Use "og" rather than "å"</title>
