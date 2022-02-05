@@ -545,7 +545,7 @@ SET PRE-APP   = COMMA OR PUNCT-LEFT OR PRE-NP-HEAD ;
 
 
 #!! The set **NOT-NPMOD** is used to find barriers between NPs.
-#!! Typical usage: ... (*1 N BARRIER NPT-NPMOD) ...
+#!! Typical usage: ... (*1 N BARRIER NOT-NPMOD) ...
 #!! meaning: Scan to the first noun, ignoring anything that can be
 #!! part of the noun phrase of that noun (i.e., "scan to the next NP head")
 
@@ -760,15 +760,20 @@ ADDRELATION:msyn-qucompl-def-indef ($2) (*) FROM (T:previousWordCrossSent LINK 0
 
 #!! msyn-pred-adjmsc-adjneu
 
-ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A) IF (-2C (N Neu Sg) OR ("det"))(0C Msc OR Fem OR MF)(-1 ("være"));
+ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A) IF (NOT *-1 Pr BARRIER NOT-NPMOD LINK -1 N + Msc)(-2C (N Neu Sg) OR ("det"))(-1 ("være"))(0C Msc OR Fem OR MF)(NOT 1 N + Msc);
+ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A) IF (-2 ("det") LINK *-1 BOS BARRIER NOT-NPMOD)(-1 ("være"))(0C Msc OR Fem OR MF)(NOT 1 N + Msc);
+ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A) IF (-2C (N Neu Sg) LINK *-1 BOS BARRIER NOT-NPMOD)(-1 ("være"))(0C Msc OR Fem OR MF)(NOT 1 N + Msc);
 COPY:msyn-pred-adjmsc-adjneu (Neu Sg Indef &SUGGEST) EXCEPT (Msc Sg Indef)  TARGET (A Pos &msyn-pred-adjmsc-adjneu);
-ADDRELATION:real-v-aa-og ($2) (N) FROM (2 A LINK 0 (&msyn-pred-adjmsc-adjneu)) ;
+ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (2 A LINK 0 (&msyn-pred-adjmsc-adjneu)) ;
 
 ## Eplet var god.
 #$ Eplet var godt.
+## Landet var full av folk.
+#$ Landet var fullt av folk.
+#$ Hver avkrok i landet var full av folk.
 
 
-ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A Msc Sg) IF (-3C (N Neu Sg) OR ("det"))(-2 ("som"))(-1 ("være"));
+ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A Msc Sg) IF (-3C (N Neu Sg) OR ("det"))(-2 ("som"))(-1 ("være"))(0C Msc OR Fem OR MF)(NOT 1 N + Msc);
 COPY:msyn-pred-adjmsc-adjneu (Neu Sg Indef &SUGGEST) EXCEPT (Msc Sg Indef) TARGET (A Pos &msyn-pred-adjmsc-adjneu);
 ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (3 A LINK 0 (&msyn-pred-adjmsc-adjneu)) ;
 ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (4 A LINK 0 (&msyn-pred-adjmsc-adjneu)) ;
@@ -807,7 +812,7 @@ ADDRELATION:msyn-v-inf-pres ($2) (*) FROM (1 V LINK 0 (&msyn-v-inf-pres)) ;
 
 #!! ## Infinitive
 
-ADD:msyn-v-pres-inf (&msyn-v-pres-inf) TARGET (V Ind Prs) IF (-2C (N) OR (Pron Nom))(-1 hj-V)(0 V);
+ADD:msyn-v-pres-inf (&msyn-v-pres-inf) TARGET V IF (0C (Ind Prs))(-2C (N) OR (Pron Nom))(-1 hj-V)(NOT 0 Pass);
 COPY:msyn-v-pres-inf (Inf &SUGGEST) EXCEPT (Ind Prs)  TARGET (V Ind Prs &msyn-v-pres-inf);
 ADDRELATION:msyn-v-pres-inf ($2) (V) FROM (1 V LINK 0 (&msyn-v-pres-inf)) ;
 
