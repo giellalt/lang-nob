@@ -6654,6 +6654,12 @@ NDS analyser tags
 * **+Use/-Spell** 
 * **+Use/-PLX** 
 * **+Use/SpellNoSugg** 
+* **+Use/NG** not-generate, for ped generation isme-ped.fst and MT
+* **+Use/PMatch** means that the following is only used in the analyser feeding the disambiguator
+* **+Use/-PMatch** Do not include in fst's made for hfst-pmatch
+* **+Use/GC** only retained in the HFST Grammar Checker disambiguation analyser
+* **+Use/-GC** never retained in the HFST Grammar Checker disambiguation analyser
+* **+MWESplit** Split point for MWE
 
 
 ## Other tags
@@ -6696,6 +6702,7 @@ NDS analyser tags
 * **+Sem/Domain** 
 * **+Sem/Domain_Hum** 
 * **+Sem/Dummytag** 
+* **+Sem/Edu** 
 * **+Sem/Edu_Hum** 
 * **+Sem/Event** 
 * **+Sem/Fem** 
