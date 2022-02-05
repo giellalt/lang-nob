@@ -11548,7 +11548,7 @@ SELECT (V Inf) IF
 
 # 2294
 SELECT (V Inf) IF
-	(NOT 0 farlige-Inf)
+	(NOT 0 farlige-Inf OR ("skulle"))
 	(*-1 %hvorfor% BARRIER ikke-Adv)
 ;
 
@@ -12706,6 +12706,7 @@ REMOVE (A Neu Sg) IF
 REMOVE (A Neu Sg Indef) IF
 	(0 Adv)
 	(NOT 0 samset)
+	(NOT -1 ("være") LINK -1 Neu)
 ;
 
 
