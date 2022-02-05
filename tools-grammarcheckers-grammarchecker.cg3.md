@@ -192,7 +192,7 @@ expression **WORD - premodifiers**.
 
 
 The set **NOT-NPMOD** is used to find barriers between NPs.
-Typical usage: ... (*1 N BARRIER NPT-NPMOD) ...
+Typical usage: ... (*1 N BARRIER NOT-NPMOD) ...
 meaning: Scan to the first noun, ignoring anything that can be
 part of the noun phrase of that noun (i.e., "scan to the next NP head")
 
