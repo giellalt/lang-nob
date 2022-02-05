@@ -108,6 +108,12 @@ Multichar_Symbols !!≈ **@CODE@**
 +Use/-Spell         !!≈ * **@CODE@** 
 +Use/-PLX         !!≈ * **@CODE@** 
 +Use/SpellNoSugg   !!≈ * **@CODE@** 
++Use/NG           !!≈ * **@CODE@** not-generate, for ped generation isme-ped.fst and MT
++Use/PMatch       !!≈ * **@CODE@** means that the following is only used in the analyser feeding the disambiguator
+ +Use/-PMatch      !!≈ * **@CODE@** Do not include in fst's made for hfst-pmatch
+ +Use/GC           !!≈ * **@CODE@** only retained in the HFST Grammar Checker disambiguation analyser
+ +Use/-GC          !!≈ * **@CODE@** never retained in the HFST Grammar Checker disambiguation analyser
+ +MWESplit         !!≈ * **@CODE@** Split point for MWE
 
 
 !! ## Other tags
@@ -153,6 +159,7 @@ Multichar_Symbols !!≈ **@CODE@**
 +Sem/Domain            !!≈ * **@CODE@** 
 +Sem/Domain_Hum         !!≈ * **@CODE@** 
 +Sem/Dummytag         !!≈ * **@CODE@** 
++Sem/Edu         !!≈ * **@CODE@** 
 +Sem/Edu_Hum         !!≈ * **@CODE@** 
 +Sem/Event            !!≈ * **@CODE@** 
 +Sem/Fem            !!≈ * **@CODE@** 

@@ -102,14 +102,14 @@ LEXICON LIKEDAN !
 
 LEXICON positive
   positive-indef ;
-  positive-def   ;
+  positive-def  ;
 
 LEXICON positive-indef
 !                    R ; ! A+N-samansetjingar er for dristig (?)
  +Pos+Msc+Sg+Indef: # ;
  +Pos+Fem+Sg+Indef: # ;
   +Pos+MF+Sg+Indef: # ; ! MF ???
-  +Pos+Neu+Sg+Indef: # ; ! MF ???
+!  +Pos+Neu+Sg+Indef: # ; ! ta Neu separat
 
 LEXICON positive-def
  +Pos+Sg+Def+Clt:%>es # ;

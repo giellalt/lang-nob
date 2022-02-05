@@ -2,10 +2,10 @@
 
 
 LEXICON PROPADJ_a1-org
-+A+PROP+Sem/Org+Msc+Indef: # ;
-+A+PROP+Sem/Org+Fem+Indef: # ;
-+A+PROP+Sem/Org+Neu+Indef:%>t # ;
-+A+PROP+Sem/Org+Pl+Indef: # ;
++A+Prop+Sem/Org+Msc+Indef: # ;
++A+Prop+Sem/Org+Fem+Indef: # ;
++A+Prop+Sem/Org+Neu+Indef:%>t # ;
++A+Prop+Sem/Org+Pl+Indef: # ;
 
 
 LEXICON FirstTag
