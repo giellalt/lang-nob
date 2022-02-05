@@ -38131,7 +38131,7 @@ ishockey m1 ;
 uteområde n2 ;
 sediment n2 ;
 plot+N+Sg+Indef:plot # ;
-plot+N+Sg+Defef:plottet # ;
+plot+N+Sg+Def:plottet # ;
 ferietur m1 ;
 teoretiker m2 ;
 busstur m1 ;

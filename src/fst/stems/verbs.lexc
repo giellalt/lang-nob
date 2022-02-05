@@ -1182,7 +1182,7 @@ faksimilere v2 ;
 faktorisere v2 ;
 fakturere v2 ;
 falle: FALLE ; !!≈ * @CODE@ 
-henfalle: FALLE ;
+henfalle:hen FALLE ;
 fallere v2 ; !! * etc.
 falme v1 ;
 false v1 ;

@@ -353,7 +353,7 @@ LEXICON DRITE !!≈ * **@CODE@**
       +V+Ind+Prt:dret   #          ;
       +V+Ind+Prt:dreit  #          ;
        +V+PrfPrc:dritt  #          ;
-       +V+PrcPrc:dritet #          ;
+       +V+PrfPrc:dritet #          ;
        +V+PrsPrc:drit   prsptcsuff ;
 LEXICON DØLGE !!≈ * **@CODE@** 
           +V+Inf:dølge  #          ;
@@ -371,7 +371,7 @@ LEXICON DØ !!≈ * **@CODE@**
  +V+Ind+Prs+Pass:døes #          ;
       +V+Ind+Prt:døde #          ;
        +V+PrfPrc:dødd #          ;
-        +V+Prdtc:dø   prsptcsuff ;
+        +V+PrfPrc:dø   prsptcsuff ;
 LEXICON EIE !!≈ * **@CODE@** 
          +V+Inf:eie  #          ;
    +V+Inf+Pass:eies  #          ;
@@ -411,7 +411,7 @@ LEXICON FINNE !!≈ * **@CODE@**
           +V+Imp:finn   #          ;
       +V+Ind+Prs:finner #          ;
  +V+Ind+Prs+Pass:finnes #          ;
- +v+Ing+Prs+Pass:fins   #          ;
+ +V+Ind+Prs+Pass:fins   #          ;
       +V+Ind+Prt:fant   #          ;
  +V+Ind+Prt+Pass:fantes #          ;
        +V+PrfPrc:funnet #          ;
@@ -1199,7 +1199,7 @@ LEXICON SPØRRE !!≈ * **@CODE@**
           +V+Imp:spør      # ;
       +V+Ind+Prs:spør      # ;
  +V+Ind+Prs+Pass:spørres   # ;
- +v+Ind+Prs+Pass:spørs     # ;
+ +V+Ind+Prs+Pass:spørs     # ;
       +V+Ind+Prt:spurte    # ;
    +V+Ind+Prt+Pass:spurtes # ;
 +V+Ind+PrfPrc+Pass:spurtes # ;
