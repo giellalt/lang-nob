@@ -15,7 +15,12 @@ BEGIN {
 use open qw( :encoding(UTF-8) :std );
 
 while(<>) {
-	# Continuation lexicon substitutions:
+
+    # remove entries
+
+    s/^Hotel% Åker/!Hotel% Åker/g ;
+    
+    # Continuation lexicon substitutions:
 
 
 
