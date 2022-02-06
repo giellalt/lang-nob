@@ -775,6 +775,8 @@ REMOVE:Nynorsk (Nynorsk) ;
 REMOVE:aa ABBR IF (0 IM);
 
 #!! **aaIM** selects +IM for *å*
+REMOVE ABBR IF (0 ("å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR));
+
 SELECT:aaIM IM IF (0 ("å"))(1 Inf);
 
 REMOVE:SNS (*) IF (0  Use/SpellNoSugg) ;
