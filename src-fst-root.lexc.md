@@ -2,11 +2,9 @@
 # Norwegian Bokmål morphological analyser                      
 this documents the symbols and intro lexicon of **Norwegian Bokmål**.
 
-
 **Multichar_Symbols** 
 
 Here we declare the **tags** and all other multicharacter symbols.
-
 
 ## Grammatical tags
 
@@ -33,8 +31,6 @@ Here we declare the **tags** and all other multicharacter symbols.
 * **+Qnt** = quantifier noen, begge
 * **+Intens** = **hmm, what is this...**
 
-
-
 ### Other tags
 
 * **+CLB +PUNCT +HYPH +LEFT +RIGHT**
@@ -49,17 +45,13 @@ Here we declare the **tags** and all other multicharacter symbols.
 * **+Prdt** 
 * **+Qst** 
 
-
-
 NDS analyser tags
 
 * **+Nynorsk**  For dictionary use., Nynorsk only
 * **+Radical**  For dictionary testing, Radical Bokmål
 
-
 * **+X**  denoting not-checked.
 * **+1 +2 +3**  not in use??
-
 
 ## Morphophonology
 
@@ -100,7 +92,6 @@ NDS analyser tags
 * **+Use/-GC** never retained in the HFST Grammar Checker disambiguation analyser
 * **+MWESplit** Split point for MWE
 
-
 ## Other tags
 * **+ABBR** 
 * **+ACR** 
@@ -112,12 +103,10 @@ NDS analyser tags
 * **+Num** 
 * **+Rom** 
 
-
 ## Paradigm generation
 
 * **+v1** 
 * **+v2** 
-
 
 ###  Tags for abbreviation handling
 
@@ -177,8 +166,6 @@ NDS analyser tags
 * **+Sem/Veh** 
 * **+Sem/Year** 
 
-
-
 ## Preprocessing
 
 * **+Use/PMatch** 
@@ -192,12 +179,9 @@ NDS analyser tags
 %[%<%] - Literal <
 ```
 
-
-
 ## Compounding
 
 * +Cmp/Hyph - 
-
 
 ## Language codes
 
@@ -211,8 +195,6 @@ NDS analyser tags
 * +OLang/ENG - English
 * +OLang/RUS - Russian
 * +OLang/UND - Undefined
-
-
 
 ## Flag diacritics
 
@@ -270,7 +252,6 @@ This entry / word should be in the following position(s):
 * **+CmpNP/Only** - ... only be part of a compound, i.e. can never
 be used alone, but can appear in any position
 
-
 ###  Flags for governing initial capital
 
 Use the following flag diacritics to control downcasing of derived proper
@@ -278,12 +259,10 @@ nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to u
 these flags. There exists a ready-made regex that will do the actual down-casing
 given the proper use of these flags.
 
-
 |   Flag | Comment
 | --- | --- 
 |  @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
 |  @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
-
 
 ### Flags for preprocessing
 
@@ -312,7 +291,6 @@ given the proper use of these flags.
 * Acronym-smi ;
 * Nynorsk ; Accepts nno forms, does not generate, changed from Use/NG to have speller work.
 
-
 ## Other lexica
 
 ### LEXICON AdjectivePrefix pointing to:
@@ -329,7 +307,6 @@ given the proper use of these flags.
 * @U.CmpHyph.TRUE@ ProperNoun-smi-nocomp ; =  Lexicon for short names - always require hyphen
 * ProperNoun-smi ; =  SMI proper nouns
 * ProperNoun-nob ; =  contains the full nob name list
-
 
 ## Sublexica for NounRoot
 
@@ -366,8 +343,6 @@ This table shows the codes for nominal and verbal inflection. Irregular inflecti
 |  v4  | nå          | når         | nådde       | nådd
 |  v4  | bie         | bier        | bidde       | bidd
 
-
-
 ## Clitics
 
 ### K pointing nouns here to get "genitive" -s
@@ -375,4 +350,8 @@ This table shows the codes for nominal and verbal inflection. Irregular inflecti
 * **# ;** 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/root.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/root.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/root.lexc)</small>
+
+---
+

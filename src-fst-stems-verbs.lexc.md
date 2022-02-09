@@ -23,15 +23,12 @@ v2-s passive v2 verbs
 v3-s passive v3 verbs
 Strong verbs have verb-specific lexica
 
-
 ## The entries
-
 
 LEXICON VerbRoot contains the 5700 or so  verbs
 
 * innbefatte v1 ; 
 * tilslutte v1 ; 
-
 
 * abbreviere v2 ; 
 * abdisere v2 ; 
@@ -44,5 +41,10 @@ LEXICON VerbRoot contains the 5700 or so  verbs
 * ankomme:an KOMME ;  
 * falle: FALLE ; 
 * etc.
+
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/verbs.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/verbs.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/verbs.lexc)</small>
+
+---
+

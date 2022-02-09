@@ -70,11 +70,9 @@ nLEKSIKON leksikon, pl. leksika
 nMUSEUM museum, museet, museer
 n1pl odds, oddsene
 
-
 ## The lexica themselves
 
 LEXICON FinalNoun is a separate lexicon to point to. For now it contains only *-skap*.
-
 
 LEXICON NounRoot is the lexicon pointed to from `root.lexc` It points to
 Noun ;
@@ -92,14 +90,11 @@ LEXICON 2_letter is stems with two lettes.
 
 LEXICON 3_letter  is stems with 3 letters
 
-
 LEXICON Noun  here come the long list of stems (tens of thousands)
 
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/nouns.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/nouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nouns.lexc)</small>
+
+---
+

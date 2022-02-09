@@ -11,7 +11,6 @@ LEXICON Anyn
 
 LEXICON Vnyn 
 
-
 LEXICON Propnyn 
 
 LEXICON Pronnyn 
@@ -20,14 +19,9 @@ LEXICON nnnb
 
 LEXICON Nynorsk  her kjem alle orda
 
-
-
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nynorsk-stems.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/nynorsk-stems.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/nynorsk-stems.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nynorsk-stems.lexc)</small>
+
+---
+

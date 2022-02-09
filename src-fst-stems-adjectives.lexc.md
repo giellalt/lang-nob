@@ -16,34 +16,24 @@ a5 lunken lunken lunkent lunkne
 aV blå blå blått blå
 ... and some irregular ones
 
-
-
-
 AdjectiveRoot is the list of adjectives (some 5500 stems)
 * få: A_FÅ ; 
 * små: A_SMÅ ; 
 * vond: VOND ; 
-
-
 
 * artikkelbasert a2 ; 
 * aggressiv a1 ; 
 * avbøtende a3 ; 
 * bundet a4 ; 
 
-
 * dritredd a2 ; 
 * dritsur+v1:drit#sur a1 ; 
 * dritsur+v2:dritt#sur a1 ; 
 * ...
 
-
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/adjectives.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/adjectives.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/adjectives.lexc)</small>
+
+---
+

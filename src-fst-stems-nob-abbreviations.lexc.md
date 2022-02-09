@@ -2,8 +2,6 @@
 
 This file documents the Bokmål abbrevioations stem file [stems/nob-abbreviations.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nob-abbreviations.lexc).
 
-
-
 Abbreviation-nob 
 
 ##            Intransitive abbreviations           
@@ -16,12 +14,7 @@ Vi bor i Sth. CLB 10 av oss er innflyttere.
 Vi bor i Sth. CLB Saara er også innflytter.
 Vi vet at Sth. er en fin by.
 
-
 ITRAB 
-
-
-
-
 
 Transitive number-related abbreviations      !
 
@@ -37,9 +30,6 @@ Alle gårder har ikke Gnr. og det er et problem.
 
 TRNUMAB 
 
-
-
-
 #              Transitive abbreviations           
 
 TRAB 
@@ -48,6 +38,9 @@ dot% noStb.db
 Abbreviations that never induce sentence boundaries
 The file is too large and should be shrinked
 
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nob-abbreviations.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/nob-abbreviations.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/nob-abbreviations.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nob-abbreviations.lexc)</small>
+
+---
+

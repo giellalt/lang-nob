@@ -1,74 +1,9 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 The set **NOT-NPMOD** is used to find barriers between NPs.
 Typical usage: ... (*1 N BARRIER NPT-NPMOD) ...
 meaning: Scan to the first noun, ignoring anything that can be
 part of the noun phrase of that noun (i.e., "scan to the next NP head")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Syntactic tags
 
@@ -171,230 +106,49 @@ part of the noun phrase of that noun (i.e., "scan to the next NP head")
 * @CMPND
 * @X : The function is unknown, e.g. because of that the word is unknown
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 * Syntactic sets
 
-
-
-
-
-
-
-
-
-
-
 These were the set types.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 * Border sets and their complements
 
-
-
-
-
-
-
-
-
-
-
-
-
 * Syntactic sets
-
-
-
-
 
 These were the set types.
 
-
-
-
-
-
-
-
-
 ## Numeral outside the sentence
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Finite verbs
 
-
-
 ## Numeral outside the sentence
-
-
-
 
 * **n<titel1** (@N<) for ("jr") or ("sr"); if first one to the left is Prop
 
-
-
-
 * **n<titel2** (@N<) for INITIAL; if first one to the left is a noun, or if to the left of you is a single letter which is part of a noun conjunction *bustávas e ja f gáibiduvvo*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 * **<advlPoPr** (@<ADVL) for Po or Pr; if mainverb to the left.
 * **advlPoPr>** (@<ADVL) for Po or Pr; if mainverb to the right.
 
 * **BOSPo>** (@ADVL>) for Po; if trapped between BOS to the right and S-BOUNDARY OR COMMA to the left, because the main verb will then automatically be on your right side.
 
-
-
-
-
-
 * **advl>inbetween** (@ADVL>) for Adv; if inbetween two sentenceboundaries where no mainverb is present.
 
 * **comma<advlEOS** (@<ADVL) for Adv if; comma found to the left and the finite mainverb to the left of comma. To the right is the end of the sentence.
 
-
-
-
-
-
-
-
-
 ## HNOUN MAPPING
-
-
-
-
-
-
-
-
-
 
 ## Complex sentences
 
-
-
-
 ###  **missingX** adds @X to all missings
 
-
-
-
-
 ###  **therestX** adds @X to all what is left, often errouneus disambiguated forms
-
-
-
-
 
 ## For Apertium:
 The analysis give double analysis because of optional semtags. We go for the one with semtag.
 
-
 * * *
-<small>This (part of) documentation was generated from [../src/cg3/functions.cg3](http://github.com/giellalt/lang-nob/blob/main/../src/cg3/functions.cg3)</small>
+
+<small>This (part of) documentation was generated from [src/cg3/functions.cg3](https://github.com/giellalt/lang-nob/blob/main/src/cg3/functions.cg3)</small>
+
+---
+

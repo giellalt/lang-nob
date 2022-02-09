@@ -69,144 +69,20 @@ LEKSIKON leksikon, pl. leksika
 nMUSEUM museum, museet, museer
 nØYE
 
-
-
 ## Basic paradigms
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #### Irregulars
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 +N+Fem+Sg+Def+Radical:datra    K ;
 +N:         R ;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @NO CODE@ for nynorsk only.
 
 @NO CODE@ for nynorsk only.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/nouns.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/affixes/nouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/affixes/nouns.lexc)</small>
+
+---
+

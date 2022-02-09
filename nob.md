@@ -1,3 +1,7 @@
+# Norwegian Bokmål description 
+
+All documents in one file
+
 
 # The OBT-Giellatekno Bokmål Norwegian disambiguator 
 
@@ -10,77 +14,18 @@ The original OBT disambiguator was written in CG-1 by Kristin Hagen and
 Anders Nøklestad at UiO. It was translated to CG-2 by Lars Nygård.
 The conversion to CG-3 and the Tromsø format was done by Trond Trosterud.
 
-
 ## Delimiters and sets
 
 The tagsets are a superset of the OBT and GiellaLT tags, so that 
 the labels are kept from OBT-cg, but GiellaLT content is added when needed.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * Amount sets
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Rule section
-
 
 ### Giellatekno early rules
 
 **NotAbbr** removes abbreviations whenever alternatives
-
 
 **AbbrBeforePara** removes CLB before CLB
 
@@ -90,4322 +35,38 @@ the labels are kept from OBT-cg, but GiellaLT content is added when needed.
 
 **aaIM** selects +IM for *å*
 
-
-
-
 #### Numerals
-
-
-
-
-
-
-
 
 * Rule for adding <vdic> to verbs denoting verbal actions like: ... dadjá Aili Kestkitalo.
 
 #### Compounds
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Mostly OBT Rules
-
 
 The bulk of the file contains rules from the original OBT file.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Giellatekno late rules
-
-
 
 ### Neuter sg pl
 
-
-
-
 ### Pronouns
-
-
 
 ###  Det rules
 
-
-
-
-
-
 ###  V and not N
-
 
 ###  Prepositions
 
-
-
 ###  Late rules, Gt
-
-
-
-
 
 ###  Rules with weights
 **minweight** selects reading with lowest weight.
 
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/cg3/disambiguator.cg3](http://github.com/giellalt/lang-nob/blob/main/../src/cg3/disambiguator.cg3)</small>
 
+<small>This (part of) documentation was generated from [src/cg3/disambiguator.cg3](https://github.com/giellalt/lang-nob/blob/main/src/cg3/disambiguator.cg3)</small>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
 
 
 
@@ -4413,20 +74,6 @@ The set **NOT-NPMOD** is used to find barriers between NPs.
 Typical usage: ... (*1 N BARRIER NPT-NPMOD) ...
 meaning: Scan to the first noun, ignoring anything that can be
 part of the noun phrase of that noun (i.e., "scan to the next NP head")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Syntactic tags
 
@@ -4529,393 +176,69 @@ part of the noun phrase of that noun (i.e., "scan to the next NP head")
 * @CMPND
 * @X : The function is unknown, e.g. because of that the word is unknown
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 * Syntactic sets
 
-
-
-
-
-
-
-
-
-
-
 These were the set types.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 * Border sets and their complements
 
-
-
-
-
-
-
-
-
-
-
-
-
 * Syntactic sets
-
-
-
-
 
 These were the set types.
 
-
-
-
-
-
-
-
-
 ## Numeral outside the sentence
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Finite verbs
 
-
-
 ## Numeral outside the sentence
-
-
-
 
 * **n<titel1** (@N<) for ("jr") or ("sr"); if first one to the left is Prop
 
-
-
-
 * **n<titel2** (@N<) for INITIAL; if first one to the left is a noun, or if to the left of you is a single letter which is part of a noun conjunction *bustávas e ja f gáibiduvvo*
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 * **<advlPoPr** (@<ADVL) for Po or Pr; if mainverb to the left.
 * **advlPoPr>** (@<ADVL) for Po or Pr; if mainverb to the right.
 
 * **BOSPo>** (@ADVL>) for Po; if trapped between BOS to the right and S-BOUNDARY OR COMMA to the left, because the main verb will then automatically be on your right side.
 
-
-
-
-
-
 * **advl>inbetween** (@ADVL>) for Adv; if inbetween two sentenceboundaries where no mainverb is present.
 
 * **comma<advlEOS** (@<ADVL) for Adv if; comma found to the left and the finite mainverb to the left of comma. To the right is the end of the sentence.
 
-
-
-
-
-
-
-
-
 ## HNOUN MAPPING
-
-
-
-
-
-
-
-
-
 
 ## Complex sentences
 
-
-
-
 ###  **missingX** adds @X to all missings
 
-
-
-
-
 ###  **therestX** adds @X to all what is left, often errouneus disambiguated forms
-
-
-
-
 
 ## For Apertium:
 The analysis give double analysis because of optional semtags. We go for the one with semtag.
 
-
 * * *
-<small>This (part of) documentation was generated from [../src/cg3/functions.cg3](http://github.com/giellalt/lang-nob/blob/main/../src/cg3/functions.cg3)</small>
 
+<small>This (part of) documentation was generated from [src/cg3/functions.cg3](https://github.com/giellalt/lang-nob/blob/main/src/cg3/functions.cg3)</small>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
 
 
 
 * Sets for POS sub-categories
 
-
-
-
-
-
 * Sets for Semantic tags
-
-
-
-
 
 * Sets for Morphosyntactic properties
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * Sets for verbs
-
 
 - V is all readings with a V tag in them, REAL-V should
 be the ones without an N tag following the V.  
 The REAL-V set thus awaits a fix to the preprocess V ... N bug.
 
-
-
 * The set COPULAS is for predicative constructions
 
-
-
-
-
-
-
 * NP sets defined according to their morphosyntactic features
-
-
-
-
-
-
-
 
 * The PRE-NP-HEAD family of sets
 
@@ -4923,72 +246,18 @@ These sets model noun phrases (NPs). The idea is to first define whatever can
 occur in front of the head of the NP, and thereafter negate that with the
 expression **WORD - premodifiers**.
 
-
-
-
-
-
-
-
-
-
-
-
 The set **NOT-NPMOD** is used to find barriers between NPs.
 Typical usage: ... (*1 N BARRIER NPT-NPMOD) ...
 meaning: Scan to the first noun, ignoring anything that can be
 part of the noun phrase of that noun (i.e., "scan to the next NP head")
 
-
-
-
-
-
 * Miscellaneous sets
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 * Border sets and their complements
 
-
-
-
-
-
-
-
-
-
-
-
-
 * Syntactic sets
 
-
-
-
 These were the set types.
-
-
-
-
-
 
 ## Some particular subjunctions
 
@@ -4997,13 +266,9 @@ These were the set types.
 # MAPPING OF COMP-CS< , COMPLEMENTS OF PARTICLES IN COMPARISON
 First map all COMP-CS<, then remove the other readings
 
-
-
 * **killAllnotComp** Removes analysis which are not @COMP-CS<
 
 *
-
-
 
 # MAPPING OF CC AND CS
 
@@ -5017,122 +282,42 @@ Mostly we map both @CNP and @CVP, then we select @CNP, after that we remove them
 
 * **CCasCNPCVP** Map (@CNP @CVP) to CC
 
-
-
-
-
-
-
-
-
 * **killAllCNP** removes all remaining @CNP
 
 * **XCC-CS** removes CC and CS with no synttag
 
-
-
-
 # VERB MAPPINGS
-
 
 ## Verbs as predicatives (@SPRED>) and (@<OPRED) 
 
 ### The tags (@SPRED>) and (@<OPRED) target  PrfPrc
 The rules are no documented yet
 
-
-
 ## Passive verbs often have 
-
-
-
 
 ## Verbs as prenominal participles (@>N):
 
-
-
-
-
-
 ### (@<SUBJ)  target Inf
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### (@+FMAINV) and (@+FAUXV) and (@-FAUXV)
 
-
-
-
-
 * **-FAUXVaux** AUX verbs     
-
 
 * **+FMAINVCop**  copulas even if PrfPrc coming after
 
-
 * **+FAUXVCop**  copulas coming before the mainverb
 
-
 * **+FMAINVAux1**  
-
 
 * **+FAUXVCop**  copulas coming after the mainverb
 
 * **+FMAINVCop**  copulas 	
 
-
 * **+FMAINV**  to the remaining finite verbs which are not AUX    
-
-
-
 
 * **+FMAINV**  to finite verb after mainverb
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### (@-FMAINV) and (@-FAUXV)
-
 
 * **-FAUXVPrfPrcAux**  to PrfPrc AUX  before Inf or Actio Ess
 
@@ -5146,117 +331,46 @@ The rules are no documented yet
 
 * **-FMAINVPrfafterMan**  to PrfPrc before the Aux	
 
-
-
 * **-FMAINVInf**  to Inf
-
-
-
-
-
 
 * **+FAUXV** to  Aux
 
-
-
-
 * **PrfPrcEllipsis** being verbal head when finite verb is missing
-
 
 ### And then we remove the verbs which didn't get any syntactic tag, in favour of verbs with syntactic tags.
 
-
-
 * **realverbX**
-
-
 
 ### **killifVinCohort** This rule removes all other readings, if there is a mapped V reading in the same cohort. Every case which this goes wrong, should be fixed in mapping rules or previous disrules.
 
 * **X**
 
-
-
-
 # NOUNS
 
-
-
 # CASE DISAMBIGUATION
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 * **subj>Sgnr2** (@SUBJ>) for Nom Sg; if VFIN + Sg3 to the right.
 
 * **<subjSg** (@<SUBJ) for Nom Sg; if VFIN Sg3 or Du2 to the left (no HAB allowed to the left).
 
-
-
-
-
-
-
 ## HNOUN MAPPING
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/cg3/nob-functions.cg3](http://github.com/giellalt/lang-nob/blob/main/../src/cg3/nob-functions.cg3)</small>
+
+<small>This (part of) documentation was generated from [src/cg3/nob-functions.cg3](https://github.com/giellalt/lang-nob/blob/main/src/cg3/nob-functions.cg3)</small>
+
+---
+
+
 # Norwegian Bokmål compounding
 
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/compounding.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/compounding.lexc)</small># Morphophonological rules for Bokmål
+
+<small>This (part of) documentation was generated from [src/fst/compounding.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/compounding.lexc)</small>
+
+---
+
+# Morphophonological rules for Bokmål
 
 This file documents the [phonology.twolc file](http://github.com/giellalt/lang-nob/blob/main/src/fst/phonology.twolc) 
 
@@ -5271,7 +385,6 @@ We declare both the a-å letters and all other possible letters.
 * **Á É Ó Ú Í À È Ò Ù Ì Ä Ë Ö Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð**
 * **'** This is the apostrophe
 * **l7:l** This **l** not deleted by **t**
-
 
 ### Boundary symbols
 
@@ -5310,11 +423,6 @@ These symbols cause the twolc rules to work.
 #### Nynorsk trigger
 * **%^NYNAG:0 ;** Trigger for Nynorsk dictionary forms.
 
-
-
-
-
-
 ### Sets
 
 * **Vow = a e i o u y æ ø å ;**
@@ -5326,14 +434,9 @@ These symbols cause the twolc rules to work.
 
 This section shows the twolc rules and the tests used to check whether they work
 
-
-
-
 ### Umlaut
 
 **Umlaut Rule**  for *bok : bøker* etc. It shifts the vowels *u, o, a, å* to *y, ø, e, e*, respectively when **Z1** is found after the stem.
-
-
 
 ### Vowel deletions rules
 
@@ -5362,8 +465,6 @@ This section shows the twolc rules and the tests used to check whether they work
 * *kollegaX2>er*
 * *kolleg00>er*
 
-
-
 ### Consonant deletion
 
 **Consonant shortening before deletion Rule**  
@@ -5373,7 +474,6 @@ This section shows the twolc rules and the tests used to check whether they work
 * *sik00r0>e*
 * *trusselX1>er*
 * *trus00l0>er*
-
 
 **Geminate deletion in front of -t and -d Rule** deletes: 1) before **Q3 and d or t** (*kaller:kalte*) 2) before passive **Q1 t** (*lykkes:lyktes*) and 3) before epenthetic **-e-** and **l, n** or **r** (*sikker:sikre*)
 
@@ -5387,24 +487,15 @@ This section shows the twolc rules and the tests used to check whether they work
 * *bygge>Q3de*
 * *byg00>0de*
 
-
-
-
-
 **Delete r Rule** deletes **r** in plural *-er* to get *-er + -ne* = plural *-ene* 
 
 **Delete m Rule** for *kam:kammen*, here we delete the second m when word-final.  
-
-
-
 
 **um Deletion 1 Rule** (um Deletion 2 is now part of the *Delete m Rule*)
 
 *Tests:*
 * *museumX5>er*
 * *muse000>er*
-
-
 
 **t weakening Rule**  
 
@@ -5418,31 +509,19 @@ This section shows the twolc rules and the tests used to check whether they work
 * *svart>t*
 * *svart>0*
 
-
-
 ### Insertion rules
 
 **Insert t in passives Rule**  
 
-
-
 ### Compound rule
-
-
 
 *Tests:*
 * *grammatikk##kontroll*
 * *grammatik000kontroll*
 
-
-
 ### Clitics
 
 **Clitic after s-final Rule**  for changing the so-called *genitive -s* to **'** for s-final stems: *huss -> hus'*
-
-
-
-
 
 ### Nynorsk dictionary rules
 
@@ -5450,15 +529,20 @@ This section shows the twolc rules and the tests used to check whether they work
 
 This rule is for dictionary use only. The idea is to be able to click on words in a Nynorsk text and get translation to North Sámi. Therefore, the Bokmål analyser is able to give an analysis to Nynorsk words as well. The Nynorsk-only forms are removed from all other transducers than the `-dict` transducer.
 
-
 * *a*
 * *b*
 
 Test to have an error
 * ★*a* (is not standard language)
 * ★*b* (is not standard language)
+
 * * *
-<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/phonology.twolc)</small># Bokmål noun lexicon 
+
+<small>This (part of) documentation was generated from [src/fst/phonology.twolc](https://github.com/giellalt/lang-nob/blob/main/src/fst/phonology.twolc)</small>
+
+---
+
+# Bokmål noun lexicon 
 
 This file documents the Bokmål noun stem file [stems/nouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nouns.lexc).
 
@@ -5530,11 +614,9 @@ nLEKSIKON leksikon, pl. leksika
 nMUSEUM museum, museet, museer
 n1pl odds, oddsene
 
-
 ## The lexica themselves
 
 LEXICON FinalNoun is a separate lexicon to point to. For now it contains only *-skap*.
-
 
 LEXICON NounRoot is the lexicon pointed to from `root.lexc` It points to
 Noun ;
@@ -5552,21 +634,17 @@ LEXICON 2_letter is stems with two lettes.
 
 LEXICON 3_letter  is stems with 3 letters
 
-
 LEXICON Noun  here come the long list of stems (tens of thousands)
 
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/nouns.lexc)</small># File containing abbreviations for Norwegian Bokmål 
+
+<small>This (part of) documentation was generated from [src/fst/stems/nouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nouns.lexc)</small>
+
+---
+
+# File containing abbreviations for Norwegian Bokmål 
 
 This file documents the Bokmål abbrevioations stem file [stems/nob-abbreviations.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nob-abbreviations.lexc).
-
-
 
 Abbreviation-nob 
 
@@ -5580,12 +658,7 @@ Vi bor i Sth. CLB 10 av oss er innflyttere.
 Vi bor i Sth. CLB Saara er også innflytter.
 Vi vet at Sth. er en fin by.
 
-
 ITRAB 
-
-
-
-
 
 Transitive number-related abbreviations      !
 
@@ -5601,9 +674,6 @@ Alle gårder har ikke Gnr. og det er et problem.
 
 TRNUMAB 
 
-
-
-
 #              Transitive abbreviations           
 
 TRAB 
@@ -5612,9 +682,13 @@ dot% noStb.db
 Abbreviations that never induce sentence boundaries
 The file is too large and should be shrinked
 
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nob-abbreviations.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/nob-abbreviations.lexc)</small># Nynorsk stems 
+
+<small>This (part of) documentation was generated from [src/fst/stems/nob-abbreviations.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nob-abbreviations.lexc)</small>
+
+---
+
+# Nynorsk stems 
 for tolerant dictionary reading
 
 This file documents the nynorsk stem file for the bokmål analyzer [stems/nynorsk-stems.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nynorsk-stems.lexc).
@@ -5627,7 +701,6 @@ LEXICON Anyn
 
 LEXICON Vnyn 
 
-
 LEXICON Propnyn 
 
 LEXICON Pronnyn 
@@ -5636,34 +709,31 @@ LEXICON nnnb
 
 LEXICON Nynorsk  her kjem alle orda
 
-
-
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nynorsk-stems.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/nynorsk-stems.lexc)</small># Bokmål propernouns
+
+<small>This (part of) documentation was generated from [src/fst/stems/nynorsk-stems.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nynorsk-stems.lexc)</small>
+
+---
+
+# Bokmål propernouns
 
 This file documents the Bokmål proper nouns stem file [stems/nob-propernouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nob-propernouns.lexc).
 
 LEXICON ProperNoun-nob-nocomp contains some acronyms
 
-
 LEXICON ProperNoun-nob contains the list of 2200 or so names. The rest come from common files.
 
-
 Adjectives
-
-
 
 Nouns
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nob-propernouns.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/nob-propernouns.lexc)</small># Bokmål adverbs
+
+<small>This (part of) documentation was generated from [src/fst/stems/nob-propernouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nob-propernouns.lexc)</small>
+
+---
+
+# Bokmål adverbs
 
 This file documents the Bokmål adverb stem file [stems/adverbs.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/adverbs.lexc).
 
@@ -5674,18 +744,26 @@ LEXICON dt  also ads +Adv  perhaps unify, perhaps not.
 Adverb lists some 600 Norwegian adverbs, including MWE such as "i live"
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/adverbs.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/adverbs.lexc)</small># Bokmål prepositions
+
+<small>This (part of) documentation was generated from [src/fst/stems/adverbs.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/adverbs.lexc)</small>
+
+---
+
+# Bokmål prepositions
 
 This file documents the Bokmål prepositions stem file [stems/prepositions.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/prepositions.lexc).
 
 LEXICON p gives tag +Pr
 
-
 LEXICON Preposition  list (appr 90 prepositions)
 
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/prepositions.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/prepositions.lexc)</small># Bokmål interjections
+
+<small>This (part of) documentation was generated from [src/fst/stems/prepositions.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/prepositions.lexc)</small>
+
+---
+
+# Bokmål interjections
 
 This file documents the Bokmål interjections stem file [stems/interjections.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/interjections.lexc).
 
@@ -5693,11 +771,13 @@ LEXICON ij adds the tag **+Interj**
 
 LEXICON Interjection lists *folkens, heisann, pokker* and some 60 more interjections.
 
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/interjections.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/interjections.lexc)</small># Bokmål pronoun stems
+
+<small>This (part of) documentation was generated from [src/fst/stems/interjections.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/interjections.lexc)</small>
+
+---
+
+# Bokmål pronoun stems
 
 This file documents the Bokmål pronouns stem file [stems/pronouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/pronouns.lexc).
 
@@ -5716,7 +796,12 @@ LEXICON Possessive
 LEXICON Other_Pronouns 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/pronouns.lexc)</small># Bokmål subjunctions
+
+<small>This (part of) documentation was generated from [src/fst/stems/pronouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/pronouns.lexc)</small>
+
+---
+
+# Bokmål subjunctions
 
 This file documents the Bokmål subjunctions stem file [stems/subjunctions.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/subjunctions.lexc).
 
@@ -5724,10 +809,13 @@ LEXICON Subjunction
 
 LEXICON subj gives tag +CS
 
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/subjunctions.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/subjunctions.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/subjunctions.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/subjunctions.lexc)</small>
+
+---
+
+
 # Bokmål numerals (number words)
 
 This file documents the Bokmål numerals stem file [stems/numerals.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/numerals.lexc).
@@ -5735,7 +823,6 @@ This file documents the Bokmål numerals stem file [stems/numerals.lexc](https:/
 LEXICON Numeral 
 
 LEXICON Textual 
-
 
 LEXICON TEXTTHOUSANDS 
 
@@ -5746,7 +833,6 @@ LEXICON TEXTHUNDREDS
 LEXICON 100CONT 
 
 LEXICON TEXTTENS 
-
 
 LEXICON TEXTTENSCONT 
 
@@ -5759,7 +845,12 @@ LEXICON 2-9
 LEXICON ORDTEXT 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/numerals.lexc)</small># Norwegian Bokmål Adjectives
+
+<small>This (part of) documentation was generated from [src/fst/stems/numerals.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/numerals.lexc)</small>
+
+---
+
+# Norwegian Bokmål Adjectives
 
 This file documents the Bokmål adjective stem file [stems/adjectives.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/adjectives.lexc).
 
@@ -5777,37 +868,28 @@ a5 lunken lunken lunkent lunkne
 aV blå blå blått blå
 ... and some irregular ones
 
-
-
-
 AdjectiveRoot is the list of adjectives (some 5500 stems)
 * få: A_FÅ ; 
 * små: A_SMÅ ; 
 * vond: VOND ; 
-
-
 
 * artikkelbasert a2 ; 
 * aggressiv a1 ; 
 * avbøtende a3 ; 
 * bundet a4 ; 
 
-
 * dritredd a2 ; 
 * dritsur+v1:drit#sur a1 ; 
 * dritsur+v2:dritt#sur a1 ; 
 * ...
 
-
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/adjectives.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/adjectives.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/adjectives.lexc)</small>
+
+---
+
+
 # Norwegian Bokmål verb stems
 
 This file documents the Bokmål verb stem file [stems/verbs.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/verbs.lexc).
@@ -5832,15 +914,12 @@ v2-s passive v2 verbs
 v3-s passive v3 verbs
 Strong verbs have verb-specific lexica
 
-
 ## The entries
-
 
 LEXICON VerbRoot contains the 5700 or so  verbs
 
 * innbefatte v1 ; 
 * tilslutte v1 ; 
-
 
 * abbreviere v2 ; 
 * abdisere v2 ; 
@@ -5853,20 +932,28 @@ LEXICON VerbRoot contains the 5700 or so  verbs
 * ankomme:an KOMME ;  
 * falle: FALLE ; 
 * etc.
+
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/verbs.lexc)</small># Bokmål conjunctions
+
+<small>This (part of) documentation was generated from [src/fst/stems/verbs.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/verbs.lexc)</small>
+
+---
+
+# Bokmål conjunctions
 
 This file documents the Bokmål conjunctions stem file [stems/conjunctions.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/conjunctions.lexc).
-
 
 conj for the tag +CC
 
 Conjunction  både, og, ..
 
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/conjunctions.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/stems/conjunctions.lexc)</small># Bokmål noun morphology 
+
+<small>This (part of) documentation was generated from [src/fst/stems/conjunctions.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/conjunctions.lexc)</small>
+
+---
+
+# Bokmål noun morphology 
 
 ---------------------------------------------------
 Declension classes
@@ -5937,172 +1024,39 @@ LEKSIKON leksikon, pl. leksika
 nMUSEUM museum, museet, museer
 nØYE
 
-
-
 ## Basic paradigms
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #### Irregulars
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 +N+Fem+Sg+Def+Radical:datra    K ;
 +N:         R ;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @NO CODE@ for nynorsk only.
 
 @NO CODE@ for nynorsk only.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/nouns.lexc)</small># Tags for numerals (number words)
+
+<small>This (part of) documentation was generated from [src/fst/affixes/nouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/affixes/nouns.lexc)</small>
+
+---
+
+# Tags for numerals (number words)
 
 ## Basic tags
 numtag
 
 numtagsg
 
-
 ## Tags for special use
 
 ### Date
 
-
-
 ### Clock
-
-
-
-
-
 
 ... and many more lexica
 
-
 * **LEXICON ARABICCASEORD**  adds +Arab
-
 
 * **LEXICON ARABICCASE**  adds +Arab
 
@@ -6110,36 +1064,21 @@ numtagsg
 
 * **LEXICON ARABICCOMPOUNDS**  ! arabic as first part,
 
-
-
 * **LEXICON ARABICCASECOLL**  adds +Arab
 
 * **LEXICON ARABICCASE0**  adds +Arab
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/numerals.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/numerals.lexc)</small># Propernoun morphology
 
+<small>This (part of) documentation was generated from [src/fst/affixes/numerals.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/affixes/numerals.lexc)</small>
 
+---
 
+# Propernoun morphology
 
 FirstTag 
 
 PROP 
-
 
 PROP-surmal 
 
@@ -6147,29 +1086,13 @@ PROP-malfem
 
 ... one lexicon for each combined tag,to split them.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/propernouns.lexc)</small># Sublexica for adjective roots
+
+<small>This (part of) documentation was generated from [src/fst/affixes/propernouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/affixes/propernouns.lexc)</small>
+
+---
+
+# Sublexica for adjective roots
 
 * a1  god         god         godt        gode
 * a2  norsk       norsk       norsk       norske
@@ -6179,66 +1102,19 @@ PROP-malfem
 *     lunken      lunken      lunkent     lunkne
 * aV  blå         blå         blått       blå
 
-
-
-
-
 ## Basic paradigms
 
 a23
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Sublexica
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/adjectives.lexc)</small># Sublexica for verb roots
+
+<small>This (part of) documentation was generated from [src/fst/affixes/adjectives.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/affixes/adjectives.lexc)</small>
+
+---
+
+# Sublexica for verb roots
 
 -----------------------------
 Main types, from Bokmålsordboka
@@ -6258,7 +1134,6 @@ v1-s passive v1 verbs
 v2-s passive v2 verbs
 v3-s passive v3 verbs
 
-
 ## Sublexica for regular verbs 
 
 ### Preliminary lexica
@@ -6269,13 +1144,11 @@ v3-s passive v3 verbs
 
 **LEXICON v13** also here: v1, v3: sveve -> svevet (NG), svevde.
 
-
 **LEXICON v23** 
 
 **LEXICON v14** where v4 is NG
 
 **LEXICON v1** =  kaste
-
 
 **LEXICON v2** = blåse, studere
 
@@ -6283,16 +1156,11 @@ v3-s passive v3 verbs
 
 **LEXICON v4** =  ro, bie
 
-
 **LEXICON v1-s** =  undres
 
 **LEXICON v2-s** =  føles, synes
 
 **LEXICON v3-s** =  trives
-
-
-
-
 
 ## Conjugation sublexica
 
@@ -6310,13 +1178,9 @@ v3-s passive v3 verbs
 
 **LEXICON dde-pret** = 
 
-
 **LEXICON prsptcsuff** = 
 
-
-
 ### Sublexica for irregular verbs 
-
 
 * **LEXICON BE** 
 * **LEXICON BINDE** 
@@ -6482,9 +1346,13 @@ v3-s passive v3 verbs
 * **LEXICON UNNVÆRE**
 * **LEXICON XREKKE** = brekke, overrekke, radbrekk, rekke
 
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/verbs.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/affixes/verbs.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/affixes/verbs.lexc)</small>
+
+---
+
+
 # Symbol affixes
 
 Noun_symbols_possibly_inflected 
@@ -6496,20 +1364,19 @@ SYMBOL_connector
 SYMBOL_NO_suff 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/symbols.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/affixes/symbols.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/affixes/symbols.lexc)</small>
+
+---
+
+
 # Continuation lexicons for abbreviations
 
 ## Lexica for adding tags and periods
 
-
-
-
-
-
 ## The sublexica
 
 ### Continuation lexicons for abbrs both with and witout final period
-
 
 * **LEXICON ab-noun   **
 
@@ -6523,8 +1390,6 @@ SYMBOL_NO_suff
 
 * **LEXICON ab-nodot-noun   **  The bulk
 
-
-
 * **LEXICON ab-nodot-adj   **
 
 * **LEXICON ab-nodot-adv   **
@@ -6537,38 +1402,31 @@ SYMBOL_NO_suff
 
 * **LEXICON ab-dot-adj   **  This is the lexicon for abbrs that must have a period.
 
-
 * **LEXICON ab-dot-adv   **  This is the lexicon for abbrs that must have a period.
 
 * **LEXICON ab-dot-num   **  This is the lexicon for abbrs that must have a period.
 
 * **LEXICON ab-dot-cc   **
 
-
 * **LEXICON ab-dot-verb   **
-
-
 
 * **LEXICON ab-dot-IVprfprc   **
 
-
-
-
-
-
 * **LEXICON DOT   ** - Adds the dot to dotted abbreviations.
 
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/abbreviations.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/abbreviations.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/affixes/abbreviations.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/affixes/abbreviations.lexc)</small>
+
+---
+
+
 # Norwegian Bokmål morphological analyser                      
 this documents the symbols and intro lexicon of **Norwegian Bokmål**.
-
 
 **Multichar_Symbols** 
 
 Here we declare the **tags** and all other multicharacter symbols.
-
 
 ## Grammatical tags
 
@@ -6595,8 +1453,6 @@ Here we declare the **tags** and all other multicharacter symbols.
 * **+Qnt** = quantifier noen, begge
 * **+Intens** = **hmm, what is this...**
 
-
-
 ### Other tags
 
 * **+CLB +PUNCT +HYPH +LEFT +RIGHT**
@@ -6611,17 +1467,13 @@ Here we declare the **tags** and all other multicharacter symbols.
 * **+Prdt** 
 * **+Qst** 
 
-
-
 NDS analyser tags
 
 * **+Nynorsk**  For dictionary use., Nynorsk only
 * **+Radical**  For dictionary testing, Radical Bokmål
 
-
 * **+X**  denoting not-checked.
 * **+1 +2 +3**  not in use??
-
 
 ## Morphophonology
 
@@ -6662,7 +1514,6 @@ NDS analyser tags
 * **+Use/-GC** never retained in the HFST Grammar Checker disambiguation analyser
 * **+MWESplit** Split point for MWE
 
-
 ## Other tags
 * **+ABBR** 
 * **+ACR** 
@@ -6674,12 +1525,10 @@ NDS analyser tags
 * **+Num** 
 * **+Rom** 
 
-
 ## Paradigm generation
 
 * **+v1** 
 * **+v2** 
-
 
 ###  Tags for abbreviation handling
 
@@ -6739,8 +1588,6 @@ NDS analyser tags
 * **+Sem/Veh** 
 * **+Sem/Year** 
 
-
-
 ## Preprocessing
 
 * **+Use/PMatch** 
@@ -6754,12 +1601,9 @@ NDS analyser tags
 %[%<%] - Literal <
 ```
 
-
-
 ## Compounding
 
 * +Cmp/Hyph - 
-
 
 ## Language codes
 
@@ -6773,8 +1617,6 @@ NDS analyser tags
 * +OLang/ENG - English
 * +OLang/RUS - Russian
 * +OLang/UND - Undefined
-
-
 
 ## Flag diacritics
 
@@ -6832,7 +1674,6 @@ This entry / word should be in the following position(s):
 * **+CmpNP/Only** - ... only be part of a compound, i.e. can never
 be used alone, but can appear in any position
 
-
 ###  Flags for governing initial capital
 
 Use the following flag diacritics to control downcasing of derived proper
@@ -6840,12 +1681,10 @@ nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to u
 these flags. There exists a ready-made regex that will do the actual down-casing
 given the proper use of these flags.
 
-
 |   Flag | Comment
 | --- | --- 
 |  @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
 |  @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
-
 
 ### Flags for preprocessing
 
@@ -6874,7 +1713,6 @@ given the proper use of these flags.
 * Acronym-smi ;
 * Nynorsk ; Accepts nno forms, does not generate, changed from Use/NG to have speller work.
 
-
 ## Other lexica
 
 ### LEXICON AdjectivePrefix pointing to:
@@ -6891,7 +1729,6 @@ given the proper use of these flags.
 * @U.CmpHyph.TRUE@ ProperNoun-smi-nocomp ; =  Lexicon for short names - always require hyphen
 * ProperNoun-smi ; =  SMI proper nouns
 * ProperNoun-nob ; =  contains the full nob name list
-
 
 ## Sublexica for NounRoot
 
@@ -6928,8 +1765,6 @@ This table shows the codes for nominal and verbal inflection. Irregular inflecti
 |  v4  | nå          | når         | nådde       | nådd
 |  v4  | bie         | bier        | bidde       | bidd
 
-
-
 ## Clitics
 
 ### K pointing nouns here to get "genitive" -s
@@ -6937,70 +1772,10 @@ This table shows the codes for nominal and verbal inflection. Irregular inflecti
 * **# ;** 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/root.lexc)</small>
 
+<small>This (part of) documentation was generated from [src/fst/root.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/root.lexc)</small>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
 
 
 
@@ -7162,8 +1937,13 @@ raised							_r
 lowered							_o 
 advanced tongue root				_A 
 retracted tongue root			_q
+
 * * *
-<small>This (part of) documentation was generated from [../src/phonetics/txt2ipa.xfscript](http://github.com/giellalt/lang-nob/blob/main/../src/phonetics/txt2ipa.xfscript)</small>
+
+<small>This (part of) documentation was generated from [src/phonetics/txt2ipa.xfscript](https://github.com/giellalt/lang-nob/blob/main/src/phonetics/txt2ipa.xfscript)</small>
+
+---
+
 
 
 We describe here how abbreviations are in Norwegian Bokmål are read out, e.g.
@@ -7178,183 +1958,30 @@ For example:
 * esim.:esimerkki # ; 
 * esim.:esimerkiksi # ; 
 
-
 * * *
-<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-abbrevs2text.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-abbrevs2text.lexc](https://github.com/giellalt/lang-nob/blob/main/src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
+
+---
+
+
 B O K M Å L   N O R W E G I A N   G R A M M A R   C H E C K E R
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 * Sets for POS sub-categories
 
-
-
-
-
-
 * Sets for Semantic tags
-
-
-
-
 
 * Sets for Morphosyntactic properties
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * Sets for verbs
-
 
 - V is all readings with a V tag in them, REAL-V should
 be the ones without an N tag following the V.  
 The REAL-V set thus awaits a fix to the preprocess V ... N bug.
 
-
-
 * The set COPULAS is for predicative constructions
 
-
-
-
-
-
-
 * NP sets defined according to their morphosyntactic features
-
-
-
-
-
-
-
 
 * The PRE-NP-HEAD family of sets
 
@@ -7362,198 +1989,77 @@ These sets model noun phrases (NPs). The idea is to first define whatever can
 occur in front of the head of the NP, and thereafter negate that with the
 expression **WORD - premodifiers**.
 
-
-
-
-
-
-
-
-
-
-
-
 The set **NOT-NPMOD** is used to find barriers between NPs.
 Typical usage: ... (*1 N BARRIER NOT-NPMOD) ...
 meaning: Scan to the first noun, ignoring anything that can be
 part of the noun phrase of that noun (i.e., "scan to the next NP head")
 
-
-
-
-
-
 * Miscellaneous sets
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 * Border sets and their complements
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * Syntactic sets
-
-
-
 
 These were the set types.
 
-
-
 ### Grammarchecker sets
-
-
-
-
 
 # Rule section
 
-
-
 ## Speller rules
-
 
 ## NP internal agreement
 
-
 msyn-agr-adjmsc-adjneu
-
-
-
 
 msyn-agr-adjneu-adjmsc
 
-
 msyn-agr-detneu-detfem
-
-
-
-
 
 msyn-agr-detneu-detmsc
 
-
-
 msyn-det-msc-neu
-
-
 
 ## Quantifier phrases
 
-
 ## Predicative gender agreement
-
 
 msyn-pred-adjmsc-adjneu
 
-
-
-
-
-
-
 msyn-pred-adjneu-adjmsc
-
 
 ## Case errors
 
-
-
-
 ## Finite verb
-
-
-
-
-
 
 ## Infinitive
 
-
-
-
-
 ## og/å
 
-
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../tools/grammarcheckers/grammarchecker.cg3](http://github.com/giellalt/lang-nob/blob/main/../tools/grammarcheckers/grammarchecker.cg3)</small>Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
+
+<small>This (part of) documentation was generated from [tools/grammarcheckers/grammarchecker.cg3](https://github.com/giellalt/lang-nob/blob/main/tools/grammarcheckers/grammarchecker.cg3)</small>
+
+---
+
+# Grammar checker tokenisation for nob
+
+Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
 Then just:
+```
 $ make
 $ echo "ja, ja" | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
-
-Issues:
-- [X] Ambiguous input
-- Seems to work fine
-- [X] Ambiguous multiword expessions with ambiguous tokenisation
-- Seems to work – represented within lexc now; hfst-tokenise also
-supports forms on the analyses now
-- [X] Ambiguous multiword expessions need reorganising after CG
-- The module cg-mwesplit takes wordforms from readings and turns them into
-new cohorts
-- [X] Unknown words
-- The set-difference method only works for words without
-flag diacritics (even though we should be working only on the form-side?)
-and leads to binary blow-up: With only lower unknowns, we get 45M;
-lower+upper gives 67M, while no unknowns gives 27M
-- Fixed instead by treating empty analyses as unknown-tokens in
-hfst-tokenise, and outputting unmatched strings with a prefix
-- [ ] Treat input that's within superblanks as unmatched
-- probably requires a change in hfst-tokenise itself
-- [X] Try >1 space for ambiguous MWE's? – represented within lexc now
-- [ ] Try set-difference-unknowns method with regular hfst commands?
+```
 
 More usage examples:
+```
 $ echo "Juos gorreválggain lea (dárbbašlaš) deavdit gáibádusa boasttu olmmoš, man mielde lahtuid." | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
 $ echo "(gáfe) 'ja' ja 3. ja? ц jaja ukjend \"ukjend\"" | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
 $ echo "márffibiillagáffe" | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
+```
 
 Pmatch documentation:
-https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstPmatch
-
-
-
-
-
+<https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstPmatch>
 
 Characters which have analyses in the lexicon, but can appear without spaces
 before/after, that is, with no context conditions, and adjacent to words:
@@ -7568,9 +2074,6 @@ the List contains some unicode white space characters
 * Narrow No-Break Space U+202F
 * Medium Mathematical Space U+205F
 * Word joiner U+2060
-
-
-
 
 Apart from what's in our morphology, there are
 1) unknown word-like forms, and
@@ -7584,14 +2087,11 @@ so far:
 
 TODO: Could use something like this, but built-in's don't include šžđčŋ:
 
-
 Simply give an empty reading when something is unknown:
 hfst-tokenise --giella-cg will treat such empty analyses as unknowns, and
 remove empty analyses from other readings. Empty readings are also
 legal in CG, they get a default baseform equal to the wordform, but
 no tag to check, so it's safer to let hfst-tokenise handle them.
-
-
 
 Finally we mark as a token any sequence making up a:
 * known word in context
@@ -7600,7 +2100,12 @@ Finally we mark as a token any sequence making up a:
 * URL in context
 
 * * *
-<small>This (part of) documentation was generated from [../tools/tokenisers/tokeniser-gramcheck-gt-desc.pmscript](http://github.com/giellalt/lang-nob/blob/main/../tools/tokenisers/tokeniser-gramcheck-gt-desc.pmscript)</small># Tokeniser for nob
+
+<small>This (part of) documentation was generated from [tools/tokenisers/tokeniser-gramcheck-gt-desc.pmscript](https://github.com/giellalt/lang-nob/blob/main/tools/tokenisers/tokeniser-gramcheck-gt-desc.pmscript)</small>
+
+---
+
+# Tokeniser for nob
 
 Usage:
 ```
@@ -7612,12 +2117,7 @@ $ echo "márffibiillagáffe" | hfst-tokenise --giella-cg tokeniser-disamb-gt-des
 ```
 
 Pmatch documentation:
-https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstPmatch
-
-
-
-
-
+<https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstPmatch>
 
 Characters which have analyses in the lexicon, but can appear without spaces
 before/after, that is, with no context conditions, and adjacent to words:
@@ -7632,9 +2132,6 @@ the List contains some unicode white space characters
 * Narrow No-Break Space U+202F
 * Medium Mathematical Space U+205F
 * Word joiner U+2060
-
-
-
 
 Apart from what's in our morphology, there are
 1. unknown word-like forms, and
@@ -7652,16 +2149,12 @@ ASCII digits
 so far:
 * U+F0B7 for "x in box"
 
-
-
 ## Unknown handling
 Unknowns are tagged ?? and treated specially with `hfst-tokenise`
 hfst-tokenise --giella-cg will treat such empty analyses as unknowns, and
 remove empty analyses from other readings. Empty readings are also
 legal in CG, they get a default baseform equal to the wordform, but
 no tag to check, so it's safer to let hfst-tokenise handle them.
-
-
 
 Finally we mark as a token any sequence making up a:
 * known word in context
@@ -7670,4 +2163,8 @@ Finally we mark as a token any sequence making up a:
 * URL in context
 
 * * *
-<small>This (part of) documentation was generated from [../tools/tokenisers/tokeniser-disamb-gt-desc.pmscript](http://github.com/giellalt/lang-nob/blob/main/../tools/tokenisers/tokeniser-disamb-gt-desc.pmscript)</small>
+
+<small>This (part of) documentation was generated from [tools/tokenisers/tokeniser-disamb-gt-desc.pmscript](https://github.com/giellalt/lang-nob/blob/main/tools/tokenisers/tokeniser-disamb-gt-desc.pmscript)</small>
+
+---
+

@@ -18,7 +18,6 @@ v1-s passive v1 verbs
 v2-s passive v2 verbs
 v3-s passive v3 verbs
 
-
 ## Sublexica for regular verbs 
 
 ### Preliminary lexica
@@ -29,13 +28,11 @@ v3-s passive v3 verbs
 
 **LEXICON v13** also here: v1, v3: sveve -> svevet (NG), svevde.
 
-
 **LEXICON v23** 
 
 **LEXICON v14** where v4 is NG
 
 **LEXICON v1** =  kaste
-
 
 **LEXICON v2** = blåse, studere
 
@@ -43,16 +40,11 @@ v3-s passive v3 verbs
 
 **LEXICON v4** =  ro, bie
 
-
 **LEXICON v1-s** =  undres
 
 **LEXICON v2-s** =  føles, synes
 
 **LEXICON v3-s** =  trives
-
-
-
-
 
 ## Conjugation sublexica
 
@@ -70,13 +62,9 @@ v3-s passive v3 verbs
 
 **LEXICON dde-pret** = 
 
-
 **LEXICON prsptcsuff** = 
 
-
-
 ### Sublexica for irregular verbs 
-
 
 * **LEXICON BE** 
 * **LEXICON BINDE** 
@@ -242,6 +230,9 @@ v3-s passive v3 verbs
 * **LEXICON UNNVÆRE**
 * **LEXICON XREKKE** = brekke, overrekke, radbrekk, rekke
 
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/verbs.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/affixes/verbs.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/affixes/verbs.lexc)</small>
+
+---
+

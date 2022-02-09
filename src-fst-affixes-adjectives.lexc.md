@@ -8,63 +8,15 @@
 *     lunken      lunken      lunkent     lunkne
 * aV  blå         blå         blått       blå
 
-
-
-
-
 ## Basic paradigms
 
 a23
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Sublexica
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/affixes/adjectives.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/affixes/adjectives.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/affixes/adjectives.lexc)</small>
+
+---
+

@@ -14,7 +14,6 @@ We declare both the a-å letters and all other possible letters.
 * **'** This is the apostrophe
 * **l7:l** This **l** not deleted by **t**
 
-
 ### Boundary symbols
 
 Morpheme boundaries and escaped quotes - do not delete in twolc,
@@ -52,11 +51,6 @@ These symbols cause the twolc rules to work.
 #### Nynorsk trigger
 * **%^NYNAG:0 ;** Trigger for Nynorsk dictionary forms.
 
-
-
-
-
-
 ### Sets
 
 * **Vow = a e i o u y æ ø å ;**
@@ -68,14 +62,9 @@ These symbols cause the twolc rules to work.
 
 This section shows the twolc rules and the tests used to check whether they work
 
-
-
-
 ### Umlaut
 
 **Umlaut Rule**  for *bok : bøker* etc. It shifts the vowels *u, o, a, å* to *y, ø, e, e*, respectively when **Z1** is found after the stem.
-
-
 
 ### Vowel deletions rules
 
@@ -104,8 +93,6 @@ This section shows the twolc rules and the tests used to check whether they work
 * *kollegaX2>er*
 * *kolleg00>er*
 
-
-
 ### Consonant deletion
 
 **Consonant shortening before deletion Rule**  
@@ -115,7 +102,6 @@ This section shows the twolc rules and the tests used to check whether they work
 * *sik00r0>e*
 * *trusselX1>er*
 * *trus00l0>er*
-
 
 **Geminate deletion in front of -t and -d Rule** deletes: 1) before **Q3 and d or t** (*kaller:kalte*) 2) before passive **Q1 t** (*lykkes:lyktes*) and 3) before epenthetic **-e-** and **l, n** or **r** (*sikker:sikre*)
 
@@ -129,24 +115,15 @@ This section shows the twolc rules and the tests used to check whether they work
 * *bygge>Q3de*
 * *byg00>0de*
 
-
-
-
-
 **Delete r Rule** deletes **r** in plural *-er* to get *-er + -ne* = plural *-ene* 
 
 **Delete m Rule** for *kam:kammen*, here we delete the second m when word-final.  
-
-
-
 
 **um Deletion 1 Rule** (um Deletion 2 is now part of the *Delete m Rule*)
 
 *Tests:*
 * *museumX5>er*
 * *muse000>er*
-
-
 
 **t weakening Rule**  
 
@@ -160,31 +137,19 @@ This section shows the twolc rules and the tests used to check whether they work
 * *svart>t*
 * *svart>0*
 
-
-
 ### Insertion rules
 
 **Insert t in passives Rule**  
 
-
-
 ### Compound rule
-
-
 
 *Tests:*
 * *grammatikk##kontroll*
 * *grammatik000kontroll*
 
-
-
 ### Clitics
 
 **Clitic after s-final Rule**  for changing the so-called *genitive -s* to **'** for s-final stems: *huss -> hus'*
-
-
-
-
 
 ### Nynorsk dictionary rules
 
@@ -192,12 +157,16 @@ This section shows the twolc rules and the tests used to check whether they work
 
 This rule is for dictionary use only. The idea is to be able to click on words in a Nynorsk text and get translation to North Sámi. Therefore, the Bokmål analyser is able to give an analysis to Nynorsk words as well. The Nynorsk-only forms are removed from all other transducers than the `-dict` transducer.
 
-
 * *a*
 * *b*
 
 Test to have an error
 * ★*a* (is not standard language)
 * ★*b* (is not standard language)
+
 * * *
-<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-nob/blob/main/../src/fst/phonology.twolc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/phonology.twolc](https://github.com/giellalt/lang-nob/blob/main/src/fst/phonology.twolc)</small>
+
+---
+
