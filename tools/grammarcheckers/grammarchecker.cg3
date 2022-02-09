@@ -375,7 +375,7 @@ SET V-MOOD = Ind OR Imp ;
 
 SET VFIN =  V-MOOD ;
 
-LIST QUASIAUX = "akte" "begynne" "fortsette" "gidde" "huske" "like" "lære" "orke" "prøve" "slippe" "slutte" "tenke" ;
+LIST QUASIAUX = "akte" "begynne" "fortsette" "gidde" "huske" "like" "lære" "orke" "prøve" "slippe" "slutte" "søke" "tenke" "være" ;
 	
 SET VFIN-NOT-IMP = Ind ;
 SET VFIN-NOT-AUX = Ind - AUX ;
@@ -799,11 +799,13 @@ COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg2 &msyn-p
 
 #!! ## Finite verb
 
-ADD:msyn-v-inf-pres (&msyn-v-inf-pres) TARGET (V Inf) IF (-1C (N) OR (Pron Nom))(*-2 BOS BARRIER VFIN OR ("så"))(NOT -1 ("å"))(0 V)(NOT *0 VFIN);
+ADD:msyn-v-inf-pres (&msyn-v-inf-pres) TARGET (V Inf) IF (-1C (N) OR (Pron Nom))(*-2 BOS BARRIER VFIN OR ("så"))(NOT -1 ("å"))(0 V)(NOT 0 Pass)(NOT *0 VFIN);
 COPY:msyn-v-inf-pres (Ind Prs &SUGGEST) EXCEPT (Inf)  TARGET (V Inf &msyn-v-inf-pres);
 ADDRELATION:msyn-v-inf-pres ($2) (*) FROM (1 V LINK 0 (&msyn-v-inf-pres)) ;
 
 #$ Vi så lyset forsvinne.
+#$ Retten til å drive fiske er grunnlovsfestet.
+
 ## Jeg like peanøtter.
 #$ Jeg liker peanøtter.
 
