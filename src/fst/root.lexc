@@ -315,6 +315,7 @@ Multichar_Symbols !!≈ **@CODE@**
 LEXICON Root
 !! ### LEXICON @LEXNAME@
    FinalNoun       ; !!≈ * @CODE@ for -skap etc. that is affix rather than compound
+   NevercompNoun   ; !!≈ * @CODE@ for
    ShortNounRoot   ; !!≈ * @CODE@ 2- and 3-letter words
    NounRoot        ; !!≈ * @CODE@ The rest
    ProperNoun      ; !!≈ * @CODE@
