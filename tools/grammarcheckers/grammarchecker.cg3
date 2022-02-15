@@ -850,7 +850,7 @@ COPY:real-v-aa-og ("og" CC &SUGGEST) EXCEPT ("å" Use/SpellNoSugg N Sem/Sign ABB
 #% Vi vil skrive å utgi lyrikk.
 
 ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF ( -2 hj-V)(-1 V + $$INDFORM)(NOT -1 QUASIAUX) (1 V + $$INDFORM);
-ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF (NOT -2 hj-V)(-1 V + $$INDFORM)(NOT -1 QUASIAUX) (1 V + $$INDFORM);
+ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF (NOT -2 hj-V)(-1 V + $$INDFORM)(NOT -1 QUASIAUX OR ("for")) (1 V + $$INDFORM);
 COPY:real-v-aa-og ("og" CC &SUGGEST) EXCEPT ("å" IM) TARGET (IM &real-v-aa-og);
 COPY:real-v-aa-og ("og" CC &SUGGEST) EXCEPT ("å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR) TARGET (N &real-v-aa-og);
 
