@@ -1269,6 +1269,7 @@ given the proper use of these flags.
 
 ### LEXICON Root
 * FinalNoun ; for -skap etc. that is affix rather than compound
+* NevercompNoun ; for
 * ShortNounRoot ; 2- and 3-letter words
 * NounRoot ; The rest
 * ProperNoun ;
@@ -1571,6 +1572,8 @@ nMUSEUM museum, museet, museer
 n1pl odds, oddsene
 
 ## The lexica themselves
+
+LEXICON NevercompNoun just to ensure "for" is not compound material even in descriptive analysers.
 
 LEXICON FinalNoun is a separate lexicon to point to. For now it contains only *-skap*.
 

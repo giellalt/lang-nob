@@ -273,6 +273,7 @@ given the proper use of these flags.
 
 ### LEXICON Root
 * FinalNoun ; for -skap etc. that is affix rather than compound
+* NevercompNoun ; for
 * ShortNounRoot ; 2- and 3-letter words
 * NounRoot ; The rest
 * ProperNoun ;
