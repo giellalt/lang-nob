@@ -147,8 +147,4 @@ Finite verbs
 The analysis give double analysis because of optional semtags. We go for the one with semtag.
 
 * * *
-
 <small>This (part of) documentation was generated from [src/cg3/functions.cg3](https://github.com/giellalt/lang-nob/blob/main/src/cg3/functions.cg3)</small>
-
----
-

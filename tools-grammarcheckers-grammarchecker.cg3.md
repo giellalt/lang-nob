@@ -71,8 +71,4 @@ msyn-pred-adjneu-adjmsc
 ## og/å
 
 * * *
-
 <small>This (part of) documentation was generated from [tools/grammarcheckers/grammarchecker.cg3](https://github.com/giellalt/lang-nob/blob/main/tools/grammarcheckers/grammarchecker.cg3)</small>
-
----
-
