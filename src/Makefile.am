@@ -43,28 +43,6 @@ CUSTOM_FSTS=
 ########################################################
 #### Add language-specific transducer targets here: ####
 
-# Hfst - add weights to compounds if using tropical-semiring fst format:
-if WITH_OFST_TROPICAL
-generator-raw-gt-desc.hfst: generator-raw-gt-desc.tmp.hfst
-	$(AM_V_REWEIGHT)$(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
-			-S '+Cmp' -a 10 --arcs-only -i $< \
-			-S '+CmpS' -a 10 --arcs-only -i $< \
-		> $@
-endif
-
-#		| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
-#			-S '+Der'  -a 5 --arcs-only \
-#		| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
-#			-S '+Der1' -a 5 --arcs-only \
-#		| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
-#			-S '+Der2' -a 5 --arcs-only \
-#		| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
-#			-S '+Der3' -a 5 --arcs-only \
-#		| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
-#			-S '+Der4' -a 5 --arcs-only \
-#		| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
-#			-S '+Der5' -a 5 --arcs-only 
-
 
 #### Xerox transducers:
 if CAN_XFST
@@ -99,8 +77,46 @@ endif # WANT_CUSTOM_FSTS
 
 endif # CAN_FOMA
 
+if WANT_DICTIONARIES
+if CAN_HFST
+GT_ANALYSERS+=analyser-dict-gt-desc.hfstol
+#GT_ANALYSERS+=analyser-dict-gt-norm.hfstol
+endif # CAN_HFST
+
+if CAN_XFST
+GT_ANALYSERS+=analyser-dict-gt-desc.xfst
+endif # CAN_XFST
+
+if CAN_FOMA
+GT_ANALYSERS+=analyser-dict-gt-desc.foma
+endif # CAN_FOMA
+endif # WANT_DICTIONARIES
+
+
 #################################################
 #### Add language-specific build rules here: ####
+
+# Hfst - add weights to compounds if using tropical-semiring fst format:
+if WITH_OFST_TROPICAL
+generator-raw-gt-desc.hfst: generator-raw-gt-desc.tmp.hfst
+	$(AM_V_REWEIGHT)$(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
+			-S '+Cmp' -a 10 --arcs-only -i $< \
+			-S '+CmpS' -a 10 --arcs-only -i $< \
+		> $@
+endif
+
+#		| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
+#			-S '+Der'  -a 5 --arcs-only \
+#		| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
+#			-S '+Der1' -a 5 --arcs-only \
+#		| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
+#			-S '+Der2' -a 5 --arcs-only \
+#		| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
+#			-S '+Der3' -a 5 --arcs-only \
+#		| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
+#			-S '+Der4' -a 5 --arcs-only \
+#		| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
+#			-S '+Der5' -a 5 --arcs-only 
 
 
 # We need to specify -gt- to avoid applying the filters to the raw fst:
@@ -115,48 +131,6 @@ analyser-gt-desc.%: analyser-gt-desc.tmp.%                    \
 		 $(INVERT_HFST)\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
-
-
-# We need to add processing of language-specific tags in the analyser:
-analyser-dict-gt-desc.%: analyser-dict-gt-desc.tmp.% \
-					filters/remove-derivation-position-tags.% \
-					filters/convert_to_flags-CmpNP-tags.% \
-					filters/remove-grammatical-tags.%         \
-					filters/remove-norm-comp-tags.%           \
-					filters/remove-Err_SpaceCmp-strings.%     \
-					filters/remove-usage-tags.%
-	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
-				@\"filters/remove-usage-tags.$*\"               \
-			.o. @\"filters/remove-derivation-position-tags.$*\" \
-			.o. @\"filters/convert_to_flags-CmpNP-tags.$*\" \
-			.o. @\"filters/remove-grammatical-tags.$*\"         \
-			.o. @\"filters/remove-norm-comp-tags.$*\"           \
-			.o. @\"filters/remove-Err_SpaceCmp-strings.$*\"     \
-			.o. @\"$<\"                                         \
-			;\n\
-		 $(INVERT_HFST)\
-		 save stack $@\n\
-		 quit\n" | $(XFST_TOOL)
-
-# We need to add processing of language-specific tags in the analyser:
-analyser-dict-gt-desc-mobile.%: analyser-dict-gt-desc-mobile.tmp.% \
-					filters/remove-derivation-position-tags.% \
-					filters/remove-grammatical-tags.%         \
-					filters/remove-norm-comp-tags.%           \
-					filters/remove-Err_SpaceCmp-strings.%     \
-					filters/remove-usage-tags.%
-	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
-				@\"filters/remove-usage-tags.$*\"               \
-			.o. @\"filters/remove-derivation-position-tags.$*\" \
-			.o. @\"filters/remove-grammatical-tags.$*\"         \
-			.o. @\"filters/remove-norm-comp-tags.$*\"           \
-			.o. @\"filters/remove-Err_SpaceCmp-strings.$*\"     \
-			.o. @\"$<\"                                         \
-			;\n\
-		 $(INVERT_HFST)\
-		 save stack $@\n\
-		 quit\n" | $(XFST_TOOL)
-
 
 
 
@@ -258,6 +232,49 @@ analyser-gramcheck-gt-desc.hfst: analyser-gramcheck-gt-desc.tmp.hfst \
 	invert net\n\
 	save stack $@\n\
 	quit\n" | $(HFST_XFST) -p $(MORE_VERBOSITY)
+
+
+# We need to add processing of language-specific tags in the analyser:
+analyser-dict-gt-desc.%: analyser-dict-gt-desc.tmp.% \
+					filters/remove-derivation-position-tags.% \
+					filters/convert_to_flags-CmpNP-tags.% \
+					filters/remove-grammatical-tags.%         \
+					filters/remove-norm-comp-tags.%           \
+					filters/remove-usage-tags.%
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+				@\"filters/remove-usage-tags.$*\"               \
+			.o. @\"filters/remove-derivation-position-tags.$*\" \
+			.o. @\"filters/convert_to_flags-CmpNP-tags.$*\" \
+			.o. @\"filters/remove-grammatical-tags.$*\"         \
+			.o. @\"filters/remove-norm-comp-tags.$*\"           \
+			.o. @\"$<\"                                         \
+			;\n\
+		 $(INVERT_HFST)\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+
+# We need to add processing of language-specific tags in the analyser:
+analyser-dict-gt-desc-mobile.%: analyser-dict-gt-desc-mobile.tmp.% \
+					filters/remove-derivation-position-tags.% \
+					filters/remove-grammatical-tags.%         \
+					filters/remove-norm-comp-tags.%           \
+					filters/remove-Err_SpaceCmp-strings.%     \
+					filters/remove-usage-tags.%
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+				@\"filters/remove-usage-tags.$*\"               \
+			.o. @\"filters/remove-derivation-position-tags.$*\" \
+			.o. @\"filters/remove-grammatical-tags.$*\"         \
+			.o. @\"filters/remove-norm-comp-tags.$*\"           \
+			.o. @\"filters/remove-Err_SpaceCmp-strings.$*\"     \
+			.o. @\"$<\"                                         \
+			;\n\
+		 $(INVERT_HFST)\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+
+
+
+
 
 
 generator-gt-norm.%: generator-gt-norm.tmp.%              \
