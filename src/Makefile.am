@@ -233,6 +233,7 @@ analyser-dict-gt-desc.%: analyser-dict-gt-desc.tmp.% \
 			.o. @\"filters/split-CmpNP-tags.$*\"                \
 			.o. @\"$<\"                                         \
 			;\n\
+		 twosided flag-diacritics\n\
 		 $(INVERT_HFST)\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
