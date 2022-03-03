@@ -1343,8 +1343,17 @@ This table shows the codes for nominal and verbal inflection. Irregular inflecti
 ## Clitics
 
 ### K pointing nouns here to get "genitive" -s
-* **+Clt:%>s # ;** 
-* **# ;** 
+* **+Clt:%>s ENDLEX ;** 
+* **ENDLEX ;** 
+
+# Lexicon ENDLEX
+And this is the ENDLEX of everything:
+```
+@D.CmpOnly.FALSE@@D.CmpPref.TRUE@@D.NeedNoun.ON@ # ;
+```
+The `@D.CmpOnly.FALSE@` flag diacritic is ued to disallow words tagged
+with +CmpNP/Only to end here.
+The `@D.NeedNoun.ON@` flag diacritic is used to block illegal compounds.
 
 * * *
 
