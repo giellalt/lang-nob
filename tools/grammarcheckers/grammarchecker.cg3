@@ -98,7 +98,9 @@ LIST Attr = Attr ;
 LIST Det = Det ;
 LIST AUX = "ha" ; # XXX
 SET NOT-AUX-V = V - AUX ;
+LIST Pos = Pos ;
 LIST Comp = Comp ;
+LIST Superl = Superl ;
 LIST Sg = Sg ;
 LIST Pl = Pl ;
 LIST Def = Def ;
@@ -750,7 +752,7 @@ COPY:msyn-agr-detneu-detmsc ("en" Det Dem Msc Sg &SUGGEST) EXCEPT ("et" Pron Ind
 
 #!! ## Quantifier phrases
 
-ADD:msyn-qucompl-def-indef (&msyn-qucompl-def-indef) TARGET N + Pl + Def IF (*-1 Num OR ("mange") BARRIER NOT-A LINK NOT 0 Sem/ID LINK NOT -1 (§));
+ADD:msyn-qucompl-def-indef (&msyn-qucompl-def-indef) TARGET N + Pl + Def IF (*-1 Num OR ("mange") + Pos OR ("mange") + Comp BARRIER NOT-A LINK NOT 0 Sem/ID LINK NOT -1 (§));
 COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT Def TARGET (&msyn-qucompl-def-indef); 
 ADDRELATION:msyn-qucompl-def-indef ($2) (*) FROM (T:previousWordCrossSent LINK 0 (&msyn-qucompl-def-indef)) ;
 ## Vi har mange bøkene.
