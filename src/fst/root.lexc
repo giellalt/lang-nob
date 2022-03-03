@@ -402,6 +402,15 @@ LEXICON ProperNoun
 
 LEXICON K 
 !! ### @LEXNAME@ pointing nouns here to get "genitive" -s
- +Clt:%>s # ;  !!≈ * **@CODE@** 
- # ;   !!≈ * **@CODE@** 
+ +Clt:%>s ENDLEX ;  !!≈ * **@CODE@** 
+          ENDLEX ;   !!≈ * **@CODE@** 
 
+LEXICON ENDLEX
+!! # Lexicon @LEXNAME@
+!! And this is the @LEXNAME@ of everything:
+!! ```
+   @D.CmpOnly.FALSE@@D.CmpPref.TRUE@@D.NeedNoun.ON@ # ; !!≈ @CODE@
+!! ```
+!! The `@D.CmpOnly.FALSE@` flag diacritic is ued to disallow words tagged
+!! with +CmpNP/Only to end here.
+!! The `@D.NeedNoun.ON@` flag diacritic is used to block illegal compounds.
