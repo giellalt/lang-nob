@@ -16,7 +16,12 @@ LEXICON RHyphAfterFlags
 +Cmp/Hyph+Cmp#:#- NounRoot ;   ! dynamic compounding ON
 
 LEXICON R
-@P.CmpFrst.FALSE@@P.CmpPref.FALSE@@D.CmpLast.TRUE@@D.CmpNone.TRUE@@U.CmpNone.FALSE@@P.CmpOnly.TRUE@ RReal ; ! Flags to control compounding
+< "@P.CmpFrst.FALSE@"
+  "@P.CmpPref.FALSE@"
+  "@D.CmpLast.TRUE@"
+  "@D.CmpNone.TRUE@"
+  "@U.CmpNone.FALSE@"
+  "@P.CmpOnly.TRUE@"  > RReal ; ! Flags to control compounding
 
 LEXICON RReal
 ! change this and next 3
