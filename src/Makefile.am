@@ -243,14 +243,12 @@ analyser-dict-gt-desc-mobile.%: analyser-dict-gt-desc-mobile.tmp.% \
 					filters/remove-derivation-position-tags.% \
 					filters/remove-grammatical-tags.%         \
 					filters/remove-norm-comp-tags.%           \
-					filters/remove-Err_SpaceCmp-strings.%     \
 					filters/remove-usage-tags.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
 				@\"filters/remove-usage-tags.$*\"               \
 			.o. @\"filters/remove-derivation-position-tags.$*\" \
 			.o. @\"filters/remove-grammatical-tags.$*\"         \
 			.o. @\"filters/remove-norm-comp-tags.$*\"           \
-			.o. @\"filters/remove-Err_SpaceCmp-strings.$*\"     \
 			.o. @\"$<\"                                         \
 			;\n\
 		 twosided flag-diacritics\n\
