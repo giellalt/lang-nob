@@ -253,6 +253,7 @@ analyser-dict-gt-desc-mobile.%: analyser-dict-gt-desc-mobile.tmp.% \
 			.o. @\"filters/remove-Err_SpaceCmp-strings.$*\"     \
 			.o. @\"$<\"                                         \
 			;\n\
+		 twosided flag-diacritics\n\
 		 $(INVERT_HFST)\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
