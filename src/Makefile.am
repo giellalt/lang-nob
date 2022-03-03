@@ -221,16 +221,16 @@ analyser-gramcheck-gt-desc.hfst: analyser-gramcheck-gt-desc.tmp.hfst \
 # We need to add processing of language-specific tags in the analyser:
 analyser-dict-gt-desc.%: analyser-dict-gt-desc.tmp.% \
 					filters/remove-derivation-position-tags.% \
-					filters/convert_to_flags-CmpNP-tags.% \
+					filters/convert_to_flags-CmpNP-tags.%     \
+					filters/split-CmpNP-tags.%                \
 					filters/remove-grammatical-tags.%         \
-					filters/remove-norm-comp-tags.%           \
 					filters/remove-usage-tags.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
 				@\"filters/remove-usage-tags.$*\"               \
 			.o. @\"filters/remove-derivation-position-tags.$*\" \
-			.o. @\"filters/convert_to_flags-CmpNP-tags.$*\" \
 			.o. @\"filters/remove-grammatical-tags.$*\"         \
-			.o. @\"filters/remove-norm-comp-tags.$*\"           \
+			.o. @\"filters/convert_to_flags-CmpNP-tags.$*\"     \
+			.o. @\"filters/split-CmpNP-tags.$*\"                \
 			.o. @\"$<\"                                         \
 			;\n\
 		 $(INVERT_HFST)\
