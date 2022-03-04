@@ -93,8 +93,8 @@ HyphNouns ; !!≈ @CODE@
 LEXICON HyphNouns
 !! LEXICON @LEXNAME@  contains forms only in used in first part of compounds, like *barne*.  TODO: Kanskje desse ikkje bör bli lista.
 lule R ;
-barne R ;
-heste R ;
+barn Re ;
+hest Re ;
 
 LEXICON ShortNounRoot
 !! LEXICON @LEXNAME@ 
