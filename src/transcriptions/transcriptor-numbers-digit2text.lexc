@@ -1,3 +1,5 @@
+!! # Numbers to digits for Norwegian Bokmål
+
 LEXICON Root
 THOUSANDS ;
 HUNDREDS ;
@@ -5,438 +7,438 @@ HUNDREDS ;
 1to9 ;
 
 LEXICON THOUSANDS
- :1 THOUSAND ;
+ 1: THOUSAND ;
 2to9T ;
 10to99T ;
 HUNDREDST ;
 
 LEXICON 2to9T
-to:2 THOUSAND ;
-tre:3 THOUSAND ;
-fire:4 THOUSAND ;
-fem:5 THOUSAND ;
-seks:6 THOUSAND ;
-sju:7 THOUSAND ;
-åtte:8 THOUSAND;
-ni:9 THOUSAND ;
+2:to THOUSAND ;
+3:tre THOUSAND ;
+4:fire THOUSAND ;
+5:fem THOUSAND ;
+6:seks THOUSAND ;
+7:sju THOUSAND ;
+8:åtte THOUSAND;
+9:ni THOUSAND ;
 
 LEXICON 10to99T
- :1 TEENT ;
+ 1: TEENT ;
 TENST ;
 OLDTENST ;
 
 LEXICON TEENT
-ti:%0 THOUSAND ;
-elve:1 THOUSAND ;
-tolv:2 THOUSAND ;
-tretten:3 THOUSAND ;
-fjorten:4 THOUSAND ;
-femten:5 THOUSAND ;
-seksten:6 THOUSAND ;
-søtten:7 THOUSAND ;
-atten:8 THOUSAND ;
-nitten:9 THOUSAND ;
+%0:ti THOUSAND ;
+1:elve THOUSAND ;
+2:tolv THOUSAND ;
+3:tretten THOUSAND ;
+4:fjorten THOUSAND ;
+5:femten THOUSAND ;
+6:seksten THOUSAND ;
+7:søtten THOUSAND ;
+8:atten THOUSAND ;
+9:nitten THOUSAND ;
 
 
 LEXICON TENST
-tjue:2 TENCOUNTT ;
-tretti:3 TENCOUNTT ;
-tredve:30 THOUSAND ;
-førti:4 TENCOUNTT ;
-femti:5 TENCOUNTT ;
-seksti:6 TENCOUNTT ;
-sytti:7 TENCOUNTT ;
-søtti:7 TENCOUNTT ;
-åtti:8 TENCOUNTT ;
-nitti:9  TENCOUNTT ;
+2:tjue TENCOUNTT ;
+3:tretti TENCOUNTT ;
+3%0:tredve THOUSAND ;
+4:førti TENCOUNTT ;
+5:femti TENCOUNTT ;
+6:seksti TENCOUNTT ;
+7:sytti TENCOUNTT ;
+7:søtti TENCOUNTT ;
+8:åtti TENCOUNTT ;
+9:nitti  TENCOUNTT ;
 
 LEXICON TENCOUNTT
 2to9T ;
-ein:1 THOUSAND ;
- :%0 THOUSAND ;
+1:ein THOUSAND ;
+ %0: THOUSAND ;
 
 LEXICON OLDTENST
-einog: OLDTEN-1T ;
-toog: OLDTEN-2T ;
-treog: OLDTEN-3T ;
-fireog: OLDTEN-4T ;
-femog: OLDTEN-5T ;
-seksog: OLDTEN-6T ;
-sjuog: OLDTEN-7T ;
-åtteog: OLDTEN-8T ;
-niog: OLDTEN-9T ;
+:einog OLDTEN-1T ;
+:toog OLDTEN-2T ;
+:treog OLDTEN-3T ;
+:fireog OLDTEN-4T ;
+:femog OLDTEN-5T ;
+:seksog OLDTEN-6T ;
+:sjuog OLDTEN-7T ;
+:åtteog OLDTEN-8T ;
+:niog OLDTEN-9T ;
 
 LEXICON OLDTEN-1T
-tjue:2 END1T ;
-tretti:3 END1T ;
-tredve:3 END1T ;
-førti:4 END1T ;
-femti:5 END1T ;
-seksti:6 END1T ;
-sytti:7 END1T ;
-søtti:7 END1T ;
-åtti:8 END1T ;
-nitti:9  END1T ;
+2:tjue END1T ;
+3:tretti END1T ;
+3:tredve END1T ;
+4:førti END1T ;
+5:femti END1T ;
+6:seksti END1T ;
+7:sytti END1T ;
+7:søtti END1T ;
+8:åtti END1T ;
+9:nitti  END1T ;
 
 
 LEXICON OLDTEN-2T
-tjue:2 END2T ;
-tretti:3 END2T ;
-tredve:3 END2T ;
-førti:4 END2T ;
-femti:5 END2T ;
-seksti:6 END2T ;
-sytti:7 END2T ;
-søtti:7 END2T ;
-åtti:8 END2T ;
-nitti:9  END2T ;
+2:tjue END2T ;
+3:tretti END2T ;
+3:tredve END2T ;
+4:førti END2T ;
+5:femti END2T ;
+6:seksti END2T ;
+7:sytti END2T ;
+7:søtti END2T ;
+8:åtti END2T ;
+9:nitti  END2T ;
 
 
 LEXICON OLDTEN-3T
-tjue:2 END3T ;
-tretti:3 END3T ;
-tredve:3 END3T ;
-førti:4 END3T ;
-femti:5 END3T ;
-seksti:6 END3T ;
-sytti:7 END3T ;
-søtti:7 END3T ;
-åtti:8 END3T ;
-nitti:9  END3T ;
+2:tjue END3T ;
+3:tretti END3T ;
+3:tredve END3T ;
+4:førti END3T ;
+5:femti END3T ;
+6:seksti END3T ;
+7:sytti END3T ;
+7:søtti END3T ;
+8:åtti END3T ;
+9:nitti  END3T ;
 
 
 LEXICON OLDTEN-4T
-tjue:2 END4T ;
-tretti:3 END4T ;
-tredve:3 END4T ;
-førti:4 END4T ;
-femti:5 END4T ;
-seksti:6 END4T ;
-sytti:7 END4T ;
-søtti:7 END4T ;
-åtti:8 END4T ;
-nitti:9  END4T ;
+2:tjue END4T ;
+3:tretti END4T ;
+3:tredve END4T ;
+4:førti END4T ;
+5:femti END4T ;
+6:seksti END4T ;
+7:sytti END4T ;
+7:søtti END4T ;
+8:åtti END4T ;
+9:nitti  END4T ;
 
 
 LEXICON OLDTEN-5T
-tjue:2 END5T ;
-tretti:3 END5T ;
-tredve:3 END5T ;
-førti:4 END5T ;
-femti:5 END5T ;
-seksti:6 END5T ;
-sytti:7 END5T ;
-søtti:7 END5T ;
-åtti:8 END5T ;
-nitti:9  END5T ;
+2:tjue END5T ;
+3:tretti END5T ;
+3:tredve END5T ;
+4:førti END5T ;
+5:femti END5T ;
+6:seksti END5T ;
+7:sytti END5T ;
+7:søtti END5T ;
+8:åtti END5T ;
+9:nitti  END5T ;
 
 
 LEXICON OLDTEN-6T
-tjue:2 END6T ;
-tretti:3 END6T ;
-tredve:3 END6T ;
-førti:4 END6T ;
-femti:5 END6T ;
-seksti:6 END6T ;
-sytti:7 END6T ;
-søtti:7 END6T ;
-åtti:8 END6T ;
-nitti:9  END6T ;
+2:tjue END6T ;
+3:tretti END6T ;
+3:tredve END6T ;
+4:førti END6T ;
+5:femti END6T ;
+6:seksti END6T ;
+7:sytti END6T ;
+7:søtti END6T ;
+8:åtti END6T ;
+9:nitti  END6T ;
 
 LEXICON OLDTEN-7T
-tjue:2 END7T ;
-tretti:3 END7T ;
-tredve:3 END7T ;
-førti:4 END7T ;
-femti:5 END7T ;
-seksti:6 END7T ;
-sytti:7 END7T ;
-søtti:7 END7T ;
-åtti:8 END7T ;
-nitti:9  END7T ;
+2:tjue END7T ;
+3:tretti END7T ;
+3:tredve END7T ;
+4:førti END7T ;
+5:femti END7T ;
+6:seksti END7T ;
+7:sytti END7T ;
+7:søtti END7T ;
+8:åtti END7T ;
+9:nitti  END7T ;
 
 
 LEXICON OLDTEN-8T
-tjue:2 END8T ;
-tretti:3 END8T ;
-tredve:3 END8T ;
-førti:4 END8T ;
-femti:5 END8T ;
-seksti:6 END8T ;
-sytti:7 END8T ;
-søtti:7 END8T ;
-åtti:8 END8T ;
-nitti:9  END8T ;
+2:tjue END8T ;
+3:tretti END8T ;
+3:tredve END8T ;
+4:førti END8T ;
+5:femti END8T ;
+6:seksti END8T ;
+7:sytti END8T ;
+7:søtti END8T ;
+8:åtti END8T ;
+9:nitti  END8T ;
 
 
 LEXICON OLDTEN-9T
-tjue:2 END9T ;
-tretti:3 END9T ;
-tredve:3 END9T ;
-førti:4 END9T ;
-femti:5 END9T ;
-seksti:6 END9T ;
-sytti:7 END9T ;
-søtti:7 END9T ;
-åtti:8 END9T ;
-nitti:9  END9T ;
+2:tjue END9T ;
+3:tretti END9T ;
+3:tredve END9T ;
+4:førti END9T ;
+5:femti END9T ;
+6:seksti END9T ;
+7:sytti END9T ;
+7:søtti END9T ;
+8:åtti END9T ;
+9:nitti  END9T ;
 
 LEXICON END1T
- :1 THOUSAND;
+ 1: THOUSAND;
 
 LEXICON END2T
- :2 THOUSAND;
+ 2: THOUSAND;
 
 LEXICON END3T
- :3 THOUSAND;
+ 3: THOUSAND;
 
 LEXICON END4T
- :4 THOUSAND;
+ 4: THOUSAND;
 
 LEXICON END5T
- :5 THOUSAND;
+ 5: THOUSAND;
 
 LEXICON END6T
- :6 THOUSAND;
+ 6: THOUSAND;
 
 LEXICON END7T
- :7 THOUSAND;
+ 7: THOUSAND;
 
 LEXICON END8T
- :8 THOUSAND;
+ 8: THOUSAND;
 
 LEXICON END9T
- :9 THOUSAND;
+ 9: THOUSAND;
 
 LEXICON HUNDREDST
- :1 HUNDREDT ;
-to:2 HUNDREDT ;
-tre:3 HUNDREDT ;
-fire:4 HUNDREDT ;
-fem:5 HUNDREDT ;
-seks:6 HUNDREDT ;
-sju:7 HUNDREDT ;
-åtte:8 HUNDRED;
-ni:9 HUNDREDT ;
+ 1: HUNDREDT ;
+2:to HUNDREDT ;
+3:tre HUNDREDT ;
+4:fire HUNDREDT ;
+5:fem HUNDREDT ;
+6:seks HUNDREDT ;
+7:sju HUNDREDT ;
+8:åtte HUNDRED;
+9:ni HUNDREDT ;
 
 LEXICON HUNDREDT
-hundreog: 1to99T ;
+:hundreog 1to99T ;
 
 LEXICON 1to99T
- :%0 2to9T ;
-ein:1 THOUSAND ;
+ %0: 2to9T ;
+1:ein THOUSAND ;
 10to99T ;
 
 LEXICON THOUSAND
-tusen: HUNDREDS ;
-tusenog:%0 1to99 ;
+:tusen HUNDREDS ;
+%0:tusenog  1to99 ;
 
 LEXICON HUNDREDS
- :1 HUNDRED ;
-to:2 HUNDRED ;
-tre:3 HUNDRED ;
-fire:4 HUNDRED ;
-fem:5 HUNDRED ;
-seks:6 HUNDRED ;
-sju:7 HUNDRED ;
-åtte:8 HUNDRED;
-ni:9 HUNDRED ;
+ 1: HUNDRED ;
+2:to HUNDRED ;
+3:tre HUNDRED ;
+4:fire HUNDRED ;
+5:fem HUNDRED ;
+6:seks HUNDRED ;
+7:sju HUNDRED ;
+8:åtte HUNDRED;
+9:ni HUNDRED ;
 
 LEXICON HUNDRED
-hundreog: 10to99 ;
-hundreog:%0 1to9 ;
-hundre:%0%0 # ;
+:hundreog: 10to99 ;
+%0:hundreog 1to9 ;
+%0%0:hundre # ;
 
 LEXICON 1to99
 !:%0 1to9 ;
 10to99 ;
 
 LEXICON 1to9
-ein:1 # ;
-to:2 # ;
-tre:3 # ;
-fire:4 # ;
-fem:5 # ;
-seks:6 # ;
-sju:7 # ;
-åtte:8 #;
-ni:9 # ;
+1:ein # ;
+2:to # ;
+3:tre # ;
+4:fire # ;
+5:fem # ;
+6:seks # ;
+7:sju # ;
+8:åtte #;
+9:ni # ;
 
 LEXICON 10to99
- :1 TEEN ;
+ 1: TEEN ;
 TENS ;
 OLDTENS ;
 
 LEXICON TEEN
-ti:%0 # ;
-elve:1 # ;
-tolv:2 # ;
-tretten:3 # ;
-fjorten:4 # ;
-femten:5 # ;
-seksten:6 # ;
-søtten:7 # ;
-atten:8 # ;
-nitten:9 # ;
+%0:ti # ;
+1:elve # ;
+2:tolv # ;
+3:tretten # ;
+4:fjorten # ;
+5:femten # ;
+6:seksten # ;
+7:søtten # ;
+8:atten # ;
+9:nitten # ;
 
 
 LEXICON TENS
-tjue:2 TENCOUNT ;
-tretti:3 TENCOUNT ;
-tredve:3%0 # ;
-førti:4 TENCOUNT ;
-femti:5 TENCOUNT ;
-seksti:6 TENCOUNT ;
-sytti:7 TENCOUNT ;
-søtti:7 TENCOUNT ;
-åtti:8 TENCOUNT ;
-nitti:9  TENCOUNT ;
+2:tjue TENCOUNT ;
+3:tretti TENCOUNT ;
+3%0:tredve # ;
+4:førti TENCOUNT ;
+5:femti TENCOUNT ;
+6:seksti TENCOUNT ;
+7:sytti TENCOUNT ;
+7:søtti TENCOUNT ;
+8:åtti TENCOUNT ;
+9:nitti  TENCOUNT ;
 
 LEXICON TENCOUNT
 1to9 ;
- :%0 # ;
+ %0: # ;
 
 LEXICON OLDTENS
-einog: OLDTEN-1 ;
-toog: OLDTEN-2 ;
-treog: OLDTEN-3 ;
-fireog: OLDTEN-4 ;
-femog: OLDTEN-5 ;
-seksog: OLDTEN-6 ;
-sjuog: OLDTEN-7 ;
-åtteog: OLDTEN-8 ;
-niog: OLDTEN-9 ;
+:einog OLDTEN-1 ;
+:toog OLDTEN-2 ;
+:treog OLDTEN-3 ;
+:fireog OLDTEN-4 ;
+:femog OLDTEN-5 ;
+:seksog OLDTEN-6 ;
+:sjuog OLDTEN-7 ;
+:åtteog OLDTEN-8 ;
+:niog OLDTEN-9 ;
 
 LEXICON OLDTEN-1
-tjue:2 END1 ;
-tredve:3 END1 ;
-førti:4 END1 ;
-femti:5 END1 ;
-seksti:6 END1 ;
-sytti:7 END1 ;
-søtti:7 END1 ;
-åtti:8 END1 ;
-nitti:9  END1 ;
+2:tjue END1 ;
+3:tredve END1 ;
+4:førti END1 ;
+5:femti END1 ;
+6:seksti END1 ;
+7:sytti END1 ;
+7:søtti END1 ;
+8:åtti END1 ;
+9:nitti  END1 ;
 
 
 LEXICON OLDTEN-2
-tjue:2 END2 ;
-tredve:3 END2 ;
-førti:4 END2 ;
-femti:5 END2 ;
-seksti:6 END2 ;
-sytti:7 END2 ;
-søtti:7 END2 ;
-åtti:8 END2 ;
-nitti:9  END2 ;
+2:tjue END2 ;
+3:tredve END2 ;
+4:førti END2 ;
+5:femti END2 ;
+6:seksti END2 ;
+7:sytti END2 ;
+7:søtti END2 ;
+8:åtti END2 ;
+9:nitti  END2 ;
 
 
 LEXICON OLDTEN-3
-tjue:2 END3 ;
-tredve:3 END3 ;
-førti:4 END3 ;
-femti:5 END3 ;
-seksti:6 END3 ;
-sytti:7 END3 ;
-søtti:7 END3 ;
-åtti:8 END3 ;
-nitti:9  END3 ;
+2:tjue END3 ;
+3:tredve END3 ;
+4:førti END3 ;
+5:femti END3 ;
+6:seksti END3 ;
+7:sytti END3 ;
+7:søtti END3 ;
+8:åtti END3 ;
+9:nitti  END3 ;
 
 
 LEXICON OLDTEN-4
-tjue:2 END4 ;
-tredve:3 END4 ;
-førti:4 END4 ;
-femti:5 END4 ;
-seksti:6 END4 ;
-sytti:7 END4 ;
-søtti:7 END4 ;
-åtti:8 END4 ;
-nitti:9  END4 ;
+2:tjue END4 ;
+3:tredve END4 ;
+4:førti END4 ;
+5:femti END4 ;
+6:seksti END4 ;
+7:sytti END4 ;
+7:søtti END4 ;
+8:åtti END4 ;
+9:nitti  END4 ;
 
 
 LEXICON OLDTEN-5
-tjue:2 END5 ;
-tredve:3 END5 ;
-førti:4 END5 ;
-femti:5 END5 ;
-seksti:6 END5 ;
-sytti:7 END5 ;
-søtti:7 END5 ;
-åtti:8 END5 ;
-nitti:9  END5 ;
+2:tjue END5 ;
+3:tredve END5 ;
+4:førti END5 ;
+5:femti END5 ;
+6:seksti END5 ;
+7:sytti END5 ;
+7:søtti END5 ;
+8:åtti END5 ;
+9:nitti  END5 ;
 
 
 LEXICON OLDTEN-6
-tjue:2 END6 ;
-tredve:3 END6 ;
-førti:4 END6 ;
-femti:5 END6 ;
-seksti:6 END6 ;
-sytti:7 END6 ;
-søtti:7 END6 ;
-åtti:8 END6 ;
-nitti:9  END6 ;
+2:tjue END6 ;
+3:tredve END6 ;
+4:førti END6 ;
+5:femti END6 ;
+6:seksti END6 ;
+7:sytti END6 ;
+7:søtti END6 ;
+8:åtti END6 ;
+9:nitti  END6 ;
 
 LEXICON OLDTEN-7
-tjue:2 END7 ;
-tredve:3 END7 ;
-førti:4 END7 ;
-femti:5 END7 ;
-seksti:6 END7 ;
-sytti:7 END7 ;
-søtti:7 END7 ;
-åtti:8 END7 ;
-nitti:9  END7 ;
+2:tjue END7 ;
+3:tredve END7 ;
+4:førti END7 ;
+5:femti END7 ;
+6:seksti END7 ;
+7:sytti END7 ;
+7:søtti END7 ;
+8:åtti END7 ;
+9:nitti  END7 ;
 
 
 LEXICON OLDTEN-8
-tjue:2 END8 ;
-tredve:3 END8 ;
-førti:4 END8 ;
-femti:5 END8 ;
-seksti:6 END8 ;
-sytti:7 END8 ;
-søtti:7 END8 ;
-åtti:8 END8 ;
-nitti:9  END8 ;
+2:tjue END8 ;
+3:tredve END8 ;
+4:førti END8 ;
+5:femti END8 ;
+6:seksti END8 ;
+7:sytti END8 ;
+7:søtti END8 ;
+8:åtti END8 ;
+9:nitti  END8 ;
 
 
 LEXICON OLDTEN-9
-tjue:2 END9 ;
-tredve:3 END9 ;
-førti:4 END9 ;
-femti:5 END9 ;
-seksti:6 END9 ;
-sytti:7 END9 ;
-søtti:7 END9 ;
-åtti:8 END9 ;
-nitti:9  END9 ;
+2:tjue END9 ;
+3:tredve END9 ;
+4:førti END9 ;
+5:femti END9 ;
+6:seksti END9 ;
+7:sytti END9 ;
+7:søtti END9 ;
+8:åtti END9 ;
+9:nitti  END9 ;
 
 LEXICON END1
- :1 #;
+ 1: #;
 
 LEXICON END2
- :2 #;
+ 2: #;
 
 LEXICON END3
- :3 #;
+ 3: #;
 
 LEXICON END4
- :4 #;
+ 4: #;
 
 LEXICON END5
- :5 #;
+ 5: #;
 
 LEXICON END6
- :6 #;
+ 6: #;
 
 LEXICON END7
- :7 #;
+ 7: #;
 
 LEXICON END8
- :8 #;
+ 8: #;
 
 LEXICON END9
- :9 #;
+ 9: #;
 
