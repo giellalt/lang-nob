@@ -14259,7 +14259,7 @@ REMOVE (Imp) IF
 REMOVE (Imp) IF
 	(NOT -1 parentes OR komma OR s-gr)
 	(NOT -2 >>> OR
-	(NOT -1 CC og ("å") LINK -1 Imp))
+	(NOT -1 CC OR "å" LINK -1 Imp))
 ;
 
 
