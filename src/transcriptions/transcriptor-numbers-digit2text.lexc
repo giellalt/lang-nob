@@ -245,7 +245,7 @@ LEXICON HUNDREDS
 9:ni HUNDRED ;
 
 LEXICON HUNDRED
-:hundreog: 10to99 ;
+:hundreog 10to99 ;
 %0:hundreog 1to9 ;
 %0%0:hundre # ;
 
