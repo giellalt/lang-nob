@@ -377,7 +377,7 @@ SET V-MOOD = Ind OR Imp ;
 
 SET VFIN =  V-MOOD ;
 
-LIST QUASIAUX = "akte" "begynne" "fortsette" "gidde" "huske" "like" "lære" "orke" "prøve" "slippe" "slutte" "søke" "tenke" "være" ;
+LIST QUASIAUX = "akte" "anbefale" "begynne" "behøve" "bli" "forsøke" fortsette" "forvente" "gidde" "glemme" huske" "klare" "like" "lære" "nekte" "orke" "prøve" "risikere" "slippe" "slutte" "synes" søke" "tenke" "trenge" "tørre" "unngå" "velge" "vurdere" "være" "ønske" ;
 	
 SET VFIN-NOT-IMP = Ind ;
 SET VFIN-NOT-AUX = Ind - AUX ;
@@ -388,7 +388,7 @@ SET NOT-PRFPRC = WORD - PrfPrc ;
 # - - - - 
 
 LIST VERBFORM = Inf PrfPrc PrsPrc Prs Prt Imp ;
-LIST INDFORM = Prs Prt ;
+LIST INDFORM = Prs Prt Imp ; # FINFORM kanskje betre namn...
 
 # Pronoun sets
 # ------------
