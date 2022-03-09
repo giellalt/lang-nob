@@ -841,9 +841,9 @@ COPY:real-og-aa ("å" IM &SUGGEST) EXCEPT ("og" CC) TARGET (CC &real-og-aa);
 #$ Vi prøver å gå.
 
 ADD:real-aa-og (&real-aa-og) TARGET ("å") IF (-1 N) (1C N);
-COPY:real-aa-og ("og" CC &SUGGEST) EXCEPT ("å" IM) TARGET (IM &real-aa-og);
-ADDRELATION:real-aa-og ($2) (N) FROM (1 IM LINK 0 (&real-aa-og)) ;
-ADDRELATION:real-aa-og ($3) (N) FROM (-1 IM LINK 0 (&real-aa-og)) ;
+COPY:real-aa-og ("og" CC &SUGGEST) EXCEPT ("å" IM) TARGET ( &real-aa-og);
+ADDRELATION:real-aa-og ($2) (N) FROM (1 N LINK 0 (&real-aa-og)) ;
+ADDRELATION:real-aa-og ($3) (N) FROM (-1 N LINK 0 (&real-aa-og)) ;
 ## Det var Trond å Kari.
 #$ Det var Trond og Kari.
 
@@ -855,9 +855,9 @@ COPY:real-v-aa-og ("og" CC &SUGGEST) EXCEPT ("å" Use/SpellNoSugg N Sem/Sign ABB
 
 #$ Vi prøver å skrive lyrikk.
 #$ Vi må prøve å skrive lyrikk.
-#% Vi må lese å skrive lyrikk.
+## Vi må lese å skrive lyrikk.
 #$ Det er ikke så lett som man skulle tro å skrive lyrikk.
-#% Vi vil skrive å utgi lyrikk.
+## Vi vil skrive å utgi lyrikk.
 
 ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF ( -2 hj-V)(-1 V + $$INDFORM)(NOT -1 QUASIAUX) (1 V + $$INDFORM);
 ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF (NOT -2 hj-V)(-1 V + $$INDFORM)(NOT -1 QUASIAUX OR ("for")) (1 V + $$INDFORM);
