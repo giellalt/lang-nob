@@ -14256,7 +14256,7 @@ REMOVE (Imp) IF
 
 # 1990
 REMOVE (Imp) IF
-	(NOT -1 %ikke% OR CC)
+	(NOT -1 %ikke% OR CC OR ("å"))
 	(-2 >>>)
 ;
 
@@ -14265,6 +14265,7 @@ REMOVE (Imp) IF
 REMOVE (Imp) IF
 	(NOT -1 parentes OR komma OR s-gr)
 	(NOT -2 >>>)
+	(NOT -1 CC OR ("å") LINK -1 Imp)
 ;
 
 
