@@ -3239,6 +3239,7 @@ CONSTRAINTS
 # 3208
 "<når>" REMOVE (Adv) IF
 	(NOT 1 fv OR Pr)
+	(NOT 1 N LINK 1 fv)
 ;
 
 
