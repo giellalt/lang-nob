@@ -599,7 +599,7 @@ LIST romertall = <romertall> ;
 SETS
 
 LIST s-V = <s-V> ;
-LIST samset = samset ;
+LIST samset = Cmp ;
 LIST sanseV = "se" "merke" "la" "kjenne" "høre" "føle" "be" ;
 LIST CS = "hvor" "hva" CS ;
 LIST CS-ren = CS ;
@@ -10683,22 +10683,22 @@ SELECT (N) IF
 
 
 # 2361
-#SELECT (N) IF
-#	(0 samset OR A)
-#	(NOT 0 Prs/Prt OR PrfPrc)
-#	(NOT 1 N)
-#	(NOT *-1 ("være") BARRIER NOT-ADV)
-#;
+SELECT (N) IF
+	(0 samset OR A)
+	(NOT 0 Prs/Prt OR PrfPrc)
+	(NOT 1 N)
+	(NOT *-1 ("være") BARRIER NOT-ADV)
+;
 
 
 # 2362
-#SELECT (N) IF
-#	(0 samset OR Prs/Prt)
-#	(NOT 0 A)
-#	(NOT -1 %som/enn%)
-#	(NOT 0 Imp LINK -1 s-gr)
-#	(NOT 0 Prs LINK -1 komma)
-#;
+SELECT (N) IF
+	(0 samset OR Prs/Prt)
+	(NOT 0 A)
+	(NOT -1 %som/enn%)
+	(NOT 0 Imp LINK -1 s-gr)
+	(NOT 0 Prs LINK -1 komma)
+;
 
 
 #
