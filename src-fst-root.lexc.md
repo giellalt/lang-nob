@@ -64,6 +64,7 @@ NDS analyser tags
 
 ### Special symbols
 
+* **e7** =  always e (ide - ideen)
 * **l7** =  always l
 * **+Use/Circ** = circular string
 
@@ -273,7 +274,6 @@ given the proper use of these flags.
 
 ### LEXICON Root
 * FinalNoun ; for -skap etc. that is affix rather than compound
-* NevercompNoun ; for
 * ShortNounRoot ; 2- and 3-letter words
 * NounRoot ; The rest
 * ProperNoun ;

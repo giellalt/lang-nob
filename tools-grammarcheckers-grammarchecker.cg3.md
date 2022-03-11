@@ -1,21 +1,279 @@
 
-B O K M Å L   N O R W E G I A N   G R A M M A R   C H E C K E R
+#  Bokmål Norwegian Grammar Checker
 
-* Sets for POS sub-categories
+This file contains two parts: **Definitions** and **rules**
 
-* Sets for Semantic tags
+# Definition section
 
-* Sets for Morphosyntactic properties
+## Delimiters #
 
-* Sets for verbs
+ DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>";
 
+## Grammatical tags
+
+Here we declare all grammatical tags
+
+### Parts of speech tags
+
+- LIST N = N ;
+- LIST A = A ;
+- LIST Adv = Adv ;
+- LIST V = V ;
+- LIST Pron = Pron ;
+- LIST CS = CS ;
+- LIST CC = CC ;
+- LIST Det = Det ;
+- LIST Pr = Pr ;
+- LIST Pcle = Pcle ;
+- LIST Num = Num ;
+- LIST Interj = Interj ;
+- LIST IM = IM ;
+
+### Sets for POS sub-categories
+
+- LIST Attr = Attr ;
+- LIST AUX = "ha" ; # XXX
+- SET NOT-AUX-V = V - AUX ;
+- LIST Pos = Pos ;
+- LIST Comp = Comp ;
+- LIST Superl = Superl ;
+- LIST Sg = Sg ;
+- LIST Pl = Pl ;
+- LIST Def = Def ;
+- SET CC-CS = CC OR CS ;
+- LIST ABBR = ABBR ;
+- LIST ACR = ACR ;
+- LIST Msc = Msc ;
+- LIST Fem = Fem ;
+- LIST Neu = Neu ;
+- LIST MF = MF ;
+- LIST Pers = Pers ;
+- LIST Dem = Dem ;
+- LIST Interr = Interr ;
+- LIST Indef = Indef ;
+- LIST Pass = Pass ;
+- LIST Recipr = Recipr ;
+- LIST Refl = Refl ;
+- LIST Rel = Rel ;
+- LIST Prop = Prop ;
+- LIST Err/Orth = Err/Orth ;
+
+### Boundary tags
+- LIST CLB = CLB ;
+- LIST LEFT = LEFT ;
+- LIST RIGHT = RIGHT ;
+- LIST WEB = WEB ;
+- LIST PPUNCT = PUNCT ;
+- LIST COMMA = "," ;
+- LIST ¶ = ¶ ;
+- LIST QMARK = """ ;
+- SET PUNCT = PPUNCT - QMARK ;
+
+### Sets for Semantic tags
+
+- LIST Sem/Ani = Sem/Ani ;
+- LIST Sem/Date = Sem/Date ;
+- LIST Sem/Fem = Sem/Fem ;
+- LIST Sem/Group = Sem/Group ;
+- LIST Sem/Hum = Sem/Hum ;
+- LIST Sem/ID = Sem/ID ;
+- LIST Sem/Mal = Sem/Mal ;
+- LIST Sem/Measr = Sem/Measr ;
+- LIST Sem/Money = Sem/Money ;
+- LIST Sem/Obj = Sem/Obj ;
+- LIST Sem/Org = Sem/Org ;
+- LIST Sem/Plc = Sem/Plc ;
+- LIST Sem/Sur = Sem/Sur ;
+- LIST Sem/Time = Sem/Time ;
+- LIST Sem/Year = Sem/Year ;
+
+### Sets for Morphosyntactic properties
+
+- LIST Nom = Nom ;
+- LIST Acc = Acc ;
+- LIST RCmpnd = RCmpnd ;
+- LIST Ord = Ord ;
+- LIST IV = IV ;
+- LIST TV = TV ;
+- LIST Prt = Prt;
+- LIST Prs = Prs ;
+- LIST Ind = Ind ;
+- LIST Imp = Imp Imprt ;
+- LIST Sg3 = Sg3 ;
+- LIST Pl3 = Pl3 ;
+- LIST Inf = Inf ;
+- LIST PrfPrc = PrfPrc ;
+- LIST PrsPrc = PrsPrc ;
+
+## Syntactic tags
+
+- LIST @+FAUXV = @+FAUXV ;
+- LIST @+FMAINV = @+FMAINV ;
+- LIST @-FAUXV = @-FAUXV ;
+- LIST @-FMAINV = @-FMAINV ;
+- LIST @-FSUBJ> = @-FSUBJ> ;
+- LIST @-F<OBJ = @-F<OBJ ;
+- LIST @-FOBJ> = @-FOBJ> ;
+- LIST @SPRED<OBJ = @SPRED<OBJ ;
+- LIST @-FADVL = @-FADVL ;
+- SET FOBJ = @-F<OBJ OR @-FOBJ> ;
+- SET FAUXV = @-FAUXV OR @+FAUXV ;
+
+- LIST ADVL = Adv Pr ;
+- LIST @ADVL = @ADVL @ADVL> @ADVL< @<ADVL @>ADVL @-F<ADVL ;
+- LIST @>ADVL = @>ADVL ;
+- LIST @ADVL< = @ADVL< ;
+- LIST @<ADVL = @<ADVL ;
+- LIST @ADVL> = @ADVL> ;
+- LIST @ADVL>CS = @ADVL>CS ;
+- LIST @>N = @>N ;
+- LIST @N< = @N< ;
+- LIST @>A = @>A ;
+- LIST @P< = @P< ;
+- LIST @>P = @>P ;
+- LIST @HNOUN = @HNOUN ;
+- LIST @INTERJ = @INTERJ ;
+- LIST @>Num = @>Num;
+- LIST @Pron< = @Pron< ;
+- LIST @>Pron = @>Pron ;
+- LIST @Num< = @Num< ;
+- LIST @OBJ = @OBJ ;
+- LIST @<OBJ = @<OBJ ;
+- LIST @OBJ> = @OBJ> ;
+- LIST @OPRED = @OPRED ;
+- LIST @<OPRED = @<OPRED ;
+- LIST @OPRED> = @OPRED> ;
+- LIST @PCLE = @PCLE ;
+- LIST @COMP-CS< = @COMP-CS< ;
+- LIST @SPRED = @SPRED ;
+- LIST @<SPRED = @<SPRED ;
+- LIST @SPRED> = @SPRED> ;
+- LIST @SUBJ = @SUBJ ;
+- LIST @<SUBJ = @<SUBJ ;
+- LIST @SUBJ> = @SUBJ> ;
+- SET SUBJ = @<SUBJ OR @SUBJ> OR @SUBJ ;
+- SET SPRED = @<SPRED OR @SPRED> OR @SPRED ;
+- SET OPRED = @<OPRED OR @OPRED> OR @OPRED ;
+- LIST @PPRED = @PPRED ;
+- LIST @APP = @APP ;
+- LIST @APP-N< = @APP-N< ;
+- LIST @APP-Pron< = @APP-Pron< ;
+- LIST @APP>Pron = @APP>Pron ;
+- LIST @APP-Num< = @APP-Num< ;
+- LIST @APP-ADVL< = @APP-ADVL< ;
+- LIST @VOC = @VOC ;
+- LIST @CVP = @CVP ;
+- LIST @CNP = @CNP ;
+- SET OBJ = (@<OBJ) OR (@OBJ>) OR (@OBJ) OR (@-F<OBJ) OR (@-FOBJ>) ;
+- LIST <OBJ = @-F<OBJ @<OBJ ;
+- LIST OBJ> = @OBJ> @-FOBJ> ;
+- SET <OBJ-OTHERS = <OBJ ;
+- SET OBJ>-OTHERS = OBJ> ;
+- SET SYN-V = V + SUBJ OR OBJ + V OR @ADVL + V OR (V @N<) OR (V @A<) OR V + SPRED OR (V @COMP-CS<) ;
+- LIST @X = @X ;
+
+### Initials
+
+**INITIAL** = small letters, *CAP-INITIAL** = capital letters
+
+## Sets
+
+- LIST hj-V = "være" "ville" "skulle" "måtte" "kunne" "ha" "få" "burde" "bli" ;
+- LIST hj-V-iv = ("bli" Inf) ("bli" PrfPrc) ("ha" Inf) ("ha" PrfPrc) ("være" Inf) ("være" PrfPrc) ("få" Inf) ("få" PrfPrc) ("skulle" Inf) ("skulle" PrfPrc) ("kunne" Inf) ("kunne" PrfPrc) ("ville" Inf) ("ville" PrfPrc) ("måtte" Inf) ("måtte" PrfPrc) ("burde" Inf) ("burde" PrfPrc) ;
+
+## Sets of tags
+
+### Word or not
+
+- LIST WORD = N A Adv V Pron CS CC Po Pr Interj Pcle Num ABBR ACR ? ;
+
+- SET REALWORD = WORD - Num - Ord ;
+- SET REALWORD-NOTABBR = WORD - Num - Ord - ABBR ;
+- SET WORD-NOTDE = WORD - ("de") ;
+
+### Verb sets
+
+- SET NOT-VERB = WORD - V ;
+
+- SET V-IND-FIN = Prs OR Prt ;
+- SET V-MOOD = Ind OR Imp ;
+- SET VFIN = V-MOOD ;
+
+- LIST QUASIAUX = "akte" "anbefale" "begynne" "behøve" "bli" "forsøke" "fortsette" "forvente" "gidde" "glemme" "huske" "klare" "like" "lære" "nekte" "orke" "prøve" "risikere" "slippe" "slutte" "synes" "søke" "tenke" "trenge" "tørre" "unngå" "velge" "vurdere" "være" "ønske" ;
+
+- SET VFIN-NOT-IMP = Ind ;
+- SET VFIN-NOT-AUX = Ind - AUX ;
+- SET NOT-PRFPRC = WORD - PrfPrc ;
+
+- LIST VERBFORM = Inf PrfPrc PrsPrc Prs Prt Imp ;
+- LIST INDFORM = Prs Prt Imp ;,  FINFORM kanskje betre namn...
+
+### Pronoun sets
+
+- LIST DEM-SG = (Pron Dem Sg Nom);
+- LIST DEM-PL = (Pron Dem Pl Nom);
+- SET NOT-DEM = WORD - Dem ;
+- LIST SGPRON = (Pron Sg1) (Pron Sg2) (Pron Sg3) (Pron Sg) ;
+- LIST PLPRON = (Pron Pl1) (Pron Pl2) (Pron Pl3) (Pron Pl) ;
+- LIST QUANT-PRON = "mange" ;, This set is for choosing between Adv and Pron Indef.
+
+### Adjectival sets and their complements
+
+- SET NOT-A = WORD - A ;
+- SET NOT-A-COMMA = WORD - A - COMMA ;
+- SET NOT-A-PCLE = WORD - A - Pcle ;
+- SET NOT-A-ADV = WORD - A - Adv ;
+
+### Adverbial sets and their complements
+- SET LEX-ADV = Adv - (A*) ;
+- SET NOT-ADV-DE = WORD - Adv ;
+- SET NOT-ADV = NOT-ADV-DE OR CLB ;
+- SET NOT-ADV-N = NOT-ADV - N;
+- SET NOT-ADV-PCLE = NOT-ADV - Pcle ;
+- SET NOT-ADV-INDEF = NOT-ADV - Indef ;
+- SET NOT-ADV-PCLE-ILL = WORD - Adv - Pcle ;
+- SET NOT-ADV-PCLE-Refl = WORD - Adv - Pcle - Refl ;
+- SET NOT-ADV-PCLE-INDEF = WORD - Adv - Pcle - Indef ;
+- SET NOT-ADVL-PCLE-NEG = WORD - @ADVL - @P< - Pcle ;
+
+### Introduce finite clauses.
+
+- LIST TIME-ADVL = "da" "før" ;
+- LIST TIME-ADV = (Adv Sem/Time) ;
+
+### Coordinators
+
+- SET CRD = @CNP OR COMMA OR ("/") OR ("-") ; AFTER LCRD vs. GCRD disambiguation
+- LIST GRADE-ADV = "helt" "svært" "litt" ;
+
+## Sets of elements with common syntactic behaviour
+
+### Sets for verbs
+
+- LIST NOT-REAL-V = PrsPrc ;
+- SET REAL-V = V - NOT-REAL-V ;
 - V is all readings with a V tag in them, REAL-V should
 be the ones without an N tag following the V.  
 The REAL-V set thus awaits a fix to the preprocess V ... N bug.
+- SET MAIN-V = V - FAUXV ;
 
-* The set COPULAS is for predicative constructions
+All active verbs with a TV tag, including V:
+- LIST V-TRANS = (V TV) ;
 
-* NP sets defined according to their morphosyntactic features
+### NP sets defined according to their morphosyntactic features
+
+- LIST N-SG-NOM = (N Sg Nom);
+- SET HEAD-N = N - RCmpnd ;
+- SET HEAD-N-NOM = (N Nom) - RCmpnd ;
+- SET SUBJECTHEAD = N OR A OR Pron - Refl ; These, can be subject heads
+- SET NP = N OR A ; anything that can take except numerals
+- SET NP-HEAD = Pron OR HEAD-N ;
+- SET NP-HEAD-SG = SGPRON OR (N Sg) OR (A Sg) - RCmpnd - Dem ;
+- SET NP-HEAD-PL = PLPRON OR (N Pl) OR (A Pl) - RCmpnd - Dem ;
+- SET NP-HEAD-SG-NOM = SGPRON + Nom OR (N Sg Nom) OR (A Sg Nom) - RCmpnd ;
+- SET NP-HEAD-PL-NOM = PLPRON + Nom OR (N Pl Nom) OR (A Pl Nom) - RCmpnd ;
+- SET NP-HEAD-NOM = NP-HEAD-SG-NOM OR NP-HEAD-PL-NOM ;
+- SET NP-HEAD-ACC = (Pron Acc) OR (N Acc) OR (A Acc) - RCmpnd ;
 
 * The PRE-NP-HEAD family of sets
 
@@ -23,52 +281,157 @@ These sets model noun phrases (NPs). The idea is to first define whatever can
 occur in front of the head of the NP, and thereafter negate that with the
 expression **WORD - premodifiers**.
 
+- SET PRE-NP-HEAD = (Prop Attr) OR (Prop @>N) OR A OR ABBR OR Num OR RCmpnd OR CC OR (Pron Dem) OR (Pron Ref) OR Indef OR (PrfPrc @>N) OR PrsPrc OR (A Ord) OR (Num @>N) OR (A @>N) OR @>N OR @>A OR @>Pron OR @Num< OR (CC @CNP) OR (@>CC) OR (@Pron<) ;
+The strict version of items that can only be premodifiers, not parts of the predicate
+- SET PRE-NP-V = PrfPrc OR PrsPrc OR (V A) OR (Ind Prs) ;
+to be used together with PRE-NP-HEAD before @>N is disambiguated
+- SET NP-MEMBER = PRE-NP-HEAD OR N ;
+- SET PRE-A-N = (Pron Pers Acc) OR (Pron Indef) OR Num OR (A Ord) OR (Pron Dem) OR (Pron Refl) ; Acc pga av manglende disambiguering tidlig i fila
+- SET NOT-PRE-A-N = WORD - PRE-A-N ;
+- LIST PUNCT-LEFT = (PUNCT LEFT) ;
+- LIST PUNCT-RIGHT = (PUNCT RIGHT) ;
+- SET PRE-APP = COMMA OR PUNCT-LEFT OR PRE-NP-HEAD ;
+This set ist not only for what can
+stand in front of appositions but also
+postmodifiers.
+
 The set **NOT-NPMOD** is used to find barriers between NPs.
 Typical usage: ... (*1 N BARRIER NOT-NPMOD) ...
 meaning: Scan to the first noun, ignoring anything that can be
 part of the noun phrase of that noun (i.e., "scan to the next NP head")
 
-* Miscellaneous sets
+- SET NOT-NPMOD = WORD - PRE-NP-HEAD OR ABBR ;                  
 
-* Border sets and their complements
+- SET NOT-NPMOD-ACC = NOT-NPMOD - Acc OR ABBR ;
+- SET NOT-NPMOD-ACC-ADV = NOT-NPMOD - Acc - Adv OR ABBR ;
 
-* Syntactic sets
+- SET NOT-NPMODADV = WORD - PRE-NP-HEAD - Adv ;                   
+NOT-NPMODADV = "NOT-PRE-NP-HEAD-OR-ADV"
+- SET NOT-NPMODADV-INDEF = WORD - PRE-NP-HEAD - Adv - Indef ;             
+NOT-NPMODADVI = "     ...-OR-INDEF"
+- SET NOT-NPMODCC = WORD - PRE-NP-HEAD - COMMA - @CNP ;
+- SET NAPP = WORD - PRE-APP ;
+
+### Miscellaneous sets
+
+- SET NOT-NUM = WORD - Num ;
+- SET CARDINALS = Num - Ord ;
+- SET NOT-CC = WORD - CC ;
+- SET NOT-PCLE = WORD - Pcle ;
+- LIST CONTRA = "men" ; In lean muitalan, muhto dál muitalan.
+- LIST PROSEANTA = "prosent" "%" ;
+- SET REAL-CLB = CLB - COMMA ;
+- SET NOT-INITIAL-CC = WORD - INITIAL - CC ;
+
+### Border sets and their complements
+
+- SET CP = (Pron Interr) OR (Pron Rel) ;
+- LIST BOUNDARYSYMBOLS = ";" ":" "-" "–" ;
+- SET S-BOUNDARY = CP OR BOUNDARYSYMBOLS OR @CVP ;
+
+- SET BOC = S-BOUNDARY OR BOS ;
+- SET BOC-PUNCT = BOC - ("-") - ("–") ;
+- SET EOC = S-BOUNDARY OR EOS ;
+- SET NP-BOUNDARY = BOS OR EOS OR REAL-CLB OR VFIN OR Inf OR Recipr OR Pr OR Pcle OR Interj OR CS OR CP OR @CVP ;
+- SET APP-BOUNDARY = REAL-CLB OR VFIN OR Inf OR Recipr OR Pr OR Pcle OR Interj OR CS OR CP OR PrfPrc - @>N ;
+A special barrier used with mapping of appositions. 
+
+- SET SV-BOUNDARY = S-BOUNDARY OR Inf - FAUXV OR FMAINV ;
+- SET SVF-BOUNDARY = S-BOUNDARY OR VFIN ;
+This set is ment to use in rules for disambiguating due to verbs or verbsets. 
+Here we search for either an S-BOUNDARY or a finite verb, either aux or main.
+
+- SET CCCOMMA = CC OR COMMA ;
+
+### Syntactic sets
+
+- SET NON-APP = ALLSYNTAG - (@APP);
 
 These were the set types.
 
 ### Grammarchecker sets
 
+- The tag syntax: **ruletype - object - is_now - should_be
+- Thus: *&msyn-agr-adjmsc-adjneu* is a morphosyntactic agreement rule where a Msc adjective should be Neu
+
+- LIST @CODE@msyn-agr-adjmsc-adjneu = @CODE@msyn-agr-adjmsc-adjneu ; = 
+- LIST @CODE@msyn-agr-adjneu-adjmsc = @CODE@msyn-agr-adjneu-adjmsc ; = 
+- LIST @CODE@msyn-agr-detneu-detfem = @CODE@msyn-agr-detneu-detfem ; = 
+- LIST @CODE@msyn-agr-detneu-detmsc = @CODE@msyn-agr-detneu-detmsc ; = 
+- LIST @CODE@msyn-det-msc-neu = @CODE@msyn-det-msc-neu ; = 
+- LIST @CODE@msyn-pred-adjmsc-adjneu = @CODE@msyn-pred-adjmsc-adjneu ; = 
+- LIST @CODE@msyn-pred-adjneu-adjmsc = @CODE@msyn-pred-adjneu-adjmsc ; = 
+- LIST @CODE@msyn-pron-nom-acc = @CODE@msyn-pron-nom-acc ; = 
+- LIST @CODE@msyn-qucompl-def-indef = @CODE@msyn-qucompl-def-indef ; = 
+- LIST @CODE@msyn-v-inf-pres = @CODE@msyn-v-inf-pres ; = 
+- LIST @CODE@msyn-v-pres-inf = @CODE@msyn-v-pres-inf ; = 
+- LIST @CODE@real-aa-og = @CODE@real-aa-og ; = 
+- LIST @CODE@real-bli-vaere = @CODE@real-bli-vaere ; = 
+- LIST @CODE@real-og-aa = @CODE@real-og-aa ; = 
+- LIST @CODE@real-vaere-bli = @CODE@real-vaere-bli ; = 
+
+## For ADDRELATION rules (perhaps not in use)
+- TEMPLATE nextWordCrossSent = (-1 (*)); =  Adding mark to word that find the reference word to the left
+- TEMPLATE previousWordCrossSent = (1 (*)); =  and vice versa
+
 # Rule section
 
 ## Speller rules
 
-## NP internal agreement
+Speller suggestions rule – add &SUGGESTWF to any spelling suggestion
+that we actually want to suggest to the user.
 
-msyn-agr-adjmsc-adjneu
+The simplest is to just add it to all spelled words:
 
-msyn-agr-adjneu-adjmsc
+But perhaps you want to only suggest spellings of words that are not inside "quotes":
 
-msyn-agr-detneu-detfem
+## NP internal agreement rules
 
-msyn-agr-detneu-detmsc
+Ensure preceding adjective agrees with noun
 
-msyn-det-msc-neu
+Agreement: masculine adjectives shoul be neuter (msyn-agr-adjmsc-adjneu)
+
+Agreement: Neuter adjectives shoul be masculine (msyn-agr-adjneu-adjmsc)
+
+Agreement: Neuter adjectives should be feminine (msyn-agr-detneu-detfem)
+
+Agreement: Neuter adjectives should be masculine (msyn-agr-detneu-detmsc)
+
+Determiner: Masculine should be neuter (msyn-det-msc-neu)
 
 ## Quantifier phrases
 
 ## Predicative gender agreement
 
-msyn-pred-adjmsc-adjneu
+Predicative: msculine adjective should be neuter (msyn-pred-adjmsc-adjneu)
 
 msyn-pred-adjneu-adjmsc
 
 ## Case errors
 
-## Finite verb
+Nominative pronouns should be accusative (msyn-pron-nom-acc)
+The context is P-complement: Vi snakker om du.
+
+## Finite verb errors
+
+Verb error: Infinitive and no finite form in the sentence (msyn-v-inf-pres)
 
 ## Infinitive
 
-## og/å
+Verb error: Present tense should be infinitive (msyn-v-pres-inf)
+
+## og/å errors
+
+og should be å real-og-aa
+
+å should be og (real-aa-og)
+
+## Punctuation rules
+Simple punctuation rules showing how to change the lemma in the suggestions:
+
+Quotes (use-guillemets)
+
+Ellipsis … for ... (use-ellipsis)
 
 * * *
 <small>This (part of) documentation was generated from [tools/grammarcheckers/grammarchecker.cg3](https://github.com/giellalt/lang-nob/blob/main/tools/grammarcheckers/grammarchecker.cg3)</small>

@@ -13,6 +13,7 @@ We declare both the a-å letters and all other possible letters.
 * **Á É Ó Ú Í À È Ò Ù Ì Ä Ë Ö Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð**
 * **'** This is the apostrophe
 * **l7:l** This **l** not deleted by **t**
+* **e7:l** This **e** not deleted by vowel-initial suffixes (ide - ideen)
 
 ### Boundary symbols
 
@@ -53,8 +54,8 @@ These symbols cause the twolc rules to work.
 
 ### Sets
 
-* **Vow = a e i o u y æ ø å ;**
-* **Cns = b c d f g h j k l m n p q r s t v w x z ;**
+* **Vow = a e i o u y æ ø å e7 ;**
+* **Cns = b c d f g h j k l m n p q r s t v w x z l7 ;**
 * **LNR = l n r ;**
 * **Dummy = X1 X2 X3 X4 X5 X6 Q1 Q2 Q3 Z1 Z2 %^NYNAG ;**
 

@@ -72,8 +72,6 @@ n1pl odds, oddsene
 
 ## The lexica themselves
 
-LEXICON NevercompNoun just to ensure "for" is not compound material even in descriptive analysers.
-
 LEXICON FinalNoun is a separate lexicon to point to. For now it contains only *-skap*.
 
 LEXICON NounRoot is the lexicon pointed to from `root.lexc` It points to
