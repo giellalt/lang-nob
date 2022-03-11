@@ -87,6 +87,7 @@ Multichar_Symbols !!≈ **@CODE@**
 
 !! ### Special symbols
 
+ e7                !!≈ * **@CODE@** =  always e (ide - ideen)
  l7                !!≈ * **@CODE@** =  always l
 +Use/Circ          !!≈ * **@CODE@** = circular string
 
@@ -315,7 +316,7 @@ Multichar_Symbols !!≈ **@CODE@**
 LEXICON Root
 !! ### LEXICON @LEXNAME@
    FinalNoun       ; !!≈ * @CODE@ for -skap etc. that is affix rather than compound
-   NevercompNoun   ; !!≈ * @CODE@ for
+!   NevercompNoun   ; !!≈ * @CODE@ for
    ShortNounRoot   ; !!≈ * @CODE@ 2- and 3-letter words
    NounRoot        ; !!≈ * @CODE@ The rest
    ProperNoun      ; !!≈ * @CODE@
