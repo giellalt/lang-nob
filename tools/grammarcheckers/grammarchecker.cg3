@@ -14,7 +14,7 @@
 # giellatekno@uit.no or feedback@divvun.no
 
 # ==================================================================== #
-#!!   B O K M Å L   N O R W E G I A N   G R A M M A R   C H E C K E R
+#!!  #  Bokmål Norwegian Grammar Checker
 # ==================================================================== #
 # ====================================================================
 
@@ -51,31 +51,27 @@
 #  echo "Hei." | hfst-tokenise -g ../tokenisers/tokeniser-gramcheck-gt-desc.pmhfst | vislcg3 -g disambiguator.cg3 -t | vislcg3 -g grammarchecker.cg3 -t
 
 
+#!! This file contains two parts: **Definitions** and **rules**
 
-      # =========================================== #
-      #      Short table of contents                #
-      # =========================================== #
-
-      # Delimiters
-      # Tags and sets
-      # Grammar checking rules
-
+#!! # Definition section
 
 # ========== #
-# Delimiters #
+#!! ## Delimiters #
 # ========== #
 
-DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>";
+DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>"; #!!≈  @CODE@
 
 #PARENTHESES = "<$(>" "<$)>" "<$[>" "<$]>" "<${>" "<$}>" "<$«>" "<$»>" ;
 
 # ============= #
-# Tags and sets #
+#!! ## Grammatical tags
 # ============= #
+
+#!! Here we declare all grammatical tags
 
 SETS
 
-# I define end of clause and beginning of clause in a way so that the file
+# We define end of clause and beginning of clause in a way so that the file
 # may be read both by the CG-2 and the vislcg formalisms.
 
 LIST BOS = (>>>) (<s>);
@@ -83,249 +79,184 @@ LIST EOS = (<<<) (</s>);
 
 # CG3 doesn´t function without >>> and <<< !
 
-# Tags declared as single-membered LISTs 
-# ======================================
 
-# Parts of speech
-# ---------------
+#!! ### Parts of speech tags
 
-LIST N = N ;
-LIST A = A ;
-LIST Adv = Adv ;
-LIST V = V ;
-LIST Pron = Pron ;
-LIST Attr = Attr ;
-LIST Det = Det ;
-LIST AUX = "ha" ; # XXX
-SET NOT-AUX-V = V - AUX ;
-LIST Pos = Pos ;
-LIST Comp = Comp ;
-LIST Superl = Superl ;
-LIST Sg = Sg ;
-LIST Pl = Pl ;
-LIST Def = Def ;
+LIST N = N ;		   #!!≈ - @CODE@
+LIST A = A ;		   #!!≈ - @CODE@
+LIST Adv = Adv ;	   #!!≈ - @CODE@
+LIST V = V ;		   #!!≈ - @CODE@
+LIST Pron = Pron ;	   #!!≈ - @CODE@
+LIST CS = CS ;		   #!!≈ - @CODE@
+LIST CC = CC ;		   #!!≈ - @CODE@
+LIST Det = Det ;	   #!!≈ - @CODE@
+LIST Pr = Pr ;		   #!!≈ - @CODE@
+LIST Pcle = Pcle ;	   #!!≈ - @CODE@
+LIST Num = Num ;	   #!!≈ - @CODE@
+LIST Interj = Interj ; #!!≈ - @CODE@
+LIST IM = IM ;		   #!!≈ - @CODE@
 
-LIST CS = CS ;
-LIST CC = CC ;
-SET CC-CS = CC OR CS ;
-LIST Pr = Pr ;
-LIST Pcle = Pcle ;
-LIST Num = Num ;
-LIST Interj = Interj ;
-LIST ABBR = ABBR ;
-LIST ACR = ACR ;
-LIST IM = IM ;
 
-LIST Msc = Msc ;
-LIST Fem = Fem ;
-LIST Neu = Neu ;
-LIST MF = MF ;
+#!! ### Sets for POS sub-categories
 
-LIST CLB = CLB ;
-LIST LEFT = LEFT ;
-LIST RIGHT = RIGHT ;
-LIST WEB = WEB ;
-LIST QMARK = """ ; # ADD " FOR SYNTAX COLOURING.
-LIST PPUNCT = PUNCT ;
-SET PUNCT = PPUNCT - QMARK ;
+LIST Attr = Attr ;		     #!!≈ - @CODE@
+LIST AUX = "ha" ; # XXX	     #!!≈ - @CODE@
+SET NOT-AUX-V = V - AUX ;    #!!≈ - @CODE@
+LIST Pos = Pos ;		     #!!≈ - @CODE@
+LIST Comp = Comp ;		     #!!≈ - @CODE@
+LIST Superl = Superl ;	     #!!≈ - @CODE@
+LIST Sg = Sg ;			     #!!≈ - @CODE@
+LIST Pl = Pl ;			     #!!≈ - @CODE@
+LIST Def = Def ;		     #!!≈ - @CODE@
+SET CC-CS = CC OR CS ;	     #!!≈ - @CODE@
+LIST ABBR = ABBR ;		     #!!≈ - @CODE@
+LIST ACR = ACR ;		     #!!≈ - @CODE@
+LIST Msc = Msc ;		     #!!≈ - @CODE@
+LIST Fem = Fem ;		     #!!≈ - @CODE@
+LIST Neu = Neu ;		     #!!≈ - @CODE@
+LIST MF = MF ;			     #!!≈ - @CODE@
+LIST Pers = Pers ;		     #!!≈ - @CODE@
+LIST Dem = Dem ;		     #!!≈ - @CODE@
+LIST Interr = Interr ;	     #!!≈ - @CODE@
+LIST Indef = Indef ;	     #!!≈ - @CODE@
+LIST Pass = Pass ;		     #!!≈ - @CODE@
+LIST Recipr = Recipr ;	     #!!≈ - @CODE@
+LIST Refl = Refl ;		     #!!≈ - @CODE@
+LIST Rel = Rel ;		     #!!≈ - @CODE@
+LIST Prop = Prop ;		     #!!≈ - @CODE@
+LIST Err/Orth = Err/Orth ;   #!!≈ - @CODE@
 
-LIST COMMA = "," ;
-LIST ¶ = ¶;
+#!! ### Boundary tags
+LIST CLB = CLB ;			  #!!≈ - @CODE@
+LIST LEFT = LEFT ;			  #!!≈ - @CODE@
+LIST RIGHT = RIGHT ;		  #!!≈ - @CODE@
+LIST WEB = WEB ;			  #!!≈ - @CODE@
+LIST PPUNCT = PUNCT ;		  #!!≈ - @CODE@
+LIST COMMA = "," ;			  #!!≈ - @CODE@
+LIST ¶ = ¶ ;					  #!!≈ - @CODE@
+LIST QMARK = """ ; 			  #!!≈ - @CODE@
+SET PUNCT = PPUNCT - QMARK ;  #!!≈ - @CODE@
+# ADD " FOR SYNTAX COLOURING.
 
-#LIST V* = V* ;
-
-#!! * Sets for POS sub-categories
-# ------------------
-
-LIST Pers = Pers ;
-LIST Dem = Dem ;
-LIST Interr = Interr ;
-LIST Indef = Indef ;
-LIST Pass = Pass ;
-
-LIST Recipr = Recipr ;
-LIST Refl = Refl ;
-LIST Rel = Rel ;
- 
-#LIST Adp = Adp ;
-
-LIST Prop = Prop ;
-
-LIST Err/Orth = Err/Orth ;
-
-#!! * Sets for Semantic tags
+#!! ### Sets for Semantic tags
 # -------------
 
-LIST Sem/Ani = Sem/Ani ;
-LIST Sem/Date = Sem/Date ;
-LIST Sem/Fem = Sem/Fem ;
-LIST Sem/Group = Sem/Group ;
-LIST Sem/Hum = Sem/Hum ;
-LIST Sem/ID = Sem/ID ;
-LIST Sem/Mal = Sem/Mal ;
-LIST Sem/Measr = Sem/Measr ;
-LIST Sem/Money = Sem/Money ;
-LIST Sem/Obj = Sem/Obj ;
-LIST Sem/Org = Sem/Org ;
-LIST Sem/Plc = Sem/Plc ;
-LIST Sem/Sur = Sem/Sur ;
-LIST Sem/Time = Sem/Time ;
-LIST Sem/Year = Sem/Year ;
+LIST Sem/Ani = Sem/Ani ;	   #!!≈ - @CODE@
+LIST Sem/Date = Sem/Date ;	   #!!≈ - @CODE@
+LIST Sem/Fem = Sem/Fem ;	   #!!≈ - @CODE@
+LIST Sem/Group = Sem/Group ;   #!!≈ - @CODE@
+LIST Sem/Hum = Sem/Hum ;	   #!!≈ - @CODE@
+LIST Sem/ID = Sem/ID ;		   #!!≈ - @CODE@
+LIST Sem/Mal = Sem/Mal ;	   #!!≈ - @CODE@
+LIST Sem/Measr = Sem/Measr ;   #!!≈ - @CODE@
+LIST Sem/Money = Sem/Money ;   #!!≈ - @CODE@
+LIST Sem/Obj = Sem/Obj ;	   #!!≈ - @CODE@
+LIST Sem/Org = Sem/Org ;	   #!!≈ - @CODE@
+LIST Sem/Plc = Sem/Plc ;	   #!!≈ - @CODE@
+LIST Sem/Sur = Sem/Sur ;	   #!!≈ - @CODE@
+LIST Sem/Time = Sem/Time ;	   #!!≈ - @CODE@
+LIST Sem/Year = Sem/Year ;	   #!!≈ - @CODE@
 #SET FIRSTNAME = (Prop Sem/Fem) OR (Prop Sem/Mal) ;
 
 
 
 
-#!! * Sets for Morphosyntactic properties
+#!! ### Sets for Morphosyntactic properties
 # --------------------------
 
-LIST Nom = Nom ;
-LIST Acc = Acc ;
-#LIST Dat = Dat ;
-
-#LIST Sg = Sg ;
-#LIST Pl = Pl ;
-
-LIST RCmpnd = RCmpnd ;
-
-#LIST Cmpnd = Cmpnd ;
- 
-#LIST SgNomCmp = SgNomCmp ;
- 
-
-#LIST Comp = Comp ;
-#LIST Superl = Superl ;
-
-#LIST Attr = Attr ;
-LIST Ord = Ord ;
- 
-#LIST Qst = Qst ;
- 
-LIST IV = IV ;
-LIST TV = TV ;
-
-
-LIST Prt = Prt;
-LIST Prs = Prs ;
+LIST Nom = Nom ;	     #!!≈ - @CODE@
+LIST Acc = Acc ;	     #!!≈ - @CODE@
+LIST RCmpnd = RCmpnd ;   #!!≈ - @CODE@
+LIST Ord = Ord ;	     #!!≈ - @CODE@
+LIST IV = IV ;		     #!!≈ - @CODE@
+LIST TV = TV ;		     #!!≈ - @CODE@
+LIST Prt = Prt;		     #!!≈ - @CODE@
+LIST Prs = Prs ;	     #!!≈ - @CODE@
+LIST Ind = Ind ;	     #!!≈ - @CODE@
+LIST Imp = Imp Imprt ;   #!!≈ - @CODE@
+LIST Sg3 = Sg3 ;	     #!!≈ - @CODE@
+LIST Pl3 = Pl3 ;	     #!!≈ - @CODE@
+LIST Inf = Inf ;	     #!!≈ - @CODE@
+LIST PrfPrc = PrfPrc ;   #!!≈ - @CODE@
+LIST PrsPrc = PrsPrc ;   #!!≈ - @CODE@
  
 
-LIST Ind = Ind ;
 
-LIST Imp = Imp Imprt ;
-
-#LIST Sg1 = Sg1 ;
-#LIST Sg2 = Sg2 ;
-LIST Sg3 = Sg3 ;
-
-#LIST Pl1 = Pl1 ;
-#LIST Pl2 = Pl2 ;
-LIST Pl3 = Pl3 ;
-
-LIST Inf = Inf ;
-
-LIST PrfPrc = PrfPrc ;
-
-LIST PrsPrc = PrsPrc ;
- 
-
-# Derivation
-# ----------
-# Syntactic tags
+#!! ## Syntactic tags
 # --------------
 
-LIST @+FAUXV = @+FAUXV ;
-LIST @+FMAINV = @+FMAINV ;
-LIST @-FAUXV = @-FAUXV ;
- 
-LIST @-FMAINV = @-FMAINV ;
-LIST @-FSUBJ> = @-FSUBJ> ;
-LIST @-F<OBJ = @-F<OBJ ;
-LIST @-FOBJ> = @-FOBJ> ;
-LIST @SPRED<OBJ = @SPRED<OBJ ;
-LIST @-FADVL = @-FADVL ;
-
-SET FOBJ = @-F<OBJ OR @-FOBJ> ; 
+LIST @+FAUXV = @+FAUXV ;		  #!!≈ - @CODE@
+LIST @+FMAINV = @+FMAINV ;		  #!!≈ - @CODE@
+LIST @-FAUXV = @-FAUXV ; 		  #!!≈ - @CODE@
+LIST @-FMAINV = @-FMAINV ;		  #!!≈ - @CODE@
+LIST @-FSUBJ> = @-FSUBJ> ;		  #!!≈ - @CODE@
+LIST @-F<OBJ = @-F<OBJ ;		  #!!≈ - @CODE@
+LIST @-FOBJ> = @-FOBJ> ;		  #!!≈ - @CODE@
+LIST @SPRED<OBJ = @SPRED<OBJ ;	  #!!≈ - @CODE@
+LIST @-FADVL = @-FADVL ;		  #!!≈ - @CODE@
+SET FOBJ = @-F<OBJ OR @-FOBJ> ;   #!!≈ - @CODE@
 SET FMAINV = @-FMAINV OR @+FMAINV OR (V @<OBJ) OR (V @N<) OR (V @<SUBJ) OR (V @<ADVL) ;
-SET FAUXV = @-FAUXV OR @+FAUXV ;
+SET FAUXV = @-FAUXV OR @+FAUXV ;  #!!≈ - @CODE@
 
-LIST ADVL = Adv Pr ;
-LIST @ADVL = @ADVL @ADVL> @ADVL< @<ADVL @>ADVL @-F<ADVL ;
-LIST @>ADVL = @>ADVL ;
-LIST @ADVL< = @ADVL< ;
-LIST @<ADVL = @<ADVL ;
-LIST @ADVL> = @ADVL> ;
-LIST @ADVL>CS = @ADVL>CS ;
-
-LIST @>N = @>N ;
-
-LIST @N< = @N< ;
- 
-
-LIST @>A = @>A ;
-
-LIST @P< = @P< ;
-
-LIST @>P = @>P ;
-
-LIST @HNOUN = @HNOUN ;
-LIST @INTERJ = @INTERJ ;
- 
-LIST @>Num = @>Num;
-
-LIST @Pron< = @Pron< ;
-LIST @>Pron = @>Pron ;
-
-LIST @Num< = @Num< ;
-
-LIST @OBJ = @OBJ ;
-LIST @<OBJ = @<OBJ ;
-LIST @OBJ> = @OBJ> ;
-LIST @OPRED = @OPRED ;
-LIST @<OPRED = @<OPRED ;
-LIST @OPRED> = @OPRED> ;
-LIST @PCLE = @PCLE ;
-LIST @COMP-CS< = @COMP-CS< ;
- 
-LIST @SPRED = @SPRED ;
-LIST @<SPRED = @<SPRED ;
-LIST @SPRED> = @SPRED> ;
-LIST @SUBJ = @SUBJ ;
-LIST @<SUBJ = @<SUBJ ;
-LIST @SUBJ> = @SUBJ> ;
-SET SUBJ = @<SUBJ OR @SUBJ> OR @SUBJ ;
-SET SPRED = @<SPRED OR @SPRED> OR @SPRED ;
-SET OPRED = @<OPRED OR @OPRED> OR @OPRED ;
-
-LIST @PPRED = @PPRED ;
- 
-LIST @APP = @APP ;
-LIST @APP-N< = @APP-N< ;
-LIST @APP-Pron< = @APP-Pron< ;
-LIST @APP>Pron = @APP>Pron ;
-LIST @APP-Num< = @APP-Num< ;
-LIST @APP-ADVL< = @APP-ADVL< ;
-LIST @VOC = @VOC ;
-
-LIST @CVP = @CVP ;
-LIST @CNP = @CNP ;
-
-SET OBJ = (@<OBJ) OR (@OBJ>) OR (@OBJ) OR (@-F<OBJ) OR (@-FOBJ>) ;
-LIST <OBJ = @-F<OBJ @<OBJ ;
-LIST OBJ> = @OBJ> @-FOBJ> ;
-
-SET <OBJ-OTHERS = <OBJ ;
-SET OBJ>-OTHERS = OBJ> ;
-
-SET SYN-V = V + SUBJ OR OBJ + V OR @ADVL + V OR (V @N<) OR (V @A<) OR V + SPRED OR (V @COMP-CS<) ;
-
-
-LIST @X = @X ;
+LIST ADVL = Adv Pr ;  #!!≈ - @CODE@
+LIST @ADVL = @ADVL @ADVL> @ADVL< @<ADVL @>ADVL @-F<ADVL ;  #!!≈ - @CODE@
+LIST @>ADVL = @>ADVL ; #!!≈ - @CODE@
+LIST @ADVL< = @ADVL< ; #!!≈ - @CODE@
+LIST @<ADVL = @<ADVL ; #!!≈ - @CODE@
+LIST @ADVL> = @ADVL> ; #!!≈ - @CODE@
+LIST @ADVL>CS = @ADVL>CS ; #!!≈ - @CODE@
+LIST @>N = @>N ; #!!≈ - @CODE@
+LIST @N< = @N< ; #!!≈ - @CODE@
+LIST @>A = @>A ; #!!≈ - @CODE@
+LIST @P< = @P< ; #!!≈ - @CODE@
+LIST @>P = @>P ; #!!≈ - @CODE@
+LIST @HNOUN = @HNOUN ; #!!≈ - @CODE@
+LIST @INTERJ = @INTERJ ; #!!≈ - @CODE@
+LIST @>Num = @>Num; #!!≈ - @CODE@		     #!!≈ - @CODE@
+LIST @Pron< = @Pron< ;					     #!!≈ - @CODE@
+LIST @>Pron = @>Pron ;					     #!!≈ - @CODE@
+LIST @Num< = @Num< ;					     #!!≈ - @CODE@
+LIST @OBJ = @OBJ ;						     #!!≈ - @CODE@
+LIST @<OBJ = @<OBJ ;					     #!!≈ - @CODE@
+LIST @OBJ> = @OBJ> ;					     #!!≈ - @CODE@
+LIST @OPRED = @OPRED ;					     #!!≈ - @CODE@
+LIST @<OPRED = @<OPRED ;				     #!!≈ - @CODE@
+LIST @OPRED> = @OPRED> ;				     #!!≈ - @CODE@
+LIST @PCLE = @PCLE ;					     #!!≈ - @CODE@
+LIST @COMP-CS< = @COMP-CS< ;			     #!!≈ - @CODE@
+LIST @SPRED = @SPRED ;					     #!!≈ - @CODE@
+LIST @<SPRED = @<SPRED ;				     #!!≈ - @CODE@
+LIST @SPRED> = @SPRED> ;				     #!!≈ - @CODE@
+LIST @SUBJ = @SUBJ ;					     #!!≈ - @CODE@
+LIST @<SUBJ = @<SUBJ ;					     #!!≈ - @CODE@
+LIST @SUBJ> = @SUBJ> ;					     #!!≈ - @CODE@
+SET SUBJ = @<SUBJ OR @SUBJ> OR @SUBJ ;	     #!!≈ - @CODE@
+SET SPRED = @<SPRED OR @SPRED> OR @SPRED ;   #!!≈ - @CODE@
+SET OPRED = @<OPRED OR @OPRED> OR @OPRED ;   #!!≈ - @CODE@
+LIST @PPRED = @PPRED ;					     #!!≈ - @CODE@
+LIST @APP = @APP ;						     #!!≈ - @CODE@
+LIST @APP-N< = @APP-N< ;				     #!!≈ - @CODE@
+LIST @APP-Pron< = @APP-Pron< ;			     #!!≈ - @CODE@
+LIST @APP>Pron = @APP>Pron ;			     #!!≈ - @CODE@
+LIST @APP-Num< = @APP-Num< ;			     #!!≈ - @CODE@
+LIST @APP-ADVL< = @APP-ADVL< ;			     #!!≈ - @CODE@
+LIST @VOC = @VOC ;						     #!!≈ - @CODE@
+LIST @CVP = @CVP ;						     #!!≈ - @CODE@
+LIST @CNP = @CNP ;						     #!!≈ - @CODE@
+SET OBJ = (@<OBJ) OR (@OBJ>) OR (@OBJ) OR (@-F<OBJ) OR (@-FOBJ>) ;  #!!≈ - @CODE@
+LIST <OBJ = @-F<OBJ @<OBJ ; #!!≈ - @CODE@
+LIST OBJ> = @OBJ> @-FOBJ> ; #!!≈ - @CODE@
+SET <OBJ-OTHERS = <OBJ ; #!!≈ - @CODE@
+SET OBJ>-OTHERS = OBJ> ; #!!≈ - @CODE@
+SET SYN-V = V + SUBJ OR OBJ + V OR @ADVL + V OR (V @N<) OR (V @A<) OR V + SPRED OR (V @COMP-CS<) ; #!!≈ - @CODE@
+LIST @X = @X ; #!!≈ - @CODE@
 
 
  
 
-# Initials
-# --------
+#!! ### Initials
+
+#!! **INITIAL** = small letters, *CAP-INITIAL** = capital letters
 
 LIST INITIAL = "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m"
         "n" "o" "p" "q" "r" "s" "t" "u" "v" "w" "x" "y" "z"
@@ -336,182 +267,143 @@ LIST CAP-INITIAL = "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M"
         "Á" "Æ" "Ø" "Å" "Ö" "Ä" ;
 
 
+#!! ## Sets
 
-LIST hj-V = "være" "ville" "skulle" "måtte" "kunne" "ha" "få" "burde" "bli" ;
-LIST hj-V-iv = ("bli" Inf) ("bli" PrfPrc) ("ha" Inf) ("ha" PrfPrc) ("være" Inf) ("være" PrfPrc) ("få" Inf) ("få" PrfPrc) ("skulle" Inf) ("skulle" PrfPrc) ("kunne" Inf) ("kunne" PrfPrc) ("ville" Inf) ("ville" PrfPrc) ("måtte" Inf) ("måtte" PrfPrc) ("burde" Inf) ("burde" PrfPrc) ;
+LIST hj-V = "være" "ville" "skulle" "måtte" "kunne" "ha" "få" "burde" "bli" ;  #!!≈ - @CODE@
+LIST hj-V-iv = ("bli" Inf) ("bli" PrfPrc) ("ha" Inf) ("ha" PrfPrc) ("være" Inf) ("være" PrfPrc) ("få" Inf) ("få" PrfPrc) ("skulle" Inf) ("skulle" PrfPrc) ("kunne" Inf) ("kunne" PrfPrc) ("ville" Inf) ("ville" PrfPrc) ("måtte" Inf) ("måtte" PrfPrc) ("burde" Inf) ("burde" PrfPrc) ; #!!≈ - @CODE@
 
 
 
-# Tag sets
+#!! ## Sets of tags
 # ========
   SETS
 # ========
 
 
-# Word or not
-# -----------
-LIST WORD = N A Adv V Pron CS CC Po Pr Interj Pcle Num ABBR ACR  \? ;
+#!! ### Word or not
+
+
+LIST WORD = N A Adv V Pron CS CC Po Pr Interj Pcle Num ABBR ACR  \? ;  #!!≈ - @CODE@
  # any word
 
-SET REALWORD = WORD - Num - Ord ;
+SET REALWORD = WORD - Num - Ord ; #!!≈ - @CODE@
+SET REALWORD-NOTABBR = WORD - Num - Ord - ABBR ; #!!≈ - @CODE@
+SET WORD-NOTDE = WORD - ("de") ;  #!!≈ - @CODE@
 
-SET REALWORD-NOTABBR = WORD - Num - Ord - ABBR ;
+#!! ### Verb sets
 
-SET WORD-NOTDE = WORD - ("de") ; 
-
-# Verb sets
-# ---------
 
 # Verbs and their complements
 # - - - - - - - - - - - - - -
 
-SET NOT-VERB = WORD - V ;
+SET NOT-VERB = WORD - V ; #!!≈ - @CODE@
 
 # Finiteness and mood
 # - - - - - - - - - -
 
-SET V-IND-FIN = Prs OR Prt ;
- # Problem: "In boahtán" is an invisible indicative
+SET V-IND-FIN = Prs OR Prt ; #!!≈ - @CODE@
+SET V-MOOD = Ind OR Imp ; #!!≈ - @CODE@
+SET VFIN =  V-MOOD ; #!!≈ - @CODE@
 
-SET V-MOOD = Ind OR Imp ;
-
-SET VFIN =  V-MOOD ;
-
-LIST QUASIAUX = "akte" "anbefale" "begynne" "behøve" "bli" "forsøke" fortsette" "forvente" "gidde" "glemme" huske" "klare" "like" "lære" "nekte" "orke" "prøve" "risikere" "slippe" "slutte" "synes" søke" "tenke" "trenge" "tørre" "unngå" "velge" "vurdere" "være" "ønske" ;
+LIST QUASIAUX = "akte" "anbefale" "begynne" "behøve" "bli" "forsøke" "fortsette" "forvente" "gidde" "glemme" "huske" "klare" "like" "lære" "nekte" "orke" "prøve" "risikere" "slippe" "slutte" "synes" "søke" "tenke" "trenge" "tørre" "unngå" "velge" "vurdere" "være" "ønske" ;  #!!≈ - @CODE@
 	
-SET VFIN-NOT-IMP = Ind ;
-SET VFIN-NOT-AUX = Ind - AUX ;
-
-SET NOT-PRFPRC = WORD - PrfPrc ;
+SET VFIN-NOT-IMP = Ind ; #!!≈ - @CODE@
+SET VFIN-NOT-AUX = Ind - AUX ; #!!≈ - @CODE@
+SET NOT-PRFPRC = WORD - PrfPrc ; #!!≈ - @CODE@
 
 # form
 # - - - - 
 
-LIST VERBFORM = Inf PrfPrc PrsPrc Prs Prt Imp ;
-LIST INDFORM = Prs Prt Imp ; # FINFORM kanskje betre namn...
+LIST VERBFORM = Inf PrfPrc PrsPrc Prs Prt Imp ; #!!≈ - @CODE@
+LIST INDFORM = Prs Prt Imp ;  #!!≈ - @CODE@,  FINFORM kanskje betre namn...
 
-# Pronoun sets
-# ------------
+#!! ### Pronoun sets
+
+LIST DEM-SG = (Pron Dem Sg Nom); #!!≈ - @CODE@
+LIST DEM-PL = (Pron Dem Pl Nom); #!!≈ - @CODE@
+SET NOT-DEM = WORD - Dem ; #!!≈ - @CODE@
+LIST SGPRON = (Pron Sg1) (Pron Sg2) (Pron Sg3) (Pron Sg) ; #!!≈ - @CODE@
+LIST PLPRON = (Pron Pl1) (Pron Pl2) (Pron Pl3) (Pron Pl) ; #!!≈ - @CODE@
+LIST QUANT-PRON = "mange" ; #!!≈ - @CODE@, This set is for choosing between Adv and Pron Indef.
 
 
-LIST DEM-SG = (Pron Dem Sg Nom);
-LIST DEM-PL = (Pron Dem Pl Nom);
-SET NOT-DEM = WORD - Dem ;
+#!! ### Adjectival sets and their complements
 
-LIST SGPRON = (Pron Sg1) (Pron Sg2) (Pron Sg3) (Pron Sg) ;
-LIST PLPRON = (Pron Pl1) (Pron Pl2) (Pron Pl3) (Pron Pl) ;
-
-LIST QUANT-PRON = "mange" ;
-# This set is for choosing between Adv and Pron Indef.
-
-# Adjectival sets and their complements
-# -------------------------------------
-
-SET NOT-A = WORD - A ;
-SET NOT-A-COMMA = WORD - A - COMMA ;
-SET NOT-A-PCLE = WORD - A - Pcle ;
-
-SET NOT-A-ADV = WORD - A - Adv ;
+SET NOT-A = WORD - A ; #!!≈ - @CODE@
+SET NOT-A-COMMA = WORD - A - COMMA ;  #!!≈ - @CODE@
+SET NOT-A-PCLE = WORD - A - Pcle ;  #!!≈ - @CODE@
+SET NOT-A-ADV = WORD - A - Adv ;  #!!≈ - @CODE@
 
  
- # and many others
+
  
-# Adverbial sets and their complements
+#!! ### Adverbial sets and their complements
 # ------------------------------------
-SET LEX-ADV = Adv - (A*) ;
-
-SET NOT-ADV-DE            = WORD - Adv ;
-SET NOT-ADV            = NOT-ADV-DE OR CLB ;
-SET NOT-ADV-N          = NOT-ADV - N;
-SET NOT-ADV-PCLE       = NOT-ADV - Pcle ;
-SET NOT-ADV-INDEF      = NOT-ADV - Indef ;
-SET NOT-ADV-PCLE-ILL   = WORD - Adv - Pcle  ;
-SET NOT-ADV-PCLE-Refl  = WORD - Adv - Pcle - Refl ;
-SET NOT-ADV-PCLE-INDEF = WORD - Adv - Pcle - Indef ;
-SET NOT-ADVL-PCLE-NEG  = WORD - @ADVL - @P< - Pcle ;
+SET LEX-ADV = Adv - (A*) ;  #!!≈ - @CODE@
+SET NOT-ADV-DE            = WORD - Adv ;  #!!≈ - @CODE@
+SET NOT-ADV            = NOT-ADV-DE OR CLB ;  #!!≈ - @CODE@
+SET NOT-ADV-N          = NOT-ADV - N;  #!!≈ - @CODE@
+SET NOT-ADV-PCLE       = NOT-ADV - Pcle ;  #!!≈ - @CODE@
+SET NOT-ADV-INDEF      = NOT-ADV - Indef ;  #!!≈ - @CODE@
+SET NOT-ADV-PCLE-ILL   = WORD - Adv - Pcle  ;  #!!≈ - @CODE@
+SET NOT-ADV-PCLE-Refl  = WORD - Adv - Pcle - Refl ;  #!!≈ - @CODE@
+SET NOT-ADV-PCLE-INDEF = WORD - Adv - Pcle - Indef ;  #!!≈ - @CODE@
+SET NOT-ADVL-PCLE-NEG  = WORD - @ADVL - @P< - Pcle ;  #!!≈ - @CODE@
 
 
  
- # Introduce finite clauses.
+#!! ### Introduce finite clauses.
  
-LIST TIME-ADVL = "da" "før" ;
-
-LIST TIME-ADV = (Adv Sem/Time) ;
-
+LIST TIME-ADVL = "da" "før" ;   #!!≈ - @CODE@
+LIST TIME-ADV = (Adv Sem/Time) ;  #!!≈ - @CODE@
 
 
-# Coordinators
-# ------------
 
+#!! ### Coordinators
  
-SET CRD = @CNP OR COMMA OR ("/") OR ("-") ;
-    # AFTER LCRD vs. GCRD disambiguation
-    
-
-LIST ADV-AFTER-NUM = "geardde" ;
-
-
-LIST GRADE-ADV =  "helt" "svært" "litt" ;
+SET CRD = @CNP OR COMMA OR ("/") OR ("-") ;   #!!≈ - @CODE@ AFTER LCRD vs. GCRD disambiguation
+LIST GRADE-ADV =  "helt" "svært" "litt" ;  #!!≈ - @CODE@
 
 
 
 
 
-# Sets of elements with common syntactic behaviour
+#!! ## Sets of elements with common syntactic behaviour
 # ================================================
 
 SETS
 
-#!! * Sets for verbs
-# -----
+#!! ### Sets for verbs
 
-LIST NOT-REAL-V = PrsPrc ;
 
-SET REAL-V = V - NOT-REAL-V  ;
+LIST NOT-REAL-V = PrsPrc ;   #!!≈ - @CODE@
+SET REAL-V = V - NOT-REAL-V  ;  #!!≈ - @CODE@
   #!!     - V is all readings with a V tag in them, REAL-V should
   #!! be the ones without an N tag following the V.  
   #!! The REAL-V set thus awaits a fix to the preprocess V ... N bug.
-            
+SET MAIN-V = V - FAUXV ;  #!!≈ - @CODE@
  
- # The set REAL is smaller than COPULAS, made for verbs with PrfPrc complements: Seammás REAL-COPULAS son dovdan iežas...
-LIST REAL-COPULAS = "dáidit" "leat" "soaitit" "veadjit" "liehket" "lea";
-
-#!! * The set COPULAS is for predicative constructions
-LIST COPULAS = "dáidit" "gártat" "leat" "soaitit" "šaddat" "orrut" "veadjit" "liehket" "sjaddat" "lea" "sjïdtedh" ;
- #  "bissut" ? 
- # 'Dáidit' can appear without 'leat'.
-
-SET NOT-COP-V = V - COPULAS ;
-
-SET MAIN-V = V - FAUXV ;
- 
-# All active verbs with a TV tag, including V.
-
-LIST V-TRANS = (V TV) ;
+#!! All active verbs with a TV tag, including V:
+LIST V-TRANS = (V TV) ;  #!!≈ - @CODE@
 
 
 SET TRANS-V = V-TRANS - Pass ;
 
-#!! * NP sets defined according to their morphosyntactic features
+#!! ### NP sets defined according to their morphosyntactic features
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-
-LIST N-SG-NOM = (N Sg Nom);
-
-SET HEAD-N = N - RCmpnd ;
-
-SET HEAD-N-NOM = (N Nom) - RCmpnd ;
-
-SET SUBJECTHEAD = N OR A OR Pron - Refl ; # These, can be subject heads
-
-SET NP = N OR A ;                      # anything that can take except numerals
-SET NP-HEAD        = Pron OR HEAD-N ;
-SET NP-HEAD-SG     = SGPRON OR (N Sg) OR (A Sg) - RCmpnd  - Dem ;
-SET NP-HEAD-PL     = PLPRON OR (N Pl) OR (A Pl) - RCmpnd  - Dem ;
-SET NP-HEAD-SG-NOM = SGPRON + Nom OR (N Sg Nom) OR (A Sg Nom) - RCmpnd ;
-SET NP-HEAD-PL-NOM = PLPRON + Nom OR (N Pl Nom) OR (A Pl Nom) - RCmpnd ;
-SET NP-HEAD-NOM    = NP-HEAD-SG-NOM OR NP-HEAD-PL-NOM ;
-SET NP-HEAD-ACC    = (Pron Acc) OR (N Acc) OR (A Acc) - RCmpnd ;
+LIST N-SG-NOM = (N Sg Nom);  #!!≈ - @CODE@
+SET HEAD-N = N - RCmpnd ;  #!!≈ - @CODE@
+SET HEAD-N-NOM = (N Nom) - RCmpnd ;  #!!≈ - @CODE@
+SET SUBJECTHEAD = N OR A OR Pron - Refl ;   #!!≈ - @CODE@ These, can be subject heads
+SET NP = N OR A ;                        #!!≈ - @CODE@ anything that can take except numerals
+SET NP-HEAD        = Pron OR HEAD-N ;  #!!≈ - @CODE@
+SET NP-HEAD-SG     = SGPRON OR (N Sg) OR (A Sg) - RCmpnd  - Dem ;  #!!≈ - @CODE@
+SET NP-HEAD-PL     = PLPRON OR (N Pl) OR (A Pl) - RCmpnd  - Dem ;  #!!≈ - @CODE@
+SET NP-HEAD-SG-NOM = SGPRON + Nom OR (N Sg Nom) OR (A Sg Nom) - RCmpnd ;  #!!≈ - @CODE@
+SET NP-HEAD-PL-NOM = PLPRON + Nom OR (N Pl Nom) OR (A Pl Nom) - RCmpnd ;  #!!≈ - @CODE@
+SET NP-HEAD-NOM    = NP-HEAD-SG-NOM OR NP-HEAD-PL-NOM ;  #!!≈ - @CODE@
+SET NP-HEAD-ACC    = (Pron Acc) OR (N Acc) OR (A Acc) - RCmpnd ;  #!!≈ - @CODE@
 
 
 #!! * The PRE-NP-HEAD family of sets
@@ -521,28 +413,19 @@ SET NP-HEAD-ACC    = (Pron Acc) OR (N Acc) OR (A Acc) - RCmpnd ;
 #!! expression **WORD - premodifiers**.
 
 
-SET PRE-NP-HEAD = (Prop Attr) OR (Prop @>N) OR A OR ABBR OR ("buorre") OR     Num OR RCmpnd OR CC OR (Pron Dem) OR (Pron Ref) OR Indef OR 
-         (PrfPrc @>N) OR PrsPrc OR (A Ord) OR (Num @>N) OR (A @>N) OR @>N OR @>A OR @>Pron OR @Num< OR (CC @CNP) OR (@>CC) OR (@Pron<) ;
-         # The strict version of items that can only be premodifiers, not parts of the predicate
-
-#LIST PRE-NP-HEAD = @>N @>A @>Pron @Num< @CNP ;
-         
-SET PRE-NP-V = PrfPrc OR PrsPrc OR (V A) OR (Ind Prs) ;
-    # to be used together with PRE-NP-HEAD before @>N is disambiguated
-         
-SET NP-MEMBER   = PRE-NP-HEAD OR N ;
-
-SET PRE-A-N     = (Pron Pers Acc) OR (Pron Indef) OR Num OR (A Ord) OR (Pron Dem) OR (Pron Refl) ; # Acc pga av manglende disambiguering tidlig i fila
-
-SET NOT-PRE-A-N = WORD - PRE-A-N ;
-
-LIST PUNCT-LEFT = (PUNCT LEFT) ;
-LIST PUNCT-RIGHT = (PUNCT RIGHT) ;
-
-SET PRE-APP   = COMMA OR PUNCT-LEFT OR PRE-NP-HEAD ;
- # This set ist not only for what can
-                            # stand in front of appositions but also
-                            # postmodifiers.
+SET PRE-NP-HEAD = (Prop Attr) OR (Prop @>N) OR A OR ABBR OR Num OR RCmpnd OR CC OR (Pron Dem) OR (Pron Ref) OR Indef OR (PrfPrc @>N) OR PrsPrc OR (A Ord) OR (Num @>N) OR (A @>N) OR @>N OR @>A OR @>Pron OR @Num< OR (CC @CNP) OR (@>CC) OR (@Pron<) ;   #!!≈ - @CODE@
+#!! The strict version of items that can only be premodifiers, not parts of the predicate
+SET PRE-NP-V = PrfPrc OR PrsPrc OR (V A) OR (Ind Prs) ;   #!!≈ - @CODE@
+#!! to be used together with PRE-NP-HEAD before @>N is disambiguated
+SET NP-MEMBER   = PRE-NP-HEAD OR N ;  #!!≈ - @CODE@
+SET PRE-A-N     = (Pron Pers Acc) OR (Pron Indef) OR Num OR (A Ord) OR (Pron Dem) OR (Pron Refl) ;   #!!≈ - @CODE@ Acc pga av manglende disambiguering tidlig i fila
+SET NOT-PRE-A-N = WORD - PRE-A-N ;  #!!≈ - @CODE@
+LIST PUNCT-LEFT = (PUNCT LEFT) ;  #!!≈ - @CODE@
+LIST PUNCT-RIGHT = (PUNCT RIGHT) ;  #!!≈ - @CODE@
+SET PRE-APP   = COMMA OR PUNCT-LEFT OR PRE-NP-HEAD ;  #!!≈ - @CODE@
+#!! This set ist not only for what can
+#!! stand in front of appositions but also
+#!! postmodifiers.
 
 
 
@@ -551,108 +434,74 @@ SET PRE-APP   = COMMA OR PUNCT-LEFT OR PRE-NP-HEAD ;
 #!! meaning: Scan to the first noun, ignoring anything that can be
 #!! part of the noun phrase of that noun (i.e., "scan to the next NP head")
 
-SET NOT-NPMOD     = WORD - PRE-NP-HEAD OR ABBR ;                     
+SET NOT-NPMOD     = WORD - PRE-NP-HEAD OR ABBR ;     #!!≈ - @CODE@                  
 # This is the previous NPNH (npnh) set.
 # NOT-NPMOD  = "NOT-PRE-NP-HEAD"
  
-SET NOT-NPMOD-ACC     = NOT-NPMOD - Acc OR ABBR ; 
-SET NOT-NPMOD-ACC-ADV     = NOT-NPMOD - Acc - Adv OR ABBR ; 
+SET NOT-NPMOD-ACC     = NOT-NPMOD - Acc OR ABBR ;   #!!≈ - @CODE@
+SET NOT-NPMOD-ACC-ADV     = NOT-NPMOD - Acc - Adv OR ABBR ;   #!!≈ - @CODE@
 # To be used in mappingrules, before the disambuation of Acc and Gen.                     
 
-SET NOT-NPMODADV    = WORD - PRE-NP-HEAD - Adv ;                      
-# NOT-NPMODADV = "NOT-PRE-NP-HEAD-OR-ADV"
-SET NOT-NPMODADV-INDEF   = WORD - PRE-NP-HEAD - Adv - Indef ;              
-# NOT-NPMODADVI = "     ...-OR-INDEF"
-SET NOT-NPMODCC   = WORD - PRE-NP-HEAD - COMMA - @CNP ;
-SET NAPP     = WORD - PRE-APP ;
+SET NOT-NPMODADV    = WORD - PRE-NP-HEAD - Adv ;     #!!≈ - @CODE@                   
+#!! NOT-NPMODADV = "NOT-PRE-NP-HEAD-OR-ADV"
+SET NOT-NPMODADV-INDEF = WORD - PRE-NP-HEAD - Adv - Indef ;   #!!≈ - @CODE@             
+#!! NOT-NPMODADVI = "     ...-OR-INDEF"
+SET NOT-NPMODCC = WORD - PRE-NP-HEAD - COMMA - @CNP ;  #!!≈ - @CODE@
+SET NAPP = WORD - PRE-APP ;  #!!≈ - @CODE@
 
 
 
-#!! * Miscellaneous sets
+#!! ### Miscellaneous sets
 # ------------------
 
- 
- 
- 
-
-#LIST OKTA = "1" "en" "et" "ei" ;
-#SET NUM = Num - OKTA ;
-
-# this set does not contain ordinals, I am not sure if that is necessary.
-
-SET NOT-NUM = WORD - Num ;
-
-
-SET CARDINALS = Num - Ord ;
-
-SET NOT-CC = WORD - CC ;
-
-SET NOT-PCLE = WORD - Pcle ;
-
-
-LIST CONTRA = "men" ;
- # In lean muitalan, muhto dál muitalan.
-
-LIST PROSEANTA = "prosent" "%" ;
-
-SET REAL-CLB = CLB - COMMA ;
-
-SET NOT-INITIAL-CC = WORD - INITIAL - CC ;
+SET NOT-NUM = WORD - Num ;   #!!≈ - @CODE@
+SET CARDINALS = Num - Ord ;  #!!≈ - @CODE@
+SET NOT-CC = WORD - CC ;  #!!≈ - @CODE@
+SET NOT-PCLE = WORD - Pcle ;  #!!≈ - @CODE@
+LIST CONTRA = "men" ;  #!!≈ - @CODE@ In lean muitalan, muhto dál muitalan.
+LIST PROSEANTA = "prosent" "%" ;  #!!≈ - @CODE@
+SET REAL-CLB = CLB - COMMA ;  #!!≈ - @CODE@
+SET NOT-INITIAL-CC = WORD - INITIAL - CC ;  #!!≈ - @CODE@
 
 
 
-#!! * Border sets and their complements
+#!! ### Border sets and their complements
 # ---------------------------------
 
-SET CP = (Pron Interr) OR (Pron Rel) ;
-
-LIST BOUNDARYSYMBOLS =  "\;" ":" "-" "–" ;
-	
-SET S-BOUNDARY = CP OR BOUNDARYSYMBOLS OR @CVP ;
+SET CP = (Pron Interr) OR (Pron Rel) ;  #!!≈ - @CODE@
+LIST BOUNDARYSYMBOLS =  "\;" ":" "-" "–" ;  #!!≈ - @CODE@
+SET S-BOUNDARY = CP OR BOUNDARYSYMBOLS OR @CVP ;  #!!≈ - @CODE@
 	# includes CP
 	# this one includes @CVP, the conjunction which actually connects two sentences (each with a finite verb) to each other, 
 	# and not @CNP, which coordinates internal NP-/AdvP-/AP ... coordination
 	# To be used only AFTER the disambiguation of @CVP and @CNP taking place in the chapter right before "Disambiguating pronouns"
 
 
-SET BOC = S-BOUNDARY OR BOS ;
-SET BOC-PUNCT = BOC - ("-") - ("–") ; 
-SET EOC = S-BOUNDARY OR EOS ;
-
-SET NP-BOUNDARY = BOS OR EOS OR REAL-CLB OR VFIN OR Inf OR Recipr OR Pr OR Pcle OR Interj OR CS OR CP OR @CVP ;
-
-SET APP-BOUNDARY = REAL-CLB OR VFIN OR Inf OR Recipr OR Pr OR Pcle OR Interj OR CS OR CP OR PrfPrc - @>N ;
-# A special barrier used with mapping of appositions. 
+SET BOC = S-BOUNDARY OR BOS ;  #!!≈ - @CODE@
+SET BOC-PUNCT = BOC - ("-") - ("–") ;   #!!≈ - @CODE@
+SET EOC = S-BOUNDARY OR EOS ;  #!!≈ - @CODE@
+SET NP-BOUNDARY = BOS OR EOS OR REAL-CLB OR VFIN OR Inf OR Recipr OR Pr OR Pcle OR Interj OR CS OR CP OR @CVP ;   #!!≈ - @CODE@
+SET APP-BOUNDARY = REAL-CLB OR VFIN OR Inf OR Recipr OR Pr OR Pcle OR Interj OR CS OR CP OR PrfPrc - @>N ;   #!!≈ - @CODE@
+#!! A special barrier used with mapping of appositions. 
 
 # This set contains FMAINV with @, which means that it functions for all kind of mainverbs after the verb-mapping rules 
-SET SV-BOUNDARY = S-BOUNDARY OR Inf - FAUXV OR FMAINV ;
- # VFIN-NOT-AUX ;
- # should be MAIN-V linked to VFIN-aux to the left. (cg-3)
-# This set is ment to use in rules for disambiguating due to verbs or verbsets. It contents @.
+SET SV-BOUNDARY = S-BOUNDARY OR Inf - FAUXV OR FMAINV ;  #!!≈ - @CODE@
+SET SVF-BOUNDARY = S-BOUNDARY OR VFIN ;  #!!≈ - @CODE@
+#!! This set is ment to use in rules for disambiguating due to verbs or verbsets. 
+#!! Here we search for either an S-BOUNDARY or a finite verb, either aux or main.
 
-SET SVF-BOUNDARY = S-BOUNDARY OR VFIN ;
-
-# This set is ment to use in rules for disambiguating due to verbs or verbsets. 
-# Here we search for either an S-BOUNDARY or a finite verb, either aux or main.
-
-#LIST CASE = Nom Acc Dat ;
-
-
-
-
-
-SET CCCOMMA = CC OR COMMA ;
+SET CCCOMMA = CC OR COMMA ;  #!!≈ - @CODE@
 	# remember that those are potential sentence boundaries, too
 
 
 
-#!! * Syntactic sets
+#!! ### Syntactic sets
 # --------------
 
 LIST ALLSYNTAG = (@+FAUXV) (@+FMAINV) (@-FAUXV) (@-FMAINV) (@-FSUBJ>)(@-FOBJ)(@-F<ADVL)(@-FADVL>)(@>A) (@>ADVL) (@ADVL<) (@<ADVL) (@ADVL>) (@ADVL) (@>N) (@APP) (@APP-N<) (@APP-Pron<) (@APP>Pron) (@APP-Num<) (@APP-ADVL<) (@VOC)(@CNP) (@CVP) (@P<) (@>P) (@HNOUN) (@INTERJ) (@Pron<) (@OBJ) (@OBJ>) (@<OBJ) (@OPRED) (@<OPRED) (@OPRED>) (@SPRED<OBJ) (@PCLE) (@COMP-CS<) (@N<) (@SPRED) (@<SPRED) (@SPRED>) (@PPRED) (@Num<) (@SUBJ) (@<SUBJ) (@SUBJ>) (@X);
  
 
-SET NON-APP = ALLSYNTAG - (@APP);
+SET NON-APP = ALLSYNTAG - (@APP);   #!!≈ - @CODE@
 
 #!! These were the set types.
 
@@ -660,47 +509,53 @@ SET NON-APP = ALLSYNTAG - (@APP);
 
 #!! ### Grammarchecker sets
 
-LIST &msyn-agr-adjmsc-adjneu = &msyn-agr-adjmsc-adjneu ;
-LIST &msyn-agr-adjneu-adjmsc = &msyn-agr-adjneu-adjmsc ;
-LIST &msyn-agr-detneu-detfem =  &msyn-agr-detneu-detfem ;
-LIST &msyn-agr-detneu-detmsc =  &msyn-agr-detneu-detmsc ;
-LIST &msyn-det-msc-neu = &msyn-det-msc-neu ;
-LIST &msyn-pred-adjmsc-adjneu = &msyn-pred-adjmsc-adjneu ;
-LIST &msyn-pred-adjneu-adjmsc = &msyn-pred-adjneu-adjmsc ;
-LIST &msyn-pron-nom-acc = &msyn-pron-nom-acc ;
-LIST &msyn-qucompl-def-indef = &msyn-qucompl-def-indef ;
-LIST &msyn-v-inf-pres = &msyn-v-inf-pres ;
-LIST &msyn-v-pres-inf = &msyn-v-pres-inf ;
-LIST &real-aa-og = &real-aa-og ;
-LIST &real-bli-vaere = &real-bli-vaere ;
-LIST &real-og-aa = &real-og-aa ;
-LIST &real-vaere-bli = &real-vaere-bli ;
+#!! - The tag syntax: **ruletype - object - is_now - should_be
+#!! - Thus: *&msyn-agr-adjmsc-adjneu* is a morphosyntactic agreement rule where a Msc adjective should be Neu
 
-MAPPING-PREFIX = & ;
+LIST &msyn-agr-adjmsc-adjneu = &msyn-agr-adjmsc-adjneu ;    #!!≈ - @CODE@ = 
+LIST &msyn-agr-adjneu-adjmsc = &msyn-agr-adjneu-adjmsc ;    #!!≈ - @CODE@ = 
+LIST &msyn-agr-detneu-detfem =  &msyn-agr-detneu-detfem ;   #!!≈ - @CODE@ = 
+LIST &msyn-agr-detneu-detmsc =  &msyn-agr-detneu-detmsc ;   #!!≈ - @CODE@ = 
+LIST &msyn-det-msc-neu = &msyn-det-msc-neu ;			    #!!≈ - @CODE@ = 
+LIST &msyn-pred-adjmsc-adjneu = &msyn-pred-adjmsc-adjneu ;  #!!≈ - @CODE@ = 
+LIST &msyn-pred-adjneu-adjmsc = &msyn-pred-adjneu-adjmsc ;  #!!≈ - @CODE@ = 
+LIST &msyn-pron-nom-acc = &msyn-pron-nom-acc ;			    #!!≈ - @CODE@ = 
+LIST &msyn-qucompl-def-indef = &msyn-qucompl-def-indef ;    #!!≈ - @CODE@ = 
+LIST &msyn-v-inf-pres = &msyn-v-inf-pres ;				    #!!≈ - @CODE@ = 
+LIST &msyn-v-pres-inf = &msyn-v-pres-inf ;				    #!!≈ - @CODE@ = 
+LIST &real-aa-og = &real-aa-og ;						    #!!≈ - @CODE@ = 
+LIST &real-bli-vaere = &real-bli-vaere ;				    #!!≈ - @CODE@ = 
+LIST &real-og-aa = &real-og-aa ;						    #!!≈ - @CODE@ = 
+LIST &real-vaere-bli = &real-vaere-bli ;				    #!!≈ - @CODE@ = 
 
-TEMPLATE nextWordCrossSent = (-1 (*)); # Adding mark to word that find the reference word to the left
-TEMPLATE previousWordCrossSent = (1 (*)); # and vice versa
+MAPPING-PREFIX = & ; # &msyn-agr-adjmsc-adjneu
+
+#!! ## For ADDRELATION rules (perhaps not in use)
+TEMPLATE nextWordCrossSent = (-1 (*));  #!!≈ - @CODE@ =  Adding mark to word that find the reference word to the left
+TEMPLATE previousWordCrossSent = (1 (*));  #!!≈ - @CODE@ =  and vice versa
 
 
 #!! # Rule section
-
 SECTION
 
 
 #!! ## Speller rules
-# Speller suggestions rule – add &SUGGESTWF to any spelling suggestion
-# that we actually want to suggest to the user.
-# The simplest is to just add it to all spelled words:
+
+#!! Speller suggestions rule – add &SUGGESTWF to any spelling suggestion
+#!! that we actually want to suggest to the user.
+
+#!! The simplest is to just add it to all spelled words:
 ADD:spell-it-all (&typo &SUGGESTWF) (<spelled>) ;
-# But perhaps you want to only suggest spellings of words that are not inside "quotes":
+
+#!! But perhaps you want to only suggest spellings of words that are not inside "quotes":
 ADD:spell-conservatively (&typo &SUGGESTWF) (<spelled>) IF (NEGATE -1 QMARK LINK 2 QMARK);
 
 
-#!! ## NP internal agreement
+#!! ## NP internal agreement rules
 
-#  Ensure preceding adjective agrees with noun
+#!!  Ensure preceding adjective agrees with noun
 
-#!! msyn-agr-adjmsc-adjneu
+#!! Agreement: masculine adjectives shoul be neuter (msyn-agr-adjmsc-adjneu)
 
 ADD:msyn-agr-adjmsc-adjneu (&msyn-agr-adjmsc-adjneu) TARGET A IF (-1 Det)(0 A + MF OR A + Msc OR A + Fem)(NOT 0 A + Neu)(1C N + Neu);
 COPY:msyn-agr-adjmsc-adjneu (Neu Sg Indef &SUGGEST)  EXCEPT (Fem Sg Indef) OR (Msc Sg Indef) OR (MF Sg Indef)  TARGET (A Pos &msyn-agr-adjmsc-adjneu) ;
@@ -710,7 +565,8 @@ ADDRELATION:msyn-agr-adjmsc-adjneu ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&m
 #$ Dette er et fint hus.
 
 
-#!! msyn-agr-adjneu-adjmsc
+#!! Agreement: Neuter adjectives shoul be masculine (msyn-agr-adjneu-adjmsc)
+
 ADD:msyn-agr-adjneu-adjmsc (&msyn-agr-adjneu-adjmsc) TARGET A IF (-1 Det + MF OR Pron + Indef + MF OR Pron + Indef + Msc)(0 A + Neu)(1 N + Msc);
 COPY:msyn-agr-adjneu-adjmsc (Msc &SUGGEST) EXCEPT (Neu) TARGET (A Pos Sg Indef &msyn-agr-adjmsc-adjneu);
 ADDRELATION:msyn-agr-adjneu-adjmsc ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&msyn-agr-adjneu-adjmsc)) ;
@@ -718,13 +574,11 @@ ADDRELATION:msyn-agr-adjneu-adjmsc ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&m
 ## Dette er en fint båt.
 #$ Dette er en fin båt.
 
-#!! msyn-agr-detneu-detfem
+#!! Agreement: Neuter adjectives should be feminine (msyn-agr-detneu-detfem)
 ADD:msyn-agr-detneu-detfem (&msyn-agr-detneu-detfem) TARGET (Det Dem Neu Sg) IF (1 (N Fem Sg Def));
 COPY:msyn-agr-detneu-detfem (Fem Sg &SUGGEST) EXCEPT (Neu Sg) TARGET (Det Dem &msyn-agr-detneu-detfem);
 ## Mannen kjøpte det boka.
 #$ Mannen kjøpte den boka.
-
-
 
 ADD:msyn-agr-detneu-detfem (&msyn-agr-detneu-detfem) TARGET ("et" Det Neu) IF (1 (Def Clt))(2 (N Sg Fem Indef));
 COPY:msyn-agr-detneu-detfem ("ei" Det Fem &SUGGEST) EXCEPT ("et" Det Neu) TARGET (&msyn-agr-detneu-detfem);
@@ -734,7 +588,8 @@ COPY:msyn-agr-detneu-detfem ("ei" Det Fem &SUGGEST) EXCEPT ("et" Pron Indef Neu 
 ## Det er et realitetens kvinne
 #$ Det er ei realitetens kvinne
 
-#!! msyn-agr-detneu-detmsc
+#!! Agreement: Neuter adjectives should be masculine (msyn-agr-detneu-detmsc)
+
 ADD:msyn-agr-detneu-detmsc (&msyn-agr-detneu-detmsc) TARGET ("et" Det Neu) IF (1 (Def Clt))(2 (N Sg Msc Indef));
 COPY:msyn-agr-detneu-detmsc ("en" Det Dem Msc Sg &SUGGEST) EXCEPT ("et" Det Neu) TARGET (&msyn-agr-detneu-detmsc);
 
@@ -744,7 +599,7 @@ COPY:msyn-agr-detneu-detmsc ("en" Det Dem Msc Sg &SUGGEST) EXCEPT ("et" Pron Ind
 #$ Det er ei realitetens kvinne
 
 
-#!! msyn-det-msc-neu
+#!! Determiner: Masculine should be neuter (msyn-det-msc-neu)
 
 # Definite that should be indefinite
 #ADD:msyn-defness_m_def (&msyn-defness_m_def) TARGET
@@ -760,7 +615,7 @@ ADDRELATION:msyn-qucompl-def-indef ($2) (*) FROM (T:previousWordCrossSent LINK 0
 #!! ## Predicative gender agreement
 
 
-#!! msyn-pred-adjmsc-adjneu
+#!! Predicative: msculine adjective should be neuter (msyn-pred-adjmsc-adjneu)
 
 # For risikabelt med "det"
 #ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A) IF (-2 ("det") LINK *-1 BOS BARRIER NOT-NPMOD)(-1 ("være"))(0C Msc OR Fem OR MF)(NOT 1 N + Msc);
@@ -792,6 +647,8 @@ ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (6 A LINK 0 (&msyn-pred-adjmsc
 
 #!! ## Case errors
 
+#!! Nominative pronouns should be accusative (msyn-pron-nom-acc)
+#!! The context is P-complement: Vi snakker om du.
 ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg2 Nom) IF (-1 Pr)(NOT -1 ("for") OR ("som") OR ("om"));
 COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg2 &msyn-pron-nom-acc);
 ## Vi snakker om du.
@@ -799,8 +656,10 @@ COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg2 &msyn-p
 
 
 
-#!! ## Finite verb
+#!! ## Finite verb errors
 
+
+#!! Verb error: Infinitive and no finite form in the sentence (msyn-v-inf-pres)
 ADD:msyn-v-inf-pres (&msyn-v-inf-pres) TARGET (V Inf) IF (-1C (N) OR (Pron Nom))(*-2 BOS BARRIER VFIN OR ("så"))(NOT -1 ("å"))(0 V)(NOT 0 Pass)(NOT *0 VFIN);
 COPY:msyn-v-inf-pres (Ind Prs &SUGGEST) EXCEPT (Inf)  TARGET (V Inf &msyn-v-inf-pres);
 ADDRELATION:msyn-v-inf-pres ($2) (*) FROM (1 V LINK 0 (&msyn-v-inf-pres)) ;
@@ -808,8 +667,8 @@ ADDRELATION:msyn-v-inf-pres ($2) (*) FROM (1 V LINK 0 (&msyn-v-inf-pres)) ;
 #$ Vi så lyset forsvinne.
 #$ Retten til å drive fiske er grunnlovsfestet.
 
-## Jeg like peanøtter.
-#$ Jeg liker peanøtter.
+## Jeg like peanøtter.   #!!≈ - *@CODE@*
+#$ Jeg liker peanøtter.  #!!≈ - *@CODE@*
 
 ## Jeg spise peanøtter.
 #$ Jeg spiser peanøtter.
@@ -819,33 +678,40 @@ ADDRELATION:msyn-v-inf-pres ($2) (*) FROM (1 V LINK 0 (&msyn-v-inf-pres)) ;
 
 #!! ## Infinitive
 
+#!! Verb error: Present tense should be infinitive (msyn-v-pres-inf)
+
 ADD:msyn-v-pres-inf (&msyn-v-pres-inf) TARGET V IF (0C (Ind Prs))(-2C (N) OR (Pron Nom))(-1 hj-V)(NOT 0 Pass);
 COPY:msyn-v-pres-inf (Inf &SUGGEST) EXCEPT (Ind Prs)  TARGET (V Ind Prs &msyn-v-pres-inf);
 ADDRELATION:msyn-v-pres-inf ($2) (V) FROM (1 V LINK 0 (&msyn-v-pres-inf)) ;
 
+## Jeg vil skriver et brev.   #!!≈ - *@CODE@*
+#$ Jeg vil skrive et brev.   #!!≈ - *@CODE@*
 
 
+#!! ## og/å errors
 
-#!! ## og/å
-
-
+#!! og should be å real-og-aa
 ADD:real-og-aa (&real-og-aa) TARGET ("og" CC) IF (-3 ("være"))(-2 ("ikke"))(-1 ("til"))(1 Inf);
 COPY:real-og-aa ("å" IM &SUGGEST) EXCEPT ("og" CC) TARGET (CC &real-og-aa);
-## Det er ikke til og holde ut.
-#$ Det er ikke til å holde ut.	
+
+## Det er ikke til og holde ut.  #!!≈ - *@CODE@*
+#$ Det er ikke til å holde ut.   #!!≈ - *@CODE@*
 
 
 ADD:real-og-aa (&real-og-aa) TARGET ("og" CC) IF (-1 Ind)(1 Inf);
 COPY:real-og-aa ("å" IM &SUGGEST) EXCEPT ("og" CC) TARGET (CC &real-og-aa);
-## Vi prøver og gå.
-#$ Vi prøver å gå.
+
+## Vi prøver og gå.  #!!≈ - *@CODE@*
+#$ Vi prøver å gå.  #!!≈ - *@CODE@*
+
+#!! å should be og (real-aa-og)
 
 ADD:real-aa-og (&real-aa-og) TARGET ("å") IF (-1 N) (1C N);
 COPY:real-aa-og ("og" CC &SUGGEST) EXCEPT ("å" IM) TARGET ( &real-aa-og);
 ADDRELATION:real-aa-og ($2) (N) FROM (1 N LINK 0 (&real-aa-og)) ;
 ADDRELATION:real-aa-og ($3) (N) FROM (-1 N LINK 0 (&real-aa-og)) ;
-## Det var Trond å Kari.
-#$ Det var Trond og Kari.
+## Det var Trond å Kari.  #!!≈ - *@CODE@*
+#$ Det var Trond og Kari.  #!!≈ - *@CODE@*
 
 ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF (-2 hj-V)(-1 V + $$VERBFORM LINK NOT 0 QUASIAUX) (1 V + $$VERBFORM);
 ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF (NOT *-4 ("som") LINK -1 A)(-2 hj-V)(-1 V + $$VERBFORM LINK NOT 0 QUASIAUX) (1 V + $$VERBFORM);
@@ -868,10 +734,14 @@ ADDRELATION:real-v-aa-og ($2) (V) FROM (1 IM OR N LINK 0 (&real-v-aa-og)) ;
 ADDRELATION:real-v-aa-og ($3) (V) FROM (-1 IM OR N LINK 0 (&real-v-aa-og)) ;
 
 
-# Simple punctuation rules showing how to change the lemma in the suggestions:
+#!! ## Punctuation rules
+#!! Simple punctuation rules showing how to change the lemma in the suggestions:
+
+#!! Quotes (use-guillemets)
 ADD:use-guillemets (&guillemets) TARGET (""");
 COPY:left-guillemet ("«" &SUGGEST) EXCEPT (""") TARGET (&guillemets) ;
 COPY:right-guillemet ("»" &SUGGEST) EXCEPT (""") TARGET (&guillemets) ;
 
+#!! Ellipsis … for ... (use-ellipsis)
 ADD:use-ellipsis (&ellipsis) TARGET ("...");
 COPY:use-ellipsis ("…" &SUGGEST) EXCEPT ("...") TARGET (&ellipsis) ;
