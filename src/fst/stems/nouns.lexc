@@ -75,10 +75,10 @@
 
 !! ## The lexica themselves
 
-LEXICON NevercompNoun
-!! LEXICON @LEXNAME@ just to ensure "for" is not compound material even in descriptive analysers.
-for+N+Neu+Sg+Indef:for K ;
-for+N+Neu+Sg+Def:foret K ;
+!LEXICON NevercompNoun
+! LEXICON @LEXNAME@ just to ensure "for" is not compound material even in descriptive analysers.
+!for+N+Neu+Sg+Indef:for K ;
+!for+N+Neu+Sg+Def:foret K ;
 
 LEXICON FinalNoun
 !! LEXICON @LEXNAME@ is a separate lexicon to point to. For now it contains only *-skap*.
@@ -251,6 +251,7 @@ fat+CmpNP/None:fat n1 ;
 fax+CmpNP/None:fax m1 ; 
 fil+CmpNP/None:fil f1 ; 
 fis+CmpNP/None:fis m1 ; 
+for+CmpNP/None:for n1 ;
 flo+CmpNP/None:flo f1sg ; 
 fly+CmpNP/None:fly n1 ; 
 flå+CmpNP/None:flå m1 ; 
@@ -296,7 +297,7 @@ hær+CmpNP/None:hær m1 ;
 høk+CmpNP/None:høk m1 ; 
 høl+CmpNP/None:høl n1 ; 
 høy+CmpNP/None:høy n1 ; 
-ide+CmpNP/None:ide m1 ; 
+ide+CmpNP/None:ide7 m1 ; 
 idé+CmpNP/None:idé m1 ; 
 ild+CmpNP/None:ild m1 ;
 ild+CmpNP/None:ild m1 ; 
