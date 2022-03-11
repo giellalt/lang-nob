@@ -142,6 +142,17 @@
     </body>
   </error>
 
+  <error id="typo">
+    <header>
+      <title xml:lang="en">Spelling error</title>
+      <title xml:lang="nb">Skrivefeil</title>
+    </header>
+    <body>
+      <description xml:lang="en">Not in the dictionary</description>
+      <description xml:lang="nb">Ordet "$1" finnes ikke i stavekontrollen</description>
+    </body>
+  </error>
+
   
 
 
