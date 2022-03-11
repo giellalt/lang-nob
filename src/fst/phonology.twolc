@@ -14,7 +14,7 @@ Alphabet
  Á É Ó Ú Í À È Ò Ù Ì Ä Ë Ö Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð         !!≈ * **@CODE@**
  '   !!≈ * **@CODE@** This is the apostrophe
   l7:l    !!≈ * **@CODE@** This **l** not deleted by **t**
-
+  e7:l    !!≈ * **@CODE@** This **e** not deleted by vowel-initial suffixes (ide - ideen)
 ! o:ø u:y a:e g:0 e:0 m:0 r:0 t:0 u:0
 ! t:d
 ! 0:t
@@ -76,9 +76,9 @@ Z2:0  !!≈ * **@CODE@** = protects vowel
 !! ### Sets
 
 Sets 
- Vow = a e i o u y æ ø å ;                       !!≈ * **@CODE@**
- Cns = b c d f g h j k l m n p q r s t v w x z ; !!≈ * **@CODE@**
- LNR = l n r ;                                   !!≈ * **@CODE@**
+ Vow = a e i o u y æ ø å e7 ;                        !!≈ * **@CODE@**
+ Cns = b c d f g h j k l m n p q r s t v w x z l7 ;  !!≈ * **@CODE@**
+ LNR = l n r ;                                       !!≈ * **@CODE@**
  Dummy = X1 X2 X3 X4 X5 X6 Q1 Q2 Q3  Z1 Z2 %^NYNAG ; !!≈ * **@CODE@**
 
 !! ## Rule section
