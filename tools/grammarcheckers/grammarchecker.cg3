@@ -544,9 +544,11 @@ SECTION
 #!! Speller suggestions rule – add &SUGGESTWF to any spelling suggestion
 #!! that we actually want to suggest to the user.
 
+#!! **Speller rule:** Add *typo* to misspelled words 
 #!! The simplest is to just add it to all spelled words:
 ADD:spell-it-all (&typo &SUGGESTWF) (<spelled>) ;
 
+#!! **Speller rule:** Do not mark misspelled words in quotes
 #!! But perhaps you want to only suggest spellings of words that are not inside "quotes":
 ADD:spell-conservatively (&typo &SUGGESTWF) (<spelled>) IF (NEGATE -1 QMARK LINK 2 QMARK);
 
@@ -555,8 +557,7 @@ ADD:spell-conservatively (&typo &SUGGESTWF) (<spelled>) IF (NEGATE -1 QMARK LINK
 
 #!!  Ensure preceding adjective agrees with noun
 
-#!! Agreement: masculine adjectives shoul be neuter (msyn-agr-adjmsc-adjneu)
-
+#!! **Agreement rule:** masculine adjectives shoul be neuter (msyn-agr-adjmsc-adjneu)
 ADD:msyn-agr-adjmsc-adjneu (&msyn-agr-adjmsc-adjneu) TARGET A IF (-1 Det)(0 A + MF OR A + Msc OR A + Fem)(NOT 0 A + Neu)(1C N + Neu);
 COPY:msyn-agr-adjmsc-adjneu (Neu Sg Indef &SUGGEST)  EXCEPT (Fem Sg Indef) OR (Msc Sg Indef) OR (MF Sg Indef)  TARGET (A Pos &msyn-agr-adjmsc-adjneu) ;
 ADDRELATION:msyn-agr-adjmsc-adjneu ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&msyn-agr-adjmsc-adjneu)) ;
@@ -565,8 +566,7 @@ ADDRELATION:msyn-agr-adjmsc-adjneu ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&m
 #$ Dette er et fint hus.
 
 
-#!! Agreement: Neuter adjectives shoul be masculine (msyn-agr-adjneu-adjmsc)
-
+#!! **Agreement rule:**  Neuter adjectives shoul be masculine (msyn-agr-adjneu-adjmsc)
 ADD:msyn-agr-adjneu-adjmsc (&msyn-agr-adjneu-adjmsc) TARGET A IF (-1 Det + MF OR Pron + Indef + MF OR Pron + Indef + Msc)(0 A + Neu)(1 N + Msc);
 COPY:msyn-agr-adjneu-adjmsc (Msc &SUGGEST) EXCEPT (Neu) TARGET (A Pos Sg Indef &msyn-agr-adjmsc-adjneu);
 ADDRELATION:msyn-agr-adjneu-adjmsc ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&msyn-agr-adjneu-adjmsc)) ;
@@ -574,7 +574,7 @@ ADDRELATION:msyn-agr-adjneu-adjmsc ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&m
 ## Dette er en fint båt.
 #$ Dette er en fin båt.
 
-#!! Agreement: Neuter adjectives should be feminine (msyn-agr-detneu-detfem)
+#!! **Agreement rule:**  Neuter adjectives should be feminine (msyn-agr-detneu-detfem)
 ADD:msyn-agr-detneu-detfem (&msyn-agr-detneu-detfem) TARGET (Det Dem Neu Sg) IF (1 (N Fem Sg Def));
 COPY:msyn-agr-detneu-detfem (Fem Sg &SUGGEST) EXCEPT (Neu Sg) TARGET (Det Dem &msyn-agr-detneu-detfem);
 ## Mannen kjøpte det boka.
@@ -588,18 +588,18 @@ COPY:msyn-agr-detneu-detfem ("ei" Det Fem &SUGGEST) EXCEPT ("et" Pron Indef Neu 
 ## Det er et realitetens kvinne
 #$ Det er ei realitetens kvinne
 
-#!! Agreement: Neuter adjectives should be masculine (msyn-agr-detneu-detmsc)
+#!! **Agreement rule:**  Neuter adjectives should be masculine (msyn-agr-detneu-detmsc)
 
 ADD:msyn-agr-detneu-detmsc (&msyn-agr-detneu-detmsc) TARGET ("et" Det Neu) IF (1 (Def Clt))(2 (N Sg Msc Indef));
 COPY:msyn-agr-detneu-detmsc ("en" Det Dem Msc Sg &SUGGEST) EXCEPT ("et" Det Neu) TARGET (&msyn-agr-detneu-detmsc);
 
+#!! **Agreement rule:** same rule but for Pron
 ADD:msyn-agr-detneu-detmsc (&msyn-agr-detneu-detmsc) TARGET ("et" Pron Indef Neu Sg) IF (1 (Def Clt))(2 (N Sg Msc Indef));
 COPY:msyn-agr-detneu-detmsc ("en" Det Dem Msc Sg &SUGGEST) EXCEPT ("et" Pron Indef Neu Sg) TARGET (&msyn-agr-detneu-detmsc);
 ## Det er et realitetens kvinne
 #$ Det er ei realitetens kvinne
 
 
-#!! Determiner: Masculine should be neuter (msyn-det-msc-neu)
 
 # Definite that should be indefinite
 #ADD:msyn-defness_m_def (&msyn-defness_m_def) TARGET
@@ -607,6 +607,7 @@ COPY:msyn-agr-detneu-detmsc ("en" Det Dem Msc Sg &SUGGEST) EXCEPT ("et" Pron Ind
 
 #!! ## Quantifier phrases
 
+#!! **Agreement rule:** Indef after quantifier. (msyn-qucompl-def-indef)
 ADD:msyn-qucompl-def-indef (&msyn-qucompl-def-indef) TARGET N + Pl + Def IF (*-1 Num OR ("mange") + Pos OR ("mange") + Comp BARRIER NOT-A LINK NOT 0 Sem/ID LINK NOT -1 (§));
 COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Def) TARGET (N Pl &msyn-qucompl-def-indef); 
 ADDRELATION:msyn-qucompl-def-indef ($2) (*) FROM (T:previousWordCrossSent LINK 0 (&msyn-qucompl-def-indef)) ;
@@ -620,7 +621,10 @@ ADDRELATION:msyn-qucompl-def-indef ($2) (*) FROM (T:previousWordCrossSent LINK 0
 # For risikabelt med "det"
 #ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A) IF (-2 ("det") LINK *-1 BOS BARRIER NOT-NPMOD)(-1 ("være"))(0C Msc OR Fem OR MF)(NOT 1 N + Msc);
 
+#!!  **Agreement rule:** 
 ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A) IF (NOT *-1 Pr BARRIER NOT-NPMOD LINK -1 N + Msc)(-2C (N Neu Sg) OR ("det"))(-1 ("være"))(0C Msc OR Fem OR MF)(NOT 1 N + Msc);
+
+#!! **Agreement rule:** 
 ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A) IF (-2C (N Neu Sg) LINK *-1 BOS BARRIER NOT-NPMOD)(-1 ("være"))(0C Msc OR Fem OR MF)(NOT 1 N + Msc);
 COPY:msyn-pred-adjmsc-adjneu (Neu Sg Indef &SUGGEST) EXCEPT (Msc Sg Indef)  TARGET (A Pos &msyn-pred-adjmsc-adjneu);
 ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (2 A LINK 0 (&msyn-pred-adjmsc-adjneu)) ;
@@ -631,7 +635,7 @@ ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (2 A LINK 0 (&msyn-pred-adjmsc
 #$ Landet var fullt av folk.
 #$ Hver avkrok i landet var full av folk.
 
-
+#!! **Agreement rule:** 
 ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A Msc Sg) IF (-3C (N Neu Sg) OR ("det"))(-2 ("som"))(-1 ("være"))(0C Msc OR Fem OR MF)(NOT 1 N + Msc);
 COPY:msyn-pred-adjmsc-adjneu (Neu Sg Indef &SUGGEST) EXCEPT (Msc Sg Indef) TARGET (A Pos &msyn-pred-adjmsc-adjneu);
 ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (3 A LINK 0 (&msyn-pred-adjmsc-adjneu)) ;
@@ -642,13 +646,14 @@ ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (6 A LINK 0 (&msyn-pred-adjmsc
 #$ Jeg spiste et eple som var godt.
 
 
-#!! msyn-pred-adjneu-adjmsc
+
 
 
 #!! ## Case errors
 
-#!! Nominative pronouns should be accusative (msyn-pron-nom-acc)
-#!! The context is P-complement: Vi snakker om du.
+#!! Case rules so far: Nominative pronouns should be accusative 
+
+#!!  **Agreement rule:** The context is P-complement: Vi snakker om du. (msyn-pron-nom-acc)
 ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg2 Nom) IF (-1 Pr)(NOT -1 ("for") OR ("som") OR ("om"));
 COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg2 &msyn-pron-nom-acc);
 ## Vi snakker om du.
@@ -658,7 +663,7 @@ COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg2 &msyn-p
 
 #!! ## Finite verb errors
 
-
+#!! **VErb rule:** 
 #!! Verb error: Infinitive and no finite form in the sentence (msyn-v-inf-pres)
 ADD:msyn-v-inf-pres (&msyn-v-inf-pres) TARGET (V Inf) IF (-1C (N) OR (Pron Nom))(*-2 BOS BARRIER VFIN OR ("så"))(NOT -1 ("å"))(0 V)(NOT 0 Pass)(NOT *0 VFIN);
 COPY:msyn-v-inf-pres (Ind Prs &SUGGEST) EXCEPT (Inf)  TARGET (V Inf &msyn-v-inf-pres);
@@ -678,7 +683,7 @@ ADDRELATION:msyn-v-inf-pres ($2) (*) FROM (1 V LINK 0 (&msyn-v-inf-pres)) ;
 
 #!! ## Infinitive
 
-#!! Verb error: Present tense should be infinitive (msyn-v-pres-inf)
+#!!  **Verb rule:** Verb error: Present tense should be infinitive (msyn-v-pres-inf)
 
 ADD:msyn-v-pres-inf (&msyn-v-pres-inf) TARGET V IF (0C (Ind Prs))(-2C (N) OR (Pron Nom))(-1 hj-V)(NOT 0 Pass);
 COPY:msyn-v-pres-inf (Inf &SUGGEST) EXCEPT (Ind Prs)  TARGET (V Ind Prs &msyn-v-pres-inf);
@@ -690,7 +695,9 @@ ADDRELATION:msyn-v-pres-inf ($2) (V) FROM (1 V LINK 0 (&msyn-v-pres-inf)) ;
 
 #!! ## og/å errors
 
-#!! og should be å real-og-aa
+#!! ### The *og* -> *å* rules 
+
+#!! **Realword rule:** og should be å real-og-aa
 ADD:real-og-aa (&real-og-aa) TARGET ("og" CC) IF (-3 ("være"))(-2 ("ikke"))(-1 ("til"))(1 Inf);
 COPY:real-og-aa ("å" IM &SUGGEST) EXCEPT ("og" CC) TARGET (CC &real-og-aa);
 
@@ -698,14 +705,16 @@ COPY:real-og-aa ("å" IM &SUGGEST) EXCEPT ("og" CC) TARGET (CC &real-og-aa);
 #$ Det er ikke til å holde ut.   #!!≈ - *@CODE@*
 
 
+#!! **Realword rule:** og should be aa between Ind and Inf (real-og-aa)
 ADD:real-og-aa (&real-og-aa) TARGET ("og" CC) IF (-1 Ind)(1 Inf);
 COPY:real-og-aa ("å" IM &SUGGEST) EXCEPT ("og" CC) TARGET (CC &real-og-aa);
 
 ## Vi prøver og gå.  #!!≈ - *@CODE@*
 #$ Vi prøver å gå.  #!!≈ - *@CODE@*
 
-#!! å should be og (real-aa-og)
+#!! ### The *å* -> *og* rules 
 
+#!! **Realword rule:** å should be og between nouns (real-aa-og)
 ADD:real-aa-og (&real-aa-og) TARGET ("å") IF (-1 N) (1C N);
 COPY:real-aa-og ("og" CC &SUGGEST) EXCEPT ("å" IM) TARGET ( &real-aa-og);
 ADDRELATION:real-aa-og ($2) (N) FROM (1 N LINK 0 (&real-aa-og)) ;
@@ -713,7 +722,10 @@ ADDRELATION:real-aa-og ($3) (N) FROM (-1 N LINK 0 (&real-aa-og)) ;
 ## Det var Trond å Kari.  #!!≈ - *@CODE@*
 #$ Det var Trond og Kari.  #!!≈ - *@CODE@*
 
+#!! **Realword rule:** å should be og between similar verbforms except 2nd V = obj (real-aa-og)
 ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF (-2 hj-V)(-1 V + $$VERBFORM LINK NOT 0 QUASIAUX) (1 V + $$VERBFORM);
+
+#!! **Realword rule:** å should be og between similar verbforms except 2nd V = obj (real-aa-og)
 ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF (NOT *-4 ("som") LINK -1 A)(-2 hj-V)(-1 V + $$VERBFORM LINK NOT 0 QUASIAUX) (1 V + $$VERBFORM);
 #COPY:real-v-aa-og ("og" CC &SUGGEST) EXCEPT ("å" IM) TARGET (IM &real-v-aa-og);
 #COPY:real-v-aa-og ("og" CC &SUGGEST) EXCEPT ("å" Use/SpellNoSugg) TARGET (IM &real-v-aa-og);
@@ -725,7 +737,10 @@ COPY:real-v-aa-og ("og" CC &SUGGEST) EXCEPT ("å" Use/SpellNoSugg N Sem/Sign ABB
 #$ Det er ikke så lett som man skulle tro å skrive lyrikk.
 ## Vi vil skrive å utgi lyrikk.
 
+#!! **Realword rule:** å should be og between similar verbforms except 2nd V = obj (real-aa-og)
 ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF ( -2 hj-V)(-1 V + $$INDFORM)(NOT -1 QUASIAUX) (1 V + $$INDFORM);
+
+#!! **Realword rule:** å should be og between similar verbforms except 2nd V = obj (real-aa-og)
 ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF (NOT -2 hj-V)(-1 V + $$INDFORM)(NOT -1 QUASIAUX OR ("for")) (1 V + $$INDFORM);
 COPY:real-v-aa-og ("og" CC &SUGGEST) EXCEPT ("å" IM) TARGET (IM &real-v-aa-og);
 COPY:real-v-aa-og ("og" CC &SUGGEST) EXCEPT ("å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR) TARGET ( &real-aa-og);
@@ -737,11 +752,11 @@ ADDRELATION:real-v-aa-og ($3) (V) FROM (-1 IM OR N LINK 0 (&real-v-aa-og)) ;
 #!! ## Punctuation rules
 #!! Simple punctuation rules showing how to change the lemma in the suggestions:
 
-#!! Quotes (use-guillemets)
+#!! **Quotation mark rule:** Use correct quotation mark
 ADD:use-guillemets (&guillemets) TARGET (""");
 COPY:left-guillemet ("«" &SUGGEST) EXCEPT (""") TARGET (&guillemets) ;
 COPY:right-guillemet ("»" &SUGGEST) EXCEPT (""") TARGET (&guillemets) ;
 
-#!! Ellipsis … for ... (use-ellipsis)
+#!! **Ellipsis rule:** Ellipsis … for ... (use-ellipsis)
 ADD:use-ellipsis (&ellipsis) TARGET ("...");
 COPY:use-ellipsis ("…" &SUGGEST) EXCEPT ("...") TARGET (&ellipsis) ;
