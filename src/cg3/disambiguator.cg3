@@ -74,7 +74,7 @@ LIST %den% = ("den" det) ;
 LIST %den/denne% = ("den" det) ("denne" det) ;
 LIST %den/Det/de% = "det" "den" "de" ;
 LIST %der% = "der" ;
-LIST %det% = ("det" det) ;
+LIST %det% = ("det" Det) ;
 LIST %det%-Pron = ("det" Pron) ;
 LIST %Det/dette% = ("det" det) ("dette" det) ;
 LIST %Det/dette%-Pron = ("det" Pron) ("dette" Pron) ;
@@ -10683,22 +10683,22 @@ SELECT (N) IF
 
 
 # 2361
-SELECT (N) IF
-	(0 samset OR A)
-	(NOT 0 Prs/Prt OR PrfPrc)
-	(NOT 1 N)
-	(NOT *-1 ("være") BARRIER NOT-ADV)
-;
+#SELECT (N) IF
+#	(0 samset OR A)
+#	(NOT 0 Prs/Prt OR PrfPrc)
+#	(NOT 1 N)
+#	(NOT *-1 ("være") BARRIER NOT-ADV)
+#;
 
 
 # 2362
-SELECT (N) IF
-	(0 samset OR Prs/Prt)
-	(NOT 0 A)
-	(NOT -1 %som/enn%)
-	(NOT 0 Imp LINK -1 s-gr)
-	(NOT 0 Prs LINK -1 komma)
-;
+#SELECT (N) IF
+#	(0 samset OR Prs/Prt)
+#	(NOT 0 A)
+#	(NOT -1 %som/enn%)
+#	(NOT 0 Imp LINK -1 s-gr)
+#	(NOT 0 Prs LINK -1 komma)
+#;
 
 
 #
@@ -14257,11 +14257,11 @@ REMOVE (Imp) IF
 
 
 # 1991
-REMOVE (Imp) IF
-	(NOT -1 parentes OR komma OR s-gr)
-	(NOT -2 >>> OR
-	(NOT -1 CC OR "å" LINK -1 Imp))
-;
+#REMOVE (Imp) IF
+#	(NOT -1 parentes OR komma OR s-gr)
+#	(NOT -2 >>> OR
+#	(NOT -1 CC OR ("å") LINK -1 Imp)
+#;
 
 
 # 1992
