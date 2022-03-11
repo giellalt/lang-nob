@@ -381,57 +381,81 @@ These were the set types.
 Speller suggestions rule – add &SUGGESTWF to any spelling suggestion
 that we actually want to suggest to the user.
 
+**Speller rule:** Add *typo* to misspelled words 
 The simplest is to just add it to all spelled words:
 
+**Speller rule:** Do not mark misspelled words in quotes
 But perhaps you want to only suggest spellings of words that are not inside "quotes":
 
 ## NP internal agreement rules
 
 Ensure preceding adjective agrees with noun
 
-Agreement: masculine adjectives shoul be neuter (msyn-agr-adjmsc-adjneu)
+**Agreement rule:** masculine adjectives shoul be neuter (msyn-agr-adjmsc-adjneu)
 
-Agreement: Neuter adjectives shoul be masculine (msyn-agr-adjneu-adjmsc)
+**Agreement rule:**  Neuter adjectives shoul be masculine (msyn-agr-adjneu-adjmsc)
 
-Agreement: Neuter adjectives should be feminine (msyn-agr-detneu-detfem)
+**Agreement rule:**  Neuter adjectives should be feminine (msyn-agr-detneu-detfem)
 
-Agreement: Neuter adjectives should be masculine (msyn-agr-detneu-detmsc)
+**Agreement rule:**  Neuter adjectives should be masculine (msyn-agr-detneu-detmsc)
 
-Determiner: Masculine should be neuter (msyn-det-msc-neu)
+**Agreement rule:** same rule but for Pron
 
 ## Quantifier phrases
+
+**Agreement rule:** Indef after quantifier. (msyn-qucompl-def-indef)
 
 ## Predicative gender agreement
 
 Predicative: msculine adjective should be neuter (msyn-pred-adjmsc-adjneu)
 
-msyn-pred-adjneu-adjmsc
+**Agreement rule:** 
+
+**Agreement rule:** 
+
+**Agreement rule:** 
 
 ## Case errors
 
-Nominative pronouns should be accusative (msyn-pron-nom-acc)
-The context is P-complement: Vi snakker om du.
+Case rules so far: Nominative pronouns should be accusative 
+
+**Agreement rule:** The context is P-complement: Vi snakker om du. (msyn-pron-nom-acc)
 
 ## Finite verb errors
 
+**VErb rule:** 
 Verb error: Infinitive and no finite form in the sentence (msyn-v-inf-pres)
 
 ## Infinitive
 
-Verb error: Present tense should be infinitive (msyn-v-pres-inf)
+**Verb rule:** Verb error: Present tense should be infinitive (msyn-v-pres-inf)
 
 ## og/å errors
 
-og should be å real-og-aa
+### The *og* -> *å* rules 
 
-å should be og (real-aa-og)
+**Realword rule:** og should be å real-og-aa
+
+**Realword rule:** og should be aa between Ind and Inf (real-og-aa)
+
+### The *å* -> *og* rules 
+
+**Realword rule:** å should be og between nouns (real-aa-og)
+
+**Realword rule:** å should be og between similar verbforms except 2nd V = obj (real-aa-og)
+
+**Realword rule:** å should be og between similar verbforms except 2nd V = obj (real-aa-og)
+
+**Realword rule:** å should be og between similar verbforms except 2nd V = obj (real-aa-og)
+
+**Realword rule:** å should be og between similar verbforms except 2nd V = obj (real-aa-og)
 
 ## Punctuation rules
 Simple punctuation rules showing how to change the lemma in the suggestions:
 
-Quotes (use-guillemets)
+**Quotation mark rule:** Use correct quotation mark
 
-Ellipsis … for ... (use-ellipsis)
+**Ellipsis rule:** Ellipsis … for ... (use-ellipsis)
 
 * * *
 <small>This (part of) documentation was generated from [tools/grammarcheckers/grammarchecker.cg3](https://github.com/giellalt/lang-nob/blob/main/tools/grammarcheckers/grammarchecker.cg3)</small>
