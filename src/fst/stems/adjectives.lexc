@@ -907,7 +907,7 @@ skånsom a1b ;
 hjelpsom a1b ;
 sparsom a1b ;
 varsom a1b ;
-morsom:morsom a1b ;
+morsom:morsom a1 ; !b
 pratsom a1b ;
 slitsom a1b ;
 aktsom a1b ;
