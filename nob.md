@@ -400,7 +400,7 @@ The rules are no documented yet
 # Sublexica for adjective roots
 
 * a1  god         god         godt        gode
-* a1b 
+* a1b stum        stum        stumt       stumme
 * a2  norsk       norsk       norsk       norske
 * a3  ekte        ekte        ekte        ekte
 * a4  oppskjørtet oppskjørtet oppskjørtet oppskjørtede/oppskjørtete
@@ -2253,8 +2253,10 @@ occur in front of the head of the NP, and thereafter negate that with the
 expression **WORD - premodifiers**.
 
 - SET PRE-NP-HEAD = (Prop Attr) OR (Prop @>N) OR A OR ABBR OR Num OR RCmpnd OR CC OR (Pron Dem) OR (Pron Ref) OR Indef OR (PrfPrc @>N) OR PrsPrc OR (A Ord) OR (Num @>N) OR (A @>N) OR @>N OR @>A OR @>Pron OR @Num< OR (CC @CNP) OR (@>CC) OR (@Pron<) ;
+
 The strict version of items that can only be premodifiers, not parts of the predicate
 - SET PRE-NP-V = PrfPrc OR PrsPrc OR (V A) OR (Ind Prs) ;
+
 to be used together with PRE-NP-HEAD before @>N is disambiguated
 - SET NP-MEMBER = PRE-NP-HEAD OR N ;
 - SET PRE-A-N = (Pron Pers Acc) OR (Pron Indef) OR Num OR (A Ord) OR (Pron Dem) OR (Pron Refl) ; Acc pga av manglende disambiguering tidlig i fila
@@ -2322,24 +2324,11 @@ These were the set types.
 
 ### Grammarchecker sets
 
-- The tag syntax: **ruletype - object - is_now - should_be
-- Thus: *&msyn-agr-adjmsc-adjneu* is a morphosyntactic agreement rule where a Msc adjective should be Neu
+- The tag syntax is as follows: 
+- **ruletype - object - is_now - should_be
+- Example: *&msyn-agr-adjmsc-adjneu* is a morphosyntactic agreement rule where a Msc adjective should be Neu
 
-- LIST @CODE@msyn-agr-adjmsc-adjneu = @CODE@msyn-agr-adjmsc-adjneu ; = 
-- LIST @CODE@msyn-agr-adjneu-adjmsc = @CODE@msyn-agr-adjneu-adjmsc ; = 
-- LIST @CODE@msyn-agr-detneu-detfem = @CODE@msyn-agr-detneu-detfem ; = 
-- LIST @CODE@msyn-agr-detneu-detmsc = @CODE@msyn-agr-detneu-detmsc ; = 
-- LIST @CODE@msyn-det-msc-neu = @CODE@msyn-det-msc-neu ; = 
-- LIST @CODE@msyn-pred-adjmsc-adjneu = @CODE@msyn-pred-adjmsc-adjneu ; = 
-- LIST @CODE@msyn-pred-adjneu-adjmsc = @CODE@msyn-pred-adjneu-adjmsc ; = 
-- LIST @CODE@msyn-pron-nom-acc = @CODE@msyn-pron-nom-acc ; = 
-- LIST @CODE@msyn-qucompl-def-indef = @CODE@msyn-qucompl-def-indef ; = 
-- LIST @CODE@msyn-v-inf-pres = @CODE@msyn-v-inf-pres ; = 
-- LIST @CODE@msyn-v-pres-inf = @CODE@msyn-v-pres-inf ; = 
-- LIST @CODE@real-aa-og = @CODE@real-aa-og ; = 
-- LIST @CODE@real-bli-vaere = @CODE@real-bli-vaere ; = 
-- LIST @CODE@real-og-aa = @CODE@real-og-aa ; = 
-- LIST @CODE@real-vaere-bli = @CODE@real-vaere-bli ; = 
+There are 15 different rule tags, see the rule section below.
 
 ## For ADDRELATION rules (perhaps not in use)
 - TEMPLATE nextWordCrossSent = (-1 (*)); =  Adding mark to word that find the reference word to the left
