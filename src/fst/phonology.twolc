@@ -187,11 +187,9 @@ Rules
  m:0 <=>    _ X4: [ #: (Q3:) | %> s ] ;      ! kammX4:kam
           m _ e: LNR X1: %> ( e | a ) ; ! gammel:gamle
           m _ e: %> Q3: t ;
+	  m _    %> Q3: t ; ! stummX4>Q3t
          u: _ X5: %> ;
          
-
-!"m deletion"
-! m:0 <=> Vow: _ m #: ;
 
 
 "um Deletion 1 Rule"
