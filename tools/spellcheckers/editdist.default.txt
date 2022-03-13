@@ -50,6 +50,7 @@ e	æ	2
 o	u	4
 e	i	4
 o	å	3
+e	é	1
 
 ## Swaps. NB! Please note that these depend on the variable
 ## USE_SWAPS in Makefile.am in this directory. Also note that
