@@ -13,10 +13,9 @@
 # Other licensing options are available upon request, please contact
 # giellatekno@uit.no or feedback@divvun.no
 
-# ==================================================================== #
+# ======================================
 #!!  #  Bokmål Norwegian Grammar Checker
-# ==================================================================== #
-# ====================================================================
+# ======================================
 
 #  Sámi language technology 2000-2017, UiT The arctic University of Norway #
 
@@ -414,8 +413,10 @@ SET NP-HEAD-ACC    = (Pron Acc) OR (N Acc) OR (A Acc) - RCmpnd ;  #!!≈ - @CODE
 
 
 SET PRE-NP-HEAD = (Prop Attr) OR (Prop @>N) OR A OR ABBR OR Num OR RCmpnd OR CC OR (Pron Dem) OR (Pron Ref) OR Indef OR (PrfPrc @>N) OR PrsPrc OR (A Ord) OR (Num @>N) OR (A @>N) OR @>N OR @>A OR @>Pron OR @Num< OR (CC @CNP) OR (@>CC) OR (@Pron<) ;   #!!≈ - @CODE@
+
 #!! The strict version of items that can only be premodifiers, not parts of the predicate
 SET PRE-NP-V = PrfPrc OR PrsPrc OR (V A) OR (Ind Prs) ;   #!!≈ - @CODE@
+
 #!! to be used together with PRE-NP-HEAD before @>N is disambiguated
 SET NP-MEMBER   = PRE-NP-HEAD OR N ;  #!!≈ - @CODE@
 SET PRE-A-N     = (Pron Pers Acc) OR (Pron Indef) OR Num OR (A Ord) OR (Pron Dem) OR (Pron Refl) ;   #!!≈ - @CODE@ Acc pga av manglende disambiguering tidlig i fila
@@ -509,24 +510,27 @@ SET NON-APP = ALLSYNTAG - (@APP);   #!!≈ - @CODE@
 
 #!! ### Grammarchecker sets
 
-#!! - The tag syntax: **ruletype - object - is_now - should_be
-#!! - Thus: *&msyn-agr-adjmsc-adjneu* is a morphosyntactic agreement rule where a Msc adjective should be Neu
+#!! - The tag syntax is as follows: 
+#!! - **ruletype - object - is_now - should_be
+#!! - Example: *&msyn-agr-adjmsc-adjneu* is a morphosyntactic agreement rule where a Msc adjective should be Neu
 
-LIST &msyn-agr-adjmsc-adjneu = &msyn-agr-adjmsc-adjneu ;    #!!≈ - @CODE@ = 
-LIST &msyn-agr-adjneu-adjmsc = &msyn-agr-adjneu-adjmsc ;    #!!≈ - @CODE@ = 
-LIST &msyn-agr-detneu-detfem =  &msyn-agr-detneu-detfem ;   #!!≈ - @CODE@ = 
-LIST &msyn-agr-detneu-detmsc =  &msyn-agr-detneu-detmsc ;   #!!≈ - @CODE@ = 
-LIST &msyn-det-msc-neu = &msyn-det-msc-neu ;			    #!!≈ - @CODE@ = 
-LIST &msyn-pred-adjmsc-adjneu = &msyn-pred-adjmsc-adjneu ;  #!!≈ - @CODE@ = 
-LIST &msyn-pred-adjneu-adjmsc = &msyn-pred-adjneu-adjmsc ;  #!!≈ - @CODE@ = 
-LIST &msyn-pron-nom-acc = &msyn-pron-nom-acc ;			    #!!≈ - @CODE@ = 
-LIST &msyn-qucompl-def-indef = &msyn-qucompl-def-indef ;    #!!≈ - @CODE@ = 
-LIST &msyn-v-inf-pres = &msyn-v-inf-pres ;				    #!!≈ - @CODE@ = 
-LIST &msyn-v-pres-inf = &msyn-v-pres-inf ;				    #!!≈ - @CODE@ = 
-LIST &real-aa-og = &real-aa-og ;						    #!!≈ - @CODE@ = 
-LIST &real-bli-vaere = &real-bli-vaere ;				    #!!≈ - @CODE@ = 
-LIST &real-og-aa = &real-og-aa ;						    #!!≈ - @CODE@ = 
-LIST &real-vaere-bli = &real-vaere-bli ;				    #!!≈ - @CODE@ = 
+#!! There are 15 different rule tags, see the rule section below.
+
+LIST &msyn-agr-adjmsc-adjneu = &msyn-agr-adjmsc-adjneu ;    
+LIST &msyn-agr-adjneu-adjmsc = &msyn-agr-adjneu-adjmsc ;    
+LIST &msyn-agr-detneu-detfem =  &msyn-agr-detneu-detfem ;   
+LIST &msyn-agr-detneu-detmsc =  &msyn-agr-detneu-detmsc ;   
+LIST &msyn-det-msc-neu = &msyn-det-msc-neu ;			    
+LIST &msyn-pred-adjmsc-adjneu = &msyn-pred-adjmsc-adjneu ;  
+LIST &msyn-pred-adjneu-adjmsc = &msyn-pred-adjneu-adjmsc ;  
+LIST &msyn-pron-nom-acc = &msyn-pron-nom-acc ;			    
+LIST &msyn-qucompl-def-indef = &msyn-qucompl-def-indef ;    
+LIST &msyn-v-inf-pres = &msyn-v-inf-pres ;				    
+LIST &msyn-v-pres-inf = &msyn-v-pres-inf ;				    
+LIST &real-aa-og = &real-aa-og ;						    
+LIST &real-bli-vaere = &real-bli-vaere ;				    
+LIST &real-og-aa = &real-og-aa ;						    
+LIST &real-vaere-bli = &real-vaere-bli ;				    
 
 MAPPING-PREFIX = & ; # &msyn-agr-adjmsc-adjneu
 
