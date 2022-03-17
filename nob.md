@@ -2351,69 +2351,72 @@ But perhaps you want to only suggest spellings of words that are not inside "quo
 
 Ensure preceding adjective agrees with noun
 
-**Agreement rule:** masculine adjectives shoul be neuter (msyn-agr-adjmsc-adjneu)
+**Agreement rule:** masculine adjectives shoul be neuter (msyn-agr-adjmsc-adjneu). Context: *Et fin/fint hus.*
 
-**Agreement rule:**  Neuter adjectives shoul be masculine (msyn-agr-adjneu-adjmsc)
+**Agreement rule:**  Neuter adjectives shoul be masculine (msyn-agr-adjneu-adjmsc). Context: *En fint/fin båt*.
 
-**Agreement rule:**  Neuter adjectives should be feminine (msyn-agr-detneu-detfem)
+**Agreement rule:**  Neuter definite determiners should be feminine (msyn-agr-detneu-detfem). Context: *det/den boka*.
 
-**Agreement rule:**  Neuter adjectives should be masculine (msyn-agr-detneu-detmsc)
+**Agreement rule:**  Neuter indefinite determiners should be feminine (msyn-agr-detneu-detfem). Context: *et/ei realitetens kvinne*.
+
+**Agreement rule:**  Neuter indefinite determiners should be feminine (msyn-agr-detneu-detfem). Context: *et/ei realitetens kvinne*.
+
+**Agreement rule:**  Neuter adjectives should be masculine (msyn-agr-detneu-detmsc). Context: *et/en ... båt*.
 
 **Agreement rule:** same rule but for Pron
 
 ## Quantifier phrases
 
-**Agreement rule:** Indef after quantifier. (msyn-qucompl-def-indef)
+**Agreement rule:** Indef after quantifier. (msyn-qucompl-def-indef). Context: *Vi har mange bøkene/bøker.*
 
 ## Predicative gender agreement
 
-Predicative: msculine adjective should be neuter (msyn-pred-adjmsc-adjneu)
+Predicative: msculine adjective should be neuter (msyn-pred-adjmsc-adjneu). Context: *Eplet var god/godt.*
 
-**Agreement rule:** 
+**Agreement rule:**. Context: *Eplet var god/godt.*
 
-**Agreement rule:** 
+**Agreement rule:**  Context: *Eplet var god/godt.*
 
-**Agreement rule:** 
+**Agreement rule:**  Context: *Jeg spiste et eple som var god/godt.*
 
 ## Case errors
 
 Case rules so far: Nominative pronouns should be accusative 
 
-**Agreement rule:** The context is P-complement: Vi snakker om du. (msyn-pron-nom-acc)
+**Agreement rule:** The context is P-complement.  (msyn-pron-nom-acc). Context: *Vi snakker om du.*
 
 ## Finite verb errors
 
-**VErb rule:** 
-Verb error: Infinitive and no finite form in the sentence (msyn-v-inf-pres)
+**VErb rule:** Infinitive and no finite form in the sentence (msyn-v-inf-pres). Context: *Jeg like peanøtter.*
 
 ## Infinitive
 
-**Verb rule:** Verb error: Present tense should be infinitive (msyn-v-pres-inf)
+**Verb rule:** Verb error: Present tense should be infinitive (msyn-v-pres-inf). Context: *Jeg vil skriver et brev.*
 
 ## og/å errors
 
 ### The *og* -> *å* rules 
 
-**Realword rule:** og should be å real-og-aa
+**Realword rule:** og should be å real-og-aa. Context: *Det er ikke til og holde ut.*
 
-**Realword rule:** og should be aa between Ind and Inf (real-og-aa)
+**Realword rule:** og should be aa between Ind and Inf (real-og-aa). Context: *Vi prøver og gå.*
 
 ### The *å* -> *og* rules 
 
-**Realword rule:** å should be og between nouns (real-aa-og)
+**Realword rule:** å should be og between nouns (real-aa-og). Context: *Det var Trond å Kari.*
 
-**Realword rule:** å should be og between similar verbforms except 2nd V = obj (real-aa-og)
+**Realword rule:** å should be og between similar verbforms except 2nd V = obj (real-aa-og). Context: *Vi må lese å skrive lyrikk.*
 
-**Realword rule:** å should be og between similar verbforms except 2nd V = obj (real-aa-og)
+**Realword rule:** å should be og between similar verbforms except 2nd V = obj (real-aa-og). Not: *Det er ikke så lett som man skulle tro å skrive lyrikk.*
 
-**Realword rule:** å should be og between similar verbforms except 2nd V = obj (real-aa-og)
+**Realword rule:** å should be og between similar verbforms except 2nd V = obj (real-aa-og). Context: *Vi vil hoppe å/og sprette.*
 
-**Realword rule:** å should be og between similar verbforms except 2nd V = obj (real-aa-og)
+**Realword rule:** å should be og between similar verbforms except 2nd V = obj (real-aa-og). Context: *Vi hopper å/og spretter.*
 
 ## Punctuation rules
 Simple punctuation rules showing how to change the lemma in the suggestions:
 
-**Quotation mark rule:** Use correct quotation mark
+**Quotation mark rule:** Use correct quotation mark. 
 
 **Ellipsis rule:** Ellipsis … for ... (use-ellipsis)
 
