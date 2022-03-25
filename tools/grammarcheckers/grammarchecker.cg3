@@ -561,7 +561,7 @@ ADD:spell-conservatively (&typo &SUGGESTWF) (<spelled>) IF (NEGATE -1 QMARK LINK
 
 #!!  Ensure preceding adjective agrees with noun
 
-#!! **Agreement rule:** masculine adjectives shoul be neuter (msyn-agr-adjmsc-adjneu). Context: *Et fin/fint hus.*
+#!! **Agreement rule:** masculine adjectives should be neuter (msyn-agr-adjmsc-adjneu). Context: *Et fin/fint hus.*
 ADD:msyn-agr-adjmsc-adjneu (&msyn-agr-adjmsc-adjneu) TARGET A IF (-1 Det)(0 A + MF OR A + Msc OR A + Fem)(NOT 0 A + Neu)(1C N + Neu);
 COPY:msyn-agr-adjmsc-adjneu (Neu Sg Indef &SUGGEST)  EXCEPT (Fem Sg Indef) OR (Msc Sg Indef) OR (MF Sg Indef)  TARGET (A Pos &msyn-agr-adjmsc-adjneu) ;
 ADDRELATION:msyn-agr-adjmsc-adjneu ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&msyn-agr-adjmsc-adjneu)) ;
@@ -666,7 +666,7 @@ COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg2 &msyn-p
 
 #!! ## Finite verb errors
 
-#!! **VErb rule:** Infinitive and no finite form in the sentence (msyn-v-inf-pres). Context: *Jeg like peanøtter.*
+#!! **Verb rule:** Infinitive and no finite form in the sentence (msyn-v-inf-pres). Context: *Jeg like/liker peanøtter.*
 ADD:msyn-v-inf-pres (&msyn-v-inf-pres) TARGET (V Inf) IF (-1C (N) OR (Pron Nom))(*-2 BOS BARRIER VFIN OR ("så"))(NOT -1 ("å"))(0 V)(NOT 0 Pass)(NOT *0 VFIN);
 COPY:msyn-v-inf-pres (Ind Prs &SUGGEST) EXCEPT (Inf)  TARGET (V Inf &msyn-v-inf-pres);
 ADDRELATION:msyn-v-inf-pres ($2) (*) FROM (1 V LINK 0 (&msyn-v-inf-pres)) ;
