@@ -76,9 +76,9 @@ nØYE
 +N+Fem+Sg+Def+Radical:datra    K ;
 +N:         R ;
 
-@NO CODE@ for nynorsk only.
+`NO CODE` for nynorsk only.
 
-@NO CODE@ for nynorsk only.
+`NO CODE` for nynorsk only.
 
 * * *
 

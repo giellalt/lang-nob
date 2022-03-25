@@ -380,7 +380,7 @@ But perhaps you want to only suggest spellings of words that are not inside "quo
 
 Ensure preceding adjective agrees with noun
 
-**Agreement rule:** masculine adjectives shoul be neuter (msyn-agr-adjmsc-adjneu). Context: *Et fin/fint hus.*
+**Agreement rule:** masculine adjectives should be neuter (msyn-agr-adjmsc-adjneu). Context: *Et fin/fint hus.*
 
 **Agreement rule:**  Neuter adjectives shoul be masculine (msyn-agr-adjneu-adjmsc). Context: *En fint/fin båt*.
 
@@ -416,7 +416,7 @@ Case rules so far: Nominative pronouns should be accusative
 
 ## Finite verb errors
 
-**VErb rule:** Infinitive and no finite form in the sentence (msyn-v-inf-pres). Context: *Jeg like peanøtter.*
+**Verb rule:** Infinitive and no finite form in the sentence (msyn-v-inf-pres). Context: *Jeg like/liker peanøtter.*
 
 ## Infinitive
 
