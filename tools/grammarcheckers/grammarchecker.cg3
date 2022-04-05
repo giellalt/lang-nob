@@ -571,7 +571,10 @@ ADDRELATION:msyn-agr-adjmsc-adjneu ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&m
 
 
 #!! **Agreement rule:**  Neuter adjectives shoul be masculine (msyn-agr-adjneu-adjmsc). Context: *En fint/fin båt*.
-ADD:msyn-agr-adjneu-adjmsc (&msyn-agr-adjneu-adjmsc) TARGET A IF (-1 Det + MF OR Pron + Indef + MF OR Pron + Indef + Msc)(0 A + Neu)(1 N + Msc);
+ADD:msyn-agr-adjneu-adjmsc (&msyn-agr-adjneu-adjmsc) TARGET A IF 
+(-1 Det + MF OR Pron + Indef + MF OR Pron + Indef + Msc)
+(0 A + Neu)
+(1 N + Msc);
 COPY:msyn-agr-adjneu-adjmsc (Msc &SUGGEST) EXCEPT (Neu) TARGET (A Pos Sg Indef &msyn-agr-adjmsc-adjneu);
 ADDRELATION:msyn-agr-adjneu-adjmsc ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&msyn-agr-adjneu-adjmsc)) ;
 
@@ -612,7 +615,8 @@ COPY:msyn-agr-detneu-detmsc ("en" Det Dem Msc Sg &SUGGEST) EXCEPT ("et" Pron Ind
 #!! ## Quantifier phrases
 
 #!! **Agreement rule:** Indef after quantifier. (msyn-qucompl-def-indef). Context: *Vi har mange bøkene/bøker.*
-ADD:msyn-qucompl-def-indef (&msyn-qucompl-def-indef) TARGET N + Pl + Def IF (*-1 Num OR ("mange") + Pos OR ("mange") + Comp BARRIER NOT-A LINK NOT 0 Sem/ID LINK NOT -1 (§));
+ADD:msyn-qucompl-def-indef (&msyn-qucompl-def-indef) TARGET N + Pl + Def IF 
+(*-1 Num OR ("mange") + Pos OR ("mange") + Comp BARRIER NOT-A LINK NOT 0 Sem/ID LINK NOT -1 (§));
 COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Def) TARGET (N Pl &msyn-qucompl-def-indef); 
 ADDRELATION:msyn-qucompl-def-indef ($2) (*) FROM (T:previousWordCrossSent LINK 0 (&msyn-qucompl-def-indef)) ;
 ## Vi har mange bøkene.
@@ -628,7 +632,11 @@ ADDRELATION:msyn-qucompl-def-indef ($2) (*) FROM (T:previousWordCrossSent LINK 0
 ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A) IF (NOT *-1 Pr BARRIER NOT-NPMOD LINK -1 N + Msc)(-2C (N Neu Sg) OR ("det"))(-1 ("være"))(0C Msc OR Fem OR MF)(NOT 1 N + Msc);
 
 #!! **Agreement rule:**  Context: *Eplet var god/godt.*
-ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A) IF (-2C (N Neu Sg) LINK *-1 BOS BARRIER NOT-NPMOD)(-1 ("være"))(0C Msc OR Fem OR MF)(NOT 1 N + Msc);
+ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A) IF 
+(-2C (N Neu Sg) LINK *-1 BOS BARRIER NOT-NPMOD)
+(-1 ("være"))
+(0C Msc OR Fem OR MF)
+(NOT 1 N + Msc);
 COPY:msyn-pred-adjmsc-adjneu (Neu Sg Indef &SUGGEST) EXCEPT (Msc Sg Indef)  TARGET (A Pos &msyn-pred-adjmsc-adjneu);
 ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (2 A LINK 0 (&msyn-pred-adjmsc-adjneu)) ;
 
@@ -657,7 +665,9 @@ ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (6 A LINK 0 (&msyn-pred-adjmsc
 #!! Case rules so far: Nominative pronouns should be accusative 
 
 #!!  **Agreement rule:** The context is P-complement.  (msyn-pron-nom-acc). Context: *Vi snakker om du.*
-ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg2 Nom) IF (-1 Pr)(NOT -1 ("for") OR ("som") OR ("om"));
+ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg2 Nom) IF 
+(-1 Pr)
+(NOT -1 ("for") OR ("som") OR ("om"));
 COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg2 &msyn-pron-nom-acc);
 ## Vi snakker om du.
 #$ Vi snakker om deg.
@@ -690,7 +700,7 @@ ADD:msyn-v-pres-inf (&msyn-v-pres-inf) TARGET V IF (0C (Ind Prs))(-2C (N) OR (Pr
 COPY:msyn-v-pres-inf (Inf &SUGGEST) EXCEPT (Ind Prs)  TARGET (V Ind Prs &msyn-v-pres-inf);
 ADDRELATION:msyn-v-pres-inf ($2) (V) FROM (1 V LINK 0 (&msyn-v-pres-inf)) ;
 
-## Jeg vil skriver et brev.   #!!≈ - *@CODE@*
+## Jeg vil skriver et brev.   #!!≈ - *@CODE@* (funkar ikkje)
 #$ Jeg vil skrive et brev.   #!!≈ - *@CODE@*
 
 
