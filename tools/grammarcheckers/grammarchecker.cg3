@@ -575,7 +575,7 @@ ADD:msyn-agr-adjneu-adjmsc (&msyn-agr-adjneu-adjmsc) TARGET A IF
 (-1 Det + MF OR Pron + Indef + MF OR Pron + Indef + Msc)
 (0 A + Neu)
 (1 N + Msc);
-COPY:msyn-agr-adjneu-adjmsc (Msc &SUGGEST) EXCEPT (Neu) TARGET (A Pos Sg Indef &msyn-agr-adjmsc-adjneu);
+COPY:msyn-agr-adjneu-adjmsc (Msc Sg Indef &SUGGEST) EXCEPT (Neu Sg Indef) TARGET (A Pos &msyn-agr-adjneu-adjmsc);
 ADDRELATION:msyn-agr-adjneu-adjmsc ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&msyn-agr-adjneu-adjmsc)) ;
 
 ## Dette er en fint båt.
