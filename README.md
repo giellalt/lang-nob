@@ -1,6 +1,7 @@
 The Norwegian Bokmål morphology and tools
 ==========================================
 
+
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-nob)](https://github.com/giellalt/lang-nob/issues)
 [![Build Status](https://divvun-tc.thetc.se/api/github/v1/repository/giellalt/lang-nob/main/badge.svg)](https://github.com/giellalt/lang-nob/actions)
 [![License](https://img.shields.io/github/license/giellalt/lang-nob)](https://github.com/giellalt/lang-nob/blob/main/LICENSE)
