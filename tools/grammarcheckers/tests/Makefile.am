@@ -10,7 +10,7 @@ if WANT_GRAMCHECK
 TESTS=\
 	msyn-agr-adjmsc-adjneu.yaml \
 	msyn-agr-adjneu-adjmsc.yaml \
-	msyn-det-msc-neu.yaml \
+	msyn-agr-detmsc-detneu.yaml \
 	msyn-pred-adjmsc-adjneu.yaml \
 	msyn-pred-adjneu-adjmsc.yaml \
 	msyn-pron-nom-acc.yaml \
@@ -18,26 +18,36 @@ TESTS=\
 	msyn-setningar.yaml \
 	msyn-v-inf-pres.yaml \
 	msyn-v-pres-inf.yaml \
+	neg-aa-og.yaml			    \
+	neg-agr-adjmsc-adjneu.yaml  \
+	neg-agr-adjneu-adjmsc.yaml  \
+	neg-og-aa.yaml			    \
+	neg-pred-adjmsc-adjneu.yaml \
+	neg-pron-nom-acc.yaml	    \
+	neg-v-inf-pres.yaml		    \
+	neg-v-pres-inf.yaml		    \
 	real-aa-og.yaml \
 	real-bli-vaere.yaml \
 	real-og-aa.yaml \
 	real-og-aa.yaml \
-	real-vaere-bli.yaml
+	real-vaere-bli.yaml 
 
 
 
 # List tests that are presently (expected) failures here, ie things that should
 # be fixed *later*, but is not critical at the moment:
 XFAIL_TESTS=\
-	msyn-agr-adjmsc-adjneu.yaml \
-	msyn-agr-adjneu-adjmsc.yaml \
-	msyn-det-msc-neu.yaml \
-	msyn-pred-adjmsc-adjneu.yaml \
-	msyn-pred-adjneu-adjmsc.yaml \
 	msyn-pron-nom-acc.yaml \
 	msyn-qucompl-def-indef.yaml \
 	msyn-setningar.yaml \
-	real-aa-og.yaml \
+	neg-aa-og.yaml			    \
+	neg-agr-adjmsc-adjneu.yaml  \
+	neg-agr-adjneu-adjmsc.yaml  \
+	neg-og-aa.yaml			    \
+	neg-pred-adjmsc-adjneu.yaml \
+	neg-pron-nom-acc.yaml	    \
+	neg-v-inf-pres.yaml		    \
+	neg-v-pres-inf.yaml		    \
 	real-bli-vaere.yaml \
 	real-og-aa.yaml \
 	real-og-aa.yaml \
