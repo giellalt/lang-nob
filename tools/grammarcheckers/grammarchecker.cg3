@@ -305,7 +305,10 @@ SET V-MOOD = Ind OR Imp ; #!!≈ - @CODE@
 SET VFIN =  V-MOOD ; #!!≈ - @CODE@
 
 LIST QUASIAUX = "akte" "anbefale" "begynne" "behøve" "bli" "forsøke" "fortsette" "forvente" "gidde" "glemme" "huske" "klare" "like" "lære" "nekte" "orke" "prøve" "risikere" "slippe" "slutte" "synes" "søke" "tenke" "trenge" "tørre" "unngå" "velge" "vurdere" "være" "ønske" ;  #!!≈ - @CODE@
-	
+
+LIST OBJPREDVERB = "føle" "kjenne" "se" ;
+
+
 SET VFIN-NOT-IMP = Ind ; #!!≈ - @CODE@
 SET VFIN-NOT-AUX = Ind - AUX ; #!!≈ - @CODE@
 SET NOT-PRFPRC = WORD - PrfPrc ; #!!≈ - @CODE@
@@ -677,7 +680,7 @@ COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg2 &msyn-p
 #!! ## Finite verb errors
 
 #!! **Verb rule:** Infinitive and no finite form in the sentence (msyn-v-inf-pres). Context: *Jeg like/liker peanøtter.*
-ADD:msyn-v-inf-pres (&msyn-v-inf-pres) TARGET (V Inf) IF (-1C (N) OR (Pron Nom))(*-2 BOS BARRIER VFIN OR ("så"))(NOT -1 ("å"))(0 V)(NOT 0 Pass)(NOT *0 VFIN);
+ADD:msyn-v-inf-pres (&msyn-v-inf-pres) TARGET (V Inf) IF (-1C (N) OR (Pron Nom))(*-2 BOS BARRIER VFIN OR ("så"))(NEGATE -2 OBJPREDVERB)(NEGATE -1 ("å"))(0 V)(NOT 0 Pass)(NOT *0 VFIN);
 COPY:msyn-v-inf-pres (Ind Prs &SUGGEST) EXCEPT (Inf)  TARGET (V Inf &msyn-v-inf-pres);
 ADDRELATION:msyn-v-inf-pres ($2) (*) FROM (1 V LINK 0 (&msyn-v-inf-pres)) ;
 
@@ -734,10 +737,16 @@ ADDRELATION:real-aa-og ($3) (N) FROM (-1 N LINK 0 (&real-aa-og)) ;
 #$ Det var Trond og Kari.  #!!≈ - *@CODE@*
 
 #!! **Realword rule:** å should be og between similar verbforms except 2nd V = obj (real-aa-og). Context: *Vi må lese å skrive lyrikk.*
-ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF (-2 hj-V)(-1 V + $$VERBFORM LINK NOT 0 QUASIAUX) (1 V + $$VERBFORM);
+ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF (NOT *-4 ("som") BARRIER NOT-NPMOD)(-2 hj-V)(-1 V + $$VERBFORM LINK NOT 0 QUASIAUX) (1 V + $$VERBFORM);
+#$ Det er ikke så lett som man skulle tro å skrive lyrikk.
+## Vi må lese å skrive lyrikk
 
 #!! **Realword rule:** å should be og between similar verbforms except 2nd V = obj (real-aa-og). Not: *Det er ikke så lett som man skulle tro å skrive lyrikk.*
-ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF (NOT *-4 ("som") LINK -1 A)(-2 hj-V)(-1 V + $$VERBFORM LINK NOT 0 QUASIAUX) (1 V + $$VERBFORM);
+ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF
+(-2 hj-V)
+(-1 V + $$VERBFORM LINK NOT 0 QUASIAUX)
+(NOT *-1 ("som"))
+(1 V + $$VERBFORM);
 #COPY:real-v-aa-og ("og" CC &SUGGEST) EXCEPT ("å" IM) TARGET (IM &real-v-aa-og);
 #COPY:real-v-aa-og ("og" CC &SUGGEST) EXCEPT ("å" Use/SpellNoSugg) TARGET (IM &real-v-aa-og);
 COPY:real-v-aa-og ("og" CC &SUGGEST) EXCEPT ("å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR) TARGET (N &real-v-aa-og);
