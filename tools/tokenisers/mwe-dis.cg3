@@ -1965,7 +1965,7 @@ SECTION
 
 
 SELECT:trab CLB IF (0 Gram/IAbbr);
-SELECT:itrab ABBR IF (0 Gram/TAbbr);
+SELECT:itrab ABBR IF (0 Gram/TAbbr)(NEGATE 0 ("i") OR ("å"));
 
 # Example input:
 #
