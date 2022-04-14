@@ -3,6 +3,7 @@ Config:
   Variant: nobgram-dev
   
 Tests:
+  - "Jeg akter å {lærer}£{lære} norsk."
   - "Jeg liker å {lærer}£{lære} norsk."
   - "Jeg {like}£{liker} å {lærer}£{lære} norsk."
   - "Jeg vil {lærer}£{lære} norsk."
