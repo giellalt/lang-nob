@@ -37,8 +37,6 @@ XFAIL_TESTS=\
 	msyn-pron-nom-acc.yaml \
 	msyn-qucompl-def-indef.yaml \
 	msyn-setningar.yaml \
-	msyn-v-inf-pres.yaml \
-	msyn-v-pres-inf.yaml \
 	real-aa-og.yaml \
 	real-bli-vaere.yaml \
 	real-og-aa.yaml \
