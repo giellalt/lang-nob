@@ -1,0 +1,23 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+  
+Tests:
+  - "Hva har de tenkt å gjøre?"
+  - "Herren bryter folkets planer og avverger det de har tenkt å gjøre."
+  - "Han har sluttet å handle rett og godt"
+  - "Han har sluttet og handle rett og godt"
+  - "Han har sluttet å handle rett å godt"
+  - "Dere skal slippe å dø."
+  - "Vi skal kjempe og dø."
+  - "Det er ikke så lett som man skulle tro å skrive lyrikk."
+  - "Det er mange som vil tro og skrive lyrikk."
+  - "Jeg vil begynne å spille."
+  - "Vi prøver å skrive lyrikk."
+  - "Vi må prøve å skrive lyrikk."
+  - "Det er ikke så lett som man skulle tro å skrive lyrikk."
+  - "Det er ikke så lett å skrive lyrikk."
+
+
+
+

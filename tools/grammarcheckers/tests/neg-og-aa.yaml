@@ -1,0 +1,14 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+  
+Tests:
+  - "Men de tålsomme skal arve landet og glede seg over lykke og fred."
+  - "De tålsomme skal arve landet og glede seg over lykke og fred."
+  - "De tålsomme skal arve landet og glede seg."
+  - "La dem skjemmes og skremmes for alltid."
+  - "Kom og se hva Herren har gjort!"
+  - "Per kom og se hva Herren har gjort!"
+  - "Per, kom og se hva Herren har gjort!"
+  - "Kom nå og se hva Herren har gjort!"
+  

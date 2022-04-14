@@ -1,0 +1,7 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+  
+Tests:
+  - "Et nyskapt folk skal prise Herren."
+  - "Det var mitt første minne."

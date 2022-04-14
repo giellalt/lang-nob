@@ -3,6 +3,4 @@ Config:
   Variant: nobgram-dev
   
 Tests:
-  - "Et nyskapt folk skal prise Herren."
   - "Dette er et {fin}£{fint} hus."
-  - "Det var mitt første minne."

@@ -1,0 +1,10 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+  
+Tests:
+  - "Hver avkrok av landet er full av voldsferd."
+  - "Mitt hjerte er rolig."
+  - "Mitt hjerte er fremmed."
+  - "Det er grå lørdag."
+  - "Hver avkrok i landet var full av folk."
