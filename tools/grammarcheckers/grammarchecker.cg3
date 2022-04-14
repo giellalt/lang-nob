@@ -680,9 +680,12 @@ COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg2 &msyn-p
 #!! ## Finite verb errors
 
 #!! **Verb rule:** Infinitive and no finite form in the sentence (msyn-v-inf-pres). Context: *Jeg like/liker peanøtter.*
-ADD:msyn-v-inf-pres (&msyn-v-inf-pres) TARGET (V Inf) IF (-1C (N) OR (Pron Nom))(*-2 BOS BARRIER VFIN OR ("så"))(NEGATE -2 OBJPREDVERB)(NEGATE -1 ("å"))(0 V)(NOT 0 Pass)(NOT *0 VFIN);
+ADD:msyn-v-inf-pres (&msyn-v-inf-pres) TARGET (V Inf) IF (-1C (N) OR (Pron Nom))(*-2 BOS BARRIER VFIN OR ("så"))(NEGATE -2 OBJPREDVERB)(NEGATE -1 ("å"))(0 V)(NOT 0 Pass OR ("så")); #(NOT *0 VFIN);
 COPY:msyn-v-inf-pres (Ind Prs &SUGGEST) EXCEPT (Inf)  TARGET (V Inf &msyn-v-inf-pres);
 ADDRELATION:msyn-v-inf-pres ($2) (*) FROM (1 V LINK 0 (&msyn-v-inf-pres)) ;
+
+## Jeg like å lærer norsk.
+#$ Jeg liker å lære norsk.
 
 #$ Vi så lyset forsvinne.
 #$ Retten til å drive fiske er grunnlovsfestet.
@@ -699,13 +702,20 @@ ADDRELATION:msyn-v-inf-pres ($2) (*) FROM (1 V LINK 0 (&msyn-v-inf-pres)) ;
 #!! ## Infinitive
 
 #!!  **Verb rule:** Verb error: Present tense should be infinitive (msyn-v-pres-inf). Context: *Jeg vil skriver et brev.*
-ADD:msyn-v-pres-inf (&msyn-v-pres-inf) TARGET V IF (0C (Ind Prs))(-2C (N) OR (Pron Nom))(-1 hj-V)(NOT 0 Pass);
+ADD:msyn-v-pres-inf (&msyn-v-pres-inf) TARGET V IF (0 (Ind Prs))(-2C (N) OR (Pron Nom))(-1 hj-V)(NOT 0 Pass);
 COPY:msyn-v-pres-inf (Inf &SUGGEST) EXCEPT (Ind Prs)  TARGET (V Ind Prs &msyn-v-pres-inf);
 ADDRELATION:msyn-v-pres-inf ($2) (V) FROM (1 V LINK 0 (&msyn-v-pres-inf)) ;
 
 ## Jeg vil skriver et brev.   #!!≈ - *@CODE@* (funkar ikkje)
 #$ Jeg vil skrive et brev.   #!!≈ - *@CODE@*
 
+#!!  **Verb rule:** Verb error: Present tense should be infinitive (msyn-v-pres-inf). Context: *Jeg liker å skriver et brev.*
+ADD:msyn-v-pres-inf (&msyn-v-pres-inf) TARGET V IF (0 (Ind Prs))(-2C QUASIAUX)(-1 IM)(NOT 0 Pass);
+COPY:msyn-v-pres-inf (Inf &SUGGEST) EXCEPT (Ind Prs)  TARGET (V Ind Prs &msyn-v-pres-inf);
+ADDRELATION:msyn-v-pres-inf ($2) (V) FROM (2 V LINK 0 (&msyn-v-pres-inf)) ;
+
+## Jeg liker å skriver et brev.
+#$ Jeg liker å skrive et brev.
 
 #!! ## og/å errors
 
