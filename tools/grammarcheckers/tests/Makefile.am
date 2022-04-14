@@ -10,17 +10,19 @@ if WANT_GRAMCHECK
 TESTS=\
 	msyn-agr-adjmsc-adjneu.yaml \
 	msyn-agr-adjneu-adjmsc.yaml \
-	msyn-pron-nom-acc.yaml \
 	msyn-det-msc-neu.yaml \
 	msyn-pred-adjmsc-adjneu.yaml \
 	msyn-pred-adjneu-adjmsc.yaml \
+	msyn-pron-nom-acc.yaml \
 	msyn-qucompl-def-indef.yaml \
+	msyn-setningar.yaml \
 	msyn-v-inf-pres.yaml \
 	msyn-v-pres-inf.yaml \
+	real-aa-og.yaml \
 	real-bli-vaere.yaml \
 	real-og-aa.yaml \
-	real-aa-og.yaml \
-	real-og-aa.yaml
+	real-og-aa.yaml \
+	real-vaere-bli.yaml
 
 
 
@@ -29,17 +31,19 @@ TESTS=\
 XFAIL_TESTS=\
 	msyn-agr-adjmsc-adjneu.yaml \
 	msyn-agr-adjneu-adjmsc.yaml \
-	msyn-pron-nom-acc.yaml \
 	msyn-det-msc-neu.yaml \
 	msyn-pred-adjmsc-adjneu.yaml \
 	msyn-pred-adjneu-adjmsc.yaml \
+	msyn-pron-nom-acc.yaml \
 	msyn-qucompl-def-indef.yaml \
+	msyn-setningar.yaml \
 	msyn-v-inf-pres.yaml \
 	msyn-v-pres-inf.yaml \
+	real-aa-og.yaml \
 	real-bli-vaere.yaml \
 	real-og-aa.yaml \
-	real-aa-og.yaml \
-	real-og-aa.yaml
+	real-og-aa.yaml \
+	real-vaere-bli.yaml
 
 endif # WANT_GRAMCHECK
 
