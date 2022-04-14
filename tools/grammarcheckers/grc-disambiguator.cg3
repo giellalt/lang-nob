@@ -38,6 +38,7 @@ LIST s-gr = "$\;" "$:" "$..." "$--" "$-" "$," "$\"" konj >>> <<< CLB ;
 LIST @Adv = Adv;
 LIST spoersmaal-t = "$\?";
 LIST s^periode-beg/CLB-CC = "$\;" "$:" "$..." "$--" "$-" "$," "$\"" konj >>> <<< ;
+LIST COMMA = ";" ;
 
 LIST ABBR = ABBR ;
 LIST Num = Num ;
@@ -262,7 +263,7 @@ LIST %ytterligere% = "ytterligere" ;
 LIST <<< = <<< ;
 LIST <adv> = <adv> ;
 LIST PrfPrc = PrfPrc PrfPrc ; # TT la til PrPtc for gt-kompatibilitet
-LIST <PrsPtc> = i1 i3 i4 PrsPtc ; # ditto
+LIST <PrsPtc> = i1 i3 i4 PrsPtc PrsPrc ; # ditto
 LIST >>> = >>> ;
 
 LIST Pers = Pers ;
@@ -750,10 +751,61 @@ LIST CURRENCY = "kr" "dollar" "euro" "kroner" "€" "$" ;
 # Complementary sets
 
 LIST WORD = N A Adv V CS CC Interj Pcle Pr IM Det Pron Interj ;
-LIST PRE-NP-HEAD = Clt A Det ;
-SET NOT-PRE-NP-HEAD = WORD - PRE-NP-HEAD ;
 
 SET NOT-ADV = WORD - Adv ;
+
+
+#!! * The PRE-NP-HEAD family of sets
+
+#!! These sets model noun phrases (NPs). The idea is to first define whatever can
+#!! occur in front of the head of the NP, and thereafter negate that with the
+#!! expression **WORD - premodifiers**.
+
+
+LIST RCmpnd = RCmpnd ;   #!!≈ - @CODE@
+
+
+SET PRE-NP-HEAD = (Prop Attr) OR A OR ABBR OR Num OR RCmpnd OR CC OR (Pron Dem) OR (Pron Ref) OR Indef OR <PrsPtc> OR (A Ord) OR (CC @CNP) OR (@>CC) OR (@Pron<) OR Clt OR Det ;   #!!≈ - @CODE@
+
+SET NOT-PRE-NP-HEAD = WORD - PRE-NP-HEAD ;
+
+#!! The strict version of items that can only be premodifiers, not parts of the predicate
+SET PRE-NP-V = PrfPrc OR <PrsPtc> OR (V A) OR (Ind Prs) ;   #!!≈ - @CODE@
+
+#!! to be used together with PRE-NP-HEAD before @>N is disambiguated
+SET NP-MEMBER   = PRE-NP-HEAD OR N ;  #!!≈ - @CODE@
+SET PRE-A-N     = (Pron Pers Acc) OR (Pron Indef) OR Num OR (A Ord) OR (Pron Dem) OR (Pron Refl) ;   #!!≈ - @CODE@ Acc pga av manglende disambiguering tidlig i fila
+SET NOT-PRE-A-N = WORD - PRE-A-N ;  #!!≈ - @CODE@
+LIST PUNCT-LEFT = (PUNCT LEFT) ;  #!!≈ - @CODE@
+LIST PUNCT-RIGHT = (PUNCT RIGHT) ;  #!!≈ - @CODE@
+SET PRE-APP   = COMMA OR PUNCT-LEFT OR PRE-NP-HEAD ;  #!!≈ - @CODE@
+#!! This set ist not only for what can
+#!! stand in front of appositions but also
+#!! postmodifiers.
+
+
+
+#!! The set **NOT-NPMOD** is used to find barriers between NPs.
+#!! Typical usage: ... (*1 N BARRIER NOT-NPMOD) ...
+#!! meaning: Scan to the first noun, ignoring anything that can be
+#!! part of the noun phrase of that noun (i.e., "scan to the next NP head")
+
+SET NOT-NPMOD     = WORD - PRE-NP-HEAD OR ABBR ;     #!!≈ - @CODE@                  
+# This is the previous NPNH (npnh) set.
+# NOT-NPMOD  = "NOT-PRE-NP-HEAD"
+ 
+SET NOT-NPMOD-ACC     = NOT-NPMOD - Acc OR ABBR ;   #!!≈ - @CODE@
+SET NOT-NPMOD-ACC-ADV     = NOT-NPMOD - Acc - Adv OR ABBR ;   #!!≈ - @CODE@
+# To be used in mappingrules, before the disambuation of Acc and Gen.                     
+
+SET NOT-NPMODADV    = WORD - PRE-NP-HEAD - Adv ;     #!!≈ - @CODE@                   
+#!! NOT-NPMODADV = "NOT-PRE-NP-HEAD-OR-ADV"
+SET NOT-NPMODADV-INDEF = WORD - PRE-NP-HEAD - Adv - Indef ;   #!!≈ - @CODE@             
+#!! NOT-NPMODADVI = "     ...-OR-INDEF"
+SET NOT-NPMODCC = WORD - PRE-NP-HEAD - COMMA ; #- @CNP ;  #!!≈ - @CODE@
+SET NAPP = WORD - PRE-APP ;  #!!≈ - @CODE@
+
+
 
 CONSTRAINTS
 
@@ -7585,14 +7637,14 @@ SELECT (Adv) IF
 ;
 
 
-# 2698
-SELECT (Adv) IF
-	(NOT 0 %saa/og/selv% OR CS)
-	(NOT 0 Pr OR PrfPrc)
-	(NOT 0 %alt% OR %saa%)
-	(1 Nom)
-	(-1 fv)
-;
+# 2698 grc-removal
+#SELECT (Adv) IF
+#	(NOT 0 %saa/og/selv% OR CS)
+#	(NOT 0 Pr OR PrfPrc)
+#	(NOT 0 %alt% OR %saa%)
+#	(1 Nom)
+#	(-1 fv)
+#;
 
 
 # 2699
@@ -9057,11 +9109,11 @@ SELECT (Det Fem) IF
 ;
 
 
-# 2569
-SELECT (Det Fem) IF
-	(NOT 0 Poss-det OR %noe%)
-	(1 N-prop OR Fem)
-;
+# 2569 grc-removal
+#SELECT (Det Fem) IF
+#	(NOT 0 Poss-det OR %noe%)
+#	(1 N-prop OR Fem)
+#;
 
 
 #
@@ -13894,14 +13946,14 @@ REMOVE (Det Msc) IF
 ;
 
 
-# 2025
-REMOVE (Det Msc) IF
-	(0 %en%)
-	(1 PrfPrc/Inf OR Indef-Sg-Msc-A)
-	(-1 hj-V)
-	(NOT 1 farlige-Inf OR Indef-Sg-Msc-N)
-	(NOT 2 Indef-Sg-Msc-N OR komma/CC)
-;
+# 2025 grc-removal
+#REMOVE (Det Msc) IF
+#	(0 %en%)
+#	(1 PrfPrc/Inf OR Indef-Sg-Msc-A)
+#	(-1 hj-V)
+#	(NOT 1 farlige-Inf OR Indef-Sg-Msc-N)
+#	(NOT 2 Indef-Sg-Msc-N OR komma/CC)
+#;
 
 
 # 2026
@@ -13929,16 +13981,16 @@ REMOVE (Det Msc) IF
 ;
 
 
-# 2029
-REMOVE (Det Msc) IF
-	(0 %en%)
-	(-1 Prs/Prt)
-	(NOT 1 Pr OR %som%)
-	(NOT 1 %tvers% OR Pl-det)
-	(NOT 1 komma/CC OR %siste%/ordenstall)
-	(*1C ikke-AdvA-det LINK NOT 0 Indef-Sg-Msc-N LINK NOT 0 Clt LINK NOT 0 N-prop LINK NOT *-1 Indef-Sg-Msc-N)
-	(*1C setn-gr BARRIER tall-Pl)
-;
+# 2029 grc-removal
+#REMOVE (Det Msc) IF
+#	(0 %en%)
+#	(-1 Prs/Prt)
+#	(NOT 1 Pr OR %som%)
+#	(NOT 1 %tvers% OR Pl-det)
+#	(NOT 1 komma/CC OR %siste%/ordenstall)
+#	(*1C ikke-AdvA-det LINK NOT 0 Indef-Sg-Msc-N LINK NOT 0 Clt LINK NOT 0 N-prop LINK NOT *-1 Indef-Sg-Msc-N)
+#	(*1C setn-gr BARRIER tall-Pl)
+#;
 
 
 # 2030
@@ -18057,15 +18109,15 @@ REMOVE (Det Msc) IF
 ;
 
 
-# 1580
-REMOVE (Det Msc) IF
-	(0 %en%)
-	(NOT 0 Clt)
-	(NOT 1 Msc OR adverb)
-	(NOT 1 A-sup OR A-komp)
-	(NOT 1 %av% OR Pl-det)
-	(NOT 1 komma/CC OR anf)
-;
+# 1580 grc-removal
+#REMOVE (Det Msc) IF
+#	(0 %en%)
+#	(NOT 0 Clt)
+#	(NOT 1 Msc OR adverb)
+#	(NOT 1 A-sup OR A-komp)
+#	(NOT 1 %av% OR Pl-det)
+#	(NOT 1 komma/CC OR anf)
+#;
 
 
 # 1578
@@ -18228,8 +18280,8 @@ REMOVE (Pron) IF (0 Det + $$GEN)(*1 N + $$GEN BARRIER NOT-PRE-NP-HEAD);
 
 REMOVE Pron + Pers + Pl3 IF (1 N + Pl OR A + Pl OR Qnt + Pl);
 
-REMOVE Det IF (0 Pron)(NOT *1 N OR Num BARRIER NOT-PRE-NP-HEAD);
-REMOVE Det IF (0 Pron)(0 Det + Neu)(*1C N + Msc OR N + Fem BARRIER NOT-PRE-NP-HEAD);
+REMOVE Det IF (0 Pron)(NEGATE *1 N OR Num BARRIER NOT-NPMOD);
+REMOVE Det IF (0 Pron)(0 Det + Neu)(*1C N + Msc OR N + Fem BARRIER NOT-NPMOD);
 REMOVE Det IF (0 Pron)(1 Pr OR V OR CLB OR EOS);
 
 # N and not V
