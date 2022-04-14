@@ -523,7 +523,7 @@ LIST &msyn-agr-adjmsc-adjneu = &msyn-agr-adjmsc-adjneu ;
 LIST &msyn-agr-adjneu-adjmsc = &msyn-agr-adjneu-adjmsc ;    
 LIST &msyn-agr-detneu-detfem =  &msyn-agr-detneu-detfem ;   
 LIST &msyn-agr-detneu-detmsc =  &msyn-agr-detneu-detmsc ;   
-LIST &msyn-det-msc-neu = &msyn-det-msc-neu ;			    
+LIST &msyn-agr-detmsc-detneu = &msyn-agr-detmsc-detneu ;			    
 LIST &msyn-pred-adjmsc-adjneu = &msyn-pred-adjmsc-adjneu ;  
 LIST &msyn-pred-adjneu-adjmsc = &msyn-pred-adjneu-adjmsc ;  
 LIST &msyn-pron-nom-acc = &msyn-pron-nom-acc ;			    
@@ -584,11 +584,26 @@ ADDRELATION:msyn-agr-adjneu-adjmsc ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&m
 ## Dette er en fint båt.
 #$ Dette er en fin båt.
 
+#!! **Agreement rule:**  Masculine definite determiners should be neuter (msyn-agr-detmsc-detneu). Context: *den/det huset*.
+ADD:msyn-agr-detmsc-detneu (&msyn-agr-detmsc-detneu) TARGET (Det Dem Msc Sg) IF (1 (N Neu Sg Def));
+COPY:msyn-agr-detmsc-detneu (Neu Sg &SUGGEST) EXCEPT (Msc Sg) TARGET (Det Dem &msyn-agr-detmsc-detneu);
+## Mannen kjøpte den huset.
+#$ Mannen kjøpte det huset.
+
+#!! **Agreement rule:**  Masculine indefinite determiners should be neuter (msyn-agr-detmsc-detneu). Context: *en/et land*.
+ADD:msyn-agr-detmsc-detneu (&msyn-agr-detmsc-detneu) TARGET ("en" Det Dem Msc Sg) IF (*1 (N Neu Sg Indef) BARRIER NOT-NPMOD);
+COPY:msyn-agr-detmsc-detneu ("et" Neu Sg &SUGGEST) EXCEPT ("en" Msc Sg) TARGET (Det Dem &msyn-agr-detmsc-detneu);
+## Vi bor i en land.
+#$ Vi bor i et land.
+
+
+
 #!! **Agreement rule:**  Neuter definite determiners should be feminine (msyn-agr-detneu-detfem). Context: *det/den boka*.
 ADD:msyn-agr-detneu-detfem (&msyn-agr-detneu-detfem) TARGET (Det Dem Neu Sg) IF (1 (N Fem Sg Def));
 COPY:msyn-agr-detneu-detfem (Fem Sg &SUGGEST) EXCEPT (Neu Sg) TARGET (Det Dem &msyn-agr-detneu-detfem);
 ## Mannen kjøpte det boka.
 #$ Mannen kjøpte den boka.
+
 
 #!! **Agreement rule:**  Neuter indefinite determiners should be feminine (msyn-agr-detneu-detfem). Context: *et/ei realitetens kvinne*.
 ADD:msyn-agr-detneu-detfem (&msyn-agr-detneu-detfem) TARGET ("et" Det Neu) IF (1 (Def Clt))(2 (N Sg Fem Indef));
@@ -625,6 +640,17 @@ ADDRELATION:msyn-qucompl-def-indef ($2) (*) FROM (T:previousWordCrossSent LINK 0
 ## Vi har mange bøkene.
 
 #!! ## Predicative gender agreement
+
+
+
+
+#!! Predicative: neuter adjective should be masculine (msyn-pred-adjneu-adjmsc). Context: *Båten var fint/fin.*
+ADD:msyn-pred-adjneu-adjmsc (&msyn-pred-adjneu-adjmsc) TARGET (A) IF (-2 ("den") + Pron + Pers + Sg3 OR N + Msc + Sg + Def  LINK *-1 BOS BARRIER NOT-NPMOD)(-1 ("være"))(0 A + Pos + Neu + Sg + Indef)(NEGATE 0 A + Msc OR A + Fem OR A + MF)(NOT 1 N + Neu);
+COPY:msyn-pred-adjneu-adjmsc (Msc Sg Indef &SUGGEST) EXCEPT (Neu Sg Indef)  TARGET (A Pos &msyn-pred-adjneu-adjmsc);
+ADDRELATION:msyn-pred-adjneu-adjmsc ($2) (N) FROM (2 A LINK 0 (&msyn-pred-adjneu-adjmsc)) ;
+
+#$ Båten var fint
+## Båten var fin.
 
 
 #!! Predicative: msculine adjective should be neuter (msyn-pred-adjmsc-adjneu). Context: *Eplet var god/godt.*
