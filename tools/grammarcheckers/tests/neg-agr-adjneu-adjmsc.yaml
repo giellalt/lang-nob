@@ -1,0 +1,6 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+  
+Tests:
+  - "Så viste det seg en rykende ovn."
