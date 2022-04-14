@@ -768,7 +768,7 @@ SECTION
 REMOVE:NotAbbr ABBR ;
 
 #!!
-REMOVE:Use/SpellNoSugg Use/SpellNoSugg IF (0 ("i")); 
+REMOVE:Use/SpellNoSugg Use/SpellNoSugg IF (0 ("i") OR ("å")); 
 
 #!! **AbbrBeforePara** removes CLB before CLB
 REMOVE:AbbrBeforePara ABBR IF (0 CLB)(1 CLB) ; 
@@ -4480,7 +4480,7 @@ CONSTRAINTS
 # 3036
 "<så>" REMOVE (V Prt) IF
 	(-1 Nom)
-	(NOT 1 Adv OR Pr)
+	(NOT 1 Adv OR Pr OR N OR Pron + Nom)
 	(NOT -2 N)
 ;
 
@@ -5903,15 +5903,15 @@ SELECT (A Pl) IF
 ;
 
 
-# 2906
-SELECT (A Pl) IF
-	(0 farlige-A-N OR Inf)
-	(1 Indef-Pl-N)
-	(NOT 1 Sg)
-	(NOT -1 Det-Sg OR N-gen)
-	(*-1C setn-gr BARRIER m-hj-V)
-	(*-1C setn-gr BARRIER infmerke)
-;
+# 2906 grc_removal
+#SELECT (A Pl) IF
+#	(0 farlige-A-N OR Inf)
+#	(1 Indef-Pl-N)
+#	(NOT 1 Sg)
+#	(NOT -1 Det-Sg OR N-gen)
+#	(*-1C setn-gr BARRIER m-hj-V)
+#	(*-1C setn-gr BARRIER infmerke)
+#;
 
 
 # 2907
@@ -7493,12 +7493,12 @@ SELECT (A) IF
 ;
 
 
-#
-SELECT:DollarDef $$DEF IF
-	(0 A)
-	(1C N + $$DEF)
-	(NOT 0 Prt)
-;
+# grc_removal
+#SELECT:DollarDef $$DEF IF
+#	(0 A)
+#	(1C N + $$DEF)
+#	(NOT 0 Prt)
+#;
 
 SELECT:DollarNum $$NUM IF
 (NEGATE 0 V LINK -1 N OR Pron)
@@ -15787,15 +15787,15 @@ REMOVE (V Inf Clt) IF
 ;
 
 
-# 1787
-REMOVE (V Inf) IF
-	(NOT 0 Pass)
-	(*-1C setn-gr BARRIER m-hj-V-fv)
-	(*-1C setn-gr BARRIER m-hj-V-perfpart)
-	(*-1C setn-gr BARRIER sanseV)
-#	(*-1C setn-gr BARRIER infmerke) # grcremoval
-	(*1 periode-slutt/CC-CLB BARRIER m-hj-V-fv)
-;
+# 1787 grc_removal
+#REMOVE (V Inf) IF
+#	(NOT 0 Pass)
+#	(*-1C setn-gr BARRIER m-hj-V-fv)
+#	(*-1C setn-gr BARRIER m-hj-V-perfpart)
+#	(*-1C setn-gr BARRIER sanseV)
+##	(*-1C setn-gr BARRIER infmerke) # grcremoval
+#	(*1 periode-slutt/CC-CLB BARRIER m-hj-V-fv)
+#;
 
 
 # 1788
@@ -15855,15 +15855,15 @@ REMOVE (V Inf) IF
 ;
 
 
-# 1794
-REMOVE (V Inf) IF
-	(NOT 0 Pass)
-	(NOT -1 komma)
-	(*-1 setn-gr BARRIER infmerke OR ("å"))
-	(*-1C setn-gr BARRIER m-hj-V)
-	(*-2C setn-gr BARRIER aci)
-	(*-2C setn-gr BARRIER CLB/CC-CC)
-;
+# 1794 grc_removal
+#REMOVE (V Inf) IF
+#	(NOT 0 Pass)
+#	(NOT -1 komma)
+#	(*-1 setn-gr BARRIER infmerke OR ("å"))
+#	(*-1C setn-gr BARRIER m-hj-V)
+#	(*-2C setn-gr BARRIER aci)
+#	(*-2C setn-gr BARRIER CLB/CC-CC)
+#;
 
 
 # 1795
