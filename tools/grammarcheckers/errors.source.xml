@@ -48,8 +48,19 @@
       <title xml:lang="nb">Samsvar i kjønn i substantivfraser</title>
     </header>
     <body>
-      <description xml:lang="en">When a determiner, such as "$1", modifies a feminin noun, here "$2", it should be in the feminine.</description>
+      <description xml:lang="en">When a determiner, such as "$1", modifies a feminine noun, here "$2", it should be in the feminine.</description>
       <description xml:lang="nb">Når en determinativ, som her "$1", modifiserer et hunkjønnssubstantiv, som her "$2", skal det stå i hunkjønn</description>
+    </body>
+  </error>
+  
+  <error id="msyn-agr-detmsc-detneu">
+    <header>
+      <title xml:lang="en">Gender concord in noun phrases</title>
+      <title xml:lang="nb">Samsvar i kjønn i substantivfraser</title>
+    </header>
+    <body>
+      <description xml:lang="en">When a determiner, such as "$1", modifies a neuter noun, here "$2", it should be in the neuter.</description>
+      <description xml:lang="nb">Når en determinativ, som her "$1", modifiserer et intetkjønnssubstantiv, som her "$2", skal det stå i intetkjønn</description>
     </body>
   </error>
   
