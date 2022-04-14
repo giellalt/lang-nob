@@ -109,6 +109,8 @@ while(<>) {
 	s/8^/ /g ;
 	s/9^/ /g ;
 
+    # Bad symbols
+    s/^å+Use\/SpellNoSugg+CmpNP\/First+N+Sem\/Sign/!å+Use\/SpellNoSugg+CmpNP\/First+N+Sem\/Sign/g ;
 
 	my $line = $_;
 
