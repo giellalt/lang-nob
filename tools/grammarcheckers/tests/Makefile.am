@@ -37,8 +37,6 @@ TESTS=\
 # List tests that are presently (expected) failures here, ie things that should
 # be fixed *later*, but is not critical at the moment:
 XFAIL_TESTS=\
-	msyn-pron-nom-acc.yaml \
-	msyn-qucompl-def-indef.yaml \
 	msyn-setningar.yaml \
 	neg-aa-og.yaml			    \
 	neg-agr-adjmsc-adjneu.yaml  \
