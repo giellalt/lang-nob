@@ -3,6 +3,6 @@ Config:
   Variant: nobgram-dev
   
 Tests:
-  - "Vi har fem {båtene}£{båter}."
+  - "Vi har fem {guttene}£{gutter}."
   - "Jeg har reist til mange {landene}£{land} i Europa."
 
