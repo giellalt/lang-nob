@@ -75,6 +75,18 @@
     </body>
   </error>
 
+  <error id="msyn-np-demindef-demdef">
+    <header>
+      <title xml:lang="en">Indefinite noun following determiner</title>
+      <title xml:lang="nb">Ubesttemt substantiv etter bestemt determinativ</title>
+    </header>
+    <body>
+      <description xml:lang="en">When a noun, such as "$1, stands after a definite determiner, such as  "$2", it should be in definite from.</description>
+      <description xml:lang="nb">Når et substantiv, som her "$1", står etter et bestemt determinativ, som her "$2", skal det stå i bestemt form.</description>
+    </body>
+  </error>
+
+
   <error id="msyn-qucompl-def-indef">
     <header>
       <title xml:lang="en">Indefinite noun in quantor phrases</title>
@@ -109,6 +121,7 @@
     </body>
   </error>
 
+
   <error id="msyn-v-pres-inf">
     <header>
       <title xml:lang="en">Verb not in the infinitive</title>
@@ -117,6 +130,18 @@
     <body>
       <description xml:lang="en">When a verb, here "$1", is following an auxiliary like "$2", it should  be in the infinitive.</description>
       <description xml:lang="nb">Når et verb, som her "$1", kommer etter et hjelpeverb, som "$2", skal det stå i infinitiv.</description>
+    </body>
+  </error>
+
+
+  <error id="msyn-advl-a-adv">
+    <header>
+      <title xml:lang="en">Adjective and not adverbial</title>
+      <title xml:lang="nb">Adjektiv og ikke adverb</title>
+    </header>
+    <body>
+      <description xml:lang="en">When a word like "$1" is used as an object predicative, it should be an adverb.</description>
+      <description xml:lang="nb">Når et ord som "$1" blir brukt som objektpredikativ skal det opptre som adverb.</description>
     </body>
   </error>
 
