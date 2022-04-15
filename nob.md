@@ -1997,6 +1997,7 @@ Here we declare all grammatical tags
 - LIST Pr = Pr ;
 - LIST Pcle = Pcle ;
 - LIST Num = Num ;
+- LIST Qnt = Qnt ;
 - LIST Interj = Interj ;
 - LIST IM = IM ;
 
@@ -2328,7 +2329,7 @@ These were the set types.
 - **ruletype - object - is_now - should_be
 - Example: *&msyn-agr-adjmsc-adjneu* is a morphosyntactic agreement rule where a Msc adjective should be Neu
 
-There are 15 different rule tags, see the rule section below.
+There are 20 or so different rule tags, see the rule section below.
 
 ## For ADDRELATION rules (perhaps not in use)
 - TEMPLATE nextWordCrossSent = (-1 (*)); =  Adding mark to word that find the reference word to the left
@@ -2353,7 +2354,13 @@ Ensure preceding adjective agrees with noun
 
 **Agreement rule:** masculine adjectives should be neuter (msyn-agr-adjmsc-adjneu). Context: *Et fin/fint hus.*
 
+**Agreement rule:**  Singular adjectives should be plural (msyn-agr-adjsg-adjpl). Context: *mange organisert/organiserte fritidsaktiviteter*.
+
 **Agreement rule:**  Neuter adjectives shoul be masculine (msyn-agr-adjneu-adjmsc). Context: *En fint/fin båt*.
+
+**Agreement rule:**  Masculine definite determiners should be neuter (msyn-agr-detmsc-detneu). Context: *den/det huset*.
+
+**Agreement rule:**  Masculine indefinite determiners should be neuter (msyn-agr-detmsc-detneu). Context: *en/et land*.
 
 **Agreement rule:**  Neuter definite determiners should be feminine (msyn-agr-detneu-detfem). Context: *det/den boka*.
 
@@ -2365,11 +2372,19 @@ Ensure preceding adjective agrees with noun
 
 **Agreement rule:** same rule but for Pron
 
+**Definiteness rule:** Double definiteness. Context: *disse grunner/grunnene*
+
+**Definiteness rule:** Double definiteness. Context: *de sosiale aspekter/aspektene*
+
 ## Quantifier phrases
 
 **Agreement rule:** Indef after quantifier. (msyn-qucompl-def-indef). Context: *Vi har mange bøkene/bøker.*
 
+**Comparative rule:** Quantor in superlative: *de flere/fleste ulike kulturene*
+
 ## Predicative gender agreement
+
+Predicative: neuter adjective should be masculine (msyn-pred-adjneu-adjmsc). Context: *Båten var fint/fin.*
 
 Predicative: msculine adjective should be neuter (msyn-pred-adjmsc-adjneu). Context: *Eplet var god/godt.*
 
@@ -2392,6 +2407,10 @@ Case rules so far: Nominative pronouns should be accusative
 ## Infinitive
 
 **Verb rule:** Verb error: Present tense should be infinitive (msyn-v-pres-inf). Context: *Jeg vil skriver et brev.*
+
+**Verb rule:** Verb error: Present tense should be infinitive (msyn-v-pres-inf). Context: *Jeg liker å skriver et brev.*
+
+## Adverb errors
 
 ## og/å errors
 
@@ -2446,6 +2465,47 @@ The tagsets are a superset of the OBT and GiellaLT tags, so that
 the labels are kept from OBT-cg, but GiellaLT content is added when needed.
 
 * Amount sets
+
+* The PRE-NP-HEAD family of sets
+
+These sets model noun phrases (NPs). The idea is to first define whatever can
+occur in front of the head of the NP, and thereafter negate that with the
+expression **WORD - premodifiers**.
+
+- LIST RCmpnd = RCmpnd ;
+
+- SET PRE-NP-HEAD = (Prop Attr) OR A OR ABBR OR Num OR RCmpnd OR CC OR (Pron Dem) OR (Pron Ref) OR Indef OR <PrsPtc> OR (A Ord) OR (CC @CNP) OR (@>CC) OR (@Pron<) OR Clt OR Det ;
+
+The strict version of items that can only be premodifiers, not parts of the predicate
+- SET PRE-NP-V = PrfPrc OR <PrsPtc> OR (V A) OR (Ind Prs) ;
+
+to be used together with PRE-NP-HEAD before @>N is disambiguated
+- SET NP-MEMBER = PRE-NP-HEAD OR N ;
+- SET PRE-A-N = (Pron Pers Acc) OR (Pron Indef) OR Num OR (A Ord) OR (Pron Dem) OR (Pron Refl) ; Acc pga av manglende disambiguering tidlig i fila
+- SET NOT-PRE-A-N = WORD - PRE-A-N ;
+- LIST PUNCT-LEFT = (PUNCT LEFT) ;
+- LIST PUNCT-RIGHT = (PUNCT RIGHT) ;
+- SET PRE-APP = COMMA OR PUNCT-LEFT OR PRE-NP-HEAD ;
+This set ist not only for what can
+stand in front of appositions but also
+postmodifiers.
+
+The set **NOT-NPMOD** is used to find barriers between NPs.
+Typical usage: ... (*1 N BARRIER NOT-NPMOD) ...
+meaning: Scan to the first noun, ignoring anything that can be
+part of the noun phrase of that noun (i.e., "scan to the next NP head")
+
+- SET NOT-NPMOD = WORD - PRE-NP-HEAD OR ABBR ;                  
+
+- SET NOT-NPMOD-ACC = NOT-NPMOD - Acc OR ABBR ;
+- SET NOT-NPMOD-ACC-ADV = NOT-NPMOD - Acc - Adv OR ABBR ;
+
+- SET NOT-NPMODADV = WORD - PRE-NP-HEAD - Adv ;                   
+NOT-NPMODADV = "NOT-PRE-NP-HEAD-OR-ADV"
+- SET NOT-NPMODADV-INDEF = WORD - PRE-NP-HEAD - Adv - Indef ;             
+NOT-NPMODADVI = "     ...-OR-INDEF"
+- SET NOT-NPMODCC = WORD - PRE-NP-HEAD - COMMA ; #- @CNP ;
+- SET NAPP = WORD - PRE-APP ;
 
 ## Rule section
 

@@ -26,6 +26,7 @@ Here we declare all grammatical tags
 - LIST Pr = Pr ;
 - LIST Pcle = Pcle ;
 - LIST Num = Num ;
+- LIST Qnt = Qnt ;
 - LIST Interj = Interj ;
 - LIST IM = IM ;
 
@@ -357,7 +358,7 @@ These were the set types.
 - **ruletype - object - is_now - should_be
 - Example: *&msyn-agr-adjmsc-adjneu* is a morphosyntactic agreement rule where a Msc adjective should be Neu
 
-There are 15 different rule tags, see the rule section below.
+There are 20 or so different rule tags, see the rule section below.
 
 ## For ADDRELATION rules (perhaps not in use)
 - TEMPLATE nextWordCrossSent = (-1 (*)); =  Adding mark to word that find the reference word to the left
@@ -382,7 +383,13 @@ Ensure preceding adjective agrees with noun
 
 **Agreement rule:** masculine adjectives should be neuter (msyn-agr-adjmsc-adjneu). Context: *Et fin/fint hus.*
 
+**Agreement rule:**  Singular adjectives should be plural (msyn-agr-adjsg-adjpl). Context: *mange organisert/organiserte fritidsaktiviteter*.
+
 **Agreement rule:**  Neuter adjectives shoul be masculine (msyn-agr-adjneu-adjmsc). Context: *En fint/fin båt*.
+
+**Agreement rule:**  Masculine definite determiners should be neuter (msyn-agr-detmsc-detneu). Context: *den/det huset*.
+
+**Agreement rule:**  Masculine indefinite determiners should be neuter (msyn-agr-detmsc-detneu). Context: *en/et land*.
 
 **Agreement rule:**  Neuter definite determiners should be feminine (msyn-agr-detneu-detfem). Context: *det/den boka*.
 
@@ -394,11 +401,19 @@ Ensure preceding adjective agrees with noun
 
 **Agreement rule:** same rule but for Pron
 
+**Definiteness rule:** Double definiteness. Context: *disse grunner/grunnene*
+
+**Definiteness rule:** Double definiteness. Context: *de sosiale aspekter/aspektene*
+
 ## Quantifier phrases
 
 **Agreement rule:** Indef after quantifier. (msyn-qucompl-def-indef). Context: *Vi har mange bøkene/bøker.*
 
+**Comparative rule:** Quantor in superlative: *de flere/fleste ulike kulturene*
+
 ## Predicative gender agreement
+
+Predicative: neuter adjective should be masculine (msyn-pred-adjneu-adjmsc). Context: *Båten var fint/fin.*
 
 Predicative: msculine adjective should be neuter (msyn-pred-adjmsc-adjneu). Context: *Eplet var god/godt.*
 
@@ -421,6 +436,10 @@ Case rules so far: Nominative pronouns should be accusative
 ## Infinitive
 
 **Verb rule:** Verb error: Present tense should be infinitive (msyn-v-pres-inf). Context: *Jeg vil skriver et brev.*
+
+**Verb rule:** Verb error: Present tense should be infinitive (msyn-v-pres-inf). Context: *Jeg liker å skriver et brev.*
+
+## Adverb errors
 
 ## og/å errors
 

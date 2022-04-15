@@ -24,6 +24,47 @@ the labels are kept from OBT-cg, but GiellaLT content is added when needed.
 
 * Amount sets
 
+* The PRE-NP-HEAD family of sets
+
+These sets model noun phrases (NPs). The idea is to first define whatever can
+occur in front of the head of the NP, and thereafter negate that with the
+expression **WORD - premodifiers**.
+
+- LIST RCmpnd = RCmpnd ;
+
+- SET PRE-NP-HEAD = (Prop Attr) OR A OR ABBR OR Num OR RCmpnd OR CC OR (Pron Dem) OR (Pron Ref) OR Indef OR <PrsPtc> OR (A Ord) OR (CC @CNP) OR (@>CC) OR (@Pron<) OR Clt OR Det ;
+
+The strict version of items that can only be premodifiers, not parts of the predicate
+- SET PRE-NP-V = PrfPrc OR <PrsPtc> OR (V A) OR (Ind Prs) ;
+
+to be used together with PRE-NP-HEAD before @>N is disambiguated
+- SET NP-MEMBER = PRE-NP-HEAD OR N ;
+- SET PRE-A-N = (Pron Pers Acc) OR (Pron Indef) OR Num OR (A Ord) OR (Pron Dem) OR (Pron Refl) ; Acc pga av manglende disambiguering tidlig i fila
+- SET NOT-PRE-A-N = WORD - PRE-A-N ;
+- LIST PUNCT-LEFT = (PUNCT LEFT) ;
+- LIST PUNCT-RIGHT = (PUNCT RIGHT) ;
+- SET PRE-APP = COMMA OR PUNCT-LEFT OR PRE-NP-HEAD ;
+This set ist not only for what can
+stand in front of appositions but also
+postmodifiers.
+
+The set **NOT-NPMOD** is used to find barriers between NPs.
+Typical usage: ... (*1 N BARRIER NOT-NPMOD) ...
+meaning: Scan to the first noun, ignoring anything that can be
+part of the noun phrase of that noun (i.e., "scan to the next NP head")
+
+- SET NOT-NPMOD = WORD - PRE-NP-HEAD OR ABBR ;                  
+
+- SET NOT-NPMOD-ACC = NOT-NPMOD - Acc OR ABBR ;
+- SET NOT-NPMOD-ACC-ADV = NOT-NPMOD - Acc - Adv OR ABBR ;
+
+- SET NOT-NPMODADV = WORD - PRE-NP-HEAD - Adv ;                   
+NOT-NPMODADV = "NOT-PRE-NP-HEAD-OR-ADV"
+- SET NOT-NPMODADV-INDEF = WORD - PRE-NP-HEAD - Adv - Indef ;             
+NOT-NPMODADVI = "     ...-OR-INDEF"
+- SET NOT-NPMODCC = WORD - PRE-NP-HEAD - COMMA ; #- @CNP ;
+- SET NAPP = WORD - PRE-APP ;
+
 ## Rule section
 
 ### Giellatekno early rules
