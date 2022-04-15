@@ -3402,11 +3402,11 @@ CONSTRAINTS
 #SELECT (CS) IF (-1 BOS)(0 ("om"))(*1 komma LINK 1 Prs);
 SELECT (CS) IF (0 ("om"))(*1 (",") LINK 1 Prs);
 
-# 3192
-"<om>" REMOVE (Pr) IF
-	(1C Pron-nom)
-	(NOT 2 %som%)
-;
+# 3192 grc-removal
+#"<om>" REMOVE (Pr) IF
+#	(1C Pron-nom)
+#	(NOT 2 %som%)
+#;
 
 
 # 3191
