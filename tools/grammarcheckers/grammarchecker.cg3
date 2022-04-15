@@ -92,6 +92,7 @@ LIST Det = Det ;	   #!!≈ - @CODE@
 LIST Pr = Pr ;		   #!!≈ - @CODE@
 LIST Pcle = Pcle ;	   #!!≈ - @CODE@
 LIST Num = Num ;	   #!!≈ - @CODE@
+LIST Qnt = Qnt ;	   #!!≈ - @CODE@
 LIST Interj = Interj ; #!!≈ - @CODE@
 LIST IM = IM ;		   #!!≈ - @CODE@
 
@@ -517,16 +518,20 @@ SET NON-APP = ALLSYNTAG - (@APP);   #!!≈ - @CODE@
 #!! - **ruletype - object - is_now - should_be
 #!! - Example: *&msyn-agr-adjmsc-adjneu* is a morphosyntactic agreement rule where a Msc adjective should be Neu
 
-#!! There are 15 different rule tags, see the rule section below.
+#!! There are 20 or so different rule tags, see the rule section below.
 
+LIST &msyn-advl-a-adv = &msyn-advl-a-adv ;
 LIST &msyn-agr-adjmsc-adjneu = &msyn-agr-adjmsc-adjneu ;    
 LIST &msyn-agr-adjneu-adjmsc = &msyn-agr-adjneu-adjmsc ;    
+LIST &msyn-agr-adjsg-adjpl = &msyn-agr-adjsg-adjpl ;    
+LIST &msyn-agr-detmsc-detneu = &msyn-agr-detmsc-detneu ;			    
 LIST &msyn-agr-detneu-detfem =  &msyn-agr-detneu-detfem ;   
 LIST &msyn-agr-detneu-detmsc =  &msyn-agr-detneu-detmsc ;   
-LIST &msyn-agr-detmsc-detneu = &msyn-agr-detmsc-detneu ;			    
+LIST &msyn-np-demindef-demdef = &msyn-np-demindef-demdef ;
 LIST &msyn-pred-adjmsc-adjneu = &msyn-pred-adjmsc-adjneu ;  
-LIST &msyn-pred-adjneu-adjmsc = &msyn-pred-adjneu-adjmsc ;  
+LIST &msyn-pred-adjneu-adjmsc = &msyn-pred-adjneu-adjmsc ;
 LIST &msyn-pron-nom-acc = &msyn-pron-nom-acc ;			    
+LIST &msyn-qu-comp-superl = &msyn-qu-comp-superl ;
 LIST &msyn-qucompl-def-indef = &msyn-qucompl-def-indef ;    
 LIST &msyn-v-inf-pres = &msyn-v-inf-pres ;				    
 LIST &msyn-v-pres-inf = &msyn-v-pres-inf ;				    
@@ -572,6 +577,13 @@ ADDRELATION:msyn-agr-adjmsc-adjneu ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&m
 ## Dette er et fin hus.
 #$ Dette er et fint hus.
 
+
+#!! **Agreement rule:**  Singular adjectives should be plural (msyn-agr-adjsg-adjpl). Context: *mange organisert/organiserte fritidsaktiviteter*.
+ADD:msyn-agr-adjneu-adjmsc (&msyn-agr-adjsg-adjpl) TARGET A IF 
+(-1 ("mange") OR A + Pos + Sg + Def)(0 A + Msc + Sg + Indef)(1 N + Msc + Pl + Indef);
+COPY:msyn-agr-adjneu-adjmsc (Sg Def &SUGGEST) EXCEPT (Msc Sg Indef) TARGET (A &msyn-agr-adjsg-adjpl);
+#COPY:msyn-agr-adjneu-adjmsc (Sg Indef &SUGGEST) EXCEPT (Sg Indef) TARGET (A &msyn-agr-adjsg-adjpl);
+ADDRELATION:msyn-agr-adjneu-adjmsc ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&msyn-agr-adjsg-adjpl)) ;
 
 #!! **Agreement rule:**  Neuter adjectives shoul be masculine (msyn-agr-adjneu-adjmsc). Context: *En fint/fin båt*.
 ADD:msyn-agr-adjneu-adjmsc (&msyn-agr-adjneu-adjmsc) TARGET A IF 
@@ -629,15 +641,40 @@ COPY:msyn-agr-detneu-detmsc ("en" Det Dem Msc Sg &SUGGEST) EXCEPT ("et" Pron Ind
 # Definite that should be indefinite
 #ADD:msyn-defness_m_def (&msyn-defness_m_def) TARGET
 
+#!! **Definiteness rule:** Double definiteness. Context: *disse grunner/grunnene*
+ADD:msyn-np-demindef-demdef (&msyn-np-demindef-demdef) TARGET (N Pl Indef) IF (*-1 ("denne") + Det + Dem + Pl BARRIER NOT-A)(NEGATE 1 ("som"))(NEGATE 1 COMMA LINK 1 ("som")) ;
+COPY:msyn-np-demindef-demdef (Def &SUGGEST) EXCEPT (Indef) TARGET (N Pl &msyn-np-demindef-demdef) ;	
+ADDRELATION:msyn-np-demindef-demdef ($2) ("disse") FROM (*1 N BARRIER NOT-A LINK 0 &msyn-np-demindef-demdef) ;
+	
+## Jeg må analysere disse grunner.
+#$ Jeg må analysere disse grunnene.
+
+#!! **Definiteness rule:** Double definiteness. Context: *de sosiale aspekter/aspektene*
+ADD:msyn-np-demindef-demdef (&msyn-np-demindef-demdef) TARGET (N Pl Indef) IF (-2 ("den") + Det +  Dem + Pl)(-1 A + Pos + Def)(NEGATE 1 ("som"))(NEGATE 1 COMMA LINK 1 ("som")) ;
+COPY:msyn-np-demindef-demdef (Def &SUGGEST) EXCEPT (Indef) TARGET (N Pl &msyn-np-demindef-demdef) ;	
+ADDRELATION:msyn-np-demindef-demdef ($2) ("disse") FROM (*1 N BARRIER NOT-A LINK 0 &msyn-np-demindef-demdef) ;
+	
 
 #!! ## Quantifier phrases
 
 #!! **Agreement rule:** Indef after quantifier. (msyn-qucompl-def-indef). Context: *Vi har mange bøkene/bøker.*
 ADD:msyn-qucompl-def-indef (&msyn-qucompl-def-indef) TARGET N + Pl + Def IF 
-(*-1 Num OR ("mange") + Pos OR ("mange") + Comp BARRIER NOT-A LINK NOT 0 Sem/ID LINK NOT -1 (§));
-COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Def) TARGET (N Pl &msyn-qucompl-def-indef); 
+(*-1 Qnt OR ("mange") + Pos OR ("mange") + Comp BARRIER NOT-A LINK NOT -1 ("den") + Det + Dem + Pl); # LINK NOT 0 Sem/ID LINK NOT -1 (§));
+COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Use/NG Def) TARGET (N Msc Pl &msyn-qucompl-def-indef); 
+COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Use/NG Def) TARGET (N Fem Pl &msyn-qucompl-def-indef); 
+COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Use/NG Def) TARGET (N Neu Pl &msyn-qucompl-def-indef); 
+COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Def) TARGET (N Msc Pl &msyn-qucompl-def-indef); 
+COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Def) TARGET (N Fem Pl &msyn-qucompl-def-indef); 
+COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Def) TARGET (N Neu Pl &msyn-qucompl-def-indef); 
 ADDRELATION:msyn-qucompl-def-indef ($2) (*) FROM (T:previousWordCrossSent LINK 0 (&msyn-qucompl-def-indef)) ;
 ## Vi har mange bøkene.
+
+
+#!! **Comparative rule:** Quantor in superlative: *de flere/fleste ulike kulturene*
+ADD:msyn-qu-comp-superl (&msyn-qu-comp-superl) TARGET ("mange" A Comp Pl Indef) IF (-1 ("den") + Det + Dem + Pl) (*1 N + Pl + Def BARRIER NOT-A) ;
+COPY:msyn-qu-comp-super (Superl Pl Def &SUGGEST) EXCEPT (Comp Pl Indef) TARGET (A &msyn-qu-comp-superl) ;
+ADDRELATION:&msyn-qu-comp-superl ($2) (N) FROM (*-1 A LINK 0 (&&msyn-qu-comp-superl)) ;
+
 
 #!! ## Predicative gender agreement
 
@@ -694,13 +731,25 @@ ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (6 A LINK 0 (&msyn-pred-adjmsc
 #!! Case rules so far: Nominative pronouns should be accusative 
 
 #!!  **Agreement rule:** The context is P-complement.  (msyn-pron-nom-acc). Context: *Vi snakker om du.*
-ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg2 Nom) IF 
-(-1 Pr)
-(NOT -1 ("for") OR ("som") OR ("om"));
+ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg2 Nom) IF (-1 ("om") + Pr)(NOT 1 Prs OR Prt);
 COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg2 &msyn-pron-nom-acc);
+ADDRELATION:msyn-pron-nom-acc ($2) (Pr) FROM (1 Pron LINK 0 (&msyn-pron-nom-acc)) ;
 ## Vi snakker om du.
 #$ Vi snakker om deg.
 
+ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg1 Nom) IF (-1 ("om") + Pr)(NOT 1 Prs OR Prt);
+COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg1 &msyn-pron-nom-acc);
+ADDRELATION:msyn-pron-nom-acc ($2) (Pr) FROM (1 Pron LINK 0 (&msyn-pron-nom-acc)) ;
+
+ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg2 Nom) IF (-1 Pr)(NOT -1 ("som") OR ("om"));
+COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg2 &msyn-pron-nom-acc);
+ADDRELATION:msyn-pron-nom-acc ($2) (Pr) FROM (1 Pron LINK 0 (&msyn-pron-nom-acc)) ;
+
+
+ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg1 Nom) IF (-1 Pr)(NOT -1 ("som") OR ("om"));
+COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg1 &msyn-pron-nom-acc);
+ADDRELATION:msyn-pron-nom-acc ($2) (Pr) FROM (1 Pron LINK 0 (&msyn-pron-nom-acc)) ;
+## Han vet av jeg kommer.
 
 
 #!! ## Finite verb errors
@@ -734,7 +783,6 @@ ADDRELATION:msyn-v-pres-inf ($2) (V) FROM (1 V LINK 0 (&msyn-v-pres-inf)) ;
 
 ## Jeg vil skriver et brev.   #!!≈ - *@CODE@* (funkar ikkje)
 #$ Jeg vil skrive et brev.   #!!≈ - *@CODE@*
-
 #!!  **Verb rule:** Verb error: Present tense should be infinitive (msyn-v-pres-inf). Context: *Jeg liker å skriver et brev.*
 ADD:msyn-v-pres-inf (&msyn-v-pres-inf) TARGET V IF (0 (Ind Prs))(-2C QUASIAUX)(-1 IM)(NOT 0 Pass);
 COPY:msyn-v-pres-inf (Inf &SUGGEST) EXCEPT (Ind Prs)  TARGET (V Ind Prs &msyn-v-pres-inf);
@@ -742,6 +790,20 @@ ADDRELATION:msyn-v-pres-inf ($2) (V) FROM (2 V LINK 0 (&msyn-v-pres-inf)) ;
 
 ## Jeg liker å skriver et brev.
 #$ Jeg liker å skrive et brev.
+
+
+#!! ## Adverb errors
+
+ADD:msyn-advl-a-adv (&msyn-advl-a-adv) TARGET A IF (*-1 ("det") + Pron + Pers + Sg3 BARRIER NOT-ADV LINK -1 ("gjøre") + Ind OR ("ha") + Ind)(0 A + Pos + Fem + Sg + Indef OR A + Pos + Msc + Sg + Indef)(NOT 0 A + Neu) ;
+COPY:msyn-advl-a-adv (Neu Sg Indef &SUGGEST) EXCEPT (Msc Sg Indef) TARGET (A Pos Sg Indef &msyn-advl-a-adv) ;
+COPY:msyn-advl-a-adv (Neu Sg Indef &SUGGEST) EXCEPT (Fem Sg Indef) TARGET (A Pos Sg Indef &msyn-advl-a-adv) ;
+
+
+
+
+
+
+
 
 #!! ## og/å errors
 
