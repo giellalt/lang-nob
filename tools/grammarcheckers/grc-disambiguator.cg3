@@ -983,7 +983,7 @@ REMOVE Pl IF (-1 Pr)(0 ("tillegg"))(1 ("til"));
 
 SECTION
 
-SELECT Prop IF (NOT -1 CLB); # XXX
+SELECT Prop IF (NOT -1 BOS); # XXX
 
 
 REMOVE:apred (N) IF
@@ -14308,11 +14308,11 @@ REMOVE (Imp) IF
 ;
 
 
-# 1990
-REMOVE (Imp) IF
-	(NOT -1 %ikke% OR CC OR ("å"))
-	(-2 >>>)
-;
+# 1990 grc-removal
+#REMOVE (Imp) IF
+#	(NOT -1 %ikke% OR CC OR ("å"))
+#	(-2 >>>)
+#;
 
 
 # 1991
@@ -18100,13 +18100,13 @@ REMOVE (CLB) IF
 ;
 
 
-# 1579
-REMOVE (Det Msc) IF
-	(0 %en%)
-	(1 adverb)
-	(NOT 1 Msc)
-	(NOT 2 Msc)
-;
+# 1579 grc-removal
+#REMOVE (Det Msc) IF
+#	(0 %en%)
+#	(1 adverb)
+#	(NOT 1 Msc)
+#	(NOT 2 Msc)
+#;
 
 
 # 1580 grc-removal
