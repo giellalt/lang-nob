@@ -28,6 +28,8 @@ få: A_FÅ ; !!≈ * @CODE@
 små: A_SMÅ ; !!≈ * @CODE@ 
 vond: VOND ; !!≈ * @CODE@ 
 
+suset a2 ;
+susete a3 ;
 interpersonal a1 ;
 markedsøkonomisk a2 ;
 hinduistisk a2 ;
