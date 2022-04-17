@@ -22,16 +22,17 @@ Generation of:
 - [paradigms](http://giellatekno.uit.no/cgi/p-nob.nob.html)
 - [text](http://giellatekno.uit.no/cgi/d-nob.nob.html)
 
-# Documentation on the Norwegian analyser Oslo-Bergen-taggeren
 
-The Oslo-Bergen tagger is available for Bokmål and Nynorsk. It has [an
-official webpage](http://tekstlab.uio.no/obt-ny/), where it is available
-under GPL, this documentation is for the Giellatekno in-house use of it.
+# The Norwegian Bokmål grammar checker
 
-- [Compiling and using the Norwegian analysers](docu-nob-use.html)
-- [The tagset of the Norwegian analysers](docu-nob-tags.html)
-- [Background information on the Norwegian
-  analysers](docu-nob-background.html)
+
+The idea is to make a grammarchecker primarily concerned with errors related to the letter **ð**. The target group is native speakers.
+
+## Links
+
+- [Documentation](https://giellalt.github.io/lang-nob/tools-grammarcheckers-grammarchecker.cg3.html) of the [grammarchecker file](https://github.com/giellalt/lang-nob/blob/main/tools/grammarcheckers/grammarchecker.cg3)
+- [Test files](https://github.com/giellalt/lang-nob/tree/main/tools/grammarcheckers/tests)
+
 
 # Documentation on our own resources for Norwegian
 
@@ -40,11 +41,23 @@ The analysers are modeled like all the other Giellatekno languages.
 Our Norwegian analyser was an auxiliary device made for analysing
 Norwegian at a time when the Oslo-Bergen tagger was not freely
 available. It is based upon a huge wordform list, most of which has been
-manually converted to lemma/stem-based lexc format. One should also
-consider using the Oslo-Bergen tagger instead or our analyser.
+manually converted to lemma/stem-based lexc format. 
+
+
+# Documentation on the Norwegian analyser Oslo-Bergen-taggeren
 
 Our disambiguator (The syntax file above) is based upon the Oslo-Bergen
-tagger, with some improvements
+tagger disambiguator, with some improvements.
+
+The Oslo-Bergen disambiguator is available for Bokmål and Nynorsk. It has [an
+official webpage](http://tekstlab.uio.no/obt-ny/), where it is available
+under GPL, this documentation is for the Giellatekno in-house use of it.
+
+- [Compiling and using the Norwegian analysers](docu-nob-use.html)
+- [The tagset of the Norwegian analysers](docu-nob-tags.html)
+- [Background information on the Norwegian
+  analysers](docu-nob-background.html)
+
 
 # In-source documentation
 
