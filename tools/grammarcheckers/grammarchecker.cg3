@@ -678,7 +678,7 @@ ADDRELATION:&msyn-qu-comp-superl ($2) (N) FROM (*-1 A LINK 0 (&&msyn-qu-comp-sup
 
 #!! ## Predicative gender agreement
 
-
+## 
 
 
 #!! Predicative: neuter adjective should be masculine (msyn-pred-adjneu-adjmsc). Context: *Båten var fint/fin.*
@@ -741,12 +741,12 @@ ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg1 Nom) IF (-1 ("o
 COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg1 &msyn-pron-nom-acc);
 ADDRELATION:msyn-pron-nom-acc ($2) (Pr) FROM (1 Pron LINK 0 (&msyn-pron-nom-acc)) ;
 
-ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg2 Nom) IF (-1 Pr)(NOT -1 ("som") OR ("om"));
+ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg2 Nom) IF (-1 Pr)(NOT -1 ("som") OR ("om") OR ("for") OR ("før"));
 COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg2 &msyn-pron-nom-acc);
 ADDRELATION:msyn-pron-nom-acc ($2) (Pr) FROM (1 Pron LINK 0 (&msyn-pron-nom-acc)) ;
 
 
-ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg1 Nom) IF (-1 Pr)(NOT -1 ("som") OR ("om"));
+ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg1 Nom) IF (-1 Pr)(NOT -1 ("som") OR ("om") OR ("for") OR ("før"));
 COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg1 &msyn-pron-nom-acc);
 ADDRELATION:msyn-pron-nom-acc ($2) (Pr) FROM (1 Pron LINK 0 (&msyn-pron-nom-acc)) ;
 ## Han vet av jeg kommer.
@@ -755,7 +755,15 @@ ADDRELATION:msyn-pron-nom-acc ($2) (Pr) FROM (1 Pron LINK 0 (&msyn-pron-nom-acc)
 #!! ## Finite verb errors
 
 #!! **Verb rule:** Infinitive and no finite form in the sentence (msyn-v-inf-pres). Context: *Jeg like/liker peanøtter.*
-ADD:msyn-v-inf-pres (&msyn-v-inf-pres) TARGET (V Inf) IF (-1C (N) OR (Pron Nom))(*-2 BOS BARRIER VFIN OR ("så"))(NEGATE -2 OBJPREDVERB)(NEGATE -1 ("å"))(0 V)(NOT 0 Pass OR ("så")); #(NOT *0 VFIN);
+ADD:msyn-v-inf-pres (&msyn-v-inf-pres) TARGET (V Inf) IF
+	(-1C (N) OR (Pron Nom))
+	(NOT -1 ("Gud") OR ("herre"))
+	(*-2 BOS BARRIER VFIN OR ("så"))
+	(NEGATE *-2 OBJPREDVERB OR ("måtte") OR ("la") BARRIER SV-BOUNDARY)
+	(NEGATE -1 ("å") OR ("takk") + N + Neu + Sg + Def)
+	(0 Inf LINK NEGATE 0 Ind)
+	(NOT 0 Pass OR ("så") OR ("nå") OR ("øyne") OR ("ære"))
+	(NOT 1 ("Gud") OR ("herre")); #(NOT *0 VFIN);
 COPY:msyn-v-inf-pres (Ind Prs &SUGGEST) EXCEPT (Inf)  TARGET (V Inf &msyn-v-inf-pres);
 ADDRELATION:msyn-v-inf-pres ($2) (*) FROM (1 V LINK 0 (&msyn-v-inf-pres)) ;
 
@@ -777,7 +785,11 @@ ADDRELATION:msyn-v-inf-pres ($2) (*) FROM (1 V LINK 0 (&msyn-v-inf-pres)) ;
 #!! ## Infinitive
 
 #!!  **Verb rule:** Verb error: Present tense should be infinitive (msyn-v-pres-inf). Context: *Jeg vil skriver et brev.*
-ADD:msyn-v-pres-inf (&msyn-v-pres-inf) TARGET V IF (0 (Ind Prs))(-2C (N) OR (Pron Nom))(-1 hj-V)(NOT 0 Pass);
+ADD:msyn-v-pres-inf (&msyn-v-pres-inf) TARGET V IF
+	(0 (Ind Prs))
+#	(NOT 0 N + Pl + Indef LINK -1 Pron + Pers + Nom OR N)
+	(-2C (N) OR (Pron Nom))
+	(-1 hj-V)(NOT 0 Pass);
 COPY:msyn-v-pres-inf (Inf &SUGGEST) EXCEPT (Ind Prs)  TARGET (V Ind Prs &msyn-v-pres-inf);
 ADDRELATION:msyn-v-pres-inf ($2) (V) FROM (1 V LINK 0 (&msyn-v-pres-inf)) ;
 
