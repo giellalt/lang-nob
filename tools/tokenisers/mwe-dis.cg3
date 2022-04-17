@@ -1964,8 +1964,8 @@ SET Sem/Place = Sem/Plc OR Sem/Plc-water OR Sem/Plc-elevate OR Sem/Plc-line OR S
 SECTION
 
 
-SELECT:trab CLB IF (0 Gram/IAbbr);
-SELECT:itrab ABBR IF (0 Gram/TAbbr)(NEGATE 0 ("i") OR ("å"));
+#SELECT:trab CLB IF (0 Gram/IAbbr);
+#SELECT:itrab ABBR IF (0 Gram/TAbbr)(NEGATE 0 ("i") OR ("å"));
 
 # Example input:
 #
