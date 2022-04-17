@@ -2,7 +2,7 @@
 	"artikkel" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<boka>"
 	"bok" N Fem Sg Def <W:0.0>
@@ -77,13 +77,13 @@
 	"skolestyre" N Neu Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tana>"
 	"Tana" N Prop Sem/Plc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1892>"
 	"1892" Num Sem/Year <W:0.0>
@@ -100,11 +100,10 @@
 	"mot" Pr <W:0.0>
 : 
 "<samisk>"
-	"samisk" A Pos Fem Sg Indef <W:0.0>
-	"samisk" A Pos Msc Sg Indef <W:0.0>
+	"samisk" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<skolen>"
 	"skole" N Msc Sg Def <W:0.0>
@@ -124,7 +123,7 @@
 	"harme" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<allmuen>"
 	"allmue" N Msc Sg Def <W:0.0>
@@ -144,7 +143,7 @@
 	"ved" Pr <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<flere>"
 	"mange" A Comp Pl Indef <W:0.0>
@@ -246,10 +245,9 @@
 	"av" Pr <W:0.0>
 : 
 "<dem>"
-	"dem" A Gram/TAbbr A ABBR <W:0.0>
+	"de" Pron Pers Pl3 Acc <W:0.0>
 : 
 "<var>"
-	"vare" V Imp <W:0.0>
 	"være" V Ind Prt <W:0.0>
 : 
 "<Pavel>"
@@ -333,7 +331,7 @@
 	"føde" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1953>"
 	"1953" Num Sem/Year <W:0.0>
@@ -350,7 +348,7 @@
 	"opp" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Sørøysund>"
 	"Sørøysund" N Prop Sem/Plc <W:0.0>
@@ -367,7 +365,7 @@
 	"og" CC <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Salten>"
 	"Salten" N Prop Sem/Plc <W:0.0>
@@ -420,7 +418,7 @@
 	"Universitetet" N Prop Sem/Org <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tromsø>"
 	"Tromsø" N Prop Sem/Plc <W:0.0>
@@ -441,7 +439,7 @@
 	"bl. a" N ABBR Gram/TAbbr N ABBR <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Reindriftsadministrasjonen>"
 	"reindriftsadministrasjon" N Msc Sg Def <W:0.0>
@@ -481,7 +479,7 @@
 	"bo" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tromsø>"
 	"Tromsø" N Prop Sem/Plc <W:0.0>
@@ -501,7 +499,7 @@
 	"være" V Ind Prs <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<dag>"
 	"dag" N Msc Sg Indef <W:0.0>
@@ -513,7 +511,7 @@
 	"lede" V Ind Prs <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Ishavskysten>"
 	"ishavskyst" N Msc Sg Def <W:0.0>
@@ -558,7 +556,7 @@
 	"delta" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<offentlige>"
 	"offentlig" A Pos Pl Indef <W:0.0>
@@ -597,7 +595,7 @@
 	"artikkel" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<aviser>"
 	"avis" N Fem Pl Indef <W:0.0>
@@ -632,7 +630,7 @@
 	"landskapshistorie" N Fem Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<nord>"
 	"nord" N Msc Sg Indef <W:0.0>
@@ -644,7 +642,7 @@
 	"¶" CLB <W:0.0>
 :\n
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<denne>"
@@ -697,7 +695,7 @@
 	"»" PUNCT RIGHT <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<skolehistoria>"
 	"skolehistorie" N Fem Sg Def <W:0.0>
@@ -718,7 +716,7 @@
 	"med" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<skaffe>"
 	"skaffe" V Inf <W:0.0>
@@ -815,7 +813,7 @@
 	"opp" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Bonjákas>"
 	"Bonjákas" ?
@@ -831,7 +829,7 @@
 	"flytte" V Ind Prt Radical <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<generasjoner>"
 	"generasjon" N Msc Pl Indef <W:0.0>
@@ -905,7 +903,7 @@
 	"grensestengning" N Fem Pl Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1852>"
 	"1852" Num Sem/Year <W:0.0>
@@ -986,7 +984,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<1883>"
@@ -1012,13 +1010,13 @@
 	"eiendom" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Gárggogeahči>"
 	"Gárggogeahči" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Vestertana>"
 	"Vestertana" N Prop Sem/Plc <W:0.0>
@@ -1056,7 +1054,7 @@
 	"eiendom" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Bonjákas>"
 	"Bonjákas" ?
@@ -1400,7 +1398,7 @@
 	"ned" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<mappene>"
 	"mappe" N Fem Pl Def <W:0.0>
@@ -1458,7 +1456,7 @@
 	"reise" V Ind Prt <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<tid>"
 	"tid" N Fem Sg Indef <W:0.0>
@@ -1492,11 +1490,12 @@
 : 
 "<liv>"
 	"liv" N Neu Pl Indef <W:0.0>
+	"liv" N Neu Sg Indef <W:0.0>
 "<,>"
 	"," CLB <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<skolen>"
 	"skole" N Msc Sg Def <W:0.0>
@@ -1505,7 +1504,7 @@
 	"og" CC <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<landskapet>"
 	"landskap" N Neu Sg Def <W:0.0>
@@ -1563,7 +1562,7 @@
 	"endring" N Fem Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<riksgrenser>"
 	"riksgrense" N Fem Pl Indef <W:0.0>
@@ -1590,7 +1589,7 @@
 	"Tana" N Prop Sem/Plc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<særlig>"
 	"særlig" A Pos MF Sg Indef <W:0.0>
@@ -1621,7 +1620,7 @@
 	"rapport" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<første>"
 	"første" A Pos MF Sg Indef <W:0.0>
@@ -1698,7 +1697,7 @@
 	"skole" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tana>"
 	"Tana" N Prop Sem/Plc <W:0.0>
@@ -1719,7 +1718,7 @@
 	"lære" V Ind Prt <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<lese>"
 	"lese" V Inf <W:0.0>
@@ -1737,7 +1736,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<tråd>"
@@ -1825,7 +1824,7 @@
 	"rapport" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<første>"
 	"første" A Pos MF Sg Indef <W:0.0>
@@ -1902,7 +1901,7 @@
 	"skole" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tana>"
 	"Tana" N Prop Sem/Plc <W:0.0>
@@ -1921,7 +1920,7 @@
 	"lære" V Ind Prt <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<lese>"
 	"lese" V Inf <W:0.0>
@@ -1939,7 +1938,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<tråd>"
@@ -2175,7 +2174,7 @@
 	"penge" N Msc Pl Indef <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<tjene>"
 	"tjene" V Inf <W:0.0>
@@ -2520,7 +2519,7 @@
 	"heime" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<hus>"
 	"hus" N Neu Sg Indef <W:0.0>
@@ -2564,7 +2563,7 @@
 	"ytterst" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tanafjorden>"
 	"Tanafjorden" N Prop Sem/Plc <W:0.0>
@@ -2608,7 +2607,7 @@
 	"same" N Msc Pl Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tanafjorden>"
 	"Tanafjorden" N Prop Sem/Plc <W:0.0>
@@ -2632,7 +2631,7 @@
 	"vårfiske" N Neu Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<lang>"
 	"lang" A Pos Fem Sg Indef <W:0.0>
@@ -2687,7 +2686,7 @@
 	"bosetting" N Fem Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<været>"
 	"vær" N Neu Sg Def <W:0.0>
@@ -2818,7 +2817,7 @@
 	"sjøsame" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Nesseby>"
 	"Nesseby" N Prop Sem/Plc <W:0.0>
@@ -2894,17 +2893,16 @@
 	"det" Pron Pers Sg3 <W:0.0>
 : 
 "<som>"
-	"som" Pr <W:0.0>
+	"som" CS <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<dag>"
 	"dag" N Msc Sg Indef <W:0.0>
 : 
 "<kalles>"
 	"kalle" V Ind Prs Pass <W:0.0>
-	"kalle" V Inf Pass <W:0.0>
 : 
 "<Nedre>"
 	"Nedre" N Prop Sem/Plc <W:0.0>
@@ -2944,7 +2942,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<dag>"
@@ -3145,7 +3143,7 @@
 	"sentral" A Pos Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<den>"
 	"den" Det Dem Fem Sg <W:0.0>
@@ -3158,7 +3156,7 @@
 		"kultur" N Cmp/null Cmp <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<tiårene>"
 	"tiår" N Neu Pl Def Use/NG <W:0.0>
@@ -3184,7 +3182,7 @@
 	"Soffa" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Stáhpogieddi>"
 	"Stáhpogieddi" ?
@@ -3226,7 +3224,7 @@
 	"»" PUNCT RIGHT <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1873–1875>"
 	"1873–1875" Det Qnt Sem/Year Pl <W:0.0>
@@ -3268,7 +3266,7 @@
 	"Lávvonjárga" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<årene>"
 	"år" N Neu Pl Def Use/NG <W:0.0>
@@ -3282,11 +3280,11 @@
 : 
 
 "<Flere>"
-	"flere" Det Dem Pl <W:0.0>
 	"flere" Pron Indef Pl <W:0.0>
+	"mange" A Comp Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tana>"
 	"Tana" N Prop Sem/Plc <W:0.0>
@@ -3301,7 +3299,7 @@
 	"debattant" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<disse>"
 	"denne" Det Dem Pl <W:0.0>
@@ -3317,7 +3315,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<juli>"
@@ -3344,7 +3342,7 @@
 	"holde" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Bonjákas>"
 	"Bonjákas" ?
@@ -3398,7 +3396,7 @@
 	"Soffa" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Stáhpogieddi>"
 	"Stáhpogieddi" ?
@@ -3410,7 +3408,7 @@
 	"omgangsskolelærer" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tanafjorden>"
 	"Tanafjorden" N Prop Sem/Plc <W:0.0>
@@ -3466,7 +3464,8 @@
 	"med" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
+	"å" N Fem Sg Indef <W:0.0>
 : 
 "<stifta>"
 	"stifte" V PrfPrc Radical <W:0.0>
@@ -3476,6 +3475,7 @@
 : 
 "<redigere>"
 	"redig" A Comp <W:0.0>
+	"redigere" V Inf <W:0.0>
 : 
 "<den>"
 	"den" Det Dem Fem Sg <W:0.0>
@@ -3644,7 +3644,7 @@
 	"¶" CLB <W:0.0>
 :\n
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<Tanafjorden>"
@@ -3702,7 +3702,7 @@
 	"og" CC <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Bonjákas>"
 	"Bonjákas" ?
@@ -3710,7 +3710,7 @@
 	"," CLB <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Boftsa>"
 	"Boftsa" N Prop Sem/Plc <W:0.0>
@@ -3722,7 +3722,7 @@
 	"oppover" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<dalen>"
 	"dal" N Msc Sg Def <W:0.0>
@@ -3731,15 +3731,13 @@
 	"blei" N Fem Sg Indef <W:0.0>
 : 
 "<det>"
-	"den" Det Dem Neu Sg <W:0.0>
 	"det" Pron Pers Sg3 <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<tillegg>"
-	"tillegg" N Neu Pl Indef <W:0.0>
-	"tillegge" V Imp <W:0.0>
+	"tillegg" N Neu Sg Indef <W:0.0>
 : 
 "<til>"
 	"til" Pr <W:0.0>
@@ -3838,7 +3836,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<skolestuer>"
@@ -3910,7 +3908,7 @@
 	"bureiser" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Masjok>"
 	"Masjok" ?
@@ -3931,7 +3929,7 @@
 	"både" CC <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1919>"
 	"1919" Num Sem/Year <W:0.0>
@@ -3963,7 +3961,7 @@
 	"stormøter" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Bonakas>"
 	"Bonakas" N Prop Sem/Plc <W:0.0>
@@ -4958,7 +4956,7 @@
 	"visitas" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tana>"
 	"Tana" N Prop Sem/Plc <W:0.0>
@@ -5079,7 +5077,7 @@
 	"høre" V Inf <W:0.0>
 : 
 "<dem>"
-	"dem" A Gram/TAbbr A ABBR <W:0.0>
+	"de" Pron Pers Pl3 Acc <W:0.0>
 : 
 "<på>"
 	"på" Pr <W:0.0>
@@ -5145,7 +5143,7 @@
 	"bruke" V Inf Pass <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<skolen>"
 	"skole" N Msc Sg Def <W:0.0>
@@ -5162,7 +5160,7 @@
 	"undervisningsspråk" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<kristendom>"
 	"kristendom" N Msc Sg Indef <W:0.0>
@@ -5177,7 +5175,7 @@
 	"hjelpespråk" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<andre>"
 	"andre" A Pos Neu Sg Indef <W:0.0>
@@ -5216,7 +5214,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<1893>"
@@ -5274,7 +5272,7 @@
 	"måte" N Msc Sg Indef <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<lede>"
 	"lede" V Inf <W:0.0>
@@ -5393,7 +5391,7 @@
 	"forelder" N Msc Pl Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Vestertana>"
 	"Vestertana" N Prop Sem/Plc <W:0.0>
@@ -5472,7 +5470,7 @@
 	"autoritet" N Msc Pl Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<bibelske>"
 	"bibelsk" A Pos Pl Indef <W:0.0>
@@ -5513,7 +5511,7 @@
 	"undervisning" N Fem Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<alle>"
 	"all" A Pos Pl Indef <W:0.0>
@@ -5616,9 +5614,11 @@
 : 
 "<ført>"
 	"føre" V PrfPrc <W:0.0>
+	"føre" V PrfPrc Ex/V A Pos Fem Sg Indef <W:0.0>
+	"føre" V PrfPrc Ex/V A Pos Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<pennen>"
 	"penn" N Msc Sg Def <W:0.0>
@@ -5648,7 +5648,7 @@
 	"kjøpmann" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Gárggogeahči>"
 	"Gárggogeahči" ?
@@ -5690,7 +5690,7 @@
 	"trykke" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<«>"
 	"«" PUNCT LEFT <W:0.0>
@@ -5748,10 +5748,10 @@
 	"forårsake" V PrfPrc Radical <W:0.0>
 : 
 "<med>"
-	"med" Pr <W:0.0>
+	"med" Adv <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<sette>"
 	"sette" V Inf <W:0.0>
@@ -5806,7 +5806,7 @@
 	"vedtak" N Neu Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tana>"
 	"Tana" N Prop Sem/Plc <W:0.0>
@@ -5848,7 +5848,7 @@
 	"praksis" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<skolen>"
 	"skole" N Msc Sg Def <W:0.0>
@@ -5874,10 +5874,10 @@
 	"uten" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<kunne>"
-	"kunne" V Ind Prt <W:0.0>
+	"kunne" V Inf <W:0.0>
 : 
 "<norsk>"
 	"norsk" N Msc Sg Indef <W:0.0>
@@ -5978,7 +5978,7 @@
 	"slit" N Neu Sg Indef <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<komme>"
 	"komme" V Inf <W:0.0>
@@ -6041,7 +6041,7 @@
 	"seminar" N Neu Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tromsø>"
 	"Tromsø" N Prop Sem/Plc <W:0.0>
@@ -6050,10 +6050,11 @@
 : 
 
 "<Av>"
+	"av" Adv <W:0.0>
 	"av" Pr <W:0.0>
 : 
 "<dem>"
-	"dem" A Gram/TAbbr A ABBR <W:0.0>
+	"de" Pron Pers Pl3 Acc <W:0.0>
 : 
 "<måtte>"
 	"måtte" V Ind Prt <W:0.0>
@@ -6105,7 +6106,7 @@
 	"Geresgohppi" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Austertana>"
 	"Austertana" N Prop Sem/Plc <W:0.0>
@@ -6139,7 +6140,7 @@
 	"lærerutdanning" N Fem Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Kristiania>"
 	"Kristiania" N Prop Sem/Plc <W:0.0>
@@ -6177,7 +6178,7 @@
 	"gjerning" N Fem Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<skole>"
 	"skole" N Msc Sg Indef <W:0.0>
@@ -6325,7 +6326,7 @@
 	"gårdsbruk" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Bonjákas>"
 	"Bonjákas" ?
@@ -6578,7 +6579,7 @@
 	"lærerskole" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tromsø>"
 	"Tromsø" N Prop Sem/Plc <W:0.0>
@@ -6601,7 +6602,7 @@
 	"oppe" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Finmarken>"
 	"Finnmarken" Err/Orth N Prop Sem/Plc <W:0.0>
@@ -6633,7 +6634,7 @@
 	"han" Pron Pers Sg3 Nom <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<stipendsøknad>"
 	"søknad" N Msc Sg Indef <W:0.0>
@@ -6655,7 +6656,7 @@
 	"eksamen" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1913>"
 	"1913" Num Sem/Year <W:0.0>
@@ -6670,7 +6671,7 @@
 	"han" Pron Pers Sg3 Nom <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<kretsen>"
 	"krets" N Msc Sg Def <W:0.0>
@@ -6686,7 +6687,7 @@
 	"ytterst" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tanafjorden>"
 	"Tanafjorden" N Prop Sem/Plc <W:0.0>
@@ -6695,7 +6696,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<1914>"
@@ -6715,7 +6716,7 @@
 		"lærer" N Cmp/null Cmp <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Hammerfest>"
 	"Hammerfest" N Prop Sem/Plc <W:0.0>
@@ -6727,7 +6728,7 @@
 		"land" N Cmp/null Cmp <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Vinna>"
 	"Vinna" ?
@@ -6747,7 +6748,7 @@
 	"seinere" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Rypefjord>"
 	"Rypefjord" N Prop Sem/Plc <W:0.0>
@@ -6800,7 +6801,7 @@
 	"landbruksskole" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Bodø>"
 	"Bodø" N Prop Sem/Plc <W:0.0>
@@ -6842,7 +6843,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<1920>"
@@ -6877,7 +6878,7 @@
 	"statsinternat" N Neu Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Kårhamn>"
 	"Kårhamn" N Prop Sem/Plc <W:0.0>
@@ -6975,7 +6976,7 @@
 	"skoledirektør" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1910>"
 	"1910" Num Sem/Year <W:0.0>
@@ -7003,7 +7004,7 @@
 	"være" V Inf <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<finansiere>"
 	"finansiere" V Inf <W:0.0>
@@ -7027,10 +7028,10 @@
 	"ønske" V Ind Prs <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<arbeide>"
-	"arbeide" N Neu Sg Indef <W:0.0>
+	"arbeide" V Inf <W:0.0>
 : 
 "<">"
 	""" PUNCT <W:0.0>
@@ -7068,7 +7069,7 @@
 	"Statsarkivet" N Prop Sem/Obj <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tromsø>"
 	"Tromsø" N Prop Sem/Plc <W:0.0>
@@ -7088,7 +7089,7 @@
 	"seg" Pron Refl Acc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1927>"
 	"1927" Num Sem/Year <W:0.0>
@@ -7220,12 +7221,11 @@
 	"sentral" A Der/AAdv Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<leia>"
 	"lei" N Fem Sg Def <W:0.0>
 	"leie" N Fem Sg Def <W:0.0>
-	"leie" N Neu Pl Def Use/NG <W:0.0>
 : 
 "<og>"
 	"og" CC <W:0.0>
@@ -7291,7 +7291,7 @@
 	"Bull" N Prop Sem/Sur <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Repvåg>"
 	"Repvåg" N Prop Sem/Plc <W:0.0>
@@ -7310,7 +7310,7 @@
 	"hotell" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Hammerfest>"
 	"Hammerfest" N Prop Sem/Plc <W:0.0>
@@ -7367,7 +7367,7 @@
 	"trivdes" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Kårhamn>"
 	"Kårhamn" N Prop Sem/Plc <W:0.0>
@@ -7394,7 +7394,7 @@
 	"venstre" A Der/AAdv Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<kommunestyre>"
 	"kommunestyre" N Neu Sg Indef <W:0.0>
@@ -7448,7 +7448,7 @@
 	"formann" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Sørøysund>"
 	"Sørøysund" N Prop Sem/Plc <W:0.0>
@@ -7466,7 +7466,7 @@
 	"¶" CLB <W:0.0>
 :\n
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<november>"
@@ -7528,7 +7528,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<Hammerfest>"
@@ -7572,7 +7572,7 @@
 	"kapell" N Neu Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Hammerfest>"
 	"Hammerfest" N Prop Sem/Plc <W:0.0>
@@ -7750,7 +7750,7 @@
 	"internat" N Neu Pl Def Use/NG <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Sørøysund>"
 	"Sørøysund" N Prop Sem/Plc <W:0.0>
@@ -7802,11 +7802,10 @@
 	"bestefar" N Msc Sg Indef <W:0.0>
 : 
 "<sentral>"
-	"sentral" A Pos Fem Sg Indef <W:0.0>
-	"sentral" A Pos Msc Sg Indef <W:0.0>
+	"sentral" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<gjenreisinga>"
 	"gjenreising" N Fem Sg Def <W:0.0>
@@ -7868,7 +7867,7 @@
 	"for" Adv <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<gjenreise>"
 	"gjenreise" V Inf <W:0.0>
@@ -7946,7 +7945,7 @@
 	"vedta" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1958>"
 	"1958" Num Sem/Year <W:0.0>
@@ -8064,7 +8063,7 @@
 	"planlegge" V Ind Prt <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<flytte>"
 	"flytte" V Inf <W:0.0>
@@ -8224,15 +8223,16 @@
 : 
 "<hus>"
 	"hus" N Neu Pl Indef <W:0.0>
+	"hus" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Rypefjord>"
 	"Rypefjord" N Prop Sem/Plc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1951>"
 	"1951" Num Sem/Year <W:0.0>
@@ -8273,16 +8273,17 @@
 	"virke" V Ind Prt Radical <W:0.0>
 : 
 "<han>"
+	"han" Pron Pers Sg3 Acc <W:0.0>
 	"han" Pron Pers Sg3 Nom <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<skolen>"
 	"skole" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Sørøysund>"
 	"Sørøysund" N Prop Sem/Plc <W:0.0>
@@ -8290,7 +8291,7 @@
 	"," CLB <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1963>"
 	"1963" Num Sem/Year <W:0.0>
@@ -8311,10 +8312,9 @@
 	"fortjenestemedalje" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<sølv>"
-	"sølv" N Neu Pl Indef <W:0.0>
 	"sølv" N Neu Sg Indef <W:0.0>
 "<.>"
 	"." CLB <W:0.0>
@@ -8412,7 +8412,7 @@
 	"han" Pron Pers Sg3 Nom <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Kårhamn>"
 	"Kårhamn" N Prop Sem/Plc <W:0.0>
@@ -8433,7 +8433,7 @@
 	"fiske" V PrfPrc Radical <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tverrfjordelva>"
 	"Tverrfjordelva" ?
@@ -8521,16 +8521,17 @@
 	"men" CC <W:0.0>
 : 
 "<brukte>"
-	"bruke" V Ind Prt <W:0.0>
+	"brukt" A Pos Pl Def <W:0.0>
+	"brukt" A Pos Pl Indef <W:0.0>
 : 
 "<ikke>"
 	"ikke" Adv <W:0.0>
 : 
 "<samisk>"
-	"samisk" A Der/AAdv Adv <W:0.0>
+	"samisk" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<skolen>"
 	"skole" N Msc Sg Def <W:0.0>
@@ -8631,10 +8632,10 @@
 	"kunne" V Ind Prt <W:0.0>
 : 
 "<samisk>"
-	"samisk" A Der/AAdv Adv <W:0.0>
+	"samisk" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<oppveksten>"
 	"oppvekst" N Msc Sg Def <W:0.0>
@@ -8669,7 +8670,7 @@
 	"han" Pron Pers Sg3 Nom <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<det>"
 	"den" Det Dem Neu Sg <W:0.0>
@@ -8780,7 +8781,7 @@
 	"skolte" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Sørøysund>"
 	"Sørøysund" N Prop Sem/Plc <W:0.0>
@@ -8867,7 +8868,7 @@
 	"lærer" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Finnmark>"
 	"Finnmark" N Prop Sem/Plc <W:0.0>
@@ -8925,7 +8926,7 @@
 	"liv" N Neu Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tana>"
 	"Tana" N Prop Sem/Plc <W:0.0>
@@ -9026,7 +9027,7 @@
 	"informant" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<samiske>"
 	"samisk" A Pos Pl Indef <W:0.0>
@@ -9137,7 +9138,7 @@
 	"liv" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tana>"
 	"Tana" N Prop Sem/Plc <W:0.0>
@@ -9180,7 +9181,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<1963>"
@@ -9264,7 +9265,7 @@
 	"gravlegge" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Rypefjord>"
 	"Rypefjord" N Prop Sem/Plc <W:0.0>
@@ -9326,7 +9327,7 @@
 	"Risten" N Prop Sem/Fem <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Bonjákas>"
 	"Bonjákas" ?
@@ -9381,7 +9382,7 @@
 	"innflytelse" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<mange>"
 	"mange" A Pos Pl Indef <W:0.0>
@@ -9450,7 +9451,7 @@
 	"lærereksamen" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1912>"
 	"1912" Num Sem/Year <W:0.0>
@@ -9478,7 +9479,7 @@
 	"skole" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<heimkommunen>"
 	"kommune" N Msc Sg Def <W:0.0>
@@ -9523,7 +9524,7 @@
 	"midt" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tanaelva>"
 	"Tanaelva" ?
@@ -9596,7 +9597,7 @@
 	"for" Adv <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<studere>"
 	"studere" V Inf <W:0.0>
@@ -9614,7 +9615,7 @@
 	"folkehøjskole" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1915–16>"
 	"1915–16" Det Qnt Sem/Year Pl <W:0.0>
@@ -9636,13 +9637,13 @@
 	"sangkursus" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Oslo>"
 	"Oslo" N Prop Sem/Plc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1917>"
 	"1917" Num Sem/Year <W:0.0>
@@ -9661,13 +9662,13 @@
 	"college" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Birmingham>"
 	"Birmingham" N Prop Sem/Plc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1919–20>"
 	"1919–20" Det Qnt Sem/Year Pl <W:0.0>
@@ -9696,13 +9697,13 @@
 	"France" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Paris>"
 	"Paris" N Prop Sem/Plc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1920–21>"
 	"1920–21" Det Qnt Sem/Year Pl <W:0.0>
@@ -9713,21 +9714,20 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<København>"
 	"København" N Prop Sem/Plc <W:0.0>
 : 
 "<kom>"
-	"komme" V Ind Prt <W:0.0>
+	"komme" V Imp <W:0.0>
 : 
 "<han>"
 	"han" Pron Pers Sg3 Acc <W:0.0>
-	"han" Pron Pers Sg3 Nom <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<kontakt>"
 	"kontakt" N Fem Sg Indef <W:0.0>
@@ -9748,7 +9748,7 @@
 	"¶" CLB <W:0.0>
 :\n
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<1933>"
@@ -9887,7 +9887,7 @@
 	"brenne" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1944>"
 	"1944" Num Sem/Year <W:0.0>
@@ -9936,10 +9936,10 @@
 	"komme" V Ind Prt <W:0.0>
 : 
 "<raskt>"
-	"rask" A Der/AAdv Adv <W:0.0>
+	"rask" A Pos Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<gang>"
 	"gang" N Msc Sg Indef <W:0.0>
@@ -9948,7 +9948,7 @@
 	"her" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1945>"
 	"1945" Num Sem/Year <W:0.0>
@@ -9983,7 +9983,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<1951>"
@@ -10008,7 +10008,7 @@
 	"skole" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Bonjákas>"
 	"Bonjákas" ?
@@ -10117,7 +10117,7 @@
 	"morsmålsopplæring" N Fem Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<skolen>"
 	"skole" N Msc Sg Def <W:0.0>
@@ -10128,11 +10128,10 @@
 	"blant" Pr <W:0.0>
 : 
 "<annet>"
-	"annen" Det Dem Neu Sg <W:0.0>
 	"annen" Pron Dem Neu Sg <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1917>"
 	"1917" Num Sem/Year <W:0.0>
@@ -10152,7 +10151,7 @@
 	"fornorskning" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<barneskolen>"
 	"barneskole" N Msc Sg Def <W:0.0>
@@ -10165,7 +10164,7 @@
 	"ind" N Sem/Cat ABBR Gram/IAbbr N ABBR <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<mit>"
 	"mit" ?
@@ -10194,7 +10193,7 @@
 	"samekonferanse" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1919>"
 	"1919" Num Sem/Year <W:0.0>
@@ -10317,7 +10316,7 @@
 	"fram" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<artikkelen>"
 	"artikkel" N Msc Sg Def <W:0.0>
@@ -10347,7 +10346,7 @@
 	"]" PUNCT RIGHT <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1923>"
 	"1923" Num Sem/Year <W:0.0>
@@ -10360,7 +10359,7 @@
 	"og" CC <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<en>"
 	"en" Det Dem Fem Sg <W:0.0>
@@ -10448,7 +10447,7 @@
 	"»" PUNCT RIGHT <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<krasse>"
 	"krass" A Pos Pl Indef <W:0.0>
@@ -10460,7 +10459,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<1937>"
@@ -10496,7 +10495,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<1948>"
@@ -10512,7 +10511,7 @@
 	"han" Pron Pers Sg3 Nom <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tilråding>"
 	"tilråding" N Fem Sg Indef <W:0.0>
@@ -10585,7 +10584,7 @@
 	"ordfører" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tana>"
 	"Tana" N Prop Sem/Plc <W:0.0>
@@ -10632,7 +10631,7 @@
 	"medlem" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<den>"
 	"den" Det Dem Msc Sg <W:0.0>
@@ -10694,13 +10693,13 @@
 	"samekonferanse" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Jokkmokk>"
 	"Jokkmokk" N Prop Sem/Plc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1953>"
 	"1953" Num Sem/Year <W:0.0>
@@ -10711,7 +10710,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<sine>"
@@ -10799,7 +10798,7 @@
 	"Riksforbund" N Prop Sem/Org <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1968>"
 	"1968" Num Sem/Year <W:0.0>
@@ -10816,7 +10815,7 @@
 	"stortingsvalg" N Neu Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1969>"
 	"1969" Num Sem/Year <W:0.0>
@@ -10850,9 +10849,10 @@
 : 
 "<statsstipend>"
 	"statsstipend" N Neu Pl Indef <W:0.0>
+	"statsstipend" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1960>"
 	"1960" Num Sem/Year <W:0.0>
@@ -10875,10 +10875,9 @@
 	"fortjenestemedalje" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<gull>"
-	"gull" N Neu Pl Indef <W:0.0>
 	"gull" N Neu Sg Indef <W:0.0>
 "<.>"
 	"." CLB <W:0.0>
@@ -10956,7 +10955,7 @@
 	"Fokstad" N Prop Sem/Plc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1960>"
 	"1960" Num Sem/Year <W:0.0>
@@ -11110,7 +11109,7 @@
 	"lett" A Pos Neu Sg Indef <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<omsette>"
 	"omsette" V Inf <W:0.0>
@@ -11119,7 +11118,7 @@
 	"idé" N Msc Pl Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<praksis>"
 	"praksis" N Msc Sg Indef <W:0.0>
@@ -11215,7 +11214,7 @@
 	"fram" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<livet>"
 	"liv" N Neu Sg Def <W:0.0>
@@ -11254,7 +11253,7 @@
 	"undervise" V Ind Prt <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<samisk>"
 	"samisk" A Pos Neu Sg Indef <W:0.0>
@@ -11284,10 +11283,11 @@
 	"den" Det Dem Neu Sg <W:0.0>
 : 
 "<samiske>"
-	"samisk" A Pos Sg Def <W:0.0>
+	"samisk" A Pos Pl Def <W:0.0>
+	"samisk" A Pos Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<skolen>"
 	"skole" N Msc Sg Def <W:0.0>
@@ -11296,7 +11296,7 @@
 	"før" Pr <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<sine>"
 	"sin" Det Poss Pl3 <W:0.0>
@@ -11340,7 +11340,7 @@
 	"elev" N Msc Pl Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<korrekt>"
 	"korrekt" A Pos MF Sg Indef <W:0.0>
@@ -11354,7 +11354,7 @@
 	"også" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<kristendomstimene>"
 	"stim" N Msc Pl Def <W:0.0>
@@ -11453,10 +11453,11 @@
 	"være" V Ind Prt <W:0.0>
 : 
 "<dårlige>"
-	"dårlig" A Pos Sg Def <W:0.0>
+	"dårlig" A Pos Pl Def <W:0.0>
+	"dårlig" A Pos Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<norsk>"
 	"norsk" N Msc Sg Indef <W:0.0>
@@ -11503,22 +11504,18 @@
 : 
 "<aksjonert>"
 	"aksjonere" V PrfPrc <W:0.0>
-	"aksjonere" V PrfPrc Ex/V A Pos Fem Sg Indef <W:0.0>
-	"aksjonere" V PrfPrc Ex/V A Pos Msc Sg Indef <W:0.0>
 : 
 "<for>"
 	"for" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<få>"
-	"få" A Pos Pl Def <W:0.0>
-	"få" A Pos Pl Indef <W:0.0>
+	"få" V Inf <W:0.0>
 : 
 "<han>"
 	"han" Pron Pers Sg3 Acc <W:0.0>
-	"han" Pron Pers Sg3 Nom <W:0.0>
 : 
 "<avsatt>"
 	"avsette" V PrfPrc <W:0.0>
@@ -11656,7 +11653,7 @@
 	"respekt" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<lokalsamfunnet>"
 	"lokalsamfunn" N Neu Sg Def <W:0.0>
@@ -11753,11 +11750,9 @@
 : 
 "<brukt>"
 	"bruke" V PrfPrc <W:0.0>
-	"bruke" V PrfPrc Ex/V A Pos Fem Sg Indef <W:0.0>
-	"bruke" V PrfPrc Ex/V A Pos Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<spesielle>"
 	"spesiell" A Pos Pl Indef <W:0.0>
@@ -11906,10 +11901,11 @@
 : 
 "<kontroversiell>"
 	"kontroversiell" A Pos Fem Sg Indef <W:0.0>
+	"kontroversiell" A Pos MF Sg Indef <W:0.0>
 	"kontroversiell" A Pos Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<si>"
 	"sin" Det Poss Fem Sg3 <W:0.0>
@@ -11948,7 +11944,7 @@
 	"evne" V Ind Prt Radical <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<se>"
 	"se" V Inf <W:0.0>
@@ -11987,10 +11983,11 @@
 	"teori" N Msc Pl Def <W:0.0>
 : 
 "<ut>"
+	"ut" Adv <W:0.0>
 	"ut" Pr <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<livet>"
 	"liv" N Neu Sg Def <W:0.0>
@@ -12022,7 +12019,7 @@
 	"fornorske" V Ind Prs <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<sin>"
 	"sin" Det Poss Msc Sg3 <W:0.0>
@@ -12064,7 +12061,7 @@
 	"lærereksamen" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1918>"
 	"1918" Num Sem/Year <W:0.0>
@@ -12087,14 +12084,14 @@
 	"Skjånes" N Prop Sem/Plc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Hopsfjorden>"
 	"fjord" N Msc Sg Def <W:0.0>
 		"hop" N Cmp/s Cmp <W:0.0>
 : 
 "<kom>"
-	"komme" V Ind Prt <W:0.0>
+	"komme" V Imp <W:0.0>
 : 
 "<ho>"
 	"hun" Pron Pers Sg3 Nom Use/NG <W:0.0>
@@ -12115,7 +12112,7 @@
 	"Mortensnes" N Prop Sem/Plc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1921>"
 	"1921" Num Sem/Year <W:0.0>
@@ -12171,7 +12168,7 @@
 	"liv" N Neu Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Nesseby>"
 	"Nesseby" N Prop Sem/Plc <W:0.0>
@@ -12189,7 +12186,7 @@
 	"både" CC <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<små>"
 	"liten" A Pos Pl Def <W:0.0>
@@ -12205,7 +12202,7 @@
 	"storskole" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Fuglåsen>"
 	"Fuglåsen" ?
@@ -12213,13 +12210,13 @@
 	"," CLB <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<småskole>"
 	"småskole" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Nesseby>"
 	"Nesseby" N Prop Sem/Plc <W:0.0>
@@ -12234,7 +12231,7 @@
 	"internat" N Neu Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Karlebotn>"
 	"Karlebotn" N Prop Sem/Plc <W:0.0>
@@ -12253,7 +12250,7 @@
 	"¶" CLB <W:0.0>
 :\n
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<1943>"
@@ -12298,7 +12295,7 @@
 	"lærer" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Nesseby>"
 	"Nesseby" N Prop Sem/Plc <W:0.0>
@@ -12316,7 +12313,7 @@
 	"undervise" V Ind Prt <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<den>"
 	"den" Det Dem Msc Sg <W:0.0>
@@ -12437,19 +12434,19 @@
 	"barn" N Neu Pl Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<kommunen>"
 	"kommune" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<håndarbeid>"
 	"håndarbeid" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Karlebotn>"
 	"Karlebotn" N Prop Sem/Plc <W:0.0>
@@ -12488,13 +12485,13 @@
 	"forretning" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Bergeby>"
 	"Bergeby" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Nesseby>"
 	"Nesseby" N Prop Sem/Plc <W:0.0>
@@ -12510,12 +12507,8 @@
 	"." CLB <W:0.0>
 : 
 
-"<F. v>"
+"<F. v.>"
 	"f. v" N ABBR Gram/IAbbr Use/NG N ABBR <W:0.0>
-	"f. v" N ABBR Gram/IAbbr N ABBR <W:0.0>
-"<.>"
-	"." CLB <W:0.0>
-
 "<:>"
 	":" CLB <W:0.0>
 : 
@@ -12773,7 +12766,7 @@
 	"¶" CLB <W:0.0>
 :\n
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<1928>"
@@ -12788,7 +12781,7 @@
 	"hun" Pron Pers Sg3 Nom Use/NG <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<utarbeidelsen>"
 	"utarbeidelse" N Msc Sg Def <W:0.0>
@@ -12800,13 +12793,13 @@
 	"skoleplan" N Msc Sg Indef <W:0.0>
 : 
 "<for>"
-	"for" Pr <W:0.0>
+	"for" Adv <W:0.0>
 : 
 "<folkeskolen>"
 	"folkeskole" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Nesseby>"
 	"Nesseby" N Prop Sem/Plc <W:0.0>
@@ -12897,7 +12890,7 @@
 	"vedta" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Nesseby>"
 	"Nesseby" N Prop Sem/Plc <W:0.0>
@@ -12943,11 +12936,9 @@
 : 
 "<klart>"
 	"klare" V PrfPrc <W:0.0>
-	"klare" V PrfPrc Ex/V A Pos Fem Sg Indef <W:0.0>
-	"klare" V PrfPrc Ex/V A Pos Msc Sg Indef <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<finne>"
 	"finne" V Inf <W:0.0>
@@ -12972,7 +12963,7 @@
 	"forsøke" V Ind Prt <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<fremme>"
 	"fremme" V Inf <W:0.0>
@@ -13088,11 +13079,9 @@
 : 
 "<spart>"
 	"spare" V PrfPrc <W:0.0>
-	"spare" V PrfPrc Ex/V A Pos Fem Sg Indef <W:0.0>
-	"spare" V PrfPrc Ex/V A Pos Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1944>"
 	"1944" Num Sem/Year <W:0.0>
@@ -13121,7 +13110,7 @@
 	"skole" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<kommunen>"
 	"kommune" N Msc Sg Def <W:0.0>
@@ -13150,10 +13139,10 @@
 	"komme" V Ind Prt <W:0.0>
 : 
 "<raskt>"
-	"rask" A Der/AAdv Adv <W:0.0>
+	"rask" A Pos Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<gang>"
 	"gang" N Msc Sg Indef <W:0.0>
@@ -13252,7 +13241,7 @@
 	"artig" A Pos Neu Sg Indef <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<gå>"
 	"gå" V Inf <W:0.0>
@@ -13320,7 +13309,7 @@
 	"kledt" A Der/AAdv Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<kjoler>"
 	"kjole" N Msc Pl Indef <W:0.0>
@@ -13335,7 +13324,7 @@
 	"bo" V Ind Prt <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<lærerleiligheta>"
 	"lærerleiligheta" ?
@@ -13347,7 +13336,7 @@
 	"skole" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<alle>"
 	"all" A Pos Pl Indef <W:0.0>
@@ -13506,7 +13495,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<1934>"
@@ -13581,7 +13570,7 @@
 	"Høyre-velger" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<alle>"
 	"all" A Pos Pl Indef <W:0.0>
@@ -13765,7 +13754,7 @@
 	"familie" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Bonjákas>"
 	"Bonjákas" ?
@@ -13939,7 +13928,7 @@
 	"seg" Pron Refl Acc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Rogaland>"
 	"Rogaland" N Prop Sem/Plc <W:0.0>
@@ -14014,7 +14003,7 @@
 	"på" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<ha>"
 	"ha" V Inf <W:0.0>
@@ -14038,7 +14027,7 @@
 	"dø" V Ind Prt <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Stavanger>"
 	"Stavanger" N Prop Sem/Plc <W:0.0>
@@ -14055,7 +14044,7 @@
 	"gravlegge" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Bonjákas>"
 	"Bonjákas" ?
@@ -14218,7 +14207,7 @@
 		"amt" N Cmp/s Cmp <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Vadsø>"
 	"Vadsø" N Prop Sem/Plc <W:0.0>
@@ -14232,7 +14221,7 @@
 	"folkehøgskole" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Mosjøen>"
 	"Mosjøen" N Prop Sem/Plc <W:0.0>
@@ -14244,17 +14233,21 @@
 	"1-årig" ?
 : 
 "<lærerinnekurs>"
+	"kurs" N Msc Sg Indef <W:0.0>
+		"lærerinne" N Cmp/null Cmp <W:0.0>
 	"kurs" N Neu Pl Indef <W:0.0>
+		"lærerinne" N Cmp/null Cmp <W:0.0>
+	"kurs" N Neu Sg Indef <W:0.0>
 		"lærerinne" N Cmp/null Cmp <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tromsø>"
 	"Tromsø" N Prop Sem/Plc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1920/21>"
 	"1920/21" Det Qnt Sem/Year Pl <W:0.0>
@@ -14263,7 +14256,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<1921/22>"
@@ -14279,7 +14272,7 @@
 	"post" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Sørøysund>"
 	"Sørøysund" N Prop Sem/Plc <W:0.0>
@@ -14290,7 +14283,7 @@
 	"," CLB <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<kretsene>"
 	"krets" N Msc Pl Def <W:0.0>
@@ -14302,7 +14295,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<1922>"
@@ -14340,7 +14333,7 @@
 	"skolte" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Mefjord-Kårhamn>"
 	"Mefjord-Kårhamn" ?
@@ -14377,7 +14370,7 @@
 	"]" PUNCT RIGHT <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1927>"
 	"1927" Num Sem/Year <W:0.0>
@@ -14412,7 +14405,7 @@
 	"både" CC <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<små>"
 	"liten" A Pos Pl Def <W:0.0>
@@ -14443,18 +14436,12 @@
 : 
 "<antatt>"
 	"anta" V PrfPrc <W:0.0>
-	"antatt" A Pos Fem Sg Indef <W:0.0>
-	"antatt" A Pos MF Sg Indef <W:0.0>
-	"antatt" A Pos Msc Sg Indef <W:0.0>
-	"antatt" A Pos Neu Sg Indef <W:0.0>
 : 
 "<fotografert>"
 	"fotografere" V PrfPrc <W:0.0>
-	"fotografere" V PrfPrc Ex/V A Pos Fem Sg Indef <W:0.0>
-	"fotografere" V PrfPrc Ex/V A Pos Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1922>"
 	"1922" Num Sem/Year <W:0.0>
@@ -14462,7 +14449,7 @@
 	 Use/Circ"1922" Num Err/Orth Arab <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tromsø>"
 	"Tromsø" N Prop Sem/Plc <W:0.0>
@@ -14488,7 +14475,7 @@
 	"lære" V Ind Prs <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Sørøysund>"
 	"Sørøysund" N Prop Sem/Plc <W:0.0>
@@ -14530,7 +14517,7 @@
 	"Andersén" N Prop Sem/Sur <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<midten>"
 	"midte" N Msc Sg Def <W:0.0>
@@ -14739,7 +14726,7 @@
 	"Lydia" N Prop Sem/Fem <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Hammerfest>"
 	"Hammerfest" N Prop Sem/Plc <W:0.0>
@@ -14751,7 +14738,7 @@
 	"unge" N Msc Pl Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<distriktet>"
 	"distrikt" N Neu Sg Def <W:0.0>
@@ -14763,10 +14750,11 @@
 	"reise" V Ind Prt <W:0.0>
 : 
 "<med>"
+	"med" Adv <W:0.0>
 	"med" Pr <W:0.0>
 : 
 "<dem>"
-	"dem" A Gram/TAbbr A ABBR <W:0.0>
+	"de" Pron Pers Pl3 Acc <W:0.0>
 : 
 "<til>"
 	"til" Pr <W:0.0>
@@ -14804,7 +14792,7 @@
 	"pensjon" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1961>"
 	"1961" Num Sem/Year <W:0.0>
@@ -14846,7 +14834,7 @@
 	"skolte" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Alta>"
 	"Alta" N Prop Sem/Plc <W:0.0>
@@ -14947,7 +14935,7 @@
 	"skolte" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Krampenes>"
 	"Krampenes" N Prop Sem/Plc <W:0.0>
@@ -15005,10 +14993,10 @@
 	"ikke" Adv <W:0.0>
 : 
 "<samisk>"
-	"samisk" A Der/AAdv Adv <W:0.0>
+	"samisk" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<skolen>"
 	"skole" N Msc Sg Def <W:0.0>
@@ -15044,7 +15032,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<1957>"
@@ -15072,7 +15060,7 @@
 		"lærer" N Cmp/null Cmp <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Karasjok>"
 	"Karasjok" N Prop Sem/Plc <W:0.0>
@@ -15150,13 +15138,13 @@
 	"for" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<presentere>"
-	"present" A Comp <W:0.0>
+	"presentere" V Inf <W:0.0>
 : 
 "<dem>"
-	"dem" A Gram/TAbbr A ABBR <W:0.0>
+	"de" Pron Pers Pl3 Acc <W:0.0>
 : 
 "<for>"
 	"for" Adv <W:0.0>
@@ -15382,7 +15370,7 @@
 	"hun" Pron Pers Sg3 Nom Use/NG <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1957>"
 	"1957" Num Sem/Year <W:0.0>
@@ -15417,7 +15405,7 @@
 	"gang" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<året>"
 	"år" N Neu Sg Def <W:0.0>
@@ -15449,12 +15437,10 @@
 	"en" Det Dem Fem Sg <W:0.0>
 : 
 "<fremmed>"
-	"fremmed" A Pos Fem Sg Indef <W:0.0>
-	"fremmed" A Pos Msc Sg Indef <W:0.0>
-	"fremmed" A Pos Neu Sg Indef <W:0.0>
+	"fremmed" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<heimbygda>"
 	"heimbygd" N Fem Sg Def <W:0.0>
@@ -15478,7 +15464,7 @@
 	"Anderssen" N Prop Sem/Sur <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Karasjok>"
 	"Karasjok" N Prop Sem/Plc <W:0.0>
@@ -15611,15 +15597,16 @@
 : 
 "<hus>"
 	"hus" N Neu Pl Indef <W:0.0>
+	"hus" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Rypefjord>"
 	"Rypefjord" N Prop Sem/Plc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1953/54>"
 	"1953/54" Det Qnt Sem/Year Pl <W:0.0>
@@ -15644,10 +15631,11 @@
 : 
 "<aktiv>"
 	"aktiv" A Pos Fem Sg Indef <W:0.0>
+	"aktiv" A Pos MF Sg Indef <W:0.0>
 	"aktiv" A Pos Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<det>"
 	"den" Det Dem Neu Sg <W:0.0>
@@ -15662,7 +15650,7 @@
 	"og" CC <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Finnmark>"
 	"Finnmark" N Prop Sem/Plc <W:0.0>
@@ -15697,7 +15685,7 @@
 	"kommentere" V PrfPrc Ex/V A Pos Pl Indef <W:0.0>
 : 
 "<dem>"
-	"dem" A Gram/TAbbr A ABBR <W:0.0>
+	"de" Pron Pers Pl3 Acc <W:0.0>
 : 
 "<som>"
 	"som" CS <W:0.0>
@@ -15731,7 +15719,7 @@
 	"år" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<skolen>"
 	"skole" N Msc Sg Def <W:0.0>
@@ -15752,10 +15740,11 @@
 	"mange" A Superl Pl Def <W:0.0>
 : 
 "<av>"
+	"av" Adv <W:0.0>
 	"av" Pr <W:0.0>
 : 
 "<dem>"
-	"dem" A Gram/TAbbr A ABBR <W:0.0>
+	"de" Pron Pers Pl3 Acc <W:0.0>
 : 
 "<som>"
 	"som" Pr <W:0.0>
@@ -15899,7 +15888,7 @@
 	"like" V PrfPrc Ex/V A Pos Pl Indef <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<kle>"
 	"kle" V Inf <W:0.0>
@@ -15908,7 +15897,7 @@
 	"seg" Pron Refl Acc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<pels>"
 	"pel" N Msc Sg Indef Clt <W:0.0>
@@ -16038,7 +16027,7 @@
 	"redaktør" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Arbeiderbladet>"
 	"arbeiderblad" N Neu Sg Def <W:0.0>
@@ -16128,7 +16117,7 @@
 	"eiendom" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tana>"
 	"Tana" N Prop Sem/Plc <W:0.0>
@@ -16146,7 +16135,7 @@
 	"Erling" N Prop Sem/Mal <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tromsø>"
 	"Tromsø" N Prop Sem/Plc <W:0.0>
@@ -16187,10 +16176,10 @@
 	"fly" N Neu Sg Indef <W:0.0>
 : 
 "<rundt>"
-	"rund" A Der/AAdv Adv <W:0.0>
+	"rund" A Pos Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<landet>"
 	"land" N Neu Sg Def <W:0.0>
@@ -16241,7 +16230,7 @@
 	"sykehjem" N Neu Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Indrefjorden>"
 	"Indrefjorden" ?
@@ -16265,7 +16254,7 @@
 	"kvile" V Inf <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Bonjákas>"
 	"Bonjákas" ?
@@ -16394,7 +16383,7 @@
 	"Geresgohppi" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Austertana>"
 	"Austertana" N Prop Sem/Plc <W:0.0>
@@ -16468,7 +16457,7 @@
 	"fiskebruk" N Neu Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Kongsfjord>"
 	"Kongsfjord" N Prop Sem/Plc <W:0.0>
@@ -16520,13 +16509,13 @@
 	"]" PUNCT RIGHT <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Havøysund>"
 	"Havøysund" N Prop Sem/Plc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1917>"
 	"1917" Num Sem/Year <W:0.0>
@@ -16567,12 +16556,13 @@
 : 
 "<lån>"
 	"lån" N Neu Pl Indef <W:0.0>
+	"lån" N Neu Sg Indef <W:0.0>
 : 
 "<for>"
 	"for" Adv <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<ta>"
 	"ta" V Inf <W:0.0>
@@ -16599,7 +16589,7 @@
 	"med" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<skrive>"
 	"skrive" V Inf <W:0.0>
@@ -16640,7 +16630,7 @@
 	"eksamen" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1919>"
 	"1919" Num Sem/Year <W:0.0>
@@ -16671,7 +16661,7 @@
 	"vikariat" N Neu Pl Indef Use/NG <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Øst-Finnmark>"
 	"Øst-Finnmark" N Prop Sem/Plc <W:0.0>
@@ -16699,9 +16689,10 @@
 	"lær" N Neu Pl Indef Use/NG <W:0.0>
 	"lære" N Fem Pl Indef <W:0.0>
 	"lære" V Ind Prs <W:0.0>
+	"lærer" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1921>"
 	"1921" Num Sem/Year <W:0.0>
@@ -16754,7 +16745,7 @@
 	"nybygd" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1911>"
 	"1911" Num Sem/Year <W:0.0>
@@ -16800,7 +16791,7 @@
 	"¶" CLB <W:0.0>
 :\n
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<1921>"
@@ -16831,7 +16822,7 @@
 	"statsinternat" N Neu Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<den>"
 	"den" Det Dem Msc Sg <W:0.0>
@@ -16846,7 +16837,7 @@
 	"Snefjord" N Prop Sem/Plc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Måsøy>"
 	"Måsøy" N Prop Sem/Plc <W:0.0>
@@ -16870,7 +16861,7 @@
 	"da" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<flere>"
 	"mange" A Comp Pl Indef <W:0.0>
@@ -16998,7 +16989,7 @@
 	"seg" Pron Refl Acc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1925>"
 	"1925" Num Sem/Year <W:0.0>
@@ -17036,7 +17027,7 @@
 	"eiendom" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Pålbukta>"
 	"Pålbukta" ?
@@ -17189,7 +17180,7 @@
 	"samlingspunkt" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<bygda>"
 	"bygd" N Fem Sg Def <W:0.0>
@@ -17249,7 +17240,7 @@
 	"til" Pr <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Gárggu>"
 	"Gárggu" ?
@@ -17325,7 +17316,7 @@
 		"internat" N Cmp/null Cmp <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Snefjord>"
 	"Snefjord" N Prop Sem/Plc <W:0.0>
@@ -17344,7 +17335,7 @@
 	"internat" N Neu Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1944>"
 	"1944" Num Sem/Year <W:0.0>
@@ -17381,7 +17372,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<dag>"
@@ -17615,7 +17606,7 @@
 	"gift" N Fem Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Snefjord>"
 	"Snefjord" N Prop Sem/Plc <W:0.0>
@@ -17693,7 +17684,7 @@
 	"¶" CLB <W:0.0>
 :\n
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<1944>"
@@ -17727,7 +17718,7 @@
 	"virke" V Inf <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Finnfjordbotn>"
 	"Finnfjordbotn" N Prop Sem/Plc <W:0.0>
@@ -17747,13 +17738,12 @@
 : 
 "<de>"
 	"de" Pron Pers Pl3 Nom <W:0.0>
-	"den" Det Dem Pl <W:0.0>
 : 
 "<tilbake>"
 	"tilbake" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Snefjord>"
 	"Snefjord" N Prop Sem/Plc <W:0.0>
@@ -17833,7 +17823,7 @@
 	"men" CC <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Pålbukta>"
 	"Pålbukta" ?
@@ -17863,7 +17853,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<mars>"
@@ -17960,7 +17950,7 @@
 	"elev" N Msc Pl Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Snefjord>"
 	"Snefjord" N Prop Sem/Plc <W:0.0>
@@ -18100,7 +18090,7 @@
 	"enkel" A Comp <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<framtidige>"
 	"framtidig" A Pos Pl Indef <W:0.0>
@@ -18187,7 +18177,7 @@
 	"tekst" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Bibelen>"
 	"bibel" N Msc Sg Def <W:0.0>
@@ -18259,7 +18249,7 @@
 	"bo" V Ind Prs <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Finnmark>"
 	"Finnmark" N Prop Sem/Plc <W:0.0>
@@ -18289,7 +18279,7 @@
 	"internatskole" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Snefjord>"
 	"Snefjord" N Prop Sem/Plc <W:0.0>
@@ -18298,7 +18288,7 @@
 	"bygge" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Pålbukta>"
 	"Pålbukta" ?
@@ -18405,7 +18395,7 @@
 	"med" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<etablere>"
 	"etablere" V Inf <W:0.0>
@@ -18430,7 +18420,7 @@
 	"sette" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<kommunestyret>"
 	"kommunestyre" N Neu Sg Def <W:0.0>
@@ -18466,7 +18456,7 @@
 	"gudstjeneste" N Msc Pl Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Slotten>"
 	"Slotten" N Prop Sem/Sur <W:0.0>
@@ -18530,7 +18520,7 @@
 	"forrette" V Ind Prt Radical <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<begravelser>"
 	"begravelse" N Msc Pl Indef <W:0.0>
@@ -18546,9 +18536,11 @@
 : 
 "<engasjert>"
 	"engasjere" V PrfPrc <W:0.0>
+	"engasjere" V PrfPrc Ex/V A Pos Fem Sg Indef <W:0.0>
+	"engasjere" V PrfPrc Ex/V A Pos Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Finnemisjonen>"
 	"finnemisjon" N Msc Sg Def <W:0.0>
@@ -18643,7 +18635,7 @@
 	"pensjonist" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1963>"
 	"1963" Num Sem/Year <W:0.0>
@@ -18694,9 +18686,10 @@
 : 
 "<språkkurs>"
 	"språkkurs" N Neu Pl Indef <W:0.0>
+	"språkkurs" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<engelsk>"
 	"engelsk" N Msc Sg Indef <W:0.0>
@@ -18737,7 +18730,7 @@
 	"Universitetet" N Prop Sem/Org <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Oslo>"
 	"Oslo" N Prop Sem/Plc <W:0.0>
@@ -18746,7 +18739,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<Norges>"
@@ -18765,7 +18758,7 @@
 	"jubileum" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1963>"
 	"1963" Num Sem/Year <W:0.0>
@@ -18852,7 +18845,7 @@
 	"andakt" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<radioen>"
 	"radio" N Msc Sg Def <W:0.0>
@@ -18864,7 +18857,7 @@
 	"¶" CLB <W:0.0>
 :\n
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<«>"
@@ -18873,7 +18866,7 @@
 	"fornorskning" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<kystdistriktene>"
 	"distrikt" N Neu Pl Def <W:0.0>
@@ -18957,7 +18950,7 @@
 	"gravlegge" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Alta>"
 	"Alta" N Prop Sem/Plc <W:0.0>
@@ -19095,7 +19088,7 @@
 	"skole" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Gárggogeahči>"
 	"Gárggogeahči" ?
@@ -19196,13 +19189,13 @@
 		"amt" N Cmp/s Cmp <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tana>"
 	"Tana" N Prop Sem/Plc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1919>"
 	"1919" Num Sem/Year <W:0.0>
@@ -19240,7 +19233,7 @@
 	"til" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<søke>"
 	"søke" V Inf <W:0.0>
@@ -19256,7 +19249,7 @@
 	"og" CC <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1919/20>"
 	"1919/20" Det Qnt Sem/Year Pl <W:0.0>
@@ -19281,7 +19274,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<1920/21>"
@@ -19304,7 +19297,7 @@
 	"omgangsskolelærer" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Nord-Varanger>"
 	"Nord-Varanger" ?
@@ -19316,7 +19309,7 @@
 	"for" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<forbedre>"
 	"forbedre" V Inf <W:0.0>
@@ -19372,7 +19365,7 @@
 	"for" Adv <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<skaffe>"
 	"skaffe" V Inf <W:0.0>
@@ -19422,7 +19415,7 @@
 	"lærerskole" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Kristiania>"
 	"Kristiania" N Prop Sem/Plc <W:0.0>
@@ -19558,7 +19551,7 @@
 	"han" Pron Pers Sg3 Nom <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Kiberg>"
 	"Kiberg" N Prop Sem/Plc <W:0.0>
@@ -19567,7 +19560,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<1925>"
@@ -19583,13 +19576,13 @@
 	"han" Pron Pers Sg3 Nom <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Masjok-Luftjok>"
 	"Masjok-Luftjok" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tana>"
 	"Tana" N Prop Sem/Plc <W:0.0>
@@ -19640,13 +19633,13 @@
 		"skole" N Cmp/null Cmp <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Kiberg>"
 	"Kiberg" N Prop Sem/Plc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1926>"
 	"1926" Num Sem/Year <W:0.0>
@@ -19657,7 +19650,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<1930>"
@@ -19682,7 +19675,7 @@
 	"skole" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Kiberg>"
 	"Kiberg" N Prop Sem/Plc <W:0.0>
@@ -19702,6 +19695,7 @@
 	"skole" N Msc Sg Def <W:0.0>
 : 
 "<blei>"
+	"blei" N Fem Sg Indef <W:0.0>
 	"bli" V Ind Prt Radical <W:0.0>
 : 
 "<etter>"
@@ -19755,7 +19749,7 @@
 	"Guivesgieddi" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Vestertana>"
 	"Vestertana" N Prop Sem/Plc <W:0.0>
@@ -19788,7 +19782,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<1932>"
@@ -19882,7 +19876,7 @@
 	"at" CS <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<sesongen>"
 	"sesong" N Msc Sg Def <W:0.0>
@@ -19909,7 +19903,7 @@
 	"dialekt" N Fem Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<været>"
 	"vær" N Neu Sg Def <W:0.0>
@@ -19920,7 +19914,7 @@
 	"og" CC <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<mindre>"
 	"liten" A Comp <W:0.0>
@@ -20010,13 +20004,13 @@
 	"være" V Ind Prt <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Kiberg>"
 	"Kiberg" N Prop Sem/Plc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1955>"
 	"1955" Num Sem/Year <W:0.0>
@@ -20037,7 +20031,7 @@
 	"finsktalende" A Der/AAdv Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<været>"
 	"vær" N Neu Sg Def <W:0.0>
@@ -20185,13 +20179,13 @@
 	"venstre" A Der/AAdv Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<herredsstyret>"
 	"herredsstyre" N Neu Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<flere>"
 	"mange" A Comp Pl Indef <W:0.0>
@@ -20205,7 +20199,7 @@
 	"samt" CC <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<skolestyret>"
 	"skolestyre" N Neu Sg Def <W:0.0>
@@ -20232,7 +20226,7 @@
 		"skolebok" N Cmp/null Cmp <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<kommunen>"
 	"kommune" N Msc Sg Def <W:0.0>
@@ -20281,11 +20275,9 @@
 : 
 "<brent>"
 	"brenne" V PrfPrc <W:0.0>
-	"brenne" V PrfPrc Ex/V A Pos Fem Sg Indef <W:0.0>
-	"brenne" V PrfPrc Ex/V A Pos Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1944>"
 	"1944" Num Sem/Year <W:0.0>
@@ -20307,7 +20299,7 @@
 	"uke" N Fem Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Karasjok>"
 	"Karasjok" N Prop Sem/Plc <W:0.0>
@@ -20327,7 +20319,7 @@
 	"og" CC <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<februar>"
 	"februar" N Msc Indcl <W:0.0>
@@ -20344,7 +20336,7 @@
 	"skole" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<gang>"
 	"gang" N Msc Sg Indef <W:0.0>
@@ -20424,7 +20416,7 @@
 	"spesielt" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<norsk>"
 	"norsk" N Msc Sg Indef <W:0.0>
@@ -20604,7 +20596,7 @@
 	"bl.a" N ABBR Gram/TAbbr N ABBR <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tana>"
 	"Tana" N Prop Sem/Plc <W:0.0>
@@ -20613,7 +20605,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<1958>"
@@ -20630,15 +20622,16 @@
 : 
 "<arbeid>"
 	"arbeid" N Neu Pl Indef <W:0.0>
+	"arbeid" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Kåfjord>"
 	"Kåfjord" N Prop Sem/Plc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Alta>"
 	"Alta" N Prop Sem/Plc <W:0.0>
@@ -20686,7 +20679,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<1963>"
@@ -20708,10 +20701,9 @@
 	"fortjenestemedalje" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<sølv>"
-	"sølv" N Neu Pl Indef <W:0.0>
 	"sølv" N Neu Sg Indef <W:0.0>
 "<.>"
 	"." CLB <W:0.0>
@@ -20740,7 +20732,7 @@
 	"men" CC <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<dagligtale>"
 	"dagligtale" N Msc Sg Indef <W:0.0>
@@ -20761,7 +20753,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<Vestertana>"
@@ -20877,10 +20869,10 @@
 	"snakke" V PrfPrc Radical <W:0.0>
 : 
 "<samisk>"
-	"samisk" A Der/AAdv Adv <W:0.0>
+	"samisk" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Kiberg>"
 	"Kiberg" N Prop Sem/Plc <W:0.0>
@@ -20903,7 +20895,7 @@
 	"vanskelig" A Pos Neu Sg Indef <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<kommunisere>"
 	"kommunisere" V Inf <W:0.0>
@@ -20931,7 +20923,7 @@
 	"bo" V Ind Prs <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Finnmark>"
 	"Finnmark" N Prop Sem/Plc <W:0.0>
@@ -20977,7 +20969,7 @@
 	"kåseri" N Neu Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Sameradioen>"
 	"sameradio" N Msc Sg Def <W:0.0>
@@ -21013,7 +21005,7 @@
 	"fangst" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tanafjorden>"
 	"Tanafjorden" N Prop Sem/Plc <W:0.0>
@@ -21047,7 +21039,7 @@
 	"skolehistorie" N Fem Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tanafjorden>"
 	"Tanafjorden" N Prop Sem/Plc <W:0.0>
@@ -21106,7 +21098,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<kåseriene>"
@@ -21186,7 +21178,7 @@
 	"gjerning" N Fem Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<skolen>"
 	"skole" N Msc Sg Def <W:0.0>
@@ -21222,7 +21214,7 @@
 	"gravlegge" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Alta>"
 	"Alta" N Prop Sem/Plc <W:0.0>
@@ -21257,7 +21249,7 @@
 	"lærer" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<samiske>"
 	"samisk" A Pos Pl Indef <W:0.0>
@@ -21286,7 +21278,7 @@
 	"plassere" V PrfPrc Ex/V A Pos Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<kretser>"
 	"krets" N Msc Pl Indef <W:0.0>
@@ -21317,7 +21309,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<kretsene>"
@@ -21359,7 +21351,7 @@
 	"søker" N Msc Pl Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1921>"
 	"1921" Num Sem/Year <W:0.0>
@@ -21481,7 +21473,7 @@
 	"privilegere" V Ind Prt <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<lokalsamfunna>"
 	"lokalsamfunn" N Neu Pl Def <W:0.0>
@@ -21590,13 +21582,13 @@
 	"gi" V Inf <W:0.0>
 : 
 "<dem>"
-	"dem" A Gram/TAbbr A ABBR <W:0.0>
+	"de" Pron Pers Pl3 Acc <W:0.0>
 : 
 "<trygghet>"
 	"trygghet" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<en>"
 	"en" Det Dem Fem Sg <W:0.0>
@@ -21664,14 +21656,13 @@
 	"få" A Pos Pl Indef <W:0.0>
 : 
 "<av>"
+	"av" Adv <W:0.0>
 	"av" Pr <W:0.0>
 : 
 "<dem>"
-	"dem" A Gram/TAbbr A ABBR <W:0.0>
+	"de" Pron Pers Pl3 Acc <W:0.0>
 : 
 "<var>"
-	"var" A Pos Fem Sg Indef <W:0.0>
-	"var" A Pos Msc Sg Indef <W:0.0>
 	"være" V Ind Prt <W:0.0>
 : 
 "<fra>"
@@ -21723,13 +21714,13 @@
 	"vanskelig" A Pos Neu Sg Indef <W:0.0>
 : 
 "<for>"
-	"for" Pr <W:0.0>
+	"for" Adv <W:0.0>
 : 
 "<dem>"
-	"dem" A Gram/TAbbr A ABBR <W:0.0>
+	"de" Pron Pers Pl3 Acc <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<kommunisere>"
 	"kommunisere" V Inf <W:0.0>
@@ -21759,7 +21750,7 @@
 	"institusjon" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<bygdene>"
 	"bygd" N Fem Pl Def <W:0.0>
@@ -21941,10 +21932,10 @@
 	"blant" Pr <W:0.0>
 : 
 "<dem>"
-	"dem" A Gram/TAbbr A ABBR <W:0.0>
+	"de" Pron Pers Pl3 Acc <W:0.0>
 : 
 "<var>"
-	"vare" V Imp <W:0.0>
+	"være" V Ind Prt <W:0.0>
 : 
 "<Gunnar>"
 	"Gunnar" N Prop Sem/Mal <W:0.0>
@@ -21987,7 +21978,7 @@
 	"styrere" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<en>"
 	"en" Det Dem Msc Sg <W:0.0>
@@ -22013,10 +22004,11 @@
 	"allé" N Msc Sg Indef <W:0.0>
 : 
 "<ut>"
+	"ut" Adv <W:0.0>
 	"ut" Pr <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<arbeidet>"
 	"arbeid" N Neu Sg Def <W:0.0>
@@ -22032,10 +22024,11 @@
 	"ingen" Pron Indef <W:0.0>
 : 
 "<av>"
+	"av" Adv <W:0.0>
 	"av" Pr <W:0.0>
 : 
 "<dem>"
-	"dem" A Gram/TAbbr A ABBR <W:0.0>
+	"de" Pron Pers Pl3 Acc <W:0.0>
 "<,>"
 	"," CLB <W:0.0>
 : 
@@ -22149,7 +22142,7 @@
 	"bo" V Ind Prs <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tana>"
 	"Tana" N Prop Sem/Plc <W:0.0>
@@ -22248,7 +22241,7 @@
 	"orde" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<sin>"
 	"sin" Det Poss Msc Sg3 <W:0.0>
@@ -22289,7 +22282,7 @@
 	"lærer" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<denne>"
 	"denne" Det Dem Fem Sg <W:0.0>
@@ -22373,13 +22366,14 @@
 	"neppe" Adv <W:0.0>
 : 
 "<av>"
+	"av" Adv <W:0.0>
 	"av" Pr <W:0.0>
 : 
 "<dem>"
-	"dem" A Gram/TAbbr A ABBR <W:0.0>
+	"de" Pron Pers Pl3 Acc <W:0.0>
 : 
 "<sjøl>"
-	"sjøl" Pron Intens <W:0.0>
+	"sjøl" Det Intens <W:0.0>
 "<.>"
 	"." CLB <W:0.0>
 : 
@@ -22476,7 +22470,7 @@
 	"framgang" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<fornorskningsarbeidet>"
 	"fornorskningsarbeid" N Neu Sg Def <W:0.0>
@@ -22504,10 +22498,10 @@
 	"dvs" N ABBR Gram/TAbbr Use/NG N ABBR <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<lære>"
-	"lære" N Fem Sg Indef <W:0.0>
+	"lære" V Inf <W:0.0>
 : 
 "<barna>"
 	"barn" N Neu Pl Def <W:0.0>
@@ -22560,7 +22554,7 @@
 	"både" CC <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<skolen>"
 	"skole" N Msc Sg Def <W:0.0>
@@ -22594,7 +22588,7 @@
 	"forankre" V PrfPrc Radical <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<naturen>"
 	"natur" N Msc Sg Def <W:0.0>
@@ -22603,7 +22597,7 @@
 	"og" CC <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<den>"
 	"den" Pron Pers Sg3 <W:0.0>
@@ -22724,7 +22718,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<etterkrigstida>"
@@ -22768,7 +22762,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<Vest-Finnmark>"
@@ -22781,7 +22775,7 @@
 	"internering" N Fem Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Finnfjordbotn>"
 	"Finnfjordbotn" N Prop Sem/Plc <W:0.0>
@@ -22806,13 +22800,14 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<Øst-Finnmark>"
 	"Øst-Finnmark" N Prop Sem/Plc <W:0.0>
 : 
 "<var>"
+	"vare" V Imp <W:0.0>
 	"være" V Ind Prt <W:0.0>
 : 
 "<det>"
@@ -22851,7 +22846,7 @@
 	"for" Adv <W:0.0>
 : 
 "<dem>"
-	"dem" A Gram/TAbbr A ABBR <W:0.0>
+	"de" Pron Pers Pl3 Acc <W:0.0>
 : 
 "<som>"
 	"som" CS <W:0.0>
@@ -22890,7 +22885,7 @@
 	"som" Pr <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<vest>"
 	"vest" N Msc Sg Indef <W:0.0>
@@ -22966,7 +22961,7 @@
 	"ivareta" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<heimen>"
 	"heim" N Msc Sg Def <W:0.0>
@@ -23017,10 +23012,9 @@
 	"betrakte" V Inf Pass <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<lys>"
-	"lys" N Neu Pl Indef <W:0.0>
 	"lys" N Neu Sg Indef <W:0.0>
 : 
 "<av>"
@@ -23051,7 +23045,7 @@
 	"¶" CLB <W:0.0>
 :\n
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<1940>"
@@ -23318,7 +23312,7 @@
 	"språk" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<offentlig>"
 	"offentlig" A Pos MF Sg Indef <W:0.0>
@@ -23366,7 +23360,7 @@
 	"voksen" A Pos Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<mellom>"
 	"mellom" Adv <W:0.0>
@@ -23423,7 +23417,7 @@
 	"starte" V Ind Prt Radical <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1946>"
 	"1946" Num Sem/Year <W:0.0>
@@ -23463,7 +23457,7 @@
 	"skikkelse" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<mange>"
 	"mange" A Pos Neu Sg Indef <W:0.0>
@@ -23496,7 +23490,7 @@
 	"til" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<motvirke>"
 	"motvirke" V Inf <W:0.0>
@@ -23514,7 +23508,7 @@
 	"være" V Ind Prt <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<gang>"
 	"gang" N Msc Sg Indef <W:0.0>
@@ -23535,7 +23529,7 @@
 	"foregå" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<skolen>"
 	"skole" N Msc Sg Def <W:0.0>
@@ -23582,7 +23576,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<ettertid>"
@@ -23646,7 +23640,7 @@
 	"til" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<overleve>"
 	"overleve" V Inf <W:0.0>
@@ -23658,7 +23652,7 @@
 	"¶" CLB <W:0.0>
 :\n
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<dag>"
@@ -23683,7 +23677,7 @@
 	"opplæring" N Fem Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<samisk>"
 	"samisk" N Msc Sg Indef <W:0.0>
@@ -23861,7 +23855,7 @@
 	"formidle" V Ind Prs Pass <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<samisk>"
 	"samisk" A Pos Fem Sg Indef <W:0.0>
@@ -24000,7 +23994,7 @@
 	"næring" N Fem Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<de>"
 	"den" Det Dem Pl <W:0.0>
@@ -24021,10 +24015,11 @@
 	"liten" A Pos Neu Sg Indef <W:0.0>
 : 
 "<om>"
+	"om" Adv <W:0.0>
 	"om" Pr <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<dag>"
 	"dag" N Msc Sg Indef <W:0.0>
@@ -24306,7 +24301,7 @@
 	"år" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<statsinternatets>"
 	"statsinternat" N Neu Sg Def Clt <W:0.0>
@@ -24357,7 +24352,7 @@
 	"skoledirektør" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Finnmark>"
 	"Finnmark" N Prop Sem/Plc <W:0.0>
@@ -24369,7 +24364,7 @@
 	"Statsarkivet" N Prop Sem/Obj <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tromsø>"
 	"Tromsø" N Prop Sem/Plc <W:0.0>
@@ -24520,12 +24515,9 @@
 : 
 "<(>"
 	"(" PUNCT LEFT <W:0.0>
-"<red>"
-	"rede" V Imp <W:0.0>
-	"red" N Msc Sg Indef <W:0.0>
-"<.>"
-	"." CLB <W:0.0>
-
+"<red.>"
+	"red" N ABBR Gram/IAbbr Use/NG N ABBR <W:0.0>
+	"red" N Sem/Hum ABBR Gram/TAbbr N ABBR <W:0.0>
 "<)>"
 	")" PUNCT RIGHT <W:0.0>
 "<:>"
@@ -24687,7 +24679,7 @@
 	"skoledirektør" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Finnmark>"
 	"Finnmark" N Prop Sem/Plc <W:0.0>
@@ -24713,9 +24705,10 @@
 
 "<Internatliv>"
 	"internatliv" N Neu Pl Indef <W:0.0>
+	"internatliv" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Finnmark>"
 	"Finnmark" N Prop Sem/Plc <W:0.0>
@@ -24825,7 +24818,7 @@
 	"Lappecodicillen" N Prop Sem/Obj <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<nord>"
 	"nord" N Msc Sg Indef <W:0.0>
@@ -24842,7 +24835,7 @@
 	"Universitetet" N Prop Sem/Org <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tromsø>"
 	"Tromsø" N Prop Sem/Plc <W:0.0>
@@ -25134,9 +25127,11 @@
 : 
 "<trykt>"
 	"trykke" V PrfPrc <W:0.0>
+	"trykke" V PrfPrc Ex/V A Pos Fem Sg Indef <W:0.0>
+	"trykke" V PrfPrc Ex/V A Pos Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tana>"
 	"Tana" N Prop Sem/Plc <W:0.0>
@@ -25646,7 +25641,7 @@
 	"opp" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Bonjákas>"
 	"Bonjákas" ?
@@ -25731,7 +25726,7 @@
 	"etternavn" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<stedet>"
 	"sted" N Neu Sg Def <W:0.0>
@@ -25800,12 +25795,9 @@
 : 
 "<(>"
 	"(" PUNCT LEFT <W:0.0>
-"<red>"
-	"rede" V Imp <W:0.0>
-	"red" N Msc Sg Indef <W:0.0>
-"<.>"
-	"." CLB <W:0.0>
-
+"<red.>"
+	"red" N ABBR Gram/IAbbr Use/NG N ABBR <W:0.0>
+	"red" N Sem/Hum ABBR Gram/TAbbr N ABBR <W:0.0>
 "<)>"
 	")" PUNCT RIGHT <W:0.0>
 "<:>"
@@ -25865,7 +25857,7 @@
 	"sted" N Neu Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Samisk>"
 	"Samisk" Err/Lex N Prop Sem/Atr <W:0.0>
@@ -25880,7 +25872,7 @@
 	"bl.a" N ABBR Gram/TAbbr N ABBR <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Henry>"
 	"Henry" N Prop Sem/Mal <W:0.0>
@@ -25892,7 +25884,7 @@
 	"artikkel" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<bind>"
 	"bind" N Neu Pl Indef <W:0.0>
@@ -25936,7 +25928,7 @@
 	"Lappecodicillen" N Prop Sem/Obj <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<nord>"
 	"nord" N Msc Sg Indef <W:0.0>
@@ -25952,7 +25944,7 @@
 	"Universitetet" N Prop Sem/Org <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tromsø>"
 	"Tromsø" N Prop Sem/Plc <W:0.0>
@@ -26082,7 +26074,7 @@
 	"skolepolitikk" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<tida>"
 	"tid" N Fem Sg Def <W:0.0>
@@ -26105,7 +26097,7 @@
 	"Stockfleth" N Prop Sem/Sur <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Hans>"
 	"Hans" N Prop Sem/Mal <W:0.0>
@@ -26117,7 +26109,7 @@
 	"artikkel" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Samisk>"
 	"Samisk" Err/Lex N Prop Sem/Atr <W:0.0>
@@ -26161,7 +26153,7 @@
 	"stedsnavn" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<fornorskinga>"
 	"fornorsking" N Fem Sg Def <W:0.0>
@@ -26285,7 +26277,7 @@
 	"]" PUNCT RIGHT <W:0.0>
 : 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<eldre>"
@@ -26322,7 +26314,7 @@
 	"språk" N Neu Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<større>"
 	"stor" A Comp Indef <W:0.0>
@@ -26377,7 +26369,7 @@
 	"sammen" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1964>"
 	"1964" Num Sem/Year <W:0.0>
@@ -26490,8 +26482,7 @@
 	 Use/Circ"1999" Num Err/Orth Arab <W:0.0>
 : 
 "<v>"
-	"v" N ABBR Gram/TAbbr N ABBR <W:0.0>
-	"v" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"V" Use/NG Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<¶>"
 	"¶" CLB <W:0.0>
@@ -26534,7 +26525,7 @@
 	"til" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<etablere>"
 	"etablere" V Inf <W:0.0>
@@ -26546,7 +26537,7 @@
 	"Finnemisjon" N Prop Sem/Org <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1888>"
 	"1888" Num Sem/Year <W:0.0>
@@ -26586,7 +26577,7 @@
 	"institusjon" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tana>"
 	"Tana" N Prop Sem/Plc <W:0.0>
@@ -26598,7 +26589,7 @@
 	"Gamlehjemmet" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Leirpollen>"
 	"Leirpollen" N Prop Sem/Plc <W:0.0>
@@ -26648,7 +26639,7 @@
 	"kapell" N Neu Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Vestertana>"
 	"Vestertana" N Prop Sem/Plc <W:0.0>
@@ -26828,7 +26819,7 @@
 	"gjengi" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<denne>"
 	"denne" Det Dem Fem Sg <W:0.0>
@@ -26873,12 +26864,9 @@
 
 "<(>"
 	"(" PUNCT LEFT <W:0.0>
-"<red>"
-	"ride" V Ind Prt Use/NG <W:0.0>
-	"lide" V Ind Prt <W:0.0>
-"<.>"
-	"." CLB <W:0.0>
-
+"<red.>"
+	"red" N ABBR Gram/IAbbr Use/NG N ABBR <W:0.0>
+	"red" N Sem/Hum ABBR Gram/TAbbr N ABBR <W:0.0>
 "<)>"
 	")" PUNCT RIGHT <W:0.0>
 : 
@@ -26914,7 +26902,7 @@
 	"Lappekodisillen" N Prop Sem/Obj <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<nord>"
 	"nord" N Msc Sg Indef <W:0.0>
@@ -26988,7 +26976,7 @@
 	"Samebevegelsen" N Prop Sem/Obj <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Norge>"
 	"Norge" N Prop Sem/Plc <W:0.0>
@@ -27042,13 +27030,13 @@
 	"højskole" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Sønderjylland>"
 	"Sønderjylland" Err/Lex N Prop Sem/Plc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Danmark>"
 	"Danmark" N Prop Sem/Plc <W:0.0>
@@ -27060,7 +27048,7 @@
 	"opprette" V PrfPrc Radical <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1865>"
 	"1865" Num Sem/Year <W:0.0>
@@ -27093,7 +27081,7 @@
 	"folkehøgskole" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<tradisjonen>"
 	"tradisjon" N Msc Sg Def <W:0.0>
@@ -27189,10 +27177,11 @@
 : 
 "<aktiv>"
 	"aktiv" A Pos Fem Sg Indef <W:0.0>
+	"aktiv" A Pos MF Sg Indef <W:0.0>
 	"aktiv" A Pos Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Arbeiderpartiet>"
 	"Arbeiderpartiet" Err/Lex N Prop Sem/Org <W:0.0>
@@ -27210,7 +27199,7 @@
 	"av" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<modernisere>"
 	"modernisere" V Inf <W:0.0>
@@ -27248,9 +27237,11 @@
 : 
 "<trykt>"
 	"trykke" V PrfPrc <W:0.0>
+	"trykke" V PrfPrc Ex/V A Pos Fem Sg Indef <W:0.0>
+	"trykke" V PrfPrc Ex/V A Pos Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<boka>"
 	"bok" N Fem Sg Def <W:0.0>
@@ -27266,11 +27257,9 @@
 : 
 "<(>"
 	"(" PUNCT LEFT <W:0.0>
-"<red>"
-	"red" N Msc Sg Indef <W:0.0>
-"<.>"
-	"." CLB <W:0.0>
-
+"<red.>"
+	"red" N ABBR Gram/IAbbr Use/NG N ABBR <W:0.0>
+	"red" N Sem/Hum ABBR Gram/TAbbr N ABBR <W:0.0>
 "<)>"
 	")" PUNCT RIGHT <W:0.0>
 "<:>"
@@ -27281,7 +27270,7 @@
 	"fornorskning" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Finmarken>"
 	"Finnmarken" Err/Orth N Prop Sem/Plc <W:0.0>
@@ -27296,7 +27285,7 @@
 	"gjengi" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<denne>"
 	"denne" Det Dem Fem Sg <W:0.0>
@@ -27374,7 +27363,7 @@
 	"artikkel" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Samisk>"
 	"Samisk" Err/Lex N Prop Sem/Atr <W:0.0>
@@ -27436,7 +27425,7 @@
 	"]" PUNCT RIGHT <W:0.0>
 : 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<denne>"
@@ -27458,7 +27447,7 @@
 	"skole" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<perioder>"
 	"periode" N Msc Pl Indef <W:0.0>
@@ -27605,7 +27594,7 @@
 		"kommunestyre" N Cmp/null Cmp <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Alta>"
 	"Alta" N Prop Sem/Plc <W:0.0>
@@ -27889,7 +27878,7 @@
 	"ny" A Pos Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1917>"
 	"1917" Num Sem/Year <W:0.0>
@@ -28029,7 +28018,7 @@
 	"professor" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<teologi>"
 	"teologi" N Msc Sg Indef <W:0.0>
@@ -28042,7 +28031,7 @@
 		"menighet" N Cmp/s Cmp <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Oslo>"
 	"Oslo" N Prop Sem/Plc <W:0.0>
@@ -28054,7 +28043,7 @@
 	"formann" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Det>"
 	"den" Det Dem Neu Sg <W:0.0>
@@ -28152,7 +28141,7 @@
 	"havne" V Inf <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<helvete>"
 	"helvete" N Neu Sg Indef <W:0.0>
@@ -28189,7 +28178,7 @@
 	"fortelling" N Fem Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<denne>"
 	"denne" Det Dem Fem Sg <W:0.0>
@@ -28222,7 +28211,7 @@
 	"skolestueloft" N Neu Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Vestertana>"
 	"Vestertana" N Prop Sem/Plc <W:0.0>
@@ -28232,12 +28221,9 @@
 
 "<(>"
 	"(" PUNCT LEFT <W:0.0>
-"<red>"
-	"ride" V Ind Prt Use/NG <W:0.0>
-	"lide" V Ind Prt <W:0.0>
-"<.>"
-	"." CLB <W:0.0>
-
+"<red.>"
+	"red" N ABBR Gram/IAbbr Use/NG N ABBR <W:0.0>
+	"red" N Sem/Hum ABBR Gram/TAbbr N ABBR <W:0.0>
 "<)>"
 	")" PUNCT RIGHT <W:0.0>
 : 
@@ -28277,10 +28263,13 @@
 	"være" V Ind Prt <W:0.0>
 : 
 "<oppvokst>"
-	"oppvokst" A Der/AAdv Adv <W:0.0>
+	"oppvokst" A Pos Fem Sg Indef <W:0.0>
+	"oppvokst" A Pos MF Sg Indef <W:0.0>
+	"oppvokst" A Pos Msc Sg Indef <W:0.0>
+	"oppvokst" A Pos Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Karasjok>"
 	"Karasjok" N Prop Sem/Plc <W:0.0>
@@ -28289,7 +28278,7 @@
 	"og" CC <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<1949-62>"
 	"1949-62" Det Qnt Sem/Year Pl <W:0.0>
@@ -28301,7 +28290,7 @@
 	"programsekretær" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<NRKs>"
 	"NRK" N Prop Sem/Org ACR N Prop ACR Err/Orth Msc Sg Indef Clt <W:0.0>
@@ -28342,7 +28331,7 @@
 	"Universitetet" N Prop Sem/Org <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Oslo>"
 	"Oslo" N Prop Sem/Plc <W:0.0>
@@ -28426,7 +28415,7 @@
 	"formann" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<skolestyret>"
 	"skolestyre" N Neu Sg Def <W:0.0>
@@ -28655,7 +28644,7 @@
 	"bo" V Ind Prs <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Børselv>"
 	"Børselv" N Prop Sem/Plc <W:0.0>
@@ -28679,7 +28668,7 @@
 	"nord" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Norge>"
 	"Norge" N Prop Sem/Plc <W:0.0>
@@ -28704,13 +28693,16 @@
 
 "<Mange>"
 	"mange" A Pos Fem Sg Indef <W:0.0>
+	"mange" A Pos MF Sg Indef <W:0.0>
 	"mange" A Pos Msc Sg Indef <W:0.0>
 	"mange" A Pos Neu Sg Indef <W:0.0>
+	"mange" A Pos Pl Def <W:0.0>
+	"mange" A Pos Pl Indef <W:0.0>
 	"mange" Adv <W:0.0>
 	"mange" Det Dem Pl <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<bygda>"
 	"bygd" N Fem Sg Def <W:0.0>
@@ -28812,7 +28804,7 @@
 	"like" V Ind Prs <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<pynte>"
 	"pynte" V Inf <W:0.0>
@@ -28898,7 +28890,7 @@
 	"hjemme" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Børselv>"
 	"Børselv" N Prop Sem/Plc <W:0.0>
@@ -28913,10 +28905,10 @@
 	"drømme" V Ind Prs <W:0.0>
 : 
 "<om>"
-	"om" Adv <W:0.0>
+	"om" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<spille>"
 	"spille" V Inf <W:0.0>
@@ -28933,14 +28925,9 @@
 "<på>"
 	"på" Pr <W:0.0>
 : 
-"<cd>"
-	"cd" N Msc Sg Indef <W:0.0>
-	"CD" N Sem/Obj-el ACR N ACR Msc Sg Indef <W:0.0>
-	"CD" N Sem/Obj-el ACR N ACR Err/Orth Msc Sg Indef <W:0.0>
-"<.>"
-	"." CLB <W:0.0>
+"<cd.>"
+	"cd" N ABBR Gram/IAbbr N ABBR <W:0.0>
 : 
-
 "<–>"
 	"–" PUNCT <W:0.0>
 "<Men>"
@@ -28998,7 +28985,7 @@
 	"noe" Pron Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<går>"
 	"gå" V Ind Prs <W:0.0>
@@ -29231,7 +29218,7 @@
 	"Lakselv" N Prop Sem/Plc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<dag>"
 	"dag" N Msc Sg Indef <W:0.0>
@@ -29254,7 +29241,7 @@
 	"¶" CLB <W:0.0>
 :\n
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<bilen>"
@@ -29352,17 +29339,16 @@
 	"fint" Adv <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<få>"
-	"få" A Pos Pl Def <W:0.0>
-	"få" A Pos Pl Indef <W:0.0>
+	"få" V Inf <W:0.0>
 : 
 "<med>"
-	"med" Pr <W:0.0>
+	"med" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<låten>"
 	"låt" N Msc Sg Def <W:0.0>
@@ -29406,7 +29392,7 @@
 	"¶" CLB <W:0.0>
 :\n
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<Lakselv>"
@@ -29759,7 +29745,7 @@
 	"ligge" V Ind Prs <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Porsanger>"
 	"Porsanger" N Prop Sem/Plc <W:0.0>
@@ -29768,7 +29754,7 @@
 	"kommune" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Finnmark>"
 	"Finnmark" N Prop Sem/Plc <W:0.0>
@@ -29782,7 +29768,7 @@
 	"nord" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Norge>"
 	"Norge" N Prop Sem/Plc <W:0.0>
@@ -29804,15 +29790,15 @@
 : 
 "<første>"
 	"første" A Pos Fem Sg Indef <W:0.0>
+	"første" A Pos MF Sg Indef <W:0.0>
 	"første" A Pos Msc Sg Indef <W:0.0>
 	"første" A Pos Neu Sg Indef <W:0.0>
-	"første" A Pos Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<landet>"
-	"lande" V PrfPrc <W:0.0>
+	"land" N Neu Sg Def <W:0.0>
 : 
 "<som>"
 	"som" CS <W:0.0>
@@ -29951,7 +29937,7 @@
 	"sjøsame" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<området>"
 	"område" N Neu Sg Def <W:0.0>
@@ -29993,9 +29979,10 @@
 "<Men>"
 	"men" CC <W:0.0>
 	"men" N Neu Pl Indef <W:0.0>
+	"men" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<dalen>"
 	"dal" N Msc Sg Def <W:0.0>
@@ -30055,11 +30042,10 @@
 	"morsomt" ?
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<bo>"
-	"bo" N Neu Pl Indef <W:0.0>
-	"bo" N Neu Sg Indef <W:0.0>
+	"bo" V Inf <W:0.0>
 : 
 "<på>"
 	"på" Pr <W:0.0>
@@ -30080,7 +30066,7 @@
 	"like" V Ind Prs <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<hjelpe>"
 	"hjelpe" V Inf <W:0.0>
@@ -30089,7 +30075,7 @@
 	"hun" Pron Pers Sg3 Acc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<fjøset>"
 	"fjøs" N Neu Sg Def <W:0.0>
@@ -30144,10 +30130,9 @@
 : 
 "<de>"
 	"de" Pron Pers Pl3 Nom <W:0.0>
-	"den" Det Dem Pl <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<erte>"
 	"erte" V Inf <W:0.0>
@@ -30187,7 +30172,7 @@
 		"fjøs" N Cmp/null Cmp <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<klærne>"
 	"klær" N Neu Pl Def <W:0.0>
@@ -30369,10 +30354,10 @@
 	"for" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<fange>"
-	"fange" N Msc Sg Indef <W:0.0>
+	"fange" V Inf <W:0.0>
 : 
 "<den>"
 	"den" Pron Pers Sg3 <W:0.0>
@@ -30445,10 +30430,10 @@
 	"ikke" Adv <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<bli>"
-	"bli" V Imp <W:0.0>
+	"bli" V Inf <W:0.0>
 : 
 "<satt>"
 	"sette" V PrfPrc <W:0.0>
@@ -30509,22 +30494,19 @@
 	"klare" V Ind Prs <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<få>"
-	"få" A Pos Pl Def <W:0.0>
-	"få" A Pos Pl Indef <W:0.0>
+	"få" V Inf <W:0.0>
 : 
 "<den>"
-	"den" Det Dem Fem Sg <W:0.0>
-	"den" Det Dem Msc Sg <W:0.0>
 	"den" Pron Pers Sg3 <W:0.0>
 : 
 "<inn>"
 	"inn" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<fjøset>"
 	"fjøs" N Neu Sg Def <W:0.0>
@@ -30600,7 +30582,7 @@
 	"god" A Comp <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<jobbe>"
 	"jobbe" V Inf <W:0.0>
@@ -30760,10 +30742,10 @@
 	"for" Adv <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<be>"
-	"be" V Imp <W:0.0>
+	"be" V Inf <W:0.0>
 : 
 "<henne>"
 	"hun" Pron Pers Sg3 Acc <W:0.0>
@@ -30844,7 +30826,7 @@
 	"like" V Ind Prs <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<besøke>"
 	"besøke" V Inf <W:0.0>
@@ -30958,7 +30940,7 @@
 	"kvensk" A Der/AAdv Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<bygda>"
 	"bygd" N Fem Sg Def <W:0.0>
@@ -31539,7 +31521,7 @@
 	"ikke" Adv <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<tenke>"
 	"tenke" V Inf <W:0.0>
@@ -31575,7 +31557,7 @@
 	"begynne" V PrfPrc <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<bli>"
 	"bli" V Inf <W:0.0>
@@ -31833,10 +31815,14 @@
 	"være" V Ind Prs <W:0.0>
 : 
 "<enig>"
+	"enig" A Pos Fem Sg Indef <W:0.0>
+	"enig" A Pos MF Sg Indef <W:0.0>
+	"enig" A Pos Msc Sg Indef <W:0.0>
+	"enig" A Pos Neu Sg Indef <W:0.0>
 	"enig" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<at>"
 	"at" CS <W:0.0>
@@ -31955,10 +31941,10 @@
 	"igjen" Adv <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<finne>"
-	"finne" N Msc Sg Indef <W:0.0>
+	"finne" V Inf <W:0.0>
 "<.>"
 	"." CLB <W:0.0>
 : 
@@ -32131,7 +32117,7 @@
 	"minoritet" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Norge>"
 	"Norge" N Prop Sem/Plc <W:0.0>
@@ -32249,7 +32235,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<stede>"
@@ -32307,7 +32293,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<dag>"
@@ -32350,7 +32336,7 @@
 	"fjell" N Neu Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<en>"
 	"en" Det Dem Fem Sg <W:0.0>
@@ -32422,7 +32408,7 @@
 	"fisk" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<elva>"
 	"elv" N Fem Sg Def <W:0.0>
@@ -32536,7 +32522,8 @@
 "<–>"
 	"–" PUNCT <W:0.0>
 "<Å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
+	"å" N Fem Sg Indef <W:0.0>
 "<,>"
 	"," CLB <W:0.0>
 : 
@@ -32782,13 +32769,14 @@
 	"sang" N Msc Sg Def <W:0.0>
 : 
 "<de>"
-	"de" Pron Pers Pl3 Nom <W:0.0>
+	"den" Det Dem Pl <W:0.0>
 : 
 "<brukte>"
-	"bruke" V Ind Prt <W:0.0>
+	"brukt" A Pos Pl Def <W:0.0>
+	"brukt" A Pos Pl Indef <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<synge>"
 	"synge" V Inf <W:0.0>
@@ -32850,10 +32838,10 @@
 	"etter" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<ha>"
-	"ha" V Imp <W:0.0>
+	"ha" V Inf <W:0.0>
 : 
 "<fisket>"
 	"fiske" V PrfPrc <W:0.0>
@@ -32880,7 +32868,7 @@
 	"til" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<sove>"
 	"sove" V Inf <W:0.0>
@@ -32949,7 +32937,7 @@
 	"her" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Børselv>"
 	"Børselv" N Prop Sem/Plc <W:0.0>
@@ -33107,7 +33095,7 @@
 	"for" Adv <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<spise>"
 	"spise" V Inf <W:0.0>
@@ -33232,7 +33220,7 @@
 	"forsøke" V Ind Prs <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<finne>"
 	"finne" V Inf <W:0.0>
@@ -33256,7 +33244,7 @@
 	"pleie" V Ind Prt <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<fortelle>"
 	"fortelle" V Inf <W:0.0>
@@ -33503,7 +33491,8 @@
 	"s" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
+	"å" N Fem Sg Indef <W:0.0>
 : 
 "<fint>"
 	"fin" A Pos Neu Sg Indef <W:0.0>
@@ -33733,11 +33722,10 @@
 	"med" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<få>"
-	"få" A Pos Pl Def <W:0.0>
-	"få" A Pos Pl Indef <W:0.0>
+	"få" V Inf <W:0.0>
 : 
 "<sove>"
 	"sove" V Inf <W:0.0>
@@ -34061,7 +34049,8 @@
 	"¶" CLB <W:0.0>
 :\n
 "<Å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
+	"å" N Fem Sg Indef <W:0.0>
 : 
 "<jeg>"
 	"jeg" Pron Pers Sg1 Nom <W:0.0>
@@ -34079,7 +34068,7 @@
 	"til" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<huske>"
 	"huske" V Inf <W:0.0>
@@ -34315,10 +34304,10 @@
 	"klare" V PrfPrc <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<finne>"
-	"finne" N Msc Sg Indef <W:0.0>
+	"finne" V Inf <W:0.0>
 "<.>"
 	"." CLB <W:0.0>
 : 
@@ -34492,7 +34481,7 @@
 	"titte" V Ind Prs <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<speilet>"
 	"speil" N Neu Sg Def <W:0.0>
@@ -34524,7 +34513,7 @@
 	"jente" N Fem Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<gamle>"
 	"gammel" A Pos Pl Indef <W:0.0>
@@ -34586,11 +34575,9 @@
 : 
 "<begynt>"
 	"begynne" V PrfPrc <W:0.0>
-	"begynne" V PrfPrc Ex/V A Pos Fem Sg Indef <W:0.0>
-	"begynne" V PrfPrc Ex/V A Pos Msc Sg Indef <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<bli>"
 	"bli" V Inf <W:0.0>
@@ -34675,7 +34662,7 @@
 	"være" V Inf <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<gamle>"
 	"gammel" A Pos Pl Indef <W:0.0>
@@ -34776,7 +34763,7 @@
 	"¶" CLB <W:0.0>
 :\n
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<drømmen>"
@@ -34944,7 +34931,7 @@
 	"regle" N Fem Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<drømmen>"
 	"drøm" N Msc Sg Def <W:0.0>
@@ -35085,10 +35072,10 @@
 	"se" V PrfPrc <W:0.0>
 : 
 "<jordet>"
-	"jorde" V Ind Prt <W:0.0>
+	"jorde" N Neu Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<drømmen>"
 	"drøm" N Msc Sg Def <W:0.0>
@@ -35201,7 +35188,7 @@
 	"så" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<drømmen>"
 	"drøm" N Msc Sg Def <W:0.0>
@@ -35328,7 +35315,7 @@
 	"før" Pr <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<tida>"
 	"tid" N Fem Sg Def <W:0.0>
@@ -35399,13 +35386,13 @@
 	"til" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<bo>"
-	"bo" N Neu Pl Indef <W:0.0>
+	"bo" V Inf <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 "<,>"
 	"," CLB <W:0.0>
 : 
@@ -35416,16 +35403,16 @@
 	"til" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<lagre>"
-	"lager" N Neu Pl Indef <W:0.0>
+	"lagre" V Inf <W:0.0>
 : 
 "<mat>"
 	"mat" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 "<,>"
 	"," CLB <W:0.0>
 : 
@@ -35440,17 +35427,19 @@
 	"til" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<lagre>"
-	"lager" N Neu Pl Indef <W:0.0>
+	"lagre" V Inf <W:0.0>
 : 
 "<ting>"
 	"ting" N Msc Pl Indef <W:0.0>
+	"ting" N Msc Sg Indef <W:0.0>
 	"ting" N Neu Pl Indef <W:0.0>
+	"ting" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 "<,>"
 	"," CLB <W:0.0>
 : 
@@ -35470,13 +35459,13 @@
 	"til" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<bade>"
 	"bade" V Inf <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<og>"
 	"og" CC <W:0.0>
@@ -35524,7 +35513,7 @@
 	"bo" V Ind Prt <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 "<,>"
 	"," CLB <W:0.0>
 : 
@@ -35700,7 +35689,7 @@
 	"om" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<lage>"
 	"lage" V Inf <W:0.0>
@@ -35748,7 +35737,7 @@
 		"kjøtt" N Cmp/null Cmp <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<tarmer>"
 	"tarm" N Msc Pl Indef <W:0.0>
@@ -35789,7 +35778,7 @@
 	"etter" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<ha>"
 	"ha" V Inf <W:0.0>
@@ -36134,7 +36123,7 @@
 	"komme" V Inf <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<studio>"
 	"studio" N Neu Sg Indef <W:0.0>
@@ -36171,7 +36160,7 @@
 	"hjelpe" V Ind Prs <W:0.0>
 : 
 "<dem>"
-	"dem" A Gram/TAbbr A ABBR <W:0.0>
+	"de" Pron Pers Pl3 Acc <W:0.0>
 "<,>"
 	"," CLB <W:0.0>
 : 
@@ -36179,7 +36168,7 @@
 	"og" CC <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<god>"
 	"god" A Pos Fem Sg Indef <W:0.0>
@@ -36338,10 +36327,10 @@
 	"forsøke" V Ind Prs <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<se>"
-	"se" V Imp <W:0.0>
+	"se" V Inf <W:0.0>
 : 
 "<på>"
 	"på" Pr <W:0.0>
@@ -36387,7 +36376,7 @@
 	"helsetjeneste" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Finnmark>"
 	"Finnmark" N Prop Sem/Plc <W:0.0>
@@ -36446,7 +36435,7 @@
 	"derfor" Adv <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<se>"
 	"se" V Inf <W:0.0>
@@ -36468,7 +36457,7 @@
 		"hjelper" N Cmp/null Cmp <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<disse>"
 	"denne" Det Dem Pl <W:0.0>
@@ -36490,10 +36479,10 @@
 	"bestå" V Ind Prs <W:0.0>
 : 
 "<av>"
-	"av" Pr <W:0.0>
+	"av" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<dag>"
 	"dag" N Msc Sg Indef <W:0.0>
@@ -36542,7 +36531,7 @@
 	"blant" Pr <W:0.0>
 : 
 "<dem>"
-	"dem" A Gram/TAbbr A ABBR <W:0.0>
+	"de" Pron Pers Pl3 Acc <W:0.0>
 : 
 "<om>"
 	"om" Adv <W:0.0>
@@ -36568,7 +36557,7 @@
 	"tradisjon" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<det>"
 	"den" Det Dem Neu Sg <W:0.0>
@@ -36593,7 +36582,7 @@
 	"også" Adv <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<se>"
 	"se" V Inf <W:0.0>
@@ -36631,9 +36620,11 @@
 : 
 "<integrert>"
 	"integrere" V PrfPrc <W:0.0>
+	"integrere" V PrfPrc Ex/V A Pos Fem Sg Indef <W:0.0>
+	"integrere" V PrfPrc Ex/V A Pos Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<helsevesenet>"
 	"vesen" N Neu Sg Def <W:0.0>
@@ -36727,7 +36718,7 @@
 	"turnuskandidat" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<¶>"
 	"¶" CLB <W:0.0>
@@ -36774,7 +36765,7 @@
 	"poliklinikk" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<¶>"
 	"¶" CLB <W:0.0>
@@ -36788,13 +36779,13 @@
 	"innerst" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Porsangerfjorden>"
 	"porsangerfjorden" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Finnmark>"
 	"Finnmark" N Prop Sem/Plc <W:0.0>
@@ -36855,7 +36846,7 @@
 	"hjelper" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<dette>"
 	"denne" Det Dem Neu Sg <W:0.0>
@@ -36884,7 +36875,7 @@
 	"anledning" N Fem Sg Indef <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<bli>"
 	"bli" V Inf <W:0.0>
@@ -36953,7 +36944,7 @@
 	"stå" V Inf <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<kontrast>"
 	"kontrast" N Msc Sg Indef <W:0.0>
@@ -37028,7 +37019,7 @@
 	"helsearbeid" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<området>"
 	"område" N Neu Sg Def <W:0.0>
@@ -37039,7 +37030,6 @@
 "<En>"
 	"en" Pron Indef Fem Sg <W:0.0>
 	"en" Pron Indef Msc Sg <W:0.0>
-	"ene" V Imp <W:0.0>
 : 
 "<slik>"
 	"slik" Det Dem Msc Sg <W:0.0>
@@ -37054,15 +37044,13 @@
 	"også" Adv <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<gradvis>"
 	"gradvis" Adv <W:0.0>
 : 
 "<få>"
-	"få" A Pos Pl Def <W:0.0>
-	"få" A Pos Pl Indef <W:0.0>
-	"få" V Imp <W:0.0>
+	"få" V Inf <W:0.0>
 : 
 "<et>"
 	"et" Det Dem Neu Sg <W:0.0>
@@ -37074,13 +37062,13 @@
 	"fokus" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<helsetjenestene>"
 	"helsetjeneste" N Msc Pl Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<landsdelen>"
 	"landsdel" N Msc Sg Def <W:0.0>
@@ -37174,7 +37162,7 @@
 	"universitet" N Neu Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tromsø>"
 	"Tromsø" N Prop Sem/Plc <W:0.0>
@@ -37226,10 +37214,10 @@
 	"fortsette" V PrfPrc <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<bli>"
-	"bli" V Imp <W:0.0>
+	"bli" V Inf <W:0.0>
 : 
 "<viet>"
 	"vie" Ex/V PrfPrc A Der/AAdv Adv <W:0.0>
@@ -37241,13 +37229,13 @@
 	"oppmerksomhet" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<helsetjenestene>"
 	"helsetjeneste" N Msc Pl Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<dag>"
 	"dag" N Msc Sg Indef <W:0.0>
@@ -37319,7 +37307,7 @@
 	"for" Adv <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<være>"
 	"være" V Inf <W:0.0>
@@ -37394,7 +37382,7 @@
 	"fokus" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<den>"
 	"den" Det Dem Msc Sg <W:0.0>
@@ -37415,7 +37403,7 @@
 	"¶" CLB <W:0.0>
 :\n
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<2004>"
@@ -37433,10 +37421,10 @@
 	"anledning" N Fem Sg Indef <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<reise>"
-	"reise" N Fem Sg Indef <W:0.0>
+	"reise" V Inf <W:0.0>
 : 
 "<tilbake>"
 	"tilbake" Adv <W:0.0>
@@ -37602,7 +37590,7 @@
 	"hold" N Neu Pl Indef <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<undersøke>"
 	"undersøke" V Inf <W:0.0>
@@ -37640,7 +37628,7 @@
 	"og" CC <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<så>"
 	"så" Adv <W:0.0>
@@ -37697,7 +37685,7 @@
 	"inn" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<forskningens>"
 	"forskning" N Msc Sg Def Clt <W:0.0>
@@ -37720,7 +37708,7 @@
 	"seg" Pron Refl Acc <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<være>"
 	"være" V Inf <W:0.0>
@@ -37785,10 +37773,14 @@
 	"være" V Ind Prt <W:0.0>
 : 
 "<naturlig>"
+	"naturlig" A Pos Fem Sg Indef <W:0.0>
+	"naturlig" A Pos MF Sg Indef <W:0.0>
+	"naturlig" A Pos Msc Sg Indef <W:0.0>
+	"naturlig" A Pos Neu Sg Indef <W:0.0>
 	"naturlig" Adv <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<se>"
 	"se" V Inf <W:0.0>
@@ -37835,7 +37827,7 @@
 	"," CLB <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<hovedsak>"
 	"hovedsak" N Fem Sg Indef <W:0.0>
@@ -37908,7 +37900,7 @@
 	"velbevart" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<samiske>"
 	"samisk" A Pos Pl Indef <W:0.0>
@@ -37923,7 +37915,6 @@
 	"men" CC <W:0.0>
 	"men" N Neu Pl Indef <W:0.0>
 	"men" N Neu Sg Indef <W:0.0>
-	"mene" V Imp <W:0.0>
 : 
 "<helbredertradisjoner>"
 	"helbredertradisjoner" ?
@@ -37964,10 +37955,9 @@
 	"kjenne" V PrfPrc Ex/V A Pos Neu Sg Indef <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<ha>"
-	"ha" V Imp <W:0.0>
 	"ha" V Inf <W:0.0>
 : 
 "<vært>"
@@ -38076,7 +38066,7 @@
 	"befolkning" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<området>"
 	"område" N Neu Sg Def <W:0.0>
@@ -38125,7 +38115,8 @@
 	"jeg" Pron Pers Sg1 Nom <W:0.0>
 : 
 "<syns>"
-	"synse" V Imp <W:0.0>
+	"syn" N Neu Pl Indef Clt <W:0.0>
+	"syn" N Neu Sg Indef Clt <W:0.0>
 : 
 "<også>"
 	"også" Adv <W:0.0>
@@ -38140,10 +38131,10 @@
 	"viktig" A Pos Neu Sg Indef <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<si>"
-	"si" V Imp <W:0.0>
+	"si" V Inf <W:0.0>
 "<,>"
 	"," CLB <W:0.0>
 : 
@@ -38372,10 +38363,12 @@
 	"som" Pr <W:0.0>
 : 
 "<mulig>"
-	"mulig" A Pos MF Sg Indef <W:0.0>
+	"mulig" A Pos Fem Sg Indef <W:0.0>
+	"mulig" A Pos Msc Sg Indef <W:0.0>
+	"mulig" A Pos Neu Sg Indef <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<forstå>"
 	"forstå" V Inf <W:0.0>
@@ -38460,7 +38453,7 @@
 	"måte" N Msc Sg Indef <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<gi>"
 	"gi" V Inf <W:0.0>
@@ -38492,7 +38485,7 @@
 	"heller" Adv <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<antyde>"
 	"antyde" V Inf <W:0.0>
@@ -38514,11 +38507,12 @@
 : 
 "<relevant>"
 	"relevant" A Pos Fem Sg Indef <W:0.0>
+	"relevant" A Pos MF Sg Indef <W:0.0>
 	"relevant" A Pos Msc Sg Indef <W:0.0>
 	"relevant" A Pos Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<møtet>"
 	"møte" N Neu Sg Def <W:0.0>
@@ -38710,7 +38704,7 @@
 		"forståelse" N Cmp/s Cmp <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<lokal>"
 	"lokal" A Pos MF Sg Indef <W:0.0>
@@ -38745,7 +38739,7 @@
 	"terapeut" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<helsevesenet>"
 	"vesen" N Neu Sg Def <W:0.0>
@@ -38827,7 +38821,7 @@
 	"bidra" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<stor>"
 	"stor" A Pos Msc Sg Indef <W:0.0>
@@ -38906,7 +38900,7 @@
 	"helbredertradisjonen" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<samiske>"
 	"samisk" A Pos Pl Indef <W:0.0>
@@ -39147,13 +39141,13 @@
 	"og" CC <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<dag>"
 	"dag" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<enkelte>"
 	"enkelt" A Pos Pl Indef <W:0.0>
@@ -39210,7 +39204,7 @@
 	"praktisere" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<det>"
 	"den" Det Dem Neu Sg <W:0.0>
@@ -39282,17 +39276,16 @@
 	"være" V Ind Prs <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<endring>"
 	"endring" N Fem Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<dagens>"
 	"dag" N Msc Sg Def Clt <W:0.0>
-	"dagens" N Msc Sg Indef <W:0.0>
 : 
 "<samfunn>"
 	"samfunn" N Neu Pl Indef <W:0.0>
@@ -39361,7 +39354,7 @@
 	"resultat" N Neu Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<spørreundersøkelsen>"
 	"spørreundersøkelse" N Msc Sg Def <W:0.0>
@@ -39370,7 +39363,7 @@
 	"¶" CLB <W:0.0>
 :\n
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<spørreundersøkelsen>"
@@ -39597,7 +39590,7 @@
 	"si" V Ind Prs Pass <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<forbindelse>"
 	"forbindelse" N Msc Sg Indef <W:0.0>
@@ -39738,16 +39731,18 @@
 	"den" Det Dem Neu Sg <W:0.0>
 : 
 "<religiøse>"
-	"religiøs" A Pos Sg Def <W:0.0>
+	"religiøs" A Pos Pl Def <W:0.0>
+	"religiøs" A Pos Pl Indef <W:0.0>
 : 
 "<eller>"
 	"eller" CC <W:0.0>
 : 
 "<åndelige>"
-	"åndelig" A Pos Sg Def <W:0.0>
+	"åndelig" A Pos Pl Def <W:0.0>
+	"åndelig" A Pos Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<deres>"
 	"deres" Det Poss Pl2 <W:0.0>
@@ -39817,7 +39812,7 @@
 	"forskjell" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<verdensanskuelsen>"
 	"anskuelse" N Msc Sg Def <W:0.0>
@@ -39882,7 +39877,7 @@
 	"deltager" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<studien>"
 	"studie" N Msc Sg Def <W:0.0>
@@ -39923,7 +39918,7 @@
 	"opp" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<de>"
 	"de" Pron Pers Pl3 Nom <W:0.0>
@@ -39935,7 +39930,7 @@
 	"område" N Neu Pl Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Finnmark>"
 	"Finnmark" N Prop Sem/Plc <W:0.0>
@@ -39962,10 +39957,9 @@
 	"være" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<mindretall>"
-	"mindretall" N Neu Pl Indef <W:0.0>
 	"mindretall" N Neu Sg Indef <W:0.0>
 : 
 "<ved>"
@@ -40129,7 +40123,7 @@
 	"virkelighetsforståelse" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<deres>"
 	"deres" Det Poss Pl2 <W:0.0>
@@ -40164,15 +40158,13 @@
 	"blant" Pr <W:0.0>
 : 
 "<annet>"
-	"annen" Det Dem Neu Sg <W:0.0>
 	"annen" Pron Dem Neu Sg <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<møter>"
 	"møte" N Neu Pl Indef <W:0.0>
-	"møte" V Ind Prs <W:0.0>
 : 
 "<med>"
 	"med" Pr <W:0.0>
@@ -40253,7 +40245,7 @@
 	"være" V Ind Prs <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<tråd>"
 	"tråd" N Msc Sg Indef <W:0.0>
@@ -40296,7 +40288,7 @@
 	"viktighet" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<deres>"
 	"deres" Det Poss Pl2 <W:0.0>
@@ -40312,7 +40304,7 @@
 	"av" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<skape>"
 	"skape" V Inf <W:0.0>
@@ -40342,6 +40334,7 @@
 : 
 "<kunne>"
 	"kunne" V Ind Prt <W:0.0>
+	"kunne" V Inf <W:0.0>
 : 
 "<dele>"
 	"dele" V Inf <W:0.0>
@@ -40387,7 +40380,7 @@
 	"familie" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<terapi>"
 	"terapi" N Msc Sg Indef <W:0.0>
@@ -40443,7 +40436,7 @@
 	"ønske" V Ind Prt <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<utvikle>"
 	"utvikle" V Inf <W:0.0>
@@ -40462,7 +40455,7 @@
 	"foregå" V Inf <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<naturen>"
 	"natur" N Msc Sg Def <W:0.0>
@@ -40477,7 +40470,7 @@
 	"joik" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<terapi>"
 	"terapi" N Msc Sg Indef <W:0.0>
@@ -40747,7 +40740,7 @@
 	"skolering" N Fem Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Canada>"
 	"Canada" N Prop Sem/Plc <W:0.0>
@@ -40786,7 +40779,7 @@
 	"helbredere" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<sitt>"
 	"sin" Det Poss Neu Sg3 <W:0.0>
@@ -40951,7 +40944,7 @@
 	"uhensiktsmessig" A Pos Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<mange>"
 	"mange" A Pos Pl Indef <W:0.0>
@@ -40974,7 +40967,7 @@
 	"feilanvendes" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<møtet>"
 	"møte" N Neu Sg Def <W:0.0>
@@ -41071,10 +41064,9 @@
 	"retningslinje" N Fem Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<forhold>"
-	"forhold" N Neu Pl Indef <W:0.0>
 	"forhold" N Neu Sg Indef <W:0.0>
 : 
 "<til>"
@@ -41126,10 +41118,9 @@
 	"standpunkt" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<forhold>"
-	"forhold" N Neu Pl Indef <W:0.0>
 	"forhold" N Neu Sg Indef <W:0.0>
 : 
 "<til>"
@@ -41218,7 +41209,7 @@
 	"svare" V Ind Prt <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<spørreundersøkelsen>"
 	"spørreundersøkelse" N Msc Sg Def <W:0.0>
@@ -41249,7 +41240,7 @@
 		"hjelper" N Cmp/null Cmp <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<helsevesenet>"
 	"vesen" N Neu Sg Def <W:0.0>
@@ -41298,11 +41289,11 @@
 	"det" Pron Pers Sg3 <W:0.0>
 : 
 "<flere>"
-	"flere" Det Dem Pl <W:0.0>
 	"flere" Pron Indef Pl <W:0.0>
+	"mange" A Comp Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<intervjuene>"
 	"intervju" N Neu Pl Def <W:0.0>
@@ -41333,7 +41324,7 @@
 	"mulig" A Pos Neu Sg Indef <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<utføre>"
 	"utføre" V Inf <W:0.0>
@@ -41345,7 +41336,7 @@
 		"helbredelse" N Cmp/s Cmp <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<en>"
 	"en" Det Dem Fem Sg <W:0.0>
@@ -41413,7 +41404,7 @@
 	"viktig" A Pos Neu Sg Indef <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<være>"
 	"være" V Inf <W:0.0>
@@ -41467,7 +41458,7 @@
 	"praktisere" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 "<,>"
 	"," CLB <W:0.0>
 : 
@@ -41520,7 +41511,7 @@
 	"synes" V Ind Prs <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<være>"
 	"være" V Inf <W:0.0>
@@ -41541,7 +41532,7 @@
 	"hinder" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<en>"
 	"en" Pron Indef Fem Sg <W:0.0>
@@ -41593,7 +41584,7 @@
 	"resultere" V Ind Prs <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<spenninger>"
 	"spenning" N Fem Pl Indef <W:0.0>
@@ -41609,7 +41600,7 @@
 	"og" CC <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<de>"
 	"den" Det Dem Pl <W:0.0>
@@ -41926,7 +41917,7 @@
 	"også" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<tråd>"
 	"tråd" N Msc Sg Indef <W:0.0>
@@ -41944,7 +41935,7 @@
 	"helsetjeneste" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<multikulturelle>"
 	"multikulturelle" ?
@@ -41980,7 +41971,7 @@
 	"viktig" A Der/AAdv Adv <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<ta>"
 	"ta" V Inf <W:0.0>
@@ -42016,10 +42007,10 @@
 	"ï" Use/SpellNoSugg N Sem/Sign Use/NG ABBR Gram/TAbbr N ABBR <W:0.0>
 : 
 "<Å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<møte>"
-	"møte" N Neu Sg Indef <W:0.0>
+	"møte" V Inf <W:0.0>
 : 
 "<begge>"
 	"begge" Pron Qnt Pl <W:0.0>
@@ -42095,13 +42086,13 @@
 	"være" V Inf <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<åpne>"
-	"åpen" A Pos Pl Indef <W:0.0>
+	"åpne" V Inf <W:0.0>
 : 
 "<for>"
-	"for" N Neu Pl Indef <W:0.0>
+	"for" Pr <W:0.0>
 : 
 "<et>"
 	"et" Det Dem Neu Sg <W:0.0>
@@ -42116,7 +42107,7 @@
 	"pasient" N Msc Pl Indef <W:0.0>
 : 
 "<skulle>"
-	"skulle" V Ind Prt <W:0.0>
+	"skulle" V Inf <W:0.0>
 : 
 "<ønske>"
 	"ønske" V Inf <W:0.0>
@@ -42213,7 +42204,7 @@
 	"kunnskap" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<¶>"
 	"¶" CLB <W:0.0>
@@ -42260,7 +42251,7 @@
 	"innlandsfiske" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<vann>"
 	"vann" N Neu Sg Indef <W:0.0>
@@ -42298,7 +42289,7 @@
 	"uttrykke" V Ind Prs Pass <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<praksiser>"
 	"praksis" N Msc Pl Indef <W:0.0>
@@ -42318,7 +42309,7 @@
 	"fremstille" V Ind Prs Pass <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<begreper>"
 	"begrep" N Neu Pl Indef Use/NG <W:0.0>
@@ -42373,7 +42364,7 @@
 	"frem" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<forvaltningens>"
 	"forvaltning" N Msc Sg Def Clt <W:0.0>
@@ -42387,17 +42378,16 @@
 	"ved" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<ta>"
 	"ta" V Inf <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<bruk>"
 	"bruk" N Msc Sg Indef <W:0.0>
-	"bruk" N Neu Pl Indef <W:0.0>
 	"bruk" N Neu Sg Indef <W:0.0>
 : 
 "<fortellinger>"
@@ -42470,7 +42460,7 @@
 	"opptre" V Inf <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<gitte>"
 	"gitt" A Pos Pl Indef <W:0.0>
@@ -42581,7 +42571,7 @@
 	"seg" Pron Refl Acc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<et>"
 	"et" Det Dem Neu Sg <W:0.0>
@@ -42665,7 +42655,7 @@
 	"praksis" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<laksefiske>"
 	"laksefiske" N Neu Sg Indef <W:0.0>
@@ -42689,7 +42679,7 @@
 	"kontinuitet" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<praksiser>"
 	"praksis" N Msc Pl Indef <W:0.0>
@@ -42718,7 +42708,7 @@
 	"uttrykk" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<observasjoner>"
 	"observasjon" N Msc Pl Indef <W:0.0>
@@ -42737,7 +42727,7 @@
 	"ved" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<være>"
 	"være" V Inf <W:0.0>
@@ -42850,7 +42840,7 @@
 		"vann" N Cmp/null Cmp <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Deatnu>"
 	"Deatnu" ?
@@ -42866,10 +42856,11 @@
 	"betydning" N Fem Sg Indef <W:0.0>
 : 
 "<ut>"
+	"ut" Adv <W:0.0>
 	"ut" Pr <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<fra>"
 	"fra" Pr <W:0.0>
@@ -42884,7 +42875,7 @@
 	"hvor" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<elva>"
 	"elv" N Fem Sg Def <W:0.0>
@@ -42979,7 +42970,7 @@
 	"kunnskapsgrunnlag" N Neu Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<den>"
 	"den" Det Dem Msc Sg <W:0.0>
@@ -43031,7 +43022,7 @@
 	"lokalforvaltning" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<en>"
 	"en" Det Dem Msc Sg <W:0.0>
@@ -43059,7 +43050,7 @@
 	"kunnskap" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<forvaltningen>"
 	"forvaltning" N Msc Sg Def <W:0.0>
@@ -43090,12 +43081,13 @@
 : 
 "<fast>"
 	"fast" A Pos Fem Sg Indef <W:0.0>
+	"fast" A Pos MF Sg Indef <W:0.0>
 	"fast" A Pos Msc Sg Indef <W:0.0>
 	"fast" A Pos Neu Sg Indef <W:0.0>
 	"fast" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<internasjonale>"
 	"internasjonal" A Pos Pl Indef <W:0.0>
@@ -43107,7 +43099,7 @@
 	"og" CC <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<¶>"
 	"¶" CLB <W:0.0>
@@ -43146,7 +43138,7 @@
 	"problematisk" A Pos Neu Sg Indef <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<innføre>"
 	"innføre" V Inf <W:0.0>
@@ -43158,7 +43150,7 @@
 	"kunnskap" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<forvaltningen>"
 	"forvaltning" N Msc Sg Def <W:0.0>
@@ -43173,7 +43165,7 @@
 	"praksis" N Msc Pl Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<forvaltningen>"
 	"forvaltning" N Msc Sg Def <W:0.0>
@@ -43208,20 +43200,19 @@
 	"praksis" N Msc Pl Indef <W:0.0>
 : 
 "<som>"
-	"som" Pr <W:0.0>
+	"som" CS <W:0.0>
 : 
 "<forvaltningen>"
 	"forvaltning" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<dag>"
 	"dag" N Msc Sg Indef <W:0.0>
 : 
 "<bruker>"
-	"bruk" N Neu Pl Indef Use/NG <W:0.0>
-	"bruker" N Msc Sg Indef <W:0.0>
+	"bruke" V Ind Prs <W:0.0>
 "<.>"
 	"." CLB <W:0.0>
 : 
@@ -43245,13 +43236,14 @@
 	"ta" V Ind Prs Pass <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<bruk>"
-	"bruk" N Neu Pl Indef <W:0.0>
+	"bruk" N Msc Sg Indef <W:0.0>
+	"bruk" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<den>"
 	"den" Det Dem Msc Sg <W:0.0>
@@ -43484,13 +43476,13 @@
 	"klassing" N Fem Pl Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<ungdomskolene>"
 	"ungdomskole" N Msc Pl Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Nord>"
 	"Nord" N Prop Sem/Org <W:0.0>
@@ -43500,7 +43492,7 @@
 	"Norge" N Prop Sem/Plc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<2003-2005>"
 	"2003-2005" Det Qnt Sem/Year Pl <W:0.0>
@@ -43635,7 +43627,7 @@
 		"symptom" N Cmp/null Cmp <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<internaliseringsvansker>"
 	"internaliseringsvansker" ?
@@ -43693,7 +43685,7 @@
 	"seg" Pron Refl Acc <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<være>"
 	"være" V Inf <W:0.0>
@@ -43717,6 +43709,7 @@
 	"grad" N Msc Sg Indef <W:0.0>
 : 
 "<av>"
+	"av" Adv <W:0.0>
 	"av" Pr <W:0.0>
 : 
 "<internaliseringssymptomer>"
@@ -43735,7 +43728,7 @@
 	")" PUNCT RIGHT <W:0.0>
 : 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<en>"
@@ -43783,7 +43776,7 @@
 	"forskjell" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<hvilke>"
 	"hvilken" Det Dem Pl <W:0.0>
@@ -43820,13 +43813,13 @@
 	")" PUNCT RIGHT <W:0.0>
 : 
 "<Å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<delta>"
-	"delta" N Neu Sg Indef <W:0.0>
+	"delta" V Inf <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<kulturelle>"
 	"kulturell" A Pos Pl Indef <W:0.0>
@@ -43902,7 +43895,7 @@
 	"avdekke" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<begge>"
 	"begge" Det Qnt Pl <W:0.0>
@@ -43936,7 +43929,7 @@
 	"også" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<hvilke>"
 	"hvilken" Det Dem Pl <W:0.0>
@@ -44022,7 +44015,7 @@
 	"til" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<forsterke>"
 	"forsterke" V Inf <W:0.0>
@@ -44389,7 +44382,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<en>"
@@ -44431,7 +44424,7 @@
 		"historie" N Cmp/null Cmp <W:0.0>
 : 
 "<utgjør>"
-	"utgjøre" V Ind Prs <W:0.0>
+	"utgjøre" V Imp <W:0.0>
 : 
 "<den>"
 	"den" Det Dem Msc Sg <W:0.0>
@@ -44490,7 +44483,7 @@
 	")" PUNCT RIGHT <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<vise>"
 	"vise" N Fem Sg Indef <W:0.0>
@@ -44551,7 +44544,7 @@
 		"urfolk" N Cmp/s Cmp <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<samisk-amerikansk>"
 	"samisk-amerikansk" ?
@@ -44572,7 +44565,7 @@
 	")" PUNCT RIGHT <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<vurdere>"
 	"vurdere" V Inf <W:0.0>
@@ -44711,7 +44704,7 @@
 	"begrep" N Neu Pl Indef Use/NG <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<et>"
 	"et" Det Dem Neu Sg <W:0.0>
@@ -44822,7 +44815,7 @@
 	"sted" N Neu Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Amerika>"
 	"Amerika" N Prop Sem/Plc <W:0.0>
@@ -44837,7 +44830,7 @@
 	"sted" N Neu Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Sápmi>"
 	"Sápmi" N Prop Sem/Plc <W:0.0>
@@ -44958,7 +44951,7 @@
 	"utgi" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<form>"
 	"form" N Msc Sg Indef <W:0.0>
@@ -45068,7 +45061,7 @@
 	"mål" N Neu Sg Indef <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<imøtekomme>"
 	"imøtekomme" V Inf <W:0.0>
@@ -45096,7 +45089,7 @@
 	"om" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<dele>"
 	"dele" V Inf <W:0.0>
@@ -45168,11 +45161,10 @@
 	"som" Pr <W:0.0>
 : 
 "<variabel>"
-	"variabel" A Pos Fem Sg Indef <W:0.0>
-	"variabel" A Pos Msc Sg Indef <W:0.0>
+	"variabel" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<studier>"
 	"studie" N Msc Pl Indef <W:0.0>
@@ -45214,11 +45206,10 @@
 		"populasjon" N Cmp/s Cmp <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<dagens>"
 	"dag" N Msc Sg Def Clt <W:0.0>
-	"dagens" N Msc Sg Indef <W:0.0>
 : 
 "<Norge>"
 	"Norge" N Prop Sem/Plc <W:0.0>
@@ -45389,7 +45380,7 @@
 	"være" V Ind Prt <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<bidra>"
 	"bidra" V Inf <W:0.0>
@@ -45472,7 +45463,7 @@
 	"mønster" N Neu Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<samers>"
 	"same" N Msc Pl Indef Clt <W:0.0>
@@ -45516,7 +45507,7 @@
 	"valgmanntall" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Norge>"
 	"Norge" N Prop Sem/Plc <W:0.0>
@@ -45539,7 +45530,7 @@
 	"Paper" N Prop Sem/Obj <W:0.0>
 : 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 "<)>"
 	")" PUNCT RIGHT <W:0.0>
@@ -45608,17 +45599,15 @@
 : 
 "<utført>"
 	"utføre" V PrfPrc <W:0.0>
-	"utføre" V PrfPrc Ex/V A Pos Fem Sg Indef <W:0.0>
-	"utføre" V PrfPrc Ex/V A Pos Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<2003/2004>"
 	"2003/2004" Det Qnt Sem/Year Pl <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<utvalgte>"
 	"utvalgt" A Pos Pl Def <W:0.0>
@@ -45646,7 +45635,7 @@
 	"bosetning" N Fem Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Norge>"
 	"Norge" N Prop Sem/Plc <W:0.0>
@@ -45824,7 +45813,7 @@
 	"synes" V Inf <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<ha>"
 	"ha" V Inf <W:0.0>
@@ -45876,7 +45865,7 @@
 	"befolkning" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<samme>"
 	"samme" Det Dem <W:0.0>
@@ -45969,20 +45958,15 @@
 : 
 "<forstått>"
 	"forstå" V PrfPrc <W:0.0>
-	"forstått" A Pos Fem Sg Indef <W:0.0>
-	"forstått" A Pos MF Sg Indef <W:0.0>
-	"forstått" A Pos Msc Sg Indef <W:0.0>
-	"forstått" A Pos Neu Sg Indef <W:0.0>
 : 
 "<som>"
 	"som" Pr <W:0.0>
 : 
 "<det>"
-	"den" Det Dem Neu Sg <W:0.0>
 	"det" Pron Pers Sg3 <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<studere>"
 	"studere" V Inf <W:0.0>
@@ -46025,10 +46009,13 @@
 	"være" V Ind Prt <W:0.0>
 : 
 "<mulig>"
-	"mulig" A Der/AAdv Adv <W:0.0>
+	"mulig" A Pos Fem Sg Indef <W:0.0>
+	"mulig" A Pos MF Sg Indef <W:0.0>
+	"mulig" A Pos Msc Sg Indef <W:0.0>
+	"mulig" A Pos Neu Sg Indef <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<foreslå>"
 	"foreslå" V Inf <W:0.0>
@@ -46086,7 +46073,7 @@
 	"være" V Ind Prs <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<avveie>"
 	"avveie" V Inf <W:0.0>
@@ -46248,7 +46235,7 @@
 	"involvere" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<de>"
 	"den" Det Dem Pl <W:0.0>
@@ -46273,7 +46260,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<sum>"
@@ -46310,7 +46297,7 @@
 	"enkel" A Comp <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<kommunisere>"
 	"kommunisere" V Inf <W:0.0>
@@ -46403,7 +46390,7 @@
 	"levekår" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<en>"
 	"en" Det Dem Msc Sg <W:0.0>
@@ -46470,7 +46457,7 @@
 	"etablere" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<2001>"
 	"2001" Num Sem/Year <W:0.0>
@@ -46573,7 +46560,7 @@
 	"befolkning" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Norge>"
 	"Norge" N Prop Sem/Plc <W:0.0>
@@ -46624,11 +46611,10 @@
 	"for" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<få>"
-	"få" A Pos Pl Def <W:0.0>
-	"få" A Pos Pl Indef <W:0.0>
+	"få" V Inf <W:0.0>
 : 
 "<på>"
 	"på" Pr <W:0.0>
@@ -46788,7 +46774,7 @@
 	"bare" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Norge>"
 	"Norge" N Prop Sem/Plc <W:0.0>
@@ -46802,7 +46788,7 @@
 	"også" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Norden>"
 	"Norden" N Prop Sem/Plc <W:0.0>
@@ -46822,7 +46808,7 @@
 	"se" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<kontrast>"
 	"kontrast" N Msc Sg Indef <W:0.0>
@@ -46881,7 +46867,7 @@
 	"populasjon" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<det>"
 	"den" Det Dem Neu Sg <W:0.0>
@@ -46905,13 +46891,13 @@
 	"for" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<få>"
-	"få" V Imp <W:0.0>
+	"få" V Inf <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<gang>"
 	"gang" N Msc Sg Indef <W:0.0>
@@ -46933,7 +46919,7 @@
 	"levekår" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<de>"
 	"den" Det Dem Pl <W:0.0>
@@ -46945,6 +46931,7 @@
 	"område" N Neu Pl Indef <W:0.0>
 : 
 "<var>"
+	"vare" V Imp <W:0.0>
 	"være" V Ind Prt <W:0.0>
 : 
 "<en>"
@@ -46975,9 +46962,11 @@
 : 
 "<gjennomført>"
 	"gjennomføre" V PrfPrc <W:0.0>
+	"gjennomføre" V PrfPrc Ex/V A Pos Fem Sg Indef <W:0.0>
+	"gjennomføre" V PrfPrc Ex/V A Pos Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<årene>"
 	"år" N Neu Pl Def Use/NG <W:0.0>
@@ -46987,10 +46976,9 @@
 	 Use/Circ"2003-4" Num Err/Orth Arab <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<samarbeid>"
-	"samarbeid" N Neu Pl Indef <W:0.0>
 	"samarbeid" N Neu Sg Indef <W:0.0>
 : 
 "<med>"
@@ -47030,7 +47018,7 @@
 	"helseundersøkelse" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<områder>"
 	"område" N Neu Pl Indef <W:0.0>
@@ -47078,7 +47066,7 @@
 	"kommune" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<¶>"
 	"¶" CLB <W:0.0>
@@ -47148,7 +47136,7 @@
 	"person" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<alderen>"
 	"alder" N Msc Sg Def <W:0.0>
@@ -47174,10 +47162,11 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<alt>"
+	"all" Det Dem Neu Sg <W:0.0>
 	"alt" Adv <W:0.0>
 : 
 "<deltok>"
@@ -47244,7 +47233,7 @@
 	"befolkning" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Folketellingen>"
 	"Folketellingen" N Prop Sem/Obj <W:0.0>
@@ -47283,11 +47272,10 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<tillegg>"
-	"tillegg" N Neu Pl Indef <W:0.0>
 	"tillegg" N Neu Sg Indef <W:0.0>
 : 
 "<til>"
@@ -47334,7 +47322,7 @@
 	"oppbevare" V Ind Prs Pass <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<en>"
 	"en" Det Dem Fem Sg <W:0.0>
@@ -47354,7 +47342,7 @@
 	"¶" CLB <W:0.0>
 :\n
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<mange>"
@@ -47603,7 +47591,7 @@
 	"vi" Pron Pers Pl1 Nom <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<dag>"
 	"dag" N Msc Sg Indef <W:0.0>
@@ -47633,7 +47621,7 @@
 	"identitet" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<mange>"
 	"mange" A Pos Neu Sg Indef <W:0.0>
@@ -47668,7 +47656,7 @@
 	"same" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<liten>"
 	"liten" A Pos Msc Sg Indef <W:0.0>
@@ -47683,7 +47671,7 @@
 	"behandle" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<relasjon>"
 	"relasjon" N Msc Sg Indef <W:0.0>
@@ -47722,7 +47710,7 @@
 	"være" V Ind Prs <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<studere>"
 	"studere" V Inf <W:0.0>
@@ -47776,12 +47764,14 @@
 	"videre" Adv <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<studere>"
 	"studere" V Inf <W:0.0>
 : 
 "<om>"
+	"om" Adv <W:0.0>
+	"om" CS <W:0.0>
 	"om" Pr <W:0.0>
 : 
 "<det>"
@@ -47813,6 +47803,7 @@
 	"og" CC <W:0.0>
 : 
 "<helse>"
+	"helse" N Fem Sg Indef <W:0.0>
 	"helse" V Inf <W:0.0>
 "<,>"
 	"," CLB <W:0.0>
@@ -47898,7 +47889,7 @@
 	"sist" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<avhandlingen>"
 	"avhandling" N Msc Sg Def <W:0.0>
@@ -47943,10 +47934,10 @@
 	"for" Adv <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<kunne>"
-	"kunne" V Ind Prt <W:0.0>
+	"kunne" V Inf <W:0.0>
 : 
 "<si>"
 	"si" V Inf <W:0.0>
@@ -47970,13 +47961,13 @@
 	"ligge" V Ind Prs <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<kunne>"
-	"kunne" V Ind Prt <W:0.0>
+	"kunne" V Inf <W:0.0>
 : 
 "<definere>"
 	"definere" V Inf <W:0.0>
@@ -48031,7 +48022,7 @@
 	"registrere" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<offentlig>"
 	"offentlig" A Pos Neu Sg Indef <W:0.0>
@@ -48040,7 +48031,7 @@
 	"register" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Norge>"
 	"Norge" N Prop Sem/Plc <W:0.0>
@@ -48098,20 +48089,22 @@
 : 
 "<viktig>"
 	"viktig" A Pos Fem Sg Indef <W:0.0>
+	"viktig" A Pos MF Sg Indef <W:0.0>
 	"viktig" A Pos Msc Sg Indef <W:0.0>
 	"viktig" A Pos Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<arbeidet>"
-	"arbeide" V PrfPrc <W:0.0>
+	"arbeid" N Neu Sg Def <W:0.0>
+	"arbeide" N Neu Sg Def <W:0.0>
 : 
 "<med>"
 	"med" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<klargjøre>"
 	"klargjøre" V Inf <W:0.0>
@@ -48144,7 +48137,7 @@
 	"ved" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<lage>"
 	"lage" V Inf <W:0.0>
@@ -48180,7 +48173,7 @@
 	"ulikhet" N Fem Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<den>"
 	"den" Det Dem Msc Sg <W:0.0>
@@ -48254,7 +48247,7 @@
 	"funn" N Neu Pl Def Use/NG <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<vår>"
 	"vår" Det Poss Sg1 Msc <W:0.0>
@@ -48369,7 +48362,7 @@
 	"oppleve" V PrfPrc <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<bli>"
 	"bli" V Inf <W:0.0>
@@ -48505,16 +48498,13 @@
 	"utsette" V PrfPrc <W:0.0>
 : 
 "<for>"
-	"for" N Neu Pl Indef <W:0.0>
-	"for" N Neu Sg Indef <W:0.0>
-	"for" Pr <W:0.0>
+	"for" Adv <W:0.0>
 : 
 "<det>"
-	"den" Det Dem Neu Sg <W:0.0>
 	"det" Pron Pers Sg3 <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<sammenligning>"
 	"sammenligning" N Fem Sg Indef <W:0.0>
@@ -48557,7 +48547,7 @@
 	")" PUNCT RIGHT <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<størst>"
 	"stor" A Superl Indef <W:0.0>
@@ -48621,7 +48611,7 @@
 	"skje" V PrfPrc Ex/V A Pos Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<arbeidslivet>"
 	"arbeidsliv" N Neu Sg Def <W:0.0>
@@ -48630,7 +48620,7 @@
 	"og" CC <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<lokal>"
 	"lokal" A Pos Fem Sg Indef <W:0.0>
@@ -48697,10 +48687,9 @@
 	"," CLB <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<tillegg>"
-	"tillegg" N Neu Pl Indef <W:0.0>
 	"tillegg" N Neu Sg Indef <W:0.0>
 : 
 "<til>"
@@ -48716,7 +48705,7 @@
 	"¶" CLB <W:0.0>
 :\n
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<vår>"
@@ -48866,7 +48855,7 @@
 	"ulikhet" N Fem Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<selvvurdert>"
 	"selvvurdert" ?
@@ -48975,7 +48964,7 @@
 	"forskjell" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<rapporteringen>"
 	"rapportering" N Msc Sg Def <W:0.0>
@@ -49323,7 +49312,7 @@
 	"til" Pr <W:0.0>
 : 
 "<dem>"
-	"dem" A Gram/TAbbr A ABBR <W:0.0>
+	"de" Pron Pers Pl3 Acc <W:0.0>
 : 
 "<med>"
 	"med" Pr <W:0.0>
@@ -49394,7 +49383,7 @@
 "<(>"
 	"(" PUNCT LEFT <W:0.0>
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 "<)>"
 	")" PUNCT RIGHT <W:0.0>
 : 
@@ -49458,8 +49447,7 @@
 "<(>"
 	"(" PUNCT LEFT <W:0.0>
 "<v>"
-	"v" N ABBR Gram/TAbbr N ABBR <W:0.0>
-	"v" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"V" Use/NG Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 "<)>"
 	")" PUNCT RIGHT <W:0.0>
 : 
@@ -49802,14 +49790,15 @@
 	"engelsk" N Msc Sg Indef <W:0.0>
 : 
 "<for>"
-	"for" Pr <W:0.0>
+	"for" Adv <W:0.0>
 : 
 "<bruk>"
 	"bruk" N Msc Sg Indef <W:0.0>
+	"bruk" N Neu Pl Indef <W:0.0>
 	"bruk" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<foreliggende>"
 	"foreliggende" A Pos Fem Sg Indef <W:0.0>
@@ -49925,10 +49914,10 @@
 	"om" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<nå>"
-	"nå" Adv <W:0.0>
+	"nå" V Inf <W:0.0>
 : 
 "<en>"
 	"en" Det Dem Fem Sg <W:0.0>
@@ -50000,7 +49989,7 @@
 	"innad" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<siidasystemet>"
 	"system" N Neu Sg Def <W:0.0>
@@ -50241,7 +50230,7 @@
 	"enkelt" A Pos Neu Sg Indef <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<si>"
 	"si" V Inf <W:0.0>
@@ -50332,7 +50321,7 @@
 	"bestå" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<en>"
 	"en" Det Dem Fem Sg <W:0.0>
@@ -50399,7 +50388,7 @@
 	"videre" Adv <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<danne>"
 	"danne" V Inf <W:0.0>
@@ -50506,7 +50495,7 @@
 	"til" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<tenke>"
 	"tenke" V Inf <W:0.0>
@@ -50600,10 +50589,10 @@
 	"til" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<skifte>"
-	"skifte" N Neu Sg Indef <W:0.0>
+	"skifte" V Inf <W:0.0>
 : 
 "<mellom>"
 	"mellom" Pr <W:0.0>
@@ -50656,19 +50645,19 @@
 	"være" V Ind Prs <W:0.0>
 : 
 "<plassert>"
-	"plassere" V PrfPrc <W:0.0>
+	"plassere" V PrfPrc Ex/V A Der/AAdv Adv <W:0.0>
 : 
 "<så>"
 	"så" Adv <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<si>"
 	"si" V Inf <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<hjertet>"
 	"hjerte" N Neu Sg Def <W:0.0>
@@ -50700,21 +50689,22 @@
 "<enkelt>"
 	"enkel" A Pos Neu Sg Indef <W:0.0>
 	"enkelt" A Pos Fem Sg Indef <W:0.0>
+	"enkelt" A Pos MF Sg Indef <W:0.0>
 	"enkelt" A Pos Msc Sg Indef <W:0.0>
 	"enkelt" A Pos Neu Sg Indef <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<tre>"
-	"tre" Det Qnt Pl <W:0.0>
-	"tre" N Neu Sg Indef <W:0.0>
+	"tre" V Inf <W:0.0>
 : 
 "<ut>"
+	"ut" Adv <W:0.0>
 	"ut" Pr <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<omgivelser>"
 	"omgivelse" N Msc Pl Indef <W:0.0>
@@ -50724,19 +50714,25 @@
 : 
 "<stadig>"
 	"stadig" A Pos Fem Sg Indef <W:0.0>
+	"stadig" A Pos MF Sg Indef <W:0.0>
 	"stadig" A Pos Msc Sg Indef <W:0.0>
 	"stadig" A Pos Neu Sg Indef <W:0.0>
 	"stadig" Adv <W:0.0>
 : 
 "<pågående>"
+	"pågå" V PrsPrc <W:0.0>
+	"pågående" A Pos Fem Sg Indef <W:0.0>
+	"pågående" A Pos MF Sg Indef <W:0.0>
+	"pågående" A Pos Msc Sg Indef <W:0.0>
+	"pågående" A Pos Neu Sg Indef <W:0.0>
+	"pågående" A Pos Pl Def <W:0.0>
 	"pågående" A Pos Pl Indef <W:0.0>
 : 
 "<samtaler>"
-	"samtale" N Msc Pl Indef <W:0.0>
+	"samtale" V Ind Prs <W:0.0>
 : 
 "<om>"
 	"om" Adv <W:0.0>
-	"om" CS <W:0.0>
 : 
 "<rein>"
 	"rein" N Msc Pl Indef <W:0.0>
@@ -50750,12 +50746,11 @@
 	"forhold" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<arbeidet>"
 	"arbeid" N Neu Sg Def <W:0.0>
 	"arbeide" N Neu Sg Def <W:0.0>
-	"arbeide" V Ind Prt <W:0.0>
 : 
 "<med>"
 	"med" Pr <W:0.0>
@@ -50789,12 +50784,12 @@
 : 
 "<studietilbud>"
 	"studietilbud" N Neu Pl Indef <W:0.0>
+	"studietilbud" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<reindriftsfag>"
-	"reindriftsfag" N Neu Pl Indef <W:0.0>
 	"reindriftsfag" N Neu Sg Indef <W:0.0>
 : 
 "<åpnet>"
@@ -50889,7 +50884,7 @@
 	"være" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<den>"
 	"den" Det Dem Fem Sg <W:0.0>
@@ -50917,7 +50912,7 @@
 	"delta" V Inf <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Ealát-prosjektets>"
 	"Ealát-prosjektets" ?
@@ -50966,7 +50961,7 @@
 	"til" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<bli>"
 	"bli" V Inf <W:0.0>
@@ -51060,9 +51055,11 @@
 : 
 "<gjennomført>"
 	"gjennomføre" V PrfPrc <W:0.0>
+	"gjennomføre" V PrfPrc Ex/V A Pos Fem Sg Indef <W:0.0>
+	"gjennomføre" V PrfPrc Ex/V A Pos Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<tilknytning>"
 	"tilknytning" N Fem Sg Indef <W:0.0>
@@ -51086,7 +51083,7 @@
 	"Universitetet" N Prop Sem/Org <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Tromsø>"
 	"Tromsø" N Prop Sem/Plc <W:0.0>
@@ -51097,7 +51094,6 @@
 "<Takk>"
 	"takk" N Neu Pl Indef <W:0.0>
 	"takk" N Neu Sg Indef <W:0.0>
-	"takke" V Imp <W:0.0>
 : 
 "<til>"
 	"til" Pr <W:0.0>
@@ -51136,17 +51132,13 @@
 	"for" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<få>"
-	"få" A Pos Pl Def <W:0.0>
-	"få" A Pos Pl Indef <W:0.0>
-	"få" V Imp <W:0.0>
+	"få" V Inf <W:0.0>
 : 
 "<arbeidet>"
-	"arbeid" N Neu Sg Def <W:0.0>
-	"arbeide" N Neu Sg Def <W:0.0>
-	"arbeide" V Ind Prt <W:0.0>
+	"arbeide" V PrfPrc <W:0.0>
 : 
 "<mitt>"
 	"min" Det Poss Neu Sg <W:0.0>
@@ -51176,15 +51168,13 @@
 	"til" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<få>"
-	"få" A Pos Pl Def <W:0.0>
-	"få" A Pos Pl Indef <W:0.0>
+	"få" V Inf <W:0.0>
 : 
 "<noe>"
 	"noe" Adv <W:0.0>
-	"noe" Pron Indef <W:0.0>
 : 
 "<ned>"
 	"ned" Adv <W:0.0>
@@ -51277,14 +51267,13 @@
 : 
 "<Svein>"
 	"Svein" N Prop Sem/Mal <W:0.0>
+	"svein" N Msc Sg Indef <W:0.0>
 : 
 "<D.>"
-	"D" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
-	"Dalphabet" N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
-	"d" Use/SpellNoSugg N Sem/Sign Use/NG ABBR Gram/TAbbr N ABBR <W:0.0>
-	"dalphabet" N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"." CLB <W:0.0> "<.>"
 		 Use/Circ"D" Use/Circ Use/Circ Num Rom Sg Nom Use/Circ <W:0.0> "<D>"
 : 
+
 "<Mathiesen>"
 	"Mathiesen" N Prop Sem/Sur <W:0.0>
 : 
@@ -51308,7 +51297,7 @@
 	"spesielt" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<tilknytning>"
 	"tilknytning" N Fem Sg Indef <W:0.0>
@@ -51332,7 +51321,7 @@
 	"spesielt" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<tilknytning>"
 	"tilknytning" N Fem Sg Indef <W:0.0>
@@ -51372,7 +51361,7 @@
 	"Oskal" N Prop Sem/Sur <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<tilknytning>"
 	"tilknytning" N Fem Sg Indef <W:0.0>
@@ -51422,26 +51411,14 @@
 	"den" Det Dem Pl <W:0.0>
 : 
 "<mange>"
-	"mange" A Pos Fem Sg Indef <W:0.0>
-	"mange" A Pos MF Sg Indef <W:0.0>
-	"mange" A Pos Msc Sg Indef <W:0.0>
-	"mange" A Pos Neu Sg Indef <W:0.0>
-	"mange" A Pos Pl Def <W:0.0>
-	"mange" A Pos Pl Indef <W:0.0>
-	"mange" Adv <W:0.0>
 	"mange" Det Dem Pl <W:0.0>
 : 
 "<andre>"
-	"andre" A Pos Fem Sg Indef <W:0.0>
-	"andre" A Pos Msc Sg Indef <W:0.0>
 	"andre" A Pos Pl Def <W:0.0>
 	"andre" A Pos Pl Indef <W:0.0>
-	"annen" Det Dem Pl <W:0.0>
-	"annen" Pron Dem Pl <W:0.0>
-	"annen" Pron Dem Pl Clt <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<miljøer>"
 	"miljø" N Neu Pl Indef <W:0.0>
@@ -51592,7 +51569,7 @@
 	"og" CC <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<siidaen>"
 	"siida" N Msc Sg Def <W:0.0>
@@ -51697,7 +51674,7 @@
 	"tilbake" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<tid>"
 	"tid" N Fem Sg Indef <W:0.0>
@@ -51759,10 +51736,10 @@
 	"det" Pron Pers Sg3 <W:0.0>
 : 
 "<som>"
-	"som" Pr <W:0.0>
+	"som" CS <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<dag>"
 	"dag" N Msc Sg Indef <W:0.0>
@@ -51849,7 +51826,7 @@
 	"til" Pr <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<dag>"
 	"dag" N Msc Sg Indef <W:0.0>
@@ -51859,7 +51836,7 @@
 	"spesielt" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<¶>"
 	"¶" CLB <W:0.0>
@@ -51876,7 +51853,7 @@
 	"Karasjokområdet" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Norge>"
 	"Norge" N Prop Sem/Plc <W:0.0>
@@ -51893,7 +51870,7 @@
 	"si" V Inf <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<det>"
 	"den" Det Dem Neu Sg <W:0.0>
@@ -51935,7 +51912,7 @@
 	"fortsette" V PrfPrc <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<krysspresset>"
 	"press" N Neu Sg Def <W:0.0>
@@ -51960,7 +51937,7 @@
 	"siida" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<litteraturen>"
 	"litteratur" N Msc Sg Def <W:0.0>
@@ -52003,7 +51980,7 @@
 	"organisering" N Fem Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<de>"
 	"den" Det Dem Pl <W:0.0>
@@ -52143,7 +52120,7 @@
 	"siida" N Msc Sg Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<prinsippet>"
 	"prinsipp" N Neu Sg Def <W:0.0>
@@ -52192,7 +52169,7 @@
 	"opphav" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<reinbeitedistriktssystemet>"
 	"system" N Neu Sg Def <W:0.0>
@@ -52211,7 +52188,7 @@
 	"til" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<prege>"
 	"prege" V Inf <W:0.0>
@@ -52233,13 +52210,18 @@
 	"¶" CLB <W:0.0>
 :\n
 "<For>"
+	"fare" V Ind Prt <W:0.0>
+	"for" Adv <W:0.0>
+	"for" CC <W:0.0>
+	"for" N Neu Pl Indef <W:0.0>
+	"for" N Neu Sg Indef <W:0.0>
 	"for" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<kunne>"
-	"kunne" V Ind Prt <W:0.0>
+	"kunne" V Inf <W:0.0>
 : 
 "<rehabilitere>"
 	"rehabilitere" V Inf <W:0.0>
@@ -52270,7 +52252,7 @@
 	"utenom" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<plukke>"
 	"plukke" V Inf <W:0.0>
@@ -52288,7 +52270,7 @@
 	"utgangspunkt" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<forbindelseslinjene>"
 	"forbindelseslinje" N Fem Pl Def <W:0.0>
@@ -52300,7 +52282,7 @@
 	"ligge" V Ind Prs <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<videreføringen>"
 	"videreføring" N Msc Sg Def <W:0.0>
@@ -52333,7 +52315,7 @@
 	"på" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<ta>"
 	"ta" V Inf <W:0.0>
@@ -52342,7 +52324,7 @@
 	"utgangspunkt" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<siidasystemets>"
 	"system" N Neu Sg Def Clt <W:0.0>
@@ -52370,7 +52352,7 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<dag>"
@@ -52395,11 +52377,10 @@
 	"fremst" Adv <W:0.0>
 : 
 "<om>"
-	"om" CS <W:0.0>
 	"om" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<ekstrahere>"
 	"ekstrahere" V Inf <W:0.0>
@@ -52429,12 +52410,11 @@
 	"kunnskap" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<arbeidet>"
 	"arbeid" N Neu Sg Def <W:0.0>
 	"arbeide" N Neu Sg Def <W:0.0>
-	"arbeide" V Ind Prt <W:0.0>
 : 
 "<med>"
 	"med" Pr <W:0.0>
@@ -52446,13 +52426,12 @@
 : 
 "<men>"
 	"men" CC <W:0.0>
-	"mene" V Imp <W:0.0>
 : 
 "<også>"
 	"også" Adv <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<rette>"
 	"rett" A Pos Sg Def <W:0.0>
@@ -52483,7 +52462,7 @@
 	"praksis" N Msc Pl Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<siidautøvelsen>"
 	"siidautøvelse" N Msc Sg Def <W:0.0>
@@ -52504,7 +52483,7 @@
 	"ligge" V Ind Prs <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<dette>"
 	"denne" Det Dem Neu Sg <W:0.0>
@@ -52513,13 +52492,13 @@
 	"et" Det Dem Neu Sg <W:0.0>
 : 
 "<grunnlag>"
-	"grunnlag" N Neu Pl Indef <W:0.0>
+	"grunnlag" N Neu Sg Indef <W:0.0>
 : 
 "<for>"
 	"for" Adv <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<synliggjøre>"
 	"synliggjøre" V Inf <W:0.0>
@@ -52534,7 +52513,7 @@
 	"tilpasning" N Fem Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<forholdet>"
 	"forhold" N Neu Sg Def <W:0.0>
@@ -52593,7 +52572,7 @@
 	"siida" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<prosessen>"
 	"prosess" N Msc Sg Def <W:0.0>
@@ -52780,7 +52759,7 @@
 	"måte" N Msc Pl Indef <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<nærme>"
 	"nærme" V Inf <W:0.0>
@@ -52896,7 +52875,7 @@
 	"liv" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<noen>"
 	"noen" Pron Indef <W:0.0>
@@ -52921,6 +52900,7 @@
 :\n
 "<Reinsdyr>"
 	"reinsdyr" N Neu Pl Indef <W:0.0>
+	"reinsdyr" N Neu Sg Indef <W:0.0>
 : 
 "<(>"
 	"(" PUNCT LEFT <W:0.0>
@@ -52935,13 +52915,10 @@
 	"tarandus" ?
 : 
 "<L.>"
-	"L" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
-	"Lalphabet" N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
-	"l" N ABBR Gram/TAbbr Use/NG N ABBR <W:0.0>
-	"l" Use/SpellNoSugg N Sem/Sign Use/NG ABBR Gram/TAbbr N ABBR <W:0.0>
-	"lalphabet" N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"." CLB <W:0.0> "<.>"
 		 Use/Circ"L" Use/Circ Use/Circ Num Rom Sg Nom Use/Circ <W:0.0> "<L>"
 : 
+
 "<)>"
 	")" PUNCT RIGHT <W:0.0>
 : 
@@ -53025,10 +53002,9 @@
 	"mangelfull" A Pos Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<forhold>"
-	"forhold" N Neu Pl Indef <W:0.0>
 	"forhold" N Neu Sg Indef <W:0.0>
 : 
 "<andre>"
@@ -53059,7 +53035,7 @@
 	"være" V Ind Prt <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<øke>"
 	"øke" V Inf <W:0.0>
@@ -53091,7 +53067,7 @@
 	"for" Adv <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<studere>"
 	"studere" V Inf <W:0.0>
@@ -53131,10 +53107,9 @@
 	"tungmetall" N Neu Pl Indef Use/NG <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<kjøtt>"
-	"kjøtt" N Neu Pl Indef <W:0.0>
 	"kjøtt" N Neu Sg Indef <W:0.0>
 "<,>"
 	"," CLB <W:0.0>
@@ -53158,11 +53133,10 @@
 	"fra" Pr <W:0.0>
 : 
 "<rein>"
-	"rein" A Pos Fem Sg Indef <W:0.0>
-	"rein" A Pos Msc Sg Indef <W:0.0>
+	"rein" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<relasjon>"
 	"relasjon" N Msc Sg Indef <W:0.0>
@@ -53198,10 +53172,9 @@
 	"konsentrasjon" N Msc Pl Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<kjøtt>"
-	"kjøtt" N Neu Pl Indef <W:0.0>
 	"kjøtt" N Neu Sg Indef <W:0.0>
 : 
 "<og>"
@@ -53349,7 +53322,7 @@
 	")" PUNCT RIGHT <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<Midt->"
 	"midt" N Cmp/Hyph Cmp <W:0.0>
@@ -53404,10 +53377,9 @@
 	"konsentrasjon" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<forhold>"
-	"forhold" N Neu Pl Indef <W:0.0>
 	"forhold" N Neu Sg Indef <W:0.0>
 : 
 "<til>"
@@ -53526,10 +53498,9 @@
 	"ALA" Use/Circ Use/SpellNoSugg N Prop Sem/Org ACR Dyn Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<reinkjøtt>"
-	"reinkjøtt" N Neu Pl Indef <W:0.0>
 	"reinkjøtt" N Neu Sg Indef <W:0.0>
 : 
 "<er>"
@@ -53554,9 +53525,11 @@
 : 
 "<rapportert>"
 	"rapportere" V PrfPrc <W:0.0>
+	"rapportere" V PrfPrc Ex/V A Pos Fem Sg Indef <W:0.0>
+	"rapportere" V PrfPrc Ex/V A Pos Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<krabbe>"
 	"krabbe" N Msc Sg Indef <W:0.0>
@@ -53588,7 +53561,7 @@
 	"DPA" Use/Circ Use/SpellNoSugg N Prop Sem/Org ACR Dyn Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<torsk>"
 	"torsk" N Msc Sg Indef <W:0.0>
@@ -53597,11 +53570,10 @@
 : 
 
 "<I>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 	 Use/Circ"I" Use/Circ Num Rom Sg Nom Use/Circ <W:0.0>
 : 
 "<tillegg>"
-	"tillegg" N Neu Pl Indef <W:0.0>
 	"tillegg" N Neu Sg Indef <W:0.0>
 "<,>"
 	"," CLB <W:0.0>
@@ -53678,11 +53650,10 @@
 	"til" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<dekke>"
-	"dekke" N Neu Pl Indef <W:0.0>
-	"dekke" N Neu Sg Indef <W:0.0>
+	"dekke" V Inf <W:0.0>
 : 
 "<det>"
 	"den" Det Dem Neu Sg <W:0.0>
@@ -53722,10 +53693,10 @@
 	"n-3" ?
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<kjøtt>"
-	"kjøtt" N Neu Pl Indef <W:0.0>
+	"kjøtt" N Neu Sg Indef <W:0.0>
 "<,>"
 	"," CLB <W:0.0>
 : 
@@ -53858,10 +53829,11 @@
 	"tungmetall" N Neu Pl Indef Use/NG <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<lever>"
-	"leve" V Ind Prs <W:0.0>
+	"lever" N Fem Sg Indef <W:0.0>
+	"lever" N Msc Sg Indef <W:0.0>
 "<,>"
 	"," CLB <W:0.0>
 : 
@@ -53897,10 +53869,9 @@
 	"finne" V Ind Prs Pass <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<kjøtt>"
-	"kjøtt" N Neu Pl Indef <W:0.0>
 	"kjøtt" N Neu Sg Indef <W:0.0>
 "<.>"
 	"." CLB <W:0.0>
@@ -53918,11 +53889,9 @@
 : 
 "<påvist>"
 	"påvise" V PrfPrc <W:0.0>
-	"påvise" V PrfPrc Ex/V A Pos Fem Sg Indef <W:0.0>
-	"påvise" V PrfPrc Ex/V A Pos Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<denne>"
 	"denne" Det Dem Msc Sg <W:0.0>
@@ -53955,7 +53924,7 @@
 		"vitamin" N Cmp/null Cmp <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<leveren>"
 	"lever" N Msc Sg Def <W:0.0>
@@ -53995,7 +53964,7 @@
 	"konsentrasjon" N Msc Pl Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<kjøttet>"
 	"kjøtt" N Neu Sg Def <W:0.0>
@@ -54053,7 +54022,7 @@
 	"nivå" N Neu Pl Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<lever>"
 	"lever" N Fem Sg Indef <W:0.0>
@@ -54104,7 +54073,7 @@
 	"forskjell" N Msc Pl Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<næringsstoffer>"
 	"næringsstoff" N Neu Pl Indef <W:0.0>
@@ -54231,11 +54200,9 @@
 : 
 "<målt>"
 	"måle" V PrfPrc <W:0.0>
-	"måle" V PrfPrc Ex/V A Pos Fem Sg Indef <W:0.0>
-	"måle" V PrfPrc Ex/V A Pos Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<øst>"
 	"øst" N Msc Sg Indef <W:0.0>
@@ -54278,10 +54245,10 @@
 	"ha" V Ind Prt <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<gjennomsnitt>"
-	"gjennomsnitt" N Neu Pl Indef <W:0.0>
+	"gjennomsnitt" N Neu Sg Indef <W:0.0>
 : 
 "<høyere>"
 	"høy" A Comp <W:0.0>
@@ -54377,14 +54344,13 @@
 	"til" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<få>"
-	"få" A Pos Pl Def <W:0.0>
+	"få" V Inf <W:0.0>
 : 
 "<dekket>"
-	"dekk" N Neu Sg Def <W:0.0>
-	"dekke" N Neu Sg Def <W:0.0>
+	"dekke" V PrfPrc <W:0.0>
 : 
 "<anbefalte>"
 	"anbefale" V Ind Prt <W:0.0>
@@ -54463,16 +54429,15 @@
 		"helse" N Cmp/null Cmp <W:0.0>
 : 
 "<for>"
-	"for" Pr <W:0.0>
+	"for" Adv <W:0.0>
 : 
 "<forbrukerne>"
 	"forbruker" N Msc Pl Def <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<forhold>"
-	"forhold" N Neu Pl Indef <W:0.0>
 	"forhold" N Neu Sg Indef <W:0.0>
 : 
 "<til>"
@@ -54513,7 +54478,7 @@
 	"avdekke" V Ind Prt <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<denne>"
 	"denne" Det Dem Msc Sg <W:0.0>
@@ -54606,7 +54571,7 @@
 	"utgangspunkt" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<læreplanens>"
 	"læreplan" N Msc Sg Def Clt <W:0.0>
@@ -54761,13 +54726,15 @@
 	"hjem" Adv <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<områder>"
 	"område" N Neu Pl Indef <W:0.0>
 : 
 "<dominert>"
 	"dominere" V PrfPrc <W:0.0>
+	"dominere" V PrfPrc Ex/V A Pos Fem Sg Indef <W:0.0>
+	"dominere" V PrfPrc Ex/V A Pos Msc Sg Indef <W:0.0>
 : 
 "<av>"
 	"av" Pr <W:0.0>
@@ -54785,7 +54752,7 @@
 	"men" CC <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<et>"
 	"et" Det Dem Neu Sg <W:0.0>
@@ -54925,8 +54892,8 @@
 : 
 
 "<For>"
-	"for" CC <W:0.0>
 	"for" N Neu Pl Indef <W:0.0>
+	"for" N Neu Sg Indef <W:0.0>
 	"for" Pr <W:0.0>
 	"fore" V Imp <W:0.0>
 : 
@@ -54935,16 +54902,14 @@
 : 
 "<første>"
 	"første" A Pos Fem Sg Indef <W:0.0>
+	"første" A Pos MF Sg Indef <W:0.0>
 	"første" A Pos Msc Sg Indef <W:0.0>
-	"første" A Pos Sg Def <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<få>"
-	"få" A Pos Pl Def <W:0.0>
-	"få" A Pos Pl Indef <W:0.0>
-	"få" V Imp <W:0.0>
+	"få" V Inf <W:0.0>
 : 
 "<en>"
 	"en" Det Dem Fem Sg <W:0.0>
@@ -54976,7 +54941,7 @@
 	"bruke" V Ind Prs Pass <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<daglig>"
 	"daglig" A Pos MF Sg Indef <W:0.0>
@@ -55017,14 +54982,13 @@
 	"for" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<lykkes>"
-	"lykke" N Fem Sg Indef Clt <W:0.0>
-	"lykkes" V Ind Prs <W:0.0>
+	"lykkes" V Inf <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<skolens>"
 	"skole" N Msc Sg Def Clt <W:0.0>
@@ -55062,10 +55026,9 @@
 	"hjem" N Neu Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<fellesskap>"
-	"fellesskap" N Neu Pl Indef <W:0.0>
 	"fellesskap" N Neu Sg Indef <W:0.0>
 : 
 "<kan>"
@@ -55078,7 +55041,7 @@
 	"for" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<styrke>"
 	"styrke" V Inf <W:0.0>
@@ -55118,7 +55081,7 @@
 		"hoved" N Cmp/null Cmp <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<prosjektet>"
 	"prosjekt" N Neu Sg Def <W:0.0>
@@ -55137,7 +55100,7 @@
 	"formulere" V Inf Pass <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<tre>"
 	"tre" Det Qnt Pl <W:0.0>
@@ -55192,7 +55155,7 @@
 	"opplæringsmodell" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<den>"
 	"den" Det Dem Msc Sg <W:0.0>
@@ -55226,7 +55189,7 @@
 	"skole" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<samarbeidet>"
 	"samarbeid" N Neu Sg Def <W:0.0>
@@ -55247,7 +55210,7 @@
 	"rolle" N Fem Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<vitalisering>"
 	"vitalisering" N Fem Sg Indef <W:0.0>
@@ -55301,7 +55264,7 @@
 	"samarbeidspartner" N Msc Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<sine>"
 	"sin" Det Poss Pl3 <W:0.0>
@@ -55368,7 +55331,7 @@
 	"rolle" N Fem Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<utdanning>"
 	"utdanning" N Fem Sg Indef <W:0.0>
@@ -55439,10 +55402,10 @@
 	"rolle" N Fem Sg Indef <W:0.0>
 : 
 "<i>"
-	"i" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"i" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<formidle>"
 	"formidle" V Inf <W:0.0>
@@ -55460,10 +55423,10 @@
 	"av" Pr <W:0.0>
 : 
 "<å>"
-	"å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR <W:0.0>
+	"å" IM <W:0.0>
 : 
 "<arbeide>"
-	"arbeide" N Neu Sg Indef <W:0.0>
+	"arbeide" V Inf <W:0.0>
 : 
 "<mot>"
 	"mot" Pr <W:0.0>
