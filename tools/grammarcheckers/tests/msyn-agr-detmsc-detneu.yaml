@@ -5,5 +5,6 @@ Config:
 Tests:
   - "Vi bor i {en}£{et} land."
   - "Norge er {en}£{et} land."
-  - "Norge er {en}£{et} {fin}£{fint} land."  
+  - "Norge er {en}£{et} fint land."  
+  - "Norge er et {fin}£{fint} land."  
   
