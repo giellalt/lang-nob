@@ -925,7 +925,7 @@ REMOVE Pl IF (-1 Pr)(0 ("tillegg"))(1 ("til"));
 
 SECTION
 
-SELECT Prop IF (NOT -1 CLB); # XXX
+SELECT Prop IF (NOT -1 BOS); # XXX
 
 
 REMOVE:apred (N) IF
