@@ -415,7 +415,7 @@ LEXICON fKLE
        +N+Neu+Pl:klæ    r-rne ;
 
 LEXICON indeclf 
-  +N+Fem+Indcl: # ;
+  +N+Fem+Indef: # ;
 !           +N: R ;
 
 ! Neuters
