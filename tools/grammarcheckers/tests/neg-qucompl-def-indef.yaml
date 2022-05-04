@@ -1,0 +1,8 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+  
+Tests:
+  - "Hvorfor har du stilt disse sju lammene for seg selv?"
+  - "Jeg så han knapt på de drøye to timene vi satt der."
+  
