@@ -659,7 +659,7 @@ ADDRELATION:msyn-np-demindef-demdef ($2) ("disse") FROM (*1 N BARRIER NOT-A LINK
 
 #!! **Agreement rule:** Indef after quantifier. (msyn-qucompl-def-indef). Context: *Vi har mange bøkene/bøker.*
 ADD:msyn-qucompl-def-indef (&msyn-qucompl-def-indef) TARGET N + Pl + Def IF 
-(*-1 Qnt OR ("mange") + Pos OR ("mange") + Comp BARRIER NOT-A LINK NOT -1 ("den") + Det + Dem + Pl); # LINK NOT 0 Sem/ID LINK NOT -1 (§));
+(*-1 Qnt OR ("mange") + Pos OR ("mange") + Comp BARRIER NOT-A LINK NOT *-1 ("den") + Det + Dem + Pl OR ("denne") OR ("disse") OR ("begge")); # LINK NOT 0 Sem/ID LINK NOT -1 (§));
 COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Use/NG Def) TARGET (N Msc Pl &msyn-qucompl-def-indef); 
 COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Use/NG Def) TARGET (N Fem Pl &msyn-qucompl-def-indef); 
 COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Use/NG Def) TARGET (N Neu Pl &msyn-qucompl-def-indef); 
