@@ -416,7 +416,7 @@ SET NP-HEAD-ACC    = (Pron Acc) OR (N Acc) OR (A Acc) - RCmpnd ;  #!!≈ - @CODE
 #!! expression **WORD - premodifiers**.
 
 
-SET PRE-NP-HEAD = (Prop Attr) OR (Prop @>N) OR A OR ABBR OR Num OR RCmpnd OR CC OR (Pron Dem) OR (Pron Ref) OR Indef OR (PrfPrc @>N) OR PrsPrc OR (A Ord) OR (Num @>N) OR (A @>N) OR @>N OR @>A OR @>Pron OR @Num< OR (CC @CNP) OR (@>CC) OR (@Pron<) ;   #!!≈ - @CODE@
+SET PRE-NP-HEAD = (Prop Attr) OR (Prop @>N) OR A OR ABBR OR Num OR RCmpnd OR CC OR (Pron Dem) OR (Pron Ref) OR (PrfPrc @>N) OR PrsPrc OR (A Ord) OR (Num @>N) OR (A @>N) OR @>N OR @>A OR @>Pron OR @Num< OR (CC @CNP) OR (@>CC) OR (@Pron<) ;   #!!≈ - @CODE@
 
 #!! The strict version of items that can only be premodifiers, not parts of the predicate
 SET PRE-NP-V = PrfPrc OR PrsPrc OR (V A) OR (Ind Prs) ;   #!!≈ - @CODE@
@@ -793,10 +793,12 @@ ADD:msyn-v-pres-inf (&msyn-v-pres-inf) TARGET V IF
 COPY:msyn-v-pres-inf (Inf &SUGGEST) EXCEPT (Ind Prs)  TARGET (V Ind Prs &msyn-v-pres-inf);
 ADDRELATION:msyn-v-pres-inf ($2) (V) FROM (1 V LINK 0 (&msyn-v-pres-inf)) ;
 
+ADD:msyn-IM (&msyn-v-pres-inf) TARGET V IF (0 (Ind Prs))(-1 IM)(NOT 0 Pass);
+
 ## Jeg vil skriver et brev.   #!!≈ - *@CODE@* (funkar ikkje)
 #$ Jeg vil skrive et brev.   #!!≈ - *@CODE@*
 #!!  **Verb rule:** Verb error: Present tense should be infinitive (msyn-v-pres-inf). Context: *Jeg liker å skriver et brev.*
-ADD:msyn-v-pres-inf (&msyn-v-pres-inf) TARGET V IF (0 (Ind Prs))(-2C QUASIAUX)(-1 IM)(NOT 0 Pass);
+ADD:msyn-v-pres-inf (&msyn-v-pres-inf) TARGET V IF (0 (Ind Prs))(*-2C QUASIAUX BARRIER NOT-ADV)(-1 IM)(NOT 0 Pass);
 COPY:msyn-v-pres-inf (Inf &SUGGEST) EXCEPT (Ind Prs)  TARGET (V Ind Prs &msyn-v-pres-inf);
 ADDRELATION:msyn-v-pres-inf ($2) (V) FROM (2 V LINK 0 (&msyn-v-pres-inf)) ;
 
