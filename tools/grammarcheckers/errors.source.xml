@@ -20,6 +20,17 @@
     </default>
   </defaults>
 
+  <error id="msyn-agr-adjsg-adjpl">
+    <header>
+      <title xml:lang="en">Number concord in noun phrases</title>
+      <title xml:lang="nb">Samsvar i numerus i substantivfraser</title>
+    </header>
+    <body>
+      <description xml:lang="en">When an adjective, such as "$1, stands in front of a neuter noun, such as "$2", it should be in the neuter.</description>
+      <description xml:lang="nb">Når et adjektiv, som her "$1", står foran et intetkjønnssubstantiv, som her "$2", skal det stå i nøytrum</description>
+    </body>
+  </error>
+
   <error id="msyn-agr-adjmsc-adjneu">
     <header>
       <title xml:lang="en">Gender concord in noun phrases</title>
