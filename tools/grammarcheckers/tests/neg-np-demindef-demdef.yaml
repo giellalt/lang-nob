@@ -1,0 +1,8 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+  
+Tests:
+  - "De onde spenner buen og legger an."
+  - "Styrt dem ned i den dype graven så de bare får halvparten av sine dager."
+  - "Herren kjenner de redeliges dager."

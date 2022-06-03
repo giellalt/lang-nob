@@ -1,0 +1,6 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+  
+Tests:
+  - "Det er nødvendig å skolere flest mulig samer innenfor pedagogikk."
