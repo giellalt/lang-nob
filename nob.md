@@ -1743,6 +1743,7 @@ v4 nå når nådde nådd
 v4 bie bier bidde bidd
 
 Subtypes
+v12 v1 or v2
 v13 v1 or v3
 v1-s passive v1 verbs
 v2-s passive v2 verbs
@@ -2028,6 +2029,7 @@ Here we declare all grammatical tags
 - LIST Refl = Refl ;
 - LIST Rel = Rel ;
 - LIST Prop = Prop ;
+- LIST Clt = Clt ;
 - LIST Err/Orth = Err/Orth ;
 
 ### Boundary tags

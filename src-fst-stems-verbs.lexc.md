@@ -17,6 +17,7 @@ v4 nå når nådde nådd
 v4 bie bier bidde bidd
 
 Subtypes
+v12 v1 or v2
 v13 v1 or v3
 v1-s passive v1 verbs
 v2-s passive v2 verbs

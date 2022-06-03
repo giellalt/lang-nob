@@ -57,6 +57,7 @@ Here we declare all grammatical tags
 - LIST Refl = Refl ;
 - LIST Rel = Rel ;
 - LIST Prop = Prop ;
+- LIST Clt = Clt ;
 - LIST Err/Orth = Err/Orth ;
 
 ### Boundary tags
