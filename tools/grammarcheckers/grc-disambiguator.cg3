@@ -378,6 +378,7 @@ LIST farger = "turkis" "svart" "rød" "rosa" "oransje" "lilla" "indigo" "hvit" "
 LIST farlige-A = "året" "vite" "vis" "var" "tids" "sige" "se" "mige" "live" "like" "lette" "lage" "helle" "før" "fore" "ete" "eie" "egen" "bar" "annen" "angående" "ale" ;
 LIST farlige-A-N = "venstre" "tunge" "skrå" "skarp" "rett" "ny" "like" "lik" "kvalm" "høy" "helt" "helt" "heller" "gode" "faren" (A Comp) ("visse" N) ("sivil" N) ("absolutt" N) ("konkret" N) ("sett" Neu) ("halv" uboey) ("var" N Indef) ("lit" Sg Def) ("middel" Clt) ("al" Pl Def) ;
 LIST farlige-Pl-N = ("hjelp" Pl Indef) ("lede" Pl Msc Indef) ("led" Pl Msc Indef) ("falle" Pl Msc Indef) ("fall" Pl Msc Indef) ("snus" Pl Msc Indef) ("finn" Pl Indef) ("finne" Pl Indef) ("komme" Pl Indef) ("under" Pl Indef) ("får" Pl) ("ønske" Pl) ("slag" Clt) ("jeg" Pl) ("lo" Pl) ("var" Pl) ("nå" Pl) ("sett" Pl) ("al" Pl Def) ("mot" Pl Indef) ("men" Pl Indef) ("gir" Pl Indef) ;
+LIST farlige-Pl-A = ("gammel" A Pl Def) ("ung" A Pl Def) ("ond" A Pl Def) ("gjerrig" A Pl Def) ("lat" A Pl Def) ("stor" A Pl Def) ;
 LIST farlige-forledd-V = ("kontre" Prt) ("helle" Prs) ("nå" Prs) ("elle" Prs) ("fø" Prs) ("fare" Prt) ("tro" A) ("tiltale" Prt) ;
 LIST farlige-Imp = "vare" "så" "se" "nå" "neie" "mine" "mene" "hanse" "føre" "fore" "ete" "ene" "bedre" ;
 LIST farlige-Inf = "tre" "så" "støtte" "skole" "pose" "nå" "nye" "norske" "neste" "lite" "like" "lekre" "hele" "friske" "fri" "fjerne" "finere" "disse" "dette" "bedre" ("slette" Pass) ;
@@ -1022,7 +1023,7 @@ REMOVE:apred (N) IF
 # 3529
 "<bare>" SELECT (A Pl) IF
 	(*-1C Pl-det BARRIER ikke-AdvA)
-	(*1 Pl-N BARRIER ikke-AdvA)
+	(*1C Pl-N BARRIER ikke-AdvA)
 ;
 
 
@@ -4460,6 +4461,7 @@ CONSTRAINTS
 	(*-2C setn-gr BARRIER ikke-AdvA-N-Pron-CC-det2-Pr)
 	(*-2C setn-gr LINK NOT 1 Pr)
 ;
+# Styrt dem ned i den dype graven så de bare får halvparten av sine dager.
 
 
 # 3044
@@ -10405,7 +10407,7 @@ SELECT (N Pl) IF
 SELECT (N Pl) IF
 	(NOT 0 A-komp OR farlige-Pl-N)
 	(-1C A-Pl)
-	(NOT -1 Sg OR PrsPtc)
+	(NOT -1 Sg OR PrsPtc OR farlige-Pl-A)
 ;
 
 
