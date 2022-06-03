@@ -124,6 +124,7 @@ LIST Recipr = Recipr ;	     #!!≈ - @CODE@
 LIST Refl = Refl ;		     #!!≈ - @CODE@
 LIST Rel = Rel ;		     #!!≈ - @CODE@
 LIST Prop = Prop ;		     #!!≈ - @CODE@
+LIST Clt = Clt ;		     #!!≈ - @CODE@
 LIST Err/Orth = Err/Orth ;   #!!≈ - @CODE@
 
 #!! ### Boundary tags
@@ -539,6 +540,7 @@ LIST &real-aa-og = &real-aa-og ;
 LIST &real-bli-vaere = &real-bli-vaere ;				    
 LIST &real-og-aa = &real-og-aa ;						    
 LIST &real-vaere-bli = &real-vaere-bli ;				    
+LIST &real-cp-null-som = &real-cp-null-som ;
 
 MAPPING-PREFIX = & ; # &msyn-agr-adjmsc-adjneu
 
@@ -579,11 +581,13 @@ ADDRELATION:msyn-agr-adjmsc-adjneu ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&m
 
 
 #!! **Agreement rule:**  Singular adjectives should be plural (msyn-agr-adjsg-adjpl). Context: *mange organisert/organiserte fritidsaktiviteter*.
-ADD:msyn-agr-adjneu-adjmsc (&msyn-agr-adjsg-adjpl) TARGET A IF 
-(-1 ("mange") OR A + Pos + Sg + Def)(0 A + Msc + Sg + Indef)(1 N + Msc + Pl + Indef);
-COPY:msyn-agr-adjneu-adjmsc (Sg Def &SUGGEST) EXCEPT (Msc Sg Indef) TARGET (A &msyn-agr-adjsg-adjpl);
-#COPY:msyn-agr-adjneu-adjmsc (Sg Indef &SUGGEST) EXCEPT (Sg Indef) TARGET (A &msyn-agr-adjsg-adjpl);
-ADDRELATION:msyn-agr-adjneu-adjmsc ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&msyn-agr-adjsg-adjpl)) ;
+ADD:msyn-agr-adjsg-adjpl (&msyn-agr-adjsg-adjpl) TARGET A IF 
+(-1 ("mange") OR A + Pos + Sg + Def)
+(NOT -1 Superl)
+(0 A + Msc + Sg + Indef)
+(1 N + Msc + Pl + Indef);
+COPY:msyn-agr-adjsg-adjpl (Pl Def &SUGGEST) EXCEPT (Msc Sg Indef) TARGET (A &msyn-agr-adjsg-adjpl);
+ADDRELATION:msyn-agr-adjsg-adjpl ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&msyn-agr-adjsg-adjpl)) ;
 
 #!! **Agreement rule:**  Neuter adjectives shoul be masculine (msyn-agr-adjneu-adjmsc). Context: *En fint/fin båt*.
 ADD:msyn-agr-adjneu-adjmsc (&msyn-agr-adjneu-adjmsc) TARGET A IF 
@@ -603,7 +607,7 @@ COPY:msyn-agr-detmsc-detneu (Neu Sg &SUGGEST) EXCEPT (Msc Sg) TARGET (Det Dem &m
 #$ Mannen kjøpte det huset.
 
 #!! **Agreement rule:**  Masculine indefinite determiners should be neuter (msyn-agr-detmsc-detneu). Context: *en/et land*.
-ADD:msyn-agr-detmsc-detneu (&msyn-agr-detmsc-detneu) TARGET ("en" Det Dem Msc Sg) IF (*1 (N Neu Sg Indef) BARRIER NOT-NPMOD);
+ADD:msyn-agr-detmsc-detneu (&msyn-agr-detmsc-detneu) TARGET ("en" Det Dem Msc Sg) IF (*1C (N Neu Sg Indef) BARRIER NOT-NPMOD);
 COPY:msyn-agr-detmsc-detneu ("et" Neu Sg &SUGGEST) EXCEPT ("en" Msc Sg) TARGET (Det Dem &msyn-agr-detmsc-detneu);
 ## Vi bor i en land.
 #$ Vi bor i et land.
@@ -650,7 +654,13 @@ ADDRELATION:msyn-np-demindef-demdef ($2) ("disse") FROM (*1 N BARRIER NOT-A LINK
 #$ Jeg må analysere disse grunnene.
 
 #!! **Definiteness rule:** Double definiteness. Context: *de sosiale aspekter/aspektene*
-ADD:msyn-np-demindef-demdef (&msyn-np-demindef-demdef) TARGET (N Pl Indef) IF (-2 ("den") + Det +  Dem + Pl)(-1 A + Pos + Def)(NEGATE 1 ("som"))(NEGATE 1 COMMA LINK 1 ("som")) ;
+ADD:msyn-np-demindef-demdef (&msyn-np-demindef-demdef) TARGET (N Pl Indef) IF
+(-2 ("den") + Det +  Dem + Pl)
+(-1 A + Pos + Def)
+(NOT -1 Clt)
+(NOT 0 Prs)
+(NEGATE 1 ("som"))
+(NEGATE 1 COMMA LINK 1 ("som")) ;
 COPY:msyn-np-demindef-demdef (Def &SUGGEST) EXCEPT (Indef) TARGET (N Pl &msyn-np-demindef-demdef) ;	
 ADDRELATION:msyn-np-demindef-demdef ($2) ("disse") FROM (*1 N BARRIER NOT-A LINK 0 &msyn-np-demindef-demdef) ;
 	
@@ -879,6 +889,12 @@ COPY:real-v-aa-og ("og" CC &SUGGEST) EXCEPT ("å" Use/SpellNoSugg N Sem/Sign ABB
 
 ADDRELATION:real-v-aa-og ($2) (V) FROM (1 IM OR N LINK 0 (&real-v-aa-og)) ;
 ADDRELATION:real-v-aa-og ($3) (V) FROM (-1 IM OR N LINK 0 (&real-v-aa-og)) ;
+
+ADD:real-cp-null-som (&real-cp-null-som) TARGET ("hvilken") IF
+(-1 V)
+(1 V);
+#COPY:real-cp-null-som
+#$ Jeg vil lære hvilke passer for meg.
 
 
 #!! ## Punctuation rules
