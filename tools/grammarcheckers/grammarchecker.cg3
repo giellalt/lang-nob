@@ -270,6 +270,9 @@ LIST CAP-INITIAL = "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M"
 
 #!! ## Sets
 
+LIST MONOSYLL_V = (".*[aiouyæøå]"r) "se" "be" "gre" "utse" "innse" "påse" "avse" "kle" ;
+
+
 LIST hj-V = "være" "ville" "skulle" "måtte" "kunne" "ha" "få" "burde" "bli" ;  #!!≈ - @CODE@
 LIST hj-V-iv = ("bli" Inf) ("bli" PrfPrc) ("ha" Inf) ("ha" PrfPrc) ("være" Inf) ("være" PrfPrc) ("få" Inf) ("få" PrfPrc) ("skulle" Inf) ("skulle" PrfPrc) ("kunne" Inf) ("kunne" PrfPrc) ("ville" Inf) ("ville" PrfPrc) ("måtte" Inf) ("måtte" PrfPrc) ("burde" Inf) ("burde" PrfPrc) ; #!!≈ - @CODE@
 
@@ -765,7 +768,7 @@ ADDRELATION:msyn-pron-nom-acc ($2) (Pr) FROM (1 Pron LINK 0 (&msyn-pron-nom-acc)
 #!! ## Finite verb errors
 
 #!! **Verb rule:** Infinitive and no finite form in the sentence (msyn-v-inf-pres). Context: *Jeg like/liker peanøtter.*
-ADD:msyn-v-inf-pres (&msyn-v-inf-pres) TARGET (V Inf) OR (V Imp) IF
+ADD:msyn-v-inf-pres (&msyn-v-inf-pres) TARGET (V Inf) OR MONOSYLL_V + Imp IF
 	(-1C (N) OR (Pron Nom))
 	(NOT -1 ("Gud") OR ("herre"))
 	(*-2 BOS BARRIER VFIN OR ("så"))
