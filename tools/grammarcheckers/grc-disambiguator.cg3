@@ -10748,8 +10748,9 @@ SELECT (N) IF
 	(0 samset OR A)
 	(NOT 0 Prs/Prt OR PrfPrc)
 	(NOT 1 N)
-	(NOT *-1 ("være") BARRIER NOT-ADV)
+	(NEGATE *-1 ("være") BARRIER NOT-ADV)
 ;
+	#$ Barnet er ikke sulten.
 
 
 # 2362
@@ -13171,7 +13172,9 @@ REMOVE (A) IF
 	(0 N OR mest-sanns-N-istf-A)
 	(NOT 1 N)
 	(NOT -1 Indef-det)
+	(NEGATE *-1 ("være") BARRIER NOT-ADV)
 ;
+	#$ Barnet er ikke sulten.
 
 
 # 2108
