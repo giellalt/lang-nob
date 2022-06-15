@@ -765,16 +765,18 @@ ADDRELATION:msyn-pron-nom-acc ($2) (Pr) FROM (1 Pron LINK 0 (&msyn-pron-nom-acc)
 #!! ## Finite verb errors
 
 #!! **Verb rule:** Infinitive and no finite form in the sentence (msyn-v-inf-pres). Context: *Jeg like/liker peanøtter.*
-ADD:msyn-v-inf-pres (&msyn-v-inf-pres) TARGET (V Inf) IF
+ADD:msyn-v-inf-pres (&msyn-v-inf-pres) TARGET (V Inf) OR (V Imp) IF
 	(-1C (N) OR (Pron Nom))
 	(NOT -1 ("Gud") OR ("herre"))
 	(*-2 BOS BARRIER VFIN OR ("så"))
 	(NEGATE *-2 OBJPREDVERB OR ("måtte") OR ("la") BARRIER SV-BOUNDARY)
 	(NEGATE -1 ("å") OR ("takk") + N + Neu + Sg + Def)
-	(0 Inf LINK NEGATE 0 Ind)
+	(0 Inf OR Imp LINK NEGATE 0 Ind)
 	(NOT 0 Pass OR ("så") OR ("nå") OR ("øyne") OR ("ære"))
 	(NOT 1 ("Gud") OR ("herre")); #(NOT *0 VFIN);
-COPY:msyn-v-inf-pres (Ind Prs &SUGGEST) EXCEPT (Inf)  TARGET (V Inf &msyn-v-inf-pres);
+
+
+COPY:msyn-v-inf-pres (Ind Prs &SUGGEST) EXCEPT (Inf) OR (Imp)  TARGET (V &msyn-v-inf-pres);
 ADDRELATION:msyn-v-inf-pres ($2) (*) FROM (1 V LINK 0 (&msyn-v-inf-pres)) ;
 
 ## Jeg like å lærer norsk.
