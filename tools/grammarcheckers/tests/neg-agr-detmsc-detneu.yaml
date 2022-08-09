@@ -1,0 +1,6 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+  
+Tests:
+  - "Per Heddal kalte den årets Opus."
