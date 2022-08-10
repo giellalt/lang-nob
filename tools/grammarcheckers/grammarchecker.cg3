@@ -896,9 +896,10 @@ ADDRELATION:real-v-aa-og ($3) (V) FROM (-1 IM OR N LINK 0 (&real-v-aa-og)) ;
 
 ADD:real-cp-null-som (&real-cp-null-som) TARGET ("hvilken") IF
 (-1 V)
-(1 V);
-#COPY:real-cp-null-som
-#$ Jeg vil lære hvilke passer for meg.
+	(1 V);
+COPY:real-cp-null-som ("hva som" CS &SUGGEST) EXCEPT ("hvilken" Det Dem Neu Sg) OR ("hvilken" Det Dem Fem Sg) OR ("hvilken" Det Dem Msc Sg)  TARGET (&real-cp-null-som);
+#$ Jeg vil lære hvilket passer for meg.
+#$ Jeg vil lære hva sin passer for meg.
 
 
 #!! ## Punctuation rules
