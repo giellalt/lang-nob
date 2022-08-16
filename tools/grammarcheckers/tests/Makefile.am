@@ -37,12 +37,7 @@ TESTS=\
 # List tests that are presently (expected) failures here, ie things that should
 # be fixed *later*, but is not critical at the moment:
 XFAIL_TESTS=\
-	msyn-setningar.yaml \
-	neg-aa-og.yaml			    \
-	neg-agr-adjmsc-adjneu.yaml  \
-	neg-agr-adjneu-adjmsc.yaml  \
 	neg-og-aa.yaml			    \
-	neg-pred-adjmsc-adjneu.yaml \
 	neg-pron-nom-acc.yaml	    \
 	neg-v-inf-pres.yaml		    \
 	neg-v-pres-inf.yaml		    \
