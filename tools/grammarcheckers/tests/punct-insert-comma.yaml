@@ -1,0 +1,7 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+  
+Tests:
+  - "{Per}‰{, Per} kom og se hva Herren har gjort!"
+  
