@@ -294,6 +294,11 @@ SET REALWORD = WORD - Num - Ord ; #!!≈ - @CODE@
 SET REALWORD-NOTABBR = WORD - Num - Ord - ABBR ; #!!≈ - @CODE@
 SET WORD-NOTDE = WORD - ("de") ;  #!!≈ - @CODE@
 
+
+#!! ### Noun sets
+
+LIST PROBABLY-NOUN = "fylke" "finne" ;
+
 #!! ### Verb sets
 
 
@@ -773,7 +778,7 @@ ADD:msyn-v-inf-pres (&msyn-v-inf-pres) TARGET (V Inf) OR MONOSYLL_V + Imp IF
 	(*-2 BOS BARRIER VFIN OR ("så"))
 	(NEGATE *-2 OBJPREDVERB OR ("måtte") OR ("la") BARRIER SV-BOUNDARY)
 	(NEGATE -1 ("å") OR ("takk") + N + Neu + Sg + Def)
-	(0 Inf OR Imp LINK NEGATE 0 Ind)
+	(0 Inf OR Imp LINK NEGATE 0 Ind OR PROBABLY-NOUN)
 	(NOT 0 Pass OR ("så") OR ("nå") OR ("øyne") OR ("ære"))
 	(NOT 1 ("Gud") OR ("herre")); #(NOT *0 VFIN);
 
