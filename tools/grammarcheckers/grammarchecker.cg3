@@ -846,7 +846,7 @@ COPY:real-og-aa ("å" IM &SUGGEST) EXCEPT ("og" CC) TARGET (CC &real-og-aa);
 
 
 #!! **Realword rule:** og should be aa between Ind and Inf (real-og-aa). Context: *Vi prøver og gå.*
-ADD:real-og-aa (&real-og-aa) TARGET ("og" CC) IF (-1 Ind)(1 Inf);
+ADD:real-og-aa (&real-og-aa) TARGET ("og" CC) IF (-1 Ind)(NOT -1 Inf)(1 Inf);
 COPY:real-og-aa ("å" IM &SUGGEST) EXCEPT ("og" CC) TARGET (CC &real-og-aa);
 
 ## Vi prøver og gå.  #!!≈ - *@CODE@*

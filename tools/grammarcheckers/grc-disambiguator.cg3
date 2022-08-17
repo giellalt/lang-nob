@@ -17743,6 +17743,7 @@ SELECT (V Prs) IF
 # 1617
 SELECT (V Prs) IF
 	(NOT 0 farlige-V OR N-gen)
+	(NOT 0 Inf LINK 1 CC LINK 1 Inf) # skjemmes og gremmes
 	(NOT 1 kolon)
 	(NOT *1 overskrift BARRIER setn-gr)
 	(NOT -1 komma/CC OR CS)
