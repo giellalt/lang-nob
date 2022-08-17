@@ -193,6 +193,8 @@ Here we declare all grammatical tags
 - SET REALWORD-NOTABBR = WORD - Num - Ord - ABBR ;
 - SET WORD-NOTDE = WORD - ("de") ;
 
+### Noun sets
+
 ### Verb sets
 
 - SET NOT-VERB = WORD - V ;
