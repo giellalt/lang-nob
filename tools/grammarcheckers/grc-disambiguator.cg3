@@ -15889,27 +15889,27 @@ REMOVE (V Inf) IF
 ;
 
 
-# 1792
-REMOVE (V Inf) IF
-	(NOT 0 Pass)
-	(-1 CLB/CC-CC)
-	(NOT -2 PrsPtc)
-	(*-1C setn-gr BARRIER infmerke)
-	(*-1C setn-gr BARRIER m-hj-V)
-	(*-2C setn-gr BARRIER aci)
-;
+# 1792 grc_removal
+#REMOVE (V Inf) IF
+#	(NOT 0 Pass)
+#	(-1 CLB/CC-CC)
+#	(NOT -2 PrsPtc)
+#	(*-1C setn-gr BARRIER infmerke)
+#	(*-1C setn-gr BARRIER m-hj-V)
+#	(*-2C setn-gr BARRIER aci)
+#;
 
 
-# 1793
-REMOVE (V Inf) IF
-	(NOT 0 Pass)
-	(NOT -1 komma OR @Adv)
-	(*-1C setn-gr BARRIER infmerke)
-	(*-1C setn-gr BARRIER m-hj-V)
-	(*-2C setn-gr BARRIER aci)
-	(*-1 CLB/CC-CC BARRIER setn-gr)
-	(*-1 CLB/CC-CC LINK *1C ikke-Adv)
-;
+# 1793 grc_removal
+#REMOVE (V Inf) IF
+#	(NOT 0 Pass)
+#	(NOT -1 komma OR @Adv)
+#	(*-1C setn-gr BARRIER infmerke)
+#	(*-1C setn-gr BARRIER m-hj-V)
+#	(*-2C setn-gr BARRIER aci)
+#	(*-1 CLB/CC-CC BARRIER setn-gr)
+#	(*-1 CLB/CC-CC LINK *1C ikke-Adv)
+#;
 
 
 # 1794 grc_removal
