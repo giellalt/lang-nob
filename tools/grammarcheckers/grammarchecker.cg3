@@ -748,22 +748,36 @@ ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (6 A LINK 0 (&msyn-pred-adjmsc
 #!! Case rules so far: Nominative pronouns should be accusative 
 
 #!!  **Agreement rule:** The context is P-complement.  (msyn-pron-nom-acc). Context: *Vi snakker om du.*
-ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg2 Nom) IF (-1 ("om") + Pr)(NOT 1 Prs OR Prt);
+ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg2 Nom) IF
+	(-1 ("av") + Pr);
+ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg2 Nom) IF
+	(-1 Pr) #(-1 ("om") + Pr)
+	(NEGATE 1 Prs OR Prt);
 COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg2 &msyn-pron-nom-acc);
 ADDRELATION:msyn-pron-nom-acc ($2) (Pr) FROM (1 Pron LINK 0 (&msyn-pron-nom-acc)) ;
 ## Vi snakker om du.
 #$ Vi snakker om deg.
 
-ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg1 Nom) IF (-1 ("om") + Pr)(NOT 1 Prs OR Prt);
+ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg1 Nom) IF
+	(-1 ("om") + Pr)
+	(NOT 1 Prs OR Prt);
 COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg1 &msyn-pron-nom-acc);
 ADDRELATION:msyn-pron-nom-acc ($2) (Pr) FROM (1 Pron LINK 0 (&msyn-pron-nom-acc)) ;
 
-ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg2 Nom) IF (-1 Pr)(NOT -1 ("som") OR ("om") OR ("for") OR ("før"));
+ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg2 Nom) IF
+	(-1 Pr)
+	(NOT -1 ("som") OR ("om") OR ("for") OR ("før"))
+	(NOT 1 Ind);
 COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg2 &msyn-pron-nom-acc);
 ADDRELATION:msyn-pron-nom-acc ($2) (Pr) FROM (1 Pron LINK 0 (&msyn-pron-nom-acc)) ;
 
 
-ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg1 Nom) IF (-1 Pr)(NOT -1 ("som") OR ("om") OR ("for") OR ("før"));
+ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg1 Nom) IF
+	(-1 ("av") + Pr);
+ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg1 Nom) IF
+	(-1 Pr)
+	(NOT -1 ("som") OR ("om") OR ("for") OR ("før"))
+	(NOT 1 Ind);
 COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg1 &msyn-pron-nom-acc);
 ADDRELATION:msyn-pron-nom-acc ($2) (Pr) FROM (1 Pron LINK 0 (&msyn-pron-nom-acc)) ;
 ## Han vet av jeg kommer.
@@ -844,11 +858,13 @@ COPY:msyn-advl-a-adv (Neu Sg Indef &SUGGEST) EXCEPT (Fem Sg Indef) TARGET (A Pos
 
 #!! **Realword rule:** og should be å real-og-aa. Context: *Det er ikke til og holde ut.*
 ADD:real-og-aa (&real-og-aa) TARGET ("og" CC) IF (-3 ("være"))(-2 ("ikke"))(-1 ("til"))(1 Inf);
+ADD:real-og-aa (&real-og-aa) TARGET ("og" CC) IF (-2 ("komme"))(-1 ("til"))(1 Inf);
 COPY:real-og-aa ("å" IM &SUGGEST) EXCEPT ("og" CC) TARGET (CC &real-og-aa);
 
 ## Det er ikke til og holde ut.  #!!≈ - *@CODE@*
 #$ Det er ikke til å holde ut.   #!!≈ - *@CODE@*
-
+## Hvem vet hva Kari kommer til og finne på?
+#$ Hvem vet hva Kari kommer til å finne på?
 
 #!! **Realword rule:** og should be aa between Ind and Inf (real-og-aa). Context: *Vi prøver og gå.*
 ADD:real-og-aa (&real-og-aa) TARGET ("og" CC) IF (-1 Ind)(NOT -1 Inf)(1 Inf);
