@@ -3,5 +3,5 @@ Config:
   Variant: nobgram-dev
   
 Tests:
-  - "Jeg liker å {bli}£{være} med familien min."
+  - "Jeg liker å {bli}£{være} med familien min." # Dette paret ser suspekt ut (begge er ok)
   
