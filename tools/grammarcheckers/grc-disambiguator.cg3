@@ -18288,7 +18288,7 @@ REMOVE Pron + Pers + Pl3 IF (1 N + Pl OR A + Pl OR Qnt + Pl);
 
 REMOVE Det IF (0 Pron)(NEGATE *1 N OR Num BARRIER NOT-NPMOD);
 REMOVE Det IF (0 Pron)(0 Det + Neu)(*1C N + Msc OR N + Fem BARRIER NOT-NPMOD);
-REMOVE Det IF (0 Pron)(1 Pr OR V OR CLB OR EOS);
+REMOVE Det IF (0 Pron)(1 Pr OR V OR CLB OR EOS LINK NOT 0 Num OR A OR N);
 
 # N and not V
 REMOVE (Pl) IF (-1 Pr)(0 Sg);
