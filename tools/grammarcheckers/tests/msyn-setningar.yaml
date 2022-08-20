@@ -8,5 +8,10 @@ Tests:
   - "Det mest tydelige er naturligvis de sosiale {aspekter}£{aspektene}."
   - "I tillegg er det mange {organisert}£{organiserte} fritidsaktiviteter i byen."
   - "De {flere}£{fleste} ulike kulturene gjør det mer fordomsfritt."
+  - "De fleste  {kulturer}£{kulturene} gjør det mer fordomsfritt."
+  - "De fleste ulike {kulturer}£{kulturene} gjør det mer fordomsfritt."
+  - "De fleste ulike kulturene gjør det mer fordomsfritt."
+  - "Flere ulike {kulturene}£{kulturer} gjør det mer fordomsfritt."
+  - "Flere  {kulturene}£{kulturer} gjør det mer fordomsfritt."
   - "De fleste ulike kulturene gjør det mer {fordomsfri}£{fordomsfritt}."
  
