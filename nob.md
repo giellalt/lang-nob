@@ -511,9 +511,9 @@ nØYE
 # Tags for numerals (number words)
 
 ## Basic tags
-numtag
+numtag for all numerals
 
-numtagsg
+numtagsg for *en*
 
 ## Tags for special use
 
@@ -2153,6 +2153,7 @@ Here we declare all grammatical tags
 ## Sets
 
 - LIST hj-V = "være" "ville" "skulle" "måtte" "kunne" "ha" "få" "burde" "bli" ;
+
 - LIST hj-V-iv = ("bli" Inf) ("bli" PrfPrc) ("ha" Inf) ("ha" PrfPrc) ("være" Inf) ("være" PrfPrc) ("få" Inf) ("få" PrfPrc) ("skulle" Inf) ("skulle" PrfPrc) ("kunne" Inf) ("kunne" PrfPrc) ("ville" Inf) ("ville" PrfPrc) ("måtte" Inf) ("måtte" PrfPrc) ("burde" Inf) ("burde" PrfPrc) ;
 
 ## Sets of tags

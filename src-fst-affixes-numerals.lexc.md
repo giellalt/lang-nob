@@ -1,9 +1,9 @@
 # Tags for numerals (number words)
 
 ## Basic tags
-numtag
+numtag for all numerals
 
-numtagsg
+numtagsg for *en*
 
 ## Tags for special use
 
