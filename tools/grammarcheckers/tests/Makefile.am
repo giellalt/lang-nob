@@ -34,7 +34,7 @@ TESTS=\
 # List tests that are presently (expected) failures here, ie things that should
 # be fixed *later*, but is not critical at the moment:
 XFAIL_TESTS=\
-	neg-v-pres-inf.yaml		    \
+	msyn-setningar.yaml \
 	real-bli-vaere.yaml \
 	real-vaere-bli.yaml
 
