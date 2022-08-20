@@ -274,6 +274,9 @@ LIST MONOSYLL_V = (".*[aiouyæøå]"r) "se" "be" "gre" "utse" "innse" "påse" "a
 
 
 LIST hj-V = "være" "ville" "skulle" "måtte" "kunne" "ha" "få" "burde" "bli" ;  #!!≈ - @CODE@
+
+LIST modalverb = "burde" "få" "kunne" "måtte" "skulle" "ville" ;
+
 LIST hj-V-iv = ("bli" Inf) ("bli" PrfPrc) ("ha" Inf) ("ha" PrfPrc) ("være" Inf) ("være" PrfPrc) ("få" Inf) ("få" PrfPrc) ("skulle" Inf) ("skulle" PrfPrc) ("kunne" Inf) ("kunne" PrfPrc) ("ville" Inf) ("ville" PrfPrc) ("måtte" Inf) ("måtte" PrfPrc) ("burde" Inf) ("burde" PrfPrc) ; #!!≈ - @CODE@
 
 
@@ -676,8 +679,17 @@ ADDRELATION:msyn-np-demindef-demdef ($2) ("disse") FROM (*1 N BARRIER NOT-A LINK
 #!! ## Quantifier phrases
 
 #!! **Agreement rule:** Indef after quantifier. (msyn-qucompl-def-indef). Context: *Vi har mange bøkene/bøker.*
-ADD:msyn-qucompl-def-indef (&msyn-qucompl-def-indef) TARGET N + Pl + Def IF 
-(*-1 Qnt OR ("mange") + Pos OR ("mange") + Comp BARRIER NOT-A LINK NOT *-1 ("den") + Det + Dem + Pl OR ("denne") OR ("disse") OR ("begge")); # LINK NOT 0 Sem/ID LINK NOT -1 (§));
+ADD:msyn-qucompl-def-indef (&msyn-qucompl-def-indef) TARGET N + Pl + Def IF
+	(*-1 Num OR ("mange") + Pos OR ("mange") + Superl
+	BARRIER NOT-A
+	LINK NOT 0 Sem/ID
+	LINK NEGATE *-1 ("den") + Det + Dem + Pl OR ("denne") OR ("disse") OR ("begge") OR ("all") BARRIER NOT-A);
+#	LINK NEGATE -1 (§) OR ("all") OR Def);
+ADD:msyn-qucompl-def-indef (&msyn-qucompl-def-indef) TARGET N + Pl + Def IF
+	(*-1 ("mange") + Comp
+	     BARRIER NOT-A
+     	     	  LINK NOT 0 Sem/ID
+     		       LINK NOT -1 (§));
 COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Use/NG Def) TARGET (N Msc Pl &msyn-qucompl-def-indef); 
 COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Use/NG Def) TARGET (N Fem Pl &msyn-qucompl-def-indef); 
 COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Use/NG Def) TARGET (N Neu Pl &msyn-qucompl-def-indef); 
@@ -686,7 +698,8 @@ COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Def) TARGET (N Fem Pl &msyn
 COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Def) TARGET (N Neu Pl &msyn-qucompl-def-indef); 
 ADDRELATION:msyn-qucompl-def-indef ($2) (*) FROM (T:previousWordCrossSent LINK 0 (&msyn-qucompl-def-indef)) ;
 ## Vi har mange bøkene.
-
+## Vi har fem bøkene.
+## Vi har 5 bøkene.
 
 #!! **Comparative rule:** Quantor in superlative: *de flere/fleste ulike kulturene*
 ADD:msyn-qu-comp-superl (&msyn-qu-comp-superl) TARGET ("mange" A Comp Pl Indef) IF (-1 ("den") + Det + Dem + Pl) (*1 N + Pl + Def BARRIER NOT-A) ;
@@ -787,13 +800,12 @@ ADDRELATION:msyn-pron-nom-acc ($2) (Pr) FROM (1 Pron LINK 0 (&msyn-pron-nom-acc)
 
 #!! **Verb rule:** Infinitive and no finite form in the sentence (msyn-v-inf-pres). Context: *Jeg like/liker peanøtter.*
 ADD:msyn-v-inf-pres (&msyn-v-inf-pres) TARGET (V Inf) OR MONOSYLL_V + Imp IF
-	(-1C (N) OR (Pron Nom))
-	(NOT -1 ("Gud") OR ("herre"))
 	(*-2 BOS BARRIER VFIN OR ("så"))
 	(NEGATE *-2 OBJPREDVERB OR ("måtte") OR ("la") BARRIER SV-BOUNDARY)
+	(-1C (N) OR (Pron Nom))
+	(NOT -1 ("Gud") OR ("herre"))
 	(NEGATE -1 ("å") OR ("takk") + N + Neu + Sg + Def)
-	(0 Inf OR Imp LINK NEGATE 0 Ind OR PROBABLY-NOUN)
-	(NOT 0 Pass OR ("så") OR ("nå") OR ("øyne") OR ("ære"))
+	(0 Inf OR Imp LINK NEGATE 0 Prs OR PROBABLY-NOUN OR Pass OR ("så") OR ("nå") OR ("vår") OR ("øyne") OR ("ære") OR ("sanne"))
 	(NOT 1 ("Gud") OR ("herre")); #(NOT *0 VFIN);
 
 
@@ -820,11 +832,13 @@ ADDRELATION:msyn-v-inf-pres ($2) (*) FROM (1 V LINK 0 (&msyn-v-inf-pres)) ;
 #!!  **Verb rule:** Verb error: Present tense should be infinitive (msyn-v-pres-inf). Context: *Jeg vil skriver et brev.*
 ADD:msyn-v-pres-inf (&msyn-v-pres-inf) TARGET V IF
 	(0 (Ind Prs))
-#	(NOT 0 N + Pl + Indef LINK -1 Pron + Pers + Nom OR N)
+	#	(NOT 0 N + Pl + Indef LINK -1 Pron + Pers + Nom OR N)
+	(NEGATE -3 N)
 	(-2C (N) OR (Pron Nom))
-	(-1 hj-V)(NOT 0 Pass);
+	(-1 modalverb)(NOT 0 Pass);
 COPY:msyn-v-pres-inf (Inf &SUGGEST) EXCEPT (Ind Prs)  TARGET (V Ind Prs &msyn-v-pres-inf);
 ADDRELATION:msyn-v-pres-inf ($2) (V) FROM (1 V LINK 0 (&msyn-v-pres-inf)) ;
+#$ De beste gavene jeg får er laget av barnehender.
 
 ADD:msyn-IM (&msyn-v-pres-inf) TARGET V IF (0 (Ind Prs))(-1 IM)(NOT 0 Pass);
 
@@ -884,13 +898,13 @@ ADDRELATION:real-aa-og ($3) (N) FROM (-1 N LINK 0 (&real-aa-og)) ;
 #$ Det var Trond og Kari.  #!!≈ - *@CODE@*
 
 #!! **Realword rule:** å should be og between similar verbforms except 2nd V = obj (real-aa-og). Context: *Vi må lese å skrive lyrikk.*
-ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF (NOT *-4 ("som") BARRIER NOT-NPMOD)(-2 hj-V)(-1 V + $$VERBFORM LINK NOT 0 QUASIAUX) (1 V + $$VERBFORM);
+ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF (NOT *-4 ("som") BARRIER NOT-NPMOD)(-2 modalverb)(-1 V + $$VERBFORM LINK NOT 0 QUASIAUX) (1 V + $$VERBFORM);
 #$ Det er ikke så lett som man skulle tro å skrive lyrikk.
 ## Vi må lese å skrive lyrikk
 
 #!! **Realword rule:** å should be og between similar verbforms except 2nd V = obj (real-aa-og). Not: *Det er ikke så lett som man skulle tro å skrive lyrikk.*
 ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF
-(-2 hj-V)
+(-2 modalverb)
 (-1 V + $$VERBFORM LINK NOT 0 QUASIAUX)
 (NOT *-1 ("som"))
 (1 V + $$VERBFORM);
@@ -905,10 +919,10 @@ COPY:real-v-aa-og ("og" CC &SUGGEST) EXCEPT ("å" Use/SpellNoSugg N Sem/Sign ABB
 ## Vi vil skrive å utgi lyrikk.
 
 #!! **Realword rule:** å should be og between similar verbforms except 2nd V = obj (real-aa-og). Context: *Vi vil hoppe å/og sprette.*
-ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF ( -2 hj-V)(-1 V + $$INDFORM)(NOT -1 QUASIAUX) (1 V + $$INDFORM);
+ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF ( -2 modalverb)(-1 V + $$INDFORM)(NOT -1 QUASIAUX) (1 V + $$INDFORM);
 
 #!! **Realword rule:** å should be og between similar verbforms except 2nd V = obj (real-aa-og). Context: *Vi hopper å/og spretter.*
-ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF (NOT -2 hj-V)(-1 V + $$INDFORM)(NOT -1 QUASIAUX OR ("for")) (1 V + $$INDFORM);
+ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF (NOT -2 modalverb)(-1 V + $$INDFORM)(NOT -1 QUASIAUX OR ("for")) (1 V + $$INDFORM);
 COPY:real-v-aa-og ("og" CC &SUGGEST) EXCEPT ("å" IM) TARGET (IM &real-v-aa-og);
 COPY:real-v-aa-og ("og" CC &SUGGEST) EXCEPT ("å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR) TARGET ( &real-aa-og);
 
