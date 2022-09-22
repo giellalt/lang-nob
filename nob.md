@@ -2153,6 +2153,8 @@ Here we declare all grammatical tags
 ## Sets
 
 - LIST hj-V = "være" "ville" "skulle" "måtte" "kunne" "ha" "få" "burde" "bli" ;
+- LIST hj-hvd-V = "være" "ha" "få" "bli" ;
+- LIST hj-tv-V = "ha" "få" ;
 
 - LIST hj-V-iv = ("bli" Inf) ("bli" PrfPrc) ("ha" Inf) ("ha" PrfPrc) ("være" Inf) ("være" PrfPrc) ("få" Inf) ("få" PrfPrc) ("skulle" Inf) ("skulle" PrfPrc) ("kunne" Inf) ("kunne" PrfPrc) ("ville" Inf) ("ville" PrfPrc) ("måtte" Inf) ("måtte" PrfPrc) ("burde" Inf) ("burde" PrfPrc) ;
 
@@ -2412,8 +2414,6 @@ Case rules so far: Nominative pronouns should be accusative
 ## Infinitive
 
 **Verb rule:** Verb error: Present tense should be infinitive (msyn-v-pres-inf). Context: *Jeg vil skriver et brev.*
-
-**Verb rule:** Verb error: Present tense should be infinitive (msyn-v-pres-inf). Context: *Jeg liker å skriver et brev.*
 
 ## Adverb errors
 
