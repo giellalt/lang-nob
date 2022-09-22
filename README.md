@@ -4,6 +4,8 @@ The Norwegian Bokmål morphology and tools
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-nob)](https://github.com/giellalt/lang-nob/issues)
 [![Build Status](https://divvun-tc.thetc.se/api/github/v1/repository/giellalt/lang-nob/main/badge.svg)](https://github.com/giellalt/lang-nob/actions)
 [![License](https://img.shields.io/github/license/giellalt/lang-nob)](https://github.com/giellalt/lang-nob/blob/main/LICENSE)
+[![Desktop speller download](https://img.shields.io/badge/download%40latest-desktop--bhfst-brightgreen)](https://pahkat.uit.no/main/download/speller-nob?platform=desktop&channel=nightly)
+[![Mobile speller download](https://img.shields.io/badge/download%40latest-mobile--bhfst-brightgreen)](https://pahkat.uit.no/main/download/speller-nob?platform=mbile&channel=nightly)
 
 This repository contains finite state source files for the Norwegian Bokmål language,
 for building morphological analysers, proofing tools
@@ -17,13 +19,22 @@ Install proofing tools and [keyboards](https://github.com/giellalt/keyboard-nob)
 for the Norwegian Bokmål language by using the [Divvun Installer](http://divvun.no)
 (some languages are only available via the nightly channel).
 
+Download and test speller files
+-------------------------------
+
+The speller files downloadable at the top of this page (the `*.bhfst` files) can
+be used with [divvunspell](https://github.com/divvun/divvunspell), to test their
+performance. These files are the exact same ones as installed on users' computers
+and mobile phones. Desktop and mobile speller files differ from each other in the
+error model and should be tested separately — thus also two different downloads.
+
 Documentation
 -------------
 
 Documentation can be found at:
 
--   <https://giellalt.uit.no/lang/nob/j-nob.html>
--   <https://giellalt.uit.no/index.html>
+- [Language specific documentation](https://giellalt.github.io/lang-nob/)
+- [General documentation](https://giellalt.github.io/)
 
 Core dependencies
 -----------------

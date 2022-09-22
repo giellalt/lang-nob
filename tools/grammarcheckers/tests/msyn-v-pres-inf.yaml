@@ -5,7 +5,9 @@ Config:
 Tests:
   - "Jeg akter å {lærer}£{lære} norsk."
   - "Jeg liker å {lærer}£{lære} norsk."
-  - "Jeg {like}£{liker} å lære norsk."
+  - "Jeg prøver å {lærer}£{lære} norsk."
   - "Jeg vil {lærer}£{lære} norsk."
   - "Jeg vil {prøver}£{prøve} norsk."
-  
+  - "Jeg liker å {lærer}£{lære} norsk."
+  - "Jeg liker virkelig å {lærer}£{lære} norsk."
+  - "Ungdommene har begynt å {blir}£{bli} mer vant til å snakke åpent."  

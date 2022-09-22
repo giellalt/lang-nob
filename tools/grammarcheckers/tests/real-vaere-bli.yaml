@@ -3,5 +3,5 @@ Config:
   Variant: nobgram-dev
   
 Tests:
-  - "Jeg skal {være}£{bli} snekker."
+  - "Jeg skal {være}£{bli} snekker." # Dette paret ser suspekt ut (begge er ok)
   

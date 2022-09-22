@@ -6,8 +6,7 @@ Tests:
   - "Jeg {lære}£{lærer} norsk."
   - "Jeg {spise}£{spiser} peanøtter."
   - "Jeg {prøve}£{prøver} å lære norsk."
-  - "Jeg prøver å {lærer}£{lære} norsk."
   - "Jeg {like}£{liker} peanøtter."
   - "Jeg {like}£{liker} å lære norsk."
-  - "Jeg liker å {lærer}£{lære} norsk."
-  - "Jeg liker virkelig å {lærer}£{lære} norsk."
+  - "Etter å ha fisket og spist pølser {legge}£{legger} Karine seg til å sove." 
+

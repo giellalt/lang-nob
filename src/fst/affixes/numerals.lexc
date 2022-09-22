@@ -1,12 +1,13 @@
 !! # Tags for numerals (number words)
 
 !! ## Basic tags
-LEXICON numtag
-!! @LEXNAME@
-+Det+Qnt+Pl: # ;
+LEXICON numtag 
+!! @LEXNAME@ for all numerals
++Num+Pl: # ;
+!+Det+Qnt+Pl: # ; ! commented out 220822
 
 LEXICON numtagsg
-!! @LEXNAME@
+!! @LEXNAME@ for *en*
 +Det+Qnt+Sg: # ;
 
 

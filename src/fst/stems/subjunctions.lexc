@@ -21,6 +21,7 @@ som p ;
 derfor adv ;
 hvorfor adv ;
 hvorvidt subj ;
+hva% som subj ;
 
 LEXICON subj
 !! LEXICON @LEXNAME@ gives tag +CS

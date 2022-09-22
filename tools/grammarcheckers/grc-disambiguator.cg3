@@ -15889,27 +15889,27 @@ REMOVE (V Inf) IF
 ;
 
 
-# 1792
-REMOVE (V Inf) IF
-	(NOT 0 Pass)
-	(-1 CLB/CC-CC)
-	(NOT -2 PrsPtc)
-	(*-1C setn-gr BARRIER infmerke)
-	(*-1C setn-gr BARRIER m-hj-V)
-	(*-2C setn-gr BARRIER aci)
-;
+# 1792 grc_removal
+#REMOVE (V Inf) IF
+#	(NOT 0 Pass)
+#	(-1 CLB/CC-CC)
+#	(NOT -2 PrsPtc)
+#	(*-1C setn-gr BARRIER infmerke)
+#	(*-1C setn-gr BARRIER m-hj-V)
+#	(*-2C setn-gr BARRIER aci)
+#;
 
 
-# 1793
-REMOVE (V Inf) IF
-	(NOT 0 Pass)
-	(NOT -1 komma OR @Adv)
-	(*-1C setn-gr BARRIER infmerke)
-	(*-1C setn-gr BARRIER m-hj-V)
-	(*-2C setn-gr BARRIER aci)
-	(*-1 CLB/CC-CC BARRIER setn-gr)
-	(*-1 CLB/CC-CC LINK *1C ikke-Adv)
-;
+# 1793 grc_removal
+#REMOVE (V Inf) IF
+#	(NOT 0 Pass)
+#	(NOT -1 komma OR @Adv)
+#	(*-1C setn-gr BARRIER infmerke)
+#	(*-1C setn-gr BARRIER m-hj-V)
+#	(*-2C setn-gr BARRIER aci)
+#	(*-1 CLB/CC-CC BARRIER setn-gr)
+#	(*-1 CLB/CC-CC LINK *1C ikke-Adv)
+#;
 
 
 # 1794 grc_removal
@@ -17743,6 +17743,7 @@ SELECT (V Prs) IF
 # 1617
 SELECT (V Prs) IF
 	(NOT 0 farlige-V OR N-gen)
+	(NOT 0 Inf LINK 1 CC LINK 1 Inf) # skjemmes og gremmes
 	(NOT 1 kolon)
 	(NOT *1 overskrift BARRIER setn-gr)
 	(NOT -1 komma/CC OR CS)
@@ -18287,7 +18288,7 @@ REMOVE Pron + Pers + Pl3 IF (1 N + Pl OR A + Pl OR Qnt + Pl);
 
 REMOVE Det IF (0 Pron)(NEGATE *1 N OR Num BARRIER NOT-NPMOD);
 REMOVE Det IF (0 Pron)(0 Det + Neu)(*1C N + Msc OR N + Fem BARRIER NOT-NPMOD);
-REMOVE Det IF (0 Pron)(1 Pr OR V OR CLB OR EOS);
+REMOVE Det IF (0 Pron)(1 Pr OR V OR CLB OR EOS LINK NOT 0 Num OR A OR N);
 
 # N and not V
 REMOVE (Pl) IF (-1 Pr)(0 Sg);
