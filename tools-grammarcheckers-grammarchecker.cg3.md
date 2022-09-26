@@ -271,16 +271,15 @@ All active verbs with a TV tag, including V:
 
 - LIST N-SG-NOM = (N Sg Nom);
 - SET HEAD-N = N - RCmpnd ;
-- SET HEAD-N-NOM = (N Nom) - RCmpnd ;
 - SET SUBJECTHEAD = N OR A OR Pron - Refl ; These, can be subject heads
 - SET NP = N OR A ; anything that can take except numerals
 - SET NP-HEAD = Pron OR HEAD-N ;
 - SET NP-HEAD-SG = SGPRON OR (N Sg) OR (A Sg) - RCmpnd - Dem ;
 - SET NP-HEAD-PL = PLPRON OR (N Pl) OR (A Pl) - RCmpnd - Dem ;
-- SET NP-HEAD-SG-NOM = SGPRON + Nom OR (N Sg Nom) OR (A Sg Nom) - RCmpnd ;
-- SET NP-HEAD-PL-NOM = PLPRON + Nom OR (N Pl Nom) OR (A Pl Nom) - RCmpnd ;
+- SET NP-HEAD-SG-NOM = SGPRON + Nom OR (N Sg) OR (A Sg) - RCmpnd ;
+- SET NP-HEAD-PL-NOM = PLPRON + Nom OR (N Pl) OR (A Pl) - RCmpnd ;
 - SET NP-HEAD-NOM = NP-HEAD-SG-NOM OR NP-HEAD-PL-NOM ;
-- SET NP-HEAD-ACC = (Pron Acc) OR (N Acc) OR (A Acc) - RCmpnd ;
+- SET NP-HEAD-ACC = (Pron Acc) OR N OR A - RCmpnd ;
 
 * The PRE-NP-HEAD family of sets
 
@@ -288,7 +287,7 @@ These sets model noun phrases (NPs). The idea is to first define whatever can
 occur in front of the head of the NP, and thereafter negate that with the
 expression **WORD - premodifiers**.
 
-- SET PRE-NP-HEAD = (Prop Attr) OR (Prop @>N) OR A OR ABBR OR Num OR RCmpnd OR CC OR (Pron Dem) OR (Pron Ref) OR (PrfPrc @>N) OR PrsPrc OR (A Ord) OR (Num @>N) OR (A @>N) OR @>N OR @>A OR @>Pron OR @Num< OR (CC @CNP) OR (@>CC) OR (@Pron<) ;
+- SET PRE-NP-HEAD = (Prop Attr) OR A OR ABBR OR Num OR RCmpnd OR CC OR (Pron Dem) OR (Pron Ref) OR PrsPrc ;
 
 The strict version of items that can only be premodifiers, not parts of the predicate
 - SET PRE-NP-V = PrfPrc OR PrsPrc OR (V A) OR (Ind Prs) ;
@@ -300,8 +299,7 @@ to be used together with PRE-NP-HEAD before @>N is disambiguated
 - LIST PUNCT-LEFT = (PUNCT LEFT) ;
 - LIST PUNCT-RIGHT = (PUNCT RIGHT) ;
 - SET PRE-APP = COMMA OR PUNCT-LEFT OR PRE-NP-HEAD ;
-This set ist not only for what can
-stand in front of appositions but also
+This set ist not only for what can stand in front of appositions but also
 postmodifiers.
 
 The set **NOT-NPMOD** is used to find barriers between NPs.
@@ -309,7 +307,7 @@ Typical usage: ... (*1 N BARRIER NOT-NPMOD) ...
 meaning: Scan to the first noun, ignoring anything that can be
 part of the noun phrase of that noun (i.e., "scan to the next NP head")
 
-- SET NOT-NPMOD = WORD - PRE-NP-HEAD OR ABBR ;                  
+- SET NOT-NPMOD = WORD - PRE-NP-HEAD ;                  
 
 - SET NOT-NPMOD-ACC = NOT-NPMOD - Acc OR ABBR ;
 - SET NOT-NPMOD-ACC-ADV = NOT-NPMOD - Acc - Adv OR ABBR ;
@@ -444,6 +442,10 @@ Case rules so far: Nominative pronouns should be accusative
 **Verb rule:** Verb error: Present tense should be infinitive (msyn-v-pres-inf). Context: *Jeg vil skriver et brev.*
 
 ## Adverb errors
+
+## Word order errors
+
+### V3 -> V2
 
 ## og/å errors
 
