@@ -189,6 +189,29 @@
     </body>
   </error>
 
+
+  <error id="syn-pp-v3-v2">
+    <header>
+      <title xml:lang="en">Word order error</title>
+      <title xml:lang="nb">Ordstillingsfeil</title>
+    </header>
+    <body>
+      <description xml:lang="en">The word "$1" is a finite verb, and should come after the prepositional phrase in the clause.</description>
+      <description xml:lang="nb">Ordet "$1" er et finitt verb, og skal stå på andre plass etter preposisjonsfrasen i setninga.</description>
+    </body>
+  </error>
+  
+  <error id="syn-adv-v3-v2">
+    <header>
+      <title xml:lang="en">Word order error</title>
+      <title xml:lang="nb">Ordstillingsfeil</title>
+    </header>
+    <body>
+      <description xml:lang="en">The word "$1" is a finite verb, and should come after the initial adverb in the clause.</description>
+      <description xml:lang="nb">Ordet "$1" er et finitt verb, og skal stå på andre plass etter adverbet i setninga.</description>
+    </body>
+  </error>
+  
   <error id="typo">
     <header>
       <title xml:lang="en">Spelling error</title>

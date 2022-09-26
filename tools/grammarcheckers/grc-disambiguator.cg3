@@ -5141,13 +5141,13 @@ SELECT (A Sg Def) IF
 ;
 
 
-# 2913
-SELECT (A Sg Def) IF
-	(NOT 0 Prs/Prt OR Inf)
-	(1 Def-Sg-Msc-N)
-	(NOT 1 ikke-N)
-	(NOT -1 det)
-;
+# 2913 remove grc
+#SELECT (A Sg Def) IF
+#	(NOT 0 Prs/Prt OR Inf)
+#	(1 Def-Sg-Msc-N)
+#	(NOT 1 ikke-N)
+#	(NOT -1 det)
+#;
 
 
 # 2914
@@ -7547,24 +7547,26 @@ SELECT (A) IF
 ;
 
 
-# grc_removal
+# grc removal
 #SELECT:DollarDef $$DEF IF
 #	(0 A)
 #	(1C N + $$DEF)
 #	(NOT 0 Prt)
 #;
 
-SELECT:DollarNum $$NUM IF
-(NEGATE 0 V LINK -1 N OR Pron)
-	(0 A)
-	(1C N + $$NUM)
-;
+# grc removal
+#SELECT:DollarNum $$NUM IF
+#(NEGATE 0 V LINK -1 N OR Pron)
+#	(0 A)
+#	(1C N + $$NUM)
+#;
 
-SELECT:DollarGen $$GEN IF
-	(0 A)
-	(1C N + $$GEN)
-	(NOT 0 Prt)
-;
+# grc removal
+#SELECT:DollarGen $$GEN IF
+#	(0 A)
+#	(1C N + $$GEN)
+#	(NOT 0 Prt)
+#;
 
 
 SELECT:DollarDefA $$DEF IF

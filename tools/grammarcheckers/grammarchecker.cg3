@@ -410,16 +410,15 @@ SET TRANS-V = V-TRANS - Pass ;
 
 LIST N-SG-NOM = (N Sg Nom);  #!!≈ - @CODE@
 SET HEAD-N = N - RCmpnd ;  #!!≈ - @CODE@
-SET HEAD-N-NOM = (N Nom) - RCmpnd ;  #!!≈ - @CODE@
 SET SUBJECTHEAD = N OR A OR Pron - Refl ;   #!!≈ - @CODE@ These, can be subject heads
 SET NP = N OR A ;                        #!!≈ - @CODE@ anything that can take except numerals
 SET NP-HEAD        = Pron OR HEAD-N ;  #!!≈ - @CODE@
 SET NP-HEAD-SG     = SGPRON OR (N Sg) OR (A Sg) - RCmpnd  - Dem ;  #!!≈ - @CODE@
 SET NP-HEAD-PL     = PLPRON OR (N Pl) OR (A Pl) - RCmpnd  - Dem ;  #!!≈ - @CODE@
-SET NP-HEAD-SG-NOM = SGPRON + Nom OR (N Sg Nom) OR (A Sg Nom) - RCmpnd ;  #!!≈ - @CODE@
-SET NP-HEAD-PL-NOM = PLPRON + Nom OR (N Pl Nom) OR (A Pl Nom) - RCmpnd ;  #!!≈ - @CODE@
+SET NP-HEAD-SG-NOM = SGPRON + Nom OR (N Sg) OR (A Sg) - RCmpnd ;  #!!≈ - @CODE@
+SET NP-HEAD-PL-NOM = PLPRON + Nom OR (N Pl) OR (A Pl) - RCmpnd ;  #!!≈ - @CODE@
 SET NP-HEAD-NOM    = NP-HEAD-SG-NOM OR NP-HEAD-PL-NOM ;  #!!≈ - @CODE@
-SET NP-HEAD-ACC    = (Pron Acc) OR (N Acc) OR (A Acc) - RCmpnd ;  #!!≈ - @CODE@
+SET NP-HEAD-ACC    = (Pron Acc) OR N OR A - RCmpnd ;  #!!≈ - @CODE@
 
 
 #!! * The PRE-NP-HEAD family of sets
@@ -429,7 +428,8 @@ SET NP-HEAD-ACC    = (Pron Acc) OR (N Acc) OR (A Acc) - RCmpnd ;  #!!≈ - @CODE
 #!! expression **WORD - premodifiers**.
 
 
-SET PRE-NP-HEAD = (Prop Attr) OR (Prop @>N) OR A OR ABBR OR Num OR RCmpnd OR CC OR (Pron Dem) OR (Pron Ref) OR (PrfPrc @>N) OR PrsPrc OR (A Ord) OR (Num @>N) OR (A @>N) OR @>N OR @>A OR @>Pron OR @Num< OR (CC @CNP) OR (@>CC) OR (@Pron<) ;   #!!≈ - @CODE@
+SET PRE-NP-HEAD = (Prop Attr) OR A OR ABBR OR Num OR RCmpnd OR CC OR (Pron Dem) OR (Pron Ref) OR PrsPrc ; #!!≈ - @CODE@
+#OR (Num @>N) OR @>N OR @>A OR @>Pron OR @Num< OR (CC @CNP) OR (@>CC) OR (@Pron<) OR (Prop @>N) OR (PrfPrc @>N) ;  
 
 #!! The strict version of items that can only be premodifiers, not parts of the predicate
 SET PRE-NP-V = PrfPrc OR PrsPrc OR (V A) OR (Ind Prs) ;   #!!≈ - @CODE@
@@ -441,18 +441,15 @@ SET NOT-PRE-A-N = WORD - PRE-A-N ;  #!!≈ - @CODE@
 LIST PUNCT-LEFT = (PUNCT LEFT) ;  #!!≈ - @CODE@
 LIST PUNCT-RIGHT = (PUNCT RIGHT) ;  #!!≈ - @CODE@
 SET PRE-APP   = COMMA OR PUNCT-LEFT OR PRE-NP-HEAD ;  #!!≈ - @CODE@
-#!! This set ist not only for what can
-#!! stand in front of appositions but also
+#!! This set ist not only for what can stand in front of appositions but also
 #!! postmodifiers.
-
-
 
 #!! The set **NOT-NPMOD** is used to find barriers between NPs.
 #!! Typical usage: ... (*1 N BARRIER NOT-NPMOD) ...
 #!! meaning: Scan to the first noun, ignoring anything that can be
 #!! part of the noun phrase of that noun (i.e., "scan to the next NP head")
 
-SET NOT-NPMOD     = WORD - PRE-NP-HEAD OR ABBR ;     #!!≈ - @CODE@                  
+SET NOT-NPMOD = WORD - PRE-NP-HEAD ;     #!!≈ - @CODE@                  
 # This is the previous NPNH (npnh) set.
 # NOT-NPMOD  = "NOT-PRE-NP-HEAD"
  
@@ -553,6 +550,8 @@ LIST &real-bli-vaere = &real-bli-vaere ;
 LIST &real-og-aa = &real-og-aa ;						    
 LIST &real-vaere-bli = &real-vaere-bli ;				    
 LIST &real-cp-null-som = &real-cp-null-som ;
+LIST &syn-adv-v3-v2 = &syn-adv-v3-v2 ;
+LIST &syn-pp-v3-v2 = &syn-pp-v3-v2 ;
 
 MAPPING-PREFIX = & ; # &msyn-agr-adjmsc-adjneu
 
@@ -867,8 +866,20 @@ COPY:msyn-advl-a-adv (Neu Sg Indef &SUGGEST) EXCEPT (Msc Sg Indef) TARGET (A Pos
 COPY:msyn-advl-a-adv (Neu Sg Indef &SUGGEST) EXCEPT (Fem Sg Indef) TARGET (A Pos Sg Indef &msyn-advl-a-adv) ;
 
 
+#!! ## Word order errors
+
+#!! ### V3 -> V2
 
 
+ADD:syn-pp-v3-v2 (&syn-pp-v3-v2) TARGET VFIN IF
+	(-1 N OR Pron + Pers + Nom OR ("det") + Pron LINK -1 N LINK *-1 Pr BARRIER NOT-NPMOD);
+MOVE:syn-pp-v3-v2 (V &syn-pp-v3-v2) BEFORE (-1 N OR Pron + Pers + Nom OR ("det") + Pron);
+## I dag mannen går til byen.
+## Etter en god middag mannen går til byen.
+
+ADD:syn-adv-v3-v2 (&syn-adv-v3-v2) TARGET VFIN IF
+	(-1 N OR Pron + Pers + Nom OR ("det") + Pron LINK -1 Adv LINK -1 BOS);
+MOVE:syn-adv-v3-v2 (V &syn-adv-v3-v2) BEFORE (-1 N OR Pron + Pers + Nom OR ("det") + Pron);
 
 
 
