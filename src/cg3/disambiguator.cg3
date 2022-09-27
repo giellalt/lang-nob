@@ -748,6 +748,8 @@ LIST PRE-NP-HEAD = Clt A Det ;
 SET NOT-PRE-NP-HEAD = WORD - PRE-NP-HEAD ;
 
 SET NOT-ADV = WORD - Adv ;
+SET NOT-A = WORD - A ;
+SET NOT-A-CC = WORD - A - CC ;
 
 CONSTRAINTS
 
@@ -839,8 +841,8 @@ SELECT N IF (-1 ("holde"))(1 ("stand"));
 
 # NP
 
-REMOVE Fem IF (0 Det + Msc)(1C N + Msc);
-REMOVE Msc IF (0 Det + Fem)(1C N + Fem);
+REMOVE Fem IF (0 Det + Msc)(*1C N + Msc BARRIER NOT-A-CC);
+REMOVE Msc IF (0 Det + Fem)(*1C N + Fem BARRIER NOT-A-CC);
 
 # AP
 
