@@ -428,7 +428,7 @@ SET NP-HEAD-ACC    = (Pron Acc) OR N OR A - RCmpnd ;  #!!≈ - @CODE@
 #!! expression **WORD - premodifiers**.
 
 
-SET PRE-NP-HEAD = (Prop Attr) OR A OR ABBR OR Num OR RCmpnd OR CC OR (Pron Dem) OR (Pron Ref) OR PrsPrc ; #!!≈ - @CODE@
+SET PRE-NP-HEAD = (Prop Attr) OR A OR ABBR OR Num OR RCmpnd OR CC OR (Pron Dem) OR Det OR (Pron Ref) OR PrsPrc ; #!!≈ - @CODE@
 #OR (Num @>N) OR @>N OR @>A OR @>Pron OR @Num< OR (CC @CNP) OR (@>CC) OR (@Pron<) OR (Prop @>N) OR (PrfPrc @>N) ;  
 
 #!! The strict version of items that can only be premodifiers, not parts of the predicate
@@ -872,13 +872,14 @@ COPY:msyn-advl-a-adv (Neu Sg Indef &SUGGEST) EXCEPT (Fem Sg Indef) TARGET (A Pos
 
 
 ADD:syn-pp-v3-v2 (&syn-pp-v3-v2) TARGET VFIN IF
-	(-1 N OR Pron + Pers + Nom OR ("det") + Pron LINK -1 N LINK *-1 Pr BARRIER NOT-NPMOD);
+	(-1 N + Def OR Pron + Pers + Nom OR ("det") + Pron LINK -1 N LINK *-1 Pr BARRIER NOT-NPMOD LINK -1 BOS);
 MOVE:syn-pp-v3-v2 (V &syn-pp-v3-v2) BEFORE (-1 N OR Pron + Pers + Nom OR ("det") + Pron);
 ## I dag mannen går til byen.
 ## Etter en god middag mannen går til byen.
 
 ADD:syn-adv-v3-v2 (&syn-adv-v3-v2) TARGET VFIN IF
-	(-1 N OR Pron + Pers + Nom OR ("det") + Pron LINK -1 Adv LINK -1 BOS);
+	(-1 N + Def OR Pron + Pers + Nom OR ("det") + Pron LINK -1 Adv LINK -1 BOS)
+	(NEGATE *1 VFIN LINK *1 N OR Pron + Pers + Nom);
 MOVE:syn-adv-v3-v2 (V &syn-adv-v3-v2) BEFORE (-1 N OR Pron + Pers + Nom OR ("det") + Pron);
 
 
