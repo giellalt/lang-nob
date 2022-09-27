@@ -754,7 +754,7 @@ LIST CURRENCY = "kr" "dollar" "euro" "kroner" "€" "$" ;
 LIST WORD = N A Adv V CS CC Interj Pcle Pr IM Det Pron Interj ;
 
 SET NOT-ADV = WORD - Adv ;
-
+SET NOT-A = WORD - A ;
 
 #!! * The PRE-NP-HEAD family of sets
 
@@ -898,8 +898,8 @@ SELECT N IF (-1 ("holde"))(1 ("stand"));
 
 # NP
 
-REMOVE Fem IF (0 Det + Msc)(1C N + Msc);
-REMOVE Msc IF (0 Det + Fem)(1C N + Fem);
+REMOVE Fem IF (0 Det + Msc)(*1C N + Msc BARRIER NOT-A);
+REMOVE Msc IF (0 Det + Fem)(*1C N + Fem BARRIER NOT-A);
 
 # AP
 
