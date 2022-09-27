@@ -2259,7 +2259,7 @@ These sets model noun phrases (NPs). The idea is to first define whatever can
 occur in front of the head of the NP, and thereafter negate that with the
 expression **WORD - premodifiers**.
 
-- SET PRE-NP-HEAD = (Prop Attr) OR A OR ABBR OR Num OR RCmpnd OR CC OR (Pron Dem) OR (Pron Ref) OR PrsPrc ;
+- SET PRE-NP-HEAD = (Prop Attr) OR A OR ABBR OR Num OR RCmpnd OR CC OR (Pron Dem) OR Det OR (Pron Ref) OR PrsPrc ;
 
 The strict version of items that can only be premodifiers, not parts of the predicate
 - SET PRE-NP-V = PrfPrc OR PrsPrc OR (V A) OR (Ind Prs) ;
