@@ -552,6 +552,7 @@ LIST &real-vaere-bli = &real-vaere-bli ;
 LIST &real-cp-null-som = &real-cp-null-som ;
 LIST &syn-adv-v3-v2 = &syn-adv-v3-v2 ;
 LIST &syn-pp-v3-v2 = &syn-pp-v3-v2 ;
+LIST &syn-embedded-v2-v3 = &syn-embedded-v2-v3 ;
 
 MAPPING-PREFIX = & ; # &msyn-agr-adjmsc-adjneu
 
@@ -765,7 +766,7 @@ ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg2 Nom) IF
 	(-1 ("av") + Pr);
 ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg2 Nom) IF
 	(-1 Pr) #(-1 ("om") + Pr)
-	(NEGATE 1 Prs OR Prt);
+	(NEGATE *1 Prs OR Prt BARRIER NOT-ADV);
 COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg2 &msyn-pron-nom-acc);
 ADDRELATION:msyn-pron-nom-acc ($2) (Pr) FROM (1 Pron LINK 0 (&msyn-pron-nom-acc)) ;
 ## Vi snakker om du.
@@ -868,8 +869,12 @@ COPY:msyn-advl-a-adv (Neu Sg Indef &SUGGEST) EXCEPT (Fem Sg Indef) TARGET (A Pos
 
 #!! ## Word order errors
 
-#!! ### V3 -> V2
 
+#!! ### V3 -> V2 in main clause
+
+LIST VP-ADV = "der" "direkte" "her" "mest" "ned" ; # Adverbs that can stand after CS - Subj - VFIN - ___ (at vi bor her)
+
+LIST SENTENCE-ADV = "aldri" "alltid" "bare" "dessverre" "fremdeles" "gjerne" "heldigvis" "heller" "ikke" "neppe" "nok" "ofte" "også" "sikkert" "sjelden" "snart" ;
 
 ADD:syn-pp-v3-v2 (&syn-pp-v3-v2) TARGET VFIN IF
 	(-1 N + Def OR Pron + Pers + Nom OR ("det") + Pron LINK -1 N LINK *-1 Pr BARRIER NOT-NPMOD LINK -1 BOS);
@@ -877,11 +882,27 @@ MOVE:syn-pp-v3-v2 (V &syn-pp-v3-v2) BEFORE (-1 N OR Pron + Pers + Nom OR ("det")
 ## I dag mannen går til byen.
 ## Etter en god middag mannen går til byen.
 
-ADD:syn-adv-v3-v2 (&syn-adv-v3-v2) TARGET VFIN IF
-	(-1 N + Def OR Pron + Pers + Nom OR ("det") + Pron LINK -1 Adv LINK -1 BOS)
+MAP:syn-adv-v3-v2 (&syn-adv-v3-v2) TARGET VFIN IF
+	(-1 N + Def OR Pron + Pers + Nom OR ("det") + Pron LINK -1 SENTENCE-ADV LINK -1 BOS)
 	(NEGATE *1 VFIN LINK *1 N OR Pron + Pers + Nom);
 MOVE:syn-adv-v3-v2 (V &syn-adv-v3-v2) BEFORE (-1 N OR Pron + Pers + Nom OR ("det") + Pron);
 
+#!! ### V2 to V3 in embedded clauses
+
+MAP:syn-embedded-v2-v3 (&syn-embedded-v2-v3) TARGET Ind IF
+	(-1 CS)
+	(1 SENTENCE-ADV);
+#	(1 Adv LINK NOT 0 A OR VP-ADV);
+#MOVE:syn-embedded-v2-v3 (V &syn-embedded-v2-v3) AFTER (1 Adv);
+## Dette er mannen som brukte først termen i denne sammenhengen.
+
+MAP:syn-embedded-v2-v3 (&syn-embedded-v2-v3) TARGET Ind IF
+	(-2 ("om") OR ("at"))
+	(-1 Pron + Nom)
+	(1 SENTENCE-ADV);
+#	(1 Adv LINK NOT 0 A OR VP-ADV);
+MOVE:syn-embedded-v2-v3 (V &syn-embedded-v2-v3) AFTER (1 Adv);
+## Jeg lurte på om du kunne ikke komme.
 
 
 
