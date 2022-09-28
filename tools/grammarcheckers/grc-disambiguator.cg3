@@ -254,6 +254,9 @@ LIST %uten% = "uten" ;
 LIST %vaere% = "være" ;
 LIST %vanlig% = ("vanlig" Sg) ;
 LIST %var% = ("var" A) ("være" Prt) ;
+LIST %kunne% = "kunne" ;
+LIST %skulle% = "skulle" ;
+LIST %ville% = "ville" ;
 LIST %ve% = "ve" ;
 LIST %ved% = ("ved" Pr) ;
 LIST %vel% = "vel" ;
@@ -7782,6 +7785,7 @@ SELECT (Adv) IF
 
 # 2713
 SELECT (Adv) IF
+       (NOT 0 PrfPrc LINK -1 ("ha") + Ind OR ("være") + Ind)
 	(NOT 0 %saa/og/selv% OR det)
 	(NOT 0 CC OR Pr)
 	(1C Adv)
@@ -9572,15 +9576,15 @@ SELECT (Pr) IF
 ;
 
 
-# 2497
-SELECT (Pr) IF
-	(0 CS)
-	(*1 fv LINK -1C adverb LINK -1C Pron LINK *-1C N/Pron)
-	(*1 fv BARRIER Pr)
-	(*1 fv BARRIER N-prop)
-	(*1 fv BARRIER N-gen)
-	(*1 fv BARRIER komma/CC)
-;
+# 2497 grc remove
+#SELECT (Pr) IF
+#	(0 CS)
+#	(*1 fv LINK -1C adverb LINK -1C Pron LINK *-1C N/Pron)
+#	(*1 fv BARRIER Pr)
+#	(*1 fv BARRIER N-prop)
+#	(*1 fv BARRIER N-gen)
+#	(*1 fv BARRIER komma/CC)
+#;
 
 
 # 2498
@@ -16417,7 +16421,7 @@ REMOVE (V Prt) IF
 
 # 1747
 REMOVE (V Prt) IF
-	(NOT 0 %var%)
+	(NOT 0 %var% OR %kunne% OR %ville% OR %skulle%)
 	(NOT -1 Adv OR parentes)
 	(*-1 setn-gr LINK *1C fv) # LINK NOT 0 trans2) TT: trans2 OBT
 	(*-1 setn-gr LINK NOT 0 %som%)
