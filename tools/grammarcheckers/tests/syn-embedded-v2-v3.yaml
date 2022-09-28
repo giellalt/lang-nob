@@ -1,0 +1,7 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+  
+Tests:
+  - "Vi vet at jeg {er ikke}¥{ikke er} en tomat."
+  - "De spurte om jeg {er ofte}¥{ofte er} i byen."
