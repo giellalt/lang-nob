@@ -9,6 +9,7 @@ LEXICON p
 
 LEXICON Preposition
  !! LEXICON @LEXNAME@  list (appr 90 prepositions)
+rundt p ; ! slik har det gått...
 etter+Err/Orth:efter p ;
 per p ; ! 2 kr per enhet
 blandt p ;
