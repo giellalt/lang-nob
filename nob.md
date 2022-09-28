@@ -2417,7 +2417,9 @@ Case rules so far: Nominative pronouns should be accusative
 
 ## Word order errors
 
-### V3 -> V2
+### V3 -> V2 in main clause
+
+### V2 to V3 in embedded clauses
 
 ## og/å errors
 
