@@ -621,6 +621,7 @@ COPY:msyn-agr-detmsc-detneu (Neu Sg &SUGGEST) EXCEPT (Msc Sg) TARGET (Det Dem &m
 #!! **Agreement rule:**  Masculine indefinite determiners should be neuter (msyn-agr-detmsc-detneu). Context: *en/et land*.
 ADD:msyn-agr-detmsc-detneu (&msyn-agr-detmsc-detneu) TARGET ("en" Det Dem Msc Sg) IF (*1C (N Neu Sg Indef) BARRIER NOT-NPMOD);
 COPY:msyn-agr-detmsc-detneu ("et" Neu Sg &SUGGEST) EXCEPT ("en" Msc Sg) TARGET (Det Dem &msyn-agr-detmsc-detneu);
+ADDRELATION:msyn-agr-detmsc-detneu ($2) N FROM (*-1 (&msyn-agr-detmsc-detneu)); 
 ## Vi bor i en land.
 #$ Vi bor i et land.
 
@@ -631,6 +632,13 @@ ADD:msyn-agr-detneu-detfem (&msyn-agr-detneu-detfem) TARGET (Det Dem Neu Sg) IF 
 COPY:msyn-agr-detneu-detfem (Fem Sg &SUGGEST) EXCEPT (Neu Sg) TARGET (Det Dem &msyn-agr-detneu-detfem);
 ## Mannen kjøpte det boka.
 #$ Mannen kjøpte den boka.
+
+#!! **Agreement rule:**  Neuter indefinite determiners should be feminine (msyn-agr-detneu-detfem). Context: *et/ei bok*.
+ADD:msyn-agr-detneu-detfem (&msyn-agr-detneu-detfem) TARGET (Det Indef Neu Sg) IF (1 (N Fem Sg Indef));
+COPY:msyn-agr-detneu-detfem (Fem Sg &SUGGEST) EXCEPT (Neu Sg) TARGET (Det Dem &msyn-agr-detneu-detfem);
+## Mannen kjøpte et bok.
+#$ Mannen kjøpte ei bok.
+
 
 
 #!! **Agreement rule:**  Neuter indefinite determiners should be feminine (msyn-agr-detneu-detfem). Context: *et/ei realitetens kvinne*.
@@ -643,15 +651,36 @@ COPY:msyn-agr-detneu-detfem ("ei" Det Fem &SUGGEST) EXCEPT ("et" Pron Indef Neu 
 ## Det er et realitetens kvinne
 #$ Det er ei realitetens kvinne
 
+ADDRELATION:msyn-agr-detneu-detfem ($2) N FROM (-1 (&msyn-agr-detneu-detfem)); 
+
+#!! **Agreement rule:**  Neuter indefinite determiners should be masculine (msyn-agr-detneu-detmsc). Context: *et/en studie*.
+ADD:msyn-agr-detneu-detmsc (&msyn-agr-detneu-detmsc) TARGET (Det Indef Neu Sg) IF (1 (N Msc Sg Indef));
+COPY:msyn-agr-detneu-detmsc (Msc Sg &SUGGEST) EXCEPT (Neu Sg) TARGET (Det Dem &msyn-agr-detneu-detmsc);
+## Mannen kjøpte et studie.
+#$ Mannen kjøpte en studie.
+
+#!! **Agreement rule:**  Neuter indefinite determiners should be masculine (msyn-agr-detneu-detmsc). Context: *et/en studie*.
+ADD:msyn-agr-detneu-detmsc (&msyn-agr-detneu-detmsc) TARGET (Pron Indef Neu Sg) IF (1 (N Msc Sg Indef));
+COPY:msyn-agr-detneu-detmsc (Msc Sg &SUGGEST) EXCEPT (Neu Sg) TARGET (Det Dem &msyn-agr-detneu-detmsc);
+
+
 #!! **Agreement rule:**  Neuter adjectives should be masculine (msyn-agr-detneu-detmsc). Context: *et/en ... båt*.
 ADD:msyn-agr-detneu-detmsc (&msyn-agr-detneu-detmsc) TARGET ("et" Det Neu) IF (1 (Def Clt))(2 (N Sg Msc Indef));
 COPY:msyn-agr-detneu-detmsc ("en" Det Dem Msc Sg &SUGGEST) EXCEPT ("et" Det Neu) TARGET (&msyn-agr-detneu-detmsc);
+## Mannen kjøpte et studie.
+#$ Mannen kjøpte en studie.
 
 #!! **Agreement rule:** same rule but for Pron
 ADD:msyn-agr-detneu-detmsc (&msyn-agr-detneu-detmsc) TARGET ("et" Pron Indef Neu Sg) IF (1 (Def Clt))(2 (N Sg Msc Indef));
 COPY:msyn-agr-detneu-detmsc ("en" Det Dem Msc Sg &SUGGEST) EXCEPT ("et" Pron Indef Neu Sg) TARGET (&msyn-agr-detneu-detmsc);
 ## Det er et realitetens forsvarer.
 #$ Det er en realitetens forsvarer.
+
+
+ADDRELATION:msyn-agr-detneu-detmsc ($2) N FROM (-1 (&msyn-agr-detneu-detmsc)); 
+
+
+
 
 
 # Definite that should be indefinite
