@@ -397,9 +397,15 @@ Ensure preceding adjective agrees with noun
 
 **Agreement rule:**  Neuter definite determiners should be feminine (msyn-agr-detneu-detfem). Context: *det/den boka*.
 
+**Agreement rule:**  Neuter indefinite determiners should be feminine (msyn-agr-detneu-detfem). Context: *et/ei bok*.
+
 **Agreement rule:**  Neuter indefinite determiners should be feminine (msyn-agr-detneu-detfem). Context: *et/ei realitetens kvinne*.
 
 **Agreement rule:**  Neuter indefinite determiners should be feminine (msyn-agr-detneu-detfem). Context: *et/ei realitetens kvinne*.
+
+**Agreement rule:**  Neuter indefinite determiners should be masculine (msyn-agr-detneu-detmsc). Context: *et/en studie*.
+
+**Agreement rule:**  Neuter indefinite determiners should be masculine (msyn-agr-detneu-detmsc). Context: *et/en studie*.
 
 **Agreement rule:**  Neuter adjectives should be masculine (msyn-agr-detneu-detmsc). Context: *et/en ... båt*.
 
