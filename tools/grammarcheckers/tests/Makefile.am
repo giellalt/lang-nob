@@ -27,7 +27,10 @@ TESTS=\
 	neg-v-inf-pres.yaml		    \
 	neg-v-pres-inf.yaml		    \
 	real-aa-og.yaml \
-	real-og-aa.yaml
+	real-og-aa.yaml \
+	syn-adv-v3-v2.yaml \
+	syn-embedded-v2-v3.yaml \
+	syn-pp-v3-v2.yaml
 
 
 
@@ -36,7 +39,10 @@ TESTS=\
 XFAIL_TESTS=\
 	msyn-setningar.yaml \
 	real-bli-vaere.yaml \
-	real-vaere-bli.yaml
+	real-vaere-bli.yaml \
+	syn-adv-v3-v2.yaml \
+	syn-embedded-v2-v3.yaml \
+	syn-pp-v3-v2.yaml
 
 endif # WANT_GRAMCHECK
 
