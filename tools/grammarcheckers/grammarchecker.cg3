@@ -604,7 +604,7 @@ ADDRELATION:msyn-agr-adjsg-adjpl ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&msy
 #!! **Agreement rule:**  Neuter adjectives shoul be masculine (msyn-agr-adjneu-adjmsc). Context: *En fint/fin båt*.
 ADD:msyn-agr-adjneu-adjmsc (&msyn-agr-adjneu-adjmsc) TARGET A IF 
 (-1 Det + MF OR Pron + Indef + MF OR Pron + Indef + Msc)
-(0 A + Neu)
+(0 A + Neu LINK NOT 0 Msc)
 (1 N + Msc);
 COPY:msyn-agr-adjneu-adjmsc (Msc Sg Indef &SUGGEST) EXCEPT (Neu Sg Indef) TARGET (A Pos &msyn-agr-adjneu-adjmsc);
 ADDRELATION:msyn-agr-adjneu-adjmsc ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&msyn-agr-adjneu-adjmsc)) ;
@@ -613,14 +613,20 @@ ADDRELATION:msyn-agr-adjneu-adjmsc ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&m
 #$ Dette er en fin båt.
 
 #!! **Agreement rule:**  Masculine definite determiners should be neuter (msyn-agr-detmsc-detneu). Context: *den/det huset*.
-ADD:msyn-agr-detmsc-detneu (&msyn-agr-detmsc-detneu) TARGET (Det Dem Msc Sg) IF (1 (N Neu Sg Def));
+ADD:msyn-agr-detmsc-detneu (&msyn-agr-detmsc-detneu) TARGET (Det Dem Msc Sg) IF
+	(0 ("den") OR ("denne"))
+	(1 (N Neu Sg Def));
 COPY:msyn-agr-detmsc-detneu (Neu Sg &SUGGEST) EXCEPT (Msc Sg) TARGET (Det Dem &msyn-agr-detmsc-detneu);
 ## Mannen kjøpte den huset.
 #$ Mannen kjøpte det huset.
 
 #!! **Agreement rule:**  Masculine indefinite determiners should be neuter (msyn-agr-detmsc-detneu). Context: *en/et land*.
-ADD:msyn-agr-detmsc-detneu (&msyn-agr-detmsc-detneu) TARGET ("en" Det Dem Msc Sg) IF (*1C (N Neu Sg Indef) BARRIER NOT-NPMOD);
-COPY:msyn-agr-detmsc-detneu ("et" Neu Sg &SUGGEST) EXCEPT ("en" Msc Sg) TARGET (Det Dem &msyn-agr-detmsc-detneu);
+ADD:msyn-agr-detmsc-detneu (&msyn-agr-detmsc-detneu) TARGET ("en" Det Dem Msc Sg) IF (*1C (N Neu) BARRIER NOT-NPMODADV);
+#COPY:msyn-agr-detmsc-detneu ("et" Neu Sg &SUGGEST) EXCEPT ("en" Msc Sg) TARGET (&msyn-agr-detmsc-detneu);
+
+ADD:msyn-agr-detmsc-detneu (&msyn-agr-detmsc-detneu) TARGET ("en" Pron Indef Msc Sg) IF (*1C (N Neu) BARRIER NOT-NPMODADV);
+COPY:msyn-agr-detmsc-detneu ("et" Neu Sg &SUGGEST) EXCEPT ("en" Msc Sg) TARGET ( &msyn-agr-detmsc-detneu);
+
 ADDRELATION:msyn-agr-detmsc-detneu ($2) N FROM (*-1 (&msyn-agr-detmsc-detneu)); 
 ## Vi bor i en land.
 #$ Vi bor i et land.
@@ -835,7 +841,7 @@ ADD:msyn-v-inf-pres (&msyn-v-inf-pres) TARGET (V Inf) OR MONOSYLL_V + Imp IF
 	(-1C (N) OR (Pron Nom))
 	(NOT -1 ("Gud") OR ("herre"))
 	(NEGATE -1 ("å") OR ("takk") + N + Neu + Sg + Def)
-	(0 Inf OR Imp LINK NEGATE 0 Prs OR PROBABLY-NOUN OR Pass OR ("så") OR ("nå") OR ("vår") OR ("øyne") OR ("ære") OR ("sanne"))
+	(0 Inf OR Imp LINK NEGATE 0 Prs OR PROBABLY-NOUN OR Pass OR ("så") OR ("nå") OR ("vår") OR ("øyne") OR ("ære") OR ("sanne") OR ("dette"))
 	(NOT 1 ("Gud") OR ("herre")); #(NOT *0 VFIN);
 
 
@@ -862,13 +868,15 @@ ADDRELATION:msyn-v-inf-pres ($2) (*) FROM (1 V LINK 0 (&msyn-v-inf-pres)) ;
 #!!  **Verb rule:** Verb error: Present tense should be infinitive (msyn-v-pres-inf). Context: *Jeg vil skriver et brev.*
 ADD:msyn-v-pres-inf (&msyn-v-pres-inf) TARGET V IF
 	(0 (Ind Prs))
-	#	(NOT 0 N + Pl + Indef LINK -1 Pron + Pers + Nom OR N)
+#	(NOT 0 N + Pl + Indef LINK -1 Pron + Pers + Nom OR N)
 	(NEGATE -3 N)
 	(-2C (N) OR (Pron Nom))
-	(-1 hj-V)(NOT 0 Pass)
+	(-1 hj-V)
+	(NOT 0 Pass)
 	(NEGATE 0 (N Pl) LINK -1 hj-hvd-V)
 	(NEGATE 1 (Pron Nom))
-	(NEGATE 1 N LINK NOT -1 hj-tv-V);
+#	(NEGATE 1 N LINK NOT -1 hj-tv-V) # Jeg vil lærer norsk
+	;
 	#$ Min eldste sønn hadde {planer}.
 	#$ Så mange ganger du vil {kan} du gjette.
 	#$ De fineste gavene jeg får er gaver laget av barnehender
@@ -991,7 +999,10 @@ COPY:real-v-aa-og ("og" CC &SUGGEST) EXCEPT ("å" Use/SpellNoSugg N Sem/Sign ABB
 ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF ( -2 modalverb)(-1 V + $$INDFORM)(NOT -1 QUASIAUX) (1 V + $$INDFORM);
 
 #!! **Realword rule:** å should be og between similar verbforms except 2nd V = obj (real-aa-og). Context: *Vi hopper å/og spretter.*
-ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF (NOT -2 modalverb)(-1 V + $$INDFORM)(NOT -1 QUASIAUX OR ("for")) (1 V + $$INDFORM);
+ADD:real-v-aa-og (&real-v-aa-og) TARGET ("å") IF
+#	(NOT -2 modalverb)
+	(*-1 V + $$INDFORM BARRIER NOT-ADV LINK NOT 0 QUASIAUX OR ("for") LINK NOT -1 modalverb)
+	(1 V + $$INDFORM);
 COPY:real-v-aa-og ("og" CC &SUGGEST) EXCEPT ("å" IM) TARGET (IM &real-v-aa-og);
 COPY:real-v-aa-og ("og" CC &SUGGEST) EXCEPT ("å" Use/SpellNoSugg N Sem/Sign ABBR Gram/TAbbr N ABBR) TARGET ( &real-aa-og);
 
