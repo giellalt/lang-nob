@@ -109,7 +109,7 @@ LEXICON positive-indef
 !                    R ; ! A+N-samansetjingar er for dristig (?)
  +Pos+Msc+Sg+Indef: # ;
  +Pos+Fem+Sg+Indef: # ;
-  +Pos+MF+Sg+Indef: # ; ! MF ???
+ +Pos+MF+Sg+Indef: # ; ! MF ???
 !  +Pos+Neu+Sg+Indef: # ; ! ta Neu separat
 
 LEXICON positive-def
@@ -123,8 +123,8 @@ LEXICON a-neuter ! fint
  +Der/AAdv+Adv:%>Q3t # ;
 
 LEXICON a-no-neuter ! vennlig
+ +Pos+Neu+Sg+Indef:  # ;
  +Der/AAdv+Adv: # ;
- +Pos+Neu+Sg+Indef: # ;
 !                    R ;
  
 LEXICON grade-e

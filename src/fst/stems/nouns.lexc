@@ -23562,6 +23562,7 @@ døpefont m1 ;
 neverkont m1 ;
 front m1 ;
 horisont m1 ;
+tidshorisont m1 ;
 bunt m1 ;
 mynt m1 ;
 minnemynt m1 ;
@@ -37969,6 +37970,8 @@ leseplass m1 ;
 leselist f1 ;
 lesekompetanse m1 ;
 lesestimulering f1 ;
+resultatoppnåing f1 ;
+resultatorientering f1 ;
 
 hentesveis m1 ;
 henteekteskap n1 ;
