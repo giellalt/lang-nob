@@ -414,6 +414,7 @@ Ensure preceding adjective agrees with noun
 **Definiteness rule:** Double definiteness. Context: *disse grunner/grunnene*
 
 **Definiteness rule:** Double definiteness. Context: *de sosiale aspekter/aspektene*
+The rule gave too many false alarms, we skip it.
 
 ## Quantifier phrases
 
