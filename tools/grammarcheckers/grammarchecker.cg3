@@ -301,7 +301,7 @@ SET WORD-NOTDE = WORD - ("de") ;  #!!≈ - @CODE@
 
 #!! ### Noun sets
 
-LIST PROBABLY-NOUN = "fylke" "finne" ;
+LIST PROBABLY-NOUN = "fylke" "finne" "evne" ("egne" V) ;
 
 #!! ### Verb sets
 
@@ -583,14 +583,22 @@ ADD:spell-conservatively (&typo &SUGGESTWF) (<spelled>) IF (NEGATE -1 QMARK LINK
 
 #!!  Ensure preceding adjective agrees with noun
 
+SET Amf = (A Msc) OR (A Fem) OR (A MF) ;
+
 #!! **Agreement rule:** masculine adjectives should be neuter (msyn-agr-adjmsc-adjneu). Context: *Et fin/fint hus.*
-ADD:msyn-agr-adjmsc-adjneu (&msyn-agr-adjmsc-adjneu) TARGET A IF (-1 Det)(0 A + MF OR A + Msc OR A + Fem)(NOT 0 A + Neu)(1C N + Neu);
+ADD:msyn-agr-adjmsc-adjneu (&msyn-agr-adjmsc-adjneu) TARGET A IF
+	(-1 Det)
+	(NEGATE 0 Neu)
+	(0C Amf)
+	(1C N + Neu)
+	(NEGATE 2 ("-") LINK 1 CC)
+	;
 COPY:msyn-agr-adjmsc-adjneu (Neu Sg Indef &SUGGEST)  EXCEPT (Fem Sg Indef) OR (Msc Sg Indef) OR (MF Sg Indef)  TARGET (A Pos &msyn-agr-adjmsc-adjneu) ;
 ADDRELATION:msyn-agr-adjmsc-adjneu ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&msyn-agr-adjmsc-adjneu)) ;
 
 ## Dette er et fin hus.
 #$ Dette er et fint hus.
-
+#$ Vi har skapt et annet økonomisk startpunkt.
 
 #!! **Agreement rule:**  Singular adjectives should be plural (msyn-agr-adjsg-adjpl). Context: *mange organisert/organiserte fritidsaktiviteter*.
 ADD:msyn-agr-adjsg-adjpl (&msyn-agr-adjsg-adjpl) TARGET A IF 
@@ -603,9 +611,9 @@ ADDRELATION:msyn-agr-adjsg-adjpl ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&msy
 
 #!! **Agreement rule:**  Neuter adjectives shoul be masculine (msyn-agr-adjneu-adjmsc). Context: *En fint/fin båt*.
 ADD:msyn-agr-adjneu-adjmsc (&msyn-agr-adjneu-adjmsc) TARGET A IF 
-(-1 Det + MF OR Pron + Indef + MF OR Pron + Indef + Msc)
-(0 A + Neu LINK NOT 0 Msc)
-(1 N + Msc);
+	(-1 Det + MF OR Pron + Indef + MF OR Pron + Indef + Msc)
+	(0 A + Neu LINK NOT 0 Msc)
+	(1 N + Msc);
 COPY:msyn-agr-adjneu-adjmsc (Msc Sg Indef &SUGGEST) EXCEPT (Neu Sg Indef) TARGET (A Pos &msyn-agr-adjneu-adjmsc);
 ADDRELATION:msyn-agr-adjneu-adjmsc ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&msyn-agr-adjneu-adjmsc)) ;
 
@@ -614,23 +622,31 @@ ADDRELATION:msyn-agr-adjneu-adjmsc ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&m
 
 #!! **Agreement rule:**  Masculine definite determiners should be neuter (msyn-agr-detmsc-detneu). Context: *den/det huset*.
 ADD:msyn-agr-detmsc-detneu (&msyn-agr-detmsc-detneu) TARGET (Det Dem Msc Sg) IF
+	(NEGATE -1 VFIN)
 	(0 ("den") OR ("denne"))
-	(1 (N Neu Sg Def));
+	(1 (N Neu Sg Def))
+	(NEGATE 2 ("-") LINK 1 CC)
+	;
 COPY:msyn-agr-detmsc-detneu (Neu Sg &SUGGEST) EXCEPT (Msc Sg) TARGET (Det Dem &msyn-agr-detmsc-detneu);
 ## Mannen kjøpte den huset.
 #$ Mannen kjøpte det huset.
+#$ På en måte legger den grunnlaget for denne falske alarmen.
+## Ledelse på alle nivåer skal være basert på en klar mål.
+#$ Ledelse på alle nivåer skal være basert på en klar mål- og resultatorientering.
 
 #!! **Agreement rule:**  Masculine indefinite determiners should be neuter (msyn-agr-detmsc-detneu). Context: *en/et land*.
-ADD:msyn-agr-detmsc-detneu (&msyn-agr-detmsc-detneu) TARGET ("en" Det Dem Msc Sg) IF (*1C (N Neu) BARRIER NOT-NPMODADV);
+ADD:msyn-agr-detmsc-detneu (&msyn-agr-detmsc-detneu) TARGET ("en" Det Dem Msc Sg) IF
+	(*1C (N Neu) BARRIER NOT-NPMODADV LINK NEGATE 1 ("-") LINK 1 CC)
+	;
 #COPY:msyn-agr-detmsc-detneu ("et" Neu Sg &SUGGEST) EXCEPT ("en" Msc Sg) TARGET (&msyn-agr-detmsc-detneu);
 
 ADD:msyn-agr-detmsc-detneu (&msyn-agr-detmsc-detneu) TARGET ("en" Pron Indef Msc Sg) IF (*1C (N Neu) BARRIER NOT-NPMODADV);
 COPY:msyn-agr-detmsc-detneu ("et" Neu Sg &SUGGEST) EXCEPT ("en" Msc Sg) TARGET ( &msyn-agr-detmsc-detneu);
 
-ADDRELATION:msyn-agr-detmsc-detneu ($2) N FROM (*-1 (&msyn-agr-detmsc-detneu)); 
+ADDRELATION:msyn-agr-detmsc-detneu ($2) N FROM (*-1 (&msyn-agr-detmsc-detneu) BARRIER SV-BOUNDARY OR V); 
 ## Vi bor i en land.
 #$ Vi bor i et land.
-
+#$ kompetansedrevet
 
 
 #!! **Agreement rule:**  Neuter definite determiners should be feminine (msyn-agr-detneu-detfem). Context: *det/den boka*.

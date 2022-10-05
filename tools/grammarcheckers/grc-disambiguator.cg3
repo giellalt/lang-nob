@@ -10753,7 +10753,7 @@ SELECT (N) IF
 SELECT (N) IF
 	(0 samset OR A)
 	(NOT 0 Prs/Prt OR PrfPrc)
-	(NOT 1 N)
+	(NOT *1 N)
 	(NEGATE *-1 ("være") BARRIER NOT-ADV)
 ;
 	#$ Barnet er ikke sulten.
@@ -12773,12 +12773,12 @@ REMOVE (A Neu Sg) IF
 ;
 
 
-# 2161
-REMOVE (A Neu Sg Indef) IF
-	(0 Adv)
-	(NOT 0 samset)
-	(NOT -1 ("være") LINK -1 Neu)
-;
+# 2161 grc remove
+#REMOVE (A Neu Sg Indef) IF
+#	(0 Adv)
+#	(NOT 0 samset)
+#	(NOT -1 ("være") LINK -1 Neu)
+#;
 
 
 # 2160
@@ -13176,7 +13176,7 @@ REMOVE (A) IF
 # 2107
 REMOVE (A) IF
 	(0 N OR mest-sanns-N-istf-A)
-	(NOT 1 N)
+	(NOT *1 N)
 	(NOT -1 Indef-det)
 	(NEGATE *-1 ("være") BARRIER NOT-ADV)
 ;
@@ -15308,7 +15308,7 @@ REMOVE (N Clt) IF
 REMOVE (N) IF
 	(0 A OR mest-sanns-A-istf-N)
 	(NOT 0 N-prop)
-	(NOT -1 Indef-det)
+	(NOT -1 Indef-det OR A)
 ;
 
 
@@ -17679,12 +17679,12 @@ SELECT (CS) IF
 ;
 
 
-# 1660
-SELECT (CS) IF
-	(*-1 setn-gr LINK NOT 0 CS)
-	(*1C Prs/Prt BARRIER ikke-AdvA-Nmgen-Pron-CC-detmdem-Pr)
-	(*1C Prs/Prt LINK 1 Pr LINK *1 ikke-AdvA-Nmgen-Pron-CC-detmdem-Pr LINK 0 Prs/Prt LINK NOT 0 ikke-Prs-Prt)
-;
+# 1660 grc remove
+#SELECT (CS) IF
+#	(*-1 setn-gr LINK NOT 0 CS)
+#	(*1C Prs/Prt BARRIER ikke-AdvA-Nmgen-Pron-CC-detmdem-Pr)
+#	(*1C Prs/Prt LINK 1 Pr LINK *1 ikke-AdvA-Nmgen-Pron-CC-detmdem-Pr LINK 0 Prs/Prt LINK NOT 0 ikke-Prs-Prt)
+#;
 
 
 # 1661
