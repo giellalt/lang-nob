@@ -742,14 +742,14 @@ ADD:msyn-qucompl-def-indef (&msyn-qucompl-def-indef) TARGET N + Pl + Def IF
 	(*-1 ("mange") + Comp
 	     BARRIER NOT-A
      	     	  LINK NOT 0 Sem/ID
-     		       LINK NOT -1 (§));
-COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Use/NG Def) TARGET (N Msc Pl &msyn-qucompl-def-indef); 
-COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Use/NG Def) TARGET (N Fem Pl &msyn-qucompl-def-indef); 
-COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Use/NG Def) TARGET (N Neu Pl &msyn-qucompl-def-indef); 
-COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Def) TARGET (N Msc Pl &msyn-qucompl-def-indef); 
-COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Def) TARGET (N Fem Pl &msyn-qucompl-def-indef); 
-COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Def) TARGET (N Neu Pl &msyn-qucompl-def-indef); 
-ADDRELATION:msyn-qucompl-def-indef ($2) (*) FROM (T:previousWordCrossSent LINK 0 (&msyn-qucompl-def-indef)) ;
+     		       LINK NOT -1 (§))(NEGATE 0 Indef);
+COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Use/NG Def) TARGET (N Msc Pl &msyn-qucompl-def-indef)(NEGATE 0 Indef); 
+COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Use/NG Def) TARGET (N Fem Pl &msyn-qucompl-def-indef)(NEGATE 0 Indef); 
+COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Use/NG Def) TARGET (N Neu Pl &msyn-qucompl-def-indef)(NEGATE 0 Indef); 
+COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Def) TARGET (N Msc Pl &msyn-qucompl-def-indef)(NEGATE 0 Indef); 
+COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Def) TARGET (N Fem Pl &msyn-qucompl-def-indef)(NEGATE 0 Indef); 
+COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Def) TARGET (N Neu Pl &msyn-qucompl-def-indef)(NEGATE 0 Indef); 
+ADDRELATION:msyn-qucompl-def-indef ($2) (*) FROM (T:previousWordCrossSent LINK 0 (&msyn-qucompl-def-indef))(NEGATE 0 Indef) ;
 ## Vi har mange bøkene.
 ## Vi har fem bøkene.
 ## Vi har 5 bøkene.
