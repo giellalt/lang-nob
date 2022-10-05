@@ -28,6 +28,9 @@ få: A_FÅ ; !!≈ * @CODE@
 små: A_SMÅ ; !!≈ * @CODE@ 
 vond: VOND ; !!≈ * @CODE@ 
 
+kompetansedrevet a4 ;
+FN-ledet a4 ;
+oppdragstilpasset a4 ;
 suset a2 ;
 susete a3 ;
 interpersonal a1 ;
@@ -61,6 +64,7 @@ ubevisst a2 ;
 telemedisinsk a2 ;
 postoperativ a1 ;
 pleietrengende a3 ;
+alliert a2 ;
 palliativ a1 ;
 masterutdannet a4 ;
 kvalitetsforbedrende a3 ;
