@@ -20,7 +20,8 @@
 LEXICON AmountCont
 sidet a4 ;
 språklig a2 ;
-
+års a3 ;
+åring m1 ;
 
 LEXICON AdjectiveRoot
 !! @LEXNAME@ is the list of adjectives (some 5500 stems)
