@@ -709,7 +709,11 @@ ADDRELATION:msyn-agr-detneu-detmsc ($2) N FROM (-1 (&msyn-agr-detneu-detmsc));
 #ADD:msyn-defness_m_def (&msyn-defness_m_def) TARGET
 
 #!! **Definiteness rule:** Double definiteness. Context: *disse grunner/grunnene*
-ADD:msyn-np-demindef-demdef (&msyn-np-demindef-demdef) TARGET (N Pl Indef) IF (*-1 ("denne") + Det + Dem + Pl BARRIER NOT-A)(NEGATE 1 ("som"))(NEGATE 1 COMMA LINK 1 ("som")) ;
+ADD:msyn-np-demindef-demdef (&msyn-np-demindef-demdef) TARGET (N Pl Indef) IF
+	(*-1 ("denne") + Det + Dem + Pl BARRIER NOT-A)
+	(*0 VFIN)
+	(NEGATE 1 ("som"))
+	(NEGATE 1 COMMA LINK 1 ("som")) ;
 COPY:msyn-np-demindef-demdef (Def &SUGGEST) EXCEPT (Indef) TARGET (N Pl &msyn-np-demindef-demdef) ;	
 ADDRELATION:msyn-np-demindef-demdef ($2) ("disse") FROM (*1 N BARRIER NOT-A LINK 0 &msyn-np-demindef-demdef) ;
 	
@@ -859,7 +863,8 @@ ADD:msyn-v-inf-pres (&msyn-v-inf-pres) TARGET (V Inf) OR MONOSYLL_V + Imp IF
 	(NOT -1 ("Gud") OR ("herre"))
 	(NEGATE -1 ("å") OR ("takk") + N + Neu + Sg + Def)
 	(0 Inf OR Imp LINK NEGATE 0 Prs OR PROBABLY-NOUN OR Pass OR ("så") OR ("nå") OR ("vår") OR ("øyne") OR ("ære") OR ("sanne") OR ("dette"))
-	(NOT 1 ("Gud") OR ("herre")); #(NOT *0 VFIN);
+	(NOT 1 ("Gud") OR ("herre"))
+	(NEGATE 1 ("-") LINK 1 CC); #(NOT *0 VFIN);
 
 
 COPY:msyn-v-inf-pres (Ind Prs &SUGGEST) EXCEPT (Inf) OR (Imp)  TARGET (V &msyn-v-inf-pres);
