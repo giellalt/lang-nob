@@ -25,14 +25,14 @@
 #!! The tagsets are a superset of the OBT and GiellaLT tags, so that 
 #!! the labels are kept from OBT-cg, but GiellaLT content is added when needed.
 
-DELIMITERS = "<.>" "<:>" "<!>" "<?>" "<|>" sent ;
+DELIMITERS = "<.>" "<:>" "<!>" "<?>" "<|>" "<¶>" sent ;
 
 SETS
 LIST BOS = >>>	;
 LIST EOS = <<< ;
 LIST ikke-Poss-det = "hei" ;
 LIST replikk = "$--" "$-" ;
-LIST int-setn-gr = "$\;" "$:" "$..." "$--" "$-" "$," "$\"" CLB ;
+LIST int-setn-gr = "$\;" "$:" "$..." "$--" "$-" "$," "$\"" CLB "$¶" ;
 LIST s-gr/Interj = "$\;" "$:" "$..." "$--" "$-" "$," "$\"" konj >>> <<< Interj CLB ;
 LIST s-gr = "$\;" "$:" "$..." "$--" "$-" "$," "$\"" konj >>> <<< CLB ;
 LIST @Adv = Adv;
@@ -844,7 +844,7 @@ SELECT:aaIM IM IF (0 ("å"))(1 Inf);
 REMOVE:SNS (*) IF (0  Use/SpellNoSugg) ;
 REMOVE ("<Use\/Circ.*>"r) ;
 
-REMOVE:NotDer (Ex/V) IF (0 N + $$NUM + $$DEF); 
+REMOVE:NotDer (Ex/V N) IF (0 N + $$NUM + $$DEF); 
 
 #!! #### Numerals
 
