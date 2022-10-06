@@ -7,12 +7,6 @@ numtagsg for *en*
 
 ## Tags for special use
 
-### Date
-
-### Clock
-
-... and many more lexica
-
 * **LEXICON ARABICCASEORD**  adds +Arab
 
 * **LEXICON ARABICCASE**  adds +Arab
