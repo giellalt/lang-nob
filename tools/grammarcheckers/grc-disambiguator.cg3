@@ -888,6 +888,8 @@ REMOVE:NoX X + V IF (0 V) ; # Vi skriver, fjern X.
 REMOVE:gang ("gange") IF (0 ("gang"))(-1 Qnt) ; # fire ganger
 REMOVE:per ("per") IF (0 ("Per"));
 
+REMOVE:supe ("supe" V) IF (0 ("super"))(*1 N);
+
 SELECT:ext A + Pos + Neu IF (*-1 ("være") LINK -1 ("det"))(NOT 1 A + Pos + Neu OR Msc OR Fem) ; # Det er vanskelig.
 
 REMOVE ("én") IF (0 ("en")); # en gang
