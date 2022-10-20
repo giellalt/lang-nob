@@ -308,6 +308,7 @@ LIST adverb/komp/Indef-sup = Adv <adv> (A Neu Indef) (A Comp) (A Superl Indef) (
 LIST adverb/komp/Indef-sup/PrsPtc = Adv <adv> (A Neu Indef) (A Comp) (A Superl Indef) (A <PrsPtc>) ;
 LIST adverbialN = "øyeblikk" "år" "vinter" "vei" "uke" "torsdag" "tonnkilometer" "tiår" "tirsdag" "time" "tiendelssekund" "tidelssekund" "tid" "søndag" "stykke" "stund" "steg" "sted" "sommer" "skritt" "sjømil" "september" "sekundmeter" "sekund" "påske" "pinse" "periode" "onsdag" "oktober" "november" "noengang" "natt" "nanosekund" "nanometer" "måned" "morgen" "minutt" "millisekund" "millimeter" "mil" "mikrometer" "meter" "mars" "mandag" "mai" "m." "lørdag" "kveld" "kvartmil" "kvadratmillimeter" "kvadratmeter" "kvadratkilometer" "kvadratdesimeter" "kvadratcentimeter" "kubikkmillimeter" "kubikkmeter" "kubikkdesimeter" "kubikkcentimeter" "km" "klokke" "kilometer" "juni" "juli" "jul" "januar" "høst" "hverdag" "hundredelssekund" "helligdag" "helgedag" "halvår" "halvmil" "halvmeter" "gang" "fredag" "formiddag" "februar" "ettermiddag" "døgn" "desimeter" "desember" "dag" "centimeter" "august" "april" <dato> ("liv" Sg Def) ("vår" N) ;
 LIST Acc = Acc ;
+LIST ACR = ACR ;
 LIST alt = "siden" A Adv V Pr Pron CS IM N Interj det CC <anf> <komma> <ellipse> <kolon> <parentes-beg> <parentes-slutt> <semi> <strek> ;
 LIST anf = <anf> ;
 LIST bare-A = "vedkommende" "ugjort" "tilsvarende" "skrå" "nær" "ny" "middels" "kort" "iført" "halv" "fånyttes" "fri" ;
@@ -995,6 +996,9 @@ REMOVE:apred (N) IF
 	(-1 ("være"))
 	(-2 N OR Pron)
 ;
+
+"<fin>" REMOVE ACR IF
+	(1 N);
 
 
 # 3532
