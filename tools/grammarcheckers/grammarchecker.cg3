@@ -587,7 +587,7 @@ SET Amf = (A Msc) OR (A Fem) OR (A MF) ;
 
 #!! **Agreement rule:** masculine adjectives should be neuter (msyn-agr-adjmsc-adjneu). Context: *Et fin/fint hus.*
 ADD:msyn-agr-adjmsc-adjneu (&msyn-agr-adjmsc-adjneu) TARGET A IF
-	(*-1 Det BARRIER NOT-A)
+	(*-1 Det OR ("et" Pron Indef Neu Sg) BARRIER NOT-A)
 	(NEGATE 0 Neu)
 	(0C Amf)
 	(1C N + Neu)
