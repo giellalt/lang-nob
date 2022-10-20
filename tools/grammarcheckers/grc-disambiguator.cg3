@@ -13270,6 +13270,7 @@ REMOVE (A) IF
 	(-1 Indef-Sg-Msc-A)
 	(NOT -1 ikke-A)
 	(NOT -2 V OR det)
+	(NOT 1 N)
 ;
 
 
