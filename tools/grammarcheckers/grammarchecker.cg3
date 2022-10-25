@@ -783,7 +783,12 @@ ADDRELATION:msyn-pred-adjneu-adjmsc ($2) (N) FROM (2 A LINK 0 (&msyn-pred-adjneu
 #ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A) IF (-2 ("det") LINK *-1 BOS BARRIER NOT-NPMOD)(-1 ("være"))(0C Msc OR Fem OR MF)(NOT 1 N + Msc);
 
 #!!  **Agreement rule:**. Context: *Eplet var god/godt.*
-ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A) IF (NOT *-1 Pr BARRIER NOT-NPMOD LINK -1 N + Msc)(-2C (N Neu Sg) OR ("det"))(-1 ("være"))(0C Msc OR Fem OR MF)(NOT 1 N + Msc);
+ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A) IF
+	(NOT *-1 Pr BARRIER NOT-NPMOD LINK -1 N + Msc)
+	(-2C (N Neu Sg) OR ("det"))
+	(-1 ("være"))
+	(0C Msc OR Fem OR MF)
+	(NOT 1 N + Msc);
 
 #!! **Agreement rule:**  Context: *Eplet var god/godt.*
 ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A) IF 
@@ -863,7 +868,7 @@ ADD:msyn-v-inf-pres (&msyn-v-inf-pres) TARGET (V Inf) OR MONOSYLL_V + Imp IF
 	(NOT -1 ("Gud") OR ("herre"))
 	(NEGATE -1 ("å") OR ("takk") + N + Neu + Sg + Def)
 	(0 Inf OR Imp LINK NEGATE 0 Prs OR PROBABLY-NOUN OR Pass OR ("så") OR ("nå") OR ("vår") OR ("øyne") OR ("ære") OR ("sanne") OR ("dette"))
-	(NOT 1 ("Gud") OR ("herre"))
+	(NOT 1 ("Gud") OR ("herre") OR Ind)
 	(NEGATE 1 ("-") LINK 1 CC); #(NOT *0 VFIN);
 
 
