@@ -7756,7 +7756,7 @@ SELECT (Adv) IF
 
 # 2709
 SELECT (Adv) IF
-	(NOT 0 %alt% OR %saa/og/selv%)
+	(NOT 0 %alt% OR %saa/og/selv% OR PrfPrc)
 	(-1 setn-gr)
 	(1C fv)
 ;
@@ -15904,27 +15904,27 @@ REMOVE (V Inf) IF
 ;
 
 
-# 1792
-REMOVE (V Inf) IF
-	(NOT 0 Pass)
-	(-1 CLB/CC-CC)
-	(NOT -2 PrsPtc)
-	(*-1C setn-gr BARRIER infmerke)
-	(*-1C setn-gr BARRIER m-hj-V)
-	(*-2C setn-gr BARRIER aci)
-;
+# 1792 remove grc
+#REMOVE (V Inf) IF
+#	(NOT 0 Pass)
+#	(-1 CLB/CC-CC)
+#	(NOT -2 PrsPtc)
+#	(*-1C setn-gr BARRIER infmerke)
+#	(*-1C setn-gr BARRIER m-hj-V)
+#	(*-2C setn-gr BARRIER aci)
+#;
 
 
-# 1793
-REMOVE (V Inf) IF
-	(NOT 0 Pass)
-	(NOT -1 komma OR @Adv)
-	(*-1C setn-gr BARRIER infmerke)
-	(*-1C setn-gr BARRIER m-hj-V)
-	(*-2C setn-gr BARRIER aci)
-	(*-1 CLB/CC-CC BARRIER setn-gr)
-	(*-1 CLB/CC-CC LINK *1C ikke-Adv)
-;
+# 1793 remove grc
+#REMOVE (V Inf) IF
+#	(NOT 0 Pass)
+#	(NOT -1 komma OR @Adv)
+#	(*-1C setn-gr BARRIER infmerke)
+#	(*-1C setn-gr BARRIER m-hj-V)
+#	(*-2C setn-gr BARRIER aci)
+#	(*-1 CLB/CC-CC BARRIER setn-gr)
+#	(*-1 CLB/CC-CC LINK *1C ikke-Adv)
+#;
 
 
 # 1794 grc_removal
@@ -17763,6 +17763,7 @@ SELECT (V Prs) IF
 	(NOT -1 komma/CC OR CS)
 	(NOT -1 parentes OR >>>)
 	(NOT -1 overskrift OR Inf)
+	(NOT 0 Inf LINK 1 CC LINK 1 Inf)
 	(*-1C setn-gr BARRIER Prs/Prt)
 	(*1C setn-gr BARRIER Prs/Prt)
 ;
