@@ -223,6 +223,17 @@
     </body>
   </error>
   
+  <error id="syn-embedded-v2-v3">
+    <header>
+      <title xml:lang="en">Word order error</title>
+      <title xml:lang="nb">Ordstillingsfeil</title>
+    </header>
+    <body>
+      <description xml:lang="en">The word "$1" is a finite verb, and should come after the adverb in the embedded clause.</description>
+      <description xml:lang="nb">Ordet "$1" er et finitt verb, og skal stå etter adverbet i leddsetninga.</description>
+    </body>
+  </error>
+  
   <error id="typo">
     <header>
       <title xml:lang="en">Spelling error</title>
@@ -234,6 +245,17 @@
     </body>
   </error>
 
+  <error id="ellipsis">
+    <header>
+      <title xml:lang="en">Ellipsis</title>
+      <title xml:lang="smj">Ellipse</title>
+    </header>
+    <body>
+      <description xml:lang="en">You have used three periods, "$1". Here an ellipsis would have been a better choice.</description>
+      <description xml:lang="sma">Du har brukt 3 punktum. Her ville det ha passa med ellipse, "…".</description>
+    </body>
+  </error>
+  
   
 
 
