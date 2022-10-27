@@ -1,0 +1,11 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+  
+Tests:
+  - "det er jo ganske aktuelt i disse dager med den nye dannelsesuttalelsen . "
+  - "Disse kaller Foer for de svarte karpatene . "
+  - "I disse dager er Andrew Jennings aktuell med boken Rått spill : FIFAs hemmelige verden . "
+  - "Forfatteren Ebba Haslund døde i sommer , 92 år gammel , men det er en høyst levende stemme som snakker til oss i memoarboka « Ingen frøkensport » som utgis posthumt i disse dager Olding kaller hun seg , uten blygsel , hun er trøtt av at gamle mennesker kalles godt voksne eller seniorer , som om det å være gammel er noe å skamme seg over . "
+  - "Begge disse bøker er i samme slekt og har utspring i India . "
+

@@ -1,0 +1,8 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+  
+Tests:
+  - "Kapitlet om Denne skulle i følge en anmelder være hysterisk morsom , og det er ikke ofte man finner bøker som er så jævlige morsomme , så hadde det bare stemt ville alt vært knall . "
+  - "Halim er en ung mann som i en vanskelig tid gjør det mer komplisert for seg selv , men disse tre ordner opp i problemene sammen . "
+  - "Hadde det eksistert grader av terningkast så hadde nok denne boken vært nærmere enn firer enn en treer på terningen . "
