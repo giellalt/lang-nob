@@ -743,8 +743,7 @@ ADD:msyn-qucompl-def-indef (&msyn-qucompl-def-indef) TARGET N + Pl + Def IF
 	LINK NEGATE *-1 ("den") + Det + Dem + Pl OR ("denne") OR ("disse") OR ("begge") OR ("all") BARRIER NOT-A);
 #	LINK NEGATE -1 (§) OR ("all") OR Def);
 ADD:msyn-qucompl-def-indef (&msyn-qucompl-def-indef) TARGET N + Pl + Def IF
-	(*-1 ("mange") + Comp
-	     BARRIER NOT-A
+	(*-1 ("mange") + Comp BARRIER NOT-A LINK NOT -1 Det + Dem + Pl
      	     	  LINK NOT 0 Sem/ID
      		       LINK NOT -1 (§))(NEGATE 0 Indef);
 COPY:msyn-qucompl-def-indef (Indef &SUGGEST) EXCEPT (Use/NG Def) TARGET (N Msc Pl &msyn-qucompl-def-indef)(NEGATE 0 Indef); 
@@ -759,10 +758,14 @@ ADDRELATION:msyn-qucompl-def-indef ($2) (*) FROM (T:previousWordCrossSent LINK 0
 ## Vi har 5 bøkene.
 
 #!! **Comparative rule:** Quantor in superlative: *de flere/fleste ulike kulturene*
-ADD:msyn-qu-comp-superl (&msyn-qu-comp-superl) TARGET ("mange" A Comp Pl Indef) IF (-1 ("den") + Det + Dem + Pl) (*1 N + Pl + Def BARRIER NOT-A) ;
+ADD:msyn-qu-comp-superl (&msyn-qu-comp-superl) TARGET ("mange" A Comp Pl Indef) IF
+	(NEGATE -2 ("av") LINK -1 Det OR Num)
+	(-1 ("den") + Det + Dem + Pl)
+	(*1 N + Pl + Def BARRIER NOT-A) ;
 COPY:msyn-qu-comp-super (Superl Pl Def &SUGGEST) EXCEPT (Comp Pl Indef) TARGET (A &msyn-qu-comp-superl) ;
 ADDRELATION:&msyn-qu-comp-superl ($2) (N) FROM (*-1 A LINK 0 (&&msyn-qu-comp-superl)) ;
-
+## De flere ulike kulturene var konsentrert i elvedaler.
+## En av de flere gode samtalene handlet om språkteknologi.
 
 #!! ## Predicative gender agreement
 
@@ -794,7 +797,7 @@ ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A) IF
 ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A) IF 
 (*-1 ("være") BARRIER NOT-ADV LINK -1C  (N Neu Sg) LINK *-1 BOS BARRIER NOT-NPMOD)
 (0C Msc OR Fem OR MF)
-(NOT 1 N + Msc);
+(NOT 1 N + Msc OR N + Fem);
 COPY:msyn-pred-adjmsc-adjneu (Neu Sg Indef &SUGGEST) EXCEPT (Msc Sg Indef)  TARGET (A Pos &msyn-pred-adjmsc-adjneu);
 ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (2 A LINK 0 (&msyn-pred-adjmsc-adjneu)) ;
 
@@ -1037,12 +1040,12 @@ ADDRELATION:real-v-aa-og ($2) (V) FROM (1 IM OR N LINK 0 (&real-v-aa-og)) ;
 ADDRELATION:real-v-aa-og ($3) (V) FROM (-1 IM OR N LINK 0 (&real-v-aa-og)) ;
 
 ADD:real-cp-null-som (&real-cp-null-som) TARGET ("hvilken") IF
-(-1 V)
-	(1 V);
+	(-1 V)
+	(1C V);
 COPY:real-cp-null-som ("hva som" CS &SUGGEST) EXCEPT ("hvilken" Det Dem Neu Sg) OR ("hvilken" Det Dem Fem Sg) OR ("hvilken" Det Dem Msc Sg)  TARGET (&real-cp-null-som);
 #$ Jeg vil lære hvilket passer for meg.
 #$ Jeg vil lære hva sin passer for meg.
-
+#$ Jeg vil vite hvilken bruker som passer for meg. # bruker = V Ind Prs
 
 #!! ## Punctuation rules
 #!! Simple punctuation rules showing how to change the lemma in the suggestions:
