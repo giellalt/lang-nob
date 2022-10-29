@@ -1,9 +1,0 @@
-Config:
-  Spec: ../pipespec.xml
-  Variant: nobgram-dev
-  
-Tests:
-  - "Sjelden forelsker jeg meg så hodestups som jeg gjorde i denne ! "
-  - "Sjelden gjør jeg det . "
-  - "Sjelden ler jeg høyt av bøker jeg leser . "
-  - "Også er smerten din tjener . "

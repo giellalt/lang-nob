@@ -1,8 +1,0 @@
-Config:
-  Spec: ../pipespec.xml
-  Variant: nobgram-dev
-  
-Tests:
-  - "Er det behov for en slik liste , eller er det ikke så ofte at man har gode lenker å vise til ? "
-  - "Forøvrig kan også DU lese albumet her : http://web.archive.org/web/20050117104834/http : / / www.techknight.com/gallery/ali?page=1 Huff å huff . "
-  - "Det har tatt meg tid å huske både Knausgård og Min kamp . "

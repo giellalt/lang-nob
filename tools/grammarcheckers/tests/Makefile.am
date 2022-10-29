@@ -8,6 +8,29 @@ if WANT_GRAMCHECK
 
 # List here (space separated) all yaml files to be run as part of make check:
 TESTS=\
+	candidates-msyn-advl-a-adv.yaml \
+	candidates-msyn-agr-adjmsc-adjneu.yaml \
+	candidates-msyn-agr-adjneu-adjmsc.yaml \
+	candidates-msyn-agr-adjsg-adjpl.yaml \
+	candidates-msyn-agr-detmsc-detneu.yaml \
+	candidates-msyn-agr-detneu-detfem.yaml \
+	candidates-msyn-agr-detneu-detmsc.yaml \
+	candidates-msyn-np-demindef-demdef.yaml \
+	candidates-msyn-pred-adjmsc-adjneu.yaml \
+	candidates-msyn-pred-adjneu-adjmsc.yaml \
+	candidates-msyn-pron-nom-acc.yaml \
+	candidates-msyn-qu-comp-superl.yaml \
+	candidates-msyn-qucompl-def-indef.yaml \
+	candidates-msyn-v-inf-pres.yaml \
+	candidates-msyn-v-pres-inf.yaml \
+	candidates-real-aa-og.yaml \
+	candidates-real-bli-vaere.yaml \
+	candidates-real-cp-null-som.yaml \
+	candidates-real-og-aa.yaml \
+	candidates-real-vaere-bli.yaml \
+	candidates-syn-adv-v3-v2.yaml \
+	candidates-syn-embedded-v2-v3.yaml \
+	candidates-syn-pp-v3-v2.yaml \
 	msyn-agr-adjmsc-adjneu.yaml \
 	msyn-agr-adjneu-adjmsc.yaml \
 	msyn-agr-detmsc-detneu.yaml \

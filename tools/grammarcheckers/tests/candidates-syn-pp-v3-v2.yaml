@@ -3,11 +3,9 @@ Config:
   Variant: nobgram-dev
   
 Tests:
-  - "I allefall er det et Hamsun-sitat om Duun der som er rimelig tøft : \\\\ u201dHans diktning er i Aand og Dybde motsat Tidens Jazz . "
-  - "På konferansen liker Jeg slike En bok som er utrolig godt skrevet , men befolket av fullstendig ufordragelige personer . "
-  - "I den grad er det noen sortering , så er det fargesortering som gjelder for meg også . "
-  - "For noen personer har jeg blitt kjent med ! "
-  - "På NRK stod nyhetene å lese i dag : Ut å stjæle hester . "
-  - "I den grad skjer det noko verkar det ubetydeleg . "
-  - "For all del er filmen super , men jeg syntes de hadde gjort for mange endringer i forhold til boken . "
-  - "For et liv har du laget , Tore Renberg , for et univers ! "
+  - "I den grad {er det}${det er} noen sortering , så er det fargesortering som gjelder for meg også . "
+  - "For noen personer {har jeg}${jeg har} blitt kjent med ! "
+  - "På NRK stod nyhetene å lese i dag. "
+  - "I den grad {skjer det}${det skjer} noe virker det ubetydelig . "
+  - "For all del er filmen super, men jeg syntes de hadde gjort for mange endringer i forhold til boken . "
+  - "For et liv {har du}${du har} laget, Tore Renberg , for et univers ! "

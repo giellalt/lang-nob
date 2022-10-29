@@ -1,0 +1,7 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+  
+Tests:
+  - "De {flere}£{fleste} ulike kulturene var konsentrert i elvedalene."
+  - "Et eksempel på en av de flere gode samtalene mellom far og sønn, er hvor faren er litt bekymret og forsøker å dele sin erfaring med Hans. "

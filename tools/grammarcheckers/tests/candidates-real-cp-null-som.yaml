@@ -1,7 +1,0 @@
-Config:
-  Spec: ../pipespec.xml
-  Variant: nobgram-dev
-  
-Tests:
-  - "Derfor opprettes det en offentlig endringslogg som forteller hvilken bruker som har endret omslagsbilde for en utgave . "
-  - "De beste lar bruker bestemme hvilke deler av billedstrømmen ( bokstrømmen i vårt tilfelle ) som vises på Facebook . "

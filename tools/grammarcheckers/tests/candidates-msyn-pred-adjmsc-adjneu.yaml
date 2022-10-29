@@ -1,9 +1,0 @@
-Config:
-  Spec: ../pipespec.xml
-  Variant: nobgram-dev
-  
-Tests:
-  - "Himmelblomsttreet er neste bok på lista . "
-  - "Tidevannslandet var også god , men tok ikke sånn fatt i meg som Glasslottet gjorde . "
-  - "Biblioteket er en fantastisk ordning . "
-  - "og omslaget er en liten perle i seg selv . "
