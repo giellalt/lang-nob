@@ -29,6 +29,7 @@ få: A_FÅ ; !!≈ * @CODE@
 små: A_SMÅ ; !!≈ * @CODE@ 
 vond: VOND ; !!≈ * @CODE@ 
 
+ihuga a3 ;
 kompetansedrevet a4 ;
 FN-ledet a4 ;
 oppdragstilpasset a4 ;
