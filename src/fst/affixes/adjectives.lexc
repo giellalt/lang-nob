@@ -56,7 +56,8 @@ LEXICON a2 !
 LEXICON a3 !
  +A: positive    ;
  +A: a-no-neuter ;
-
+ +A: grade-C     ;
+ 
 LEXICON a4 ! oppskjørtet
  +A:   positive-indef ;
  +A:   positive-def   ;
