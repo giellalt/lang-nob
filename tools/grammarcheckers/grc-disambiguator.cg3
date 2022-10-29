@@ -10748,7 +10748,7 @@ SELECT (N) IF
 
 # 2360
 SELECT (N) IF
-	(1 CC)
+	(1 ("og") + CC OR ("eller") + CC)
 	(NOT 1 CLB OR <adv>)
 	(2C N)
 	(NOT 2 Clt)
@@ -10757,6 +10757,7 @@ SELECT (N) IF
 
 # 2361
 SELECT (N) IF
+        (NOT -1 IM OR ("og"))
 	(0 samset OR A)
 	(NOT 0 Prs/Prt OR PrfPrc)
 	(NOT *1 N)
