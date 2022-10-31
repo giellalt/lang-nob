@@ -997,7 +997,9 @@ COPY:real-og-aa ("å" IM &SUGGEST) EXCEPT ("og" CC) TARGET (CC &real-og-aa);
 #!! ### The *å* -> *og* rules 
 
 #!! **Realword rule:** å should be og between nouns (real-aa-og). Context: *Det var Trond å Kari.*
-ADD:real-aa-og (&real-aa-og) TARGET ("å") IF (-1 N) (1C N);
+ADD:real-aa-og (&real-aa-og) TARGET ("å") IF
+	(-1 N)
+	(1C N);
 COPY:real-aa-og ("og" CC &SUGGEST) EXCEPT ("å" IM) TARGET ( &real-aa-og);
 ADDRELATION:real-aa-og ($2) (N) FROM (1 N LINK 0 (&real-aa-og)) ;
 ADDRELATION:real-aa-og ($3) (N) FROM (-1 N LINK 0 (&real-aa-og)) ;
