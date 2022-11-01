@@ -167,6 +167,17 @@
     </body>
   </error>
 
+  <error id="msyn-advl-plloc-sgill">
+    <header>
+      <title xml:lang="en">Adjective and not adverbial</title>
+      <title xml:lang="nb">Adjektiv og ikke adverb</title>
+    </header>
+    <body>
+      <description xml:lang="en">When a word like "$1" is used as an object predicative, it should be an adverb.</description>
+      <description xml:lang="nb">Når et ord som "$1" blir brukt som objektpredikativ skal det opptre som adverb.</description>
+    </body>
+  </error>
+
   <error id="real-aa-og">
     <header>
       <title xml:lang="en">Use "og" rather than "å"</title>
