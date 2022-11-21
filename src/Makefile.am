@@ -107,9 +107,11 @@ endif
 analyser-gt-desc.%: analyser-gt-desc.tmp.%                    \
 					filters/remove-derivation-position-tags.% \
 					filters/remove-norm-comp-tags.%
+					filters/remove-usage-tags.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
-				@\"filters/remove-derivation-position-tags.$*\" \
-			 @\"filters/remove-norm-comp-tags.$*\"           \
+				@\"filters/remove-usage-tags.$*\"               \
+			.o. @\"filters/remove-derivation-position-tags.$*\" \
+			.o. @\"filters/remove-norm-comp-tags.$*\"           \
 			.o. @\"$<\"                                         \
 			;\n\
 		 $(INVERT_HFST)\
@@ -224,11 +226,13 @@ analyser-dict-gt-desc.%: analyser-dict-gt-desc.tmp.% \
 					filters/convert_to_flags-CmpNP-tags.%     \
 					filters/split-CmpNP-tags.%                \
 					filters/remove-grammatical-tags.%         \
+					filters/remove-norm-comp-tags.%           \
 					filters/remove-usage-tags.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
 				@\"filters/remove-usage-tags.$*\"               \
 			.o. @\"filters/remove-derivation-position-tags.$*\" \
 			.o. @\"filters/remove-grammatical-tags.$*\"         \
+			.o. @\"filters/remove-norm-comp-tags.$*\"           \
 			.o. @\"filters/convert_to_flags-CmpNP-tags.$*\"     \
 			.o. @\"filters/split-CmpNP-tags.$*\"                \
 			.o. @\"$<\"                                         \
@@ -242,6 +246,7 @@ analyser-dict-gt-desc.%: analyser-dict-gt-desc.tmp.% \
 analyser-dict-gt-desc-mobile.%: analyser-dict-gt-desc-mobile.tmp.% \
 					filters/remove-derivation-position-tags.% \
 					filters/remove-grammatical-tags.%         \
+					filters/remove-norm-comp-tags.%           \
 					filters/convert_to_flags-CmpNP-tags.%     \
 					filters/split-CmpNP-tags.%                \
 					filters/remove-usage-tags.%
@@ -249,6 +254,7 @@ analyser-dict-gt-desc-mobile.%: analyser-dict-gt-desc-mobile.tmp.% \
 				@\"filters/remove-usage-tags.$*\"               \
 			.o. @\"filters/remove-derivation-position-tags.$*\" \
 			.o. @\"filters/remove-grammatical-tags.$*\"         \
+			.o. @\"filters/remove-norm-comp-tags.$*\"           \
 			.o. @\"filters/convert_to_flags-CmpNP-tags.$*\"     \
 			.o. @\"filters/split-CmpNP-tags.$*\"                \
 			.o. @\"$<\"                                         \
