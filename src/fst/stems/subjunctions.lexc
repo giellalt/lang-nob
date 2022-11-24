@@ -4,25 +4,31 @@
 
 LEXICON Subjunction
 !! LEXICON @LEXNAME@
-da subj ;
-ettersom subj ;
-dersom subj ; 
-å+IM:å # ;
-om  subj ;
-fordi subj ;
-ifall subj ;
-som subj ;
-dersom subj ;
-hvis subj ;
-viss subj ;
 at subj ;
-for conj ;
-om p ;
-som p ;
+da subj ;
 derfor adv ;
+dersom subj ;
+dersom subj ; 
+ettersom subj ;
+enn subj ;
+enda subj ;
+likesom subj ;
+for conj ;
+fordi subj ;
+før subj ;
+hva% som subj ;
+hvis subj ;
 hvorfor adv ;
 hvorvidt subj ;
-hva% som subj ;
+ifall subj ;
+om  subj ;
+om p ;
+som p ;
+som subj ;
+så subj ;
+såfremt subj ;
+viss subj ;
+å+IM:å # ;
 
 LEXICON subj
 !! LEXICON @LEXNAME@ gives tag +CS
