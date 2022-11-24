@@ -106,7 +106,7 @@ endif
 # We need to specify -gt- to avoid applying the filters to the raw fst:
 analyser-gt-desc.%: analyser-gt-desc.tmp.%                    \
 					filters/remove-derivation-position-tags.% \
-					filters/remove-norm-comp-tags.%
+					filters/remove-norm-comp-tags.%           \
 					filters/remove-usage-tags.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
 				@\"filters/remove-usage-tags.$*\"               \
