@@ -100,7 +100,7 @@ endif
 #		| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
 #			-S '+Der4' -a 5 --arcs-only \
 #		| $(HFST_REWEIGHT) $(MORE_VERBOSITY) $(HFST_FLAGS) \
-#			-S '+Der5' -a 5 --arcs-only 
+#			-S '+Der5' -a 5 --arcs-only
 
 
 # We need to specify -gt- to avoid applying the filters to the raw fst:
@@ -143,7 +143,7 @@ analyser-gt-norm.%: analyser-gt-norm.tmp.%                \
 # The operation 'twosided flag-diacritics" crashes Xerox badly, so we do with
 # a simpler, less restrictive normative fst when building with Xerox:
 analyser-gt-norm.xfst: analyser-gt-norm.tmp.xfst \
-					filters/remove-norm-comp-tags.xfst             
+					filters/remove-norm-comp-tags.xfst
 	$(AM_V_XFST)$(PRINTF) "read regex \
 				@\"filters/remove-norm-comp-tags.xfst\"                \
 			.o. @\"$<\"                                                \
@@ -268,7 +268,7 @@ generator-gt-norm.%: generator-gt-norm.tmp.%              \
 					filters/remove-Nynorsk-strings.%      \
 					filters/remove-MinusSpell-strings.%   \
 					filters/remove-norm-comp-tags.%       \
-					filters/remove-derivation-position-tags.% 
+					filters/remove-derivation-position-tags.%
 	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
 				@\"filters/remove-Nynorsk-strings.$*\"      \
 			.o. @\"filters/remove-MinusSpell-strings.$*\"   \
