@@ -1,0 +1,6 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+  
+Tests:
+  - "Men en kjenner igjen språket og hvordan en sakte for innblikk i hovedpersonens liv . "
