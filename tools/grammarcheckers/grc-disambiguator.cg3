@@ -6223,14 +6223,14 @@ SELECT (A Neu Sg Indef) IF
 ;
 
 
-# 2823
-SELECT (A Neu Sg Indef) IF
-	(NOT 0 farlige-A OR orden)
-	(NOT 0 Adv)
-	(1C A)
-	(NOT *-1 det BARRIER setn-gr)
-	(NOT -1 A OR komma/CC)
-;
+# 2823 Dessverre absurd.
+#SELECT (A Neu Sg Indef) IF
+#	(NOT 0 farlige-A OR orden)
+#	(NOT 0 Adv)
+#	(1C A)
+#	(NOT *-1 det BARRIER setn-gr)
+#	(NOT -1 A OR komma/CC)
+#;
 
 
 # 2824
@@ -15347,7 +15347,7 @@ REMOVE (N) IF
 # 1858
 REMOVE (N) IF
 	(0 Indef OR fv)
-	(-1 Neu OR %det%)
+	(-1C Neu OR %det%)
 	(NOT 1 CS OR CC)
 	(NOT -2 fv)
 	(NOT 0 ("fylke"))
@@ -18304,7 +18304,7 @@ REMOVE Pron + Pers + Pl3 IF (1 N + Pl OR A + Pl OR Qnt + Pl);
 
 REMOVE Det IF (0 Pron)(NEGATE *1 N OR Num BARRIER NOT-NPMOD);
 REMOVE Det IF (0 Pron)(0 Det + Neu)(*1C N + Msc OR N + Fem BARRIER NOT-NPMOD);
-REMOVE Det IF (0 Pron)(1 Pr OR V OR CLB OR EOS);
+REMOVE Det IF (0 Pron)(1C Pr OR V OR CLB OR EOS);
 
 # N and not V
 REMOVE (Pl) IF (-1 Pr)(0 Sg);
