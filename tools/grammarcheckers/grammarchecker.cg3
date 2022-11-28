@@ -639,11 +639,14 @@ COPY:msyn-agr-detmsc-detneu (Neu Sg &SUGGEST) EXCEPT (Msc Sg) TARGET (Det Dem &m
 
 #!! **Agreement rule:**  Masculine indefinite determiners should be neuter (msyn-agr-detmsc-detneu). Context: *en/et land*.
 ADD:msyn-agr-detmsc-detneu (&msyn-agr-detmsc-detneu) TARGET ("en" Det Dem Msc Sg) IF
-	(*1C (N Neu) BARRIER NOT-NPMODADV LINK NEGATE 1 ("-") LINK 1 CC)
+	(*1C (N Neu) BARRIER NOT-NPMODADV LINK NOT 0 Clt LINK NEGATE 1 ("-") LINK 1 CC)
+	(NEGATE *1 (N Neu) LINK 0 ("pluss") LINK 1 ("en"))
 	;
 #COPY:msyn-agr-detmsc-detneu ("et" Neu Sg &SUGGEST) EXCEPT ("en" Msc Sg) TARGET (&msyn-agr-detmsc-detneu);
 
-ADD:msyn-agr-detmsc-detneu (&msyn-agr-detmsc-detneu) TARGET ("en" Pron Indef Msc Sg) IF (*1C (N Neu) BARRIER NOT-NPMODADV);
+ADD:msyn-agr-detmsc-detneu (&msyn-agr-detmsc-detneu) TARGET ("en" Pron Indef Msc Sg) IF
+			   (*1C (N Neu) BARRIER NOT-NPMODADV LINK NOT 0 Clt)
+		   	(NEGATE *1 (N Neu) LINK 0 ("pluss") LINK 1 ("en"));
 COPY:msyn-agr-detmsc-detneu ("et" Neu Sg &SUGGEST) EXCEPT ("en" Msc Sg) TARGET ( &msyn-agr-detmsc-detneu);
 
 ADDRELATION:msyn-agr-detmsc-detneu ($2) N FROM (*-1 (&msyn-agr-detmsc-detneu) BARRIER SV-BOUNDARY OR V); 
