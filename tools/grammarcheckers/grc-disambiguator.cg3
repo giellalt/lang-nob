@@ -91,6 +91,7 @@ LIST %en% = ("en" Msc) ;
 LIST %en/den/denne% = "en" "denne" "den" ;
 LIST %en/ei/et% = ("en" Msc) ("en" Fem) ("en" Neu) ;
 LIST %en/et% = ("en" Msc) ("en" Neu) ;
+LIST %ei/et% = ("ei" Fem) ("en" Neu) ;
 LIST %enda% = "enda" ;
 LIST %enn% = "enn" ;
 LIST %et% = ("en" det) ;
@@ -16720,7 +16721,8 @@ REMOVE (V) IF
 # 1717
 REMOVE (V) IF
 	(0 fv)
-	(-1C %en/ei/et%)
+	(-1C %ei/et%)
+	(*0 fv)
 ;
 
 
