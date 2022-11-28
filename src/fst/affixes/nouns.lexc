@@ -136,6 +136,13 @@ LEXICON m4
 +N+Msc+Pl+Indef: K ; ! flere stillongs
 m1 ;
 
+LEXICON m5
++N+Msc+Sg+Indef: K ;
++N+Msc+Sg+Def: K ;
++N+Msc+Pl+Indef: K ;
++N+Msc+Pl+Def: K ;
+
+
 LEXICON m1 ! dag, hane
  +N: R       ;
      m1morph ;

@@ -20,6 +20,7 @@
 !!                                 bevrer          bevrene
 !!                                 bevre           bevrene
 !!     m4  longs       longsen     longs/longser   longsene
+!!     m5  handelsreisende ...
 !!     n1  slott       slottet     slott           slotta/slottene
 !!     n2  eple        eplet       epler           epla/eplene
 !!         salt        saltet      salter          salta/saltene
@@ -592,7 +593,7 @@ zoo+CmpNP/None:zoo nX ;
 LEXICON Noun
 !! LEXICON @LEXNAME@  here come the long list of stems (tens of thousands)
 
-
+handelsreisende m5 ;
 dagtilbud n1 ;
 lysglobe m1 ;
 isgarnfiske n1sg  ;
@@ -16769,6 +16770,7 @@ sjalottløk m1 ;
 spøk m1 ;
 aprilspøk m1 ;
 brøk m1 ;
+total m1 ;
 kabal m1 ;
 kannibal m1 ;
 cymbal m1 ;
