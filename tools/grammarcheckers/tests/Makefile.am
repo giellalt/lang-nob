@@ -9,9 +9,6 @@ if WANT_GRAMCHECK
 # List here (space separated) all yaml files to be run as part of make check:
 TESTS=\
 	candidates-msyn-advl-a-adv.yaml \
-	candidates-msyn-agr-adjmsc-adjneu.yaml \
-	candidates-msyn-agr-adjneu-adjmsc.yaml \
-	candidates-msyn-agr-adjsg-adjpl.yaml \
 	candidates-msyn-agr-detmsc-detneu.yaml \
 	candidates-msyn-agr-detneu-detfem.yaml \
 	candidates-msyn-agr-detneu-detmsc.yaml \
