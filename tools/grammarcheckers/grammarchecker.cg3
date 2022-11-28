@@ -138,6 +138,7 @@ LIST ¶ = ¶ ;					  #!!≈ - @CODE@
 LIST QMARK = """ ; 			  #!!≈ - @CODE@
 SET PUNCT = PPUNCT - QMARK ;  #!!≈ - @CODE@
 # ADD " FOR SYNTAX COLOURING.
+LIST MWE = MWE ; 				#!!≈ - @CODE@
 
 #!! ### Sets for Semantic tags
 # -------------
@@ -1055,8 +1056,19 @@ COPY:real-cp-null-som ("hva som" CS &SUGGEST) EXCEPT ("hvilken" Det Dem Neu Sg) 
 #!! **Quotation mark rule:** Use correct quotation mark. 
 ADD:use-guillemets (&guillemets) TARGET (""");
 COPY:left-guillemet ("«" &SUGGEST) EXCEPT (""") TARGET (&guillemets) ;
-COPY:right-guillemet ("»" &SUGGEST) EXCEPT (""") TARGET (&guillemets) ;
+COPY:right-guillemet ("»" &SUGGEST) EXCEPT (""") TARGET (&guillemets) ; #"
 
 #!! **Ellipsis rule:** Ellipsis … for ... (use-ellipsis)
 ADD:use-ellipsis (&ellipsis) TARGET ("...");
 COPY:use-ellipsis ("…" &SUGGEST) EXCEPT ("...") TARGET (&ellipsis) ;
+
+
+	# ====================== #
+		AFTER-SECTIONS
+	# ====================== #
+
+	# Tag removal rules to prepare for generation
+
+SUBSTITUTE (MWE) (*) TARGET MWE ;
+	## Guollefestivála geassemánus ja Riddu Riđđu suoidnemánus.
+
