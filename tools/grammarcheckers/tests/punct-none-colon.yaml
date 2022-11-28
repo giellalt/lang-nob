@@ -1,0 +1,6 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+  
+Tests:
+  - "Skuespilleren{}°{:} Se filmene ; de er bare knallgode ! "
