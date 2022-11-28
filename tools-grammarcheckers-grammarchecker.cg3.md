@@ -70,6 +70,7 @@ Here we declare all grammatical tags
 - LIST ¶ = ¶ ;
 - LIST QMARK = """ ;
 - SET PUNCT = PPUNCT - QMARK ;
+- LIST MWE = MWE ;
 
 ### Sets for Semantic tags
 
