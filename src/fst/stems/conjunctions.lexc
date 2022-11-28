@@ -10,16 +10,17 @@ LEXICON conj
 LEXICON Conjunction
 !! @LEXNAME@  både, og, ..
 både conj ;
-og conj ;
-og adv ;
-enten conj ;
-eller conj ;
-samt conj ;
-men conj ;
-verken conj ;
-hverken conj ;
 dog conj ; 
+eller conj ;
 endog conj ; 
+enten conj ;
+hverken conj ;
+men conj ;
+og adv ;
+og conj ;
+samt conj ;
+så conj ;
+verken conj ;
 
 
 
