@@ -259,11 +259,11 @@
   <error id="ellipsis">
     <header>
       <title xml:lang="en">Ellipsis</title>
-      <title xml:lang="smj">Ellipse</title>
+      <title xml:lang="nb">Ellipse</title>
     </header>
     <body>
       <description xml:lang="en">You have used three periods, "$1". Here an ellipsis would have been a better choice.</description>
-      <description xml:lang="sma">Du har brukt 3 punktum. Her ville det ha passa med ellipse, "…".</description>
+      <description xml:lang="nb">Du har brukt 3 punktum. Her ville det ha passa med ellipse, "…".</description>
     </body>
   </error>
   
