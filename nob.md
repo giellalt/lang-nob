@@ -1524,6 +1524,7 @@ m3  bever       beveren     bevere          beverne
 bevrer          bevrene
 bevre           bevrene
 m4  longs       longsen     longs/longser   longsene
+m5  handelsreisende ...
 n1  slott       slottet     slott           slotta/slottene
 n2  eple        eplet       epler           epla/eplene
 salt        saltet      salter          salta/saltene
