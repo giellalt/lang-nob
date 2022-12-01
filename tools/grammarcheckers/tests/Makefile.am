@@ -21,6 +21,7 @@ TESTS=\
 	neg-aa-og.yaml			    \
 	neg-agr-adjmsc-adjneu.yaml  \
 	neg-agr-adjneu-adjmsc.yaml  \
+	neg-agr-detneu-detfem.yaml \
 	neg-og-aa.yaml			    \
 	neg-pred-adjmsc-adjneu.yaml \
 	neg-pron-nom-acc.yaml	    \
