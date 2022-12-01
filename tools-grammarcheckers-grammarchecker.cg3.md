@@ -58,6 +58,7 @@ Here we declare all grammatical tags
 - LIST Rel = Rel ;
 - LIST Prop = Prop ;
 - LIST Clt = Clt ;
+- LIST Poss = Poss ;
 - LIST Err/Orth = Err/Orth ;
 
 ### Boundary tags
@@ -416,6 +417,8 @@ Ensure preceding adjective agrees with noun
 
 **Definiteness rule:** Double definiteness. Context: *de sosiale aspekter/aspektene*
 The rule gave too many false alarms, we skip it.
+
+### Definite adjectives
 
 ## Quantifier phrases
 
