@@ -12659,14 +12659,14 @@ REMOVE (A Sg Def) IF
 ;
 
 
-# 2182
-REMOVE (A Sg Def) IF
-	(NOT 0 orden OR ikke-A)
-	(1 N/A)
-	(NOT 1 N-uboey OR Def)
-	(NOT -1 N-prop OR Pr OR Dem + Sg)
-	(*-1C setn-gr BARRIER Det-gen)
-;
+# 2182 grc
+#REMOVE (A Sg Def) IF
+#	(NOT 0 orden OR ikke-A)
+#	(1 N/A)
+#	(NOT 1 N-uboey OR Def)
+#	(NOT -1 N-prop OR Pr OR Dem + Sg)
+#	(*-1C setn-gr BARRIER Det-gen)
+#;
 
 
 # 2183
@@ -16430,13 +16430,13 @@ REMOVE (V Prt) IF
 ;
 
 
-# 1747
-REMOVE (V Prt) IF
-	(NOT 0 %var% OR %kunne% OR %ville% OR %skulle%)
-	(NOT -1 Adv OR parentes)
-	(*-1 setn-gr LINK *1C fv) # LINK NOT 0 trans2) TT: trans2 OBT
-	(*-1 setn-gr LINK NOT 0 %som%)
-;
+# 1747 grc
+#REMOVE (V Prt) IF
+#	(NOT 0 %var% OR %kunne% OR %ville% OR %skulle%)
+#	(NOT -1 Adv OR parentes)
+#	(*-1 setn-gr LINK *1C fv) # LINK NOT 0 trans2) TT: trans2 OBT
+#	(*-1 setn-gr LINK NOT 0 %som%)
+#;
 
 
 # 1748
