@@ -75,6 +75,17 @@
     </body>
   </error>
   
+  <error id="msyn-agr-adjindef-adjdef">
+    <header>
+      <title xml:lang="en">Definiteness concord in noun phrases</title>
+      <title xml:lang="nb">Bestemt form i adjektiv i substantivfraser</title>
+    </header>
+    <body>
+      <description xml:lang="en">When an adjective, such as "$1, after a possessor, such as "$2", it should be in the definite form.</description>
+      <description xml:lang="nb">Når et adjektiv, som her "$1", står etter et possessivt determinativ, som her "$2", skal det stå i bestemt form</description>
+    </body>
+  </error>
+
   <error id="msyn-agr-detmsc-detneu">
     <header>
       <title xml:lang="en">Gender concord in noun phrases</title>
