@@ -1,9 +1,2 @@
-Config:
-  Spec: ../pipespec.xml
-  Variant: nobgram-dev
-  
-Tests:
-  - "Kapitlet om Denne skulle i følge en anmelder være hysterisk morsom , og det er ikke ofte man finner bøker som er så jævlige morsomme." 
-  - "Hadde det bare stemt ville alt vært knall . "
 
 
