@@ -4,9 +4,9 @@ Config:
   
 Tests:
   - "Dette er et {fin}£{fint} hus."
-  - "Romanen er også et fin utgangspunkt , hvis man har lyst å ha en oversikt over kristendommens utviklingshistorie fra år 0 til ca. i dag . "
+  - "Romanen er også et {fin}£{fint} utgangspunkt , hvis man har lyst å ha en oversikt over kristendommens utviklingshistorie fra år 0 til ca. i dag . "
   - "Jeg var redd for at mitt første møte med Lessing skulle vise seg å være {en}£{et} {liten}£{lite} fata morgana – ved nærmere bekjentskap en illusjon som sprekker . "
-  - "Skrevet naivt, satirisk og som fantastisk parodi av seg {sin}£{sitt} {egen}£{eget} narrativ."
+  - "Skrevet naivt, satirisk og som fantastisk parodi av {sin}£{sitt} {egen}£{egne} narrativ."
   - "Boken finnes på norsk , men dessverre må den bestilles fra Nasjonalbiblioteket gjennom {din}£{ditt} {lokal}£{lokale} bibliotek . "
   
   
