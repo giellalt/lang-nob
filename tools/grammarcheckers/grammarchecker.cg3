@@ -125,6 +125,7 @@ LIST Refl = Refl ;		     #!!≈ - @CODE@
 LIST Rel = Rel ;		     #!!≈ - @CODE@
 LIST Prop = Prop ;		     #!!≈ - @CODE@
 LIST Clt = Clt ;		     #!!≈ - @CODE@
+LIST Poss = Poss ;		     #!!≈ - @CODE@
 LIST Err/Orth = Err/Orth ;   #!!≈ - @CODE@
 
 #!! ### Boundary tags
@@ -323,7 +324,7 @@ LIST QUASIAUX = "akte" "anbefale" "begynne" "behøve" "bli" "forsøke" "fortsett
 
 LIST OBJPREDVERB = "føle" "kjenne" "se" ;
 
-LIST DANGEROUS-VERBS =  "så" "nå" "vår" "øyne" "ære" "sanne" "dette" "bedre" "tre" ;
+LIST DANGEROUS-VERBS =  "få" "så" "nå" "våre" "øyne" "ære" "sanne" "dette" "bedre" ; # "tre" ;
 
 
 SET VFIN-NOT-IMP = Ind ; #!!≈ - @CODE@
@@ -536,6 +537,7 @@ SET NON-APP = ALLSYNTAG - (@APP);   #!!≈ - @CODE@
 LIST &msyn-advl-a-adv = &msyn-advl-a-adv ;
 LIST &msyn-agr-adjmsc-adjneu = &msyn-agr-adjmsc-adjneu ;    
 LIST &msyn-agr-adjneu-adjmsc = &msyn-agr-adjneu-adjmsc ;    
+LIST &msyn-agr-adjindef-adjdef = &msyn-agr-adjindef-adjdef ;    
 LIST &msyn-agr-adjsg-adjpl = &msyn-agr-adjsg-adjpl ;    
 LIST &msyn-agr-detmsc-detneu = &msyn-agr-detmsc-detneu ;			    
 LIST &msyn-agr-detneu-detfem =  &msyn-agr-detneu-detfem ;   
@@ -590,10 +592,11 @@ SET Amf = (A Msc) OR (A Fem) OR (A MF) ;
 
 #!! **Agreement rule:** masculine adjectives should be neuter (msyn-agr-adjmsc-adjneu). Context: *Et fin/fint hus.*
 ADD:msyn-agr-adjmsc-adjneu (&msyn-agr-adjmsc-adjneu) TARGET A IF
-	(*-1 Det OR ("et" Pron Indef Neu Sg) BARRIER NOT-A - Adv)
+	(*-1 (Det) OR (Pron Indef Sg) BARRIER NOT-A - Adv LINK NOT 0 Poss)
 	(NEGATE 0 Neu)
 	(0C Amf)
-	(1C N + Neu)
+	(1C N + Neu + Sg)
+	(NEGATE 1 ("nummer") LINK 1 Num)
 	(NEGATE 2 ("-") LINK 1 CC)
 	;
 COPY:msyn-agr-adjmsc-adjneu (Neu Sg Indef &SUGGEST)  EXCEPT (Fem Sg Indef) OR (Msc Sg Indef) OR (MF Sg Indef)  TARGET (A Pos &msyn-agr-adjmsc-adjneu) ;
@@ -624,6 +627,14 @@ ADDRELATION:msyn-agr-adjneu-adjmsc ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&m
 #$ Dette er en fin båt.
 
 #!! **Agreement rule:**  Masculine definite determiners should be neuter (msyn-agr-detmsc-detneu). Context: *den/det huset*.
+ADD:msyn-agr-detmsc-detneu (&msyn-agr-detmsc-detneu) TARGET (Det Poss Msc) IF
+	(0 ("min" Sg1) OR ("din" Sg2) OR ("sin" Sg3))
+	(*1 (N Neu Sg Indef) BARRIER NOT-A)# LINK NEGATE 2 ("-") LINK 1 CC)
+	;
+COPY:msyn-agr-detmsc-detneu (Neu Sg1 &SUGGEST) EXCEPT (Msc Sg1) TARGET (Det Poss Msc Sg1 &msyn-agr-detmsc-detneu);
+COPY:msyn-agr-detmsc-detneu (Neu Sg2 &SUGGEST) EXCEPT (Msc Sg2) TARGET (Det Poss Msc Sg2 &msyn-agr-detmsc-detneu);
+COPY:msyn-agr-detmsc-detneu (Neu Sg3 &SUGGEST) EXCEPT (Msc Sg3) TARGET (Det Poss Msc Sg3 &msyn-agr-detmsc-detneu);
+
 ADD:msyn-agr-detmsc-detneu (&msyn-agr-detmsc-detneu) TARGET (Det Dem Msc Sg) IF
 	(NEGATE -1 VFIN)
 	(0 ("den") OR ("denne"))
@@ -641,12 +652,15 @@ COPY:msyn-agr-detmsc-detneu (Neu Sg &SUGGEST) EXCEPT (Msc Sg) TARGET (Det Dem &m
 ADD:msyn-agr-detmsc-detneu (&msyn-agr-detmsc-detneu) TARGET ("en" Det Dem Msc Sg) IF
 	(*1C (N Neu) BARRIER NOT-NPMODADV LINK NOT 0 Clt LINK NEGATE 1 ("-") LINK 1 CC)
 	(NEGATE *1 (N Neu) LINK 0 ("pluss") LINK 1 ("en"))
+	(NEGATE *1 (N Neu) LINK 0 ("nummer") LINK 1 Num)
 	;
 #COPY:msyn-agr-detmsc-detneu ("et" Neu Sg &SUGGEST) EXCEPT ("en" Msc Sg) TARGET (&msyn-agr-detmsc-detneu);
 
 ADD:msyn-agr-detmsc-detneu (&msyn-agr-detmsc-detneu) TARGET ("en" Pron Indef Msc Sg) IF
 			   (*1C (N Neu) BARRIER NOT-NPMODADV LINK NOT 0 Clt)
-		   	(NEGATE *1 (N Neu) LINK 0 ("pluss") LINK 1 ("en"));
+	(NEGATE *1 (N Neu) LINK 0 ("pluss") LINK 1 ("en"))
+	(NEGATE *1 (N Neu) LINK 0 ("nummer") LINK 1 Num);
+
 COPY:msyn-agr-detmsc-detneu ("et" Neu Sg &SUGGEST) EXCEPT ("en" Msc Sg) TARGET ( &msyn-agr-detmsc-detneu);
 
 ADDRELATION:msyn-agr-detmsc-detneu ($2) N FROM (*-1 (&msyn-agr-detmsc-detneu) BARRIER SV-BOUNDARY OR V); 
@@ -737,7 +751,20 @@ ADDRELATION:msyn-np-demindef-demdef ($2) ("disse") FROM (*1 N BARRIER NOT-A LINK
 #(NEGATE 1 COMMA LINK 1 ("som")) ;
 #COPY:msyn-np-demindef-demdef (Def &SUGGEST) EXCEPT (Indef) TARGET (N Pl &msyn-np-demindef-demdef) ;	
 #ADDRELATION:msyn-np-demindef-demdef ($2) ("disse") FROM (*1 N BARRIER NOT-A LINK 0 &msyn-np-demindef-demdef) ;
-	
+
+
+#!! ### Definite adjectives
+
+ADD:msyn-agr-adjindef-adjdef (&msyn-agr-adjindef-adjdef) TARGET (A Sg ) IF
+	(-1 Det + Poss)
+	(NOT 0 Def)
+	(1 N);
+COPY:msyn-agr-adjindef-adjdef (Sg Def &SUGGEST) EXCEPT (Msc Sg Indef &msyn-agr-adjindef-adjdef) TARGET (A &msyn-agr-adjindef-adjdef);
+COPY:msyn-agr-adjindef-adjdef (Sg Def &SUGGEST) EXCEPT (Fem Sg Indef &msyn-agr-adjindef-adjdef) TARGET (A &msyn-agr-adjindef-adjdef);
+COPY:msyn-agr-adjindef-adjdef (Sg Def &SUGGEST) EXCEPT (Neu Sg Indef &msyn-agr-adjindef-adjdef) TARGET (A &msyn-agr-adjindef-adjdef);
+ADDRELATION:msyn-agr-adjindef-adjdef ($2) Poss FROM (1 A LINK 0 &msyn-agr-adjindef-adjdef) ;
+
+
 
 #!! ## Quantifier phrases
 
@@ -834,7 +861,7 @@ ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (6 A LINK 0 (&msyn-pred-adjmsc
 ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg2 Nom) IF
 	(-1 ("av") + Pr);
 ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg2 Nom) IF
-	(-1 Pr) #(-1 ("om") + Pr)
+	(-1 Pr LINK NOT 0 ("som") OR ("for")) #(-1 ("om") + Pr)
 	(NEGATE *1 Prs OR Prt BARRIER NOT-ADV);
 COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg2 &msyn-pron-nom-acc);
 ADDRELATION:msyn-pron-nom-acc ($2) (Pr) FROM (1 Pron LINK 0 (&msyn-pron-nom-acc)) ;
@@ -843,7 +870,7 @@ ADDRELATION:msyn-pron-nom-acc ($2) (Pr) FROM (1 Pron LINK 0 (&msyn-pron-nom-acc)
 
 ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg1 Nom) IF
 	(-1 ("om") + Pr)
-	(NOT 1 Prs OR Prt);
+	(NEGATE *1 Ind  BARRIER S-BOUNDARY);
 COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg1 &msyn-pron-nom-acc);
 ADDRELATION:msyn-pron-nom-acc ($2) (Pr) FROM (1 Pron LINK 0 (&msyn-pron-nom-acc)) ;
 
@@ -860,7 +887,7 @@ ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg1 Nom) IF
 ADD:msyn-pron-nom-acc (&msyn-pron-nom-acc) TARGET (Pron Pers Sg1 Nom) IF
 	(-1 Pr)
 	(NOT -1 ("som") OR ("om") OR ("for") OR ("før"))
-	(NOT 1 Ind);
+	(NEGATE *1 Ind BARRIER S-BOUNDARY);
 COPY:msyn-pron-nom-acc (Acc &SUGGEST) EXCEPT (Nom) TARGET (Pron Pers Sg1 &msyn-pron-nom-acc);
 ADDRELATION:msyn-pron-nom-acc ($2) (Pr) FROM (1 Pron LINK 0 (&msyn-pron-nom-acc)) ;
 ## Han vet av jeg kommer.
@@ -997,7 +1024,16 @@ COPY:real-og-aa ("å" IM &SUGGEST) EXCEPT ("og" CC) TARGET (CC &real-og-aa);
 #$ Hvem vet hva Kari kommer til å finne på?
 
 #!! **Realword rule:** og should be aa between Ind and Inf (real-og-aa). Context: *Vi prøver og gå.*
-ADD:real-og-aa (&real-og-aa) TARGET ("og" CC) IF (-1 Ind)(NOT -1 Inf)(1 Inf);
+ADD:real-og-aa (&real-og-aa) TARGET ("og" CC) IF
+	(-1 Ind)
+	(NOT -1 Inf OR Imp)
+	(1 Inf OR Imp)
+	(NOT 1 Imp);
+ADD:real-og-aa (&real-og-aa) TARGET ("og" CC) IF
+	(-1 Imp)
+	(NOT -1 Inf OR Ind)
+	(1 Inf OR Ind)
+	(NOT 1 Imp);
 COPY:real-og-aa ("å" IM &SUGGEST) EXCEPT ("og" CC) TARGET (CC &real-og-aa);
 
 ## Vi prøver og gå.  #!!≈ - *@CODE@*
