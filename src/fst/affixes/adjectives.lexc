@@ -76,6 +76,7 @@ LEXICON aV ! ny, fri
    +A+Pos+Fem+Sg+Indef:     # ;
    +A+Pos+Neu+Sg+Indef:tt   # ;
          +A+Pos+Sg+Def:e    # ;
+  +A+Pos+Sg+Def+Use/NG:     # ;
        +A+Pos+Pl+Indef:e    # ;
          +A+Pos+Pl+Def:e    # ;
                +A+Comp:ere  # ;
