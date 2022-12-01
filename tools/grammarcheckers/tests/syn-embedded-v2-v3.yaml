@@ -5,3 +5,4 @@ Config:
 Tests:
   - "Vi vet at jeg {er ikke}¥{ikke er} en tomat."
   - "De spurte om jeg {er ofte}¥{ofte er} i byen."
+  - "I den grad {skjer det}¥{det skjer} noe virker det ubetydelig . "
