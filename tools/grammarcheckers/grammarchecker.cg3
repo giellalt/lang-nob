@@ -653,13 +653,16 @@ ADD:msyn-agr-detmsc-detneu (&msyn-agr-detmsc-detneu) TARGET ("en" Det Dem Msc Sg
 	(*1C (N Neu) BARRIER NOT-NPMODADV LINK NOT 0 Clt LINK NEGATE 1 ("-") LINK 1 CC)
 	(NEGATE *1 (N Neu) LINK 0 ("pluss") LINK 1 ("en"))
 	(NEGATE *1 (N Neu) LINK 0 ("nummer") LINK 1 Num)
+	(NEGATE 1 Num LINK *1 ("år") OR ("time") OR ("dag"))
 	;
 #COPY:msyn-agr-detmsc-detneu ("et" Neu Sg &SUGGEST) EXCEPT ("en" Msc Sg) TARGET (&msyn-agr-detmsc-detneu);
 
 ADD:msyn-agr-detmsc-detneu (&msyn-agr-detmsc-detneu) TARGET ("en" Pron Indef Msc Sg) IF
-			   (*1C (N Neu) BARRIER NOT-NPMODADV LINK NOT 0 Clt)
+	(*1C (N Neu) BARRIER NOT-NPMODADV LINK NOT 0 Clt)
 	(NEGATE *1 (N Neu) LINK 0 ("pluss") LINK 1 ("en"))
-	(NEGATE *1 (N Neu) LINK 0 ("nummer") LINK 1 Num);
+	(NEGATE *1 (N Neu) LINK 0 ("nummer") LINK 1 Num)
+	(NEGATE 1 Num LINK *1 ("år") OR ("time") OR ("dag"))
+	;
 
 COPY:msyn-agr-detmsc-detneu ("et" Neu Sg &SUGGEST) EXCEPT ("en" Msc Sg) TARGET ( &msyn-agr-detmsc-detneu);
 
