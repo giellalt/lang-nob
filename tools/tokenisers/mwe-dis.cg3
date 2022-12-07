@@ -110,6 +110,11 @@ LIST Cmp/SgNom   =  Cmp/SgNom ;
 LIST Cmp/SgGen   =  Cmp/SgGen ;
 LIST Cmp/PlGen   =  Cmp/PlGen ;
 
+LIST Cmp/s    = Cmp/s ;
+LIST Cmp/e    = Cmp/e ;
+LIST Cmp/null = Cmp/null ;
+
+
 LIST Cmp/SplitR = Cmp/SplitR ;
 LIST Cmp/SplitL = Cmp/SplitL ;
 LIST Cmp/SgNom = Cmp/SgNom ;
