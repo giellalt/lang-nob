@@ -934,6 +934,7 @@ ADDRELATION:msyn-v-inf-pres ($2) (*) FROM (1 V LINK 0 (&msyn-v-inf-pres)) ;
 #!!  **Verb rule:** Verb error: Present tense should be infinitive (msyn-v-pres-inf). Context: *Jeg vil skriver et brev.*
 ADD:msyn-v-pres-inf (&msyn-v-pres-inf) TARGET V IF
 	(0 (Ind Prs))
+	(NOT 0 N + Sg)
 #	(NOT 0 N + Pl + Indef LINK -1 Pron + Pers + Nom OR N)
 	(NEGATE -3 N)
 	(-2C (N) OR (Pron Nom))
