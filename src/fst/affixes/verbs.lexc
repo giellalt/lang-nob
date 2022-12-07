@@ -97,10 +97,10 @@ LEXICON v1-s
 
 LEXICON v2-s 
 !! **LEXICON @LEXNAME@** =  føles, synes
-     +V+Inf:   # ;
- +V+Ind+Prs:   # ;
- +V+Ind+Prt:Q1 # ;
-  +V+PrfPrc:Q1 # ;
+     +V+Inf:es   # ;
+ +V+Ind+Prs:es   # ;
+ +V+Ind+Prt:Q1tes # ;
+  +V+PrfPrc:Q1tes # ;
 
 LEXICON v3-s 
 !! **LEXICON @LEXNAME@** =  trives
