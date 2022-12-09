@@ -96,15 +96,20 @@
     <blanktag>
       <blanktagger n="analyser-gt-whitespace.hfst"/>
     </blanktag>
-    <cg><grammar n="mwe-dis.cg3"/></cg>
+    <cg><grammar n="@srcdir@/../../src/cg3/valency.cg3"/></cg>
+    <cg><grammar n="@srcdir@/../tokenisers/mwe-dis.cg3"/></cg>
+<!--    <cg><grammar n="mwe-dis.cg3"/></cg> #bug?! -->
     <mwesplit/>
+    <blanktag>
+      <blanktagger n="analyser-gt-errorwhitespace.hfst"/>
+    </blanktag>
     <cgspell>
       <lexicon n="acceptor.default.hfst"/>
       <errmodel n="errmodel.default.hfst"/>
     </cgspell>
+    <cg><grammar n="@builddir@/../../src/cg3/valency-postspell.cg3"/></cg>
     <cg><grammar n="grc-disambiguator.cg3"/></cg>
     <cg><grammar n="spellchecker.cg3"/></cg>
-<!--    <cg><grammar n="grc-disambiguator.cg3"/></cg>-->
     <cg><grammar n="grammarchecker.cg3"/></cg>
     <suggest>
       <generator n="generator-gramcheck-gt-norm.hfstol"/>
