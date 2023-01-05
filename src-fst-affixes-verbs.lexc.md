@@ -95,6 +95,7 @@ v3-s passive v3 verbs
 * **LEXICON FISE** 
 * **LEXICON FLY** 
 * **LEXICON LYGE**
+* **LEXICON LYVE**
 * **LEXICON LJUGE**
 * **LEXICON FLYGE**
 * **LEXICON FLYTE**
