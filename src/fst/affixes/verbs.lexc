@@ -445,6 +445,14 @@ LEXICON LYGE !!≈ * **@CODE@**
       +V+Ind+Prt:løy     #          ;
        +V+PrfPrc:løyet   #          ;
        +V+PrsPrc:lygende prsptcsuff ;
+LEXICON LYVE !!≈ * **@CODE@**
+          +V+Inf:lyve    #          ;
+          +V+Imp:lyv     #          ;
+      +V+Ind+Prs:lyver   #          ;
+ +V+Ind+Prs+Pass:lyves   #          ; 
+      +V+Ind+Prt:løy     #          ;
+       +V+PrfPrc:løyet   #          ;
+       +V+PrsPrc:lyvende prsptcsuff ;
 LEXICON LJUGE !!≈ * **@CODE@**
           +V+Inf:ljuge    #          ;
           +V+Imp:ljug     #          ;

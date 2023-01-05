@@ -316,6 +316,9 @@ LEXICON f1 ! myr, krone
  +N: R       ;
      f1morph ;
 
+LEXICON f1pl
+ +N+Fem+Pl: er-ene ;
+
 LEXICON f1morph
  +N+Fem+Sg: 0-a    ;
  +N+Msc+Sg: en     ; ! myren !^C^
@@ -394,7 +397,7 @@ LEXICON fMOR
  +N+Msc+Sg+Def:moren K     ;
     +N+Fem+Pl:mødr  e-ene ;
 
-LEXICON fFOT
+LEXICON mFOT
      +N+Msc+Sg:fot   0-en   ;
     +N+Msc+Pl:føtt  er-ene ;
 
@@ -478,6 +481,9 @@ LEXICON n2c ! album, kontor
 LEXICON n2s ! mørke
  +N+Neu+Sg: 0-et ;
         +N: R    ;
+
+LEXICON n2pl
+ +N+Neu+Pl: er-ene-a ;
 
 LEXICON n3 ! middel
  +N+Neu+Sg:X1 0-et     ;
