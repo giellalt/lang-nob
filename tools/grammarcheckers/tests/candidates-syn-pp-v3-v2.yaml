@@ -1,10 +1,5 @@
 Config:
   Spec: ../pipespec.xml
   Variant: nobgram-dev
-  
+
 Tests:
-  - "I den grad {er det}${det er} noen sortering , så er det fargesortering som gjelder for meg også . "
-  - "For noen personer {har jeg}${jeg har} blitt kjent med ! "
-  - "På NRK stod nyhetene å lese i dag. "
-  - "For all del er filmen super, men jeg syntes de hadde gjort for mange endringer i forhold til boken . "
-  - "For et liv {har du}${du har} laget, Tore Renberg , for et univers ! "

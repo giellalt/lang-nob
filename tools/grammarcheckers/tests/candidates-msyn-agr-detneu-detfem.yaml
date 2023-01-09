@@ -1,11 +1,5 @@
 Config:
   Spec: ../pipespec.xml
   Variant: nobgram-dev
-  
-Tests:
-  - "Var det boka ? "
-  - "Kanske var det rentav den som väckte läslusten . "
-  - "Kan bli litt mye porto noen ganger ( i forhold til det boka koster ) , men det er vel ikke så nøye , bare man får DEN boka hjem i postkassen . "
-  - "Så var det boka om veilederen og studenten . "
-  - "Samtidig er det boka om Cloughies tid i Derby County . "
 
+Tests:

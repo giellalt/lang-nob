@@ -1,11 +1,5 @@
 Config:
   Spec: ../pipespec.xml
   Variant: nobgram-dev
-  
+
 Tests:
-  - "Hvis jeg blir er en varm og rørende ungdomsroman . "
-  - "Hvis Maria driver å står etter Dewey , så trenger jeg ikke noe annet enn en dårlig unnskyldning , Jan :-) Det går bra , Arthur . "
-  - "Anna Karenina var fantastisk , Brødrene karamasov var vanskelig å komme gjennom , men syntes jeg burde har lest den . "
-
-
-
