@@ -267,6 +267,17 @@
     </body>
   </error>
 
+  <error id="guillemets">
+    <header>
+      <title xml:lang="en">Quotation marks</title>
+      <title xml:lang="smj">Valg av anførselstegn</title>
+    </header>
+    <body>
+      <description xml:lang="en">You have used the quotation mark "$1". In Norwegian typography, we use « and ».</description>
+      <description xml:lang="smj">Du har brukt anførselstegnet "$1". I norsk typografi bruker vi « og » som anførselstegn.</description>
+    </body>
+  </error>
+
   <error id="ellipsis">
     <header>
       <title xml:lang="en">Ellipsis</title>
