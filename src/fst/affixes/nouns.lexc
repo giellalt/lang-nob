@@ -87,6 +87,10 @@ LEXICON nD
 +N+Neu+Sg+Indef: # ;
 
 
+LEXICON n1n2
+  n1 ;
+  +N+Neu+Pl+Indef:%>er K ;
+
 LEXICON n1n3
   n1 ;
   n3 ;
