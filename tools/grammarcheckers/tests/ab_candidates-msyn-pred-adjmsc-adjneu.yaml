@@ -1,0 +1,9 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+
+Tests:
+  - "Et centigram er lik en hundredel av et gram, som er lik ti milligram. "
+  - "Et hektogram er lik hundre gram, som er lik en tidel av et kilogram. "
+  - "Materialet er hvit sten. "
+  - "I religionshistorisk sammenheng er hedendom en nøytral betegnelse på trosforestillinger fra førkristen tid, men begrepet er ofte negativt belastet og benyttes som synonymt med en vantro eller nedsettende om folk av en annen tro ( en som ikke tror på den rådende religion, det være kristen eller muslim ). "

@@ -1,0 +1,13 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+
+Tests:
+  - "Også ble albumet en braksuksess. "
+  - "Også er trafikken blitt et problem. "
+  - "Også har fagbevegelsen vært kritiske til selskapets policy overfor medarbeidere. "
+  - "Også viser arkitekturen ulike stiler med påvirkninger og impulser fra både øst ( Sankt Petersburg, Riga ) og vest ( Berlin, Paris, Wien ). "
+  - "Bare har ungfiskene en kort skjeggtråd. "
+  - "Også står havbruksnæringen sterkt. "
+  - "Også er orlogsflagget i størrelsesforholdet 2:3. "
+  - "Bare ble tamhunden tidligere domestisert, selv om gris, geit og tamfe også ble domestisert ganske tidlig. "
