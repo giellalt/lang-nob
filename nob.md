@@ -347,6 +347,9 @@ The rules are no documented yet
 
 * * *
 <small>This (part of) documentation was generated from [src/cg3/nob-functions.cg3](https://github.com/giellalt/lang-nob/blob/main/src/cg3/nob-functions.cg3)</small>
+
+* * *
+<small>This (part of) documentation was generated from [src/cg3/valency.cg3](https://github.com/giellalt/lang-nob/blob/main/src/cg3/valency.cg3)</small>
 # Continuation lexicons for abbreviations
 
 ## Lexica for adding tags and periods
@@ -1973,7 +1976,7 @@ This file contains two parts: **Definitions** and **rules**
 
 # Definition section
 
-## Delimiters #
+## Delimiters 
 
  DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>";
 

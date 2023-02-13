@@ -5,7 +5,7 @@ This file contains two parts: **Definitions** and **rules**
 
 # Definition section
 
-## Delimiters #
+## Delimiters 
 
  DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>";
 
