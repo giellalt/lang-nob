@@ -19,13 +19,18 @@ GIELLA_GC_WHSPACE_ANAL_SRC=analyser-gt-whitespace.regex \
 GIELLA_GC_DISAMBIGUATOR_SRC=grc-disambiguator.cg3
 
 # If a valency file is used, specify its name here:
-GIELLA_GC_VALENCY_SRC=
+GIELLA_GC_VALENCY_SRC=valency.cg3
 
 # If there are additional, language specific files used in the GC archive,
 # specify here:
-LOCAL_GC_ZIP_FILES=
+LOCAL_GC_ZIP_FILES=valency-postspell.bin
 
 #### BEGIN: Local build targets: ####
+
+%-postspell.cg3: %.cg3
+	$(AM_V_GEN)$(SED) -e 's/^# Error tags$$/&\n\nLIST <spelled> = <spelled> ;/' \
+		-e 's/^SUBSTITUTE \(.*\);/SUBSTITUTE \1 (0 <spelled>)  ;/' \
+		< $< > $@
 
 #### END: Local build targets:   ####
 

@@ -16,6 +16,7 @@
     <blanktag>
       <blanktagger n="analyser-gt-whitespace.hfst"/>
     </blanktag>
+    <cg><grammar n="valency.bin"/></cg>
     <cg><grammar n="mwe-dis.bin"/></cg>
     <mwesplit/>
     <cg><grammar n="grc-disambiguator.bin"/></cg>
@@ -33,12 +34,14 @@
     <blanktag>
       <blanktagger n="analyser-gt-whitespace.hfst"/>
     </blanktag>
+    <cg><grammar n="valency.bin"/></cg>
     <cg><grammar n="mwe-dis.bin"/></cg>
     <mwesplit/>
     <cgspell>
       <lexicon n="acceptor.default.hfst"/>
       <errmodel n="errmodel.default.hfst"/>
     </cgspell>
+    <cg><grammar n="valency-postspell.bin"/></cg>
     <cg><grammar n="grc-disambiguator.bin"/></cg>
     <cg><grammar n="spellchecker.bin"/></cg>
 <!--    <cg><grammar n="grc-disambiguator.bin"/></cg>-->
@@ -56,12 +59,14 @@
     <blanktag>
       <blanktagger n="analyser-gt-whitespace.hfst"/>
     </blanktag>
+    <cg><grammar n="valency.bin"/></cg>
     <cg><grammar n="mwe-dis.bin"/></cg>
     <mwesplit/>
     <cgspell>
       <lexicon n="acceptor.default.hfst"/>
       <errmodel n="errmodel.default.hfst"/>
     </cgspell>
+    <cg><grammar n="valency-postspell.bin"/></cg>
     <cg><grammar n="grc-disambiguator.bin"/></cg>
     <cg><grammar n="spellchecker.bin"/></cg>
     <cg><grammar n="grammarchecker.bin"/></cg>
@@ -89,7 +94,7 @@
       <lexicon n="acceptor.default.hfst"/>
       <errmodel n="errmodel.default.hfst"/>
     </cgspell>
-    <cg><grammar n="@builddir@/../../src/cg3/valency-postspell.cg3"/></cg>
+    <cg><grammar n="valency-postspell.cg3"/></cg>
     <cg><grammar n="grc-disambiguator.cg3"/></cg>
     <cg><grammar n="spellchecker.cg3"/></cg>
     <cg><grammar n="grammarchecker.cg3"/></cg>
