@@ -3,7 +3,6 @@
         * [disambiguator.cg3](src-cg3-disambiguator.cg3.html) ([src](https://github.com/giellalt/lang-nob/blob/main/src/cg3/disambiguator.cg3))
         * [functions.cg3](src-cg3-functions.cg3.html) ([src](https://github.com/giellalt/lang-nob/blob/main/src/cg3/functions.cg3))
         * [nob-functions.cg3](src-cg3-nob-functions.cg3.html) ([src](https://github.com/giellalt/lang-nob/blob/main/src/cg3/nob-functions.cg3))
-        * [valency.cg3](src-cg3-valency.cg3.html) ([src](https://github.com/giellalt/lang-nob/blob/main/src/cg3/valency.cg3))
     * `fst/`
         * `affixes/`
             * [abbreviations.lexc](src-fst-affixes-abbreviations.lexc.html) ([src](https://github.com/giellalt/lang-nob/blob/main/src/fst/affixes/abbreviations.lexc))
