@@ -27,7 +27,7 @@ LOCAL_GC_ZIP_FILES=valency-postspell.bin
 
 #### BEGIN: Local build targets: ####
 
-%-postspell.cg3: %.cg3
+valency-postspell.cg3: valency.cg3
 	$(AM_V_GEN)$(SED) -e 's/^# Error tags$$/&\n\nLIST <spelled> = <spelled> ;/' \
 		-e 's/^SUBSTITUTE \(.*\);/SUBSTITUTE \1 (0 <spelled>)  ;/' \
 		< $< > $@
