@@ -17,7 +17,7 @@
 #!!  #  Bokmål Norwegian Grammar Checker
 # ======================================
 
-#  Sámi language technology 2000-2017, UiT The arctic University of Norway #
+#  Sámi language technology 2000-2023, UiT The arctic University of Norway #
 
 # ---------------------- #
 #   Development setup:   #
@@ -756,6 +756,17 @@ ADDRELATION:msyn-np-demindef-demdef ($2) ("disse") FROM (*1 N BARRIER NOT-A LINK
 #COPY:msyn-np-demindef-demdef (Def &SUGGEST) EXCEPT (Indef) TARGET (N Pl &msyn-np-demindef-demdef) ;	
 #ADDRELATION:msyn-np-demindef-demdef ($2) ("disse") FROM (*1 N BARRIER NOT-A LINK 0 &msyn-np-demindef-demdef) ;
 
+LIST SG-PL-INDEF-N = "hus" "teknologi" ;
+SET GENDER = Neu OR Msc OR Fem OR MF ;
+
+
+ADD:msyn-bestemtN-ubestemtN (&msyn-bestemtN-ubestemtN) TARGET (N Def Pl) IF (NEGATE *-1 (Det Dem Pl) BARRIER NOT-A - Num) ;
+
+COPY:msyn-bestemtN-ubestemtN (Sg Indef &SUGGEST) EXCEPT (Pl Def &msyn-bestemtN-ubestemtN) AFTER GENDER TARGET (&msyn-bestemtN-ubestemtN) IF (0 SG-PL-INDEF-N) ;
+
+COPY:msyn-bestemtN-ubestemtN (Indef &SUGGEST) EXCEPT (Def &msyn-bestemtN-ubestemtN) AFTER GENDER TARGET (&msyn-bestemtN-ubestemtN) - SG-PL-INDEF-N ;
+	## Det er også moderne teknologiene som spiller en viktig rolle.
+
 
 #!! ### Definite adjectives
 
@@ -778,6 +789,7 @@ ADD:msyn-qucompl-def-indef (&msyn-qucompl-def-indef) TARGET N + Pl + Def IF
 	LINK NOT 0 Sem/ID
 	LINK NEGATE *-1 ("den") + Det + Dem + Pl OR ("denne") OR ("disse") OR ("begge") OR ("all") BARRIER NOT-A);
 #	LINK NEGATE -1 (§) OR ("all") OR Def);
+
 ADD:msyn-qucompl-def-indef (&msyn-qucompl-def-indef) TARGET N + Pl + Def IF
 	(*-1 ("mange") + Comp BARRIER NOT-A LINK NOT -1 Det + Dem + Pl
      	     	  LINK NOT 0 Sem/ID
