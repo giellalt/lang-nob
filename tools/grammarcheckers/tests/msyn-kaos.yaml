@@ -1,0 +1,27 @@
+Config:
+  Spec: ../pipespec.xml
+  Variant: nobgram-dev
+  
+Tests:
+  - "De {altså velger}¥{velger altså} å prokrastinere for å ha bedre resultater." 
+  - "Derfor kan vi ikke si at det bare er forventningene som fører til at {ungdommen}£{ungdom} sliter psykisk."
+  - "Det er også moderne {teknologiene}£{teknologi} som spiller en viktig rolle."
+  - "Både når det gjelder hvor raskt {skal mennesker}¥{mennesker skal} nå sine mål, men også når det gjelder sosiale forhold."
+  - "Jeg tror man kan si at landene i Europa har flere likheter mellom hverandre og det er fordi de har en historie sammen."
+  - "Noen kan si at de er mer {forskjellig}£{forskjellige} enn lignende men jeg er ikke enig {om}€{med} dette."
+  - "Nordmenn er stolte av vikingerne, men i Danmark og Sverige er mennesker det også."
+  - "Det største runefunnet av trepinner ble funnet i Norge, men Sverige har de {meste}€{fleste} runesteinene som kan finnes."
+  - "Jeg synes at det {er ikke}¥{ikke er} så rart å se i Tyskland også." 
+  - "Og {Svits}${Sveits} er et helt {gålt}${galt} sted, fordi {der snakker de 4 forskjellige språk}¥{de snakker 4 forskjellige språk der} og ingen av dem er sitt 'eget språket.'"
+  - "På grunn av {kolonialisering}£{kolonialiseringa} er den britiske kongen også lederen av Australia og andre stater, for eksempel i Afrika."
+  - "Jeg er {{sikkert}£{sikker}}¥{sikker på} at det finnes {likhetene}£{likheter} mellom de også, fordi mennesker som har makten over andre {statene}£{stater}, innflytter de ja vel (fordi de bestemmer reglene der)."
+  - "Etter min mening er det så mange ulike {utfordring}£{utfordringer} i dag som vi trenger å klare."
+  - "Den andre problemet er {konstant}£{de konstante} utslippene i {luft}£{lufta}."
+  - "Ettersom {blir miljøet}¥{miljøet blir} mer og mer forurenset, er det veldig viktig å bevare naturen og {verden}£{verdenen} vår."
+
+  #¥ - ordstilling, ett ord for mye/lite
+  #£ - morfosyntaktiske feil 
+  #€ - leksikalske feil, f.eks. feil på preposisjoner
+  #$ - Skrivefeil, men non-word
+  #¢ - Skrivefeil, real-word error, f.eks. og/å-feil
+  #  - 'Det er et "eksempel på hermetegn inne i en setning"'
