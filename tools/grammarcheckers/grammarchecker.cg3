@@ -163,7 +163,7 @@ LIST Sem/Year = Sem/Year ;	   #!!≈ - @CODE@
 #SET FIRSTNAME = (Prop Sem/Fem) OR (Prop Sem/Mal) ;
 
 
-
+LIST Use/NG = Use/NG ;
 
 #!! ### Sets for Morphosyntactic properties
 # --------------------------
@@ -1134,3 +1134,5 @@ COPY:use-ellipsis ("…" &SUGGEST) EXCEPT ("...") TARGET (&ellipsis) ;
 SUBSTITUTE (MWE) (*) TARGET MWE ;
 	## Guollefestivála geassemánus ja Riddu Riđđu suoidnemánus.
 
+    # probably never want to generate the Use/NG form
+SUBSTITUTE (Use/NG) (*) TARGET Use/NG ;
