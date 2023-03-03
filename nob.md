@@ -2404,6 +2404,8 @@ Predicative: msculine adjective should be neuter (msyn-pred-adjmsc-adjneu). Cont
 
 **Agreement rule:**  Context: *Eplet var god/godt.*
 
+**Agreement rule:**  Context: *Eplene var god/gode.*
+
 **Agreement rule:**  Context: *Jeg spiste et eple som var god/godt.*
 
 ## Case errors
