@@ -856,6 +856,15 @@ ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (2 A LINK 0 (&msyn-pred-adjmsc
 #$ Landet var fullt av folk.
 #$ Hver avkrok i landet var full av folk.
 
+#!! **Agreement rule:**  Context: *Eplene var god/gode.*
+ADD:msyn-pred-adjsg-adjpl (&msyn-pred-adjsg-adjpl) TARGET (A Sg) IF 
+(*-1 ("være") BARRIER NOT-ADV LINK -1 (N Pl) OR (Pron Pers Pl3 Nom) LINK *-1 BOS OR CS BARRIER NOT-NPMOD)
+(0 Msc OR Fem OR MF)
+(NOT 1 (N Sg));
+COPY:msyn-pred-adjsg-adjpl (Pl Indef &SUGGEST) EXCEPT (Sg Fem Indef) OR (Sg Msc Indef) OR (Sg MF Indef)  TARGET (A Pos &msyn-pred-adjsg-adjpl);
+#ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (2 A LINK 0 (&msyn-pred-adjmsc-adjneu)) ;
+
+
 #!! **Agreement rule:**  Context: *Jeg spiste et eple som var god/godt.*
 ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A Msc Sg) IF (-3C (N Neu Sg) OR ("det"))(-2 ("som"))(-1 ("være"))(0C Msc OR Fem OR MF)(NOT 1 N + Msc);
 COPY:msyn-pred-adjmsc-adjneu (Neu Sg Indef &SUGGEST) EXCEPT (Msc Sg Indef) TARGET (A Pos &msyn-pred-adjmsc-adjneu);
@@ -865,6 +874,9 @@ ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (5 A LINK 0 (&msyn-pred-adjmsc
 ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (6 A LINK 0 (&msyn-pred-adjmsc-adjneu)) ;
 ## Jeg spiste et eple som var god.
 #$ Jeg spiste et eple som var godt.
+
+
+
 
 
 
