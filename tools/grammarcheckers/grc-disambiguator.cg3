@@ -7776,10 +7776,11 @@ SELECT (Adv) IF
 	(NOT 0 %saa/og/selv% OR det)
 	(NOT 0 CS OR CC)
 	(NOT 0 Pr OR V)
-	(NOT 0 A + (".*e"r) LINK 1 N)
+	(NOT 0 A + (".*e"r) LINK 1 N OR ("enn"))
 	(-1C Adv)
 ;
 	#$ Det er også {moderne} teknologiene som spiller en viktig rolle.
+	#$ Noen kan si at de er mer forskjellig enn lignende men jeg er ikke enig om dette.
 
 
 # 2712
