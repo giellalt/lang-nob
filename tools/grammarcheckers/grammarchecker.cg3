@@ -822,7 +822,8 @@ ADDRELATION:&msyn-qu-comp-superl ($2) (N) FROM (*-1 A LINK 0 (&&msyn-qu-comp-sup
 
 
 #!! Predicative: neuter adjective should be masculine (msyn-pred-adjneu-adjmsc). Context: *Båten var fint/fin.*
-ADD:msyn-pred-adjneu-adjmsc (&msyn-pred-adjneu-adjmsc) TARGET (A) IF (-2 ("den") + Pron + Pers + Sg3 OR N + Msc + Sg + Def  LINK *-1 BOS BARRIER NOT-NPMOD)(-1 ("være"))(0 A + Pos + Neu + Sg + Indef)(NEGATE 0 A + Msc OR A + Fem OR A + MF)(NOT 1 N + Neu);
+ADD:msyn-pred-adjneu-adjmsc (&msyn-pred-adjneu-adjmsc) TARGET (A) IF (-2 ("den") + Pron + Pers + Sg3 OR (Pron Pers Sg1 Nom) OR (Pron Pers Sg2 Nom) OR (Pron Pers Sg3 Nom) - ("det") - ("den" Det Dem Neu Sg) OR N + Msc + Sg + Def  LINK *-1 BOS BARRIER NOT-NPMOD)
+(-1 ("være"))(0 A + Pos + Neu + Sg + Indef)(NEGATE 0 A + Msc OR A + Fem OR A + MF)(NOT 1 N + Neu);
 COPY:msyn-pred-adjneu-adjmsc (Msc Sg Indef &SUGGEST) EXCEPT (Neu Sg Indef)  TARGET (A Pos &msyn-pred-adjneu-adjmsc);
 ADDRELATION:msyn-pred-adjneu-adjmsc ($2) (N) FROM (2 A LINK 0 (&msyn-pred-adjneu-adjmsc)) ;
 
@@ -858,12 +859,13 @@ ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (2 A LINK 0 (&msyn-pred-adjmsc
 
 #!! **Agreement rule:**  Context: *Eplene var god/gode.*
 ADD:msyn-pred-adjsg-adjpl (&msyn-pred-adjsg-adjpl) TARGET (A Sg) IF 
-(*-1 ("være") BARRIER NOT-ADV LINK -1 (N Pl) OR (Pron Pers Pl3 Nom) LINK *-1 BOS OR CS BARRIER NOT-NPMOD)
-(0 Msc OR Fem OR MF)
+(*-1 ("være") BARRIER NOT-ADV LINK -1 (N Pl) OR (Pron Pers Pl3 Nom) OR (Pron Pers Pl1 Nom) OR (Pron Pers Pl2 Nom) LINK *-1 BOS OR CS BARRIER NOT-NPMOD)
+(0 Msc OR Fem OR MF OR Neu)
+(NOT 0 Adv)
 (NOT 1 (N Sg));
-COPY:msyn-pred-adjsg-adjpl (Pl Indef &SUGGEST) EXCEPT (Sg Fem Indef) OR (Sg Msc Indef) OR (Sg MF Indef)  TARGET (A Pos &msyn-pred-adjsg-adjpl);
+COPY:msyn-pred-adjsg-adjpl (Pl Indef &SUGGEST) EXCEPT (Sg Fem Indef) OR (Sg Msc Indef) OR (Sg MF Indef) OR (Sg Neu Indef)  TARGET (A Pos &msyn-pred-adjsg-adjpl);
 #ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (2 A LINK 0 (&msyn-pred-adjmsc-adjneu)) ;
-
+	## Vi er sikkert/sikre. Dere er sikkert/sikre.
 
 #!! **Agreement rule:**  Context: *Jeg spiste et eple som var god/godt.*
 ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A Msc Sg) IF (-3C (N Neu Sg) OR ("det"))(-2 ("som"))(-1 ("være"))(0C Msc OR Fem OR MF)(NOT 1 N + Msc);
