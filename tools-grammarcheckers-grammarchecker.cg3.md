@@ -26,6 +26,7 @@ Here we declare all grammatical tags
 - LIST Pr = Pr ;
 - LIST Pcle = Pcle ;
 - LIST Num = Num ;
+- LIST Arab = Arab ;
 - LIST Qnt = Qnt ;
 - LIST Interj = Interj ;
 - LIST IM = IM ;
@@ -226,6 +227,8 @@ Here we declare all grammatical tags
 - LIST PLPRON = (Pron Pl1) (Pron Pl2) (Pron Pl3) (Pron Pl) ;
 - LIST QUANT-PRON = "mange" ;, This set is for choosing between Adv and Pron Indef.
 
+### Numeral sets 
+
 ### Adjectival sets and their complements
 
 - SET NOT-A = WORD - A ;
@@ -423,6 +426,8 @@ The rule gave too many false alarms, we skip it.
 ## Quantifier phrases
 
 **Agreement rule:** Indef after quantifier. (msyn-qucompl-def-indef). Context: *Vi har mange bøkene/bøker.*
+
+**Agreement rule:** Pl instead of Sg after quantifier. (msyn-qucompl-sg-pl). Context: *Vi har mange ulike utfordring*
 
 **Comparative rule:** Quantor in superlative: *de flere/fleste ulike kulturene*
 
