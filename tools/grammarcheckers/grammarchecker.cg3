@@ -93,6 +93,7 @@ LIST Det = Det ;	   #!!≈ - @CODE@
 LIST Pr = Pr ;		   #!!≈ - @CODE@
 LIST Pcle = Pcle ;	   #!!≈ - @CODE@
 LIST Num = Num ;	   #!!≈ - @CODE@
+LIST Arab = Arab ;	   #!!≈ - @CODE@
 LIST Qnt = Qnt ;	   #!!≈ - @CODE@
 LIST Interj = Interj ; #!!≈ - @CODE@
 LIST IM = IM ;		   #!!≈ - @CODE@
@@ -346,6 +347,12 @@ SET NOT-DEM = WORD - Dem ; #!!≈ - @CODE@
 LIST SGPRON = (Pron Sg1) (Pron Sg2) (Pron Sg3) (Pron Sg) ; #!!≈ - @CODE@
 LIST PLPRON = (Pron Pl1) (Pron Pl2) (Pron Pl3) (Pron Pl) ; #!!≈ - @CODE@
 LIST QUANT-PRON = "mange" ; #!!≈ - @CODE@, This set is for choosing between Adv and Pron Indef.
+
+#!! ### Numeral sets 
+LIST ETT = "ett" "én" "1" ;
+SET NUM = Num - ETT OR Arab - ETT ;
+
+
 
 
 #!! ### Adjectival sets and their complements
@@ -757,6 +764,7 @@ ADDRELATION:msyn-np-demindef-demdef ($2) ("disse") FROM (*1 N BARRIER NOT-A LINK
 #ADDRELATION:msyn-np-demindef-demdef ($2) ("disse") FROM (*1 N BARRIER NOT-A LINK 0 &msyn-np-demindef-demdef) ;
 
 LIST SG-PL-INDEF-N = "hus" "teknologi" ;
+LIST SG-ONLY-N = "sukker" ;
 SET GENDER = Neu OR Msc OR Fem OR MF ;
 
 
@@ -791,6 +799,8 @@ ADD:msyn-qucompl-def-indef (&msyn-qucompl-def-indef) TARGET N + Pl + Def IF
 	LINK NEGATE *-1 ("den") + Det + Dem + Pl OR ("denne") OR ("disse") OR ("begge") OR ("all") BARRIER NOT-A);
 #	LINK NEGATE -1 (§) OR ("all") OR Def);
 
+	## Vi har mange ulike utfordringene
+
 ADD:msyn-qucompl-def-indef (&msyn-qucompl-def-indef) TARGET N + Pl + Def IF
 	(*-1 ("mange") + Comp BARRIER NOT-A LINK NOT -1 Det + Dem + Pl
      	     	  LINK NOT 0 Sem/ID
@@ -806,6 +816,31 @@ ADDRELATION:msyn-qucompl-def-indef ($2) (*) FROM (T:previousWordCrossSent LINK 0
 ## Vi har fem bøkene.
 ## Vi har 5 bøkene.
 
+#!! **Agreement rule:** Pl instead of Sg after quantifier. (msyn-qucompl-sg-pl). Context: *Vi har mange ulike utfordring*
+ADD:msyn-qucompl-sg-pl (&msyn-qucompl-sg-pl) TARGET N + Sg + Indef OR N + Sg + Def IF
+	(*-1 Num - ETT OR ("mange") + Pos OR ("mange") + Superl BARRIER NOT-A
+	LINK NOT 0 Sem/ID
+	LINK NEGATE *-1 ("den") + Det + Dem + Pl OR ("denne") OR ("disse") OR ("begge") OR ("all") BARRIER NOT-A)
+	(NEGATE 0 SG-ONLY-N);
+#	LINK NEGATE -1 (§) OR ("all") OR Def);
+
+	## Vi har mange ulike utfordringene
+
+COPY:msyn-qucompl-sg-pl (Pl &SUGGEST) EXCEPT (Use/NG Sg) AFTER GENDER TARGET (N Msc Sg &msyn-qucompl-sg-pl)(0 Indef)(NEGATE 0 Pl); 
+COPY:msyn-qucompl-sg-pl (Pl &SUGGEST) EXCEPT (Use/NG Sg) AFTER GENDER TARGET (N Fem Sg &msyn-qucompl-sg-pl)(0 Indef)(NEGATE 0 Pl); 
+COPY:msyn-qucompl-sg-pl (Pl &SUGGEST) EXCEPT (Use/NG Sg) AFTER GENDER TARGET (N Neu Sg &msyn-qucompl-sg-pl)(0 Indef)(NEGATE 0 Pl); 
+COPY:msyn-qucompl-sg-pl (Pl &SUGGEST) EXCEPT (Sg) AFTER GENDER TARGET (N Msc Sg &msyn-qucompl-sg-pl)(0 Indef)(NEGATE 0 Pl); 
+COPY:msyn-qucompl-sg-pl (Pl &SUGGEST) EXCEPT (Sg) AFTER GENDER TARGET (N Fem Sg &msyn-qucompl-sg-pl)(0 Indef)(NEGATE 0 Pl); 
+COPY:msyn-qucompl-sg-pl (Pl &SUGGEST) EXCEPT (Sg) AFTER GENDER TARGET (N Neu Sg &msyn-qucompl-sg-pl)(0 Indef)(NEGATE 0 Pl); 
+ADDRELATION:msyn-qucompl-sg-pl ($2) (*) FROM (T:previousWordCrossSent LINK 0 (&msyn-qucompl-sg-pl))(0 Indef)(NEGATE 0 Pl) ;
+
+COPY:msyn-qucompl-sg-pl (Pl Indef &SUGGEST) EXCEPT (Use/NG Sg Def) AFTER GENDER TARGET (N Msc Sg &msyn-qucompl-sg-pl)(0 Def)(NEGATE 0 Pl); 
+COPY:msyn-qucompl-sg-pl (Pl Indef &SUGGEST) EXCEPT (Use/NG Sg Def) AFTER GENDER TARGET (N Fem Sg &msyn-qucompl-sg-pl)(0 Def)(NEGATE 0 Pl); 
+COPY:msyn-qucompl-sg-pl (Pl Indef &SUGGEST) EXCEPT (Use/NG Sg Def) AFTER GENDER TARGET (N Neu Sg &msyn-qucompl-sg-pl)(0 Def)(NEGATE 0 Pl); 
+COPY:msyn-qucompl-sg-pl (Pl Indef &SUGGEST) EXCEPT (Sg Def) AFTER GENDER TARGET (N Msc Sg &msyn-qucompl-sg-pl)(0 Def)(NEGATE 0 Pl); 
+COPY:msyn-qucompl-sg-pl (Pl Indef &SUGGEST) EXCEPT (Sg Def) AFTER GENDER TARGET (N Fem Sg &msyn-qucompl-sg-pl)(0 Def)(NEGATE 0 Pl); 
+COPY:msyn-qucompl-sg-pl (Pl Indef &SUGGEST) EXCEPT (Sg Def) AFTER GENDER TARGET (N Neu Sg &msyn-qucompl-sg-pl)(0 Def)(NEGATE 0 Pl); 
+ADDRELATION:msyn-qucompl-sg-pl ($2) (*) FROM (T:previousWordCrossSent LINK 0 (&msyn-qucompl-sg-pl))(0 Def)(NEGATE 0 Pl) ;
 #!! **Comparative rule:** Quantor in superlative: *de flere/fleste ulike kulturene*
 ADD:msyn-qu-comp-superl (&msyn-qu-comp-superl) TARGET ("mange" A Comp Pl Indef) IF
 	(NEGATE -2 ("av") LINK -1 Det OR Num)
