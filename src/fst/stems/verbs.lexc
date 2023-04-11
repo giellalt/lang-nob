@@ -159,6 +159,7 @@ stålsette:stål SETTE ;
 anskaffe v1 ;
 anskue v1 ;
 anskueliggjøre:anskuelig GJØRE ;
+mykgjøre:myk GJØRE ;
 anslutte v1 ;
 anslå:an SLÅ ;
 anspenne v2 ;
