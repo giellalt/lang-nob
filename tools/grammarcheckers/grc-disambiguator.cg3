@@ -811,6 +811,11 @@ SET NOT-NPMODADV-INDEF = WORD - PRE-NP-HEAD - Adv - Indef ;   #!!≈ - @CODE@
 SET NOT-NPMODCC = WORD - PRE-NP-HEAD - COMMA ; #- @CNP ;  #!!≈ - @CODE@
 SET NAPP = WORD - PRE-APP ;  #!!≈ - @CODE@
 
+# ADV-SETS
+
+LIST GRADE-ADV =  "ganske" "jævlig" "litt" "nokså" "svært" "syk" "temmelig" "veldig" "utrolig" #!! GRADE-ADV
+
+
 
 
 CONSTRAINTS
@@ -5131,6 +5136,9 @@ SELECT (<adv>) IF
 
 #
 
+
+SELECT:grade-adv Adv IF (0 GRADE-ADV LINK 0 A)(1C A);
+	##GRAM Jeg har en bil som var veldig godt.
 
 
 # 2911
