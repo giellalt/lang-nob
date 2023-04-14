@@ -10456,11 +10456,9 @@ SELECT (N Pl) IF
 ;
 
 
-#
-
-
-
-#
+# N Pl vs. Ind Prs
+SELECT:N-not-V (N Pl) IF (0 (Ind Prs))(-1 (Ind Prs) LINK *-1 Nom OR Pron);
+	##GRAM Jeg har biler som er fin
 
 
 
