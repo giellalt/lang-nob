@@ -903,7 +903,7 @@ COPY:msyn-pred-adjsg-adjpl (Pl Indef &SUGGEST) EXCEPT (Sg Fem Indef) OR (Sg Msc 
 	## Vi er sikkert/sikre. Dere er sikkert/sikre.
 
 #!! **Agreement rule:**  Context: *Jeg spiste et eple som var god/godt.*
-ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A Msc Sg) IF (-3C (N Neu Sg) OR ("det"))(-2 ("som"))(-1 ("være"))(0C Msc OR Fem OR MF)(NOT 1 N + Msc);
+ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A Msc Sg) IF (*-1 ("være") BARRIER NOT-ADV LINK *-1 ("som") BARRIER NOT-ADV LINK -1C (N Neu Sg) OR ("det"))(0C Msc OR Fem OR MF)(NOT 1 N + Msc);
 COPY:msyn-pred-adjmsc-adjneu (Neu Sg Indef &SUGGEST) EXCEPT (Msc Sg Indef) TARGET (A Pos &msyn-pred-adjmsc-adjneu);
 ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (3 A LINK 0 (&msyn-pred-adjmsc-adjneu)) ;
 ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (4 A LINK 0 (&msyn-pred-adjmsc-adjneu)) ;
@@ -911,6 +911,8 @@ ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (5 A LINK 0 (&msyn-pred-adjmsc
 ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (6 A LINK 0 (&msyn-pred-adjmsc-adjneu)) ;
 ## Jeg spiste et eple som var god.
 #$ Jeg spiste et eple som var godt.
+
+
 
 
 
