@@ -2530,6 +2530,8 @@ NOT-NPMODADVI = "     ...-OR-INDEF"
 - SET NOT-NPMODCC = WORD - PRE-NP-HEAD - COMMA ; #- @CNP ;
 - SET NAPP = WORD - PRE-APP ;
 
+GRADE-ADV
+
 ## Rule section
 
 ### Giellatekno early rules
