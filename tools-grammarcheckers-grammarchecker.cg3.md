@@ -445,6 +445,10 @@ Predicative: msculine adjective should be neuter (msyn-pred-adjmsc-adjneu). Cont
 
 **Agreement rule:**  Context: *Jeg spiste et eple som var god/godt.*
 
+**Agreement rule:**  Context: *Jeg har en bil som er rødt/rød.*
+
+**Agreement rule:**  Context: *Jeg har biler som er fin*
+
 ## Case errors
 
 Case rules so far: Nominative pronouns should be accusative 
