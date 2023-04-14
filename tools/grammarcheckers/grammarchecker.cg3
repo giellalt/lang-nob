@@ -927,13 +927,13 @@ ADDRELATION:msyn-pred-adjneu-adjmsc ($2) (N) FROM (6 A LINK 0 (&msyn-pred-adjneu
 
 
 #!! **Agreement rule:**  Context: *Jeg har biler som er fin*
-ADD:msyn-pred-adjsg-adjpl (&msyn-pred-adjsg-adjpl) TARGET (A Sg) IF (*-1 ("være") BARRIER NOT-ADV LINK *-1 ("som") BARRIER NOT-ADV LINK -1C (N pl) OR ("de" Pron Pers Sg3 Nom ) OR ("den" Pron Pers Sg3))(0C Neu OR Adv)(NOT 1 N + Neu);
-COPY:msyn-pred-adjsg-adjpl (Msc Sg Indef &SUGGEST) EXCEPT (Neu Sg Indef &msyn-pred-adjsg-adjpl) TARGET (A Pos &msyn-pred-adjsg-adjpl);
+ADD:msyn-pred-adjsg-adjpl (&msyn-pred-adjsg-adjpl) TARGET (A Sg) IF (*-1 ("være") BARRIER NOT-ADV LINK *-1 ("som") BARRIER NOT-ADV LINK -1C (N Pl) OR ("de" Pron Pers Pl3 Nom ) OR ("vi" Pron Pers Pl1))(0C Sg OR Adv)(NOT 1 N + Sg);
+COPY:msyn-pred-adjsg-adjpl (Pl Indef &SUGGEST) EXCEPT (Sg Indef Msc &msyn-pred-adjsg-adjpl) OR (Sg Indef Fem &msyn-pred-adjsg-adjpl) OR (Sg Indef Neu &msyn-pred-adjsg-adjpl) OR (Sg Indef MF &msyn-pred-adjsg-adjpl) TARGET (A Pos &msyn-pred-adjsg-adjpl);
 ADDRELATION:msyn-pred-adjsg-adjpl ($2) (N) FROM (3 A LINK 0 (&msyn-pred-adjsg-adjpl)) ;
 ADDRELATION:msyn-pred-adjsg-adjpl ($2) (N) FROM (4 A LINK 0 (&msyn-pred-adjsg-adjpl)) ;
 ADDRELATION:msyn-pred-adjsg-adjpl ($2) (N) FROM (5 A LINK 0 (&msyn-pred-adjsg-adjpl)) ;
 ADDRELATION:msyn-pred-adjsg-adjpl ($2) (N) FROM (6 A LINK 0 (&msyn-pred-adjsg-adjpl)) ;
-## Jeg har en bil som var rødt.
+## Jeg har en biler som er fin.
 #$ Jeg har en bil som var rød.
 
 
