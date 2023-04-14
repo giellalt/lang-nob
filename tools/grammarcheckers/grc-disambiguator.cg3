@@ -5137,7 +5137,7 @@ SELECT (<adv>) IF
 #
 
 
-SELECT:grade-adv Adv IF (0 GRADE-ADV LINK 0 A)(1C A);
+SELECT:grade-adv Adv IF (0 GRADE-ADV LINK 0 A)(1C A OR Adv);
 	##GRAM Jeg har en bil som var veldig godt.
 
 
