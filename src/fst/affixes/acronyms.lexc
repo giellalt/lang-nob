@@ -65,14 +65,31 @@ LEXICON ACRONOUN              ! Here we add the POS tag
 LEXICON acroconnector_vow
  acroconnector ;
 
+! Språkrådet:
+! «I bøyde former av forkortelser o.l. og i avledninger bruker vi bindestrek slik:
+! pc-en, pc-er, pc-ene (men: en pc’s prosessor, se artikkelen om apostrof), AUF-er»
+! Vidare:
+! «Dersom genitivs-s skal legges til et forbokstavord i en sammenheng der det ellers bare er brukt store bokstaver, 
+! kan vi enten skrive liten genitivs-s eller bruke apostrof.
+! NRKs KORRESPONDENTER eller NRK’S KORRESPONDENTER»
 LEXICON acroconnector     ! Here comes a set of possible symbols to ...
                 acronull ; ! SgNom only in sma
-   +Use/NG:%>%: acrosuff ;
- +Err/Orth:%>%- acrosuff ; 
- +Err/Orth:%>   acrosuff ; ! ... put between the abbreviation and its suffix
- +Err/Orth:%>'  acrosuff ; ! No POS tag here in order to avoid the POS
- +Err/Orth:%>%´ acrosuff ; ! tag for non-ACRO entries using the acroconnector
- +Err/Orth:%>%` acrosuff ; ! inflection lexicon. (cf. the punct-sme-lex.txt file)
+          :%>%- acrosuff ; ! Hyphen is correct: BH-en
+ +Err/Orth:%>%: acrosuff ; ! BH:en
+ +Err/Orth:%>   acrosuff ; ! BHen
+ +Err/Orth:%>'  acrosuff ; ! BH'en
+ +Err/Orth:%>’  acrosuff ; ! BH’en
+ +Err/Orth:%>%´ acrosuff ; ! BH´en
+ +Err/Orth:%>%` acrosuff ; ! BH`en
+          :%>   acropossessive_lower ; ! NRKs
+          :%>’  acropossessive_upper ; ! NRK’S
+ +Err/Orth:%>   acropossessive_upper ; ! NRKS
+ +Err/Orth:%>’  acropossessive_lower ; ! NRK’s
+ +Err/Orth:%>%- acropossessive ; ! NRK-s
+ +Err/Orth:%>%: acropossessive ; ! NRK:s
+ +Err/Orth:%>'  acropossessive ; ! NRK's
+ +Err/Orth:%>%´ acropossessive ; ! NRK´s
+ +Err/Orth:%>%` acropossessive ; ! NRK`s
                RHyph    ; ! Acros compound with a hyphen
  +Err/Orth:     R ;        ! Without hyphen, not normative:  NRK23
 
@@ -80,4 +97,17 @@ LEXICON acronull
 +Msc+Sg+Indef: K ;
 
 LEXICON acrosuff
-+Msc+Sg+Indef: K ;
++Msc+Sg+Indef:    K ;
+  +Msc+Sg+Def:en  K ;
++Msc+Pl+Indef:er  K ;
+  +Msc+Pl+Def:ene K ;
+
+LEXICON acropossessive
++Msc+Sg+Indef+Clt:s K ;
++Msc+Sg+Indef+Clt:S K ;
+
+LEXICON acropossessive_lower
++Msc+Sg+Indef+Clt:s K ;
+
+LEXICON acropossessive_upper
++Msc+Sg+Indef+Clt:S K ;
