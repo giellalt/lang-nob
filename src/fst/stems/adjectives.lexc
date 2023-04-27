@@ -263,6 +263,7 @@ ujevn a1 ;
 sleip a1 ; 
 kjip a1 ;
 hipp a1 ; 
+hipp+Err/Orth:hip a1 ; 
 hypp a1 ; 
 djup a1 ; 
 glup a1 ; 

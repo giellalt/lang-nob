@@ -165,7 +165,7 @@ LEXICON m1sg ! bruk
         +N: R    ;
 
 LEXICON m1pl ! gamledager
- +N+Msc+Pl: r-ne ;
+ +N+Msc+Pl: er-ene ;
 
 LEXICON m1X
          +N+Msc+Sg:   0-en   ;
@@ -402,7 +402,7 @@ LEXICON fMOR
     +N+Fem+Pl:mødr  e-ene ;
 
 LEXICON mFOT
-     +N+Msc+Sg:fot   0-en   ;
+    +N+Msc+Sg:fot   0-en   ;
     +N+Msc+Pl:føtt  er-ene ;
 
 LEXICON fROT
@@ -486,9 +486,6 @@ LEXICON n2s ! mørke
  +N+Neu+Sg: 0-et ;
         +N: R    ;
 
-LEXICON n2pl
- +N+Neu+Pl: er-ene-a ;
-
 LEXICON n3 ! middel
  +N+Neu+Sg:X1 0-et     ;
  +N+Neu+Pl:X1 er-ene-a ;
@@ -565,6 +562,9 @@ LEXICON fTÅ
  +N+Msc+Use/NG:tåen # ;
  +N+Fem+Pl:tæ  r-rne ;
 
+LEXICON nplOPPTØYER ! Unlike other neuters: no -a in definite
+  +N+Neu+Pl: er-ene ;
+
 ! Lexica for definiteness declension
 ! ==================================
 
@@ -617,9 +617,9 @@ LEXICON r-rne  ! trær
  +Indef:%>r   K ;
    +Def:%>rne K ;
 
-LEXICON r-ne  ! gamledager
- +Indef:%>r  K ;
-   +Def:%>ne K ;
+! LEXICON r-ne  ! gamledager
+!  +Indef:%>r  K ;
+!    +Def:%>ne K ;
 
 LEXICON 0-a
         +Indef:    K ;
