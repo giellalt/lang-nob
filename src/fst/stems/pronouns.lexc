@@ -98,6 +98,7 @@ annenhver+Det+Dem+Fem+Sg:annenhver # ;
 annenhver+Det+Dem+Neu+Sg:annenhvert # ;
 begge+Det+Qnt+Pl:begge # ;
 begge+Pron+Qnt+Pl:begge # ;
+begge+Det+Qnt+Pl+Clt:begges # ;
 den+Det+Dem+Pl:de # ;
 den+Det+Dem+Msc+Sg:den # ;
 den+Det+Dem+Fem+Sg:den # ;
