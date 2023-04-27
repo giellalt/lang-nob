@@ -99,8 +99,8 @@ LEXICON v2-s
 !! **LEXICON @LEXNAME@** =  føles, synes
      +V+Inf:es   # ;
  +V+Ind+Prs:es   # ;
- +V+Ind+Prt:Q1tes # ;
-  +V+PrfPrc:Q1tes # ;
+ +V+Ind+Prt:esQ1 # ; ! Q1 does not seem to work right
+  +V+PrfPrc:esQ1 # ; ! Q1 does not seem to work right
 
 LEXICON v3-s 
 !! **LEXICON @LEXNAME@** =  trives
@@ -413,13 +413,20 @@ LEXICON FINNE !!≈ * **@CODE@**
           +V+Inf:finne  #          ;
           +V+Imp:finn   #          ;
       +V+Ind+Prs:finner #          ;
- +V+Ind+Prs+Pass:finnes #          ;
+ +V+Ind+Prs+Pass:finnes #          ;      
  +V+Ind+Prs+Pass:fins   #          ;
       +V+Ind+Prt:fant   #          ;
  +V+Ind+Prt+Pass:fantes #          ;
        +V+PrfPrc:funnet #          ;
   +V+PrfPrc+Pass:funnes #          ;
        +V+PrsPrc:finn   prsptcsuff ;
+                         FINNES    ;
+LEXICON FINNES  !!≈ * **@CODE@** 
+    +V+Inf:finnes #          ;
++V+Ind+Prs:finnes #          ;
++V+Ind+Prs:fins   #          ;
++V+Ind+Prt:fantes #          ;
+ +V+PrfPrc:funnes #          ;
 LEXICON FISE !!≈ * **@CODE@** 
           +V+Inf:fise  #          ;
           +V+Imp:fis   #          ;
