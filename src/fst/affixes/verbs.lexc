@@ -292,7 +292,8 @@ LEXICON BY !!≈ * **@CODE@**
         +V+PrfPrc:bydd  #          ;
  +V+PrfPrc+Use/NG:budt  #          ;
         +V+PrsPrc:by    prsptcsuff ;
-LEXICON XYDE !!≈ * **@CODE@** = lyde, tyde, syde, ...
+LEXICON XYDE !!≈ * **@CODE@** = lyde, tyde, syde, ... 
+! not all these should be conjugated the same way...
           +V+Inf:yde  #          ;
           +V+Inf+Pass:ydes  #          ;
           +V+Imp:yd   #          ;
@@ -1257,13 +1258,17 @@ LEXICON STJELE !!≈ * **@CODE@**
        +V+PrfPrc:stjålet   # ;
        +V+PrsPrc:stjelende # ;
 LEXICON STREKKE !!≈ * **@CODE@**
-          +V+Inf:strekke    # ;
-          +V+Imp:strekk     # ;
-      +V+Ind+Prs:strekker   # ;
- +V+Ind+Prs+Pass:strekkes   # ;
-      +V+Ind+Prt:strakk     # ;
-       +V+PrfPrc:strukket   # ;
-       +V+PrsPrc:strekkende # ;
+           +V+Inf:strekke    # ;
+           +V+Imp:strekk     # ;
+       +V+Ind+Prs:strekker   # ;
+  +V+Ind+Prs+Pass:strekkes   # ;
+       +V+Ind+Prt:strakk     # ;
++V+Ind+Prt+Use/NG:strakte    # ;
++V+Ind+Prt+Use/NG:strekte    # ;
+        +V+PrfPrc:strukket   # ;
+ +V+PrfPrc+Use/NG:strakt     # ;
+ +V+PrfPrc+Use/NG:strekt     # ;
+        +V+PrsPrc:strekkende # ;
 LEXICON STRIDE !!≈ * **@CODE@**
           +V+Inf:stride    # ;
           +V+Imp:strid     # ;
