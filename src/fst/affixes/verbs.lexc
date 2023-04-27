@@ -162,6 +162,7 @@ LEXICON a-et-pret
           +V+PrfPrc:%>et # ;
        +Ex/V+PrfPrc+A:%>et positive-indef ;
        +Ex/V+PrfPrc+A:%>et a-no-neuter ;
++Ex/V+PrfPrc+A+Use/NG:%>et positive-def ;
        +Ex/V+PrfPrc+A:%>ed positive-def ;
 
 LEXICON et-pret
