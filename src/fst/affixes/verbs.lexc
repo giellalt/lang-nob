@@ -39,12 +39,26 @@ LEXICON v12 !
                          a-et-pret  ;
            +Use/NG:    te-pret    ;
 
+LEXICON v12et ! 
+!! **LEXICON @LEXNAME@** for verbs with v2 and the -et forms of v1, like "skynde" (but not "tilskynde", "framskynde" etc.)
+                 +V:     inf-prsptc ;
+                 +V:     regpres    ;
+                         et-pret    ;
+            +Use/NG:     te-pret    ;
+
 LEXICON v13 
 !! **LEXICON @LEXNAME@** also here: v1, v3: sveve -> svevet (NG), svevde.
                        +V:     inf-prsptc ;
                        +V:     regpres    ;
 +V+Ind+Prs+Nynorsk+Use/NG:%>ar #          ;
                   +Use/NG:     a-et-pret  ;
+                               de-pret    ;
+
+LEXICON v13et
+!! **LEXICON @LEXNAME@** for verbs with v3 and the -et forms of v1, like "tygge"
+                       +V:     inf-prsptc ;
+                       +V:     regpres    ;
+                  +Use/NG:     et-pret    ;
                                de-pret    ;
 
 
@@ -149,6 +163,14 @@ LEXICON a-et-pret
        +Ex/V+PrfPrc+A:%>et positive-indef ;
        +Ex/V+PrfPrc+A:%>et a-no-neuter ;
        +Ex/V+PrfPrc+A:%>ed positive-def ;
+
+LEXICON et-pret
+!! **LEXICON @LEXNAME@** = 
+         +V+Ind+Prt:%>et # ;
+          +V+PrfPrc:%>et # ;
+     +Ex/V+PrfPrc+A:%>et positive-indef ;
+     +Ex/V+PrfPrc+A:%>et a-no-neuter ;
+     +Ex/V+PrfPrc+A:%>ed positive-def ;
 
 LEXICON te-pret
 !! **LEXICON @LEXNAME@** = 

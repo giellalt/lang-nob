@@ -68,6 +68,7 @@
 !!     n2s mørke, not pl.
 !!     n3b lager, def. lageret
 !!     n3c fe, feet
+!!     n3d søppel, søppelet/søplet, søppel/søpler, søpla/søplene
 !!     n4b faktum, pl. fakta
 !!     FORUM forum, forumet, fora/forumer, foraene/forumene
 !!     LEKSIKON leksikon, pl. leksika
@@ -120,6 +121,9 @@ LEXICON m3f3
   m3 ;
   f3 ;
 
+LEXICON f3n3d
+  f3 ;
+  n3d ;
 
 ! Masculines
 ! ----------
@@ -500,6 +504,18 @@ LEXICON n3c ! fe Dette stemmer ikkje, det er fe-feet-fe-fea/feene
  +N+Neu+Sg: 0-et ;
  +N+Neu+Pl: 0-ne ;
         +N: R    ;
+
+LEXICON n3d ! søppel
+ +N+Neu+Sg:   0-et ;
+ +N+Neu+Sg:X1 0-et ;
+ +N+Neu+Pl:X1 0-er-ene-a ;
+        +N: R    ;
+
+LEXICON n3e ! skjema
+ +N+Neu+Sg:   0-et     ;
+ +N+Neu+Pl:X1 0-er-ene ;
+        +N:   R        ;
+
 
 LEXICON n4 ! kriterium
  +N+Neu+Sg:X5 0-et     ;
