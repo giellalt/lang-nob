@@ -421,11 +421,11 @@ LEXICON fGÅS
      +N+Fem+Pl:gjess 0-ene ;
 
 LEXICON fKU
-     +N+Fem+Sg:ku   0-a    ;
- +N+Fem+Sg+Def:kua K      ;
- +N+Msc+Sg+Def:kuen K      ;
-     +N+Fem+Pl:kyr  0-a    ;
-     +N+Fem+Pl+Use/NG:ku   er-ene ;
+       +N+Fem+Sg:ku   0-a    ;
+   +N+Fem+Sg+Def:kua  K      ;
+   +N+Msc+Sg+Def:kuen K      ;
+       +N+Fem+Pl:kyr  0-ne   ;
++N+Fem+Pl+Use/NG:ku   er-ene ;
 
 LEXICON fKLE
  +N+Neu+Sg+Indef:kle    K     ;
