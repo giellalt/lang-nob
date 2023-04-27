@@ -92,6 +92,7 @@ v3-s passive v3 verbs
 * **LEXICON FALLE** 
 * **LEXICON FARE** 
 * **LEXICON FINNE** 
+* **LEXICON FINNES** 
 * **LEXICON FISE** 
 * **LEXICON FLY** 
 * **LEXICON LYGE**
