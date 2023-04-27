@@ -44,6 +44,13 @@ LEXICON a1b
  +A:mX4 a-neuter ;
  +A:mX4 grade-e  ;
 
+LEXICON a1c ! morsom
+             +A:mX4    positive ;
+             +A:mX4    a-neuter ;
+        +A+Comp:m%>ere # ;
++A+Superl+Indef:%>st   # ;
+  +A+Superl+Def:%>ste  # ;
+
 LEXICON a2lig
          :ig a2 ; ! herlig
  +Nynorsk+Use/NG:eg a2 ; ! herleg
@@ -146,7 +153,6 @@ LEXICON grade-C
          +Comp+Nynorsk+Use/NG:%>are  # ;
  +Superl+Indef+Nynorsk+Use/NG:%>ast  # ;
    +Superl+Def+Nynorsk+Use/NG:%>aste # ;
-
 
 
 ! Exceptional
