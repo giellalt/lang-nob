@@ -281,14 +281,17 @@ LEXICON BURDE !!≈ * **@CODE@**
  +V+Ind+Prs:bør   # ;
  +V+Ind+Prt:burde # ;
 LEXICON BY !!≈ * **@CODE@** 
-          +V+Inf:by   #          ;
-          +V+Inf+Pass:by   #          ;
-          +V+Imp:by   #          ;
-      +V+Ind+Prs:byr  #          ;
- +V+Ind+Prs+Pass:bys  #          ;
-      +V+Ind+Prt:bød  #          ;
-       +V+PrfPrc:bydd #          ;
-       +V+PrsPrc:by   prsptcsuff ;
+           +V+Inf:by    #          ;
+      +V+Inf+Pass:bys   #          ;
+           +V+Imp:by    #          ;
+       +V+Ind+Prs:byr   #          ;
+  +V+Ind+Prs+Pass:bys   #          ;
++V+Ind+Prt+Use/NG:bød   #          ;
++V+Ind+Prt+Use/NG:bøy   #          ;
+       +V+Ind+Prt:bydde #          ;
+        +V+PrfPrc:bydd  #          ;
+ +V+PrfPrc+Use/NG:budt  #          ;
+        +V+PrsPrc:by    prsptcsuff ;
 LEXICON XYDE !!≈ * **@CODE@** = lyde, tyde, syde, ...
           +V+Inf:yde  #          ;
           +V+Inf+Pass:ydes  #          ;
