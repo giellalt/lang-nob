@@ -527,10 +527,11 @@ LEXICON n4b ! faktum
  +N+Neu+Pl:X5 a-aene ;
         +N:   R      ;
 
-LEXICON n5 ! middel Her er det større valfridom (2021)
- +N+Neu+Sg:X1 0-et     ;
- +N+Neu+Pl:X1 er-ene-a ;
-        +N:   R        ;
+LEXICON n5 ! middel 
+       +N+Neu+Sg:X1 0-et       ;
++N+Neu+Sg+Use/NG:   0-et       ;
+       +N+Neu+Pl:X1 0-er-ene-a ;
+              +N:   R          ;
 
 LEXICON n6 ! kammer Dette stemmer ikkje (per 2021), det er kammeret
  +N+Neu+Sg:X1 0-et     ;
