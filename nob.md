@@ -2418,6 +2418,12 @@ Predicative: msculine adjective should be neuter (msyn-pred-adjmsc-adjneu). Cont
 
 **Agreement rule:**  Context: *Jeg har biler som er fin*
 
+**Agreement rule:**  Context: *Eplet som jeg spiste var grønn/grønt*
+
+**Agreement rule:**  Context: *Bilen som jeg kjørte var grønt.*
+
+**Agreement rule: with relative clause**  Context: *Bilene som jeg kjørte var grønt/grønn*
+
 ## Case errors
 
 Case rules so far: Nominative pronouns should be accusative 
