@@ -1,0 +1,7 @@
+# Dir and repo specific gitattributes:
+
+mtag32          binary
+*.bin           binary
+hunpos-*        binary
+nowac07_z10k-*  binary
+trening-*       binary
