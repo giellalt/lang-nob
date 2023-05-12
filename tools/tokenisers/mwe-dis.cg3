@@ -1771,6 +1771,15 @@ SET Sem/Place = Sem/Plc OR Sem/Plc-water OR Sem/Plc-elevate OR Sem/Plc-line OR S
 
 SECTION
 
+REMOVE:fin ("fin" ABBR) IF (NEGATE -1 Pr);
+	#$ Det er fin.
+
+REMOVE:min ("min" ABBR) IF (NEGATE -1 Num OR A OR (Dem Pl));
+REMOVE:min ("min" ABBR) IF (-1 (N Def));
+	#$ Det er min.
+	## Det er mange min.
+	## Det er fine min.
+	## Vi ventet flere min.
 
 #SELECT:trab CLB IF (0 Gram/IAbbr);
 #SELECT:itrab ABBR IF (0 Gram/TAbbr)(NEGATE 0 ("i") OR ("å"));
@@ -1817,4 +1826,4 @@ REMOVE (Err/SpaceCmp) (0/0 (TODO));
 REMOVE:fallback SUB:* (Err/SpaceCmp) ;
 
 # If we still have reanalyses, choose the longest tokenisation:
-REMOVE:longest-match SUB:1 ("<.*>"r)(NOT 0 ABBR);
+REMOVE:longest-match SUB:1 ("<.*>"r);
