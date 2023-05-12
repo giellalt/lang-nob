@@ -1817,4 +1817,4 @@ REMOVE (Err/SpaceCmp) (0/0 (TODO));
 REMOVE:fallback SUB:* (Err/SpaceCmp) ;
 
 # If we still have reanalyses, choose the longest tokenisation:
-REMOVE:longest-match SUB:1 ("<.*>"r);
+REMOVE:longest-match SUB:1 ("<.*>"r)(NOT 0 ABBR);
