@@ -1601,6 +1601,8 @@ LEXICON 3_letter  is stems with 3 letters
 
 LEXICON Noun  here come the long list of stems (tens of thousands)
 
+TODO: Gå gjennom mx.
+
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/stems/nouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nouns.lexc)</small>
