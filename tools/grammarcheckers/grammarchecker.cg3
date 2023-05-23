@@ -864,6 +864,8 @@ ADDRELATION:msyn-pred-adjneu-adjmsc ($2) (N) FROM (2 A LINK 0 (&msyn-pred-adjneu
 
 #$ Båten var fint
 ## Båten var fin.
+## KNUT: Bilen som er her er fint.
+## KNUT: Bilen som er min er fint.
 
 
 #!! Predicative: msculine adjective should be neuter (msyn-pred-adjmsc-adjneu). Context: *Eplet var god/godt.*
