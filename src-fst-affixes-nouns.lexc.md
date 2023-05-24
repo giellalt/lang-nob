@@ -63,6 +63,7 @@ n2c kontor, pl. kontor, kontorer
 n2s mørke, not pl.
 n3b lager, def. lageret
 n3c fe, feet
+n3d søppel, søppelet/søplet, søppel/søpler, søpla/søplene
 n4b faktum, pl. fakta
 FORUM forum, forumet, fora/forumer, foraene/forumene
 LEKSIKON leksikon, pl. leksika

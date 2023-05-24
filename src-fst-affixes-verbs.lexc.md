@@ -26,7 +26,11 @@ v3-s passive v3 verbs
 
 **LEXICON v12** for both v1 and v2 past forms, or: score -> scoret, scorte (NG  = do not generate)
 
+**LEXICON v12et** for verbs with v2 and the -et forms of v1, like "skynde" (but not "tilskynde", "framskynde" etc.)
+
 **LEXICON v13** also here: v1, v3: sveve -> svevet (NG), svevde.
+
+**LEXICON v13et** for verbs with v3 and the -et forms of v1, like "tygge"
 
 **LEXICON v23** 
 
@@ -56,6 +60,8 @@ v3-s passive v3 verbs
 
 **LEXICON a-et-pret** = 
 
+**LEXICON et-pret** = 
+
 **LEXICON te-pret** = 
 
 **LEXICON de-pret** = 
@@ -78,7 +84,7 @@ v3-s passive v3 verbs
 * **LEXICON XYTE** = yte, flyte, tryte
 * **LEXICON BURDE** 
 * **LEXICON BY** 
-* **LEXICON XYDE** = lyde, tyde, syde, ...
+* **LEXICON XYDE** = lyde, tyde, syde, ... 
 * **LEXICON BÆRE** 
 * **LEXICON XETTE** 
 * **LEXICON DRA** 
