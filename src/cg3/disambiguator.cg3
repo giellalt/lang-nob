@@ -18245,7 +18245,7 @@ REMOVE N + Pl + Indef IF (0 Prs)(1 IM)(2 Inf);
 #!! ###  Prepositions
 
 # Pr or Adv OR CS
-REMOVE Adv IF (0 Pr)(1 Det OR A OR Qnt OR N);
+REMOVE Adv IF (0 Pr)(1 Det OR A OR Qnt OR N OR Pron + Acc);
 REMOVE CS IF (0 Pr)(*1 EOS OR CLB BARRIER Ind);
 
 
