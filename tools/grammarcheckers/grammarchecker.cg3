@@ -927,6 +927,16 @@ ADDRELATION:msyn-pred-adjneu-adjmsc ($2) (N) FROM (6 A LINK 0 (&msyn-pred-adjneu
 ## Jeg har en bil som var rødt.
 #$ Jeg har en bil som var rød.
 
+#!! **Agreement rule:**  Context: *Jeg har ei hytte som er rødt/rød.*
+ADD:msyn-pred-adjneu-adjfem (&msyn-pred-adjneu-adjfem) TARGET (A Neu Sg) IF (*-1 ("være") BARRIER NOT-ADV LINK *-1 ("som") BARRIER NOT-ADV LINK -1C (N Fem Sg) OR ("hun" Pron Pers Sg3 Nom ) OR ("den" Pron Pers Sg3))(0C Neu OR Adv)(NOT 1 N + Neu);
+COPY:msyn-pred-adjneu-adjfem (Fem Sg Indef &SUGGEST) EXCEPT (Neu Sg Indef &msyn-pred-adjneu-adjfem) TARGET (A Pos &msyn-pred-adjneu-adjfem);
+ADDRELATION:msyn-pred-adjneu-adjfem ($2) (N) FROM (3 A LINK 0 (&msyn-pred-adjneu-adjfem)) ;
+ADDRELATION:msyn-pred-adjneu-adjfem ($2) (N) FROM (4 A LINK 0 (&msyn-pred-adjneu-adjfem)) ;
+ADDRELATION:msyn-pred-adjneu-adjfem ($2) (N) FROM (5 A LINK 0 (&msyn-pred-adjneu-adjfem)) ;
+ADDRELATION:msyn-pred-adjneu-adjfem ($2) (N) FROM (6 A LINK 0 (&msyn-pred-adjneu-adjfem)) ;
+## Jeg har ei hytte som var rødt.
+#$ Jeg har ei hytte som var rød.
+
 
 #!! **Agreement rule:**  Context: *Jeg har biler som er fin*
 ADD:msyn-pred-adjsg-adjpl (&msyn-pred-adjsg-adjpl) TARGET (A Sg) IF (*-1 ("være") BARRIER NOT-ADV LINK *-1 ("som") BARRIER NOT-ADV LINK -1C (N Pl) OR ("de" Pron Pers Pl3 Nom ) OR ("vi" Pron Pers Pl1))(0C Sg OR Adv)(NOT 1 N + Sg);
@@ -943,6 +953,11 @@ ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A Msc Sg) IF (*-1
 LINK *-1 VFIN BARRIER S-BOUNDARY OR VFIN 
 LINK *-1 N OR (Pron Nom) BARRIER NOT-ADV  
 LINK *-1C (N Neu Sg) OR ("det") BARRIER (*) - ("som"))(0C Msc OR Fem OR MF)(NOT 1 N + Msc);
+
+ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A Msc Sg) IF (*-1 ("være") BARRIER NOT-ADV 
+LINK *-1 VFIN BARRIER S-BOUNDARY OR VFIN 
+LINK *-1C (N Neu Sg) OR ("det") BARRIER (*) - ("som"))(0C Msc OR Fem OR MF)(NOT 1 N + Msc);
+
 COPY:msyn-pred-adjmsc-adjneu (Neu Sg Indef &SUGGEST) EXCEPT (Msc Sg Indef &msyn-pred-adjmsc-adjneu) TARGET (A Pos &msyn-pred-adjmsc-adjneu);
 ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (3 A LINK 0 (&msyn-pred-adjmsc-adjneu)) ;
 ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (4 A LINK 0 (&msyn-pred-adjmsc-adjneu)) ;
@@ -960,6 +975,13 @@ LINK *-1 VFIN BARRIER S-BOUNDARY OR VFIN
 LINK *-1 N OR (Pron Nom) BARRIER NOT-ADV 
 LINK *-1C (N Msc Sg) OR ("han" Pron Pers Sg3 Nom) OR ("den" Pron Pers Sg3) BARRIER (*) - ("som")) 
 (0C Neu OR Adv)(NOT 1 N + Neu);
+
+ADD:msyn-pred-adjneu-adjmsc (&msyn-pred-adjneu-adjmsc) TARGET (A Neu Sg) IF (*-1 ("være") BARRIER NOT-ADV 
+LINK *-1 VFIN BARRIER S-BOUNDARY OR VFIN 
+LINK *-1C (N Msc Sg) OR ("han" Pron Pers Sg3 Nom) OR ("den" Pron Pers Sg3) BARRIER (*) - ("som")) 
+(0C Neu OR Adv)(NOT 1 N + Neu);
+
+
 COPY:msyn-pred-adjneu-adjmsc (Msc Sg Indef &SUGGEST) EXCEPT (Neu Sg Indef &msyn-pred-adjneu-adjmsc) TARGET (A Pos &msyn-pred-adjneu-adjmsc);
 ADDRELATION:msyn-pred-adjneu-adjmsc ($2) (N) FROM (3 A LINK 0 (&msyn-pred-adjneu-adjmsc)) ;
 ADDRELATION:msyn-pred-adjneu-adjmsc ($2) (N) FROM (4 A LINK 0 (&msyn-pred-adjneu-adjmsc)) ;
@@ -969,6 +991,33 @@ ADDRELATION:msyn-pred-adjneu-adjmsc ($2) (N) FROM (6 A LINK 0 (&msyn-pred-adjneu
 #$ Bilen som jeg kjørte var grønn.
 ## Bilen jeg kjørte var grønt.
 #$ Bilen jeg kjørte var grønn. 
+## Bilen som er her er fint.
+#$ Bilen som er her er fin.
+## Bilen som er min er fint.
+#$ Bilen som er fin er fin.
+
+
+#!! **Agreement rule:**  Context: *Hytta som jeg eier er fint.*
+ADD:msyn-pred-adjneu-adjfem (&msyn-pred-adjneu-adjfem) TARGET (A Neu Sg) IF (*-1 ("være") BARRIER NOT-ADV 
+LINK *-1 VFIN BARRIER S-BOUNDARY OR VFIN 
+LINK *-1 N OR (Pron Nom) BARRIER NOT-ADV 
+LINK *-1C (N Fem Sg) OR ("hun" Pron Pers Sg3 Nom) OR ("den" Pron Pers Sg3) BARRIER (*) - ("som")) 
+(0C Neu OR Adv)(NOT 1 N + Neu);
+
+ADD:msyn-pred-adjneu-adjfem (&msyn-pred-adjneu-adjfem) TARGET (A Neu Sg) IF (*-1 ("være") BARRIER NOT-ADV 
+LINK *-1 VFIN BARRIER S-BOUNDARY OR VFIN 
+LINK *-1C (N Fem Sg) OR ("hun" Pron Pers Sg3 Nom) OR ("den" Pron Pers Sg3) BARRIER (*) - ("som")) 
+(0C Neu OR Adv)(NOT 1 N + Neu);
+
+
+COPY:msyn-pred-adjneu-adjfem (Fem Sg Indef &SUGGEST) EXCEPT (Neu Sg Indef &msyn-pred-adjneu-adjfem) TARGET (A Pos &msyn-pred-adjneu-adjfem);
+ADDRELATION:msyn-pred-adjneu-adjfem ($2) (N) FROM (3 A LINK 0 (&msyn-pred-adjneu-adjfem)) ;
+ADDRELATION:msyn-pred-adjneu-adjfem ($2) (N) FROM (4 A LINK 0 (&msyn-pred-adjneu-adjfem)) ;
+ADDRELATION:msyn-pred-adjneu-adjfem ($2) (N) FROM (5 A LINK 0 (&msyn-pred-adjneu-adjfem)) ;
+ADDRELATION:msyn-pred-adjneu-adjfem ($2) (N) FROM (6 A LINK 0 (&msyn-pred-adjneu-adjfem)) ;
+## Hytta som jeg eier er fint.
+#$ Hytta som jeg eier er fin.
+
 
 
 #!! **Agreement rule: with relative clause**  Context: *Bilene som jeg kjørte var grønt/grønn*
@@ -983,7 +1032,7 @@ ADDRELATION:msyn-pred-adjsg-adjpl ($2) (N) FROM (5 A LINK 0 (&msyn-pred-adjsg-ad
 ADDRELATION:msyn-pred-adjsg-adjpl ($2) (N) FROM (6 A LINK 0 (&msyn-pred-adjsg-adjpl)) ;
 ## Bilene som jeg kjørte var grønn.
 #$ Bilene som jeg kjørte var grønne.
-## Bilene jeg kjørte var grønn.
+## Bilene jeg kjørte var grønt.
 #$ Bilene jeg kjørte var grønne. 
 
 
