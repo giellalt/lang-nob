@@ -15004,6 +15004,17 @@ REMOVE (N Sg Indef) IF
 	(NOT -1 fv OR N-prop)
 ;
 
+LIST SG-PL-INDEF-N = "hus" "teknologi" "dyr" "barn" ;
+
+REMOVE (N Sg Indef) IF
+	(0 Indef-Pl-N + SG-PL-INDEF-N)
+	(-1 Ind)
+	(NOT 1 N)
+	(NOT -1 A-Sg OR Det-Sg)
+	(NOT -1 Clt OR Superl)
+	(NOT -1 N-prop)
+;
+	## Jeg har hus som er fin.
 
 # 1907
 REMOVE (N Sg Indef) IF
