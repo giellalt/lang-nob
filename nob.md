@@ -2425,11 +2425,15 @@ Predicative: msculine adjective should be neuter (msyn-pred-adjmsc-adjneu). Cont
 
 **Agreement rule:**  Context: *Jeg har en bil som er rødt/rød.*
 
+**Agreement rule:**  Context: *Jeg har ei hytte som er rødt/rød.*
+
 **Agreement rule:**  Context: *Jeg har biler som er fin*
 
 **Agreement rule:**  Context: *Eplet som jeg spiste var grønn/grønt*
 
 **Agreement rule:**  Context: *Bilen som jeg kjørte var grønt.*
+
+**Agreement rule:**  Context: *Hytta som jeg eier er fint.*
 
 **Agreement rule: with relative clause**  Context: *Bilene som jeg kjørte var grønt/grønn*
 
