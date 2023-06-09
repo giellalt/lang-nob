@@ -768,7 +768,9 @@ LIST SG-ONLY-N = "sukker" ;
 SET GENDER = Neu OR Msc OR Fem OR MF ;
 
 
-ADD:msyn-bestemtN-ubestemtN (&msyn-bestemtN-ubestemtN) TARGET (N Def Pl) IF (-1 (A Pl) OR (".*e"r) + Adv - ("ikke") LINK NEGATE *-1 (Det Dem Pl) BARRIER NOT-A - Num - Adv) ;
+ADD:msyn-bestemtN-ubestemtN (&msyn-bestemtN-ubestemtN) TARGET (N Def Pl) IF (-1 (A Pl) - ("all") OR (".*e"r) + Adv - ("ikke") LINK NEGATE *-1 (Det Dem Pl) BARRIER NOT-A - Num - Adv) ;
+	## Alle eksemplene viser hvor galt det kan gå, og hvilke ringvirkninger det potensielt kan skape.
+
 
 COPY:msyn-bestemtN-ubestemtN (Sg Indef &SUGGEST) EXCEPT (Pl Def &msyn-bestemtN-ubestemtN) AFTER GENDER TARGET (&msyn-bestemtN-ubestemtN) IF (0 SG-PL-INDEF-N) ;
 
