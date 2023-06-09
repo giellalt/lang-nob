@@ -768,8 +768,10 @@ LIST SG-ONLY-N = "sukker" ;
 SET GENDER = Neu OR Msc OR Fem OR MF ;
 
 
-ADD:msyn-bestemtN-ubestemtN (&msyn-bestemtN-ubestemtN) TARGET (N Def Pl) IF (-1 (A Pl) - ("all") OR (".*e"r) + Adv - ("ikke") LINK NEGATE *-1 (Det Dem Pl) BARRIER NOT-A - Num - Adv) ;
+ADD:msyn-bestemtN-ubestemtN (&msyn-bestemtN-ubestemtN) TARGET (N Def Pl) IF (-1 (A Pl) - ("all") OR (".*e"r) + Adv - ("ikke") LINK NEGATE *-1 (Det Dem Pl) OR ("de" Pl3 Nom) BARRIER NOT-A - Num - Adv - CC - (A Pl));
 	## Alle eksemplene viser hvor galt det kan gå, og hvilke ringvirkninger det potensielt kan skape.
+	#$ borte i de store og {svarte} bølgene helt nord i Barentshavet.
+	#$ KNUT: «Hunter» og de to andre båtene søker natten gjennom, men de finner ingen.
 
 
 COPY:msyn-bestemtN-ubestemtN (Sg Indef &SUGGEST) EXCEPT (Pl Def &msyn-bestemtN-ubestemtN) AFTER GENDER TARGET (&msyn-bestemtN-ubestemtN) IF (0 SG-PL-INDEF-N) ;
@@ -785,6 +787,8 @@ ADD:msyn-agr-adjindef-adjdef (&msyn-agr-adjindef-adjdef) TARGET (A Sg ) IF
 	(-1 Det + Poss)
 	(NOT 0 Def)
 	(1 N);
+	#$KNUT: Roman reiste for første gang til Norge i desember i 2021.
+	
 COPY:msyn-agr-adjindef-adjdef (Sg Def &SUGGEST) EXCEPT (Msc Sg Indef &msyn-agr-adjindef-adjdef) TARGET (A &msyn-agr-adjindef-adjdef);
 COPY:msyn-agr-adjindef-adjdef (Sg Def &SUGGEST) EXCEPT (Fem Sg Indef &msyn-agr-adjindef-adjdef) TARGET (A &msyn-agr-adjindef-adjdef);
 COPY:msyn-agr-adjindef-adjdef (Sg Def &SUGGEST) EXCEPT (Neu Sg Indef &msyn-agr-adjindef-adjdef) TARGET (A &msyn-agr-adjindef-adjdef);
@@ -823,11 +827,14 @@ ADD:msyn-qucompl-sg-pl (&msyn-qucompl-sg-pl) TARGET N + Sg + Indef OR N + Sg + D
 	(*-1 Num - ETT OR ("mange") + Pos OR ("mange") + Superl BARRIER NOT-A
 	LINK NOT 0 Sem/ID
 	LINK NEGATE *-1 ("den") + Det + Dem + Pl OR ("denne") OR ("disse") OR ("begge") OR ("all") BARRIER NOT-A)
-	(NEGATE 0 SG-ONLY-N OR (N Pl) OR Ind);
+	(NEGATE 0 SG-ONLY-N OR (N Pl) OR Ind OR Imp);
 #	LINK NEGATE -1 (§) OR ("all") OR Def);
 
 	#$ etter to {år}
 	#$ mange {kjenner}
+	#$ {Del} på Facebook
+	#$KNUT: De har allerede varslet om tre kritiske punkt som de mente Sjøfartsdirektoratet måtte ta tak i med en gang.
+	#$KNUT: Det er palmesøndag, og parkeringsplassen i Jotka, seks mil utenfor Alta, er tettpakket med biler og tilhengere.
 
 	## Vi har mange ulike utfordringene
 
@@ -950,14 +957,16 @@ ADDRELATION:msyn-pred-adjsg-adjpl ($2) (N) FROM (3 A LINK 0 (&msyn-pred-adjsg-ad
 ADDRELATION:msyn-pred-adjsg-adjpl ($2) (N) FROM (4 A LINK 0 (&msyn-pred-adjsg-adjpl)) ;
 ADDRELATION:msyn-pred-adjsg-adjpl ($2) (N) FROM (5 A LINK 0 (&msyn-pred-adjsg-adjpl)) ;
 ADDRELATION:msyn-pred-adjsg-adjpl ($2) (N) FROM (6 A LINK 0 (&msyn-pred-adjsg-adjpl)) ;
-## Jeg har en biler som er fin.
-#$ Jeg har biler som var fine.
+	## Jeg har en biler som er fin.
+	#$ Jeg har biler som var fine.
+	#$KNUT: Det utgjør en risiko for at opplæringen om bord ikke er god nok, mener kommisjonen.
 
 #!! **Agreement rule:**  Context: *Eplet som jeg spiste var grønn/grønt*
 ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A Msc Sg) IF (*-1 ("være") BARRIER NOT-ADV 
 LINK *-1 VFIN BARRIER S-BOUNDARY OR VFIN 
 LINK *-1 N OR (Pron Nom) BARRIER NOT-ADV  
 LINK *-1C (N Neu Sg) OR ("det") BARRIER (*) - ("som"))(0C Msc OR Fem OR MF)(NOT 1 N + Msc);
+	#$KNUT: Også rederiet har vært en god støtte.
 
 ADD:msyn-pred-adjmsc-adjneu (&msyn-pred-adjmsc-adjneu) TARGET (A Msc Sg) IF (*-1 ("være") BARRIER NOT-ADV 
 LINK *-1 VFIN BARRIER S-BOUNDARY OR VFIN 
