@@ -821,8 +821,11 @@ ADD:msyn-qucompl-sg-pl (&msyn-qucompl-sg-pl) TARGET N + Sg + Indef OR N + Sg + D
 	(*-1 Num - ETT OR ("mange") + Pos OR ("mange") + Superl BARRIER NOT-A
 	LINK NOT 0 Sem/ID
 	LINK NEGATE *-1 ("den") + Det + Dem + Pl OR ("denne") OR ("disse") OR ("begge") OR ("all") BARRIER NOT-A)
-	(NEGATE 0 SG-ONLY-N);
+	(NEGATE 0 SG-ONLY-N OR (N Pl) OR Ind);
 #	LINK NEGATE -1 (§) OR ("all") OR Def);
+
+	#$ etter to {år}
+	#$ mange {kjenner}
 
 	## Vi har mange ulike utfordringene
 
