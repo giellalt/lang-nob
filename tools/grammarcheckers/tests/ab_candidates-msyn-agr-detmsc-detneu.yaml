@@ -1,6 +1,6 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
 
 Tests:
   - "Lödöse nevnes første gang på -tallet av den danske historikeren Saxo, og i Knyttlingasagan er det en by med tre kirker, kastell, kongsgård og en myntverksted. "
@@ -174,3 +174,4 @@ Tests:
   - "Da gjaldt det bare å passe seg så det enorme dyret ikke plutselig steg opp til overflaten, veltet båter og dro dem ned i malstrømmen som oppstod da den dykket igjen. "
   - "I laboratorieforsøk vokser blågrønnbakterier raskere alene enn som del av en lav. "
   - "Drage er en firefotet dyrefigur i våpenskjold og kunst fra middelalderen, f.eks. i en bord på Bayeux-teppet. "
+

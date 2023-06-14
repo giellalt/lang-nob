@@ -1,6 +1,6 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
 
 Tests:
   - "En veltrent greyhound kan komme opp i en toppfart på mer enn 70 km/t og regnes som verdens hurtigste hund. "
@@ -68,3 +68,4 @@ Tests:
   - "I 2005 sto det vikinger som drakk Cola, røykte og sjabbet mens de gjorde seg klare samtidig som publikum kom gående opp, inntil en halvtime før forestillingen, da alle gikk bort for å ha stemme- og kroppsoppvarming. "
   - "Genetisk og kulturelt nedstammer de moderne uighurer tildels fra nomadiske turkomanske stammer, fra de mange iransktalende grupper – som sakaer og sogdianere som tidligere hadde bosatt seg i oasebyene i Tarimbekkenet, og de centum-indoeeuropeisktalende tocharianerne. "
   - ") I 1891 reiser Hamsun land og strand og holder foredrag om sine kjepphester og går til angrep på erklærte storverk i verdenslitteraturen. "
+

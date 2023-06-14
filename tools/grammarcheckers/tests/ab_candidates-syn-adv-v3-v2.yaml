@@ -1,6 +1,6 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
 
 Tests:
   - "Også ble albumet en braksuksess. "
@@ -11,3 +11,4 @@ Tests:
   - "Også står havbruksnæringen sterkt. "
   - "Også er orlogsflagget i størrelsesforholdet 2:3. "
   - "Bare ble tamhunden tidligere domestisert, selv om gris, geit og tamfe også ble domestisert ganske tidlig. "
+

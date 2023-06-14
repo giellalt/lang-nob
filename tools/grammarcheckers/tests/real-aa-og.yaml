@@ -1,6 +1,6 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
   
 Tests:
   - "Det var Trond {å}€{og} Kari."
@@ -16,6 +16,7 @@ Tests:
   - "I tillegg er de med {å}€{og} lager et bilde av en ordentlig sivilisasjon."
   - "Kjører en på vestsiden av elva så forsetter man inn på Letmoliveien {å}€{og} kommer over til Lyngdal i Flesberg. "
   - "Mens for freon så bruker man en ekspansjons-ventil som går inn til en fordamper som spruter inn freon og dermed kjøler, aggregattilstanden er da væske helt til den har blitt varmet opp {å}€{og} blir damp. "
+
 
 
 

@@ -1,6 +1,6 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
 
 Tests:
   - "Vaksinen er særlig aktuell dersom du skal ha mye kontakt med naturen og befolkningen der du skal reise, eller planlegger å leve primitivt utenfor byene. "
@@ -41,3 +41,4 @@ Tests:
   - "Den spanske marinen var langt mer klassedelt enn hæren, noe som førte til at de lavere offiserene og menige mannskapene var bedre politisk organisert og hadde en større avstand til det høyere befalet. "
   - "Seieren var svært overraskende, da han tidligere aldri hadde kommet blant de tre beste i noe verdenscuprenn. "
   - "Buken er helt hvit. "
+

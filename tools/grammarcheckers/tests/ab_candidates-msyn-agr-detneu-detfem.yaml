@@ -1,6 +1,6 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
 
 Tests:
   - "Og som om ikke det var nok fortsatte fremgangen de neste årene, i de to påfølgende sesongene vant nemlig klubben den mest prestisjetunge turneringen et klubblag kan vinne, Europacupen for serievinnere, etter to 1-0 seire over henholdsvis Malmö FF ( 1979 ) og Hamburger SV ( 1980 ). "
@@ -8,3 +8,4 @@ Tests:
   - " lå på høyre høyde. "
   - "Strathclyde ( også kalt Alt Clut ) var et kongedømme i Skottland i middelalderen. "
   - " i Tyskland. "
+

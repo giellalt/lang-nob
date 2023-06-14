@@ -1,6 +1,6 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
   
 Tests:
   - "Jeg kjente hjertet sige gjennom kroppen."
@@ -33,4 +33,5 @@ Tests:
   - "De få sørsamiske institusjonene må gå på sørsamisk."
   - "Under marsjen mot Beijing støtte de på sterke keiserlige styrker og ble tvunget til retrett. "
   - "Arnesen lette etter forfattere som kunne skape serier med en mer kvinnelig profil. "
+
 

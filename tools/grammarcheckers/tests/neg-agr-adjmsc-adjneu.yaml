@@ -1,6 +1,6 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
   
 Tests:
   - "Et nyskapt folk skal prise Herren."
@@ -8,3 +8,4 @@ Tests:
   - "Men en stor takk til dem for å gjøre dette."
   - "Supert når folk laster opp bilder , slik at vi slipper å se på de grå omslagene ! "
   - "En god nummer 2 til Forbrytelse og straff."
+

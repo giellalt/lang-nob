@@ -1,6 +1,6 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
   
 Tests:
   - "Hvorfor har du stilt disse sju lammene for seg selv?"

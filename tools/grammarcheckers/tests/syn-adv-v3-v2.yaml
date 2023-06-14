@@ -1,7 +1,8 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
   
 Tests:
   - "I dag {jeg går}¥{går jeg} hjem."
   - "Til en god middag {vi vil}¥{vil vi} alltid komme."
+

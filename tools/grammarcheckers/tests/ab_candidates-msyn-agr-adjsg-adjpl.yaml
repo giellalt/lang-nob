@@ -1,6 +1,6 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
 
 Tests:
   - "Det finnes for øvrig flere andre arter i denne familien, og dessuten et utall krysninger og dyrkningssorter av bergmynte, som varierer noe i utseende og ikke minst smak. "
@@ -15,3 +15,4 @@ Tests:
   - "Det finnes mange gratis maler som kan lastes ned fra ulike nettsteder, mens det også finnes firmaer som selger maler. "
   - "Addis Ababas karakteristiske blå drosjer Addis Abeba ( amharisk for « den nye blomsten » ) er hovedstad i Etiopia og hovedkvarter for Den afrikanske union. "
   - "Det er blanding av mange andre raser, og arvematerialet kan forandres. "
+

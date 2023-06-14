@@ -1,8 +1,9 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
   
 Tests:
   - "Vi har fem {guttene}£{gutter}."
   - "Jeg har reist til mange {landene}£{land} i Europa."
+
 

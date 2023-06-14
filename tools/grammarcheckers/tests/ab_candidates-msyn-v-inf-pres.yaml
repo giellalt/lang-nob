@@ -1,6 +1,6 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
 
 Tests:
   - "Jeremy Lee Wotherspoon ( født 26. oktober 1976 i Humboldt, Saskatchewan ) er en kanadisk skøyteløper. "
@@ -64,4 +64,5 @@ Tests:
   - "Kronprinsparet bygget hytte i Fjellsnaret i Uvdal i 2007. "
   - "Franco var på denne tiden « forvist » til Kanariøyene, men reiste natt til 17. juli med postbåten fra Santa Cruz de Tenerife til Las Palmas, og derfra videre med leiet fly til Spansk Marokko. "
   - "Ekspansjonspakke nummer tre, ble annonsert under BlizzCon 2009, og ble sluppet 7. desember 2010."
+
 

@@ -1,6 +1,7 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
 
 Tests:
   - "Åskollen er en del av bydelen Åskollen i Drammen. "
+

@@ -1,6 +1,6 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
   
 Tests:
   - "Jeg akter å {lærer}£{lære} norsk."
@@ -20,4 +20,5 @@ Tests:
   - "Kidnapperne havner midt i en demonstrasjon, noe som gjør at « nummer 26 » ( Takashi ) klarer å {flykter}£{flykte} ved å teleportere seg vekk, bare for å havne i en kollisjon med Tetsuo, et av medlemmene i en motorsykkelgjeng. "
   - "Ibsen var den drivende politiske kraft for å {får}£{få} oppgradert utenriksanliggende fra kontor- til avdelingsnivå. "
   - "Dermed slipper man nå å {kan}£{kunne} man nå å stole utelukkende på fergene for østfra å nå byer som Ålesund og Kristiansund. "
+
 

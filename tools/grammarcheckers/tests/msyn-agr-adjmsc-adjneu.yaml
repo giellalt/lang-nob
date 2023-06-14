@@ -1,6 +1,6 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
   
 Tests:
   - "Dette er et {fin}£{fint} hus."
@@ -10,3 +10,4 @@ Tests:
   - "Boken finnes på norsk , men dessverre må den bestilles fra Nasjonalbiblioteket gjennom {din}£{ditt} {lokal}£{lokale} bibliotek . "
   
   
+

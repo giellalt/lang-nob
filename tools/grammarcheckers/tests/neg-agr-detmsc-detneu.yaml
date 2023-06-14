@@ -1,6 +1,6 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
   
 Tests:
   - "Per Heddal kalte den årets Opus."
@@ -51,3 +51,4 @@ Tests:
   - "Det er en formsikker , dialogdrevet roman om Telemann og Nina som går på en smell når de er på ferie i Garmisch-Partenkirchen."
   - "Historien er 80% av det samme , Elisabeth er en tøff , ung kvinne , Mr Harry er en stolt kar og alle vet at en mann med en formue vil gifte seg . "
   - "Det er en deilig og tiltrekkende tilstedeværelse i disse bøkene ."
+

@@ -1,6 +1,6 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
   
 Tests:
   - "Jeg {lære}£{lærer} norsk."
@@ -22,3 +22,4 @@ Tests:
   - "Noen år siden jeg {lese}${leser} denne, men den var ikke verd kr. 99,- i pocketutgave." # leste, men til det trengst det meir.
   - "Jeg {oppfatte}£{oppfatter} boken som rent babbel . "
   - "Et flott innlegg du {skrive}£{skriver} , samt en super start på det å diskutere sitater . "
+

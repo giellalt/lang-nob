@@ -1,6 +1,6 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
 
 Tests:
   - "De skal ha levd i strid med både demonene fomorierne og alvefolket Tuatha de Danaan, inntil de siste utslettet firbolg. "
@@ -19,3 +19,4 @@ Tests:
   - "Andre goder for arbeiderne i perioden var for eksempel at fra 1872 fikk de økonomisk tilskudd til feiringen av St. Hans. "
   - "Nøytronstjerner har en flytende kjerne med et hard skall. "
   - "Omtrent 5% av alle nøytronstjerner er medlemmer av et binær system. "
+

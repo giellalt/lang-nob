@@ -1,9 +1,10 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
   
 Tests:
   - "Sjelden forelsker jeg meg så hodestups som jeg gjorde i denne!"
   - "Sjelden gjør jeg det."
   - "Sjelden ler jeg høyt av bøker jeg leser."
   - "Og så er smerten din tjener."
+

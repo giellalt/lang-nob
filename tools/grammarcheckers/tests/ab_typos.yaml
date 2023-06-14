@@ -1,6 +1,6 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
   
 Tests:
   - " Den minner virkelig om en urhund , selv om heller ikke denne er særlig gammel i sin {nåværemde}${nåværende} form . "

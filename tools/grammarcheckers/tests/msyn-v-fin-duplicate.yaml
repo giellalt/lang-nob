@@ -1,10 +1,11 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
   
 Tests:
   - "Den korhårede varianten har har en hurtigere galopp enn den strihårede, som er mer tilpasset jakt på småvilt i ulendt terreng. "
   - "I januar 2011 ble det annonsert at det er funnet levninger av en afrikansk mann, anslagsvis mellom 40 og 50 år, i det som i dag er er Tiddington Road. "
   - "Klubben er er tilsluttet Norsk Kennel Klub og er topporgan for mynderasene afghansk mynde, azawakh, borzoi, italiensk mynde, polsk mynde, saluki, skotsk hjortehund, sloughi, spansk galgo, ungarsk mynde og whippet. "
   - "NKK er er tilsluttet Fédération Cynologique Internationale ( FCI ) og er medlem av Nordisk Kennelunion. "
+
 

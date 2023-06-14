@@ -1,6 +1,6 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
 
 Tests:
   - "Denne troen kan få fatale konsekvenser: Det finnes planter som er direkte livsfarlige selv om de aldri er så naturlige. "
@@ -17,3 +17,4 @@ Tests:
   - "Som om ikke det var nok, MF Doom også har produsert et nytt album for den kjente rapperen Ghostface Killah, medlem av det sterkt innflytelsesrike hiphop-kollektivetWu - Tang Clan. "
   - "Fondsbu som bare ligger 100 meter fra hotellet har over 9000 årlige overnattinger ( 2005 ). "
   - "Videre begynte man å skjelne mellom flere forskjellige typer jordsmonn og tilpasset beplantningen etter det, og man fikk bedre vanningssystemer som også fungerte over større flater. "
+

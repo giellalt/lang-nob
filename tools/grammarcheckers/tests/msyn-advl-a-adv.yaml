@@ -1,9 +1,10 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
   
 Tests:
   - "Kapitlet om Denne skulle i følge en anmelder være hysterisk morsom , og det er ikke ofte man finner bøker som er så jævlige morsomme , så hadde det bare stemt ville alt vært knall . "
   - "Kapitlet skulle i følge en anmelder være hysterisk morsom , og det er ikke ofte man finner bøker som er så jævlige morsomme , så hadde det bare stemt ville alt vært knall . "
+
 
 

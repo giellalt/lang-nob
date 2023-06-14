@@ -1,7 +1,8 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
   
 Tests:
   - "Vi prøver {og}€{å} gå." 
   - "Hvem vet hva Kari kommer til {og}€{å} finne ut."
+

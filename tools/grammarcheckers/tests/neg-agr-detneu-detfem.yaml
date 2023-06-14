@@ -1,6 +1,7 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
   
 Tests:
   - "Apellerer ikke det {mannelige}${mannlige} publikumet med det sjokkrosa coveret og forsiden på boken er ikke særlig spennende heller . "
+

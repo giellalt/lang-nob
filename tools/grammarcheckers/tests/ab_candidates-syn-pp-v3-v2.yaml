@@ -1,6 +1,6 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
 
 Tests:
   - "I Trondheimsfjorden er det også mange ærfugl fra Østersjøen som overvintrer. "
@@ -117,3 +117,4 @@ Tests:
   - "Etter den dagen ble hun forvist til Stigberget, fortsetter hun, har ikke Sigard sett noen rettelig søster. "
   - "Til ministerhører området blant annet Forsvarskommandoen, Hjemmeværnskommandoen, Forsvarets Efterretningstjeneste, Forsvarets Auditørkorps, Farvandsvæsenet, Forsvarets Oplysnings - og Velfærdstjeneste, Forsvarets Interne Revision, Beredskabsstyrelsen, Militærnægteradministrationen, Forsvarsministeriets Krigergravtilsyn, Forsvarsministeriets Jagtbestyrer, Hendes Majestæt Dronningens Jagtkaptajn og Hendes Majestæt Dronningens Adjudantstab. "
   - " ( fra middelalderens Bergen ). "
+

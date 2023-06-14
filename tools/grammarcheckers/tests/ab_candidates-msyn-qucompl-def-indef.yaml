@@ -1,6 +1,6 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
 
 Tests:
   - "Før de første utdelingene ble vinnerene gitt ut til aviser slik at de kunne trykke resultatetene i 23:00 utgavene sine. "
@@ -92,3 +92,4 @@ Tests:
   - "Posisjonene til de andre tre skjelettene antyder at jordskjelvet overrasket dem. Skjelettet til en kvinne i slutten av tjueårene lå på ryggen i samme rom som den ofrede mannen. "
   - "Rasen tilhører de mest populære ( 2004 ) katterasene i Norge og Sverige, og har økende popularitet i Europa og USA. "
   - " for bruk til å spesifisere binærmultiple kvantiteter. "
+

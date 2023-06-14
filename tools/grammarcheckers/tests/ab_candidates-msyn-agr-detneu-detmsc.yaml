@@ -1,6 +1,6 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
 
 Tests:
   - " er også et genitiv for hvor nevneform ikke er dokumentert. "
@@ -72,3 +72,4 @@ Tests:
   - " Ei tang er et redskap for å endre formen på, holde eller klippe materiale. "
   - "Pinsett er et redskap som overlapper tang i funksjon og definisjon. "
   - "Og et redskap som pølseklypa kan valgfritt defineres som en variant av en av disse. "
+

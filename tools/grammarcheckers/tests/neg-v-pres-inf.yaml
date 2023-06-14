@@ -1,6 +1,6 @@
 Config:
   Spec: ../pipespec.xml
-  Variant: nobgram-dev
+  Variants: [nobgram-dev, nobgram]
   
 Tests:
   - "De skal gripes av redsel."
@@ -26,4 +26,5 @@ Tests:
   - " gått igjennom en revitalisering og en ansiktsløftning etter at hjørnesteinsbedriften « rekefabrikken » ble nedlagt. "
   - "Hvor gammel afghaneren er vet ingen med sikkerhet, men den er trolig svært gammel i sin opprinnelse. "
   - "Tuaregene er kjent for sine kamelkaravaner i Sahara-ørkenen, der de gjennom århundrer har ferdes med « ørkenens gull » – salt – fra de fjerne og utilgjengelige saltgruvene i Sahara til mer tilgjengelige handelssentra. "
+
 
