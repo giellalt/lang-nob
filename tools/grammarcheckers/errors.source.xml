@@ -108,6 +108,17 @@
     </body>
   </error>
 
+  <error id="msyn-pred-adjneu-adjmsc">
+    <header>
+      <title xml:lang="en">Gender concord in noun phrases</title>
+      <title xml:lang="nb">Samsvar i kjønn i substantivfraser</title>
+    </header>
+    <body>
+      <description xml:lang="en">When an adjective, such as "$1", functions as predicative to a masculine noun, here "$2", it should be in the masculine.</description>
+      <description xml:lang="nb">Når et adjektiv, som her "$1", står som predikativ til et hankjønnssubstantiv, som her "$2", skal det stå i maskulinum</description>
+    </body>
+  </error>
+
   <error id="msyn-np-demindef-demdef">
     <header>
       <title xml:lang="en">Indefinite noun following determiner</title>
