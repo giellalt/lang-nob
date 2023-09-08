@@ -1092,6 +1092,8 @@ NDS analyser tags
 * **+Use/-PMatch** Do not include in fst's made for hfst-pmatch
 * **+Use/GC** only retained in the HFST Grammar Checker disambiguation analyser
 * **+Use/-GC** never retained in the HFST Grammar Checker disambiguation analyser
+* **+Use/TTS** – **only** retained in the HFST Text-To-Speech disambiguation tokeniser
+* **+Use/-TTS** – **never** retained in the HFST Text-To-Speech disambiguation tokeniser
 * **+MWESplit** Split point for MWE
 
 ## Other tags
