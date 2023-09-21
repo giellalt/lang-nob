@@ -38777,7 +38777,7 @@ hjemmetid f1 ;
 egentid f1 ;
 våkentid f1 ;
 søvntid f1 ;
-fylningstid
+fylningstid f1 ;
 datid f1 ;
 nådetid f1 ;
 endetid f1 ;
