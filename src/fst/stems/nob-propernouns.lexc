@@ -5,13 +5,13 @@
 LEXICON ProperNoun-nob-nocomp
 !! LEXICON @LEXNAME@ contains some acronyms
 
-AKP PROP-org ;
-AMI PROP-org ;
-ANC PROP-org ;
-ANSI PROP-org ;
-AOF PROP-org ;
-AP PROP-org ;
-AUF PROP-org ;
+AKP PROP-org ;  ! not-lemmatest
+AMI PROP-org ;  ! not-lemmatest
+ANC PROP-org ;  ! not-lemmatest
+ANSI PROP-org ; ! not-lemmatest
+AOF PROP-org ;  ! not-lemmatest
+AP PROP-org ;   ! not-lemmatest
+AUF PROP-org ;  ! not-lemmatest
 
 LEXICON ProperNoun-nob
 !! LEXICON @LEXNAME@ contains the list of 2200 or so names. The rest come from common files.

@@ -18,12 +18,11 @@
 
 
 LEXICON AmountCont ! gives 10-sidet, 27-årig etc.
-sidet a4 ; ! AmountCont
+sidet a4 ;    ! AmountCont
 språklig a2 ; ! AmountCont
-års a3 ; ! AmountCont
-åring m1 ; ! AmountCont
-årig a2 ; ! AmountCont
-
+års a3 ;      ! AmountCont
+åring m1 ;    ! AmountCont
+årig a2 ;     ! AmountCont
 
 LEXICON AdjectiveRoot
 !! @LEXNAME@ is the list of adjectives (some 5500 stems)
