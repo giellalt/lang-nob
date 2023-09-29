@@ -3,7 +3,7 @@
 [![Maturity: Experiment](https://img.shields.io/badge/Maturity-Experiment-black.svg)](https://giellalt.github.io/MaturityClassification.html)
 [![License](https://img.shields.io/github/license/giellalt/lang-nob)](https://github.com/giellalt/lang-nob/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-nob)](https://github.com/giellalt/lang-nob/issues)
-[![Build Status](https://divvun-tc.thetc.se/api/github/v1/repository/giellalt/lang-nob/main/badge.svg)](https://github.com/giellalt/lang-nob/actions)
+[![Build Status](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/lang-nob/main/badge.svg)](https://github.com/giellalt/lang-nob/actions)
 
 This page documents the work on the [Norwegian Bokmål language model](http://github.com/giellalt/lang-nob). It was originally made based on a wordform list 
 (in times before lemma lists were available), and thus
