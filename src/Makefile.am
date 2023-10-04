@@ -279,6 +279,9 @@ analyser-dict-gt-desc-mobile.%: analyser-dict-gt-desc-mobile.tmp.% \
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
 
+generator-gt-norm.hfst \
+generator-gt-norm.foma \
+generator-gt-norm.xfst: \
 generator-gt-norm.%: generator-gt-norm.tmp.%              \
 					filters/remove-Nynorsk-strings.%      \
 					filters/remove-MinusSpell-strings.%   \
