@@ -104,6 +104,9 @@ endif
 
 
 # We need to specify -gt- to avoid applying the filters to the raw fst:
+analyser-gt-desc.hfst \
+analyser-gt-desc.foma \
+analyser-gt-desc.xfst: \
 analyser-gt-desc.%: analyser-gt-desc.tmp.%                    \
 					filters/remove-derivation-position-tags.% \
 					filters/remove-norm-comp-tags.%           \
@@ -121,6 +124,9 @@ analyser-gt-desc.%: analyser-gt-desc.tmp.%                    \
 
 
 # And also for the normative analyser (foma and hfst):
+analyser-gt-norm.hfst \
+analyser-gt-norm.foma \
+analyser-gt-norm.xfst: \
 analyser-gt-norm.%: analyser-gt-norm.tmp.%                \
 					filters/remove-Nynorsk-strings.%      \
 					filters/remove-MinusSpell-strings.%   \
@@ -174,6 +180,9 @@ analyser-pmatchdisamb-gt-desc.hfst: \
 
 # Special case for the disamb analyser, since it follows the same filename
 # pattern as the raw fst:
+analyser-disamb-gt-desc.hfst \
+analyser-disamb-gt-desc.foma \
+analyser-disamb-gt-desc.xfst: \
 analyser-disamb-gt-desc.%: analyser-disamb-gt-desc.tmp.%      \
 					filters/remove-orig_lang-tags.%           \
 					filters/remove-derivation-position-tags.% \
@@ -221,6 +230,9 @@ analyser-gramcheck-gt-desc.hfst: analyser-gramcheck-gt-desc.tmp.hfst \
 
 
 # We need to add processing of language-specific tags in the analyser:
+analyser-dict-gt-desc.hfst \
+analyser-dict-gt-desc.foma \
+analyser-dict-gt-desc.xfst: \
 analyser-dict-gt-desc.%: analyser-dict-gt-desc.tmp.% \
 					filters/remove-derivation-position-tags.% \
 					filters/convert_to_flags-CmpNP-tags.%     \
@@ -243,6 +255,9 @@ analyser-dict-gt-desc.%: analyser-dict-gt-desc.tmp.% \
 		 quit\n" | $(XFST_TOOL)
 
 # We need to add processing of language-specific tags in the analyser:
+analyser-dict-gt-desc-mobile.hfst \
+analyser-dict-gt-desc-mobile.foma \
+analyser-dict-gt-desc-mobile.xfst: \
 analyser-dict-gt-desc-mobile.%: analyser-dict-gt-desc-mobile.tmp.% \
 					filters/remove-derivation-position-tags.% \
 					filters/remove-grammatical-tags.%         \
