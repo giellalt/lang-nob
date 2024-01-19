@@ -2,7 +2,7 @@
 <hfstspeller dtdversion="1.0" hfstversion="3">
   <info>
     <locale>nb</locale>
-    <title>Giellatekno/Divvun/UiT fst-based speller for Norwegian Bokmål</title>
+    <title>Norwegian Bokmål</title>
     <description>This is an fst-based speller for Norwegian Bokmål. It is based
     on the normative subset of the morphological analyser for Norwegian Bokmål.
     The source code can be found at:
