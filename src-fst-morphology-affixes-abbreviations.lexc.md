@@ -45,7 +45,7 @@
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/abbreviations.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/affixes/abbreviations.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/abbreviations.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/morphology/affixes/abbreviations.lexc)</small>
 
 ---
 

@@ -12,7 +12,7 @@ Nouns
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/nob-propernouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nob-propernouns.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/nob-propernouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/morphology/stems/nob-propernouns.lexc)</small>
 
 ---
 
