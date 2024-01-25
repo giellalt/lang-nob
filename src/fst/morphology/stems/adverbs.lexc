@@ -13,6 +13,7 @@ LEXICON dt
 LEXICON Adverb
 !! @LEXNAME@ lists some 600 Norwegian adverbs, including MWE such as "i live"
 
+imidlertid adv ;
 forlengst adv ;
 absolutt adv ;
 akkurat adv ; 
