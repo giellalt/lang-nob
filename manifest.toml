@@ -1,5 +1,5 @@
-name = "Norwegian Bokmål"
-version = "0.1.1"
+spellername = "Norwegian Bokmål"
+spellerversion = "0.1.1"
 
 # Name of the speller package in various languages.
 # The default is English + autonym:
