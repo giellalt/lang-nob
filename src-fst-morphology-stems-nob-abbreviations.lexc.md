@@ -41,6 +41,3 @@ The file is too large and should be shrinked
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/nob-abbreviations.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/morphology/stems/nob-abbreviations.lexc)</small>
-
----
-

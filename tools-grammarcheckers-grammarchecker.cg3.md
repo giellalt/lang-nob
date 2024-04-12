@@ -509,4 +509,5 @@ Simple punctuation rules showing how to change the lemma in the suggestions:
 **Ellipsis rule:** Ellipsis … for ... (use-ellipsis)
 
 * * *
+
 <small>This (part of) documentation was generated from [tools/grammarcheckers/grammarchecker.cg3](https://github.com/giellalt/lang-nob/blob/main/tools/grammarcheckers/grammarchecker.cg3)</small>

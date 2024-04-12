@@ -59,4 +59,5 @@ The bulk of the file contains rules from the original OBT file.
 **minweight** selects reading with lowest weight.
 
 * * *
+
 <small>This (part of) documentation was generated from [src/cg3/disambiguator.cg3](https://github.com/giellalt/lang-nob/blob/main/src/cg3/disambiguator.cg3)</small>

@@ -22,6 +22,3 @@ LEXICON Nynorsk  her kjem alle orda
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/nynorsk-stems.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/morphology/stems/nynorsk-stems.lexc)</small>
-
----
-

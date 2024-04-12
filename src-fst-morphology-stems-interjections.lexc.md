@@ -9,6 +9,3 @@ LEXICON Interjection lists *folkens, heisann, pokker* and some 60 more interject
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/interjections.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/morphology/stems/interjections.lexc)</small>
-
----
-
