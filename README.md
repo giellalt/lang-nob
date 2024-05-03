@@ -8,10 +8,13 @@ The Norwegian Bokmål morphology and tools
 [![Doc Build Status](https://github.com/giellalt/lang-nob/workflows/Docs/badge.svg)](https://github.com/giellalt/lang-nob/actions)
 [![CI/CD Build Status](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/lang-nob/main/badge.svg)](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/lang-nob/main/latest)
 
-Download nightly / CI/CD zhfst files for testing:
+Download nightly / CI/CD installation packages for testing (contains the core zhfst file(s)):
+
 [![Windows](https://img.shields.io/badge/download%40latest-Windows--bhfst-brightgreen)](https://pahkat.uit.no/main/download/speller-nob?platform=windows&channel=nightly)
 [![MacOS](https://img.shields.io/badge/download%40latest-macOS--bhfst-brightgreen)](https://pahkat.uit.no/main/download/speller-nob?platform=macos&channel=nightly)
 [![Mobile](https://img.shields.io/badge/download%40latest-mobile--bhfst-brightgreen)](https://pahkat.uit.no/main/download/speller-nob?platform=mobile&channel=nightly)
+
+__NB!!__ Note that the nightly / CI/CD installation packages are not tested for language quality, and might contain regressions and errors.
 
 This repository contains finite state source files for the Norwegian Bokmål language,
 for building morphological analysers, proofing tools
