@@ -27,3 +27,4 @@ EXTRA_DIST=pair-test-negative.sh.in \
 ####### Other targets: ###########
 clean-local:
 	-rm -f *.txt
+include $(top_srcdir)/../giella-core/am-shared/devtest-include.am
