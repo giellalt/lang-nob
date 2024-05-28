@@ -24,6 +24,7 @@ LEXICON Personal
  hun+Pron+Pers+Sg3+Nom+Use/NG:ho # ;
  han+Pron+Pers+Sg3+Acc:han # ;
  han+Pron+Pers+Sg3+Acc:ham # ;
+ han+Pron+Pers+Sg3+Acc+Err/Orth:honom # ;
  hun+Pron+Pers+Sg3+Acc:henne # ;
  han/hun+Pron+Pers+Sg3+Acc:han/henne # ;
  den+Pron+Pers+Sg3:den # ; ! Gender? -- no, only as Det Dem (?)

@@ -113,7 +113,7 @@ LEXICON v2-s
 !! **LEXICON @LEXNAME@** =  føles, synes
      +V+Inf:es   # ;
  +V+Ind+Prs:es   # ;
- +V+Ind+Prt:esQ1 # ; ! Q1 does not seem to work right
+ +V+Ind+Prt:tesQ1 # ; ! Q1 does not seem to work right
   +V+PrfPrc:esQ1 # ; ! Q1 does not seem to work right
 
 LEXICON v3-s 
