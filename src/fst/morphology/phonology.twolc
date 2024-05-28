@@ -107,8 +107,8 @@ Rules
 !! **@RULENAME@**  is actually 3 rules in one: 1) it deletes -e- in *moden : modne* etc, 2) it deletes the stem -e in *hare + -er* and 3) it delets suffix -e in *ærlig + est > ærligst*
  e:0 <=>      Cns:  _ LNR X1: %> ( e | a ) ;
          Vow  Cns:* _  [Dummy:* - Z2:]  %> [ Vow | Cns Cns ] ;
-               _ %> Q3: ;
-          i g %>  _ s t ;
+                    _  (X4:) %> Q3: ;
+            i g %>  _ s t ;
 
 !! *Tests:* (star denotes negativ test, test that is supposed to fail)
 !!€ søsterX1>a
@@ -184,9 +184,11 @@ Rules
 
 "Delete m Rule"
 !! **@RULENAME@** for *kam:kammen*, here we delete the second m when word-final.  
- m:0 <=>    _ X4: [ %> s | #: (Q3:) ] ; ! kammX4:kam
-          m _ e:    %> Q3: t ;
-	  m _ (X4:) %> Q3: t ; ! stummX4>Q3t
+ m:0 <=>    _      X4: [ %> s | #: (Q3:) ] ; ! kammX4:kam, gjemme
+          m _ e:        %> Q3: t ; ! gjemt
+!          m _ e:        %> Q3: X4: ; ! gjem
+	  m _ (e:)  X4:  %> Q3:  ; ! gjemmeX4>Q3
+	  m _ (e:) (X4:) %> Q3: t ; ! stummX4>Q3t
          u: _ X5:   %> ;
           m _ e: LNR X1: %> ( e | a ) ; ! gammel:gamle
          

@@ -137,7 +137,7 @@ LEXICON inf-prsptc
         +Inf+Pass:%>s  # ;
      +Inf+Nynorsk+Use/NG:%>a    #          ;
 +Inf+Pass+Nynorsk+Use/NG:%>ast # ;
-             +Imp:%>Q3X4   #          ;
+             +Imp:X4%>Q3   #          ;
           +PrsPrc:%>     prsptcsuff ;
   +PrsPrc+Nynorsk+Use/NG:%>ande #          ;
         +Der1+Der/NomAct:%>ing f1      ;
