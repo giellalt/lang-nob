@@ -1313,6 +1313,7 @@ given the proper use of these flags.
 
 ### Flags for preprocessing
 
+* @P.Pmatch.Loc@ - 
 * @P.Pmatch.Backtrack@ - 
 * @PMATCH_BACKTRACK@ - 
 
