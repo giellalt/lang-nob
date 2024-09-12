@@ -180,7 +180,7 @@ LEXICON GAMMEL
  +A+Pos+Neu+Sg+Indef:gammelt # ;
        +A+Pos+Sg+Def:gamle   # ;
        +A+Pos+Sg+Def:gamle   # ;
- +A+Pos+Pl+Indef+Clg:gamles   # ;
+ +A+Pos+Pl+Indef+Clt:gamles   # ;
        +A+Pos+Pl+Def:gamle   # ;
              +A+Comp:eldre   # ;
            +A+Superl:eldst   # ;
