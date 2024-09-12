@@ -308,6 +308,7 @@ Multichar_Symbols !!≈ **@CODE@**
 
 !! ### Flags for preprocessing
 
+@P.Pmatch.Loc@  !!≈ * @CODE@ - 
 @P.Pmatch.Backtrack@  !!≈ * @CODE@ - 
 @PMATCH_BACKTRACK@ !!≈ * @CODE@ - 
 
