@@ -26,6 +26,7 @@ s:ss	3
 ss:s	3
 tt:t	3
 t:tt	3
+ttt:tt	3
 v:vv	3
 vv:v	3
 sj:skj	3
