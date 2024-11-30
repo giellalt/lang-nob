@@ -18227,6 +18227,8 @@ morgen m1 ;
 påskemorgen m1 ;
 julemorgen m1 ;
 mandagsmorgen m1 ;
+overmorgen m1 ;
+overmorgen:overimorgen m1 ;
 preken m1 ;
 fiken m1 ;
 olderbakken m1 ;
