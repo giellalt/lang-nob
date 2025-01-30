@@ -31,6 +31,8 @@ Aktuell PROPADJ_a1-org ;
 
 
 !! Nouns
+Aud PROP-fem ;
+Ann PROP-fem ;
 Ose PROP-sur ;
 Capote PROP-sur ;
 Jon PROP-mal ;
