@@ -14,7 +14,7 @@ Alphabet
  Á É Ó Ú Í À È Ò Ù Ì Ä Ë Ö Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð         !!≈ * **@CODE@**
  '   !!≈ * **@CODE@** This is the apostrophe
   l7:l    !!≈ * **@CODE@** This **l** not deleted by **t**
-  e7:l    !!≈ * **@CODE@** This **e** not deleted by vowel-initial suffixes (ide - ideen)
+  e7:e    !!≈ * **@CODE@** This **e** not deleted by vowel-initial suffixes (ide - ideen)
 ! o:ø u:y a:e g:0 e:0 m:0 r:0 t:0 u:0
 ! t:d
 ! 0:t
