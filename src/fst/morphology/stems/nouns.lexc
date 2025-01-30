@@ -29118,7 +29118,7 @@ rovvilttap n1 ;
 slep n1 ;
 knep n1 ;
 grep n1 ;
-begrep n1 ;
+begrep n2 ;
 kulturminnebegrep n1 ;
 kompetansebegrep n1 ;
 trafikkbegrep n1 ;
