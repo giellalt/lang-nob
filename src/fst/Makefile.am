@@ -246,6 +246,20 @@ endif
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
 
+.generated/generator-gt-desc.%: .generated/generator-gt-desc.tmp.%              \
+					filters/remove-norm-comp-tags.%       \
+					filters/remove-derivation-position-tags.% \
+					filters/remove-usage-tags.%
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+				@\"filters/remove-usage-tags.$*\"               \
+			.o. @\"filters/remove-derivation-position-tags.$*\" \
+			.o. @\"filters/remove-norm-comp-tags.$*\"       \
+			.o. @\"$<\"                                     \
+			;\n\
+		 $(INVERT_XFST)$(INVERT_FOMA)\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+
 
 # These are older (?) -- XXX look at these.
 
