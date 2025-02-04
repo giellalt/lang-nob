@@ -882,7 +882,7 @@ We declare both the a-å letters and all other possible letters.
 * **Á É Ó Ú Í À È Ò Ù Ì Ä Ë Ö Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð**
 * **'** This is the apostrophe
 * **l7:l** This **l** not deleted by **t**
-* **e7:l** This **e** not deleted by vowel-initial suffixes (ide - ideen)
+* **e7:e** This **e** not deleted by vowel-initial suffixes (ide - ideen)
 
 ### Boundary symbols
 
