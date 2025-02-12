@@ -105,9 +105,6 @@ The bulk of the file contains rules from the original OBT file.
 
 ###  Late rules, Gt
 
-###  Rules with weights
-**minweight** selects reading with lowest weight.
-
 * * *
 
 <small>This (part of) documentation was generated from [tools/grammarcheckers/grc-disambiguator.cg3](https://github.com/giellalt/lang-nob/blob/main/tools/grammarcheckers/grc-disambiguator.cg3)</small>
