@@ -18361,9 +18361,9 @@ REMOVE:LexAdv A + Der/AAdv IF (0 Adv);
 
 
 
-#!! ###  Rules with weights
-#!! **minweight** selects reading with lowest weight.
-SELECT:minweight (<W=MIN>);
+#! ! ###  Rules with weights
+#! ! **minweight** selects reading with lowest weight.
+# SELECT:minweight (<W=MIN>);
 
 
 
