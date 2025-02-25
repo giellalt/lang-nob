@@ -70,7 +70,6 @@
 !!     n4b faktum, faktumet, fakta, faktaene
 !!     FORUM forum, forumet, fora/forumer, foraene/forumene
 !!     nLEKSIKON leksikon, pl. leksika
-!!     nMUSEUM museum, museet, museer
 !!     n1pl odds, oddsene
 
 
@@ -36473,9 +36472,8 @@ produksjonsdatum+N+Neu+Pl+Indef:produksjonsdata K ;
 sjøkartdatum+N+Neu+Pl+Indef:sjøkartdata K ;
 kostdatum+N+Neu+Pl+Indef:kostdata K ;
 budsjettfaktum+N+Neu+Pl+Indef:budsjettfakta K ;
-museum:muse nMUSEUM ;
-forvaltningsmuseum:forvaltningsmuse nMUSEUM ;
-vitenskapsmuseum:vitenskapsmuse nMUSEUM ;
+museum:museum n4 ;
+vitenskapsmuseum:vitenskapsmuseum n4 ;
 TS-forum:TS-for nFORUM ;
 forum:for nFORUM ;
 kvinneforum:kvinnefor nFORUM ;
