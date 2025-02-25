@@ -1656,7 +1656,6 @@ n3c fe, feet
 n4b faktum, faktumet, fakta, faktaene
 FORUM forum, forumet, fora/forumer, foraene/forumene
 nLEKSIKON leksikon, pl. leksika
-nMUSEUM museum, museet, museer
 n1pl odds, oddsene
 
 ## The lexica themselves
