@@ -599,6 +599,7 @@ bivre v1 ;
 bivuakkere v2 ;
 bivåne v2 ;
 bjeffe v1 ;
+småbjeffe v1 ;
 bla v4 ;
 blafre v1 ;
 blakke v1 ;
@@ -1148,6 +1149,7 @@ etablere v2 ;
 ete:		 ETE ;
 etikettere v2 ;
 etle v1 ;
+hetse v1 ;
 etse v1 ;
 etterape v1 ;
 etterforske v1 ;
@@ -1183,6 +1185,7 @@ fakse v1 ;
 faksimilere v2 ;
 faktorisere v2 ;
 fakturere v2 ;
+konfigurere v2 ;
 falle: FALLE ; !!≈ * @CODE@ 
 henfalle:hen FALLE ;
 fallere v2 ; !! * etc.
