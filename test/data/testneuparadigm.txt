@@ -1,0 +1,4 @@
++N+Neu+Sg+Indef
++N+Neu+Sg+Def
++N+Neu+Pl+Indef
++N+Neu+Pl+Def

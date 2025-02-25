@@ -1,0 +1,14 @@
++V+Inf
++V+Ind+Prs
++V+Ind+Prt
++V+Imp
++V+PrsPrc
++V+Sup
++V+Ind+Prs+Pass
++V+Ind+Prt+Pass
++V+PrfPtc+Msc+Indef
++V+PrfPtc+Msc+Def
++V+PrfPtc+Fem+Indef
++V+PrfPtc+Fem+Def
++V+PrfPtc+Neu+Indef
++V+PrfPtc+Neu+Def

@@ -1,0 +1,13 @@
++N+Prop+Msc+Sg+Indef
++N+Prop+Msc+Pl+Indef
++N+Prop+Msc+Sg+Def
++N+Prop+Msc+Pl+Def
++N+Prop+Fem+Sg+Indef
++N+Prop+Fem+Pl+Indef
++N+Prop+Fem+Sg+Def
++N+Prop+Fem+Pl+Def
++N+Prop+Neu+Sg+Indef
++N+Prop+Neu+Pl+Indef
++N+Prop+Neu+Sg+Def
++N+Prop+Neu+Pl+Def
+

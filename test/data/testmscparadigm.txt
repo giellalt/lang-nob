@@ -1,0 +1,4 @@
++N+Msc+Sg+Indef
++N+Msc+Pl+Indef
++N+Msc+Sg+Def
++N+Msc+Pl+Def
