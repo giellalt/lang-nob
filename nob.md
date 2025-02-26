@@ -1364,7 +1364,6 @@ given the proper use of these flags.
 * Abbreviation-smi ; - 
 
 ### LEXICON ProperNoun pointing to: 
-* @U.CmpHyph.TRUE@ ProperNoun-nob-nocomp ; =  Lexicon for NOB short names - always require hyphen
 * @U.CmpHyph.TRUE@ ProperNoun-smi-nocomp ; =  Lexicon for short names - always require hyphen
 * ProperNoun-smi ; =  SMI proper nouns
 * ProperNoun-nob ; =  contains the full nob name list
@@ -1569,8 +1568,6 @@ The file is too large and should be shrinked
 # Bokmål propernouns
 
 This file documents the Bokmål proper nouns stem file [stems/nob-propernouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nob-propernouns.lexc).
-
-LEXICON ProperNoun-nob-nocomp contains some acronyms
 
 LEXICON ProperNoun-nob contains the list of 2200 or so names. The rest come from common files.
 

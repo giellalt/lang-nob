@@ -320,7 +320,6 @@ given the proper use of these flags.
 * Abbreviation-smi ; - 
 
 ### LEXICON ProperNoun pointing to: 
-* @U.CmpHyph.TRUE@ ProperNoun-nob-nocomp ; =  Lexicon for NOB short names - always require hyphen
 * @U.CmpHyph.TRUE@ ProperNoun-smi-nocomp ; =  Lexicon for short names - always require hyphen
 * ProperNoun-smi ; =  SMI proper nouns
 * ProperNoun-nob ; =  contains the full nob name list
