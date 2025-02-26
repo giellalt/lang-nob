@@ -2,16 +2,16 @@
 
 !! This file documents the Bokmål proper nouns stem file [stems/nob-propernouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nob-propernouns.lexc).
 
-LEXICON ProperNoun-nob-nocomp
-!! LEXICON @LEXNAME@ contains some acronyms
-
-AKP PROP-org ;  ! not-lemmatest
-AMI PROP-org ;  ! not-lemmatest
-ANC PROP-org ;  ! not-lemmatest
-ANSI PROP-org ; ! not-lemmatest
-AOF PROP-org ;  ! not-lemmatest
-AP PROP-org ;   ! not-lemmatest
-AUF PROP-org ;  ! not-lemmatest
+!LEXICON ProperNoun-nob-nocomp				 
+!!! LEXICON @LEXNAME@ contains some acronyms These get wrong analysis
+!											 
+!AKP PROP-org ;  ! not-lemmatest			 
+!AMI PROP-org ;  ! not-lemmatest			 
+!ANC PROP-org ;  ! not-lemmatest			 
+!ANSI PROP-org ; ! not-lemmatest			 
+!AOF PROP-org ;  ! not-lemmatest			 
+!AP PROP-org ;   ! not-lemmatest			 
+!AUF PROP-org ;  ! not-lemmatest			 
 
 LEXICON ProperNoun-nob
 !! LEXICON @LEXNAME@ contains the list of 2200 or so names. The rest come from common files.
