@@ -367,7 +367,7 @@ Abbreviation-smi ; !!≈ * @CODE@ -
 
 LEXICON ProperNoun
 !! ### LEXICON @LEXNAME@ pointing to: 
- @U.CmpHyph.TRUE@ ProperNoun-nob-nocomp ; !!≈ * @CODE@ =  Lexicon for NOB short names - always require hyphen
+! @U.CmpHyph.TRUE@ ProperNoun-nob-nocomp ; !!≈ * @CODE@ =  Lexicon for NOB short names - always require hyphen
  @U.CmpHyph.TRUE@ ProperNoun-smi-nocomp ; !!≈ * @CODE@ =  Lexicon for short names - always require hyphen
                   ProperNoun-smi        ; !!≈ * @CODE@ =  SMI proper nouns
                   ProperNoun-nob        ; !!≈ * @CODE@ =  contains the full nob name list
