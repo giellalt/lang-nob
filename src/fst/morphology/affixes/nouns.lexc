@@ -552,8 +552,9 @@ LEXICON nLEKSIKON ! leksikon
         +N:on R      ;
 
 LEXICON nMUSEUM
- +N+Neu+Sg:um 0-et     ;
- +N+Neu+Pl:   er-ene-a ;
+ +N+Neu+Pl:e   er-ene-a ;
+ +N+Neu+Sg+Indef:um     K ;
+ +N+Neu+Sg+Def:et K ;
         +N:um R        ;
 
 LEXICON nØYE
