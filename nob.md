@@ -1009,8 +1009,6 @@ This section shows the twolc rules and the tests used to check whether they work
 
 ### Insertion rules
 
-**Insert t in passives Rule**  
-
 ### Compound rule
 
 *Tests:*
