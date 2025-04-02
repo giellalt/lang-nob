@@ -156,9 +156,9 @@ Rules
 "Geminate deletion in front of -t and -d Rule"
 !! **@RULENAME@** deletes: 1) before **Q3 and d or t** (*kaller:kalte*) 2) before passive **Q1 t** (*lykkes:lyktes*) and 3) before epenthetic **-e-** and **l, n** or **r** (*sikker:sikre*)
  Cx:0 <=> Vow Cx _ (e:0)         %> Q3: [d|t] ; ! kaller:kalte
-          Vow Cx _ :t e s  Q1:  ; ! lykkes:lyktes
+          Vow Cx _ %> :t e s  Q1:  ; ! lykkes:lyktes
           Vow Cx _  e:   LNR X1: %> ( e | a ) ;  ! sikker:sikre
-      where Cx in ( f k p s l n g ) ;
+      where Cx in ( f k p s l m n g ) ;
 
 !! *Tests:*
 !!€ kalle>Q3te
@@ -231,9 +231,9 @@ Rules
 !! ### Insertion rules
 ! ---------------
 
-"Insert t in passives Rule"
-!! **@RULENAME@**  
- 0:t <=> _ e s Q1: ;
+!"Insert t in passives Rule"
+! **@RULENAME@**  
+! 0:t <=> _ e s Q1: ;
 
 !"Insert d in passives"
 ! 0:d <=> _ e s Q1: ;

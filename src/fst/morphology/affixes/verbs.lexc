@@ -113,8 +113,8 @@ LEXICON v2-s
 !! **LEXICON @LEXNAME@** =  føles, synes
      +V+Inf:es   # ;
  +V+Ind+Prs:es   # ;
- +V+Ind+Prt:tesQ1 # ; ! Q1 does not seem to work right
-  +V+PrfPrc:esQ1 # ; ! Q1 does not seem to work right
+ +V+Ind+Prt:%>tesQ1 # ; ! Q1 does not seem to work right
+  +V+PrfPrc:es # ; ! Q1 does not seem to work right
 
 LEXICON v3-s 
 !! **LEXICON @LEXNAME@** =  trives
@@ -1495,6 +1495,7 @@ LEXICON TRÅ !!≈ * **@CODE@**
    +V+Ind+Prs+Pass:trås    # ;
  +V+Ind+Prt+Use/NG:tro     # ;
         +V+Ind+Prt:trådde  # ;
+        +V+Ind+Prt+Err/Orth:trådte  # ;
          +V+PrfPrc:trådd   # ;
          +V+PrsPrc:trående # ;
 LEXICON TVINGE !!≈ * **@CODE@**
