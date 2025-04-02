@@ -42,6 +42,7 @@ nedenfor p ;
 istedenfor p ;
 bakenfor p ;
 innenfor p ;
+innenfor+Err/Orth:innefor p ;
 hitenfor p ;
 aktenfor p ;
 bortenfor p ;
