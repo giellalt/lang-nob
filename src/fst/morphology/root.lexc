@@ -117,6 +117,9 @@ Multichar_Symbols !!≈ **@CODE@**
  +Use/TTS          !!≈ * **@CODE@** – **only** retained in the HFST Text-To-Speech disambiguation tokeniser
  +Use/-TTS         !!≈ * **@CODE@** – **never** retained in the HFST Text-To-Speech disambiguation tokeniser
  +MWESplit         !!≈ * **@CODE@** Split point for MWE
+ +Span    !!≈ * **@CODE@** - used for numerical expressions denoting spans or intervals, like 5-10, 2012-2015, etc  
+ +Gen
+ +Ill
 
 
 !! ## Other tags
