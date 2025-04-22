@@ -1136,6 +1136,7 @@ NDS analyser tags
 * **+Use/TTS** – **only** retained in the HFST Text-To-Speech disambiguation tokeniser
 * **+Use/-TTS** – **never** retained in the HFST Text-To-Speech disambiguation tokeniser
 * **+MWESplit** Split point for MWE
+* **+Span** - used for numerical expressions denoting spans or intervals, like 5-10, 2012-2015, etc  
 
 ## Other tags
 * **+ABBR** 
