@@ -52,7 +52,7 @@ Multichar_Symbols !!≈ **@CODE@**
 
 !! ### Other tags
 
- +CLB +PUNCT +HYPH +LEFT +RIGHT    !!≈ * **@CODE@**
+ +CLB +PUNCT +HYPH +LEFT +RIGHT +MIDDLE    !!≈ * **@CODE@**
  +CLBfinal       !!≈ * **@CODE@**  Sentence final abbreviated expression ending in full stop, so that the full stop is ambiguous
  +Cmp       !!≈ * **@CODE@** 
  +Cmp/e     !!≈ * **@CODE@** declaring both awaiting cleanup
