@@ -1075,7 +1075,7 @@ Here we declare the **tags** and all other multicharacter symbols.
 
 ### Other tags
 
-* **+CLB +PUNCT +HYPH +LEFT +RIGHT**
+* **+CLB +PUNCT +HYPH +LEFT +RIGHT +MIDDLE**
 * **+CLBfinal**  Sentence final abbreviated expression ending in full stop, so that the full stop is ambiguous
 * **+Cmp** 
 * **+Cmp/e** declaring both awaiting cleanup
