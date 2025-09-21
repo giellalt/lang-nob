@@ -4,10 +4,10 @@ All doc-comment documentation in one large file.
 
 ---
 
-# src-cg3-disambiguator.cg3.md 
+## src-cg3-disambiguator.cg3.md 
 
 
-# The OBT-Giellatekno Bokmål Norwegian disambiguator 
+## The OBT-Giellatekno Bokmål Norwegian disambiguator 
 
 This disambiguator is based upon the disambiguator from OBT
 (Oslo-Bergen-taggeren), hereafter OBT-cg. It is adjusted to the GiellaLT FST and
@@ -18,16 +18,16 @@ The original OBT disambiguator was written in CG-1 by Kristin Hagen and
 Anders Nøklestad at UiO. It was translated to CG-2 by Lars Nygård.
 The conversion to CG-3 and the Tromsø format was done by Trond Trosterud.
 
-## Delimiters and sets
+### Delimiters and sets
 
 The tagsets are a superset of the OBT and GiellaLT tags, so that 
 the labels are kept from OBT-cg, but GiellaLT content is added when needed.
 
 * Amount sets
 
-## Rule section
+### Rule section
 
-### Giellatekno early rules
+#### Giellatekno early rules
 
 **NotAbbr** removes abbreviations whenever alternatives
 
@@ -39,31 +39,31 @@ the labels are kept from OBT-cg, but GiellaLT content is added when needed.
 
 **aaIM** selects +IM for *å*
 
-#### Numerals
+##### Numerals
 
 * Rule for adding <vdic> to verbs denoting verbal actions like: ... dadjá Aili Kestkitalo.
 
-#### Compounds
+##### Compounds
 
-## Mostly OBT Rules
+### Mostly OBT Rules
 
 The bulk of the file contains rules from the original OBT file.
 
-## Giellatekno late rules
+### Giellatekno late rules
 
-### Neuter sg pl
+#### Neuter sg pl
 
-### Pronouns
+#### Pronouns
 
-###  Det rules
+####  Det rules
 
-###  V and not N
+####  V and not N
 
-###  Prepositions
+####  Prepositions
 
-###  Late rules, Gt
+####  Late rules, Gt
 
-###  Rules with weights
+####  Rules with weights
 **minweight** selects reading with lowest weight.
 
 * * *
@@ -72,7 +72,7 @@ The bulk of the file contains rules from the original OBT file.
 
 ---
 
-# src-cg3-functions.cg3.md 
+## src-cg3-functions.cg3.md 
 
 
 
@@ -81,7 +81,7 @@ Typical usage: ... (*1 N BARRIER NPT-NPMOD) ...
 meaning: Scan to the first noun, ignoring anything that can be
 part of the noun phrase of that noun (i.e., "scan to the next NP head")
 
-## Syntactic tags
+### Syntactic tags
 
 * @+FAUXV : finite auxiliary verb 
 - ferte: Son ferte oaidnit ollislaš gova. - She must see the whole picture.
@@ -192,11 +192,11 @@ These were the set types.
 
 These were the set types.
 
-## Numeral outside the sentence
+### Numeral outside the sentence
 
 Finite verbs
 
-## Numeral outside the sentence
+### Numeral outside the sentence
 
 * **n<titel1** (@N<) for ("jr") or ("sr"); if first one to the left is Prop
 
@@ -211,15 +211,15 @@ Finite verbs
 
 * **comma<advlEOS** (@<ADVL) for Adv if; comma found to the left and the finite mainverb to the left of comma. To the right is the end of the sentence.
 
-## HNOUN MAPPING
+### HNOUN MAPPING
 
-## Complex sentences
+### Complex sentences
 
-###  **missingX** adds @X to all missings
+####  **missingX** adds @X to all missings
 
-###  **therestX** adds @X to all what is left, often errouneus disambiguated forms
+####  **therestX** adds @X to all what is left, often errouneus disambiguated forms
 
-## For Apertium:
+### For Apertium:
 The analysis give double analysis because of optional semtags. We go for the one with semtag.
 
 * * *
@@ -228,7 +228,7 @@ The analysis give double analysis because of optional semtags. We go for the one
 
 ---
 
-# src-cg3-nob-functions.cg3.md 
+## src-cg3-nob-functions.cg3.md 
 
 
 
@@ -267,18 +267,18 @@ part of the noun phrase of that noun (i.e., "scan to the next NP head")
 
 These were the set types.
 
-## Some particular subjunctions
+### Some particular subjunctions
 
-## Adverb rules
+### Adverb rules
 
-# MAPPING OF COMP-CS< , COMPLEMENTS OF PARTICLES IN COMPARISON
+## MAPPING OF COMP-CS< , COMPLEMENTS OF PARTICLES IN COMPARISON
 First map all COMP-CS<, then remove the other readings
 
 * **killAllnotComp** Removes analysis which are not @COMP-CS<
 
 - *This was the kill all not Comp rule!!*
 
-# MAPPING OF CC AND CS
+## MAPPING OF CC AND CS
 
 Mostly we map both @CNP and @CVP, then we select @CNP, after that we remove them so @CVP remains
 
@@ -294,20 +294,20 @@ Mostly we map both @CNP and @CVP, then we select @CNP, after that we remove them
 
 * **XCC-CS** removes CC and CS with no synttag
 
-# VERB MAPPINGS
+## VERB MAPPINGS
 
-## Verbs as predicatives (@SPRED>) and (@<OPRED) 
+### Verbs as predicatives (@SPRED>) and (@<OPRED) 
 
-### The tags (@SPRED>) and (@<OPRED) target  PrfPrc
+#### The tags (@SPRED>) and (@<OPRED) target  PrfPrc
 The rules are no documented yet
 
-## Passive verbs often have 
+### Passive verbs often have 
 
-## Verbs as prenominal participles (@>N):
+### Verbs as prenominal participles (@>N):
 
-### (@<SUBJ)  target Inf
+#### (@<SUBJ)  target Inf
 
-### (@+FMAINV) and (@+FAUXV) and (@-FAUXV)
+#### (@+FMAINV) and (@+FAUXV) and (@-FAUXV)
 
 * **-FAUXVaux** AUX verbs     
 
@@ -325,7 +325,7 @@ The rules are no documented yet
 
 * **+FMAINV**  to finite verb after mainverb
 
-### (@-FMAINV) and (@-FAUXV)
+#### (@-FMAINV) and (@-FAUXV)
 
 * **-FAUXVPrfPrcAux**  to PrfPrc AUX  before Inf or Actio Ess
 
@@ -345,23 +345,23 @@ The rules are no documented yet
 
 * **PrfPrcEllipsis** being verbal head when finite verb is missing
 
-### And then we remove the verbs which didn't get any syntactic tag, in favour of verbs with syntactic tags.
+#### And then we remove the verbs which didn't get any syntactic tag, in favour of verbs with syntactic tags.
 
 * **realverbX**
 
-### **killifVinCohort** This rule removes all other readings, if there is a mapped V reading in the same cohort. Every case which this goes wrong, should be fixed in mapping rules or previous disrules.
+#### **killifVinCohort** This rule removes all other readings, if there is a mapped V reading in the same cohort. Every case which this goes wrong, should be fixed in mapping rules or previous disrules.
 
 * **X**
 
-# NOUNS
+## NOUNS
 
-# CASE DISAMBIGUATION
+## CASE DISAMBIGUATION
 
 * **subj>Sgnr2** (@SUBJ>) for Nom Sg; if VFIN + Sg3 to the right.
 
 * **<subjSg** (@<SUBJ) for Nom Sg; if VFIN Sg3 or Du2 to the left (no HAB allowed to the left).
 
-## HNOUN MAPPING
+### HNOUN MAPPING
 
 * * *
 
@@ -369,16 +369,16 @@ The rules are no documented yet
 
 ---
 
-# src-fst-morphology-affixes-abbreviations.lexc.md 
+## src-fst-morphology-affixes-abbreviations.lexc.md 
 
 
-# Continuation lexicons for abbreviations
+## Continuation lexicons for abbreviations
 
-## Lexica for adding tags and periods
+### Lexica for adding tags and periods
 
-## The sublexica
+### The sublexica
 
-### Continuation lexicons for abbrs both with and witout final period
+#### Continuation lexicons for abbrs both with and witout final period
 
 * **LEXICON ab-noun   **
 
@@ -388,7 +388,7 @@ The rules are no documented yet
 
 * **LEXICON ab-num   **
 
-### Lexicons without final period
+#### Lexicons without final period
 
 * **LEXICON ab-nodot-noun   **  The bulk
 
@@ -398,7 +398,7 @@ The rules are no documented yet
 
 * **LEXICON ab-nodot-num   **
 
-### Lexicons with final period
+#### Lexicons with final period
 
 * **LEXICON ab-dot-noun   **  This is the lexicon for abbrs that must have a period.
 
@@ -422,9 +422,9 @@ The rules are no documented yet
 
 ---
 
-# src-fst-morphology-affixes-adjectives.lexc.md 
+## src-fst-morphology-affixes-adjectives.lexc.md 
 
-# Sublexica for adjective roots
+## Sublexica for adjective roots
 
 * a1  god         god         godt        gode
 * a1b stum        stum        stumt       stumme
@@ -435,11 +435,11 @@ The rules are no documented yet
 *     lunken      lunken      lunkent     lunkne
 * aV  blå         blå         blått       blå
 
-## Basic paradigms
+### Basic paradigms
 
 a23
 
-### Sublexica
+#### Sublexica
 
 * * *
 
@@ -447,9 +447,9 @@ a23
 
 ---
 
-# src-fst-morphology-affixes-nouns.lexc.md 
+## src-fst-morphology-affixes-nouns.lexc.md 
 
-# Bokmål noun morphology 
+## Bokmål noun morphology 
 
 ---------------------------------------------------
 Declension classes
@@ -521,9 +521,9 @@ LEKSIKON leksikon, pl. leksika
 nMUSEUM museum, museet, museer
 nØYE
 
-## Basic paradigms
+### Basic paradigms
 
-#### Irregulars
+##### Irregulars
 
 +N+Fem+Sg+Def+Radical:datra    K ;
 +N:         R ;
@@ -538,16 +538,16 @@ nØYE
 
 ---
 
-# src-fst-morphology-affixes-numerals.lexc.md 
+## src-fst-morphology-affixes-numerals.lexc.md 
 
-# Tags for numerals (number words)
+## Tags for numerals (number words)
 
-## Basic tags
+### Basic tags
 numtag for all numerals
 
 numtagsg for *en*
 
-## Tags for special use
+### Tags for special use
 
 * **LEXICON ARABICCASEORD**  adds +Arab
 
@@ -567,9 +567,9 @@ numtagsg for *en*
 
 ---
 
-# src-fst-morphology-affixes-propernouns.lexc.md 
+## src-fst-morphology-affixes-propernouns.lexc.md 
 
-# Propernoun morphology
+## Propernoun morphology
 
 FirstTag 
 
@@ -587,10 +587,10 @@ PROP-malfem
 
 ---
 
-# src-fst-morphology-affixes-symbols.lexc.md 
+## src-fst-morphology-affixes-symbols.lexc.md 
 
 
-# Symbol affixes
+## Symbol affixes
 
 Noun_symbols_possibly_inflected 
 
@@ -606,9 +606,9 @@ SYMBOL_NO_suff
 
 ---
 
-# src-fst-morphology-affixes-verbs.lexc.md 
+## src-fst-morphology-affixes-verbs.lexc.md 
 
-# Sublexica for verb roots
+## Sublexica for verb roots
 
 -----------------------------
 Main types, from Bokmålsordboka
@@ -628,9 +628,9 @@ v1-s passive v1 verbs
 v2-s passive v2 verbs
 v3-s passive v3 verbs
 
-## Sublexica for regular verbs 
+### Sublexica for regular verbs 
 
-### Preliminary lexica
+#### Preliminary lexica
 
 **LEXICON vx** points to v1.
 
@@ -660,7 +660,7 @@ v3-s passive v3 verbs
 
 **LEXICON v3-s** =  trives
 
-## Conjugation sublexica
+### Conjugation sublexica
 
 **LEXICON inf-prsptc** = 
 
@@ -680,7 +680,7 @@ v3-s passive v3 verbs
 
 **LEXICON prsptcsuff** = 
 
-### Sublexica for irregular verbs 
+#### Sublexica for irregular verbs 
 
 * **LEXICON BE** 
 * **LEXICON BINDE** 
@@ -854,10 +854,10 @@ v3-s passive v3 verbs
 
 ---
 
-# src-fst-morphology-compounding.lexc.md 
+## src-fst-morphology-compounding.lexc.md 
 
 
-# Norwegian Bokmål compounding
+## Norwegian Bokmål compounding
 
 * * *
 
@@ -865,15 +865,15 @@ v3-s passive v3 verbs
 
 ---
 
-# src-fst-morphology-phonology.twolc.md 
+## src-fst-morphology-phonology.twolc.md 
 
-# Morphophonological rules for Bokmål
+## Morphophonological rules for Bokmål
 
 This file documents the [phonology.twolc file](http://github.com/giellalt/lang-nob/blob/main/src/fst/phonology.twolc) 
 
-## Sets and definitions
+### Sets and definitions
 
-### Alphabet
+#### Alphabet
 
 We declare both the a-å letters and all other possible letters.
 * **a b c d e f g h i j k l m n o p q r s t u v w x y z æ ø å** 
@@ -884,7 +884,7 @@ We declare both the a-å letters and all other possible letters.
 * **l7:l** This **l** not deleted by **t**
 * **e7:e** This **e** not deleted by vowel-initial suffixes (ide - ideen)
 
-### Boundary symbols
+#### Boundary symbols
 
 Morpheme boundaries and escaped quotes - do not delete in twolc,
 they will be converted to zero/the real thing at a later stage.
@@ -897,11 +897,11 @@ they will be converted to zero/the real thing at a later stage.
 * **%[%<%]**
 * **%[%>%]**
 
-### Morphophonological triggers
+#### Morphophonological triggers
 
 These symbols cause the twolc rules to work.
 
-#### Triggers for nominal rules
+##### Triggers for nominal rules
 * **X1:0** = Epenthetic vowel moden:modne
 * **X2:0** = ...
 * **X3:0** = Plural r deletion -er, -ene
@@ -909,34 +909,34 @@ These symbols cause the twolc rules to work.
 * **X5:0** = um deletion, faktum:fakta
 * **X6:0** = t:d weakening, oppskjørtet:oppskjørtede
 
-#### Trigers for verbal rules
+##### Trigers for verbal rules
 * **Q1:0** = Passive
 * **Q2:0** = ...
 * **Q3:0** = Verb vowel and geminate deltion kalte, fylte
 
-#### Triggers for common rules (both for N and V)
+##### Triggers for common rules (both for N and V)
 * **Z1:0** = o:ø, a:e Umlaut
 * **Z2:0** = protects vowel
 
-#### Nynorsk trigger
+##### Nynorsk trigger
 * **%^NYNAG:0 ;** Trigger for Nynorsk dictionary forms.
 
-### Sets
+#### Sets
 
 * **Vow = a e i o u y æ ø å e7 ;**
 * **Cns = b c d f g h j k l m n p q r s t v w x z l7 ;**
 * **LNR = l n r ;**
 * **Dummy = X1 X2 X3 X4 X5 X6 Q1 Q2 Q3 Z1 Z2 %^NYNAG ;**
 
-## Rule section
+### Rule section
 
 This section shows the twolc rules and the tests used to check whether they work
 
-### Umlaut
+#### Umlaut
 
 **Umlaut Rule**  for *bok : bøker* etc. It shifts the vowels *u, o, a, å* to *y, ø, e, e*, respectively when **Z1** is found after the stem.
 
-### Vowel deletions rules
+#### Vowel deletions rules
 
 **Epenthetic Deletion Rule**  is actually 3 rules in one: 1) it deletes -e- in *moden : modne* etc, 2) it deletes the stem -e in *hare + -er* and 3) it delets suffix -e in *ærlig + est > ærligst*
 
@@ -963,7 +963,7 @@ This section shows the twolc rules and the tests used to check whether they work
 * *kollegaX2>er*
 * *kolleg00>er*
 
-### Consonant deletion
+#### Consonant deletion
 
 **Consonant shortening before deletion Rule**  
 
@@ -1007,19 +1007,19 @@ This section shows the twolc rules and the tests used to check whether they work
 * *svart>t*
 * *svart>0*
 
-### Insertion rules
+#### Insertion rules
 
-### Compound rule
+#### Compound rule
 
 *Tests:*
 * *grammatikk##kontroll*
 * *grammatik000kontroll*
 
-### Clitics
+#### Clitics
 
 **Clitic after s-final Rule**  for changing the so-called *genitive -s* to **'** for s-final stems: *huss -> hus'*
 
-### Nynorsk dictionary rules
+#### Nynorsk dictionary rules
 
 **Change -er stem to -ar in Nynorsk**  
 
@@ -1038,25 +1038,25 @@ Test to have an error
 
 ---
 
-# src-fst-morphology-root.lexc.md 
+## src-fst-morphology-root.lexc.md 
 
 
-# Norwegian Bokmål morphological analyser                      
+## Norwegian Bokmål morphological analyser                      
 this documents the symbols and intro lexicon of **Norwegian Bokmål**.
 
 **Multichar_Symbols** 
 
 Here we declare the **tags** and all other multicharacter symbols.
 
-## Grammatical tags
+### Grammatical tags
 
-### Part of speech
+#### Part of speech
 
 - **+N +A +Adv +V** = Open parts of speech
 - **+CS +CC +Interj +Pcle +Pr +IM** = Closed POS (IM = **å**)
 - **+Pers +Dem +Interr +Refl +Recipr +Rel +Qnt** 
 
-### Subtags
+#### Subtags
 
 * **+ING** = ing-derivation
 * **+Indef +Def +Poss +Indcl** = 
@@ -1073,7 +1073,7 @@ Here we declare the **tags** and all other multicharacter symbols.
 * **+Qnt** = quantifier noen, begge
 * **+Intens** = **hmm, what is this...**
 
-### Other tags
+#### Other tags
 
 * **+CLB +PUNCT +HYPH +LEFT +RIGHT +MIDDLE**
 * **+CLBfinal**  Sentence final abbreviated expression ending in full stop, so that the full stop is ambiguous
@@ -1095,29 +1095,29 @@ NDS analyser tags
 * **+X**  denoting not-checked.
 * **+1 +2 +3**  not in use??
 
-## Morphophonology
+### Morphophonology
 
-### Triggers
+#### Triggers
 
 * **X1 X2 X3 X4 X5 X6** = Nominal stems
 * **Q1 Q2 Q3** = Verbal stems
 * **Z1 Z2** = Both verbal and nominal stems
 * **%^NYNAG** =  Nynorsk agens lærar / lærer
 
-### Special symbols
+#### Special symbols
 
 * **e7** =  always e (ide - ideen)
 * **l7** =  always l
 * **+Use/Circ** = circular string
 
-### Derivation
+#### Derivation
 
 * **+Der/AAdv** = Adjectives are also adverbs
 * **+Der/NomAct** = verb +ing
 * **+Der1** = derivation position
 * **+Der** = mark derivation
 
-### Normativity and other usage tags
+#### Normativity and other usage tags
 
 * **+Err/Orth**    For speller use
 * **+Err/Hyph** 
@@ -1138,7 +1138,7 @@ NDS analyser tags
 * **+MWESplit** Split point for MWE
 * **+Span** - used for numerical expressions denoting spans or intervals, like 5-10, 2012-2015, etc  
 
-## Other tags
+### Other tags
 * **+ABBR** 
 * **+ACR** 
 * **+Arab** 
@@ -1149,21 +1149,21 @@ NDS analyser tags
 * **+Num** 
 * **+Rom** 
 
-## Paradigm generation
+### Paradigm generation
 
 * **+v1** 
 * **+v2** 
 
-###  Tags for abbreviation handling
+####  Tags for abbreviation handling
 
 * **+Gram/IAbbr** 
 * **+Gram/TAbbr** 
 * **+Gram/TNumAbbr** 
 * **+Gram/NumNoAbbr** 
 
-###  Semantic tags
+####  Semantic tags
 
-### Semtags
+#### Semtags
 
 * **+Sem/Amount** 
 * **+Sem/Ani** 
@@ -1212,12 +1212,12 @@ NDS analyser tags
 * **+Sem/Veh** 
 * **+Sem/Year** 
 
-## Preprocessing
+### Preprocessing
 
 * **+Use/PMatch** 
 * **+Use/-PMatch** 
 
-## Symbols that need to be escaped on the lower side (towards twolc):
+### Symbols that need to be escaped on the lower side (towards twolc):
 * **»7**:  Literal »
 * **«7**:  Literal «
 ```
@@ -1225,11 +1225,11 @@ NDS analyser tags
 %[%<%] - Literal <
 ```
 
-## Compounding
+### Compounding
 
 * +Cmp/Hyph - 
 
-## Language codes
+### Language codes
 
 * +OLang/SME - North Sámi
 * +OLang/SMJ - Lule Sámi
@@ -1242,16 +1242,16 @@ NDS analyser tags
 * +OLang/RUS - Russian
 * +OLang/UND - Undefined
 
-## Flag diacritics
+### Flag diacritics
 
-### Flags for ErrOrth
+#### Flags for ErrOrth
 
 * @C.ErrOrth@ - 
 * @D.ErrOrth.ON@ - 
 * @P.ErrOrth.ON@ - 
 * @R.ErrOrth.ON@ - 
 
-### Flags for compounding
+#### Flags for compounding
 
 We have manually optimised the structure of our lexicon using following
 flag diacritics to restrict morhpological combinatorics - only allow compounds
@@ -1298,7 +1298,7 @@ This entry / word should be in the following position(s):
 * **+CmpNP/Only** - ... only be part of a compound, i.e. can never
 be used alone, but can appear in any position
 
-###  Flags for governing initial capital
+####  Flags for governing initial capital
 
 Use the following flag diacritics to control downcasing of derived proper
 nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
@@ -1323,15 +1323,15 @@ given the proper use of these flags.
 | @U.number.nine@ | Flag used to give arabic numerals in smj different cases ;
 | @U.number.zero@ | Flag used to give arabic numerals in smj different cases ;
 
-### Flags for preprocessing
+#### Flags for preprocessing
 
 * @P.Pmatch.Loc@ - 
 * @P.Pmatch.Backtrack@ - 
 * @PMATCH_BACKTRACK@ - 
 
-## Basic lexica, pointing to the other lexicon files
+### Basic lexica, pointing to the other lexicon files
 
-### LEXICON Root
+#### LEXICON Root
 * FinalNoun ; for -skap etc. that is affix rather than compound
 * ShortNounRoot ; 2- and 3-letter words
 * NounRoot ; The rest
@@ -1351,23 +1351,23 @@ given the proper use of these flags.
 * Acronym-smi ;
 * Nynorsk ; Accepts nno forms, does not generate, changed from Use/NG to have speller work.
 
-## Other lexica
+### Other lexica
 
-### LEXICON AdjectivePrefix pointing to:
+#### LEXICON AdjectivePrefix pointing to:
 * kjempe AdjectiveRoot ; - 
 * super AdjectiveRoot ; - 
 * AdjectiveRoot ; - 
 
-### LEXICON Abbreviation pointing to:
+#### LEXICON Abbreviation pointing to:
 * Abbreviation-nob ; - 
 * Abbreviation-smi ; - 
 
-### LEXICON ProperNoun pointing to: 
+#### LEXICON ProperNoun pointing to: 
 * @U.CmpHyph.TRUE@ ProperNoun-smi-nocomp ; =  Lexicon for short names - always require hyphen
 * ProperNoun-smi ; =  SMI proper nouns
 * ProperNoun-nob ; =  contains the full nob name list
 
-## Sublexica for NounRoot
+### Sublexica for NounRoot
 
 This table shows the codes for nominal and verbal inflection. Irregular inflection has separate codes:
 
@@ -1402,13 +1402,13 @@ This table shows the codes for nominal and verbal inflection. Irregular inflecti
 |  v4  | nå          | når         | nådde       | nådd
 |  v4  | bie         | bier        | bidde       | bidd
 
-## Clitics
+### Clitics
 
-### K pointing nouns here to get "genitive" -s
+#### K pointing nouns here to get "genitive" -s
 * **+Clt:%>s ENDLEX ;** 
 * **ENDLEX ;** 
 
-# Lexicon ENDLEX
+## Lexicon ENDLEX
 And this is the ENDLEX of everything:
 ```
 @D.CmpOnly.FALSE@@D.CmpPref.TRUE@@D.NeedNoun.ON@ # ;
@@ -1423,13 +1423,13 @@ The `@D.NeedNoun.ON@` flag diacritic is used to block illegal compounds.
 
 ---
 
-# src-fst-morphology-stems-adjectives.lexc.md 
+## src-fst-morphology-stems-adjectives.lexc.md 
 
-# Norwegian Bokmål Adjectives
+## Norwegian Bokmål Adjectives
 
 This file documents the Bokmål adjective stem file [stems/adjectives.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/adjectives.lexc).
 
-## Overview of the declension classes
+### Overview of the declension classes
 
 ----------------------------------------------------
 Main types, from Bokmålsordboka
@@ -1464,9 +1464,9 @@ AdjectiveRoot is the list of adjectives (some 5500 stems)
 
 ---
 
-# src-fst-morphology-stems-adverbs.lexc.md 
+## src-fst-morphology-stems-adverbs.lexc.md 
 
-# Bokmål adverbs
+## Bokmål adverbs
 
 This file documents the Bokmål adverb stem file [stems/adverbs.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/adverbs.lexc).
 
@@ -1482,9 +1482,9 @@ Adverb lists some 600 Norwegian adverbs, including MWE such as "i live"
 
 ---
 
-# src-fst-morphology-stems-conjunctions.lexc.md 
+## src-fst-morphology-stems-conjunctions.lexc.md 
 
-# Bokmål conjunctions
+## Bokmål conjunctions
 
 This file documents the Bokmål conjunctions stem file [stems/conjunctions.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/conjunctions.lexc).
 
@@ -1498,9 +1498,9 @@ Conjunction  både, og, ..
 
 ---
 
-# src-fst-morphology-stems-interjections.lexc.md 
+## src-fst-morphology-stems-interjections.lexc.md 
 
-# Bokmål interjections
+## Bokmål interjections
 
 This file documents the Bokmål interjections stem file [stems/interjections.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/interjections.lexc).
 
@@ -1514,15 +1514,15 @@ LEXICON Interjection lists *folkens, heisann, pokker* and some 60 more interject
 
 ---
 
-# src-fst-morphology-stems-nob-abbreviations.lexc.md 
+## src-fst-morphology-stems-nob-abbreviations.lexc.md 
 
-# File containing abbreviations for Norwegian Bokmål 
+## File containing abbreviations for Norwegian Bokmål 
 
 This file documents the Bokmål abbrevioations stem file [stems/nob-abbreviations.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nob-abbreviations.lexc).
 
 Abbreviation-nob 
 
-##            Intransitive abbreviations           
+###            Intransitive abbreviations           
 
 These give clause boundaries before capital letters
 and numbers, but not elsewhere.
@@ -1548,7 +1548,7 @@ Alle gårder har ikke Gnr. og det er et problem.
 
 TRNUMAB 
 
-#              Transitive abbreviations           
+##              Transitive abbreviations           
 
 TRAB 
 
@@ -1562,9 +1562,9 @@ The file is too large and should be shrinked
 
 ---
 
-# src-fst-morphology-stems-nob-propernouns.lexc.md 
+## src-fst-morphology-stems-nob-propernouns.lexc.md 
 
-# Bokmål propernouns
+## Bokmål propernouns
 
 This file documents the Bokmål proper nouns stem file [stems/nob-propernouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nob-propernouns.lexc).
 
@@ -1580,13 +1580,13 @@ Nouns
 
 ---
 
-# src-fst-morphology-stems-nouns.lexc.md 
+## src-fst-morphology-stems-nouns.lexc.md 
 
-# Bokmål noun lexicon 
+## Bokmål noun lexicon 
 
 This file documents the Bokmål noun stem file [stems/nouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nouns.lexc).
 
-## Overview of the declension classes
+### Overview of the declension classes
 
 ----------------------------------------------------
 Main types, from Bokmålsordboka
@@ -1654,7 +1654,7 @@ FORUM forum, forumet, fora/forumer, foraene/forumene
 nLEKSIKON leksikon, pl. leksika
 n1pl odds, oddsene
 
-## The lexica themselves
+### The lexica themselves
 
 LEXICON FinalNoun is a separate lexicon to point to. For now it contains only *-skap*.
 
@@ -1684,10 +1684,10 @@ TODO: Gå gjennom mx.
 
 ---
 
-# src-fst-morphology-stems-numerals.lexc.md 
+## src-fst-morphology-stems-numerals.lexc.md 
 
 
-# Bokmål numerals (number words)
+## Bokmål numerals (number words)
 
 This file documents the Bokmål numerals stem file [stems/numerals.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/numerals.lexc).
 
@@ -1721,9 +1721,9 @@ LEXICON ORDTEXT
 
 ---
 
-# src-fst-morphology-stems-nynorsk-stems.lexc.md 
+## src-fst-morphology-stems-nynorsk-stems.lexc.md 
 
-# Nynorsk stems 
+## Nynorsk stems 
 for tolerant dictionary reading
 
 This file documents the nynorsk stem file for the bokmål analyzer [stems/nynorsk-stems.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/nynorsk-stems.lexc).
@@ -1750,9 +1750,9 @@ LEXICON Nynorsk  her kjem alle orda
 
 ---
 
-# src-fst-morphology-stems-prepositions.lexc.md 
+## src-fst-morphology-stems-prepositions.lexc.md 
 
-# Bokmål prepositions
+## Bokmål prepositions
 
 This file documents the Bokmål prepositions stem file [stems/prepositions.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/prepositions.lexc).
 
@@ -1766,9 +1766,9 @@ LEXICON Preposition  list (appr 90 prepositions)
 
 ---
 
-# src-fst-morphology-stems-pronouns.lexc.md 
+## src-fst-morphology-stems-pronouns.lexc.md 
 
-# Bokmål pronoun stems
+## Bokmål pronoun stems
 
 This file documents the Bokmål pronouns stem file [stems/pronouns.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/pronouns.lexc).
 
@@ -1792,9 +1792,9 @@ LEXICON Other_Pronouns
 
 ---
 
-# src-fst-morphology-stems-subjunctions.lexc.md 
+## src-fst-morphology-stems-subjunctions.lexc.md 
 
-# Bokmål subjunctions
+## Bokmål subjunctions
 
 This file documents the Bokmål subjunctions stem file [stems/subjunctions.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/subjunctions.lexc).
 
@@ -1808,14 +1808,14 @@ LEXICON subj gives tag +CS
 
 ---
 
-# src-fst-morphology-stems-verbs.lexc.md 
+## src-fst-morphology-stems-verbs.lexc.md 
 
 
-# Norwegian Bokmål verb stems
+## Norwegian Bokmål verb stems
 
 This file documents the Bokmål verb stem file [stems/verbs.lexc](https://github.com/giellalt/lang-nob/blob/main/src/fst/stems/verbs.lexc).
 
-## Overview of the declension classes
+### Overview of the declension classes
 
 ----------------------------------------------------
 Main types, from Bokmålsordboka
@@ -1836,7 +1836,7 @@ v2-s passive v2 verbs
 v3-s passive v3 verbs
 Strong verbs have verb-specific lexica
 
-## The entries
+### The entries
 
 LEXICON VerbRoot contains the 5700 or so  verbs
 
@@ -1861,7 +1861,7 @@ LEXICON VerbRoot contains the 5700 or so  verbs
 
 ---
 
-# src-fst-phonetics-txt2ipa.xfscript.md 
+## src-fst-phonetics-txt2ipa.xfscript.md 
 
 
 
@@ -2030,7 +2030,7 @@ retracted tongue root			_q
 
 ---
 
-# src-fst-transcriptions-transcriptor-abbrevs2text.lexc.md 
+## src-fst-transcriptions-transcriptor-abbrevs2text.lexc.md 
 
 
 
@@ -2052,9 +2052,9 @@ For example:
 
 ---
 
-# src-fst-transcriptions-transcriptor-numbers-digit2text.lexc.md 
+## src-fst-transcriptions-transcriptor-numbers-digit2text.lexc.md 
 
-# Numbers to digits for Norwegian Bokmål
+## Numbers to digits for Norwegian Bokmål
 
 * * *
 
@@ -2062,24 +2062,24 @@ For example:
 
 ---
 
-# tools-grammarcheckers-grammarchecker.cg3.md 
+## tools-grammarcheckers-grammarchecker.cg3.md 
 
 
-#  Bokmål Norwegian Grammar Checker
+##  Bokmål Norwegian Grammar Checker
 
 This file contains two parts: **Definitions** and **rules**
 
-# Definition section
+## Definition section
 
-## Delimiters 
+### Delimiters 
 
  DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>";
 
-## Grammatical tags
+### Grammatical tags
 
 Here we declare all grammatical tags
 
-### Parts of speech tags
+#### Parts of speech tags
 
 - LIST N = N ;
 - LIST A = A ;
@@ -2097,7 +2097,7 @@ Here we declare all grammatical tags
 - LIST Interj = Interj ;
 - LIST IM = IM ;
 
-### Sets for POS sub-categories
+#### Sets for POS sub-categories
 
 - LIST Attr = Attr ;
 - LIST AUX = "ha" ; # XXX
@@ -2128,7 +2128,7 @@ Here we declare all grammatical tags
 - LIST Poss = Poss ;
 - LIST Err/Orth = Err/Orth ;
 
-### Boundary tags
+#### Boundary tags
 - LIST CLB = CLB ;
 - LIST LEFT = LEFT ;
 - LIST RIGHT = RIGHT ;
@@ -2140,7 +2140,7 @@ Here we declare all grammatical tags
 - SET PUNCT = PPUNCT - QMARK ;
 - LIST MWE = MWE ;
 
-### Sets for Semantic tags
+#### Sets for Semantic tags
 
 - LIST Sem/Ani = Sem/Ani ;
 - LIST Sem/Date = Sem/Date ;
@@ -2158,7 +2158,7 @@ Here we declare all grammatical tags
 - LIST Sem/Time = Sem/Time ;
 - LIST Sem/Year = Sem/Year ;
 
-### Sets for Morphosyntactic properties
+#### Sets for Morphosyntactic properties
 
 - LIST Nom = Nom ;
 - LIST Acc = Acc ;
@@ -2176,7 +2176,7 @@ Here we declare all grammatical tags
 - LIST PrfPrc = PrfPrc ;
 - LIST PrsPrc = PrsPrc ;
 
-## Syntactic tags
+### Syntactic tags
 
 - LIST @+FAUXV = @+FAUXV ;
 - LIST @+FMAINV = @+FMAINV ;
@@ -2243,11 +2243,11 @@ Here we declare all grammatical tags
 - SET SYN-V = V + SUBJ OR OBJ + V OR @ADVL + V OR (V @N<) OR (V @A<) OR V + SPRED OR (V @COMP-CS<) ;
 - LIST @X = @X ;
 
-### Initials
+#### Initials
 
 **INITIAL** = small letters, *CAP-INITIAL** = capital letters
 
-## Sets
+### Sets
 
 - LIST hj-V = "være" "ville" "skulle" "måtte" "kunne" "ha" "få" "burde" "bli" ;
 - LIST hj-hvd-V = "være" "ha" "få" "bli" ;
@@ -2255,9 +2255,9 @@ Here we declare all grammatical tags
 
 - LIST hj-V-iv = ("bli" Inf) ("bli" PrfPrc) ("ha" Inf) ("ha" PrfPrc) ("være" Inf) ("være" PrfPrc) ("få" Inf) ("få" PrfPrc) ("skulle" Inf) ("skulle" PrfPrc) ("kunne" Inf) ("kunne" PrfPrc) ("ville" Inf) ("ville" PrfPrc) ("måtte" Inf) ("måtte" PrfPrc) ("burde" Inf) ("burde" PrfPrc) ;
 
-## Sets of tags
+### Sets of tags
 
-### Word or not
+#### Word or not
 
 - LIST WORD = N A Adv V Pron CS CC Po Pr Interj Pcle Num ABBR ACR ? ;
 
@@ -2265,9 +2265,9 @@ Here we declare all grammatical tags
 - SET REALWORD-NOTABBR = WORD - Num - Ord - ABBR ;
 - SET WORD-NOTDE = WORD - ("de") ;
 
-### Noun sets
+#### Noun sets
 
-### Verb sets
+#### Verb sets
 
 - SET NOT-VERB = WORD - V ;
 
@@ -2284,7 +2284,7 @@ Here we declare all grammatical tags
 - LIST VERBFORM = Inf PrfPrc PrsPrc Prs Prt Imp ;
 - LIST INDFORM = Prs Prt Imp ;,  FINFORM kanskje betre namn...
 
-### Pronoun sets
+#### Pronoun sets
 
 - LIST DEM-SG = (Pron Dem Sg Nom);
 - LIST DEM-PL = (Pron Dem Pl Nom);
@@ -2293,16 +2293,16 @@ Here we declare all grammatical tags
 - LIST PLPRON = (Pron Pl1) (Pron Pl2) (Pron Pl3) (Pron Pl) ;
 - LIST QUANT-PRON = "mange" ;, This set is for choosing between Adv and Pron Indef.
 
-### Numeral sets 
+#### Numeral sets 
 
-### Adjectival sets and their complements
+#### Adjectival sets and their complements
 
 - SET NOT-A = WORD - A ;
 - SET NOT-A-COMMA = WORD - A - COMMA ;
 - SET NOT-A-PCLE = WORD - A - Pcle ;
 - SET NOT-A-ADV = WORD - A - Adv ;
 
-### Adverbial sets and their complements
+#### Adverbial sets and their complements
 - SET LEX-ADV = Adv - (A*) ;
 - SET NOT-ADV-DE = WORD - Adv ;
 - SET NOT-ADV = NOT-ADV-DE OR CLB ;
@@ -2314,19 +2314,19 @@ Here we declare all grammatical tags
 - SET NOT-ADV-PCLE-INDEF = WORD - Adv - Pcle - Indef ;
 - SET NOT-ADVL-PCLE-NEG = WORD - @ADVL - @P< - Pcle ;
 
-### Introduce finite clauses.
+#### Introduce finite clauses.
 
 - LIST TIME-ADVL = "da" "før" ;
 - LIST TIME-ADV = (Adv Sem/Time) ;
 
-### Coordinators
+#### Coordinators
 
 - SET CRD = @CNP OR COMMA OR ("/") OR ("-") ; AFTER LCRD vs. GCRD disambiguation
 - LIST GRADE-ADV = "helt" "svært" "litt" ;
 
-## Sets of elements with common syntactic behaviour
+### Sets of elements with common syntactic behaviour
 
-### Sets for verbs
+#### Sets for verbs
 
 - LIST NOT-REAL-V = PrsPrc ;
 - SET REAL-V = V - NOT-REAL-V ;
@@ -2338,7 +2338,7 @@ The REAL-V set thus awaits a fix to the preprocess V ... N bug.
 All active verbs with a TV tag, including V:
 - LIST V-TRANS = (V TV) ;
 
-### NP sets defined according to their morphosyntactic features
+#### NP sets defined according to their morphosyntactic features
 
 - LIST N-SG-NOM = (N Sg Nom);
 - SET HEAD-N = N - RCmpnd ;
@@ -2390,7 +2390,7 @@ NOT-NPMODADVI = "     ...-OR-INDEF"
 - SET NOT-NPMODCC = WORD - PRE-NP-HEAD - COMMA - @CNP ;
 - SET NAPP = WORD - PRE-APP ;
 
-### Miscellaneous sets
+#### Miscellaneous sets
 
 - SET NOT-NUM = WORD - Num ;
 - SET CARDINALS = Num - Ord ;
@@ -2401,7 +2401,7 @@ NOT-NPMODADVI = "     ...-OR-INDEF"
 - SET REAL-CLB = CLB - COMMA ;
 - SET NOT-INITIAL-CC = WORD - INITIAL - CC ;
 
-### Border sets and their complements
+#### Border sets and their complements
 
 - SET CP = (Pron Interr) OR (Pron Rel) ;
 - LIST BOUNDARYSYMBOLS = ";" ":" "-" "–" ;
@@ -2421,13 +2421,13 @@ Here we search for either an S-BOUNDARY or a finite verb, either aux or main.
 
 - SET CCCOMMA = CC OR COMMA ;
 
-### Syntactic sets
+#### Syntactic sets
 
 - SET NON-APP = ALLSYNTAG - (@APP);
 
 These were the set types.
 
-### Grammarchecker sets
+#### Grammarchecker sets
 
 - The tag syntax is as follows: 
 - **ruletype - object - is_now - should_be
@@ -2435,13 +2435,13 @@ These were the set types.
 
 There are 20 or so different rule tags, see the rule section below.
 
-## For ADDRELATION rules (perhaps not in use)
+### For ADDRELATION rules (perhaps not in use)
 - TEMPLATE nextWordCrossSent = (-1 (*)); =  Adding mark to word that find the reference word to the left
 - TEMPLATE previousWordCrossSent = (1 (*)); =  and vice versa
 
-# Rule section
+## Rule section
 
-## Speller rules
+### Speller rules
 
 Speller suggestions rule – add &SUGGESTWF to any spelling suggestion
 that we actually want to suggest to the user.
@@ -2452,7 +2452,7 @@ The simplest is to just add it to all spelled words:
 **Speller rule:** Do not mark misspelled words in quotes
 But perhaps you want to only suggest spellings of words that are not inside "quotes":
 
-## NP internal agreement rules
+### NP internal agreement rules
 
 Ensure preceding adjective agrees with noun
 
@@ -2487,9 +2487,9 @@ Ensure preceding adjective agrees with noun
 **Definiteness rule:** Double definiteness. Context: *de sosiale aspekter/aspektene*
 The rule gave too many false alarms, we skip it.
 
-### Definite adjectives
+#### Definite adjectives
 
-## Quantifier phrases
+### Quantifier phrases
 
 **Agreement rule:** Indef after quantifier. (msyn-qucompl-def-indef). Context: *Vi har mange bøkene/bøker.*
 
@@ -2497,7 +2497,7 @@ The rule gave too many false alarms, we skip it.
 
 **Comparative rule:** Quantor in superlative: *de flere/fleste ulike kulturene*
 
-## Predicative gender agreement
+### Predicative gender agreement
 
 Predicative: neuter adjective should be masculine (msyn-pred-adjneu-adjmsc). Context: *Båten var fint/fin.*
 
@@ -2525,37 +2525,37 @@ Predicative: msculine adjective should be neuter (msyn-pred-adjmsc-adjneu). Cont
 
 **Agreement rule: with relative clause**  Context: *Bilene som jeg kjørte var grønt/grønn*
 
-## Case errors
+### Case errors
 
 Case rules so far: Nominative pronouns should be accusative 
 
 **Agreement rule:** The context is P-complement.  (msyn-pron-nom-acc). Context: *Vi snakker om du.*
 
-## Finite verb errors
+### Finite verb errors
 
 **Verb rule:** Infinitive and no finite form in the sentence (msyn-v-inf-pres). Context: *Jeg like/liker peanøtter.*
 
-## Infinitive
+### Infinitive
 
 **Verb rule:** Verb error: Present tense should be infinitive (msyn-v-pres-inf). Context: *Jeg vil skriver et brev.*
 
-## Adverb errors
+### Adverb errors
 
-## Word order errors
+### Word order errors
 
-### V3 -> V2 in main clause
+#### V3 -> V2 in main clause
 
-### V2 to V3 in embedded clauses
+#### V2 to V3 in embedded clauses
 
-## og/å errors
+### og/å errors
 
-### The *og* -> *å* rules 
+#### The *og* -> *å* rules 
 
 **Realword rule:** og should be å real-og-aa. Context: *Det er ikke til og holde ut.*
 
 **Realword rule:** og should be aa between Ind and Inf (real-og-aa). Context: *Vi prøver og gå.*
 
-### The *å* -> *og* rules 
+#### The *å* -> *og* rules 
 
 **Realword rule:** å should be og between nouns (real-aa-og). Context: *Det var Trond å Kari.*
 
@@ -2567,7 +2567,7 @@ Case rules so far: Nominative pronouns should be accusative
 
 **Realword rule:** å should be og between similar verbforms except 2nd V = obj (real-aa-og). Context: *Vi hopper å/og spretter.*
 
-## Punctuation rules
+### Punctuation rules
 Simple punctuation rules showing how to change the lemma in the suggestions:
 
 **Quotation mark rule:** Use correct quotation mark. 
@@ -2580,10 +2580,10 @@ Simple punctuation rules showing how to change the lemma in the suggestions:
 
 ---
 
-# tools-grammarcheckers-grc-disambiguator.cg3.md 
+## tools-grammarcheckers-grc-disambiguator.cg3.md 
 
 
-# The grammarchecker disambiguator for Norwegian Bokmål
+## The grammarchecker disambiguator for Norwegian Bokmål
 
 This disambiguator is based upon the disambiguator from OBT
 (Oslo-Bergen-taggeren), hereafter OBT-cg. It is adjusted to the GiellaLT FST and
@@ -2601,7 +2601,7 @@ or even commented out.
 **NOTE!** For reference, removed rules should be marked with the searchable tag
 grcremoval
 
-## Delimiters and sets
+### Delimiters and sets
 
 The tagsets are a superset of the OBT and GiellaLT tags, so that 
 the labels are kept from OBT-cg, but GiellaLT content is added when needed.
@@ -2651,9 +2651,9 @@ NOT-NPMODADVI = "     ...-OR-INDEF"
 
 GRADE-ADV
 
-## Rule section
+### Rule section
 
-### Giellatekno early rules
+#### Giellatekno early rules
 
 **NotAbbr** removes abbreviations whenever alternatives
 
@@ -2665,29 +2665,29 @@ GRADE-ADV
 
 **aaIM** selects +IM for *å*
 
-#### Numerals
+##### Numerals
 
 * Rule for adding <vdic> to verbs denoting verbal actions like: ... dadjá Aili Kestkitalo.
 
-#### Compounds
+##### Compounds
 
-## Mostly OBT Rules
+### Mostly OBT Rules
 
 The bulk of the file contains rules from the original OBT file.
 
-## Giellatekno late rules
+### Giellatekno late rules
 
-### Neuter sg pl
+#### Neuter sg pl
 
-### Pronouns
+#### Pronouns
 
-###  Det rules
+####  Det rules
 
-###  V and not N
+####  V and not N
 
-###  Prepositions
+####  Prepositions
 
-###  Late rules, Gt
+####  Late rules, Gt
 
 * * *
 
@@ -2695,9 +2695,9 @@ The bulk of the file contains rules from the original OBT file.
 
 ---
 
-# tools-tokenisers-tokeniser-disamb-gt-desc.pmscript.md 
+## tools-tokenisers-tokeniser-disamb-gt-desc.pmscript.md 
 
-# Tokeniser for nob
+## Tokeniser for nob
 
 Usage:
 ```
@@ -2741,7 +2741,7 @@ ASCII digits
 so far:
 * U+F0B7 for "x in box"
 
-## Unknown handling
+### Unknown handling
 Unknowns are tagged ?? and treated specially with `hfst-tokenise`
 hfst-tokenise --giella-cg will treat such empty analyses as unknowns, and
 remove empty analyses from other readings. Empty readings are also
@@ -2760,9 +2760,9 @@ Finally we mark as a token any sequence making up a:
 
 ---
 
-# tools-tokenisers-tokeniser-gramcheck-gt-desc.pmscript.md 
+## tools-tokenisers-tokeniser-gramcheck-gt-desc.pmscript.md 
 
-# Grammar checker tokenisation for nob
+## Grammar checker tokenisation for nob
 
 Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
 Then just:
@@ -2825,9 +2825,9 @@ Finally we mark as a token any sequence making up a:
 
 ---
 
-# tools-tokenisers-tokeniser-tts-cggt-desc.pmscript.md 
+## tools-tokenisers-tokeniser-tts-cggt-desc.pmscript.md 
 
-# TTS tokenisation for smj
+## TTS tokenisation for smj
 
 Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
 Then just:
