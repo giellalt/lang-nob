@@ -17547,6 +17547,7 @@ postbil m1 ;
 drittbil m1 ;
 småbil m1 ;
 snøbil m1 ;
+likbil m1 ;
 feil m1V ;
 hovedfeil m1V ;
 hjertefeil m1V ;
