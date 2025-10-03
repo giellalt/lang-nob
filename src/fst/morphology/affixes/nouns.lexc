@@ -516,6 +516,10 @@ LEXICON n3e ! skjema
  +N+Neu+Pl:X1 0-er-ene ;
         +N:   R        ;
 
+LEXICON n3f ! kamfer
+ +N+Neu+Sg:   0-et     ;
+ +N+Neu+Pl:   0-e-ne-a ;
+        +N:   R        ;
 
 LEXICON n4 ! kriterium
  +N+Neu+Sg:X5 0-et     ;
@@ -621,6 +625,12 @@ LEXICON 0-e-ene-a
  +Indef+Use/NG:  K ;
  +Indef:%>e  K ;
    +Def:%>ene K ;
+   +Def+Use/NG:%>a   K ;
+
+LEXICON 0-e-ne-a
+ +Indef+Use/NG:  K ;
+ +Indef:%>e  K ;
+   +Def:%>ne K ;
    +Def+Use/NG:%>a   K ;
 
 LEXICON ar-ane	 !! @CODE@ for nynorsk only.
