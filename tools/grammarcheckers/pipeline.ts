@@ -3,7 +3,7 @@ import * as divvun from "./.divvun-rt/divvun.ts";
 import * as hfst from "./.divvun-rt/hfst.ts";
 import { Command, StringEntry } from "./.divvun-rt/mod.ts";
 
-export default function smaGramRelease(entry: StringEntry): Command {
+export default function nobGramRelease(entry: StringEntry): Command {
   let x = hfst.tokenize(entry, {
     model_path: "tokeniser-gramcheck-gt-desc.pmhfst",
   });
