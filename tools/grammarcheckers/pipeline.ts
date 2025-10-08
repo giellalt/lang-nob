@@ -19,7 +19,7 @@ export default function nobGramRelease(entry: StringEntry): Command {
   x = cg3.vislcg3(x, { model_path: "valency-postspell.bin" });
   x = cg3.vislcg3(x, { model_path: "grc-disambiguator.bin" });
   x = cg3.vislcg3(x, { model_path: "spellchecker.bin" });
-  x = cg3.vislcg3(x, { model_path: "grammarchecker-release.bin" });
+  x = cg3.vislcg3(x, { model_path: "grammarchecker.bin" });
   x = divvun.suggest(x, { model_path: "generator-gramcheck-gt-norm.hfstol" });
 
   return x;
