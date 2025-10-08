@@ -1,0 +1,135 @@
+{
+  "real-word-error": [
+    {
+      "re": "real-.*"
+    },
+    {
+      "id": "unreal-girjji"
+    }
+  ],
+  "msyn-agr-adjsg-adjpl": [
+    {
+      "id": "msyn-agr-adjsg-adjpl"
+    }
+  ],
+  "msyn-agr-adjmsc-adjneu": [
+    {
+      "id": "msyn-agr-adjmsc-adjneu"
+    }
+  ],
+  "msyn-agr-adjneu-adjmsc": [
+    {
+      "id": "msyn-agr-adjneu-adjmsc"
+    }
+  ],
+  "msyn-agr-detneu-detfem": [
+    {
+      "id": "msyn-agr-detneu-detfem"
+    }
+  ],
+  "msyn-agr-detneu-detmsc": [
+    {
+      "id": "msyn-agr-detneu-detmsc"
+    }
+  ],
+  "msyn-agr-adjindef-adjdef": [
+    {
+      "id": "msyn-agr-adjindef-adjdef"
+    }
+  ],
+  "msyn-agr-detmsc-detneu": [
+    {
+      "id": "msyn-agr-detmsc-detneu"
+    }
+  ],
+  "msyn-pred-adjmsc-adjneu": [
+    {
+      "id": "msyn-pred-adjmsc-adjneu"
+    }
+  ],
+  "msyn-pred-adjneu-adjmsc": [
+    {
+      "id": "msyn-pred-adjneu-adjmsc"
+    }
+  ],
+  "msyn-np-demindef-demdef": [
+    {
+      "id": "msyn-np-demindef-demdef"
+    }
+  ],
+  "msyn-qucompl-def-indef": [
+    {
+      "id": "msyn-qucompl-def-indef"
+    }
+  ],
+  "msyn-pron-nom-acc": [
+    {
+      "id": "msyn-pron-nom-acc"
+    }
+  ],
+  "msyn-v-inf-pres": [
+    {
+      "id": "msyn-v-inf-pres"
+    }
+  ],
+  "msyn-v-pres-inf": [
+    {
+      "id": "msyn-v-pres-inf"
+    }
+  ],
+  "msyn-advl-a-adv": [
+    {
+      "id": "msyn-advl-a-adv"
+    }
+  ],
+  "msyn-advl-plloc-sgill": [
+    {
+      "id": "msyn-advl-plloc-sgill"
+    }
+  ],
+  "real-aa-og": [
+    {
+      "id": "real-aa-og"
+    }
+  ],
+  "real-v-aa-og": [
+    {
+      "id": "real-v-aa-og"
+    }
+  ],
+  "real-og-aa": [
+    {
+      "id": "real-og-aa"
+    }
+  ],
+  "syn-pp-v3-v2": [
+    {
+      "id": "syn-pp-v3-v2"
+    }
+  ],
+  "syn-adv-v3-v2": [
+    {
+      "id": "syn-adv-v3-v2"
+    }
+  ],
+  "syn-embedded-v2-v3": [
+    {
+      "id": "syn-embedded-v2-v3"
+    }
+  ],
+  "typo": [
+    {
+      "id": "typo"
+    }
+  ],
+  "guillemets": [
+    {
+      "id": "guillemets"
+    }
+  ],
+  "ellipsis": [
+    {
+      "id": "ellipsis"
+    }
+  ]
+}
