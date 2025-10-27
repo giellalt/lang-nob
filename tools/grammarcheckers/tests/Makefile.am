@@ -44,26 +44,12 @@ XFAIL_TESTS=\
 	syn-adv-v3-v2.yaml \
 	syn-embedded-v2-v3.yaml \
 	syn-pp-v3-v2.yaml            \
-	msyn-agr-adjmsc-adjneu.yaml  \
 	msyn-agr-adjneu-adjmsc.yaml  \
-	msyn-agr-detmsc-detneu.yaml  \
-	msyn-pred-adjmsc-adjneu.yaml \
-	msyn-pred-adjneu-adjmsc.yaml \
-	msyn-pron-nom-acc.yaml       \
-	msyn-qucompl-def-indef.yaml  \
-	msyn-v-inf-pres.yaml         \
-	msyn-v-pres-inf.yaml         \
-	neg-aa-og.yaml               \
-	neg-agr-adjmsc-adjneu.yaml   \
-	neg-agr-adjneu-adjmsc.yaml   \
 	neg-agr-detneu-detfem.yaml   \
-	neg-og-aa.yaml               \
 	neg-pred-adjmsc-adjneu.yaml  \
-	neg-pron-nom-acc.yaml        \
 	neg-v-inf-pres.yaml          \
 	neg-v-pres-inf.yaml          \
-	real-aa-og.yaml              \
-	real-og-aa.yaml
+	real-aa-og.yaml
 
 endif # WANT_GRAMCHECK
 
