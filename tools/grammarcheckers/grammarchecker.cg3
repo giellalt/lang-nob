@@ -549,7 +549,8 @@ LIST &msyn-agr-adjindef-adjdef = &msyn-agr-adjindef-adjdef ;
 LIST &msyn-agr-adjsg-adjpl = &msyn-agr-adjsg-adjpl ;    
 LIST &msyn-agr-detmsc-detneu = &msyn-agr-detmsc-detneu ;			    
 LIST &msyn-agr-detneu-detfem =  &msyn-agr-detneu-detfem ;   
-LIST &msyn-agr-detneu-detmsc =  &msyn-agr-detneu-detmsc ;   
+LIST &msyn-agr-detneu-detmsc =  &msyn-agr-detneu-detmsc ;
+LIST &msyn-mod-aa-null = &msyn-mod-aa-null ; 
 LIST &msyn-np-demindef-demdef = &msyn-np-demindef-demdef ;
 LIST &msyn-pred-adjmsc-adjneu = &msyn-pred-adjmsc-adjneu ;  
 LIST &msyn-pred-adjneu-adjmsc = &msyn-pred-adjneu-adjmsc ;
@@ -1158,6 +1159,10 @@ ADDRELATION:msyn-v-pres-inf ($2) (V) FROM (2 V LINK 0 (&msyn-v-pres-inf)) ;
 ## Jeg liker å skriver et brev.
 #$ Jeg liker å skrive et brev.
 
+ADD:msyn-mod-aa-null &msyn-mod-aa-null TARGET IM IF (-1 modalverb)(1C Inf);
+COPY:msyn-mod-aa-null (&SUGGEST) EXCEPT ("å" IM &msyn-mod-aa-null) TARGET (&msyn-mod-aa-null);
+ADDRELATION:msyn-mod-aa-null ($2) (V) FROM (1 &msyn-mod-aa-null);
+ADDRELATION:msyn-mod-aa-null ($3) (V) FROM (-1 &msyn-mod-aa-null);
 
 #!! ## Adverb errors
 

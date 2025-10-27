@@ -26,6 +26,9 @@ msyn-agr-adjindef-adjdef = Definiteness concord in noun phrases
 msyn-agr-detmsc-detneu = Gender concord in noun phrases
     .desc = When a determiner, such as {$1}, modifies a neuter noun, here {$2}, it should be in the neuter.
 
+msyn-mod-aa-null = No infinitive marker after a modal verb
+    .desc = When an infinitive, such as "{$3}", follws a modal verb, as in this case "{$2}", then it shall not be preceeded by "å". 
+
 msyn-pred-adjmsc-adjneu = Gender concord in noun phrases
     .desc = When an adjective, such as {$1}, functions as predicative to a neuter noun, here {$2}, it should be in the neuter.
 

@@ -26,6 +26,9 @@ msyn-agr-adjindef-adjdef = Bestemt form i adjektiv i substantivfraser
 msyn-agr-detmsc-detneu = Samsvar i kjønn i substantivfraser
     .desc = Når en determinativ, som her {$1}, modifiserer et intetkjønnssubstantiv, som her {$2}, skal det stå i intetkjønn
 
+msyn-mod-aa-null = Ikke infinitivsmerke etter modalverb
+    .desc = Når en infinitiv, som her "{$3}", kommer etter et modalverb, som her "{$2}", skal det ikke ha "å" 
+
 msyn-pred-adjmsc-adjneu = Samsvar i kjønn i substantivfraser
     .desc = Når et adjektiv, som her {$1}, står som predikativ til et intetkjønnssubstantiv, som her {$2}, skal det stå i nøytrum
 
