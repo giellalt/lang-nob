@@ -2,8 +2,8 @@
 # Generated from XML by xml-conv
 
 ## Default patterns: re:real-.*, id:unreal-girjji
-real-word-error = Real-word error
-    .desc = The word {$1} exists in the dictionary, but means something different in this context.
+#real-word-error = Real-word error
+#    .desc = The word {$1} exists in the dictionary, but means something different in this context.
 
 msyn-agr-adjsg-adjpl = Number concord in noun phrases
     .desc = When an adjective, such as "{$1}, stands in front of a neuter noun, such as {$2}, it should be in the neuter.
@@ -26,6 +26,12 @@ msyn-agr-adjindef-adjdef = Definiteness concord in noun phrases
 msyn-agr-detmsc-detneu = Gender concord in noun phrases
     .desc = When a determiner, such as {$1}, modifies a neuter noun, here {$2}, it should be in the neuter.
 
+msyn-cp-null-som = Missing som
+    .desc = Som is missing
+    
+msyn-qu-comp-superl = "De fleste", not "de flere"
+    .desc = When a coomparison has definite form we have to use "fleste", as here in "de fleste $2"
+    
 msyn-mod-aa-null = No infinitive marker after a modal verb
     .desc = When an infinitive, such as "{$3}", follws a modal verb, as in this case "{$2}", then it shall not be preceeded by "å". 
 
@@ -48,7 +54,7 @@ msyn-v-inf-pres = Verb not in present tense
     .desc = When a verb, here {$1}, is the main verb of the sentence it should not be in the infinitive.
 
 msyn-v-pres-inf = Verb not in the infinitive
-    .desc = When a verb, here {$1}, is following an auxiliary like {$2}, it should  be in the infinitive.
+    .desc = When a verb, here "{$1}", is following an auxiliary like "{$2}", it should  be in the infinitive.
 
 msyn-advl-a-adv = Adjective and not adverbial
     .desc = When a word like {$1} is used as an object predicative, it should be an adverb.
@@ -62,9 +68,15 @@ real-aa-og = Use "og" rather than "å"
 real-v-aa-og = Use "og" rather than "å"
     .desc = Between two similar verbs, like {$2} and {$3}, use "og", not "å".
 
-real-og-aa = Use "å" rather than "og"
-    .desc = An infinitive, like  {$1}, shall have  "å" in front of it, and not "og".
+real-cp-null-som = Compulsatory "som"
+    .desc = After a question word, like here "hvilken", the relative clause must contain "som"
 
+real-og-aa = Use "å" rather than "og"
+    .desc = An infinitive, like  {$2}, shall have  "å" in front of it, and not "og".
+
+real-word-error = "Wrong word"
+    .desc = {$1} is an existing word, but it may not fit in this context.
+    
 syn-pp-v3-v2 = Word order error
     .desc = The word {$1} is a finite verb, and should come after the prepositional phrase in the clause.
 
