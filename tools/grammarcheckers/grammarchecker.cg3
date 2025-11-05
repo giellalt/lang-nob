@@ -560,9 +560,9 @@ LIST &msyn-qucompl-def-indef = &msyn-qucompl-def-indef ;
 LIST &msyn-v-inf-pres = &msyn-v-inf-pres ;				    
 LIST &msyn-v-pres-inf = &msyn-v-pres-inf ;				    
 LIST &real-aa-og = &real-aa-og ;						    
-LIST &real-bli-vaere = &real-bli-vaere ;				    
+#LIST &real-bli-vaere = &real-bli-vaere ;				    
 LIST &real-og-aa = &real-og-aa ;						    
-LIST &real-vaere-bli = &real-vaere-bli ;				    
+#LIST &real-vaere-bli = &real-vaere-bli ;				    
 LIST &real-cp-null-som = &real-cp-null-som ;
 LIST &syn-adv-v3-v2 = &syn-adv-v3-v2 ;
 LIST &syn-pp-v3-v2 = &syn-pp-v3-v2 ;
@@ -609,7 +609,7 @@ ADD:msyn-agr-adjmsc-adjneu (&msyn-agr-adjmsc-adjneu) TARGET A IF
 	(NEGATE 2 ("-") LINK 1 CC)
 	;
 COPY:msyn-agr-adjmsc-adjneu (Neu Sg Indef &SUGGEST)  EXCEPT (Fem Sg Indef) OR (Msc Sg Indef) OR (MF Sg Indef)  TARGET (A Pos &msyn-agr-adjmsc-adjneu) ;
-ADDRELATION:msyn-agr-adjmsc-adjneu ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&msyn-agr-adjmsc-adjneu)) ;
+ADDRELATION:msyn-agr-adjmsc-adjneu ($2 RIGHT) (*) FROM (T:nextWordCrossSent LINK 0 (&msyn-agr-adjmsc-adjneu)) ;
 
 ## Dette er et fin hus.
 #$ Dette er et fint hus.
@@ -731,7 +731,7 @@ COPY:msyn-agr-detneu-detmsc ("en" Det Dem Msc Sg &SUGGEST) EXCEPT ("et" Pron Ind
 #$ Det er en realitetens forsvarer.
 
 
-ADDRELATION:msyn-agr-detneu-detmsc ($2) N FROM (-1 (&msyn-agr-detneu-detmsc)); 
+ADDRELATION:msyn-agr-detneu-detmsc ($2 RIGHT) N FROM (-1 (&msyn-agr-detneu-detmsc)); 
 
 
 
@@ -1145,7 +1145,7 @@ ADD:msyn-v-pres-inf (&msyn-v-pres-inf) TARGET V IF
 	#$ De fineste gavene jeg får er gaver laget av barnehender
 	
 COPY:msyn-v-pres-inf (Inf &SUGGEST) EXCEPT (Ind Prs)  TARGET (V Ind Prs &msyn-v-pres-inf);
-ADDRELATION:msyn-v-pres-inf ($2) (V) FROM (1 V LINK 0 (&msyn-v-pres-inf)) ;
+ADDRELATION:msyn-v-pres-inf ($2 RIGHT) (V) FROM (1 V LINK 0 (&msyn-v-pres-inf)) ;
 #$ De beste gavene jeg får er laget av barnehender.
 
 ADD:msyn-IM (&msyn-v-pres-inf) TARGET V IF (0 (Ind Prs))(-1 IM)(NOT 0 Pass);
@@ -1154,7 +1154,7 @@ ADD:msyn-IM (&msyn-v-pres-inf) TARGET V IF (0 (Ind Prs))(-1 IM)(NOT 0 Pass);
 #$ Jeg vil skrive et brev.   #!!≈ - *@CODE@*
 ADD:msyn-v-pres-inf (&msyn-v-pres-inf) TARGET V IF (0 (Ind Prs))(*-2C QUASIAUX BARRIER NOT-ADV)(-1 IM)(NOT 0 Pass);
 COPY:msyn-v-pres-inf (Inf &SUGGEST) EXCEPT (Ind Prs)  TARGET (V Ind Prs &msyn-v-pres-inf);
-ADDRELATION:msyn-v-pres-inf ($2) (V) FROM (2 V LINK 0 (&msyn-v-pres-inf)) ;
+ADDRELATION:msyn-v-pres-inf ($2 RIGHT) (V) FROM (2 V LINK 0 (&msyn-v-pres-inf)) ;
 
 ## Jeg liker å skriver et brev.
 #$ Jeg liker å skrive et brev.
@@ -1239,6 +1239,7 @@ ADD:real-og-aa (&real-og-aa) TARGET ("og" CC) IF
 	(1 Inf OR Ind)
 	(NOT 1 Imp);
 COPY:real-og-aa ("å" IM &SUGGEST) EXCEPT ("og" CC) TARGET (CC &real-og-aa);
+ADDRELATION:real-og-aa ($2) (V) FROM (-1 IM LINK 0 (&real-og-aa));
 
 ## Vi prøver og gå.  #!!≈ - *@CODE@*
 #$ Vi prøver å gå.  #!!≈ - *@CODE@*
@@ -1252,6 +1253,7 @@ ADD:real-aa-og (&real-aa-og) TARGET ("å") IF
 COPY:real-aa-og ("og" CC &SUGGEST) EXCEPT ("å" IM) TARGET ( &real-aa-og);
 ADDRELATION:real-aa-og ($2) (N) FROM (1 N LINK 0 (&real-aa-og)) ;
 ADDRELATION:real-aa-og ($3) (N) FROM (-1 N LINK 0 (&real-aa-og)) ;
+
 ## Det var Trond å Kari.  #!!≈ - *@CODE@*
 #$ Det var Trond og Kari.  #!!≈ - *@CODE@*
 
