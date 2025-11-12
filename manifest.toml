@@ -1,6 +1,3 @@
-spellername = "Norwegian Bokmål"
-spellerversion = "0.1.1"
-
 # Name of the speller package in various languages.
 # The default is English + autonym:
 [speller.name]
@@ -22,3 +19,15 @@ legacy_product_codes = [
     { value = "0BEB7B50-5408-48BE-9AED-18992977BD6B", kind = "nsis" },
     { value = "E5B12E99-8DD0-4D7B-9B1D-913CB04728A1", kind = "nsis" }
 ]
+
+[package.speller]
+name = "Norwegian Bokmål"
+version = "0.1.1"
+
+[package.grammar]
+name = "Norwegian Bokmål"
+version = "0.1.0"
+
+[package.tts-text-proc]
+name = "Norwegian Bokmål"
+version = "0.1.0"
