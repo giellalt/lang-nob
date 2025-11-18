@@ -83,7 +83,9 @@ NDS analyser tags
 * **+Err/SpaceCmp** 
 * **+Err/MissingSpace** 
 * **+Use/NG** 
-* **+Use/-Spell** 
+* **+Use/-Spell**
+* **+Use/-TTS–**
+* **+Use/-TTS-**
 * **+Use/-PLX** 
 * **+Use/SpellNoSugg** 
 * **+Use/NG** not-generate, for ped generation isme-ped.fst and MT
@@ -111,6 +113,7 @@ NDS analyser tags
 
 * **+v1** 
 * **+v2** 
+* **+v3** 
 
 ###  Tags for abbreviation handling
 
@@ -193,6 +196,7 @@ NDS analyser tags
 * +OLang/SMJ - Lule Sámi
 * +OLang/SMA - South Sámi
 * +OLang/FIN - Finnish
+* +OLang/HUN - Finnish
 * +OLang/SWE - Swedish
 * +OLang/NOB - Norw. bokmål
 * +OLang/NNO - Norw. nynorsk
