@@ -4,4 +4,4 @@ Config:
 
 Tests:
   testwords: # The following words should be accepted, unless prefixed with ~
-    UN-abc: UN-abc  # Acro + noun compound
+    FN-kanin: FN-kanin  # Acro + noun compound
