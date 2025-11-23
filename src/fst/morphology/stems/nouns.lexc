@@ -22618,6 +22618,7 @@ parkeringsautomat m1 ;
 billettautomat m1 ;
 vegetarmat m1 ;
 kveldsmat m1 ;
+varmmat m1 ;
 gardsmat m1 ;
 middagsmat m1 ;
 formiddagsmat m1 ;
