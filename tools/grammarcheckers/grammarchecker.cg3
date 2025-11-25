@@ -619,8 +619,9 @@ ADDRELATION:msyn-agr-adjmsc-adjneu ($2 RIGHT) (*) FROM (T:nextWordCrossSent LINK
 ADD:msyn-agr-adjsg-adjpl (&msyn-agr-adjsg-adjpl) TARGET A IF 
 (-1 ("mange") OR A + Pos + Sg + Def)
 (NOT -1 Superl)
-(0 A + Msc + Sg + Indef)
-(1 N + Msc + Pl + Indef);
+	(0 A + Msc + Sg + Indef)
+	(NEGATE 0 A + Msc + Pl + Indef)
+	(1 N + Msc + Pl + Indef);
 COPY:msyn-agr-adjsg-adjpl (Pl Def &SUGGEST) EXCEPT (Msc Sg Indef) TARGET (A &msyn-agr-adjsg-adjpl);
 ADDRELATION:msyn-agr-adjsg-adjpl ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&msyn-agr-adjsg-adjpl)) ;
 
