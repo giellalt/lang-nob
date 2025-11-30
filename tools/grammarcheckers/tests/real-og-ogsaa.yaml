@@ -1,0 +1,20 @@
+Config:
+  Spec: ../pipespec.xml
+  Variants: [nobgram-dev, nobgram]
+
+Tests:
+  - "Vektskift kan {og}€{ogsaa} benyttes til begrenset kurskorreksjon når bremsene ikke er tilgjengelig, eksempelvis når piloten utfører øvelsen ' store ører '. "
+  - "Du må {og}€{også} oppfylle erfaringskrav og bestå teoriprøver for PP4 og PP5. "
+  - "Det kan {og}€{også} søkes om tilbakelevering av hele eller deler av lisensen for å bli fritatt for innbetaling av arealavgifter og andre plikter. "
+  - "Disse kan {og}€{også} vendes på; den kan omvendes helt eller delvis, snus på hodet eller transponeres, så lenge alle tolv tonene er brukt en gang før neste rekke begynner. "
+
+
+
+
+
+
+
+
+
+
+

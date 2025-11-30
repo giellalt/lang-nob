@@ -1,0 +1,6 @@
+Config:
+  Spec: ../pipespec.xml
+  Variants: [nobgram-dev, nobgram]
+
+Tests:
+  - "To mann holdt i hesten foran og én mann gikk bak og støttet. "

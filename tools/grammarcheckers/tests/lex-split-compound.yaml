@@ -1,0 +1,6 @@
+Config:
+  Spec: ../pipespec.xml
+  Variants: [nobgram-dev, nobgram]
+  
+Tests:
+  - "På kronet hjelm en oppvoksende {sølv løve}¥{sølvløve} med rød tunge og {gull klør}¥{gullklør}. "
