@@ -18213,6 +18213,11 @@ REMOVE Neu + Sg IF (-1 ("flere"))(0 Neu + Pl);
 REMOVE Neu + Sg IF (*-1 ("flere") OR ("mange") BARRIER V)(0 Neu + Pl);
 
 
+#!! ### Numerals
+
+REMOVE (V) IF (0 ("fire" Num))(*1 (N Pl) BARRIER NOT-PRE-NP-HEAD);
+
+
 #!! ### Pronouns
 
 REMOVE (Acc) IF (-1 CS)(1 Prs OR Prt);
@@ -18230,6 +18235,13 @@ REMOVE Det IF (0 Pron)(1 Pr OR V OR CLB OR EOS LINK NOT 0 Num OR A OR N);
 # N and not V
 REMOVE (Pl) IF (-1 Pr)(0 Sg);
       ## i vater
+
+REMOVE (V Prs) IF (-1C Inf)(0 (N Pl Indef));
+## Man kan  tilsette starter og løpe samtidig. # starter = N Pl
+
+REMOVE (V Prt) IF (-1C Inf)(0 (N Neu Sg Def));
+## V vil forsvare landet.
+
 
 REMOVE (Pl) IF (-1 Det + Sg)(0 Sg);
       ## i vater
