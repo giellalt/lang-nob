@@ -307,6 +307,8 @@ SET WORD-NOTDE = WORD - ("de") ;  #!!≈ - @CODE@
 
 LIST PROBABLY-NOUN = "fylke" "finne" "evne" ("egne" V) ;
 
+LIST MANN = "mann" ; # set for words with sg after quantifiers, "fire mann"
+
 #!! ### Verb sets
 
 
@@ -361,7 +363,7 @@ SET NOT-A = WORD - A ; #!!≈ - @CODE@
 SET NOT-A-COMMA = WORD - A - COMMA ;  #!!≈ - @CODE@
 SET NOT-A-PCLE = WORD - A - Pcle ;  #!!≈ - @CODE@
 SET NOT-A-ADV = WORD - A - Adv ;  #!!≈ - @CODE@
-
+SET NOT-A-ETC = WORD - A - Adv - Pcle - COMMA - (PUNCT LEFT) - (PUNCT RIGHT) - Sem/Year - Sem/ID ; #!!≈ - @CODE@
  
 
  
@@ -562,6 +564,8 @@ LIST &msyn-v-pres-inf = &msyn-v-pres-inf ;
 LIST &real-aa-og = &real-aa-og ;						    
 #LIST &real-bli-vaere = &real-bli-vaere ;				    
 LIST &real-og-aa = &real-og-aa ;						    
+LIST &real-og-ogsaa = &real-og-ogsaa ;						    
+
 #LIST &real-vaere-bli = &real-vaere-bli ;				    
 LIST &real-cp-null-som = &real-cp-null-som ;
 LIST &syn-adv-v3-v2 = &syn-adv-v3-v2 ;
@@ -639,7 +643,7 @@ ADDRELATION:msyn-agr-adjneu-adjmsc ($2) (*) FROM (T:nextWordCrossSent LINK 0 (&m
 #!! **Agreement rule:**  Masculine definite determiners should be neuter (msyn-agr-detmsc-detneu). Context: *den/det huset*.
 ADD:msyn-agr-detmsc-detneu (&msyn-agr-detmsc-detneu) TARGET (Det Poss Msc) IF
 	(0 ("min" Sg1) OR ("din" Sg2) OR ("sin" Sg3))
-	(*1 (N Neu Sg Indef) BARRIER NOT-A)# LINK NEGATE 2 ("-") LINK 1 CC)
+	(*1 (N Neu Sg Indef) BARRIER NOT-A LINK NEGATE 0 Msc) # ("-") LINK 1 CC) jf. en bruk
 	;
 COPY:msyn-agr-detmsc-detneu (Neu Sg1 &SUGGEST) EXCEPT (Msc Sg1) TARGET (Det Poss Msc Sg1 &msyn-agr-detmsc-detneu);
 COPY:msyn-agr-detmsc-detneu (Neu Sg2 &SUGGEST) EXCEPT (Msc Sg2) TARGET (Det Poss Msc Sg2 &msyn-agr-detmsc-detneu);
@@ -660,25 +664,24 @@ COPY:msyn-agr-detmsc-detneu (Neu Sg &SUGGEST) EXCEPT (Msc Sg) TARGET (Det Dem &m
 
 #!! **Agreement rule:**  Masculine indefinite determiners should be neuter (msyn-agr-detmsc-detneu). Context: *en/et land*.
 ADD:msyn-agr-detmsc-detneu (&msyn-agr-detmsc-detneu) TARGET ("en" Det Dem Msc Sg) IF
-	(*1C (N Neu) BARRIER NOT-NPMODADV LINK NOT 0 Clt LINK NEGATE 1 ("-") LINK 1 CC)
+	(*1C (N Neu Sg) BARRIER NOT-NPMODADV OR Dem + Neu  LINK NOT 0 Clt LINK NEGATE 1 ("-") LINK 1 CC)
 	(NEGATE *1 (N Neu) LINK 0 ("pluss") LINK 1 ("en"))
 	(NEGATE *1 (N Neu) LINK 0 ("nummer") LINK 1 Num)
 	(NEGATE 1 Num LINK *1 ("år") OR ("time") OR ("dag"))
 	;
-#COPY:msyn-agr-detmsc-detneu ("et" Neu Sg &SUGGEST) EXCEPT ("en" Msc Sg) TARGET (&msyn-agr-detmsc-detneu);
 
 ADD:msyn-agr-detmsc-detneu (&msyn-agr-detmsc-detneu) TARGET ("en" Pron Indef Msc Sg) IF
-	(*1C (N Neu) BARRIER NOT-NPMODADV LINK NOT 0 Clt)
+	(*1C (N Neu Sg) BARRIER NOT-NPMODADV LINK NOT 0 Clt)
 	(NEGATE *1 (N Neu) LINK 0 ("pluss") LINK 1 ("en"))
 	(NEGATE *1 (N Neu) LINK 0 ("nummer") LINK 1 Num)
 	(NEGATE 1 Num LINK *1 ("år") OR ("time") OR ("dag"))
 	;
 
 COPY:msyn-agr-detmsc-detneu ("et" Neu Sg &SUGGEST) EXCEPT ("en" Msc Sg) TARGET ( &msyn-agr-detmsc-detneu);
-
 ADDRELATION:msyn-agr-detmsc-detneu ($2) N FROM (*-1 (&msyn-agr-detmsc-detneu) BARRIER SV-BOUNDARY OR V); 
 ## Vi bor i en land.
 #$ Vi bor i et land.
+#$ Vi tar en et minutts pause.
 #$ kompetansedrevet
 
 
@@ -770,7 +773,12 @@ LIST SG-ONLY-N = "sukker" ;
 SET GENDER = Neu OR Msc OR Fem OR MF ;
 
 
-ADD:msyn-bestemtN-ubestemtN (&msyn-bestemtN-ubestemtN) TARGET (N Def Pl) IF (-1 (A Pl) - ("all") OR (".*e"r) + Adv - ("ikke") LINK NEGATE *-1 (Det Dem Pl) OR ("de" Pl3 Nom) BARRIER NOT-A - Num - Adv - CC - (A Pl));
+ADD:msyn-bestemtN-ubestemtN (&msyn-bestemtN-ubestemtN) TARGET (N Def Pl) IF
+	(-1 (A Pl) - ("all") OR (".*e"r) + Adv - ("ikke") LINK
+	NEGATE *-1 (Det Dem Pl) OR ("de" Pl3 Nom) BARRIER NOT-A - Num - Adv - CC - (A Pl))
+	(NEGATE *-1 ("mange") LINK -1 VFIN LINK -1 Adv)
+	(NEGATE *-1 ("mange") LINK -1 VFIN LINK -1 N LINK *-1 Pr BARRIER NOT-A) # Derfor samlet mange delene sammen.
+	;
 	## Alle eksemplene viser hvor galt det kan gå, og hvilke ringvirkninger det potensielt kan skape.
 	#$ borte i de store og {svarte} bølgene helt nord i Barentshavet.
 	#$ KNUT: «Hunter» og de to andre båtene søker natten gjennom, men de finner ingen.
@@ -785,9 +793,9 @@ COPY:msyn-bestemtN-ubestemtN (Indef &SUGGEST) EXCEPT (Def &msyn-bestemtN-ubestem
 
 #!! ### Definite adjectives
 
-ADD:msyn-agr-adjindef-adjdef (&msyn-agr-adjindef-adjdef) TARGET (A Sg ) IF
+ADD:msyn-agr-adjindef-adjdef (&msyn-agr-adjindef-adjdef) TARGET (A) IF
 	(-1 Det + Poss)
-	(NOT 0 Def)
+	(0 Indef LINK NEGATE 0 Def)
 	(1 N);
 	#$KNUT: Roman reiste for første gang til Norge i desember i 2021.
 	
@@ -803,8 +811,12 @@ ADDRELATION:msyn-agr-adjindef-adjdef ($2) Poss FROM (1 A LINK 0 &msyn-agr-adjind
 #!! **Agreement rule:** Indef after quantifier. (msyn-qucompl-def-indef). Context: *Vi har mange bøkene/bøker.*
 ADD:msyn-qucompl-def-indef (&msyn-qucompl-def-indef) TARGET N + Pl + Def IF
 	(*-1 Num OR ("mange") + Pos OR ("mange") + Superl BARRIER NOT-A
-	LINK NOT 0 Sem/ID
-	LINK NEGATE *-1 ("den") + Det + Dem + Pl OR ("denne") OR ("disse") OR ("begge") OR ("all") BARRIER NOT-A);
+	LINK NOT 0 Sem/ID OR Sem/Year
+	LINK NEGATE *-1 ("den") + Det + Dem + Pl OR ("denne") OR ("disse") OR ("begge")
+	OR ("all") OR ("andre") OR ("annen") + Pl OR ("de") + Pron + Pers + Pl3 BARRIER NOT-A-ETC)
+	(NEGATE *-1 ("mange") LINK -1 VFIN LINK -1 Adv)
+	(NEGATE *-1 ("mange") LINK -1 VFIN LINK -1 N LINK *-1 Pr BARRIER NOT-A) # Derfor samlet mange delene sammen.
+	;
 #	LINK NEGATE -1 (§) OR ("all") OR Def);
 
 	## Vi har mange ulike utfordringene
@@ -824,12 +836,13 @@ ADDRELATION:msyn-qucompl-def-indef ($2) (*) FROM (T:previousWordCrossSent LINK 0
 ## Vi har fem bøkene.
 ## Vi har 5 bøkene.
 
+
 #!! **Agreement rule:** Pl instead of Sg after quantifier. (msyn-qucompl-sg-pl). Context: *Vi har mange ulike utfordring*
 ADD:msyn-qucompl-sg-pl (&msyn-qucompl-sg-pl) TARGET N + Sg + Indef OR N + Sg + Def IF
 	(*-1 Num - ETT OR ("mange") + Pos OR ("mange") + Superl BARRIER NOT-A
 	LINK NOT 0 Sem/ID
 	LINK NEGATE *-1 ("den") + Det + Dem + Pl OR ("denne") OR ("disse") OR ("begge") OR ("all") BARRIER NOT-A)
-	(NEGATE 0 SG-ONLY-N OR (N Pl) OR Ind OR Imp);
+	(NEGATE 0 SG-ONLY-N OR (N Pl) OR Ind OR Imp OR MANN);
 #	LINK NEGATE -1 (§) OR ("all") OR Def);
 
 	#$ etter to {år}
@@ -871,8 +884,13 @@ ADDRELATION:&msyn-qu-comp-superl ($2) (N) FROM (*-1 A LINK 0 (&&msyn-qu-comp-sup
 
 
 #!! Predicative: neuter adjective should be masculine (msyn-pred-adjneu-adjmsc). Context: *Båten var fint/fin.*
-ADD:msyn-pred-adjneu-adjmsc (&msyn-pred-adjneu-adjmsc) TARGET (A) IF (-2 ("den") + Pron + Pers + Sg3 OR (Pron Pers Sg1 Nom) OR (Pron Pers Sg2 Nom) OR (Pron Pers Sg3 Nom) - ("det") - ("den" Det Dem Neu Sg) OR N + Msc + Sg + Def  LINK *-1 BOS BARRIER NOT-NPMOD)
-(-1 ("være"))(0 A + Pos + Neu + Sg + Indef)(NEGATE 0 A + Msc OR A + Fem OR A + MF)(NOT 1 N + Neu);
+ADD:msyn-pred-adjneu-adjmsc (&msyn-pred-adjneu-adjmsc) TARGET (A) IF
+	(-2 ("den") + Pron + Pers + Sg3 OR (Pron Pers Sg1 Nom) OR (Pron Pers Sg2 Nom) OR (Pron Pers Sg3 Nom) - ("det") - ("den" Det Dem Neu Sg) OR N + Msc + Sg + Def  LINK *-1 BOS BARRIER NOT-NPMOD)
+	(-1 ("være"))
+	(0 A + Pos + Neu + Sg + Indef)
+	(NEGATE 0 A + Msc OR A + Fem OR A + MF)
+	(NOT 1 N + Neu)
+	;
 COPY:msyn-pred-adjneu-adjmsc (Msc Sg Indef &SUGGEST) EXCEPT (Neu Sg Indef)  TARGET (A Pos &msyn-pred-adjneu-adjmsc);
 ADDRELATION:msyn-pred-adjneu-adjmsc ($2) (N) FROM (2 A LINK 0 (&msyn-pred-adjneu-adjmsc)) ;
 
@@ -1214,8 +1232,18 @@ MOVE:syn-embedded-v2-v3 (V &syn-embedded-v2-v3) AFTER (1 Adv);
 
 
 
+
 #!! ## og/å errors
 
+#!! ### og/også
+
+ADD:real-og-ogsaa (&real-og-ogsaa) TARGET ("og" CC) IF
+	(-1 modalverb)
+	(1 (Inf))
+	;
+COPY:real-og-ogsaa ("også" Adv &SUGGEST) EXCEPT ("og" CC) TARGET (CC &real-og-ogsaa);
+ADDRELATION:real-og-ogsaa ($2) V FROM (1 Adv LINK 0  &real-og-ogsaa);
+ADDRELATION:real-og-ogsaa ($3) V FROM (-1 Adv LINK 0  &real-og-ogsaa);
 #!! ### The *og* -> *å* rules 
 
 #!! **Realword rule:** og should be å real-og-aa. Context: *Det er ikke til og holde ut.*
@@ -1231,13 +1259,16 @@ COPY:real-og-aa ("å" IM &SUGGEST) EXCEPT ("og" CC) TARGET (CC &real-og-aa);
 #!! **Realword rule:** og should be aa between Ind and Inf (real-og-aa). Context: *Vi prøver og gå.*
 ADD:real-og-aa (&real-og-aa) TARGET ("og" CC) IF
 	(-1 Ind)
-	(NOT -1 Inf OR Imp)
-	(1 Inf OR Imp)
-	(NOT 1 Imp);
+	(1 Inf - ("<(.*es)>"r))
+	(NEGATE *-1 Inf OR Imp BARRIER VFIN - Pass)
+	(NEGATE -1 Pass LINK -1 modalverb + Ind)    # kan overtas og følge tradisjonen
+	(NEGATE 1 Pass LINK -2 Ind OR Pass)                # pensles og  stekes, lever og trives
+	(NOT 1 Ind)
+	;
 ADD:real-og-aa (&real-og-aa) TARGET ("og" CC) IF
 	(-1 Imp)
-	(NOT -1 Inf OR Ind)
-	(1 Inf OR Ind)
+	(NOT *-1 Inf BARRIER VFIN)
+	(1 Inf)
 	(NOT 1 Imp);
 COPY:real-og-aa ("å" IM &SUGGEST) EXCEPT ("og" CC) TARGET (CC &real-og-aa);
 ADDRELATION:real-og-aa ($2) (V) FROM (-1 IM LINK 0 (&real-og-aa));
