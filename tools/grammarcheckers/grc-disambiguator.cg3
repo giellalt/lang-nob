@@ -4558,7 +4558,7 @@ CONSTRAINTS
 CONSTRAINTS
 
 # 3035
-"<særlig>" SELECT (Neu) IF
+"<særlig>" REMOVE (Msc) IF
 	(NOT 1 N-Msc/Fem-Sg-ub)
 ;
 
@@ -6792,14 +6792,14 @@ SELECT (A Sg Fem Indef) IF
 
 
 # 2798
-SELECT (A Sg Fem Indef) IF
-	(NOT 0 orden OR farlige-A)
-	(NOT 0 Inf OR N-gen)
-	(1 Indef-Sg-Fem-N)
-	(NOT 1 ikke-N OR Indef-Sg-Neu-N)
-	(NOT 1 Indef-Sg-Msc-N OR Pl-N)
-	(NOT -1 Fem-det OR A)
-;
+#SELECT (A Sg Fem Indef) IF
+#	(NOT 0 orden OR farlige-A)
+#	(NOT 0 Inf OR N-gen)
+#	(1 Indef-Sg-Fem-N)
+#	(NOT 1 ikke-N OR Indef-Sg-Neu-N)
+#	(NOT 1 Indef-Sg-Msc-N OR Pl-N)
+#	(NOT -1 Fem-det OR A)
+#;
 
 
 # 2799
@@ -7366,13 +7366,13 @@ SELECT (A MF Sg Indef) IF
 
 
 # 2771
-SELECT (A MF Sg Indef) IF
-	(NOT 0 orden OR farlige-A)
-	(NOT 0 Inf OR N-gen)
-	(1 Indef-Sg-Fem-N)
-	(NOT 1 Indef-Sg-Neu-N OR Pl-N)
-	(NOT -1 A OR N-gen)
-;
+#SELECT (A MF Sg Indef) IF
+#	(NOT 0 orden OR farlige-A)
+#	(NOT 0 Inf OR N-gen)
+#	(1 Indef-Sg-Fem-N)
+#	(NOT 1 Indef-Sg-Neu-N OR Pl-N)
+#	(NOT -1 A OR N-gen)
+#;
 
 
 # 2772
@@ -16251,7 +16251,7 @@ REMOVE (V Prt) IF
 
 # 1726
 REMOVE (V Prt) IF
-	(-1 komma/CC)
+	(-1 komma)
 	(NOT -1 CLB)
 	(*-1 fv BARRIER setn-gr)
 ;
@@ -16460,6 +16460,11 @@ REMOVE (V Prt) IF
 #;
 
 
+REMOVE (V Prt) IF
+	(-1C Pr)
+	(NOT -2 Pr-intrans)
+	(0 (N Neu Def))
+	;
 # 1748
 REMOVE (V Prt) IF
 	(-1 >>>)
@@ -16487,6 +16492,7 @@ REMOVE (V Prt) IF
 # 1751
 REMOVE (V Prt) IF
 	(-1 CC)
+	(NEGATE *-2 Prt BARRIER fv)
 	(NOT -1 CLB OR Adv)
 ;
 
@@ -18302,6 +18308,7 @@ REMOVE (A) IF
 
 #!! ## Giellatekno late rules
 
+
 LIST IDNOUN = "artikkel" "kapittel" "paragraf" "punkt" ;
 
 SELECT:SemID Sem/ID IF (-1 IDNOUN OR (":"))(0 Num);
@@ -18313,6 +18320,11 @@ REMOVE Neu + Pl IF (-1 BOS OR PUNCT)(0 Neu + Sg)(1 EOS OR PUNCT);
 REMOVE Neu + Pl IF (0 Neu + Sg)(1 CC)(2 N + Sg);
 REMOVE Neu + Sg IF (-1 ("flere"))(0 Neu + Pl);
 REMOVE Neu + Sg IF (*-1 ("flere") OR ("mange") BARRIER V)(0 Neu + Pl);
+
+
+#!! ### Numerals
+
+REMOVE (V) IF (0 ("fire" Num))(*1 (N Pl) BARRIER NOT-PRE-NP-HEAD);
 
 
 #!! ### Pronouns
@@ -18332,6 +18344,12 @@ REMOVE Det IF (0 Pron)(1C Pr OR V OR CLB OR EOS);
 # N and not V
 REMOVE (Pl) IF (-1 Pr)(0 Sg);
       ## i vater
+
+REMOVE (V Prs) IF (-1C Inf)(0 (N Pl Indef));
+## Man kan  tilsette starter og løpe samtidig. # starter = N Pl
+
+REMOVE (V Prt) IF (-1C Inf)(0 (N Neu Sg Def));
+## V vil forsvare landet.
 
 REMOVE (Pl) IF (-1 Det + Sg)(0 Sg);
       ## i vater
