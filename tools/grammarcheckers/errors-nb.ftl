@@ -70,6 +70,9 @@ real-v-aa-og = Bruk "og" i steden for "å"
 real-og-aa = Bruk "å" i steden for "og"
     .desc = En infinitiv, som  {$2}, skal ha "å" foran seg, og ikke "og".
 
+real-og-ogsaa = Bruk "også" i steden for "og"
+    .desc = mellom et modalverb (her: {$2)} og en infinitiv (her:  {$3}), passer det bedre med "også" enn med "og".
+
 syn-pp-v3-v2 = Ordstillingsfeil
     .desc = Ordet {$1} er et finitt verb, og skal stå på andre plass etter preposisjonsfrasen i setninga.
 
