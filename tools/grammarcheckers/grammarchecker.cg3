@@ -1344,6 +1344,7 @@ COPY:right-guillemet ("»" &SUGGEST) EXCEPT (""") TARGET (&guillemets) ; #"
 ADD:use-ellipsis (&ellipsis) TARGET ("...");
 COPY:use-ellipsis ("…" &SUGGEST) EXCEPT ("...") TARGET (&ellipsis) ;
 
+ADD (&real-aa-og) TARGET ("<prøvde>" "prøve") ;
 
 	# ====================== #
 		AFTER-SECTIONS

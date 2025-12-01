@@ -18348,7 +18348,7 @@ REMOVE (Pl) IF (-1 Pr)(0 Sg);
 REMOVE (V Prs) IF (-1C Inf)(0 (N Pl Indef));
 ## Man kan  tilsette starter og løpe samtidig. # starter = N Pl
 
-REMOVE (V Prt) IF (-1C Inf)(0 (N Neu Sg Def));
+REMOVE (V Prt) IF (-1C Inf)(0 (N Neu Sg Def) OR (N Fem Sg Def));
 ## V vil forsvare landet.
 
 REMOVE (Pl) IF (-1 Det + Sg)(0 Sg);
