@@ -45,6 +45,8 @@ The bulk of the file contains rules from the original OBT file.
 
 ### Neuter sg pl
 
+### Numerals
+
 ### Pronouns
 
 ###  Det rules

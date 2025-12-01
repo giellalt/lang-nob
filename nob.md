@@ -53,6 +53,8 @@ The bulk of the file contains rules from the original OBT file.
 
 #### Neuter sg pl
 
+#### Numerals
+
 #### Pronouns
 
 ####  Det rules
@@ -2336,6 +2338,7 @@ Here we declare all grammatical tags
 - SET NOT-A-COMMA = WORD - A - COMMA ;
 - SET NOT-A-PCLE = WORD - A - Pcle ;
 - SET NOT-A-ADV = WORD - A - Adv ;
+- SET NOT-A-ETC = WORD - A - Adv - Pcle - COMMA - (PUNCT LEFT) - (PUNCT RIGHT) - Sem/Year - Sem/ID ;
 
 #### Adverbial sets and their complements
 - SET LEX-ADV = Adv - (A*) ;
@@ -2584,6 +2587,8 @@ Case rules so far: Nominative pronouns should be accusative
 
 ### og/å errors
 
+#### og/også
+
 #### The *og* -> *å* rules 
 
 **Realword rule:** og should be å real-og-aa. Context: *Det er ikke til og holde ut.*
@@ -2713,6 +2718,8 @@ The bulk of the file contains rules from the original OBT file.
 ### Giellatekno late rules
 
 #### Neuter sg pl
+
+#### Numerals
 
 #### Pronouns
 

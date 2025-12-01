@@ -235,6 +235,7 @@ Here we declare all grammatical tags
 - SET NOT-A-COMMA = WORD - A - COMMA ;
 - SET NOT-A-PCLE = WORD - A - Pcle ;
 - SET NOT-A-ADV = WORD - A - Adv ;
+- SET NOT-A-ETC = WORD - A - Adv - Pcle - COMMA - (PUNCT LEFT) - (PUNCT RIGHT) - Sem/Year - Sem/ID ;
 
 ### Adverbial sets and their complements
 - SET LEX-ADV = Adv - (A*) ;
@@ -482,6 +483,8 @@ Case rules so far: Nominative pronouns should be accusative
 ### V2 to V3 in embedded clauses
 
 ## og/å errors
+
+### og/også
 
 ### The *og* -> *å* rules 
 
