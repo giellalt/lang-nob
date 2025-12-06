@@ -2,13 +2,13 @@
 # The default is English + autonym:
 [speller.name]
 en = "Norwegian Bokmål spellchecker"
-nb = "Autonym spellchecker"
+nb = "Stavekontroll for norsk bokmål"
 
 # Description of the speller package in various languages.
 # The default is English + autonym:
 [speller.description]
 en = "A spellchecker for Norwegian Bokmål, made by members of the language community, and by the Divvun and Giellatekno groups at UiT The Arctic University of Norway"
-nb = "TRANSLATE: A spellchecker for Norwegian Bokmål, made by members of the language community, and by the Divvun and Giellatekno groups at UiT The Arctic University of Norway"
+nb = "En stavekontroll for Norwegian Bokmål, laga av medlemmer av Divvun- og Giellateknogruppene ved UiT Norges arktiske universitet"
 
 [macos]
 system_pkg_id = "no.divvun.MacDivvun.nb"
