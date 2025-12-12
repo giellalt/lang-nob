@@ -795,6 +795,7 @@ COPY:msyn-bestemtN-ubestemtN (Indef &SUGGEST) EXCEPT (Def &msyn-bestemtN-ubestem
 
 ADD:msyn-agr-adjindef-adjdef (&msyn-agr-adjindef-adjdef) TARGET (A) IF
 	(-1 Det + Poss)
+	(NOT 0 ("egen") OR ("<.*ende>"r)) # sin egne kultur
 	(0 Indef LINK NEGATE 0 Def)
 	(1 N);
 	#$KNUT: Roman reiste for første gang til Norge i desember i 2021.
@@ -889,7 +890,7 @@ ADD:msyn-pred-adjneu-adjmsc (&msyn-pred-adjneu-adjmsc) TARGET (A) IF
 	(-1 ("være"))
 	(0 A + Pos + Neu + Sg + Indef)
 	(NEGATE 0 A + Msc OR A + Fem OR A + MF)
-	(NOT 1 N + Neu)
+	(NOT 1 N + Neu OR A OR PrfPrc)
 	;
 COPY:msyn-pred-adjneu-adjmsc (Msc Sg Indef &SUGGEST) EXCEPT (Neu Sg Indef)  TARGET (A Pos &msyn-pred-adjneu-adjmsc);
 ADDRELATION:msyn-pred-adjneu-adjmsc ($2) (N) FROM (2 A LINK 0 (&msyn-pred-adjneu-adjmsc)) ;
@@ -971,7 +972,7 @@ ADDRELATION:msyn-pred-adjneu-adjfem ($2) (N) FROM (6 A LINK 0 (&msyn-pred-adjneu
 
 
 #!! **Agreement rule:**  Context: *Jeg har biler som er fin*
-ADD:msyn-pred-adjsg-adjpl (&msyn-pred-adjsg-adjpl) TARGET (A Sg) IF (*-1 ("være") BARRIER NOT-ADV LINK *-1 ("som") BARRIER NOT-ADV LINK -1C (N Pl) OR ("de" Pron Pers Pl3 Nom ) OR ("vi" Pron Pers Pl1))(0C Sg OR Adv)(NOT 1 N + Sg);
+ADD:msyn-pred-adjsg-adjpl (&msyn-pred-adjsg-adjpl) TARGET (A Sg) IF (*-1 ("være") BARRIER NOT-ADV OR ("mest") LINK *-1 ("som") BARRIER NOT-ADV LINK -1C (N Pl) OR ("de" Pron Pers Pl3 Nom ) OR ("vi" Pron Pers Pl1))(0C Sg OR Adv)(NOT 1 N + Sg);
 COPY:msyn-pred-adjsg-adjpl (Pl Indef &SUGGEST) EXCEPT (Sg Indef Msc &msyn-pred-adjsg-adjpl) OR (Sg Indef Fem &msyn-pred-adjsg-adjpl) OR (Sg Indef Neu &msyn-pred-adjsg-adjpl) OR (Sg Indef MF &msyn-pred-adjsg-adjpl) TARGET (A Pos &msyn-pred-adjsg-adjpl);
 ADDRELATION:msyn-pred-adjsg-adjpl ($2) (N) FROM (3 A LINK 0 (&msyn-pred-adjsg-adjpl)) ;
 ADDRELATION:msyn-pred-adjsg-adjpl ($2) (N) FROM (4 A LINK 0 (&msyn-pred-adjsg-adjpl)) ;
@@ -1005,15 +1006,18 @@ ADDRELATION:msyn-pred-adjmsc-adjneu ($2) (N) FROM (6 A LINK 0 (&msyn-pred-adjmsc
 
 #!! **Agreement rule:**  Context: *Bilen som jeg kjørte var grønt.*
 ADD:msyn-pred-adjneu-adjmsc (&msyn-pred-adjneu-adjmsc) TARGET (A Neu Sg) IF (*-1 ("være") BARRIER NOT-ADV 
-LINK *-1 VFIN BARRIER S-BOUNDARY OR VFIN 
-LINK *-1 N OR (Pron Nom) BARRIER NOT-ADV 
-LINK *-1C (N Msc Sg) OR ("han" Pron Pers Sg3 Nom) OR ("den" Pron Pers Sg3) BARRIER (*) - ("som")) 
+LINK *-1 VFIN BARRIER S-BOUNDARY OR VFIN OR ("det") OR ("dette") OR ("denne" Det Dem Neu) 
+LINK *-1 (N Msc Sg) OR (Pron Nom) BARRIER NOT-ADV 
+LINK *-1C N  OR ("han" Pron Pers Sg3 Nom)  BARRIER (*) - ("som")) 
 (0C Neu OR Adv)(NOT 1 N + Neu);
 
-ADD:msyn-pred-adjneu-adjmsc (&msyn-pred-adjneu-adjmsc) TARGET (A Neu Sg) IF (*-1 ("være") BARRIER NOT-ADV 
-LINK *-1 VFIN BARRIER S-BOUNDARY OR VFIN 
-LINK *-1C (N Msc Sg) OR ("han" Pron Pers Sg3 Nom) OR ("den" Pron Pers Sg3) BARRIER (*) - ("som")) 
-(0C Neu OR Adv)(NOT 1 N + Neu);
+ADD:msyn-pred-adjneu-adjmsc (&msyn-pred-adjneu-adjmsc) TARGET (A Neu Sg) IF
+	(*-1 ("være") BARRIER NOT-ADV OR ("det") OR ("dette") OR ("denne" Det Dem Neu))	
+	(*-1 ("være") BARRIER NOT-ADV 
+	    LINK *-1 VFIN BARRIER S-BOUNDARY OR VFIN OR ("men") OR CS OR ("det") OR ("dette") OR ("denne" Det Dem Neu) 
+	    LINK *-1C (N Msc Sg) OR ("han" Pron Pers Sg3 Nom) BARRIER (*) - ("som"))
+	(0C Neu OR Adv)
+	(NOT 1 N + Neu);
 
 
 COPY:msyn-pred-adjneu-adjmsc (Msc Sg Indef &SUGGEST) EXCEPT (Neu Sg Indef &msyn-pred-adjneu-adjmsc) TARGET (A Pos &msyn-pred-adjneu-adjmsc);
@@ -1038,8 +1042,10 @@ LINK *-1 N OR (Pron Nom) BARRIER NOT-ADV
 LINK *-1C (N Fem Sg) OR ("hun" Pron Pers Sg3 Nom) OR ("den" Pron Pers Sg3) BARRIER (*) - ("som")) 
 (0C Neu OR Adv)(NOT 1 N + Neu);
 
-ADD:msyn-pred-adjneu-adjfem (&msyn-pred-adjneu-adjfem) TARGET (A Neu Sg) IF (*-1 ("være") BARRIER NOT-ADV 
-LINK *-1 VFIN BARRIER S-BOUNDARY OR VFIN 
+ADD:msyn-pred-adjneu-adjfem (&msyn-pred-adjneu-adjfem) TARGET (A Neu Sg) IF
+	(*-1 ("være") BARRIER NOT-ADV  OR ("det") OR ("dette") OR ("denne" Det Dem Neu))
+	(*-1 ("være") BARRIER NOT-ADV 
+LINK *-1 VFIN BARRIER S-BOUNDARY OR VFIN  OR ("det") OR ("dette") OR ("denne" Det Dem Neu)
 LINK *-1C (N Fem Sg) OR ("hun" Pron Pers Sg3 Nom) OR ("den" Pron Pers Sg3) BARRIER (*) - ("som")) 
 (0C Neu OR Adv)(NOT 1 N + Neu);
 

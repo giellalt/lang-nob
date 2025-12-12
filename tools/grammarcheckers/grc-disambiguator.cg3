@@ -6595,8 +6595,8 @@ SELECT (A Neu Sg Indef) IF
 
 # 2859
 SELECT (A Neu Sg Indef) IF
-	(NOT 0 orden OR farlige-A)
-	(NOT 0 Pl OR Prs/Prt)
+	(NOT 0 orden OR farlige-A OR ("<.*ende>"r))
+	(NOT 0 Pl OR Prs/Prt  OR (A Sg Def))
 	(1 Indef-Sg-Neu-N)
 	(NOT 1 ikke-N OR Indef-Sg-Msc-N)
 	(NOT -1 A OR N-gen)
@@ -7356,8 +7356,8 @@ SELECT (A MF Sg Indef) IF
 
 # 2770
 SELECT (A MF Sg Indef) IF
-	(NOT 0 orden OR farlige-A)
-	(NOT 0 Inf OR N-gen)
+	(NOT 0 orden OR farlige-A OR ("<.*ende>"r))
+	(NOT 0 Inf OR N-gen OR (A Sg Def))
 	(1 Indef-Sg-Msc-N)
 	(NOT 1 Indef-Sg-Neu-N OR Pl-N)
 	(NOT -1 A OR Clt)
