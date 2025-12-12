@@ -61,7 +61,8 @@ LEXICON a2 !
  +A: grade-C     ;
 
 LEXICON a3 !
- +A: positive    ;
+ +A: positive-indef    ;
+ +A: positive-def-null    ;
  +A: a-no-neuter ;
  +A: grade-C     ;
  
@@ -126,6 +127,11 @@ LEXICON positive-def
  +Pos+Sg+Def:%>e # ;
  +Pos+Pl+Def:%>e # ;
  +Pos+Pl+Indef:%>e # ;
+
+LEXICON positive-def-null
+ +Pos+Sg+Def: # ;
+ +Pos+Pl+Def: # ;
+ +Pos+Pl+Indef: # ;
 
 LEXICON a-neuter ! fint
  +Pos+Neu+Sg+Indef:%>Q3t # ;
