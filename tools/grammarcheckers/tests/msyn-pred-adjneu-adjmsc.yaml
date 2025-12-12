@@ -4,4 +4,5 @@ Config:
   
 Tests:
   - "Bilen var {fint}£{fin}."
-  
+  - "Noe av denne kompetansehevingen er av generell karakter mens andre er {spesifikt}£{spesifikk} for duodjinæringen"  
+  - "Drifta må også være effektiv og organiseres på en måte som er {akseptabelt}£{akseptabel} ut fra oppgavene de skal løse og prinsippet om tilstedeværelse i lokalmiljøer utenfor det sentrale administrasjonssted er viktig"
