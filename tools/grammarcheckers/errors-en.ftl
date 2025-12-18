@@ -62,6 +62,9 @@ msyn-advl-a-adv = Adjective and not adverbial
 msyn-advl-plloc-sgill = Adjective and not adverbial
     .desc = When a word like {$1} is used as an object predicative, it should be an adverb.
 
+real-og-ogsaa = Use "å" rather than "og"
+    .desc = In front of an infinitive you should use "å" and not "og".
+
 real-aa-og = Use "og" rather than "å"
     .desc = Between two nouns, like {$2} and {$3}, use "og", not "å".
 

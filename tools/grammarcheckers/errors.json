@@ -136,5 +136,20 @@
     {
       "id": "ellipsis"
     }
+  ],
+  "msyn-mod-aa-null": [
+    {
+      "id": "msyn-mod-aa-null"
+    }
+  ],
+  "msyn-qu-comp-superl": [
+    {
+      "id": "msyn-qu-comp-superl"
+    }
+  ],
+  "real-cp-null-som": [
+    {
+      "id": "real-cp-null-som"
+    }
   ]
 }

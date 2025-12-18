@@ -300,9 +300,46 @@
     </body>
   </error>
   
-  
+  <error id="msyn-mod-aa-null">
+    <header>
+      <title xml:lang="en"></title>
+      <title xml:lang="nb"></title>
+    </header>
+    <body>
+      <description xml:lang="en"></description>
+      <description xml:lang="nb"></description>
+    </body>
+  </error>
 
+  <error id="msyn-qu-comp-superl">
+    <header>
+      <title xml:lang="en"></title>
+      <title xml:lang="nb"></title>
+    </header>
+    <body>
+      <description xml:lang="en"></description>
+      <description xml:lang="nb"></description>
+    </body>
+  </error>
 
+  <error id="real-cp-null-som">
+    <header>
+      <title xml:lang="en"></title>
+      <title xml:lang="nb"></title>
+    </header>
+    <body>
+      <description xml:lang="en"></description>
+      <description xml:lang="nb"></description>
+    </body>
+  </error>
 
-
-</errors>
+  <error id="real-og-ogsaa">
+    <header>
+      <title xml:lang="en"></title>
+      <title xml:lang="nb"></title>
+    </header>
+    <body>
+      <description xml:lang="en"></description>
+      <description xml:lang="nb"></description>
+    </body>
+  </error>
