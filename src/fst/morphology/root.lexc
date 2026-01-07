@@ -335,6 +335,10 @@ Multichar_Symbols !!≈ **@CODE@**
 @P.Pmatch.Backtrack@  !!≈ * @CODE@ - 
 @PMATCH_BACKTRACK@ !!≈ * @CODE@ - 
 
+
+ @U.CmpHyph.TRUE@
+
+
 ! =================================================
 !! ## Basic lexica, pointing to the other lexicon files
 ! =================================================

@@ -128,7 +128,8 @@ LEXICON ab-dot-adv-trnumab
 LEXICON ab-dot-adv   !!= * **@CODE@**  This is the lexicon for abbrs that must have a period.
 +A+ABBR:  DOT ; ! Adv without case.
 
-LEXICON ab-dot-num-trab  +Num+ABBR+Gram/TAbbr: ab-dot-num ;
+LEXICON ab-dot-num-trab
++Num+ABBR+Gram/TAbbr: ab-dot-num ;
 LEXICON ab-dot-num   !!= * **@CODE@**  This is the lexicon for abbrs that must have a period.
 +A+ABBR: DOT ;
 
@@ -137,14 +138,17 @@ LEXICON ab-dot-cc-trab
 LEXICON ab-dot-cc   !!= * **@CODE@**
 +ABBR:  DOT ;
 
-LEXICON ab-dot-verb-trab  +V+ABBR+Gram/TAbbr:    ab-dot-verb ;
-LEXICON ab-dot-verb-itrab +V+ABBR+Gram/IAbbr:    ab-dot-verb ;
+LEXICON ab-dot-verb-trab
++V+ABBR+Gram/TAbbr:    ab-dot-verb ;
+LEXICON ab-dot-verb-itrab
++V+ABBR+Gram/IAbbr:    ab-dot-verb ;
 
 LEXICON ab-dot-verb   !!= * **@CODE@**
  +V+Imp+ABBR: DOT ; ! Period.
 
 
-LEXICON ab-dot-IVprfprc-trab    +V+ABBR+Gram/TAbbr:    ab-dot-IVprfprc ;
+LEXICON ab-dot-IVprfprc-trab
++V+ABBR+Gram/TAbbr:    ab-dot-IVprfprc ;
 
 LEXICON ab-dot-IVprfprc   !!= * **@CODE@**
  +V+Sg+PrfPrc+ABBR: DOT ; ! Period.
