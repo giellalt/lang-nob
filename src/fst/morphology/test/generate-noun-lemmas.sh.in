@@ -10,7 +10,7 @@ tags="+N+Msc+Sg+Indef"
 # advanced settings (leave empty or write full args)
 xtags="-t +N+Msc+Pl+Indef -t +N+Fem+Sg+Indef -t +N+Fem+Pl+Indef -t +N+Neu+Sg+Indef -t +N+Neu+Pl+Indef"
 inclusions=
-exclusions="--exclude (2_letter|3_letter| indeclm| R | indeclf )"
+exclusions="--exclude (2_letter|3_letter|indeclm|indeclf)"
 # avoid changing common scripting stuff here:
 
 . "$GIELLA_CORE/scripts/termcolors.bash"
