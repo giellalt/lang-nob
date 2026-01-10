@@ -11,7 +11,7 @@
       </ids>
       <header>
         <title xml:lang="en">Real-word error</title>
-        <title xml:lang="nb">Čállinmeattáhus</title>
+        <title xml:lang="nb">Feil valg av ord</title>
       </header>
       <body>
         <description xml:lang="en">The word "$1" exists in the dictionary, but means something different in this context.</description>
@@ -278,15 +278,17 @@
     </body>
   </error>
 
-  <error id="guillemets">
-    <header>
-      <title xml:lang="en">Quotation marks</title>
-      <title xml:lang="smj">Valg av anførselstegn</title>
-    </header>
-    <body>
-      <description xml:lang="en">You have used the quotation mark "$1". In Norwegian typography, we use « and ».</description>
-      <description xml:lang="smj">Du har brukt anførselstegnet "$1". I norsk typografi bruker vi « og » som anførselstegn.</description>
-    </body>
+   <error id="guillemets">
+     <header>
+       <title xml:lang="en">Quotation marks</title>
+       <title xml:lang="nb">Anførselstegn</title>
+       <title xml:lang="smj">Valg av anførselstegn</title>
+     </header>
+     <body>
+       <description xml:lang="en">You have used the quotation mark "$1". In Norwegian typography, we use « and ».</description>
+       <description xml:lang="nb">Du har brukt anførselstegnet "$1". I norsk typografi bruker vi « og » som anførselstegn.</description>
+       <description xml:lang="smj">Du har brukt anførselstegnet "$1". I norsk typografi bruker vi « og » som anførselstegn.</description>
+     </body>
   </error>
 
   <error id="ellipsis">
@@ -300,46 +302,47 @@
     </body>
   </error>
   
-  <error id="msyn-mod-aa-null">
-    <header>
-      <title xml:lang="en"></title>
-      <title xml:lang="nb"></title>
-    </header>
-    <body>
-      <description xml:lang="en"></description>
-      <description xml:lang="nb"></description>
-    </body>
-  </error>
+   <error id="msyn-mod-aa-null">
+     <header>
+       <title xml:lang="en">No infinitive marker after modal verb</title>
+       <title xml:lang="nb">Ikke infinitivsmerke etter modalverb</title>
+     </header>
+     <body>
+       <description xml:lang="en">When an infinitive, such as "$3", follows a modal verb, such as "$2", it should not have "å".</description>
+       <description xml:lang="nb">Når en infinitiv, som her "$3", kommer etter et modalverb, som her "$2", skal det ikke ha "å".</description>
+     </body>
+   </error>
 
-  <error id="msyn-qu-comp-superl">
-    <header>
-      <title xml:lang="en"></title>
-      <title xml:lang="nb"></title>
-    </header>
-    <body>
-      <description xml:lang="en"></description>
-      <description xml:lang="nb"></description>
-    </body>
-  </error>
+   <error id="msyn-qu-comp-superl">
+     <header>
+       <title xml:lang="en">"De fleste", not "de flere"</title>
+       <title xml:lang="nb">"De fleste", ikke "de flere"</title>
+     </header>
+     <body>
+       <description xml:lang="en">When a comparison is in the definite form we use "fleste", as here in "de fleste $2"</description>
+       <description xml:lang="nb">Når ei sammenligning er i bestemt form skal vi bruke "fleste", som her i "de fleste $2"</description>
+     </body>
+   </error>
 
-  <error id="real-cp-null-som">
-    <header>
-      <title xml:lang="en"></title>
-      <title xml:lang="nb"></title>
-    </header>
-    <body>
-      <description xml:lang="en"></description>
-      <description xml:lang="nb"></description>
-    </body>
-  </error>
+   <error id="real-cp-null-som">
+     <header>
+       <title xml:lang="en">Obligatory "som"</title>
+       <title xml:lang="nb">Obligatorisk "som"</title>
+     </header>
+     <body>
+       <description xml:lang="en">After a question word, such as "hvilken", the relative clause must contain "som"</description>
+       <description xml:lang="nb">Etter et spørreord, som "hvilken", må relativsetninga inneholde "som"</description>
+     </body>
+   </error>
 
-  <error id="real-og-ogsaa">
-    <header>
-      <title xml:lang="en"></title>
-      <title xml:lang="nb"></title>
-    </header>
-    <body>
-      <description xml:lang="en"></description>
-      <description xml:lang="nb"></description>
-    </body>
-  </error>
+   <error id="real-og-ogsaa">
+     <header>
+       <title xml:lang="en">Use "også" instead of "og"</title>
+       <title xml:lang="nb">Bruk "også" i steden for "og"</title>
+     </header>
+     <body>
+       <description xml:lang="en">Between a modal verb (here: $2) and an infinitive (here: $3), "også" fits better than "og".</description>
+       <description xml:lang="nb">Mellem et modalverb (her: $2) og en infinitiv (her: $3), passer det bedre med "også" enn med "og".</description>
+     </body>
+   </error>
+ </errors>
