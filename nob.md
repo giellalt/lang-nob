@@ -943,49 +943,20 @@ This section shows the twolc rules and the tests used to check whether they work
 **Epenthetic Deletion Rule**  is actually 3 rules in one: 1) it deletes -e- in *moden : modne* etc, 2) it deletes the stem -e in *hare + -er* and 3) it delets suffix -e in *ærlig + est > ærligst*
 
 *Tests:* (star denotes negativ test, test that is supposed to fail)
-* *søsterX1>a*
-* *teaterX1>et*
-* *teat0r0>et*
-* *modenX1>e*
-* *mod0n0>e*
-* *reparere>Q3te*
-* *reparer0>0te*
-* ★*modenX1>e* (is not standard language)
-* ★*moden0>e* (is not standard language)
-* *hare>er*
-* *har0>er*
-* *viktig>est*
-* *viktig>0st*
-* *presentere%>Q3t*
-* *presenter0>0t*
 
 **Delete foreign vowel Rule**  for deleting final a or o in words like *kollega : kolleger*. Trigger symbol to the right is **X2**.
 
 *Tests:*
-* *kollegaX2>er*
-* *kolleg00>er*
 
 #### Consonant deletion
 
 **Consonant shortening before deletion Rule**  
 
 *Tests:*
-* *sikkerX1>e*
-* *sik00r0>e*
-* *trusselX1>er*
-* *trus00l0>er*
 
 **Geminate deletion in front of -t and -d Rule** deletes: 1) before **Q3 and d or t** (*kaller:kalte*) 2) before passive **Q1 t** (*lykkes:lyktes*) and 3) before epenthetic **-e-** and **l, n** or **r** (*sikker:sikre*)
 
 *Tests:*
-* *kalle>Q3te*
-* *kal00>0te*
-* *lykk0esQ1*
-* *lyk0tes0*
-* *all>Q3t*
-* *al0>0t*
-* *bygge>Q3de*
-* *byg00>0de*
 
 **Delete r Rule** deletes **r** in plural *-er* to get *-er + -ne* = plural *-ene* 
 
@@ -994,20 +965,14 @@ This section shows the twolc rules and the tests used to check whether they work
 **um Deletion 1 Rule** (um Deletion 2 is now part of the *Delete m Rule*)
 
 *Tests:*
-* *museumX5>er*
-* *muse000>er*
 
 **t weakening Rule**  
 
 *Tests:*
-* *oppskjørtetX6>e*
-* *oppskjørted0>e*
 
 **Double t deletion Rule**  
 
 *Tests:*
-* *svart>t*
-* *svart>0*
 
 #### Insertion rules
 
