@@ -112,29 +112,13 @@ Rules
 
 !! *Tests:* (star denotes negativ test, test that is supposed to fail)
 !€ s ø s t e:0 r X1:0 > a
-!!€ søsterX1>a
-!!£ søst00>ra
 !€ t e a t e:0 r X1:0 > e t
-!!€ teaterX1>et
-!!€ teat0r0>et
 !€ m o d e:0 n X1:0 > e
-!!€ modenX1>e
-!!€ mod0n0>e
 !€ r e p a r e r e:0 > Q3:0 t e
-!!€ reparere>Q3te
-!!€ reparer0>0te
 !€ m o d e:0 n X1:0 > e
-!!$ modenX1>e
-!!$ moden0>e
 !€ h a r e:0 > e r
-!!€ hare>er
-!!€ har0>er
 !€ v i k t i g > e:0 s t
-!!€ viktig>est
-!!€ viktig>0st
 !€ p r e s e n t e r e:0 > Q3:0 t
-!!€ presentere%>Q3t
-!!€ presenter0>0t
 
 "Delete foreign vowel Rule"
 !! **@RULENAME@**  for deleting final a or o in words like *kollega : kolleger*. Trigger symbol to the right is **X2**.
@@ -143,8 +127,6 @@ Rules
 
 !! *Tests:*
 !€ k o l l e g a:0 X2:0 > e r
-!!€ kollegaX2>er
-!!€ kolleg00>er
 
 
 
@@ -157,11 +139,7 @@ Rules
 
 !! *Tests:*
 !€ s i k K:0 e:0 r X1:0
-!!€ sikkerX1>e
-!!€ sik00r0>e
 !€ t r u s s:0 e:0 l X1:0 > e r
-!!€ trusselX1>er
-!!€ trus00l0>er
 
 
 "Geminate deletion in front of -t and -d Rule"
@@ -173,17 +151,9 @@ Rules
 
 !! *Tests:*
 !€ k a l l:0 e:0 > Q3:0 t e
-!!€ kalle>Q3te
-!!€ kal00>0te
 !€ l y k k:0 0:t e s Q1:0
-!!€ lykk0esQ1
-!!€ lyk0tes0
 !€ a l l:0 > Q3:0 t
-!!€ all>Q3t
-!!€ al0>0t
 !€ b y g g:0 e:0 > Q3:0 d e
-!!€ bygge>Q3de
-!!€ byg00>0de
 
 
 
@@ -215,8 +185,6 @@ Rules
 
 !! *Tests:*
 !€ m u s e u:0 m:0 X5:0 > e r
-!!€ museumX5>er
-!!€ muse000>er
 
 !"um Deletion 2" ! now m rule
 ! m:0 <=> u: _ X5: %> ;
@@ -228,8 +196,6 @@ Rules
 
 !! *Tests:*
 !€ o p p s k j ø r t e t:d X6:0 > e
-!!€ oppskjørtetX6>e
-!!€ oppskjørted0>e
  
 "Double t deletion Rule"
 !! **@RULENAME@**  
@@ -239,8 +205,6 @@ Rules
 
 !! *Tests:*
 !€ s v a r t > t:0
-!!€ svart>t
-!!€ svart>0
 
 !" inf-e"
 ! e:0 <=> _ %> Q3: ;
