@@ -1,37 +1,41 @@
+# Usage:
+# sh check-explanation-tags.sh
+# The script fetches tags from the LIST definitions of grammarchecker.cg3 and
+# Compares the list against the various error files.
+
 echo "\n"
-echo "Script to check whether rule tags in grammarchecker.cg3 are declared in the errors* files\n"
+echo "Are the rule tags in grammarchecker.cg3 declared in the error tags files?"
+echo "=========================================================================\n"
+cat grammarchecker.cg3 |grep "^LIST &"|cut -d" " -f2|tr -d "&"|sort | uniq > xxg
+cat errors-nb.ftl |grep "^[a-z]"|cut -d" " -f1|sort | uniq > xxn
+cat errors-en.ftl |grep "^[a-z]"|cut -d" " -f1|sort | uniq > xxe
+cat errors.json |grep '"id"'|cut -d'"' -f4|sort | uniq > xxj
+cat errors.source.xml | grep "error id"|cut -d'"' -f2|sort | uniq > xxx
 
-echo "List grammarchecker tags from grammarchecker file and save as xxg\n"
- cat grammarchecker.cg3 |grep "^LIST &"|cut -d" " -f2|tr -d "&"|sort > xxg
-
-echo "List grammarchecker tags from native language ftl file and save as xxn\n"
- cat errors-nb.ftl |grep "^[a-z]"|cut -d" " -f1|sort > xxn
-
-echo "List grammarchecker tags from English ftl file and save as xxe\n"
- cat errors-en.ftl |grep "^[a-z]"|cut -d" " -f1|sort > xxe
-
-
-echo "List grammarchecker tags from json file and save xxj\n"
- cat errors.json |grep '"id"'|cut -d'"' -f4|sort > xxj
-
-echo "List grammarchecker tags from xml file and save xxx\n"
-cat errors.source.xml | grep "error id"|cut -d'"' -f2|sort > xxx
-
-echo "Grammarchecker tags missing in native ftl file (empty line if all tags are declared):\n"
- comm -23 xxg xxn
+echo "Number of tags missing in errors-nb.ftl: "
+comm -23 xxg xxn | wc -l
+echo "The tags tags missing in the native ftl file were:"
+comm -23 xxg xxn
 echo "\n"
- 
-echo "Grammarchecker tags missing in English ftl file (empty line if all tags are declared):\n"
+
+echo "Number of tags missing in errors-en.ftl: "
+comm -23 xxg xxe | wc -l
+echo "The tags tags missing in errors-en.ftl file were:"
  comm -23 xxg xxe
 echo "\n"
  
-echo "Grammarchecker tags missing in the file errors.json (empty line if all tags are declared):\n"
- comm -23 xxg xxj
+echo "Number of tags missing in errors.json: "
+comm -23 xxg xxj | wc -l
+echo "The tags issing in errors.json were: "
+comm -23 xxg xxj
 echo "\n"
 
-echo "Grammarchecker tags missing in the file errors.source.xml (empty line if all tags are declared):\n"
- comm -23 xxg xxx
+echo "Number of tags missing in errors.source.xml: "
+comm -23 xxg xxx | wc -l
+echo "The tags missing in errors.xml were: "
+comm -23 xxg xxx
 echo "\n"
 
-echo "Delete auxiliary xx* files\n"
+#echo "Delete auxiliary xx* files\n"
 rm -f xxe xxn xxg xxj xxx 
+
