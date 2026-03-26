@@ -40,9 +40,12 @@ LEXICON DIGITCASE
 LEXICON ROMNUMTAGOBL
  +Rom: # ;
 
-LEXICON dateyearcase # ;
-LEXICON dateyearcase_fullsuff # ;
-LEXICON dateyearcase_nullsuff_w_dot # ;
+LEXICON dateyearcase
+# ;
+LEXICON dateyearcase_fullsuff
+# ;
+LEXICON dateyearcase_nullsuff_w_dot
+# ;
 
 LEXICON yeartagpl
  +Det+Qnt+Sem/Year+Pl: # ;

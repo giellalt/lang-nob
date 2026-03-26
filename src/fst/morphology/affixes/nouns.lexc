@@ -573,7 +573,8 @@ LEXICON nplKLÆR
  +N+Neu+Sg:e  0-et  ;
  +N+Neu+Pl:æ  r-rne ;
 
-LEXICON nTEMPUS ! tempus:temp TEMPUS ;
+LEXICON nTEMPUS
+! tempus:temp TEMPUS ;
           :us     n1 ;
  +N+Neu+Sg:ora    K  ;
  +N+Neu+Pl:oraene K  ;
