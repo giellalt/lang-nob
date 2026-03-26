@@ -9,4 +9,6 @@ igste:igeste	10
 elig:lig	5
 inde:inne	5
 inne:inde	5
+en:a		4
+elig:lig	3
 
