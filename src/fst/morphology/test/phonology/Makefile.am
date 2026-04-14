@@ -16,7 +16,7 @@ XFAIL_TESTS=pair-test-hfst.sh \
 
 # Make sure all tests scripts are included in the distributed tarballs:
 EXTRA_DIST=pair-test-negative.sh.in \
-            pair-test-hfst.sh.in
+		   pair-test-hfst.sh.in
 
 ####### Other targets: ###########
 clean-local:
