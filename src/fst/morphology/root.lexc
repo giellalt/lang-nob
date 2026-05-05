@@ -320,21 +320,29 @@ Multichar_Symbols !!≈ **@CODE@**
 !! | Flag diacritic | Explanation
 !! | :------------- |:-----------
 @U.number.one@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
+@P.number.one@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
 @U.number.two@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
+@P.number.two@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
 @U.number.three@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
+@P.number.three@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
 @U.number.four@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
+@P.number.four@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
 @U.number.five@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
+@P.number.five@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
 @U.number.six@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
+@P.number.six@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
 @U.number.seven@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
+@P.number.seven@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
 @U.number.eight@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
+@P.number.eight@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
 @U.number.nine@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
+@P.number.nine@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
 @U.number.zero@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
-
+@P.number.ten@ !!≈ | @CODE@ | Flag used to give arabic numerals in smj different cases ;
 !! ### Flags for preprocessing
 
 @P.Pmatch.Loc@  !!≈ * @CODE@ - 
 @P.Pmatch.Backtrack@  !!≈ * @CODE@ - 
-@PMATCH_BACKTRACK@ !!≈ * @CODE@ - 
 
 
  @U.CmpHyph.TRUE@
