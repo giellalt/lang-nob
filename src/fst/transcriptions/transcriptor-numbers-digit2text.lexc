@@ -54,11 +54,11 @@ LEXICON TENST
 
 LEXICON TENCOUNTT
 2to9T ;
-1:ein THOUSAND ;
+1:en THOUSAND ;
  %0: THOUSAND ;
 
 LEXICON OLDTENST
-:einog OLDTEN-1T ;
+:enog OLDTEN-1T ;
 :toog OLDTEN-2T ;
 :treog OLDTEN-3T ;
 :fireog OLDTEN-4T ;
@@ -226,7 +226,7 @@ LEXICON HUNDREDT
 
 LEXICON 1to99T
  %0: 2to9T ;
-1:ein THOUSAND ;
+1:en THOUSAND ;
 10to99T ;
 
 LEXICON THOUSAND
@@ -254,7 +254,7 @@ LEXICON 1to99
 10to99 ;
 
 LEXICON 1to9
-1:ein # ;
+1:en # ;
 2:to # ;
 3:tre # ;
 4:fire # ;
@@ -299,7 +299,7 @@ LEXICON TENCOUNT
  %0: # ;
 
 LEXICON OLDTENS
-:einog OLDTEN-1 ;
+:enog OLDTEN-1 ;
 :toog OLDTEN-2 ;
 :treog OLDTEN-3 ;
 :fireog OLDTEN-4 ;
