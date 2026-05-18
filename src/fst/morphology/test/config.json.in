@@ -1,0 +1,23 @@
+{
+    "analyser": "@abs_builddir@/../../analyser-gt-norm.hfstol",
+    "generator": "@abs_builddir@/../../generator-gt-norm.hfstol",
+    "nouns": {
+        "lexcfile": "@abs_srcdir@/../stems/nouns.lexc",
+        "lemmatags": ["+N+Msc+Sg+Indef", "+N+Msc+Pl+Indef", "+N+Fem+Sg+Indef", "+N+Fem+Pl+Indef", "+N+Neu+Sg+Indef", "+N+Neu+Pl+Indef"],
+        "exclusions": ["(2_letter|3_letter | indeclm |indeclf | K )"]
+    },
+    "adjectives": {
+        "lexcfile": "@abs_srcdir@/../stems/adjectives.lexc",
+        "lemmatags": ["+A+Pos+Msc+Sg+Indef"],
+        "exclusions": ["(A_FÅ|A_SMÅ|AmountCont)"]
+    },
+    "propernouns": {
+        "lexcfile": "@abs_srcdir@/../stems/propernouns.lexc",
+        "lemmatags": ["+N+Prop", "+N+Prop+Pl", "+N+Prop+ACR+Msc+Sg+Indef"],
+        "exclusions": ["( R | PROPADJ_a1-org )"]
+    },
+    "verbs": {
+        "lexcfile": "@abs_srcdir@/../stems/verbs.lexc",
+        "lemmatags": ["+V+Inf"]
+    }
+}
