@@ -18,7 +18,7 @@ LEXICON Personal
   du+Pron+Pers+Sg2+Nom:du # ;
   du+Pron+Pers+Sg2+Acc:deg # ;
  han/hun+Pron+Pers+Sg3+Nom:han/hun # ;
- hen+Pron+Pers+Sg3+Nom+Err/Orth:hen # ;
+ hen+Pron+Pers+Sg3+Nom:hen # ;
  han+Pron+Pers+Sg3+Nom:han # ;
  hun+Pron+Pers+Sg3+Nom:hun # ;
  hun+Pron+Pers+Sg3+Nom+Use/NG:ho # ;
@@ -27,6 +27,7 @@ LEXICON Personal
  han+Pron+Pers+Sg3+Acc+Err/Orth:honom # ;
  hun+Pron+Pers+Sg3+Acc:henne # ;
  han/hun+Pron+Pers+Sg3+Acc:han/henne # ;
+ hen+Pron+Pers+Sg3+Acc:hen # ;
  den+Pron+Pers+Sg3:den # ; ! Gender? -- no, only as Det Dem (?)
  det+Pron+Pers+Sg3:det # ; ! Gender? -- no, only as Det Dem (?)
  den+Pron+Pers+Sg3+Poss:dens # ; ! Gender? -- no, only as Det Dem (?) # var Clt
@@ -72,6 +73,7 @@ vår+Det+Poss+Sg1+Neu:vårt # ;
 hans+Det+Poss+Msc+Sg3:hans # ;
 hennes+Det+Poss+Fem+Sg3:hennes # ;
 hans/hennes+Det+Poss+Sg3:hans/hennes # ;
+hens+Det+Poss+Sg3:hens # ;
 deres+Det+Poss+Pl2:deres # ;
 deres+Det+Poss+Pl3:deres # ;
 
