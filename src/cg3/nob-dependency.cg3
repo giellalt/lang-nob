@@ -1,6 +1,6 @@
-# =================================== #
-# Bokmål Norwegian dependency grammar #
-# =================================== #
+
+#!! # Bokmål Norwegian dependency grammar #
+
 
 # ========== #
 # Delimiters #
@@ -67,8 +67,6 @@ LIST Inf = Inf ;
 LIST PrfPrc = PrfPrc ;
 LIST PrsPrc = PrsPrc ;
 LIST Imp = Imp ;
-LIST Sbj = Sbj ;
-LIST Sup = Sup ;
 LIST Cmpnd = Cmpnd ;
 LIST CLB = CLB ;
 LIST PUNCT = PUNCT ;
@@ -81,8 +79,8 @@ SET WORD = N | V | A | Pr | Pron | Adv | CC | CS | Interj | Num | ("\?") ;
 
 
 LIST TAG = N V A Adv CC CS Interj Pr Pron Pers Det Refl Recipr Poss Nom Acc Gen
-Msc Fem Neu Sg Pl Def Indef Cmp Sup Prs Prt 1Sg 2Sg 3Sg Inf PrfPrc
-PrsPrc Sup Imp CLB PUNCT LEFT RIGHT ;
+Msc Fem Neu Sg Pl Def Indef Cmp Prs Prt 1Sg 2Sg 3Sg Inf PrfPrc
+PrsPrc Imp CLB PUNCT LEFT RIGHT ;
 
 
 LIST NAGD = Nom Acc Gen ;
@@ -144,11 +142,11 @@ LIST Ind = Prs Prt ;
 
 LIST NONTHIRDV = 1Sg 2Sg 1Pl 2Pl ;
 
-LIST VINFIN = Inf Sup PrfPrs PrsPrc ;
+LIST VINFIN = Inf PrfPrs PrsPrc ;
 
-LIST MODV = "kunna" "skula" ;
+LIST MODV = "kunne" "måtte" "skulle" "ville" ;
 
-LIST DATV = "smakka" ;
+LIST DATV = "smakke" ;
 
 SET NONVFIN = VINFIN ; # sme compatibility
 
