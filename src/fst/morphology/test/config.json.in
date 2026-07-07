@@ -12,7 +12,7 @@
         "exclusions": ["(A_FÅ|A_SMÅ|AmountCont)"]
     },
     "propernouns": {
-        "lexcfile": "@abs_srcdir@/../stems/propernouns.lexc",
+        "lexcfile": "@abs_srcdir@/../stems/nob-propernouns.lexc",
         "lemmatags": ["+N+Prop", "+N+Prop+Pl", "+N+Prop+ACR+Msc+Sg+Indef"],
         "exclusions": ["( R | PROPADJ_a1-org )"]
     },

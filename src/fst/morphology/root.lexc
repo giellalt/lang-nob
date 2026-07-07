@@ -115,6 +115,7 @@ Multichar_Symbols !!≈ **@CODE@**
 +Use/-TTS-         !!≈ * **@CODE@**
 +Use/-PLX         !!≈ * **@CODE@** 
 +Use/SpellNoSugg   !!≈ * **@CODE@** 
++Use/MT          !!≈ * **@CODE@** 
 +Use/NG           !!≈ * **@CODE@** not-generate, for ped generation isme-ped.fst and MT
 +Use/PMatch       !!≈ * **@CODE@** means that the following is only used in the analyser feeding the disambiguator
  +Use/-PMatch      !!≈ * **@CODE@** Do not include in fst's made for hfst-pmatch
