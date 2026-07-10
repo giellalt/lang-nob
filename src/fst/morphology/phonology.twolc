@@ -138,7 +138,7 @@ Rules
           where Cx in ( b d v s ) ;
 
 !! *Tests:*
-!€ s i k K:0 e:0 r X1:0
+!€ s i k k:0 e:0 r X1:0 > e
 !€ t r u s s:0 e:0 l X1:0 > e r
 
 
@@ -151,7 +151,7 @@ Rules
 
 !! *Tests:*
 !€ k a l l:0 e:0 > Q3:0 t e
-!€ l y k k:0 0:t e s Q1:0
+!€ l y k k:0 > t e s Q1:0
 !€ a l l:0 > Q3:0 t
 !€ b y g g:0 e:0 > Q3:0 d e
 
