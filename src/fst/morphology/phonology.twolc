@@ -224,13 +224,13 @@ Rules
 !! ### Compound rule
 
 
-"compund Rule"
-Cx:0 <=> Cx _ #: #: Cx ;
+"compound Rule"
+Cx:0 <=> Cx _ #: Cx ;
      where Cx in (b d f g k l m n p r s t v ) ;
 
 !! *Tests:*
-!!€ grammatikk##kontroll
-!!€ grammatik000kontroll
+!!€ grammatikk#kontroll
+!!€ grammatik0#kontroll
 
 
 
@@ -253,9 +253,6 @@ Cx:0 <=> Cx _ #: #: Cx ;
 
 !! This rule is for dictionary use only. The idea is to be able to click on words in a Nynorsk text and get translation to North Sámi. Therefore, the Bokmål analyser is able to give an analysis to Nynorsk words as well. The Nynorsk-only forms are removed from all other transducers than the `-dict` transducer.
 
-
-!!€ a
-!!€ b
 
 !! Test to have an error
 !!$ a
