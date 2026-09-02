@@ -2,7 +2,7 @@
 
 
 ## Lemma statistics
-* 7577 lemmas
+* 7584 lemmas
 * 100.0 % success
 
 ## Settings used
@@ -16,10 +16,11 @@
         "lemmatags": [
             "+A+Pos+Msc+Sg+Indef"
         ],
-        "lexcfile": ".../adjectives.lexc"
+        "lexcfile": ".../stems/adjectives.lexc"
     },
     "analyser": ".../analyser-gt-norm.hfstol",
     "generator": ".../generator-gt-norm.hfstol",
+    "lexcroot": ".../root.lexc",
     "nouns": {
         "exclusions": [
             "(2_letter|3_letter | indeclm |indeclf | K )"
@@ -32,8 +33,17 @@
             "+N+Neu+Sg+Indef",
             "+N+Neu+Pl+Indef"
         ],
-        "lexcfile": ".../nouns.lexc"
+        "lexcfile": ".../stems/nouns.lexc"
     },
+    "otherlexcs": [
+        ".../stems/numerals.lexc",
+        ".../stems/pronouns.lexc",
+        ".../affixes/adjectives.lexc",
+        ".../affixes/nouns.lexc",
+        ".../affixes/propernouns.lexc",
+        ".../affixes/symbols.lexc",
+        ".../affixes/verbs.lexc"
+    ],
     "propernouns": {
         "exclusions": [
             "( R | PROPADJ_a1-org )"
@@ -43,13 +53,13 @@
             "+N+Prop+Pl",
             "+N+Prop+ACR+Msc+Sg+Indef"
         ],
-        "lexcfile": ".../nob-propernouns.lexc"
+        "lexcfile": ".../stems/nob-propernouns.lexc"
     },
     "verbs": {
         "lemmatags": [
             "+V+Inf"
         ],
-        "lexcfile": ".../verbs.lexc"
+        "lexcfile": ".../stems/verbs.lexc"
     }
 }
 ```
