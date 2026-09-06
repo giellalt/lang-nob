@@ -929,6 +929,16 @@ SECTION
 
 SELECT Prop IF (NOT -1 BOS); # XXX
 
+LIST EKSAMEN = "ed" (".*eksamen"r)  (".*rapport"r) (".*prøve"r) "veto" "stemme" (".*visitt"r) (".*besøk"r) "vitnesbyrd" (".*test"r) "løfte" (".*erklæring"r) (".*løfte"r) ;
+
+REMOVE ("avle") IF
+	(0 ("avlegge") + Prt)
+	(*0 EKSAMEN)
+;
+
+REMOVE ("avlegge") IF
+	(0 ("avle") + Prt)
+;
 
 REMOVE:apred (N) IF
 	(0 (A Pos Msc Sg))
