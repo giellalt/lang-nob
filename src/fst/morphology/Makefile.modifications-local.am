@@ -19,17 +19,17 @@
 
 if HAVE_SHARED_SMI
 generated_files/smi-propernouns.lexc: \
-			$(gt_SHARED_smi)/src/fst/stems/smi-propernouns.lexc
+			$(gt_SHARED_smi)/src/fst/morphology/stems/smi-propernouns.lexc
 	$(AM_V_at)$(MKDIR_P) generated_files
 	$(AM_V_GEN)cp -f $< $@
 
 generated_files/smi-$(GLANG)-arabic_roman_digits.lexc: \
-			$(gt_SHARED_smi)/src/fst/stems/arabic_roman_digits.lexc
+			$(gt_SHARED_smi)/src/fst/morphology/stems/arabic_roman_digits.lexc
 	$(AM_V_at)$(MKDIR_P) generated_files
 	$(AM_V_GEN)cp -f $< $@
 
 generated_files/smi-abbreviations.lexc: \
-			$(gt_SHARED_smi)/src/fst/stems/smi-abbreviations.lexc
+			$(gt_SHARED_smi)/src/fst/morphology/stems/smi-abbreviations.lexc
 	$(AM_V_at)$(MKDIR_P) generated_files
 	$(AM_V_GEN)cp -f $< $@
 
@@ -53,11 +53,11 @@ generated_files/smi-$(GTLANG)-abbreviations.lexc: \
 	echo "" >> $@ && \
 	$(top_srcdir)/src/scripts/smi-$(GTLANG)-conversion.pl $< >> $@
 
-generated_files/smi-$(GLANG)-%.lexc: $(gt_SHARED_smi)/src/fst/stems/%.lexc
+generated_files/smi-$(GLANG)-%.lexc: $(gt_SHARED_smi)/src/fst/morphology/stems/%.lexc
 	$(AM_V_at)$(MKDIR_P) generated_files
 	$(AM_V_GEN)cp -f $< $@
 
-generated_files/smi-$(GLANG)-%.lexc: $(gt_SHARED_smi)/src/fst/stems/smi-%.lexc
+generated_files/smi-$(GLANG)-%.lexc: $(gt_SHARED_smi)/src/fst/morphology/stems/smi-%.lexc
 	$(AM_V_at)$(MKDIR_P) generated_files
 	$(AM_V_GEN)cp -f $< $@
 else
