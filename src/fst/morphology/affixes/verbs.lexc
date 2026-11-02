@@ -1605,7 +1605,6 @@ LEXICON VÆRE !!≈ * **@CODE@**
   +V+PrsPrc:værende  # ;
      +V+Imp:vær      # ;
   +V+PrfPrc:vært     # ;
-  +V+PrsPrc:værrende # ;
 LEXICON UNNVÆRE !!≈ * **@CODE@**
      +V+Inf:være     # ;
  +V+Ind+Prs:værer    # ;
@@ -1614,7 +1613,6 @@ LEXICON UNNVÆRE !!≈ * **@CODE@**
   +V+PrsPrc:værende  # ;
      +V+Imp:vær      # ;
   +V+PrfPrc:vært     # ;
-  +V+PrsPrc:værrende # ;
 LEXICON XREKKE !!≈ * **@CODE@** = brekke, overrekke, radbrekk, rekke
           +V+Inf:rekke  #          ;
           +V+Imp:rekk   #          ;
