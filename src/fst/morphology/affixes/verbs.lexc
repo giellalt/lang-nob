@@ -1622,5 +1622,14 @@ LEXICON XREKKE !!≈ * **@CODE@** = brekke, overrekke, radbrekk, rekke
       +V+Ind+Prt:rakk   #          ;
        +V+PrfPrc:rukket #          ;
        +V+PrsPrc:rekk   prsptcsuff ;
-
+LEXICON IDEST !!≈ * **@CODE@** = idest
+             +V+Inf:idest  #          ;
+    +V+Inf+Err/Orth:iste   #          ;
+         +V+Ind+Prs:idest  #          ;
+         +V+Ind+Prs:ist    #          ;
++V+Ind+Prs+Err/Orth:ister  #          ;
+         +V+Ind+Prt:iddest #          ;
++V+Ind+Prt+Err/Orth:istet  #          ;
+          +V+PrfPrc:iddest #          ;
+ +V+PrfPrc+Err/Orth:istet  #          ;
 
